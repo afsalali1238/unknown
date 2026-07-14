@@ -12,7 +12,16 @@ export type Node = {
   layer2: string;
   quiz: { question: string; options: string[]; correctIndex: number };
   related: string[];
-  furtherReading: { label: string; source: string; url: string }[];
+  furtherReading: {
+    label: string;
+    source: string;
+    url: string;
+    archive?: {
+      status: "full" | "excerpt" | "unavailable";
+      path?: string;
+      retrieved?: string;
+    };
+  }[];
   tags: string[];
 };
 
@@ -116,8 +125,12 @@ export const NODES: Node[] = [
     tags: ["Startups & Founders"],
     related: ["G15","G16","I1","A2"],
     furtherReading: [
-      { label: "Do Things That Don't Scale", source: "paulgraham.com", url: "http://paulgraham.com/ds.html" },
-      { label: "How to Start a Startup", source: "YC", url: "https://www.startupschool.org/" },
+      { label: "Do Things That Don't Scale", source: "paulgraham.com", url: "http://paulgraham.com/ds.html",
+          archive: { status: "full", path: "content/sources/A1-0.md", retrieved: "2026-07-14" }
+    },
+      { label: "How to Start a Startup", source: "YC", url: "https://www.startupschool.org/",
+          archive: { status: "full", path: "content/sources/A1-1.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -142,7 +155,9 @@ export const NODES: Node[] = [
     tags: ["Startups & Founders"],
     related: ["G15","G16","I1","A3"],
     furtherReading: [
-      { label: "The Only Thing That Matters", source: "pmarchive", url: "https://pmarchive.com/guide_to_startups_part4.html" },
+      { label: "The Only Thing That Matters", source: "pmarchive", url: "https://pmarchive.com/guide_to_startups_part4.html",
+          archive: { status: "full", path: "content/sources/A2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -167,7 +182,9 @@ export const NODES: Node[] = [
     tags: ["Startups & Founders","Risk & Asymmetric Bets"],
     related: ["G15","G16","I1","A4"],
     furtherReading: [
-      { label: "Default Alive or Default Dead", source: "paulgraham.com", url: "http://paulgraham.com/aord.html" },
+      { label: "Default Alive or Default Dead", source: "paulgraham.com", url: "http://paulgraham.com/aord.html",
+          archive: { status: "full", path: "content/sources/A3-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -192,7 +209,9 @@ export const NODES: Node[] = [
     tags: ["Startups & Founders"],
     related: ["G15","G16","I1","A5"],
     furtherReading: [
-      { label: "Market Research, Wireframing, and Design", source: "cs183c", url: "https://cs183c.stanford.edu/" },
+      { label: "Market Research, Wireframing, and Design", source: "cs183c", url: "https://cs183c.stanford.edu/",
+          archive: { status: "unavailable" }
+    },
     ],
   },
 
@@ -219,7 +238,9 @@ export const NODES: Node[] = [
     tags: ["First-Principles Thinking"],
     related: ["E2","L10","B2"],
     furtherReading: [
-      { label: "Poor Charlie's Almanack", source: "book", url: "https://www.stripe.press/poor-charlies-almanack" },
+      { label: "Poor Charlie's Almanack", source: "book", url: "https://www.stripe.press/poor-charlies-almanack",
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -244,7 +265,9 @@ export const NODES: Node[] = [
     tags: ["Cognitive Biases & Models","Decision-Making"],
     related: ["D3","H4","E2","B3"],
     furtherReading: [
-      { label: "The Most Important Thing", source: "book", url: "https://www.oaktreecapital.com/insights/memos" },
+      { label: "The Most Important Thing", source: "book", url: "https://www.oaktreecapital.com/insights/memos",
+          archive: { status: "full", path: "content/sources/B2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -269,7 +292,9 @@ export const NODES: Node[] = [
     tags: ["Decision-Making","Wealth, Leverage & Judgment"],
     related: ["D5","O3","D1","B4"],
     furtherReading: [
-      { label: "Berkshire Hathaway Shareholder Letters", source: "berkshirehathaway.com", url: "https://www.berkshirehathaway.com/letters/letters.html" },
+      { label: "Berkshire Hathaway Shareholder Letters", source: "berkshirehathaway.com", url: "https://www.berkshirehathaway.com/letters/letters.html",
+          archive: { status: "full", path: "content/sources/B3-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -294,7 +319,9 @@ export const NODES: Node[] = [
     tags: ["Cognitive Biases & Models","Fraud & Skepticism","Power & Persuasion"],
     related: ["D3","E2","H4","B5"],
     furtherReading: [
-      { label: "Murphy's Law and other reasons things go wrong", source: "book", url: "https://en.wikipedia.org/wiki/Hanlon%27s_razor" },
+      { label: "Murphy's Law and other reasons things go wrong", source: "book", url: "https://en.wikipedia.org/wiki/Hanlon%27s_razor",
+          archive: { status: "full", path: "content/sources/B4-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
 
@@ -321,7 +348,9 @@ export const NODES: Node[] = [
     tags: ["Compounding & Patience"],
     related: ["G4","D6","B29","C2"],
     furtherReading: [
-      { label: "The Psychology of Money", source: "book", url: "https://www.morganhousel.com/" },
+      { label: "The Psychology of Money", source: "book", url: "https://www.morganhousel.com/",
+          archive: { status: "full", path: "content/sources/C1-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -346,7 +375,9 @@ export const NODES: Node[] = [
     tags: ["Compounding & Patience","Macro & Cycles"],
     related: ["G4","D6","B29","C3"],
     furtherReading: [
-      { label: "Antifragile", source: "book", url: "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/" },
+      { label: "Antifragile", source: "book", url: "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
+          archive: { status: "full", path: "content/sources/C2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -371,7 +402,9 @@ export const NODES: Node[] = [
     tags: ["Tech Adoption & Disruption"],
     related: ["A11","K2","I7","C4"],
     furtherReading: [
-      { label: "Clio and the Economics of QWERTY", source: "paper", url: "https://www.jstor.org/stable/1805621" },
+      { label: "Clio and the Economics of QWERTY", source: "paper", url: "https://www.jstor.org/stable/1805621",
+          archive: { status: "full", path: "content/sources/C3-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -396,7 +429,9 @@ export const NODES: Node[] = [
     tags: ["Risk & Asymmetric Bets"],
     related: ["A3","D1","D4","C1"],
     furtherReading: [
-      { label: "Antifragile", source: "book", url: "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/" },
+      { label: "Antifragile", source: "book", url: "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
+          archive: { status: "full", path: "content/sources/C4-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
 
@@ -418,7 +453,9 @@ export const NODES: Node[] = [
     tags: ["Risk & Asymmetric Bets","Decision-Making"],
     related: ["A3","C4","G1","D2"],
     furtherReading: [
-      { label: "Thinking in Bets", source: "book", url: "https://www.annieduke.com/books" },
+      { label: "Thinking in Bets", source: "book", url: "https://www.annieduke.com/books",
+          archive: { status: "full", path: "content/sources/D1-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -443,7 +480,9 @@ export const NODES: Node[] = [
     tags: ["Decision-Making"],
     related: ["B2","B3","B10","D3"],
     furtherReading: [
-      { label: "Performing a Project Pre-Mortem", source: "HBR", url: "https://hbr.org/2007/09/performing-a-project-premortem" },
+      { label: "Performing a Project Pre-Mortem", source: "HBR", url: "https://hbr.org/2007/09/performing-a-project-premortem",
+          archive: { status: "full", path: "content/sources/D2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -468,7 +507,9 @@ export const NODES: Node[] = [
     tags: ["Cognitive Biases & Models","Decision-Making"],
     related: ["B2","B15","H4","D4"],
     furtherReading: [
-      { label: "Thinking, Fast and Slow", source: "book", url: "https://us.macmillan.com/books/9780374533557" },
+      { label: "Thinking, Fast and Slow", source: "book", url: "https://us.macmillan.com/books/9780374533557",
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -493,7 +534,9 @@ export const NODES: Node[] = [
     tags: ["Risk & Asymmetric Bets","Decision-Making"],
     related: ["A3","C4","G1","D5"],
     furtherReading: [
-      { label: "Jeff Bezos on Regret Minimization", source: "Academy of Achievement", url: "https://achievement.org/achiever/jeffrey-p-bezos/" },
+      { label: "Jeff Bezos on Regret Minimization", source: "Academy of Achievement", url: "https://achievement.org/achiever/jeffrey-p-bezos/",
+          archive: { status: "full", path: "content/sources/D4-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
 
@@ -520,7 +563,9 @@ export const NODES: Node[] = [
     tags: ["Incentives & Systems"],
     related: ["F3","F10","B12","E2"],
     furtherReading: [
-      { label: "Goodhart's Law: Its Origins, Meaning, and Implications", source: "paper", url: "https://en.wikipedia.org/wiki/Goodhart%27s_law" },
+      { label: "Goodhart's Law: Its Origins, Meaning, and Implications", source: "paper", url: "https://en.wikipedia.org/wiki/Goodhart%27s_law",
+          archive: { status: "full", path: "content/sources/E1-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -545,7 +590,9 @@ export const NODES: Node[] = [
     tags: ["Cognitive Biases & Models","First-Principles Thinking"],
     related: ["B2","B4","B6","E3"],
     furtherReading: [
-      { label: "The Thing", source: "essay", url: "https://www.gutenberg.org/ebooks/1720" },
+      { label: "The Thing", source: "essay", url: "https://www.gutenberg.org/ebooks/1720",
+          archive: { status: "full", path: "content/sources/E2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -570,7 +617,9 @@ export const NODES: Node[] = [
     tags: ["Incentives & Systems","Crypto & Trust"],
     related: ["F3","F10","B12","E4"],
     furtherReading: [
-      { label: "Theory of the Firm", source: "paper", url: "https://www.sciencedirect.com/science/article/pii/0304405X7690026X" },
+      { label: "Theory of the Firm", source: "paper", url: "https://www.sciencedirect.com/science/article/pii/0304405X7690026X",
+          archive: { status: "full", path: "content/sources/E3-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -595,7 +644,9 @@ export const NODES: Node[] = [
     tags: ["Incentives & Systems"],
     related: ["F3","F10","B12","E1"],
     furtherReading: [
-      { label: "The Cobra Effect", source: "Freakonomics", url: "https://freakonomics.com/podcast/the-cobra-effect-2/" },
+      { label: "The Cobra Effect", source: "Freakonomics", url: "https://freakonomics.com/podcast/the-cobra-effect-2/",
+          archive: { status: "unavailable" }
+    },
     ],
   },
 
@@ -622,7 +673,9 @@ export const NODES: Node[] = [
     tags: ["Crypto & Trust"],
     related: ["E3","F2"],
     furtherReading: [
-      { label: "Bitcoin: A Peer-to-Peer Electronic Cash System", source: "bitcoin.org", url: "https://bitcoin.org/bitcoin.pdf" },
+      { label: "Bitcoin: A Peer-to-Peer Electronic Cash System", source: "bitcoin.org", url: "https://bitcoin.org/bitcoin.pdf",
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -647,7 +700,9 @@ export const NODES: Node[] = [
     tags: ["Crypto & Trust"],
     related: ["E3","F3"],
     furtherReading: [
-      { label: "Hashcash — A Denial of Service Counter-Measure", source: "paper", url: "http://hashcash.org/papers/" },
+      { label: "Hashcash — A Denial of Service Counter-Measure", source: "paper", url: "http://hashcash.org/papers/",
+          archive: { status: "full", path: "content/sources/F2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -672,7 +727,9 @@ export const NODES: Node[] = [
     tags: ["Incentives & Systems","Crypto & Trust"],
     related: ["E3","E1","E4","F4"],
     furtherReading: [
-      { label: "Code and Other Laws of Cyberspace", source: "book", url: "https://www.basicbooks.com/titles/lawrence-lessig/code/9780465039142/" },
+      { label: "Code and Other Laws of Cyberspace", source: "book", url: "https://www.basicbooks.com/titles/lawrence-lessig/code/9780465039142/",
+          archive: { status: "full", path: "content/sources/F3-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -697,7 +754,9 @@ export const NODES: Node[] = [
     tags: ["Crypto & Trust"],
     related: ["E3","F5"],
     furtherReading: [
-      { label: "The Terra/Luna Collapse", source: "article", url: "https://www.chainalysis.com/blog/terra-luna-crypto-crash/" },
+      { label: "The Terra/Luna Collapse", source: "article", url: "https://www.chainalysis.com/blog/terra-luna-crypto-crash/",
+          archive: { status: "full", path: "content/sources/F4-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
 
@@ -724,7 +783,9 @@ export const NODES: Node[] = [
     tags: ["Risk & Asymmetric Bets"],
     related: ["A3","C4","D1","G2"],
     furtherReading: [
-      { label: "The Intelligent Investor", source: "book", url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham" },
+      { label: "The Intelligent Investor", source: "book", url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham",
+          archive: { status: "full", path: "content/sources/G1-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -749,7 +810,9 @@ export const NODES: Node[] = [
     tags: ["Markets & Narrative"],
     related: ["M11","P3","G3"],
     furtherReading: [
-      { label: "The Intelligent Investor, Ch. 8", source: "book", url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham" },
+      { label: "The Intelligent Investor, Ch. 8", source: "book", url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham",
+          archive: { status: "full", path: "content/sources/G2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -774,7 +837,9 @@ export const NODES: Node[] = [
     tags: ["Markets & Narrative"],
     related: ["M11","P3","G4"],
     furtherReading: [
-      { label: "The Alchemy of Finance", source: "book", url: "https://www.wiley.com/en-us/The+Alchemy+of+Finance-p-9780471445494" },
+      { label: "The Alchemy of Finance", source: "book", url: "https://www.wiley.com/en-us/The+Alchemy+of+Finance-p-9780471445494",
+          archive: { status: "full", path: "content/sources/G3-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -799,7 +864,9 @@ export const NODES: Node[] = [
     tags: ["Compounding & Patience","Risk & Asymmetric Bets"],
     related: ["D6","C1","C2","G5"],
     furtherReading: [
-      { label: "A New Interpretation of Information Rate", source: "paper", url: "https://en.wikipedia.org/wiki/Kelly_criterion" },
+      { label: "A New Interpretation of Information Rate", source: "paper", url: "https://en.wikipedia.org/wiki/Kelly_criterion",
+          archive: { status: "full", path: "content/sources/G4-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
 
@@ -826,7 +893,9 @@ export const NODES: Node[] = [
     tags: ["Wealth, Leverage & Judgment","Craft & Deep Work"],
     related: ["O5","B3","D5","H2"],
     furtherReading: [
-      { label: "Deep Work", source: "book", url: "https://calnewport.com/books/deep-work/" },
+      { label: "Deep Work", source: "book", url: "https://calnewport.com/books/deep-work/",
+          archive: { status: "full", path: "content/sources/H1-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -851,7 +920,9 @@ export const NODES: Node[] = [
     tags: ["Wealth, Leverage & Judgment","Craft & Deep Work"],
     related: ["O5","B3","D5","H3"],
     furtherReading: [
-      { label: "Is There Such a Thing As Good Taste?", source: "paulgraham.com", url: "http://paulgraham.com/goodtaste.html" },
+      { label: "Is There Such a Thing As Good Taste?", source: "paulgraham.com", url: "http://paulgraham.com/goodtaste.html",
+          archive: { status: "full", path: "content/sources/H2-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -876,7 +947,9 @@ export const NODES: Node[] = [
     tags: ["Craft & Deep Work"],
     related: ["B6","B9","B24","H4"],
     furtherReading: [
-      { label: "The Bus Ticket Theory of Genius", source: "paulgraham.com", url: "http://paulgraham.com/genius.html" },
+      { label: "The Bus Ticket Theory of Genius", source: "paulgraham.com", url: "http://paulgraham.com/genius.html",
+          archive: { status: "full", path: "content/sources/H3-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -901,7 +974,9 @@ export const NODES: Node[] = [
     tags: ["Cognitive Biases & Models","Decision-Making"],
     related: ["B2","B15","D3","H1"],
     furtherReading: [
-      { label: "Strong Opinions, Weakly Held", source: "saffo.com", url: "https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/" },
+      { label: "Strong Opinions, Weakly Held", source: "saffo.com", url: "https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/",
+          archive: { status: "full", path: "content/sources/H4-0.md", retrieved: "2026-07-14" }
+    },
     ],
   },
   {
@@ -932,17 +1007,20 @@ export const NODES: Node[] = [
     {
       "label": "The Lean Startup (official site)",
       "source": "theleanstartup.com",
-      "url": "https://theleanstartup.com/"
+      "url": "https://theleanstartup.com/",
+        archive: { status: "full", path: "content/sources/A5-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Building the Minimum Viable Product",
       "source": "Stanford eCorner",
-      "url": "https://stvp.stanford.edu/clips/building-the-minimum-viable-product/"
+      "url": "https://stvp.stanford.edu/clips/building-the-minimum-viable-product/",
+        archive: { status: "full", path: "content/sources/A5-1.md", retrieved: "2026-07-14" }
     },
     {
       "label": "What Is an MVP? Eric Ries Explains",
       "source": "Lean Startup Co.",
-      "url": "https://leanstartup.co/resources/articles/what-is-an-mvp/"
+      "url": "https://leanstartup.co/resources/articles/what-is-an-mvp/",
+        archive: { status: "full", path: "content/sources/A5-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -974,17 +1052,20 @@ export const NODES: Node[] = [
     {
       "label": "How to Get Startup Ideas (original essay)",
       "source": "paulgraham.com",
-      "url": "https://www.paulgraham.com/startupideas.html"
+      "url": "https://www.paulgraham.com/startupideas.html",
+        archive: { status: "full", path: "content/sources/A6-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Lecture 3 — Before the Startup",
       "source": "Y Combinator (YouTube)",
-      "url": "https://www.youtube.com/watch?v=ii1jcLg-eIQ"
+      "url": "https://www.youtube.com/watch?v=ii1jcLg-eIQ",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Paul Graham on how to get startup ideas (notes)",
       "source": "Startup Archive",
-      "url": "https://www.startuparchive.org/p/paul-graham-on-how-to-get-startup-ideas"
+      "url": "https://www.startuparchive.org/p/paul-graham-on-how-to-get-startup-ideas",
+        archive: { status: "full", path: "content/sources/A6-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1016,17 +1097,20 @@ export const NODES: Node[] = [
     {
       "label": "1,000 True Fans (original essay)",
       "source": "kk.org / The Technium",
-      "url": "https://kk.org/thetechnium/1000-true-fans/"
+      "url": "https://kk.org/thetechnium/1000-true-fans/",
+        archive: { status: "full", path: "content/sources/A7-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "1000 True Fans — Kevin Kelly",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=py43k-mSG7s"
+      "url": "https://www.youtube.com/watch?v=py43k-mSG7s",
+        archive: { status: "unavailable" }
     },
     {
       "label": "1000 True Fans (mental model breakdown)",
       "source": "ModelThinkers",
-      "url": "https://modelthinkers.com/mental-model/1000-true-fans"
+      "url": "https://modelthinkers.com/mental-model/1000-true-fans",
+        archive: { status: "full", path: "content/sources/A7-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1058,17 +1142,20 @@ export const NODES: Node[] = [
     {
       "label": "Competition Is for Losers (WSJ op-ed)",
       "source": "Wall Street Journal, 2014",
-      "url": "https://www.wsj.com/articles/peter-thiel-competition-is-for-losers-1410535536"
+      "url": "https://www.wsj.com/articles/peter-thiel-competition-is-for-losers-1410535536",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Peter Thiel on How to Build a Creative Monopoly",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=b9tB9Q1XOM0"
+      "url": "https://www.youtube.com/watch?v=b9tB9Q1XOM0",
+        archive: { status: "unavailable" }
     },
     {
       "label": "How Peter Thiel teaches Stanford students to create billion-dollar monopolies",
       "source": "VentureBeat",
-      "url": "https://venturebeat.com/business/how-peter-thiel-teaches-stanford-students-to-create-billion-dollar-monopolies-in-3-quotes"
+      "url": "https://venturebeat.com/business/how-peter-thiel-teaches-stanford-students-to-create-billion-dollar-monopolies-in-3-quotes",
+        archive: { status: "full", path: "content/sources/A8-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1100,17 +1187,20 @@ export const NODES: Node[] = [
     {
       "label": "All Markets Are Not Created Equal (original essay)",
       "source": "Above the Crowd — Bill Gurley",
-      "url": "https://abovethecrowd.com/2012/11/13/all-markets-are-not-created-equal-10-factors-to-consider-when-evaluating-digital-marketplaces/"
+      "url": "https://abovethecrowd.com/2012/11/13/all-markets-are-not-created-equal-10-factors-to-consider-when-evaluating-digital-marketplaces/",
+        archive: { status: "full", path: "content/sources/A9-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The Bill Gurley Chronicles: VCs, marketplaces, and early-stage investing",
       "source": "Equity Mates",
-      "url": "https://equitymates.com/general/the-bill-gurley-chronicles-vcs-marketplaces-and-early-stage-investing/"
+      "url": "https://equitymates.com/general/the-bill-gurley-chronicles-vcs-marketplaces-and-early-stage-investing/",
+        archive: { status: "full", path: "content/sources/A9-1.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Bill Gurley's thoughts on marketplaces are a must read",
       "source": "Fabrice Grinda",
-      "url": "https://fabricegrinda.com/bill-gurleys-thoughts-on-marketplaces-are-a-must-read/"
+      "url": "https://fabricegrinda.com/bill-gurleys-thoughts-on-marketplaces-are-a-must-read/",
+        archive: { status: "full", path: "content/sources/A9-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1142,17 +1232,20 @@ export const NODES: Node[] = [
     {
       "label": "SaaS Metrics 2.0 (original essay)",
       "source": "forEntrepreneurs — David Skok",
-      "url": "https://www.forentrepreneurs.com/saas-metrics-2/"
+      "url": "https://www.forentrepreneurs.com/saas-metrics-2/",
+        archive: { status: "full", path: "content/sources/A10-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "David Skok of Matrix Partners: Driving SaaS Success Using Key Metrics",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=bCBccKfG9U0"
+      "url": "https://www.youtube.com/watch?v=bCBccKfG9U0",
+        archive: { status: "unavailable" }
     },
     {
       "label": "David Skok, GP @ Matrix Partners (video + transcript)",
       "source": "SaaStr",
-      "url": "https://www.saastr.com/david-skok-gp-matrix-partners-driving-saas-success-using-key-metrics-video-transcript/"
+      "url": "https://www.saastr.com/david-skok-gp-matrix-partners-driving-saas-success-using-key-metrics-video-transcript/",
+        archive: { status: "full", path: "content/sources/A10-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1184,17 +1277,20 @@ export const NODES: Node[] = [
     {
       "label": "Blitzscaling (original essay)",
       "source": "Harvard Business Review, 2016",
-      "url": "https://hbr.org/2016/04/blitzscaling"
+      "url": "https://hbr.org/2016/04/blitzscaling",
+        archive: { status: "full", path: "content/sources/A11-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Reid Hoffman at EF — Blitzscaling (playlist)",
       "source": "YouTube",
-      "url": "https://www.youtube.com/playlist?list=PLaDjE1VTVKMSOjgKVvru7oLf1JsV1muR5"
+      "url": "https://www.youtube.com/playlist?list=PLaDjE1VTVKMSOjgKVvru7oLf1JsV1muR5",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Blitzscaling (book site)",
       "source": "blitzscaling.com",
-      "url": "https://www.blitzscaling.com/"
+      "url": "https://www.blitzscaling.com/",
+        archive: { status: "full", path: "content/sources/A11-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1226,17 +1322,20 @@ export const NODES: Node[] = [
     {
       "label": "Aggregation Theory (original essay)",
       "source": "Stratechery — Ben Thompson",
-      "url": "https://stratechery.com/2015/aggregation-theory/"
+      "url": "https://stratechery.com/2015/aggregation-theory/",
+        archive: { status: "full", path: "content/sources/A12-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Stratechery (with Ben Thompson)",
       "source": "Acquired podcast",
-      "url": "https://www.acquired.fm/episodes/stratechery-with-ben-thompson"
+      "url": "https://www.acquired.fm/episodes/stratechery-with-ben-thompson",
+        archive: { status: "full", path: "content/sources/A12-1.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Aggregation Theory (concept reference page)",
       "source": "Stratechery",
-      "url": "https://stratechery.com/concept/aggregation-theory/"
+      "url": "https://stratechery.com/concept/aggregation-theory/",
+        archive: { status: "full", path: "content/sources/A12-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1268,17 +1367,20 @@ export const NODES: Node[] = [
     {
       "label": "Invisible Asymptotes (original essay)",
       "source": "Eugene Wei's blog",
-      "url": "https://www.eugenewei.com/blog/2018/5/21/invisible-asymptotes"
+      "url": "https://www.eugenewei.com/blog/2018/5/21/invisible-asymptotes",
+        archive: { status: "full", path: "content/sources/A13-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Eugene Wei: the invisible ceilings to Snapchat, Facebook and Twitter's growth",
       "source": "Recode Media podcast",
-      "url": "https://www.recode.net/2018/7/5/17535126/eugene-wei-invisible-asymptotes-ceilings-startups-growth-snap-twitter-peter-kafka-media-podcast"
+      "url": "https://www.recode.net/2018/7/5/17535126/eugene-wei-invisible-asymptotes-ceilings-startups-growth-snap-twitter-peter-kafka-media-podcast",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Invisible Asymptotes (summary notes)",
       "source": "A Learning a Day",
-      "url": "https://alearningaday.blog/2018/06/05/invisible-asymptotes/"
+      "url": "https://alearningaday.blog/2018/06/05/invisible-asymptotes/",
+        archive: { status: "full", path: "content/sources/A13-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1310,17 +1412,20 @@ export const NODES: Node[] = [
     {
       "label": "The New Moats (original essay)",
       "source": "Greylock — Jerry Chen",
-      "url": "https://greylock.com/greymatter/the-new-moats/"
+      "url": "https://greylock.com/greymatter/the-new-moats/",
+        archive: { status: "full", path: "content/sources/A14-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The New Moats — Slides Edition Remix!",
       "source": "Greylock Perspectives",
-      "url": "https://news.greylock.com/the-new-moats-slides-edition-remix-a226dfd6c896"
+      "url": "https://news.greylock.com/the-new-moats-slides-edition-remix-a226dfd6c896",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Venture Confidential, feat. Greylock's Jerry Chen",
       "source": "Heavybit podcast",
-      "url": "https://www.heavybit.com/library/podcasts/venture-confidential/ep-16-feat-greylock-partners-jerry-chen"
+      "url": "https://www.heavybit.com/library/podcasts/venture-confidential/ep-16-feat-greylock-partners-jerry-chen",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1352,17 +1457,20 @@ export const NODES: Node[] = [
     {
       "label": "The Rise of the Solo Capitalists (original essay)",
       "source": "nbt.vc — Nikhil Basu Trivedi",
-      "url": "https://www.nbt.vc/blog/the-rise-of-the-solo-capitalists"
+      "url": "https://www.nbt.vc/blog/the-rise-of-the-solo-capitalists",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Nikhil Basu Trivedi on The Mind of a Venture Capitalist",
       "source": "The Pomp Podcast (YouTube)",
-      "url": "https://www.youtube.com/watch?v=YIu5CZzwgCo"
+      "url": "https://www.youtube.com/watch?v=YIu5CZzwgCo",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Agglomerators vs. Specialists, the Rise of the Solo-Capitalist",
       "source": "The Full Ratchet",
-      "url": "https://fullratchet.net/246-agglomerators-vs-specialists-the-rise-of-the-solo-capitalist-and-the-importance-of-founder-investor-fit-nikhil-basu-trivedi/"
+      "url": "https://fullratchet.net/246-agglomerators-vs-specialists-the-rise-of-the-solo-capitalist-and-the-importance-of-founder-investor-fit-nikhil-basu-trivedi/",
+        archive: { status: "full", path: "content/sources/A15-2.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -1394,12 +1502,14 @@ export const NODES: Node[] = [
     {
       "label": "A Lesson on Elementary, Worldly Wisdom (full transcript)",
       "source": "Farnam Street / Charlie Munger, 1994 speech",
-      "url": "https://fs.blog/great-talks/a-lesson-on-worldly-wisdom/"
+      "url": "https://fs.blog/great-talks/a-lesson-on-worldly-wisdom/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Charlie Munger Lecture: Elementary Worldly Wisdom as it Relates to Investing & Business",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=vP2QPLGnjGo"
+      "url": "https://www.youtube.com/watch?v=vP2QPLGnjGo",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1431,12 +1541,14 @@ export const NODES: Node[] = [
     {
       "label": "Why Write? (on how writing reveals gaps in understanding)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/why-write/"
+      "url": "https://fs.blog/why-write/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "This is Water — David Foster Wallace's 2005 Kenyon College commencement speech (full transcript and audio)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/david-foster-wallace-this-is-water/"
+      "url": "https://fs.blog/david-foster-wallace-this-is-water/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1468,12 +1580,14 @@ export const NODES: Node[] = [
     {
       "label": "Understanding the Limitations of Maps",
       "source": "Farnam Street",
-      "url": "https://fs.blog/understanding-limitations-maps/"
+      "url": "https://fs.blog/understanding-limitations-maps/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The 5 Whys technique explained (as used in root cause analysis)",
       "source": "General reference — verify specific video before use",
-      "url": "https://fs.blog/proximate-vs-root-causes/"
+      "url": "https://fs.blog/proximate-vs-root-causes/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1505,12 +1619,14 @@ export const NODES: Node[] = [
     {
       "label": "Deterministic Nonperiodic Flow (Lorenz's original 1963 paper)",
       "source": "Edward Lorenz, MIT",
-      "url": "http://eaps4.mit.edu/research/Lorenz/Deterministic_63.pdf"
+      "url": "http://eaps4.mit.edu/research/Lorenz/Deterministic_63.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Value of Play As a Driver of Innovation (related Farnam Street piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/value-play-driver-innovation/"
+      "url": "https://fs.blog/value-play-driver-innovation/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1542,12 +1658,14 @@ export const NODES: Node[] = [
     {
       "label": "Circle of Competence (referenced concept)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/circle-of-competence/"
+      "url": "https://fs.blog/circle-of-competence/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Farnam Street's Knowledge Project podcast (Shane Parrish's long-form interviews)",
       "source": "The Knowledge Project",
-      "url": "https://fs.blog/knowledge-project-podcast/"
+      "url": "https://fs.blog/knowledge-project-podcast/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1579,12 +1697,14 @@ export const NODES: Node[] = [
     {
       "label": "Inversion (the related mental model of solving problems backward)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/inversion/"
+      "url": "https://fs.blog/inversion/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Charlie Munger biography and talks archive",
       "source": "Farnam Street",
-      "url": "https://fs.blog/charlie-munger/"
+      "url": "https://fs.blog/charlie-munger/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1616,12 +1736,14 @@ export const NODES: Node[] = [
     {
       "label": "The Map is Not the Territory",
       "source": "Farnam Street",
-      "url": "https://fs.blog/map-and-territory/"
+      "url": "https://fs.blog/map-and-territory/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Great Mental Models book series overview",
       "source": "Farnam Street",
-      "url": "https://fs.blog/tgmm/"
+      "url": "https://fs.blog/tgmm/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1653,12 +1775,14 @@ export const NODES: Node[] = [
     {
       "label": "Reciprocity (the related mental model)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/reciprocity/"
+      "url": "https://fs.blog/reciprocity/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Multidisciplinary Approach to Thinking (Peter Kaufman talk, referenced in this piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/great-talks/multidisciplinary-approach-thinking-peter-kaufman/"
+      "url": "https://fs.blog/great-talks/multidisciplinary-approach-thinking-peter-kaufman/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1690,12 +1814,14 @@ export const NODES: Node[] = [
     {
       "label": "The Surprising Power of the Long Game (related Farnam Street piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/long-game/"
+      "url": "https://fs.blog/long-game/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Finite and Infinite Games: Two Ways to Play the Game of Life (related Farnam Street piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/finite-and-infinite-games/"
+      "url": "https://fs.blog/finite-and-infinite-games/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1727,12 +1853,14 @@ export const NODES: Node[] = [
     {
       "label": "Decision Journal (a related practical tool referenced in this piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2014/02/decision-journal/"
+      "url": "https://fs.blog/2014/02/decision-journal/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Farnam Street's Knowledge Project podcast — decision-making series",
       "source": "The Knowledge Project",
-      "url": "https://fs.blog/knowledge-project-podcast/"
+      "url": "https://fs.blog/knowledge-project-podcast/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1764,12 +1892,14 @@ export const NODES: Node[] = [
     {
       "label": "Bayes and Deadweight: Using Statistics to Eject the Deadweight From Your Life",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2018/01/bayes-deadweight/"
+      "url": "https://fs.blog/2018/01/bayes-deadweight/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Julia Galef on Bayesian reasoning changing how you think",
       "source": "Big Think, via YouTube",
-      "url": "https://www.youtube.com/watch?v=NEqHML98RgU"
+      "url": "https://www.youtube.com/watch?v=NEqHML98RgU",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1801,12 +1931,14 @@ export const NODES: Node[] = [
     {
       "label": "The Pygmalion Effect: Proving Them Right (related Farnam Street piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/pygmalion-effect/"
+      "url": "https://fs.blog/pygmalion-effect/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Farnam Street's Knowledge Project podcast — probabilistic thinking and poker with Annie Duke",
       "source": "The Knowledge Project",
-      "url": "https://fs.blog/annie-duke/"
+      "url": "https://fs.blog/annie-duke/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1838,12 +1970,14 @@ export const NODES: Node[] = [
     {
       "label": "Hanlon's Razor (the complementary mental model)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2017/04/mental-model-hanlons-razor/"
+      "url": "https://fs.blog/2017/04/mental-model-hanlons-razor/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Illusion of Transparency: Your Poker Face is Better Than You Think (related Farnam Street piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/illusion-of-transparency/"
+      "url": "https://fs.blog/illusion-of-transparency/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1875,12 +2009,14 @@ export const NODES: Node[] = [
     {
       "label": "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2014/02/peter-cathcart-wason-falsification/"
+      "url": "https://fs.blog/2014/02/peter-cathcart-wason-falsification/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Three Buckets of Knowledge — Peter Kaufman's framework for identifying universal principles (referenced in this piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2016/02/three-buckets-lessons-of-history/"
+      "url": "https://fs.blog/2016/02/three-buckets-lessons-of-history/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1912,12 +2048,14 @@ export const NODES: Node[] = [
     {
       "label": "What Sharks (and Building Bombers) Teach Us About Survivorship Bias",
       "source": "Farnam Street",
-      "url": "https://fs.blog/sharks-survivorship-bias/"
+      "url": "https://fs.blog/sharks-survivorship-bias/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Narrative Fallacy (related Farnam Street piece, on how we turn the past into false patterns)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2016/04/narrative-fallacy/"
+      "url": "https://fs.blog/2016/04/narrative-fallacy/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1949,12 +2087,14 @@ export const NODES: Node[] = [
     {
       "label": "Survivorship Bias: The Tale of Forgotten Failures",
       "source": "Farnam Street",
-      "url": "https://fs.blog/survivorship-bias/"
+      "url": "https://fs.blog/survivorship-bias/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Indianapolis: The True Story of the Worst Sea Disaster in US Naval History",
       "source": "Lynn Vincent and Sara Vladic (book, referenced in this piece)",
-      "url": "https://fs.blog/sharks-survivorship-bias/"
+      "url": "https://fs.blog/sharks-survivorship-bias/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -1986,12 +2126,14 @@ export const NODES: Node[] = [
     {
       "label": "Hanlon's Razor",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2017/04/mental-model-hanlons-razor/"
+      "url": "https://fs.blog/2017/04/mental-model-hanlons-razor/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Risk Intelligence: How to Live With Uncertainty (Dylan Evans, referenced in this piece)",
       "source": "Book excerpt via Farnam Street",
-      "url": "https://fs.blog/illusion-of-transparency/"
+      "url": "https://fs.blog/illusion-of-transparency/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2023,12 +2165,14 @@ export const NODES: Node[] = [
     {
       "label": "Bias From Insensitivity to Sample Size",
       "source": "Farnam Street",
-      "url": "https://fs.blog/mental-model-bias-from-insensitivity-to-sample-size/"
+      "url": "https://fs.blog/mental-model-bias-from-insensitivity-to-sample-size/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Psychology of Human Misjudgment (Charlie Munger talk, referenced in this piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/great-talks/psychology-human-misjudgment/"
+      "url": "https://fs.blog/great-talks/psychology-human-misjudgment/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2060,12 +2204,14 @@ export const NODES: Node[] = [
     {
       "label": "Occam's Razor (referenced in this piece as informing how scientists choose among thought-experiment hypotheses)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/occams-razor/"
+      "url": "https://fs.blog/occams-razor/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Great Mental Models book series overview",
       "source": "Farnam Street",
-      "url": "https://fs.blog/tgmm/"
+      "url": "https://fs.blog/tgmm/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2097,12 +2243,14 @@ export const NODES: Node[] = [
     {
       "label": "First Principles: The Building Blocks of True Knowledge",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2018/04/first-principles/"
+      "url": "https://fs.blog/2018/04/first-principles/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Something from the Oven (Laura Shapiro's biography of Julia Child, primary source for this piece)",
       "source": "Book, referenced via Farnam Street",
-      "url": "https://fs.blog/how-julia-child-used-first-principles-thinking/"
+      "url": "https://fs.blog/how-julia-child-used-first-principles-thinking/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2134,12 +2282,14 @@ export const NODES: Node[] = [
     {
       "label": "Tit For Tat",
       "source": "Farnam Street",
-      "url": "https://fs.blog/tit-for-tat/"
+      "url": "https://fs.blog/tit-for-tat/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Great Mental Models Volume 2: Physics, Chemistry, and Biology",
       "source": "Farnam Street book",
-      "url": "https://fs.blog/tgmm/"
+      "url": "https://fs.blog/tgmm/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2171,12 +2321,14 @@ export const NODES: Node[] = [
     {
       "label": "Power Laws",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2017/11/power-laws/"
+      "url": "https://fs.blog/2017/11/power-laws/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Economics of Superstars (Sherwin Rosen, referenced in this piece)",
       "source": "Academic paper, cited via Farnam Street",
-      "url": "https://fs.blog/mental-model-winner-take-all/"
+      "url": "https://fs.blog/mental-model-winner-take-all/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2208,12 +2360,14 @@ export const NODES: Node[] = [
     {
       "label": "Inversion",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2013/10/inversion/"
+      "url": "https://fs.blog/2013/10/inversion/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Bayesian Casino (Bayes and Deadweight, referenced in this piece)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2018/01/bayes-deadweight/"
+      "url": "https://fs.blog/2018/01/bayes-deadweight/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2245,12 +2399,14 @@ export const NODES: Node[] = [
     {
       "label": "Inversion",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2013/10/inversion/"
+      "url": "https://fs.blog/2013/10/inversion/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Nature: An Economic History (Geerat Vermeij, referenced in this piece)",
       "source": "Book, cited via Farnam Street",
-      "url": "https://fs.blog/parenting-mental-models/"
+      "url": "https://fs.blog/parenting-mental-models/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2282,12 +2438,14 @@ export const NODES: Node[] = [
     {
       "label": "An Antifragile Way of Life (the original 2014 piece this article expands on)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/2014/10/an-antifragile-way-of-life/"
+      "url": "https://fs.blog/2014/10/an-antifragile-way-of-life/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Second-Order Thinking (related Farnam Street piece on long-horizon consequences)",
       "source": "Farnam Street",
-      "url": "https://fs.blog/second-order-thinking/"
+      "url": "https://fs.blog/second-order-thinking/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2319,12 +2477,14 @@ export const NODES: Node[] = [
     {
       "label": "The Map is Not the Territory",
       "source": "Farnam Street",
-      "url": "https://fs.blog/map-and-territory/"
+      "url": "https://fs.blog/map-and-territory/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy (David Graeber, primary source for this piece)",
       "source": "Book, cited via Farnam Street",
-      "url": "https://fs.blog/descriptions-arent-prescriptions/"
+      "url": "https://fs.blog/descriptions-arent-prescriptions/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2356,12 +2516,14 @@ export const NODES: Node[] = [
     {
       "label": "Cost and Choice: An Inquiry in Economic Theory",
       "source": "James M. Buchanan, 1969",
-      "url": "https://www.econlib.org/library/Buchanan/buchCC.html"
+      "url": "https://www.econlib.org/library/Buchanan/buchCC.html",
+        archive: { status: "full", path: "content/sources/D5-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Opportunity Cost: The Hidden Cost of Everything",
       "source": "Farnam Street",
-      "url": "https://fs.blog/opportunity-cost/"
+      "url": "https://fs.blog/opportunity-cost/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2393,12 +2555,14 @@ export const NODES: Node[] = [
     {
       "label": "Antifragile: Things That Gain from Disorder",
       "source": "Nassim Nicholas Taleb, 2012",
-      "url": "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/"
+      "url": "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
+        archive: { status: "full", path: "content/sources/D6-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Asymmetric Opportunities: How to Benefit from the Upside",
       "source": "Farnam Street",
-      "url": "https://fs.blog/asymmetric-bets/"
+      "url": "https://fs.blog/asymmetric-bets/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2430,12 +2594,14 @@ export const NODES: Node[] = [
     {
       "label": "The Bullish Case for Bitcoin (original essay)",
       "source": "Vijay Boyapati on Medium, 2018",
-      "url": "https://vijayboyapati.medium.com/the-bullish-case-for-bitcoin-6ecc8bdecc1"
+      "url": "https://vijayboyapati.medium.com/the-bullish-case-for-bitcoin-6ecc8bdecc1",
+        archive: { status: "full", path: "content/sources/F5-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The Bull Case for Bitcoin",
       "source": "The Investor's Podcast Network",
-      "url": "https://www.theinvestorspodcast.com/millennial-investing/the-bull-case-for-btc/"
+      "url": "https://www.theinvestorspodcast.com/millennial-investing/the-bull-case-for-btc/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2467,12 +2633,14 @@ export const NODES: Node[] = [
     {
       "label": "Ethereum Whitepaper (original)",
       "source": "ethereum.org",
-      "url": "https://ethereum.org/en/whitepaper/"
+      "url": "https://ethereum.org/en/whitepaper/",
+        archive: { status: "full", path: "content/sources/F6-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Ethereum: A Next-Generation Smart Contract Platform (context)",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Ethereum"
+      "url": "https://en.wikipedia.org/wiki/Ethereum",
+        archive: { status: "full", path: "content/sources/F6-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -2504,12 +2672,14 @@ export const NODES: Node[] = [
     {
       "label": "Fat Protocols (original essay)",
       "source": "Union Square Ventures, 2016",
-      "url": "https://www.usv.com/writing/2016/08/fat-protocols/"
+      "url": "https://www.usv.com/writing/2016/08/fat-protocols/",
+        archive: { status: "full", path: "content/sources/F7-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The industry is growing out of the Fat Protocol Thesis (debate)",
       "source": "The Blockchain Debate Podcast",
-      "url": "https://blockdebate.buzzsprout.com/767033/episodes/9694662-motion-the-industry-is-growing-out-of-the-fat-protocol-thesis-jeff-dorman-vs-joel-monegro"
+      "url": "https://blockdebate.buzzsprout.com/767033/episodes/9694662-motion-the-industry-is-growing-out-of-the-fat-protocol-thesis-jeff-dorman-vs-joel-monegro",
+        archive: { status: "full", path: "content/sources/F7-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -2541,12 +2711,14 @@ export const NODES: Node[] = [
     {
       "label": "Uniswap Whitepaper (v1, original concept document)",
       "source": "Hayden Adams",
-      "url": "https://hackmd.io/@HaydenAdams/HJ9jLsfTz"
+      "url": "https://hackmd.io/@HaydenAdams/HJ9jLsfTz",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Uniswap v3 Core whitepaper",
       "source": "uniswap.org",
-      "url": "https://app.uniswap.org/whitepaper-v3.pdf"
+      "url": "https://app.uniswap.org/whitepaper-v3.pdf",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2578,12 +2750,14 @@ export const NODES: Node[] = [
     {
       "label": "Solana: A New Architecture for a High Performance Blockchain (original whitepaper)",
       "source": "solana.com",
-      "url": "https://solana.com/solana-whitepaper.pdf"
+      "url": "https://solana.com/solana-whitepaper.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Proof of History: what is it good for?",
       "source": "Victor Shoup",
-      "url": "https://www.shoup.net/papers/poh.pdf"
+      "url": "https://www.shoup.net/papers/poh.pdf",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2615,12 +2789,14 @@ export const NODES: Node[] = [
     {
       "label": "Why Decentralization Matters (original essay)",
       "source": "Chris Dixon, cdixon.org",
-      "url": "https://cdixon.org/2018/02/18/why-decentralization-matters"
+      "url": "https://cdixon.org/2018/02/18/why-decentralization-matters",
+        archive: { status: "full", path: "content/sources/F10-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Why Decentralization Matters (mirror)",
       "source": "OneZero / Medium",
-      "url": "https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e"
+      "url": "https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e",
+        archive: { status: "full", path: "content/sources/F10-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -2652,12 +2828,14 @@ export const NODES: Node[] = [
     {
       "label": "Social Capital investor letters (Chamath Palihapitiya)",
       "source": "socialcapital.com",
-      "url": "https://www.socialcapital.com/"
+      "url": "https://www.socialcapital.com/",
+        archive: { status: "full", path: "content/sources/F11-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "All-In Podcast (hosted by Chamath Palihapitiya & co-hosts)",
       "source": "YouTube",
-      "url": "https://www.youtube.com/@allin"
+      "url": "https://www.youtube.com/@allin",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2689,12 +2867,14 @@ export const NODES: Node[] = [
     {
       "label": "Buy American. I Am. (original op-ed)",
       "source": "Warren Buffett, The New York Times, October 2008",
-      "url": "https://www.nytimes.com/2008/10/17/opinion/17buffett.html"
+      "url": "https://www.nytimes.com/2008/10/17/opinion/17buffett.html",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Buy the Dip or Buy the Bottomless Pit Instead?",
       "source": "Acadian Asset Management",
-      "url": "https://www.acadian-asset.com/investment-insights/owenomics/buy-the-dip-or-buy-the-bottomless-pit"
+      "url": "https://www.acadian-asset.com/investment-insights/owenomics/buy-the-dip-or-buy-the-bottomless-pit",
+        archive: { status: "full", path: "content/sources/G5-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -2726,12 +2906,14 @@ export const NODES: Node[] = [
     {
       "label": "The Superinvestors of Graham-and-Doddsville (original transcript)",
       "source": "Columbia Business School / Hermes Magazine, Fall 1984",
-      "url": "https://www8.gsb.columbia.edu/articles/node/1765/Superinvestors.pdf"
+      "url": "https://www8.gsb.columbia.edu/articles/node/1765/Superinvestors.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Session 7: Market Efficiency – Laying the Groundwork",
       "source": "Aswath Damodaran, NYU Stern",
-      "url": "https://www.youtube.com/c/AswathDamodaranonValuation"
+      "url": "https://www.youtube.com/c/AswathDamodaranonValuation",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2763,12 +2945,14 @@ export const NODES: Node[] = [
     {
       "label": "Reinvesting When Terrified (original memo)",
       "source": "Jeremy Grantham, GMO, March 2009",
-      "url": "https://www.gmo.com/americas/research-library/reinvesting-when-terrified_viewpoints/"
+      "url": "https://www.gmo.com/americas/research-library/reinvesting-when-terrified_viewpoints/",
+        archive: { status: "full", path: "content/sources/G7-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "3 Warnings for Investors From the Ultimate Contrarian",
       "source": "Morningstar",
-      "url": "https://www.morningstar.com.au/personal-finance/3-warnings-for-investors-from-the-ultimate-contrarian"
+      "url": "https://www.morningstar.com.au/personal-finance/3-warnings-for-investors-from-the-ultimate-contrarian",
+        archive: { status: "full", path: "content/sources/G7-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -2800,12 +2984,14 @@ export const NODES: Node[] = [
     {
       "label": "Waiting for the Last Dance (original memo)",
       "source": "Jeremy Grantham, GMO, January 2021",
-      "url": "https://www.gmo.com/americas/research-library/waiting-for-the-last-dance/"
+      "url": "https://www.gmo.com/americas/research-library/waiting-for-the-last-dance/",
+        archive: { status: "full", path: "content/sources/G8-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "David Rubenstein interviews Jeremy Grantham",
       "source": "Bloomberg Wealth",
-      "url": "https://www.bloomberg.com/wealth"
+      "url": "https://www.bloomberg.com/wealth",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2837,12 +3023,14 @@ export const NODES: Node[] = [
     {
       "label": "The Race to the Bottom (original memo)",
       "source": "Howard Marks, Oaktree Capital, February 2007",
-      "url": "https://www.oaktreecapital.com/docs/default-source/memos/2007-02-14-the-race-to-the-bottom.pdf"
+      "url": "https://www.oaktreecapital.com/docs/default-source/memos/2007-02-14-the-race-to-the-bottom.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Memo by Howard Marks",
       "source": "Oaktree Capital official podcast",
-      "url": "https://www.oaktreecapital.com/insights/memo-podcast"
+      "url": "https://www.oaktreecapital.com/insights/memo-podcast",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2874,12 +3062,14 @@ export const NODES: Node[] = [
     {
       "label": "Further Thoughts on Sea Change (follow-up memo)",
       "source": "Howard Marks, Oaktree Capital, 2023",
-      "url": "https://www.oaktreecapital.com/insights/memo/further-thoughts-on-sea-change"
+      "url": "https://www.oaktreecapital.com/insights/memo/further-thoughts-on-sea-change",
+        archive: { status: "full", path: "content/sources/G10-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Further Thoughts on Sea Change",
       "source": "The Memo by Howard Marks (podcast), October 2023",
-      "url": "https://podcasts.apple.com/us/podcast/further-thoughts-on-sea-change/id1521551570"
+      "url": "https://podcasts.apple.com/us/podcast/further-thoughts-on-sea-change/id1521551570",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2911,12 +3101,14 @@ export const NODES: Node[] = [
     {
       "label": "Principles for Navigating Big Debt Crises (original framework)",
       "source": "Ray Dalio, Bridgewater Associates",
-      "url": "https://www.bridgewater.com/big-debt-crises/"
+      "url": "https://www.bridgewater.com/big-debt-crises/",
+        archive: { status: "full", path: "content/sources/G11-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "How The Economic Machine Works",
       "source": "Principles by Ray Dalio, YouTube",
-      "url": "https://www.youtube.com/watch?v=PHe0bXAIuk0"
+      "url": "https://www.youtube.com/watch?v=PHe0bXAIuk0",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2948,12 +3140,14 @@ export const NODES: Node[] = [
     {
       "label": "The Changing World Order (original essay/book)",
       "source": "Ray Dalio, Bridgewater Associates",
-      "url": "https://www.bridgewater.com/research-and-insights/the-changing-world-order/"
+      "url": "https://www.bridgewater.com/research-and-insights/the-changing-world-order/",
+        archive: { status: "full", path: "content/sources/G12-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Principles for Dealing with the Changing World Order",
       "source": "Principles by Ray Dalio, YouTube animated summary",
-      "url": "https://www.youtube.com/watch?v=xguam0TKMw8"
+      "url": "https://www.youtube.com/watch?v=xguam0TKMw8",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -2985,12 +3179,14 @@ export const NODES: Node[] = [
     {
       "label": "The Fraying of the US Global Currency Reserve System (original essay)",
       "source": "Lyn Alden, 2020",
-      "url": "https://www.lynalden.com/fraying-petrodollar-system/"
+      "url": "https://www.lynalden.com/fraying-petrodollar-system/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Lyn Alden on MacroVoices",
       "source": "MacroVoices Podcast",
-      "url": "https://www.macrovoices.com/"
+      "url": "https://www.macrovoices.com/",
+        archive: { status: "full", path: "content/sources/G13-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3022,12 +3218,14 @@ export const NODES: Node[] = [
     {
       "label": "Zoltan Pozsar's New World Order",
       "source": "Bloomberg analysis",
-      "url": "https://www.bloomberg.com/news"
+      "url": "https://www.bloomberg.com/news",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Zoltan Pozsar on the Coming Global Financial Crisis",
       "source": "Odd Lots, Bloomberg Podcast, March 2022",
-      "url": "https://www.bloomberg.com/podcasts/oddlots"
+      "url": "https://www.bloomberg.com/podcasts/oddlots",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3059,12 +3257,14 @@ export const NODES: Node[] = [
     {
       "label": "Sequoia Capital: Armchair quarterbacks",
       "source": "Jason Fried, Signal v. Noise, October 2008",
-      "url": "https://signalvnoise.com/posts/1304-sequoia-capital-armchair-quarterbacks"
+      "url": "https://signalvnoise.com/posts/1304-sequoia-capital-armchair-quarterbacks",
+        archive: { status: "full", path: "content/sources/G15-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "R.I.P. Good Times (original deck)",
       "source": "Sequoia Capital, 2008",
-      "url": "https://articles.sequoiacap.com/rip-good-times"
+      "url": "https://articles.sequoiacap.com/rip-good-times",
+        archive: { status: "full", path: "content/sources/G15-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3096,12 +3296,14 @@ export const NODES: Node[] = [
     {
       "label": "Sequoia Capital warns founders of a 'crucible moment'",
       "source": "Fortune, 2022",
-      "url": "https://fortune.com/"
+      "url": "https://fortune.com/",
+        archive: { status: "unavailable" }
     },
     {
       "label": "All-In Podcast coverage of 'Adapting to Endure'",
       "source": "All-In Podcast, 2022",
-      "url": "https://www.allinpodcast.co/"
+      "url": "https://www.allinpodcast.co/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3133,12 +3335,14 @@ export const NODES: Node[] = [
     {
       "label": "American Experience: Silicon Valley (PBS documentary)",
       "source": "PBS, 2013",
-      "url": "https://www.pbs.org/wgbh/americanexperience/films/silicon/"
+      "url": "https://www.pbs.org/wgbh/americanexperience/films/silicon/",
+        archive: { status: "full", path: "content/sources/I1-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "How a deal with 8 'traitors' would help build Intel, Apple — and Silicon Valley",
       "source": "NPR — The Indicator",
-      "url": "https://www.npr.org/transcripts/1160283155"
+      "url": "https://www.npr.org/transcripts/1160283155",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3170,12 +3374,14 @@ export const NODES: Node[] = [
     {
       "label": "American Research and Development Corporation",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/American_Research_and_Development_Corporation"
+      "url": "https://en.wikipedia.org/wiki/American_Research_and_Development_Corporation",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Ken Olsen — PDP-1 Restoration Project",
       "source": "Computer History Museum",
-      "url": "https://www.computerhistory.org/pdp-1/ken-olsen/"
+      "url": "https://www.computerhistory.org/pdp-1/ken-olsen/",
+        archive: { status: "full", path: "content/sources/I2-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3207,12 +3413,14 @@ export const NODES: Node[] = [
     {
       "label": "Sequoia's Roelof Botha on Decision Making, AI, and the Next Trillion Dollar Market",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=z8njhsYUNNk"
+      "url": "https://www.youtube.com/watch?v=z8njhsYUNNk",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The confidential YouTube Investment Memo by Sequoia you were never meant to see",
       "source": "Alexander Jarvis",
-      "url": "https://www.alexanderjarvis.com/the-confidential-youtube-investment-memo-by-sequoia-you-were-never-meant-to-see/"
+      "url": "https://www.alexanderjarvis.com/the-confidential-youtube-investment-memo-by-sequoia-you-were-never-meant-to-see/",
+        archive: { status: "full", path: "content/sources/I3-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3244,12 +3452,14 @@ export const NODES: Node[] = [
     {
       "label": "This Was Facebook's First Media Pitch In 2004",
       "source": "OfficeChai",
-      "url": "https://officechai.com/stories/facebook-advertising-pitch-deck/"
+      "url": "https://officechai.com/stories/facebook-advertising-pitch-deck/",
+        archive: { status: "full", path: "content/sources/I4-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The Pitch Deck Facebook Used to Raise $13.8B",
       "source": "Failory",
-      "url": "https://www.failory.com/pitch-deck/facebook"
+      "url": "https://www.failory.com/pitch-deck/facebook",
+        archive: { status: "full", path: "content/sources/I4-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3281,12 +3491,14 @@ export const NODES: Node[] = [
     {
       "label": "Uber IPO: Inside The 2008 Pitch That Birthed An $80 Billion Startup",
       "source": "Forbes",
-      "url": "https://www.forbes.com/sites/bizcarson/2019/05/10/uber-ipo-original-2008-pitch-deck/"
+      "url": "https://www.forbes.com/sites/bizcarson/2019/05/10/uber-ipo-original-2008-pitch-deck/",
+        archive: { status: "full", path: "content/sources/I5-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Take a look at Uber's first pitch deck from 2008",
       "source": "Recode",
-      "url": "https://www.recode.net/2017/8/23/16189048/uber-pitch-deck-2008-ubercab-travis-kalanick-founder-startup"
+      "url": "https://www.recode.net/2017/8/23/16189048/uber-pitch-deck-2008-ubercab-travis-kalanick-founder-startup",
+        archive: { status: "full", path: "content/sources/I5-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3318,12 +3530,14 @@ export const NODES: Node[] = [
     {
       "label": "Full interview with Airbnb CEO Brian Chesky",
       "source": "CNBC",
-      "url": "https://www.cnbc.com/video/2026/05/21/watch-cnbcs-full-interview-with-airbnb-ceo-brian-chesky.html"
+      "url": "https://www.cnbc.com/video/2026/05/21/watch-cnbcs-full-interview-with-airbnb-ceo-brian-chesky.html",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Airbnb Deck",
       "source": "Tremendous",
-      "url": "https://tremendous.blog/2024/03/20/the-airbnb-deck/"
+      "url": "https://tremendous.blog/2024/03/20/the-airbnb-deck/",
+        archive: { status: "full", path: "content/sources/I6-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3355,12 +3569,14 @@ export const NODES: Node[] = [
     {
       "label": "In 2006, Elon Musk Had a 'Secret Plan' to Mainstream Electric Cars. It's Working",
       "source": "Vice",
-      "url": "https://www.vice.com/en/article/elon-musks-secret-plan-for-electric-car-dominance-is-right-on-schedule/"
+      "url": "https://www.vice.com/en/article/elon-musks-secret-plan-for-electric-car-dominance-is-right-on-schedule/",
+        archive: { status: "full", path: "content/sources/I7-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "This is how Elon Musk set out to achieve his Tesla master plan",
       "source": "World Economic Forum",
-      "url": "https://www.weforum.org/stories/2016/04/this-is-how-elon-musk-set-out-to-achieve-his-tesla-master-plan/"
+      "url": "https://www.weforum.org/stories/2016/04/this-is-how-elon-musk-set-out-to-achieve-his-tesla-master-plan/",
+        archive: { status: "full", path: "content/sources/I7-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3392,12 +3608,14 @@ export const NODES: Node[] = [
     {
       "label": "Is Enron Overpriced?",
       "source": "Bethany McLean, Fortune, March 2001",
-      "url": "https://money.cnn.com/2001/03/04/investing/enron/"
+      "url": "https://money.cnn.com/2001/03/04/investing/enron/",
+        archive: { status: "full", path: "content/sources/J1-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Jim Chanos Talks Alibaba And Enron Shorts; 1987 Crash",
       "source": "Bloomberg Masters in Business",
-      "url": "https://www.bloomberg.com/news/audio/2016-03-11/masters-in-business-jim-chanos-audio"
+      "url": "https://www.bloomberg.com/news/audio/2016-03-11/masters-in-business-jim-chanos-audio",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3429,12 +3647,14 @@ export const NODES: Node[] = [
     {
       "label": "Shadowing a Swindler: Early on, he figured out what Bernard Madoff was up to",
       "source": "Richard J. Tofel, Wall Street Journal, 2010",
-      "url": "https://www.wsj.com/articles/SB10001424052748704784904575111581404098934"
+      "url": "https://www.wsj.com/articles/SB10001424052748704784904575111581404098934",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Man Who Knew",
       "source": "60 Minutes, CBS News, 2009",
-      "url": "https://www.cbsnews.com/news/the-man-who-knew-08-03-2009/"
+      "url": "https://www.cbsnews.com/news/the-man-who-knew-08-03-2009/",
+        archive: { status: "full", path: "content/sources/J2-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3466,12 +3686,14 @@ export const NODES: Node[] = [
     {
       "label": "Fooling Some of the People All of the Time: A Long Short Story (book review)",
       "source": "Financial Analysts Journal, 2009",
-      "url": "https://rpc.cfainstitute.org/research/financial-analysts-journal/2009/fooling-some-of-the-people-all-of-the-time"
+      "url": "https://rpc.cfainstitute.org/research/financial-analysts-journal/2009/fooling-some-of-the-people-all-of-the-time",
+        archive: { status: "full", path: "content/sources/J3-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Fooling Some of the People All of the Time",
       "source": "foolingsomepeople.com (David Einhorn's book site)",
-      "url": "https://foolingsomepeople.com/"
+      "url": "https://foolingsomepeople.com/",
+        archive: { status: "full", path: "content/sources/J3-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3503,12 +3725,14 @@ export const NODES: Node[] = [
     {
       "label": "Lehman's Greatest Value Lies In Lessons Learned",
       "source": "Jonathan Weil, Bloomberg, 2008",
-      "url": "https://www.bloomberg.com/opinion"
+      "url": "https://www.bloomberg.com/opinion",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Structure of Confidence and the Collapse of Lehman Brothers",
       "source": "SciSpace / academic analysis",
-      "url": "https://scispace.com/pdf/the-structure-of-confidence-and-the-collapse-of-lehman-544epovko0.pdf"
+      "url": "https://scispace.com/pdf/the-structure-of-confidence-and-the-collapse-of-lehman-544epovko0.pdf",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3540,12 +3764,14 @@ export const NODES: Node[] = [
     {
       "label": "Betting on the Blind Side",
       "source": "Michael Lewis, Vanity Fair, 2010",
-      "url": "https://www.vanityfair.com/news/2010/04/wall-street-excerpt-201004"
+      "url": "https://www.vanityfair.com/news/2010/04/wall-street-excerpt-201004",
+        archive: { status: "full", path: "content/sources/J5-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Michael Burry Transcript / Address at Vanderbilt University",
       "source": "Vanderbilt University, 2011",
-      "url": "https://news.vanderbilt.edu/2011/04/13/michael-burry-transcript/"
+      "url": "https://news.vanderbilt.edu/2011/04/13/michael-burry-transcript/",
+        archive: { status: "full", path: "content/sources/J5-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3577,12 +3803,14 @@ export const NODES: Node[] = [
     {
       "label": "Global Corporate Crime and the Sino-Forest Fraud in Canada",
       "source": "MedCrave Online, 2018",
-      "url": "https://medcraveonline.com/SIJ/global-corporate-crime-and-the-sino-forest-fraud-in-nbspcanada.html"
+      "url": "https://medcraveonline.com/SIJ/global-corporate-crime-and-the-sino-forest-fraud-in-nbspcanada.html",
+        archive: { status: "full", path: "content/sources/J6-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Sino-Forest Fraud – Audit Challenges in China",
       "source": "University of Toronto Mississauga",
-      "url": "https://www.utm.utoronto.ca/pac/media/343/download?inline"
+      "url": "https://www.utm.utoronto.ca/pac/media/343/download?inline",
+        archive: { status: "full", path: "content/sources/J6-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3614,12 +3842,14 @@ export const NODES: Node[] = [
     {
       "label": "Who Wants to Be a Millionaire? Bill Ackman's Big Short of Herbalife",
       "source": "Ivey Publishing case study, 2014",
-      "url": "https://www.iveypublishing.ca/s/product/who-wants-to-be-a-millionaire-bill-ackmans-big-short-of-herbalife/01t5c00000CBeybAAD"
+      "url": "https://www.iveypublishing.ca/s/product/who-wants-to-be-a-millionaire-bill-ackmans-big-short-of-herbalife/01t5c00000CBeybAAD",
+        archive: { status: "full", path: "content/sources/J7-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Betting on Zero",
       "source": "Directed by Ted Braun, 2016 documentary",
-      "url": "https://www.imdb.com/title/tt4642840/"
+      "url": "https://www.imdb.com/title/tt4642840/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3651,12 +3881,14 @@ export const NODES: Node[] = [
     {
       "label": "Lessons Learned from Valeant's Market Cap Destruction",
       "source": "Journal of Forensic & Investigative Accounting, 2017",
-      "url": "http://web.nacva.com/JFIA/Issues/JFIA-2017-No2-8.pdf"
+      "url": "http://web.nacva.com/JFIA/Issues/JFIA-2017-No2-8.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Dirty Money: 'Drug Short'",
       "source": "Netflix docuseries, Season 1 Episode 3",
-      "url": "https://www.netflix.com/title/80118100"
+      "url": "https://www.netflix.com/title/80118100",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3688,12 +3920,14 @@ export const NODES: Node[] = [
     {
       "label": "The Big China Short",
       "source": "The Wire China, 2020",
-      "url": "https://www.thewirechina.com/wp-content/uploads/2020/09/The-Big-China-Short-The-Wire-China-1.pdf"
+      "url": "https://www.thewirechina.com/wp-content/uploads/2020/09/The-Big-China-Short-The-Wire-China-1.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "How Luckin Coffee's Fraud Cost Investors Billions",
       "source": "Wall Street Journal",
-      "url": "https://www.wsj.com/video"
+      "url": "https://www.wsj.com/video",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3725,12 +3959,14 @@ export const NODES: Node[] = [
     {
       "label": "Review and Analysis of 2020 U.S. Shareholder Activism",
       "source": "Sullivan & Cromwell LLP",
-      "url": "https://www.sullcrom.com/SullivanCromwell/_Assets/PDFs/Memos/sc-publication-review-analysis-2020-US-shareholder-activism.pdf"
+      "url": "https://www.sullcrom.com/SullivanCromwell/_Assets/PDFs/Memos/sc-publication-review-analysis-2020-US-shareholder-activism.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Nikola: How to Parlay An Ocean of Lies (original report)",
       "source": "Hindenburg Research, 2020",
-      "url": "https://hindenburgresearch.com/nikola/"
+      "url": "https://hindenburgresearch.com/nikola/",
+        archive: { status: "full", path: "content/sources/J10-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3762,12 +3998,14 @@ export const NODES: Node[] = [
     {
       "label": "Between Short Selling and Securities Regulation: The Adani Group Saga",
       "source": "NUJS Law Review, 2023",
-      "url": "http://nujslawreview.org/index.php/lr/article/download/233/86"
+      "url": "http://nujslawreview.org/index.php/lr/article/download/233/86",
+        archive: { status: "full", path: "content/sources/J11-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Hindenburg Report accuses Adani Group of Stock Manipulation, Fraud",
       "source": "MBAUniverse.com",
-      "url": "https://www.mbauniverse.com/group-discussion/topic/business-economy/hindenburg-report"
+      "url": "https://www.mbauniverse.com/group-discussion/topic/business-economy/hindenburg-report",
+        archive: { status: "full", path: "content/sources/J11-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3799,12 +4037,14 @@ export const NODES: Node[] = [
     {
       "label": "A Mathematical Theory of Communication (original paper)",
       "source": "Bell System Technical Journal, 1948",
-      "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+      "url": "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "A Mathematical Theory of Communication",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication"
+      "url": "https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication",
+        archive: { status: "full", path: "content/sources/K1-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3836,12 +4076,14 @@ export const NODES: Node[] = [
     {
       "label": "Information Management: A Proposal (original document)",
       "source": "W3.org / CERN, 1989",
-      "url": "https://www.w3.org/History/1989/proposal.html"
+      "url": "https://www.w3.org/History/1989/proposal.html",
+        archive: { status: "full", path: "content/sources/K2-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "30 years of the web: a short history of the invention that changed the world",
       "source": "British Council",
-      "url": "https://www.britishcouncil.org/anyone-anywhere/history-web"
+      "url": "https://www.britishcouncil.org/anyone-anywhere/history-web",
+        archive: { status: "full", path: "content/sources/K2-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3873,12 +4115,14 @@ export const NODES: Node[] = [
     {
       "label": "The Anatomy of a Large-Scale Hypertextual Web Search Engine (original paper)",
       "source": "Stanford InfoLab, 1998",
-      "url": "http://infolab.stanford.edu/pub/papers/google.pdf"
+      "url": "http://infolab.stanford.edu/pub/papers/google.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Anatomy of a Large-Scale Hypertextual Web Search Engine (mirror)",
       "source": "Stanford SNAP",
-      "url": "https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf"
+      "url": "https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -3910,12 +4154,14 @@ export const NODES: Node[] = [
     {
       "label": "The Internet Tidal Wave (original memo)",
       "source": "BBC-hosted archive",
-      "url": "http://news.bbc.co.uk/2/shared/bsp/hi/pdfs/18_06_08_internet%20tidal%20wave.pdf"
+      "url": "http://news.bbc.co.uk/2/shared/bsp/hi/pdfs/18_06_08_internet%20tidal%20wave.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Did Tesla Remove Elon Musk's Master Plan From Its Website?",
       "source": "Entrepreneur (context on tech memos aging)",
-      "url": "https://www.entrepreneur.com/business-news/did-tesla-remove-elon-musks-master-plan-from-its-website/479092"
+      "url": "https://www.entrepreneur.com/business-news/did-tesla-remove-elon-musks-master-plan-from-its-website/479092",
+        archive: { status: "full", path: "content/sources/K4-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3947,12 +4193,14 @@ export const NODES: Node[] = [
     {
       "label": "Increasing Returns and the New World of Business (original essay)",
       "source": "Harvard Business Review, 1996",
-      "url": "https://sites.santafe.edu/~wbarthur/Papers/HBR.pdf"
+      "url": "https://sites.santafe.edu/~wbarthur/Papers/HBR.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "W. Brian Arthur's work on complexity and increasing returns",
       "source": "Santa Fe Institute",
-      "url": "https://www.santafe.edu/people/profile/w-brian-arthur"
+      "url": "https://www.santafe.edu/people/profile/w-brian-arthur",
+        archive: { status: "full", path: "content/sources/K5-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -3984,12 +4232,14 @@ export const NODES: Node[] = [
     {
       "label": "The Pricing of Options and Corporate Liabilities (original paper)",
       "source": "Journal of Political Economy, 1973",
-      "url": "https://www.journals.uchicago.edu/doi/10.1086/260062"
+      "url": "https://www.journals.uchicago.edu/doi/10.1086/260062",
+        archive: { status: "unavailable" }
     },
     {
       "label": "In Our Time: The Black-Scholes Formula",
       "source": "BBC Radio 4",
-      "url": "https://www.bbc.co.uk/programmes/b00y2zy9"
+      "url": "https://www.bbc.co.uk/programmes/b00y2zy9",
+        archive: { status: "full", path: "content/sources/K6-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4021,12 +4271,14 @@ export const NODES: Node[] = [
     {
       "label": "Software 2.0 (original essay)",
       "source": "Andrej Karpathy on Medium",
-      "url": "https://karpathy.medium.com/software-2-0-a64152b37c35"
+      "url": "https://karpathy.medium.com/software-2-0-a64152b37c35",
+        archive: { status: "full", path: "content/sources/L1-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The Rise of Software 2.0: You don't want to be left behind",
       "source": "Towards Data Science",
-      "url": "https://towardsdatascience.com/the-rise-of-software-2-0-you-dont-want-to-be-left-behind-cbaa75f6d19"
+      "url": "https://towardsdatascience.com/the-rise-of-software-2-0-you-dont-want-to-be-left-behind-cbaa75f6d19",
+        archive: { status: "full", path: "content/sources/L1-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4058,12 +4310,14 @@ export const NODES: Node[] = [
     {
       "label": "Efficient Estimation of Word Representations in Vector Space (original paper)",
       "source": "arXiv, 2013",
-      "url": "https://arxiv.org/abs/1301.3781"
+      "url": "https://arxiv.org/abs/1301.3781",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Illustrated Word2vec",
       "source": "Jay Alammar",
-      "url": "https://jalammar.github.io/illustrated-word2vec/"
+      "url": "https://jalammar.github.io/illustrated-word2vec/",
+        archive: { status: "full", path: "content/sources/L2-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4095,12 +4349,14 @@ export const NODES: Node[] = [
     {
       "label": "ImageNet Classification with Deep Convolutional Neural Networks (original paper)",
       "source": "NeurIPS, 2012",
-      "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+      "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+        archive: { status: "full", path: "content/sources/L3-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Geoffrey Hinton — Turing Award Lecture on Deep Learning",
       "source": "ACM / YouTube",
-      "url": "https://www.youtube.com/watch?v=VsnQf7exv5I"
+      "url": "https://www.youtube.com/watch?v=VsnQf7exv5I",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -4132,12 +4388,14 @@ export const NODES: Node[] = [
     {
       "label": "Deep Residual Learning for Image Recognition (original paper)",
       "source": "arXiv, 2015",
-      "url": "https://arxiv.org/abs/1512.03385"
+      "url": "https://arxiv.org/abs/1512.03385",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Understanding ResNet and its variants",
       "source": "Towards Data Science",
-      "url": "https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33"
+      "url": "https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33",
+        archive: { status: "full", path: "content/sources/L4-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4169,12 +4427,14 @@ export const NODES: Node[] = [
     {
       "label": "Attention Is All You Need (original paper)",
       "source": "arXiv, 2017",
-      "url": "https://arxiv.org/abs/1706.03762"
+      "url": "https://arxiv.org/abs/1706.03762",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Illustrated Transformer",
       "source": "Jay Alammar",
-      "url": "https://jalammar.github.io/illustrated-transformer/"
+      "url": "https://jalammar.github.io/illustrated-transformer/",
+        archive: { status: "full", path: "content/sources/L5-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4206,12 +4466,14 @@ export const NODES: Node[] = [
     {
       "label": "Language Models are Few-Shot Learners (original paper)",
       "source": "arXiv, 2020",
-      "url": "https://arxiv.org/abs/2005.14165"
+      "url": "https://arxiv.org/abs/2005.14165",
+        archive: { status: "unavailable" }
     },
     {
       "label": "How GPT3 Works — Visualizations and Animations",
       "source": "Jay Alammar",
-      "url": "https://jalammar.github.io/how-gpt3-works-visualizations-animations/"
+      "url": "https://jalammar.github.io/how-gpt3-works-visualizations-animations/",
+        archive: { status: "full", path: "content/sources/L6-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4243,12 +4505,14 @@ export const NODES: Node[] = [
     {
       "label": "Scaling Laws for Neural Language Models (original paper)",
       "source": "arXiv, 2020",
-      "url": "https://arxiv.org/abs/2001.08361"
+      "url": "https://arxiv.org/abs/2001.08361",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Scaling Hypothesis",
       "source": "Gwern Branwen",
-      "url": "https://gwern.net/scaling-hypothesis"
+      "url": "https://gwern.net/scaling-hypothesis",
+        archive: { status: "full", path: "content/sources/L7-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4280,12 +4544,14 @@ export const NODES: Node[] = [
     {
       "label": "Training Compute-Optimal Large Language Models (original paper)",
       "source": "arXiv, 2022",
-      "url": "https://arxiv.org/abs/2203.15556"
+      "url": "https://arxiv.org/abs/2203.15556",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Chinchilla's Wild Implications",
       "source": "LessWrong",
-      "url": "https://www.lesswrong.com/posts/6Fpvch8TREZXbdmEB/chinchilla-s-wild-implications"
+      "url": "https://www.lesswrong.com/posts/6Fpvch8TREZXbdmEB/chinchilla-s-wild-implications",
+        archive: { status: "full", path: "content/sources/L8-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4317,12 +4583,14 @@ export const NODES: Node[] = [
     {
       "label": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL (original paper)",
       "source": "arXiv, 2025",
-      "url": "https://arxiv.org/abs/2501.12948"
+      "url": "https://arxiv.org/abs/2501.12948",
+        archive: { status: "unavailable" }
     },
     {
       "label": "DeepSeek-R1 explainer",
       "source": "Hugging Face",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1"
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+        archive: { status: "full", path: "content/sources/L9-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4354,12 +4622,14 @@ export const NODES: Node[] = [
     {
       "label": "The Bitter Lesson (original essay)",
       "source": "Rich Sutton, incompleteideas.net",
-      "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
+      "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
+        archive: { status: "full", path: "content/sources/L10-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Rich Sutton's bitter lesson of AI",
       "source": "John D. Cook",
-      "url": "https://www.johndcook.com/blog/2025/02/20/bitter-lesson/"
+      "url": "https://www.johndcook.com/blog/2025/02/20/bitter-lesson/",
+        archive: { status: "full", path: "content/sources/L10-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4391,12 +4661,14 @@ export const NODES: Node[] = [
     {
       "label": "The next big thing will start out looking like a toy (original essay)",
       "source": "Chris Dixon, cdixon.org, 2010",
-      "url": "https://cdixon.org/2010/01/03/the-next-big-thing-will-start-out-looking-like-a-toy/"
+      "url": "https://cdixon.org/2010/01/03/the-next-big-thing-will-start-out-looking-like-a-toy/",
+        archive: { status: "full", path: "content/sources/M1-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "A few common ways new technologies can be misunderstood",
       "source": "a16z crypto",
-      "url": "https://a16zcrypto.com/posts/article/a-few-common-ways-new-technologies-can-be-misunderstood/"
+      "url": "https://a16zcrypto.com/posts/article/a-few-common-ways-new-technologies-can-be-misunderstood/",
+        archive: { status: "full", path: "content/sources/M1-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4428,12 +4700,14 @@ export const NODES: Node[] = [
     {
       "label": "Why Software Is Eating the World (original essay)",
       "source": "Marc Andreessen, Andreessen Horowitz / WSJ, 2011",
-      "url": "https://a16z.com/why-software-is-eating-the-world/"
+      "url": "https://a16z.com/why-software-is-eating-the-world/",
+        archive: { status: "full", path: "content/sources/M2-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "10 years later, software really did eat the world",
       "source": "CIO Dive",
-      "url": "https://www.ciodive.com/news/software-industry-marc-andreessen/605301/"
+      "url": "https://www.ciodive.com/news/software-industry-marc-andreessen/605301/",
+        archive: { status: "full", path: "content/sources/M2-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4465,12 +4739,14 @@ export const NODES: Node[] = [
     {
       "label": "Mobile Is Eating the World (original presentation)",
       "source": "Benedict Evans, ben-evans.com, 2014",
-      "url": "https://www.ben-evans.com/benedictevans/2014/10/28/presentation-mobile-is-eating-the-world"
+      "url": "https://www.ben-evans.com/benedictevans/2014/10/28/presentation-mobile-is-eating-the-world",
+        archive: { status: "full", path: "content/sources/M3-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Mobile Is Eating the World, 2014 (slides)",
       "source": "Andreessen Horowitz",
-      "url": "https://a16z.com/2014/10/28/mobile-is-eating-the-world/"
+      "url": "https://a16z.com/2014/10/28/mobile-is-eating-the-world/",
+        archive: { status: "full", path: "content/sources/M3-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4502,12 +4778,14 @@ export const NODES: Node[] = [
     {
       "label": "What happened to the future? (original manifesto)",
       "source": "Bruce Gibney, Founders Fund",
-      "url": "https://foundersfund.com/2017/01/manifesto/"
+      "url": "https://foundersfund.com/2017/01/manifesto/",
+        archive: { status: "full", path: "content/sources/M4-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "What Happened to the Future? discussion",
       "source": "Hacker News, 2011",
-      "url": "https://news.ycombinator.com/item?id=2797060"
+      "url": "https://news.ycombinator.com/item?id=2797060",
+        archive: { status: "full", path: "content/sources/M4-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4539,12 +4817,14 @@ export const NODES: Node[] = [
     {
       "label": "Battery Ventures 'Powered' research series (successor to OpenCloud)",
       "source": "Battery Ventures",
-      "url": "https://www.battery.com/powered/"
+      "url": "https://www.battery.com/powered/",
+        archive: { status: "full", path: "content/sources/M5-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "State of the OpenCloud 2023: AI and the New Cloud Economy",
       "source": "Battery Ventures",
-      "url": "https://www.battery.com/wp-content/uploads/2023/11/Battery-Ventures-OpenCloud-Report-2023.pdf"
+      "url": "https://www.battery.com/wp-content/uploads/2023/11/Battery-Ventures-OpenCloud-Report-2023.pdf",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -4576,12 +4856,14 @@ export const NODES: Node[] = [
     {
       "label": "Big Ideas 2017 (original report)",
       "source": "ARK Invest",
-      "url": "https://assets.arkinvest.com/media-8e522a83-1b23-4d58-a202-792712f8d2d3/30ebc53a-c5d0-479f-8bea-63f1a9fbdc70/big-ideas-2017.pdf"
+      "url": "https://assets.arkinvest.com/media-8e522a83-1b23-4d58-a202-792712f8d2d3/30ebc53a-c5d0-479f-8bea-63f1a9fbdc70/big-ideas-2017.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "ARK Invest's Big Ideas reports archive",
       "source": "ARK Invest",
-      "url": "https://www.ark-invest.com/big-ideas-2024"
+      "url": "https://www.ark-invest.com/big-ideas-2024",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -4613,12 +4895,14 @@ export const NODES: Node[] = [
     {
       "label": "Mary Meeker Internet Trends 1995 (archived slides)",
       "source": "Speaker Deck",
-      "url": "https://speakerdeck.com/vcru/mary-meeker-internet-trends-1995"
+      "url": "https://speakerdeck.com/vcru/mary-meeker-internet-trends-1995",
+        archive: { status: "full", path: "content/sources/M7-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Mary Meeker — Wikipedia",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Mary_Meeker"
+      "url": "https://en.wikipedia.org/wiki/Mary_Meeker",
+        archive: { status: "full", path: "content/sources/M7-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4650,12 +4934,14 @@ export const NODES: Node[] = [
     {
       "label": "Trends – Artificial Intelligence (original report)",
       "source": "Mary Meeker / BOND, 2025",
-      "url": "https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf"
+      "url": "https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Mary Meeker's AI Trends Report coverage",
       "source": "CNBC",
-      "url": "https://www.cnbc.com/2019/06/11/mary-meeker-just-published-her-highly-anticipated-internet-trends-report-read-it-here.html"
+      "url": "https://www.cnbc.com/2019/06/11/mary-meeker-just-published-her-highly-anticipated-internet-trends-report-read-it-here.html",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -4687,12 +4973,14 @@ export const NODES: Node[] = [
     {
       "label": "The Sovereign Individual — Wikipedia",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/The_Sovereign_Individual"
+      "url": "https://en.wikipedia.org/wiki/The_Sovereign_Individual",
+        archive: { status: "full", path: "content/sources/M9-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Peter Thiel's foreword and the book's influence on Silicon Valley",
       "source": "Various retrospectives",
-      "url": "https://en.wikipedia.org/wiki/The_Sovereign_Individual"
+      "url": "https://en.wikipedia.org/wiki/The_Sovereign_Individual",
+        archive: { status: "full", path: "content/sources/M9-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4724,12 +5012,14 @@ export const NODES: Node[] = [
     {
       "label": "Peter Thiel's CS183 startup class notes (the original source material)",
       "source": "Blake Masters",
-      "url": "https://blakemasters.tumblr.com/peter-thiels-cs183-startup"
+      "url": "https://blakemasters.tumblr.com/peter-thiels-cs183-startup",
+        archive: { status: "full", path: "content/sources/M10-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Zero to One — reception and influence",
       "source": "Various business press retrospectives",
-      "url": "https://en.wikipedia.org/wiki/Zero_to_One"
+      "url": "https://en.wikipedia.org/wiki/Zero_to_One",
+        archive: { status: "full", path: "content/sources/M10-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4761,12 +5051,14 @@ export const NODES: Node[] = [
     {
       "label": "Meditations on Moloch (original essay)",
       "source": "Scott Alexander, Slate Star Codex, 2014",
-      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/"
+      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+        archive: { status: "full", path: "content/sources/M11-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "'Moloch' as a concept in AI-safety and tech discourse",
       "source": "Various rationalist community retrospectives",
-      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/"
+      "url": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
+        archive: { status: "full", path: "content/sources/M11-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4798,12 +5090,14 @@ export const NODES: Node[] = [
     {
       "label": "Superintelligence: Paths, Dangers, Strategies — overview",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies"
+      "url": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
+        archive: { status: "full", path: "content/sources/M12-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Elon Musk and Bill Gates on AI existential risk following the book's publication",
       "source": "Various tech press coverage, 2014-2015",
-      "url": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies"
+      "url": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
+        archive: { status: "full", path: "content/sources/M12-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4835,12 +5129,14 @@ export const NODES: Node[] = [
     {
       "label": "We Need a New Science of Progress (original essay)",
       "source": "Patrick Collison & Tyler Cowen, The Atlantic, 2019",
-      "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
+      "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/",
+        archive: { status: "full", path: "content/sources/M13-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Emergent Ventures (funding vehicle inspired by Progress Studies)",
       "source": "Tyler Cowen / Mercatus Center",
-      "url": "https://www.mercatus.org/emergent-ventures"
+      "url": "https://www.mercatus.org/emergent-ventures",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -4872,12 +5168,14 @@ export const NODES: Node[] = [
     {
       "label": "What We Owe the Future (official book site)",
       "source": "William MacAskill",
-      "url": "https://whatweowethefuture.com/"
+      "url": "https://whatweowethefuture.com/",
+        archive: { status: "full", path: "content/sources/M14-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Longtermism and its critics",
       "source": "Various philosophy and EA-movement retrospectives",
-      "url": "https://whatweowethefuture.com/"
+      "url": "https://whatweowethefuture.com/",
+        archive: { status: "full", path: "content/sources/M14-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4909,12 +5207,14 @@ export const NODES: Node[] = [
     {
       "label": "AGI Ruin: A List of Lethalities (original essay)",
       "source": "Eliezer Yudkowsky, LessWrong, 2022",
-      "url": "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities"
+      "url": "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities",
+        archive: { status: "full", path: "content/sources/M15-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Reactions and debate around AGI Ruin within the AI safety community",
       "source": "LessWrong discussion threads",
-      "url": "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities"
+      "url": "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities",
+        archive: { status: "full", path: "content/sources/M15-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -4946,12 +5246,14 @@ export const NODES: Node[] = [
     {
       "label": "The Most Important Century (original essay series)",
       "source": "Holden Karnofsky, Cold Takes, 2021",
-      "url": "https://www.cold-takes.com/most-important-century/"
+      "url": "https://www.cold-takes.com/most-important-century/",
+        archive: { status: "full", path: "content/sources/M16-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Open Philanthropy's AI-risk grantmaking, shaped by this series",
       "source": "Open Philanthropy",
-      "url": "https://www.openphilanthropy.org/"
+      "url": "https://www.openphilanthropy.org/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -4983,12 +5285,14 @@ export const NODES: Node[] = [
     {
       "label": "The Scaling Hypothesis (original essay)",
       "source": "Gwern Branwen, gwern.net, 2020",
-      "url": "https://gwern.net/scaling-hypothesis"
+      "url": "https://gwern.net/scaling-hypothesis",
+        archive: { status: "full", path: "content/sources/M17-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Scaling laws and their influence on frontier AI lab strategy",
       "source": "Various AI research retrospectives",
-      "url": "https://gwern.net/scaling-hypothesis"
+      "url": "https://gwern.net/scaling-hypothesis",
+        archive: { status: "full", path: "content/sources/M17-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5020,12 +5324,14 @@ export const NODES: Node[] = [
     {
       "label": "Situational Awareness: The Decade Ahead (original essay)",
       "source": "Leopold Aschenbrenner, 2024",
-      "url": "https://situational-awareness.ai/"
+      "url": "https://situational-awareness.ai/",
+        archive: { status: "full", path: "content/sources/M18-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "How did Leopold do? Evaluating Situational Awareness's predictions",
       "source": "Effective Altruism Forum",
-      "url": "https://forum.effectivealtruism.org/posts/RuwF8FCfpsLeZRgur/how-did-leopold-do-evaluating-situational-awareness-s"
+      "url": "https://forum.effectivealtruism.org/posts/RuwF8FCfpsLeZRgur/how-did-leopold-do-evaluating-situational-awareness-s",
+        archive: { status: "full", path: "content/sources/M18-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5057,12 +5363,14 @@ export const NODES: Node[] = [
     {
       "label": "Machines of Loving Grace (original essay)",
       "source": "Dario Amodei, 2024",
-      "url": "https://www.darioamodei.com/essay/machines-of-loving-grace"
+      "url": "https://www.darioamodei.com/essay/machines-of-loving-grace",
+        archive: { status: "full", path: "content/sources/M19-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Anthropic's fundraising and the role of its public AI vision essays",
       "source": "Various tech press coverage",
-      "url": "https://www.darioamodei.com/essay/machines-of-loving-grace"
+      "url": "https://www.darioamodei.com/essay/machines-of-loving-grace",
+        archive: { status: "full", path: "content/sources/M19-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5094,12 +5402,14 @@ export const NODES: Node[] = [
     {
       "label": "Why AI Will Save the World (original essay)",
       "source": "Marc Andreessen, Andreessen Horowitz, 2023",
-      "url": "https://a16z.com/ai-will-save-the-world/"
+      "url": "https://a16z.com/ai-will-save-the-world/",
+        archive: { status: "full", path: "content/sources/M20-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The AI-doom vs. AI-accelerationist debate in Silicon Valley",
       "source": "Various tech press coverage, 2023",
-      "url": "https://a16z.com/ai-will-save-the-world/"
+      "url": "https://a16z.com/ai-will-save-the-world/",
+        archive: { status: "full", path: "content/sources/M20-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5131,12 +5441,14 @@ export const NODES: Node[] = [
     {
       "label": "The Techno-Optimist Manifesto (original text)",
       "source": "Marc Andreessen, Andreessen Horowitz, 2023",
-      "url": "https://a16z.com/the-techno-optimist-manifesto/"
+      "url": "https://a16z.com/the-techno-optimist-manifesto/",
+        archive: { status: "full", path: "content/sources/M21-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Reactions to the Techno-Optimist Manifesto and the 'e/acc' movement",
       "source": "Various tech press coverage, 2023",
-      "url": "https://a16z.com/the-techno-optimist-manifesto/"
+      "url": "https://a16z.com/the-techno-optimist-manifesto/",
+        archive: { status: "full", path: "content/sources/M21-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5168,12 +5480,14 @@ export const NODES: Node[] = [
     {
       "label": "Moore's Law for Everything (original essay)",
       "source": "Sam Altman, 2021",
-      "url": "https://moores.samaltman.com/"
+      "url": "https://moores.samaltman.com/",
+        archive: { status: "full", path: "content/sources/M22-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "OpenAI's capped-profit structure and its connection to Altman's abundance framing",
       "source": "Various tech press coverage",
-      "url": "https://moores.samaltman.com/"
+      "url": "https://moores.samaltman.com/",
+        archive: { status: "full", path: "content/sources/M22-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5205,12 +5519,14 @@ export const NODES: Node[] = [
     {
       "label": "Block lays off nearly half its staff because of AI",
       "source": "CNN Business, 2026",
-      "url": "https://www.cnn.com/2026/02/26/business/block-layoffs-ai-jack-dorsey"
+      "url": "https://www.cnn.com/2026/02/26/business/block-layoffs-ai-jack-dorsey",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Jack Dorsey breaks down his thought process on the Block AI layoffs",
       "source": "Fortune, 2026",
-      "url": "https://fortune.com/2026/04/17/twitter-cofounder-block-ceo-jack-dorsey-thought-process-laid-off-40-staff-ai/"
+      "url": "https://fortune.com/2026/04/17/twitter-cofounder-block-ceo-jack-dorsey-thought-process-laid-off-40-staff-ai/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5242,12 +5558,14 @@ export const NODES: Node[] = [
     {
       "label": "Albert Camus",
       "source": "Stanford Encyclopedia of Philosophy",
-      "url": "https://plato.stanford.edu/entries/camus/"
+      "url": "https://plato.stanford.edu/entries/camus/",
+        archive: { status: "full", path: "content/sources/N1-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Albert Camus: The Madness of Sincerity (1997 documentary)",
       "source": "Open Culture",
-      "url": "https://www.openculture.com/2014/11/albert-camus-the-madness-of-sincerity.html"
+      "url": "https://www.openculture.com/2014/11/albert-camus-the-madness-of-sincerity.html",
+        archive: { status: "full", path: "content/sources/N1-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5279,12 +5597,14 @@ export const NODES: Node[] = [
     {
       "label": "The Ego Tunnel — TEDxRheinMain",
       "source": "TEDx Talks",
-      "url": "https://www.youtube.com/watch?v=ZFjY1fAcESs"
+      "url": "https://www.youtube.com/watch?v=ZFjY1fAcESs",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Thomas Metzinger",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Thomas_Metzinger"
+      "url": "https://en.wikipedia.org/wiki/Thomas_Metzinger",
+        archive: { status: "full", path: "content/sources/N2-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5316,12 +5636,14 @@ export const NODES: Node[] = [
     {
       "label": "You aren't at the mercy of your emotions — your brain creates them",
       "source": "TED Talk, Lisa Feldman Barrett",
-      "url": "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them"
+      "url": "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Descartes' Error",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Descartes%27_Error"
+      "url": "https://en.wikipedia.org/wiki/Descartes%27_Error",
+        archive: { status: "full", path: "content/sources/N3-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5353,12 +5675,14 @@ export const NODES: Node[] = [
     {
       "label": "Richard Dawkins — The Selfish Gene explained",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=j9p2F2oa0_k"
+      "url": "https://www.youtube.com/watch?v=j9p2F2oa0_k",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Selfish Gene",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/The_Selfish_Gene"
+      "url": "https://en.wikipedia.org/wiki/The_Selfish_Gene",
+        archive: { status: "full", path: "content/sources/N4-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5390,12 +5714,14 @@ export const NODES: Node[] = [
     {
       "label": "Interview with Dr. Viktor Frankl, part I",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=9EIxGrIc_6g"
+      "url": "https://www.youtube.com/watch?v=9EIxGrIc_6g",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Man's Search for Meaning",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Man%27s_Search_for_Meaning"
+      "url": "https://en.wikipedia.org/wiki/Man%27s_Search_for_Meaning",
+        archive: { status: "full", path: "content/sources/N5-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5427,12 +5753,14 @@ export const NODES: Node[] = [
     {
       "label": "Do we see reality as it is?",
       "source": "TED Talk, Donald Hoffman",
-      "url": "https://www.ted.com/talks/donald_hoffman_do_we_see_reality_as_it_is"
+      "url": "https://www.ted.com/talks/donald_hoffman_do_we_see_reality_as_it_is",
+        archive: { status: "unavailable" }
     },
     {
       "label": "The Evolutionary Argument Against Reality",
       "source": "Quanta Magazine",
-      "url": "https://www.quantamagazine.org/the-evolutionary-argument-against-reality-20160421/"
+      "url": "https://www.quantamagazine.org/the-evolutionary-argument-against-reality-20160421/",
+        archive: { status: "full", path: "content/sources/N6-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5464,12 +5792,14 @@ export const NODES: Node[] = [
     {
       "label": "I Took Naval Ravikant's Tweet Thread & Made $1.55M With It — Here's How",
       "source": "Tim Denning",
-      "url": "https://timdenning.com/naval-ravikant/"
+      "url": "https://timdenning.com/naval-ravikant/",
+        archive: { status: "full", path: "content/sources/O1-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "How to Get Rich (Without Getting Lucky) — Naval's own podcast series",
       "source": "Naval Ravikant & Nivi",
-      "url": "https://nav.al/rich"
+      "url": "https://nav.al/rich",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5501,12 +5831,14 @@ export const NODES: Node[] = [
     {
       "label": "How to Get Rich by Naval Ravikant (Deep Summary + Infographic)",
       "source": "Sloww",
-      "url": "https://www.sloww.co/how-to-get-rich-naval-ravikant/"
+      "url": "https://www.sloww.co/how-to-get-rich-naval-ravikant/",
+        archive: { status: "full", path: "content/sources/O2-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Joe Rogan Experience #1309 — Naval Ravikant",
       "source": "The Joe Rogan Experience, June 4, 2019",
-      "url": "https://www.jrepodcast.com/episode/joe-rogan-experience-1309-naval-ravikant/"
+      "url": "https://www.jrepodcast.com/episode/joe-rogan-experience-1309-naval-ravikant/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5538,12 +5870,14 @@ export const NODES: Node[] = [
     {
       "label": "4 Takeaways from Naval Ravikant's Tweetstorm: How to Get Rich (without getting lucky)",
       "source": "Medium",
-      "url": "https://medium.com/@dan.the.man1617/4-takeaways-from-naval-ravikants-tweetstorm-how-to-get-rich-without-getting-lucky-868d62d47e84"
+      "url": "https://medium.com/@dan.the.man1617/4-takeaways-from-naval-ravikants-tweetstorm-how-to-get-rich-without-getting-lucky-868d62d47e84",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Naval Ravikant: The Angel Philosopher — its most-downloaded episode",
       "source": "The Knowledge Project with Shane Parrish, #18",
-      "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/"
+      "url": "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5575,12 +5909,14 @@ export const NODES: Node[] = [
     {
       "label": "Happiness According To Naval Ravikant",
       "source": "Medium, Daniel Jiang",
-      "url": "https://daniel-jiang.medium.com/happiness-according-to-naval-ravikant-96fbb8f52ffd"
+      "url": "https://daniel-jiang.medium.com/happiness-according-to-naval-ravikant-96fbb8f52ffd",
+        archive: { status: "full", path: "content/sources/O4-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Naval Ravikant on The Tim Ferriss Show — happiness, anxiety, and meditation",
       "source": "Podcast Notes summary of The Tim Ferriss Show",
-      "url": "https://podcastnotes.org/tim-ferris-show/happiness-reducing-anxiety-crypto-stablecoins-and-crypto-strategy-naval-ravikant/"
+      "url": "https://podcastnotes.org/tim-ferris-show/happiness-reducing-anxiety-crypto-stablecoins-and-crypto-strategy-naval-ravikant/",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5612,12 +5948,14 @@ export const NODES: Node[] = [
     {
       "label": "Naval Ravikant's Top 7 Reading Tips",
       "source": "Medium, Mark Joseph Aduana",
-      "url": "https://medium.com/@markaduana/naval-ravikants-top-7-reading-tips-457e5e0d664f"
+      "url": "https://medium.com/@markaduana/naval-ravikants-top-7-reading-tips-457e5e0d664f",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Read What You Love Until You Love To Read",
       "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=-geJg7OjB6o"
+      "url": "https://www.youtube.com/watch?v=-geJg7OjB6o",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5649,12 +5987,14 @@ export const NODES: Node[] = [
     {
       "label": "Naval's Thoughts On Playing Long-Term Games With Long-Term People",
       "source": "The Acquirer's Multiple",
-      "url": "https://acquirersmultiple.com/2020/09/navals-thoughts-on-playing-long-term-games-with-long-term-people/"
+      "url": "https://acquirersmultiple.com/2020/09/navals-thoughts-on-playing-long-term-games-with-long-term-people/",
+        archive: { status: "full", path: "content/sources/O6-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "How to Get Rich (Without Getting Lucky) — Naval's own podcast series",
       "source": "Naval Ravikant & Nivi",
-      "url": "https://nav.al/long-term"
+      "url": "https://nav.al/long-term",
+        archive: { status: "full", path: "content/sources/O6-1.md", retrieved: "2026-07-14" }
     }
   ]
 },
@@ -5686,12 +6026,14 @@ export const NODES: Node[] = [
     {
       "label": "How to Win Friends and Influence People",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People"
+      "url": "https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People",
+        archive: { status: "full", path: "content/sources/P1-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Dale Carnegie: Man of Influence",
       "source": "A&E Biography (1987), YouTube",
-      "url": "https://www.youtube.com/watch?v=GXXDQ0O7qJk"
+      "url": "https://www.youtube.com/watch?v=GXXDQ0O7qJk",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5723,12 +6065,14 @@ export const NODES: Node[] = [
     {
       "label": "The 48 Laws of Power",
       "source": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/The_48_Laws_of_Power"
+      "url": "https://en.wikipedia.org/wiki/The_48_Laws_of_Power",
+        archive: { status: "full", path: "content/sources/P2-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Robert Greene on reading, the laws of power, and detecting lies",
       "source": "The Knowledge Project podcast archive, YouTube",
-      "url": "https://www.youtube.com/watch?v=hwqveKLfpfg"
+      "url": "https://www.youtube.com/watch?v=hwqveKLfpfg",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5760,12 +6104,14 @@ export const NODES: Node[] = [
     {
       "label": "Yuval Noah Harari, the sage of Silicon Valley",
       "source": "Slate",
-      "url": "https://slate.com/culture/2018/11/yuval-noah-harari-sapiens-facebook-silicon-valley-hollywood.html"
+      "url": "https://slate.com/culture/2018/11/yuval-noah-harari-sapiens-facebook-silicon-valley-hollywood.html",
+        archive: { status: "full", path: "content/sources/P3-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Why humans run the world",
       "source": "TED Talk, Yuval Noah Harari",
-      "url": "https://www.youtube.com/watch?v=nzj7Wg4DAbs"
+      "url": "https://www.youtube.com/watch?v=nzj7Wg4DAbs",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5797,12 +6143,14 @@ export const NODES: Node[] = [
     {
       "label": "Debate Arises over Teaching 'Growth Mindsets' to Motivate Students",
       "source": "Scientific American",
-      "url": "https://www.scientificamerican.com/article/debate-arises-over-teaching-growth-mindsets-to-motivate-students/"
+      "url": "https://www.scientificamerican.com/article/debate-arises-over-teaching-growth-mindsets-to-motivate-students/",
+        archive: { status: "full", path: "content/sources/P4-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "The power of believing that you can improve",
       "source": "TED Talk, Carol Dweck (TEDxNorrköping)",
-      "url": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve"
+      "url": "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5834,12 +6182,14 @@ export const NODES: Node[] = [
     {
       "label": "How Not to Die by Dr. Michael Greger: A Critical Review",
       "source": "Healthline",
-      "url": "https://www.healthline.com/nutrition/how-not-to-die-review"
+      "url": "https://www.healthline.com/nutrition/how-not-to-die-review",
+        archive: { status: "full", path: "content/sources/P5-0.md", retrieved: "2026-07-14" }
     },
     {
       "label": "Dr. Michael Greger | How Not To Die",
       "source": "Talks at Google, Feb 2016",
-      "url": "https://www.youtube.com/watch?v=7rNY7xKyGCQ"
+      "url": "https://www.youtube.com/watch?v=7rNY7xKyGCQ",
+        archive: { status: "unavailable" }
     }
   ]
 },
@@ -5871,12 +6221,14 @@ export const NODES: Node[] = [
     {
       "label": "MacArthur 'Genius' Angela Duckworth Responds To A New Critique Of Grit",
       "source": "NPR",
-      "url": "https://www.npr.org/sections/ed/2016/05/25/479172868/angela-duckworth-responds-to-a-new-critique-of-grit"
+      "url": "https://www.npr.org/sections/ed/2016/05/25/479172868/angela-duckworth-responds-to-a-new-critique-of-grit",
+        archive: { status: "unavailable" }
     },
     {
       "label": "Grit: The power of passion and perseverance",
       "source": "TED Talk, Angela Lee Duckworth (2013)",
-      "url": "https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance"
+      "url": "https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance",
+        archive: { status: "unavailable" }
     }
   ]
 }

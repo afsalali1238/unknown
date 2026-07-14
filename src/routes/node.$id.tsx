@@ -158,25 +158,42 @@ function NodeScreen() {
           <MicroLabel>Further reading</MicroLabel>
           <ul className="mt-4 space-y-3">
             {node.furtherReading.map((f) => (
-              <li key={f.url}>
-                <a
-                  href={f.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-baseline justify-between gap-4 border-b border-line pb-3"
-                >
+              <li key={f.url} className="border-b border-line pb-3">
+                <div className="flex items-baseline justify-between gap-4">
                   <span>
-                    <span className="font-serif text-lg text-ink group-hover:text-accent">
+                    <span className="font-serif text-lg text-ink">
                       {f.label}
                     </span>
                     <span className="ml-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
                       {f.source}
                     </span>
                   </span>
-                  <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
-                    ↗
-                  </span>
-                </a>
+                  {f.archive?.status === "unavailable" && (
+                    <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft whitespace-nowrap bg-line/30 px-1.5 py-0.5">
+                      requires internet
+                    </span>
+                  )}
+                </div>
+                <div className="mt-2 flex items-center gap-4">
+                  {(f.archive?.status === "full" || f.archive?.status === "excerpt") && f.archive.path && (
+                    <a
+                      href={`/${f.archive.path}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent hover:underline flex items-center gap-1"
+                    >
+                      <span>↓ Read offline</span>
+                    </a>
+                  )}
+                  <a
+                    href={f.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline flex items-center gap-1"
+                  >
+                    <span>↗ Open original</span>
+                  </a>
+                </div>
               </li>
             ))}
           </ul>
