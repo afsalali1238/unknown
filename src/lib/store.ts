@@ -1,0 +1,165 @@
+import { create } from "zustand";
+import { persist, createJSONStorage } from "zustand/middleware";
+
+export const LEITNER_DAYS = [0, 1, 3, 7, 16, 35];
+const DAY_MS = 86400000;
+
+export type ReviewEntry = {
+  box: number;
+  due: number;
+  lastResult?: "correct" | "incorrect";
+};
+
+export type ReadingItem = { id: string; label: string; url?: string; note?: string };
+export type GlossaryItem = { id: string; term: string; definition: string };
+
+export type State = {
+  gotIt: Record<string, boolean>;
+  bookmarks: Record<string, boolean>;
+  review: Record<string, ReviewEntry>;
+  streakDays: string[];
+  lastNodeId?: string;
+  readingList: ReadingItem[];
+  glossary: GlossaryItem[];
+  scratchpad: string;
+  interests: string[];
+  onboardingComplete: boolean;
+};
+
+type Actions = {
+  markGotIt: (id: string) => void;
+  toggleBookmark: (id: string) => void;
+  submitQuiz: (id: string, correct: boolean) => void;
+  visitNode: (id: string) => void;
+  setScratchpad: (v: string) => void;
+  addReading: (item: Omit<ReadingItem, "id">) => void;
+  removeReading: (id: string) => void;
+  addGlossary: (item: Omit<GlossaryItem, "id">) => void;
+  removeGlossary: (id: string) => void;
+  exportJSON: () => string;
+  importJSON: (raw: string) => boolean;
+  reset: () => void;
+  setInterests: (tags: string[]) => void;
+  toggleInterest: (tag: string) => void;
+  completeOnboarding: (tags: string[]) => void;
+  skipOnboarding: () => void;
+  redoOnboarding: () => void;
+};
+
+const initial: State = {
+  gotIt: {},
+  bookmarks: {},
+  review: {},
+  streakDays: [],
+  lastNodeId: undefined,
+  readingList: [],
+  glossary: [],
+  scratchpad: "",
+  interests: [],
+  onboardingComplete: false,
+};
+
+function todayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function touchStreak(days: string[]): string[] {
+  const t = todayISO();
+  if (days.includes(t)) return days;
+  return [...days, t].sort();
+}
+
+export const useStore = create<State & Actions>()(
+  persist(
+    (set, get) => ({
+      ...initial,
+      markGotIt: (id) =>
+        set((s) => ({ gotIt: { ...s.gotIt, [id]: true }, streakDays: touchStreak(s.streakDays) })),
+      toggleBookmark: (id) =>
+        set((s) => ({ bookmarks: { ...s.bookmarks, [id]: !s.bookmarks[id] } })),
+      submitQuiz: (id, correct) =>
+        set((s) => {
+          const prev = s.review[id] ?? { box: 0, due: Date.now() };
+          const box = correct ? Math.min(5, prev.box + 1) : 0;
+          const due = Date.now() + LEITNER_DAYS[box] * DAY_MS;
+          return {
+            review: {
+              ...s.review,
+              [id]: { box, due, lastResult: correct ? "correct" : "incorrect" },
+            },
+            gotIt: correct ? { ...s.gotIt, [id]: true } : s.gotIt,
+            streakDays: touchStreak(s.streakDays),
+          };
+        }),
+      visitNode: (id) =>
+        set((s) => ({ lastNodeId: id, streakDays: touchStreak(s.streakDays) })),
+      setScratchpad: (v) => set({ scratchpad: v }),
+      addReading: (item) =>
+        set((s) => ({
+          readingList: [...s.readingList, { ...item, id: crypto.randomUUID() }],
+        })),
+      removeReading: (id) =>
+        set((s) => ({ readingList: s.readingList.filter((r) => r.id !== id) })),
+      addGlossary: (item) =>
+        set((s) => ({
+          glossary: [...s.glossary, { ...item, id: crypto.randomUUID() }],
+        })),
+      removeGlossary: (id) =>
+        set((s) => ({ glossary: s.glossary.filter((g) => g.id !== id) })),
+      exportJSON: () => JSON.stringify(get(), null, 2),
+      importJSON: (raw) => {
+        try {
+          const parsed = JSON.parse(raw);
+          set({ ...initial, ...parsed });
+          return true;
+        } catch {
+          return false;
+        }
+      },
+      reset: () => set(initial),
+      setInterests: (tags) => set({ interests: tags }),
+      toggleInterest: (tag) =>
+        set((s) => ({
+          interests: s.interests.includes(tag)
+            ? s.interests.filter((t) => t !== tag)
+            : [...s.interests, tag],
+        })),
+      completeOnboarding: (tags) => set({ interests: tags, onboardingComplete: true }),
+      skipOnboarding: () => set({ onboardingComplete: true }),
+      redoOnboarding: () => set({ onboardingComplete: false }),
+    }),
+    {
+      name: "unknown:v1",
+      storage: createJSONStorage(() => (typeof window !== "undefined" ? localStorage : (undefined as never))),
+      skipHydration: false,
+    }
+  )
+);
+
+export function dueCount(review: Record<string, ReviewEntry>): number {
+  const now = Date.now();
+  return Object.values(review).filter((r) => r.due <= now).length;
+}
+
+export function dueIds(review: Record<string, ReviewEntry>): string[] {
+  const now = Date.now();
+  return Object.entries(review)
+    .filter(([, r]) => r.due <= now)
+    .map(([id]) => id);
+}
+
+export function currentStreak(days: string[]): number {
+  if (!days.length) return 0;
+  const set = new Set(days);
+  let count = 0;
+  const d = new Date();
+  if (!set.has(d.toISOString().slice(0, 10))) {
+    d.setDate(d.getDate() - 1);
+    if (!set.has(d.toISOString().slice(0, 10))) return 0;
+  }
+  while (set.has(d.toISOString().slice(0, 10))) {
+    count++;
+    d.setDate(d.getDate() - 1);
+  }
+  return count;
+}

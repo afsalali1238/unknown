@@ -1,0 +1,27 @@
+import { Link } from "@tanstack/react-router";
+import type { Node } from "@/data/nodes";
+import { CLUSTER_BY_ID } from "@/data/nodes";
+import { MicroLabel } from "./MicroLabel";
+
+export function RelatedCard({ node }: { node: Node }) {
+  const cluster = CLUSTER_BY_ID[node.clusterId];
+  return (
+    <Link
+      to="/node/$id"
+      params={{ id: node.id }}
+      className="group block border-t border-line py-5 first:border-t-0"
+    >
+      <MicroLabel>{cluster?.title}</MicroLabel>
+      <h4 className="mt-2 font-serif text-xl leading-snug text-ink group-hover:text-accent">
+        {node.title}
+      </h4>
+      <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+        {node.author} · {node.year} · {node.medium}
+      </p>
+      <p className="mt-2 text-sm text-ink-soft leading-relaxed">{node.thesis}</p>
+      <span className="mt-3 inline-flex font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+        Follow the thread →
+      </span>
+    </Link>
+  );
+}
