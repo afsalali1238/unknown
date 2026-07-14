@@ -5,6 +5,7 @@ import { InstallAppButton } from "@/components/InstallAppButton";
 import { useStore, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODE_BY_ID, TAGS } from "@/data/nodes";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/you")({
   head: () => ({
@@ -44,7 +45,7 @@ function YouScreen() {
           {last14Days().map((d) => {
             const on = state.streakDays.includes(d);
             return (
-              <div key={d} title={d} className={`h-2 flex-1 ${on ? "bg-accent" : "bg-line"}`} />
+              <div key={d} title={d} className={cn("h-2 flex-1", on ? "bg-accent" : "bg-line")} />
             );
           })}
         </div>
@@ -128,11 +129,12 @@ function Interests() {
             <button
               key={tag}
               onClick={() => toggleInterest(tag)}
-              className={`min-h-11 border px-3 py-2 font-serif text-sm ${
+              className={cn(
+                "min-h-11 border px-3 py-2 font-serif text-sm",
                 active
                   ? "border-ink bg-ink text-paper"
-                  : "border-line text-ink-soft hover:border-ink"
-              }`}
+                  : "border-line text-ink-soft hover:border-ink",
+              )}
             >
               {tag}
             </button>

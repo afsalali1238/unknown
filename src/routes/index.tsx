@@ -4,8 +4,10 @@ import { CLUSTERS, NODES_BY_CLUSTER, NODE_BY_ID, type Node } from "@/data/nodes"
 import { NodeCard } from "@/components/NodeCard";
 import { SearchBar } from "@/components/SearchBar";
 import { MicroLabel } from "@/components/MicroLabel";
+import { InstallAppButton } from "@/components/InstallAppButton";
 import { useStore, dueCount, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -71,7 +73,10 @@ function MapScreen() {
     <div className="px-5 pt-8">
       <header className="flex items-baseline justify-between">
         <h1 className="font-serif text-3xl leading-tight text-ink">Unknown</h1>
-        <MicroLabel>Streak · {streak}d</MicroLabel>
+        <div className="flex items-center gap-3">
+          <MicroLabel>Streak · {streak}d</MicroLabel>
+          <InstallAppButton variant="icon" />
+        </div>
       </header>
       <p className="mt-2 font-serif text-lg italic text-ink-soft">
         The latticework of powerful ideas.
@@ -106,21 +111,23 @@ function MapScreen() {
         <div className="mt-8 flex items-center gap-2">
           <button
             onClick={() => setView("for-you")}
-            className={`min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em] ${
+            className={cn(
+              "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
               view === "for-you"
                 ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink"
-            }`}
+                : "border-line text-ink-soft hover:border-ink",
+            )}
           >
             For you
           </button>
           <button
             onClick={() => setView("all")}
-            className={`min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em] ${
+            className={cn(
+              "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
               view === "all"
                 ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink"
-            }`}
+                : "border-line text-ink-soft hover:border-ink",
+            )}
           >
             Everything
           </button>

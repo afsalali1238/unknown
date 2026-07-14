@@ -38,7 +38,7 @@ const INSTRUCTIONS: Record<InstallPlatform, { title: string; steps: string[] }> 
  * route — makes the whole map, every node, and Review usable with no
  * connection at all.
  */
-export function InstallAppButton() {
+export function InstallAppButton({ variant = "button" }: { variant?: "button" | "icon" }) {
   const { platform, isStandalone, canPrompt, promptInstall } = useInstallPrompt();
   const [showInstructions, setShowInstructions] = useState(false);
 
@@ -57,19 +57,31 @@ export function InstallAppButton() {
 
   return (
     <>
-      <button
-        type="button"
-        onClick={handleClick}
-        className="flex min-h-11 w-full items-center justify-between border border-line px-4 py-3 text-left hover:border-ink"
-      >
-        <span>
-          <span className="font-serif text-base text-ink">Download for offline</span>
-          <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-            Install the app — the map, every node, and review work with no connection
+      {variant === "icon" ? (
+        <button
+          type="button"
+          onClick={handleClick}
+          aria-label="Install app"
+          title="Install app"
+          className="flex h-7 w-7 shrink-0 items-center justify-center border border-line text-ink-soft transition-colors hover:border-ink hover:text-ink"
+        >
+          <span className="font-mono text-[14px]">⇩</span>
+        </button>
+      ) : (
+        <button
+          type="button"
+          onClick={handleClick}
+          className="flex min-h-11 w-full items-center justify-between border border-line px-4 py-3 text-left hover:border-ink"
+        >
+          <span>
+            <span className="font-serif text-base text-ink">Download for offline</span>
+            <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+              Install the app — the map, every node, and review work with no connection
+            </span>
           </span>
-        </span>
-        <span className="font-mono text-lg text-accent">⇩</span>
-      </button>
+          <span className="font-mono text-lg text-accent">⇩</span>
+        </button>
+      )}
 
       {showInstructions && (
         <div

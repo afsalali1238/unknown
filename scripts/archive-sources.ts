@@ -130,6 +130,7 @@ async function run() {
     .filter((e) => e.getKind() === SyntaxKind.ObjectLiteralExpression) as ObjectLiteralExpression[];
 
   const clusterLimit = process.argv[2]; // e.g. "A" or "all"
+  const jobs: (() => Promise<any>)[] = [];
 
   for (const node of nodes) {
     const idProp = node.getProperty("id") || node.getProperty('"id"');
@@ -186,52 +187,74 @@ async function run() {
       if (!url || !sourceName || !label) continue;
 
       const { bucket } = getBucket(url);
+      jobs.push(async () => {
+        let archiveStatus = "unavailable";
+        const pathName = `content/sources/${id}-${i}.md`;
+        let contentToSave = null;
+        const retrievedDate = new Date().toISOString().split("T")[0];
 
-      let archiveStatus = "unavailable";
-      const pathName = `content/sources/${id}-${i}.md`;
-      let contentToSave = null;
-      const retrievedDate = new Date().toISOString().split("T")[0];
+        console.log(`Processing ${id}-${i}: ${url} [${bucket}]`);
 
-      console.log(`Processing ${id}-${i}: ${url} [${bucket}]`);
-
-      if (bucket === "full") {
-        contentToSave = await fetchArticle(url);
-        if (contentToSave) archiveStatus = "full";
-      } else if (bucket === "pdf-or-wiki") {
-        if (url.includes("wikipedia.org")) {
-          contentToSave = await fetchWiki(url);
-        } else {
-          contentToSave = await fetchPdf(url);
+        if (bucket === "full") {
+          contentToSave = await fetchArticle(url);
+          if (contentToSave) archiveStatus = "full";
+        } else if (bucket === "pdf-or-wiki") {
+          if (url.includes("wikipedia.org")) {
+            contentToSave = await fetchWiki(url);
+          } else {
+            contentToSave = await fetchPdf(url);
+          }
+          if (contentToSave) archiveStatus = "full";
         }
-        if (contentToSave) archiveStatus = "full";
-      }
 
-      if (archiveStatus === "full" && contentToSave) {
-        const mdContent = `---
-title: "${label.replace(/"/g, '\\"')}"
-author: "${sourceName.replace(/"/g, '\\"')}"
-source: "${sourceName.replace(/"/g, '\\"')}"
-url: ${url}
-retrieved: ${retrievedDate}
+        return {
+          frItem,
+          archiveStatus,
+          pathName,
+          retrievedDate,
+          contentToSave,
+          label,
+          sourceName,
+          url,
+        };
+      });
+    }
+  }
+
+  const MAX_CONCURRENT = 5;
+  const results = [];
+  for (let i = 0; i < jobs.length; i += MAX_CONCURRENT) {
+    const chunk = jobs.slice(i, i + MAX_CONCURRENT);
+    const chunkResults = await Promise.all(chunk.map((j) => j()));
+    results.push(...chunkResults);
+  }
+
+  for (const res of results) {
+    if (res.archiveStatus === "full" && res.contentToSave) {
+      const mdContent = `---
+title: "${res.label.replace(/"/g, '\\"')}"
+author: "${res.sourceName.replace(/"/g, '\\"')}"
+source: "${res.sourceName.replace(/"/g, '\\"')}"
+url: ${res.url}
+retrieved: ${res.retrievedDate}
 ---
 
-> Originally published by ${sourceName}, ${sourceName} — ${url}
-> Archived ${retrievedDate} for personal offline reading. All rights remain with the original author.
+> Originally published by ${res.sourceName}, ${res.sourceName} — ${res.url}
+> Archived ${res.retrievedDate} for personal offline reading. All rights remain with the original author.
 
-${contentToSave.trim()}
+${res.contentToSave.trim()}
 `;
-        await fs.writeFile(path.join(process.cwd(), pathName), mdContent, "utf-8");
+      await fs.writeFile(path.join(process.cwd(), res.pathName), mdContent, "utf-8");
 
-        frItem.addPropertyAssignment({
-          name: "archive",
-          initializer: `{ status: "full", path: "${pathName}", retrieved: "${retrievedDate}" }`,
-        });
-      } else {
-        frItem.addPropertyAssignment({
-          name: "archive",
-          initializer: `{ status: "unavailable" }`,
-        });
-      }
+      res.frItem.addPropertyAssignment({
+        name: "archive",
+        initializer: `{ status: "full", path: "${res.pathName}", retrieved: "${res.retrievedDate}" }`,
+      });
+    } else {
+      res.frItem.addPropertyAssignment({
+        name: "archive",
+        initializer: `{ status: "unavailable" }`,
+      });
     }
   }
 

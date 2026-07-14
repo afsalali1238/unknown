@@ -3,6 +3,7 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { NODES, TAGS } from "@/data/nodes";
 import { useStore } from "@/lib/store";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/onboarding")({
   head: () => ({
@@ -60,23 +61,28 @@ function OnboardingScreen() {
       </p>
 
       <div className="mt-8 flex flex-1 flex-wrap content-start gap-2">
-        {TAGS.map((tag) => {
-          const active = picked.includes(tag);
+        {TAGS.map((t) => {
+          const on = picked.includes(t);
+          const count = counts[t] ?? 0;
           return (
             <button
-              key={tag}
-              onClick={() => toggle(tag)}
-              className={`min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors ${
-                active ? "border-ink bg-ink text-paper" : "border-line text-ink hover:border-ink"
-              }`}
+              key={t}
+              onClick={() => toggle(t)}
+              className={cn(
+                "min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors",
+                on
+                  ? "border-ink bg-ink text-paper"
+                  : "border-line bg-transparent text-ink-soft hover:border-ink/30 hover:text-ink",
+              )}
             >
-              {tag}
+              {t}
               <span
-                className={`ml-2 font-mono text-[10px] uppercase tracking-[0.14em] ${
-                  active ? "text-paper/60" : "text-ink-soft"
-                }`}
+                className={cn(
+                  "ml-2 font-mono text-[10px] uppercase tracking-[0.14em]",
+                  on ? "text-paper/50" : "text-ink-soft/40",
+                )}
               >
-                {counts[tag] ?? 0}
+                {count}
               </span>
             </button>
           );
