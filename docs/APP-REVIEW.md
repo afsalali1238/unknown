@@ -11,7 +11,7 @@ Reviewed: the merged app, now at `unknown/` (renamed from `idea-weaver/`, which 
   1. `capital-map/node_modules/` still has ~178 files the sandbox can't delete — permission errors on the native `.node` binaries suggest something on your machine (a running dev server, VS Code, an antivirus scan) has them open. Close anything touching that folder and delete `capital-map/` manually.
   2. The outer `billion` repo's reorg is done on disk but **not committed** — every `git add`/`git commit` from here hit a stuck `.git/index.lock` that never cleared across 10+ attempts (same file, same timestamp every time), which means something on your end has that repo open (VS Code's Source Control panel, GitHub Desktop, or a terminal mid-command). Close that, delete `billion\.git\index.lock`, then run `git add -A && git commit -m "Consolidate into unknown/, drop retired apps"`.
 
-**One more thing worth knowing:** `unknown/` has its own separate git history connected to `github.com/afsalali1238/unknown` (and to Lovable). The outer `billion` repo you're in points to a *different* remote, `github.com/afsalali1238/Epistemoph` — it's a personal wrapper that mirrors the files but not the inner history. When you say "deploy to git," the one that actually matters for shipping is the inner `unknown` repo (that's what Lovable syncs with) — the outer repo is just your local backup/workspace. Make sure you're pushing/committing in the right one.
+**One more thing worth knowing:** `unknown/` has its own separate git history connected to `github.com/afsalali1238/unknown` (and to Lovable). The outer `billion` repo you're in points to a _different_ remote, `github.com/afsalali1238/Epistemoph` — it's a personal wrapper that mirrors the files but not the inner history. When you say "deploy to git," the one that actually matters for shipping is the inner `unknown` repo (that's what Lovable syncs with) — the outer repo is just your local backup/workspace. Make sure you're pushing/committing in the right one.
 
 ---
 
@@ -42,7 +42,7 @@ The information architecture, the node reading experience, spaced repetition, an
 
 ---
 
-*Note on verification limits: this review reads the full source tree and cross-checked every node ID against every related-link reference programmatically. It does not include a live-rendered UI screenshot or a completed `npm run build` — both were blocked by this sandbox's install/network time limits, not by anything wrong in the code.*
+_Note on verification limits: this review reads the full source tree and cross-checked every node ID against every related-link reference programmatically. It does not include a live-rendered UI screenshot or a completed `npm run build` — both were blocked by this sandbox's install/network time limits, not by anything wrong in the code._
 
 ---
 

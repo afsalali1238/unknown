@@ -32,6 +32,12 @@ export const Route = createFileRoute("/node/$id")({
 });
 
 function splitSentences(text: string): string[] {
+  if (typeof Intl !== "undefined" && Intl.Segmenter) {
+    const segmenter = new Intl.Segmenter("en", { granularity: "sentence" });
+    return Array.from(segmenter.segment(text))
+      .map((s) => s.segment.trim())
+      .filter(Boolean);
+  }
   return text.split(/(?<=[.!?])\s+/).filter(Boolean);
 }
 

@@ -1,5 +1,18 @@
 import { create } from "zustand";
-import { persist, createJSONStorage } from "zustand/middleware";
+import { persist, createJSONStorage, type StateStorage } from "zustand/middleware";
+import { get, set, del } from "idb-keyval";
+
+const idbStorage: StateStorage = {
+  getItem: async (name: string): Promise<string | null> => {
+    return (await get(name)) || null;
+  },
+  setItem: async (name: string, value: string): Promise<void> => {
+    await set(name, value);
+  },
+  removeItem: async (name: string): Promise<void> => {
+    await del(name);
+  },
+};
 
 export const LEITNER_DAYS = [0, 1, 3, 7, 16, 35];
 const DAY_MS = 86400000;
@@ -129,7 +142,7 @@ export const useStore = create<State & Actions>()(
     {
       name: "unknown:v1",
       storage: createJSONStorage(() =>
-        typeof window !== "undefined" ? localStorage : (undefined as never),
+        typeof window !== "undefined" ? idbStorage : (undefined as never),
       ),
       skipHydration: false,
     },

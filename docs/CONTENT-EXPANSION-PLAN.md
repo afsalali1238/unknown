@@ -14,16 +14,16 @@ But the existing 32 nodes' `related` arrays already reference specific IDs in th
 (e.g. node A1 links to `"I1"`) — 133 such dangling references exist in total, and their distribution
 tells you exactly how many nodes each empty cluster was originally scoped for:
 
-| Cluster | Subtitle | Nodes needed | IDs |
-|---|---|---|---|
-| I — Company Origins | "The actual pitch decks and memos that started famous companies" | 7 | I1–I7 |
-| J — Fraud & Short Cases | "How professional skeptics spot a lie in a balance sheet" | 11 | J1–J11 |
-| K — Foundational Tech | "The plumbing ideas the entire internet and modern finance sit on" | 6 | K1–K6 |
-| L — AI / ML Papers | "The technical papers that built the modern AI stack, in order" | 10 | L1–L10 |
-| M — Worldview & Futurism | "The biggest, most abstract bets on how the future unfolds" | 23 | M1–M23 |
-| N — Mind, Self & Meaning | "Six thinkers on the self, the absurd, and what it means to be a person" | 6 | N1–N6 |
-| O — The Almanack of Naval Ravikant | "Wealth, judgment, and happiness in six parts" | 6 | O1–O6 |
-| P — Practical Wisdom | "Widely-read life-advice bestsellers, closer to lived tactics than theory" | 6 | P1–P6 |
+| Cluster                            | Subtitle                                                                   | Nodes needed | IDs    |
+| ---------------------------------- | -------------------------------------------------------------------------- | ------------ | ------ |
+| I — Company Origins                | "The actual pitch decks and memos that started famous companies"           | 7            | I1–I7  |
+| J — Fraud & Short Cases            | "How professional skeptics spot a lie in a balance sheet"                  | 11           | J1–J11 |
+| K — Foundational Tech              | "The plumbing ideas the entire internet and modern finance sit on"         | 6            | K1–K6  |
+| L — AI / ML Papers                 | "The technical papers that built the modern AI stack, in order"            | 10           | L1–L10 |
+| M — Worldview & Futurism           | "The biggest, most abstract bets on how the future unfolds"                | 23           | M1–M23 |
+| N — Mind, Self & Meaning           | "Six thinkers on the self, the absurd, and what it means to be a person"   | 6            | N1–N6  |
+| O — The Almanack of Naval Ravikant | "Wealth, judgment, and happiness in six parts"                             | 6            | O1–O6  |
+| P — Practical Wisdom               | "Widely-read life-advice bestsellers, closer to lived tactics than theory" | 6            | P1–P6  |
 
 **75 nodes total.** Good news: the subtitles for N and O already describe exactly 6 parts each, which
 lines up with the 6 dangling references — the original plan for those two clusters was already this
@@ -33,7 +33,7 @@ specific, it just never got written.
 58 more, e.g. A5–A15, B5–B30 — meaning those clusters were meant to grow too. That's a good phase 2
 once I–P is done; not in scope for this round.)
 
-## 2. How to figure out *what* each numbered node should actually be
+## 2. How to figure out _what_ each numbered node should actually be
 
 Nobody left a title next to "I1" — just the ID. But the existing nodes that link to it are a real clue.
 Example already found by grepping: `A1` (Do Things That Don't Scale), `A2` (Product/Market Fit), `A3`

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 450 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500&display=swap');
+    .logo-text {
+      font-family: 'Fraunces', serif;
+      font-size: 54px;
+      font-weight: 600;
+      fill: #111110;
+    }
+    .subtitle-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      fill: #6b6b66;
+    }
+    .logo-icon {
+      color: #111110;
+    }
+  </style>
+
+  <g class="logo-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(10, 0)">
+    <!-- Bald head arc -->
+    <path d="M 25 65 A 30 30 0 1 1 75 65" stroke-width="4" />
+    <!-- Thick Mustache -->
+    <path d="M 35 58 Q 50 46 65 58" stroke-width="6" />
+    <!-- Warm Smile -->
+    <path d="M 45 66 Q 50 71 55 66" stroke-width="2.5" />
+    <!-- Beedi -->
+    <line x1="56" y1="62" x2="85" y2="72" stroke-width="2.5" />
+    <!-- Beedi Tip -->
+    <circle cx="85" cy="72" r="1.5" fill="currentColor" stroke="none" />
+    <!-- Elegant Smoke -->
+    <path d="M 86 69 Q 95 55 83 45 T 88 20" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- Brand Name -->
+  <text x="110" y="60" class="logo-text">Unknown</text>
+  <!-- Subtitle -->
+  <text x="114" y="82" class="subtitle-text">A LATTICEWORK OF POWERFUL IDEAS</text>
+</svg>

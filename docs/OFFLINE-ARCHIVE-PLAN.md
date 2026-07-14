@@ -11,7 +11,7 @@ Storage: one markdown file per archived source under `content/sources/`.
 
 ## 1. Reality check on the 230 URLs first
 
-Not everything in `furtherReading` *can* honestly become full offline text. Before writing any
+Not everything in `furtherReading` _can_ honestly become full offline text. Before writing any
 scraper, the links split into three buckets:
 
 **Archivable as full text (do this):**
@@ -23,6 +23,7 @@ Blog/essay pages with a real article body — `paulgraham.com`, `fs.blog`, `a16z
 `forum.effectivealtruism.org`, and similar.
 
 **Archivable via a different extraction path:**
+
 - PDFs (`arxiv.org`, whitepapers, VC/hedge-fund memos, academic papers) — download + extract text.
 - Wikipedia — pull the article extract via Wikipedia's own API (cleanly licensed CC BY-SA, easiest
   case in the whole list).
@@ -32,7 +33,7 @@ YouTube videos, podcasts (Bloomberg, Tim Ferriss, All-In, MacroVoices, Odd Lots,
 paywalled news (WSJ, Bloomberg, NYT, CNBC, Fortune, CNN), Netflix/IMDB. These stay exactly as they
 are today — a normal outbound link. No transcript fabrication, no scraping around paywalls.
 
-This triage has to run *before* any bulk copying, otherwise you end up with either broken scraped
+This triage has to run _before_ any bulk copying, otherwise you end up with either broken scraped
 garbage for videos/paywalls, or a false sense that "everything is offline now" when a third of it
 still requires a connection.
 
