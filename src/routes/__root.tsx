@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { BottomNav } from "@/components/BottomNav";
+import { useOfflineWarmup } from "@/hooks/useOfflineWarmup";
 
 function NotFoundComponent() {
   return (
@@ -124,6 +125,9 @@ function RootComponent() {
       navigator.serviceWorker.register("/sw.js").catch(() => {});
     }
   }, []);
+  // Silently preloads every route so the installed app works fully offline,
+  // not just the pages the user happened to open first.
+  useOfflineWarmup();
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-paper pb-32">

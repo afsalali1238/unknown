@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
+import { InstallAppButton } from "@/components/InstallAppButton";
 import { useStore, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODE_BY_ID, TAGS } from "@/data/nodes";
@@ -87,6 +88,7 @@ function YouScreen() {
       <ReadingList />
       <Glossary />
       <Scratchpad />
+      <Offline />
       <Backup />
     </div>
   );
@@ -301,6 +303,14 @@ function Scratchpad() {
         placeholder="Half-formed thoughts, connections, quotes…"
         className="w-full border border-line bg-paper p-3 font-serif text-base leading-relaxed focus:border-ink focus:outline-none"
       />
+    </Section>
+  );
+}
+
+function Offline() {
+  return (
+    <Section title="Offline">
+      <InstallAppButton />
     </Section>
   );
 }

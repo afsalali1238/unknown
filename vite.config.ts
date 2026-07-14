@@ -1,1 +1,26 @@
-⼯匠慴摮牡⁤慔卮慴正匠慴瑲⬠嘠瑩⁥潣普杩⠠潮䰠癯扡敬眠慲灰牥⸩਍⼯䐠灥潬獹琠⁯敖捲汥瘠慩渠瑩潲猧∠敶捲汥•牰獥瑥മ⼊യ⼊ 低䕔›桴獩眠獡洠杩慲整⁤景⁦汀癯扡敬搮癥瘯瑩ⵥ慴獮慴正挭湯楦⁧楷桴畯⁴⁡潷歲湩൧⼊ 灮⁭湩瑳污⁬湩琠敨洠杩慲楴湯攠癮物湯敭瑮‬潳椠⁴慨湳琧戠敥⁮敶楲楦摥眠瑩⁨⁡敲污਍⼯怠灮⁭畲⁮畢汩恤‮畒⁮桴瑡氠捯污祬戠晥牯⁥敤汰祯湩⁧胢ₔ晩椠⁴牥潲獲‬敳൥⼊ 潤獣嘯剅䕃ⵌ䥍則呁佉ⵎ剐䵏呐洮⁤潦⁲硥捡汴⁹桷瑡琠⁯慨摮愠挠摯湩⁧条湥⁴潴映硩椠⹴਍浩潰瑲笠搠晥湩䍥湯楦⁧⁽牦浯∠楶整㬢਍浩潰瑲笠琠湡瑳捡卫慴瑲素映潲⁭䀢慴獮慴正爯慥瑣猭慴瑲瀯畬楧⽮楶整㬢椊灭牯⁴⁻楮牴⁯⁽牦浯∠楮牴⽯楶整㬢਍浩潰瑲笠琠湡瑳捡剫畯整⁲⁽牦浯∠瑀湡瑳捡⽫潲瑵牥瀭畬楧⽮楶整㬢਍浩潰瑲瘠瑩剥慥瑣映潲⁭䀢楶整獪瀯畬楧⵮敲捡≴഻椊灭牯⁴慴汩楷摮獣⁳牦浯∠瑀楡睬湩捤獳瘯瑩≥഻椊灭牯⁴獴潃普杩慐桴⁳牦浯∠楶整琭捳湯楦ⵧ慰桴≳഻ഊ攊灸牯⁴敤慦汵⁴敤楦敮潃普杩笨਍†敲潳癬㩥笠਍††敤畤数›≛敲捡≴‬爢慥瑣搭浯崢ബ 素ബ 瀠畬楧獮›൛ †琠䍳湯楦偧瑡獨笨瀠潲敪瑣㩳嬠⸢琯捳湯楦⹧獪湯崢素Ⱙ਍††慴汩楷摮獣⡳Ⱙ਍††慴獮慴正潒瑵牥笨琠牡敧㩴∠敲捡≴‬畡潴潃敤灓楬瑴湩㩧琠畲⁥⥽ബ †琠湡瑳捡卫慴瑲⤨ਬ††楮牴⡯⁻牰獥瑥›瘧牥散❬素Ⱙ਍††楶整敒捡⡴Ⱙ਍†ⱝ਍⥽഻ഊ
+// Standard TanStack Start + Vite config (no Lovable wrapper).
+// Deploys to Vercel via nitro's "vercel" preset.
+//
+// NOTE: this was migrated off @lovable.dev/vite-tanstack-config without a working
+// npm install in the migration environment, so it hasn't been verified with a real
+// `npm run build`. Run that locally before deploying — if it errors, see
+// docs/VERCEL-MIGRATION-PROMPT.md for exactly what to hand a coding agent to fix it.
+import { defineConfig } from "vite";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
+import viteReact from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import tsConfigPaths from "vite-tsconfig-paths";
+
+export default defineConfig({
+  resolve: {
+    dedupe: ["react", "react-dom"],
+  },
+  plugins: [
+    tsConfigPaths({ projects: ["./tsconfig.json"] }),
+    tailwindcss(),
+    tanstackRouter({ target: "react", autoCodeSplitting: true }),
+    tanstackStart(),
+    viteReact(),
+  ],
+});
