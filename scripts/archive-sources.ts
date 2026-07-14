@@ -160,9 +160,16 @@ async function run() {
 
     for (let i = 0; i < frItems.length; i++) {
       const frItem = frItems[i];
-      // Check if archive field already exists
-      if (frItem.getProperty("archive") || frItem.getProperty('"archive"')) {
-        continue;
+      // Check if archive field already exists and file exists
+      const archiveProp = frItem.getProperty("archive") || frItem.getProperty('"archive"');
+      if (archiveProp) {
+        const idVal = idProp.getText().split(":")[1].replace(/["']/g, "").trim();
+        const expectedFile = require('path').join(process.cwd(), "content", "sources", `${idVal}-${i}.md`);
+        if (require('fs').existsSync(expectedFile)) {
+          continue;
+        } else {
+          archiveProp.remove();
+        }
       }
 
       const urlProp = frItem.getProperty("url") || frItem.getProperty('"url"');

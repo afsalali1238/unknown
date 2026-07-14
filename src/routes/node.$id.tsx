@@ -74,9 +74,9 @@ function NodeScreen() {
     visitNode(node.id);
   }, [node.id, visitNode]);
 
-  const l0Sents = splitSentences(node.layer0).length;
-  const l1Sents = splitSentences(node.layer1).length;
-  const l2Sents = splitSentences(node.layer2).length;
+  const l0Sents = splitSentences(node.layer0 ?? "").length;
+  const l1Sents = splitSentences(node.layer1 ?? "").length;
+  const l2Sents = splitSentences(node.layer2 ?? "").length;
   const totalSents = l0Sents + (showL1 ? l1Sents : 0) + (showL2 ? l2Sents : 0);
 
   const related: NodeType[] = node.related.map((id: string) => NODE_BY_ID[id]).filter(Boolean);
@@ -108,7 +108,7 @@ function NodeScreen() {
         <section className="mt-8">
           <MicroLabel>Layer 0 — Plain English</MicroLabel>
           <div className="mt-3">
-            <Sentences text={node.layer0} start={0} />
+            <Sentences text={node.layer0 ?? ""} start={0} />
           </div>
         </section>
 
@@ -120,7 +120,7 @@ function NodeScreen() {
           <section className="mt-8 border-t border-line pt-6 animate-in fade-in duration-500">
             <MicroLabel>Layer 1 — The mechanism</MicroLabel>
             <div className="mt-3">
-              <Sentences text={node.layer1} start={l0Sents} />
+              <Sentences text={node.layer1 ?? ""} start={l0Sents} />
             </div>
           </section>
         )}
@@ -134,7 +134,7 @@ function NodeScreen() {
             <section className="mt-8 border-t border-line pt-6 animate-in fade-in duration-500">
               <MicroLabel>Layer 2 — Apply it</MicroLabel>
               <div className="mt-3">
-                <Sentences text={node.layer2} start={l0Sents + l1Sents} />
+                <Sentences text={node.layer2 ?? ""} start={l0Sents + l1Sents} />
               </div>
             </section>
           ))}
