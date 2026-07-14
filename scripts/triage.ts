@@ -19,7 +19,7 @@ for (const url of new Set(sources)) {
   } catch (e) {
     domain = url;
   }
-  
+
   let bucket = "full";
   let reason = "Standard article/blog format";
 
@@ -33,7 +33,7 @@ for (const url of new Set(sources)) {
   }
   // Bucket (c): unavailable
   else if (
-    domain.includes("youtube.com") || 
+    domain.includes("youtube.com") ||
     domain.includes("youtu.be") ||
     domain.includes("ted.com") ||
     url.includes("podcast") ||

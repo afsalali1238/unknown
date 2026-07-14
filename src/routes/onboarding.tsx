@@ -24,7 +24,11 @@ function OnboardingScreen() {
 
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
-    NODES.forEach((n) => n.tags.forEach((t) => { c[t] = (c[t] ?? 0) + 1; }));
+    NODES.forEach((n) =>
+      n.tags.forEach((t) => {
+        c[t] = (c[t] ?? 0) + 1;
+      }),
+    );
     return c;
   }, []);
 
@@ -63,9 +67,7 @@ function OnboardingScreen() {
               key={tag}
               onClick={() => toggle(tag)}
               className={`min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors ${
-                active
-                  ? "border-ink bg-ink text-paper"
-                  : "border-line text-ink hover:border-ink"
+                active ? "border-ink bg-ink text-paper" : "border-line text-ink hover:border-ink"
               }`}
             >
               {tag}
@@ -84,9 +86,13 @@ function OnboardingScreen() {
       <div className="sticky bottom-0 mt-10 border-t border-line bg-paper pt-5">
         <div className="flex items-center justify-between">
           <MicroLabel>
-            {picked.length} selected{!canContinue && picked.length > 0 ? ` · pick ${MIN_PICKS - picked.length} more` : ""}
+            {picked.length} selected
+            {!canContinue && picked.length > 0 ? ` · pick ${MIN_PICKS - picked.length} more` : ""}
           </MicroLabel>
-          <button onClick={skip} className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink">
+          <button
+            onClick={skip}
+            className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink"
+          >
             Skip for now
           </button>
         </div>

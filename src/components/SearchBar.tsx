@@ -6,12 +6,13 @@ import { MicroLabel } from "./MicroLabel";
 export function SearchBar() {
   const [q, setQ] = useState("");
   const [focused, setFocused] = useState(false);
-  const results = q.trim().length >= 2
-    ? NODES.filter((n) => {
-        const s = (n.title + " " + n.author + " " + n.thesis + " " + n.layer0).toLowerCase();
-        return s.includes(q.toLowerCase());
-      }).slice(0, 8)
-    : [];
+  const results =
+    q.trim().length >= 2
+      ? NODES.filter((n) => {
+          const s = (n.title + " " + n.author + " " + n.thesis + " " + n.layer0).toLowerCase();
+          return s.includes(q.toLowerCase());
+        }).slice(0, 8)
+      : [];
 
   return (
     <div className="relative">

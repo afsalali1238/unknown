@@ -5,20 +5,18 @@ const RUNTIME = "runtime-" + VERSION;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(APP_SHELL).then((cache) => cache.addAll(["/", "/manifest.webmanifest"]))
+    caches.open(APP_SHELL).then((cache) => cache.addAll(["/", "/manifest.webmanifest"])),
   );
   self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(
-        keys
-          .filter((k) => !k.endsWith(VERSION))
-          .map((k) => caches.delete(k))
-      )
-    )
+    caches
+      .keys()
+      .then((keys) =>
+        Promise.all(keys.filter((k) => !k.endsWith(VERSION)).map((k) => caches.delete(k))),
+      ),
   );
   self.clients.claim();
 });
@@ -37,7 +35,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(RUNTIME).then((c) => c.put(req, copy));
           return res;
         })
-        .catch(() => caches.match(req).then((r) => r || caches.match("/")))
+        .catch(() => caches.match(req).then((r) => r || caches.match("/"))),
     );
     return;
   }
@@ -52,8 +50,8 @@ self.addEventListener("fetch", (event) => {
             const copy = res.clone();
             caches.open(RUNTIME).then((c) => c.put(req, copy));
             return res;
-          })
-      )
+          }),
+      ),
     );
     return;
   }
@@ -69,6 +67,6 @@ self.addEventListener("fetch", (event) => {
         })
         .catch(() => cached);
       return cached || network;
-    })
+    }),
   );
 });

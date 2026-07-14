@@ -17,11 +17,12 @@ export function NodeCard({ node }: { node: Node }) {
     >
       <div className="flex items-start justify-between gap-2">
         <MicroLabel>{node.medium}</MicroLabel>
-        {hydrated && (gotIt ? (
-          <span className="font-mono text-[11px] text-accent">✓</span>
-        ) : box > 0 ? (
-          <ProgressRing box={box} />
-        ) : null)}
+        {hydrated &&
+          (gotIt ? (
+            <span className="font-mono text-[11px] text-accent">✓</span>
+          ) : box > 0 ? (
+            <ProgressRing box={box} />
+          ) : null)}
       </div>
       <h3 className="mt-2 font-serif text-lg leading-snug text-ink group-hover:text-accent">
         {node.title}

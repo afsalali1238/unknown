@@ -44,11 +44,7 @@ function YouScreen() {
           {last14Days().map((d) => {
             const on = state.streakDays.includes(d);
             return (
-              <div
-                key={d}
-                title={d}
-                className={`h-2 flex-1 ${on ? "bg-accent" : "bg-line"}`}
-              />
+              <div key={d} title={d} className={`h-2 flex-1 ${on ? "bg-accent" : "bg-line"}`} />
             );
           })}
         </div>
@@ -107,7 +103,9 @@ function Stat({ label, value }: { label: string; value: number }) {
   return (
     <div className="border border-line p-3">
       <p className="font-mono text-3xl text-ink leading-none">{value}</p>
-      <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft">{label}</p>
+      <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft">
+        {label}
+      </p>
     </div>
   );
 }
@@ -131,7 +129,9 @@ function Interests() {
               key={tag}
               onClick={() => toggleInterest(tag)}
               className={`min-h-11 border px-3 py-2 font-serif text-sm ${
-                active ? "border-ink bg-ink text-paper" : "border-line text-ink-soft hover:border-ink"
+                active
+                  ? "border-ink bg-ink text-paper"
+                  : "border-line text-ink-soft hover:border-ink"
               }`}
             >
               {tag}
@@ -202,9 +202,17 @@ function ReadingList() {
       </form>
       <ul className="mt-4 space-y-2">
         {list.map((item) => (
-          <li key={item.id} className="flex items-baseline justify-between gap-3 border-b border-line py-2">
+          <li
+            key={item.id}
+            className="flex items-baseline justify-between gap-3 border-b border-line py-2"
+          >
             {item.url ? (
-              <a href={item.url} target="_blank" rel="noreferrer" className="font-serif text-base text-ink hover:text-accent">
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+                className="font-serif text-base text-ink hover:text-accent"
+              >
                 {item.label}
               </a>
             ) : (
@@ -341,7 +349,9 @@ function Backup() {
 
   return (
     <Section title="Backup">
-      <p className="text-sm text-ink-soft">All progress lives in this browser. Export to keep it.</p>
+      <p className="text-sm text-ink-soft">
+        All progress lives in this browser. Export to keep it.
+      </p>
       <div className="mt-4 flex gap-2">
         <button
           onClick={onExport}
@@ -367,7 +377,9 @@ function Backup() {
           }}
         />
       </div>
-      {msg && <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">{msg}</p>}
+      {msg && (
+        <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">{msg}</p>
+      )}
     </Section>
   );
 }

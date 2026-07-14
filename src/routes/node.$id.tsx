@@ -71,8 +71,7 @@ function NodeScreen() {
   const l0Sents = splitSentences(node.layer0).length;
   const l1Sents = splitSentences(node.layer1).length;
   const l2Sents = splitSentences(node.layer2).length;
-  const totalSents =
-    l0Sents + (showL1 ? l1Sents : 0) + (showL2 ? l2Sents : 0);
+  const totalSents = l0Sents + (showL1 ? l1Sents : 0) + (showL2 ? l2Sents : 0);
 
   const related: NodeType[] = node.related.map((id: string) => NODE_BY_ID[id]).filter(Boolean);
   const nextConnection = related.find((r: NodeType) => !gotItMap[r.id]) ?? related[0];
@@ -161,9 +160,7 @@ function NodeScreen() {
               <li key={f.url} className="border-b border-line pb-3">
                 <div className="flex items-baseline justify-between gap-4">
                   <span>
-                    <span className="font-serif text-lg text-ink">
-                      {f.label}
-                    </span>
+                    <span className="font-serif text-lg text-ink">{f.label}</span>
                     <span className="ml-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
                       {f.source}
                     </span>
@@ -175,16 +172,17 @@ function NodeScreen() {
                   )}
                 </div>
                 <div className="mt-2 flex items-center gap-4">
-                  {(f.archive?.status === "full" || f.archive?.status === "excerpt") && f.archive.path && (
-                    <a
-                      href={`/${f.archive.path}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent hover:underline flex items-center gap-1"
-                    >
-                      <span>↓ Read offline</span>
-                    </a>
-                  )}
+                  {(f.archive?.status === "full" || f.archive?.status === "excerpt") &&
+                    f.archive.path && (
+                      <a
+                        href={`/${f.archive.path}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent hover:underline flex items-center gap-1"
+                      >
+                        <span>↓ Read offline</span>
+                      </a>
+                    )}
                   <a
                     href={f.url}
                     target="_blank"

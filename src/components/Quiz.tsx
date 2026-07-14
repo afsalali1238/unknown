@@ -19,7 +19,8 @@ export function Quiz({ node }: { node: Node }) {
           const revealed = picked !== null;
           let cls = "border-line hover:border-ink";
           if (revealed && isCorrect) cls = "border-accent bg-accent/5";
-          else if (revealed && isPicked && !isCorrect) cls = "border-ink text-ink-soft line-through";
+          else if (revealed && isPicked && !isCorrect)
+            cls = "border-ink text-ink-soft line-through";
           return (
             <button
               key={i}
@@ -39,8 +40,12 @@ export function Quiz({ node }: { node: Node }) {
         })}
       </div>
       {picked !== null && (
-        <p className={`mt-4 font-mono text-[11px] uppercase tracking-[0.18em] ${correct ? "text-accent" : "text-ink-soft"}`}>
-          {correct ? "Correct — moved up a box" : "Not quite — resets to box 0. That's the point of review."}
+        <p
+          className={`mt-4 font-mono text-[11px] uppercase tracking-[0.18em] ${correct ? "text-accent" : "text-ink-soft"}`}
+        >
+          {correct
+            ? "Correct — moved up a box"
+            : "Not quite — resets to box 0. That's the point of review."}
         </p>
       )}
     </section>

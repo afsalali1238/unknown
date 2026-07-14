@@ -22,12 +22,11 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
     stop();
     setIdx(0);
     idxRef.current = 0;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sentenceCount]);
 
   function sentenceEls(): HTMLElement[] {
     return Array.from(document.querySelectorAll<HTMLElement>("[data-sentence]")).sort(
-      (a, b) => Number(a.dataset.sentence) - Number(b.dataset.sentence)
+      (a, b) => Number(a.dataset.sentence) - Number(b.dataset.sentence),
     );
   }
 

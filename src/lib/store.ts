@@ -91,8 +91,7 @@ export const useStore = create<State & Actions>()(
             streakDays: touchStreak(s.streakDays),
           };
         }),
-      visitNode: (id) =>
-        set((s) => ({ lastNodeId: id, streakDays: touchStreak(s.streakDays) })),
+      visitNode: (id) => set((s) => ({ lastNodeId: id, streakDays: touchStreak(s.streakDays) })),
       setScratchpad: (v) => set({ scratchpad: v }),
       addReading: (item) =>
         set((s) => ({
@@ -104,8 +103,7 @@ export const useStore = create<State & Actions>()(
         set((s) => ({
           glossary: [...s.glossary, { ...item, id: crypto.randomUUID() }],
         })),
-      removeGlossary: (id) =>
-        set((s) => ({ glossary: s.glossary.filter((g) => g.id !== id) })),
+      removeGlossary: (id) => set((s) => ({ glossary: s.glossary.filter((g) => g.id !== id) })),
       exportJSON: () => JSON.stringify(get(), null, 2),
       importJSON: (raw) => {
         try {
@@ -130,10 +128,12 @@ export const useStore = create<State & Actions>()(
     }),
     {
       name: "unknown:v1",
-      storage: createJSONStorage(() => (typeof window !== "undefined" ? localStorage : (undefined as never))),
+      storage: createJSONStorage(() =>
+        typeof window !== "undefined" ? localStorage : (undefined as never),
+      ),
       skipHydration: false,
-    }
-  )
+    },
+  ),
 );
 
 export function dueCount(review: Record<string, ReviewEntry>): number {

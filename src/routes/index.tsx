@@ -58,7 +58,8 @@ function MapScreen() {
     if (!hasInterests) return CLUSTERS;
     return [...CLUSTERS].sort(
       (a, b) =>
-        matchCount(NODES_BY_CLUSTER[b.id], interests) - matchCount(NODES_BY_CLUSTER[a.id], interests)
+        matchCount(NODES_BY_CLUSTER[b.id], interests) -
+        matchCount(NODES_BY_CLUSTER[a.id], interests),
     );
   }, [hasInterests, interests]);
 
@@ -106,7 +107,9 @@ function MapScreen() {
           <button
             onClick={() => setView("for-you")}
             className={`min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em] ${
-              view === "for-you" ? "border-ink bg-ink text-paper" : "border-line text-ink-soft hover:border-ink"
+              view === "for-you"
+                ? "border-ink bg-ink text-paper"
+                : "border-line text-ink-soft hover:border-ink"
             }`}
           >
             For you
@@ -114,7 +117,9 @@ function MapScreen() {
           <button
             onClick={() => setView("all")}
             className={`min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em] ${
-              view === "all" ? "border-ink bg-ink text-paper" : "border-line text-ink-soft hover:border-ink"
+              view === "all"
+                ? "border-ink bg-ink text-paper"
+                : "border-line text-ink-soft hover:border-ink"
             }`}
           >
             Everything

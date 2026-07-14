@@ -18,22 +18,29 @@ const rootSourcesDir = path.join(process.cwd(), "content/sources");
 async function ensureDir() {
   try {
     await fs.mkdir(rootSourcesDir, { recursive: true });
-  } catch (e) {}
+  } catch (e) {
+    // Ignore error
+  }
 }
 
-function getBucket(url: string): { bucket: "full" | "pdf-or-wiki" | "unavailable"; reason: string } {
+function getBucket(url: string): {
+  bucket: "full" | "pdf-or-wiki" | "unavailable";
+  reason: string;
+} {
   let domain = "";
   try {
     domain = new URL(url).hostname.replace(/^www\./, "");
   } catch (e) {
     domain = url;
   }
-  
-  if (url.endsWith(".pdf") || domain === "arxiv.org") return { bucket: "pdf-or-wiki", reason: "PDF" };
-  if (domain === "en.wikipedia.org" || domain === "wikipedia.org") return { bucket: "pdf-or-wiki", reason: "Wiki" };
-  
+
+  if (url.endsWith(".pdf") || domain === "arxiv.org")
+    return { bucket: "pdf-or-wiki", reason: "PDF" };
+  if (domain === "en.wikipedia.org" || domain === "wikipedia.org")
+    return { bucket: "pdf-or-wiki", reason: "Wiki" };
+
   if (
-    domain.includes("youtube.com") || 
+    domain.includes("youtube.com") ||
     domain.includes("youtu.be") ||
     domain.includes("ted.com") ||
     url.includes("podcast") ||
@@ -58,7 +65,7 @@ function getBucket(url: string): { bucket: "full" | "pdf-or-wiki" | "unavailable
   ) {
     return { bucket: "unavailable", reason: "Media/Paywall" };
   }
-  
+
   return { bucket: "full", reason: "Article" };
 }
 
@@ -66,7 +73,7 @@ async function fetchWiki(url: string) {
   try {
     const title = url.split("/wiki/")[1];
     const apiUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&titles=${title}&format=json`;
-    const res = await fetch(apiUrl, { headers: { 'User-Agent': 'Epistemoph/1.0' } });
+    const res = await fetch(apiUrl, { headers: { "User-Agent": "Epistemoph/1.0" } });
     const data = await res.json();
     const pages = data.query?.pages;
     if (!pages) return null;
@@ -84,7 +91,7 @@ async function fetchPdf(url: string) {
     if (url.includes("arxiv.org/abs/")) {
       url = url.replace("/abs/", "/pdf/") + ".pdf";
     }
-    const res = await fetch(url, { headers: { 'User-Agent': 'Epistemoph/1.0' } });
+    const res = await fetch(url, { headers: { "User-Agent": "Epistemoph/1.0" } });
     const buffer = await res.arrayBuffer();
     const data = await pdfParse(Buffer.from(buffer));
     return data.text;
@@ -96,7 +103,9 @@ async function fetchPdf(url: string) {
 
 async function fetchArticle(url: string) {
   try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Epistemoph/1.0 (offline archiver)' } });
+    const res = await fetch(url, {
+      headers: { "User-Agent": "Epistemoph/1.0 (offline archiver)" },
+    });
     const html = await res.text();
     const dom = new JSDOM(html, { url });
     const reader = new Readability(dom.window.document);
@@ -112,66 +121,79 @@ async function run() {
   await ensureDir();
   const nodesDeclaration = sourceFile.getVariableDeclaration("NODES");
   if (!nodesDeclaration) throw new Error("NODES array not found");
-  
+
   const arrayLiteral = nodesDeclaration.getInitializerIfKind(SyntaxKind.ArrayLiteralExpression);
   if (!arrayLiteral) throw new Error("NODES is not an array");
 
-  const nodes = arrayLiteral.getElements().filter(e => e.getKind() === SyntaxKind.ObjectLiteralExpression) as ObjectLiteralExpression[];
-  
+  const nodes = arrayLiteral
+    .getElements()
+    .filter((e) => e.getKind() === SyntaxKind.ObjectLiteralExpression) as ObjectLiteralExpression[];
+
   const clusterLimit = process.argv[2]; // e.g. "A" or "all"
-  
+
   for (const node of nodes) {
     const idProp = node.getProperty("id") || node.getProperty('"id"');
     const clusterIdProp = node.getProperty("clusterId") || node.getProperty('"clusterId"');
     if (!idProp || !clusterIdProp) continue;
-    
+
     // Quick extract of id/clusterId value
     const id = idProp.getText().split(":")[1].replace(/["']/g, "").trim();
     const clusterId = clusterIdProp.getText().split(":")[1].replace(/["']/g, "").trim();
-    
+
     if (clusterLimit && clusterLimit !== "all" && clusterId !== clusterLimit) {
       continue;
     }
-    
-    const furtherReadingProp = node.getProperty("furtherReading") || node.getProperty('"furtherReading"');
+
+    const furtherReadingProp =
+      node.getProperty("furtherReading") || node.getProperty('"furtherReading"');
     if (!furtherReadingProp) continue;
-    
+
     const frArray = furtherReadingProp.getFirstChildByKind(SyntaxKind.ArrayLiteralExpression);
     if (!frArray) continue;
-    
-    const frItems = frArray.getElements().filter(e => e.getKind() === SyntaxKind.ObjectLiteralExpression) as ObjectLiteralExpression[];
-    
+
+    const frItems = frArray
+      .getElements()
+      .filter(
+        (e) => e.getKind() === SyntaxKind.ObjectLiteralExpression,
+      ) as ObjectLiteralExpression[];
+
     for (let i = 0; i < frItems.length; i++) {
       const frItem = frItems[i];
       // Check if archive field already exists
       if (frItem.getProperty("archive") || frItem.getProperty('"archive"')) {
         continue;
       }
-      
+
       const urlProp = frItem.getProperty("url") || frItem.getProperty('"url"');
       const sourceProp = frItem.getProperty("source") || frItem.getProperty('"source"');
       const labelProp = frItem.getProperty("label") || frItem.getProperty('"label"');
       if (!urlProp || !sourceProp || !labelProp) continue;
-      
-      const urlInit = urlProp.getInitializerIfKind(SyntaxKind.StringLiteral) || urlProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
-      const sourceInit = sourceProp.getInitializerIfKind(SyntaxKind.StringLiteral) || sourceProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
-      const labelInit = labelProp.getInitializerIfKind(SyntaxKind.StringLiteral) || labelProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
-      
+
+      const urlInit =
+        urlProp.getInitializerIfKind(SyntaxKind.StringLiteral) ||
+        urlProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
+      const sourceInit =
+        sourceProp.getInitializerIfKind(SyntaxKind.StringLiteral) ||
+        sourceProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
+      const labelInit =
+        labelProp.getInitializerIfKind(SyntaxKind.StringLiteral) ||
+        labelProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
+
       const url = urlInit ? urlInit.getLiteralValue() : "";
       const sourceName = sourceInit ? sourceInit.getLiteralValue() : "";
       const label = labelInit ? labelInit.getLiteralValue() : "";
-      
+
       if (!url || !sourceName || !label) continue;
-      
+
       const { bucket } = getBucket(url);
-      
+
       let archiveStatus = "unavailable";
-      let pathName = `content/sources/${id}-${i}.md`;
+      const pathName = `content/sources/${id}-${i}.md`;
       let contentToSave = null;
-      let retrievedDate = new Date().toISOString().split("T")[0];
-      
+      const retrievedDate = new Date().toISOString().split("T")[0];
+
       console.log(`Processing ${id}-${i}: ${url} [${bucket}]`);
-      
+
       if (bucket === "full") {
         contentToSave = await fetchArticle(url);
         if (contentToSave) archiveStatus = "full";
@@ -183,7 +205,7 @@ async function run() {
         }
         if (contentToSave) archiveStatus = "full";
       }
-      
+
       if (archiveStatus === "full" && contentToSave) {
         const mdContent = `---
 title: "${label.replace(/"/g, '\\"')}"
@@ -199,20 +221,20 @@ retrieved: ${retrievedDate}
 ${contentToSave.trim()}
 `;
         await fs.writeFile(path.join(process.cwd(), pathName), mdContent, "utf-8");
-        
+
         frItem.addPropertyAssignment({
           name: "archive",
-          initializer: `{ status: "full", path: "${pathName}", retrieved: "${retrievedDate}" }`
+          initializer: `{ status: "full", path: "${pathName}", retrieved: "${retrievedDate}" }`,
         });
       } else {
         frItem.addPropertyAssignment({
           name: "archive",
-          initializer: `{ status: "unavailable" }`
+          initializer: `{ status: "unavailable" }`,
         });
       }
     }
   }
-  
+
   await sourceFile.save();
   console.log("Done.");
 }

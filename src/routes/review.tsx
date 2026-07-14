@@ -67,7 +67,9 @@ function ReviewScreen() {
   return (
     <div className="px-5 pt-8 pb-10">
       <div className="flex items-baseline justify-between">
-        <MicroLabel>Review · {idx + 1} / {queue.length}</MicroLabel>
+        <MicroLabel>
+          Review · {idx + 1} / {queue.length}
+        </MicroLabel>
         <MicroLabel>Streak · {streak}d</MicroLabel>
       </div>
 

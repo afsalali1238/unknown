@@ -58,9 +58,7 @@ export function useOfflineWarmup() {
       await router.preloadRoute({ to: "/you" }).catch(() => {});
       if (cancelled) return;
       if (firstNodeId) {
-        await router
-          .preloadRoute({ to: "/node/$id", params: { id: firstNodeId } })
-          .catch(() => {});
+        await router.preloadRoute({ to: "/node/$id", params: { id: firstNodeId } }).catch(() => {});
       }
     }
 
