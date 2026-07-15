@@ -13,9 +13,11 @@ Run a proper accessibility audit before a full public launch. Use automated tool
 
 ## 2. Split Data Bundle (`nodes.ts`)
 
-**Current State:** The entire knowledge graph (currently ~257 nodes) is bundled into a single JavaScript chunk from `src/data/nodes.ts`. This compiles to roughly 660KB raw (226KB gzipped) and loads in full on every visit.
+**Current State:** The entire knowledge graph (currently 270 nodes, as of the 2026-07-15 S-series
+content add) is bundled into a single JavaScript chunk from `src/data/nodes.ts`. The source file
+itself is ~765KB raw / ~233KB gzipped and loads in full on every visit.
 
 **Deferred Work:** The monolithic `nodes.ts` needs to be split into per-cluster JSON files, enabling lazy-loading of a cluster's nodes only when its section is opened in Explore or a node within it is visited.
 
 **Trigger Condition / "Done" Definition:**
-Implement this chunk splitting and lazy-loading architecture once the node count meaningfully exceeds ~300-400. At the current size (226KB gzipped), the performance impact is negligible, but it grows linearly. Note that this change will require re-architecting the Service Worker to pre-cache these chunks dynamically for the offline PWA experience.
+Implement this chunk splitting and lazy-loading architecture once the node count meaningfully exceeds ~300-400. Node count has grown from ~257 to 270 in the most recent content session alone, so re-check this number before assuming there's headroom. At the current size (~233KB gzipped), the performance impact is still negligible, but it grows linearly. Note that this change will require re-architecting the Service Worker to pre-cache these chunks dynamically for the offline PWA experience.

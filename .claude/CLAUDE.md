@@ -48,10 +48,12 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   `furtherReading` entries. `docs/*.md` — planning docs; `PRODUCT-BRIEF.md` is authoritative,
   `LOVABLE-PROMPT*.md` and `big-ideas-app-spec.md` are retired-app history, kept for reference.
 - `scripts/` — content pipeline, run manually, not wired into CI: `triage.ts` (classify source
-  URLs), `fetch-epistemoph.js` / `merge-epistemoph.js` (pull + merge legacy Epistemoph content),
-  `archive-sources.ts` (snapshot sources), `build-nodes-ts.ts` (regenerate `nodes.ts`),
-  `rename-md.ts`, `restore-soft-clusters.ts`, `update-clusters.ts`. Ask before running these —
-  they mutate `content/` and `src/data/nodes.ts` in bulk.
+  URLs), `fetch-epistemoph.js` / `merge-epistemoph.js` / `extract-epistemoph.js` (pull + merge
+  legacy Epistemoph content), `archive-sources.ts` (snapshot sources), `build-nodes-ts.ts`
+  (regenerate `nodes.ts`), `rename-md.ts`, `restore-soft-clusters.ts`, `update-clusters.ts`,
+  `inject-batch1.ts`–`inject-batch5.ts` (fold `batch*-quizzes.json` / `missing-quizzes.json`
+  quiz data into `nodes.ts`). Ask before running these — they mutate `content/` and
+  `src/data/nodes.ts` in bulk.
 
 ## Design principles (from PRODUCT-BRIEF.md — obey these in UI work)
 
