@@ -9637,6 +9637,1154 @@ export const NODES: Node[] = [
       },
     ],
   },
+  {
+    id: "AA1",
+    clusterId: "L",
+    title: "The Cynefin Framework",
+    author: "Dave Snowden",
+    year: 1999,
+    medium: "Framework",
+    category: "Decision-Making",
+    thesis:
+      "You cannot manage a complex system the same way you manage a complicated one. You must adapt your decision-making to the domain you are in.",
+    layer0:
+      "The Cynefin framework helps leaders figure out what kind of problem they are facing so they can make better decisions. It divides situations into five domains: Clear, Complicated, Complex, Chaotic, and Confusion. If you treat a chaotic situation like a clear one, you will fail.",
+    layer1:
+      "In the Clear domain, cause and effect are obvious—you follow best practices. In the Complicated domain, cause and effect require expert analysis—you use good practices. In the Complex domain (like markets or culture), cause and effect are only clear in hindsight—you must probe, sense, and respond through safe-to-fail experiments. In the Chaotic domain, there is no relationship between cause and effect—you must act immediately to establish order.",
+    layer2:
+      "Most management failures happen when leaders treat a Complex problem (like a pandemic or a shifting market) as if it were merely Complicated, trying to solve it with rigid plans and expert committees. The Cynefin framework teaches you that in complex environments, you cannot plan your way to success; you must experiment your way forward, constantly probing the system and amplifying what works.",
+    quiz: {
+      question:
+        "According to the Cynefin Framework, what is the correct approach to decision-making in a 'Complex' domain?",
+      options: [
+        "Analyze the situation using experts and create a rigid long-term plan.",
+        "Act immediately with extreme force to establish order.",
+        "Categorize the problem and apply established best practices.",
+        "Probe the system with safe-to-fail experiments, sense the reaction, and respond.",
+      ],
+      correctIndex: 3,
+      explanation:
+        "Complex systems (like human behavior or markets) cannot be predicted or analyzed in advance. You must run small, safe experiments to 'probe' the system and see how it reacts before committing.",
+    },
+    related: ["J2", "J3"],
+    furtherReading: [
+      {
+        label: "Cynefin framework",
+        source: "Untools",
+        url: "https://untools.co/cynefin-framework",
+      },
+    ],
+    tags: ["Decision-Making", "Cognitive Biases & Models", "Markets & Narrative"],
+  },
+  {
+    id: "AA2",
+    clusterId: "J",
+    title: "The Iceberg Model",
+    author: "Edward T. Hall",
+    year: 1976,
+    medium: "Framework",
+    category: "Systems Thinking",
+    thesis:
+      "Events are just the tip of the iceberg. To truly solve a problem, you must look below the surface at the patterns, structures, and mental models driving it.",
+    layer0:
+      "When a bad event happens, our instinct is to simply react to it. But the Iceberg Model teaches us that single events are always driven by deeper forces. If you only treat the symptoms (the tip of the iceberg), the problem will keep happening.",
+    layer1:
+      "The model has four levels. 1) Events: What just happened? (React). 2) Patterns: Has this happened before? (Anticipate). 3) Underlying Structures: What rules, incentives, or physical realities caused this pattern? (Design). 4) Mental Models: What beliefs, values, or assumptions keep the structure in place? (Transform).",
+    layer2:
+      "For example, if a server crashes, the event is the crash (restart it). The pattern is that it crashes every Friday at 5 PM. The structure is that an automated backup script is overloading the CPU. The mental model is the engineering team prioritizing feature speed over system reliability. Solving the problem at the mental model level prevents a dozen other structural issues from ever occurring.",
+    quiz: {
+      question: "In the Iceberg Model, what is the deepest level that drives all the others?",
+      options: ["Underlying Structures", "Patterns and Trends", "Mental Models", "Events"],
+      correctIndex: 2,
+      explanation:
+        "Mental models (our core beliefs, values, and assumptions) are the foundation of the iceberg. They dictate the structures we build, which create the patterns of behavior, which ultimately result in single events.",
+    },
+    related: ["M1", "M2"],
+    furtherReading: [
+      {
+        label: "Iceberg Model",
+        source: "Untools",
+        url: "https://untools.co/iceberg-model",
+      },
+    ],
+    tags: ["Incentives & Systems", "Cognitive Biases & Models"],
+  },
+  {
+    id: "AA3",
+    clusterId: "L",
+    title: "The Hard Choice Model",
+    author: "Ruth Chang",
+    year: 2014,
+    medium: "Framework",
+    category: "Decision-Making",
+    thesis:
+      "Hard choices aren't hard because you are stupid; they are hard because there is no objectively 'best' option. You must become the author of your own life by choosing what matters to you.",
+    layer0:
+      "When we struggle to make a decision, we often assume there is a 'right' answer we just haven't found yet. The Hard Choice Model reveals that in truly hard choices, the options are simply on par with each other. Neither is clearly better overall.",
+    layer1:
+      "Easy choices happen when one option is objectively better. Hard choices happen when options are fundamentally different but carry equal weight (like choosing between being a lawyer in the city or an artist in the country). Because science or logic cannot dictate which is 'better,' you cannot use a pros-and-cons list to solve it.",
+    layer2:
+      "When faced with a hard choice, you shouldn't look outward for the answer; you must look inward. Hard choices are opportunities to invent yourself. By committing to one option over another when there is no objective 'right' answer, you are actively choosing who you want to be. The difficulty is a feature, not a bug.",
+    quiz: {
+      question: "According to the Hard Choice Model, why do we struggle with hard choices?",
+      options: [
+        "Because we lack the necessary data to evaluate the options.",
+        "Because we are too emotional to make rational decisions.",
+        "Because the options are 'on par' and there is no objectively better choice.",
+        "Because our cognitive biases blind us to the obvious right answer.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Hard choices exist because the alternatives are fundamentally different but hold equal overall value. Since neither is better, you must use your own agency to decide which values you want to embody.",
+    },
+    related: ["O4", "O5"],
+    furtherReading: [
+      {
+        label: "Hard Choice Model",
+        source: "Untools",
+        url: "https://untools.co/hard-choice-model",
+      },
+    ],
+    tags: ["Decision-Making", "Meaning & Self"],
+  },
+  {
+    id: "AA4",
+    clusterId: "K",
+    title: "The Tail End",
+    author: "Tim Urban",
+    year: 2015,
+    medium: "Essay",
+    category: "Life & Time",
+    thesis:
+      "When you measure your life in events rather than years, you realize you have already consumed the vast majority of your time with the people you love.",
+    layer0:
+      "We assume we have plenty of time left because we measure life in years. But if you are 30 years old, and you see your parents for one week a year, and they live for 30 more years, you don't have '30 years' left with them. You have exactly 30 weeks.",
+    layer1:
+      "For the first 18 years of your life, you spend almost every day with your parents. By the time you graduate high school, you have used up roughly 90% of your total in-person time with them. If you only see them on holidays, you are currently in the 'tail end' of your relationship.",
+    layer2:
+      "This mathematical framing applies to everything. How many more times will you swim in the ocean? Read a book? See your childhood friends? When you visualize your remaining time in blocks, you stop taking it for granted. It forces a brutal but necessary prioritization: you must actively choose where to allocate your remaining blocks, because the default path leads to regret.",
+    quiz: {
+      question: "What is the core realization of 'The Tail End' regarding time spent with parents?",
+      options: [
+        "You will spend an equal amount of time with them in every decade of your life.",
+        "The quality of time matters more than the quantity of time.",
+        "By the time you turn 18, you have already used up roughly 90% of your in-person time with them.",
+        "It is impossible to predict how much time you have left, so you shouldn't try.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Because you live with them constantly for 18 years, the sheer volume of days spent together dwarfs the occasional visits you will have for the rest of their lives. You are in the final 10% of your time together.",
+    },
+    related: ["P1", "P2"],
+    furtherReading: [
+      {
+        label: "The Tail End",
+        source: "Wait But Why",
+        url: "https://waitbutwhy.com/2015/12/the-tail-end.html",
+      },
+    ],
+    tags: ["Meaning & Self", "Compounding & Patience"],
+  },
+  {
+    id: "AA5",
+    clusterId: "A",
+    title: "The Cook and the Chef",
+    author: "Tim Urban",
+    year: 2015,
+    medium: "Essay",
+    category: "First Principles",
+    thesis:
+      "A Cook reasons by analogy, blindly following existing recipes. A Chef reasons from first principles, inventing new recipes from raw ingredients.",
+    layer0:
+      "Most people go through life acting like Cooks. They look at what other people are doing, copy the 'recipe' for success, and hope it works. But the visionaries who change the world operate like Chefs: they strip problems down to their fundamental truths and build up from there.",
+    layer1:
+      "Reasoning by analogy (the Cook) is highly efficient. It's how human culture survives—we don't need to reinvent the wheel every generation. But it traps us in conventional wisdom. First principles thinking (the Chef) is incredibly energy-intensive. You have to ignore what everyone else assumes is true and prove the physics or economics for yourself.",
+    layer2:
+      "Elon Musk used Chef thinking to build SpaceX. Everyone said rockets were wildly expensive. Musk broke a rocket down to its first principles: what are the raw materials (aluminum, titanium, carbon fiber)? What do they cost on the commodities market? It turned out the materials were only 2% of the rocket's cost. The other 98% was just the 'Cook's recipe' of doing things the way the aerospace industry had always done them.",
+    quiz: {
+      question:
+        "According to 'The Cook and the Chef', what is the defining characteristic of a Chef?",
+      options: [
+        "They follow industry best practices more efficiently than anyone else.",
+        "They reason by analogy to quickly solve complex problems.",
+        "They break problems down to fundamental truths and reason from first principles.",
+        "They rely heavily on the wisdom of crowds and social consensus.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Unlike the Cook who copies existing recipes (analogy), the Chef strips everything away to the raw ingredients (first principles) and invents entirely new ways of doing things.",
+    },
+    related: ["A2", "A5"],
+    furtherReading: [
+      {
+        label: "The Cook and the Chef",
+        source: "Wait But Why",
+        url: "https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html",
+      },
+    ],
+    tags: ["First-Principles Thinking", "Startups & Founders"],
+  },
+  {
+    id: "AA6",
+    clusterId: "N",
+    title: "The Instant Gratification Monkey",
+    author: "Tim Urban",
+    year: 2013,
+    medium: "Essay",
+    category: "Productivity",
+    thesis:
+      "Procrastination is a battle between the Rational Decision Maker and the Instant Gratification Monkey, mediated only by the Panic Monster.",
+    layer0:
+      "Inside the brain of a procrastinator, the 'Rational Decision Maker' wants to do productive work. But he shares the steering wheel with the 'Instant Gratification Monkey,' who only cares about maximizing ease and fun in the present moment.",
+    layer1:
+      "The Monkey has no memory of the past and no vision of the future. When you need to work, the Monkey takes the wheel and drives you into the 'Dark Playground'—a place where leisure activities happen when you're supposed to be working, filling you with guilt and anxiety. The only thing the Monkey is terrified of is the 'Panic Monster.'",
+    layer2:
+      "The Panic Monster usually stays dormant but wakes up when a deadline gets dangerously close. The Monkey flees in terror, allowing the Rational Decision Maker to finally take control and finish the work in a stressful frenzy. However, this system catastrophically fails for long-term goals without deadlines (like getting in shape or writing a book), because the Panic Monster never wakes up.",
+    quiz: {
+      question:
+        "In the procrastination model, why is it so difficult to accomplish long-term goals like writing a novel?",
+      options: [
+        "The Rational Decision Maker lacks the intelligence to plan long-term.",
+        "The Dark Playground is too addictive to ever escape.",
+        "Because there is no external deadline, the Panic Monster never wakes up to scare away the Monkey.",
+        "The Instant Gratification Monkey slowly learns to defeat the Panic Monster over time.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "The entire system relies on the Panic Monster waking up to enforce deadlines. For open-ended, lifelong goals, there is no deadline to trigger the panic, so the Monkey stays in control indefinitely.",
+    },
+    related: ["N1", "N2"],
+    furtherReading: [
+      {
+        label: "Why Procrastinators Procrastinate",
+        source: "Wait But Why",
+        url: "https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html",
+      },
+    ],
+    tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+  },
+  {
+    id: "AA7",
+    clusterId: "N",
+    title: "The Generation Effect",
+    author: "Anne-Laure Le Cunff",
+    year: 2020,
+    medium: "Essay",
+    category: "Learning",
+    thesis:
+      "You remember information significantly better if you actively generate it from your own mind rather than passively reading it.",
+    layer0:
+      "The Generation Effect proves that reading a textbook over and over is a terrible way to study. Instead, if you force your brain to actually generate the answer (like using a flashcard or taking a practice quiz), your retention skyrockets.",
+    layer1:
+      "When you passively read, your brain experiences the illusion of competence ('I recognize this, so I must know it'). But recognition is not recall. Actively generating an answer forces your brain to build and strengthen the neural pathways required to retrieve that information later.",
+    layer2:
+      "To use the Generation Effect, you must embrace difficulty. When you finish reading an article, don't just highlight it. Close the tab and force yourself to write a three-sentence summary from memory. The mental strain you feel while struggling to remember is the exact physical mechanism of learning taking place.",
+    quiz: {
+      question: "According to the Generation Effect, why is highlighting a poor study method?",
+      options: [
+        "It focuses too much on visual learning rather than auditory.",
+        "It causes the brain to experience the illusion of competence because recognition is mistaken for recall.",
+        "It takes up too much time compared to speed-reading.",
+        "The bright colors distract the brain from forming long-term memories.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Highlighting is a passive activity. You recognize the words on the page, but because you aren't forcing your brain to generate the information from scratch, you aren't building retrieval pathways.",
+    },
+    related: ["U1"],
+    furtherReading: [
+      {
+        label: "The Generation Effect",
+        source: "Ness Labs",
+        url: "https://nesslabs.com/generation-effect",
+      },
+    ],
+    tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+  },
+  {
+    id: "AA8",
+    clusterId: "U",
+    title: "The Zeigarnik Effect",
+    author: "Bluma Zeigarnik",
+    year: 1927,
+    medium: "Psychology",
+    category: "Cognition",
+    thesis:
+      "The human brain remembers uncompleted or interrupted tasks significantly better than completed ones, causing lingering anxiety until the loop is closed.",
+    layer0:
+      "Have you ever laid in bed trying to sleep, but your brain kept reminding you of an email you forgot to send? That's the Zeigarnik Effect. Your brain holds onto unfinished tasks, keeping them active in your short-term memory and causing stress.",
+    layer1:
+      "Bluma Zeigarnik, a psychologist, noticed that waiters could remember incredibly complex orders perfectly—until the bill was paid. The moment the transaction was completed, they forgot everything. The brain dedicates cognitive resources to 'open loops' and immediately dumps them when the loop closes.",
+    layer2:
+      "You can hack the Zeigarnik Effect to your advantage. First, to stop the anxiety of uncompleted tasks, write them down. A trusted external system (like a to-do list) acts as a 'closed loop' for the brain, allowing it to let go. Second, to beat procrastination, just start a task for 5 minutes and stop. The open loop will drive you crazy until you go back and finish it.",
+    quiz: {
+      question: "How can you use the Zeigarnik Effect to overcome procrastination?",
+      options: [
+        "By finishing all your easy tasks first to build momentum.",
+        "By refusing to write anything down so your brain remembers it.",
+        "By starting a task for just five minutes and then pausing, creating an open loop that your brain will want to close.",
+        "By creating strict deadlines managed by the Panic Monster.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Once a task is started but left incomplete, the Zeigarnik Effect kicks in. Your brain will hold onto the 'open loop' and nag you to finish it, overriding your procrastination.",
+    },
+    related: ["N2"],
+    furtherReading: [
+      {
+        label: "The Zeigarnik Effect",
+        source: "Ness Labs",
+        url: "https://nesslabs.com/zeigarnik-effect",
+      },
+    ],
+    tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+  },
+  {
+    id: "AA9",
+    clusterId: "T",
+    title: "Networked Note-Taking",
+    author: "Anne-Laure Le Cunff",
+    year: 2020,
+    medium: "Essay",
+    category: "Productivity",
+    thesis:
+      "The brain doesn't work in rigid, hierarchical folders; it works through associative links. Your note-taking system should do the same.",
+    layer0:
+      "Most people organize their digital files like physical filing cabinets: putting documents inside folders inside folders. But what if a note belongs in two folders? Networked note-taking solves this by letting you link notes directly to each other, like Wikipedia.",
+    layer1:
+      "Using bi-directional links (where Note A links to Note B, and Note B automatically knows Note A linked to it), you create a digital graph of your knowledge. This prevents ideas from dying in forgotten folders. Instead, they naturally surface when you explore related topics.",
+    layer2:
+      "The power of networked thought is emergent discovery. Over time, as you interlink concepts from books, podcasts, and personal reflections, entirely new ideas emerge from the intersections. You are no longer just storing information; you are building a 'second brain' that thinks alongside you.",
+    quiz: {
+      question:
+        "What is the primary flaw of traditional, folder-based note-taking according to the networked thought model?",
+      options: [
+        "Folders take up too much hard drive space.",
+        "Folders force a single, rigid hierarchy, whereas human thoughts are associative and often belong in multiple contexts.",
+        "Folders cannot be searched as quickly as a database.",
+        "Folders are too easy to accidentally delete.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Ideas rarely fit perfectly into a single category. By forcing a note into a single folder, you artificially sever its connection to all the other contexts it might be relevant to.",
+    },
+    related: ["N1", "T1"],
+    furtherReading: [
+      {
+        label: "Networked Note-taking",
+        source: "Ness Labs",
+        url: "https://nesslabs.com/networked-note-taking",
+      },
+    ],
+    tags: ["Craft & Deep Work"],
+  },
+  {
+    id: "AA10",
+    clusterId: "Q",
+    title: "Identity-Based Habits",
+    author: "James Clear",
+    year: 2018,
+    medium: "Book Concept",
+    category: "Habits",
+    thesis:
+      "True behavior change is identity change. If you don't shift how you view yourself, you will eventually sabotage your new habits to align with your old identity.",
+    layer0:
+      "When trying to change, most people focus on the outcome ('I want to lose weight') and the process ('I will run every day'). But they ignore the deepest layer: identity. If you still see yourself as 'a lazy person trying to run,' the habit won't stick.",
+    layer1:
+      "There is a massive psychological difference between saying 'I'm trying to quit smoking' and 'I'm not a smoker.' The first person still identifies as a smoker who is resisting temptation. The second person has fundamentally shifted their identity.",
+    layer2:
+      "Every action you take is a vote for the type of person you wish to become. You do not need a unanimous vote to win an election; you just need a majority. By focusing on small, daily habits (like writing one sentence), you aren't just producing output—you are slowly casting enough votes to convince yourself that you are, in fact, a writer.",
+    quiz: {
+      question:
+        "In the framework of Identity-Based Habits, how do your actions relate to your identity?",
+      options: [
+        "Actions are irrelevant; only your internal mindset matters.",
+        "Your actions are the predetermined result of your genetic identity.",
+        "Every action is a 'vote' for the type of person you wish to become, slowly building evidence of your new identity.",
+        "You must fully believe in your new identity before you take any actions.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "You cannot just 'think' your way into a new identity. You have to prove it to yourself through small, consistent actions that act as evidence.",
+    },
+    related: ["M1", "P3"],
+    furtherReading: [
+      {
+        label: "Identity-Based Habits",
+        source: "James Clear",
+        url: "https://jamesclear.com/identity-based-habits",
+      },
+    ],
+    tags: ["Meaning & Self", "Compounding & Patience"],
+  },
+  {
+    id: "AA11",
+    clusterId: "K",
+    title: "The Plateau of Latent Potential",
+    author: "James Clear",
+    year: 2018,
+    medium: "Book Concept",
+    category: "Habits",
+    thesis:
+      "Habits often appear to make no difference until you cross a critical threshold. People quit because they expect linear progress, but compounding is an exponential curve.",
+    layer0:
+      "Imagine an ice cube sitting on a table in a 25-degree room. You heat the room to 26... 27... 28... 29... 30... 31. Nothing happens. Then, at 32 degrees, the ice melts. The work wasn't wasted; it was just being stored.",
+    layer1:
+      "When we start a new habit, we expect progress to be a straight, diagonal line upward. But the reality is a curving exponential graph. In the early days, the curve is so flat it looks like nothing is happening. This gap between what we expect and what actually happens is called the 'Valley of Disappointment.'",
+    layer2:
+      "Because society only celebrates the dramatic moment the ice melts, we falsely believe that success is an overnight event. But true masters understand that the weeks of showing up and seeing absolutely zero visible results are the exact prerequisite for the sudden breakthrough.",
+    quiz: {
+      question:
+        "Why do most people quit new habits early, according to the Plateau of Latent Potential?",
+      options: [
+        "They set goals that are physically impossible to achieve.",
+        "They expect linear progress and get discouraged in the 'Valley of Disappointment' when the exponential curve starts flat.",
+        "They run out of willpower because they didn't rely on systems.",
+        "They fail to establish an identity-based goal.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Human intuition expects a 1-to-1 return on effort (linear). But compounding habits are exponential, meaning early efforts yield almost no visible results until they hit an inflection point.",
+    },
+    related: ["K1", "K2"],
+    furtherReading: [
+      {
+        label: "Continuous Improvement",
+        source: "James Clear",
+        url: "https://jamesclear.com/continuous-improvement",
+      },
+    ],
+    tags: ["Compounding & Patience"],
+  },
+  {
+    id: "AA12",
+    clusterId: "Q",
+    title: "Habit Stacking",
+    author: "James Clear",
+    year: 2018,
+    medium: "Book Concept",
+    category: "Habits",
+    thesis:
+      "The best way to build a new habit is to attach it to a habit you already do every single day.",
+    layer0:
+      "If you want to start meditating, don't just say 'I will meditate more.' It's too vague. Instead, use Habit Stacking: 'After I pour my morning cup of coffee, I will meditate for one minute.'",
+    layer1:
+      "Your brain has already built strong neural pathways for the habits you do effortlessly every day (brushing your teeth, closing your laptop, drinking coffee). Habit stacking uses these existing pathways as a reliable trigger for a new behavior.",
+    layer2:
+      "The key to habit stacking is specificity and scale. The cue must be highly specific, and the new habit must be laughably small. Don't stack 'After dinner, I will work out for an hour.' Stack 'When I put my dinner plate in the sink, I will immediately do one push-up.' Once the stack is solid, you can expand it.",
+    quiz: {
+      question: "What is the psychological mechanism that makes Habit Stacking work?",
+      options: [
+        "It leverages the Zeigarnik Effect to create anxiety.",
+        "It relies on the Panic Monster to enforce deadlines.",
+        "It uses the strong neural pathways of an existing daily routine to trigger a new behavior.",
+        "It focuses on visualizing the end goal to generate motivation.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "By tying a new, fragile habit to an old, hardened habit, you borrow the neurological strength and reliability of the existing behavior to serve as the trigger.",
+    },
+    related: ["M2"],
+    furtherReading: [
+      {
+        label: "Habit Stacking",
+        source: "James Clear",
+        url: "https://jamesclear.com/habit-stacking",
+      },
+    ],
+    tags: ["Incentives & Systems", "Craft & Deep Work"],
+  },
+  {
+    id: "AA13",
+    clusterId: "O",
+    title: "Panpsychism",
+    author: "Philip Goff",
+    year: 2019,
+    medium: "Philosophy",
+    category: "Metaphysics",
+    thesis:
+      "Consciousness is not an illusion generated by complex brains; it is a fundamental property of all physical matter in the universe.",
+    layer0:
+      "Science can explain the physical mechanics of the brain, but it cannot explain why those mechanics are accompanied by the subjective feeling of being alive (the 'Hard Problem'). Panpsychism argues that we can't explain it because we have the equation backward.",
+    layer1:
+      "Instead of assuming that dead, unconscious matter somehow magically generates consciousness when arranged in a complex enough structure (like a human brain), panpsychism proposes that consciousness is a fundamental feature of the universe, just like mass, charge, and spin.",
+    layer2:
+      "Under this view, an electron doesn't sit around thinking about philosophy, but it has some unimaginably basic, rudimentary subjective experience. When elementary particles combine in highly complex ways (like in a biological brain), those micro-consciousnesses combine to form the rich macro-consciousness we experience as humans. It neatly solves the Hard Problem by removing the magic.",
+    quiz: {
+      question: "How does Panpsychism solve the 'Hard Problem' of consciousness?",
+      options: [
+        "By proving that consciousness is merely an illusion generated by software.",
+        "By suggesting that consciousness is a fundamental property of matter, meaning it doesn't need to 'magically' emerge from dead atoms.",
+        "By showing that only organisms with complex nervous systems can process information.",
+        "By relying on quantum mechanics to explain free will.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "If consciousness is already a basic property of the universe (like mass), you no longer have to explain how dead matter magically produces subjective experience.",
+    },
+    related: ["R1", "O6"],
+    furtherReading: [
+      {
+        label: "Panpsychism",
+        source: "Aeon",
+        url: "https://aeon.co/essays/panpsychism-is-crazy-but-its-also-most-probably-true",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+  },
+  {
+    id: "AA14",
+    clusterId: "V",
+    title: "Epistemic Injustice",
+    author: "Miranda Fricker",
+    year: 2007,
+    medium: "Philosophy",
+    category: "Sociology",
+    thesis:
+      "When we dismiss someone's testimony or ability to know something simply because of their race, gender, or social class, we commit a unique kind of violence against them.",
+    layer0:
+      "Epistemic injustice occurs when a person is wronged specifically in their capacity as a 'knower.' It is the subtle, often unconscious bias that causes us to immediately doubt the credibility of certain groups of people.",
+    layer1:
+      "There are two main types. 'Testimonial injustice' is when a jury doesn't believe a witness because of his race, or a doctor ignores a woman's pain because he assumes she is being 'hysterical.' The person is speaking the truth, but prejudice deflates their credibility.",
+    layer2:
+      "'Hermeneutical injustice' is even deeper: it happens when a society lacks the very concepts or vocabulary needed for a marginalized group to explain their experience. Before the term 'sexual harassment' was coined in the 1970s, women who experienced it literally lacked the words to explain the systemic nature of their trauma to authorities.",
+    quiz: {
+      question: "What is an example of 'Testimonial Injustice'?",
+      options: [
+        "Refusing to hire someone because of their background.",
+        "Failing to understand a complex philosophical argument.",
+        "Dismissing a patient's description of their physical pain because of unconscious gender bias.",
+        "Lacking the vocabulary to describe a new sociological phenomenon.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Testimonial injustice occurs when a person's testimony or credibility is unfairly deflated due to prejudice against their identity.",
+    },
+    related: ["V4", "V5"],
+    furtherReading: [
+      {
+        label: "Epistemic Injustice",
+        source: "Aeon",
+        url: "https://aeon.co/essays/how-epistemic-injustice-harms-the-marginalised",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Social Constructs"],
+  },
+  {
+    id: "AA15",
+    clusterId: "Y",
+    title: "Predictive Processing",
+    author: "Andy Clark",
+    year: 2013,
+    medium: "Neuroscience",
+    category: "Cognition",
+    thesis:
+      "Your brain does not passively receive reality through your eyes and ears. It hallucinates reality, and only uses your senses to correct its errors.",
+    layer0:
+      "We assume our eyes work like cameras, streaming data to the brain for processing. Neuroscience now suggests the opposite: the brain is locked in a dark, silent skull. It generates its own 'best guess' (a hallucination) of what is happening outside.",
+    layer1:
+      "This is called Predictive Processing. The brain sends its predictions down to the sensory organs. The sensory organs only send signals back up to the brain if reality *disagrees* with the prediction (prediction errors).",
+    layer2:
+      "When you walk down your familiar street, you aren't really 'seeing' it. Your brain is hallucinating it perfectly because it has prior data. You only truly 'see' something when a novel object (like a fallen tree) creates a prediction error, forcing the brain to update its internal model. You are literally hallucinating your reality right now, guided by sensory constraints.",
+    quiz: {
+      question:
+        "According to Predictive Processing, what is the primary role of your sensory organs?",
+      options: [
+        "To stream high-definition reality into the brain for processing.",
+        "To generate the hallucinations that form consciousness.",
+        "To send signals to the brain only when reality differs from the brain's prediction.",
+        "To permanently store long-term memories.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Sensory input is largely just an 'error-correction' mechanism. The brain does the heavy lifting of generating the world; the eyes and ears just report back when the brain's guess is wrong.",
+    },
+    related: ["O1", "Y1"],
+    furtherReading: [
+      {
+        label: "The Predictive Brain",
+        source: "Aeon",
+        url: "https://aeon.co/essays/how-the-predictive-brain-makes-us-hallucinate-our-reality",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Cognitive Biases & Models"],
+  },
+  {
+    id: "AA16",
+    clusterId: "J",
+    title: "The Map is Not the Territory",
+    author: "Alfred Korzybski",
+    year: 1931,
+    medium: "Mental Model",
+    category: "Epistemology",
+    thesis:
+      "Our mental models of reality are reductions. When the model contradicts reality, the model is wrong, not reality.",
+    layer0:
+      "A map of Paris is not Paris. If the map perfectly replicated Paris down to every single atom, it would be the size of Paris and therefore useless. All models, by definition, must leave out details to be useful.",
+    layer1:
+      "We navigate life using 'maps'—economic theories, political ideologies, stereotypes, and mathematical formulas. The danger occurs when we mistake the map for the territory. When a spreadsheet says a business decision makes sense, but the actual human customers hate it, the spreadsheet (the map) is wrong.",
+    layer2:
+      "The map is not the territory, the menu is not the meal, and the word is not the thing. High-level thinkers constantly update their maps based on contact with the territory. Ideologues do the opposite: when the territory behaves unpredictably, they blame the territory for failing to conform to their beautiful, perfect map.",
+    quiz: {
+      question: "What is the primary danger described by 'The Map is Not the Territory'?",
+      options: [
+        "Maps are often drawn with incorrect geographical coordinates.",
+        "We forget that our mental models are reductive tools and mistake them for absolute reality.",
+        "It proves that all science and mathematics are fundamentally useless.",
+        "We spend too much time navigating and not enough time acting.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "A model is a simplified tool. When we forget it's a simplification and treat it as absolute truth, we make catastrophic errors when encountering complex reality.",
+    },
+    related: ["J1", "U1"],
+    furtherReading: [
+      {
+        label: "The Map is Not the Territory",
+        source: "LessWrong",
+        url: "https://www.lesswrong.com/tag/the-map-is-not-the-territory",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+  },
+  {
+    id: "AA17",
+    clusterId: "U",
+    title: "Steelmanning",
+    author: "Eliezer Yudkowsky",
+    year: 2007,
+    medium: "Concept",
+    category: "Rationality",
+    thesis:
+      "To truly win an argument or seek truth, you must first construct the absolute strongest, most bulletproof version of your opponent's view before refuting it.",
+    layer0:
+      "A 'strawman' argument is when you intentionally misrepresent your opponent's position, making it sound stupid so it's easy to knock down. 'Steelmanning' is the exact opposite.",
+    layer1:
+      "When you steelman, you help your opponent build the strongest possible version of their argument. You fix their logical flaws, supply them with better data, and articulate their position so well that they say, 'Yes, I wish I had said it exactly like that.'",
+    layer2:
+      "Only after you have steelmanned the argument are you allowed to attack it. If you can dismantle the steelman, you have actually proven your point and advanced the truth. If you only attack strawmen, you are just performing ego-driven theater and tricking yourself into thinking you are right.",
+    quiz: {
+      question: "Why is 'Steelmanning' considered superior to attacking a weak argument?",
+      options: [
+        "It humiliates the opponent by showing you are smarter than them.",
+        "It is the only way to genuinely test if your own beliefs can survive contact with the strongest opposing evidence.",
+        "It forces the opponent to concede faster out of exhaustion.",
+        "It requires less cognitive effort than building a strawman.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Truth-seeking requires testing your beliefs against the strongest possible counter-arguments, not the weakest ones.",
+    },
+    related: ["U2", "L2"],
+    furtherReading: [
+      {
+        label: "Steelmanning",
+        source: "LessWrong",
+        url: "https://www.lesswrong.com/tag/steelmanning",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+  },
+  {
+    id: "AA18",
+    clusterId: "U",
+    title: "Motivated Stopping",
+    author: "Eliezer Yudkowsky",
+    year: 2007,
+    medium: "Concept",
+    category: "Cognitive Bias",
+    thesis:
+      "When you want to believe something, you stop looking for evidence at the first confirming fact. When you don't want to believe it, you demand impossible proof.",
+    layer0:
+      "Humans are not impartial truth-seekers; we are lawyers arguing for a predetermined verdict. This manifests in two behaviors: Motivated Stopping and Motivated Continuation.",
+    layer1:
+      "If you want to buy a shiny new car you can't afford, you will Google 'is the new car reliable?' You find one positive review, experience 'Motivated Stopping,' and close the browser feeling justified.",
+    layer2:
+      "Conversely, if someone presents you with irrefutable evidence that your political party made a mistake, you experience 'Motivated Continuation.' You will endlessly demand more sources, question the methodology of the studies, and keep the search going until you find one obscure blog post that lets you dismiss the evidence entirely.",
+    quiz: {
+      question: "What triggers 'Motivated Stopping' in human psychology?",
+      options: [
+        "A lack of available information on the internet.",
+        "Finding the very first piece of evidence that supports a belief you already want to hold.",
+        "Physical exhaustion from reading too many academic papers.",
+        "The realization that the opposing argument has been steelmanned.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Our brains are lazy and biased. As soon as we find a single excuse to believe what we already want to believe, we stop the search.",
+    },
+    related: ["U3", "U4"],
+    furtherReading: [
+      {
+        label: "Motivated Stopping",
+        source: "LessWrong",
+        url: "https://www.lesswrong.com/tag/motivated-stopping-and-motivated-continuation",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+  },
+  {
+    id: "AA19",
+    clusterId: "O",
+    title: "The Good Enough Mother",
+    author: "Donald Winnicott",
+    year: 1953,
+    medium: "Psychology",
+    category: "Development",
+    thesis:
+      "A perfect parent destroys a child's ability to cope with reality. A 'good enough' parent intentionally fails in small, tolerable ways to build resilience.",
+    layer0:
+      "Modern society puts immense pressure on parents to be perfect—to instantly fulfill every need their child has. Psychoanalyst Donald Winnicott argued this is actually destructive. What a child really needs is a 'good enough' mother.",
+    layer1:
+      "When a baby is born, the mother must be almost perfectly attuned to its needs to keep it alive. But as the child grows, the mother must slowly, progressively fail. She must take a little longer to bring the bottle, or refuse to buy the toy.",
+    layer2:
+      "This slow, tolerable failure is the exact mechanism that teaches the child that they are not the center of the universe. It creates the necessary frustration required for the child to develop their own mind, learn self-soothing, and adapt to a world that will absolutely not cater to their every whim. Perfection breeds fragility; 'good enough' breeds resilience.",
+    quiz: {
+      question:
+        "According to Winnicott, why is a 'perfect' parent actually harmful to a developing child?",
+      options: [
+        "Because perfection is impossible, so the parent will eventually suffer burnout.",
+        "Because the child will never experience the necessary, tolerable frustrations required to develop resilience and self-soothing.",
+        "Because it makes the child too independent too quickly.",
+        "Because the child will realize the parent is faking their perfection.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "A child must slowly learn that the world does not revolve around them. If a parent instantly satisfies every urge, the child never develops the psychological tools to handle the real world's inevitable delays and rejections.",
+    },
+    related: ["V1", "O2"],
+    furtherReading: [
+      {
+        label: "The Good Enough Mother",
+        source: "The School of Life",
+        url: "https://www.theschooloflife.com/article/the-good-enough-mother/",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+  },
+  {
+    id: "AA20",
+    clusterId: "V",
+    title: "Status Anxiety",
+    author: "Alain de Botton",
+    year: 2004,
+    medium: "Book Concept",
+    category: "Sociology",
+    thesis:
+      "We are anxious not because we are poor, but because we believe we live in a meritocracy where our wealth exactly correlates with our human worth.",
+    layer0:
+      "In the Middle Ages, if you were a poor peasant, you didn't feel deep shame about it. You believed it was God's will. Today, if you are poor, society tells you it is entirely your own fault.",
+    layer1:
+      "Modern society is built on the myth of the pure meritocracy—the idea that anyone can make it if they just work hard enough. The dark side of this myth is that if you don't 'make it,' you must be lazy or stupid. This causes chronic Status Anxiety.",
+    layer2:
+      "Every time we meet someone new, they ask 'What do you do?' We are terrified of answering because we know they will use our job title to calculate our human value. De Botton argues we must reject this brutal equation: luck, illness, and economic macro-cycles dictate far more of our financial outcome than pure merit.",
+    quiz: {
+      question:
+        "Why does the concept of 'Meritocracy' actually increase our psychological suffering?",
+      options: [
+        "Because meritocracies inevitably collapse into aristocracies.",
+        "Because it implies that if you are unsuccessful, it is entirely your own fault, turning poverty into a source of deep personal shame.",
+        "Because meritocracies force everyone to work 80-hour weeks.",
+        "Because it makes the wealthy feel guilty about their success.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "If you believe success is 100% based on merit, then you must logically believe that failure is 100% based on a lack of merit. This makes financial struggles intensely humiliating.",
+    },
+    related: ["P4", "V2"],
+    furtherReading: [
+      {
+        label: "Status Anxiety",
+        source: "The School of Life",
+        url: "https://www.theschooloflife.com/article/status-anxiety/",
+      },
+    ],
+    tags: ["Social Constructs", "Wealth, Leverage & Judgment"],
+  },
+  {
+    id: "AA21",
+    clusterId: "O",
+    title: "Romanticism vs. Classicism",
+    author: "Alain de Botton",
+    year: 2016,
+    medium: "Philosophy",
+    category: "Culture",
+    thesis:
+      "Modern misery is largely caused by the dominance of Romanticism, which tells us to follow our passions blindly, rather than Classicism, which values reason and low expectations.",
+    layer0:
+      "The School of Life divides human worldviews into two camps. Romanticism believes in following your heart, finding your 'soulmate,' and trusting your gut. Classicism believes in following reason, accepting human flaws, and building institutions.",
+    layer1:
+      "For the last 200 years, Romanticism has dominated Western culture. It tells us that love should be entirely based on a magical, spontaneous feeling. If the feeling fades, the relationship must be over. It tells us work must be our ultimate 'passion,' and if it's boring, we are failing.",
+    layer2:
+      "Classicism is a powerful antidote. A Classicist expects life to be difficult. They know that no one is perfectly compatible, so they value the skill of compromise over the luck of finding a 'soulmate.' They don't expect their job to fulfill their soul; they expect it to pay the bills. By dramatically lowering our romantic expectations, Classicism paradoxically makes us much happier.",
+    quiz: {
+      question:
+        "How does a 'Classicist' view a long-term relationship differently than a 'Romantic'?",
+      options: [
+        "A Classicist believes in finding a perfect soulmate, while a Romantic settles for whoever is closest.",
+        "A Classicist believes love is a choice built on compromise and realistic expectations, while a Romantic believes it must be based on constant, passionate feeling.",
+        "A Classicist relies entirely on horoscopes to choose a partner.",
+        "A Classicist avoids relationships entirely to focus on their career.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Romanticism demands perfection and constant passion, leading to inevitable disappointment. Classicism expects flaws and friction, making it far more resilient.",
+    },
+    related: ["O5", "Q2"],
+    furtherReading: [
+      {
+        label: "Romanticism vs Classicism",
+        source: "The School of Life",
+        url: "https://www.theschooloflife.com/article/romanticism-and-classicism/",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+  },
+  {
+    id: "AA22",
+    clusterId: "N",
+    title: "Negative Capability",
+    author: "John Keats",
+    year: 1817,
+    medium: "Letter",
+    category: "Creativity",
+    thesis:
+      "True creative genius requires the ability to comfortably exist in a state of uncertainty, mystery, and doubt without irritably reaching for facts and reason.",
+    layer0:
+      "The poet John Keats noticed that most people hate not knowing the answer. If they face a mystery, they rush to explain it away with a quick fact or a lazy theory to relieve their anxiety.",
+    layer1:
+      "Keats called the opposite trait 'Negative Capability.' It is the rare psychological strength to just sit in the darkness of the unknown. To observe a contradiction or a paradox and just let it be, without immediately trying to force it into a logical spreadsheet.",
+    layer2:
+      "This is the core engine of creativity. If you immediately categorize a new experience using your existing mental models, you will only ever produce clichés. Negative capability allows the mind to stay open long enough for genuinely novel connections to form in the subconscious.",
+    quiz: {
+      question: "In the context of creativity, what is 'Negative Capability'?",
+      options: [
+        "The habit of criticizing your own work so harshly that you stop creating.",
+        "The ability to tolerate uncertainty, mystery, and doubt without immediately rushing to find a logical explanation.",
+        "The psychological trait that causes people to only focus on the negative aspects of a project.",
+        "The capacity to absorb negative feedback from editors without taking it personally.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "By resisting the urge to prematurely 'solve' a mystery or force an answer, you allow deeper, more profound creative connections to form over time.",
+    },
+    related: ["O1", "Y1"],
+    furtherReading: [
+      {
+        label: "John Keats on Negative Capability",
+        source: "The Marginalian",
+        url: "https://www.themarginalian.org/2012/11/01/john-keats-on-negative-capability/",
+      },
+    ],
+    tags: ["Craft & Deep Work", "First-Principles Thinking"],
+  },
+  {
+    id: "AA23",
+    clusterId: "O",
+    title: "The Porcupine Dilemma",
+    author: "Arthur Schopenhauer",
+    year: 1851,
+    medium: "Philosophy",
+    category: "Relationships",
+    thesis:
+      "Human intimacy is a paradox: we need each other for warmth and survival, but if we get too close, we inevitably stab each other with our flaws.",
+    layer0:
+      "Imagine a group of porcupines freezing on a cold winter night. To survive, they huddle together for body heat. But as soon as they get close, their sharp quills stab one another.",
+    layer1:
+      "In pain, they pull apart. But then the freezing cold sets in again, forcing them back together. They repeat this painful dance—freezing, stabbing, pulling apart—until they finally find the exact right distance where they get just enough warmth without causing too much pain.",
+    layer2:
+      "Schopenhauer used this to describe human relationships. Our internal emptiness (the cold) drives us into relationships. But our prickly egos, traumas, and flaws (the quills) cause us to hurt the people we get closest to. The goal of maturity is not to merge completely with another person, but to find that polite, respectful distance where you can share warmth without drawing blood.",
+    quiz: {
+      question: "What is the metaphorical lesson of Schopenhauer's Porcupine Dilemma?",
+      options: [
+        "Humans should remain entirely isolated to avoid getting hurt.",
+        "We must completely dull our 'quills' (flaws) before we are worthy of love.",
+        "Intimacy is a delicate balance of finding the right psychological distance to share warmth without inflicting too much pain on each other.",
+        "The coldness of the universe makes all human relationships ultimately meaningless.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "You cannot have intimacy without friction. The goal is to calibrate the distance so that the warmth outweighs the inevitable pricks of human flaws.",
+    },
+    related: ["O2", "O3"],
+    furtherReading: [
+      {
+        label: "Schopenhauer's Porcupine Dilemma",
+        source: "The Marginalian",
+        url: "https://www.themarginalian.org/2015/02/10/schopenhauer-porcupine-dilemma-freud/",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+  },
+  {
+    id: "AA24",
+    clusterId: "O",
+    title: "Live the Questions",
+    author: "Rainer Maria Rilke",
+    year: 1903,
+    medium: "Letter",
+    category: "Wisdom",
+    thesis:
+      "Do not rush to find answers to life's deepest dilemmas; you must learn to love the questions themselves until you gradually live your way into the answer.",
+    layer0:
+      "When we are young, we are desperate for certainty. We want to know exactly what our career should be, who we should marry, and what the meaning of life is. When we can't find the answers immediately, we feel a deep, agonizing anxiety.",
+    layer1:
+      "The poet Rilke advised a young writer to stop searching for the answers, because 'you would not be able to live them.' The answers to deep existential questions cannot be handed to you in a book; they can only be understood through decades of lived experience.",
+    layer2:
+      "Rilke suggests a radical shift in perspective: you must learn to love the unresolved questions themselves, treating them like 'locked rooms' or 'books written in a very foreign tongue.' If you patiently hold the tension of not knowing, you will gradually, without even noticing it, live your way into the answer.",
+    quiz: {
+      question:
+        "Why does Rilke advise against frantically searching for the answers to life's biggest dilemmas?",
+      options: [
+        "Because the answers to life's questions do not actually exist.",
+        "Because even if someone gave you the answer, you lack the lived experience required to actually understand and embody it.",
+        "Because asking questions is a sign of philosophical weakness.",
+        "Because the universe is inherently chaotic and randomly assigns fates.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Existential truths cannot be memorized like math formulas. They must be earned through the slow accumulation of life experience.",
+    },
+    related: ["O4", "AA22"],
+    furtherReading: [
+      {
+        label: "Rilke on Living the Questions",
+        source: "The Marginalian",
+        url: "https://www.themarginalian.org/2012/06/01/rilke-on-questions/",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+  },
+  {
+    id: "AA25",
+    clusterId: "R",
+    title: "The Kardashev Scale",
+    author: "Nikolai Kardashev",
+    year: 1964,
+    medium: "Astrophysics",
+    category: "Futurism",
+    thesis:
+      "A civilization's technological advancement can be measured purely by the amount of energy it is able to harness and utilize.",
+    layer0:
+      "If we find alien life, how will we know how advanced they are? Russian astrophysicist Nikolai Kardashev proposed a simple scale based on energy consumption: Type I (Planetary), Type II (Stellar), and Type III (Galactic).",
+    layer1:
+      "A Type I civilization can harness all the energy reaching its home planet from its parent star (we are currently at about Type 0.73). A Type II civilization can harness the entire energy output of its star, likely by building a Dyson Sphere around it. A Type III civilization commands the energy of its entire galaxy.",
+    layer2:
+      "The Kardashev scale forces us to think about deep time and the limits of physics. Going from Type 0 to Type I is considered the most dangerous filter for a civilization, because they have the technology to destroy themselves (nuclear weapons, climate change) but lack the planetary control to save themselves. If humanity survives the next few centuries, we may achieve Type I status.",
+    quiz: {
+      question:
+        "According to the Kardashev scale, what is the defining feature of a Type II civilization?",
+      options: [
+        "They have mastered faster-than-light travel.",
+        "They can harness 100% of the energy output of their parent star.",
+        "They have merged their biological brains with artificial intelligence.",
+        "They have colonized multiple galaxies in the local group.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The Kardashev scale is entirely based on energy extraction. Type II civilizations have built megastructures (like Dyson Spheres) to capture the total energy of a sun.",
+    },
+    related: ["I3", "R2"],
+    furtherReading: [
+      {
+        label: "The Kardashev Scale",
+        source: "Big Think",
+        url: "https://bigthink.com/hard-science/kardashev-scale/",
+      },
+    ],
+    tags: ["AI & the Future"],
+  },
+  {
+    id: "AA26",
+    clusterId: "O",
+    title: "The Overview Effect",
+    author: "Frank White",
+    year: 1987,
+    medium: "Psychology",
+    category: "Space",
+    thesis:
+      "Seeing the Earth from orbit triggers a profound cognitive shift, revealing the fragility of the planet and the artificiality of human borders.",
+    layer0:
+      "Almost every astronaut who has looked out the window of a spacecraft and seen the Earth floating in the black void of space reports experiencing the exact same psychological phenomenon: a sudden, overwhelming sense of unity and protectiveness.",
+    layer1:
+      "This 'Overview Effect' completely rewrites a person's cognitive map. Down on the surface, we spend our lives fighting over borders, politics, and resources. From orbit, those borders physically vanish. The atmosphere, which seems like a massive, infinite sky from the ground, looks like a fragile, paper-thin glowing blue line.",
+    layer2:
+      "The Overview Effect is essentially a forced state of profound mindfulness and cosmic perspective. Philosophers argue that if we could somehow induce the Overview Effect in world leaders—forcing them to confront the tiny, fragile reality of the only home we have—it would instantly end all wars. It proves that our violent tribalism is a hallucination of scale.",
+    quiz: {
+      question: "What is the primary psychological realization triggered by the Overview Effect?",
+      options: [
+        "A sense of terror and insignificance regarding the vastness of the universe.",
+        "A profound realization of the Earth's fragility and the meaningless nature of human borders.",
+        "A sudden understanding of complex orbital mechanics.",
+        "An overwhelming desire to leave Earth and colonize other planets.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Seeing the Earth as a single, fragile, borderless sphere hanging in a dark void instantly dissolves tribal and nationalistic divisions.",
+    },
+    related: ["O1", "J1"],
+    furtherReading: [
+      {
+        label: "The Overview Effect",
+        source: "Big Think",
+        url: "https://bigthink.com/space/overview-effect/",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+  },
+  {
+    id: "AA27",
+    clusterId: "R",
+    title: "Dark Forest Theory",
+    author: "Liu Cixin",
+    year: 2008,
+    medium: "Science Fiction",
+    category: "Futurism",
+    thesis:
+      "The universe is full of life, but everyone is hiding in absolute silence because revealing your location guarantees your destruction.",
+    layer0:
+      "The Fermi Paradox asks: if the universe is so vast and old, where are all the aliens? The Dark Forest Theory provides a terrifying answer: they are out there, but they are staying perfectly quiet to survive.",
+    layer1:
+      "Imagine a dark forest at night. It is full of armed hunters hiding in the shadows. If a hunter hears a twig snap, they don't call out to say 'hello'—they shoot immediately, because in a dark forest, anyone you encounter is a potential threat to your own survival.",
+    layer2:
+      "In the universe, 'chains of suspicion' make communication impossible. You can never truly know if an alien species is peaceful or hostile. Furthermore, because of exponential technological growth, a 'primitive' species today could become a threat in a mere thousand years. Therefore, the only rational, game-theoretic move for an advanced civilization is to instantly annihilate any civilization that reveals its location. Humanity's current practice of broadcasting radio signals into space is equivalent to a child yelling in a dark forest.",
+    quiz: {
+      question:
+        "According to Dark Forest Theory, why does a civilization instantly annihilate a newly discovered species?",
+      options: [
+        "To harvest their planet's natural resources for energy.",
+        "Because of religious or ideological fanaticism.",
+        "Because the 'chain of suspicion' makes trust impossible, and letting them live risks your own eventual destruction.",
+        "Because they are bored and have nothing else to do.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Game theory dictates that since you can never be 100% sure the other species won't eventually kill you (especially given exponential technological growth), the only rational move to guarantee your own survival is a preemptive strike.",
+    },
+    related: ["R2", "L1"],
+    furtherReading: [
+      {
+        label: "Dark Forest Theory",
+        source: "Big Think",
+        url: "https://bigthink.com/surprising-science/the-dark-forest-theory-a-terrifying-explanation-of-why-we-havent-heard-from-aliens-yet/",
+      },
+    ],
+    tags: ["AI & the Future", "Incentives & Systems"],
+  },
+  {
+    id: "AA28",
+    clusterId: "M",
+    title: "Choice Architecture",
+    author: "Richard Thaler",
+    year: 2008,
+    medium: "Economics",
+    category: "Behavioral Science",
+    thesis:
+      "There is no such thing as a 'neutral' design. The way choices are presented to us inherently nudges our behavior in a specific direction.",
+    layer0:
+      "If you run a school cafeteria, the order in which you arrange the food determines what the kids will eat. If the apples are at eye level and the cake is hidden in the back, the kids will eat more apples. The cafeteria director is a 'Choice Architect.'",
+    layer1:
+      "Classical economics assumes humans are perfectly rational calculators who will always choose what is best for them, regardless of how the options are presented. Behavioral economics proves this is false. We are lazy, and our decisions are heavily influenced by default options, visual placement, and the framing of the question.",
+    layer2:
+      "You can use Choice Architecture defensively and offensively. Defensively, you can recognize when an app or a corporation is manipulating your environment to make you buy something. Offensively, you can design your own physical environment to nudge yourself toward your goals—like putting your running shoes on your pillow, or deleting social media apps from your phone's home screen.",
+    quiz: {
+      question: "What is the core premise of 'Choice Architecture'?",
+      options: [
+        "Humans will always make rational decisions regardless of the environment.",
+        "There is no neutral way to present options; the design of the environment always influences the decision.",
+        "People hate having choices and prefer to be told what to do.",
+        "Restricting people's choices is the only way to ensure good behavior.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Whether it's the layout of a grocery store or the default settings on an organ donation form, the way the choices are organized inevitably nudges behavior.",
+    },
+    related: ["M1", "M2"],
+    furtherReading: [
+      {
+        label: "Nudge and Choice Architecture",
+        source: "Behavioral Scientist",
+        url: "https://behavioralscientist.org/nudge-turns-10-a-conversation-with-richard-thaler/",
+      },
+    ],
+    tags: ["Incentives & Systems", "Cognitive Biases & Models"],
+  },
+  {
+    id: "AA29",
+    clusterId: "U",
+    title: "Hyperbolic Discounting",
+    author: "Richard Herrnstein",
+    year: 1961,
+    medium: "Psychology",
+    category: "Cognitive Bias",
+    thesis:
+      "Given two similar rewards, humans overwhelmingly prefer the one that arrives sooner. Our brains aggressively 'discount' the value of rewards the further they are in the future.",
+    layer0:
+      "If I offer you $100 today or $110 tomorrow, you will likely wait for tomorrow. But if I offer you $100 today or $110 in a year, you will almost certainly take the $100 today. Your brain discounts the future value because the future is uncertain.",
+    layer1:
+      "This makes perfect sense from an evolutionary perspective. For a caveman, immediate calories (eating the berry now) were vastly superior to future calories (planting a farm), because the caveman might be eaten by a tiger tomorrow. The problem is that our modern world requires long-term planning (saving for retirement), which our brains are fundamentally wired to hate.",
+    layer2:
+      "To beat hyperbolic discounting, you have to find ways to make your future self feel 'real' to your present self. You can also use commitment devices: lock away your money, publicly declare your goals, or artificially increase the immediate pain of failing (like giving a friend $500 and telling them to donate it to a political party you hate if you don't hit the gym).",
+    quiz: {
+      question: "Why did Hyperbolic Discounting evolve in human psychology?",
+      options: [
+        "Because early humans lived in highly unstable, dangerous environments where delaying gratification usually meant dying.",
+        "Because early humans were incredibly long-term planners.",
+        "As a byproduct of the development of complex language.",
+        "To help humans build long-term agricultural settlements.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "In an environment where you might get eaten by a predator at any moment, the brain correctly evolved to prioritize immediate, guaranteed rewards over future, uncertain ones.",
+    },
+    related: ["K1", "U1"],
+    furtherReading: [
+      {
+        label: "Hyperbolic Discounting",
+        source: "Behavioral Scientist",
+        url: "https://behavioralscientist.org/topics/behavioral-economics/",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Compounding & Patience"],
+  },
+  {
+    id: "AA30",
+    clusterId: "M",
+    title: "Sludge",
+    author: "Cass Sunstein",
+    year: 2018,
+    medium: "Economics",
+    category: "Behavioral Science",
+    thesis:
+      "Sludge is the evil twin of the Nudge. It is the intentional addition of excessive friction designed to stop you from doing something that benefits you.",
+    layer0:
+      "A 'Nudge' makes it easier for you to make a good decision (like automatically enrolling you in a retirement plan). 'Sludge' makes it intentionally difficult for you to do something (like a 15-page form required to apply for financial aid, or having to call a phone number during business hours to cancel a digital subscription).",
+    layer1:
+      "Corporations use Sludge to protect their revenue. By making the cancellation process incredibly annoying and confusing, they exploit your cognitive laziness. Government agencies use Sludge (sometimes accidentally, sometimes intentionally) to reduce the number of people claiming benefits they are legally entitled to.",
+    layer2:
+      "Sludge imposes a massive cognitive tax on society, particularly on the poor and overwhelmed, who lack the time and bandwidth to navigate the bureaucratic friction. The ultimate defense against Sludge is regulation (like laws requiring 'one-click cancellations') and a personal awareness of when a system is intentionally draining your energy to extract value.",
+    quiz: {
+      question: "How does 'Sludge' differ from a 'Nudge' in behavioral economics?",
+      options: [
+        "A Nudge is used by the government, while Sludge is only used by corporations.",
+        "A Nudge relies on financial incentives, while Sludge relies on emotional manipulation.",
+        "A Nudge removes friction to encourage a beneficial behavior, while Sludge intentionally adds friction to discourage a behavior.",
+        "Sludge is a physical environmental change, while a Nudge is a digital change.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Sludge weaponizes friction. It exploits human laziness by making the process of doing something (like canceling a subscription or applying for aid) so annoying that people just give up.",
+    },
+    related: ["M1", "AA28"],
+    furtherReading: [
+      {
+        label: "Sludge and Friction",
+        source: "Behavioral Scientist",
+        url: "https://behavioralscientist.org/sludge-and-the-administrative-state/",
+      },
+    ],
+    tags: ["Incentives & Systems", "Cognitive Biases & Models"],
+  },
 ];
 
 export const NODE_BY_ID: Record<string, Node> = NODES.reduce(

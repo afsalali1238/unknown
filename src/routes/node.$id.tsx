@@ -149,7 +149,7 @@ function NodeScreen() {
     <>
       <article className="px-5 pt-8 pb-8">
         <Link to="/" className="inline-flex items-center gap-2">
-          <MicroLabel>← Map</MicroLabel>
+          <MicroLabel>← Home</MicroLabel>
         </Link>
 
         <div className="mt-6">
