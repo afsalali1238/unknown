@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
+import { z } from "zod";
 import { CLUSTERS, NODES_BY_CLUSTER, type Node } from "@/data/nodes";
 import { NodeCard } from "@/components/NodeCard";
 import { SearchBar } from "@/components/SearchBar";
@@ -9,7 +10,12 @@ import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronRight } from "lucide-react";
 
+const exploreSearchSchema = z.object({
+  cluster: z.string().optional(),
+});
+
 export const Route = createFileRoute("/explore")({
+  validateSearch: exploreSearchSchema,
   head: () => ({
     meta: [
       { title: "Explore — Unknown" },
@@ -27,11 +33,30 @@ function matchCount(nodes: Node[], interests: string[]): number {
   return nodes.filter((n) => n.tags.some((t) => interests.includes(t))).length;
 }
 
-function ClusterSection({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes: Node[] }) {
-  const [isOpen, setIsOpen] = useState(false);
+function ClusterSection({
+  cluster,
+  nodes,
+  defaultOpen,
+}: {
+  cluster: (typeof CLUSTERS)[0];
+  nodes: Node[];
+  defaultOpen: boolean;
+}) {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Arriving here from a Lattice Index tap on the Map screen: open the
+  // target section and bring it into view without fighting the user's
+  // scroll position on every render.
+  useEffect(() => {
+    if (defaultOpen && sectionRef.current) {
+      sectionRef.current.scrollIntoView({ block: "start" });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
-    <section>
+    <section ref={sectionRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
@@ -75,13 +100,17 @@ function ClusterSection({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nod
 function ExploreScreen() {
   const hydrated = useHydrated();
   const interests = useStore((s) => s.interests);
+  const { cluster: targetCluster } = Route.useSearch();
   const [view, setView] = useState<"for-you" | "all">("all");
 
   useEffect(() => {
-    if (hydrated && interests.length > 0 && view === "all") {
+    // A deep link from the Lattice Index is an explicit ask to see one
+    // cluster — don't let the "for you" heuristic hide it.
+    if (hydrated && interests.length > 0 && view === "all" && !targetCluster) {
       setView("for-you");
     }
-  }, [hydrated, interests.length]); // eslint-disable-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hydrated, interests.length, targetCluster]);
 
   const hasInterests = hydrated && interests.length > 0;
 
@@ -135,11 +164,18 @@ function ExploreScreen() {
         {orderedClusters.map((c) => {
           const allNodes = NODES_BY_CLUSTER[c.id];
           const nodes =
-            hasInterests && view === "for-you"
+            hasInterests && view === "for-you" && !targetCluster
               ? allNodes.filter((n) => n.tags.some((t) => interests.includes(t)))
               : allNodes;
           if (nodes.length === 0) return null;
-          return <ClusterSection key={c.id} cluster={c} nodes={nodes} />;
+          return (
+            <ClusterSection
+              key={c.id}
+              cluster={c}
+              nodes={nodes}
+              defaultOpen={targetCluster === c.id}
+            />
+          );
         })}
       </div>
 
