@@ -398,7 +398,7 @@ export const NODES: Node[] = [
         label: "How Peter Thiel teaches Stanford students to create billion-dollar monopolies",
         source: "VentureBeat",
         url: "https://venturebeat.com/business/how-peter-thiel-teaches-stanford-students-to-create-billion-dollar-monopolies-in-3-quotes",
-          archive: { status: "full", path: "content/sources/A5-2.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/A5-2.md", retrieved: "2026-07-14" }
     },
     ],
     tags: [],
@@ -444,7 +444,7 @@ export const NODES: Node[] = [
         label: "The Bill Gurley Chronicles: VCs, marketplaces, and early-stage investing",
         source: "Equity Mates",
         url: "https://equitymates.com/general/the-bill-gurley-chronicles-vcs-marketplaces-and-early-stage-investing/",
-          archive: { status: "full", path: "content/sources/A6-1.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/A6-1.md", retrieved: "2026-07-14" }
     },
       {
         type: "read",
@@ -995,7 +995,7 @@ export const NODES: Node[] = [
         label: "Take a look at Uber's first pitch deck from 2008",
         source: "Recode",
         url: "https://www.recode.net/2017/8/23/16189048/uber-pitch-deck-2008-ubercab-travis-kalanick-founder-startup",
-          archive: { status: "full", path: "content/sources/B5-1.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/B5-1.md", retrieved: "2026-07-14" }
     },
     ],
     tags: [],
@@ -1742,7 +1742,7 @@ export const NODES: Node[] = [
         label: "The Internet Tidal Wave (original memo)",
         source: "BBC-hosted archive",
         url: "http://news.bbc.co.uk/2/shared/bsp/hi/pdfs/18_06_08_internet%20tidal%20wave.pdf",
-          archive: { status: "full", path: "content/sources/F4-0.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/F4-0.md", retrieved: "2026-07-14" }
     },
       {
         type: "read",
@@ -1788,14 +1788,14 @@ export const NODES: Node[] = [
         label: "Increasing Returns and the New World of Business (original essay)",
         source: "Harvard Business Review, 1996",
         url: "https://sites.santafe.edu/~wbarthur/Papers/HBR.pdf",
-          archive: { status: "full", path: "content/sources/F5-0.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/F5-0.md", retrieved: "2026-07-14" }
     },
       {
         type: "read",
         label: "W. Brian Arthur's work on complexity and increasing returns",
         source: "Santa Fe Institute",
         url: "https://www.santafe.edu/people/profile/w-brian-arthur",
-          archive: { status: "full", path: "content/sources/F5-1.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/F5-1.md", retrieved: "2026-07-14" }
     },
     ],
     tags: [],
@@ -1840,7 +1840,7 @@ export const NODES: Node[] = [
         label: "The Rise of Software 2.0: You don't want to be left behind",
         source: "Towards Data Science",
         url: "https://towardsdatascience.com/the-rise-of-software-2-0-you-dont-want-to-be-left-behind-cbaa75f6d19",
-          archive: { status: "full", path: "content/sources/G1-1.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/G1-1.md", retrieved: "2026-07-14" }
     },
     ],
     tags: [],
@@ -1977,7 +1977,7 @@ export const NODES: Node[] = [
         label: "Understanding ResNet and its variants",
         source: "Towards Data Science",
         url: "https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33",
-          archive: { status: "full", path: "content/sources/G4-1.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/G4-1.md", retrieved: "2026-07-14" }
     },
     ],
     tags: [],
@@ -2160,7 +2160,7 @@ export const NODES: Node[] = [
         label: "Chinchilla's Wild Implications",
         source: "LessWrong",
         url: "https://www.lesswrong.com/posts/6Fpvch8TREZXbdmEB/chinchilla-s-wild-implications",
-          archive: { status: "full", path: "content/sources/G8-1.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/G8-1.md", retrieved: "2026-07-14" }
     },
     ],
     tags: [],
@@ -2298,7 +2298,7 @@ export const NODES: Node[] = [
         label: "Bitcoin: The Internet of Money",
         source: "Naval Ravikant",
         url: "https://startupboy.com/2013/11/07/bitcoin-the-internet-of-money/",
-          archive: { status: "full", path: "content/sources/H1-1.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/H1-1.md", retrieved: "2026-07-14" }
     },
     ],
     tags: [],
@@ -2611,7 +2611,7 @@ export const NODES: Node[] = [
         label: "Social Capital investor letters (Chamath Palihapitiya)",
         source: "socialcapital.com",
         url: "https://www.socialcapital.com/",
-          archive: { status: "full", path: "content/sources/H8-0.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/H8-0.md", retrieved: "2026-07-14" }
     },
       {
         type: "watch",
@@ -3069,9 +3069,9 @@ export const NODES: Node[] = [
     category: "Thinking",
     thesis: "Solve problems backwards. Ask how to fail, then avoid it.",
     layer0:
-      "Jacobi's advice was 'invert, always invert.' Instead of asking how to succeed, ask how to guarantee failure ΓÇö then don't do those things. It's often easier to identify what will kill you than what will save you.",
+      "Jacobi's advice was 'invert, always invert.' Instead of asking how to succeed, ask how to guarantee failure — then don't do those things. It's often easier to identify what will kill you than what will save you.",
     layer1:
-      "Inversion works because avoiding stupidity has better odds than seeking brilliance. Human minds are wired to chase positive strategies; failure modes tend to be under-considered. By listing the ways a plan could obviously fail ΓÇö dependencies, single points of failure, obvious traps ΓÇö you route around them before starting.",
+      "Inversion works because avoiding stupidity has better odds than seeking brilliance. Human minds are wired to chase positive strategies; failure modes tend to be under-considered. By listing the ways a plan could obviously fail — dependencies, single points of failure, obvious traps — you route around them before starting.",
     layer2:
       "For your current goal, write 'How would I guarantee failure at this?' List ten answers. Now cross out anything you're currently doing that resembles those answers.",
     quiz: {
@@ -3085,7 +3085,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["First-Principles Thinking"],
-    related: ["E2", "L10", "B2"],
+    related: ["B2"],
     furtherReading: [
       {
         label: "Poor Charlie's Almanack",
@@ -3105,9 +3105,9 @@ export const NODES: Node[] = [
     category: "Thinking",
     thesis: "First-level thinking says 'and then what?' once. Second-level thinking keeps asking.",
     layer0:
-      "First-order thinking evaluates only the immediate effect: this decision will do X. Second-order thinking asks what happens after X ΓÇö how others respond, what incentives shift, what second effects follow. Simple decisions often look different when you trace them two steps out.",
+      "First-order thinking evaluates only the immediate effect: this decision will do X. Second-order thinking asks what happens after X — how others respond, what incentives shift, what second effects follow. Simple decisions often look different when you trace them two steps out.",
     layer1:
-      "Marks argues that most people stop at first-order because it's faster and feels sufficient. But markets, organizations, and relationships are systems ΓÇö the direct effect is almost never the whole story. The people who consistently do better are those who ask 'and then what?' three times in a row.",
+      "Marks argues that most people stop at first-order because it's faster and feels sufficient. But markets, organizations, and relationships are systems — the direct effect is almost never the whole story. The people who consistently do better are those who ask 'and then what?' three times in a row.",
     layer2:
       "Take a decision you're weighing. Write the first-order effect. Then write what happens next because of that effect. Then again. If the third-order surprises you, the decision is more interesting than it first looked.",
     quiz: {
@@ -3117,12 +3117,12 @@ export const NODES: Node[] = [
         "Competitors match, margins fall for everyone, and customers now expect the lower price.",
         "The CEO gets a bonus.",
         "The stock price always rises.",
-        "Nothing meaningful ΓÇö first-order effects usually persist.",
+        "Nothing meaningful — first-order effects usually persist.",
       ],
       correctIndex: 0,
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["D3", "H4", "E2", "B3"],
+    related: ["D3", "H4", "B3"],
     furtherReading: [
       {
         label: "The Most Important Thing",
@@ -3142,9 +3142,9 @@ export const NODES: Node[] = [
     category: "Thinking",
     thesis: "It isn't the size of the circle that counts, but knowing where its edge is.",
     layer0:
-      "Everyone has a domain in which they can reasonably assess risk and reward ΓÇö their circle of competence. Outside it, they're guessing. Buffett's rule: know where your circle ends, and don't step over the line just because opportunities look interesting.",
+      "Everyone has a domain in which they can reasonably assess risk and reward — their circle of competence. Outside it, they're guessing. Buffett's rule: know where your circle ends, and don't step over the line just because opportunities look interesting.",
     layer1:
-      "The circle can grow with study, but only slowly. The costly mistake is not being small ΓÇö it's being unaware of the edge and confidently opining on things you don't understand. Confidence outside your circle is asymmetric: the upside is normal, the downside is ruinous because you can't see the risks that are obvious to real experts.",
+      "The circle can grow with study, but only slowly. The costly mistake is not being small — it's being unaware of the edge and confidently opining on things you don't understand. Confidence outside your circle is asymmetric: the upside is normal, the downside is ruinous because you can't see the risks that are obvious to real experts.",
     layer2:
       "Draw your circle honestly. List three domains you understand deeply and three where you don't. Notice which of your current bets sit inside vs outside. Move at least one bet back inside.",
     quiz: {
@@ -3164,7 +3164,7 @@ export const NODES: Node[] = [
         label: "Berkshire Hathaway Shareholder Letters",
         source: "berkshirehathaway.com",
         url: "https://www.berkshirehathaway.com/letters/letters.html",
-          archive: { status: "full", path: "content/sources/J3-0.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/J3-0.md", retrieved: "2026-07-14" }
     },
     ],
   },
@@ -3180,7 +3180,7 @@ export const NODES: Node[] = [
     layer0:
       "When something bad happens because of someone else's action, our first instinct is to assume they meant it. Hanlon's Razor suggests trying the simpler explanation first: they were busy, careless, tired, or uninformed. Most cruelty is closer to indifference than to intention.",
     layer1:
-      "The razor is a debiasing tool against the fundamental attribution error ΓÇö we explain others' behavior by their character and our own by circumstance. Assuming malice makes conflict escalate; assuming carelessness leaves room to fix systems, clarify expectations, and preserve the relationship. It's not naive; you can still hold people accountable ΓÇö just with the right diagnosis.",
+      "The razor is a debiasing tool against the fundamental attribution error — we explain others' behavior by their character and our own by circumstance. Assuming malice makes conflict escalate; assuming carelessness leaves room to fix systems, clarify expectations, and preserve the relationship. It's not naive; you can still hold people accountable — just with the right diagnosis.",
     layer2:
       "Recall a recent conflict where you assumed bad intent. Restate the situation assuming pure carelessness or overload. What would you have said instead?",
     quiz: {
@@ -3195,7 +3195,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Cognitive Biases & Models", "Fraud & Skepticism", "Power & Persuasion"],
-    related: ["D3", "E2", "H4", "B5"],
+    related: ["D3", "H4", "B5"],
     furtherReading: [
       {
         label: "Murphy's Law and other reasons things go wrong",
@@ -3215,11 +3215,11 @@ export const NODES: Node[] = [
     category: "Time",
     thesis: "Small advantages, repeated, become enormous.",
     layer0:
-      "Compounding is what happens when returns generate more returns. A 1% daily improvement is 37x in a year ΓÇö not because each step is large, but because each step builds on the last. It applies to money, skill, reputation, and relationships.",
+      "Compounding is what happens when returns generate more returns. A 1% daily improvement is 37x in a year — not because each step is large, but because each step builds on the last. It applies to money, skill, reputation, and relationships.",
     layer1:
-      "The counterintuitive part is that most of the payoff comes very late. For a long time, compounding looks disappointing ΓÇö a curve almost indistinguishable from a straight line. Only near the end does the hockey stick appear. This is why patience beats intelligence in most compounding games: the impatient exit before the curve turns up.",
+      "The counterintuitive part is that most of the payoff comes very late. For a long time, compounding looks disappointing — a curve almost indistinguishable from a straight line. Only near the end does the hockey stick appear. This is why patience beats intelligence in most compounding games: the impatient exit before the curve turns up.",
     layer2:
-      "Identify one thing in your life where compounding is real ΓÇö savings, a language, a craft, a friendship. Then ask what would break the chain. The goal is not to accelerate but to avoid interruption.",
+      "Identify one thing in your life where compounding is real — savings, a language, a craft, a friendship. Then ask what would break the chain. The goal is not to accelerate but to avoid interruption.",
     quiz: {
       question: "Why do most people underestimate compounding?",
       options: [
@@ -3231,7 +3231,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Compounding & Patience"],
-    related: ["G4", "D6", "B29", "C2"],
+    related: ["G4", "D6", "C2"],
     furtherReading: [
       {
         label: "The Psychology of Money",
@@ -3251,11 +3251,11 @@ export const NODES: Node[] = [
     category: "Time",
     thesis: "The longer an idea or object has survived, the longer it is likely to keep surviving.",
     layer0:
-      "For non-perishable things ΓÇö books, technologies, institutions ΓÇö every extra year of existence increases the expected remaining life. A book still read after 400 years is likely to be read for centuries more. A trendy 6-month-old technology probably won't be.",
+      "For non-perishable things — books, technologies, institutions — every extra year of existence increases the expected remaining life. A book still read after 400 years is likely to be read for centuries more. A trendy 6-month-old technology probably won't be.",
     layer1:
-      "The mechanism is selection: fragile things die quickly, so anything that survives has already passed harsh filters. Lindy is a prior ΓÇö it doesn't guarantee survival, but it's a good baseline when you know nothing else. It also warns against the recency bias of assuming new is better; the new hasn't been tested yet.",
+      "The mechanism is selection: fragile things die quickly, so anything that survives has already passed harsh filters. Lindy is a prior — it doesn't guarantee survival, but it's a good baseline when you know nothing else. It also warns against the recency bias of assuming new is better; the new hasn't been tested yet.",
     layer2:
-      "Look at your current reading list. What percentage is under 5 years old? Consider replacing one recent book with one that has survived a century ΓÇö a bet on Lindy.",
+      "Look at your current reading list. What percentage is under 5 years old? Consider replacing one recent book with one that has survived a century — a bet on Lindy.",
     quiz: {
       question:
         "Applying Lindy to technology choice, which is a safer long-term bet, all else equal?",
@@ -3268,7 +3268,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Compounding & Patience", "Macro & Cycles"],
-    related: ["G4", "D6", "B29", "C3"],
+    related: ["G4", "D6", "C3"],
     furtherReading: [
       {
         label: "Antifragile",
@@ -3288,9 +3288,9 @@ export const NODES: Node[] = [
     category: "Time",
     thesis: "Where you end up depends on where you started and every step in between.",
     layer0:
-      "The QWERTY keyboard isn't optimal ΓÇö it was designed for mechanical typewriters. But we're stuck with it because every keyboard, every typist, and every training program built on the last one. Small early accidents can lock in outcomes for centuries.",
+      "The QWERTY keyboard isn't optimal — it was designed for mechanical typewriters. But we're stuck with it because every keyboard, every typist, and every training program built on the last one. Small early accidents can lock in outcomes for centuries.",
     layer1:
-      "Path dependence emerges when there are increasing returns to adoption ΓÇö each user makes the next user's choice easier. Networks, standards, careers, and cities all show it. The lesson isn't that early choices are always right; it's that they're often permanent, so early bets deserve more thought than late ones.",
+      "Path dependence emerges when there are increasing returns to adoption — each user makes the next user's choice easier. Networks, standards, careers, and cities all show it. The lesson isn't that early choices are always right; it's that they're often permanent, so early bets deserve more thought than late ones.",
     layer2:
       "Look at a choice you're locked into (a career, a codebase, a city). Trace the small decisions that put you there. Are any still worth revisiting, before the lock-in gets deeper?",
     quiz: {
@@ -3324,7 +3324,7 @@ export const NODES: Node[] = [
     category: "Time",
     thesis: "The right, but not obligation, to act is worth paying for.",
     layer0:
-      "An option is asymmetric: bounded downside, open upside. If you can pay a small cost to preserve the ability to act later ΓÇö a class you might not need, a friendship you might not lean on, a savings buffer ΓÇö that option has real value even if you never exercise it.",
+      "An option is asymmetric: bounded downside, open upside. If you can pay a small cost to preserve the ability to act later — a class you might not need, a friendship you might not lean on, a savings buffer — that option has real value even if you never exercise it.",
     layer1:
       "The reason optionality is undervalued is that human minds prefer clean commitments over uncertain rights. But in a volatile world, options survive shocks and let you exploit surprises. Careers with high optionality (transferable skills, savings, a network) outperform locked-in careers over long horizons, even when the locked-in career pays more per year.",
     layer2:
@@ -3360,9 +3360,9 @@ export const NODES: Node[] = [
     category: "Decisions",
     thesis: "Choose the option whose average outcome, weighted by probability, is highest.",
     layer0:
-      "Expected value multiplies each possible outcome by its probability and sums them. A 10% chance of winning $100 has an EV of $10 ΓÇö worth paying up to $10 for. It sounds mechanical, but it's the discipline that separates gambling from investing.",
+      "Expected value multiplies each possible outcome by its probability and sums them. A 10% chance of winning $100 has an EV of $10 — worth paying up to $10 for. It sounds mechanical, but it's the discipline that separates gambling from investing.",
     layer1:
-      "The trap in EV is confusing expected value with expected outcome. On a single bet, you get one draw ΓÇö not the average. Kelly and position sizing exist because a positive-EV bet can still ruin you if you bet too much. EV is necessary but not sufficient; it must be combined with variance and ruin.",
+      "The trap in EV is confusing expected value with expected outcome. On a single bet, you get one draw — not the average. Kelly and position sizing exist because a positive-EV bet can still ruin you if you bet too much. EV is necessary but not sufficient; it must be combined with variance and ruin.",
     layer2:
       "Take a decision on your plate. Enumerate three outcomes with probabilities that sum to 1, and assign a value to each. Compute EV. Now ask: could the worst outcome ruin me? If yes, don't take the bet even if EV is positive.",
     quiz: {
@@ -3393,9 +3393,9 @@ export const NODES: Node[] = [
     layer0:
       "Before starting a project, gather the team and say: 'It's a year from now and this project has failed catastrophically. Write down why.' The prospective hindsight unlocks concerns people wouldn't otherwise raise, because it feels safe to describe a failure that has already occurred.",
     layer1:
-      "Post-mortems teach you about a project that already failed. Pre-mortems try to fix it in advance. Klein's research showed prospective hindsight increases the ability to identify reasons for future outcomes by around 30%. The technique also gives permission ΓÇö junior people can criticize without seeming disloyal, because it's framed as a story about a hypothetical failure.",
+      "Post-mortems teach you about a project that already failed. Pre-mortems try to fix it in advance. Klein's research showed prospective hindsight increases the ability to identify reasons for future outcomes by around 30%. The technique also gives permission — junior people can criticize without seeming disloyal, because it's framed as a story about a hypothetical failure.",
     layer2:
-      "For your next big decision, run a 15-minute pre-mortem alone or with a team. Write the failure headline, then five reasons it happened. Take the top two seriously ΓÇö plan around them now.",
+      "For your next big decision, run a 15-minute pre-mortem alone or with a team. Write the failure headline, then five reasons it happened. Take the top two seriously — plan around them now.",
     quiz: {
       question: "Why does a pre-mortem surface more failure modes than a normal risk review?",
       options: [
@@ -3407,13 +3407,13 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Decision-Making"],
-    related: ["B2", "B3", "B10", "D3"],
+    related: ["B2", "B3", "D3"],
     furtherReading: [
       {
         label: "Performing a Project Pre-Mortem",
         source: "HBR",
         url: "https://hbr.org/2007/09/performing-a-project-premortem",
-          archive: { status: "full", path: "content/sources/L2-0.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/L2-0.md", retrieved: "2026-07-14" }
     },
     ],
   },
@@ -3427,11 +3427,11 @@ export const NODES: Node[] = [
     category: "Decisions",
     thesis: "Anchor to what usually happens before adjusting for what makes this case special.",
     layer0:
-      "When forecasting, most people describe what makes their situation unique and forget the base rate ΓÇö how often the outcome occurs across all similar situations. Most startups fail. Most books don't sell. Most projects run over budget. That prior should be the starting point.",
+      "When forecasting, most people describe what makes their situation unique and forget the base rate — how often the outcome occurs across all similar situations. Most startups fail. Most books don't sell. Most projects run over budget. That prior should be the starting point.",
     layer1:
       "The failure mode is called the inside view: focusing on details of the specific case ('our team is exceptional') at the expense of the outside view ('90% of ventures like this fail'). Kahneman's advice: start with the base rate, then adjust modestly for what's genuinely different. The inside view is not wrong, but it's rarely as different as it feels.",
     layer2:
-      "For your current bet, find the reference class ΓÇö similar projects, ideally 20+ of them ΓÇö and note the base rate of success. Then justify your specific adjustment upward or downward with evidence. Be honest about how different you really are.",
+      "For your current bet, find the reference class — similar projects, ideally 20+ of them — and note the base rate of success. Then justify your specific adjustment upward or downward with evidence. Be honest about how different you really are.",
     quiz: {
       question:
         "A founder says 'our startup will succeed because our team is unusually talented.' What is the base-rates critique?",
@@ -3444,7 +3444,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["B2", "B15", "H4", "D4"],
+    related: ["B2", "H4", "D4"],
     furtherReading: [
       {
         label: "Thinking, Fast and Slow",
@@ -3500,9 +3500,9 @@ export const NODES: Node[] = [
     category: "Systems",
     thesis: "When a measure becomes a target, it ceases to be a good measure.",
     layer0:
-      "Any metric that starts as a rough proxy for something you care about degrades once you tie rewards to it. People optimize for the number, not the thing. Test scores, LOC written, closed tickets, likes ΓÇö all Goodhart-vulnerable.",
+      "Any metric that starts as a rough proxy for something you care about degrades once you tie rewards to it. People optimize for the number, not the thing. Test scores, LOC written, closed tickets, likes — all Goodhart-vulnerable.",
     layer1:
-      "The mechanism is straightforward: measures approximate reality imperfectly. If the gap between measure and reality has any slack, incentives push behavior into that slack. Better metrics reduce but never eliminate the gap. The remedy is triangulation ΓÇö multiple weak metrics beat one strong one, and qualitative review catches what numbers miss.",
+      "The mechanism is straightforward: measures approximate reality imperfectly. If the gap between measure and reality has any slack, incentives push behavior into that slack. Better metrics reduce but never eliminate the gap. The remedy is triangulation — multiple weak metrics beat one strong one, and qualitative review catches what numbers miss.",
     layer2:
       "List the top metric your team optimizes. Ask: how would I game this if I were lazy and wanted the bonus? Look for signs it's already happening.",
     quiz: {
@@ -3517,7 +3517,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Incentives & Systems"],
-    related: ["F3", "F10", "B12", "E2"],
+    related: ["F3"],
     furtherReading: [
       {
         label: "Goodhart's Law: Its Origins, Meaning, and Implications",
@@ -3539,14 +3539,14 @@ export const NODES: Node[] = [
     layer0:
       "You encounter a rule, a process, or a fence in a field with no obvious purpose. The naive move is to remove it. Chesterton's rule: first understand why it's there, and only then decide whether it's safe to remove.",
     layer1:
-      "Most existing systems encode dead assumptions and hidden functions. The dead assumptions look silly; the hidden functions look invisible. Reformers remove both, and only notice the second when something breaks weeks later. The fix is not conservatism ΓÇö it's discovery: interview the people who lived through the reason before you touch the fence.",
+      "Most existing systems encode dead assumptions and hidden functions. The dead assumptions look silly; the hidden functions look invisible. Reformers remove both, and only notice the second when something breaks weeks later. The fix is not conservatism — it's discovery: interview the people who lived through the reason before you touch the fence.",
     layer2:
       "Find one process at work you consider stupid. Before proposing its removal, find the person who set it up (or the closest available) and ask what problem it originally solved. You'll usually learn something.",
     quiz: {
       question:
         "A new engineer wants to delete a mysterious cron job no one documents. Chesterton's Fence says:",
       options: [
-        "Delete it ΓÇö if it mattered, someone would document it.",
+        "Delete it — if it mattered, someone would document it.",
         "Find out why it exists first; the surprising cost of removal is often invisible.",
         "Rewrite it in a new language.",
         "Ignore it forever.",
@@ -3554,7 +3554,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
-    related: ["B2", "B4", "B6", "E3"],
+    related: ["B2", "B4", "B6"],
     furtherReading: [
       {
         label: "The Thing",
@@ -3574,9 +3574,9 @@ export const NODES: Node[] = [
     category: "Systems",
     thesis: "The one deciding is rarely the one bearing the consequences.",
     layer0:
-      "A principal hires an agent to act on their behalf ΓÇö shareholders hire executives, homeowners hire contractors, citizens elect officials. The agent has more information and different incentives, so their decisions systematically diverge from what the principal would choose. Every institution runs on layers of this.",
+      "A principal hires an agent to act on their behalf — shareholders hire executives, homeowners hire contractors, citizens elect officials. The agent has more information and different incentives, so their decisions systematically diverge from what the principal would choose. Every institution runs on layers of this.",
     layer1:
-      "The fix isn't to eliminate agents ΓÇö you can't ΓÇö but to reduce the gap: better information for the principal (audits, dashboards), aligned incentives (equity, bonuses tied to real outcomes), and skin-in-the-game where possible. Even so, some misalignment always remains; the design goal is to make the residual harmless.",
+      "The fix isn't to eliminate agents — you can't — but to reduce the gap: better information for the principal (audits, dashboards), aligned incentives (equity, bonuses tied to real outcomes), and skin-in-the-game where possible. Even so, some misalignment always remains; the design goal is to make the residual harmless.",
     layer2:
       "In a decision affecting you, name the principal (whose outcome matters) and the agent (who's actually deciding). Ask: what are the agent's incentives that don't match the principal's? What would close that gap?",
     quiz: {
@@ -3590,13 +3590,13 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Incentives & Systems", "Crypto & Trust"],
-    related: ["F3", "F10", "B12", "E4"],
+    related: ["F3"],
     furtherReading: [
       {
         label: "Theory of the Firm",
         source: "paper",
         url: "https://www.sciencedirect.com/science/article/pii/0304405X7690026X",
-          archive: { status: "full", path: "content/sources/M3-0.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/M3-0.md", retrieved: "2026-07-14" }
     },
     ],
   },
@@ -3610,9 +3610,9 @@ export const NODES: Node[] = [
     category: "Systems",
     thesis: "A well-intended incentive can produce exactly what it was meant to prevent.",
     layer0:
-      "The British in colonial Delhi paid a bounty for dead cobras to reduce cobra populations. People started breeding cobras. When the government cancelled the program, the breeders released their now-worthless snakes ΓÇö and the cobra population increased. The name stuck.",
+      "The British in colonial Delhi paid a bounty for dead cobras to reduce cobra populations. People started breeding cobras. When the government cancelled the program, the breeders released their now-worthless snakes — and the cobra population increased. The name stuck.",
     layer1:
-      "The Cobra Effect is what Goodhart's Law feels like when the incentive is loud. Any rule that pays for outcome X creates a market to produce X, including by cheating. Designers of incentives must model not just intended actors but adversarial ones ΓÇö the smartest people looking at the rule will find the gap. If the gap flips the sign of the incentive, you get a cobra farm.",
+      "The Cobra Effect is what Goodhart's Law feels like when the incentive is loud. Any rule that pays for outcome X creates a market to produce X, including by cheating. Designers of incentives must model not just intended actors but adversarial ones — the smartest people looking at the rule will find the gap. If the gap flips the sign of the incentive, you get a cobra farm.",
     layer2:
       "For an incentive scheme you know (a policy, a bonus plan, a user reward), ask: could this be worked in a way that produces the opposite of the goal? If yes, cap it or add a second metric that catches the reversal.",
     quiz: {
@@ -3627,7 +3627,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Incentives & Systems"],
-    related: ["F3", "F10", "B12", "E1"],
+    related: ["F3", "E1"],
     furtherReading: [
       {
         label: "The Cobra Effect",
@@ -3648,11 +3648,11 @@ export const NODES: Node[] = [
     thesis:
       "The ability to focus without distraction on cognitively demanding tasks is rare, valuable, and trainable.",
     layer0:
-      "Newport distinguishes deep work (focused, undistracted, hard) from shallow work (email, meetings, easy). In a world of constant interruption, the capacity to sit with a hard problem for long stretches becomes both increasingly rare and increasingly valuable. It's also a skill ΓÇö you can train it.",
+      "Newport distinguishes deep work (focused, undistracted, hard) from shallow work (email, meetings, easy). In a world of constant interruption, the capacity to sit with a hard problem for long stretches becomes both increasingly rare and increasingly valuable. It's also a skill — you can train it.",
     layer1:
-      "The training has two parts: scheduling protected time, and building tolerance for the discomfort of focus. Both fight against a brain trained on novelty by constant notifications. Newport's practical rules: fixed hours, phone in another room, and starting with 60-minute blocks and extending. Attention residue is real ΓÇö every context switch costs 15-25 minutes of reduced quality.",
+      "The training has two parts: scheduling protected time, and building tolerance for the discomfort of focus. Both fight against a brain trained on novelty by constant notifications. Newport's practical rules: fixed hours, phone in another room, and starting with 60-minute blocks and extending. Attention residue is real — every context switch costs 15-25 minutes of reduced quality.",
     layer2:
-      "Schedule one 90-minute deep work block tomorrow ΓÇö phone in another room, browser closed, one task only. Notice the discomfort in the first 20 minutes. Push through. That discomfort is the workout.",
+      "Schedule one 90-minute deep work block tomorrow — phone in another room, browser closed, one task only. Notice the discomfort in the first 20 minutes. Push through. That discomfort is the workout.",
     quiz: {
       question: "Deep work is best trained by:",
       options: [
@@ -3684,11 +3684,11 @@ export const NODES: Node[] = [
     category: "Craft",
     thesis: "Good taste isn't subjective. It's the accumulated recognition of what actually works.",
     layer0:
-      "People say taste is subjective to avoid confrontation. But masters in every field agree, roughly, on what's good ΓÇö because they've seen many examples and internalized what makes some endure. Taste is pattern recognition trained by exposure and honest attention.",
+      "People say taste is subjective to avoid confrontation. But masters in every field agree, roughly, on what's good — because they've seen many examples and internalized what makes some endure. Taste is pattern recognition trained by exposure and honest attention.",
     layer1:
-      "Taste is developed by two habits: consuming a lot of the best work in your field, and asking why it works. Not just admiring, but analyzing ΓÇö why does this sentence land, why does this design breathe, why does this argument hold? Over years, you build a mental library of what's real, and your first drafts start closer to the target.",
+      "Taste is developed by two habits: consuming a lot of the best work in your field, and asking why it works. Not just admiring, but analyzing — why does this sentence land, why does this design breathe, why does this argument hold? Over years, you build a mental library of what's real, and your first drafts start closer to the target.",
     layer2:
-      "Pick one artifact in your field you consider excellent. Spend 30 minutes reverse-engineering it ΓÇö sentence by sentence, decision by decision. Write down three specific things that make it work.",
+      "Pick one artifact in your field you consider excellent. Spend 30 minutes reverse-engineering it — sentence by sentence, decision by decision. Write down three specific things that make it work.",
     quiz: {
       question: "According to PG, the fastest way to develop taste is to:",
       options: [
@@ -3721,7 +3721,7 @@ export const NODES: Node[] = [
     thesis:
       "Great work is often produced by people obsessed with a topic in a way that looks useless to outsiders.",
     layer0:
-      "PG noticed that people who do outstanding work usually have a disinterested obsession with their subject ΓÇö a fascination with something specific, pursued for its own sake, that looks as pointless to the world as collecting bus tickets. Ambition and curiosity together are rare; obsession alone can carry you further than either.",
+      "PG noticed that people who do outstanding work usually have a disinterested obsession with their subject — a fascination with something specific, pursued for its own sake, that looks as pointless to the world as collecting bus tickets. Ambition and curiosity together are rare; obsession alone can carry you further than either.",
     layer1:
       "The obsession matters because great work requires vast amounts of unrewarded time spent poking at details no one else cares about. Only genuine fascination sustains that. External rewards run out or point elsewhere; the internal pull keeps you going through the long middle where nothing looks like it will work. So the path to remarkable work is often to notice what you can't stop thinking about, and take it more seriously.",
     layer2:
@@ -3730,14 +3730,14 @@ export const NODES: Node[] = [
       question: "The bus ticket theory says that great work often depends on:",
       options: [
         "Working harder than others.",
-        "A disinterested obsession ΓÇö fascination with a topic pursued for its own sake, sustaining you through unrewarded stretches.",
+        "A disinterested obsession — fascination with a topic pursued for its own sake, sustaining you through unrewarded stretches.",
         "External rewards and prestige.",
         "Careful career planning.",
       ],
       correctIndex: 1,
     },
     tags: ["Craft & Deep Work"],
-    related: ["B6", "B9", "B24", "H4"],
+    related: ["B6", "H4"],
     furtherReading: [
       {
         label: "The Bus Ticket Theory of Genius",
@@ -3757,15 +3757,15 @@ export const NODES: Node[] = [
     category: "Craft",
     thesis: "Commit hard to a view so you can update fast when it's wrong.",
     layer0:
-      "The instinct is to hedge ΓÇö hold beliefs loosely so you're never embarrassed. Saffo argues for the opposite: form the sharpest, most concrete opinion you can, and pair it with radical willingness to abandon it in the face of evidence. Sharp opinions test faster; hedged ones drift.",
+      "The instinct is to hedge — hold beliefs loosely so you're never embarrassed. Saffo argues for the opposite: form the sharpest, most concrete opinion you can, and pair it with radical willingness to abandon it in the face of evidence. Sharp opinions test faster; hedged ones drift.",
     layer1:
-      "The reason it works is that a vague opinion can accommodate any evidence ΓÇö it can never be falsified, and so never updates. A strong opinion makes specific predictions, and reality quickly tells you whether it's right. The 'weakly held' part is the discipline: you must genuinely be willing to abandon the view when it fails, or the whole thing turns into stubborn advocacy.",
+      "The reason it works is that a vague opinion can accommodate any evidence — it can never be falsified, and so never updates. A strong opinion makes specific predictions, and reality quickly tells you whether it's right. The 'weakly held' part is the discipline: you must genuinely be willing to abandon the view when it fails, or the whole thing turns into stubborn advocacy.",
     layer2:
       "Take a topic you have soft views on. Force yourself to state a strong, concrete opinion in one sentence. Then write down what specific evidence would make you drop it. Watch for that evidence honestly.",
     quiz: {
       question: "Why does 'strong opinions, weakly held' beat hedging?",
       options: [
-        "Strong opinions make sharp predictions that reality can falsify ΓÇö vague opinions drift and never update.",
+        "Strong opinions make sharp predictions that reality can falsify — vague opinions drift and never update.",
         "Strong opinions are more impressive to others.",
         "Weakly held means you don't have to change your mind.",
         "It's mostly a rhetorical device.",
@@ -3773,7 +3773,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["B2", "B15", "D3", "H1"],
+    related: ["B2", "D3", "H1"],
     furtherReading: [
       {
         label: "Strong Opinions, Weakly Held",
@@ -3792,13 +3792,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Mental Models",
     thesis:
-      "Reliable judgment comes from holding a 'latticework' of the most important ideas across disciplines ΓÇö psychology, economics, physics, biology ΓÇö rather than mastering just one, since any single-discipline lens reliably misses something a real situation depends on.",
+      "Reliable judgment comes from holding a 'latticework' of the most important ideas across disciplines — psychology, economics, physics, biology — rather than mastering just one, since any single-discipline lens reliably misses something a real situation depends on.",
     layer0:
-      "A mental model is a simplified representation of how something works, used to understand, predict, and decide; the 'latticework' idea is that no single model from any one field is sufficient on its own ΓÇö economics alone, or psychology alone, or physics alone will each miss something a situation depends on. Reliable judgment comes from holding a cross-disciplinary set of models and knowing which one(s) actually apply to the specific situation in front of you.",
+      "A mental model is a simplified representation of how something works, used to understand, predict, and decide; the 'latticework' idea is that no single model from any one field is sufficient on its own — economics alone, or psychology alone, or physics alone will each miss something a situation depends on. Reliable judgment comes from holding a cross-disciplinary set of models and knowing which one(s) actually apply to the specific situation in front of you.",
     layer1:
-      "Since each model is drawn from a genuinely different domain (inversion from mathematics, natural selection from biology, supply and demand from economics, cognitive biases from psychology), stacking multiple models against the same problem catches errors that any single lens would miss on its own ΓÇö the way viewing an object from several angles reveals its true three-dimensional shape rather than a single flat silhouette.",
+      "Since each model is drawn from a genuinely different domain (inversion from mathematics, natural selection from biology, supply and demand from economics, cognitive biases from psychology), stacking multiple models against the same problem catches errors that any single lens would miss on its own — the way viewing an object from several angles reveals its true three-dimensional shape rather than a single flat silhouette.",
     layer2:
-      "Pick a recent decision you made using only one lens ΓÇö only financial logic, or only what felt socially right. Which other lens (psychology, biology, physics, math) might reveal something that lens missed?",
+      "Pick a recent decision you made using only one lens — only financial logic, or only what felt socially right. Which other lens (psychology, biology, physics, math) might reveal something that lens missed?",
     quiz: {
       question:
         "Whose speech is credited as the direct origin of Farnam Street's entire 'latticework of mental models' framework?",
@@ -3811,7 +3811,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["First-Principles Thinking"],
-    related: ["E2", "L10", "B6"],
+    related: ["B6"],
     furtherReading: [
       {
         label: "A Lesson on Elementary, Worldly Wisdom (full transcript)",
@@ -3837,13 +3837,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Learning",
     thesis:
-      "You don't actually understand something until you can explain it in plain language a 12-year-old could follow ΓÇö complexity and jargon are usually masking a gap in your own understanding, not evidence of sophistication.",
+      "You don't actually understand something until you can explain it in plain language a 12-year-old could follow — complexity and jargon are usually masking a gap in your own understanding, not evidence of sophistication.",
     layer0:
       "The technique has four steps: (1) pick a concept and write down everything you currently know about it; (2) try to explain it in words simple enough for a 12-year-old to follow; (3) go back to the source material wherever your explanation breaks down or gets vague, and refine it; (4) test your simplified explanation by actually teaching it to someone else without notes.",
     layer1:
-      "The mechanism is that writing forces better thinking than merely feeling like you understand something: putting an idea into your own simple words exposes gaps and hand-waving that stay comfortably hidden as long as the idea remains an unspoken, jargon-wrapped impression in your head ΓÇö as Mortimer Adler put it, 'the person who says he knows what he thinks but cannot express it usually does not know what he thinks.'",
+      "The mechanism is that writing forces better thinking than merely feeling like you understand something: putting an idea into your own simple words exposes gaps and hand-waving that stay comfortably hidden as long as the idea remains an unspoken, jargon-wrapped impression in your head — as Mortimer Adler put it, 'the person who says he knows what he thinks but cannot express it usually does not know what he thinks.'",
     layer2:
-      "Pick something you'd say you 'understand' well ΓÇö a concept from your job, a mental model, a piece of news you discussed recently. Try writing a plain-language explanation of it for a 12-year-old right now. Where does the explanation get vague or start borrowing jargon instead of plain words?",
+      "Pick something you'd say you 'understand' well — a concept from your job, a mental model, a piece of news you discussed recently. Try writing a plain-language explanation of it for a 12-year-old right now. Where does the explanation get vague or start borrowing jargon instead of plain words?",
     quiz: {
       question: "What are the four steps of the Feynman Technique, in order?",
       options: [
@@ -3855,7 +3855,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
-    related: ["D3", "E2", "H4", "B7"],
+    related: ["D3", "H4", "B7"],
     furtherReading: [
       {
         label: "Why Write? (on how writing reveals gaps in understanding)",
@@ -3865,7 +3865,7 @@ export const NODES: Node[] = [
     },
       {
         label:
-          "This is Water ΓÇö David Foster Wallace's 2005 Kenyon College commencement speech (full transcript and audio)",
+          "This is Water — David Foster Wallace's 2005 Kenyon College commencement speech (full transcript and audio)",
         source: "Farnam Street",
         url: "https://fs.blog/david-foster-wallace-this-is-water/",
           archive: { status: "unavailable" }
@@ -3881,13 +3881,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Systems Thinking",
     thesis:
-      "Solving a problem for good requires digging past the proximate cause (the immediate trigger) to the root cause (the deeper condition that, if fixed, prevents recurrence) ΓÇö otherwise you're applying a band-aid, not a fix.",
+      "Solving a problem for good requires digging past the proximate cause (the immediate trigger) to the root cause (the deeper condition that, if fixed, prevents recurrence) — otherwise you're applying a band-aid, not a fix.",
     layer0:
       "A proximate cause is the immediate, most obvious trigger of an event (e.g., 'I lost my job because the company had financial difficulties'); a root cause is the deeper, underlying condition that actually explains why the proximate cause was able to happen at all (e.g., 'I hadn't kept my skills current, so I wasn't valuable enough to retain'). Techniques like the '5 Whys' (repeatedly asking why, using each answer as the basis for the next question) and Socratic questioning are used to dig from the proximate cause down to the root.",
     layer1:
-      "The mechanism is that fixing only the proximate cause leaves the underlying condition intact, so the same failure mode recurs in a different guise ΓÇö in the King's Cross fire, replacing wooden escalators or banning smoking (proximate fixes) would have still left a fatal risk in place, because the deeper problem was that staff had no training or equipment to respond to a fire quickly; only fixing that root cause (staff training, communication tools, heat detectors and sprinklers) actually prevented recurrence.",
+      "The mechanism is that fixing only the proximate cause leaves the underlying condition intact, so the same failure mode recurs in a different guise — in the King's Cross fire, replacing wooden escalators or banning smoking (proximate fixes) would have still left a fatal risk in place, because the deeper problem was that staff had no training or equipment to respond to a fire quickly; only fixing that root cause (staff training, communication tools, heat detectors and sprinklers) actually prevented recurrence.",
     layer2:
-      "Think of a recurring problem in your own life or work ΓÇö something that keeps happening in slightly different forms. If you apply the '5 Whys' to it, does the trail lead to a genuinely different, deeper explanation than the first, most obvious cause you'd normally blame?",
+      "Think of a recurring problem in your own life or work — something that keeps happening in slightly different forms. If you apply the '5 Whys' to it, does the trail lead to a genuinely different, deeper explanation than the first, most obvious cause you'd normally blame?",
     quiz: {
       question:
         "In the 1987 King's Cross fire investigation, what was identified as the actual root cause, as distinct from the proximate cause (a dropped match)?",
@@ -3900,7 +3900,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["First-Principles Thinking"],
-    related: ["E2", "L10", "B8"],
+    related: [],
     furtherReading: [
       {
         label: "Understanding the Limitations of Maps",
@@ -3910,7 +3910,7 @@ export const NODES: Node[] = [
     },
       {
         label: "The 5 Whys technique explained (as used in root cause analysis)",
-        source: "General reference ΓÇö verify specific video before use",
+        source: "General reference — verify specific video before use",
         url: "https://fs.blog/proximate-vs-root-causes/",
           archive: { status: "unavailable" }
     },
@@ -3925,13 +3925,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Systems Thinking",
     thesis:
-      "In complex systems, tiny differences in starting conditions can produce enormous, unpredictable differences in outcome ΓÇö meaning the butterfly effect is not 'leverage' (a small thing you can reliably push to get a big desired result) but a statement about the fundamental unpredictability of chaotic systems.",
+      "In complex systems, tiny differences in starting conditions can produce enormous, unpredictable differences in outcome — meaning the butterfly effect is not 'leverage' (a small thing you can reliably push to get a big desired result) but a statement about the fundamental unpredictability of chaotic systems.",
     layer0:
-      "The butterfly effect describes how, in complex systems (weather, economies, geopolitics), extremely small differences in initial conditions can lead to vastly different outcomes over time, because errors and small effects compound and amplify through feedback rather than staying proportionally small ΓÇö meaning precise long-range prediction of such systems is fundamentally impossible, not just difficult with current tools.",
+      "The butterfly effect describes how, in complex systems (weather, economies, geopolitics), extremely small differences in initial conditions can lead to vastly different outcomes over time, because errors and small effects compound and amplify through feedback rather than staying proportionally small — meaning precise long-range prediction of such systems is fundamentally impossible, not just difficult with current tools.",
     layer1:
-      "General Stanley McChrystal explicitly warns against the popular misreading of this idea as 'leverage' ΓÇö a small thing you can manipulate to reliably cause a specific big outcome. The actual insight from Lorenz is closer to the opposite: small things in a complex system may have no effect or a massive one, and there's no reliable way to know in advance which it will be, which is why economist Benoit Mandelbrot found standard financial models radically underestimated the frequency of extreme market moves (like the 2008 crash) by assuming outcomes cluster predictably around an average.",
+      "General Stanley McChrystal explicitly warns against the popular misreading of this idea as 'leverage' — a small thing you can manipulate to reliably cause a specific big outcome. The actual insight from Lorenz is closer to the opposite: small things in a complex system may have no effect or a massive one, and there's no reliable way to know in advance which it will be, which is why economist Benoit Mandelbrot found standard financial models radically underestimated the frequency of extreme market moves (like the 2008 crash) by assuming outcomes cluster predictably around an average.",
     layer2:
-      "Think of a small decision or action from your past that turned out to have outsized, unpredictable consequences (good or bad). Could you have identified in advance that this particular small thing ΓÇö rather than dozens of other equally small things ΓÇö would be the one that mattered?",
+      "Think of a small decision or action from your past that turned out to have outsized, unpredictable consequences (good or bad). Could you have identified in advance that this particular small thing — rather than dozens of other equally small things — would be the one that mattered?",
     quiz: {
       question: "What discovery led Edward Lorenz to found chaos theory in the 1960s?",
       options: [
@@ -3943,7 +3943,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B9"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "Deterministic Nonperiodic Flow (Lorenz's original 1963 paper)",
@@ -3970,7 +3970,7 @@ export const NODES: Node[] = [
     thesis:
       "Consistent outperformance comes down to a mindset shift, not raw talent: amateurs have a goal, professionals have a system; amateurs are reactive, professionals are proactive; amateurs focus on being right, professionals focus on the best outcome.",
     layer0:
-      "The piece lists dozens of paired contrasts between amateur and professional mindsets ΓÇö e.g., amateurs focus on the outcome, professionals focus on the process; amateurs rely on willpower, professionals build environments that make desired behavior the default; amateurs want to win the moment, professionals want to win the decade ΓÇö arguing these differences, not raw talent, explain who consistently outperforms.",
+      "The piece lists dozens of paired contrasts between amateur and professional mindsets — e.g., amateurs focus on the outcome, professionals focus on the process; amateurs rely on willpower, professionals build environments that make desired behavior the default; amateurs want to win the moment, professionals want to win the decade — arguing these differences, not raw talent, explain who consistently outperforms.",
     layer1:
       "The underlying mechanism across nearly all the pairs is time horizon and locus of control: professional-mindset behaviors (systems over goals, process over outcome, environment over willpower) all shift effort toward things you can control repeatedly and consistently, while amateur-mindset behaviors concentrate effort and identity on single, high-variance moments (a single win, a single verdict of 'being right') that are largely out of your control once they arrive.",
     layer2:
@@ -3986,7 +3986,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Craft & Deep Work"],
-    related: ["H1", "H2", "H3", "B10"],
+    related: ["H1", "H2", "H3"],
     furtherReading: [
       {
         label: "Circle of Competence (referenced concept)",
@@ -4011,11 +4011,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Decision-Making",
     thesis:
-      "In 'loser's games' (like amateur tennis, and much of ordinary life and investing), success comes mainly from avoiding unforced errors, not from making brilliant plays ΓÇö Charlie Munger's version: 'trying to be consistently not stupid, instead of trying to be very intelligent.'",
+      "In 'loser's games' (like amateur tennis, and much of ordinary life and investing), success comes mainly from avoiding unforced errors, not from making brilliant plays — Charlie Munger's version: 'trying to be consistently not stupid, instead of trying to be very intelligent.'",
     layer0:
-      "The core distinction is between a 'Winner's Game,' where the outcome is determined by the skillful actions of the winner (professional tennis), and a 'Loser's Game,' where the outcome is determined mainly by the mistakes of the loser (amateur tennis, and much of everyday decision-making) ΓÇö meaning the right strategy depends entirely on which kind of game you're actually playing, not which one you wish you were playing.",
+      "The core distinction is between a 'Winner's Game,' where the outcome is determined by the skillful actions of the winner (professional tennis), and a 'Loser's Game,' where the outcome is determined mainly by the mistakes of the loser (amateur tennis, and much of everyday decision-making) — meaning the right strategy depends entirely on which kind of game you're actually playing, not which one you wish you were playing.",
     layer1:
-      "In a Loser's Game, trying to play like a professional (going for spectacular, low-percentage winning shots) actually increases your odds of losing, because your error rate on ambitious plays vastly outweighs your occasional success; the correct strategy is the opposite of what feels heroic ΓÇö keep the ball in play conservatively and let the other side's mistakes decide the outcome, which is also why an index-fund investor with no special skill can land in the top percentile of long-term returns simply by not trying to pick winning stocks.",
+      "In a Loser's Game, trying to play like a professional (going for spectacular, low-percentage winning shots) actually increases your odds of losing, because your error rate on ambitious plays vastly outweighs your occasional success; the correct strategy is the opposite of what feels heroic — keep the ball in play conservatively and let the other side's mistakes decide the outcome, which is also why an index-fund investor with no special skill can land in the top percentile of long-term returns simply by not trying to pick winning stocks.",
     layer2:
       "Think of an area of your life where you're playing a 'Loser's Game' (outcome mostly determined by your own mistakes) but acting as if you're in a 'Winner's Game' (trying for spectacular plays). What would 'just avoid the unforced errors' look like there instead?",
     quiz: {
@@ -4025,12 +4025,12 @@ export const NODES: Node[] = [
         "50% in both",
         "About 80% of points are won in professional tennis; about 80% are lost (via errors) in amateur tennis",
         "Points are lost equally often at both levels",
-        "It's the reverse ΓÇö amateurs win more points than professionals",
+        "It's the reverse — amateurs win more points than professionals",
       ],
       correctIndex: 1,
     },
     tags: ["Decision-Making", "First-Principles Thinking"],
-    related: ["D1", "D2", "D3", "B11"],
+    related: ["D1", "D2", "D3"],
     furtherReading: [
       {
         label: "Inversion (the related mental model of solving problems backward)",
@@ -4055,11 +4055,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Mental Models",
     thesis:
-      "Every mental model is a simplification and therefore, strictly speaking, wrong ΓÇö the only meaningful question is not 'is this model true?' but 'is this model useful, and for what?' ΓÇö the necessary caveat on the entire mental-models project.",
+      "Every mental model is a simplification and therefore, strictly speaking, wrong — the only meaningful question is not 'is this model true?' but 'is this model useful, and for what?' — the necessary caveat on the entire mental-models project.",
     layer0:
-      "A model is a simplification that helps understanding ΓÇö like an architectural model of a building, or a map of a city ΓÇö and simplification necessarily means leaving out details; that's not a flaw to be fixed but the entire point, since a model with zero simplification (a 1:1 map) would be exactly as unwieldy and useless as the raw, unprocessed reality it was meant to help you navigate.",
+      "A model is a simplification that helps understanding — like an architectural model of a building, or a map of a city — and simplification necessarily means leaving out details; that's not a flaw to be fixed but the entire point, since a model with zero simplification (a 1:1 map) would be exactly as unwieldy and useless as the raw, unprocessed reality it was meant to help you navigate.",
     layer1:
-      "The practical test for any model is not 'does this perfectly represent reality' (no model does) but questions like: how long has it been around and scrutinized (durability suggests usefulness), does it apply across multiple different areas (versatility suggests real signal, not overfitting to one case), and is it built on first principles rather than requiring infinite regress of further justification ΓÇö a model that passes these tests earns a place in your 'latticework' even though it remains, technically, wrong.",
+      "The practical test for any model is not 'does this perfectly represent reality' (no model does) but questions like: how long has it been around and scrutinized (durability suggests usefulness), does it apply across multiple different areas (versatility suggests real signal, not overfitting to one case), and is it built on first principles rather than requiring infinite regress of further justification — a model that passes these tests earns a place in your 'latticework' even though it remains, technically, wrong.",
     layer2:
       "Pick one mental model you rely on regularly. In what specific situation would that model actively mislead you if applied too literally or too far outside the context it was built for?",
     quiz: {
@@ -4074,7 +4074,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B12"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "The Map is Not the Territory",
@@ -4099,11 +4099,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Game Theory",
     thesis:
-      "In repeated (iterated) games, the most effective strategy is tit for tat: cooperate first, then simply mirror whatever your counterpart did last time ΓÇö ideally with occasional forgiveness built in to escape cycles of mutual retaliation.",
+      "In repeated (iterated) games, the most effective strategy is tit for tat: cooperate first, then simply mirror whatever your counterpart did last time — ideally with occasional forgiveness built in to escape cycles of mutual retaliation.",
     layer0:
-      "Under tit for tat, a player starts by cooperating, then in every later round simply repeats whatever their counterpart did in the previous round ΓÇö reciprocating cooperation with cooperation and defection with defection. In a single, one-shot interaction (not repeated), game theory suggests defection is actually the better strategy, since there's no future round in which reciprocity could be rewarded or punished.",
+      "Under tit for tat, a player starts by cooperating, then in every later round simply repeats whatever their counterpart did in the previous round — reciprocating cooperation with cooperation and defection with defection. In a single, one-shot interaction (not repeated), game theory suggests defection is actually the better strategy, since there's no future round in which reciprocity could be rewarded or punished.",
     layer1:
-      "'Tit for tat with forgiveness' ΓÇö occasionally cooperating even after the other side defected ΓÇö improves on strict tit for tat because two strict tit-for-tat players can otherwise get permanently locked into a cycle of mutual retaliation with no way out; a single forgiving cooperative move can break that cycle and restart mutual cooperation, which matters because most real-world relationships (unlike a single prisoner's dilemma round) are iterative and compounding over a long horizon.",
+      "'Tit for tat with forgiveness' — occasionally cooperating even after the other side defected — improves on strict tit for tat because two strict tit-for-tat players can otherwise get permanently locked into a cycle of mutual retaliation with no way out; a single forgiving cooperative move can break that cycle and restart mutual cooperation, which matters because most real-world relationships (unlike a single prisoner's dilemma round) are iterative and compounding over a long horizon.",
     layer2:
       "Think of a relationship where you and someone else got stuck in a tit-for-tat cycle of small retaliations. What would it have taken for one of you to 'forgive' first and reset the pattern toward cooperation?",
     quiz: {
@@ -4117,7 +4117,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Incentives & Systems"],
-    related: ["E1", "E3", "E4", "B13"],
+    related: ["E1"],
     furtherReading: [
       {
         label: "Reciprocity (the related mental model)",
@@ -4143,13 +4143,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Game Theory",
     thesis:
-      "The Prisoner's Dilemma shows that individually rational self-interest can produce a jointly worse outcome for everyone ΓÇö but when the same game repeats indefinitely with an unknown end point, cooperation becomes far more likely to emerge and persist.",
+      "The Prisoner's Dilemma shows that individually rational self-interest can produce a jointly worse outcome for everyone — but when the same game repeats indefinitely with an unknown end point, cooperation becomes far more likely to emerge and persist.",
     layer0:
-      "In the single-round version, both prisoners rationally defect (each serves 2 years) even though mutual cooperation (each serving just 1 year) would have been better for both ΓÇö because neither can trust the other not to defect, and the cost of being the lone cooperator (3 years) is too high. Real-world versions of this same structure appear in oligopoly pricing (e.g., OPEC members individually tempted to overproduce oil despite a mutual agreement to restrict supply) and arms races.",
+      "In the single-round version, both prisoners rationally defect (each serves 2 years) even though mutual cooperation (each serving just 1 year) would have been better for both — because neither can trust the other not to defect, and the cost of being the lone cooperator (3 years) is too high. Real-world versions of this same structure appear in oligopoly pricing (e.g., OPEC members individually tempted to overproduce oil despite a mutual agreement to restrict supply) and arms races.",
     layer1:
-      "The mechanism that changes everything is iteration: in a known, finite number of rounds, backward induction still favors defection on the very last round (no future round to enforce cooperation), which unravels cooperation all the way back to round one ΓÇö but when the game is repeated an unknown or effectively infinite number of times, the shadow of future interactions (and future retaliation) makes cooperative strategies like tit for tat rational and stable.",
+      "The mechanism that changes everything is iteration: in a known, finite number of rounds, backward induction still favors defection on the very last round (no future round to enforce cooperation), which unravels cooperation all the way back to round one — but when the game is repeated an unknown or effectively infinite number of times, the shadow of future interactions (and future retaliation) makes cooperative strategies like tit for tat rational and stable.",
     layer2:
-      "Think of a real 'Prisoner's Dilemma' you're in right now ΓÇö a situation where mutual cooperation would be better for both sides, but each side is individually tempted to defect. Is this genuinely a one-shot interaction, or is it actually iterated ΓÇö and does that change what the rational move is?",
+      "Think of a real 'Prisoner's Dilemma' you're in right now — a situation where mutual cooperation would be better for both sides, but each side is individually tempted to defect. Is this genuinely a one-shot interaction, or is it actually iterated — and does that change what the rational move is?",
     quiz: {
       question:
         "What changes the incentive structure of the Prisoner's Dilemma from favoring defection to making cooperation more likely?",
@@ -4162,7 +4162,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Incentives & Systems"],
-    related: ["E1", "E3", "E4", "B14"],
+    related: ["E1"],
     furtherReading: [
       {
         label: "The Surprising Power of the Long Game (related Farnam Street piece)",
@@ -4188,13 +4188,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Decision-Making",
     thesis:
-      "Fast, high-stakes decisions are best made through a repeating four-step loop ΓÇö Observe, Orient, Decide, Act ΓÇö where speed and comfort with uncertainty matter more than exhaustive analysis, and where 'orienting' (stripping away your own cultural and cognitive biases) is the decisive, most-overlooked step.",
+      "Fast, high-stakes decisions are best made through a repeating four-step loop — Observe, Orient, Decide, Act — where speed and comfort with uncertainty matter more than exhaustive analysis, and where 'orienting' (stripping away your own cultural and cognitive biases) is the decisive, most-overlooked step.",
     layer0:
-      "The loop has four repeating stages: Observe (gather the most accurate, current picture of the situation, filtering out noise); Orient (the crucial, least intuitive step ΓÇö strip away your own cultural assumptions, biases, and outdated mental models to see the situation as it actually is); Decide (choose an action based on that oriented picture); Act (execute, then feed the results back into the next Observe stage).",
+      "The loop has four repeating stages: Observe (gather the most accurate, current picture of the situation, filtering out noise); Orient (the crucial, least intuitive step — strip away your own cultural assumptions, biases, and outdated mental models to see the situation as it actually is); Decide (choose an action based on that oriented picture); Act (execute, then feed the results back into the next Observe stage).",
     layer1:
-      "Boyd argued that operating through this loop faster than an opponent creates a decisive advantage regardless of resources, because a faster-cycling opponent becomes unpredictable ΓÇö their actions appear disconnected from what you last observed, since you're still orienting to their previous move while they've already acted again, folding you 'back inside yourself' until you become confused and reactive rather than in control.",
+      "Boyd argued that operating through this loop faster than an opponent creates a decisive advantage regardless of resources, because a faster-cycling opponent becomes unpredictable — their actions appear disconnected from what you last observed, since you're still orienting to their previous move while they've already acted again, folding you 'back inside yourself' until you become confused and reactive rather than in control.",
     layer2:
-      "Think of a recent high-pressure decision. Which of the four stages (Observe, Orient, Decide, Act) did you actually spend the least time on ΓÇö and was that the stage that most needed more attention, especially 'Orient' (checking your own assumptions and biases)?",
+      "Think of a recent high-pressure decision. Which of the four stages (Observe, Orient, Decide, Act) did you actually spend the least time on — and was that the stage that most needed more attention, especially 'Orient' (checking your own assumptions and biases)?",
     quiz: {
       question:
         "What does the 'Orient' stage of the OODA Loop specifically involve, according to Boyd?",
@@ -4207,7 +4207,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Decision-Making"],
-    related: ["D1", "D2", "D3", "B15"],
+    related: ["D1", "D2", "D3"],
     furtherReading: [
       {
         label: "Decision Journal (a related practical tool referenced in this piece)",
@@ -4216,7 +4216,7 @@ export const NODES: Node[] = [
           archive: { status: "unavailable" }
     },
       {
-        label: "Farnam Street's Knowledge Project podcast ΓÇö decision-making series",
+        label: "Farnam Street's Knowledge Project podcast — decision-making series",
         source: "The Knowledge Project",
         url: "https://fs.blog/knowledge-project-podcast/",
           archive: { status: "unavailable" }
@@ -4234,9 +4234,9 @@ export const NODES: Node[] = [
     thesis:
       "Good judgment under uncertainty means continuously updating your probability estimates as new evidence arrives, weighting that new evidence against what you already knew (your 'priors') rather than either ignoring new evidence or overreacting to it as if nothing else mattered.",
     layer0:
-      "Bayesian updating means treating your existing beliefs ('priors') as probabilities rather than fixed facts, then adjusting those probabilities up or down whenever new evidence arrives, in proportion to how strong that evidence actually is ΓÇö rather than either dismissing the new evidence entirely or discarding your prior knowledge and starting over as if the new data were the only information that mattered.",
+      "Bayesian updating means treating your existing beliefs ('priors') as probabilities rather than fixed facts, then adjusting those probabilities up or down whenever new evidence arrives, in proportion to how strong that evidence actually is — rather than either dismissing the new evidence entirely or discarding your prior knowledge and starting over as if the new data were the only information that mattered.",
     layer1:
-      "The mammogram example makes the mechanism concrete: even a mammogram that correctly detects cancer 75% of the time will still produce far more false positives than true positives in absolute numbers if the underlying disease rate is very low (about 1.4% of women under 40) ΓÇö because a 10% false-positive rate applied to the roughly 98.6% of women who don't have cancer generates a huge number of false alarms that swamps the smaller number of true positives, unless you factor in that low base rate (the prior) before interpreting the test result.",
+      "The mammogram example makes the mechanism concrete: even a mammogram that correctly detects cancer 75% of the time will still produce far more false positives than true positives in absolute numbers if the underlying disease rate is very low (about 1.4% of women under 40) — because a 10% false-positive rate applied to the roughly 98.6% of women who don't have cancer generates a huge number of false alarms that swamps the smaller number of true positives, unless you factor in that low base rate (the prior) before interpreting the test result.",
     layer2:
       "Think of a recent headline or piece of news that alarmed you. What is the actual base rate (prior probability) of the underlying event, and does the new information change that probability by a little or by a lot, once you properly weigh it against what you already knew?",
     quiz: {
@@ -4251,7 +4251,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["D3", "H4", "E2", "B16"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "Bayes and Deadweight: Using Statistics to Eject the Deadweight From Your Life",
@@ -4278,9 +4278,9 @@ export const NODES: Node[] = [
     thesis:
       "Good decisions under uncertainty require three specific probabilistic skills: Bayesian updating (weighing new evidence against prior knowledge), recognizing fat-tailed distributions (where extreme outliers are far more common than a normal bell curve implies), and correcting for asymmetric estimation errors (like investors who systematically overestimate their own returns).",
     layer0:
-      "Bell-curve ('normal') distributions have predictable, bounded extremes (you'll never meet a man ten times the height of average); fat-tailed distributions (wealth, terrorism risk, market crashes) have no such natural cap, meaning rare extreme events are far more likely and far more consequential than bell-curve intuition suggests ΓÇö so comparing a fat-tailed risk (terrorism) to a bell-curve risk (slipping on stairs) using only recent-year death counts, as some commentators do, misunderstands which kind of distribution you're actually in.",
+      "Bell-curve ('normal') distributions have predictable, bounded extremes (you'll never meet a man ten times the height of average); fat-tailed distributions (wealth, terrorism risk, market crashes) have no such natural cap, meaning rare extreme events are far more likely and far more consequential than bell-curve intuition suggests — so comparing a fat-tailed risk (terrorism) to a bell-curve risk (slipping on stairs) using only recent-year death counts, as some commentators do, misunderstands which kind of distribution you're actually in.",
     layer1:
-      "The asymmetry point adds a further correction: probability estimates themselves tend to be systematically biased in a particular direction depending on context ΓÇö professional investors who publicly project 20-40% annual returns almost always underperform that projection (since the long-run US stock market has returned roughly 7-8% annually before fees), while commuters who leave 'on time' almost always arrive late rather than early, showing that estimation errors aren't random noise but a directional pattern you can and should correct for.",
+      "The asymmetry point adds a further correction: probability estimates themselves tend to be systematically biased in a particular direction depending on context — professional investors who publicly project 20-40% annual returns almost always underperform that projection (since the long-run US stock market has returned roughly 7-8% annually before fees), while commuters who leave 'on time' almost always arrive late rather than early, showing that estimation errors aren't random noise but a directional pattern you can and should correct for.",
     layer2:
       "Think of a recent probability estimate you made (about time, money, or risk) that turned out to be wrong. Was your error random, or does it fit a systematic, asymmetric pattern (e.g., consistent over-optimism) you could correct for next time?",
     quiz: {
@@ -4295,7 +4295,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Risk & Asymmetric Bets", "Cognitive Biases & Models"],
-    related: ["A3", "C4", "D1", "B17"],
+    related: ["A3", "C4", "D1"],
     furtherReading: [
       {
         label: "The Pygmalion Effect: Proving Them Right (related Farnam Street piece)",
@@ -4305,7 +4305,7 @@ export const NODES: Node[] = [
     },
       {
         label:
-          "Farnam Street's Knowledge Project podcast ΓÇö probabilistic thinking and poker with Annie Duke",
+          "Farnam Street's Knowledge Project podcast — probabilistic thinking and poker with Annie Duke",
         source: "The Knowledge Project",
         url: "https://fs.blog/annie-duke/",
           archive: { status: "unavailable" }
@@ -4321,13 +4321,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Reasoning",
     thesis:
-      "Among competing explanations that fit the evidence equally well, the one that requires the fewest assumptions should be preferred ΓÇö but Occam's Razor is a tool for narrowing initial hypotheses, not a substitute for evidence, and misapplying it (assuming 'simple' always beats 'accurate') can mislead badly.",
+      "Among competing explanations that fit the evidence equally well, the one that requires the fewest assumptions should be preferred — but Occam's Razor is a tool for narrowing initial hypotheses, not a substitute for evidence, and misapplying it (assuming 'simple' always beats 'accurate') can mislead badly.",
     layer0:
-      "Occam's Razor states that among hypotheses making equally accurate predictions, the one requiring the fewest assumptions should be preferred, because it's easier to verify, falsify, and act on ΓÇö the classic medical version is 'when you hear hoofbeats, think horses, not zebras,' meaning doctors should favor the most common explanation for a set of symptoms over a rare, exotic one, all else being equal.",
+      "Occam's Razor states that among hypotheses making equally accurate predictions, the one requiring the fewest assumptions should be preferred, because it's easier to verify, falsify, and act on — the classic medical version is 'when you hear hoofbeats, think horses, not zebras,' meaning doctors should favor the most common explanation for a set of symptoms over a rare, exotic one, all else being equal.",
     layer1:
-      "The mechanism is practical, not metaphysical: a simpler hypothesis is easier to test and falsify (fewer moving parts that could be wrong in undetectable ways), and simpler solutions are cheaper to fund and execute ΓÇö but the razor only applies when the competing explanations genuinely make the same predictions; it does not mean 'the simplest-sounding story is always true' regardless of the actual evidence, a common misreading the piece explicitly warns against.",
+      "The mechanism is practical, not metaphysical: a simpler hypothesis is easier to test and falsify (fewer moving parts that could be wrong in undetectable ways), and simpler solutions are cheaper to fund and execute — but the razor only applies when the competing explanations genuinely make the same predictions; it does not mean 'the simplest-sounding story is always true' regardless of the actual evidence, a common misreading the piece explicitly warns against.",
     layer2:
-      "Think of a recent situation where you jumped to a complex explanation. Was there a simpler explanation that fit the same evidence equally well ΓÇö and if so, what stopped you from choosing it first?",
+      "Think of a recent situation where you jumped to a complex explanation. Was there a simpler explanation that fit the same evidence equally well — and if so, what stopped you from choosing it first?",
     quiz: {
       question:
         "What is the classic medical-training version of Occam's Razor mentioned in this piece?",
@@ -4340,7 +4340,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B18"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "Hanlon's Razor (the complementary mental model)",
@@ -4366,11 +4366,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Reasoning",
     thesis:
-      "Deduction moves from general premises to a certain conclusion (if the premises are true, the conclusion must be true); induction moves from specific observations to a probable ΓÇö never certain ΓÇö general conclusion, and confusing the two (treating an inductive leap as if it had deductive certainty) is a common source of bad reasoning.",
+      "Deduction moves from general premises to a certain conclusion (if the premises are true, the conclusion must be true); induction moves from specific observations to a probable — never certain — general conclusion, and confusing the two (treating an inductive leap as if it had deductive certainty) is a common source of bad reasoning.",
     layer0:
-      "Deductive reasoning starts from a general premise assumed true (all men are mortal), applies a specific case (Socrates is a man), and reaches a conclusion that must be true if the premises are (Socrates is mortal) ΓÇö it's binary, either valid or invalid. Inductive reasoning draws a general or probable conclusion from specific observations (all the swans I've seen are white, so swans are probably white) ΓÇö it's a matter of degree (strong or weak), never certain, and always open to revision by a single disconfirming case (a black swan).",
+      "Deductive reasoning starts from a general premise assumed true (all men are mortal), applies a specific case (Socrates is a man), and reaches a conclusion that must be true if the premises are (Socrates is mortal) — it's binary, either valid or invalid. Inductive reasoning draws a general or probable conclusion from specific observations (all the swans I've seen are white, so swans are probably white) — it's a matter of degree (strong or weak), never certain, and always open to revision by a single disconfirming case (a black swan).",
     layer1:
-      "Karl Popper's theory of falsification builds directly on this distinction: since induction can never fully prove a general claim (no matter how many white swans you've seen, the next one could be black), Popper argued science should instead use deduction to derive falsifiable predictions from a hypothesis and then aggressively try to disprove them ΓÇö a theory earns provisional acceptance not by being 'proven' but by surviving repeated, genuine attempts at falsification.",
+      "Karl Popper's theory of falsification builds directly on this distinction: since induction can never fully prove a general claim (no matter how many white swans you've seen, the next one could be black), Popper argued science should instead use deduction to derive falsifiable predictions from a hypothesis and then aggressively try to disprove them — a theory earns provisional acceptance not by being 'proven' but by surviving repeated, genuine attempts at falsification.",
     layer2:
       "Pick a belief you hold with high confidence. Is it actually supported by deduction (certain, if the premises are true) or by induction (a probable pattern from past observations that a single new case could overturn)? How would you know if you were looking at a 'black swan' that should update it?",
     quiz: {
@@ -4378,14 +4378,14 @@ export const NODES: Node[] = [
         "According to this article, what kind of reasoning is Sherlock Holmes actually using in his famous 'deductions,' despite the popular label?",
       options: [
         "Genuine deductive reasoning, exactly as advertised",
-        "Inductive reasoning ΓÇö probable inference from observed clues, not certain deduction",
+        "Inductive reasoning — probable inference from observed clues, not certain deduction",
         "Pure guesswork with no logical structure",
         "A form of reasoning that doesn't exist in formal logic",
       ],
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B19"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
@@ -4395,7 +4395,7 @@ export const NODES: Node[] = [
     },
       {
         label:
-          "Three Buckets of Knowledge ΓÇö Peter Kaufman's framework for identifying universal principles (referenced in this piece)",
+          "Three Buckets of Knowledge — Peter Kaufman's framework for identifying universal principles (referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2016/02/three-buckets-lessons-of-history/",
           archive: { status: "unavailable" }
@@ -4411,13 +4411,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Reasoning",
     thesis:
-      "We systematically overestimate the odds of success because we only see and study the survivors (the Bill Gateses, the Beatles) while the vastly larger number of people who tried the same thing and failed disappear from view entirely ΓÇö distorting our sense of cause and effect.",
+      "We systematically overestimate the odds of success because we only see and study the survivors (the Bill Gateses, the Beatles) while the vastly larger number of people who tried the same thing and failed disappear from view entirely — distorting our sense of cause and effect.",
     layer0:
-      "Survivorship bias happens when we draw conclusions only from the subset of cases that 'survived' a selection process (successful companies, famous dropout billionaires, planes that made it home) while the failures ΓÇö often the much larger group ΓÇö are invisible, forgotten, or simply never studied, leading us to overestimate how replicable the survivors' specific choices actually are.",
+      "Survivorship bias happens when we draw conclusions only from the subset of cases that 'survived' a selection process (successful companies, famous dropout billionaires, planes that made it home) while the failures — often the much larger group — are invisible, forgotten, or simply never studied, leading us to overestimate how replicable the survivors' specific choices actually are.",
     layer1:
-      "Wald's bomber example makes the mechanism precise: reinforcing the bullet-hole locations visible on returning planes would have been actively wrong, because those planes survived their damage ΓÇö the areas with no visible damage on survivors were the areas where a hit was fatal, information only visible by reasoning about the missing, non-surviving planes rather than the ones you can actually see and study.",
+      "Wald's bomber example makes the mechanism precise: reinforcing the bullet-hole locations visible on returning planes would have been actively wrong, because those planes survived their damage — the areas with no visible damage on survivors were the areas where a hit was fatal, information only visible by reasoning about the missing, non-surviving planes rather than the ones you can actually see and study.",
     layer2:
-      "Think of a 'success story' you've recently taken as a model to follow (a founder, an investor, a public figure). What do you know about the much larger number of people who tried the same approach and failed ΓÇö and would learning about them change how much weight you put on the survivor's specific choices?",
+      "Think of a 'success story' you've recently taken as a model to follow (a founder, an investor, a public figure). What do you know about the much larger number of people who tried the same approach and failed — and would learning about them change how much weight you put on the survivor's specific choices?",
     quiz: {
       question:
         "What was Abraham Wald's key insight about WWII bomber planes and where to add armor?",
@@ -4430,7 +4430,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B20"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "What Sharks (and Building Bombers) Teach Us About Survivorship Bias",
@@ -4456,11 +4456,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Reasoning",
     thesis:
-      "Our fear of great white sharks ΓÇö and our comparative indifference to more dangerous species like the oceanic whitetip ΓÇö is itself a case of survivorship bias: we only hear stories from people who survived an attack and lived to describe it, which skews our sense of what's actually dangerous.",
+      "Our fear of great white sharks — and our comparative indifference to more dangerous species like the oceanic whitetip — is itself a case of survivorship bias: we only hear stories from people who survived an attack and lived to describe it, which skews our sense of what's actually dangerous.",
     layer0:
-      "Great white sharks are the most feared shark species largely because of pop-culture reinforcement (Jaws) and because they generate the most survivor stories ΓÇö they attack near shorelines where victims are more likely to be rescued. Oceanic whitetip sharks, which live in the open ocean far from help, are argued to be more dangerous per encounter, but generate far fewer survivor stories simply because fewer people encounter them and live to describe it.",
+      "Great white sharks are the most feared shark species largely because of pop-culture reinforcement (Jaws) and because they generate the most survivor stories — they attack near shorelines where victims are more likely to be rescued. Oceanic whitetip sharks, which live in the open ocean far from help, are argued to be more dangerous per encounter, but generate far fewer survivor stories simply because fewer people encounter them and live to describe it.",
     layer1:
-      "The mechanism is that our estimate of danger is built almost entirely from stories that reach us, and stories can only reach us from survivors ΓÇö so any domain where non-survival is more likely near where documentation is sparse (open ocean vs. crowded beaches) will be systematically underrated as dangerous, regardless of its true fatality rate, because the silence of the dead carries no data.",
+      "The mechanism is that our estimate of danger is built almost entirely from stories that reach us, and stories can only reach us from survivors — so any domain where non-survival is more likely near where documentation is sparse (open ocean vs. crowded beaches) will be systematically underrated as dangerous, regardless of its true fatality rate, because the silence of the dead carries no data.",
     layer2:
       "Pick a domain (career, city, hobby) where your sense of the risk comes mostly from stories you've heard. Are those stories disproportionately from people who \"made it,\" and what would you need to learn about the people who didn't to get an accurate picture?",
     quiz: {
@@ -4475,7 +4475,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B21"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "Survivorship Bias: The Tale of Forgotten Failures",
@@ -4500,11 +4500,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Psychology",
     thesis:
-      "We consistently overestimate how visible our internal emotional state is to other people ΓÇö the 'illusion of transparency' ΓÇö because we're anchored on our own intense subjective experience, when in reality other people are usually too absorbed in their own concerns to notice.",
+      "We consistently overestimate how visible our internal emotional state is to other people — the 'illusion of transparency' — because we're anchored on our own intense subjective experience, when in reality other people are usually too absorbed in their own concerns to notice.",
     layer0:
-      "The illusion of transparency is the gap between how obvious we think our internal emotional state is to others and how much they can actually detect ΓÇö because we're intensely focused on our own feelings (an egocentric anchor), we assume that intensity radiates outward, when in fact people around us are absorbed in their own thoughts and rarely scrutinize our expressions closely enough to read us accurately.",
+      "The illusion of transparency is the gap between how obvious we think our internal emotional state is to others and how much they can actually detect — because we're intensely focused on our own feelings (an egocentric anchor), we assume that intensity radiates outward, when in fact people around us are absorbed in their own thoughts and rarely scrutinize our expressions closely enough to read us accurately.",
     layer1:
-      "Since the bias is an anchoring effect (starting from your own felt intensity and failing to adjust enough for the fact that others don't share that vantage point), it persists even with people who know you well, and even when you know about the bias intellectually ΓÇö the practical fix isn't 'try harder to seem calm' but simply communicating your internal state directly in words rather than assuming it's already visible, and not assuming you can accurately read others' internal states either.",
+      "Since the bias is an anchoring effect (starting from your own felt intensity and failing to adjust enough for the fact that others don't share that vantage point), it persists even with people who know you well, and even when you know about the bias intellectually — the practical fix isn't 'try harder to seem calm' but simply communicating your internal state directly in words rather than assuming it's already visible, and not assuming you can accurately read others' internal states either.",
     layer2:
       "Think of a recent moment you assumed someone could clearly see you were nervous, upset, or lying. What's the actual evidence they noticed, versus your own felt intensity making you assume they did?",
     quiz: {
@@ -4512,14 +4512,14 @@ export const NODES: Node[] = [
         "In the lying-detection study referenced in this piece, how often were participants who lied actually caught, versus how often they expected to be caught?",
       options: [
         "They were caught about half the time, exactly as they expected",
-        "They expected to be caught about half the time but were actually only detected about a quarter of the time ΓÇö a rate low enough to be chance",
+        "They expected to be caught about half the time but were actually only detected about a quarter of the time — a rate low enough to be chance",
         "They were caught almost every time, far more than expected",
         "They were never caught at all",
       ],
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models", "Power & Persuasion"],
-    related: ["D3", "E2", "H4", "B22"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "Hanlon's Razor",
@@ -4545,11 +4545,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Reasoning",
     thesis:
-      "Anecdotes carry emotional weight far out of proportion to their statistical significance, leading us to overgeneralize from tiny, unrepresentative samples ΓÇö a bias that shapes everything from personal judgments to public policy built on compelling but non-representative single stories.",
+      "Anecdotes carry emotional weight far out of proportion to their statistical significance, leading us to overgeneralize from tiny, unrepresentative samples — a bias that shapes everything from personal judgments to public policy built on compelling but non-representative single stories.",
     layer0:
       "An anecdote is a single vivid story; because it's memorable and emotionally engaging, it tends to carry more persuasive weight in our minds than dry, larger-sample statistical evidence, even though a sample size of one (or a few) is a poor basis for generalizing about a whole population or predicting future outcomes.",
     layer1:
-      "The mechanism runs through evolved cognitive tendencies to trust vivid, story-shaped information over abstract numbers, compounded by the fact that gathering a genuinely representative sample is expensive and effortful, while a single compelling anecdote is cheap and immediately available ΓÇö meaning weak evidence often wins the persuasion contest against strong evidence purely because of its narrative packaging.",
+      "The mechanism runs through evolved cognitive tendencies to trust vivid, story-shaped information over abstract numbers, compounded by the fact that gathering a genuinely representative sample is expensive and effortful, while a single compelling anecdote is cheap and immediately available — meaning weak evidence often wins the persuasion contest against strong evidence purely because of its narrative packaging.",
     layer2:
       "Think of a recent decision (financial, career, medical) where a single vivid story from someone else weighed heavily on your thinking. What would a larger, more representative sample of outcomes have actually shown?",
     quiz: {
@@ -4564,7 +4564,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B23"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label: "Bias From Insensitivity to Sample Size",
@@ -4590,13 +4590,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Reasoning",
     thesis:
-      "Thought experiments ΓÇö structured imaginative scenarios rather than physical tests ΓÇö let thinkers from Zeno to Einstein explore questions that can't be tested empirically, revealing the logical limits and implications of an idea before (or instead of) any real-world experiment.",
+      "Thought experiments — structured imaginative scenarios rather than physical tests — let thinkers from Zeno to Einstein explore questions that can't be tested empirically, revealing the logical limits and implications of an idea before (or instead of) any real-world experiment.",
     layer0:
-      "A thought experiment is a structured imagined scenario used to explore the logical consequences of an idea when a physical experiment is impossible, unethical, or unnecessary ΓÇö 19th-century philosopher-physicist Ernst Mach argued thought experiments often precede and prepare the way for physical experiments, since we can vary imagined circumstances 'at little expense' compared to the real world.",
+      "A thought experiment is a structured imagined scenario used to explore the logical consequences of an idea when a physical experiment is impossible, unethical, or unnecessary — 19th-century philosopher-physicist Ernst Mach argued thought experiments often precede and prepare the way for physical experiments, since we can vary imagined circumstances 'at little expense' compared to the real world.",
     layer1:
-      "Einstein's light-beam thought experiment (imagining what he'd observe if he could travel alongside a beam of light) worked because it forced a genuine logical contradiction to the surface ΓÇö under Newtonian assumptions, the light would appear frozen, which conflicted with Maxwell's electromagnetism ΓÇö and resolving that contradiction, not new data, is what led him toward special relativity; the method works precisely because pure logic, followed rigorously through an impossible scenario, can expose gaps in existing theory that no additional observation would reveal.",
+      "Einstein's light-beam thought experiment (imagining what he'd observe if he could travel alongside a beam of light) worked because it forced a genuine logical contradiction to the surface — under Newtonian assumptions, the light would appear frozen, which conflicted with Maxwell's electromagnetism — and resolving that contradiction, not new data, is what led him toward special relativity; the method works precisely because pure logic, followed rigorously through an impossible scenario, can expose gaps in existing theory that no additional observation would reveal.",
     layer2:
-      "Pick a belief or plan you're currently committed to. Construct a thought experiment that pushes it to an extreme or impossible edge case ΓÇö does the belief still hold, or does the thought experiment reveal a hidden assumption you hadn't examined?",
+      "Pick a belief or plan you're currently committed to. Construct a thought experiment that pushes it to an extreme or impossible edge case — does the belief still hold, or does the thought experiment reveal a hidden assumption you hadn't examined?",
     quiz: {
       question:
         "What thought experiment is credited with leading Einstein toward the special theory of relativity?",
@@ -4609,7 +4609,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B24"],
+    related: ["D3", "H4"],
     furtherReading: [
       {
         label:
@@ -4635,11 +4635,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Learning",
     thesis:
-      "Real mastery in any domain ΓÇö cooking included ΓÇö comes from understanding first principles (why a dish works at the level of chemistry and technique), not from memorizing recipes, since only first-principles understanding lets you troubleshoot, adapt, and improvise when circumstances change.",
+      "Real mastery in any domain — cooking included — comes from understanding first principles (why a dish works at the level of chemistry and technique), not from memorizing recipes, since only first-principles understanding lets you troubleshoot, adapt, and improvise when circumstances change.",
     layer0:
-      "First-principles thinking means breaking a domain down to its foundational, irreducible truths (in cooking: the actual chemistry and technique that makes food taste, look, and smell a certain way) rather than simply following someone else's prescribed steps (a recipe) without understanding why those steps work ΓÇö the recipe-follower breaks down the moment something unexpected happens; the first-principles thinker can adapt.",
+      "First-principles thinking means breaking a domain down to its foundational, irreducible truths (in cooking: the actual chemistry and technique that makes food taste, look, and smell a certain way) rather than simply following someone else's prescribed steps (a recipe) without understanding why those steps work — the recipe-follower breaks down the moment something unexpected happens; the first-principles thinker can adapt.",
     layer1:
-      "Child's Cordon Bleu training worked specifically because it forced comprehension of underlying mechanism (why a given temperature, ratio, or technique produces a given result) rather than rote procedure ΓÇö this is why she tested every recipe in her own school for 'scientific workability' before teaching it, and why she could improvise fearlessly on live television (where reshoots weren't possible) when something went wrong, since she understood the underlying principles well enough to adapt in real time rather than being stuck if the 'recipe' failed.",
+      "Child's Cordon Bleu training worked specifically because it forced comprehension of underlying mechanism (why a given temperature, ratio, or technique produces a given result) rather than rote procedure — this is why she tested every recipe in her own school for 'scientific workability' before teaching it, and why she could improvise fearlessly on live television (where reshoots weren't possible) when something went wrong, since she understood the underlying principles well enough to adapt in real time rather than being stuck if the 'recipe' failed.",
     layer2:
       "Pick a skill where you currently just follow someone else's 'recipe' (a template, a script, a checklist) without understanding why each step works. What would you need to learn to move from recipe-following to first-principles understanding in that skill?",
     quiz: {
@@ -4654,7 +4654,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["First-Principles Thinking", "Craft & Deep Work"],
-    related: ["E2", "L10", "H1", "B25"],
+    related: ["H1"],
     furtherReading: [
       {
         label: "First Principles: The Building Blocks of True Knowledge",
@@ -4680,13 +4680,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Systems Thinking",
     thesis:
-      "Reciprocity ΓÇö physically grounded in Newton's third law ('for every action, an equal and opposite reaction') ΓÇö extends metaphorically to human relationships and biology: what you put into the world tends to come back to you, whether through direct exchange, pay-it-forward chains, or reputation effects, making win-win cooperation a durable long-term strategy.",
+      "Reciprocity — physically grounded in Newton's third law ('for every action, an equal and opposite reaction') — extends metaphorically to human relationships and biology: what you put into the world tends to come back to you, whether through direct exchange, pay-it-forward chains, or reputation effects, making win-win cooperation a durable long-term strategy.",
     layer0:
-      "In physics, reciprocity is literal and exact (Newton's third law: every force has an equal, opposite reaction); in human relationships, reciprocity is looser but still statistically powerful ΓÇö direct reciprocity ('I help you, you help me') and indirect reciprocity (paying it forward, or building a reputation that draws future help from others) both create positive feedback loops that reward cooperative behavior over time, even though any single instance of giving may go unreciprocated.",
+      "In physics, reciprocity is literal and exact (Newton's third law: every force has an equal, opposite reaction); in human relationships, reciprocity is looser but still statistically powerful — direct reciprocity ('I help you, you help me') and indirect reciprocity (paying it forward, or building a reputation that draws future help from others) both create positive feedback loops that reward cooperative behavior over time, even though any single instance of giving may go unreciprocated.",
     layer1:
-      "Research on volunteering cited in the piece shows measurable health and psychological benefits accrue to the giver, not just the receiver ΓÇö meaning the 'return' on reciprocity isn't always a direct transaction back from the same person, but can show up as improved well-being, reputation, or unexpected help from unrelated parties down the line, which is why treating relationships as pure zero-sum exchanges misses most of the actual payoff structure.",
+      "Research on volunteering cited in the piece shows measurable health and psychological benefits accrue to the giver, not just the receiver — meaning the 'return' on reciprocity isn't always a direct transaction back from the same person, but can show up as improved well-being, reputation, or unexpected help from unrelated parties down the line, which is why treating relationships as pure zero-sum exchanges misses most of the actual payoff structure.",
     layer2:
-      "Think of a recent instance where you gave help, time, or trust without any guarantee of direct return. What form did the 'reciprocity' actually take ΓÇö was it direct, indirect (paid forward), or simply a felt sense of satisfaction?",
+      "Think of a recent instance where you gave help, time, or trust without any guarantee of direct return. What form did the 'reciprocity' actually take — was it direct, indirect (paid forward), or simply a felt sense of satisfaction?",
     quiz: {
       question:
         "What historical event does this piece use as an example of reciprocity based on mutual self-interest between two ancient powers?",
@@ -4699,7 +4699,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Incentives & Systems", "Power & Persuasion"],
-    related: ["E1", "E3", "E4", "B26"],
+    related: ["E1"],
     furtherReading: [
       {
         label: "Tit For Tat",
@@ -4724,11 +4724,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Systems Thinking",
     thesis:
-      "Markets systematically concentrate profit and attention around a small number of leaders rather than distributing rewards proportionally to skill ΓÇö driven by feedback loops, technological leverage, and lock-in effects ΓÇö making winner-take-all outcomes the norm rather than the exception across industries from search engines to diamonds.",
+      "Markets systematically concentrate profit and attention around a small number of leaders rather than distributing rewards proportionally to skill — driven by feedback loops, technological leverage, and lock-in effects — making winner-take-all outcomes the norm rather than the exception across industries from search engines to diamonds.",
     layer0:
-      "A winner-take-all market is one where a small number of leaders capture a disproportionate share of profits and attention relative to their actual skill advantage over competitors ΓÇö the mechanism runs through feedback loops (a bestselling book sells more because it's already a bestseller), technological leverage (a slightly better performer can now reach a global audience instead of a local one), and lock-in (switching costs keep customers with an established leader even after competitors catch up).",
+      "A winner-take-all market is one where a small number of leaders capture a disproportionate share of profits and attention relative to their actual skill advantage over competitors — the mechanism runs through feedback loops (a bestselling book sells more because it's already a bestseller), technological leverage (a slightly better performer can now reach a global audience instead of a local one), and lock-in (switching costs keep customers with an established leader even after competitors catch up).",
     layer1:
-      "Because these feedback loops compound, a tiny initial skill or luck advantage ΓÇö even one only found in retrospect and often exaggerated by hindsight and narrative fallacy ΓÇö gets amplified into an enormous gap in market share and reward over time; this explains why winner-take-all markets discourage new entrants (they can't compete with an incumbent's accumulated data, brand, and reputation) even when a new entrant might, in principle, be just as skilled.",
+      "Because these feedback loops compound, a tiny initial skill or luck advantage — even one only found in retrospect and often exaggerated by hindsight and narrative fallacy — gets amplified into an enormous gap in market share and reward over time; this explains why winner-take-all markets discourage new entrants (they can't compete with an incumbent's accumulated data, brand, and reputation) even when a new entrant might, in principle, be just as skilled.",
     layer2:
       "Think of an industry or platform you use that's dominated by one or two players. Which mechanism (feedback loop, technological leverage, or lock-in/switching costs) best explains how that dominance formed and why it persists?",
     quiz: {
@@ -4743,7 +4743,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Moats & Network Effects"],
-    related: ["A9", "A12", "I4", "B27"],
+    related: ["A9", "A12", "I4"],
     furtherReading: [
       {
         label: "Power Laws",
@@ -4768,13 +4768,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Applied Mental Models",
     thesis:
-      "A career change is best approached with a stack of specific mental models ΓÇö velocity (direction, not just motion), inversion (working backward from the desired end-state), exaptation (repurposing existing skills for new uses), map-vs-territory (getting real information, not just impressions), and the 'Bayesian casino' (quantifying your actual confidence with a hypothetical bet) ΓÇö rather than by pure gut feeling.",
+      "A career change is best approached with a stack of specific mental models — velocity (direction, not just motion), inversion (working backward from the desired end-state), exaptation (repurposing existing skills for new uses), map-vs-territory (getting real information, not just impressions), and the 'Bayesian casino' (quantifying your actual confidence with a hypothetical bet) — rather than by pure gut feeling.",
     layer0:
       "The piece stacks five models for career decisions: velocity (are you moving with purpose toward a defined destination, not just staying busy); inversion (work backward from your desired end state to identify what needs to be true along the way); exaptation (your existing skills, like traits evolved for one purpose, may transfer to a completely different use than they were built for); map-vs-territory (talk to people actually doing the job, including those who quit, not just the highlight-reel version); and the Bayesian casino (imagine literally betting real money on an outcome to surface how confident you actually are).",
     layer1:
-      "The exaptation model matters specifically because it counters 'functional fixedness' ΓÇö the tendency to see your skills only through the lens of their original use (e.g., 'I'm good at status updates' rather than 'I can parse complex information for a non-expert audience and build trust quickly'), which is exactly the kind of reframing that reveals genuinely transferable capability across a career change that looks, on the surface, unrelated to your current path.",
+      "The exaptation model matters specifically because it counters 'functional fixedness' — the tendency to see your skills only through the lens of their original use (e.g., 'I'm good at status updates' rather than 'I can parse complex information for a non-expert audience and build trust quickly'), which is exactly the kind of reframing that reveals genuinely transferable capability across a career change that looks, on the surface, unrelated to your current path.",
     layer2:
-      "List three skills from your current role using only their original, narrow description (e.g., 'writing status reports'). Now reframe each using exaptation ΓÇö what else could that underlying capability be used for in a completely different field?",
+      "List three skills from your current role using only their original, narrow description (e.g., 'writing status reports'). Now reframe each using exaptation — what else could that underlying capability be used for in a completely different field?",
     quiz: {
       question: "What is exaptation, as used in this piece's career-change framework?",
       options: [
@@ -4786,7 +4786,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["First-Principles Thinking"],
-    related: ["E2", "L10", "B28"],
+    related: [],
     furtherReading: [
       {
         label: "Inversion",
@@ -4811,13 +4811,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Applied Mental Models",
     thesis:
-      "Rather than adopting rigid parenting tactics that may not fit your specific child, five underlying principles ΓÇö adaptation, velocity, algebraic equivalence, seizing the middle, and inversion ΓÇö generalize across any family, situation, or child, because they're principles rather than one-size-fits-all scripts.",
+      "Rather than adopting rigid parenting tactics that may not fit your specific child, five underlying principles — adaptation, velocity, algebraic equivalence, seizing the middle, and inversion — generalize across any family, situation, or child, because they're principles rather than one-size-fits-all scripts.",
     layer0:
-      "The five models are: adaptation (parenting rules can differ by context ΓÇö home vs. public, child vs. child ΓÇö without being 'inconsistent,' just as species adapt differently to different environments); velocity (are you spending time with direction toward a goal, or just moving fast without purpose); algebraic equivalence (two things can be different yet equal, e.g., different amounts of attention to different children can still represent equal love, the way x+y=5 has many valid solutions); seizing the middle (like chess, control the central territory ΓÇö mutual trust and respect ΓÇö rather than fighting every minor battle); and inversion (sometimes progress comes from removing an obstacle, not adding a new tactic).",
+      "The five models are: adaptation (parenting rules can differ by context — home vs. public, child vs. child — without being 'inconsistent,' just as species adapt differently to different environments); velocity (are you spending time with direction toward a goal, or just moving fast without purpose); algebraic equivalence (two things can be different yet equal, e.g., different amounts of attention to different children can still represent equal love, the way x+y=5 has many valid solutions); seizing the middle (like chess, control the central territory — mutual trust and respect — rather than fighting every minor battle); and inversion (sometimes progress comes from removing an obstacle, not adding a new tactic).",
     layer1:
-      "The mechanism that makes these five 'generalize' where specific tactics don't is that they're principles about how to think, not prescribed behaviors ΓÇö a rule like 'always let children cry it out' either fits a specific child and situation or it doesn't, but a principle like 'seize the middle territory of trust, not every minor battle' can be applied freshly to whatever specific conflict arises, adapting the tactic to the child rather than forcing the child to fit a fixed tactic.",
+      "The mechanism that makes these five 'generalize' where specific tactics don't is that they're principles about how to think, not prescribed behaviors — a rule like 'always let children cry it out' either fits a specific child and situation or it doesn't, but a principle like 'seize the middle territory of trust, not every minor battle' can be applied freshly to whatever specific conflict arises, adapting the tactic to the child rather than forcing the child to fit a fixed tactic.",
     layer2:
-      "Think of a current recurring conflict with a child (or in any close relationship). Is it a 'middle territory' issue (affecting trust and respect) or a 'fringe' issue you could let go without real cost ΓÇö and inverted, what obstacle could you remove rather than what new rule could you add?",
+      "Think of a current recurring conflict with a child (or in any close relationship). Is it a 'middle territory' issue (affecting trust and respect) or a 'fringe' issue you could let go without real cost — and inverted, what obstacle could you remove rather than what new rule could you add?",
     quiz: {
       question: "What does 'algebraic equivalence,' as used in this parenting piece, help explain?",
       options: [
@@ -4829,7 +4829,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["First-Principles Thinking"],
-    related: ["E2", "L10", "B29"],
+    related: [],
     furtherReading: [
       {
         label: "Inversion",
@@ -4854,11 +4854,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Applied Mental Models",
     thesis:
-      "The 'long game' ΓÇö small, boring, unglamorous daily investments that compound over years ΓÇö reliably outperforms the 'short game' of chasing immediate, visible wins, because the long game's advantages accumulate invisibly until they become undeniable, while the short game's costs likewise compound until they become unavoidable.",
+      "The 'long game' — small, boring, unglamorous daily investments that compound over years — reliably outperforms the 'short game' of chasing immediate, visible wins, because the long game's advantages accumulate invisibly until they become undeniable, while the short game's costs likewise compound until they become unavoidable.",
     layer0:
       "The short game chases visible, immediate rewards (winning the moment) at the cost of larger future costs (spending more than you earn, under-sleeping, not investing in relationships); the long game accepts smaller or invisible short-term costs (leaving a party early, eating healthy, spending less than you make) in exchange for compounding advantages that only become obvious once they've accumulated for years.",
     layer1:
-      "The reason the long game is 'simpler but not easier' is that the formula itself isn't in dispute (spend less than you make, invest the difference, wait) ΓÇö the difficulty is entirely in patience and repeated tolerance for short-term discomfort with no visible payoff yet, which is exactly why so few people actually execute it even though almost everyone intellectually agrees it works; the tiny, invisible advantage compounding today is easy to dismiss precisely because you can't see it yet.",
+      "The reason the long game is 'simpler but not easier' is that the formula itself isn't in dispute (spend less than you make, invest the difference, wait) — the difficulty is entirely in patience and repeated tolerance for short-term discomfort with no visible payoff yet, which is exactly why so few people actually execute it even though almost everyone intellectually agrees it works; the tiny, invisible advantage compounding today is easy to dismiss precisely because you can't see it yet.",
     layer2:
       "Pick one area of your life (money, health, relationships, skill-building) where you know the 'long game' formula but consistently choose the 'short game' instead. What's the specific short-term discomfort you're avoiding by not committing to the long game there?",
     quiz: {
@@ -4873,7 +4873,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Compounding & Patience"],
-    related: ["C1", "C2", "G4", "B30"],
+    related: ["C1", "C2", "G4"],
     furtherReading: [
       {
         label: "An Antifragile Way of Life (the original 2014 piece this article expands on)",
@@ -4898,9 +4898,9 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Mental Models",
     thesis:
-      "A representation of reality (a map, a grammar book, a law, a mental model) can be read either descriptively (this is how things currently are) or prescriptively (this is how things must be) ΓÇö confusing the two, especially when the description becomes outdated, causes real, avoidable problems.",
+      "A representation of reality (a map, a grammar book, a law, a mental model) can be read either descriptively (this is how things currently are) or prescriptively (this is how things must be) — confusing the two, especially when the description becomes outdated, causes real, avoidable problems.",
     layer0:
-      "A description tells you how something currently is (a snapshot); a prescription tells you how something should be (a rule to follow) ΓÇö the same document (a grammar book, a map, a law, a corporate process doc) can start as an accurate description and, left unchanged while the underlying reality keeps evolving, quietly turn into an outdated prescription that people follow out of habit or authority rather than because it still fits the territory.",
+      "A description tells you how something currently is (a snapshot); a prescription tells you how something should be (a rule to follow) — the same document (a grammar book, a map, a law, a corporate process doc) can start as an accurate description and, left unchanged while the underlying reality keeps evolving, quietly turn into an outdated prescription that people follow out of habit or authority rather than because it still fits the territory.",
     layer1:
       "Graeber's 'grammar-book effect' names the exact mechanism: once a description is written down and taught in schools, people start treating it as the authoritative prescription rather than a snapshot of one moment in time, and any subsequent divergence between the living language (or process, or law) and the recorded rule gets blamed on the speakers/practitioners ('they're too lazy,' 'they're doing it wrong') rather than recognized as the rule itself having gone stale.",
     layer2:
@@ -4917,7 +4917,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "E2", "H4", "B1"],
+    related: ["D3", "H4", "B1"],
     furtherReading: [
       {
         label: "The Map is Not the Territory",
@@ -4945,16 +4945,16 @@ export const NODES: Node[] = [
     thesis:
       "The true cost of a choice is the value of the best alternative you gave up to make it.",
     layer0:
-      "Every decision is also a rejection of every other option you could have taken. Buying a $5 coffee doesn't just cost $5 ΓÇö it costs whatever else that $5 (and the time) could have produced. The price tag is never the whole cost; the forgone alternative is.",
+      "Every decision is also a rejection of every other option you could have taken. Buying a $5 coffee doesn't just cost $5 — it costs whatever else that $5 (and the time) could have produced. The price tag is never the whole cost; the forgone alternative is.",
     layer1:
-      "Wieser formalized this in 1914: because resources (time, money, attention) are scarce, the real cost of any choice is measured against its next-best alternative, not against zero. A project that earns $100,000 looks like a win ΓÇö until you notice the same capital invested elsewhere would have earned $150,000. Judged against its true alternative, that 'successful' project actually cost $50,000. Comparative advantage follows the same logic: a lawyer who types faster than her assistant should still hire the assistant, because her hour is worth far more doing legal work.",
+      "Wieser formalized this in 1914: because resources (time, money, attention) are scarce, the real cost of any choice is measured against its next-best alternative, not against zero. A project that earns $100,000 looks like a win — until you notice the same capital invested elsewhere would have earned $150,000. Judged against its true alternative, that 'successful' project actually cost $50,000. Comparative advantage follows the same logic: a lawyer who types faster than her assistant should still hire the assistant, because her hour is worth far more doing legal work.",
     layer2:
-      "Take a recurring choice ΓÇö how you spend an evening, where your savings sit, a task you insist on doing yourself. Name the single best alternative use of that same time or money. If the alternative is clearly worth more, that's your opportunity cost talking.",
+      "Take a recurring choice — how you spend an evening, where your savings sit, a task you insist on doing yourself. Name the single best alternative use of that same time or money. If the alternative is clearly worth more, that's your opportunity cost talking.",
     quiz: {
       question:
         "A company proudly reports $100,000 profit from a project. Its capital could have earned $150,000 invested elsewhere. What does opportunity cost say?",
       options: [
-        "The project was still a $100,000 win ΓÇö the alternative doesn't count.",
+        "The project was still a $100,000 win — the alternative doesn't count.",
         "Judged against its real alternative, the project actually cost the company $50,000.",
         "Opportunity cost only applies to money, not capital allocation decisions.",
         "The comparison is invalid because the alternative wasn't actually taken.",
@@ -4968,7 +4968,7 @@ export const NODES: Node[] = [
         label: "Cost and Choice: An Inquiry in Economic Theory",
         source: "James M. Buchanan, 1969",
         url: "https://www.econlib.org/library/Buchanan/buchCC.html",
-          archive: { status: "full", path: "content/sources/L5-0.md", retrieved: "2026-07-14" }
+          archive: { status: "unavailable", path: "content/sources/L5-0.md", retrieved: "2026-07-14" }
     },
       {
         label: "Opportunity Cost: The Hidden Cost of Everything",
@@ -4988,11 +4988,11 @@ export const NODES: Node[] = [
     category: "Decisions",
     thesis: "Seek bets where the downside is capped but the upside is functionally unlimited.",
     layer0:
-      "Most jobs are negatively asymmetric: upside capped at your salary, downside total if you're fired. Positive asymmetry flips that ΓÇö a capped, known cost paired with an open-ended payoff. Writing a book costs a few months regardless of outcome; it can sell ten copies or ten million. The downside is fixed; the upside isn't.",
+      "Most jobs are negatively asymmetric: upside capped at your salary, downside total if you're fired. Positive asymmetry flips that — a capped, known cost paired with an open-ended payoff. Writing a book costs a few months regardless of outcome; it can sell ten copies or ten million. The downside is fixed; the upside isn't.",
     layer1:
-      "This is Taleb's 'barbell' logic: put the bulk of your resources somewhere extremely safe, and a small slice into bets with capped loss and uncapped gain. Venture capital is the purest version ΓÇö a firm invests $1M each in ten startups, nine go to zero (a known, bounded $9M loss), and the tenth becomes a $500M return. Being wrong 90% of the time doesn't matter when the payoff structure is this lopsided; you only need the asymmetry to trigger once.",
+      "This is Taleb's 'barbell' logic: put the bulk of your resources somewhere extremely safe, and a small slice into bets with capped loss and uncapped gain. Venture capital is the purest version — a firm invests $1M each in ten startups, nine go to zero (a known, bounded $9M loss), and the tenth becomes a $500M return. Being wrong 90% of the time doesn't matter when the payoff structure is this lopsided; you only need the asymmetry to trigger once.",
     layer2:
-      "Look at a bet or commitment you're weighing. Write down the actual worst case in dollars or hours (is it truly capped?) and the realistic best case. If the worst case is small and fixed while the best case is open-ended, that's a bet worth taking repeatedly ΓÇö even if you expect to be wrong most of the time.",
+      "Look at a bet or commitment you're weighing. Write down the actual worst case in dollars or hours (is it truly capped?) and the realistic best case. If the worst case is small and fixed while the best case is open-ended, that's a bet worth taking repeatedly — even if you expect to be wrong most of the time.",
     quiz: {
       question:
         "A venture firm loses money on 9 of 10 investments but the 10th returns 50x. Why does the firm still come out far ahead?",
@@ -5030,13 +5030,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Philosophy of Meaning",
     thesis:
-      "The absurd is the unresolvable collision between the human need for meaning and the universe's indifferent silence ΓÇö the only honest response is conscious revolt, not suicide or false belief.",
+      "The absurd is the unresolvable collision between the human need for meaning and the universe's indifferent silence — the only honest response is conscious revolt, not suicide or false belief.",
     layer0:
-      "Camus argues that the absurd isn't meaninglessness itself and isn't your need for meaning itself ΓÇö it's the collision between the two: you cannot stop asking 'why,' and the universe never answers. He identifies three common escapes from this collision ΓÇö physical suicide (eliminating yourself to end the question), philosophical suicide (adopting a belief system that pretends to resolve it), and simple denial (staying busy enough not to notice) ΓÇö and argues all three are failures because they resolve the tension by cheating rather than living inside it.",
+      "Camus argues that the absurd isn't meaninglessness itself and isn't your need for meaning itself — it's the collision between the two: you cannot stop asking 'why,' and the universe never answers. He identifies three common escapes from this collision — physical suicide (eliminating yourself to end the question), philosophical suicide (adopting a belief system that pretends to resolve it), and simple denial (staying busy enough not to notice) — and argues all three are failures because they resolve the tension by cheating rather than living inside it.",
     layer1:
-      "His alternative is revolt: not rebellion against a person or system, but a decision to keep asking the unanswerable questions and keep building meaning the universe never supplied, fully aware there's no cosmic justification coming. He illustrates this with the Greek myth of Sisyphus, condemned to roll a boulder up a hill forever, only for it to roll back down each time. Camus's famous conclusion ΓÇö 'we must imagine Sisyphus happy' ΓÇö locates the meaning not in the boulder reaching the top (it never does) but in the moment of walking back down, fully clear-eyed about what awaits, and choosing to keep going anyway. The struggle itself, owned completely, is what fills the life.",
+      "His alternative is revolt: not rebellion against a person or system, but a decision to keep asking the unanswerable questions and keep building meaning the universe never supplied, fully aware there's no cosmic justification coming. He illustrates this with the Greek myth of Sisyphus, condemned to roll a boulder up a hill forever, only for it to roll back down each time. Camus's famous conclusion — 'we must imagine Sisyphus happy' — locates the meaning not in the boulder reaching the top (it never does) but in the moment of walking back down, fully clear-eyed about what awaits, and choosing to keep going anyway. The struggle itself, owned completely, is what fills the life.",
     layer2:
-      "Where in your own life have you reached for 'philosophical suicide' ΓÇö adopting a comforting belief or story to end a hard question, rather than sitting inside the question itself? What would 'revolt' look like there instead ΓÇö continuing to ask, without needing an answer to feel settled?",
+      "Where in your own life have you reached for 'philosophical suicide' — adopting a comforting belief or story to end a hard question, rather than sitting inside the question itself? What would 'revolt' look like there instead — continuing to ask, without needing an answer to feel settled?",
     quiz: {
       question: "What is 'the absurd' in Camus's framework?",
       options: [
@@ -5048,7 +5048,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["M9", "M14", "O4", "N2"],
+    related: ["O4", "N2"],
     furtherReading: [
       {
         label: "Albert Camus",
@@ -5073,13 +5073,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Philosophy of Mind",
     thesis:
-      "The self is not a thing you have but a transparent model your brain constructs and mistakes for direct reality ΓÇö an 'ego tunnel' you can never fully see because you're always inside it.",
+      "The self is not a thing you have but a transparent model your brain constructs and mistakes for direct reality — an 'ego tunnel' you can never fully see because you're always inside it.",
     layer0:
-      "Metzinger's central metaphor is the ego tunnel: you look through a tunnel your brain constructs, seeing the world and yourself within it, but you can never see the tunnel itself ΓÇö only through it. Your sense of being a continuous, unified self is not a thing stored somewhere in your brain; it's a perspective, a self-model, generated moment to moment and presented to you as if it were direct, unmediated reality rather than a construction.",
+      "Metzinger's central metaphor is the ego tunnel: you look through a tunnel your brain constructs, seeing the world and yourself within it, but you can never see the tunnel itself — only through it. Your sense of being a continuous, unified self is not a thing stored somewhere in your brain; it's a perspective, a self-model, generated moment to moment and presented to you as if it were direct, unmediated reality rather than a construction.",
     layer1:
-      "The key term is transparency: the self-model works so well that you never experience it as a model at all ΓÇö you experience it as unfiltered contact with yourself, the way you see through glass rather than seeing the glass. Metzinger uses the rubber-hand illusion (where subjects come to feel a fake hand is their own after synchronized stroking) to show that even something as basic as the 'sense of ownership' over your own body is a construction the brain generates, not a fact about the world. When the model breaks down ΓÇö in deep meditation, certain drug states, or neurological conditions ΓÇö people report the self dissolving into 'just experience, with no one having it.' Metzinger reads these not as malfunctions but as rare glimpses of the machinery underneath.",
+      "The key term is transparency: the self-model works so well that you never experience it as a model at all — you experience it as unfiltered contact with yourself, the way you see through glass rather than seeing the glass. Metzinger uses the rubber-hand illusion (where subjects come to feel a fake hand is their own after synchronized stroking) to show that even something as basic as the 'sense of ownership' over your own body is a construction the brain generates, not a fact about the world. When the model breaks down — in deep meditation, certain drug states, or neurological conditions — people report the self dissolving into 'just experience, with no one having it.' Metzinger reads these not as malfunctions but as rare glimpses of the machinery underneath.",
     layer2:
-      "Try, for one minute, to observe an experience ΓÇö a feeling, an urge, a reaction ΓÇö rather than being fully inside it, as if there's a small gap between the noticing and the noticed. What loosens, even slightly, in that gap?",
+      "Try, for one minute, to observe an experience — a feeling, an urge, a reaction — rather than being fully inside it, as if there's a small gap between the noticing and the noticed. What loosens, even slightly, in that gap?",
     quiz: {
       question:
         "What experiment does Metzinger use to show that even bodily 'ownership' is a constructed model rather than a fact?",
@@ -5092,10 +5092,10 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["M9", "M14", "O4", "N3"],
+    related: ["O4", "N3"],
     furtherReading: [
       {
-        label: "The Ego Tunnel ΓÇö TEDxRheinMain",
+        label: "The Ego Tunnel — TEDxRheinMain",
         source: "TEDx Talks",
         url: "https://www.youtube.com/watch?v=ZFjY1fAcESs",
           archive: { status: "unavailable" }
@@ -5117,13 +5117,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Neuroscience",
     thesis:
-      "Emotions aren't obstacles to rational decision-making ΓÇö they're body-based signals (Damasio's somatic markers) and active predictions (Barrett's constructed emotion) that make judgment possible at all.",
+      "Emotions aren't obstacles to rational decision-making — they're body-based signals (Damasio's somatic markers) and active predictions (Barrett's constructed emotion) that make judgment possible at all.",
     layer0:
-      "Damasio's Somatic Marker Hypothesis holds that every significant memory carries an attached body-based signal ΓÇö a gut feeling, a tightening, a sense of dread or warmth ΓÇö and that this signal, not pure logic, is what lets reasoning actually terminate in a decision. Barrett's complementary claim is that emotions aren't reactions to events at all; they're the brain's predictions, built from your history and current body state, about what a situation means for you ΓÇö expressed as a felt state, checked against incoming data, and revised when the prediction misses.",
+      "Damasio's Somatic Marker Hypothesis holds that every significant memory carries an attached body-based signal — a gut feeling, a tightening, a sense of dread or warmth — and that this signal, not pure logic, is what lets reasoning actually terminate in a decision. Barrett's complementary claim is that emotions aren't reactions to events at all; they're the brain's predictions, built from your history and current body state, about what a situation means for you — expressed as a felt state, checked against incoming data, and revised when the prediction misses.",
     layer1:
-      "The mechanism in Damasio's patients: without the somatic-marker signal, pattern-matching a new situation against past experience produces no felt weighting, so reasoning alone can circle endlessly without ever concluding. Barrett's mechanism: the brain is fundamentally a prediction engine, and because predictions are trained by your specific history, the same objective situation can produce entirely different emotional responses in different people, or in the same person at different times ΓÇö which is why intellectually knowing a fear is 'irrational' rarely dissolves it; the prediction system needs new, repeated, safe evidence to retrain, not a single counter-argument. Barrett's related concept of emotional granularity ΓÇö the precision with which you can name your own state ('the specific anxiety of avoidance,' not just 'I feel bad') ΓÇö predicts meaningfully better emotional regulation and mental health.",
+      "The mechanism in Damasio's patients: without the somatic-marker signal, pattern-matching a new situation against past experience produces no felt weighting, so reasoning alone can circle endlessly without ever concluding. Barrett's mechanism: the brain is fundamentally a prediction engine, and because predictions are trained by your specific history, the same objective situation can produce entirely different emotional responses in different people, or in the same person at different times — which is why intellectually knowing a fear is 'irrational' rarely dissolves it; the prediction system needs new, repeated, safe evidence to retrain, not a single counter-argument. Barrett's related concept of emotional granularity — the precision with which you can name your own state ('the specific anxiety of avoidance,' not just 'I feel bad') — predicts meaningfully better emotional regulation and mental health.",
     layer2:
-      "Next time you notice a vague 'bad' feeling, try to name it more precisely than that ΓÇö which specific worry, which specific shame, which specific dread ΓÇö rather than leaving it as an undifferentiated blur. What changes once it has a name?",
+      "Next time you notice a vague 'bad' feeling, try to name it more precisely than that — which specific worry, which specific shame, which specific dread — rather than leaving it as an undifferentiated blur. What changes once it has a name?",
     quiz: {
       question:
         "What did Damasio observe in patients with damage to the ventromedial prefrontal cortex?",
@@ -5139,7 +5139,7 @@ export const NODES: Node[] = [
     related: ["B2", "B4", "B6", "N4"],
     furtherReading: [
       {
-        label: "You aren't at the mercy of your emotions ΓÇö your brain creates them",
+        label: "You aren't at the mercy of your emotions — your brain creates them",
         source: "TED Talk, Lisa Feldman Barrett",
         url: "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them",
           archive: { status: "unavailable" }
@@ -5161,13 +5161,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Evolutionary Biology",
     thesis:
-      "The gene, not the organism, is the true unit of natural selection ΓÇö animals are 'survival machines' built by genes to replicate themselves, and culture spreads by an analogous unit Dawkins named the meme.",
+      "The gene, not the organism, is the true unit of natural selection — animals are 'survival machines' built by genes to replicate themselves, and culture spreads by an analogous unit Dawkins named the meme.",
     layer0:
-      "Dawkins reframes the unit of evolution: not the individual animal, but the gene. Genes that happened to code for traits improving their own copying survived differentially across deep time; from this angle, an animal's body, brain, and behavior are a 'vehicle' built by genes for the purpose of replicating themselves. Calling genes 'selfish' isn't a claim about intention ΓÇö genes are molecules with no intentions ΓÇö it's shorthand for a logical property: we only observe the genes whose effects helped them get copied, because the alternative ones simply aren't here anymore.",
+      "Dawkins reframes the unit of evolution: not the individual animal, but the gene. Genes that happened to code for traits improving their own copying survived differentially across deep time; from this angle, an animal's body, brain, and behavior are a 'vehicle' built by genes for the purpose of replicating themselves. Calling genes 'selfish' isn't a claim about intention — genes are molecules with no intentions — it's shorthand for a logical property: we only observe the genes whose effects helped them get copied, because the alternative ones simply aren't here anymore.",
     layer1:
-      "In the book's final chapter, Dawkins extends the same logic to culture, introducing the meme ΓÇö a unit of cultural information (an idea, tune, belief, practice) that spreads by jumping from mind to mind through imitation rather than DNA, and that gets selected for how well it spreads and sticks, independent of whether it happens to be true. Dawkins closes by arguing that humans, uniquely among four billion years of 'vehicles,' can consciously recognize the gene's replication agenda running underneath their own drives ΓÇö and choose to act against it, including choosing not to reproduce at all, something no gene could ever select for.",
+      "In the book's final chapter, Dawkins extends the same logic to culture, introducing the meme — a unit of cultural information (an idea, tune, belief, practice) that spreads by jumping from mind to mind through imitation rather than DNA, and that gets selected for how well it spreads and sticks, independent of whether it happens to be true. Dawkins closes by arguing that humans, uniquely among four billion years of 'vehicles,' can consciously recognize the gene's replication agenda running underneath their own drives — and choose to act against it, including choosing not to reproduce at all, something no gene could ever select for.",
     layer2:
-      "Which of your strongest drives ΓÇö status-seeking, social comparison, the need to belong ΓÇö do you suspect are running the gene's program rather than something you'd actually endorse on reflection? What would it look like to deliberately redirect one of them?",
+      "Which of your strongest drives — status-seeking, social comparison, the need to belong — do you suspect are running the gene's program rather than something you'd actually endorse on reflection? What would it look like to deliberately redirect one of them?",
     quiz: {
       question:
         "What term, coined in this book's final chapter, went on to become one of the most common words on the internet?",
@@ -5175,10 +5175,10 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Incentives & Systems", "Meaning & Self"],
-    related: ["E1", "E3", "E4", "N5"],
+    related: ["E1"],
     furtherReading: [
       {
-        label: "Richard Dawkins ΓÇö The Selfish Gene explained",
+        label: "Richard Dawkins — The Selfish Gene explained",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=j9p2F2oa0_k",
           archive: { status: "unavailable" }
@@ -5200,13 +5200,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Philosophy of Meaning",
     thesis:
-      "Meaning, not pleasure or power, is the primary human drive ΓÇö findable even under the worst conditions through what you create, what you receive, or the attitude you choose toward unavoidable suffering.",
+      "Meaning, not pleasure or power, is the primary human drive — findable even under the worst conditions through what you create, what you receive, or the attitude you choose toward unavoidable suffering.",
     layer0:
-      "Frankl identifies three routes to meaning: creative values (what you make or contribute to the world), experiential values (what you receive from it ΓÇö beauty, love, connection), and attitudinal values (the stance you take toward suffering you cannot avoid or change). The third is the deepest because it's the only one that can't be taken from you ΓÇö when the first two are stripped away entirely, as they were in the camps, the freedom to choose your attitude remains.",
+      "Frankl identifies three routes to meaning: creative values (what you make or contribute to the world), experiential values (what you receive from it — beauty, love, connection), and attitudinal values (the stance you take toward suffering you cannot avoid or change). The third is the deepest because it's the only one that can't be taken from you — when the first two are stripped away entirely, as they were in the camps, the freedom to choose your attitude remains.",
     layer1:
-      "Frankl's observation, based on years inside the camps, was that survival of the inner self correlated with having 'a why' ΓÇö a task still ahead, a person depending on you, a reason to endure ΓÇö far more than with physical strength or prior psychological stability. He coined the German term Trotzmacht ('defiant power') for the trained capacity to notice the gap between stimulus and response and choose deliberately within it, however small that gap is. He explicitly positioned this 'will to meaning' as a third alternative to Freud's will to pleasure and Adler's will to power, arguing meaning is what people in his patients ΓÇö and in the camps ΓÇö needed most, even when pleasure and power were both unavailable.",
+      "Frankl's observation, based on years inside the camps, was that survival of the inner self correlated with having 'a why' — a task still ahead, a person depending on you, a reason to endure — far more than with physical strength or prior psychological stability. He coined the German term Trotzmacht ('defiant power') for the trained capacity to notice the gap between stimulus and response and choose deliberately within it, however small that gap is. He explicitly positioned this 'will to meaning' as a third alternative to Freud's will to pleasure and Adler's will to power, arguing meaning is what people in his patients — and in the camps — needed most, even when pleasure and power were both unavailable.",
     layer2:
-      "Where in your life right now is there a gap between what you say matters to you and what you actually do? Frankl would locate the 'existential vacuum' exactly there ΓÇö what's one concrete action that would close that gap, even slightly, this week?",
+      "Where in your life right now is there a gap between what you say matters to you and what you actually do? Frankl would locate the 'existential vacuum' exactly there — what's one concrete action that would close that gap, even slightly, this week?",
     quiz: {
       question:
         "How long did it take Frankl to write the first draft of this book after his liberation from the camps?",
@@ -5214,7 +5214,7 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Meaning & Self"],
-    related: ["M9", "M14", "O4", "N6"],
+    related: ["O4"],
     furtherReading: [
       {
         label: "Interview with Dr. Viktor Frankl, part I",
@@ -5239,13 +5239,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Philosophy of Mind",
     thesis:
-      "Evolution shapes perception for fitness, not truth ΓÇö what you perceive as space, time, and objects may be a species-specific interface rather than an accurate window onto reality itself.",
+      "Evolution shapes perception for fitness, not truth — what you perceive as space, time, and objects may be a species-specific interface rather than an accurate window onto reality itself.",
     layer0:
-      "Hoffman's central metaphor is a computer desktop: the folder icon you click is not the electrons and code underneath it, but a useful interface that hides that complexity so you can act efficiently. He argues your perception of objects, space, and time works the same way ΓÇö a simplified interface evolution built, not a direct view of whatever reality actually is underneath.",
+      "Hoffman's central metaphor is a computer desktop: the folder icon you click is not the electrons and code underneath it, but a useful interface that hides that complexity so you can act efficiently. He argues your perception of objects, space, and time works the same way — a simplified interface evolution built, not a direct view of whatever reality actually is underneath.",
     layer1:
-      "The Fitness-Beats-Truth theorem mathematically models competitions between organisms tuned to perceive reality accurately versus organisms tuned only to perceive fitness-relevant cues, regardless of accuracy ΓÇö and the fitness-tuned organisms win every simulated run, because accurate perception is computationally expensive and slower to act on than a simplified cue. Hoffman extends this into his more contested claim of conscious realism: that a world of interacting conscious agents, not unconscious particles and fields, is the actual substrate of reality, with physical objects as icons within each agent's private interface ΓÇö a position serious critics accept the theorem for but reject the further philosophical leap on.",
+      "The Fitness-Beats-Truth theorem mathematically models competitions between organisms tuned to perceive reality accurately versus organisms tuned only to perceive fitness-relevant cues, regardless of accuracy — and the fitness-tuned organisms win every simulated run, because accurate perception is computationally expensive and slower to act on than a simplified cue. Hoffman extends this into his more contested claim of conscious realism: that a world of interacting conscious agents, not unconscious particles and fields, is the actual substrate of reality, with physical objects as icons within each agent's private interface — a position serious critics accept the theorem for but reject the further philosophical leap on.",
     layer2:
-      "Interface Theory suggests even categories that feel like 'just how things are' ΓÇö space, time, solid objects ΓÇö might be an artifact of how your particular species' perceptual interface was built, not raw reality. What's one belief you hold as obviously true that might really be an artifact of your interface rather than the territory itself?",
+      "Interface Theory suggests even categories that feel like 'just how things are' — space, time, solid objects — might be an artifact of how your particular species' perceptual interface was built, not raw reality. What's one belief you hold as obviously true that might really be an artifact of your interface rather than the territory itself?",
     quiz: {
       question: "What does Hoffman's peer-reviewed 'Fitness-Beats-Truth' theorem show?",
       options: [
@@ -5257,7 +5257,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["M9", "M14", "O4", "N1"],
+    related: ["O4", "N1"],
     furtherReading: [
       {
         label: "Do we see reality as it is?",
@@ -5282,13 +5282,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Wealth Creation",
     thesis:
-      "Wealth (assets that earn while you sleep) is distinct from money (a transfer of time and wealth) and status (a zero-sum position in a social hierarchy) ΓÇö and only wealth creation is a positive-sum game worth optimizing for.",
+      "Wealth (assets that earn while you sleep) is distinct from money (a transfer of time and wealth) and status (a zero-sum position in a social hierarchy) — and only wealth creation is a positive-sum game worth optimizing for.",
     layer0:
-      "Naval draws a three-way distinction: wealth is having assets that earn while you sleep (a business, equity, property, code, media); money is simply how we transfer time and wealth between people (a medium of exchange, not a store of value in itself); status is your position in a social hierarchy, which is necessarily zero-sum ΓÇö for you to rise in rank, someone else must fall. He argues chasing status is a trap precisely because the gains are relative and can't compound for everyone at once, while wealth creation is genuinely positive-sum: you can build something that makes the world better off and capture value as a byproduct.",
+      "Naval draws a three-way distinction: wealth is having assets that earn while you sleep (a business, equity, property, code, media); money is simply how we transfer time and wealth between people (a medium of exchange, not a store of value in itself); status is your position in a social hierarchy, which is necessarily zero-sum — for you to rise in rank, someone else must fall. He argues chasing status is a trap precisely because the gains are relative and can't compound for everyone at once, while wealth creation is genuinely positive-sum: you can build something that makes the world better off and capture value as a byproduct.",
     layer1:
-      "The mechanism is a reframing of ambition around ownership of appreciating, income-generating assets rather than a paycheck or social rank: equity in a scalable business (or another compounding asset) can keep paying out even while you're asleep or absent, whereas both a salary and social status require your continued, direct presence to maintain ΓÇö the moment you stop showing up, they stop accruing. This is why the thread's advice clusters around 'own equity' and 'build or buy assets' rather than 'negotiate a higher salary' or 'climb the org chart.'",
+      "The mechanism is a reframing of ambition around ownership of appreciating, income-generating assets rather than a paycheck or social rank: equity in a scalable business (or another compounding asset) can keep paying out even while you're asleep or absent, whereas both a salary and social status require your continued, direct presence to maintain — the moment you stop showing up, they stop accruing. This is why the thread's advice clusters around 'own equity' and 'build or buy assets' rather than 'negotiate a higher salary' or 'climb the org chart.'",
     layer2:
-      "Look at how you've spent your ambition this month ΓÇö how much of it went toward chasing status (being seen as smart, senior, or impressive) versus building an asset that would still pay out if you disappeared for a year? What's one thing you could shift toward the second?",
+      "Look at how you've spent your ambition this month — how much of it went toward chasing status (being seen as smart, senior, or impressive) versus building an asset that would still pay out if you disappeared for a year? What's one thing you could shift toward the second?",
     quiz: {
       question:
         "How many tweets made up Naval's original 'How to Get Rich (Without Getting Lucky)' thread, and when was it posted?",
@@ -5304,13 +5304,13 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "G4", "O2"],
     furtherReading: [
       {
-        label: "I Took Naval Ravikant's Tweet Thread & Made $1.55M With It ΓÇö Here's How",
+        label: "I Took Naval Ravikant's Tweet Thread & Made $1.55M With It — Here's How",
         source: "Tim Denning",
         url: "https://timdenning.com/naval-ravikant/",
           archive: { status: "full", path: "content/sources/P1-0.md", retrieved: "2026-07-14" }
     },
       {
-        label: "How to Get Rich (Without Getting Lucky) ΓÇö Naval's own podcast series",
+        label: "How to Get Rich (Without Getting Lucky) — Naval's own podcast series",
         source: "Naval Ravikant & Nivi",
         url: "https://nav.al/rich",
           archive: { status: "full", path: "content/sources/P1-1.md", retrieved: "2026-07-14" }
@@ -5326,16 +5326,16 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Wealth Creation",
     thesis:
-      "Specific knowledge ΓÇö skills you can only acquire by pursuing genuine curiosity, not by following a credentialed path ΓÇö combined with leverage (labor, capital, code, or media) is what lets one person's judgment produce outsized results.",
+      "Specific knowledge — skills you can only acquire by pursuing genuine curiosity, not by following a credentialed path — combined with leverage (labor, capital, code, or media) is what lets one person's judgment produce outsized results.",
     layer0:
-      "Specific knowledge is knowledge you couldn't have acquired through a standard credentialing path, precisely because if society could train you for it at scale, it could train (and replace) you with someone else just as easily ΓÇö it's found by pursuing what genuinely interests you rather than what's prestigious. Leverage is the multiplier applied to your judgment and effort: labor (people working for you) and capital (money) are 'permission-based' leverage ΓÇö someone has to hand them to you ΓÇö while code and media are 'permissionless' leverage, since anyone can create and scale them without asking anyone's approval.",
+      "Specific knowledge is knowledge you couldn't have acquired through a standard credentialing path, precisely because if society could train you for it at scale, it could train (and replace) you with someone else just as easily — it's found by pursuing what genuinely interests you rather than what's prestigious. Leverage is the multiplier applied to your judgment and effort: labor (people working for you) and capital (money) are 'permission-based' leverage — someone has to hand them to you — while code and media are 'permissionless' leverage, since anyone can create and scale them without asking anyone's approval.",
     layer1:
-      "Naval argues we live in an age of unprecedented permissionless leverage: a single piece of code or a single piece of media can reach millions of people with zero marginal cost of replication, meaning a person with genuine specific knowledge no longer needs a boss's or investor's permission to scale their judgment ΓÇö a blog post, an open-source library, or a video can now do what used to require an army of employees or a pile of capital to accomplish.",
+      "Naval argues we live in an age of unprecedented permissionless leverage: a single piece of code or a single piece of media can reach millions of people with zero marginal cost of replication, meaning a person with genuine specific knowledge no longer needs a boss's or investor's permission to scale their judgment — a blog post, an open-source library, or a video can now do what used to require an army of employees or a pile of capital to accomplish.",
     layer2:
-      "What's something you know or can do that you couldn't easily point to a formal, credentialed path for becoming good at ΓÇö something you got mostly through obsessive curiosity? What would it look like to attach permissionless leverage (writing, code, video) to that specific knowledge?",
+      "What's something you know or can do that you couldn't easily point to a formal, credentialed path for becoming good at — something you got mostly through obsessive curiosity? What would it look like to attach permissionless leverage (writing, code, video) to that specific knowledge?",
     quiz: {
       question:
-        "According to Naval, which two of his four types of leverage are 'permissionless' ΓÇö meaning anyone can deploy them without needing anyone's approval?",
+        "According to Naval, which two of his four types of leverage are 'permissionless' — meaning anyone can deploy them without needing anyone's approval?",
       options: ["Labor and capital", "Code and media", "Capital and media", "Labor and code"],
       correctIndex: 1,
     },
@@ -5349,7 +5349,7 @@ export const NODES: Node[] = [
           archive: { status: "full", path: "content/sources/P2-0.md", retrieved: "2026-07-14" }
     },
       {
-        label: "Joe Rogan Experience #1309 ΓÇö Naval Ravikant",
+        label: "Joe Rogan Experience #1309 — Naval Ravikant",
         source: "The Joe Rogan Experience, June 4, 2019",
         url: "https://www.jrepodcast.com/episode/joe-rogan-experience-1309-naval-ravikant/",
           archive: { status: "unavailable" }
@@ -5365,13 +5365,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Decision-Making",
     thesis:
-      "In an age of near-infinite leverage, judgment ΓÇö not effort or intelligence alone ΓÇö becomes the scarcest and most valuable resource, since small differences in being 'right' get massively amplified.",
+      "In an age of near-infinite leverage, judgment — not effort or intelligence alone — becomes the scarcest and most valuable resource, since small differences in being 'right' get massively amplified.",
     layer0:
-      "Judgment, in Naval's usage, means the ability to make correct decisions under uncertainty with incomplete information ΓÇö distinct from raw intelligence or hard work. He argues that historically, what you could accomplish was capped by your own labor, so judgment mattered but within limited bounds; today, leverage (code, media, capital) means one person's judgment, right or wrong, gets applied at a scale that used to require an entire organization to achieve.",
+      "Judgment, in Naval's usage, means the ability to make correct decisions under uncertainty with incomplete information — distinct from raw intelligence or hard work. He argues that historically, what you could accomplish was capped by your own labor, so judgment mattered but within limited bounds; today, leverage (code, media, capital) means one person's judgment, right or wrong, gets applied at a scale that used to require an entire organization to achieve.",
     layer1:
-      "Naval's essay argues that someone whose judgment is correct 85% of the time, rather than 75%, isn't just 'modestly better' ΓÇö once that judgment is applied through high leverage (a piece of code, a large fund, a media platform reaching millions), that ten-percentage-point edge in accuracy compounds into a dramatically larger share of outcomes, which is why elite investors, founders, and operators can capture returns wildly disproportionate to the actual gap in their skill. (The popular paraphrase 'he who is right most often wins' circulates widely online but isn't a verified direct Naval quote ΓÇö the argument above is the actual, sourced version from nav.al/judgment. `[Unverified: exact wording]`)",
+      "Naval's essay argues that someone whose judgment is correct 85% of the time, rather than 75%, isn't just 'modestly better' — once that judgment is applied through high leverage (a piece of code, a large fund, a media platform reaching millions), that ten-percentage-point edge in accuracy compounds into a dramatically larger share of outcomes, which is why elite investors, founders, and operators can capture returns wildly disproportionate to the actual gap in their skill. (The popular paraphrase 'he who is right most often wins' circulates widely online but isn't a verified direct Naval quote — the argument above is the actual, sourced version from nav.al/judgment. `[Unverified: exact wording]`)",
     layer2:
-      "Think of a recent decision where you had leverage ΓÇö your words, work, or money reaching further than just you. How much did the outcome depend on the quality of your judgment in that one moment, versus how hard you worked afterward?",
+      "Think of a recent decision where you had leverage — your words, work, or money reaching further than just you. How much did the outcome depend on the quality of your judgment in that one moment, versus how hard you worked afterward?",
     quiz: {
       question:
         "In nav.al/judgment, what does Naval argue happens to a small edge in judgment (e.g., being right 85% of the time instead of 75%) once combined with leverage?",
@@ -5394,7 +5394,7 @@ export const NODES: Node[] = [
           archive: { status: "unavailable" }
     },
       {
-        label: "Naval Ravikant: The Angel Philosopher ΓÇö its most-downloaded episode",
+        label: "Naval Ravikant: The Angel Philosopher — its most-downloaded episode",
         source: "The Knowledge Project with Shane Parrish, #18",
         url: "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
           archive: { status: "unavailable" }
@@ -5410,13 +5410,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Happiness",
     thesis:
-      "Happiness is a skill and a choice, not a destination reached through achievement ΓÇö and peace, not excitement, is the state to optimize for, since 'peace is happiness at rest, and happiness is peace in motion.'",
+      "Happiness is a skill and a choice, not a destination reached through achievement — and peace, not excitement, is the state to optimize for, since 'peace is happiness at rest, and happiness is peace in motion.'",
     layer0:
-      "Naval separates peace and happiness: peace is a stable baseline state ΓÇö an absence of desire or want in the moment ΓÇö while happiness is the more active, 'in motion' experience layered on top of that baseline. His claim is that most people chase happiness directly, through achievement, acquisition, or stimulation, without first building the peaceful baseline that would let happiness actually register and last, rather than immediately reverting to a dissatisfied set point.",
+      "Naval separates peace and happiness: peace is a stable baseline state — an absence of desire or want in the moment — while happiness is the more active, 'in motion' experience layered on top of that baseline. His claim is that most people chase happiness directly, through achievement, acquisition, or stimulation, without first building the peaceful baseline that would let happiness actually register and last, rather than immediately reverting to a dissatisfied set point.",
     layer1:
-      "The argument is that treating happiness as a pursuit is self-undermining, because wanting to be happier is itself a form of discontent with the present moment; instead, Naval frames happiness as something learned by removing specific, identifiable sources of unhappiness ΓÇö unresolved desires, resentments, comparisons ΓÇö rather than added through specific new acquisitions. It's closer to a subtraction practice than an accumulation one.",
+      "The argument is that treating happiness as a pursuit is self-undermining, because wanting to be happier is itself a form of discontent with the present moment; instead, Naval frames happiness as something learned by removing specific, identifiable sources of unhappiness — unresolved desires, resentments, comparisons — rather than added through specific new acquisitions. It's closer to a subtraction practice than an accumulation one.",
     layer2:
-      "Name one specific, resolvable source of low-grade unhappiness you've been carrying around ΓÇö a decision you're avoiding, a comparison you keep making, a resentment. What would it take to actually resolve it this week, rather than distract from it?",
+      "Name one specific, resolvable source of low-grade unhappiness you've been carrying around — a decision you're avoiding, a comparison you keep making, a resentment. What would it take to actually resolve it this week, rather than distract from it?",
     quiz: {
       question: "How does Naval define the relationship between peace and happiness?",
       options: [
@@ -5428,7 +5428,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["M9", "M14", "N1", "O5"],
+    related: ["N1", "O5"],
     furtherReading: [
       {
         label: "Happiness According To Naval Ravikant",
@@ -5437,7 +5437,7 @@ export const NODES: Node[] = [
           archive: { status: "full", path: "content/sources/P4-0.md", retrieved: "2026-07-14" }
     },
       {
-        label: "Naval Ravikant on The Tim Ferriss Show ΓÇö happiness, anxiety, and meditation",
+        label: "Naval Ravikant on The Tim Ferriss Show — happiness, anxiety, and meditation",
         source: "Podcast Notes summary of The Tim Ferriss Show",
         url: "https://podcastnotes.org/tim-ferris-show/happiness-reducing-anxiety-crypto-stablecoins-and-crypto-strategy-naval-ravikant/",
           archive: { status: "unavailable" }
@@ -5453,11 +5453,11 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Learning",
     thesis:
-      "The way to become a lifelong reader ΓÇö Naval's primary form of self-education ΓÇö is to read only what genuinely interests you until reading itself becomes a pleasure, rather than forcing a prescribed curriculum.",
+      "The way to become a lifelong reader — Naval's primary form of self-education — is to read only what genuinely interests you until reading itself becomes a pleasure, rather than forcing a prescribed curriculum.",
     layer0:
-      "Naval's claim is that most people fail to become readers because they were forced through books they didn't care about ΓÇö school curricula, 'should-read' lists ΓÇö and concluded reading itself was a chore, when the actual chore was the specific book, not the medium. His fix: start entirely from genuine interest, no matter how 'unserious' the topic seems, and let the habit of reading itself compound from there.",
+      "Naval's claim is that most people fail to become readers because they were forced through books they didn't care about — school curricula, 'should-read' lists — and concluded reading itself was a chore, when the actual chore was the specific book, not the medium. His fix: start entirely from genuine interest, no matter how 'unserious' the topic seems, and let the habit of reading itself compound from there.",
     layer1:
-      "Once someone has built the identity and habit of 'a person who reads for pleasure,' Naval argues they can gradually pull toward harder, more valuable material, because the underlying skill ΓÇö sustained attention, comfort with density, exposure to plural perspectives ΓÇö transfers, whereas someone who never builds the base habit at all typically never reaches the harder material either. The ordering (love first, difficulty later) matters more than which specific books you start with.",
+      "Once someone has built the identity and habit of 'a person who reads for pleasure,' Naval argues they can gradually pull toward harder, more valuable material, because the underlying skill — sustained attention, comfort with density, exposure to plural perspectives — transfers, whereas someone who never builds the base habit at all typically never reaches the harder material either. The ordering (love first, difficulty later) matters more than which specific books you start with.",
     layer2:
       "What's a genre or topic you'd read for pure pleasure, with zero guilt about whether it's 'serious' enough? When did you last actually let yourself start there instead of picking up something you felt you 'should' read?",
     quiz: {
@@ -5492,13 +5492,13 @@ export const NODES: Node[] = [
     medium: "Essay",
     category: "Relationships & Compounding",
     thesis:
-      "The biggest gains in wealth, relationships, and reputation come from compounding ΓÇö which requires playing long-term games (and being seen playing them honestly) with long-term people, since compounding only works if the game doesn't reset.",
+      "The biggest gains in wealth, relationships, and reputation come from compounding — which requires playing long-term games (and being seen playing them honestly) with long-term people, since compounding only works if the game doesn't reset.",
     layer0:
-      "Naval's argument is that the biggest rewards in life ΓÇö compounding wealth, deep relationships, a durable reputation ΓÇö take a long time to build and can be destroyed quickly by a single act of short-term self-interest; the rational strategy, even if you only care about your own outcomes, is to consistently choose long-term games and long-term partners, since that's the only setting where compounding, rather than one-off zero-sum wins, is even possible.",
+      "Naval's argument is that the biggest rewards in life — compounding wealth, deep relationships, a durable reputation — take a long time to build and can be destroyed quickly by a single act of short-term self-interest; the rational strategy, even if you only care about your own outcomes, is to consistently choose long-term games and long-term partners, since that's the only setting where compounding, rather than one-off zero-sum wins, is even possible.",
     layer1:
-      "He frames this partly through iterated game theory: a single-round interaction rewards defection (take the short-term win, don't worry about the relationship), while a repeated, long-horizon interaction rewards honesty and reciprocity, because your reputation and the relationship itself become assets that compound. His related advice ΓÇö 'no hard work,' 'specific knowledge over generic effort,' 'productize yourself' ΓÇö all points toward building assets and relationships that keep paying out passively rather than requiring you to keep re-winning them.",
+      "He frames this partly through iterated game theory: a single-round interaction rewards defection (take the short-term win, don't worry about the relationship), while a repeated, long-horizon interaction rewards honesty and reciprocity, because your reputation and the relationship itself become assets that compound. His related advice — 'no hard work,' 'specific knowledge over generic effort,' 'productize yourself' — all points toward building assets and relationships that keep paying out passively rather than requiring you to keep re-winning them.",
     layer2:
-      "Think of a relationship or commitment in your life that only makes sense as a long-term game. Is there a small, short-term temptation right now ΓÇö to cut a corner, to extract a quick win ΓÇö that would quietly convert it into a short-term game instead?",
+      "Think of a relationship or commitment in your life that only makes sense as a long-term game. Is there a small, short-term temptation right now — to cut a corner, to extract a quick win — that would quietly convert it into a short-term game instead?",
     quiz: {
       question:
         "What game-theoretic distinction does Naval use to explain why long-term games reward honesty?",
@@ -5520,7 +5520,7 @@ export const NODES: Node[] = [
           archive: { status: "full", path: "content/sources/P6-0.md", retrieved: "2026-07-14" }
     },
       {
-        label: "How to Get Rich (Without Getting Lucky) ΓÇö Naval's own podcast series",
+        label: "How to Get Rich (Without Getting Lucky) — Naval's own podcast series",
         source: "Naval Ravikant & Nivi",
         url: "https://nav.al/long-term",
           archive: { status: "full", path: "content/sources/P6-1.md", retrieved: "2026-07-14" }
@@ -5538,9 +5538,9 @@ export const NODES: Node[] = [
     thesis:
       "Genuine interest in other people, honest appreciation, and letting others save face are more persuasive and more durable than argument, criticism, or cleverness.",
     layer0:
-      "Carnegie's core claim is that most interpersonal conflict comes from people feeling criticized, unheard, or unimportant, and that the highest-leverage social skill is making the other person feel genuinely valued ΓÇö through real interest in their concerns, specific and honest praise, and letting them arrive at conclusions (or save face) rather than being told they're wrong.",
+      "Carnegie's core claim is that most interpersonal conflict comes from people feeling criticized, unheard, or unimportant, and that the highest-leverage social skill is making the other person feel genuinely valued — through real interest in their concerns, specific and honest praise, and letting them arrive at conclusions (or save face) rather than being told they're wrong.",
     layer1:
-      "The book operationalizes this into concrete rules ΓÇö don't criticize, condemn, or complain; give honest and sincere appreciation; become genuinely interested in other people; remember names; let the other person save face ΓÇö that work, per Carnegie's argument, because they bypass the defensive ego reaction that direct criticism or argument triggers, which otherwise shuts down persuasion before it can start, regardless of how correct your point is.",
+      "The book operationalizes this into concrete rules — don't criticize, condemn, or complain; give honest and sincere appreciation; become genuinely interested in other people; remember names; let the other person save face — that work, per Carnegie's argument, because they bypass the defensive ego reaction that direct criticism or argument triggers, which otherwise shuts down persuasion before it can start, regardless of how correct your point is.",
     layer2:
       "Think of the last small disagreement you had. Did you try to win the argument, or try to help the other person feel heard first? What might have changed if you'd led with genuine curiosity about their position instead?",
     quiz: {
@@ -5550,7 +5550,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Power & Persuasion"],
-    related: ["B4", "B21", "B25", "P2"],
+    related: ["B4", "P2"],
     furtherReading: [
       {
         label: "How to Win Friends and Influence People",
@@ -5575,13 +5575,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Power & Strategy",
     thesis:
-      "Power operates by identifiable, recurring patterns across history ΓÇö and understanding those patterns, whether or not you choose to use them, is more useful than being naive about how influence and manipulation actually work.",
+      "Power operates by identifiable, recurring patterns across history — and understanding those patterns, whether or not you choose to use them, is more useful than being naive about how influence and manipulation actually work.",
     layer0:
-      "Each of the 48 'laws' ΓÇö e.g., 'Never outshine the master,' 'Conceal your intentions,' 'Win through your actions, never through argument' ΓÇö is illustrated with historical case studies where a figure's fortunes turned on following or violating that principle, framing power dynamics as governed by durable, repeatable patterns rather than being purely idiosyncratic to each situation.",
+      "Each of the 48 'laws' — e.g., 'Never outshine the master,' 'Conceal your intentions,' 'Win through your actions, never through argument' — is illustrated with historical case studies where a figure's fortunes turned on following or violating that principle, framing power dynamics as governed by durable, repeatable patterns rather than being purely idiosyncratic to each situation.",
     layer1:
-      "Greene's method draws each law inductively from repeated historical patterns ΓÇö a courtier who outshines their king gets destroyed; a schemer who conceals their intentions until it's too late to counter wins ΓÇö then generalizes them into aphoristic rules. Critics argue this method cherry-picks confirming historical anecdotes rather than testing the laws against disconfirming cases, meaning the book reads as compelling narrative rather than rigorously validated strategy.",
+      "Greene's method draws each law inductively from repeated historical patterns — a courtier who outshines their king gets destroyed; a schemer who conceals their intentions until it's too late to counter wins — then generalizes them into aphoristic rules. Critics argue this method cherry-picks confirming historical anecdotes rather than testing the laws against disconfirming cases, meaning the book reads as compelling narrative rather than rigorously validated strategy.",
     layer2:
-      "Pick one law you instinctively react against, e.g. 'conceal your intentions.' Can you think of a real situation in your own life where following it ΓÇö or refusing to ΓÇö clearly changed the outcome? What does that suggest about when it applies and when it doesn't?",
+      "Pick one law you instinctively react against, e.g. 'conceal your intentions.' Can you think of a real situation in your own life where following it — or refusing to — clearly changed the outcome? What does that suggest about when it applies and when it doesn't?",
     quiz: {
       question: "What is notable about this book's status in the US prison system?",
       options: [
@@ -5593,7 +5593,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Power & Persuasion"],
-    related: ["B4", "B21", "B25", "P3"],
+    related: ["B4", "P3"],
     furtherReading: [
       {
         label: "The 48 Laws of Power",
@@ -5618,13 +5618,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Big History",
     thesis:
-      "Homo sapiens came to dominate the planet not through individual strength or intelligence but through a unique capacity for large-scale cooperation built on shared fictions ΓÇö money, nations, religions, and corporations that exist only because enough people believe in them together.",
+      "Homo sapiens came to dominate the planet not through individual strength or intelligence but through a unique capacity for large-scale cooperation built on shared fictions — money, nations, religions, and corporations that exist only because enough people believe in them together.",
     layer0:
-      "Harari's central argument is that what separates Sapiens from other human species and animals isn't raw intelligence or physical capability but a 'cognitive revolution' ΓÇö the capacity to communicate about things that don't physically exist (gods, nations, corporations, human rights) ΓÇö which lets total strangers cooperate at a massive scale by believing the same shared fiction, something no other species can do.",
+      "Harari's central argument is that what separates Sapiens from other human species and animals isn't raw intelligence or physical capability but a 'cognitive revolution' — the capacity to communicate about things that don't physically exist (gods, nations, corporations, human rights) — which lets total strangers cooperate at a massive scale by believing the same shared fiction, something no other species can do.",
     layer1:
-      "Harari traces three revolutions (cognitive, agricultural, scientific) and argues each expanded the scale of shared fictions humans could organize around: small bands bound by kinship gave way to religions and empires bound by shared belief, which gave way to nations, corporations, and money ΓÇö all 'intersubjective realities' that exist only because enough people collectively agree to act as if they're real, and that collapse the moment that collective belief breaks down.",
+      "Harari traces three revolutions (cognitive, agricultural, scientific) and argues each expanded the scale of shared fictions humans could organize around: small bands bound by kinship gave way to religions and empires bound by shared belief, which gave way to nations, corporations, and money — all 'intersubjective realities' that exist only because enough people collectively agree to act as if they're real, and that collapse the moment that collective belief breaks down.",
     layer2:
-      "Name one 'shared fiction' ΓÇö a currency, a company, a national identity, a brand ΓÇö that structures a decision you made this month. What would change about that decision if enough people simply stopped believing in it?",
+      "Name one 'shared fiction' — a currency, a company, a national identity, a brand — that structures a decision you made this month. What would change about that decision if enough people simply stopped believing in it?",
     quiz: {
       question:
         "Which tech executives publicly endorsed Sapiens, contributing to it becoming a bestseller?",
@@ -5662,13 +5662,13 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Psychology of Learning",
     thesis:
-      "People who hold a 'growth mindset' ΓÇö believing ability can be developed through effort ΓÇö tend to achieve more and handle setbacks better than those with a 'fixed mindset,' though later large-scale replications found the effect considerably smaller and more context-dependent than the book implies.",
+      "People who hold a 'growth mindset' — believing ability can be developed through effort — tend to achieve more and handle setbacks better than those with a 'fixed mindset,' though later large-scale replications found the effect considerably smaller and more context-dependent than the book implies.",
     layer0:
       "Dweck's original research compared students who believed intelligence was fixed against students who believed it was malleable, finding the 'growth mindset' group persisted longer through difficulty, interpreted failure as informative rather than identity-threatening, and often out-performed the fixed-mindset group over time in her controlled studies.",
     layer1:
-      "The proposed mechanism is that a fixed mindset makes any failure feel like evidence about a permanent, unchangeable trait ΓÇö so avoiding failure, and therefore avoiding challenge, becomes rational ΓÇö while a growth mindset reframes failure as informative feedback about current skill rather than a verdict on fixed potential. Subsequent large-scale, independent replications found this effect is much smaller in the real world than in Dweck's original lab studies, and that simply telling people to 'have a growth mindset' without structural support does little on its own.",
+      "The proposed mechanism is that a fixed mindset makes any failure feel like evidence about a permanent, unchangeable trait — so avoiding failure, and therefore avoiding challenge, becomes rational — while a growth mindset reframes failure as informative feedback about current skill rather than a verdict on fixed potential. Subsequent large-scale, independent replications found this effect is much smaller in the real world than in Dweck's original lab studies, and that simply telling people to 'have a growth mindset' without structural support does little on its own.",
     layer2:
-      "Pick one area where you notice yourself avoiding challenge to protect a self-image ΓÇö 'I'm just not a numbers person,' 'I'm not creative.' What's one small, low-stakes way to test whether that trait is actually as fixed as it feels?",
+      "Pick one area where you notice yourself avoiding challenge to protect a self-image — 'I'm just not a numbers person,' 'I'm not creative.' What's one small, low-stakes way to test whether that trait is actually as fixed as it feels?",
     quiz: {
       question:
         "What did large-scale, independent replications of Dweck's most-cited studies find?",
@@ -5681,7 +5681,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Craft & Deep Work"],
-    related: ["B6", "B9", "B24", "P5"],
+    related: ["B6", "P5"],
     furtherReading: [
       {
         label: "Debate Arises over Teaching 'Growth Mindsets' to Motivate Students",
@@ -5706,11 +5706,11 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Health & Longevity",
     thesis:
-      "Most of the top causes of premature death in wealthy countries ΓÇö heart disease, several cancers, diabetes, high blood pressure ΓÇö can be substantially prevented or reversed through diet and lifestyle, primarily via a whole-food, plant-based approach, though critics argue the book's evidence is selectively curated to support that conclusion.",
+      "Most of the top causes of premature death in wealthy countries — heart disease, several cancers, diabetes, high blood pressure — can be substantially prevented or reversed through diet and lifestyle, primarily via a whole-food, plant-based approach, though critics argue the book's evidence is selectively curated to support that conclusion.",
     layer0:
-      "The book is organized around the fifteen leading causes of death in America, dedicating a chapter to each, and for each one presents nutrition-and-lifestyle research suggesting a whole-food, plant-based diet reduces risk or, in some cases, contributes to reversing existing disease ΓÇö sometimes comparing this to the effect size of standard pharmaceutical interventions.",
+      "The book is organized around the fifteen leading causes of death in America, dedicating a chapter to each, and for each one presents nutrition-and-lifestyle research suggesting a whole-food, plant-based diet reduces risk or, in some cases, contributes to reversing existing disease — sometimes comparing this to the effect size of standard pharmaceutical interventions.",
     layer1:
-      "Greger's argument for each disease follows the same structure: identify a dietary or nutrient pattern implicated in the disease's mechanism (e.g., saturated fat and cholesterol in heart disease), cite epidemiological or interventional studies linking a plant-based diet to a reduced version of that mechanism, and conclude the dietary shift is protective. The core criticism is that this pattern-matching approach selectively surfaces confirming studies ΓÇö and sometimes cites research that doesn't precisely test the specific claim made ΓÇö rather than systematically weighing the full, more mixed body of nutrition evidence.",
+      "Greger's argument for each disease follows the same structure: identify a dietary or nutrient pattern implicated in the disease's mechanism (e.g., saturated fat and cholesterol in heart disease), cite epidemiological or interventional studies linking a plant-based diet to a reduced version of that mechanism, and conclude the dietary shift is protective. The core criticism is that this pattern-matching approach selectively surfaces confirming studies — and sometimes cites research that doesn't precisely test the specific claim made — rather than systematically weighing the full, more mixed body of nutrition evidence.",
     layer2:
       "Pick one specific health claim from a book, article, or influencer you've taken at face value recently. Have you actually looked for the strongest disconfirming study on that claim, or only encountered evidence chosen to support it?",
     quiz: {
@@ -5750,18 +5750,18 @@ export const NODES: Node[] = [
     medium: "Book",
     category: "Psychology of Achievement",
     thesis:
-      "Grit ΓÇö sustained passion and perseverance toward long-term goals ΓÇö predicts achievement across domains (West Point cadets, spelling bee finalists, teachers, salespeople) independent of, and sometimes better than, raw talent, though Duckworth's own later statements scale back the size of the effect from her original framing.",
+      "Grit — sustained passion and perseverance toward long-term goals — predicts achievement across domains (West Point cadets, spelling bee finalists, teachers, salespeople) independent of, and sometimes better than, raw talent, though Duckworth's own later statements scale back the size of the effect from her original framing.",
     layer0:
       "Duckworth defines grit as the combination of sustained passion (consistent interest in a goal over years, not just an initial spark) and sustained perseverance (continuing effort despite setbacks, plateaus, and failure), and argues it's measurable via her 'Grit Scale' and predicts long-term achievement in ways that talent or IQ measures alone miss.",
     layer1:
-      "Her research followed high-attrition environments ΓÇö West Point's Beast Barracks, the National Spelling Bee, novice teachers in difficult schools ΓÇö and found grit scores predicted who persisted and improved better than measures of talent alone. The core critique is that showing grittier people succeed more isn't the same as showing that teaching grit causes more success, and that focusing on an individual trait like grit can obscure how much of the 'quitting' it's meant to explain is actually a rational response to structural barriers (under-resourced schools, unstable environments) rather than a personal deficit.",
+      "Her research followed high-attrition environments — West Point's Beast Barracks, the National Spelling Bee, novice teachers in difficult schools — and found grit scores predicted who persisted and improved better than measures of talent alone. The core critique is that showing grittier people succeed more isn't the same as showing that teaching grit causes more success, and that focusing on an individual trait like grit can obscure how much of the 'quitting' it's meant to explain is actually a rational response to structural barriers (under-resourced schools, unstable environments) rather than a personal deficit.",
     layer2:
       "Think of something you gave up on. How much of that was really a lack of 'grit,' versus a rational response to the actual circumstances (resources, support, or incentives) you were working within? What would you need to change about the circumstances, not just your resolve, to try again?",
     quiz: {
       question:
         "How has Duckworth herself since described the size of grit's independent effect on achievement?",
       options: [
-        "Massive and decisive ΓÇö the single biggest predictor of success",
+        "Massive and decisive — the single biggest predictor of success",
         "'Small-to-medium' by personality-psychology standards",
         "Negligible and not worth studying",
         "She has never revised her original claims",
@@ -5769,7 +5769,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Craft & Deep Work"],
-    related: ["B6", "B9", "B24", "P1"],
+    related: ["B6", "P1"],
     furtherReading: [
       {
         label: "MacArthur 'Genius' Angela Duckworth Responds To A New Critique Of Grit",

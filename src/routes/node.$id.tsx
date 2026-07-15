@@ -142,24 +142,7 @@ function NodeScreen() {
         <Quiz node={node} />
         <RecallReveal text={node.thesis} />
 
-        {related.length > 0 && (
-          <section className="mt-14">
-            <div className="flex items-baseline justify-between">
-              <h2 className="font-serif text-3xl text-ink">Related ideas</h2>
-              <MicroLabel>The lattice</MicroLabel>
-            </div>
-            <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-              Where this thought connects
-            </p>
-            <div className="mt-6">
-              {related.map((r) => (
-                <RelatedCard key={r.id} node={r} />
-              ))}
-            </div>
-          </section>
-        )}
-
-        <section className="mt-14 border-t border-line pt-8">
+        <section className="mt-14">
           <MicroLabel>Further reading</MicroLabel>
           <ul className="mt-4 space-y-3">
             {node.furtherReading.map((f) => (
@@ -202,6 +185,23 @@ function NodeScreen() {
             ))}
           </ul>
         </section>
+
+        {related.length > 0 && (
+          <section className="mt-14 border-t border-line pt-8">
+            <div className="flex items-baseline justify-between">
+              <h2 className="font-serif text-3xl text-ink">Related ideas</h2>
+              <MicroLabel>The lattice</MicroLabel>
+            </div>
+            <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+              Where this thought connects
+            </p>
+            <div className="mt-6">
+              {related.map((r) => (
+                <RelatedCard key={r.id} node={r} />
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="mt-10 flex items-center gap-3">
           <button
