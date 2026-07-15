@@ -10,27 +10,27 @@ no code or content changes made yet.**
 ## 1. Current state, audited directly against `src/data/nodes.ts`
 
 17 clusters (`A`–`Q`), 155 nodes total. Each node has a `clusterId` (the de facto "topic") and a
-free-text `category` field that was *supposed* to act as subtopic but is inconsistent:
+free-text `category` field that was _supposed_ to act as subtopic but is inconsistent:
 
-| Cluster | Title | Nodes | `category` values actually used |
-|---|---|---|---|
-| A | Startup Fundamentals | 12 | VC Doctrine |
-| B | Company Origins | 7 | Pitch Deck, Worldview |
-| C | Fraud & Short Cases | 11 | Short / Activist |
-| D | Macro & Investing | 12 | Macro Memo, VC Doctrine |
-| E | Finance Theory | 1 | Technical Paper |
-| F | Foundational Tech | 5 | Technical Paper, Worldview |
-| G | AI / ML Papers | 10 | AI Essay, Technical Paper |
-| H | Crypto | 8 | Crypto, Technical Paper, VC Doctrine |
-| I | Worldview & Futurism | 23 | AI Essay, Sector Report, VC Doctrine, Worldview |
-| J | Mental Models | 30 | Applied Mental Models, Decision-Making, Game Theory, Learning, Mental Models, Psychology, Reasoning, Self-Improvement, Systems Thinking, Thinking |
-| K | Compounding & Time | 4 | Time |
-| L | Decision-Making | 6 | Decisions |
-| M | Systems & Incentives | 4 | Systems |
-| N | Craft & Focus | 4 | Craft |
-| O | Mind, Self & Meaning | 6 | Philosophy of Meaning, Philosophy of Mind, Neuroscience, Evolutionary Biology |
-| P | Almanack of Naval Ravikant | 6 | Decision-Making, Happiness, Learning, Relationships & Compounding, Wealth Creation |
-| Q | Practical Wisdom | 6 | Big History, Health & Longevity, Power & Strategy, Psychology of Achievement, Psychology of Learning, Social Skills |
+| Cluster | Title                      | Nodes | `category` values actually used                                                                                                                   |
+| ------- | -------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A       | Startup Fundamentals       | 12    | VC Doctrine                                                                                                                                       |
+| B       | Company Origins            | 7     | Pitch Deck, Worldview                                                                                                                             |
+| C       | Fraud & Short Cases        | 11    | Short / Activist                                                                                                                                  |
+| D       | Macro & Investing          | 12    | Macro Memo, VC Doctrine                                                                                                                           |
+| E       | Finance Theory             | 1     | Technical Paper                                                                                                                                   |
+| F       | Foundational Tech          | 5     | Technical Paper, Worldview                                                                                                                        |
+| G       | AI / ML Papers             | 10    | AI Essay, Technical Paper                                                                                                                         |
+| H       | Crypto                     | 8     | Crypto, Technical Paper, VC Doctrine                                                                                                              |
+| I       | Worldview & Futurism       | 23    | AI Essay, Sector Report, VC Doctrine, Worldview                                                                                                   |
+| J       | Mental Models              | 30    | Applied Mental Models, Decision-Making, Game Theory, Learning, Mental Models, Psychology, Reasoning, Self-Improvement, Systems Thinking, Thinking |
+| K       | Compounding & Time         | 4     | Time                                                                                                                                              |
+| L       | Decision-Making            | 6     | Decisions                                                                                                                                         |
+| M       | Systems & Incentives       | 4     | Systems                                                                                                                                           |
+| N       | Craft & Focus              | 4     | Craft                                                                                                                                             |
+| O       | Mind, Self & Meaning       | 6     | Philosophy of Meaning, Philosophy of Mind, Neuroscience, Evolutionary Biology                                                                     |
+| P       | Almanack of Naval Ravikant | 6     | Decision-Making, Happiness, Learning, Relationships & Compounding, Wealth Creation                                                                |
+| Q       | Practical Wisdom           | 6     | Big History, Health & Longevity, Power & Strategy, Psychology of Achievement, Psychology of Learning, Social Skills                               |
 
 **The problem:** `category` conflates two different axes.
 
@@ -89,17 +89,17 @@ one-file edit (`nodes.ts`) plus a UI grouping change wherever clusters are rende
 ## 3. What to do with existing clusters before adding new ones
 
 Two of the three new topics you want overlap with clusters that already exist — worth fixing this
-mapping *before* writing new content, otherwise you'll get duplicate coverage.
+mapping _before_ writing new content, otherwise you'll get duplicate coverage.
 
-- **Cluster O ("Mind, Self & Meaning", 6 nodes)** already contains Camus (*The Myth of Sisyphus* —
-  absurdism), Frankl (*Man's Search for Meaning*), Metzinger and Hoffman (philosophy of mind /
+- **Cluster O ("Mind, Self & Meaning", 6 nodes)** already contains Camus (_The Myth of Sisyphus_ —
+  absurdism), Frankl (_Man's Search for Meaning_), Metzinger and Hoffman (philosophy of mind /
   consciousness), and Dawkins (evolutionary grounding). This is 80% of the way to being a real
   "Philosophy" topic already — **recommend broadening O rather than creating a separate new
   Philosophy topic from scratch.** Add subtopics and fill gaps (see §4).
-- **Cluster I ("Worldview & Futurism", 23 nodes)** already contains Bostrom's *Superintelligence*,
-  Yudkowsky's *AGI Ruin*, and MacAskill's *What We Owe the Future* — i.e. it already covers
+- **Cluster I ("Worldview & Futurism", 23 nodes)** already contains Bostrom's _Superintelligence_,
+  Yudkowsky's _AGI Ruin_, and MacAskill's _What We Owe the Future_ — i.e. it already covers
   AI-x-risk and longtermism. The new "Big Hypotheses" topic should stay scoped to genuinely
-  *different* open questions (simulation, Fermi paradox, free will, panpsychism) so it doesn't
+  _different_ open questions (simulation, Fermi paradox, free will, panpsychism) so it doesn't
   reduplicate I's AI-futurism material.
 
 ---
@@ -109,14 +109,14 @@ mapping *before* writing new content, otherwise you'll get duplicate coverage.
 Reframe O from "6 disconnected thinkers on the self" into a real Philosophy topic with subtopics.
 Keep the 6 existing nodes, add ~10–12 to cover schools of thought not yet represented.
 
-| Subtopic | Existing nodes | Gaps to add (candidate primary sources) |
-|---|---|---|
-| Existentialism & Absurdism | Camus, *Myth of Sisyphus* | Sartre, *Existentialism Is a Humanism*; Kierkegaard, *The Sickness Unto Death* (or a synthesis of his concept of anxiety/authenticity) |
-| Stoicism | — | Marcus Aurelius, *Meditations*; Epictetus, *Enchiridion*; Seneca, *Letters from a Stoic* (pick 1–2, not all 3) |
-| Eastern Thought | — | *Tao Te Ching* (Lao Tzu) or Alan Watts' synthesis of it; a Buddhist primary text (*Dhammapada*) or Thich Nhat Hanh |
-| Nihilism & Meaning-Making | Frankl, *Man's Search for Meaning* | Nietzsche, *Thus Spoke Zarathustra* / *The Gay Science* (the "God is dead" / will-to-power thread) |
-| Philosophy of Mind & Consciousness | Metzinger, Hoffman | Chalmers, *Facing Up to the Problem of Consciousness* (the "hard problem" paper — canonical, citable) |
-| Biological/Evolutionary Grounding | Dawkins, *The Selfish Gene* | (covered — no gap) |
+| Subtopic                           | Existing nodes                     | Gaps to add (candidate primary sources)                                                                                                |
+| ---------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Existentialism & Absurdism         | Camus, _Myth of Sisyphus_          | Sartre, _Existentialism Is a Humanism_; Kierkegaard, _The Sickness Unto Death_ (or a synthesis of his concept of anxiety/authenticity) |
+| Stoicism                           | —                                  | Marcus Aurelius, _Meditations_; Epictetus, _Enchiridion_; Seneca, _Letters from a Stoic_ (pick 1–2, not all 3)                         |
+| Eastern Thought                    | —                                  | _Tao Te Ching_ (Lao Tzu) or Alan Watts' synthesis of it; a Buddhist primary text (_Dhammapada_) or Thich Nhat Hanh                     |
+| Nihilism & Meaning-Making          | Frankl, _Man's Search for Meaning_ | Nietzsche, _Thus Spoke Zarathustra_ / _The Gay Science_ (the "God is dead" / will-to-power thread)                                     |
+| Philosophy of Mind & Consciousness | Metzinger, Hoffman                 | Chalmers, _Facing Up to the Problem of Consciousness_ (the "hard problem" paper — canonical, citable)                                  |
+| Biological/Evolutionary Grounding  | Dawkins, _The Selfish Gene_        | (covered — no gap)                                                                                                                     |
 
 Target: **11–12 new nodes**, bringing O to ~17–18 total.
 
@@ -127,14 +127,14 @@ Target: **11–12 new nodes**, bringing O to ~17–18 total.
 Speculative, foundational, empirically-or-philosophically-unsettled questions — deliberately scoped
 away from I's AI/futurism material. 6 nodes to start (same pattern as O/P/Q's original 6-part scope).
 
-| Subtopic | Candidate primary source |
-|---|---|
-| Simulation Hypothesis | Nick Bostrom, "Are You Living in a Computer Simulation?" (2003) — distinct paper from *Superintelligence*, already in I |
-| Fermi Paradox & Great Filter | Robin Hanson, "The Great Filter" (1998), or a synthesis of the classic Fermi paradox framing |
-| Free Will Debate | Sam Harris, *Free Will* (2012), or Robert Sapolsky, *Determined* (2023) — pick one |
-| Consciousness — Panpsychism | Philip Goff, *Galileo's Error* (2019) — distinct angle from O's Chalmers/Metzinger (hard problem vs. panpsychist answer to it) |
-| Anthropic Reasoning / Boltzmann Brains | A synthesis piece on the anthropic principle / fine-tuning problem |
-| Mathematical Universe Hypothesis | Max Tegmark, *Our Mathematical Universe* (2014) |
+| Subtopic                               | Candidate primary source                                                                                                       |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Simulation Hypothesis                  | Nick Bostrom, "Are You Living in a Computer Simulation?" (2003) — distinct paper from _Superintelligence_, already in I        |
+| Fermi Paradox & Great Filter           | Robin Hanson, "The Great Filter" (1998), or a synthesis of the classic Fermi paradox framing                                   |
+| Free Will Debate                       | Sam Harris, _Free Will_ (2012), or Robert Sapolsky, _Determined_ (2023) — pick one                                             |
+| Consciousness — Panpsychism            | Philip Goff, _Galileo's Error_ (2019) — distinct angle from O's Chalmers/Metzinger (hard problem vs. panpsychist answer to it) |
+| Anthropic Reasoning / Boltzmann Brains | A synthesis piece on the anthropic principle / fine-tuning problem                                                             |
+| Mathematical Universe Hypothesis       | Max Tegmark, _Our Mathematical Universe_ (2014)                                                                                |
 
 Target: **6 new nodes**, cluster R.
 
@@ -155,14 +155,14 @@ core framework (not one node trying to summarize everything he's written). Propo
 adjust freely, this is my read of his most recognizable recurring frameworks, not yet
 source-verified:
 
-| Subtopic | What it covers |
-|---|---|
-| Self-Authorship | Identity design — deciding who you want to become rather than defaulting to conditioning |
-| The One-Person Business | Productized knowledge, leverage without employees or a team |
-| High-Income Skill Stacking | How he frames acquiring and combining monetizable skills |
-| Content as Compounding Leverage | Writing/content strategy — the "2 Hour Writer" / audience-building approach |
-| Focus in the Attention Economy | Deep work framed against algorithmic distraction — "The Art of Focus" territory |
-| Ego, Nihilism & the Modern Self | His more philosophical essays — ego death, meaning-making outside religion/tradition |
+| Subtopic                        | What it covers                                                                           |
+| ------------------------------- | ---------------------------------------------------------------------------------------- |
+| Self-Authorship                 | Identity design — deciding who you want to become rather than defaulting to conditioning |
+| The One-Person Business         | Productized knowledge, leverage without employees or a team                              |
+| High-Income Skill Stacking      | How he frames acquiring and combining monetizable skills                                 |
+| Content as Compounding Leverage | Writing/content strategy — the "2 Hour Writer" / audience-building approach              |
+| Focus in the Attention Economy  | Deep work framed against algorithmic distraction — "The Art of Focus" territory          |
+| Ego, Nihilism & the Modern Self | His more philosophical essays — ego death, meaning-making outside religion/tradition     |
 
 Target: **6 nodes**, dedicated cluster, same depth as Naval's P.
 
@@ -173,31 +173,31 @@ so his topic stays focused and theirs doesn't get diluted by association. One su
 start — can deepen individually later the same way Dan Koe's topic just did, if any of them turns out
 to matter as much to you.
 
-| Subtopic (the idea) | Likely author/source |
-|---|---|
-| Writing as Leverage | David Perell — online writing as a compounding asset |
-| Curiosity-Driven Frameworks | Sahil Bloom — newsletter-style mental-model synthesis |
-| Systems Over Goals / Mindful Productivity | Anne-Laure Le Cunff (Ness Labs) or Nat Eliason |
+| Subtopic (the idea)                       | Likely author/source                                  |
+| ----------------------------------------- | ----------------------------------------------------- |
+| Writing as Leverage                       | David Perell — online writing as a compounding asset  |
+| Curiosity-Driven Frameworks               | Sahil Bloom — newsletter-style mental-model synthesis |
+| Systems Over Goals / Mindful Productivity | Anne-Laure Le Cunff (Ness Labs) or Nat Eliason        |
 
 Target: **3 nodes** to start, cluster T.
 
 **Flag before writing (applies to both 6a and 6b):** unlike the books/papers used elsewhere in this
 project, these are living newsletters/blogs/YouTube scripts — exact essay titles, dates, and URLs
 need a live web-search verification pass before drafting, to avoid citing something retitled,
-paywalled, or taken down since. Treat both tables as *candidate subtopics + likely source themes*,
+paywalled, or taken down since. Treat both tables as _candidate subtopics + likely source themes_,
 not confirmed sources yet.
 
 ---
 
 ## 7. Totals if this is approved as scoped
 
-| Topic | New nodes | Resulting cluster size |
-|---|---|---|
-| O — Philosophy (expanded) | +11–12 | ~17–18 |
-| R — Big Hypotheses (new) | +6 | 6 |
-| S — Dan Koe (new, dedicated) | +6 | 6 |
-| T — Modern Creator Essayists (new) | +3 | 3 |
-| **Total new content** | **~26–27 nodes** | 155 → ~181–182 |
+| Topic                              | New nodes        | Resulting cluster size |
+| ---------------------------------- | ---------------- | ---------------------- |
+| O — Philosophy (expanded)          | +11–12           | ~17–18                 |
+| R — Big Hypotheses (new)           | +6               | 6                      |
+| S — Dan Koe (new, dedicated)       | +6               | 6                      |
+| T — Modern Creator Essayists (new) | +3               | 3                      |
+| **Total new content**              | **~26–27 nodes** | 155 → ~181–182         |
 
 Plus the schema change in §2 (`subtopicId` field, `SUBTOPICS` list, applied first to J, I, and the
 expanded O since those are the clusters with 10+ nodes).

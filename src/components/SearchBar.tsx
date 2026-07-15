@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "@tanstack/react-router";
 import { NODES } from "@/data/nodes";
 import { MicroLabel } from "./MicroLabel";
+import MiniSearch from "minisearch";
+
+const miniSearch = new MiniSearch({
+  fields: ["title", "author", "thesis", "layer0", "layer1", "layer2"],
+  storeFields: ["id", "title", "author", "year"],
+});
+
+miniSearch.addAll(NODES);
 
 export function SearchBar() {
   const [q, setQ] = useState("");
   const [focused, setFocused] = useState(false);
-  const results =
-    q.trim().length >= 2
-      ? NODES.filter((n) => {
-          const s = (n.title + " " + n.author + " " + n.thesis + " " + n.layer0).toLowerCase();
-          return s.includes(q.toLowerCase());
-        }).slice(0, 8)
-      : [];
+
+  const results = useMemo(() => {
+    if (q.trim().length < 2) return [];
+    return miniSearch.search(q, { prefix: true, fuzzy: 0.2 }).slice(0, 8);
+  }, [q]);
 
   return (
     <div className="relative">

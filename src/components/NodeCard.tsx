@@ -9,11 +9,12 @@ export function NodeCard({ node }: { node: Node }) {
   const hydrated = useHydrated();
   const gotIt = useStore((s) => s.gotIt[node.id]);
   const box = useStore((s) => s.review[node.id]?.box ?? 0);
+  const visited = useStore((s) => s.visited[node.id]);
   return (
     <Link
       to="/node/$id"
       params={{ id: node.id }}
-      className="group block w-64 shrink-0 snap-start border-l border-line pl-4 pr-2 py-2"
+      className="group block w-64 shrink-0 snap-start border-l border-line pl-4 pr-2 py-2 sm:w-auto sm:shrink sm:snap-none"
     >
       <div className="flex items-start justify-between gap-2">
         <MicroLabel>{node.medium}</MicroLabel>
@@ -22,6 +23,11 @@ export function NodeCard({ node }: { node: Node }) {
             <span className="font-mono text-[11px] text-accent">✓</span>
           ) : box > 0 ? (
             <ProgressRing box={box} />
+          ) : visited ? (
+            <span
+              title="Opened, not yet mastered"
+              className="mt-1 h-1.5 w-1.5 rounded-full bg-ink-soft"
+            />
           ) : null)}
       </div>
       <h3 className="mt-2 font-serif text-lg leading-snug text-ink group-hover:text-accent">

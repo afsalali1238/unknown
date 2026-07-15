@@ -23,20 +23,20 @@ export type ReviewEntry = {
   lastResult?: "correct" | "incorrect";
 };
 
-export type ReadingItem = { id: string; label: string; url?: string; note?: string };
 export type GlossaryItem = { id: string; term: string; definition: string };
 
 export type State = {
   gotIt: Record<string, boolean>;
   bookmarks: Record<string, boolean>;
+  visited: Record<string, boolean>;
   review: Record<string, ReviewEntry>;
   streakDays: string[];
   lastNodeId?: string;
-  readingList: ReadingItem[];
   glossary: GlossaryItem[];
   scratchpad: string;
   interests: string[];
   onboardingComplete: boolean;
+  ttsRate: number;
 };
 
 type Actions = {
@@ -45,8 +45,6 @@ type Actions = {
   submitQuiz: (id: string, correct: boolean) => void;
   visitNode: (id: string) => void;
   setScratchpad: (v: string) => void;
-  addReading: (item: Omit<ReadingItem, "id">) => void;
-  removeReading: (id: string) => void;
   addGlossary: (item: Omit<GlossaryItem, "id">) => void;
   removeGlossary: (id: string) => void;
   exportJSON: () => string;
@@ -57,19 +55,21 @@ type Actions = {
   completeOnboarding: (tags: string[]) => void;
   skipOnboarding: () => void;
   redoOnboarding: () => void;
+  setTtsRate: (rate: number) => void;
 };
 
 const initial: State = {
   gotIt: {},
   bookmarks: {},
+  visited: {},
   review: {},
   streakDays: [],
   lastNodeId: undefined,
-  readingList: [],
   glossary: [],
   scratchpad: "",
   interests: [],
   onboardingComplete: false,
+  ttsRate: 1,
 };
 
 function todayISO() {
@@ -104,14 +104,13 @@ export const useStore = create<State & Actions>()(
             streakDays: touchStreak(s.streakDays),
           };
         }),
-      visitNode: (id) => set((s) => ({ lastNodeId: id, streakDays: touchStreak(s.streakDays) })),
-      setScratchpad: (v) => set({ scratchpad: v }),
-      addReading: (item) =>
+      visitNode: (id) =>
         set((s) => ({
-          readingList: [...s.readingList, { ...item, id: crypto.randomUUID() }],
+          lastNodeId: id,
+          visited: { ...s.visited, [id]: true },
+          streakDays: touchStreak(s.streakDays),
         })),
-      removeReading: (id) =>
-        set((s) => ({ readingList: s.readingList.filter((r) => r.id !== id) })),
+      setScratchpad: (v) => set({ scratchpad: v }),
       addGlossary: (item) =>
         set((s) => ({
           glossary: [...s.glossary, { ...item, id: crypto.randomUUID() }],
@@ -138,6 +137,7 @@ export const useStore = create<State & Actions>()(
       completeOnboarding: (tags) => set({ interests: tags, onboardingComplete: true }),
       skipOnboarding: () => set({ onboardingComplete: true }),
       redoOnboarding: () => set({ onboardingComplete: false }),
+      setTtsRate: (rate) => set({ ttsRate: rate }),
     }),
     {
       name: "unknown:v1",

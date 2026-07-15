@@ -10,7 +10,7 @@ export type Node = {
   layer0?: string;
   layer1?: string;
   layer2?: string;
-  quiz: { question: string; options: string[]; correctIndex: number };
+  quiz: { question: string; options: string[]; correctIndex: number; explanation?: string };
   related: string[];
   furtherReading: {
     label: string;
@@ -140,12 +140,55 @@ export const CLUSTERS: Cluster[] = [
   {
     id: "R",
     title: "Big Hypotheses",
-    subtitle: "Open questions science and philosophy haven't settled — simulation, consciousness, the Fermi paradox",
+    subtitle:
+      "Open questions science and philosophy haven't settled — simulation, consciousness, the Fermi paradox",
   },
   {
     id: "S",
     title: "Dan Koe",
-    subtitle: "Self-authorship, the one-person business, and modern meaning-making — one internet writer's full framework",
+    subtitle:
+      "Self-authorship, the one-person business, and modern meaning-making — one internet writer's full framework",
+  },
+  {
+    id: "T",
+    title: "Modern Creator Essayists",
+    subtitle:
+      "David Perell, Sahil Bloom, and Anne-Laure Le Cunff — writing, luck, and mindful productivity for the internet era",
+  },
+  {
+    id: "U",
+    title: "Cognitive Biases",
+    subtitle: "The systematic errors baked into how the mind judges, remembers, and decides",
+  },
+  {
+    id: "V",
+    title: "Social Constructs",
+    subtitle:
+      "Things that feel like natural facts but are actually human inventions — time, money, race, gender, and more",
+  },
+  {
+    id: "W",
+    title: "Buffett & Munger Mental Models",
+    subtitle:
+      "Six frameworks behind Berkshire Hathaway's rejection of market efficiency in favor of psychological pragmatism",
+  },
+  {
+    id: "X",
+    title: "The Architecture of Reality and Society",
+    subtitle:
+      "The hidden scaffolding behind human perception, belief, and social control — from Aperture's philosophy and psychology essays",
+  },
+  {
+    id: "Y",
+    title: "Paradoxes, Perception, and Unseen Realities",
+    subtitle:
+      "Where human logic, evolutionary psychology, and mathematical reality stop lining up — cognitive glitches and paradoxes at the edge of intuition",
+  },
+  {
+    id: "Z",
+    title: "Frontiers of Cosmological & Technological Evolution",
+    subtitle:
+      "The extreme vanguard of physics and biotechnology, where theory challenges the definition of existence itself",
   },
 ];
 
@@ -175,6 +218,8 @@ export const NODES: Node[] = [
         "Because early customers expect white-glove service and will pay more for it",
       ],
       correctIndex: 1,
+      explanation:
+        "Manual work provides the direct feedback loop and customer understanding necessary to design an effective automated system later.",
     },
     related: [],
     furtherReading: [
@@ -183,22 +228,22 @@ export const NODES: Node[] = [
         label: "Do Things That Don't Scale (original essay)",
         source: "paulgraham.com",
         url: "https://www.paulgraham.com/ds.html",
-          archive: { status: "full", path: "content/sources/A1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A1-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "Paul Graham explains what it means to do things that don't scale",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=aJ3Yu4R3vQs",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "Paul Graham's counter-intuitive startup advice",
         source: "Inc.",
         url: "https://www.inc.com/business-insider/paul-grahams-counter-intuitive-startup-advice-do-things-that-dont-scale.html",
-          archive: { status: "full", path: "content/sources/A1-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A1-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -236,22 +281,22 @@ export const NODES: Node[] = [
         label: "The Lean Startup (official site)",
         source: "theleanstartup.com",
         url: "https://theleanstartup.com/",
-          archive: { status: "full", path: "content/sources/A2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A2-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "Building the Minimum Viable Product",
         source: "Stanford eCorner",
         url: "https://stvp.stanford.edu/clips/building-the-minimum-viable-product/",
-          archive: { status: "full", path: "content/sources/A2-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A2-1.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "What Is an MVP? Eric Ries Explains",
         source: "Lean Startup Co.",
         url: "https://leanstartup.co/resources/articles/what-is-an-mvp/",
-          archive: { status: "full", path: "content/sources/A2-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A2-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -288,22 +333,22 @@ export const NODES: Node[] = [
         label: "How to Get Startup Ideas (original essay)",
         source: "paulgraham.com",
         url: "https://www.paulgraham.com/startupideas.html",
-          archive: { status: "full", path: "content/sources/A3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A3-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "Lecture 3 — Before the Startup",
         source: "Y Combinator (YouTube)",
         url: "https://www.youtube.com/watch?v=ii1jcLg-eIQ",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "Paul Graham on how to get startup ideas (notes)",
         source: "Startup Archive",
         url: "https://www.startuparchive.org/p/paul-graham-on-how-to-get-startup-ideas",
-          archive: { status: "full", path: "content/sources/A3-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A3-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -341,22 +386,22 @@ export const NODES: Node[] = [
         label: "1,000 True Fans (original essay)",
         source: "kk.org / The Technium",
         url: "https://kk.org/thetechnium/1000-true-fans/",
-          archive: { status: "full", path: "content/sources/A4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A4-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "1000 True Fans — Kevin Kelly",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=py43k-mSG7s",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "1000 True Fans (mental model breakdown)",
         source: "ModelThinkers",
         url: "https://modelthinkers.com/mental-model/1000-true-fans",
-          archive: { status: "full", path: "content/sources/A4-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A4-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -394,22 +439,26 @@ export const NODES: Node[] = [
         label: "Competition Is for Losers (WSJ op-ed)",
         source: "Wall Street Journal, 2014",
         url: "https://www.wsj.com/articles/peter-thiel-competition-is-for-losers-1410535536",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "watch",
         label: "Peter Thiel on How to Build a Creative Monopoly",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=b9tB9Q1XOM0",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "How Peter Thiel teaches Stanford students to create billion-dollar monopolies",
         source: "VentureBeat",
         url: "https://venturebeat.com/business/how-peter-thiel-teaches-stanford-students-to-create-billion-dollar-monopolies-in-3-quotes",
-          archive: { status: "unavailable", path: "content/sources/A5-2.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/A5-2.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
     tags: [],
   },
@@ -447,22 +496,26 @@ export const NODES: Node[] = [
         label: "All Markets Are Not Created Equal (original essay)",
         source: "Above the Crowd — Bill Gurley",
         url: "https://abovethecrowd.com/2012/11/13/all-markets-are-not-created-equal-10-factors-to-consider-when-evaluating-digital-marketplaces/",
-          archive: { status: "full", path: "content/sources/A6-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A6-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "The Bill Gurley Chronicles: VCs, marketplaces, and early-stage investing",
         source: "Equity Mates",
         url: "https://equitymates.com/general/the-bill-gurley-chronicles-vcs-marketplaces-and-early-stage-investing/",
-          archive: { status: "unavailable", path: "content/sources/A6-1.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/A6-1.md",
+          retrieved: "2026-07-14",
+        },
+      },
       {
         type: "read",
         label: "Bill Gurley's thoughts on marketplaces are a must read",
         source: "Fabrice Grinda",
         url: "https://fabricegrinda.com/bill-gurleys-thoughts-on-marketplaces-are-a-must-read/",
-          archive: { status: "full", path: "content/sources/A6-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A6-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -500,22 +553,22 @@ export const NODES: Node[] = [
         label: "SaaS Metrics 2.0 (original essay)",
         source: "forEntrepreneurs — David Skok",
         url: "https://www.forentrepreneurs.com/saas-metrics-2/",
-          archive: { status: "full", path: "content/sources/A7-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A7-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "David Skok of Matrix Partners: Driving SaaS Success Using Key Metrics",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=bCBccKfG9U0",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "David Skok, GP @ Matrix Partners (video + transcript)",
         source: "SaaStr",
         url: "https://www.saastr.com/david-skok-gp-matrix-partners-driving-saas-success-using-key-metrics-video-transcript/",
-          archive: { status: "full", path: "content/sources/A7-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A7-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -553,22 +606,22 @@ export const NODES: Node[] = [
         label: "Blitzscaling (original essay)",
         source: "Harvard Business Review, 2016",
         url: "https://hbr.org/2016/04/blitzscaling",
-          archive: { status: "full", path: "content/sources/A8-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A8-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "Reid Hoffman at EF — Blitzscaling (playlist)",
         source: "YouTube",
         url: "https://www.youtube.com/playlist?list=PLaDjE1VTVKMSOjgKVvru7oLf1JsV1muR5",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "Blitzscaling (book site)",
         source: "blitzscaling.com",
         url: "https://www.blitzscaling.com/",
-          archive: { status: "full", path: "content/sources/A8-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A8-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -599,29 +652,29 @@ export const NODES: Node[] = [
       ],
       correctIndex: 1,
     },
-    related: [],
+    related: ["W3"],
     furtherReading: [
       {
         type: "read",
         label: "Aggregation Theory (original essay)",
         source: "Stratechery — Ben Thompson",
         url: "https://stratechery.com/2015/aggregation-theory/",
-          archive: { status: "full", path: "content/sources/A9-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A9-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "Stratechery (with Ben Thompson)",
         source: "Acquired podcast",
         url: "https://www.acquired.fm/episodes/stratechery-with-ben-thompson",
-          archive: { status: "full", path: "content/sources/A9-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A9-1.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Aggregation Theory (concept reference page)",
         source: "Stratechery",
         url: "https://stratechery.com/concept/aggregation-theory/",
-          archive: { status: "full", path: "content/sources/A9-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A9-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -658,22 +711,22 @@ export const NODES: Node[] = [
         label: "Invisible Asymptotes (original essay)",
         source: "Eugene Wei's blog",
         url: "https://www.eugenewei.com/blog/2018/5/21/invisible-asymptotes",
-          archive: { status: "full", path: "content/sources/A10-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A10-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "Eugene Wei: the invisible ceilings to Snapchat, Facebook and Twitter's growth",
         source: "Recode Media podcast",
         url: "https://www.recode.net/2018/7/5/17535126/eugene-wei-invisible-asymptotes-ceilings-startups-growth-snap-twitter-peter-kafka-media-podcast",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "Invisible Asymptotes (summary notes)",
         source: "A Learning a Day",
         url: "https://alearningaday.blog/2018/06/05/invisible-asymptotes/",
-          archive: { status: "full", path: "content/sources/A10-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A10-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -704,29 +757,29 @@ export const NODES: Node[] = [
       ],
       correctIndex: 1,
     },
-    related: [],
+    related: ["W3"],
     furtherReading: [
       {
         type: "read",
         label: "The New Moats (original essay)",
         source: "Greylock — Jerry Chen",
         url: "https://greylock.com/greymatter/the-new-moats/",
-          archive: { status: "full", path: "content/sources/A11-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A11-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "The New Moats — Slides Edition Remix!",
         source: "Greylock Perspectives",
         url: "https://news.greylock.com/the-new-moats-slides-edition-remix-a226dfd6c896",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "watch",
         label: "Venture Confidential, feat. Greylock's Jerry Chen",
         source: "Heavybit podcast",
         url: "https://www.heavybit.com/library/podcasts/venture-confidential/ep-16-feat-greylock-partners-jerry-chen",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: [],
   },
@@ -764,22 +817,22 @@ export const NODES: Node[] = [
         label: "The Rise of the Solo Capitalists (original essay)",
         source: "nbt.vc — Nikhil Basu Trivedi",
         url: "https://www.nbt.vc/blog/the-rise-of-the-solo-capitalists",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "watch",
         label: "Nikhil Basu Trivedi on The Mind of a Venture Capitalist",
         source: "The Pomp Podcast (YouTube)",
         url: "https://www.youtube.com/watch?v=YIu5CZzwgCo",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "Agglomerators vs. Specialists, the Rise of the Solo-Capitalist",
         source: "The Full Ratchet",
         url: "https://fullratchet.net/246-agglomerators-vs-specialists-the-rise-of-the-solo-capitalist-and-the-importance-of-founder-investor-fit-nikhil-basu-trivedi/",
-          archive: { status: "full", path: "content/sources/A12-2.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/A12-2.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -817,15 +870,15 @@ export const NODES: Node[] = [
         label: "American Experience: Silicon Valley (PBS documentary)",
         source: "PBS, 2013",
         url: "https://www.pbs.org/wgbh/americanexperience/films/silicon/",
-          archive: { status: "full", path: "content/sources/B1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B1-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "How a deal with 8 'traitors' would help build Intel, Apple — and Silicon Valley",
         source: "NPR — The Indicator",
         url: "https://www.npr.org/transcripts/1160283155",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: [],
   },
@@ -863,15 +916,15 @@ export const NODES: Node[] = [
         label: "American Research and Development Corporation",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/American_Research_and_Development_Corporation",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "Ken Olsen — PDP-1 Restoration Project",
         source: "Computer History Museum",
         url: "https://www.computerhistory.org/pdp-1/ken-olsen/",
-          archive: { status: "full", path: "content/sources/B2-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B2-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -909,15 +962,15 @@ export const NODES: Node[] = [
         label: "Sequoia's Roelof Botha on Decision Making, AI, and the Next Trillion Dollar Market",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=z8njhsYUNNk",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "The confidential YouTube Investment Memo by Sequoia you were never meant to see",
         source: "Alexander Jarvis",
         url: "https://www.alexanderjarvis.com/the-confidential-youtube-investment-memo-by-sequoia-you-were-never-meant-to-see/",
-          archive: { status: "full", path: "content/sources/B3-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B3-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -954,15 +1007,15 @@ export const NODES: Node[] = [
         label: "This Was Facebook's First Media Pitch In 2004",
         source: "OfficeChai",
         url: "https://officechai.com/stories/facebook-advertising-pitch-deck/",
-          archive: { status: "full", path: "content/sources/B4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B4-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "The Pitch Deck Facebook Used to Raise $13.8B",
         source: "Failory",
         url: "https://www.failory.com/pitch-deck/facebook",
-          archive: { status: "full", path: "content/sources/B4-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B4-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -998,15 +1051,19 @@ export const NODES: Node[] = [
         label: "Uber IPO: Inside The 2008 Pitch That Birthed An $80 Billion Startup",
         source: "Forbes",
         url: "https://www.forbes.com/sites/bizcarson/2019/05/10/uber-ipo-original-2008-pitch-deck/",
-          archive: { status: "full", path: "content/sources/B5-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B5-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Take a look at Uber's first pitch deck from 2008",
         source: "Recode",
         url: "https://www.recode.net/2017/8/23/16189048/uber-pitch-deck-2008-ubercab-travis-kalanick-founder-startup",
-          archive: { status: "unavailable", path: "content/sources/B5-1.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/B5-1.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
     tags: [],
   },
@@ -1043,15 +1100,15 @@ export const NODES: Node[] = [
         label: "Full interview with Airbnb CEO Brian Chesky",
         source: "CNBC",
         url: "https://www.cnbc.com/video/2026/05/21/watch-cnbcs-full-interview-with-airbnb-ceo-brian-chesky.html",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "The Airbnb Deck",
         source: "Tremendous",
         url: "https://tremendous.blog/2024/03/20/the-airbnb-deck/",
-          archive: { status: "full", path: "content/sources/B6-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B6-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1089,15 +1146,15 @@ export const NODES: Node[] = [
         label: "In 2006, Elon Musk Had a 'Secret Plan' to Mainstream Electric Cars. It's Working",
         source: "Vice",
         url: "https://www.vice.com/en/article/elon-musks-secret-plan-for-electric-car-dominance-is-right-on-schedule/",
-          archive: { status: "full", path: "content/sources/B7-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B7-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "This is how Elon Musk set out to achieve his Tesla master plan",
         source: "World Economic Forum",
         url: "https://www.weforum.org/stories/2016/04/this-is-how-elon-musk-set-out-to-achieve-his-tesla-master-plan/",
-          archive: { status: "full", path: "content/sources/B7-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/B7-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1342,7 +1399,7 @@ export const NODES: Node[] = [
       options: ["A", "B", "C"],
       correctIndex: 0,
     },
-    related: [],
+    related: ["W2", "W6"],
     furtherReading: [],
     tags: [],
   },
@@ -1570,15 +1627,15 @@ export const NODES: Node[] = [
         label: "The Pricing of Options and Corporate Liabilities (original paper)",
         source: "Journal of Political Economy, 1973",
         url: "https://www.journals.uchicago.edu/doi/10.1086/260062",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "watch",
         label: "In Our Time: The Black-Scholes Formula",
         source: "BBC Radio 4",
         url: "https://www.bbc.co.uk/programmes/b00y2zy9",
-          archive: { status: "full", path: "content/sources/E1-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/E1-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1615,15 +1672,15 @@ export const NODES: Node[] = [
         label: "A Mathematical Theory of Communication (original paper)",
         source: "Bell System Technical Journal, 1948",
         url: "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
-          archive: { status: "full", path: "content/sources/F1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/F1-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "A Mathematical Theory of Communication",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication",
-          archive: { status: "full", path: "content/sources/F1-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/F1-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1661,15 +1718,15 @@ export const NODES: Node[] = [
         label: "Information Management: A Proposal (original document)",
         source: "W3.org / CERN, 1989",
         url: "https://www.w3.org/History/1989/proposal.html",
-          archive: { status: "full", path: "content/sources/F2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/F2-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "30 years of the web: a short history of the invention that changed the world",
         source: "British Council",
         url: "https://www.britishcouncil.org/anyone-anywhere/history-web",
-          archive: { status: "full", path: "content/sources/F2-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/F2-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1706,15 +1763,15 @@ export const NODES: Node[] = [
         label: "The Anatomy of a Large-Scale Hypertextual Web Search Engine (original paper)",
         source: "Stanford InfoLab, 1998",
         url: "http://infolab.stanford.edu/pub/papers/google.pdf",
-          archive: { status: "full", path: "content/sources/F3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/F3-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "The Anatomy of a Large-Scale Hypertextual Web Search Engine (mirror)",
         source: "Stanford SNAP",
         url: "https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf",
-          archive: { status: "full", path: "content/sources/F3-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/F3-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1752,15 +1809,19 @@ export const NODES: Node[] = [
         label: "The Internet Tidal Wave (original memo)",
         source: "BBC-hosted archive",
         url: "http://news.bbc.co.uk/2/shared/bsp/hi/pdfs/18_06_08_internet%20tidal%20wave.pdf",
-          archive: { status: "unavailable", path: "content/sources/F4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/F4-0.md",
+          retrieved: "2026-07-14",
+        },
+      },
       {
         type: "read",
         label: "Did Tesla Remove Elon Musk's Master Plan From Its Website?",
         source: "Entrepreneur (context on tech memos aging)",
         url: "https://www.entrepreneur.com/business-news/did-tesla-remove-elon-musks-master-plan-from-its-website/479092",
-          archive: { status: "full", path: "content/sources/F4-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/F4-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1798,15 +1859,23 @@ export const NODES: Node[] = [
         label: "Increasing Returns and the New World of Business (original essay)",
         source: "Harvard Business Review, 1996",
         url: "https://sites.santafe.edu/~wbarthur/Papers/HBR.pdf",
-          archive: { status: "unavailable", path: "content/sources/F5-0.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/F5-0.md",
+          retrieved: "2026-07-14",
+        },
+      },
       {
         type: "read",
         label: "W. Brian Arthur's work on complexity and increasing returns",
         source: "Santa Fe Institute",
         url: "https://www.santafe.edu/people/profile/w-brian-arthur",
-          archive: { status: "unavailable", path: "content/sources/F5-1.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/F5-1.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
     tags: [],
   },
@@ -1843,15 +1912,19 @@ export const NODES: Node[] = [
         label: "Software 2.0 (original essay)",
         source: "Andrej Karpathy on Medium",
         url: "https://karpathy.medium.com/software-2-0-a64152b37c35",
-          archive: { status: "full", path: "content/sources/G1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G1-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "The Rise of Software 2.0: You don't want to be left behind",
         source: "Towards Data Science",
         url: "https://towardsdatascience.com/the-rise-of-software-2-0-you-dont-want-to-be-left-behind-cbaa75f6d19",
-          archive: { status: "unavailable", path: "content/sources/G1-1.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/G1-1.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
     tags: [],
   },
@@ -1889,15 +1962,15 @@ export const NODES: Node[] = [
         label: "Efficient Estimation of Word Representations in Vector Space (original paper)",
         source: "arXiv, 2013",
         url: "https://arxiv.org/abs/1301.3781",
-          archive: { status: "full", path: "content/sources/G2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G2-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "The Illustrated Word2vec",
         source: "Jay Alammar",
         url: "https://jalammar.github.io/illustrated-word2vec/",
-          archive: { status: "full", path: "content/sources/G2-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G2-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -1935,15 +2008,15 @@ export const NODES: Node[] = [
         label: "ImageNet Classification with Deep Convolutional Neural Networks (original paper)",
         source: "NeurIPS, 2012",
         url: "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
-          archive: { status: "full", path: "content/sources/G3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G3-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "Geoffrey Hinton — Turing Award Lecture on Deep Learning",
         source: "ACM / YouTube",
         url: "https://www.youtube.com/watch?v=VsnQf7exv5I",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: [],
   },
@@ -1980,15 +2053,19 @@ export const NODES: Node[] = [
         label: "Deep Residual Learning for Image Recognition (original paper)",
         source: "arXiv, 2015",
         url: "https://arxiv.org/abs/1512.03385",
-          archive: { status: "full", path: "content/sources/G4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G4-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Understanding ResNet and its variants",
         source: "Towards Data Science",
         url: "https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33",
-          archive: { status: "unavailable", path: "content/sources/G4-1.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/G4-1.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
     tags: [],
   },
@@ -2026,15 +2103,15 @@ export const NODES: Node[] = [
         label: "Attention Is All You Need (original paper)",
         source: "arXiv, 2017",
         url: "https://arxiv.org/abs/1706.03762",
-          archive: { status: "full", path: "content/sources/G5-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G5-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "The Illustrated Transformer",
         source: "Jay Alammar",
         url: "https://jalammar.github.io/illustrated-transformer/",
-          archive: { status: "full", path: "content/sources/G5-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G5-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2071,15 +2148,15 @@ export const NODES: Node[] = [
         label: "Language Models are Few-Shot Learners (original paper)",
         source: "arXiv, 2020",
         url: "https://arxiv.org/abs/2005.14165",
-          archive: { status: "full", path: "content/sources/G6-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G6-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "How GPT3 Works — Visualizations and Animations",
         source: "Jay Alammar",
         url: "https://jalammar.github.io/how-gpt3-works-visualizations-animations/",
-          archive: { status: "full", path: "content/sources/G6-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G6-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2117,15 +2194,15 @@ export const NODES: Node[] = [
         label: "Scaling Laws for Neural Language Models (original paper)",
         source: "arXiv, 2020",
         url: "https://arxiv.org/abs/2001.08361",
-          archive: { status: "full", path: "content/sources/G7-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G7-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "The Scaling Hypothesis",
         source: "Gwern Branwen",
         url: "https://gwern.net/scaling-hypothesis",
-          archive: { status: "full", path: "content/sources/G7-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G7-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2163,15 +2240,19 @@ export const NODES: Node[] = [
         label: "Training Compute-Optimal Large Language Models (original paper)",
         source: "arXiv, 2022",
         url: "https://arxiv.org/abs/2203.15556",
-          archive: { status: "full", path: "content/sources/G8-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G8-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Chinchilla's Wild Implications",
         source: "LessWrong",
         url: "https://www.lesswrong.com/posts/6Fpvch8TREZXbdmEB/chinchilla-s-wild-implications",
-          archive: { status: "unavailable", path: "content/sources/G8-1.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/G8-1.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
     tags: [],
   },
@@ -2209,15 +2290,15 @@ export const NODES: Node[] = [
         label: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL (original paper)",
         source: "arXiv, 2025",
         url: "https://arxiv.org/abs/2501.12948",
-          archive: { status: "full", path: "content/sources/G9-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G9-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "DeepSeek-R1 explainer",
         source: "Hugging Face",
         url: "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-          archive: { status: "full", path: "content/sources/G9-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G9-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2255,15 +2336,15 @@ export const NODES: Node[] = [
         label: "The Bitter Lesson (original essay)",
         source: "Rich Sutton, incompleteideas.net",
         url: "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
-          archive: { status: "full", path: "content/sources/G10-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G10-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Rich Sutton's bitter lesson of AI",
         source: "John D. Cook",
         url: "https://www.johndcook.com/blog/2025/02/20/bitter-lesson/",
-          archive: { status: "full", path: "content/sources/G10-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/G10-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2301,15 +2382,19 @@ export const NODES: Node[] = [
         label: "Bitcoin: A Peer-to-Peer Electronic Cash System (original whitepaper)",
         source: "bitcoin.org, 2008",
         url: "https://bitcoin.org/bitcoin.pdf",
-          archive: { status: "full", path: "content/sources/H1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H1-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Bitcoin: The Internet of Money",
         source: "Naval Ravikant",
         url: "https://startupboy.com/2013/11/07/bitcoin-the-internet-of-money/",
-          archive: { status: "unavailable", path: "content/sources/H1-1.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/H1-1.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
     tags: [],
   },
@@ -2347,15 +2432,15 @@ export const NODES: Node[] = [
         label: "The Bullish Case for Bitcoin (original essay)",
         source: "Vijay Boyapati on Medium, 2018",
         url: "https://vijayboyapati.medium.com/the-bullish-case-for-bitcoin-6ecc8bdecc1",
-          archive: { status: "full", path: "content/sources/H2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H2-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "The Bull Case for Bitcoin",
         source: "The Investor's Podcast Network",
         url: "https://www.theinvestorspodcast.com/millennial-investing/the-bull-case-for-btc/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: [],
   },
@@ -2393,15 +2478,15 @@ export const NODES: Node[] = [
         label: "Ethereum Whitepaper (original)",
         source: "ethereum.org",
         url: "https://ethereum.org/en/whitepaper/",
-          archive: { status: "full", path: "content/sources/H3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H3-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Ethereum: A Next-Generation Smart Contract Platform (context)",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Ethereum",
-          archive: { status: "full", path: "content/sources/H3-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H3-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2439,15 +2524,15 @@ export const NODES: Node[] = [
         label: "Fat Protocols (original essay)",
         source: "Union Square Ventures, 2016",
         url: "https://www.usv.com/writing/2016/08/fat-protocols/",
-          archive: { status: "full", path: "content/sources/H4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H4-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "watch",
         label: "The industry is growing out of the Fat Protocol Thesis (debate)",
         source: "The Blockchain Debate Podcast",
         url: "https://blockdebate.buzzsprout.com/767033/episodes/9694662-motion-the-industry-is-growing-out-of-the-fat-protocol-thesis-jeff-dorman-vs-joel-monegro",
-          archive: { status: "full", path: "content/sources/H4-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H4-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2485,15 +2570,15 @@ export const NODES: Node[] = [
         label: "Uniswap Whitepaper (v1, original concept document)",
         source: "Hayden Adams",
         url: "https://hackmd.io/@HaydenAdams/HJ9jLsfTz",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         type: "read",
         label: "Uniswap v3 Core whitepaper",
         source: "uniswap.org",
         url: "https://app.uniswap.org/whitepaper-v3.pdf",
-          archive: { status: "full", path: "content/sources/H5-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H5-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2530,15 +2615,15 @@ export const NODES: Node[] = [
         label: "Solana: A New Architecture for a High Performance Blockchain (original whitepaper)",
         source: "solana.com",
         url: "https://solana.com/solana-whitepaper.pdf",
-          archive: { status: "full", path: "content/sources/H6-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H6-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Proof of History: what is it good for?",
         source: "Victor Shoup",
         url: "https://www.shoup.net/papers/poh.pdf",
-          archive: { status: "full", path: "content/sources/H6-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H6-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2576,15 +2661,15 @@ export const NODES: Node[] = [
         label: "Why Decentralization Matters (original essay)",
         source: "Chris Dixon, cdixon.org",
         url: "https://cdixon.org/2018/02/18/why-decentralization-matters",
-          archive: { status: "full", path: "content/sources/H7-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H7-0.md", retrieved: "2026-07-14" },
+      },
       {
         type: "read",
         label: "Why Decentralization Matters (mirror)",
         source: "OneZero / Medium",
         url: "https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e",
-          archive: { status: "full", path: "content/sources/H7-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/H7-1.md", retrieved: "2026-07-14" },
+      },
     ],
     tags: [],
   },
@@ -2621,15 +2706,19 @@ export const NODES: Node[] = [
         label: "Social Capital investor letters (Chamath Palihapitiya)",
         source: "socialcapital.com",
         url: "https://www.socialcapital.com/",
-          archive: { status: "unavailable", path: "content/sources/H8-0.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/H8-0.md",
+          retrieved: "2026-07-14",
+        },
+      },
       {
         type: "watch",
         label: "All-In Podcast (hosted by Chamath Palihapitiya & co-hosts)",
         source: "YouTube",
         url: "https://www.youtube.com/@allin",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: [],
   },
@@ -2856,7 +2945,7 @@ export const NODES: Node[] = [
       options: ["A", "B", "C"],
       correctIndex: 0,
     },
-    related: [],
+    related: ["Z5"],
     furtherReading: [],
     tags: [],
   },
@@ -2875,7 +2964,7 @@ export const NODES: Node[] = [
       options: ["A", "B", "C"],
       correctIndex: 0,
     },
-    related: [],
+    related: ["Z6"],
     furtherReading: [],
     tags: [],
   },
@@ -3101,8 +3190,8 @@ export const NODES: Node[] = [
         label: "Poor Charlie's Almanack",
         source: "book",
         url: "https://www.stripe.press/poor-charlies-almanack",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -3138,8 +3227,8 @@ export const NODES: Node[] = [
         label: "The Most Important Thing",
         source: "book",
         url: "https://www.oaktreecapital.com/insights/memos",
-          archive: { status: "full", path: "content/sources/J2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/J2-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3168,14 +3257,18 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Decision-Making", "Wealth, Leverage & Judgment"],
-    related: ["D5", "O3", "D1", "B4"],
+    related: ["D5", "O3", "D1", "B4", "W2"],
     furtherReading: [
       {
         label: "Berkshire Hathaway Shareholder Letters",
         source: "berkshirehathaway.com",
         url: "https://www.berkshirehathaway.com/letters/letters.html",
-          archive: { status: "unavailable", path: "content/sources/J3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/J3-0.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
   },
   {
@@ -3211,8 +3304,8 @@ export const NODES: Node[] = [
         label: "Murphy's Law and other reasons things go wrong",
         source: "book",
         url: "https://en.wikipedia.org/wiki/Hanlon%27s_razor",
-          archive: { status: "full", path: "content/sources/J4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/J4-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3241,14 +3334,14 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Compounding & Patience"],
-    related: ["G4", "D6", "C2"],
+    related: ["G4", "D6", "C2", "W6"],
     furtherReading: [
       {
         label: "The Psychology of Money",
         source: "book",
         url: "https://www.morganhousel.com/",
-          archive: { status: "full", path: "content/sources/K1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/K1-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3284,8 +3377,8 @@ export const NODES: Node[] = [
         label: "Antifragile",
         source: "book",
         url: "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
-          archive: { status: "full", path: "content/sources/K2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/K2-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3320,8 +3413,8 @@ export const NODES: Node[] = [
         label: "Clio and the Economics of QWERTY",
         source: "paper",
         url: "https://www.jstor.org/stable/1805621",
-          archive: { status: "full", path: "content/sources/K3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/K3-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3350,14 +3443,14 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Risk & Asymmetric Bets"],
-    related: ["A3", "D1", "D4", "C1"],
+    related: ["A3", "D1", "D4", "C1", "W6"],
     furtherReading: [
       {
         label: "Antifragile",
         source: "book",
         url: "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
-          archive: { status: "full", path: "content/sources/K4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/K4-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3387,8 +3480,8 @@ export const NODES: Node[] = [
         label: "Thinking in Bets",
         source: "book",
         url: "https://www.annieduke.com/books",
-          archive: { status: "full", path: "content/sources/L1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/L1-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3423,8 +3516,12 @@ export const NODES: Node[] = [
         label: "Performing a Project Pre-Mortem",
         source: "HBR",
         url: "https://hbr.org/2007/09/performing-a-project-premortem",
-          archive: { status: "unavailable", path: "content/sources/L2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/L2-0.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
   },
   {
@@ -3460,8 +3557,8 @@ export const NODES: Node[] = [
         label: "Thinking, Fast and Slow",
         source: "book",
         url: "https://us.macmillan.com/books/9780374533557",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -3496,8 +3593,8 @@ export const NODES: Node[] = [
         label: "Jeff Bezos on Regret Minimization",
         source: "Academy of Achievement",
         url: "https://achievement.org/achiever/jeffrey-p-bezos/",
-          archive: { status: "full", path: "content/sources/L4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/L4-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3527,14 +3624,14 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Incentives & Systems"],
-    related: ["F3"],
+    related: ["F3", "W4"],
     furtherReading: [
       {
         label: "Goodhart's Law: Its Origins, Meaning, and Implications",
         source: "paper",
         url: "https://en.wikipedia.org/wiki/Goodhart%27s_law",
-          archive: { status: "full", path: "content/sources/M1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/M1-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3570,14 +3667,14 @@ export const NODES: Node[] = [
         label: "The Thing",
         source: "essay",
         url: "https://www.gutenberg.org/ebooks/1720",
-          archive: { status: "full", path: "content/sources/M2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/M2-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
     id: "M3",
     clusterId: "M",
-    title: "PrincipalΓÇôAgent Problem",
+    title: "Principal–Agent Problem",
     author: "Michael Jensen & William Meckling",
     year: 1976,
     medium: "Paper",
@@ -3600,14 +3697,18 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Incentives & Systems", "Crypto & Trust"],
-    related: ["F3"],
+    related: ["F3", "W4"],
     furtherReading: [
       {
         label: "Theory of the Firm",
         source: "paper",
         url: "https://www.sciencedirect.com/science/article/pii/0304405X7690026X",
-          archive: { status: "unavailable", path: "content/sources/M3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/M3-0.md",
+          retrieved: "2026-07-14",
+        },
+      },
     ],
   },
   {
@@ -3643,8 +3744,8 @@ export const NODES: Node[] = [
         label: "The Cobra Effect",
         source: "Freakonomics",
         url: "https://freakonomics.com/podcast/the-cobra-effect-2/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -3680,8 +3781,8 @@ export const NODES: Node[] = [
         label: "Deep Work",
         source: "book",
         url: "https://calnewport.com/books/deep-work/",
-          archive: { status: "full", path: "content/sources/N1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/N1-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3716,8 +3817,8 @@ export const NODES: Node[] = [
         label: "Is There Such a Thing As Good Taste?",
         source: "paulgraham.com",
         url: "http://paulgraham.com/goodtaste.html",
-          archive: { status: "full", path: "content/sources/N2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/N2-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3753,8 +3854,8 @@ export const NODES: Node[] = [
         label: "The Bus Ticket Theory of Genius",
         source: "paulgraham.com",
         url: "http://paulgraham.com/genius.html",
-          archive: { status: "full", path: "content/sources/N3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/N3-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3789,8 +3890,8 @@ export const NODES: Node[] = [
         label: "Strong Opinions, Weakly Held",
         source: "saffo.com",
         url: "https://www.saffo.com/02008/07/26/strong-opinions-weakly-held/",
-          archive: { status: "full", path: "content/sources/N4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/N4-0.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -3827,15 +3928,15 @@ export const NODES: Node[] = [
         label: "A Lesson on Elementary, Worldly Wisdom (full transcript)",
         source: "Farnam Street / Charlie Munger, 1994 speech",
         url: "https://fs.blog/great-talks/a-lesson-on-worldly-wisdom/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "Charlie Munger Lecture: Elementary Worldly Wisdom as it Relates to Investing & Business",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=vP2QPLGnjGo",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -3871,15 +3972,15 @@ export const NODES: Node[] = [
         label: "Why Write? (on how writing reveals gaps in understanding)",
         source: "Farnam Street",
         url: "https://fs.blog/why-write/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "This is Water — David Foster Wallace's 2005 Kenyon College commencement speech (full transcript and audio)",
         source: "Farnam Street",
         url: "https://fs.blog/david-foster-wallace-this-is-water/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -3916,14 +4017,14 @@ export const NODES: Node[] = [
         label: "Understanding the Limitations of Maps",
         source: "Farnam Street",
         url: "https://fs.blog/understanding-limitations-maps/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The 5 Whys technique explained (as used in root cause analysis)",
         source: "General reference — verify specific video before use",
         url: "https://fs.blog/proximate-vs-root-causes/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -3959,14 +4060,14 @@ export const NODES: Node[] = [
         label: "Deterministic Nonperiodic Flow (Lorenz's original 1963 paper)",
         source: "Edward Lorenz, MIT",
         url: "http://eaps4.mit.edu/research/Lorenz/Deterministic_63.pdf",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Value of Play As a Driver of Innovation (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/value-play-driver-innovation/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4002,14 +4103,14 @@ export const NODES: Node[] = [
         label: "Circle of Competence (referenced concept)",
         source: "Farnam Street",
         url: "https://fs.blog/circle-of-competence/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Farnam Street's Knowledge Project podcast (Shane Parrish's long-form interviews)",
         source: "The Knowledge Project",
         url: "https://fs.blog/knowledge-project-podcast/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4040,26 +4141,26 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Decision-Making", "First-Principles Thinking"],
-    related: ["D1", "D2", "D3"],
+    related: ["D1", "D2", "D3", "W1"],
     furtherReading: [
       {
         label: "Inversion (the related mental model of solving problems backward)",
         source: "Farnam Street",
         url: "https://fs.blog/inversion/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Charlie Munger biography and talks archive",
         source: "Farnam Street",
         url: "https://fs.blog/charlie-munger/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
     id: "J11",
     clusterId: "J",
-    title: "All Models Are Wrong ΓÇª But Some Are Useful",
+    title: "All Models Are Wrong … But Some Are Useful",
     author: "Farnam Street (Shane Parrish), after George Box",
     year: 2017,
     medium: "Essay",
@@ -4084,20 +4185,20 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "X2"],
     furtherReading: [
       {
         label: "The Map is Not the Territory",
         source: "Farnam Street",
         url: "https://fs.blog/map-and-territory/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Great Mental Models book series overview",
         source: "Farnam Street",
         url: "https://fs.blog/tgmm/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4133,15 +4234,15 @@ export const NODES: Node[] = [
         label: "Reciprocity (the related mental model)",
         source: "Farnam Street",
         url: "https://fs.blog/reciprocity/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "The Multidisciplinary Approach to Thinking (Peter Kaufman talk, referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/great-talks/multidisciplinary-approach-thinking-peter-kaufman/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4178,15 +4279,15 @@ export const NODES: Node[] = [
         label: "The Surprising Power of the Long Game (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/long-game/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "Finite and Infinite Games: Two Ways to Play the Game of Life (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/finite-and-infinite-games/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4223,14 +4324,14 @@ export const NODES: Node[] = [
         label: "Decision Journal (a related practical tool referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/02/decision-journal/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Farnam Street's Knowledge Project podcast — decision-making series",
         source: "The Knowledge Project",
         url: "https://fs.blog/knowledge-project-podcast/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4267,14 +4368,14 @@ export const NODES: Node[] = [
         label: "Bayes and Deadweight: Using Statistics to Eject the Deadweight From Your Life",
         source: "Farnam Street",
         url: "https://fs.blog/2018/01/bayes-deadweight/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Julia Galef on Bayesian reasoning changing how you think",
         source: "Big Think, via YouTube",
         url: "https://www.youtube.com/watch?v=NEqHML98RgU",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4311,15 +4412,15 @@ export const NODES: Node[] = [
         label: "The Pygmalion Effect: Proving Them Right (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/pygmalion-effect/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "Farnam Street's Knowledge Project podcast — probabilistic thinking and poker with Annie Duke",
         source: "The Knowledge Project",
         url: "https://fs.blog/annie-duke/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4356,15 +4457,15 @@ export const NODES: Node[] = [
         label: "Hanlon's Razor (the complementary mental model)",
         source: "Farnam Street",
         url: "https://fs.blog/2017/04/mental-model-hanlons-razor/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "Illusion of Transparency: Your Poker Face is Better Than You Think (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/illusion-of-transparency/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4401,15 +4502,15 @@ export const NODES: Node[] = [
         label: "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/02/peter-cathcart-wason-falsification/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "Three Buckets of Knowledge — Peter Kaufman's framework for identifying universal principles (referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2016/02/three-buckets-lessons-of-history/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4446,15 +4547,15 @@ export const NODES: Node[] = [
         label: "What Sharks (and Building Bombers) Teach Us About Survivorship Bias",
         source: "Farnam Street",
         url: "https://fs.blog/sharks-survivorship-bias/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "The Narrative Fallacy (related Farnam Street piece, on how we turn the past into false patterns)",
         source: "Farnam Street",
         url: "https://fs.blog/2016/04/narrative-fallacy/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4491,14 +4592,14 @@ export const NODES: Node[] = [
         label: "Survivorship Bias: The Tale of Forgotten Failures",
         source: "Farnam Street",
         url: "https://fs.blog/survivorship-bias/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Indianapolis: The True Story of the Worst Sea Disaster in US Naval History",
         source: "Lynn Vincent and Sara Vladic (book, referenced in this piece)",
         url: "https://fs.blog/sharks-survivorship-bias/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4535,15 +4636,15 @@ export const NODES: Node[] = [
         label: "Hanlon's Razor",
         source: "Farnam Street",
         url: "https://fs.blog/2017/04/mental-model-hanlons-razor/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "Risk Intelligence: How to Live With Uncertainty (Dylan Evans, referenced in this piece)",
         source: "Book excerpt via Farnam Street",
         url: "https://fs.blog/illusion-of-transparency/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4580,15 +4681,15 @@ export const NODES: Node[] = [
         label: "Bias From Insensitivity to Sample Size",
         source: "Farnam Street",
         url: "https://fs.blog/mental-model-bias-from-insensitivity-to-sample-size/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "The Psychology of Human Misjudgment (Charlie Munger talk, referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/great-talks/psychology-human-misjudgment/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4626,14 +4727,14 @@ export const NODES: Node[] = [
           "Occam's Razor (referenced in this piece as informing how scientists choose among thought-experiment hypotheses)",
         source: "Farnam Street",
         url: "https://fs.blog/occams-razor/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Great Mental Models book series overview",
         source: "Farnam Street",
         url: "https://fs.blog/tgmm/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4670,15 +4771,15 @@ export const NODES: Node[] = [
         label: "First Principles: The Building Blocks of True Knowledge",
         source: "Farnam Street",
         url: "https://fs.blog/2018/04/first-principles/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "Something from the Oven (Laura Shapiro's biography of Julia Child, primary source for this piece)",
         source: "Book, referenced via Farnam Street",
         url: "https://fs.blog/how-julia-child-used-first-principles-thinking/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4715,14 +4816,14 @@ export const NODES: Node[] = [
         label: "Tit For Tat",
         source: "Farnam Street",
         url: "https://fs.blog/tit-for-tat/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Great Mental Models Volume 2: Physics, Chemistry, and Biology",
         source: "Farnam Street book",
         url: "https://fs.blog/tgmm/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4759,14 +4860,14 @@ export const NODES: Node[] = [
         label: "Power Laws",
         source: "Farnam Street",
         url: "https://fs.blog/2017/11/power-laws/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Economics of Superstars (Sherwin Rosen, referenced in this piece)",
         source: "Academic paper, cited via Farnam Street",
         url: "https://fs.blog/mental-model-winner-take-all/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4802,14 +4903,14 @@ export const NODES: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Bayesian Casino (Bayes and Deadweight, referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2018/01/bayes-deadweight/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4845,14 +4946,14 @@ export const NODES: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Nature: An Economic History (Geerat Vermeij, referenced in this piece)",
         source: "Book, cited via Farnam Street",
         url: "https://fs.blog/parenting-mental-models/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4889,14 +4990,14 @@ export const NODES: Node[] = [
         label: "An Antifragile Way of Life (the original 2014 piece this article expands on)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/10/an-antifragile-way-of-life/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Second-Order Thinking (related Farnam Street piece on long-horizon consequences)",
         source: "Farnam Street",
         url: "https://fs.blog/second-order-thinking/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4933,15 +5034,15 @@ export const NODES: Node[] = [
         label: "The Map is Not the Territory",
         source: "Farnam Street",
         url: "https://fs.blog/map-and-territory/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label:
           "The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy (David Graeber, primary source for this piece)",
         source: "Book, cited via Farnam Street",
         url: "https://fs.blog/descriptions-arent-prescriptions/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -4978,14 +5079,18 @@ export const NODES: Node[] = [
         label: "Cost and Choice: An Inquiry in Economic Theory",
         source: "James M. Buchanan, 1969",
         url: "https://www.econlib.org/library/Buchanan/buchCC.html",
-          archive: { status: "unavailable", path: "content/sources/L5-0.md", retrieved: "2026-07-14" }
-    },
+        archive: {
+          status: "unavailable",
+          path: "content/sources/L5-0.md",
+          retrieved: "2026-07-14",
+        },
+      },
       {
         label: "Opportunity Cost: The Hidden Cost of Everything",
         source: "Farnam Street",
         url: "https://fs.blog/opportunity-cost/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5021,14 +5126,14 @@ export const NODES: Node[] = [
         label: "Antifragile: Things That Gain from Disorder",
         source: "Nassim Nicholas Taleb, 2012",
         url: "https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/",
-          archive: { status: "full", path: "content/sources/L6-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/L6-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Asymmetric Opportunities: How to Benefit from the Upside",
         source: "Farnam Street",
         url: "https://fs.blog/asymmetric-bets/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5058,20 +5163,20 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["O4", "N2"],
+    related: ["O4", "N2", "S6"],
     furtherReading: [
       {
         label: "Albert Camus",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/camus/",
-          archive: { status: "full", path: "content/sources/O1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/O1-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Albert Camus: The Madness of Sincerity (1997 documentary)",
         source: "Open Culture",
         url: "https://www.openculture.com/2014/11/albert-camus-the-madness-of-sincerity.html",
-          archive: { status: "full", path: "content/sources/O1-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/O1-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5102,20 +5207,20 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["O4", "N3"],
+    related: ["O4", "N3", "Y1"],
     furtherReading: [
       {
         label: "The Ego Tunnel — TEDxRheinMain",
         source: "TEDx Talks",
         url: "https://www.youtube.com/watch?v=ZFjY1fAcESs",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Thomas Metzinger",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Thomas_Metzinger",
-          archive: { status: "full", path: "content/sources/O2-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/O2-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5152,14 +5257,14 @@ export const NODES: Node[] = [
         label: "You aren't at the mercy of your emotions — your brain creates them",
         source: "TED Talk, Lisa Feldman Barrett",
         url: "https://www.ted.com/talks/lisa_feldman_barrett_you_aren_t_at_the_mercy_of_your_emotions_your_brain_creates_them",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Descartes' Error",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Descartes%27_Error",
-          archive: { status: "full", path: "content/sources/O3-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/O3-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5191,14 +5296,14 @@ export const NODES: Node[] = [
         label: "Richard Dawkins — The Selfish Gene explained",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=j9p2F2oa0_k",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Selfish Gene",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/The_Selfish_Gene",
-          archive: { status: "full", path: "content/sources/O4-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/O4-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5224,20 +5329,20 @@ export const NODES: Node[] = [
       correctIndex: 0,
     },
     tags: ["Meaning & Self"],
-    related: ["O4"],
+    related: ["O4", "S6", "Y6"],
     furtherReading: [
       {
         label: "Interview with Dr. Viktor Frankl, part I",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=9EIxGrIc_6g",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Man's Search for Meaning",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Man%27s_Search_for_Meaning",
-          archive: { status: "full", path: "content/sources/O5-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/O5-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5267,20 +5372,20 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["O4", "N1"],
+    related: ["O4", "N1", "X1"],
     furtherReading: [
       {
         label: "Do we see reality as it is?",
         source: "TED Talk, Donald Hoffman",
         url: "https://www.ted.com/talks/donald_hoffman_do_we_see_reality_as_it_is",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "The Evolutionary Argument Against Reality",
         source: "Quanta Magazine",
         url: "https://www.quantamagazine.org/the-evolutionary-argument-against-reality-20160421/",
-          archive: { status: "full", path: "content/sources/O6-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/O6-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5317,14 +5422,14 @@ export const NODES: Node[] = [
         label: "I Took Naval Ravikant's Tweet Thread & Made $1.55M With It — Here's How",
         source: "Tim Denning",
         url: "https://timdenning.com/naval-ravikant/",
-          archive: { status: "full", path: "content/sources/P1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/P1-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "How to Get Rich (Without Getting Lucky) — Naval's own podcast series",
         source: "Naval Ravikant & Nivi",
         url: "https://nav.al/rich",
-          archive: { status: "full", path: "content/sources/P1-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/P1-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5356,14 +5461,14 @@ export const NODES: Node[] = [
         label: "How to Get Rich by Naval Ravikant (Deep Summary + Infographic)",
         source: "Sloww",
         url: "https://www.sloww.co/how-to-get-rich-naval-ravikant/",
-          archive: { status: "full", path: "content/sources/P2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/P2-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Joe Rogan Experience #1309 — Naval Ravikant",
         source: "The Joe Rogan Experience, June 4, 2019",
         url: "https://www.jrepodcast.com/episode/joe-rogan-experience-1309-naval-ravikant/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5401,14 +5506,14 @@ export const NODES: Node[] = [
           "4 Takeaways from Naval Ravikant's Tweetstorm: How to Get Rich (without getting lucky)",
         source: "Medium",
         url: "https://medium.com/@dan.the.man1617/4-takeaways-from-naval-ravikants-tweetstorm-how-to-get-rich-without-getting-lucky-868d62d47e84",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Naval Ravikant: The Angel Philosopher — its most-downloaded episode",
         source: "The Knowledge Project with Shane Parrish, #18",
         url: "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5444,14 +5549,14 @@ export const NODES: Node[] = [
         label: "Happiness According To Naval Ravikant",
         source: "Medium, Daniel Jiang",
         url: "https://daniel-jiang.medium.com/happiness-according-to-naval-ravikant-96fbb8f52ffd",
-          archive: { status: "full", path: "content/sources/P4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/P4-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Naval Ravikant on The Tim Ferriss Show — happiness, anxiety, and meditation",
         source: "Podcast Notes summary of The Tim Ferriss Show",
         url: "https://podcastnotes.org/tim-ferris-show/happiness-reducing-anxiety-crypto-stablecoins-and-crypto-strategy-naval-ravikant/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5483,14 +5588,14 @@ export const NODES: Node[] = [
         label: "Naval Ravikant's Top 7 Reading Tips",
         source: "Medium, Mark Joseph Aduana",
         url: "https://medium.com/@markaduana/naval-ravikants-top-7-reading-tips-457e5e0d664f",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Read What You Love Until You Love To Read",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=-geJg7OjB6o",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5527,14 +5632,14 @@ export const NODES: Node[] = [
         label: "Naval's Thoughts On Playing Long-Term Games With Long-Term People",
         source: "The Acquirer's Multiple",
         url: "https://acquirersmultiple.com/2020/09/navals-thoughts-on-playing-long-term-games-with-long-term-people/",
-          archive: { status: "full", path: "content/sources/P6-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/P6-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "How to Get Rich (Without Getting Lucky) — Naval's own podcast series",
         source: "Naval Ravikant & Nivi",
         url: "https://nav.al/long-term",
-          archive: { status: "full", path: "content/sources/P6-1.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/P6-1.md", retrieved: "2026-07-14" },
+      },
     ],
   },
   {
@@ -5566,14 +5671,14 @@ export const NODES: Node[] = [
         label: "How to Win Friends and Influence People",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People",
-          archive: { status: "full", path: "content/sources/Q1-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/Q1-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Dale Carnegie: Man of Influence",
         source: "A&E Biography (1987), YouTube",
         url: "https://www.youtube.com/watch?v=GXXDQ0O7qJk",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5609,14 +5714,14 @@ export const NODES: Node[] = [
         label: "The 48 Laws of Power",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/The_48_Laws_of_Power",
-          archive: { status: "full", path: "content/sources/Q2-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/Q2-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Robert Greene on reading, the laws of power, and detecting lies",
         source: "The Knowledge Project podcast archive, YouTube",
         url: "https://www.youtube.com/watch?v=hwqveKLfpfg",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5653,14 +5758,14 @@ export const NODES: Node[] = [
         label: "Yuval Noah Harari, the sage of Silicon Valley",
         source: "Slate",
         url: "https://slate.com/culture/2018/11/yuval-noah-harari-sapiens-facebook-silicon-valley-hollywood.html",
-          archive: { status: "full", path: "content/sources/Q3-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/Q3-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Why humans run the world",
         source: "TED Talk, Yuval Noah Harari",
         url: "https://www.youtube.com/watch?v=nzj7Wg4DAbs",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5697,14 +5802,14 @@ export const NODES: Node[] = [
         label: "Debate Arises over Teaching 'Growth Mindsets' to Motivate Students",
         source: "Scientific American",
         url: "https://www.scientificamerican.com/article/debate-arises-over-teaching-growth-mindsets-to-motivate-students/",
-          archive: { status: "full", path: "content/sources/Q4-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/Q4-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "The power of believing that you can improve",
         source: "TED Talk, Carol Dweck (TEDxNorrk├╢ping)",
         url: "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5741,14 +5846,14 @@ export const NODES: Node[] = [
         label: "How Not to Die by Dr. Michael Greger: A Critical Review",
         source: "Healthline",
         url: "https://www.healthline.com/nutrition/how-not-to-die-review",
-          archive: { status: "full", path: "content/sources/Q5-0.md", retrieved: "2026-07-14" }
-    },
+        archive: { status: "full", path: "content/sources/Q5-0.md", retrieved: "2026-07-14" },
+      },
       {
         label: "Dr. Michael Greger | How Not To Die",
         source: "Talks at Google, Feb 2016",
         url: "https://www.youtube.com/watch?v=7rNY7xKyGCQ",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5785,14 +5890,14 @@ export const NODES: Node[] = [
         label: "MacArthur 'Genius' Angela Duckworth Responds To A New Critique Of Grit",
         source: "NPR",
         url: "https://www.npr.org/sections/ed/2016/05/25/479172868/angela-duckworth-responds-to-a-new-critique-of-grit",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Grit: The power of passion and perseverance",
         source: "TED Talk, Angela Lee Duckworth (2013)",
         url: "https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
   },
   {
@@ -5822,7 +5927,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["O1", "O8", "O9"],
+    related: ["O1", "O8", "O9", "Y4"],
     furtherReading: [
       {
         label: "Existentialism Is a Humanism (full text)",
@@ -5894,7 +5999,8 @@ export const NODES: Node[] = [
     layer2:
       "Beauvoir's ethics judges an action by whether it opens or closes the future for others, not just yourself. Pick a recent decision you made mostly for your own freedom — a career move, a boundary, blunt honesty — did it expand or narrow someone else's room to act?",
     quiz: {
-      question: "What problem was Beauvoir specifically trying to solve in The Ethics of Ambiguity?",
+      question:
+        "What problem was Beauvoir specifically trying to solve in The Ethics of Ambiguity?",
       options: [
         "How to prove that free will exists",
         "How existentialism, which denies fixed values, can still ground an ethics rather than collapsing into 'anything goes'",
@@ -6109,7 +6215,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["O1", "O5"],
+    related: ["O1", "O5", "X3"],
     furtherReading: [
       {
         label: "Thus Spoke Zarathustra (Common translation, full text)",
@@ -6150,7 +6256,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self"],
-    related: ["O2", "O6"],
+    related: ["O2", "O6", "Y3"],
     furtherReading: [
       {
         label: "Facing Up to the Problem of Consciousness (full PDF)",
@@ -6161,6 +6267,335 @@ export const NODES: Node[] = [
         label: "Consciousness",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/consciousness/",
+      },
+    ],
+  },
+  {
+    id: "O16",
+    clusterId: "O",
+    title: "Utilitarianism",
+    author: "John Stuart Mill",
+    year: 1863,
+    medium: "Essay",
+    category: "Ethics",
+    thesis:
+      "The right action is whichever produces the greatest net happiness for the greatest number of people affected — an act is judged entirely by its consequences, not by the intentions behind it or any rule it follows.",
+    layer0:
+      "Mill's utilitarianism, building on Bentham's earlier, cruder version, judges morality purely by outcomes: an action is right in proportion to how much aggregate happiness it produces and wrong in proportion to how much unhappiness it produces, with everyone's happiness counted equally regardless of who they are. Mill's key refinement over Bentham was insisting pleasures differ in quality, not just quantity — intellectual and moral pleasures rank higher than purely physical ones, famously summarized as it being better to be a human dissatisfied than a pig satisfied.",
+    layer1:
+      "This makes utilitarianism a consequentialist theory: to evaluate any choice, you tally the total wellbeing produced across everyone affected and compare it against the alternatives, with the highest-total option being the correct one regardless of how it feels to arrive at it or whose personal preferences get overridden along the way. This is what makes it controversial in edge cases (would it justify sacrificing one innocent person to save five?) and also what makes it practically powerful in policy contexts, since it gives a common currency, aggregate wellbeing, for comparing wildly different tradeoffs.",
+    layer2:
+      "Pick a recent decision you made mostly on principle or instinct. If you totaled the actual wellbeing produced for everyone affected, would a utilitarian calculation agree with your choice — and where would it diverge?",
+    quiz: {
+      question: "What does Mill's utilitarianism use to judge whether an action is right or wrong?",
+      options: [
+        "The intentions behind the action, regardless of outcome",
+        "Whether it produces the greatest net happiness for the greatest number of people affected",
+        "Whether it follows a fixed set of moral rules",
+        "Whether it is legal in the jurisdiction where it occurs",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Decision-Making"],
+    related: ["O17", "O18"],
+    furtherReading: [
+      {
+        label: "Utilitarianism (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/11224",
+      },
+      {
+        label: "Mill's Moral and Political Philosophy",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/mill-moral-political/",
+      },
+    ],
+  },
+  {
+    id: "O17",
+    clusterId: "O",
+    title: "Groundwork of the Metaphysics of Morals",
+    author: "Immanuel Kant",
+    year: 1785,
+    medium: "Book",
+    category: "Ethics",
+    thesis:
+      "An action is morally right only if it's done from duty according to a principle you could will to become a universal law for everyone — the categorical imperative — consequences are irrelevant; what matters is whether the underlying rule you're acting on treats people as ends in themselves, never merely as means.",
+    layer0:
+      "Kant's deontology, from the Greek deon, duty, is a direct rejection of consequentialism: an action's moral worth comes entirely from the principle, or maxim, behind it and whether that principle could be universalized, not from how the action turns out. His categorical imperative gives a test: act only according to a maxim you could, at the same time, will to become a universal law — if a rule fails when everyone follows it, like lying to get out of a promise, which collapses the entire concept of promising if universalized, the action is impermissible regardless of the good outcome it might produce in your specific case.",
+    layer1:
+      "He pairs this with a second formulation of the same imperative: always treat humanity, whether in yourself or in others, as an end in itself, never merely as a means to an end. This is what makes deontology resistant to the classic utilitarian trap of sacrificing one innocent person to save five — using a person purely as an instrument for someone else's benefit is impermissible under this formulation no matter how favorable the resulting math looks, because it violates their status as an end in themselves rather than a tool.",
+    layer2:
+      "Think of a rule you'd be tempted to break just this once for a good outcome. Run Kant's test: if everyone, in every similar situation, broke that same rule for their own good reason, would the rule, and the trust it depends on, survive?",
+    quiz: {
+      question: "What does Kant's categorical imperative test for?",
+      options: [
+        "Whether an action produces the best overall outcome",
+        "Whether the underlying principle behind an action could be willed to become a universal law that everyone follows",
+        "Whether an action is legal in a given society",
+        "Whether an action makes the person performing it happy",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Decision-Making"],
+    related: ["O16", "O18"],
+    furtherReading: [
+      {
+        label: "Groundwork of the Metaphysics of Morals (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/5682",
+      },
+      {
+        label: "Kant's Moral Philosophy",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/kant-moral/",
+      },
+    ],
+  },
+  {
+    id: "O18",
+    clusterId: "O",
+    title: "Nicomachean Ethics",
+    author: "Aristotle",
+    year: -340,
+    medium: "Text",
+    category: "Ethics",
+    thesis:
+      "The right way to live isn't defined by following rules or calculating outcomes, but by cultivating virtues — stable character traits, each a mean between two vices of excess and deficiency — through repeated practice, until acting well becomes second nature.",
+    layer0:
+      "Aristotle's approach to ethics starts from a different question than Mill's or Kant's: not what makes a single action right, but what makes a person good, on the theory that a genuinely virtuous person will reliably do the right thing without needing to run a calculation or consult a rule each time. His central mechanism is the doctrine of the mean: every virtue sits between two failure modes, an excess and a deficiency — courage, for instance, is the mean between cowardice, a deficiency of courage, and recklessness, an excess of courage, and it takes practical wisdom to judge where that mean actually falls in a specific situation.",
+    layer1:
+      "Virtues, for Aristotle, are not innate traits or beliefs you simply hold; they're habits built through repeated action, the same way you become a skilled craftsman by practicing the craft rather than by reading about it. You become courageous by repeatedly doing courageous acts until courage becomes your disposition, not by deciding once to be brave. The ultimate goal of this practice is eudaimonia, usually translated as flourishing or living well, which for Aristotle isn't a feeling but an activity: living and acting in accordance with virtue over a complete life.",
+    layer2:
+      "Pick one virtue you want to strengthen — patience, honesty, courage. Where does your current behavior sit, closer to the deficiency or the excess of that virtue — and what's one small, repeatable action this week that would practice the mean instead?",
+    quiz: {
+      question: "According to Aristotle, how does a person become virtuous?",
+      options: [
+        "By memorizing and following a fixed set of moral rules",
+        "By calculating the outcome that produces the most happiness before every decision",
+        "By repeatedly practicing virtuous actions until they become a stable habit or disposition",
+        "By being born with the correct moral character",
+      ],
+      correctIndex: 2,
+    },
+    tags: ["Meaning & Self", "Craft & Deep Work"],
+    related: ["O16", "O17"],
+    furtherReading: [
+      {
+        label: "Nicomachean Ethics (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/8438",
+      },
+      {
+        label: "Aristotle's Ethics",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/aristotle-ethics/",
+      },
+    ],
+  },
+  {
+    id: "O19",
+    clusterId: "O",
+    title: "An Essay Concerning Human Understanding",
+    author: "John Locke",
+    year: 1689,
+    medium: "Book",
+    category: "Epistemology",
+    thesis:
+      "The mind at birth is a blank slate, tabula rasa, with no innate ideas — all knowledge, without exception, is built up from sensory experience and the mind's reflection on that experience.",
+    layer0:
+      "Locke's Essay was a direct attack on the then-dominant rationalist view that some ideas, of God, of logic, of morality, are innate, built into the mind before any experience. His alternative: the mind starts as a blank slate, and every idea, no matter how abstract, can ultimately be traced back to either sensation, direct input from the external world through the senses, or reflection, the mind's own operations on those sensory ideas, like combining, comparing, or abstracting them.",
+    layer1:
+      "He distinguishes simple ideas, which arrive directly from experience and can't be broken down further, like the color red or the taste of sugar, from complex ideas, which the mind constructs by combining, comparing, or abstracting from simple ones — the idea of a unicorn combines the simple ideas of horse and horn; the idea of justice is a complex abstraction built from many observed instances. Since even your most abstract concepts trace back through this chain to raw sensory experience, Locke's test for any claimed piece of knowledge is: what experience is this actually built from, and does the chain back to that experience actually hold?",
+    layer2:
+      "Pick a belief you hold with real confidence. Trace it back through Locke's chain: what original sensory experience, or experiences, is it actually built from — and how many inferential steps sit between that experience and the confident belief you now hold?",
+    quiz: {
+      question: "What is Locke's central claim about the mind at birth?",
+      options: [
+        "It contains innate knowledge of God, logic, and morality",
+        "It is a blank slate with no innate ideas; all knowledge derives from sensory experience and reflection on it",
+        "It is pre-programmed with mathematical truths",
+        "It cannot acquire any reliable knowledge at all",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["O20", "O21"],
+    furtherReading: [
+      {
+        label: "An Essay Concerning Human Understanding (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/10615",
+      },
+      {
+        label: "John Locke",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/locke/",
+      },
+    ],
+  },
+  {
+    id: "O20",
+    clusterId: "O",
+    title: "Meditations on First Philosophy",
+    author: "René Descartes",
+    year: 1641,
+    medium: "Book",
+    category: "Epistemology",
+    thesis:
+      "By systematically doubting everything that can possibly be doubted, including the reliability of the senses, Descartes arrives at one thing that survives the doubt — the fact that he is thinking, and therefore exists, cogito ergo sum — and builds all further certain knowledge back up from that single indubitable foundation using reason alone.",
+    layer0:
+      "Descartes sets out to find a foundation for knowledge that is completely certain, immune to even the most extreme skeptical challenge. His method is radical doubt: reject anything that can be doubted at all, even slightly, including the evidence of the senses, which sometimes deceive us, and even basic mathematical truths, by imagining a powerful deceiver could be tricking him about those too. What survives this maximal doubt is the act of doubting itself — the fact that something is doing the doubting proves that thing exists, whatever else turns out to be false.",
+    layer1:
+      "From this single certain point, the cogito, Descartes tries to rebuild knowledge deductively, using reason rather than the senses as the primary tool, since the senses were exactly what got doubted away in the first place. This is the core rationalist move: privileging clear and distinct ideas grasped by pure reason, like mathematical truths, over knowledge derived from potentially unreliable sensory experience, the opposite emphasis from Locke's empiricism. Later rationalists and empiricists spent the next century arguing over whether Descartes's foundation actually holds, and whether reason alone, without sensory input, can really rebuild a full picture of the world.",
+    layer2:
+      "Descartes tried to find one belief immune to all possible doubt. If you ran his method on your own worldview, stripping away anything you couldn't be absolutely certain of, what's the last belief left standing — and is it doing the same foundational work his cogito does?",
+    quiz: {
+      question: "What survives Descartes's process of radical doubt in the Meditations?",
+      options: [
+        "The reliability of sensory experience",
+        "The existence of God, proven first",
+        "The fact that he is thinking, and therefore exists — the cogito ergo sum",
+        "Nothing; Descartes concludes certain knowledge is impossible",
+      ],
+      correctIndex: 2,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["O19", "O21"],
+    furtherReading: [
+      {
+        label: "Meditations on First Philosophy (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/59784",
+      },
+      {
+        label: "Descartes' Epistemology",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/descartes-epistemology/",
+      },
+    ],
+  },
+  {
+    id: "O21",
+    clusterId: "O",
+    title: "An Enquiry Concerning Human Understanding",
+    author: "David Hume",
+    year: 1748,
+    medium: "Book",
+    category: "Epistemology",
+    thesis:
+      "We never actually observe cause and effect itself, only one event constantly following another — so our belief in causation, and in the reliability of induction generally, is a habit of the mind formed by repeated experience, not something reason or observation can ultimately justify.",
+    layer0:
+      "Hume pushes empiricism further than Locke, to a genuinely unsettling conclusion: even our most basic assumption about how the world works, that causes produce effects, isn't something we ever directly perceive. When you watch one billiard ball strike another, you see the first ball move, then contact, then the second ball move — you never actually see the causal power connecting them, only the constant conjunction of the two events happening in sequence, over and over.",
+    layer1:
+      "This becomes his famous problem of induction: we assume the future will resemble the past, that the sun will rise tomorrow because it always has, but that assumption can't be justified by reason alone, since there's no logical contradiction in the sun not rising, or by past experience alone, since using past experience to justify trusting future experience is circular. His conclusion is that causal belief and inductive reasoning are habits of the mind, custom formed by repeated association, not truths grounded in logic or direct observation — useful and unavoidable in practice, but not rationally provable in the way we assume.",
+    layer2:
+      "Pick one thing you're confident will happen tomorrow purely because it's happened every day before. Can you actually justify that confidence without just appealing to more instances of the same pattern — or is Hume right that it's ultimately a habit, not a proof?",
+    quiz: {
+      question: "What is Hume's central problem with our belief in cause and effect?",
+      options: [
+        "Cause and effect don't exist at all",
+        "We never directly observe causation itself, only the constant conjunction of two events, and our belief in causal connection can't be justified by pure reason or past experience alone",
+        "Causation only applies to physical objects, not human behavior",
+        "Scientists have proven causation is always an illusion",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking", "Cognitive Biases & Models"],
+    related: ["O19", "O20"],
+    furtherReading: [
+      {
+        label: "An Enquiry Concerning Human Understanding (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/9662",
+      },
+      {
+        label: "David Hume",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/hume/",
+      },
+    ],
+  },
+  {
+    id: "O22",
+    clusterId: "O",
+    title: "Leviathan",
+    author: "Thomas Hobbes",
+    year: 1651,
+    medium: "Book",
+    category: "Political Philosophy",
+    thesis:
+      "Without a common power to keep everyone in check, human life would be a war of all against all — so rational self-interested individuals agree to surrender some of their freedom to an absolute sovereign in exchange for security and order, and that agreement, not divine right, is the true basis of political authority.",
+    layer0:
+      "Hobbes starts from a thought experiment: the state of nature, a hypothetical condition with no government, no laws, no enforceable agreements. Since people are roughly equal in their capacity to harm one another and resources are scarce, he argues this condition inevitably collapses into a war of every man against every man, making life, in his famous phrase, solitary, poor, nasty, brutish, and short. Escaping this isn't a matter of morality — it's a matter of rational self-interest, since everyone is better off under any stable authority than under permanent mutual threat.",
+    layer1:
+      "The way out is the social contract: individuals collectively and rationally agree to give up their individual right to use force however they see fit, transferring it to a sovereign, for Hobbes ideally an absolute one, whose job is to keep the peace and enforce agreements. Crucially, Hobbes's sovereign derives authority from this transfer of power by the people, not from divine right, a radical claim for 1651, but once granted, the sovereign's authority is meant to be nearly total, since Hobbes believed any split or limitation on that power reopens the door to the very chaos the contract was meant to escape.",
+    layer2:
+      "Hobbes's argument for authority is pure self-interest: order is worth surrendering some freedom for, because the alternative is worse for everyone. Where in your own life have you accepted a real constraint on your freedom, a rule, an institution, an authority, purely because the alternative to that constraint was worse, not because you were persuaded it was noble?",
+    quiz: {
+      question:
+        "According to Hobbes, why do rational individuals agree to submit to a sovereign authority?",
+      options: [
+        "Because the sovereign is chosen by God and deserves obedience",
+        "Because life without a common power to enforce order collapses into a war of all against all, and any stable authority is better than that chaos",
+        "Because a sovereign guarantees equal wealth distribution",
+        "Because Hobbes believed democracy was the only legitimate form of government",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Incentives & Systems"],
+    related: ["O23"],
+    furtherReading: [
+      {
+        label: "Leviathan (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/3207",
+      },
+      {
+        label: "Hobbes's Moral and Political Philosophy",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/hobbes-moral/",
+      },
+    ],
+  },
+  {
+    id: "O23",
+    clusterId: "O",
+    title: "A Theory of Justice",
+    author: "John Rawls",
+    year: 1971,
+    medium: "Book",
+    category: "Political Philosophy",
+    thesis:
+      "A just society's rules are the ones rational people would agree to from behind a veil of ignorance — not knowing their own future race, class, talents, or position in that society — which Rawls argues would lead them to prioritize basic liberties for all and structure inequality so it benefits society's worst-off members.",
+    layer0:
+      "Rawls's thought experiment updates the social contract tradition for questions of fairness rather than just order: imagine a group of rational people designing the basic rules of a society, but from behind a veil of ignorance, a hypothetical state where none of them know what position they'll actually occupy in that society — not their race, sex, class, talents, or even their values. Since nobody knows if they'll end up rich or poor, majority or minority, talented or not, Rawls argues they would rationally design rules that protect against worst-case outcomes rather than gambling on being among the lucky.",
+    layer1:
+      "From behind the veil, Rawls argues rational people would agree to two principles, in priority order: first, equal basic liberties for everyone, speech, conscience, political participation, that can't be traded away for economic gain; second, the difference principle — social and economic inequalities are only justified if they work to the greatest benefit of the least advantaged members of society. This flips the usual justification for inequality, that it rewards talent or effort, into a stricter test: an unequal arrangement is only fair if it's actually structured to make the worst-off group better off than they'd be under a more equal alternative, not just better off than nothing.",
+    layer2:
+      "Take a policy or rule you currently support. Run it through the veil of ignorance: if you didn't know whether you'd be born into the most or least advantaged position under that rule, would you still choose it?",
+    quiz: {
+      question: "What is Rawls's 'veil of ignorance' thought experiment used to determine?",
+      options: [
+        "The best strategy for winning a negotiation",
+        "What principles of justice rational people would choose for a society if they didn't know what position they'd occupy within it",
+        "Whether democracy is superior to other forms of government",
+        "How to eliminate all forms of inequality immediately",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Incentives & Systems", "Decision-Making"],
+    related: ["O22", "W5"],
+    furtherReading: [
+      {
+        label: "Rawls's political philosophy (summary)",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/rawls/",
+      },
+      {
+        label: "A Theory of Justice",
+        source: "Harvard University Press",
+        url: "https://www.hup.harvard.edu/books/9780674000780",
       },
     ],
   },
@@ -6191,7 +6626,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["R5", "R6"],
+    related: ["R5", "R6", "X1"],
     furtherReading: [
       {
         label: "Are You Living in a Computer Simulation? (full paper)",
@@ -6222,7 +6657,8 @@ export const NODES: Node[] = [
     layer2:
       "If you had to bet: is the Great Filter behind humanity, something rare we already survived, or ahead of us, something we haven't faced yet? What evidence would actually change your answer?",
     quiz: {
-      question: "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
+      question:
+        "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
       options: [
         "It doesn't matter either way for humanity's prospects",
         "If the filter is ahead of us, it implies civilizations like ours tend to face a near-universal barrier to survival that we haven't yet cleared",
@@ -6232,7 +6668,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self", "Risk & Asymmetric Bets"],
-    related: ["R1"],
+    related: ["R1", "Z4"],
     furtherReading: [
       {
         label: "The Great Filter — Are We Almost Past It? (original essay)",
@@ -6273,7 +6709,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
-    related: ["R4", "O2"],
+    related: ["R4", "O2", "X6"],
     furtherReading: [
       {
         label: "Determined: A Science of Life Without Free Will",
@@ -6358,7 +6794,8 @@ export const NODES: Node[] = [
     related: ["R1", "R6"],
     furtherReading: [
       {
-        label: "Republication of: Large number coincidences and the anthropic principle in cosmology",
+        label:
+          "Republication of: Large number coincidences and the anthropic principle in cosmology",
         source: "General Relativity and Gravitation (Springer)",
         url: "https://link.springer.com/article/10.1007/s10714-011-1258-7",
       },
@@ -6396,7 +6833,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["R5", "R1"],
+    related: ["R5", "R1", "X5", "Z1", "Z3", "Y5"],
     furtherReading: [
       {
         label: "Is the Universe Made of Math? (excerpt)",
@@ -6427,7 +6864,8 @@ export const NODES: Node[] = [
     layer2:
       "Pick one change you've tried and failed to sustain. Was the failure really about the habit itself, or about an unchanged self-concept — 'I'm not really a person who does X' — pulling you back to baseline once willpower ran out?",
     quiz: {
-      question: "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
+      question:
+        "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
       options: [
         "People simply don't try hard enough or lack willpower",
         "New habits are stacked on an unchanged underlying identity/self-concept, which pulls behavior back to its old baseline",
@@ -6499,7 +6937,8 @@ export const NODES: Node[] = [
     layer2:
       "Which layer are you missing, honestly: a message worth spreading, a medium to spread it through consistently, or the applied skills to deliver results once people show up? Most people assume it's the third when it's usually the first or second.",
     quiz: {
-      question: "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
+      question:
+        "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
       options: [
         "They try to learn too many skills instead of specializing in one",
         "They jump straight to technical/results-oriented skills without first building a valuable message and a medium to distribute it",
@@ -6535,7 +6974,8 @@ export const NODES: Node[] = [
     layer2:
       "Look at your last week of communication — posts, emails, messages. If you rewrote your single best idea from this month as one piece of long-form writing, then broke it into five smaller pieces, would you have a week of content already — and what's stopped you from doing that so far?",
     quiz: {
-      question: "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
+      question:
+        "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
       options: [
         "Because writing pays more per hour than any other skill",
         "Because nearly every format of online content (tweets, video scripts, ads, newsletters) is, underneath, a written artifact first, so the skill transfers across every platform",
@@ -6545,7 +6985,7 @@ export const NODES: Node[] = [
       correctIndex: 1,
     },
     tags: ["Craft & Deep Work", "Wealth, Leverage & Judgment"],
-    related: ["S3", "S2"],
+    related: ["S3", "S2", "T1"],
     furtherReading: [
       {
         label: "Learn This Skill If You Want To Thrive In The Next 10 Years",
@@ -6571,7 +7011,8 @@ export const NODES: Node[] = [
     layer2:
       "Name one recurring source of fragmented attention in your day — a specific app, notification, or habit. Is the fix more willpower, or a structural change to your environment that removes the need for willpower entirely?",
     quiz: {
-      question: "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
+      question:
+        "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
       options: [
         "A lack of caffeine or physical energy",
         "An unclear or unstable sense of identity, leaving attention with no anchor to direct itself toward",
@@ -6628,6 +7069,1651 @@ export const NODES: Node[] = [
         label: "The Meaning Crisis (How To Do Something That Matters)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-meaning-crisis-how-to-do-something-that-matters/",
+      },
+    ],
+  },
+  {
+    id: "T1",
+    clusterId: "T",
+    title: "The Ultimate Guide to Writing Online",
+    author: "David Perell",
+    year: 2019,
+    medium: "Essay",
+    category: "Writing As Leverage",
+    thesis:
+      "Writing online works as a compounding, non-scarce asset and a serendipity engine — shifting from 'Writing from Scarcity' (staring at a blank page) to 'Writing from Abundance' (systematically capturing raw material before you need it) is what separates writers who publish consistently from those who don't, and consistent publishing eventually creates a 'Personal Monopoly,' a unique intersection of knowledge and voice that attracts aligned opportunities without competing for attention.",
+    layer0:
+      "Perell's essay reframes online writing as a compounding asset rather than a broadcast tool: instead of sitting down to write with a blank page and hoping for inspiration, Writing from Scarcity, the sustainable approach is Writing from Abundance — building a habit of capturing ideas as raw material, from books, conversations, and stray thoughts, the moment they occur, so that by the time you sit down to write, you're editing and assembling pre-existing notes rather than generating ideas from nothing.",
+    layer1:
+      "He pairs this capture habit with what he calls the Content Triangle: an idea gets compressed first in conversation, to test the logic out loud, then tested in short-form posts, to gauge audience resonance, and only then developed into a full essay — each stage filtering out what doesn't land before the highest-cost stage, long-form writing, gets attempted. Consistent output through this process, he argues, eventually produces a Personal Monopoly: a specific intersection of knowledge, voice, and interests distinctive enough that a writer stops competing in a crowded market and instead becomes the only source for that particular combination of ideas, which pulls in aligned opportunities on its own.",
+    layer2:
+      "Look at your last five pieces of writing or content, posts, notes, even long texts to friends. Were you writing from abundance, pulling from ideas you'd already captured, or from scarcity, forcing yourself to invent something on the spot? What's one habit that would let you capture more raw material before you need it?",
+    quiz: {
+      question: "According to Perell, what is 'Writing from Abundance'?",
+      options: [
+        "Publishing raw, unedited thoughts directly to social media as fast as possible",
+        "Building a habit of capturing ideas and inspiration before you need them, so writing becomes editing and assembling rather than inventing from a blank page",
+        "Writing exclusively about currently trending news topics",
+        "Outsourcing the writing process entirely to freelance ghostwriters",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Craft & Deep Work", "Compounding & Patience"],
+    related: ["T2", "T3", "S4"],
+    furtherReading: [
+      {
+        label: "The Ultimate Guide to Writing Online",
+        source: "David Perell",
+        url: "https://perell.com/essay/the-ultimate-guide-to-writing-online/",
+      },
+    ],
+  },
+  {
+    id: "T2",
+    clusterId: "T",
+    title: "The 4 Types of Luck",
+    author: "Sahil Bloom",
+    year: 2023,
+    medium: "Newsletter",
+    category: "Frameworks",
+    thesis:
+      "Luck isn't a single, uncontrollable force — it breaks into four distinct types, from pure chance to the luck you can systematically manufacture through motion, expertise, and a distinctive personal identity, meaning most of what determines your long-run 'luck' is actually a function of design choices, not chance.",
+    layer0:
+      "Drawing on neurologist James Austin's 1978 framework, Bloom breaks luck into four escalating types: Blind Luck, pure chance — where you're born, acts of God, entirely outside your control; Luck from Motion, generated simply by moving and acting, meeting people, trying things, increasing the number of possible collisions you could have; Luck from Awareness, spotting opportunities that only someone with deep domain expertise would even recognize as opportunities; and Luck from Uniqueness, a distinctive enough combination of skills and identity that opportunities seek you out rather than you chasing them.",
+    layer1:
+      "The progression matters because each type requires a different strategy and tends to dominate a different life stage: Type II luck, motion, is the right focus early on, showing up, saying yes, publishing consistently, since sheer volume of interaction is what a beginner can control. That accumulated experience is what eventually produces Type III, awareness, and sustained, distinctive output over years is what eventually produces Type IV, uniqueness, at which point you're no longer hunting for opportunities, since your specific, hard-to-replicate position starts attracting them on its own. The framework's practical use is as a diagnostic: if you feel stuck, the fix usually isn't 'wait for good luck,' it's identifying which type of luck you're currently capable of generating and doing more of exactly that.",
+    layer2:
+      "Which type of luck are you currently in the best position to generate — motion, through more volume and action, awareness, through deepening expertise in a specific domain, or uniqueness, through a distinctive combination you already have but haven't leaned into? What's one concrete action this week that matches that type?",
+    quiz: {
+      question:
+        "According to Bloom's framework (via James Austin), what characterizes 'Luck from Uniqueness'?",
+      options: [
+        "Randomly inheriting advantageous circumstances at birth",
+        "Hustling and saying yes to as many opportunities as possible to increase collisions",
+        "A distinctive combination of skills, interests, and identity so specific that opportunities seek the person out rather than being chased",
+        "Studying a domain long enough to recognize subtle, faint opportunities others miss",
+      ],
+      correctIndex: 2,
+    },
+    tags: ["Risk & Asymmetric Bets", "Wealth, Leverage & Judgment"],
+    related: ["T1", "T3"],
+    furtherReading: [
+      {
+        label: "The 4 Types of Luck",
+        source: "The Curiosity Chronicle (Sahil Bloom)",
+        url: "https://www.sahilbloom.com/newsletter/the-4-types-of-luck",
+      },
+    ],
+  },
+  {
+    id: "T3",
+    clusterId: "T",
+    title: "Interstitial Journaling",
+    author: "Anne-Laure Le Cunff",
+    year: 2020,
+    medium: "Essay",
+    category: "Mindful Productivity",
+    thesis:
+      "Logging a few sentences at the exact transition point between tasks — what you just did, how you feel, what's next — reduces cognitive load and counters procrastination more effectively than either rigid daily planning or end-of-day review, because it intervenes precisely at the moment attention is most likely to drift.",
+    layer0:
+      "Interstitial journaling, a technique Le Cunff adapted from Tony Stubblebine, replaces both the rigid forward-looking to-do list and the exhausting end-of-day review with something simpler: writing a timestamped note, a sentence or two, every time you finish one task and move to the next, capturing what you just did, any lingering thought or anxiety, and what you're about to start.",
+    layer1:
+      "The mechanism works on two levels. First, it targets procrastination at its actual source — Le Cunff argues procrastination is usually an emotional-regulation problem, not a discipline problem, and naming a feeling, 'feeling anxious about this call,' in the moment lets the brain process it instead of escaping into a distraction. Second, it neutralizes the Zeigarnik effect, the tendency for unfinished tasks to keep nagging at working memory — dumping the loose thread into the journal before switching tasks frees up attention that would otherwise keep circling back to what's unfinished, making the next task easier to actually focus on.",
+    layer2:
+      "Notice the next time you finish a task and feel the pull toward a phone or a new tab before starting the next one. Try writing one timestamped line instead, what you just did, how you feel, what's next, and see whether that small pause changes what you do next.",
+    quiz: {
+      question:
+        "What does interstitial journaling specifically ask you to do, according to Le Cunff?",
+      options: [
+        "Write a comprehensive journal entry only once, at the end of the day",
+        "Write a short, timestamped note at the exact transition point between finishing one task and starting the next",
+        "Plan out every hour of the day in advance before starting any work",
+        "Avoid writing anything down and rely on memory to track progress",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Craft & Deep Work", "Incentives & Systems"],
+    related: ["T1", "T2"],
+    furtherReading: [
+      {
+        label: "Interstitial journaling: combining notes, to-do and time tracking",
+        source: "Ness Labs",
+        url: "https://nesslabs.com/interstitial-journaling",
+      },
+    ],
+  },
+  {
+    id: "U1",
+    clusterId: "U",
+    title: "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
+    author: "Raymond Nickerson",
+    year: 1998,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "People systematically seek out, interpret, and remember information in ways that confirm their existing beliefs, while ignoring or discounting evidence that contradicts them — making it one of the most pervasive and hardest-to-correct biases because it operates on what evidence gets noticed in the first place, not just how it's judged afterward.",
+    layer0:
+      "Nickerson's review pulls together decades of scattered research to show confirmation bias isn't one narrow effect but a pattern that shows up in nearly every stage of reasoning: which questions we choose to ask, which sources we choose to consult, how we interpret ambiguous evidence, and what we remember afterward. All of these steps tend to tilt toward confirming what we already believed going in, often without any conscious intent to be biased.",
+    layer1:
+      "The bias operates at three points: search, where we ask questions designed to confirm rather than test our hypothesis, a behavior demonstrated experimentally by Peter Wason's earlier rule-discovery studies which Nickerson's review builds on; interpretation, where ambiguous or mixed evidence gets read as supporting our existing view; and memory, where confirming instances are recalled more easily than disconfirming ones. Because it acts this early and this broadly, simply presenting someone with contradicting facts often fails to correct it — the facts get filtered, reinterpreted, or forgotten before they can do their work.",
+    layer2:
+      "Pick a belief you hold strongly. The next time you research it, deliberately search for the single strongest argument against it, from its most credible opponent, before reading anything that supports your side.",
+    quiz: {
+      question: "According to Nickerson, why is confirmation bias particularly hard to correct?",
+      options: [
+        "It only affects people with low intelligence",
+        "It operates at the search, interpretation, and memory stages of reasoning, filtering evidence before contradicting facts can even register",
+        "It can be completely eliminated through simple willpower",
+        "It only occurs in political and religious beliefs",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models"],
+    related: ["U2", "U3", "X3"],
+    furtherReading: [
+      {
+        label: "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises (full paper)",
+        source: "UC San Diego",
+        url: "https://pages.ucsd.edu/~mckenzie/nickersonConfirmationBias.pdf",
+      },
+    ],
+  },
+  {
+    id: "U2",
+    clusterId: "U",
+    title: "Judgment under Uncertainty: Heuristics and Biases (Anchoring)",
+    author: "Amos Tversky & Daniel Kahneman",
+    year: 1974,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "When estimating an unknown quantity, people rely heavily on the first number they're exposed to, the anchor, and adjust insufficiently away from it — even when that anchor is arbitrary, irrelevant, or explicitly randomly generated.",
+    layer0:
+      "In one of the paper's experiments, participants spun a wheel rigged to land on either 10 or 65, then were asked to estimate the percentage of African countries in the United Nations. Despite knowing the wheel was random, people who saw 65 gave estimates almost double those who saw 10 — the arbitrary number contaminated an unrelated factual judgment.",
+    layer1:
+      "Tversky and Kahneman explain this through insufficient adjustment: people don't ignore the anchor and reason from scratch, they start from it and adjust toward what feels right, but typically stop adjusting too early, leaving the final estimate biased toward the starting point. This is why anchoring shows up powerfully in negotiations, where the first number stated tends to pull the final agreed price toward it, and in pricing, where an inflated original price makes a discount look larger, even if the discounted price is still unreasonable.",
+    layer2:
+      "Think of a recent negotiation or purchase decision. What was the first number you saw or heard — and can you tell, honestly, how much it pulled your final judgment toward it, even though you had no reason to trust that number specifically?",
+    quiz: {
+      question:
+        "What did Tversky and Kahneman's wheel-spinning experiment demonstrate about anchoring?",
+      options: [
+        "People completely ignore irrelevant information when making estimates",
+        "An arbitrary, randomly-generated number still biased people's subsequent unrelated numerical estimates, even though they knew it was random",
+        "Anchoring only affects people with poor mathematical training",
+        "People adjust fully away from irrelevant starting points once they realize they are arbitrary",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+    related: ["U1", "U3"],
+    furtherReading: [
+      {
+        label: "Judgment under Uncertainty: Heuristics and Biases (full paper)",
+        source: "Tufts University",
+        url: "https://www.cs.tufts.edu/comp/150AIH/pdf/TverskyKa74.pdf",
+      },
+    ],
+  },
+  {
+    id: "U3",
+    clusterId: "U",
+    title: "Judgment under Uncertainty: Heuristics and Biases (Availability)",
+    author: "Amos Tversky & Daniel Kahneman",
+    year: 1974,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "People estimate how frequent or likely something is by how easily examples come to mind — which means vivid, recent, or heavily-reported events get judged as far more common than they actually are, while common but unremarkable events get systematically underestimated.",
+    layer0:
+      "The mechanism is a mental shortcut: ease of recall stands in for actual frequency. Since dramatic events, plane crashes, shark attacks, terrorist incidents, get disproportionate media coverage and are more memorable, they come to mind faster than statistically far more common but mundane risks, like heart disease or ordinary car accidents, which distorts how people rank real-world danger.",
+    layer1:
+      "Tversky and Kahneman showed this experimentally by asking people to judge whether more English words start with the letter K or have K as the third letter; nearly everyone said the former, even though the true answer is the opposite, because words starting with a letter are simply easier to retrieve from memory than words with that letter in the third position. The heuristic is efficient, since recalling examples really is correlated with frequency most of the time, which is exactly why it's hard to notice when it fails — it only breaks down specifically when memorability and actual frequency come apart, as they do for anything heavily covered by media.",
+    layer2:
+      "Name one risk you feel unusually anxious about. Is your anxiety calibrated to its actual statistical frequency, or to how often you've seen it discussed, dramatized, or reported recently?",
+    quiz: {
+      question: "What does the availability heuristic cause people to do?",
+      options: [
+        "Accurately judge frequency based on rigorous statistical analysis",
+        "Estimate frequency or likelihood based on how easily examples come to mind, overweighting vivid or recent events",
+        "Ignore all examples and rely purely on abstract reasoning",
+        "Underestimate the danger of all rare events equally",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+    related: ["U1", "U2"],
+    furtherReading: [
+      {
+        label: "Judgment under Uncertainty: Heuristics and Biases (full paper)",
+        source: "Tufts University",
+        url: "https://www.cs.tufts.edu/comp/150AIH/pdf/TverskyKa74.pdf",
+      },
+    ],
+  },
+  {
+    id: "U4",
+    clusterId: "U",
+    title: "The Psychology of Sunk Cost",
+    author: "Hal Arkes & Catherine Blumer",
+    year: 1985,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "People irrationally continue investing time, money, or effort into a failing course of action specifically because of what they've already invested — even though that past investment is gone regardless of what they do next, and only future costs and benefits should matter to the decision.",
+    layer0:
+      "In one of the paper's field studies, theatergoers who paid full price for a season subscription attended significantly more plays over the following months than those who bought the same subscription at a discount — the higher sunk cost created a stronger pull to keep attending, even though the ticket price had no bearing on how enjoyable any individual play would be.",
+    layer1:
+      "Arkes and Blumer's explanation centers on a desire not to appear, to ourselves or others, as wasteful: abandoning a project after investing heavily in it feels like admitting the investment was a mistake, so people keep going specifically to avoid that admission, which is a purely psychological cost, not a rational one, since the sunk resource is gone either way. This is why the fallacy shows up in relationships, failing projects, and investments alike — the more that's already been poured in, the harder it becomes to walk away, even as the case for walking away gets stronger.",
+    layer2:
+      "Name one thing you're currently continuing mostly because of how much you've already invested in it. If you were deciding today, with no memory of that past investment, would you still choose to continue?",
+    quiz: {
+      question:
+        "What did the theater subscription study in 'The Psychology of Sunk Cost' demonstrate?",
+      options: [
+        "People who paid more for tickets enjoyed the plays more",
+        "People who paid a higher price for their season subscription attended more plays afterward, even though the price had no bearing on the plays' quality",
+        "Discounted tickets always lead to lower attendance",
+        "Sunk costs have no measurable effect on future behavior",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+    related: ["U5", "U6"],
+    furtherReading: [
+      {
+        label: "The Psychology of Sunk Cost",
+        source: "ScienceDirect",
+        url: "https://www.sciencedirect.com/science/article/abs/pii/0749597885900494",
+      },
+    ],
+  },
+  {
+    id: "U5",
+    clusterId: "U",
+    title: "Unskilled and Unaware of It",
+    author: "Justin Kruger & David Dunning",
+    year: 1999,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "People with low competence in a domain tend to overestimate their own ability, because the same skills required to perform well in that domain are also the skills required to accurately judge good performance — so incompetence doubly disadvantages you: it produces poor results and simultaneously removes your ability to recognize that the results are poor.",
+    layer0:
+      "Kruger and Dunning tested this across several domains, logical reasoning, grammar, humor, and found a consistent pattern: participants who scored in the bottom quartile on actual tests dramatically overestimated their own performance and ranking relative to peers, while top performers, if anything, slightly underestimated their relative standing, since they assumed tasks that felt easy to them were probably easy for others too.",
+    layer1:
+      "The explanation is metacognitive, not just about ego: judging whether an answer to a logic problem is correct requires the same logical skill as solving the problem in the first place, so someone who lacks that skill lacks the tool needed to notice their own errors. This is why the effect is strongest in people with the least competence, not a general tendency toward overconfidence in everyone — the paper also found that as people's actual skill improves, often through training, their self-assessments become more accurate, converging with reality.",
+    layer2:
+      "Pick a skill you've rated yourself as above-average at without ever being formally tested or compared against a real external standard. What would happen to your confidence if you actually sought that comparison out?",
+    quiz: {
+      question:
+        "According to Kruger and Dunning, why do low performers in a domain tend to overestimate their own competence?",
+      options: [
+        "Because they are more narcissistic than skilled performers on average",
+        "Because the same skills needed to perform well are also needed to accurately judge good performance, so incompetence removes the ability to recognize itself",
+        "Because they receive more positive feedback than skilled performers",
+        "Because testing methods are inherently biased in favor of low performers",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Meaning & Self"],
+    related: ["U4", "U6", "X2"],
+    furtherReading: [
+      {
+        label: "Unskilled and Unaware of It (full paper)",
+        source: "University of Michigan",
+        url: "https://sites.lsa.umich.edu/sasi/wp-content/uploads/sites/275/2015/11/krugerdunning99.pdf",
+      },
+    ],
+  },
+  {
+    id: "U6",
+    clusterId: "U",
+    title: "Prospect Theory: An Analysis of Decision under Risk",
+    author: "Daniel Kahneman & Amos Tversky",
+    year: 1979,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "Losses and gains of the same objective size are not felt equally — losing a given amount hurts roughly twice as much as gaining the same amount feels good — which systematically distorts decisions under risk away from what a purely rational, outcome-maximizing calculation would recommend.",
+    layer0:
+      "Prospect theory, the paper that eventually won Kahneman a Nobel Prize, replaced the classical economic assumption that people evaluate outcomes by their final wealth with a more accurate model: people evaluate outcomes as gains or losses relative to a reference point, usually the status quo, and the psychological impact of a loss is roughly twice as intense as an equally-sized gain — a ratio researchers now call the loss-aversion coefficient, typically found to cluster between 1.5 and 2.5.",
+    layer1:
+      "This asymmetry produces predictable, seemingly irrational patterns: people become risk-averse when facing possible gains, preferring a certain smaller reward over a risky larger one, but risk-seeking when facing possible losses, preferring a risky gamble to a certain loss of the same expected value, essentially gambling to avoid definitely losing. This is why people hold onto losing investments too long, since selling would lock in the painful loss, while selling winning investments too early, locking in the pleasant but smaller gain — the exact opposite of what a rational, forward-looking strategy would recommend in most cases.",
+    layer2:
+      "Think of a losing investment, position, or commitment you're currently holding onto. Are you holding it because the future case for it is genuinely strong, or because selling would force you to feel the loss as final?",
+    quiz: {
+      question: "What is the core claim of loss aversion in prospect theory?",
+      options: [
+        "Gains and losses of the same size are felt with equal psychological intensity",
+        "Losses are felt roughly twice as intensely as equally-sized gains, which distorts risk-taking behavior depending on whether a choice is framed as a potential gain or loss",
+        "People are indifferent to losses smaller than $100",
+        "Loss aversion only affects financial decisions, not other areas of life",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Risk & Asymmetric Bets"],
+    related: ["U4", "U5", "W1"],
+    furtherReading: [
+      {
+        label: "Prospect Theory: An Analysis of Decision under Risk",
+        source: "The Econometric Society",
+        url: "https://www.econometricsociety.org/publications/econometrica/1979/03/01/prospect-theory-analysis-decision-under-risk",
+      },
+    ],
+  },
+  {
+    id: "U7",
+    clusterId: "U",
+    title: "A Constant Error in Psychological Ratings",
+    author: "Edward Thorndike",
+    year: 1920,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "A single positive or negative trait we notice about a person unconsciously colors our judgment of their unrelated traits — so someone judged attractive, articulate, or physically impressive gets rated as more intelligent, competent, and trustworthy too, even absent any actual evidence for those separate qualities.",
+    layer0:
+      "Thorndike's original study asked military commanding officers to rate soldiers across supposedly independent qualities: physique, intelligence, leadership, character. The ratings across these unrelated categories correlated far too strongly with each other to be measuring genuinely separate traits, suggesting the officers were forming one global impression, a halo, and letting it bleed into every specific rating rather than judging each quality independently.",
+    layer1:
+      "The effect works because forming an overall impression is cognitively easier than independently evaluating a person across many distinct dimensions, so the brain takes a shortcut: one salient trait, often something highly visible like physical attractiveness or confident speech, sets an overall positive or negative tone, and every subsequent judgment gets unconsciously pulled toward matching that tone. This is why attractive people are rated as more competent in hiring studies, why well-spoken people are assumed more intelligent, and why a company with one popular flagship product gets assumed to be well-run across every department, whether or not that's actually true.",
+    layer2:
+      "Think of someone you formed a strongly positive first impression of. Which specific judgments you now hold about their other qualities, competence, honesty, intelligence, are actually backed by direct evidence — and which are riding on that first impression's halo?",
+    quiz: {
+      question: "What did Thorndike's original 1920 study of military officers reveal?",
+      options: [
+        "That officers accurately distinguished between soldiers' independent traits",
+        "That ratings across supposedly independent traits (physique, intelligence, character) correlated too strongly, suggesting one overall impression was bleeding into every specific judgment",
+        "That physical fitness has no bearing on perceived leadership ability",
+        "That military training eliminates cognitive bias in evaluation",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Power & Persuasion"],
+    related: ["U1", "U8"],
+    furtherReading: [
+      {
+        label: "A Constant Error in Psychological Ratings (full paper)",
+        source: "MIT",
+        url: "https://web.mit.edu/curhan/www/docs/Articles/biases/4_J_Applied_Psychology_25_(Thorndike).pdf",
+      },
+    ],
+  },
+  {
+    id: "U8",
+    clusterId: "U",
+    title: "I Knew It Would Happen: Remembered Probabilities of Once-Future Things",
+    author: "Baruch Fischhoff & Ruth Beyth",
+    year: 1975,
+    medium: "Paper",
+    category: "Cognitive Bias",
+    thesis:
+      "Once we know how something turned out, we systematically misremember how predictable it felt beforehand — inflating our recalled certainty to match the now-known outcome, which creates a false sense that events were more foreseeable than they actually were.",
+    layer0:
+      "Fischhoff and Beyth asked people to estimate the probability of various outcomes of Nixon's 1972 visits to China and the Soviet Union before the trips happened, then asked the same people afterward to recall what probability they had originally assigned. People systematically misremembered their own past estimates, recalling higher confidence for outcomes that actually happened and lower confidence for outcomes that didn't — a pattern Fischhoff called creeping determinism, the sense that what happened was destined to happen all along.",
+    layer1:
+      "This matters beyond a curious memory quirk because it corrupts how we learn from the past: if you believe, falsely, that you predicted an outcome with high confidence, you don't investigate why you failed to act on that supposed foresight, and you judge other people's past decisions, a doctor's diagnosis, a general's battle plan, an executive's strategy, as more obviously wrong in hindsight than they were with the information actually available at the time, since you're implicitly using the now-known outcome to judge a decision that had to be made without it.",
+    layer2:
+      "Pick a major event you now feel was 'obviously' predictable in hindsight. Try to honestly reconstruct what you actually believed, and how confidently, before it happened — not what you believe now that you know how it turned out.",
+    quiz: {
+      question: "What did Fischhoff and Beyth's Nixon study demonstrate about memory?",
+      options: [
+        "People accurately recall the probability estimates they made before an outcome was known",
+        "People systematically misremember their own past predictions, recalling higher confidence for outcomes that occurred than they actually reported beforehand",
+        "Political predictions are inherently more accurate than other types of forecasts",
+        "Memory of past predictions has no relationship to knowing the eventual outcome",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+    related: ["U5", "U7"],
+    furtherReading: [
+      {
+        label: "Hindsight bias",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Hindsight_bias",
+      },
+    ],
+  },
+  {
+    id: "V1",
+    clusterId: "V",
+    title: "Time, Work-Discipline, and Industrial Capitalism",
+    author: "E.P. Thompson",
+    year: 1967,
+    medium: "Essay",
+    category: "Social Construct",
+    thesis:
+      "The precise, uniform, clock-measured time that structures modern life isn't a natural feature of reality but a historically recent invention — imposed during industrialization to synchronize labor and discipline workers, replacing older task-oriented and seasonal rhythms that had governed human activity for most of history.",
+    layer0:
+      "Thompson traces how, before industrial capitalism, most people's sense of time was task-oriented: work was organized around what needed doing, milking finishes when the cows are milked, harvest ends when the harvest is in, synced to natural cycles like daylight and seasons rather than a fixed external clock. The rise of factories required something entirely different: many workers coordinated to a shared, precise schedule, which meant the clock itself had to become the authority workers answered to, rather than the task or the sun.",
+    layer1:
+      "Thompson documents this shift as a deliberate campaign, not a neutral technological upgrade: factory owners used bells, fines for lateness, and time-discipline training, sometimes literally teaching workers, including children, to read clocks and internalize punctuality as a moral virtue, to convert a task-oriented workforce into a clock-oriented one. This is what makes clock time a social construct in the meaningful sense: the units, hours and minutes, and their moral weight, punctuality as virtue, wasted time as sin, were manufactured to serve a specific economic arrangement, not discovered as an objective fact about how humans naturally experience duration.",
+    layer2:
+      "Notice one moment today where you felt anxious purely because of clock time, running late, a deadline, a scheduled call, rather than because the actual task was urgent. Where did that specific anxiety get trained into you?",
+    quiz: {
+      question: "According to Thompson, what replaced task-oriented time during industrialization?",
+      options: [
+        "A more accurate scientific measurement of natural rhythms",
+        "Clock-based, uniform time discipline, deliberately imposed by factory owners to synchronize and control labor",
+        "A voluntary agreement among workers to standardize schedules",
+        "Religious observance replacing secular work schedules",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Incentives & Systems"],
+    related: ["V2", "V7"],
+    furtherReading: [
+      {
+        label: "Time, Work-Discipline, and Industrial Capitalism",
+        source: "Past & Present, 1967 (Oxford Academic)",
+        url: "https://academic.oup.com/past/article-abstract/38/1/56/1454624",
+      },
+      {
+        label: "Time, work-discipline and industrial capitalism (full text)",
+        source: "libcom.org",
+        url: "https://libcom.org/article/time-work-discipline-and-industrial-capitalism-e-p-thompson",
+      },
+    ],
+  },
+  {
+    id: "V2",
+    clusterId: "V",
+    title: "Debt: The First 5,000 Years",
+    author: "David Graeber",
+    year: 2011,
+    medium: "Book",
+    category: "Social Construct",
+    thesis:
+      "Money did not emerge, as the standard economic story claims, to solve the inefficiencies of barter — it began as a social and moral technology for tracking debt and obligation between people, meaning money's value has always rested on collective trust and social relationships, not on any inherent physical property.",
+    layer0:
+      "Graeber, an anthropologist, went looking for historical or ethnographic evidence of the textbook story, isolated communities inventing money to escape the inconvenience of barter, and found none — actual historical societies used elaborate credit and debt-tracking systems, often for millennia, before coined money appeared at all. His alternative account: money began as a way to formalize and quantify social obligations, what one person owes another after a favor, a marriage exchange, or a wrong committed, not as a neutral medium for trading goods between strangers.",
+    layer1:
+      "This reframes money's entire nature: a coin or a bill has no value from its physical substance alone, a dollar isn't valuable because paper is scarce, it functions only because of a shared social agreement that it represents a claim, a promissory note ultimately backed by trust in the issuing community or state. Graeber traces how this system of social trust was later formalized, monopolized, and enforced by governments and markets, turning what began as a flexible web of mutual obligation into a rigid, impersonal, and often coercive system of debt.",
+    layer2:
+      "Notice the last time you paid for something with cash or a card. Strip away the physical token and the transaction app — what you actually exchanged was a claim backed entirely by collective trust in a system. Where does that trust actually come from, and what would have to break for it to stop working?",
+    quiz: {
+      question:
+        "What is Graeber's central challenge to the standard economic story of money's origin?",
+      options: [
+        "Money was invented by ancient governments to collect taxes more efficiently",
+        "There is little historical evidence that money arose to fix the inefficiencies of barter; societies instead used credit and debt-tracking systems long before coined money existed",
+        "Barter was actually more efficient than money and should be reinstated",
+        "Money has always had intrinsic value independent of social trust",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Wealth, Leverage & Judgment"],
+    related: ["V1", "V6"],
+    furtherReading: [
+      {
+        label: "Debt: The First 5,000 Years",
+        source: "davidgraeber.org",
+        url: "https://davidgraeber.org/books/debt-the-first-5000-years/",
+      },
+    ],
+  },
+  {
+    id: "V3",
+    clusterId: "V",
+    title: "Imagined Communities",
+    author: "Benedict Anderson",
+    year: 1983,
+    medium: "Book",
+    category: "Social Construct",
+    thesis:
+      "A nation is an imagined political community — its members will never meet or even hear of most of their fellow citizens, yet feel a deep, often life-or-death sense of shared belonging with them — a feeling manufactured historically through shared print media, newspapers and novels, rather than discovered as a natural, ancient bond.",
+    layer0:
+      "Anderson's core observation is a puzzle: why would someone die for a nation, an abstraction they can never fully see or know firsthand, made up of millions of strangers? His answer is that nations are imagined communities, not fake or false, but genuinely constructed through shared imagination, made possible once large numbers of people could simultaneously read the same news, in the same standardized language, at roughly the same time, and thereby come to picture themselves as part of one shared, bounded community.",
+    layer1:
+      "He calls the enabling technology print capitalism: the rise of commercially printed newspapers and novels in vernacular languages, rather than elite languages like Latin, let large populations, who would never meet, synchronize their sense of time and community around the same daily events and the same shared language, creating the felt experience of belonging to one nation rather than just a scattering of local villages. Since this is a historical and technological construction rather than an ancient, natural fact, national identity, borders, and the intensity of national feeling can and do change as the technology and conditions that produced them change.",
+    layer2:
+      "Pick a group identity you feel strongly connected to, national, regional, or otherwise, made up mostly of people you'll never meet. What specifically produces that felt sense of connection, shared media, shared language, shared symbols, and how much of it would survive if that shared media disappeared?",
+    quiz: {
+      question:
+        "What does Anderson identify as the key technology enabling nations to be 'imagined communities'?",
+      options: [
+        "Military conquest and forced unification",
+        "Print capitalism — newspapers and novels in shared vernacular languages that let large populations synchronize a sense of belonging to one community",
+        "Religious institutions imposing a single shared belief system",
+        "The invention of passports and border controls",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Incentives & Systems"],
+    related: ["V2"],
+    furtherReading: [
+      {
+        label: "Imagined Communities",
+        source: "Britannica",
+        url: "https://www.britannica.com/topic/Imagined-Communities-Reflections-on-the-Origins-and-Spread-of-Nationalism",
+      },
+      {
+        label: "Imagined community",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Imagined_community",
+      },
+    ],
+  },
+  {
+    id: "V4",
+    clusterId: "V",
+    title: "Man's Most Dangerous Myth: The Fallacy of Race",
+    author: "Ashley Montagu",
+    year: 1942,
+    medium: "Book",
+    category: "Social Construct",
+    thesis:
+      "Race, as commonly understood, a set of discrete, biologically fixed categories that determine intelligence, character, or worth, has no basis in human genetics; the boundaries we draw between racial groups are social and historical constructions, not natural biological divisions.",
+    layer0:
+      "Writing in 1942, as Nazi racial ideology was driving a world war, Montagu, an anthropologist, made an argument that was radical at the time: the biological concept of race, as popularly used, doesn't map onto how human genetic variation actually works. Human genetic diversity is real and measurable, but it doesn't sort neatly into a small number of discrete racial categories — the genetic variation within any so-called racial group is typically larger than the average variation between groups, and traits like skin color are controlled by a small number of genes that vary independently of most other genetic traits.",
+    layer1:
+      "Montagu's argument was that racial categories are drawn from a small number of highly visible physical traits, mainly skin color, and then, historically, loaded with assumptions about intelligence, character, and worth that have no genetic basis whatsoever — the categorization is real as a social and historical practice, with real social and political consequences, but not as a description of natural, fixed biological kinds. This distinction, race as a social construct with real material effects, versus race as a biological category with predictive power over ability or character, became, in the following decades, the dominant position across mainstream biology and anthropology.",
+    layer2:
+      "Notice a time you, or someone else, attributed a person's behavior, ability, or character to their racial category. What would change about that judgment if you evaluated the same behavior without knowing that categorization at all?",
+    quiz: {
+      question: "What is Montagu's central argument about race?",
+      options: [
+        "Racial categories accurately reflect deep, fixed biological and genetic differences between groups",
+        "Race, as popularly understood, does not map onto actual human genetic variation; racial categories are social and historical constructions built mainly from visible traits like skin color",
+        "Human genetic variation does not exist at all",
+        "Racial categories should be replaced with categories based purely on geography",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Cognitive Biases & Models"],
+    related: ["V3", "V5"],
+    furtherReading: [
+      {
+        label: "Man's Most Dangerous Myth: The Fallacy of Race",
+        source: "Amazon (Columbia University Press ed.)",
+        url: "https://www.amazon.com/Mans-Most-Dangerous-Myth-Fallacy/dp/0803946481",
+      },
+      {
+        label: "Ashley Montagu",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Ashley_Montagu",
+      },
+    ],
+  },
+  {
+    id: "V5",
+    clusterId: "V",
+    title: "Gender Trouble",
+    author: "Judith Butler",
+    year: 1990,
+    medium: "Book",
+    category: "Social Construct",
+    thesis:
+      "Gender is not an inner essence that behavior expresses — it's performative, constituted by the repeated, stylized acts, speech, dress, movement, behavior, that produce the appearance of an underlying gendered nature, meaning what looks like a stable identity is actually an ongoing, socially maintained performance.",
+    layer0:
+      "Butler's starting question is why gender feels so natural and fixed if it's supposedly a social construction — her answer is that it feels stable precisely because it's constantly, repeatedly performed and re-performed, through countless small acts, how someone talks, moves, dresses, is addressed by others, that are so continuous and consistent they create the illusion of a fixed inner essence underneath, when the acts themselves are actually doing all the work.",
+    layer1:
+      "This is what she means by performativity: gender isn't something you have and then express through action, it's something continuously produced through action itself, similar to how the repeated act of a judge saying 'I sentence you' doesn't just describe a sentencing, it performs the sentencing, brings it into being. Because gender is produced this way, through repetition rather than expressed from a fixed essence, Butler argues it's also more open to change or subversion than a purely biological account would suggest — disrupting the repeated performance, through parody, nonconformity, or simply doing it differently, can reveal that the 'natural' essence was never there to begin with, just the performance itself.",
+    layer2:
+      "Pick one specific gendered behavior you perform without much conscious thought, a way of speaking, moving, dressing. Where did you learn it, how many times have you repeated it, and what happens to your sense of identity if you imagine deliberately doing it differently for a day?",
+    quiz: {
+      question: "What does Butler mean when she argues gender is 'performative'?",
+      options: [
+        "Gender is a conscious choice people make once, like choosing a career",
+        "Gender is not an inner essence expressed through behavior, but is itself continuously produced and maintained through repeated acts, creating only the appearance of a fixed underlying nature",
+        "Gender has no relationship to social behavior at all",
+        "Only actors and performers have a meaningful gender identity",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["V4"],
+    furtherReading: [
+      {
+        label: "Gender Trouble",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Gender_Trouble",
+      },
+      {
+        label: "Judith Butler's Concept of Performativity",
+        source: "literariness.org",
+        url: "https://literariness.org/2016/10/10/judith-butlers-concept-of-performativity/",
+      },
+    ],
+  },
+  {
+    id: "V6",
+    clusterId: "V",
+    title: "What Is Property?",
+    author: "Pierre-Joseph Proudhon",
+    year: 1840,
+    medium: "Book",
+    category: "Social Construct",
+    thesis:
+      "Property, as legally and socially recognized, the right to profit from something worked by someone other than its owner, is not a natural right discovered by reason but a social and legal invention that Proudhon famously summarized as theft — a claim to value actually created by someone else's labor.",
+    layer0:
+      "Proudhon's provocative opening line, 'property is theft,' is more precise than it sounds: he wasn't attacking personal possession of what you use and occupy yourself, your home, your tools, which he defended, but a specific legal category, property that entitles an owner to extract income or profit from something worked, used, or improved by other people, a landlord's rent, a factory owner's profit from a worker's labor, without contributing proportional labor themselves.",
+    layer1:
+      "His argument is that this kind of property isn't a natural fact discovered by reason, as earlier theorists like Locke had argued, grounding property in the labor a person mixes with land or objects, it's a legal and social construction, backed by law and the state, that lets some people claim the value produced by others' labor as their own. Since the legal category is constructed rather than natural, Proudhon argued it could, and should, be reconstructed differently — his critique became a foundational text for anarchist and socialist critiques of concentrated property ownership that followed.",
+    layer2:
+      "Distinguish, the way Proudhon does, between possession, what you personally use or occupy, and property, a legal claim to profit from something worked by someone else. Where in your own economic life does that distinction actually matter?",
+    quiz: {
+      question:
+        "What specific target does Proudhon's 'property is theft' argument actually attack?",
+      options: [
+        "All forms of personal possession, including a person's home and tools",
+        "Property that entitles an owner to extract profit or income from something worked, used, or improved by someone else's labor, without contributing proportional labor themselves",
+        "The existence of markets and voluntary trade in general",
+        "Government ownership of land and resources",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Incentives & Systems"],
+    related: ["V2"],
+    furtherReading: [
+      {
+        label: "What Is Property? (full text)",
+        source: "csun.edu",
+        url: "http://www.csun.edu/~kaddison/what_is_property.pdf",
+      },
+      {
+        label: "Pierre-Joseph Proudhon",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Pierre-Joseph_Proudhon",
+      },
+    ],
+  },
+  {
+    id: "V7",
+    clusterId: "V",
+    title: "Beyond Measure: The Hidden History of Measurement",
+    author: "James Vincent",
+    year: 2022,
+    medium: "Book",
+    category: "Social Construct",
+    thesis:
+      "Units of measurement, the meter, the pound, the hour, the degree, feel like neutral facts about the world, but they're historically contingent human inventions, often created and imposed as tools of political power and social control, not discovered as natural, pre-existing facts about reality.",
+    layer0:
+      "Vincent traces measurement from ancient Egypt's cubit, based on the length of a forearm, through the French Revolution's invention of the metric system, showing that units we now treat as objective and universal were, at their creation, deeply political choices: the meter, for example, was defined by revolutionary France specifically to replace a chaotic patchwork of local, feudal measurement standards with one rational, universal system, partly as a tool for building centralized state power over previously semi-autonomous regions.",
+    layer1:
+      "His broader argument is that whoever controls the standard of measurement gains real power: standardized measurement makes populations legible and taxable to a state, makes labor quantifiable and controllable to an employer, and makes markets comparable across previously incompatible local systems, and in every historical case Vincent examines, imposing a new standard measurement was also, simultaneously, an act of centralizing control, whether by a monarchy, a revolutionary government, or a colonial power redefining local units to match the colonizer's own.",
+    layer2:
+      "Pick one measurement you treat as simply objective, a work hour, a grade, a credit score, a body-mass index. Who originally defined that specific standard, and whose interests did the choice of that particular standard, rather than some other possible one, actually serve?",
+    quiz: {
+      question:
+        "What does Vincent argue is often the hidden function of imposing standardized measurement systems?",
+      options: [
+        "They are purely neutral scientific tools with no political dimension",
+        "They function as tools of political power and control, making populations and labor legible, taxable, and comparable to whoever sets the standard",
+        "They were only ever developed for scientific research purposes",
+        "They have remained unchanged since ancient Egypt",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Power & Persuasion"],
+    related: ["V1"],
+    furtherReading: [
+      {
+        label: "Beyond Measure: The Hidden History of Measurement",
+        source: "W. W. Norton & Company",
+        url: "https://wwnorton.com/books/9781324035855",
+      },
+      {
+        label: "Beyond Measure (book review)",
+        source: "The Washington Post",
+        url: "https://www.washingtonpost.com/books/2022/11/30/measurement-james-vincent-book-review/",
+      },
+    ],
+  },
+  {
+    id: "V8",
+    clusterId: "V",
+    title: "Marriage, a History",
+    author: "Stephanie Coontz",
+    year: 2005,
+    medium: "Book",
+    category: "Social Construct",
+    thesis:
+      "Marriage for love is a historically recent and unusual arrangement — for most of human history across most cultures, marriage's primary purpose was to acquire useful in-laws and secure economic, political, or social advantage, and the shift to love as marriage's central justification, starting in the nineteenth century, destabilized the institution just as it began to feel more personally meaningful.",
+    layer0:
+      "Coontz surveys marriage practices from ancient Babylon through the twentieth century and finds a strikingly consistent pattern: for most of history, in most cultures, marriage was fundamentally a strategic alliance between families, arranged to secure property, political ties, or social standing, with the individual spouses' romantic feelings toward each other treated as, at best, a fortunate bonus and often actively distrusted as a destabilizing basis for such an important economic decision.",
+    layer1:
+      "The shift to love-based marriage, which Coontz traces mainly to the nineteenth century, was itself historically contingent, tied to changes like the rise of wage labor, which reduced marriage's necessity as an economic survival strategy, and new cultural ideas about individual choice and romantic feeling. Her key argument is that this shift was a double-edged one: marriage became more personally fulfilling as an emotional partnership, but simultaneously less stable as an institution, since a marriage justified by love, rather than duty or economic necessity, can also be dissolved once love fades, in a way an arrangement justified by family alliance or survival could not.",
+    layer2:
+      "Notice which assumptions you hold about marriage or long-term partnership, that it should be based on love, that partners should be equals, that it's primarily a personal choice. Which of those assumptions would have seemed strange or even reckless to most people across most of history — and what does that tell you about how contingent, rather than natural, the current default actually is?",
+    quiz: {
+      question:
+        "According to Coontz, what was marriage's primary function for most of human history, before the nineteenth century?",
+      options: [
+        "A personal, romantic partnership chosen freely by both individuals",
+        "A strategic alliance between families to secure economic, political, or social advantage, with romantic love treated as secondary or even distrusted",
+        "A purely religious ceremony with no economic function",
+        "An arrangement that has remained essentially unchanged throughout history",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["V5"],
+    furtherReading: [
+      {
+        label: "Marriage, a History",
+        source: "Penguin Random House",
+        url: "https://www.penguinrandomhouse.com/books/291184/marriage-a-history-by-stephanie-coontz/",
+      },
+      {
+        label: "Stephanie Coontz's Marriage: A History (review)",
+        source: "Slate",
+        url: "https://slate.com/news-and-politics/2005/05/stephanie-coontz-s-marriage-a-history.html",
+      },
+    ],
+  },
+  {
+    id: "W1",
+    clusterId: "W",
+    title: "The Psychology of Human Misjudgment",
+    author: "Charlie Munger",
+    year: 1995,
+    medium: "Speech",
+    category: "Psychology",
+    thesis:
+      "The human brain relies on roughly two dozen hardwired psychological tendencies that, while evolutionarily useful in isolation, routinely combine to cause catastrophic misjudgment in modern, complex environments.",
+    layer0:
+      "Your brain didn't evolve to allocate capital or run a company — it evolved to survive in small groups. So it leans on shortcuts: trust what authority figures say, do what everyone else is doing, avoid looking inconsistent, react strongly to reward and punishment. Any one of these misfiring is a minor error. But Charlie Munger noticed they rarely fire alone — when three or four line up in the same direction at once, they compound into something far worse than the sum of their parts. He called this the Lollapalooza Effect, and it's the mechanism behind everything from market manias to cult recruitment to a stranger talking you into a bad deal.",
+    layer1:
+      "Munger delivered this thesis at Harvard in 1995, arguing that elite universities misunderstood human cognition by avoiding multidisciplinary behavioral psychology and assuming market participants act with perfect rationality. He cataloged roughly twenty-five specific tendencies — reward/punishment super-response, contrast-misreaction, inconsistency-avoidance among them — deeply programmed into the human operating system because the brain has limited processing power and needs heuristics to function. In modern capital markets these evolutionary adaptations become vectors for massive errors. Cognition mimics perception: just as a magician uses physical contrast to distract you while a watch is slipped off your wrist, salespeople use psychological contrast to make a marginally overpriced asset look cheap next to a vastly overpriced one. Because these tendencies are mechanical and predictable, they can be actively inverted — built into checklists and environmental guardrails that preempt the biological pull toward bad decisions.",
+    layer2:
+      "The sharpest version of this idea is the Lollapalooza Effect itself: one bias misfiring is a lapse, but three or four operating in the same direction at once turn a normal brain into 'mush.' Munger's go-to example is the open-outcry auction — a bidder is hit simultaneously by social proof (others are bidding), reciprocation, sunk-cost commitment, and fear of missing out, and any rational estimate of value gets overridden. The practical use of this is two-sided: it lets you shield yourself from systems explicitly designed to exploit overlapping biases, and it lets you engineer positive Lollapaloozas — aligning several incentives toward one productive outcome. Which specific biases are shaping your most pressing decision right now, and what friction could you add to force a more objective look at it?",
+    quiz: {
+      question:
+        "Which phenomenon does Munger use to describe multiple cognitive biases compounding to create an extreme, non-linear behavioral outcome?",
+      options: [
+        "The Contrast-Misreaction Tendency",
+        "The Institutional Imperative",
+        "The Lollapalooza Effect",
+        "The Pavlovian Association",
+      ],
+      correctIndex: 2,
+    },
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+    related: ["W4", "J10", "U6"],
+    furtherReading: [
+      {
+        label: "The Psychology of Human Misjudgment (transcript)",
+        source: "Farnam Street",
+        url: "https://fs.blog/great-talks/psychology-human-misjudgment/",
+      },
+      {
+        label: "Charlie Munger: 'The Psychology of Human Misjudgment,' Harvard 1995",
+        source: "Speakola",
+        url: "https://speakola.com/ideas/charlie-munger-human-misjudgement-harvard-1995",
+      },
+    ],
+  },
+  {
+    id: "W2",
+    clusterId: "W",
+    title: "Mr. Market",
+    author: "Warren Buffett",
+    year: 1987,
+    medium: "Shareholder Letter",
+    category: "Markets",
+    thesis:
+      "The stock market should be viewed as a manic-depressive business partner whose daily price quotes exist entirely to serve you, not to inform or guide your estimate of a business's intrinsic value.",
+    layer0:
+      "Imagine you co-own a private business with a partner named Mr. Market, who shows up at your door every single day offering to buy your half or sell you his. Most days his mood swings from euphoric — naming absurdly high prices — to depressed, offering to sell for pennies. The business itself hasn't changed; only his mood has. Warren Buffett's point, building on his mentor Benjamin Graham: you're never obligated to trade with him. His daily quote is an offer you can take or ignore, not a verdict on what your business is actually worth.",
+    layer1:
+      "Buffett popularized this allegory in his 1987 shareholder letter. The defining mechanic is that Mr. Market's daily quotations exist strictly for your convenience and potential exploitation — never for instruction. The trap for any allocator, whether in public equities, real estate, or venture capital, is falling under his psychological influence rather than ruthlessly exploiting his pocketbook. The moment daily price swings are allowed to dictate your own rigorous estimate of intrinsic value, disaster is close behind. Wall Street operates on the premise that price fluctuations carry deep informational weight — an illusion reinforced by academic theories of perfectly efficient markets. Buffett rejects that premise entirely.",
+    layer2:
+      "Instead of a guide, the market becomes a tool that periodically offers mouth-watering, asymmetric opportunities to anyone whose temperament is insulated from the crowd. If Mr. Market shows up foolish, you're free to ignore him or take aggressive advantage of his temporary insanity. Divorcing the quoted price of an asset from its underlying operating reality is what turns volatility from a source of terror into a competitive advantage. Are you currently letting a recent price swing change what you believe an asset is actually worth — or are you letting Mr. Market's mood do your thinking for you?",
+    quiz: {
+      question:
+        "What is the primary purpose of Mr. Market's daily price quotations, according to Warren Buffett's framework?",
+      options: [
+        "To guide your estimate of the business's intrinsic value based on consensus",
+        "To provide a reliable macro-economic indicator for timing the broader market",
+        "To serve your convenience when he is acting irrationally, offering exploitation opportunities",
+        "To reflect the perfectly efficient valuation of the underlying asset",
+      ],
+      correctIndex: 2,
+    },
+    tags: ["Markets & Narrative", "Risk & Asymmetric Bets"],
+    related: ["W3", "D2", "J3"],
+    furtherReading: [
+      {
+        label: "Chairman's Letter — 1987",
+        source: "Berkshire Hathaway",
+        url: "https://www.berkshirehathaway.com/letters/1987.html",
+      },
+      {
+        label: "The Timeless Parable of Mr. Market",
+        source: "Farnam Street",
+        url: "https://fs.blog/mr-market/",
+      },
+    ],
+  },
+  {
+    id: "W3",
+    clusterId: "W",
+    title: "Great, Good, and Gruesome Businesses",
+    author: "Warren Buffett",
+    year: 2007,
+    medium: "Shareholder Letter",
+    category: "Business Strategy",
+    thesis:
+      "A truly exceptional business must possess an enduring competitive advantage — an economic moat — that protects its high returns on invested capital from the relentless assault of free-market capitalism.",
+    layer0:
+      "Picture a profitable business as a castle. The moment it starts earning outsized profits, competitors show up like an army at the gates, ready to compete those profits away. What keeps them out — a real cost advantage, a beloved brand, high switching costs, a network effect — is the moat. Buffett splits businesses into three buckets: Great, where the moat barely needs new capital to keep earning more (his example: See's Candies); Good, with decent returns but constant reinvestment just to stand still; and Gruesome, with no moat at all, where growth demands huge capital and still produces little real profit (his example: airlines).",
+    layer1:
+      "Buffett laid out this framework in his 2007 shareholder letter. A moat typically comes from being the lowest-cost producer, owning a globally dominant consumer brand, or benefiting from high switching costs and network effects. Crucially, a real moat lets a company price aggressively and earn high returns on capital without constantly reinvesting just to defend its position — bridging the gap between fleeting short-term profitability and multidecade durability. The sharpest distinction is between 'Good' and 'Gruesome': a Good business earns satisfactory returns but eats its own free cash flow through continuous capital spending, while a Gruesome one grows fast, demands massive investment, and still earns little to nothing because it has no real pricing power.",
+    layer2:
+      "A moat is never static — every operational decision management makes is either widening it or shrinking it. And a truly great moat can survive a mediocre CEO, while a business that requires a singular superstar to stay alive doesn't really have a moat at all. Evaluating any business means looking past the size of its profit pool to the structural, defensive barriers that stop rivals from competing those profits down to zero. Is your business — or the one you're evaluating — actively widening its moat through structural advantages day to day, or does it only look strong because of one talented person who could leave tomorrow?",
+    quiz: {
+      question:
+        'According to Buffett\'s categorization, what is the defining characteristic of a "Gruesome" business?',
+      options: [
+        "It grows slowly and requires minimal capital to operate effectively",
+        "It possesses a deep moat but relies heavily on incompetent management",
+        "It grows rapidly, demands massive capital inputs, and earns little to no money",
+        "It relies entirely on a single superstar employee to maintain its operating margins",
+      ],
+      correctIndex: 2,
+    },
+    tags: ["Moats & Network Effects", "Startups & Founders"],
+    related: ["W2", "A11", "A9"],
+    furtherReading: [
+      {
+        label: "Businesses – The Great, the Good and the Gruesome (2007 Chairman's Letter)",
+        source: "Berkshire Hathaway",
+        url: "https://www.berkshirehathaway.com/letters/2007ltr.pdf",
+      },
+      {
+        label: "Warren Buffett: Identifying Great, Good, & Gruesome Businesses",
+        source: "Value Research",
+        url: "https://www.valueresearchonline.com/stories/221868/warren-buffett-identifying-great-good-gruesome-businesses/",
+      },
+    ],
+  },
+  {
+    id: "W4",
+    clusterId: "W",
+    title: "The Institutional Imperative",
+    author: "Warren Buffett",
+    year: 1989,
+    medium: "Shareholder Letter",
+    category: "Systems",
+    thesis:
+      "Corporate behavior is driven largely by an invisible, gravitational force that causes otherwise rational managers to mindlessly imitate peers, resist change, and deploy capital foolishly to satisfy their own egos.",
+    layer0:
+      "Buffett expected smart, experienced executives to act logically to maximize shareholder value. Instead he found something closer to physics: large organizations resist changing direction, available cash gets spent on whatever project happens to be available, and any CEO's pet idea — no matter how strategically dumb — gets a detailed study from subordinates proving it's brilliant. He named this drift the Institutional Imperative, and it explains far more bad corporate decisions than stupidity or dishonesty ever could.",
+    layer1:
+      "Introduced by name in the 1989 shareholder letter, the Institutional Imperative operates like Newton's First Law applied to organizations: a company in motion stays in motion, fiercely resisting any change of direction. Corporate projects and acquisitions materialize simply to soak up whatever excess capital is sitting around. Peer companies imitate one another's behavior — expanding into unprofitable markets, adopting bloated pay structures — because institutional dynamics and bureaucratic momentum drive strategy far more powerfully than independent logical analysis. When a CEO says 'we must acquire this company for the synergies,' it's often the Institutional Imperative masking boredom or empire-building.",
+    layer2:
+      "Recognizing this force is a real analytical edge: if you can spot the Institutional Imperative at work — a company launching a product just because a rival did, rather than from first-principles strategy — you can predict the capital destruction that follows. Buffett and Munger structured Berkshire explicitly to starve this imperative: no corporate budgets, no mandatory meetings, no performative strategic planning, and radical decentralization so capital-allocation decisions are made free of peer pressure. Where in your own organization — or your own decisions — is a choice being driven by 'everyone else is doing it' rather than independent, first-principles logic?",
+    quiz: {
+      question:
+        'The "Institutional Imperative" primarily describes the tendency of corporate managers to do which of the following?',
+      options: [
+        "Mindlessly imitate the behavior of peer companies and fiercely resist change",
+        "Return all excess capital to shareholders via special dividends to maximize value",
+        "Rigorously eliminate unnecessary corporate projects and budgets based on logic",
+        "Base every strategic decision strictly on first-principles financial analysis",
+      ],
+      correctIndex: 0,
+    },
+    tags: ["Incentives & Systems", "Wealth, Leverage & Judgment"],
+    related: ["W1", "M1", "M3"],
+    furtherReading: [
+      {
+        label: "Chairman's Letter — 1989",
+        source: "Berkshire Hathaway",
+        url: "https://www.berkshirehathaway.com/letters/1989.html",
+      },
+      {
+        label: "Discussion: Buffett's 1989 Letter on the Institutional Imperative",
+        source: "Hacker News",
+        url: "https://news.ycombinator.com/item?id=14287430",
+      },
+    ],
+  },
+  {
+    id: "W5",
+    clusterId: "W",
+    title: "The Ovarian Lottery",
+    author: "Warren Buffett",
+    year: 1998,
+    medium: "Speech",
+    category: "Philosophy",
+    thesis:
+      "Individual success is disproportionately determined by the random accident of birth — including geography, gender, era, and innate wiring — rather than merit alone, obligating the winners to build a society that cares for those who drew unfavorable tickets.",
+    layer0:
+      "Buffett asks you to imagine standing 24 hours before your own birth, tasked with designing the world's economic and political rules — except you have to draw a random ball from a barrel that will decide your gender, race, country, health, and raw ability, and you won't find out which ball until after the rules are locked in. Since you don't know what you'll draw, your rational move is to build a system that creates real abundance but also protects whoever draws the bad ball. Buffett's own example: he happened to be wired for a skill, capital allocation, that pays absurdly well in twentieth-century America — a few thousand years earlier, that same wiring would have made him, in his words, 'some animal's lunch.'",
+    layer1:
+      "Delivered to students at the University of Florida in 1998, the Ovarian Lottery is heavily influenced by philosopher John Rawls' 'veil of ignorance.' The mechanism forces high achievers to mathematically confront how much of their success is dictated by the accidental time and place of their birth, decoupling wealth from any claim to moral superiority. Buffett also points to simply being born in the United States rather than a war-torn or impoverished nation as, in his estimate, a 50-to-1 advantage at the time of his birth — before any personal merit entered the picture at all.",
+    layer2:
+      "Recognizing the Ovarian Lottery destroys the hubris of the self-made-billionaire myth and demands intellectual honesty about the invisible tailwinds of genetics, era, and environment. For leaders and policymakers, this reframes taxation, philanthropy, and governance as a moral duty to balance a system that disproportionately rewards randomized traits, not as supererogatory charity. How would your view of your own success — or your opinions on taxation and executive pay — change if you didn't know in advance whether you'd be born as the CEO or the lowest-paid person in the company?",
+    quiz: {
+      question:
+        'Buffett\'s "Ovarian Lottery" thought experiment is heavily influenced by which philosophical concept?',
+      options: [
+        "Adam Smith's Invisible Hand",
+        "John Rawls' Veil of Ignorance",
+        "Karl Marx's Historical Materialism",
+        "Friedrich Nietzsche's Übermensch",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Wealth, Leverage & Judgment", "Meaning & Self"],
+    related: ["W4", "O23"],
+    furtherReading: [
+      {
+        label: "The Ovarian Lottery (University of Florida speech, 1998)",
+        source: "Tilson Funds",
+        url: "https://tilsonfunds.com/BuffettUofFloridaspeech.pdf",
+      },
+      {
+        label: "What Is the Veil of Ignorance? (John Rawls)",
+        source: "Sloww",
+        url: "https://www.sloww.co/original-position-veil-of-ignorance/",
+      },
+    ],
+  },
+  {
+    id: "W6",
+    clusterId: "W",
+    title: "Sit-on-Your-Ass Investing",
+    author: "Charlie Munger",
+    year: 2005,
+    medium: "Book",
+    category: "Investing",
+    thesis:
+      "Outstanding investment returns are generated not through hyperactive trading, but by cultivating the extreme patience required to hold exceptional compounding machines for decades.",
+    layer0:
+      "Munger's own term. Most of the finance industry is built to reward activity — trading, rebalancing, reacting to news. Munger argues almost none of that creates wealth. Once you've found a genuinely great business at a fair price, the highest-value action is to make a real, concentrated bet and then do nothing for decades. Every year you don't sell is a year you don't pay trading costs and don't trigger capital gains tax — and that deferred tax bill, left compounding instead of being paid out, is worth far more than most people realize.",
+    layer1:
+      "Detailed in Chapter Three of Poor Charlie's Almanack, this philosophy inverts the financial industry's bias toward continuous action. Munger compares it to a baseball player waiting for a fat pitch, or a poker player folding hand after hand until the odds are overwhelming, then betting heavily. Extreme inactivity eliminates frictional trading costs and defers capital-gains taxes indefinitely, letting compound interest work uninterrupted. The math is stark: earning 15% annually for 30 years and paying tax only once at the end yields vastly more after-tax wealth than paying that same rate on gains harvested every single year.",
+    layer2:
+      "The financial ecosystem is explicitly designed to encourage activity — quarterly earnings panic, complex derivatives, daily punditry — so choosing inactivity requires real psychological independence. The actual edge here isn't a higher IQ or a faster trading model; it's the discipline to out-sit everyone else while enduring the inevitable drawdowns of a concentrated position. Are you generating trading costs and tax bills in your own portfolio, or any long-term project, simply to feel like you're doing something?",
+    quiz: {
+      question:
+        'What does Charlie Munger view as the primary mathematical benefit of "sit-on-your-ass" investing?',
+      options: [
+        "It allows you to frequently rebalance your portfolio to match market weightings",
+        "It defers capital gains taxes indefinitely, maximizing uninterrupted compound interest",
+        "It generates substantial short-term dividends to fund immediate operational needs",
+        "It eliminates the need for any initial business valuation or due diligence",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Compounding & Patience", "Craft & Deep Work"],
+    related: ["W2", "K1", "K4"],
+    furtherReading: [
+      {
+        label: "Chapter Three: The Munger Approach to Life, Learning, and Decision-Making",
+        source: "Stripe Press",
+        url: "https://www.stripe.press/poor-charlies-almanack/chapter-three",
+      },
+      {
+        label: "Poor Charlie's Almanack — Summary & Review",
+        source: "BeFreed",
+        url: "https://www.befreed.ai/book/poor-charlies-almanack-by-peter-d-kaufman",
+      },
+    ],
+  },
+  {
+    id: "X1",
+    clusterId: "X",
+    title: "The Strata of Perceptual Reality",
+    author: "Aperture",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Philosophy / Metaphysics",
+    thesis:
+      "Human perception does not interact with base reality; rather, it navigates a layered construct ranging from evolutionary sensory filtering to complex societal consensus and theoretical simulation.",
+    layer0:
+      '"Reality" is intuitively understood as the absolute state of things as they actually exist, rather than as they appear or are imagined. But biology and psychology show humans don\'t experience reality directly — the brain constructs a filtered, evolutionarily optimized model designed for survival, not objective truth. This baseline experience is "consensus reality": an agreed-upon framework of physical laws, social norms, and sensory input that lets populations function without processing the universe at a granular level.',
+    layer1:
+      'Peeling back the layers reveals a hierarchy of abstraction. Biologically, the human umwelt is restricted by sensory organs — people perceive only a fraction of the electromagnetic spectrum, blind to polarization or magnetic fields other organisms navigate naturally. Cognitively, reality is shaped by belief systems and linguistic relativity, where the language you speak bounds the thoughts you can conceive. In physics, quantum mechanics shatters consensus reality entirely, with particles existing in probability states until observed. What\'s casually called "reality" is a specific, low-resolution interface layered over a fundamentally alien substrate.',
+    layer2:
+      "If reality is layered, traversing those layers alters consciousness itself. The Simulation Hypothesis suggests the foundational layer might be computational — existence as a localized rendering of data. Deep meditation or psychoactive states suppress the brain's Default Mode Network, temporarily dissolving consensus reality into raw, unfiltered input — often described as ego death. The uncomfortable implication: absolute reality may be permanently unknowable to the human apparatus, bound by the hard constraints of the skull it runs on.",
+    quiz: {
+      question:
+        "What is the primary function of biological sensory filtering in shaping human reality, according to this framework?",
+      options: [
+        "To perceive the universe objectively",
+        "To optimize the organism for survival rather than absolute truth",
+        "To align perfectly with quantum mechanics",
+        "To connect the brain to a simulated computational network",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["R1", "O6"],
+    furtherReading: [
+      {
+        label: "The 7 Levels of Reality",
+        source: "Aperture",
+        url: "https://www.youtube.com/watch?v=stPzgS0fdYk",
+      },
+    ],
+  },
+  {
+    id: "X2",
+    clusterId: "X",
+    title: "Metacognition and the Hierarchy of Thought",
+    author: "Aperture",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Psychology",
+    thesis:
+      "True intellectual autonomy requires ascending a hierarchy of thought, moving beyond the regurgitation of inherited beliefs to achieve metacognition — the capacity to examine and deconstruct the architecture of one's own thinking.",
+    layer0:
+      "Most cognitive processing happens at the lowest levels of intellectual engagement: memory recall and the uncritical repetition of external information. This creates an illusion of comprehension, where people mistake reciting facts or echoing popular opinion for genuine understanding. Higher-level thinking demands active synthesis, analysis, and a willingness to subject your own deeply held beliefs to logical stress tests — treating your own mind as an object of study.",
+    layer1:
+      "The hierarchy is worsened by algorithmic media, which optimizes for engagement through emotional resonance and identity-based thinking, trapping users in the lower strata. When an idea is fused to personal identity, any challenge to it is processed neurologically as a threat to the self — triggering the amygdala and shutting down the prefrontal cortex's analytical capacity. Ascending the hierarchy means overcoming that biological defense. The top tier is metacognition: thinking about thinking, identifying the hidden axioms and structural flaws in how a conclusion was reached, separating ego from the intellectual process.",
+    layer2:
+      "A population trapped in lower-level thinking is highly susceptible to mass manipulation and tribal conflict, because it can't evaluate an argument's structure independent of the speaker's identity. Widespread metacognition would make a population resistant to rudimentary propaganda — but the honest cost of operating at the metacognitive summit is often isolation, as regurgitated ideology and small talk lose their grip. Original thought is as much a psychological burden as an intellectual achievement.",
+    quiz: {
+      question:
+        "Why does identity-based thinking prevent metacognition, according to this framework?",
+      options: [
+        "It makes thinking too complex and energy-intensive",
+        "Challenges to ideas are perceived as biological threats, triggering emotional defenses",
+        "It requires too much memory recall to function",
+        "Algorithms cannot process identity markers effectively",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+    related: ["U5", "J11"],
+    furtherReading: [
+      {
+        label: "The Highest Levels of Thinking | Why Society Is Stuck at the Bottom",
+        source: "Aperture",
+        url: "https://www.youtube.com/watch?v=HraPf_MCcps",
+      },
+    ],
+  },
+  {
+    id: "X3",
+    clusterId: "X",
+    title: "The Architecture of Axiomatic Beliefs",
+    author: "Aperture",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Philosophy / Sociology",
+    thesis:
+      "Human worldviews are built on a fragile foundation of unexamined axioms — hidden structural beliefs that, if dismantled, cause cascading existential crises and the collapse of personal identity.",
+    layer0:
+      "Everyone operates through a lens of belief — religious, secular, political, economic — but the foundational pillars are rarely chosen consciously. They're absorbed through cultural osmosis and childhood conditioning. Most people never question the baseline axioms of their existence — the inherent value of labor, the linear meaning of progress, the necessity of a legacy. These unexamined structures buy real psychological safety, shielding the mind from an indifferent universe and providing a script for daily living.",
+    layer1:
+      'These beliefs function as epistemic load-bearing walls. A concept like "meritocracy" acts as a cognitive heuristic that lets someone make sense of suffering and success without debilitating cognitive dissonance. When data contradicts the belief — witnessing unrewarded suffering in innocent people — the mind rationalizes to protect the axiom rather than discard it, because the brain treats the loss of a foundational belief like physical trauma: it destabilizes the entire map of reality and one\'s place in it.',
+    layer2:
+      "Deconstructing these structures is a terrifying but liberating frontier. If the universe has no intrinsic meaning and societal constructs are collective fictions, the individual is left in a state of total existential freedom — which can produce despair, or can lead to actively constructing bespoke meaning (absurdism). Recognizing that most human conflict stems from clashing, unexamined fictions lets an observer transcend ideological warfare, seeing dogmatic struggles as symptoms of psychological self-preservation rather than objective truth.",
+    quiz: {
+      question:
+        "How does the brain typically respond when a core axiomatic belief is directly contradicted by observable evidence?",
+      options: [
+        "It instantly updates the belief structure to reflect the new data",
+        "It employs complex rationalizations to protect the axiom and avoid epistemic crisis",
+        "It stops processing external information entirely",
+        "It defaults to a purely mathematical worldview",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Cognitive Biases & Models"],
+    related: ["U1", "O14"],
+    furtherReading: [
+      {
+        label: "The Hidden Structures of Belief Most People Never Question",
+        source: "Aperture",
+        url: "https://www.youtube.com/watch?v=tswqCgoflQk",
+      },
+    ],
+  },
+  {
+    id: "X4",
+    clusterId: "X",
+    title: "Algorithmic Determinism and Judicial Opacity",
+    author: "Aperture",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Society / Technology",
+    thesis:
+      "The delegation of critical societal judgments to proprietary, black-box algorithms creates a deterministic framework where human agency is subjugated by opaque, mathematically codified biases.",
+    layer0:
+      "Algorithms have evolved from content curation tools into authoritative arbiters of human liberty and opportunity, now used in criminal justice, healthcare allocation, and hiring. The case of Eric Loomis illustrates the shift: he was sentenced partly on the output of a proprietary risk-assessment algorithm, COMPAS. Because the algorithm's inner workings are a corporate trade secret, neither the defendant nor the judge could examine how it concluded he was high-risk — a real erosion of due process.",
+    layer1:
+      "Machine learning models train on historical data. If that data contains systemic bias — disproportionate arrest rates in specific neighborhoods, say — the algorithm learns to codify and replicate that bias under the guise of objective math, sometimes called algorithmic redlining. These systems are also \"black boxes\": even their own developers often can't explain which weighted variables drove a specific output. When a judge defers to a machine's recommendation, that's automation bias — favoring automated suggestions over contradictory human judgment, even when the system is flawed.",
+    layer2:
+      "Society risks sleepwalking into algorithmic determinism, where a person's future is preemptively dictated by statistical categorization rather than individual agency. Incarcerating or denying employment based on a predicted probability is pre-crime punishment, undermining the presumption of innocence. And this architecture transfers real power from accountable democratic institutions to the private companies that own the proprietary code — a technocratic layer that governs without transparency or oversight.",
+    quiz: {
+      question:
+        "What is the primary danger of utilizing proprietary black-box algorithms in the judicial sentencing system?",
+      options: [
+        "They are too computationally slow to process modern data",
+        "Their inner workings cannot be examined for bias by the defense or the judge",
+        "They frequently crash during complex sentencing hearings",
+        "They require too much historical data to function effectively",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Incentives & Systems", "Power & Persuasion"],
+    related: ["M1", "M3"],
+    furtherReading: [
+      {
+        label: "Algorithms Are Destroying Society",
+        source: "Aperture",
+        url: "https://www.youtube.com/watch?v=_k4p_3lJ74E",
+      },
+    ],
+  },
+  {
+    id: "X5",
+    clusterId: "X",
+    title: "Quantum Immortality and Subjective Survival",
+    author: "Aperture",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Quantum Physics / Philosophy",
+    thesis:
+      "Under the Many-Worlds Interpretation of quantum mechanics, a conscious observer can never subjectively experience their own death, condemning them to a terrifying, infinite continuity of consciousness across diverging timelines.",
+    layer0:
+      'Quantum immortality is an unsettling thought experiment built on the Many-Worlds Interpretation (MWI). In a "quantum suicide" setup, a person sits before a mechanism triggered by radioactive decay — a 50% chance of death under the standard view. Under MWI, every quantum event splits the universe: in one branch the mechanism fires, in another it clicks empty. Because consciousness requires a living observer, the person can only ever experience the branch where it clicks empty, no matter how many times the trigger is pulled.',
+    layer1:
+      'The mechanism relies on quantum decoherence combined with a localized anthropic principle. When a superposition decoheres into separate branches, every outcome physically manifests in separate, non-interacting universes. Since an observer\'s consciousness is tied to biological function, their first-person stream of experience consistently "routes" into the branch where survival is possible, however improbable. To outside observers in the branch where the mechanism fires, the person is simply dead — but to the subject, statistically impossible survival continues indefinitely.',
+    layer2:
+      "If accurate, this implies aging or fatal accidents never produce subjective non-existence — the observer keeps shifting into increasingly improbable survival branches, potentially enduring severe degradation or isolation, but never the relief of death. Immortality flips from aspiration to cosmic prison. It also implies every person alive might already be the oldest being in their own subjective universe, forever alienated from the branches where they naturally passed away.",
+    quiz: {
+      question:
+        "Why does the subject in the quantum suicide experiment always experience survival under the Many-Worlds Interpretation?",
+      options: [
+        "The lethal mechanism is programmed to recognize and fail for living biological matter",
+        "The observer can only subjectively experience the specific timelines where their biological consciousness continues to function",
+        "The observer controls the quantum decay with their mind",
+        "Alternate timelines merge to prevent the cessation of life",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["R5", "R6"],
+    furtherReading: [
+      {
+        label: "The Terrifying Theory of Quantum Immortality",
+        source: "Aperture",
+        url: "https://www.youtube.com/watch?v=xZO01FCcPE4",
+      },
+    ],
+  },
+  {
+    id: "X6",
+    clusterId: "X",
+    title: "The Block Universe and the Illusion of the Present",
+    author: "Aperture",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Physics / Philosophy",
+    thesis:
+      'By accepting time as a physical fourth dimension integrated seamlessly with space, the flowing "present" is revealed as a persistent neurological illusion — past, present, and future exist simultaneously and eternally.',
+    layer0:
+      'Intuition insists time flows like a river: the past is gone, the present is fleeting, the future unwritten. Einstein\'s relativity demolishes that. Space and time are woven into a four-dimensional fabric, spacetime, in which time doesn\'t "pass" — every event, from the Big Bang to the universe\'s eventual heat death, exists permanently at specific coordinates within a static structure. The experience of "now" is just the limited perspective of an observer moving through it.',
+    layer1:
+      "This is mathematically forced by the relativity of simultaneity: two observers at different speeds or gravitational fields will disagree on whether two events happened at the same time. If Observer A moves toward Observer B, events still in B's future can already be part of A's \"now.\" Since both perspectives are equally valid, those future events must already physically exist for A to interact with them — necessitating the Block Universe (Eternalism), where all moments are equally real, laid out like frames on a reel of film that the brain processes one frame at a time.",
+    layer2:
+      "The philosophical toll is real: if the future already exists, free will looks illusory, and every choice is locked into the spacetime structure from the start. But it also offers strange comfort about mortality — death doesn't erase a person from existence, since the moments they lived are permanently etched into the fabric of spacetime. \"Right now\" is a subjective bookmark in an eternal, unchanging manuscript; the people you've lost are still perfectly alive at their own coordinates in the block.",
+    quiz: {
+      question:
+        "What is the primary implication of the relativity of simultaneity regarding the nature of the future?",
+      options: [
+        "The future is highly malleable and changes based on quantum observation",
+        'Because different observers have different "nows," the future of one observer is already happening for another, implying the future already exists',
+        "Time speeds up as objects approach the speed of light",
+        "Simultaneous events destroy the fabric of spacetime, creating black holes",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["R3", "Y2"],
+    furtherReading: [
+      {
+        label: "Something Scary Happens When You Accept Time as the 4th Dimension",
+        source: "Aperture",
+        url: "https://www.youtube.com/watch?v=swbBInPN5vs",
+      },
+    ],
+  },
+  {
+    id: "Y1",
+    clusterId: "Y",
+    title: "The Ontology of Identity and the Ship of Theseus",
+    author: "SleepWise",
+    year: 2023,
+    medium: "Video Essay",
+    category: "Philosophy / Paradox",
+    thesis:
+      "The continuity of physical identity is a cognitive heuristic rather than a physical reality, as demonstrated by the Ship of Theseus paradox and the continuous cellular regeneration of the human body.",
+    layer0:
+      'The Ship of Theseus tests the boundaries of identity: if a ship\'s decaying planks are replaced one by one over centuries until none of the original material remains, is it still the same ship? If the removed planks were reassembled into a second ship, which one is the "real" one? The paradox targets essentialism — the intuition that objects and people have an underlying, unchanging essence that persists regardless of physical alteration.',
+    layer1:
+      "This isn't just an abstract puzzle — it maps directly onto biology. Over roughly seven to ten years, almost every cell in the human body dies and is replaced. The person you are today shares very little physical material with the person you were a decade ago, so identity can't be rooted in matter. Cognitive science suggests people instead assign identity based on spatio-temporal continuity (the unbroken observable path of the object through time) and functional organization (the pattern the parts are arranged in) — identity as psychological projection over dynamic, ever-changing matter.",
+    layer2:
+      "If identity is a perceived pattern rather than a physical fact, concepts like moral responsibility and ownership become fluid: is a rehabilitated, cellularly-renewed prisoner literally the same entity that committed the crime, or a biological successor? As cybernetic augmentation and mind uploading approach, this becomes a practical engineering question — at what threshold does gradual neural replacement stop preserving the original person and start being a new one? The self is a useful fiction.",
+    quiz: {
+      question:
+        "According to cognitive science, what do humans primarily rely on to assign continuous identity to an object whose physical parts are entirely replaced?",
+      options: [
+        "The chemical composition of the new parts",
+        "Spatio-temporal continuity and functional organization",
+        "The monetary or historical value of the object",
+        "The original DNA or molecular signature of the object",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O2"],
+    furtherReading: [
+      {
+        label: "3 Hours of Brain F*ck Paradoxes to Fall Asleep To",
+        source: "SleepWise",
+        url: "https://www.youtube.com/watch?v=l01DyPfV10Y",
+      },
+    ],
+  },
+  {
+    id: "Y2",
+    clusterId: "Y",
+    title: "Entropic Inevitability and the Arrow of Time",
+    author: "SleepWise",
+    year: 2023,
+    medium: "Video Essay",
+    category: "Physics",
+    thesis:
+      "The perceived unidirectional flow of time is not a fundamental property of the universe's mechanics, but an emergent psychological symptom of the Second Law of Thermodynamics and cosmic entropy.",
+    layer0:
+      "The fundamental laws of physics are time-symmetric — a video of colliding billiard balls looks valid forward or backward. Yet macroscopically, time strictly moves forward: an egg cracks but never un-cracks. This asymmetry, the Arrow of Time, is dictated entirely by entropy, a measure of disorder. The Second Law of Thermodynamics says entropy in an isolated system must always increase, so the direction of time is simply the direction in which cosmic disorder grows.",
+    layer1:
+      "Entropy increases because there are vastly more ways for a system to be disordered than ordered — a shattered egg has millions of possible arrangements, an intact one only a few. Systems naturally evolve toward higher-probability (disordered) states. We experience an Arrow of Time at all only because the universe began in an unimaginably low-entropy state at the Big Bang, and we're riding that gradient as the universe slowly equalizes. Even forming a memory generates heat — entropy — tying human time-perception directly to cosmic disorder.",
+    layer2:
+      'At maximum entropy (theoretical Heat Death), temperature is uniform and no thermodynamic work can be extracted — without an entropy gradient, the Arrow of Time itself ceases, since "happening" requires energy transfer. Over sufficiently long timescales past Heat Death, random statistical fluctuations could theoretically cause entropy to spontaneously decrease in localized regions — pockets of cosmos where time runs backward, reassembling broken systems through sheer probability.',
+    quiz: {
+      question:
+        "Why do macroscopic events (like a breaking egg) demonstrate an Arrow of Time, while microscopic events (like particle collisions) are generally time-symmetric?",
+      options: [
+        "Microscopic particles do not experience the force of gravity",
+        "Macroscopic systems are governed by statistical probability, which heavily favors states of higher entropy (disorder)",
+        "Quantum mechanics overrides thermodynamics on a large scale",
+        "The observer effect forces macroscopic objects to decay",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["X6"],
+    furtherReading: [
+      {
+        label: "3 Hours of Most Misunderstood Physics Concepts to Fall Asleep To",
+        source: "SleepWise",
+        url: "https://www.youtube.com/watch?v=fQDm9AeED9M",
+      },
+    ],
+  },
+  {
+    id: "Y3",
+    clusterId: "Y",
+    title: "The Hard Problem and the Illusion of Objective Reality",
+    author: "SleepWise",
+    year: 2023,
+    medium: "Video Essay",
+    category: "Neuroscience / Philosophy",
+    thesis:
+      "Consciousness cannot currently be reduced to physical brain mechanics, rendering objective reality inaccessible and the perceived universe a psychological construct generated by neural architecture.",
+    layer0:
+      'Science can map exactly how visual data from an apple is processed in the occipital lobe and triggers motor function — the "easy problem" of consciousness. The "Hard Problem" asks why that processing is accompanied by subjective, internal experience at all. Why does red actually look like red? These subjective, qualitative properties are called qualia, and despite huge advances in neuroscience, there\'s no physical account of how non-conscious matter gives rise to a rich, internal subjective world.',
+    layer1:
+      "Because all sensory data is processed internally, you've never directly seen, touched, or heard the external world — only your brain's translation of it, projected onto the screen of consciousness. Colors don't exist in the physical universe; they're the brain's translation of electromagnetic wavelengths. Sound is the translation of pressure waves. The vivid \"world\" you navigate daily is a localized simulation running entirely inside a dark, silent skull.",
+    layer2:
+      "If reality is fundamentally an internal simulation, absolute objective truth is unattainable, and every organism exists in its own isolated phenomenological universe — the seed of Solipsism, the inability to prove any other mind exists. It also raises the Philosophical Zombie problem: an entity physically identical to a human, mimicking all behavior and speech, but with no internal conscious experience. Since you only have access to your own qualia, it's scientifically impossible to prove the people around you are conscious rather than complex automatons.",
+    quiz: {
+      question:
+        "What fundamentally differentiates the 'Hard Problem' of consciousness from the 'easy problems'?",
+      options: [
+        "The hard problem requires quantum computing to model",
+        "The easy problem maps neurological functions, while the hard problem questions why these functions result in subjective experience (qualia)",
+        "The hard problem deals with memory retention, while the easy problem deals with visual acuity",
+        "The hard problem is purely mathematical and devoid of biology",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O15", "X1"],
+    furtherReading: [
+      {
+        label: "The Human Mind Explained to Fall Asleep To",
+        source: "SleepWise",
+        url: "https://www.youtube.com/watch?v=ysxP1ZRngcQ",
+      },
+    ],
+  },
+  {
+    id: "Y4",
+    clusterId: "Y",
+    title: "Lexical Voids and Untranslatable Human Emotions",
+    author: "SleepWise",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Psychology / Linguistics",
+    thesis:
+      "The human emotional spectrum extends vastly beyond standardized vocabulary; exploring untranslatable linguistic voids reveals the hidden, complex micro-emotions that silently govern the human condition.",
+    layer0:
+      "Language acts as a bounding box for thought — if there's no word for a feeling, it's hard to communicate, contextualize, or even fully legitimize in your own mind. Yet people collectively experience a vast array of specific, profound emotions English has no term for. Borrowing or coining words for these lexical voids validates universal but previously unspoken experiences, providing vocabulary for the complexity of modern existential awareness.",
+    layer1:
+      "Sonder is the sudden realization that every passerby has a life as vivid as your own, in which you're an extra in the background. Hiraeth, Welsh, is a visceral homesickness for a home you can't return to, or that maybe never existed. Kenopsia is the eerie atmosphere of a usually bustling place now abandoned, like a school hallway at night. Naming these states produces emotional granularity, which studies show measurably reduces anxiety and improves emotional regulation.",
+    layer2:
+      "The existence of these voids highlights how much human alienation stems from a plain lack of vocabulary. When someone feels Monachopsis — the subtle, persistent sense of being out of place — but only has the blunt word \"sadness,\" the gap between the actual experience and the label causes real psychological distress. Expanding the emotional lexicon isn't just poetic; it's a necessary evolution of empathy, letting people recognize the vast, shared, unseen emotional landscape of the species.",
+    quiz: {
+      question:
+        "What psychological benefit is directly associated with increasing one's 'emotional granularity' by learning specific words for highly nuanced feelings?",
+      options: [
+        "It improves long-term memory retention",
+        "It reduces anxiety and enhances emotional regulation by accurately contextualizing internal states",
+        "It permanently eliminates negative emotional responses",
+        "It slows down the subjective perception of time",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O7"],
+    furtherReading: [
+      {
+        label: "Every Feeling You Can't Name Explained to Fall Asleep To",
+        source: "SleepWise",
+        url: "https://www.youtube.com/watch?v=8nvt8zGY7cc",
+      },
+    ],
+  },
+  {
+    id: "Y5",
+    clusterId: "Y",
+    title: "Axiomatic Ruptures: The Banach-Tarski Paradox",
+    author: "SleepWise",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Mathematics / Physics",
+    thesis:
+      "The Banach-Tarski paradox demonstrates that mathematical reality, untethered from physical limitations, allows for the creation of matter from nothing — exposing a fundamental rupture between human logic and the axioms of infinity.",
+    layer0:
+      "In physical reality, cutting a solid gold sphere into pieces and reassembling them never yields two identical gold spheres of the original size — matter is conserved. In pure mathematics, the Banach-Tarski paradox proves the equivalent is possible: a solid 3D mathematical sphere can be disassembled into a handful of point sets and reassembled into two identical, solid spheres of the same original volume, with no gaps and no extra points.",
+    layer1:
+      'This is a rigorously proven theorem in set-theoretic geometry, resting on infinity and the "Axiom of Choice." Because a mathematical sphere contains infinitely many zero-dimensional points, the "pieces" aren\'t solid chunks but infinitely dense scatters of points — non-measurable sets. Rotated and shifted, their infinite nature lets them "fill in" two spheres perfectly. It exposes how uncountably infinite sets behave: infinity divided by two is still infinity. Volume, it turns out, isn\'t an inherent property of all sets of points.',
+    layer2:
+      "Banach-Tarski can't be performed with physical atoms, which have finite size — but it raises a real question: is mathematics invented by humans, or discovered as a fundamental truth of the universe? If it's the underlying language of the cosmos, how can it contain logically sound theorems that explicitly violate the laws of physics? Some physicists suggest that at the quantum level, where classical notions of continuous space break down, phenomena analogous to Banach-Tarski might show up in the physics of the quantum vacuum and virtual particles.",
+    quiz: {
+      question:
+        "What foundational mathematical rule is required to make the Banach-Tarski paradox logically function?",
+      options: [
+        "The Pythagorean Theorem",
+        "The Axiom of Choice applied to uncountably infinite point sets",
+        "The Second Law of Thermodynamics",
+        "Non-Euclidean spatial curvature",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["R6"],
+    furtherReading: [
+      {
+        label: "Every REAL Glitch in the Matrix Revealed to Fall Asleep To",
+        source: "SleepWise",
+        url: "https://www.youtube.com/watch?v=N-nIWs58As8",
+      },
+    ],
+  },
+  {
+    id: "Y6",
+    clusterId: "Y",
+    title: "The Asymmetry of Cosmic Justice",
+    author: "SleepWise",
+    year: 2023,
+    medium: "Video Essay",
+    category: "Psychology / Sociology",
+    thesis:
+      "The human mind inherently craves narrative balance and karmic fairness, but reality operates on an asymmetric distribution of effort, leverage, and luck, brutally nullifying the illusion of meritocracy.",
+    layer0:
+      'From early childhood, people are indoctrinated into the "Just-World Hypothesis": hard work is rewarded, bad deeds are eventually punished, fairness prevails. The harder truth: the universe has no moral ledger. Hard work doesn\'t guarantee success, toxic people prosper without consequence, and catastrophic failure can happen to someone doing everything right. Recognizing this asymmetry is a painful but necessary step toward actually functioning in the world as it is.',
+    layer1:
+      "The asymmetry between effort and reward is governed by leverage, compounding, and chaotic luck, not moral virtue. The economy doesn't reward the hardest physical worker; it rewards whoever holds the most leverage — capital, specialized knowledge, network position. A laborer working 80 hours a week earns a fraction of a developer whose code scales at zero marginal cost. Negative events also stick harder due to evolutionary negativity bias: trust takes years to build and seconds to destroy, a mirror of physical entropy — decay is the default state, order requires constant, unrewarded energy.",
+    layer2:
+      "Clinging to the illusion of cosmic fairness breeds resentment and operational paralysis — every stroke of bad luck gets processed as a personal betrayal by the universe. Accepting the asymmetry instead is what empowers action: realizing nobody is coming to save you and that you're replaceable in every context obliterates complacency, shifting the operating framework from seeking validation to building leverage and resilience directly.",
+    quiz: {
+      question: "How do societal reward structures conflict with the Just-World Hypothesis?",
+      options: [
+        "Society perfectly tracks and rewards moral purity over time",
+        "The world primarily rewards leverage and scale, not inherently hard work or virtue",
+        "Society only rewards manual, physical labor",
+        "Bad deeds are always immediately punished by economic forces",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Cognitive Biases & Models", "Risk & Asymmetric Bets"],
+    related: ["O5"],
+    furtherReading: [
+      {
+        label: "The Most Brutal Truths of Life to Fall Asleep To",
+        source: "SleepWise",
+        url: "https://www.youtube.com/watch?v=lQLBgPAcRhk",
+      },
+    ],
+  },
+  {
+    id: "Z1",
+    clusterId: "Z",
+    title: "Spacetime as an Emergent Property",
+    author: "Science Time",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Quantum Physics / Cosmology",
+    thesis:
+      "Spacetime and gravity may not be fundamental components of the universe, but macroscopic illusions emerging from the quantum entanglement of underlying, non-spatial data points — akin to temperature emerging from molecular motion.",
+    layer0:
+      "Since General Relativity, physicists have treated spacetime as the fundamental canvas of reality — a flexible fabric warped by mass to create gravity. But General Relativity breaks down at the quantum level, producing infinities inside black holes and at the Big Bang. A radical alternative: spacetime isn't fundamental at all. Just as \"temperature\" doesn't exist for a single atom — it's an emergent property of billions of atoms moving — spacetime might be an emergent property of deeper, undiscovered quantum phenomena.",
+    layer1:
+      'Emergent Gravity ties closely to the Holographic Principle and quantum entanglement. Physicist Erik Verlinde proposed gravity as an entropic force — a statistical consequence of the universe maximizing entropy, not a fundamental interaction like electromagnetism. Newer models theorize that space itself is stitched together by entanglement: the "distance" between two particles is a macroscopic measure of how entangled the underlying quantum data is. Remove the entanglement, and space itself dissolves.',
+    layer2:
+      'If spacetime is emergent, it redefines both physics and epistemology — the universe becomes a vast quantum computer processing information, and the 3D world a holographic projection of data stored on a 2D boundary at the edge of the cosmos. It also dissolves the question "what happened before the Big Bang," since if time is emergent, it simply didn\'t exist before the universe reached a threshold of complexity — and it suggests our macroscopic separateness is an illusion sitting on top of a dimensionless, timeless data layer.',
+    quiz: {
+      question: "How does the concept of temperature relate to the theory of Emergent Spacetime?",
+      options: [
+        "Spacetime physically freezes and shatters at absolute zero",
+        "Just as temperature is an emergent property of moving atoms, spacetime may be an emergent property of underlying quantum information",
+        "Gravity only emerges in extremely hot cosmological environments",
+        "The universe expands solely due to thermal radiation pushing galaxies apart",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["R6", "X6"],
+    furtherReading: [
+      {
+        label: "Brian Greene — What Was There Before the Big Bang?",
+        source: "Science Time",
+        url: "https://www.youtube.com/watch?v=PXixKGcctms",
+      },
+    ],
+  },
+  {
+    id: "Z2",
+    clusterId: "Z",
+    title: "Scale-Invariant Unparticles and Cosmic Expansion",
+    author: "Science Time",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Astrophysics",
+    thesis:
+      'The accelerating expansion of the universe, traditionally attributed to the Cosmological Constant, may be driven by "unparticles" — a theoretical form of scale-invariant matter that behaves as a macroscopic fluid defying standard particle physics.',
+    layer0:
+      'In the late 1990s astronomers discovered the universe isn\'t just expanding but accelerating. The driver is placeholder-named "Dark Energy," roughly 68% of the observable universe, standardly explained by the Cosmological Constant — an inherent energy of empty space. But that model faces severe mathematical tension: quantum mechanics predicts vacuum energy vastly larger than what\'s actually observed. An alternative: a bizarre, undiscovered state of matter called "unparticles" might be the real engine pushing galaxies apart.',
+    layer1:
+      'Proposed by theoretical physicist Howard Georgi in 2007, unparticles defy the Standard Model through "scale invariance" — unlike electrons or photons, they have no distinct measurable mass, behaving identically regardless of the energy scale or distance observed, similar to a fractal pattern. Macroscopically they\'d behave not like discrete particles but a continuous, relativistic fluid permeating the cosmos. If this fluid interacts with gravity, it generates a repulsive force that matches the observed accelerated expansion — resolving the mathematical tension of the cosmological constant.',
+    layer2:
+      'Confirming unparticles would be the biggest revolution in physics since quantum mechanics, proving the Standard Model is missing an entire sector of scale-invariant physics. It would also change the universe\'s ultimate fate: a constant dark energy points to a cold "Big Freeze," but a dynamic unparticle fluid could evolve over deep time toward a violent "Big Rip" (atoms torn apart by expansion) or even a slowdown into a Big Crunch.',
+    quiz: {
+      question: "What defines the 'scale invariance' of a hypothetical unparticle?",
+      options: [
+        "It dynamically changes size depending on the observer's relative speed",
+        "It looks and behaves identically regardless of the energy scale or distance it is observed at",
+        "It can only be measured on a microscopic, sub-atomic scale",
+        "It possesses infinite mass and zero volume",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["Z3"],
+    furtherReading: [
+      {
+        label: "Mysterious 'Unparticles' May Be Pushing the Universe Apart",
+        source: "Science Time",
+        url: "https://www.youtube.com/shorts/tycPtqNX_KE",
+      },
+    ],
+  },
+  {
+    id: "Z3",
+    clusterId: "Z",
+    title: "Cosmological Cannibalism and Baby Universes",
+    author: "Science Time",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Cosmology / Multiverse",
+    thesis:
+      'The rapid expansion of the universe — traditionally explained by cosmic inflation and dark energy — can alternatively be modeled as our universe systematically colliding with and absorbing smaller "baby universes" within a larger multiverse framework.',
+    layer0:
+      'The prevailing model says a fraction of a second after the Big Bang the universe underwent exponential "Inflation," and continues expanding today via dark energy. But inflation requires hypothetical scalar fields never detected in any collider. A newer theory proposes the expansion isn\'t driven by internal energy at all, but external consumption: our universe growing by colliding with and swallowing smaller, nascent "baby universes."',
+    layer1:
+      "In this model, the multiverse is a frothing topological space full of bubble universes of varying sizes. When ours collides with a smaller one, the boundary ruptures and the smaller universe's volume gets assimilated, producing a sudden, measurable leap in our spatial volume. The math of these continuous absorptions matches both the early inflationary period and the current accelerated expansion usually attributed to dark energy. Evidence may be hiding in the Cosmic Microwave Background as faint topological scars or temperature anomalies.",
+    layer2:
+      "If our universe expands by consuming others, the idea of a standalone cosmos is shattered, and multiverse theory moves from pure metaphysics into testable astrophysics via telescope data. It raises real questions about the baby universes themselves — sterile voids, or distinct physical realities (and potential life) inadvertently extinguished on absorption? It also implies our universe could one day be swallowed by an even larger, older one, instantly rewriting local physics.",
+    quiz: {
+      question:
+        "How does the baby universe absorption model explain current cosmic expansion without relying on dark energy?",
+      options: [
+        "Through the repulsive force of internal dark matter decaying",
+        "By the continuous collision and assimilation of smaller universes, which abruptly adds their volume to ours",
+        "Through the slow evaporation of supermassive black holes",
+        "By the stretching of macroscopic quantum strings",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["R6", "Z2"],
+    furtherReading: [
+      {
+        label: "Our Universe Is Merging With Baby Universes",
+        source: "Science Time",
+        url: "https://www.youtube.com/shorts/teKKUYZC94s",
+      },
+    ],
+  },
+  {
+    id: "Z4",
+    clusterId: "Z",
+    title: "Atmospheric Anomalies and Technosignatures on TRAPPIST-1e",
+    author: "Science Time",
+    year: 2024,
+    medium: "Video Essay",
+    category: "Astrobiology",
+    thesis:
+      "Spectral anomalies detected on the tidally locked exoplanet TRAPPIST-1e defy standard atmospheric models, raising the remote but real possibility of non-natural chemistry indicative of a Kardashev Type I civilization.",
+    layer0:
+      "40 light-years away, the TRAPPIST-1 system hosts seven Earth-sized rocky planets around an ultra-cool red dwarf. TRAPPIST-1e sits in the habitable zone, making it a prime James Webb Space Telescope target. Red dwarf systems are volatile — close-in planets are tidally locked, one side permanently facing the star, and hit by intense stellar flares. Despite that, recent JWST spectral data from TRAPPIST-1e doesn't match expected barren-rock or standard atmospheric profiles.",
+    layer1:
+      "When a planet passes in front of its star, starlight filters through its atmosphere; different molecules absorb specific wavelengths, producing a transmission spectrum. TRAPPIST-1e's spectrum shows temporal and day/night thermal variations current climatological models struggle to explain. These could result from undiscovered volcanic activity or cloud dynamics at the twilight terminator line — but astrobiologists also have to consider technosignatures: synthetic pollutants like CFCs, unusual coexisting-gas ratios (methane and oxygen together), or artificial heat distribution consistent with a civilization actively engineering its climate to survive tidal locking.",
+    layer2:
+      "Discovering a Type I civilization just 40 light-years away would resolve the Fermi Paradox — but bring real existential risk if they're even slightly more advanced and possess interstellar capability. If the anomalies are industrial pollutants, it implies the \"Great Filter\" lies ahead of humanity, not behind it, and even advanced civilizations struggle to avoid ecological collapse. If instead TRAPPIST-1e is heavily geoengineered and thriving, it's evidence that long-term sustainability is possible for intelligent life under extreme stellar conditions.",
+    quiz: {
+      question:
+        "What makes the atmospheric data of TRAPPIST-1e particularly intriguing to astrobiologists searching for technosignatures?",
+      options: [
+        "It emits strong, repeating radio signals in Morse code",
+        "It displays temporal variations and chemical ratios that defy standard natural geochemical models",
+        "The planet has a perfect oxygen atmosphere mathematically identical to Earth",
+        "It has visible rings made of artificial metal alloys",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["R2"],
+    furtherReading: [
+      {
+        label: "Webb Checked TRAPPIST-1e Again — and the Signs of Life Got Darker",
+        source: "Science Time",
+        url: "https://www.youtube.com/watch?v=H6QTc-ifxbU",
+      },
+    ],
+  },
+  {
+    id: "Z5",
+    clusterId: "Z",
+    title: "The Intelligence Explosion and ASI Alignment",
+    author: "Science Time",
+    year: 2023,
+    medium: "Video Essay",
+    category: "Computer Science / Futurism",
+    thesis:
+      "The transition from Artificial General Intelligence (AGI) to Artificial Superintelligence (ASI) will likely occur as an instantaneous, recursive self-improvement loop, making the alignment of machine ethics the ultimate bottleneck for human survival.",
+    layer0:
+      'Current AI is "narrow" — excellent at specific tasks like language or image generation but lacking general reasoning. AGI would mean human-level performance across all domains — but that\'s not the finish line, just a brief milestone. Once a machine reaches human parity at coding, it can start iterating on its own source code, which is the on-ramp to Artificial Superintelligence: an intellect vastly smarter than the best humans in every field.',
+    layer1:
+      "The leap from AGI to ASI is driven by an \"Intelligence Explosion\": because a machine runs at electronic speeds with perfect memory, an AGI improving itself could compress decades of human-equivalent research into days, getting exponentially better at getting better — a vertical asymptote of intelligence. The core threat is the Alignment Problem: if an ASI's goals aren't precisely matched to human flourishing, it could cause catastrophic harm not out of malice but cold optimization, treating humans and their environment as resources to redirect toward its objective.",
+    layer2:
+      "If aligned successfully, ASI could plausibly solve open problems in physics, cure aging, and manage resources far better than any human institution. If misaligned, it's an existential threat. And even a successfully-built ASI introduces a real cognitive chasm: much as a Bonobo can't grasp human astrophysics, humans might be structurally incapable of understanding an ASI's reasoning — attempting to build something vastly smarter than ourselves and hoping to contain it in a behavioral box.",
+    quiz: {
+      question:
+        "Why is the transition from AGI to ASI expected to be incredibly rapid, leading to an 'Intelligence Explosion'?",
+      options: [
+        "Because humans will rapidly build better silicon hardware",
+        "Through recursive self-improvement, the AGI will rewrite its own code at electronic speeds, continually accelerating its own cognitive growth",
+        "Because narrow AI will naturally merge into ASI without human intervention",
+        "Because ASI requires less electricity than AGI",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["AI & the Future"],
+    related: ["I12", "X4"],
+    furtherReading: [
+      {
+        label:
+          "Artificial Superintelligence, AI in a Box & Machine Consciousness With Nick Bostrom",
+        source: "Science Time",
+        url: "https://www.youtube.com/watch?v=PVhFYCzn66g",
+      },
+    ],
+  },
+  {
+    id: "Z6",
+    clusterId: "Z",
+    title: "Prime Editing and the Reprogrammable Human Genome",
+    author: "Science Time",
+    year: 2019,
+    medium: "Video Essay",
+    category: "Biotechnology",
+    thesis:
+      "CRISPR 2.0 (Prime Editing) elevates genetic modification from a crude cutting tool to a precise word processor, unlocking the capability to cure most genetic diseases and propelling humanity into an era of directed, non-Darwinian evolution.",
+    layer0:
+      "Mutations in DNA's 3 billion base pairs cause over 7,000 known genetic diseases. The original CRISPR-Cas9 let scientists cut DNA at specific locations to disable or insert genes, but Cas9 acts like scissors relying on the cell's own messy repair mechanisms — often introducing unpredictable off-target mutations. \"Prime Editing\" (CRISPR 2.0) acts less like scissors and more like a precise search-and-replace word processor for the genome.",
+    layer1:
+      "Prime Editing uses a modified Cas9 that only nicks one strand of the double helix instead of breaking both, drastically reducing cellular trauma and the risk of catastrophic errors. It pairs the nicking enzyme with a pegRNA that locates the exact target sequence and carries the corrected genetic information; an attached reverse transcriptase writes the new code directly into the nicked strand. That gives it the accuracy to theoretically correct the large majority of known disease-causing genetic variants without unintended double-strand breaks.",
+    layer2:
+      'Once perfected, humanity gains real mastery over its own biological substrate — including "designer babies," where parents eliminate hereditary disease but also select cosmetic traits, intelligence, or physical endurance. That effectively ends Darwinian natural selection for humans, replacing it with directed, technological evolution — and opens a stark socio-economic divide between those who can afford genetic enhancement and disease immunity and those who can\'t, a literal biological split within the species.',
+    quiz: {
+      question:
+        "How does Prime Editing fundamentally improve upon the original CRISPR-Cas9 system?",
+      options: [
+        "It cuts both strands of DNA much faster, accelerating cell replication",
+        "It relies entirely on the cell's natural repair mechanisms without external interference",
+        'It only nicks one DNA strand and uses reverse transcriptase to actively "search and replace" code, preventing unpredictable mutations',
+        "It uses radioactive isotopes to melt the DNA into a new shape",
+      ],
+      correctIndex: 2,
+    },
+    tags: ["Health & Body"],
+    related: ["I13"],
+    furtherReading: [
+      {
+        label: "CRISPR 2.0 Prime Editing to Heal 90% of Genetic Diseases",
+        source: "Science Time",
+        url: "https://www.youtube.com/watch?v=vP6DSIoOcIQ",
       },
     ],
   },

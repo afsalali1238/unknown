@@ -11,7 +11,7 @@ export const Route = createFileRoute("/you")({
   head: () => ({
     meta: [
       { title: "You — Unknown" },
-      { name: "description", content: "Streak, stats, reading list, glossary, and backup." },
+      { name: "description", content: "Streak, stats, bookmarks, glossary, and backup." },
     ],
   }),
   component: YouScreen,
@@ -60,10 +60,22 @@ function YouScreen() {
       </Section>
 
       <Interests />
+      <AudioPreferences />
 
       <Section title="Bookmarks">
         {bookmarked.length === 0 ? (
-          <p className="text-sm text-ink-soft">Star ideas from any node to save them here.</p>
+          <div className="border border-line border-dashed p-6 text-center">
+            <p className="font-serif text-lg text-ink">No bookmarks yet.</p>
+            <p className="mt-2 text-sm text-ink-soft">
+              Star ideas from any node to save them here.
+            </p>
+            <Link
+              to="/"
+              className="mt-4 inline-block bg-ink text-paper px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em]"
+            >
+              Explore the map
+            </Link>
+          </div>
         ) : (
           <ul className="space-y-1">
             {bookmarked.map((n) => (
@@ -82,7 +94,6 @@ function YouScreen() {
         )}
       </Section>
 
-      <ReadingList />
       <Glossary />
       <Scratchpad />
       <Offline />
@@ -154,6 +165,34 @@ function Interests() {
   );
 }
 
+function AudioPreferences() {
+  const ttsRate = useStore((s) => s.ttsRate);
+  const setTtsRate = useStore((s) => s.setTtsRate);
+  const speeds = [0.8, 1.0, 1.2, 1.5, 2.0];
+
+  return (
+    <Section title="Audio Preferences">
+      <p className="text-sm text-ink-soft">Adjust the playback speed for the narrator.</p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        {speeds.map((s) => (
+          <button
+            key={s}
+            onClick={() => setTtsRate(s)}
+            className={cn(
+              "border px-4 py-2 font-mono text-[11px]",
+              ttsRate === s
+                ? "border-ink bg-ink text-paper"
+                : "border-line text-ink-soft hover:border-ink hover:text-ink",
+            )}
+          >
+            {s.toFixed(1)}x
+          </button>
+        ))}
+      </div>
+    </Section>
+  );
+}
+
 function last14Days(): string[] {
   const out: string[] = [];
   const d = new Date();
@@ -163,74 +202,6 @@ function last14Days(): string[] {
     out.push(x.toISOString().slice(0, 10));
   }
   return out;
-}
-
-function ReadingList() {
-  const list = useStore((s) => s.readingList);
-  const add = useStore((s) => s.addReading);
-  const remove = useStore((s) => s.removeReading);
-  const [label, setLabel] = useState("");
-  const [url, setUrl] = useState("");
-  return (
-    <Section title="Reading list">
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (!label.trim()) return;
-          add({ label: label.trim(), url: url.trim() || undefined });
-          setLabel("");
-          setUrl("");
-        }}
-        className="space-y-2"
-      >
-        <input
-          value={label}
-          onChange={(e) => setLabel(e.target.value)}
-          placeholder="Title or topic"
-          className="w-full border-b border-line bg-transparent py-2 text-base focus:border-ink focus:outline-none"
-        />
-        <input
-          value={url}
-          onChange={(e) => setUrl(e.target.value)}
-          placeholder="URL (optional)"
-          className="w-full border-b border-line bg-transparent py-2 text-sm text-ink-soft focus:border-ink focus:outline-none"
-        />
-        <button
-          type="submit"
-          className="border border-ink px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ink"
-        >
-          Add
-        </button>
-      </form>
-      <ul className="mt-4 space-y-2">
-        {list.map((item) => (
-          <li
-            key={item.id}
-            className="flex items-baseline justify-between gap-3 border-b border-line py-2"
-          >
-            {item.url ? (
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noreferrer"
-                className="font-serif text-base text-ink hover:text-accent"
-              >
-                {item.label}
-              </a>
-            ) : (
-              <span className="font-serif text-base text-ink">{item.label}</span>
-            )}
-            <button
-              onClick={() => remove(item.id)}
-              className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-soft hover:text-accent"
-            >
-              Remove
-            </button>
-          </li>
-        ))}
-      </ul>
-    </Section>
-  );
 }
 
 function Glossary() {
@@ -281,6 +252,14 @@ function Glossary() {
           Add term
         </button>
       </form>
+      {filtered.length === 0 && list.length === 0 && (
+        <div className="border border-line border-dashed p-6 text-center mt-6">
+          <p className="font-serif text-lg text-ink">Your glossary is empty.</p>
+          <p className="mt-2 text-sm text-ink-soft">
+            Add terms above to build your own personal dictionary.
+          </p>
+        </div>
+      )}
       <ul className="mt-4 space-y-3">
         {filtered.map((g) => (
           <li key={g.id} className="border-b border-line pb-3">

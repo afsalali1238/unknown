@@ -104,7 +104,7 @@ function ExploreScreen() {
                 </div>
                 <MicroLabel>{nodes.length}</MicroLabel>
               </div>
-              <div className="mt-4 -mx-5 flex snap-x snap-mandatory gap-2 overflow-x-auto px-5 pb-2">
+              <div className="mt-4 -mx-5 flex snap-x snap-mandatory gap-2 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:overflow-x-visible sm:px-0">
                 {nodes.map((n) => (
                   <NodeCard key={n.id} node={n} />
                 ))}

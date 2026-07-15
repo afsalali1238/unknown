@@ -40,13 +40,20 @@ export function Quiz({ node }: { node: Node }) {
         })}
       </div>
       {picked !== null && (
-        <p
-          className={`mt-4 font-mono text-[11px] uppercase tracking-[0.18em] ${correct ? "text-accent" : "text-ink-soft"}`}
+        <div
+          className={`mt-4 border-l-2 p-3 ${correct ? "border-accent bg-accent/5" : "border-ink-soft bg-line/10"}`}
         >
-          {correct
-            ? "Correct — moved up a box"
-            : "Not quite — resets to box 0. That's the point of review."}
-        </p>
+          <p
+            className={`font-mono text-[11px] uppercase tracking-[0.18em] ${correct ? "text-accent" : "text-ink-soft"}`}
+          >
+            {correct
+              ? "Correct — moved up a box"
+              : "Not quite — resets to box 0. That's the point of review."}
+          </p>
+          {node.quiz.explanation && (
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{node.quiz.explanation}</p>
+          )}
+        </div>
       )}
     </section>
   );

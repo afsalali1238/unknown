@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.output/
+.vinxi/
+.tanstack/
+.nitro/
+bun.lock
+package-lock.json
+src/routeTree.gen.ts
+docs/capital-map.bundle
+*.log
+.DS_Store

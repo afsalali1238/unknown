@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useStore } from "@/lib/store";
 
 /**
  * Real narration via the browser's Web Speech API (SpeechSynthesis).
@@ -10,6 +11,7 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
   const [playing, setPlaying] = useState(false);
   const [idx, setIdx] = useState(0);
   const [supported, setSupported] = useState(true);
+  const ttsRate = useStore((s) => s.ttsRate);
   const idxRef = useRef(0);
   const stoppedRef = useRef(false);
 
@@ -50,7 +52,7 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
     }
     stoppedRef.current = false;
     const u = new SpeechSynthesisUtterance(els[start].textContent ?? "");
-    u.rate = 1;
+    u.rate = ttsRate;
     u.onstart = () => {
       idxRef.current = start;
       setIdx(start);

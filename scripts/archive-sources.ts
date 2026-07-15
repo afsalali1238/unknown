@@ -164,8 +164,13 @@ async function run() {
       const archiveProp = frItem.getProperty("archive") || frItem.getProperty('"archive"');
       if (archiveProp) {
         const idVal = idProp.getText().split(":")[1].replace(/["']/g, "").trim();
-        const expectedFile = require('path').join(process.cwd(), "content", "sources", `${idVal}-${i}.md`);
-        if (require('fs').existsSync(expectedFile)) {
+        const expectedFile = require("path").join(
+          process.cwd(),
+          "content",
+          "sources",
+          `${idVal}-${i}.md`,
+        );
+        if (require("fs").existsSync(expectedFile)) {
           continue;
         } else {
           archiveProp.remove();

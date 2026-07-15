@@ -41,6 +41,18 @@ function splitSentences(text: string): string[] {
   return text.split(/(?<=[.!?])\s+/).filter(Boolean);
 }
 
+// New (never opened) > opened but not mastered > mastered (gotIt). Passive —
+// derived from visitNode, which already fires on every page load.
+function readStatusBoost(
+  id: string,
+  gotItMap: Record<string, boolean>,
+  visitedMap: Record<string, boolean>,
+): number {
+  if (gotItMap[id]) return 0;
+  if (visitedMap[id]) return 40;
+  return 100;
+}
+
 function Sentences({ text, start }: { text: string; start: number }) {
   const sents = useMemo(() => splitSentences(text), [text]);
   return (
@@ -66,6 +78,7 @@ function NodeScreen() {
   const toggleBookmark = useStore((s) => s.toggleBookmark);
   const bookmarked = useStore((s) => !!s.bookmarks[node.id]);
   const gotItMap = useStore((s) => s.gotIt);
+  const visitedMap = useStore((s) => s.visited);
   const interests = useStore((s) => s.interests);
 
   const [showL1, setShowL1] = useState(false);
@@ -87,9 +100,9 @@ function NodeScreen() {
       let scoreA = 0;
       let scoreB = 0;
 
-      // Unread boost
-      if (!gotItMap[a.id]) scoreA += 100;
-      if (!gotItMap[b.id]) scoreB += 100;
+      // New (never opened) beats opened-not-mastered beats mastered
+      scoreA += readStatusBoost(a.id, gotItMap, visitedMap);
+      scoreB += readStatusBoost(b.id, gotItMap, visitedMap);
 
       // Same cluster boost
       if (a.clusterId === node.clusterId) scoreA += 10;
@@ -105,7 +118,7 @@ function NodeScreen() {
 
       return scoreB - scoreA;
     });
-  }, [node, gotItMap, interests]);
+  }, [node, gotItMap, visitedMap, interests]);
 
   const nextConnection = related[0];
 
@@ -139,32 +152,25 @@ function NodeScreen() {
           </div>
         </section>
 
-        {!showL1 ? (
-          <LayerReveal label="Show me how it works" onReveal={() => setShowL1(true)}>
-            <div />
-          </LayerReveal>
-        ) : (
-          <section className="mt-8 border-t border-line pt-6 animate-in fade-in duration-500">
+        <LayerReveal label="Show me how it works" onReveal={() => setShowL1(true)}>
+          <section>
             <MicroLabel>Layer 1 — The mechanism</MicroLabel>
             <div className="mt-3">
               <Sentences text={node.layer1 ?? ""} start={l0Sents} />
             </div>
           </section>
-        )}
+        </LayerReveal>
 
-        {showL1 &&
-          (!showL2 ? (
-            <LayerReveal label="Apply it" onReveal={() => setShowL2(true)}>
-              <div />
-            </LayerReveal>
-          ) : (
-            <section className="mt-8 border-t border-line pt-6 animate-in fade-in duration-500">
+        {showL1 && (
+          <LayerReveal label="Apply it" onReveal={() => setShowL2(true)}>
+            <section>
               <MicroLabel>Layer 2 — Apply it</MicroLabel>
               <div className="mt-3">
                 <Sentences text={node.layer2 ?? ""} start={l0Sents + l1Sents} />
               </div>
             </section>
-          ))}
+          </LayerReveal>
+        )}
 
         <Quiz node={node} />
         <RecallReveal text={node.thesis} />
