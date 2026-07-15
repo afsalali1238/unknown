@@ -27,16 +27,25 @@ export type Node = {
 };
 
 export const TAGS = [
+  "Startups & Founders",
+  "Moats & Network Effects",
   "Incentives & Systems",
   "Compounding & Patience",
   "Risk & Asymmetric Bets",
   "Cognitive Biases & Models",
   "Decision-Making",
   "First-Principles Thinking",
+  "Markets & Narrative",
   "Wealth, Leverage & Judgment",
   "Craft & Deep Work",
+  "Crypto & Trust",
+  "Macro & Cycles",
+  "Fraud & Skepticism",
+  "Tech Adoption & Disruption",
+  "AI & the Future",
   "Power & Persuasion",
   "Meaning & Self",
+  "Health & Body",
 ] as const;
 export type Tag = (typeof TAGS)[number];
 
@@ -218,7 +227,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A1-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
     layer0:
       "Paul Graham's definitive advice for early-stage startups: you cannot wait for users to naturally discover your product. Founders must manually, and sometimes painstakingly, recruit their first users one by one and do things that are structurally unscalable.",
     layer1:
@@ -291,7 +300,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A2-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A3",
@@ -345,7 +354,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A3-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A4",
@@ -400,7 +409,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A4-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A5",
@@ -459,7 +468,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A6",
@@ -518,7 +527,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A6-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A7",
@@ -573,7 +582,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A7-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A8",
@@ -628,7 +637,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A8-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A9",
@@ -683,7 +692,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A9-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A10",
@@ -737,7 +746,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A10-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A11",
@@ -792,7 +801,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "A12",
@@ -847,7 +856,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/A12-2.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "B1",
@@ -895,7 +904,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "B2",
@@ -943,7 +952,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/B2-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "B3",
@@ -991,7 +1000,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/B3-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "B4",
@@ -1038,7 +1047,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/B4-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "B5",
@@ -1088,7 +1097,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "B6",
@@ -1135,7 +1144,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/B6-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "B7",
@@ -1183,7 +1192,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/B7-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "C1",
@@ -1197,7 +1206,7 @@ export const NODES: Node[] = [
       "Enron's returns didn't cover its cost of capital and its accounting was opaque; the equity was worthless.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2000, Jim Chanos realized that energy giant Enron was using mark-to-market accounting to book massive future profits on the day a deal was signed. When he dug into their cash flow statements, he found that despite reporting huge earnings, the company was actually bleeding cash.",
     layer1:
@@ -1229,7 +1238,7 @@ export const NODES: Node[] = [
       "Bernard Madoff's impossibly smooth returns are mathematically inconsistent with any real strategy; the fund is either front-running or a Ponzi scheme.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 1999, financial analyst Harry Markopolos realized that Bernie Madoff's impossibly consistent returns could not be replicated mathematically. He alerted the SEC multiple times that Madoff was running a massive Ponzi scheme, but was ignored for nearly a decade.",
     layer1:
@@ -1261,7 +1270,7 @@ export const NODES: Node[] = [
       "Allied Capital used aggressive accounting to overstate the value of its illiquid investments.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2002, David Einhorn publicly shorted Allied Capital, a private finance company, accusing them of systematically overvaluing their illiquid assets. When Einhorn exposed the fraud, Allied retaliated with a vicious smear campaign rather than answering the financial questions.",
     layer1:
@@ -1293,7 +1302,7 @@ export const NODES: Node[] = [
       "Lehman's balance sheet is opaque and undercapitalized; its marks on illiquid assets are not credible.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In May 2008, David Einhorn presented a blistering short thesis on Lehman Brothers, exposing a massive $32 billion discrepancy in their commercial real estate portfolio. He proved the bank was functionally insolvent months before its spectacular collapse.",
     layer1:
@@ -1321,7 +1330,7 @@ export const NODES: Node[] = [
       "Subprime mortgage-backed securities will collapse; buy CDS protection against the housing bubble.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "Michael Burry, a value investor with aspergers, discovered in 2005 that the US housing market was built on a foundation of fraudulent subprime mortgages. He convinced Wall Street banks to create a new instrument—Credit Default Swaps on mortgage bonds—so he could short the housing market.",
     layer1:
@@ -1352,7 +1361,7 @@ export const NODES: Node[] = [
       "Sino-Forest is a fraud that overstates its timber assets; the equity is worth a fraction of its price.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2011, Muddy Waters Research exposed Sino-Forest, a $6 billion Chinese forestry company listed in Canada, as a massive Ponzi scheme. The company claimed to own vast tracts of timber in China, but investigators found the forests simply didn't exist.",
     layer1:
@@ -1383,7 +1392,7 @@ export const NODES: Node[] = [
       "Herbalife is a pyramid scheme that will be shut down by regulators; the stock is worth zero.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2012, Bill Ackman launched a $1 billion short campaign against Herbalife, calling it the best-managed pyramid scheme in history. He argued the company made its money by recruiting distributors, not selling actual nutritional shakes.",
     layer1:
@@ -1414,7 +1423,7 @@ export const NODES: Node[] = [
       "Valeant used a specialty pharmacy (Philidor) to fabricate sales, echoing Enron-style channel stuffing.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2015, Citron Research published a report comparing Valeant Pharmaceuticals to Enron, triggering a massive collapse in the stock. Valeant had been using a secret network of captive pharmacies to artificially inflate drug prices and force insurance payouts.",
     layer1:
@@ -1444,7 +1453,7 @@ export const NODES: Node[] = [
     thesis: "Luckin Coffee fabricated sales figures; the growth story is a fraud.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2020, Muddy Waters received an anonymous 89-page report proving that Luckin Coffee, China's answer to Starbucks, was fabricating hundreds of millions of dollars in sales. The stock collapsed 80% shortly after.",
     layer1:
@@ -1475,7 +1484,7 @@ export const NODES: Node[] = [
       "Nikola is an 'intricate fraud' built on false claims about its technology, including a truck rolling downhill in a video.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2020, Hindenburg Research exposed Nikola Motors, a highly valued hydrogen truck startup, as an intricate fraud built on CGI and fake demonstrations. Founder Trevor Milton had faked almost every major technological breakthrough the company claimed.",
     layer1:
@@ -1507,7 +1516,7 @@ export const NODES: Node[] = [
       "The Adani Group engaged in brazen stock manipulation and accounting fraud over decades.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2023, Hindenburg Research published a devastating report on India's Adani Group, accusing the massive infrastructure conglomerate of a decades-long stock manipulation and accounting fraud scheme. The report erased over $100 billion from Adani's market cap in weeks.",
     layer1:
@@ -1537,7 +1546,7 @@ export const NODES: Node[] = [
     thesis: "Amid GFC panic, US stocks are cheap; be greedy when others are fearful.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "At the darkest depths of the 2008 financial crisis, Warren Buffett published a New York Times op-ed declaring he was buying American stocks with his personal money. He reminded the world that 'be fearful when others are greedy, and be greedy when others are fearful.'",
     layer1:
@@ -1568,7 +1577,7 @@ export const NODES: Node[] = [
       "The concentrated success of value investors from a shared intellectual 'village' refutes efficient markets.",
     related: ["W2", "W6"],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In a famous 1984 speech, Warren Buffett debunked the Efficient Market Hypothesis (EMH). He showed that a group of successful investors who all beat the market didn't do it by pure luck; they all shared the same value investing framework taught by Benjamin Graham.",
     layer1:
@@ -1600,7 +1609,7 @@ export const NODES: Node[] = [
       "Investors must deploy capital into cheap markets precisely when it feels most terrifying to do so.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In late 2008, Howard Marks wrote a memo arguing that the greatest risk wasn't losing money, but missing the once-in-a-generation opportunity to buy distressed debt at massive discounts. He urged his firm to deploy billions when everyone else was paralyzed.",
     layer1:
@@ -1631,7 +1640,7 @@ export const NODES: Node[] = [
       "US equities are in a full-blown epic bubble that will end badly, comparable to 1929 and 2000.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2021, legendary investor Jeremy Grantham warned that the US stock market was in a massive, multi-asset 'superbubble' driven by zero interest rates and speculative mania. He correctly predicted the painful popping of this bubble in 2022.",
     layer1:
@@ -1663,7 +1672,7 @@ export const NODES: Node[] = [
       "Investors competing to accept ever-worse terms and lower returns are sowing the seeds of the next crisis.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2012, Howard Marks warned about the 'Race to the Bottom' in debt markets. To compete for deals in a low-interest-rate environment, lenders were abandoning traditional protections and covenants, taking on massive hidden risk for lower returns.",
     layer1:
@@ -1694,7 +1703,7 @@ export const NODES: Node[] = [
       "A generational shift from falling to elevated rates ends the 40-year tailwind; credit and value are the new winners.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2022, Howard Marks declared a fundamental 'Sea Change' in global finance. He argued that the 40-year era of declining interest rates (1980-2020) was over, and the new era of higher rates would require entirely different investment strategies.",
     layer1:
@@ -1725,7 +1734,7 @@ export const NODES: Node[] = [
       "Debt crises follow a repeating, mechanical template of leveraging and deleveraging that can be navigated.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "Ray Dalio studied 100 years of financial history to identify the archetypal pattern of a debt crisis. He showed how credit cycles inevitably expand into bubbles, pop, and force painful but necessary deleveragings.",
     layer1:
@@ -1756,7 +1765,7 @@ export const NODES: Node[] = [
       "Long-term debt, currency, and empire cycles explain the relative decline of the US and rise of China.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "Ray Dalio's framework on the rise and fall of empires. He argues that global superpowers follow a predictable 250-year cycle driven by education, technological innovation, economic dominance, and eventually, financial ruin and conflict.",
     layer1:
@@ -1788,7 +1797,7 @@ export const NODES: Node[] = [
       "Structural imbalances in the dollar reserve system are straining and will drive a long-term monetary shift.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "Macro strategist Luke Gromen argues that the post-1971 US dollar hegemony is fundamentally breaking down. The US is trapped by massive sovereign debt and cannot raise interest rates enough to defend the dollar without bankrupting its own government.",
     layer1:
@@ -1820,7 +1829,7 @@ export const NODES: Node[] = [
       "Weaponized reserves after Russia's invasion usher in a new monetary order backed by commodities, not fiat.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2022, Credit Suisse strategist Zoltan Pozsar coined 'Bretton Woods III', arguing that the global monetary system is shifting from inside money (fiat currency backed by sovereign debt) to outside money (currencies backed by hard commodities).",
     layer1:
@@ -1852,7 +1861,7 @@ export const NODES: Node[] = [
       "The 2008 crash is structural, not cyclical; cut burn, extend runway, get to cash-flow positive.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2008, Sequoia Capital summoned its founders for a brutal presentation titled 'RIP Good Times'. They warned that the financial crisis would completely choke off venture funding, and startups needed to immediately slash cash burn to survive.",
     layer1:
@@ -1883,7 +1892,7 @@ export const NODES: Node[] = [
       "The era of free capital is over; founders must pivot to profitability as rates rise and multiples compress.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2022, as tech stocks crashed and interest rates spiked, Sequoia released a sequel to RIP Good Times called 'Adapting to Endure'. The core message: the era of 'growth at all costs' fueled by zero interest rates was over, and free cash flow was king again.",
     layer1:
@@ -1948,7 +1957,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/E1-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Markets & Narrative"],
   },
   {
     id: "F1",
@@ -1995,7 +2004,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/F1-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
   },
   {
     id: "F2",
@@ -2043,7 +2052,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/F2-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
   },
   {
     id: "F3",
@@ -2090,7 +2099,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/F3-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
   },
   {
     id: "F4",
@@ -2142,7 +2151,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/F4-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
   },
   {
     id: "F5",
@@ -2198,7 +2207,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    tags: [],
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
   },
   {
     id: "G1",
@@ -2249,7 +2258,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G2",
@@ -2297,7 +2306,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/G2-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G3",
@@ -2345,7 +2354,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G4",
@@ -2396,7 +2405,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G5",
@@ -2444,7 +2453,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/G5-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G6",
@@ -2491,7 +2500,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/G6-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G7",
@@ -2539,7 +2548,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/G7-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G8",
@@ -2591,7 +2600,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G9",
@@ -2639,7 +2648,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/G9-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "G10",
@@ -2687,7 +2696,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/G10-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["AI & the Future"],
   },
   {
     id: "H1",
@@ -2739,7 +2748,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "H2",
@@ -2787,7 +2796,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "H3",
@@ -2835,7 +2844,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/H3-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "H4",
@@ -2883,7 +2892,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/H4-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "H5",
@@ -2931,7 +2940,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/H5-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "H6",
@@ -2978,7 +2987,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/H6-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "H7",
@@ -3026,7 +3035,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/H7-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "H8",
@@ -3077,7 +3086,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    tags: [],
+    tags: ["Crypto & Trust"],
   },
   {
     id: "I1",
@@ -3091,7 +3100,7 @@ export const NODES: Node[] = [
       "Disruptive innovations are dismissed as toys because they underperform on established metrics while excelling on new ones.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Chris Dixon's famous essay argues that truly disruptive technologies are initially dismissed by incumbents because they look like low-quality toys. They lack the features needed by demanding mainstream users, but they improve exponentially.",
     layer1:
@@ -3122,7 +3131,7 @@ export const NODES: Node[] = [
       "Every company is becoming a software company; software firms will disrupt incumbents across every industry.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "In 2011, Marc Andreessen published an essay declaring that all traditional industries—from movies to agriculture to national defense—were being disrupted and taken over by software companies.",
     layer1:
@@ -3153,7 +3162,7 @@ export const NODES: Node[] = [
       "Mobile is the largest computing platform ever and is subsuming every other technology and industry.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "A follow-up to Andreessen's thesis, Benedict Evans presented 'Mobile is Eating the World', arguing that the smartphone was the most universally adopted technology in human history, fundamentally changing how computing is consumed.",
     layer1:
@@ -3185,7 +3194,7 @@ export const NODES: Node[] = [
       "Venture abandoned hard technology for trivial consumer apps; 'we wanted flying cars, instead we got 140 characters.'",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Peter Thiel and Founders Fund published a manifesto titled 'What Happened to the Future?', famously stating: 'We wanted flying cars, instead we got 140 characters.' It was a critique of the venture capital industry's shift away from hard technology.",
     layer1:
@@ -3216,7 +3225,7 @@ export const NODES: Node[] = [
       "Open-source and cloud infrastructure are reshaping enterprise software economics and buying.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Battery Ventures' OpenCloud report tracks the transition of enterprise software from rigid, on-premise servers to flexible, open-source cloud infrastructure, completely altering the economics of B2B software.",
     layer1:
@@ -3247,7 +3256,7 @@ export const NODES: Node[] = [
       "Disruptive innovation platforms (AI, robotics, genomics, crypto, energy storage) will compound explosively.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "ARK Invest publishes an annual 'Big Ideas' report outlining the convergence of disruptive technologies. They argue that when multiple exponential technologies (like AI, robotics, and genomics) intersect, the rate of innovation multiplies.",
     layer1:
@@ -3275,7 +3284,7 @@ export const NODES: Node[] = [
       "An annual data-dense synthesis of global internet adoption, usage, and monetization trends.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Mary Meeker's legendary annual Internet Trends Report was the definitive scorecard for the tech industry, meticulously tracking global internet adoption, mobile usage, and digital advertising shifts.",
     layer1:
@@ -3305,7 +3314,7 @@ export const NODES: Node[] = [
     thesis: "AI adoption and capex are scaling faster than any prior technology wave in history.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "A high-level overview of the accelerating trends in Artificial Intelligence, charting the exponential growth of compute, the collapsing cost of intelligence, and the rapid deployment of foundational models into the broader economy.",
     layer1:
@@ -3336,7 +3345,7 @@ export const NODES: Node[] = [
       "The Information Age will dissolve the nation-state's power and empower mobile, digitally-sovereign individuals.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Written in 1997, this prophetic book argues that the information age will destroy the nation-state. Just as the printing press destroyed the monopoly of the Church, cryptographic technology and the internet will destroy the state's monopoly on violence and taxation.",
     layer1:
@@ -3368,7 +3377,7 @@ export const NODES: Node[] = [
       "True progress is vertical (0 to 1) via monopoly-creating innovation, not horizontal copying (1 to n).",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Peter Thiel argues that true progress comes from creating something entirely new (going from 0 to 1), rather than copying existing models (going from 1 to n). The goal of a startup should be to build a monopoly, not to compete.",
     layer1:
@@ -3399,7 +3408,7 @@ export const NODES: Node[] = [
       "Multipolar traps and coordination failures ('Moloch') drive races to the bottom across civilization.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Scott Alexander's famous essay uses the ancient Canaanite god 'Moloch' as a metaphor for multipolar traps—situations where individual rational incentives inevitably lead to a globally catastrophic outcome for everyone.",
     layer1:
@@ -3430,7 +3439,7 @@ export const NODES: Node[] = [
       "A machine superintelligence could rapidly become uncontrollable and poses an existential risk to humanity.",
     related: ["Z5"],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Nick Bostrom's foundational book on AI safety. He argues that if we successfully create an Artificial General Intelligence (AGI) that surpasses human intelligence, it poses an existential risk to humanity unless its goals are perfectly aligned with our own.",
     layer1:
@@ -3461,7 +3470,7 @@ export const NODES: Node[] = [
       "We should study the causes of scientific and economic progress as a rigorous discipline to accelerate it.",
     related: ["Z6"],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Patrick Collison and Tyler Cowen argue that 'Progress'—the economic, technological, and scientific advancement of humanity—should be studied as a dedicated academic discipline, because our current rate of progress is stalling.",
     layer1:
@@ -3492,7 +3501,7 @@ export const NODES: Node[] = [
       "Future people matter morally; positively influencing the long-term future is a key moral priority (longtermism).",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "William MacAskill's manifesto for 'Longtermism'—the ethical view that positively influencing the long-term future is the key moral priority of our time. He argues we must protect the trillions of humans who have not yet been born.",
     layer1:
@@ -3523,7 +3532,7 @@ export const NODES: Node[] = [
       "Aligning superintelligent AI is unsolved and likely fatal by default; current efforts are inadequate.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Eliezer Yudkowsky's brutally pessimistic essay outlining why he believes humanity is almost certainly going to be wiped out by Artificial General Intelligence (AGI). He argues that the alignment problem is too hard and we are running out of time.",
     layer1:
@@ -3554,7 +3563,7 @@ export const NODES: Node[] = [
       "Transformative AI could make this the most pivotal century in human history, warranting outsized attention.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Holden Karnofsky's series arguing that the 21st century is the most important period in the history (and future) of humanity, primarily because we will likely invent Transformative AI (TAI).",
     layer1:
@@ -3585,7 +3594,7 @@ export const NODES: Node[] = [
       "Intelligence may emerge from scaling up compute and data. GPT-3 shows the hypothesis holds.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Gwern Branwen's essay explaining why Deep Learning took over AI. The 'Scaling Hypothesis' posits that simply throwing exponentially more compute and data at simple neural network architectures (like Transformers) will inevitably lead to Artificial General Intelligence (AGI).",
     layer1:
@@ -3616,7 +3625,7 @@ export const NODES: Node[] = [
       "AGI by ~2027 and superintelligence shortly after will trigger a trillion-dollar compute buildout and a US-China race.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Leopold Aschenbrenner's viral 2024 essay predicting that Artificial General Intelligence (AGI) is imminent (by ~2027) and will trigger an explosive national security crisis and a literal intelligence explosion.",
     layer1:
@@ -3648,7 +3657,7 @@ export const NODES: Node[] = [
       "Powerful AI could compress a century of scientific progress into a decade, curing disease and transforming society.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Dario Amodei's (CEO of Anthropic) optimistic vision for a post-AGI world. He details how powerful AI could radically accelerate biology, neuroscience, and economic development, creating a utopia if we manage the safety risks.",
     layer1:
@@ -3679,7 +3688,7 @@ export const NODES: Node[] = [
       "AI will augment human intelligence and improve nearly everything it touches, and fears of civilizational risk are misplaced.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Marc Andreessen's provocative essay arguing that AI is not a threat to humanity, but rather a profoundly empowering tool that will drive an era of unprecedented economic growth and human capability.",
     layer1:
@@ -3711,7 +3720,7 @@ export const NODES: Node[] = [
       "Technology and markets are the engines of human flourishing; stagnation and de-growth are the real enemies.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Marc Andreessen's fiery manifesto declaring that technology and free markets are the only true sources of human progress. It is a direct attack on the ideologies of stagnation, degrowth, and technological pessimism.",
     layer1:
@@ -3742,7 +3751,7 @@ export const NODES: Node[] = [
       "AI will drive the cost of goods and labor toward zero, requiring a new social contract to distribute the wealth.",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Sam Altman's 2021 essay predicting that AI will trigger a massive deflationary shock, making the cost of goods, services, and labor plummet. He proposes radical economic restructuring, like a tax on capital and land to fund a universal basic dividend.",
     layer1:
@@ -3773,7 +3782,7 @@ export const NODES: Node[] = [
       "A much smaller team paired with AI can do more and do it better, so Block cut ~40% of staff to rebuild 'intelligence-native.'",
     related: [],
     furtherReading: [],
-    tags: [],
+    tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "A conceptual piece on how a major fintech company (Block/Square) theoretically reorganizes its entire architecture to be 'intelligence-native' rather than just 'software-native.'",
     layer1:
@@ -6421,7 +6430,7 @@ export const NODES: Node[] = [
       explanation:
         "Carnegie's book struck a massive nerve during the Great Depression, selling 250,000 copies almost instantly by teaching people that soft skills and likability were the true engines of career success.",
     },
-    tags: ["Power & Persuasion"],
+    tags: ["Power & Persuasion", "Health & Body"],
     related: ["B4", "P2"],
     furtherReading: [
       {
@@ -6466,7 +6475,7 @@ export const NODES: Node[] = [
       explanation:
         "Because it strips away moralizing and explains human manipulation in ruthless, tactical terms, the book is viewed as a dangerous manual for coercion and is heavily restricted in prisons.",
     },
-    tags: ["Power & Persuasion"],
+    tags: ["Power & Persuasion", "Health & Body"],
     related: ["B4", "P3"],
     furtherReading: [
       {
@@ -6512,7 +6521,7 @@ export const NODES: Node[] = [
       explanation:
         "Harari's sweeping narrative of human history exploded in popularity largely because tech titans like Zuckerberg and Gates publicly championed its thesis on how fictions (money, religion, corporations) enable scale.",
     },
-    tags: ["Markets & Narrative", "Meaning & Self"],
+    tags: ["Markets & Narrative", "Meaning & Self", "Health & Body"],
     related: ["G2", "G3", "G5", "P4"],
     furtherReading: [
       {
@@ -6558,7 +6567,7 @@ export const NODES: Node[] = [
       explanation:
         "Despite dominating education policy for a decade, rigorous independent replication studies showed that briefly teaching students about the 'growth mindset' had almost zero impact on actual academic performance.",
     },
-    tags: ["Craft & Deep Work"],
+    tags: ["Craft & Deep Work", "Health & Body"],
     related: ["B6", "P5"],
     furtherReading: [
       {
@@ -6650,7 +6659,7 @@ export const NODES: Node[] = [
       explanation:
         "Duckworth later clarified that the media overhyped grit. In rigorous personality psychology terms, grit is just a facet of conscientiousness, and its independent effect on success is relatively modest.",
     },
-    tags: ["Craft & Deep Work"],
+    tags: ["Craft & Deep Work", "Health & Body"],
     related: ["B6", "P1"],
     furtherReading: [
       {
@@ -9423,7 +9432,7 @@ export const NODES: Node[] = [
       explanation:
         "Theoretical physics increasingly suggests that space and time are not fundamental ingredients of the universe, but emergent properties created by the quantum entanglement of underlying, non-spatial information.",
     },
-    tags: ["First-Principles Thinking"],
+    tags: ["First-Principles Thinking", "AI & the Future"],
     related: ["R6", "X6"],
     furtherReading: [
       {
@@ -9461,7 +9470,7 @@ export const NODES: Node[] = [
       explanation:
         "Unparticles are hypothetical entities that don't behave like normal matter because they lack a fixed mass or scale. Some theorists propose they could be responsible for the accelerating expansion of the universe.",
     },
-    tags: ["First-Principles Thinking"],
+    tags: ["First-Principles Thinking", "AI & the Future"],
     related: ["Z3"],
     furtherReading: [
       {
@@ -9500,7 +9509,7 @@ export const NODES: Node[] = [
       explanation:
         "Instead of relying on the mysterious 'dark energy' to explain cosmic expansion, this model suggests our universe is expanding rapidly because it is constantly colliding with and absorbing smaller 'baby' universes.",
     },
-    tags: ["First-Principles Thinking"],
+    tags: ["First-Principles Thinking", "AI & the Future"],
     related: ["R6", "Z2"],
     furtherReading: [
       {
@@ -9539,7 +9548,7 @@ export const NODES: Node[] = [
       explanation:
         "While biosignatures (like oxygen) just indicate life, technosignatures (like unnatural industrial pollutants or strange isotopic ratios in the atmosphere) would be the smoking gun for an advanced, industrialized alien civilization.",
     },
-    tags: ["First-Principles Thinking"],
+    tags: ["First-Principles Thinking", "AI & the Future"],
     related: ["R2"],
     furtherReading: [
       {
@@ -9618,7 +9627,7 @@ export const NODES: Node[] = [
       explanation:
         "Unlike early CRISPR which acted like 'genetic scissors' (causing unpredictable double-strand breaks), Prime Editing acts like a 'word processor,' allowing scientists to precisely search and replace DNA sequences with minimal off-target damage.",
     },
-    tags: ["Health & Body"],
+    tags: ["Health & Body", "AI & the Future"],
     related: ["I13"],
     furtherReading: [
       {
@@ -9813,7 +9822,7 @@ export const NODES: Node[] = [
         url: "https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html",
       },
     ],
-    tags: ["First-Principles Thinking", "Startups & Founders"],
+    tags: ["First-Principles Thinking", "Startups & Founders", "Moats & Network Effects"],
   },
   {
     id: "AA6",
@@ -10006,7 +10015,7 @@ export const NODES: Node[] = [
         url: "https://jamesclear.com/identity-based-habits",
       },
     ],
-    tags: ["Meaning & Self", "Compounding & Patience"],
+    tags: ["Meaning & Self", "Compounding & Patience", "Health & Body"],
   },
   {
     id: "AA11",
@@ -10083,7 +10092,7 @@ export const NODES: Node[] = [
         url: "https://jamesclear.com/habit-stacking",
       },
     ],
-    tags: ["Incentives & Systems", "Craft & Deep Work"],
+    tags: ["Incentives & Systems", "Craft & Deep Work", "Health & Body"],
   },
   {
     id: "AA13",
@@ -10832,7 +10841,8 @@ export const NODES: Node[] = [
     layer2:
       "Pick something you're trying to get someone to care about — a post, a pitch, a request. Which of the three tensions (survival, identity, progress) does your opening line actually hit, and which of the five levers is missing?",
     quiz: {
-      question: "According to Koe, why does understanding human nature outperform learning any single 'high-value skill'?",
+      question:
+        "According to Koe, why does understanding human nature outperform learning any single 'high-value skill'?",
       options: [
         "Because human nature never changes across cultures",
         "Because it's a meta-skill that increases the power of every other skill you learn, since humans control the money and opportunity you need",
@@ -10871,7 +10881,8 @@ export const NODES: Node[] = [
     layer2:
       "Of the five ingredients — agency, taste, persuasion, persistence, iteration — which one is your actual bottleneck right now, and what's one thing you could ship this week to test it?",
     quiz: {
-      question: "What does Koe identify as the real threat behind 'wage slavery,' more than AI replacing jobs?",
+      question:
+        "What does Koe identify as the real threat behind 'wage slavery,' more than AI replacing jobs?",
       options: [
         "Being financially dependent on one employer with no alternative skills or income sources",
         "Working more than 40 hours a week",
@@ -10949,7 +10960,8 @@ export const NODES: Node[] = [
     layer2:
       "Pick your single most mindless input source (a podcast, a scroll habit, background news) and cut it for 48 hours, replacing it with nothing. Notice what surfaces once the noise stops.",
     quiz: {
-      question: "According to Koe, what is 'true boredom' actually good for, once the withdrawal period passes?",
+      question:
+        "According to Koe, what is 'true boredom' actually good for, once the withdrawal period passes?",
       options: [
         "Nothing — boredom should always be eliminated as fast as possible",
         "It activates the brain's Default Mode Network, which is associated with insight, self-reflection, and creative connection-making",
@@ -10988,7 +11000,8 @@ export const NODES: Node[] = [
     layer2:
       "Rate yourself 1-3 (Conformist, Individualist, Synthesist) across Mind, Body, Spirit, and Vocation, honestly. Which quadrant is dragging your average down, and what would 'Dissonance' in that specific quadrant actually feel like for you?",
     quiz: {
-      question: "What is Koe's core critique of most existing self-development models (religion, business frameworks, fitness culture)?",
+      question:
+        "What is Koe's core critique of most existing self-development models (religion, business frameworks, fitness culture)?",
       options: [
         "They are all completely wrong and should be discarded",
         "They are siloed to one domain of life, so someone can be highly developed in one quadrant (like business) while badly underdeveloped in others (like relationships or body)",
@@ -11105,7 +11118,8 @@ export const NODES: Node[] = [
     layer2:
       "Look at your last unfinished project. Was the sticking point a flow mismatch (task too hard or too easy), a missing hour of Building time, or a lack of deliberate rest to let the next idea surface?",
     quiz: {
-      question: "Why does Koe insist that deliberate rest is part of productive work, not separate from it?",
+      question:
+        "Why does Koe insist that deliberate rest is part of productive work, not separate from it?",
       options: [
         "Because rest has no measurable effect on cognitive performance",
         "Because the brain's Default Mode Network, active during genuine unstructured rest, is where much of the real idea-generation and insight happens, which is then executed during focused work",
@@ -11144,7 +11158,8 @@ export const NODES: Node[] = [
     layer2:
       "Write down your 8-10 'greatest hits' ideas — the ones you've explained often enough that you could deliver them without preparation. If you can't name 8, that's the actual gap, not your speaking ability.",
     quiz: {
-      question: "According to Koe, why do the best podcast guests and speakers sound articulate on the spot?",
+      question:
+        "According to Koe, why do the best podcast guests and speakers sound articulate on the spot?",
       options: [
         "They are naturally gifted improvisers",
         "They have a small set of deeply refined 'greatest hits' ideas, already thought through many times, that they deploy rather than generating brand-new insight live",
@@ -11183,7 +11198,8 @@ export const NODES: Node[] = [
     layer2:
       "Answer just one prompt from the protocol tonight: describe an average Tuesday five years from now if nothing in your life changes. Where do you wake up, and how do you feel at 10pm?",
     quiz: {
-      question: "What does Koe mean by saying most resolutions target 'second-order' rather than 'first-order' change?",
+      question:
+        "What does Koe mean by saying most resolutions target 'second-order' rather than 'first-order' change?",
       options: [
         "Second-order changes are illegal and first-order changes are legal",
         "Second-order change means changing actions directly; first-order change means changing the underlying identity so the new actions follow naturally and don't require ongoing willpower",
@@ -11222,7 +11238,8 @@ export const NODES: Node[] = [
     layer2:
       "List three unrelated interests you've pursued without a clear 'point.' What connects them, and who is one step behind you on that exact combined path who'd pay for a shortcut?",
     quiz: {
-      question: "Why does Koe argue the Development-Based path (brand = your own goals, content = what you learn, product = helping others reach the same goal) suits people with multiple interests better than the Skill-Based path?",
+      question:
+        "Why does Koe argue the Development-Based path (brand = your own goals, content = what you learn, product = helping others reach the same goal) suits people with multiple interests better than the Skill-Based path?",
       options: [
         "Because it requires no marketing skills at all",
         "Because it doesn't force you to niche down into one marketable skill — you become your own customer avatar, so pursuing several interests together becomes the business rather than a distraction from it",
@@ -11261,7 +11278,8 @@ export const NODES: Node[] = [
     layer2:
       "Name one 'difficult' goal (not impossible, but currently beyond your skills/resources) you've quietly written off as unrealistic. What's the smallest experiment you could run this week to test whether it's actually a Seligman-style learned helplessness, rather than a real limit?",
     quiz: {
-      question: "Per Koe, what does the explosion of AI-accessible knowledge actually prove about most people's stalled progress?",
+      question:
+        "Per Koe, what does the explosion of AI-accessible knowledge actually prove about most people's stalled progress?",
       options: [
         "That AI has made human effort obsolete",
         "That access to knowledge was never the real bottleneck — most people still do nothing meaningful with nearly unlimited access, which means the missing ingredient was always agency",
