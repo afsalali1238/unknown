@@ -64,15 +64,19 @@ function OnboardingScreen() {
           {TAGS.map((t) => {
             const on = picked.includes(t);
             const count = counts[t] ?? 0;
+            const disabled = count < 5;
             return (
               <button
                 key={t}
-                onClick={() => toggle(t)}
+                onClick={() => !disabled && toggle(t)}
+                disabled={disabled}
                 className={cn(
                   "min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors",
-                  on
-                    ? "border-ink bg-ink text-paper"
-                    : "border-line bg-transparent text-ink-soft hover:border-ink/30 hover:text-ink",
+                  disabled && "opacity-30 cursor-not-allowed",
+                  !disabled && on && "border-ink bg-ink text-paper",
+                  !disabled &&
+                    !on &&
+                    "border-line bg-transparent text-ink-soft hover:border-ink/30 hover:text-ink",
                 )}
               >
                 {t}

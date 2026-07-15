@@ -1,5 +1,6 @@
 // Standard TanStack Start + Vite config (no Lovable wrapper).
 // Deploys to Vercel via preset.
+/// <reference types="vitest" />
 import { defineConfig } from "vite";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";

@@ -211,9 +211,11 @@ function Glossary() {
   const [term, setTerm] = useState("");
   const [def, setDef] = useState("");
   const [q, setQ] = useState("");
-  const filtered = (q.trim()
-    ? list.filter((g) => (g.term + " " + g.definition).toLowerCase().includes(q.toLowerCase()))
-    : list).sort((a, b) => a.term.localeCompare(b.term));
+  const filtered = (
+    q.trim()
+      ? list.filter((g) => (g.term + " " + g.definition).toLowerCase().includes(q.toLowerCase()))
+      : list
+  ).sort((a, b) => a.term.localeCompare(b.term));
   return (
     <Section title="Glossary">
       <input

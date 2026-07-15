@@ -17,27 +17,39 @@ const idbStorage: StateStorage = {
 export const LEITNER_DAYS = [0, 1, 3, 7, 16, 35];
 const DAY_MS = 86400000;
 
-export type ReviewEntry = {
-  box: number;
-  due: number;
-  lastResult?: "correct" | "incorrect";
-};
+import { z } from "zod";
 
-export type GlossaryItem = { id: string; term: string; definition: string };
+export const reviewEntrySchema = z.object({
+  box: z.number(),
+  due: z.number(),
+  lastResult: z.enum(["correct", "incorrect"]).optional(),
+});
 
-export type State = {
-  gotIt: Record<string, boolean>;
-  bookmarks: Record<string, boolean>;
-  visited: Record<string, boolean>;
-  review: Record<string, ReviewEntry>;
-  streakDays: string[];
-  lastNodeId?: string;
-  glossary: GlossaryItem[];
-  scratchpad: string;
-  interests: string[];
-  onboardingComplete: boolean;
-  ttsRate: number;
-};
+export type ReviewEntry = z.infer<typeof reviewEntrySchema>;
+
+export const glossaryItemSchema = z.object({
+  id: z.string(),
+  term: z.string(),
+  definition: z.string(),
+});
+
+export type GlossaryItem = z.infer<typeof glossaryItemSchema>;
+
+export const stateSchema = z.object({
+  gotIt: z.record(z.boolean()),
+  bookmarks: z.record(z.boolean()),
+  visited: z.record(z.boolean()),
+  review: z.record(reviewEntrySchema),
+  streakDays: z.array(z.string()),
+  lastNodeId: z.string().optional(),
+  glossary: z.array(glossaryItemSchema),
+  scratchpad: z.string(),
+  interests: z.array(z.string()),
+  onboardingComplete: z.boolean(),
+  ttsRate: z.number(),
+});
+
+export type State = z.infer<typeof stateSchema>;
 
 type Actions = {
   markGotIt: (id: string) => void;
@@ -120,7 +132,12 @@ export const useStore = create<State & Actions>()(
       importJSON: (raw) => {
         try {
           const parsed = JSON.parse(raw);
-          set({ ...initial, ...parsed });
+          const validated = stateSchema.safeParse(parsed);
+          if (!validated.success) {
+            console.error("Invalid state JSON structure:", validated.error);
+            return false;
+          }
+          set({ ...initial, ...validated.data });
           return true;
         } catch {
           return false;
