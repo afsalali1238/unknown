@@ -27,25 +27,16 @@ export type Node = {
 };
 
 export const TAGS = [
-  "Startups & Founders",
-  "Moats & Network Effects",
   "Incentives & Systems",
   "Compounding & Patience",
   "Risk & Asymmetric Bets",
   "Cognitive Biases & Models",
   "Decision-Making",
   "First-Principles Thinking",
-  "Markets & Narrative",
   "Wealth, Leverage & Judgment",
   "Craft & Deep Work",
-  "Crypto & Trust",
-  "Macro & Cycles",
-  "Fraud & Skepticism",
-  "Tech Adoption & Disruption",
-  "AI & the Future",
   "Power & Persuasion",
   "Meaning & Self",
-  "Health & Body",
 ] as const;
 export type Tag = (typeof TAGS)[number];
 
