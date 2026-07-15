@@ -68,6 +68,7 @@ function OnboardingScreen() {
               <button
                 key={t}
                 onClick={() => toggle(t)}
+                aria-pressed={on}
                 className={cn(
                   "min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors",
                   on && "border-ink bg-ink text-paper",

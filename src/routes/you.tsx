@@ -43,7 +43,7 @@ function YouScreen() {
         </div>
         <div className="mt-5 flex gap-1">
           {last14Days().map((d) => {
-            const on = state.streakDays.includes(d);
+            const on = hydrated && state.streakDays.includes(d);
             return (
               <div key={d} title={d} className={cn("h-2 flex-1", on ? "bg-accent" : "bg-line")} />
             );
@@ -53,9 +53,9 @@ function YouScreen() {
 
       <Section title="Stats">
         <div className="grid grid-cols-3 gap-3">
-          <Stat label="Learned" value={learned} />
-          <Stat label="In review" value={inReview} />
-          <Stat label="Mastered" value={mastered} />
+          <Stat label="Learned" value={learned} hydrated={hydrated} />
+          <Stat label="In review" value={inReview} hydrated={hydrated} />
+          <Stat label="Mastered" value={mastered} hydrated={hydrated} />
         </div>
       </Section>
 
@@ -63,7 +63,9 @@ function YouScreen() {
       <AudioPreferences />
 
       <Section title="Bookmarks">
-        {bookmarked.length === 0 ? (
+        {!hydrated ? (
+          <div className="h-24 animate-pulse border border-line bg-line/20" aria-hidden="true" />
+        ) : bookmarked.length === 0 ? (
           <div className="border border-line border-dashed p-6 text-center">
             <p className="font-serif text-lg text-ink">No bookmarks yet.</p>
             <p className="mt-2 text-sm text-ink-soft">
@@ -111,10 +113,14 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function Stat({ label, value }: { label: string; value: number }) {
+function Stat({ label, value, hydrated }: { label: string; value: number; hydrated: boolean }) {
   return (
     <div className="border border-line p-3">
-      <p className="font-mono text-3xl text-ink leading-none">{value}</p>
+      {hydrated ? (
+        <p className="font-mono text-3xl text-ink leading-none">{value}</p>
+      ) : (
+        <span aria-hidden="true" className="block h-7 w-8 animate-pulse rounded-sm bg-line" />
+      )}
       <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft">
         {label}
       </p>
@@ -254,12 +260,18 @@ function Glossary() {
           Add term
         </button>
       </form>
-      {filtered.length === 0 && list.length === 0 && (
+      {filtered.length === 0 && (
         <div className="border border-line border-dashed p-6 text-center mt-6">
-          <p className="font-serif text-lg text-ink">Your glossary is empty.</p>
-          <p className="mt-2 text-sm text-ink-soft">
-            Add terms above to build your own personal dictionary.
-          </p>
+          {list.length === 0 ? (
+            <>
+              <p className="font-serif text-lg text-ink">Your glossary is empty.</p>
+              <p className="mt-2 text-sm text-ink-soft">
+                Add terms above to build your own personal dictionary.
+              </p>
+            </>
+          ) : (
+            <p className="font-serif text-lg text-ink">No terms match &ldquo;{q}&rdquo;.</p>
+          )}
         </div>
       )}
       <ul className="mt-4 space-y-3">

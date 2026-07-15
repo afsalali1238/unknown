@@ -19,13 +19,6 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
     setSupported(typeof window !== "undefined" && "speechSynthesis" in window);
   }, []);
 
-  // Reset when navigating to a different node (sentenceCount changes).
-  useEffect(() => {
-    stop();
-    setIdx(0);
-    idxRef.current = 0;
-  }, [sentenceCount]);
-
   function sentenceEls(): HTMLElement[] {
     return Array.from(document.querySelectorAll<HTMLElement>("[data-sentence]")).sort(
       (a, b) => Number(a.dataset.sentence) - Number(b.dataset.sentence),
@@ -33,10 +26,15 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
   }
 
   function highlight(active: number) {
+    const reduceMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     sentenceEls().forEach((el) => {
       const i = Number(el.dataset.sentence);
       el.dataset.active = i === active ? "1" : "0";
-      if (i === active) el.scrollIntoView({ block: "center", behavior: "smooth" });
+      if (i === active) {
+        el.scrollIntoView({ block: "center", behavior: reduceMotion ? "auto" : "smooth" });
+      }
     });
   }
 

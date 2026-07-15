@@ -22,11 +22,21 @@ function ReviewScreen() {
   const streakDays = useStore((s) => s.streakDays);
   const streak = hydrated ? currentStreak(streakDays) : 0;
 
+  // Snapshot the due queue once, at the moment hydration completes - NOT
+  // reactively on every `review` change. submitQuiz() updates `review` on
+  // every answer, and a correct answer moves that id's `due` timestamp into
+  // the future, so a `[hydrated, review]` dependency would re-filter *and*
+  // re-shuffle the queue after every single answer. Combined with a plain
+  // idx++ pointer, that reshuffle-on-answer silently skipped items and
+  // ended sessions early ("You're all caught up" while items were still
+  // due, just never reached because the array kept shrinking out from
+  // under a monotonically increasing index).
   const queue = useMemo(() => {
     if (!hydrated) return [] as string[];
     const ids = dueIds(review);
     return ids.sort(() => Math.random() - 0.5);
-  }, [hydrated, review]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hydrated]);
 
   const [idx, setIdx] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);

@@ -315,7 +315,7 @@ function NodeScreen() {
           </section>
         )}
       </article>
-      <AudioBar sentenceCount={totalSents} />
+      <AudioBar key={node.id} sentenceCount={totalSents} />
     </>
   );
 }
