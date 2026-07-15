@@ -37,10 +37,12 @@ function ClusterSection({
   cluster,
   nodes,
   defaultOpen,
+  hydrated,
 }: {
   cluster: (typeof CLUSTERS)[0];
   nodes: Node[];
   defaultOpen: boolean;
+  hydrated: boolean;
 }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const sectionRef = useRef<HTMLElement>(null);
@@ -53,12 +55,22 @@ function ClusterSection({
   // already-mounted ClusterSection, and a mount-only effect would silently
   // miss it (the bug: clicking a cluster row appeared to "just navigate to
   // Explore" with no visible effect after the first tap in a session).
+  //
+  // Also gated on `hydrated`: `orderedClusters` in ExploreScreen re-sorts
+  // by interest match once the store hydrates, and because each
+  // ClusterSection is keyed by cluster.id, React keeps the SAME instance
+  // across that reorder rather than remounting it - so scrolling before
+  // hydration settles scrolls to a position that then shifts under the
+  // user as the list resorts, landing them somewhere else entirely (the
+  // section itself is open, just no longer where the viewport is). Waiting
+  // for hydrated=true means the resort has already applied in this same
+  // render pass, so the scroll lands on the final, stable position.
   useEffect(() => {
-    if (defaultOpen) {
+    if (defaultOpen && hydrated) {
       setIsOpen(true);
       sectionRef.current?.scrollIntoView({ block: "start" });
     }
-  }, [defaultOpen]);
+  }, [defaultOpen, hydrated]);
 
   return (
     <section ref={sectionRef}>
@@ -179,6 +191,7 @@ function ExploreScreen() {
               cluster={c}
               nodes={nodes}
               defaultOpen={targetCluster === c.id}
+              hydrated={hydrated}
             />
           );
         })}
