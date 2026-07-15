@@ -1,0 +1,14 @@
+# Normalize all text files to LF in the repo and on checkout, regardless of
+# the OS or editor used to check them out. Without this, Windows' git default
+# (core.autocrlf=true) rewrites every text file to CRLF on first checkout,
+# producing a repo-wide diff of pure line-ending noise with no real content
+# change (this happened once already — see git history around 2026-07-15).
+* text=auto eol=lf
+
+# Binary assets — never touch line endings on these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
