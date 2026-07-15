@@ -133,6 +133,8 @@ function Interests() {
   const interests = useStore((s) => s.interests);
   const toggleInterest = useStore((s) => s.toggleInterest);
   const redoOnboarding = useStore((s) => s.redoOnboarding);
+  const resetHints = useStore((s) => s.resetHints);
+  const [hintsReset, setHintsReset] = useState(false);
 
   return (
     <Section title="Interests">
@@ -158,15 +160,26 @@ function Interests() {
           );
         })}
       </div>
-      <button
-        onClick={() => {
-          redoOnboarding();
-          navigate({ to: "/onboarding" });
-        }}
-        className="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-accent"
-      >
-        Redo onboarding
-      </button>
+      <div className="mt-4 flex items-center gap-4">
+        <button
+          onClick={() => {
+            redoOnboarding();
+            navigate({ to: "/onboarding" });
+          }}
+          className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-accent"
+        >
+          Redo onboarding
+        </button>
+        <button
+          onClick={() => {
+            resetHints();
+            setHintsReset(true);
+          }}
+          className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-accent"
+        >
+          {hintsReset ? "Hints reset" : "Show hints again"}
+        </button>
+      </div>
     </Section>
   );
 }

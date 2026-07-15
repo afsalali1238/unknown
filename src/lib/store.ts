@@ -73,6 +73,7 @@ type Actions = {
   redoOnboarding: () => void;
   setTtsRate: (rate: number) => void;
   dismissHint: (id: string) => void;
+  resetHints: () => void;
 };
 
 const initial: State = {
@@ -162,6 +163,7 @@ export const useStore = create<State & Actions>()(
       redoOnboarding: () => set({ onboardingComplete: false }),
       setTtsRate: (rate) => set({ ttsRate: rate }),
       dismissHint: (id) => set((s) => ({ seenHints: { ...s.seenHints, [id]: true } })),
+      resetHints: () => set({ seenHints: {} }),
     }),
     {
       name: "unknown:v1",
