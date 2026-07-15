@@ -46,14 +46,19 @@ function ClusterSection({
   const sectionRef = useRef<HTMLElement>(null);
 
   // Arriving here from a Lattice Index tap on the Map screen: open the
-  // target section and bring it into view without fighting the user's
-  // scroll position on every render.
+  // target section and bring it into view. Keyed on `defaultOpen` itself
+  // (not just run-once-on-mount) because TanStack Router does not remount
+  // this route when only the `?cluster=` search param changes - a second
+  // Lattice tap while already on /explore updates `defaultOpen` on an
+  // already-mounted ClusterSection, and a mount-only effect would silently
+  // miss it (the bug: clicking a cluster row appeared to "just navigate to
+  // Explore" with no visible effect after the first tap in a session).
   useEffect(() => {
-    if (defaultOpen && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ block: "start" });
+    if (defaultOpen) {
+      setIsOpen(true);
+      sectionRef.current?.scrollIntoView({ block: "start" });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [defaultOpen]);
 
   return (
     <section ref={sectionRef}>
