@@ -50,7 +50,7 @@ function MapScreen() {
     <div className="px-5 pt-8 sm:px-8 sm:pt-10">
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/logo.svg" alt="" className="h-8 w-8" />
+          <img src="/logo.svg" alt="" className="h-8 w-8 spiral-spin" />
           <h1 className="font-serif text-3xl leading-tight tracking-tight text-ink sm:text-4xl">
             Unknown
           </h1>

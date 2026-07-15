@@ -70,7 +70,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { name: "theme-color", content: "#FAF8F3" },
+      // Matches manifest.webmanifest's theme_color - was mismatched (paper
+      // background here vs. accent everywhere else), so PWA chrome tinting
+      // differed depending on whether a browser read this tag or the
+      // manifest.
+      { name: "theme-color", content: "#B45309" },
       { title: "Unknown — A latticework of powerful ideas" },
       {
         name: "description",
@@ -88,7 +92,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      // SVG favicon for browsers that support it, ICO fallback (favicon.ico
+      // already existed as a generated asset but was never actually linked)
+      // for the ones that don't, apple-touch-icon for iOS "Add to Home
+      // Screen" (which ignores the manifest's icon list entirely).
       { rel: "icon", href: "/logo.svg", type: "image/svg+xml" },
+      { rel: "icon", href: "/favicon.ico", sizes: "48x48" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       { rel: "manifest", href: "/manifest.webmanifest" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },

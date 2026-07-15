@@ -157,8 +157,11 @@ function SpiralBackground() {
 
   return (
     <div className="fixed inset-0 z-0 flex items-center justify-center overflow-hidden pointer-events-none">
+      {/* spiral-spin now lives in styles.css as a shared @keyframes, reused by
+          the header logo too - CSS keyframes resolve by name regardless of
+          which stylesheet declares them, so the animation below still finds
+          it. spiral-pulse stays local: nothing else uses it yet. */}
       <style>{`
-        @keyframes spiral-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         @keyframes spiral-pulse { 0%, 100% { opacity: 0.9; } 50% { opacity: 0.55; } }
       `}</style>
       <svg

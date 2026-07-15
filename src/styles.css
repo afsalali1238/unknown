@@ -118,6 +118,25 @@
   border-color: var(--color-line);
 }
 
+/* One rotation grammar for the spiral mark, wherever it appears - the
+   onboarding background and the header logo both reference this same
+   keyframe rather than each declaring their own, so the motif reads as one
+   continuous idea instead of two coincidentally-similar animations. Slow
+   enough (60s/revolution) to register as "alive" without competing for
+   attention; killed entirely by the prefers-reduced-motion override above. */
+@keyframes spiral-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@utility spiral-spin {
+  animation: spiral-spin 60s linear infinite;
+}
+
 /* Paper grain — makes the "paper" token literal instead of a flat fill.
    Static SVG turbulence, tiled, no JS/canvas cost. Deliberately faint:
    this is restraint-with-texture, not a loud pattern. */
