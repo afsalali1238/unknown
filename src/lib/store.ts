@@ -47,6 +47,10 @@ export const stateSchema = z.object({
   interests: z.array(z.string()),
   onboardingComplete: z.boolean(),
   ttsRate: z.number(),
+  // Optional + defaulted: older exported backups won't have this field,
+  // and it should silently default to "nothing dismissed yet" on import
+  // rather than fail validation.
+  seenHints: z.record(z.boolean()).default({}),
 });
 
 export type State = z.infer<typeof stateSchema>;
@@ -68,6 +72,7 @@ type Actions = {
   skipOnboarding: () => void;
   redoOnboarding: () => void;
   setTtsRate: (rate: number) => void;
+  dismissHint: (id: string) => void;
 };
 
 const initial: State = {
@@ -82,6 +87,7 @@ const initial: State = {
   interests: [],
   onboardingComplete: false,
   ttsRate: 1,
+  seenHints: {},
 };
 
 function todayISO() {
@@ -155,6 +161,7 @@ export const useStore = create<State & Actions>()(
       skipOnboarding: () => set({ onboardingComplete: true }),
       redoOnboarding: () => set({ onboardingComplete: false }),
       setTtsRate: (rate) => set({ ttsRate: rate }),
+      dismissHint: (id) => set((s) => ({ seenHints: { ...s.seenHints, [id]: true } })),
     }),
     {
       name: "unknown:v1",

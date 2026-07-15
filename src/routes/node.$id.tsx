@@ -7,6 +7,7 @@ import { Quiz } from "@/components/Quiz";
 import { RecallReveal } from "@/components/RecallReveal";
 import { RelatedCard } from "@/components/RelatedCard";
 import { AudioBar } from "@/components/AudioBar";
+import { FirstTimeHint } from "@/components/FirstTimeHint";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 
@@ -103,6 +104,7 @@ function NodeScreen() {
   const gotItMap = useStore((s) => s.gotIt);
   const visitedMap = useStore((s) => s.visited);
   const interests = useStore((s) => s.interests);
+  const dismissHint = useStore((s) => s.dismissHint);
 
   const [showL1, setShowL1] = useState(false);
   const [showL2, setShowL2] = useState(false);
@@ -175,7 +177,21 @@ function NodeScreen() {
           </div>
         </section>
 
-        <LayerReveal label="Show me how it works" onReveal={() => setShowL1(true)}>
+        {!showL1 && (
+          <FirstTimeHint id="hint-layers" className="mt-8">
+            Ideas here are taught in layers, not dumped at once. What's above is the plain-English
+            version — the next layer explains why it works, the one after is for applying it. Each
+            unlocks only once you ask for it.
+          </FirstTimeHint>
+        )}
+
+        <LayerReveal
+          label="Show me how it works"
+          onReveal={() => {
+            setShowL1(true);
+            dismissHint("hint-layers");
+          }}
+        >
           <section>
             <MicroLabel>Layer 1 — The mechanism</MicroLabel>
             <div className="mt-3">

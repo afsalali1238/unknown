@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Node } from "@/data/nodes";
 import { useStore } from "@/lib/store";
 import { MicroLabel } from "./MicroLabel";
+import { FirstTimeHint } from "./FirstTimeHint";
 
 export function Quiz({ node }: { node: Node }) {
   const submitQuiz = useStore((s) => s.submitQuiz);
@@ -54,6 +55,13 @@ export function Quiz({ node }: { node: Node }) {
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{node.quiz.explanation}</p>
           )}
         </div>
+      )}
+      {picked !== null && (
+        <FirstTimeHint id="hint-quiz-review" className="mt-4">
+          That answer just moved this node in your Review queue — correct pushes it further out on a
+          schedule, wrong resets it to the front. It resurfaces in the Review tab when it's due, not
+          before.
+        </FirstTimeHint>
       )}
     </section>
   );

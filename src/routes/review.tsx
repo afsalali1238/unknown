@@ -4,6 +4,7 @@ import { NODE_BY_ID } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
 import { useStore, dueIds, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
+import { FirstTimeHint } from "@/components/FirstTimeHint";
 
 export const Route = createFileRoute("/review")({
   head: () => ({
@@ -82,6 +83,14 @@ function ReviewScreen() {
         </MicroLabel>
         <MicroLabel>Streak · {streak}d</MicroLabel>
       </div>
+
+      {idx === 0 && (
+        <FirstTimeHint id="hint-review-leitner" className="mt-6">
+          This queue is only what's due today — answering elsewhere doesn't fill it up, a schedule
+          does. Get one right and it moves further out before resurfacing; get it wrong and it comes
+          right back to the front. Skipping a day doesn't lose progress, items just wait.
+        </FirstTimeHint>
+      )}
 
       <p className="mt-8 font-serif text-2xl leading-snug text-ink">{node.quiz.question}</p>
 
