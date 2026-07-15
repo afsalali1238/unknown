@@ -65,9 +65,17 @@ export function LatticeIndex({
 
           return (
             <li key={cluster.id}>
+              {/* resetScroll={false}: the router's own scroll restoration
+                  (enabled in router.tsx) resets scroll to top on every
+                  navigation by default, which fires after commit and wins
+                  the race against ClusterSection's deep-link scrollIntoView
+                  - the target section opened but the viewport stayed at the
+                  top. Turning it off here leaves scroll entirely to that
+                  effect for this specific navigation. */}
               <Link
                 to="/explore"
                 search={{ cluster: cluster.id }}
+                resetScroll={false}
                 className="group flex min-h-11 items-stretch gap-3 outline-none"
                 aria-label={`${cluster.title}, ${total} ideas, ${visitedCount} opened`}
               >
