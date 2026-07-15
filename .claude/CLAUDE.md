@@ -12,17 +12,17 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
 
 - React 19 + Vite 8, TanStack Router + TanStack Start (SSR), Tailwind CSS v4, Zustand, Radix UI +
   shadcn/ui (`style: new-york`, `baseColor: slate`, no prefix — see `components.json`).
-- Package manager is **Bun** (`bun.lock` is canonical; ignore `package-lock.json`). `bunfig.toml`
+- Package manager is **npm** (`package-lock.json` is canonical; ignore `bun.lock`). `bunfig.toml`
   enforces a 24h supply-chain guard on new package versions — don't add to
   `minimumReleaseAgeExcludes` without asking first.
 - Deploys to Vercel via nitro's `vercel` preset. `api/index.js` wraps `dist/server/server.js` as
   the serverless handler; `vercel.json` rewrites everything through it.
-- Scripts: `bun run dev`, `bun run build`, `bun run build:dev` (dev mode build), `bun run preview`,
-  `bun run lint` (eslint), `bun run format` (prettier --write .). **No test script exists.**
+- Scripts: `npm run dev`, `npm run build`, `npm run build:dev` (dev mode build), `npm run preview`,
+  `npm run lint` (eslint), `npm run format` (prettier --write .). **Tests run via `vitest` (`npm run test`).**
 
 ⚠️ `vite.config.ts` was migrated off `@lovable.dev/vite-tanstack-config` without a verified
 `npm install` in the migration environment — it hasn't been confirmed against a real
-`bun run build`. If a build errors, check `docs/VERCEL-MIGRATION-PROMPT.md` first.
+`npm run build`. If a build errors, check `docs/VERCEL-MIGRATION-PROMPT.md` first.
 
 ## Where things live
 
@@ -62,16 +62,16 @@ Offline caching is silent, no download-manager UI.
   so don't rely on the compiler to catch unused vars — eslint's `@typescript-eslint/no-unused-vars`
   is also off. Path alias `@/*` → `./src/*`.
 - Prettier: 100 print width, double quotes, semicolons, trailing commas everywhere. Run
-  `bun run format` rather than hand-formatting.
+  `npm run format` rather than hand-formatting.
 - ESLint blocks importing `server-only` — this is TanStack Start, not Next.js; use `*.server.ts`
   naming or `@tanstack/react-start/server-only` instead.
 - No `.env` file currently exists in this repo; if one is added, never read or print its contents.
 
 ## Operational safety
 
-- `git push` is gated on `bun run lint` and `bun run build` passing (see
+- `git push` is gated on `npm run lint` and `npm run build` passing (see
   `.claude/hooks/pre-push-check.sh`). If either fails, fix it — don't bypass with `--no-verify`
   or force flags without asking.
 - Reads of `.env`, `.env.*`, and anything under `**/secrets/**` are blocked at the tool level.
 - `dist/`, `.output/`, `.vinxi/`, `.tanstack/`, and `node_modules/` are build/tooling output —
-  never hand-edit them; regenerate via `bun run build` / `bun run dev` instead.
+  never hand-edit them; regenerate via `npm run build` / `npm run dev` instead.
