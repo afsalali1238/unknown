@@ -1,0 +1,902 @@
+[
+  {
+    "title": "The Lean Startup / Minimum Viable Product",
+    "question": "What is the actual purpose of a Minimum Viable Product, according to Lean Startup thinking?",
+    "correctOption": "To run the fastest, cheapest valid experiment that tests a core business assumption"
+  },
+  {
+    "title": "How to Get Startup Ideas",
+    "question": "According to Paul Graham, why do the best startup ideas often sound bad at first?",
+    "correctOption": "Because the market for them doesn't obviously exist yet — they're noticed early, before demand is visible to everyone"
+  },
+  {
+    "title": "1,000 True Fans",
+    "question": "What does Kevin Kelly's '1,000 True Fans' model actually depend on to work economically?",
+    "correctOption": "Low-cost direct distribution and payment, so serving a small, deeply loyal audience becomes profitable on its own"
+  },
+  {
+    "title": "Competition Is for Losers",
+    "question": "Why does Peter Thiel argue that intense competition is actually bad for a company's long-term prospects?",
+    "correctOption": "Because it drives margins toward zero, leaving little capital to reinvest in the long term"
+  },
+  {
+    "title": "All Markets Are Not Created Equal (Note to Self on TAM)",
+    "question": "What is Bill Gurley's central warning about using TAM (Total Addressable Market) to judge a startup?",
+    "correctOption": "A large TAM number alone says little; the market's underlying structure (frequency, consolidation tendency, supply/demand cost) determines whether it can produce a durable, valuable winner"
+  },
+  {
+    "title": "SaaS Metrics 2.0",
+    "question": "Why is customer churn especially dangerous in a SaaS/subscription business, more than in a one-time-purchase business?",
+    "correctOption": "Because revenue arrives gradually over time, so if a customer leaves before you've earned back what it cost to acquire them, that cost is never recovered"
+  },
+  {
+    "title": "Blitzscaling",
+    "question": "Under what condition does 'blitzscaling' — deliberately sacrificing efficiency for speed — actually make strategic sense?",
+    "correctOption": "In winner-take-most markets, where being first lets you build a compounding, durable advantage (network effects, data, brand) that's hard for slower competitors to overcome"
+  },
+  {
+    "title": "Aggregation Theory",
+    "question": "According to Ben Thompson's Aggregation Theory, why did the internet shift power from suppliers to platforms that don't even own the supply?",
+    "correctOption": "Because distribution became nearly free online, so the scarce resource shifted to user attention/relationship, which aggregators capture and then dictate terms to suppliers"
+  },
+  {
+    "title": "Invisible Asymptotes",
+    "question": "What does Eugene Wei mean by an 'invisible asymptote' in a growing business?",
+    "correctOption": "A structural, mechanical limit built into how the business currently works, which stays hidden in the growth curve until the business actually hits it"
+  },
+  {
+    "title": "The New Moats",
+    "question": "Why does Jerry Chen argue that a 'system of intelligence' is a stronger moat than older forms of competitive advantage?",
+    "correctOption": "Because it compounds over time through a data flywheel — usage generates data, data improves the product, a better product attracts more usage — which a copycat with no usage history can't quickly replicate"
+  },
+  {
+    "title": "The Rise of the Solo Capitalists",
+    "question": "What structural advantage does a 'solo capitalist' typically have over a traditional multi-partner VC firm when competing for a deal?",
+    "correctOption": "They can decide and commit quickly since there's no partner committee to convince, and founders get a direct relationship with the actual decision-maker"
+  },
+  {
+    "title": "Fairchild Semiconductor Founding",
+    "question": "What made the Fairchild deal structurally different from a normal stock purchase, and why did that matter?",
+    "correctOption": "Fairchild Camera and Instrument got an option to buy the entire new company later, rather than just purchasing shares upfront — letting founders keep control while proving the business worked"
+  },
+  {
+    "title": "A Proposal to American Research and Development",
+    "question": "Why did Olsen and Anderson pitch selling circuit modules before pitching interactive computers?",
+    "correctOption": "The computer business had a reputation as an investor money-loser at the time, so a smaller proven product de-risked the pitch and built credibility toward the bigger ambition"
+  },
+  {
+    "title": "YouTube Investment Memo",
+    "question": "What did Roelof Botha's YouTube investment memo prioritize as evidence the company was worth backing, despite having little revenue?",
+    "correctOption": "The explosive volume and growth rate of user-generated video uploads, as a leading indicator of becoming the default place for online video"
+  },
+  {
+    "title": "Facebook (thefacebook) Media Kit / Early Pitch",
+    "question": "What was the core argument of Facebook's 2004 media kit pitch to advertisers?",
+    "correctOption": "That dense, repeated engagement from a narrow, targetable audience was more valuable to advertisers than a larger but less engaged audience"
+  },
+  {
+    "title": "UberCab Pitch Deck",
+    "question": "How did Kalanick and Camp initially position UberCab in their 2008 pitch deck?",
+    "correctOption": "As a premium, invite-only black-car service comparable to NetJets, aimed at professionals rather than the general public"
+  },
+  {
+    "title": "Airbnb Series A Pitch Deck",
+    "question": "Why did the bootstrapped 'cereal box' story matter to Airbnb's fundraising, beyond being a memorable anecdote?",
+    "correctOption": "It demonstrated the founders' resourcefulness and execution under extreme constraint, which mattered for trust during a financial crisis when the core idea itself looked unproven"
+  },
+  {
+    "title": "The Secret Tesla Motors Master Plan (just between you and me)",
+    "question": "Why did Tesla's master plan start with an expensive, low-volume sports car instead of an affordable mass-market car?",
+    "correctOption": "The expensive early car funded and proved out the technology, manufacturing capability, and credibility needed to eventually build cheaper, higher-volume cars"
+  },
+  {
+    "title": "The Pricing of Options and Corporate Liabilities",
+    "question": "Why doesn't the Black-Scholes formula require knowing an investor's risk tolerance or the stock's expected future return?",
+    "correctOption": "Because it prices the option via a riskless hedge whose return must equal the risk-free rate regardless of investor preferences — only volatility, not expected return, matters"
+  },
+  {
+    "title": "A Mathematical Theory of Communication",
+    "question": "What was radical about Shannon's approach to defining 'information'?",
+    "correctOption": "He measured information purely by how surprising/unpredictable it was (its entropy), deliberately ignoring the actual meaning or content of the message"
+  },
+  {
+    "title": "Information Management: A Proposal",
+    "question": "Why did Berners-Lee's hypertext system deliberately avoid having a central index of all links?",
+    "correctOption": "A central index would have required someone's permission or registration for every link, creating a bottleneck; without one, the system could scale without a single point of failure, at the cost of links sometimes breaking"
+  },
+  {
+    "title": "The Anatomy of a Large-Scale Hypertextual Web Search Engine",
+    "question": "Why is PageRank harder to manipulate than simple keyword-frequency ranking?",
+    "correctOption": "Because a page's rank depends on being linked to by other already-trusted pages, not just on what words appear on the page itself — which is much harder to fake than stuffing keywords"
+  },
+  {
+    "title": "The Internet Tidal Wave",
+    "question": "How did Microsoft respond to the threat it identified from Netscape in the Internet Tidal Wave memo?",
+    "correctOption": "It bundled a free web browser (Internet Explorer) into Windows, using its OS monopoly to undercut Netscape's paid browser business model"
+  },
+  {
+    "title": "Increasing Returns and the New World of Business",
+    "question": "According to W. Brian Arthur, why do knowledge-based technology markets tend toward winner-take-all outcomes?",
+    "correctOption": "Because high upfront costs combined with near-zero reproduction costs, network effects, and switching costs create a feedback loop where an early lead compounds into a further lead, unlike traditional industries with diminishing returns"
+  },
+  {
+    "title": "Software 2.0",
+    "question": "According to Karpathy, what makes up the 'source code' of a Software 2.0 system?",
+    "correctOption": "The neural network's architecture and the dataset used to train it — since the actual logic is encoded as learned numerical weights, not hand-written instructions"
+  },
+  {
+    "title": "Efficient Estimation of Word Representations (word2vec)",
+    "question": "How does word2vec end up capturing semantic relationships between words, if it's only trained to predict nearby words?",
+    "correctOption": "The prediction task forces the network to build an internal vector representation where words used in similar contexts land near each other, and consistent relationships emerge as consistent directions in that space"
+  },
+  {
+    "title": "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)",
+    "question": "What combination of techniques allowed AlexNet to train a deep network fast enough to be practical in 2012?",
+    "correctOption": "The ReLU activation function (faster training than sigmoid), dropout (reduces overfitting), and splitting the model across two GPUs to handle its 60 million parameters"
+  },
+  {
+    "title": "Deep Residual Learning for Image Recognition (ResNet)",
+    "question": "What problem did ResNet's 'skip connections' specifically solve?",
+    "correctOption": "They let the training signal (gradient) bypass layers when needed, solving the vanishing gradient problem that made very deep networks degrade in accuracy rather than improve"
+  },
+  {
+    "title": "Attention Is All You Need",
+    "question": "What made Transformers more practical to train at massive scale than the recurrent models that came before them?",
+    "correctOption": "Self-attention lets the model process all words in a sequence simultaneously rather than one at a time, which parallelizes far better on GPU hardware than sequential recurrent processing"
+  },
+  {
+    "title": "Language Models are Few-Shot Learners (GPT-3)",
+    "question": "What is 'in-context learning,' as demonstrated by GPT-3?",
+    "correctOption": "Performing a new task correctly just from a description or a few examples shown in the prompt itself, without any weight updates or retraining"
+  },
+  {
+    "title": "Scaling Laws for Neural Language Models",
+    "question": "What specific guidance from the original Scaling Laws paper was later overturned by DeepMind's Chinchilla paper?",
+    "correctOption": "The recommendation that, for a fixed compute budget, model size should be scaled up much faster than training data — Chinchilla showed the two should scale together"
+  },
+  {
+    "title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+    "question": "What did the Chinchilla paper prove was wrong with prior industry practice in training large language models?",
+    "correctOption": "Models were being built too large relative to how much training data they were given — a smaller model trained on proportionally more data outperformed a much larger, undertrained one"
+  },
+  {
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability via RL",
+    "question": "What training approach did DeepSeek-R1 rely on primarily to teach the model to reason, rather than mainly using human-labeled reasoning examples?",
+    "correctOption": "Reinforcement learning with rule-based rewards (correct answers, consistent language) building on a small amount of stabilizing 'cold-start' data"
+  },
+  {
+    "title": "The Bitter Lesson",
+    "question": "According to Rich Sutton's 'Bitter Lesson,' why do general, compute-heavy methods tend to eventually beat human-engineered domain expertise in AI?",
+    "correctOption": "Because hand-engineered knowledge imposes a hard ceiling on performance, while general methods (search and learning) can keep improving indefinitely as computation gets cheaper over time"
+  },
+  {
+    "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+    "question": "How does Bitcoin prevent double-spending without a central trusted authority like a bank?",
+    "correctOption": "Proof-of-work makes rewriting transaction history computationally expensive — an attacker would need to out-compute the majority of the network's processing power to build a longer alternate chain"
+  },
+  {
+    "title": "The Bullish Case for Bitcoin",
+    "question": "According to Boyapati's framework, why is it backwards to judge Bitcoin as a failure for not yet being widely used to buy everyday goods?",
+    "correctOption": "Because becoming a widely-used medium of exchange historically requires first becoming a trusted store of value — Bitcoin was still in that earlier stage, and skipping ahead isn't how monetization has historically worked"
+  },
+  {
+    "title": "Ethereum Whitepaper: A Next-Generation Smart Contract Platform",
+    "question": "Why does Ethereum require paying 'gas' fees for every computation, unlike Bitcoin's simpler transaction model?",
+    "correctOption": "Because Ethereum allows unrestricted, Turing-complete computation, and gas fees (scaling with computational complexity) prevent infinite loops or spam from freezing the shared network"
+  },
+  {
+    "title": "Fat Protocols",
+    "question": "Why does Joel Monegro argue that value in crypto accrues to the protocol layer rather than the application layer, unlike the internet?",
+    "correctOption": "Because blockchain data is shared and open rather than proprietary, weakening individual applications' moats, while the base protocol token captures value as the whole ecosystem built on it grows"
+  },
+  {
+    "title": "Uniswap Whitepaper (Automated Market Maker)",
+    "question": "How does Uniswap determine the price of a trade, given that there's no order book matching buyers and sellers?",
+    "correctOption": "A smart contract holds a pool of two tokens and enforces that their product stays constant (x*y=k); trading against the pool shifts the ratio, and price is derived automatically from that formula"
+  },
+  {
+    "title": "Solana: A New Architecture for a High Performance Blockchain",
+    "question": "What problem does Solana's Proof of History primarily solve?",
+    "correctOption": "It creates a verifiable, decentralized way to prove the order and timing of events, cutting the communication overhead nodes would otherwise need to agree on ordering"
+  },
+  {
+    "title": "Why Decentralization Matters",
+    "question": "According to Chris Dixon, why do centralized platforms tend to become adversarial toward the developers and users who helped them grow?",
+    "correctOption": "Because once a platform dominates its market, its incentives shift from courting an ecosystem to extracting value from it, and there's no structural mechanism stopping that shift the way there is with decentralized protocols"
+  },
+  {
+    "title": "IPO 2.0 / SPAC Investor Letters",
+    "question": "What specific advantage did Palihapitiya claim SPACs had over traditional IPOs?",
+    "correctOption": "SPACs let companies share forward-looking financial projections (restricted in traditional IPOs) and bypass the underwriter-controlled roadshow, giving retail investors earlier and more direct access"
+  },
+  {
+    "title": "Inversion",
+    "question": "You want to build a lasting friendship. Inversion suggests asking:",
+    "correctOption": "What are ten ways to guarantee this friendship dies?"
+  },
+  {
+    "title": "Second-Order Thinking",
+    "question": "A CEO cuts prices to gain market share. First-order effect: sales rise. What's the classic missed second-order effect?",
+    "correctOption": "Competitors match, margins fall for everyone, and customers now expect the lower price."
+  },
+  {
+    "title": "Circle of Competence",
+    "question": "What does Buffett say matters most about the circle of competence?",
+    "correctOption": "Knowing exactly where it ends."
+  },
+  {
+    "title": "Hanlon's Razor",
+    "question": "A coworker leaves you out of a meeting invite. Hanlon's Razor prompts you to first suspect:",
+    "correctOption": "They forgot or didn't realize you needed to be included."
+  },
+  {
+    "title": "Compounding",
+    "question": "Why do most people underestimate compounding?",
+    "correctOption": "The early years look linear and boring, so people quit before the curve bends."
+  },
+  {
+    "title": "Lindy Effect",
+    "question": "Applying Lindy to technology choice, which is a safer long-term bet, all else equal?",
+    "correctOption": "SQL, which has been production-critical for 50 years."
+  },
+  {
+    "title": "Path Dependence",
+    "question": "Which is the best example of path dependence?",
+    "correctOption": "Choosing a programming language early in a codebase and being unable to reasonably switch a decade later."
+  },
+  {
+    "title": "Optionality",
+    "question": "Why is optionality often undervalued?",
+    "correctOption": "Because people prefer certainty and pay too little for the right to act later in a volatile world."
+  },
+  {
+    "title": "Expected Value",
+    "question": "A bet has 90% chance of losing $10 and 10% chance of winning $200. What's the EV?",
+    "correctOption": "+$11"
+  },
+  {
+    "title": "Pre-Mortem",
+    "question": "Why does a pre-mortem surface more failure modes than a normal risk review?",
+    "correctOption": "Imagining the failure has already occurred lets people describe causes without seeming disloyal or negative."
+  },
+  {
+    "title": "Base Rates",
+    "question": "A founder says 'our startup will succeed because our team is unusually talented.' What is the base-rates critique?",
+    "correctOption": "Most founders think their team is unusually talented, and most startups still fail. Start with the outside view and adjust modestly."
+  },
+  {
+    "title": "Regret Minimization",
+    "question": "Regret minimization mostly protects against which asymmetry?",
+    "correctOption": "That short-term risks feel large while long-term inaction quietly compounds into the biggest regret."
+  },
+  {
+    "title": "Goodhart's Law",
+    "question": "A support team is measured only on 'tickets closed per day.' What's the classic Goodhart failure?",
+    "correctOption": "Agents close tickets quickly without solving problems, hurting customers but hitting the number."
+  },
+  {
+    "title": "Chesterton's Fence",
+    "question": "A new engineer wants to delete a mysterious cron job no one documents. Chesterton's Fence says:",
+    "correctOption": "Find out why it exists first; the surprising cost of removal is often invisible."
+  },
+  {
+    "title": "Principal–Agent Problem",
+    "question": "Why do publicly traded companies use stock-based executive compensation?",
+    "correctOption": "To align the agent's incentives with the principal's long-term outcome."
+  },
+  {
+    "title": "Cobra Effect",
+    "question": "A city pays residents per pound of trash collected. What's the likely cobra outcome?",
+    "correctOption": "People bring in trash from neighboring cities to collect payment."
+  },
+  {
+    "title": "Deep Work",
+    "question": "Deep work is best trained by:",
+    "correctOption": "Scheduling protected time and building tolerance for the discomfort of undistracted work."
+  },
+  {
+    "title": "Taste",
+    "question": "According to PG, the fastest way to develop taste is to:",
+    "correctOption": "Consume the best work in your field and reverse-engineer why it works."
+  },
+  {
+    "title": "The Bus Ticket Theory of Genius",
+    "question": "The bus ticket theory says that great work often depends on:",
+    "correctOption": "A disinterested obsession — fascination with a topic pursued for its own sake, sustaining you through unrewarded stretches."
+  },
+  {
+    "title": "Strong Opinions, Weakly Held",
+    "question": "Why does 'strong opinions, weakly held' beat hedging?",
+    "correctOption": "Strong opinions make sharp predictions that reality can falsify — vague opinions drift and never update."
+  },
+  {
+    "title": "Mental Models: The Best Way to Make Intelligent Decisions",
+    "question": "Whose speech is credited as the direct origin of Farnam Street's entire 'latticework of mental models' framework?",
+    "correctOption": "Charlie Munger's 1994 USC Business School speech"
+  },
+  {
+    "title": "The Feynman Technique: The Ultimate Guide to Learning Anything Faster",
+    "question": "What are the four steps of the Feynman Technique, in order?",
+    "correctOption": "Select a concept and map your knowledge; teach it to a 12-year-old; review and refine; test and archive"
+  },
+  {
+    "title": "Proximate vs Root Causes: Keep Digging to Find the Answer",
+    "question": "In the 1987 King's Cross fire investigation, what was identified as the actual root cause, as distinct from the proximate cause (a dropped match)?",
+    "correctOption": "Untrained staff with no knowledge of how to evacuate people or fight the fire"
+  },
+  {
+    "title": "The Butterfly Effect: How Tiny Actions Unleash Global Consequences",
+    "question": "What discovery led Edward Lorenz to found chaos theory in the 1960s?",
+    "correctOption": "Entering a weather-model starting value as 0.506 instead of the full 0.506127 produced a wildly different forecast"
+  },
+  {
+    "title": "Turning Pro: The Difference Between Amateurs and Professionals",
+    "question": "According to this piece, what do professionals focus on instead of 'being right'?",
+    "correctOption": "Getting the best outcome"
+  },
+  {
+    "title": "Avoiding Stupidity is Easier than Seeking Brilliance",
+    "question": "In Simon Ramo's distinction, what percentage of points are won (not lost) in professional tennis, versus amateur tennis?",
+    "correctOption": "About 80% of points are won in professional tennis; about 80% are lost (via errors) in amateur tennis"
+  },
+  {
+    "title": "All Models Are Wrong … But Some Are Useful",
+    "question": "Who coined the phrase 'all models are wrong, but some are useful,' cited as the origin of this piece's title?",
+    "correctOption": "George Box, in a 1976 paper"
+  },
+  {
+    "title": "Tit For Tat",
+    "question": "Who is credited with codifying 'tit for tat' as a formal game-theory strategy?",
+    "correctOption": "Anatol Rapoport"
+  },
+  {
+    "title": "Prisoner's Dilemma: What Game Are You Playing?",
+    "question": "What changes the incentive structure of the Prisoner's Dilemma from favoring defection to making cooperation more likely?",
+    "correctOption": "Repeating (iterating) the game an unknown or effectively infinite number of times"
+  },
+  {
+    "title": "The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions",
+    "question": "What does the 'Orient' stage of the OODA Loop specifically involve, according to Boyd?",
+    "correctOption": "Stripping away cultural, genetic, and cognitive biases to see the situation as it truly is"
+  },
+  {
+    "title": "Predicting the Future with Bayes' Theorem",
+    "question": "In the mammogram example used in this piece, why can a test that's 75% accurate still produce mostly false positives in absolute numbers?",
+    "correctOption": "Because the underlying disease rate (the prior/base rate) is very low, so false positives from the much larger healthy population swamp true positives"
+  },
+  {
+    "title": "The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes",
+    "question": "What distinguishes a 'fat-tailed' distribution (like wealth or market crashes) from a normal bell-curve distribution (like human height)?",
+    "correctOption": "Fat-tailed distributions have no natural cap on extreme outliers, making rare extreme events far more likely than bell-curve intuition suggests"
+  },
+  {
+    "title": "How to Use Occam's Razor Without Getting Cut",
+    "question": "What is the classic medical-training version of Occam's Razor mentioned in this piece?",
+    "correctOption": "When you hear hoofbeats, think horses, not zebras"
+  },
+  {
+    "title": "Deductive vs Inductive Reasoning",
+    "question": "According to this article, what kind of reasoning is Sherlock Holmes actually using in his famous 'deductions,' despite the popular label?",
+    "correctOption": "Inductive reasoning — probable inference from observed clues, not certain deduction"
+  },
+  {
+    "title": "Survivorship Bias: The Tale of Forgotten Failures",
+    "question": "What was Abraham Wald's key insight about WWII bomber planes and where to add armor?",
+    "correctOption": "Reinforce the areas showing little to no damage on returning planes, since hits there likely caused planes to never return at all"
+  },
+  {
+    "title": "What Sharks Can Teach Us About Survivorship Bias",
+    "question": "Why does this piece argue oceanic whitetip sharks may be more dangerous than their attack statistics suggest?",
+    "correctOption": "Because their attacks happen in the open ocean, in isolated situations with fewer potential survivors and witnesses to report them"
+  },
+  {
+    "title": "Illusion of Transparency: Your Poker Face is Better Than You Think",
+    "question": "In the lying-detection study referenced in this piece, how often were participants who lied actually caught, versus how often they expected to be caught?",
+    "correctOption": "They expected to be caught about half the time but were actually only detected about a quarter of the time — a rate low enough to be chance"
+  },
+  {
+    "title": "The Disproportional Power of Anecdotes",
+    "question": "What does the 'WEIRD' critique (Henrich, Heine, Norenzayan) argue about a large share of psychology research?",
+    "correctOption": "That findings from Western, Educated, Industrialized, Rich, Democratic subjects are generalized to all humans despite being one of the least representative populations available"
+  },
+  {
+    "title": "Thought Experiment: How Einstein Solved Difficult Problems",
+    "question": "What thought experiment is credited with leading Einstein toward the special theory of relativity?",
+    "correctOption": "Imagining what he would observe if he could travel alongside a beam of light"
+  },
+  {
+    "title": "How Julia Child Used First Principles Thinking",
+    "question": "What specific event is credited with giving Julia Child her breakthrough understanding of first-principles cooking?",
+    "correctOption": "Enrolling at the Cordon Bleu cooking school in Paris in 1949, where she broke every dish down into its smallest steps"
+  },
+  {
+    "title": "Reciprocity: Getting What You Give",
+    "question": "What historical event does this piece use as an example of reciprocity based on mutual self-interest between two ancient powers?",
+    "correctOption": "The 1259 BCE 'Eternal Treaty' between Egypt's Ramesses and the Hittite king Hattusili"
+  },
+  {
+    "title": "Winner Takes it All: How Markets Favor the Few at the Expense of the Many",
+    "question": "According to Marc Andreessen's 2013 comment cited in this piece, what share of profits does the #1 player typically capture in a technology market, versus the #2 player?",
+    "correctOption": "About 90% for the #1 player and about 10% for the #2 player"
+  },
+  {
+    "title": "Mental Models for Career Changes",
+    "question": "What is exaptation, as used in this piece's career-change framework?",
+    "correctOption": "A trait or skill that evolved or was built for one purpose but gets repurposed for a completely different, unrelated use"
+  },
+  {
+    "title": "5 Mental Models to Remove (Some of) the Confusion from Parenting",
+    "question": "What does 'algebraic equivalence,' as used in this parenting piece, help explain?",
+    "correctOption": "That two different things (like different kinds of attention to different children) can be unequal in form but equal in value, just as different values of x and y can equally satisfy x+y=5"
+  },
+  {
+    "title": "The Surprising Power of the Long Game",
+    "question": "According to this piece, what characterizes the 'short game' as opposed to the 'long game'?",
+    "correctOption": "The short game offers visible, immediate benefits but compounds into larger costs over time"
+  },
+  {
+    "title": "Descriptions Aren't Prescriptions",
+    "question": "What is the 'grammar-book effect,' as described by David Graeber and cited in this piece?",
+    "correctOption": "Once a description of how people currently speak is written down and taught in schools, people start treating it as a fixed prescription for how they must speak, even as the living language keeps evolving"
+  },
+  {
+    "title": "Opportunity Cost",
+    "question": "A company proudly reports $100,000 profit from a project. Its capital could have earned $150,000 invested elsewhere. What does opportunity cost say?",
+    "correctOption": "Judged against its real alternative, the project actually cost the company $50,000."
+  },
+  {
+    "title": "Asymmetric Payoffs",
+    "question": "A venture firm loses money on 9 of 10 investments but the 10th returns 50x. Why does the firm still come out far ahead?",
+    "correctOption": "Because the downside per bet was capped while the upside on the winner was effectively uncapped, so one win overwhelms nine capped losses."
+  },
+  {
+    "title": "The Myth of Sisyphus",
+    "question": "What is 'the absurd' in Camus's framework?",
+    "correctOption": "The collision between the human need for meaning and the universe's silent refusal to provide it"
+  },
+  {
+    "title": "The Ego Tunnel",
+    "question": "What experiment does Metzinger use to show that even bodily 'ownership' is a constructed model rather than a fact?",
+    "correctOption": "The rubber-hand illusion, where subjects come to feel a fake hand is their own"
+  },
+  {
+    "title": "Descartes' Error & How Emotions Are Made",
+    "question": "What did Damasio observe in patients with damage to the ventromedial prefrontal cortex?",
+    "correctOption": "Their logic and IQ remained intact, but they lost the ability to make even simple decisions"
+  },
+  {
+    "title": "The Selfish Gene",
+    "question": "What term, coined in this book's final chapter, went on to become one of the most common words on the internet?",
+    "correctOption": "Meme"
+  },
+  {
+    "title": "Man's Search for Meaning",
+    "question": "How long did it take Frankl to write the first draft of this book after his liberation from the camps?",
+    "correctOption": "Nine days"
+  },
+  {
+    "title": "The Case Against Reality",
+    "question": "What does Hoffman's peer-reviewed 'Fitness-Beats-Truth' theorem show?",
+    "correctOption": "That organisms tuned to perceive fitness-relevant information systematically outcompete organisms tuned to perceive reality accurately"
+  },
+  {
+    "title": "Seek Wealth, Not Money or Status",
+    "question": "How many tweets made up Naval's original 'How to Get Rich (Without Getting Lucky)' thread, and when was it posted?",
+    "correctOption": "40 tweets, posted May 31, 2018"
+  },
+  {
+    "title": "Specific Knowledge & Leverage",
+    "question": "According to Naval, which two of his four types of leverage are 'permissionless' — meaning anyone can deploy them without needing anyone's approval?",
+    "correctOption": "Code and media"
+  },
+  {
+    "title": "Judgment Is the Scarcest Resource",
+    "question": "In nav.al/judgment, what does Naval argue happens to a small edge in judgment (e.g., being right 85% of the time instead of 75%) once combined with leverage?",
+    "correctOption": "It gets massively amplified into a dramatically larger share of outcomes"
+  },
+  {
+    "title": "Happiness Is a Choice / Peace Is Happiness at Rest",
+    "question": "How does Naval define the relationship between peace and happiness?",
+    "correctOption": "Peace is happiness at rest, and happiness is peace in motion"
+  },
+  {
+    "title": "Read What You Love Until You Love to Read",
+    "question": "How much time does Naval credit himself with spending reading daily, as central to his self-education?",
+    "correctOption": "1-2 hours"
+  },
+  {
+    "title": "Play Long-Term Games with Long-Term People",
+    "question": "What game-theoretic distinction does Naval use to explain why long-term games reward honesty?",
+    "correctOption": "Single-round interactions reward defection, while repeated, long-horizon interactions reward honesty and reciprocity"
+  },
+  {
+    "title": "How to Win Friends and Influence People",
+    "question": "How many copies had 'How to Win Friends and Influence People' sold in its first three months in 1936?",
+    "correctOption": "250,000"
+  },
+  {
+    "title": "The 48 Laws of Power",
+    "question": "What is notable about this book's status in the US prison system?",
+    "correctOption": "It's one of the most commonly banned books in US prisons"
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "question": "Which tech executives publicly endorsed Sapiens, contributing to it becoming a bestseller?",
+    "correctOption": "Mark Zuckerberg and Bill Gates"
+  },
+  {
+    "title": "Mindset: The New Psychology of Success",
+    "question": "What did large-scale, independent replications of Dweck's most-cited studies find?",
+    "correctOption": "Little or no support for growth-mindset interventions meaningfully improving school attainment at scale"
+  },
+  {
+    "title": "How Not to Die",
+    "question": "What has the German Nutrition Society explicitly advised regarding the strict version of the diet this book recommends?",
+    "correctOption": "Against it for pregnant/lactating people, infants, and children"
+  },
+  {
+    "title": "Grit: The Power of Passion and Perseverance",
+    "question": "How has Duckworth herself since described the size of grit's independent effect on achievement?",
+    "correctOption": "Small-to-medium' by personality-psychology standards"
+  },
+  {
+    "title": "Existentialism Is a Humanism",
+    "question": "What does Sartre mean by 'existence precedes essence'?",
+    "correctOption": "A human being exists first, with no predetermined nature, and defines their essence only through the choices they make"
+  },
+  {
+    "title": "The Sickness Unto Death",
+    "question": "According to Kierkegaard, what makes despair so dangerous?",
+    "correctOption": "It is a structural failure in the self's relation to itself, and the person carrying it often doesn't know they have it"
+  },
+  {
+    "title": "The Ethics of Ambiguity",
+    "question": "What problem was Beauvoir specifically trying to solve in The Ethics of Ambiguity?",
+    "correctOption": "How existentialism, which denies fixed values, can still ground an ethics rather than collapsing into 'anything goes"
+  },
+  {
+    "title": "Meditations",
+    "question": "What is the core discipline Marcus Aurelius repeatedly practices in Meditations?",
+    "correctOption": "Separating what is in your control (judgments, reactions) from what isn't (external events), and only directing effort at the former"
+  },
+  {
+    "title": "Letters from a Stoic",
+    "question": "What does Seneca mean by 'we are not given a short life, but we make it short'?",
+    "correctOption": "Most of a life's real length is lost to distraction, obligation, and postponement, not to its actual duration"
+  },
+  {
+    "title": "Tao Te Ching",
+    "question": "What does the Tao Te Ching's image of water illustrate?",
+    "correctOption": "That yielding, low-friction action can be more powerful over time than direct force, because it avoids generating resistance"
+  },
+  {
+    "title": "The Dhammapada",
+    "question": "According to the Dhammapada, what is the primary source of suffering?",
+    "correctOption": "Craving and attachment to things that are inherently impermanent"
+  },
+  {
+    "title": "Thus Spoke Zarathustra",
+    "question": "What is Nietzsche most worried about when he declares 'God is dead'?",
+    "correctOption": "Nihilism — the collapse of meaning and values once their traditional foundation is gone, with nothing yet built to replace it"
+  },
+  {
+    "title": "Facing Up to the Problem of Consciousness",
+    "question": "What is the 'hard problem of consciousness' as defined by Chalmers?",
+    "correctOption": "Explaining why physical processing is accompanied by subjective experience at all, beyond just explaining the functions themselves"
+  },
+  {
+    "title": "Utilitarianism",
+    "question": "What does Mill's utilitarianism use to judge whether an action is right or wrong?",
+    "correctOption": "Whether it produces the greatest net happiness for the greatest number of people affected"
+  },
+  {
+    "title": "Groundwork of the Metaphysics of Morals",
+    "question": "What does Kant's categorical imperative test for?",
+    "correctOption": "Whether the underlying principle behind an action could be willed to become a universal law that everyone follows"
+  },
+  {
+    "title": "Nicomachean Ethics",
+    "question": "According to Aristotle, how does a person become virtuous?",
+    "correctOption": "By repeatedly practicing virtuous actions until they become a stable habit or disposition"
+  },
+  {
+    "title": "An Essay Concerning Human Understanding",
+    "question": "What is Locke's central claim about the mind at birth?",
+    "correctOption": "It is a blank slate with no innate ideas; all knowledge derives from sensory experience and reflection on it"
+  },
+  {
+    "title": "Meditations on First Philosophy",
+    "question": "What survives Descartes's process of radical doubt in the Meditations?",
+    "correctOption": "The fact that he is thinking, and therefore exists — the cogito ergo sum"
+  },
+  {
+    "title": "An Enquiry Concerning Human Understanding",
+    "question": "What is Hume's central problem with our belief in cause and effect?",
+    "correctOption": "We never directly observe causation itself, only the constant conjunction of two events, and our belief in causal connection can't be justified by pure reason or past experience alone"
+  },
+  {
+    "title": "Leviathan",
+    "question": "According to Hobbes, why do rational individuals agree to submit to a sovereign authority?",
+    "correctOption": "Because life without a common power to enforce order collapses into a war of all against all, and any stable authority is better than that chaos"
+  },
+  {
+    "title": "A Theory of Justice",
+    "question": "What is Rawls's 'veil of ignorance' thought experiment used to determine?",
+    "correctOption": "What principles of justice rational people would choose for a society if they didn't know what position they'd occupy within it"
+  },
+  {
+    "title": "Are You Living in a Computer Simulation?",
+    "question": "What is Bostrom's simulation argument actually claiming?",
+    "correctOption": "That at least one of three propositions must be true, one of which is that we are almost certainly in a simulation — without claiming to know which one"
+  },
+  {
+    "title": "The Great Filter — Are We Almost Past It?",
+    "question": "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
+    "correctOption": "If the filter is ahead of us, it implies civilizations like ours tend to face a near-universal barrier to survival that we haven't yet cleared"
+  },
+  {
+    "title": "Determined: A Science of Life Without Free Will",
+    "question": "What is Sapolsky's central argument against free will in Determined?",
+    "correctOption": "That every action is the end product of an unbroken causal chain (biology, environment, history) with no gap for an uncaused free choice to intervene"
+  },
+  {
+    "title": "Galileo's Error",
+    "question": "What historical decision does Goff's title 'Galileo's Error' refer to?",
+    "correctOption": "Galileo's founding split between quantitative properties (the domain of physics) and qualitative experience, which he excluded from science's scope"
+  },
+  {
+    "title": "Large Number Coincidences and the Anthropic Principle in Cosmology",
+    "question": "What is the core insight of the (weak) anthropic principle?",
+    "correctOption": "We should expect to observe a universe compatible with our own existence, regardless of how statistically rare such a universe is, because we couldn't be observing an incompatible one"
+  },
+  {
+    "title": "Our Mathematical Universe",
+    "question": "What does Tegmark's 'Mathematical Universe Hypothesis' claim?",
+    "correctOption": "That physical reality is itself a mathematical structure, and every self-consistent mathematical structure exists physically"
+  },
+  {
+    "title": "The Art Of Self-Architecture (How To Change Who You Are)",
+    "question": "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
+    "correctOption": "New habits are stacked on an unchanged underlying identity/self-concept, which pulls behavior back to its old baseline"
+  },
+  {
+    "title": "The One-Person Business Model (How To Productize Yourself)",
+    "question": "What are Koe's four pillars of a one-person business?",
+    "correctOption": "Brand, Content, Offer, Marketing"
+  },
+  {
+    "title": "The $1 Million Dollar Skill Stack (Learn In This Order)",
+    "question": "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
+    "correctOption": "They jump straight to technical/results-oriented skills without first building a valuable message and a medium to distribute it"
+  },
+  {
+    "title": "Learn This Skill If You Want To Thrive In The Next 10 Years",
+    "question": "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
+    "correctOption": "Because nearly every format of online content (tweets, video scripts, ads, newsletters) is, underneath, a written artifact first, so the skill transfers across every platform"
+  },
+  {
+    "title": "The Art of Focus",
+    "question": "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
+    "correctOption": "An unclear or unstable sense of identity, leaving attention with no anchor to direct itself toward"
+  },
+  {
+    "title": "The Meaning Crisis (How To Do Something That Matters)",
+    "question": "What three modes does Koe's 'meaning equation' propose reconnecting?",
+    "correctOption": "Being, Doing, and Becoming"
+  },
+  {
+    "title": "The Ultimate Guide to Writing Online",
+    "question": "According to Perell, what is 'Writing from Abundance'?",
+    "correctOption": "Building a habit of capturing ideas and inspiration before you need them, so writing becomes editing and assembling rather than inventing from a blank page"
+  },
+  {
+    "title": "The 4 Types of Luck",
+    "question": "According to Bloom's framework (via James Austin), what characterizes 'Luck from Uniqueness'?",
+    "correctOption": "A distinctive combination of skills, interests, and identity so specific that opportunities seek the person out rather than being chased"
+  },
+  {
+    "title": "Interstitial Journaling",
+    "question": "What does interstitial journaling specifically ask you to do, according to Le Cunff?",
+    "correctOption": "Write a short, timestamped note at the exact transition point between finishing one task and starting the next"
+  },
+  {
+    "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
+    "question": "According to Nickerson, why is confirmation bias particularly hard to correct?",
+    "correctOption": "It operates at the search, interpretation, and memory stages of reasoning, filtering evidence before contradicting facts can even register"
+  },
+  {
+    "title": "Judgment under Uncertainty: Heuristics and Biases (Anchoring)",
+    "question": "What did Tversky and Kahneman's wheel-spinning experiment demonstrate about anchoring?",
+    "correctOption": "An arbitrary, randomly-generated number still biased people's subsequent unrelated numerical estimates, even though they knew it was random"
+  },
+  {
+    "title": "Judgment under Uncertainty: Heuristics and Biases (Availability)",
+    "question": "What does the availability heuristic cause people to do?",
+    "correctOption": "Estimate frequency or likelihood based on how easily examples come to mind, overweighting vivid or recent events"
+  },
+  {
+    "title": "The Psychology of Sunk Cost",
+    "question": "What did the theater subscription study in 'The Psychology of Sunk Cost' demonstrate?",
+    "correctOption": "People who paid a higher price for their season subscription attended more plays afterward, even though the price had no bearing on the plays' quality"
+  },
+  {
+    "title": "Unskilled and Unaware of It",
+    "question": "According to Kruger and Dunning, why do low performers in a domain tend to overestimate their own competence?",
+    "correctOption": "Because the same skills needed to perform well are also needed to accurately judge good performance, so incompetence removes the ability to recognize itself"
+  },
+  {
+    "title": "Prospect Theory: An Analysis of Decision under Risk",
+    "question": "What is the core claim of loss aversion in prospect theory?",
+    "correctOption": "Losses are felt roughly twice as intensely as equally-sized gains, which distorts risk-taking behavior depending on whether a choice is framed as a potential gain or loss"
+  },
+  {
+    "title": "A Constant Error in Psychological Ratings",
+    "question": "What did Thorndike's original 1920 study of military officers reveal?",
+    "correctOption": "That ratings across supposedly independent traits (physique, intelligence, character) correlated too strongly, suggesting one overall impression was bleeding into every specific judgment"
+  },
+  {
+    "title": "I Knew It Would Happen: Remembered Probabilities of Once-Future Things",
+    "question": "What did Fischhoff and Beyth's Nixon study demonstrate about memory?",
+    "correctOption": "People systematically misremember their own past predictions, recalling higher confidence for outcomes that occurred than they actually reported beforehand"
+  },
+  {
+    "title": "Time, Work-Discipline, and Industrial Capitalism",
+    "question": "According to Thompson, what replaced task-oriented time during industrialization?",
+    "correctOption": "Clock-based, uniform time discipline, deliberately imposed by factory owners to synchronize and control labor"
+  },
+  {
+    "title": "Debt: The First 5,000 Years",
+    "question": "What is Graeber's central challenge to the standard economic story of money's origin?",
+    "correctOption": "There is little historical evidence that money arose to fix the inefficiencies of barter; societies instead used credit and debt-tracking systems long before coined money existed"
+  },
+  {
+    "title": "Imagined Communities",
+    "question": "What does Anderson identify as the key technology enabling nations to be 'imagined communities'?",
+    "correctOption": "Print capitalism — newspapers and novels in shared vernacular languages that let large populations synchronize a sense of belonging to one community"
+  },
+  {
+    "title": "Man's Most Dangerous Myth: The Fallacy of Race",
+    "question": "What is Montagu's central argument about race?",
+    "correctOption": "Race, as popularly understood, does not map onto actual human genetic variation; racial categories are social and historical constructions built mainly from visible traits like skin color"
+  },
+  {
+    "title": "Gender Trouble",
+    "question": "What does Butler mean when she argues gender is 'performative'?",
+    "correctOption": "Gender is not an inner essence expressed through behavior, but is itself continuously produced and maintained through repeated acts, creating only the appearance of a fixed underlying nature"
+  },
+  {
+    "title": "What Is Property?",
+    "question": "What specific target does Proudhon's 'property is theft' argument actually attack?",
+    "correctOption": "Property that entitles an owner to extract profit or income from something worked, used, or improved by someone else's labor, without contributing proportional labor themselves"
+  },
+  {
+    "title": "Beyond Measure: The Hidden History of Measurement",
+    "question": "What does Vincent argue is often the hidden function of imposing standardized measurement systems?",
+    "correctOption": "They function as tools of political power and control, making populations and labor legible, taxable, and comparable to whoever sets the standard"
+  },
+  {
+    "title": "Marriage, a History",
+    "question": "According to Coontz, what was marriage's primary function for most of human history, before the nineteenth century?",
+    "correctOption": "A strategic alliance between families to secure economic, political, or social advantage, with romantic love treated as secondary or even distrusted"
+  },
+  {
+    "title": "The Psychology of Human Misjudgment",
+    "question": "Which phenomenon does Munger use to describe multiple cognitive biases compounding to create an extreme, non-linear behavioral outcome?",
+    "correctOption": "The Lollapalooza Effect"
+  },
+  {
+    "title": "Mr. Market",
+    "question": "What is the primary purpose of Mr. Market's daily price quotations, according to Warren Buffett's framework?",
+    "correctOption": "To serve your convenience when he is acting irrationally, offering exploitation opportunities"
+  },
+  {
+    "title": "Great, Good, and Gruesome Businesses",
+    "question": "According to Buffett\\'s categorization, what is the defining characteristic of a \"Gruesome\" business?",
+    "correctOption": "It grows rapidly, demands massive capital inputs, and earns little to no money"
+  },
+  {
+    "title": "The Institutional Imperative",
+    "question": "The \"Institutional Imperative\" primarily describes the tendency of corporate managers to do which of the following?",
+    "correctOption": "Mindlessly imitate the behavior of peer companies and fiercely resist change"
+  },
+  {
+    "title": "The Ovarian Lottery",
+    "question": "Buffett\\'s \"Ovarian Lottery\" thought experiment is heavily influenced by which philosophical concept?",
+    "correctOption": "John Rawls' Veil of Ignorance"
+  },
+  {
+    "title": "Sit-on-Your-Ass Investing",
+    "question": "What does Charlie Munger view as the primary mathematical benefit of \"sit-on-your-ass\" investing?",
+    "correctOption": "It defers capital gains taxes indefinitely, maximizing uninterrupted compound interest"
+  },
+  {
+    "title": "The Strata of Perceptual Reality",
+    "question": "What is the primary function of biological sensory filtering in shaping human reality, according to this framework?",
+    "correctOption": "To optimize the organism for survival rather than absolute truth"
+  },
+  {
+    "title": "Metacognition and the Hierarchy of Thought",
+    "question": "Why does identity-based thinking prevent metacognition, according to this framework?",
+    "correctOption": "Challenges to ideas are perceived as biological threats, triggering emotional defenses"
+  },
+  {
+    "title": "The Architecture of Axiomatic Beliefs",
+    "question": "How does the brain typically respond when a core axiomatic belief is directly contradicted by observable evidence?",
+    "correctOption": "It employs complex rationalizations to protect the axiom and avoid epistemic crisis"
+  },
+  {
+    "title": "Algorithmic Determinism and Judicial Opacity",
+    "question": "What is the primary danger of utilizing proprietary black-box algorithms in the judicial sentencing system?",
+    "correctOption": "Their inner workings cannot be examined for bias by the defense or the judge"
+  },
+  {
+    "title": "Quantum Immortality and Subjective Survival",
+    "question": "Why does the subject in the quantum suicide experiment always experience survival under the Many-Worlds Interpretation?",
+    "correctOption": "The observer can only subjectively experience the specific timelines where their biological consciousness continues to function"
+  },
+  {
+    "title": "The Block Universe and the Illusion of the Present",
+    "question": "What is the primary implication of the relativity of simultaneity regarding the nature of the future?",
+    "correctOption": "Because different observers have different \"nows,\" the future of one observer is already happening for another, implying the future already exists"
+  },
+  {
+    "title": "The Ontology of Identity and the Ship of Theseus",
+    "question": "According to cognitive science, what do humans primarily rely on to assign continuous identity to an object whose physical parts are entirely replaced?",
+    "correctOption": "Spatio-temporal continuity and functional organization"
+  },
+  {
+    "title": "Entropic Inevitability and the Arrow of Time",
+    "question": "Why do macroscopic events (like a breaking egg) demonstrate an Arrow of Time, while microscopic events (like particle collisions) are generally time-symmetric?",
+    "correctOption": "Macroscopic systems are governed by statistical probability, which heavily favors states of higher entropy (disorder)"
+  },
+  {
+    "title": "The Hard Problem and the Illusion of Objective Reality",
+    "question": "What fundamentally differentiates the 'Hard Problem' of consciousness from the 'easy problems'?",
+    "correctOption": "The easy problem maps neurological functions, while the hard problem questions why these functions result in subjective experience (qualia)"
+  },
+  {
+    "title": "Lexical Voids and Untranslatable Human Emotions",
+    "question": "What psychological benefit is directly associated with increasing one's 'emotional granularity' by learning specific words for highly nuanced feelings?",
+    "correctOption": "It reduces anxiety and enhances emotional regulation by accurately contextualizing internal states"
+  },
+  {
+    "title": "Axiomatic Ruptures: The Banach-Tarski Paradox",
+    "question": "What foundational mathematical rule is required to make the Banach-Tarski paradox logically function?",
+    "correctOption": "The Axiom of Choice applied to uncountably infinite point sets"
+  },
+  {
+    "title": "The Asymmetry of Cosmic Justice",
+    "question": "How do societal reward structures conflict with the Just-World Hypothesis?",
+    "correctOption": "The world primarily rewards leverage and scale, not inherently hard work or virtue"
+  },
+  {
+    "title": "Spacetime as an Emergent Property",
+    "question": "How does the concept of temperature relate to the theory of Emergent Spacetime?",
+    "correctOption": "Just as temperature is an emergent property of moving atoms, spacetime may be an emergent property of underlying quantum information"
+  },
+  {
+    "title": "Scale-Invariant Unparticles and Cosmic Expansion",
+    "question": "What defines the 'scale invariance' of a hypothetical unparticle?",
+    "correctOption": "It looks and behaves identically regardless of the energy scale or distance it is observed at"
+  },
+  {
+    "title": "Cosmological Cannibalism and Baby Universes",
+    "question": "How does the baby universe absorption model explain current cosmic expansion without relying on dark energy?",
+    "correctOption": "By the continuous collision and assimilation of smaller universes, which abruptly adds their volume to ours"
+  },
+  {
+    "title": "Atmospheric Anomalies and Technosignatures on TRAPPIST-1e",
+    "question": "What makes the atmospheric data of TRAPPIST-1e particularly intriguing to astrobiologists searching for technosignatures?",
+    "correctOption": "It displays temporal variations and chemical ratios that defy standard natural geochemical models"
+  },
+  {
+    "title": "The Intelligence Explosion and ASI Alignment",
+    "question": "Why is the transition from AGI to ASI expected to be incredibly rapid, leading to an 'Intelligence Explosion'?",
+    "correctOption": "Through recursive self-improvement, the AGI will rewrite its own code at electronic speeds, continually accelerating its own cognitive growth"
+  },
+  {
+    "title": "Prime Editing and the Reprogrammable Human Genome",
+    "question": "How does Prime Editing fundamentally improve upon the original CRISPR-Cas9 system?",
+    "correctOption": "It only nicks one DNA strand and uses reverse transcriptase to actively \"search and replace\" code, preventing unpredictable mutations"
+  }
+]

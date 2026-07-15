@@ -115,6 +115,11 @@ function ReviewScreen() {
             · {node.author}
           </p>
           <p className="mt-2 text-sm text-ink-soft">{node.thesis}</p>
+          {node.quiz.explanation && (
+            <div className="mt-4 border-l-2 border-ink-soft/20 pl-3">
+              <p className="text-sm leading-relaxed text-ink-soft">{node.quiz.explanation}</p>
+            </div>
+          )}
           <button
             onClick={() => {
               setPicked(null);

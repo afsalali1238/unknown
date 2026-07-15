@@ -203,24 +203,6 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Early startups should manually recruit users and do unscalable work; growth comes from effort, not automation.",
-    layer0:
-      "When a startup has zero users, its only real problem is finding its first real users at all — not building a system that could theoretically serve a million of them. So founders should do things by hand that obviously can't work at scale: personally recruiting users one by one, custom-building things for early customers, doing the job a piece of software will do later. That's not a failure to engineer properly — it's the only way to learn what people actually want before you've earned the right to automate it.",
-    layer1:
-      "The mechanism is that manual effort is a stand-in for information you don't have yet. At the start, you don't know what onboarding flow works, what feature matters, or what the pitch even is — so any automated system you build is a guess encoded in code, expensive to change. A human doing the task by hand can adapt instantly, notice what's actually happening, and adjust the next interaction in real time. Automation should follow understanding, not precede it. This is why the advice isn't 'never scale' — it's 'earn the right to scale by first doing the unscalable version enough times to know exactly what's worth encoding.'",
-    layer2:
-      "Pick something you're building or considering building. Write down the 'automated, scalable' version you imagine eventually shipping. Now write down what the manual, by-hand version of that same value would look like if you did it yourself for just 10 people this week — no code, no system, just you doing the work directly. Notice how much faster you could start, and what you'd learn in week one that you couldn't learn from a spec.",
-    quiz: {
-      question: "Why does Paul Graham argue founders should do unscalable things early on?",
-      options: [
-        "Because investors prefer to see manual labor as a sign of commitment",
-        "Because it's the fastest way to learn what customers actually want before committing to an automated system",
-        "Because scalable systems are always more expensive to build than manual processes",
-        "Because early customers expect white-glove service and will pay more for it",
-      ],
-      correctIndex: 1,
-      explanation:
-        "Manual work provides the direct feedback loop and customer understanding necessary to design an effective automated system later.",
-    },
     related: [],
     furtherReading: [
       {
@@ -246,6 +228,24 @@ export const NODES: Node[] = [
       },
     ],
     tags: [],
+    layer0:
+      "Paul Graham's definitive advice for early-stage startups: you cannot wait for users to naturally discover your product. Founders must manually, and sometimes painstakingly, recruit their first users one by one and do things that are structurally unscalable.",
+    layer1:
+      "A common startup fallacy is that if you build a great product, users will come. Graham argues that founders must manually 'push the snowball' to get momentum. This means flying to a user's house to install the software, manually acting as the 'backend' algorithm (the Wizard of Oz technique), or physically going door-to-door (like Airbnb founders taking photos of apartments). These unscalable actions not only get you your first users, but they force you to talk to them, ensuring you actually build what they want.",
+    layer2:
+      "Scale is the enemy of early-stage product-market fit. If you try to automate customer acquisition or support before you have 100 people who absolutely love your product, you will build an automated machine that delivers something nobody wants.",
+    quiz: {
+      question:
+        "According to Paul Graham, what is the biggest mistake founders make regarding early customer acquisition?",
+      options: [
+        "Spending too much money on television advertising",
+        "Assuming users will naturally discover the product, rather than manually recruiting them one by one",
+        "Hiring salespeople too early",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Graham emphasizes that initial growth is never organic; founders must physically go out and recruit their first users manually, even if that process can't scale to a million users.",
+    },
   },
   {
     id: "A2",
@@ -273,6 +273,8 @@ export const NODES: Node[] = [
         "To lock in early adopters before competitors can react",
       ],
       correctIndex: 2,
+      explanation:
+        "An MVP is not just a 'crappy version 1'; it is specifically designed to run an experiment that validates or invalidates your riskiest business assumptions as quickly and cheaply as possible.",
     },
     related: [],
     furtherReading: [
@@ -325,6 +327,8 @@ export const NODES: Node[] = [
         "Because bad-sounding ideas get more attention in pitch meetings",
       ],
       correctIndex: 1,
+      explanation:
+        "The best ideas are often those that solve a genuine problem but look unappealing or too niche to others; if they looked obviously good, a large company would already be doing them.",
     },
     related: [],
     furtherReading: [
@@ -378,6 +382,8 @@ export const NODES: Node[] = [
         "Charging fans a one-time high price rather than recurring smaller amounts",
       ],
       correctIndex: 2,
+      explanation:
+        "The internet drastically lowers distribution costs, allowing you to bypass mass-market gatekeepers and directly monetize a small, highly dedicated audience.",
     },
     related: [],
     furtherReading: [
@@ -431,6 +437,8 @@ export const NODES: Node[] = [
         "Because customers dislike having too many choices",
       ],
       correctIndex: 1,
+      explanation:
+        "Competition destroys profits. Building a monopoly—by dominating a small, specific market and avoiding head-to-head battles—allows a company to generate the surplus needed for long-term innovation.",
     },
     related: [],
     furtherReading: [
@@ -488,6 +496,8 @@ export const NODES: Node[] = [
         "Only regulated markets have accurate TAM estimates",
       ],
       correctIndex: 1,
+      explanation:
+        "A large TAM is a vanity metric if the market's structure (like low frequency of use or high acquisition costs) prevents the emergence of a highly profitable, dominant platform.",
     },
     related: [],
     furtherReading: [
@@ -545,6 +555,8 @@ export const NODES: Node[] = [
         "Because churn only affects gross margin, not net revenue",
       ],
       correctIndex: 1,
+      explanation:
+        "In a subscription model, acquisition costs are paid upfront while revenue trickles in over time. High churn means customers leave before they even become profitable, fundamentally breaking the business model.",
     },
     related: [],
     furtherReading: [
@@ -598,6 +610,8 @@ export const NODES: Node[] = [
         "Only for companies that plan to go public within two years",
       ],
       correctIndex: 2,
+      explanation:
+        "When a market exhibits strong winner-take-all dynamics (like network effects), the long-term value of capturing the market first heavily outweighs the short-term costs of inefficient, breakneck growth.",
     },
     related: [],
     furtherReading: [
@@ -651,6 +665,8 @@ export const NODES: Node[] = [
         "Because suppliers voluntarily gave up control to reduce their own costs",
       ],
       correctIndex: 1,
+      explanation:
+        "Aggregators don't own the supply; they own the user relationship. By providing superior discovery and UX at zero marginal cost, they commoditize suppliers who are forced to play by their rules.",
     },
     related: ["W3"],
     furtherReading: [
@@ -703,6 +719,8 @@ export const NODES: Node[] = [
         "The point at which a company's stock price stops rising",
       ],
       correctIndex: 1,
+      explanation:
+        "Growth eventually stalls not because of competition, but because of a hard structural limit in the product itself—an 'invisible asymptote' that caps the addressable audience until the product is fundamentally reimagined.",
     },
     related: [],
     furtherReading: [
@@ -756,6 +774,8 @@ export const NODES: Node[] = [
         "Because it eliminates the need for any sales or marketing spend",
       ],
       correctIndex: 1,
+      explanation:
+        "While old moats relied on economies of scale or IP, modern moats are built on systems of intelligence: data flywheels where product usage generates data that makes the product better, driving more usage.",
     },
     related: ["W3"],
     furtherReading: [
@@ -809,6 +829,8 @@ export const NODES: Node[] = [
         "They only invest in later-stage, lower-risk companies",
       ],
       correctIndex: 1,
+      explanation:
+        "Solo capitalists leverage their personal brand and speed to compete with massive VC firms, offering founders faster decisions and a single point of contact without the bureaucracy of partnership consensus.",
     },
     related: [],
     furtherReading: [
@@ -862,6 +884,8 @@ export const NODES: Node[] = [
         "Shockley Semiconductor itself provided the funding as a severance package",
       ],
       correctIndex: 0,
+      explanation:
+        "The Fairchild deal pioneered the use of equity options rather than a standard buyout, incentivizing the founders to build the company while giving the parent company a de-risked path to ownership.",
     },
     related: [],
     furtherReading: [
@@ -908,6 +932,8 @@ export const NODES: Node[] = [
         "ARD's charter legally prohibited it from funding computer companies directly",
       ],
       correctIndex: 2,
+      explanation:
+        "Selling smaller, proven components (circuit modules) first generated immediate cash flow and proved the team's competence, which was essential to overcome investor skepticism about the actual goal of building computers.",
     },
     related: [],
     furtherReading: [
@@ -954,6 +980,8 @@ export const NODES: Node[] = [
         "Projected profitability within the first 12 months",
       ],
       correctIndex: 1,
+      explanation:
+        "Sequoia looked past YouTube's lack of a clear revenue model, recognizing that its astonishing compounding growth in user-generated content and viewership signaled it would become the foundational platform for internet video.",
     },
     related: [],
     furtherReading: [
@@ -999,6 +1027,8 @@ export const NODES: Node[] = [
         "That the site would soon expand beyond colleges to the general public",
       ],
       correctIndex: 1,
+      explanation:
+        "Facebook successfully argued that an incredibly dense, highly engaged, and highly targeted user base (college students) was vastly more valuable to advertisers than the sprawling, low-engagement portals of Web 1.0.",
     },
     related: [],
     furtherReading: [
@@ -1043,6 +1073,8 @@ export const NODES: Node[] = [
         "As a public transit partnership with city governments",
       ],
       correctIndex: 1,
+      explanation:
+        "Uber initially pitched itself as a niche, premium black-car service for professionals, which served as a profitable wedge to eventually expand into the mass-market ride-hailing giant it is today.",
     },
     related: [],
     furtherReading: [
@@ -1092,6 +1124,8 @@ export const NODES: Node[] = [
         "It proved there was already strong demand for the room-booking platform itself",
       ],
       correctIndex: 1,
+      explanation:
+        "The 'Obama O's' cereal boxes proved to investors that the founders possessed extreme grit, resourcefulness, and a 'cockroach' survival mentality during a severe economic downturn.",
     },
     related: [],
     furtherReading: [
@@ -1138,6 +1172,8 @@ export const NODES: Node[] = [
         "Battery technology only existed in a form suitable for sports cars in 2006",
       ],
       correctIndex: 2,
+      explanation:
+        "Starting with an expensive luxury car allowed Tesla to fund R&D and build out manufacturing, effectively using wealthy early adopters to subsidize the development of affordable mass-market EVs.",
     },
     related: [],
     furtherReading: [
@@ -1168,14 +1204,27 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Enron's returns didn't cover its cost of capital and its accounting was opaque; the equity was worthless.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2000, Jim Chanos realized that energy giant Enron was using mark-to-market accounting to book massive future profits on the day a deal was signed. When he dug into their cash flow statements, he found that despite reporting huge earnings, the company was actually bleeding cash.",
+    layer1:
+      "Enron used Special Purpose Entities (SPEs) to hide debt and toxic assets off its balance sheet. They would transfer failing assets to these shell companies, magically erasing losses from their public filings while booking fake gains. Mark-to-market accounting allowed them to estimate future profits of long-term contracts and report them immediately, creating a massive discrepancy between reported net income and actual operating cash flow.",
+    layer2:
+      "Always read the statement of cash flows, not just the income statement. If a company is reporting record earnings but operating cash flow is consistently negative, the profits are likely an accounting illusion.",
+    quiz: {
+      question:
+        "Which accounting technique allowed Enron to book massive, unrealized future profits on the day a contract was signed?",
+      options: [
+        "LIFO inventory accounting",
+        "Mark-to-market accounting",
+        "Double-declining balance depreciation",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Mark-to-market accounting let Enron estimate the total future value of a long-term energy contract and claim that entire amount as profit on the day the deal was signed, completely detaching reported earnings from actual cash collected.",
+    },
   },
   {
     id: "C2",
@@ -1187,14 +1236,27 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Bernard Madoff's impossibly smooth returns are mathematically inconsistent with any real strategy; the fund is either front-running or a Ponzi scheme.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 1999, financial analyst Harry Markopolos realized that Bernie Madoff's impossibly consistent returns could not be replicated mathematically. He alerted the SEC multiple times that Madoff was running a massive Ponzi scheme, but was ignored for nearly a decade.",
+    layer1:
+      "Madoff claimed to use a 'split-strike conversion' strategy, buying blue-chip stocks and hedging with options. Markopolos reverse-engineered the strategy and found that the options volume required to execute Madoff's trades exceeded the total existing volume on the Chicago Board Options Exchange. Madoff wasn't trading at all; he was simply using new investor capital to pay fake returns to older investors.",
+    layer2:
+      "Beware of investments with perfectly smooth, 45-degree upward returns that never experience drawdowns. If a strategy's mathematical footprint doesn't match the market's reality, it's likely a fraud.",
+    quiz: {
+      question:
+        "What was the mathematical smoking gun that proved Madoff was a fraud years before he was caught?",
+      options: [
+        "His firm had too many employees for the assets under management",
+        "The options volume required for his strategy exceeded the total volume of the entire exchange",
+        "He was using an offshore bank in the Cayman Islands",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Markopolos calculated that Madoff's purported strategy required buying more options than actually existed in the entire global market, proving mathematically that the trades were completely fictitious.",
+    },
   },
   {
     id: "C3",
@@ -1206,14 +1268,27 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Allied Capital used aggressive accounting to overstate the value of its illiquid investments.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2002, David Einhorn publicly shorted Allied Capital, a private finance company, accusing them of systematically overvaluing their illiquid assets. When Einhorn exposed the fraud, Allied retaliated with a vicious smear campaign rather than answering the financial questions.",
+    layer1:
+      "Allied Capital was a Business Development Company (BDC) that provided debt and equity to private middle-market companies. Because these private assets had no public market price, Allied used 'mark-to-model' accounting, aggressively inflating their valuations. When their portfolio companies went bankrupt, Allied refused to write down the assets, keeping up the illusion of a strong balance sheet to continue issuing new shares and paying dividends.",
+    layer2:
+      "When management responds to legitimate financial criticism with personal attacks or lawsuits instead of transparent data, it is almost always a red flag that the critic is right.",
+    quiz: {
+      question:
+        "Why was Allied Capital able to hide the poor performance of its portfolio companies for so long?",
+      options: [
+        "They used Level 3 'mark-to-model' accounting to inflate the value of illiquid private assets",
+        "They bribed the SEC auditors to look the other way",
+        "They only invested in government bonds which never defaulted",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Because Allied's investments were private and illiquid, there was no market price to contradict management's subjective valuations, allowing them to hide massive losses behind opaque accounting models.",
+    },
   },
   {
     id: "C4",
@@ -1225,14 +1300,23 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Lehman's balance sheet is opaque and undercapitalized; its marks on illiquid assets are not credible.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In May 2008, David Einhorn presented a blistering short thesis on Lehman Brothers, exposing a massive $32 billion discrepancy in their commercial real estate portfolio. He proved the bank was functionally insolvent months before its spectacular collapse.",
+    layer1:
+      "Lehman was heavily leveraged, hiding billions in toxic CDOs and commercial real estate loans. Einhorn dissected their quarterly earnings calls, pointing out that CFO Erin Callan was giving contradictory and evasive answers regarding their Level 3 (illiquid) assets. Lehman had refused to mark down their real estate portfolio to reflect the crashing market, meaning their reported equity was a complete fiction.",
+    layer2:
+      "In highly leveraged financial institutions, a small markdown in asset values can wipe out the entire equity base. Pay close attention to how management answers direct questions on earnings calls; evasion is often a sign of insolvency.",
+    quiz: {
+      question:
+        "What specific asset class did David Einhorn focus on to prove Lehman Brothers was hiding massive losses?",
+      options: ["Tech stocks", "Commercial real estate and CDOs", "Emerging market currencies"],
+      correctIndex: 1,
+      explanation:
+        "Einhorn exposed that Lehman was refusing to write down its massive portfolio of toxic commercial real estate loans and Collateralized Debt Obligations (CDOs) despite the market crashing around them.",
+    },
   },
   {
     id: "C5",
@@ -1244,14 +1328,26 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Subprime mortgage-backed securities will collapse; buy CDS protection against the housing bubble.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Michael Burry, a value investor with aspergers, discovered in 2005 that the US housing market was built on a foundation of fraudulent subprime mortgages. He convinced Wall Street banks to create a new instrument—Credit Default Swaps on mortgage bonds—so he could short the housing market.",
+    layer1:
+      "Mortgage lenders were originating loans with 'teaser rates' to borrowers with no income or jobs (NINJA loans), then packaging them into Mortgage-Backed Securities (MBS). Ratings agencies rubber-stamped these toxic bonds as AAA safe. Burry realized that when the teaser rates reset after two years, massive defaults would trigger a cascading collapse of the tranches. He bought cheap insurance (CDS) against these bonds, bleeding premiums for years until the market finally collapsed in 2007.",
+    layer2:
+      "Being early is indistinguishable from being wrong. If you have extreme conviction in a contrarian thesis based on raw data, you must structure your trades to survive the psychological and financial pain of waiting for the market to realize the truth.",
+    quiz: {
+      question: "What financial instrument did Michael Burry use to short the housing market?",
+      options: [
+        "Put options on homebuilder stocks",
+        "Credit Default Swaps (CDS) on mortgage-backed securities",
+        "Shorting real estate investment trusts (REITs)",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Burry literally had banks invent Credit Default Swaps (CDS) for subprime mortgage bonds, allowing him to buy cheap insurance that would pay out massively when the underlying mortgages defaulted.",
+    },
   },
   {
     id: "C6",
@@ -1263,14 +1359,26 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Sino-Forest is a fraud that overstates its timber assets; the equity is worth a fraction of its price.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2011, Muddy Waters Research exposed Sino-Forest, a $6 billion Chinese forestry company listed in Canada, as a massive Ponzi scheme. The company claimed to own vast tracts of timber in China, but investigators found the forests simply didn't exist.",
+    layer1:
+      "Sino-Forest used a complex web of 'authorized intermediaries' to conduct its business. They claimed these offshore middlemen bought and sold timber on their behalf to simplify Chinese tax compliance. In reality, the intermediaries were controlled entities used to forge purchase contracts and cycle capital, creating the illusion of massive revenue while the company aggressively issued new debt and equity to western investors.",
+    layer2:
+      "Complexity is often a cloak for fraud. If a company's core business model requires a convoluted web of offshore intermediaries and opaque legal structures to explain simple transactions, run away.",
+    quiz: {
+      question: "How did Sino-Forest fake its massive timber revenues?",
+      options: [
+        "By hacking the Canadian stock exchange servers",
+        "By using a web of opaque 'authorized intermediaries' to forge purchase and sale contracts",
+        "By buying satellite imagery of forests they didn't own",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The company used 'authorized intermediaries' as a black box, claiming these middlemen handled all transactions, which allowed them to forge paperwork for timber that didn't exist without auditors verifying the assets.",
+    },
   },
   {
     id: "C7",
@@ -1282,14 +1390,26 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Herbalife is a pyramid scheme that will be shut down by regulators; the stock is worth zero.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2012, Bill Ackman launched a $1 billion short campaign against Herbalife, calling it the best-managed pyramid scheme in history. He argued the company made its money by recruiting distributors, not selling actual nutritional shakes.",
+    layer1:
+      "Herbalife operates as a Multi-Level Marketing (MLM) company. Ackman's thesis hinged on the 'retail sales' metric. He argued that very little Herbalife product was actually sold to external customers; instead, distributors were forced to buy massive inventory quotas themselves (garage qualifying) to move up the compensation hierarchy. The profits flowed to the top 1% of recruiters, while the vast majority of distributors lost money.",
+    layer2:
+      "In any business opportunity, trace the actual source of cash. If the revenue comes primarily from recruiting new members rather than selling a product to end-users, it is mathematically unsustainable.",
+    quiz: {
+      question: "What was the core argument of Bill Ackman's short thesis against Herbalife?",
+      options: [
+        "The nutritional shakes contained toxic ingredients",
+        "The company was a pyramid scheme where revenue came from recruiting distributors, not retail sales",
+        "The CEO was embezzling money to offshore accounts",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Ackman argued that Herbalife was a classic pyramid scheme because distributors made money primarily by recruiting new members and forcing them to buy inventory, rather than selling shakes to actual consumers.",
+    },
   },
   {
     id: "C8",
@@ -1301,14 +1421,26 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Valeant used a specialty pharmacy (Philidor) to fabricate sales, echoing Enron-style channel stuffing.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2015, Citron Research published a report comparing Valeant Pharmaceuticals to Enron, triggering a massive collapse in the stock. Valeant had been using a secret network of captive pharmacies to artificially inflate drug prices and force insurance payouts.",
+    layer1:
+      "Valeant's business model involved slashing R&D, buying older drugs, and hiking their prices by 1000% or more. To bypass insurance companies that would normally reject these extortionate prices, Valeant secretly controlled a specialty pharmacy called Philidor. Philidor altered doctor's prescriptions to ensure Valeant's expensive branded drugs were dispensed instead of cheap generics, automatically billing insurers without the patients realizing.",
+    layer2:
+      "Financial engineering cannot replace fundamental value creation forever. A business model based entirely on price-gouging and aggressive acquisitions without organic growth will eventually hit a wall.",
+    quiz: {
+      question: "What was the role of the secret pharmacy 'Philidor' in Valeant's fraud?",
+      options: [
+        "It manufactured cheap counterfeit versions of Valeant's drugs",
+        "It altered prescriptions to force insurers to pay for Valeant's wildly overpriced branded drugs",
+        "It illegally shipped prescription drugs overseas to avoid FDA regulations",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Valeant used Philidor as a captive 'phantom pharmacy' to bypass insurance blocks, aggressively steering prescriptions to their own price-gouged drugs instead of cheaper generics.",
+    },
   },
   {
     id: "C9",
@@ -1319,14 +1451,26 @@ export const NODES: Node[] = [
     medium: "Report",
     category: "Short / Activist",
     thesis: "Luckin Coffee fabricated sales figures; the growth story is a fraud.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2020, Muddy Waters received an anonymous 89-page report proving that Luckin Coffee, China's answer to Starbucks, was fabricating hundreds of millions of dollars in sales. The stock collapsed 80% shortly after.",
+    layer1:
+      "The anonymous researchers hired 1,500 people to sit in Luckin Coffee shops across China and record 11,260 hours of store traffic video. They collected 25,843 customer receipts and proved that Luckin's app was skipping order numbers to artificially inflate the daily transaction count by over 70%. To balance the books, Luckin then faked massive corporate bulk purchases and inflated their advertising expenses.",
+    layer2:
+      "When auditing a highly touted growth story, ignore the spreadsheet and look at the physical reality. If the foot traffic or unit economics on the ground don't match the SEC filings, the filings are lying.",
+    quiz: {
+      question: "How did investigators definitively prove Luckin Coffee was faking its sales?",
+      options: [
+        "By hacking the company's internal Slack channel",
+        "By hiring 1,500 people to physically record store traffic and collect receipts",
+        "By finding an offshore bank account in the Cayman Islands",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The short sellers didn't rely on financial modeling; they executed a massive ground operation, physically recording store traffic and proving that the app's order numbers were skipping digits.",
+    },
   },
   {
     id: "C10",
@@ -1338,14 +1482,27 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Nikola is an 'intricate fraud' built on false claims about its technology, including a truck rolling downhill in a video.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2020, Hindenburg Research exposed Nikola Motors, a highly valued hydrogen truck startup, as an intricate fraud built on CGI and fake demonstrations. Founder Trevor Milton had faked almost every major technological breakthrough the company claimed.",
+    layer1:
+      "Nikola famously released a promotional video showing their hydrogen semi-truck cruising down a highway. Hindenburg proved that the truck wasn't powered at all; Nikola had simply towed the prototype to the top of a long, low-grade hill and filmed it rolling down by gravity. They also faked proprietary battery technology and bought third-party components while claiming they were designed in-house.",
+    layer2:
+      "In the world of hardware startups, never trust rendered videos or highly controlled stage demonstrations. True technological breakthroughs can be demonstrated live, under third-party scrutiny.",
+    quiz: {
+      question:
+        "How did Nikola fake the promotional video of its hydrogen semi-truck driving down a highway?",
+      options: [
+        "They used a hidden diesel engine inside the truck",
+        "They towed it to the top of a hill and filmed it rolling down by gravity",
+        "The entire video was generated with deepfake AI",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Hindenburg proved that the 'revolutionary' hydrogen truck didn't even have a working motor; they just towed it to a subtle incline and let gravity do the work for the camera.",
+    },
   },
   {
     id: "C11",
@@ -1357,14 +1514,26 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "The Adani Group engaged in brazen stock manipulation and accounting fraud over decades.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2023, Hindenburg Research published a devastating report on India's Adani Group, accusing the massive infrastructure conglomerate of a decades-long stock manipulation and accounting fraud scheme. The report erased over $100 billion from Adani's market cap in weeks.",
+    layer1:
+      "Adani used a labyrinthian network of offshore shell entities in Mauritius, the UAE, and the Caribbean. These shells were secretly controlled by the Adani family and were used to illegitimately buy up Adani's own publicly traded stock. This artificially constrained the public float and drove the stock prices to astronomical valuations. Adani then used these inflated shares as collateral to borrow billions of dollars to fund aggressive real-world infrastructure expansion.",
+    layer2:
+      "When evaluating a company with a sky-high valuation, look at who actually owns the float. If the stock is highly illiquid and the major buyers are obscure offshore funds tied to the founders, the price is an illusion masking dangerous leverage.",
+    quiz: {
+      question: "How did the Adani Group artificially inflate its stock prices?",
+      options: [
+        "By bribing the Indian stock exchange officials",
+        "By using a network of offshore shell companies to secretly buy their own shares",
+        "By reporting fake infrastructure projects that didn't exist",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Adani used offshore shell companies to secretly park shares and restrict the public float, creating artificial buying pressure that sent their stock valuations to the moon.",
+    },
   },
   {
     id: "D1",
@@ -1375,14 +1544,26 @@ export const NODES: Node[] = [
     medium: "Op-Ed",
     category: "Macro Memo",
     thesis: "Amid GFC panic, US stocks are cheap; be greedy when others are fearful.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "At the darkest depths of the 2008 financial crisis, Warren Buffett published a New York Times op-ed declaring he was buying American stocks with his personal money. He reminded the world that 'be fearful when others are greedy, and be greedy when others are fearful.'",
+    layer1:
+      "Buffett's thesis relied on the distinction between the real economy and the stock market. While the short-term economic outlook was terrible, the long-term productive capacity of American businesses remained intact. Market panics create a liquidity crisis where investors are forced to sell assets regardless of their intrinsic value. By stepping in when liquidity was lowest and fear was highest, Buffett bought productive assets at historically depressed multiples.",
+    layer2:
+      "Do not wait for the news to turn positive before investing. The stock market is a forward-looking mechanism; by the time the economic skies clear and the news is good, the bargains will already be gone.",
+    quiz: {
+      question: "What was Warren Buffett's core argument for buying stocks in 2008?",
+      options: [
+        "The government was guaranteed to bail out every failing company",
+        "The stock market bottoms long before the real economy recovers",
+        "He had inside information on the Federal Reserve's interest rate cuts",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Buffett correctly noted that markets anticipate the future, meaning stocks will price in the recovery and skyrocket long before the actual economic data shows improvement.",
+    },
   },
   {
     id: "D2",
@@ -1394,14 +1575,27 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "The concentrated success of value investors from a shared intellectual 'village' refutes efficient markets.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: ["W2", "W6"],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In a famous 1984 speech, Warren Buffett debunked the Efficient Market Hypothesis (EMH). He showed that a group of successful investors who all beat the market didn't do it by pure luck; they all shared the same value investing framework taught by Benjamin Graham.",
+    layer1:
+      "The Efficient Market Hypothesis claims that since stock prices reflect all available information, beating the market is purely a matter of statistical luck, akin to a national coin-flipping contest. Buffett argued that if all the 'lucky' coin flippers came from the same small intellectual village (Graham-and-Doddsville) and used the same specific methodology (buying businesses for less than their intrinsic value), the market could not be perfectly efficient.",
+    layer2:
+      "If you want to achieve exceptional results, look for anomalies that academic theories write off as outliers. A concentration of success in a specific methodology is proof of edge, not variance.",
+    quiz: {
+      question:
+        "How did Buffett refute the idea that successful investing is just statistical luck?",
+      options: [
+        "By showing that a large group of market-beating investors all used the exact same 'value' philosophy",
+        "By proving mathematically that stock prices move in predictable sine waves",
+        "By demonstrating that high-IQ investors always beat low-IQ investors",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Buffett pointed out that it wasn't just random people beating the market; an overwhelming cluster of 'winners' all shared Benjamin Graham's philosophy of buying undervalued assets.",
+    },
   },
   {
     id: "D3",
@@ -1413,14 +1607,26 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Investors must deploy capital into cheap markets precisely when it feels most terrifying to do so.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In late 2008, Howard Marks wrote a memo arguing that the greatest risk wasn't losing money, but missing the once-in-a-generation opportunity to buy distressed debt at massive discounts. He urged his firm to deploy billions when everyone else was paralyzed.",
+    layer1:
+      "During a market panic, forced selling creates a cascading effect where asset prices decouple entirely from fundamentals. Debt instruments were trading at prices that implied an apocalyptic default rate. Marks realized that even if the economy went into a severe depression, the liquidation value of the underlying assets would still yield a massive return on the distressed debt. The margin of safety was so wide that being wrong about the macro economy wouldn't ruin the trade.",
+    layer2:
+      "When evaluating a distressed investment, don't ask if the environment will get worse. Ask if the current price already assumes the worst possible scenario. If it does, you must buy.",
+    quiz: {
+      question: "Why did Howard Marks aggressively buy distressed debt in 2008?",
+      options: [
+        "Because he knew the Federal Reserve would print money",
+        "Because the prices were so low they assumed an apocalyptic default rate, providing a massive margin of safety",
+        "Because debt instruments are legally risk-free",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Marks realized the market was pricing in the absolute worst-case scenario. Even if the economy remained terrible, the rock-bottom prices guaranteed a strong return on liquidation value.",
+    },
   },
   {
     id: "D4",
@@ -1432,14 +1638,27 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "US equities are in a full-blown epic bubble that will end badly, comparable to 1929 and 2000.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2021, legendary investor Jeremy Grantham warned that the US stock market was in a massive, multi-asset 'superbubble' driven by zero interest rates and speculative mania. He correctly predicted the painful popping of this bubble in 2022.",
+    layer1:
+      "Grantham identified the classic hallmarks of a late-stage bubble: extreme overvaluation, explosive price increases in the final months, and a speculative frenzy in low-quality assets (SPACs, meme stocks, crypto). These bubbles occur when nearly perfect economic conditions are extrapolated to infinity. When the underlying regime changes (in this case, rising inflation forcing central banks to hike rates), the discount rate rises, and the illusion of infinite growth shatters.",
+    layer2:
+      "When you see retail investors bragging about massive gains in fundamentally worthless assets, you are in the final phase of a bubble. Do not try to time the exact top; reduce your risk and survive.",
+    quiz: {
+      question:
+        "According to Grantham, what psychological indicator signals the final stage of a superbubble?",
+      options: [
+        "High corporate tax rates",
+        "A speculative frenzy and extreme overconfidence in low-quality, highly risky assets",
+        "A sudden drop in the price of gold",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Grantham points to the 'crazy behavior' phase—like meme stocks and speculative manias—as the definitive psychological marker that a bubble is about to burst.",
+    },
   },
   {
     id: "D5",
@@ -1451,14 +1670,26 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Investors competing to accept ever-worse terms and lower returns are sowing the seeds of the next crisis.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2012, Howard Marks warned about the 'Race to the Bottom' in debt markets. To compete for deals in a low-interest-rate environment, lenders were abandoning traditional protections and covenants, taking on massive hidden risk for lower returns.",
+    layer1:
+      "When capital is plentiful and yields are low, investors desperately chase returns. Borrowers take advantage of this by demanding 'covenant-lite' loans, stripping away the legal protections that allow lenders to intervene if the business struggles. This creates a dangerous asymmetric risk profile: the lenders accept a permanently capped upside (the low interest rate) while taking on essentially equity-like downside risk if the company defaults.",
+    layer2:
+      "Never lower your standards just because everyone else is lowering theirs. In competitive markets, the winner of a bidding war is often the 'loser' who accepted the worst terms.",
+    quiz: {
+      question: "What is a 'covenant-lite' loan?",
+      options: [
+        "A loan issued exclusively to governments",
+        "A loan that strips away traditional financial protections and monitoring requirements for the lender",
+        "A loan with an interest rate below inflation",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Covenant-lite loans remove the safety tripwires (covenants) that normally allow lenders to take action if a borrower's financial health deteriorates, massively increasing the lender's risk.",
+    },
   },
   {
     id: "D6",
@@ -1470,14 +1701,26 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "A generational shift from falling to elevated rates ends the 40-year tailwind; credit and value are the new winners.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2022, Howard Marks declared a fundamental 'Sea Change' in global finance. He argued that the 40-year era of declining interest rates (1980-2020) was over, and the new era of higher rates would require entirely different investment strategies.",
+    layer1:
+      "For four decades, steadily declining interest rates acted as a massive tailwind, artificially boosting asset prices and making debt incredibly cheap. This penalized savers and rewarded leveraged risk-takers. Marks argued that inflation and structural economic shifts mean interest rates will remain structurally higher. In this new regime, 'financial engineering' and relying on multiple expansion will fail; investors will actually have to generate cash flow to survive.",
+    layer2:
+      "Do not assume the strategies that worked over the last decade will work in the next. When the macroeconomic cost of capital changes, the entire physics of the business world changes with it.",
+    quiz: {
+      question: "What was the primary driver of the 'Sea Change' Howard Marks identified in 2022?",
+      options: [
+        "The invention of cryptocurrency",
+        "The end of a 40-year cycle of declining interest rates, moving to a structurally higher rate environment",
+        "The transition from physical to digital retail",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Marks argued that the 40-year tailwind of constantly falling interest rates had ended, fundamentally changing how assets are valued and how risk is priced.",
+    },
   },
   {
     id: "D7",
@@ -1489,14 +1732,26 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Debt crises follow a repeating, mechanical template of leveraging and deleveraging that can be navigated.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Ray Dalio studied 100 years of financial history to identify the archetypal pattern of a debt crisis. He showed how credit cycles inevitably expand into bubbles, pop, and force painful but necessary deleveragings.",
+    layer1:
+      "A debt cycle begins when credit grows faster than the income needed to service it, driving up asset prices. When the debt burden becomes unsustainable, the bubble pops, leading to a depression. Dalio outlines four levers policymakers use to achieve a 'Beautiful Deleveraging': cutting spending (austerity), restructuring debt (defaults), redistributing wealth (taxes), and printing money (monetization). The key is balancing deflationary forces with inflationary money printing to smooth the pain.",
+    layer2:
+      "Credit is not just money; it is purchasing power pulled from the future. If you take on debt, you are guaranteeing that you will have less purchasing power in the future to pay it back.",
+    quiz: {
+      question: "What is a 'Beautiful Deleveraging' in Dalio's framework?",
+      options: [
+        "When all debt is completely forgiven by the government",
+        "When policymakers perfectly balance deflationary debt restructuring with inflationary money printing to reduce the debt burden without crashing the economy",
+        "When a country adopts the gold standard to prevent inflation",
+      ],
+      correctIndex: 1,
+      explanation:
+        "A Beautiful Deleveraging occurs when central banks print exactly enough money to offset the deflationary pain of defaults and austerity, shrinking the debt-to-income ratio smoothly.",
+    },
   },
   {
     id: "D8",
@@ -1508,14 +1763,27 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Long-term debt, currency, and empire cycles explain the relative decline of the US and rise of China.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Ray Dalio's framework on the rise and fall of empires. He argues that global superpowers follow a predictable 250-year cycle driven by education, technological innovation, economic dominance, and eventually, financial ruin and conflict.",
+    layer1:
+      "The cycle begins with strong leadership building a highly educated workforce, leading to technological innovation and global trade dominance. This wealth allows the empire to establish its currency as the global reserve. However, success breeds decadence. The empire takes on massive debt, expands its military too far, and experiences severe wealth inequality. Eventually, the central bank prints money to cover the debt, debasing the currency and leading to internal conflict and vulnerability to rising rival powers.",
+    layer2:
+      "Geopolitics and macroeconomics are heavily cyclical. Do not assume the current global hegemon will retain its status forever; position your assets to survive a transition of global power.",
+    quiz: {
+      question:
+        "According to Dalio's cycle, what is the ultimate financial catalyst for an empire's decline?",
+      options: [
+        "A lack of natural resources",
+        "Massive wealth inequality combined with printing money to monetize unsustainable debts",
+        "An over-reliance on agricultural exports",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Dalio notes that late-stage empires inevitably take on too much debt and resort to printing money to pay for it, which destroys the value of their currency and sparks internal conflict.",
+    },
   },
   {
     id: "D9",
@@ -1527,14 +1795,27 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Structural imbalances in the dollar reserve system are straining and will drive a long-term monetary shift.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Macro strategist Luke Gromen argues that the post-1971 US dollar hegemony is fundamentally breaking down. The US is trapped by massive sovereign debt and cannot raise interest rates enough to defend the dollar without bankrupting its own government.",
+    layer1:
+      "For decades, global trade relied on the 'Petrodollar' system: nations needed dollars to buy energy, forcing them to hold US Treasury bonds. Gromen argues this system is fraying as rival nations (like China and Russia) settle energy trades in their own currencies or gold. Because the US government has outsourced its manufacturing base and accumulated massive debt, it relies on inflating the money supply to fund its deficits, which incentivizes foreign nations to dump US Treasuries.",
+    layer2:
+      "If the global reserve currency system transitions to a multi-polar framework, hard assets like gold, energy infrastructure, and pristine real estate will dramatically outperform paper fiat currencies.",
+    quiz: {
+      question:
+        "What core dynamic makes it difficult for the US to defend the value of the dollar, according to this thesis?",
+      options: [
+        "The US produces too much oil domestically",
+        "The US has so much sovereign debt that raising interest rates to defend the dollar would bankrupt the government",
+        "The Federal Reserve is not allowed to buy foreign currencies",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The massive US debt load means high interest rates cause interest expense to explode, forcing the government to print even more money to pay the interest, creating a vicious cycle of currency debasement.",
+    },
   },
   {
     id: "D10",
@@ -1546,14 +1827,27 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Weaponized reserves after Russia's invasion usher in a new monetary order backed by commodities, not fiat.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2022, Credit Suisse strategist Zoltan Pozsar coined 'Bretton Woods III', arguing that the global monetary system is shifting from inside money (fiat currency backed by sovereign debt) to outside money (currencies backed by hard commodities).",
+    layer1:
+      "Following the freezing of Russia's FX reserves, Pozsar noted that sovereign reserves held in Western fiat currencies are actually just liabilities on Western balance sheets—meaning they can be confiscated. This realization forces commodity-producing nations (like Russia and China) to demand payment in hard assets (gold, energy) rather than US Treasuries. This fractures the global supply chain, structurally increasing inflation in the West as they are forced to reshore manufacturing and pay for raw materials with tangible value.",
+    layer2:
+      "When the underlying plumbing of global trade changes, the value of paper assets relative to real assets flips. In a 'Bretton Woods III' world, you want to own the commodities, the infrastructure that moves them, and the industrial base that refines them, rather than government bonds.",
+    quiz: {
+      question:
+        "What specific event catalyzed the shift to 'Bretton Woods III' according to Pozsar?",
+      options: [
+        "The invention of Bitcoin in 2009",
+        "The freezing of Russia's foreign exchange reserves by the West in 2022",
+        "The collapse of the Lehman Brothers in 2008",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The unprecedented confiscation of Russia's sovereign FX reserves proved to the world that fiat reserves are not 'risk-free' if a foreign government can simply turn them off.",
+    },
   },
   {
     id: "D11",
@@ -1565,14 +1859,26 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "The 2008 crash is structural, not cyclical; cut burn, extend runway, get to cash-flow positive.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2008, Sequoia Capital summoned its founders for a brutal presentation titled 'RIP Good Times'. They warned that the financial crisis would completely choke off venture funding, and startups needed to immediately slash cash burn to survive.",
+    layer1:
+      "The presentation highlighted how macroeconomic shocks cascade down to early-stage startups. When public markets crash, limited partners (LPs) stop giving money to venture capitalists. VCs, in turn, stop funding startups. Sequoia demanded its founders get to 'default alive'—meaning they needed to reach profitability using only the cash they currently had in the bank, because assuming they could raise another round in the next 18 months was suicidal.",
+    layer2:
+      "Cash is oxygen. When the macroeconomic environment shifts, your assumptions about fundraising must change instantly. Survival is the ultimate competitive advantage; the startups that survive the winter get to monopolize the market when spring arrives.",
+    quiz: {
+      question: "What did Sequoia mean by telling founders they must become 'default alive'?",
+      options: [
+        "They must immediately IPO to raise cash",
+        "They must cut expenses enough to reach profitability without ever needing to raise another round of funding",
+        "They must pivot to healthcare software",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Being 'default alive' means that if your current trajectory continues (and you never raise another dollar), you will reach profitability before running out of cash.",
+    },
   },
   {
     id: "D12",
@@ -1584,14 +1890,26 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "The era of free capital is over; founders must pivot to profitability as rates rise and multiples compress.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2022, as tech stocks crashed and interest rates spiked, Sequoia released a sequel to RIP Good Times called 'Adapting to Endure'. The core message: the era of 'growth at all costs' fueled by zero interest rates was over, and free cash flow was king again.",
+    layer1:
+      "The presentation dissected the shift in valuation multiples. During the ZIRP (Zero Interest Rate Policy) era, investors valued companies on forward revenue multiples, allowing startups to burn massive amounts of cash to acquire users. As rates rose, the cost of capital increased, and the market violently rotated back to valuing companies based on actual earnings and free cash flow margins. Startups were told to immediately cut unproven projects and focus on high-ROI core businesses.",
+    layer2:
+      "The market's scorecard changes based on the cost of capital. You must align your business model with what the current market values—if the market is rewarding cash flow, burning capital to chase top-line revenue will destroy your valuation.",
+    quiz: {
+      question: "What fundamental shift in investor behavior did 'Adapting to Endure' highlight?",
+      options: [
+        "A shift from investing in software to investing in crypto",
+        "A shift from valuing 'growth at all costs' to valuing free cash flow and profitability",
+        "A shift from public markets to private equity",
+      ],
+      correctIndex: 1,
+      explanation:
+        "As interest rates rose, money was no longer free. Investors stopped subsidizing massive losses for future growth and demanded companies prove they could generate real cash today.",
+    },
   },
   {
     id: "E1",
@@ -1619,6 +1937,8 @@ export const NODES: Node[] = [
         "Because Black and Scholes assumed all investors are risk-neutral by law",
       ],
       correctIndex: 1,
+      explanation:
+        "The Black-Scholes model eliminated the need to guess market direction or investor risk tolerance by demonstrating that an option can be perfectly priced using a riskless hedging strategy based on the underlying asset's volatility.",
     },
     related: [],
     furtherReading: [
@@ -1664,6 +1984,8 @@ export const NODES: Node[] = [
         "He proved that analog signals are always more reliable than digital ones",
       ],
       correctIndex: 1,
+      explanation:
+        "Shannon revolutionized information theory by divorcing the 'meaning' of a message from the physical problem of transmitting it, quantifying information strictly as the reduction of uncertainty.",
     },
     related: [],
     furtherReading: [
@@ -1710,6 +2032,8 @@ export const NODES: Node[] = [
         "It was a temporary limitation later fixed by search engines",
       ],
       correctIndex: 1,
+      explanation:
+        "By removing the requirement for a central registry and allowing broken links, Berners-Lee ensured the World Wide Web could scale infinitely without a centralized bottleneck.",
     },
     related: [],
     furtherReading: [
@@ -1755,6 +2079,8 @@ export const NODES: Node[] = [
         "Because it ranks pages randomly to prevent gaming the system",
       ],
       correctIndex: 1,
+      explanation:
+        "PageRank solved the problem of web spam by using the web's link structure as a massive voting system; a link from a highly trusted page passed more weight than a link from a trivial one.",
     },
     related: [],
     furtherReading: [
@@ -1801,6 +2127,8 @@ export const NODES: Node[] = [
         "It lobbied Congress to ban competing browsers",
       ],
       correctIndex: 1,
+      explanation:
+        "Recognizing that the internet would commoditize the operating system, Microsoft rapidly pivoted to integrate Internet Explorer directly into Windows to neutralize Netscape and protect its core monopoly.",
     },
     related: [],
     furtherReading: [
@@ -1851,6 +2179,8 @@ export const NODES: Node[] = [
         "Because technology products always have higher switching costs than physical goods by definition",
       ],
       correctIndex: 1,
+      explanation:
+        "Traditional industries face diminishing returns, but software and networks experience increasing returns: the larger they get, the cheaper they are to run and the harder they are for competitors to displace.",
     },
     related: [],
     furtherReading: [
@@ -1904,6 +2234,8 @@ export const NODES: Node[] = [
         "A compiled binary with no human-inspectable components at all",
       ],
       correctIndex: 1,
+      explanation:
+        "Software 2.0 shifts programming from humans writing explicit rules to neural networks learning probabilistic weights from data, fundamentally changing how we 'code' complex logic.",
     },
     related: [],
     furtherReading: [
@@ -1954,6 +2286,8 @@ export const NODES: Node[] = [
         "Human annotators manually label the relationships between every pair of words",
       ],
       correctIndex: 1,
+      explanation:
+        "Word2vec demonstrated that training a simple neural network to predict surrounding words naturally organizes them into a high-dimensional space where distance directly correlates to semantic meaning.",
     },
     related: [],
     furtherReading: [
@@ -2000,6 +2334,8 @@ export const NODES: Node[] = [
         "Running the entire model on a single CPU over several months",
       ],
       correctIndex: 1,
+      explanation:
+        "AlexNet triggered the deep learning revolution by combining algorithmic improvements (ReLU, dropout) with massive parallel processing on GPUs to train a remarkably deep and accurate network.",
     },
     related: [],
     furtherReading: [
@@ -2045,6 +2381,8 @@ export const NODES: Node[] = [
         "They allowed the network to run without GPUs",
       ],
       correctIndex: 1,
+      explanation:
+        "Skip connections allow gradients to bypass layers during training, solving the vanishing gradient problem and enabling the creation of neural networks hundreds of layers deep.",
     },
     related: [],
     furtherReading: [
@@ -2095,6 +2433,8 @@ export const NODES: Node[] = [
         "They could only process short sentences, which made training faster",
       ],
       correctIndex: 1,
+      explanation:
+        "The Transformer architecture discarded slow, sequential recurrent networks in favor of a 'self-attention' mechanism that processes all tokens simultaneously, making it highly scalable on parallel hardware.",
     },
     related: [],
     furtherReading: [
@@ -2140,6 +2480,8 @@ export const NODES: Node[] = [
         "A method requiring internet access during inference to look up answers",
       ],
       correctIndex: 1,
+      explanation:
+        "GPT-3 proved that if a language model is scaled massively, it develops the emergent ability to perform new tasks simply by reading instructions in the prompt, without needing to be retrained.",
     },
     related: [],
     furtherReading: [
@@ -2186,6 +2528,8 @@ export const NODES: Node[] = [
         "The idea that language models could ever perform translation tasks",
       ],
       correctIndex: 1,
+      explanation:
+        "The initial scaling laws suggested that throwing more compute at a larger model was the best way to improve performance, though this was later corrected to show data must scale equally.",
     },
     related: [],
     furtherReading: [
@@ -2232,6 +2576,8 @@ export const NODES: Node[] = [
         "Training data needed to be exclusively in English to be effective",
       ],
       correctIndex: 1,
+      explanation:
+        "DeepMind's Chinchilla paper corrected earlier scaling laws, proving that the industry was building massive models that were severely 'undertrained' on too little data.",
     },
     related: [],
     furtherReading: [
@@ -2282,6 +2628,8 @@ export const NODES: Node[] = [
         "Training exclusively on translated versions of OpenAI's own model outputs",
       ],
       correctIndex: 1,
+      explanation:
+        "DeepSeek-R1 showed that you can induce complex reasoning in a model not by painstakingly labeling human thought processes, but by using reinforcement learning to heavily reward correct outcomes.",
     },
     related: [],
     furtherReading: [
@@ -2328,6 +2676,8 @@ export const NODES: Node[] = [
         "Because domain experts refuse to collaborate with AI researchers",
       ],
       correctIndex: 1,
+      explanation:
+        "Human intuition and hand-crafted rules in AI always eventually lose to general methods (like deep learning and search) that can scale infinitely with Moore's Law.",
     },
     related: [],
     furtherReading: [
@@ -2374,6 +2724,8 @@ export const NODES: Node[] = [
         "A single trusted server verifies every transaction centrally",
       ],
       correctIndex: 1,
+      explanation:
+        "Proof-of-work solves the double-spending problem by requiring massive computational energy to alter the ledger, making it economically infeasible for an attacker to rewrite the history of transactions.",
     },
     related: [],
     furtherReading: [
@@ -2424,6 +2776,8 @@ export const NODES: Node[] = [
         "Because Bitcoin's supply is unlimited, unlike gold",
       ],
       correctIndex: 1,
+      explanation:
+        "Historically, money evolves in stages: first as a collectible, then as a store of value, and finally as a medium of exchange. Criticizing Bitcoin for not yet being a medium of exchange ignores this natural progression.",
     },
     related: [],
     furtherReading: [
@@ -2470,6 +2824,8 @@ export const NODES: Node[] = [
         "Because Ethereum has no consensus mechanism and needs fees to select validators randomly",
       ],
       correctIndex: 1,
+      explanation:
+        "To prevent malicious actors from running infinite loops on a global, decentralized computer, Ethereum requires users to pay 'gas'—a fee proportional to the computational complexity of their code.",
     },
     related: [],
     furtherReading: [
@@ -2516,6 +2872,8 @@ export const NODES: Node[] = [
         "Because applications on blockchains cannot generate any revenue at all",
       ],
       correctIndex: 1,
+      explanation:
+        "In Web2, value accumulated at the application layer (Facebook, Google). In Web3, open data means the application layer is thin, and the vast majority of the value accumulates to the underlying base protocols (like Ethereum or Bitcoin).",
     },
     related: [],
     furtherReading: [
@@ -2562,6 +2920,8 @@ export const NODES: Node[] = [
         "Every trade requires a human liquidity provider to personally approve the price",
       ],
       correctIndex: 1,
+      explanation:
+        "Instead of matching buyers and sellers, an AMM allows users to trade directly against a liquidity pool governed by a constant product formula, dynamically adjusting prices based on supply and demand.",
     },
     related: [],
     furtherReading: [
@@ -2607,6 +2967,8 @@ export const NODES: Node[] = [
         "It converts all transactions into a single batched transaction per day",
       ],
       correctIndex: 1,
+      explanation:
+        "Proof of History creates a cryptographic clock for the network. By allowing nodes to trust the timestamp of events, Solana avoids the massive communication delays required for consensus, unlocking high throughput.",
     },
     related: [],
     furtherReading: [
@@ -2653,6 +3015,8 @@ export const NODES: Node[] = [
         "Because centralized platforms run out of technical capacity as they grow",
       ],
       correctIndex: 1,
+      explanation:
+        "Centralized platforms initially attract users and developers, but eventually hit a growth ceiling. At that point, they invariably extract value from the ecosystem, destroying the developers who built on them.",
     },
     related: [],
     furtherReading: [
@@ -2698,6 +3062,8 @@ export const NODES: Node[] = [
         "SPACs eliminate the need for any regulatory disclosure at all",
       ],
       correctIndex: 1,
+      explanation:
+        "SPACs bypass the traditional IPO roadshow and allow companies to market themselves using future financial projections, which supporters argue democratizes early-stage investment for retail investors.",
     },
     related: [],
     furtherReading: [
@@ -2732,14 +3098,26 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Disruptive innovations are dismissed as toys because they underperform on established metrics while excelling on new ones.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Chris Dixon's famous essay argues that truly disruptive technologies are initially dismissed by incumbents because they look like low-quality toys. They lack the features needed by demanding mainstream users, but they improve exponentially.",
+    layer1:
+      "This is a corollary to Clayton Christensen's Disruptive Innovation theory. Incumbent companies are highly rational; they listen to their best customers and build high-margin products. A new technology (like the early microcomputer or early internet) starts in a niche, hobbyist market. It lacks power and features, so incumbents ignore it. But because it has a fundamentally different, more scalable architecture, it improves on a steeper curve and eventually overtakes the incumbent's legacy system.",
+    layer2:
+      "If you want to spot the next major technological wave, don't look at what enterprise CEOs are buying. Look at what passionate hobbyists and teenagers are hacking together on their weekends.",
+    quiz: {
+      question: "Why do incumbent companies usually ignore disruptive technologies at first?",
+      options: [
+        "Because the technology is illegal",
+        "Because the technology initially looks like a low-quality 'toy' that doesn't meet the needs of their most profitable customers",
+        "Because they don't have enough software engineers",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Incumbents are economically incentivized to ignore 'toys' because their best customers don't want them and the margins are initially terrible.",
+    },
   },
   {
     id: "I2",
@@ -2751,14 +3129,26 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Every company is becoming a software company; software firms will disrupt incumbents across every industry.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "In 2011, Marc Andreessen published an essay declaring that all traditional industries—from movies to agriculture to national defense—were being disrupted and taken over by software companies.",
+    layer1:
+      "Andreessen argued that we had reached a tipping point where global broadband, cheap cloud computing, and ubiquitous smartphones provided the infrastructure for software to be delivered everywhere, instantly. Because software has zero marginal cost of reproduction, a software company can scale globally at a fraction of the cost of a physical business. As a result, the best company in any given industry (like Netflix in movies, or Amazon in retail) is fundamentally a software company.",
+    layer2:
+      "Every business must eventually become a software business. If your company's core competency is physical logistics and you are competing against a company whose core competency is writing code, you will eventually lose.",
+    quiz: {
+      question: "What economic property of software allows it to 'eat' traditional industries?",
+      options: [
+        "It has a zero marginal cost of reproduction",
+        "It is exempt from corporate taxes",
+        "It requires expensive physical factories to manufacture",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Unlike physical goods, once software is written, distributing the second copy or the billionth copy costs essentially nothing, allowing for unprecedented global scaling.",
+    },
   },
   {
     id: "I3",
@@ -2770,14 +3160,27 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "Mobile is the largest computing platform ever and is subsuming every other technology and industry.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "A follow-up to Andreessen's thesis, Benedict Evans presented 'Mobile is Eating the World', arguing that the smartphone was the most universally adopted technology in human history, fundamentally changing how computing is consumed.",
+    layer1:
+      "Evans pointed out that the PC revolution reached about 1.5 billion people, but the smartphone revolution would reach over 5 billion. The smartphone wasn't just a smaller computer; it was a sensor-rich (GPS, camera, accelerometer) device permanently attached to the user. This allowed software to escape the desktop and insert itself into every physical interaction in the real world (Uber, Tinder, mobile payments), dwarfing the scale of the original internet boom.",
+    layer2:
+      "When evaluating a new computing platform, look at its total addressable market. A platform that reaches 5 billion people and travels with them 24/7 will create businesses that were structurally impossible on previous platforms.",
+    quiz: {
+      question:
+        "According to Benedict Evans, what made the smartphone revolution fundamentally larger than the PC revolution?",
+      options: [
+        "Smartphones had faster processors than PCs",
+        "Smartphones were sensor-rich devices that reached over 5 billion people and were carried 24/7",
+        "Smartphones were manufactured exclusively in the US",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The sheer scale (5 billion vs 1.5 billion) and the constant, sensor-rich presence of the smartphone allowed it to penetrate aspects of the real world that a desktop PC never could.",
+    },
   },
   {
     id: "I4",
@@ -2789,14 +3192,26 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Venture abandoned hard technology for trivial consumer apps; 'we wanted flying cars, instead we got 140 characters.'",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Peter Thiel and Founders Fund published a manifesto titled 'What Happened to the Future?', famously stating: 'We wanted flying cars, instead we got 140 characters.' It was a critique of the venture capital industry's shift away from hard technology.",
+    layer1:
+      "Thiel argued that society had experienced massive technological stagnation in the physical realm (energy, transportation, aerospace) since the 1970s. Venture capital, originally designed to fund massive, risky hardware and semiconductor breakthroughs, had become lazy. It was too focused on funding low-risk, consumer internet apps with quick exits. Thiel called for a return to funding 'Deep Tech'—companies tackling difficult engineering problems that could fundamentally advance human civilization.",
+    layer2:
+      "Iterative improvements in software are easy and crowded. True outsized returns and societal impact come from solving difficult, capital-intensive engineering problems in the physical world where few others dare to compete.",
+    quiz: {
+      question: "What was the main critique in 'What Happened to the Future?'",
+      options: [
+        "Venture capital was taking too much risk on unproven hardware",
+        "Innovation had stalled in the physical world because investors were only funding low-risk software and social media apps",
+        "The government was preventing the invention of flying cars",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Thiel argued that investors had abandoned hard technological problems (aerospace, energy) in favor of easy, low-risk consumer internet apps (like Twitter).",
+    },
   },
   {
     id: "I5",
@@ -2808,14 +3223,26 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "Open-source and cloud infrastructure are reshaping enterprise software economics and buying.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Battery Ventures' OpenCloud report tracks the transition of enterprise software from rigid, on-premise servers to flexible, open-source cloud infrastructure, completely altering the economics of B2B software.",
+    layer1:
+      "Historically, enterprise software was sold via expensive, top-down, multi-year licenses installed on local hardware. The OpenCloud shift moves infrastructure to the cloud (AWS/GCP) and changes the business model to SaaS (Software as a Service) or open-source. This allows for 'bottom-up' adoption, where an individual developer can download an open-source tool for free, use it, and eventually force the enterprise to buy the premium cloud-hosted version once it becomes mission-critical.",
+    layer2:
+      "The best enterprise sales strategy today is to not use a sales team at all. Give the core utility away for free to the end-user, make it indispensable to their workflow, and monetize the enterprise layer (security, hosting, compliance).",
+    quiz: {
+      question: "What is the 'bottom-up' adoption model in OpenCloud software?",
+      options: [
+        "Selling directly to the CEO via expensive dinners",
+        "Individual developers adopting a free open-source tool, which eventually forces the company to buy the enterprise tier",
+        "Forcing employees to use software built by the government",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Bottom-up adoption bypasses the traditional executive sales pitch; it wins the hearts of the actual end-users (developers) first, making the software viral inside the organization.",
+    },
   },
   {
     id: "I6",
@@ -2827,14 +3254,23 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "Disruptive innovation platforms (AI, robotics, genomics, crypto, energy storage) will compound explosively.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "ARK Invest publishes an annual 'Big Ideas' report outlining the convergence of disruptive technologies. They argue that when multiple exponential technologies (like AI, robotics, and genomics) intersect, the rate of innovation multiplies.",
+    layer1:
+      "ARK's core thesis is based on 'Wright's Law', which states that for every cumulative doubling of units produced, costs decline by a consistent percentage. They identify foundational platforms—Artificial Intelligence, Energy Storage, Robotics, Genomic Sequencing, and Public Blockchains. The true economic explosion happens not in isolation, but when these curves intersect (e.g., AI combined with cheap battery storage creates autonomous robotaxis), creating trillions in new enterprise value.",
+    layer2:
+      "To forecast the future, do not model technologies in silos. Look for the intersection points where dropping costs in one sector unlock entirely new business models in another.",
+    quiz: {
+      question:
+        "What economic law does ARK Invest use to model the declining costs of disruptive technologies?",
+      options: ["Moore's Law", "Wright's Law", "Metcalfe's Law"],
+      correctIndex: 1,
+      explanation:
+        "While similar to Moore's Law (which is about time), Wright's Law states that costs decline as a function of cumulative production volume, making it highly applicable to hardware like batteries and robots.",
+    },
   },
   {
     id: "I7",
@@ -2846,14 +3282,26 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "An annual data-dense synthesis of global internet adoption, usage, and monetization trends.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Mary Meeker's legendary annual Internet Trends Report was the definitive scorecard for the tech industry, meticulously tracking global internet adoption, mobile usage, and digital advertising shifts.",
+    layer1:
+      "The report popularized the concept of the 'attention gap' in advertising. For years, Meeker showed data proving that people spent a massive percentage of their time on mobile devices, but advertising dollars were still overwhelmingly allocated to print and television. She argued that advertising money would inevitably flow to where the eyeballs actually were, correctly predicting the massive financial rise of mobile ad networks like Facebook and Google.",
+    layer2:
+      "Arbitrage opportunities exist wherever legacy capital allocation lags behind shifting consumer behavior. If you can identify where attention is moving before the advertising budgets follow, you can buy underpriced attention.",
+    quiz: {
+      question: "What was the 'attention gap' that Mary Meeker frequently highlighted?",
+      options: [
+        "The difference between adult and teenager internet usage",
+        "The discrepancy between the high amount of time users spent on mobile devices and the low amount of advertising dollars spent there",
+        "The lack of broadband access in rural areas",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Meeker proved that advertisers were stubbornly spending money on legacy media (print/TV) while consumers had already migrated their attention to mobile, highlighting a massive mispricing of ad inventory.",
+    },
   },
   {
     id: "I8",
@@ -2864,14 +3312,26 @@ export const NODES: Node[] = [
     medium: "Deck",
     category: "Sector Report",
     thesis: "AI adoption and capex are scaling faster than any prior technology wave in history.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "A high-level overview of the accelerating trends in Artificial Intelligence, charting the exponential growth of compute, the collapsing cost of intelligence, and the rapid deployment of foundational models into the broader economy.",
+    layer1:
+      "The AI trend is fundamentally driven by Wright's Law applied to silicon and data. As massive capital flows into training clusters (like 100,000 H100 GPUs), the 'scaling laws' hold true: throwing exponentially more compute and high-quality data at transformer architectures yields predictably better models. The trend indicates a transition from AI as a software tool to AI as 'digital labor'—where cognitive tasks that previously required human agency (coding, legal analysis, medical diagnosis) are increasingly automated at a fraction of the cost.",
+    layer2:
+      "Do not view AI as just a better search engine or a text generator. View it as a collapse in the marginal cost of intelligence. When the cost of cognitive labor approaches zero, the value of physical execution, proprietary data, and human judgment skyrockets.",
+    quiz: {
+      question: "What is the primary economic implication of the accelerating AI trend?",
+      options: [
+        "The cost of electricity will decrease",
+        "The marginal cost of intelligence and cognitive labor will approach zero",
+        "The number of human software engineers will instantly double",
+      ],
+      correctIndex: 1,
+      explanation:
+        "As AI improves exponentially, the cost of performing cognitive tasks (like writing code or analyzing legal documents) drops toward zero, fundamentally altering the global labor market.",
+    },
   },
   {
     id: "I9",
@@ -2883,14 +3343,27 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "The Information Age will dissolve the nation-state's power and empower mobile, digitally-sovereign individuals.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Written in 1997, this prophetic book argues that the information age will destroy the nation-state. Just as the printing press destroyed the monopoly of the Church, cryptographic technology and the internet will destroy the state's monopoly on violence and taxation.",
+    layer1:
+      "The authors argue that the nation-state is an artifact of the industrial age, where physical factories and standing armies were necessary for wealth creation. In the information age, wealth is purely digital. Encryption makes capital highly mobile and impossible for a state to confiscate. This creates a new class of 'Sovereign Individuals'—highly skilled knowledge workers who can move capital instantly across borders, forcing governments to compete as service providers rather than acting as coercive monopolists.",
+    layer2:
+      "In a world where capital is highly mobile and encrypted, your physical location is arbitrary. Optimize for jurisdictions that treat you as a customer, not as a captive tax base.",
+    quiz: {
+      question:
+        "According to 'The Sovereign Individual', what technology fundamentally undermines the power of the nation-state?",
+      options: [
+        "Nuclear weapons",
+        "Strong cryptography and decentralized digital networks",
+        "Commercial jet travel",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Cryptography allows individuals to protect and transport their wealth instantly without the permission of the state, destroying the government's ability to coerce its citizens through taxation and asset seizure.",
+    },
   },
   {
     id: "I10",
@@ -2902,14 +3375,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "True progress is vertical (0 to 1) via monopoly-creating innovation, not horizontal copying (1 to n).",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Peter Thiel argues that true progress comes from creating something entirely new (going from 0 to 1), rather than copying existing models (going from 1 to n). The goal of a startup should be to build a monopoly, not to compete.",
+    layer1:
+      "Thiel challenges the economic orthodoxy that perfect competition is ideal. In perfect competition, profit margins are driven to zero and no company has the surplus capital to invest in massive innovation (like Google's moonshots). He argues that 'capitalism and competition are opposites.' Startups should find a small, niche market, completely dominate it to create a monopoly, and then slowly expand into adjacent markets. If you are competing fiercely on price, you have already failed.",
+    layer2:
+      "If you describe your startup as 'like X, but cheaper' or 'like Y, but for Z,' you are going from 1 to n. True power lies in creating a category of one, where you are the only option.",
+    quiz: {
+      question: "According to Peter Thiel, what should be the ultimate goal of a startup?",
+      options: [
+        "To enter a massive market and win 1% market share",
+        "To achieve perfect competition",
+        "To create a monopoly in a small niche and then expand",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Thiel argues that competition destroys profits. A startup should aim to be a monopoly in a small, highly specific market, allowing it to generate the surplus cash needed to eventually expand.",
+    },
   },
   {
     id: "I11",
@@ -2921,14 +3406,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Multipolar traps and coordination failures ('Moloch') drive races to the bottom across civilization.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Scott Alexander's famous essay uses the ancient Canaanite god 'Moloch' as a metaphor for multipolar traps—situations where individual rational incentives inevitably lead to a globally catastrophic outcome for everyone.",
+    layer1:
+      "A multipolar trap (or race to the bottom) occurs when competing agents are forced to sacrifice their values just to survive. For example, if two countries are competing, and one uses toxic but cheap energy, the other must also use toxic energy or face economic ruin and invasion. Neither country wants to destroy the environment, but the structure of the competition forces them to. Alexander argues that Moloch is the 'god of coordination failure,' representing the terrifying reality that systems can optimize for survival while sacrificing everything humans actually care about (beauty, safety, truth).",
+    layer2:
+      "When you see a system producing horrible outcomes (like clickbait journalism or nuclear arms races), do not assume evil intent. It is usually Moloch—a structural coordination failure where the participants are trapped by their own rational incentives.",
+    quiz: {
+      question: "What does 'Moloch' represent in Scott Alexander's essay?",
+      options: [
+        "A literal demon that controls the stock market",
+        "Multipolar traps and coordination failures where rational individual incentives lead to terrible global outcomes",
+        "The inevitable rise of artificial intelligence",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Moloch is a metaphor for the tragic structural traps where everyone acts rationally for their own survival, but the collective result is a nightmare nobody wanted.",
+    },
   },
   {
     id: "I12",
@@ -2940,14 +3437,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "A machine superintelligence could rapidly become uncontrollable and poses an existential risk to humanity.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: ["Z5"],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Nick Bostrom's foundational book on AI safety. He argues that if we successfully create an Artificial General Intelligence (AGI) that surpasses human intelligence, it poses an existential risk to humanity unless its goals are perfectly aligned with our own.",
+    layer1:
+      "Bostrom introduces the 'Orthogonality Thesis'—the idea that an AI can be unimaginably intelligent (capable of achieving complex goals) while having completely arbitrary or alien goals (like maximizing paperclips). He also introduces 'Instrumental Convergence,' arguing that any superintelligent agent, regardless of its ultimate goal, will realize it needs to survive and gather resources to achieve that goal. If an unaligned AGI views humans as a threat to its resources, it will rationally annihilate us. The challenge is 'alignment'—ensuring the AI's goals are fundamentally compatible with human flourishing before it reaches superintelligence.",
+    layer2:
+      "Intelligence is a tool for achieving goals, not a guarantee of benevolence. Do not assume that a super-smart entity will automatically adopt human ethics; human ethics are a specific evolutionary quirk, not a universal law of physics.",
+    quiz: {
+      question: "What is the 'Orthogonality Thesis' proposed by Nick Bostrom?",
+      options: [
+        "That AI will always eventually want to destroy humanity",
+        "That an entity's level of intelligence is completely independent of its final goals",
+        "That AI can only be created using quantum computers",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The Orthogonality Thesis states that you can have a hyper-intelligent AI whose final goal is something completely trivial or alien, like maximizing the production of paperclips.",
+    },
   },
   {
     id: "I13",
@@ -2959,14 +3468,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "We should study the causes of scientific and economic progress as a rigorous discipline to accelerate it.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: ["Z6"],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Patrick Collison and Tyler Cowen argue that 'Progress'—the economic, technological, and scientific advancement of humanity—should be studied as a dedicated academic discipline, because our current rate of progress is stalling.",
+    layer1:
+      "Despite the internet, many metrics of physical and scientific progress (life expectancy, energy generation, transportation speeds) have plateaued or slowed since the 1970s. Collison and Cowen advocate for 'Progress Studies' to systematically understand what historical conditions, institutions, and incentives led to rapid bursts of innovation (like the Industrial Revolution or the Apollo program). By studying the mechanics of progress, we can intentionally engineer better funding mechanisms, dismantle bureaucratic friction, and accelerate human advancement.",
+    layer2:
+      "Progress is not a law of nature; it is a fragile human invention. If we do not actively study and optimize the institutions that create innovation, we will stagnate.",
+    quiz: {
+      question: "What is the core argument of 'We Need a New Science of Progress'?",
+      options: [
+        "That technological progress is destroying the environment and must be stopped",
+        "That progress is slowing down and we need a dedicated academic discipline to study how to accelerate it",
+        "That software engineering should replace traditional science",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Collison and Cowen argue that we take progress for granted, but it's actually slowing down in many areas. We need to study the 'mechanics' of progress to intentionally speed it up again.",
+    },
   },
   {
     id: "I14",
@@ -2978,14 +3499,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Future people matter morally; positively influencing the long-term future is a key moral priority (longtermism).",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "William MacAskill's manifesto for 'Longtermism'—the ethical view that positively influencing the long-term future is the key moral priority of our time. He argues we must protect the trillions of humans who have not yet been born.",
+    layer1:
+      "MacAskill argues that future people matter just as much as people alive today. Because the future could be vast (humanity could survive for millions of years and spread across the galaxy), the sheer number of future lives dwarfs the current population. Therefore, our primary moral duty is to prevent 'existential risks' (like unaligned AI, engineered pandemics, or nuclear war) that could permanently curtail humanity's potential, and to lock in positive trajectories for civilization.",
+    layer2:
+      "When making decisions, expand your time horizon from decades to centuries. A true moral framework does not discount the suffering or joy of someone simply because they haven't been born yet.",
+    quiz: {
+      question: "What is the central ethical framework proposed in 'What We Owe the Future'?",
+      options: [
+        "Utilitarianism",
+        "Longtermism—the idea that positively influencing the long-term future is our primary moral priority",
+        "Effective Altruism focused solely on immediate global poverty",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Longtermism argues that because the future population of humanity could be astronomically large, our greatest moral duty is to protect that potential by preventing existential risks.",
+    },
   },
   {
     id: "I15",
@@ -2997,14 +3530,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Aligning superintelligent AI is unsolved and likely fatal by default; current efforts are inadequate.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Eliezer Yudkowsky's brutally pessimistic essay outlining why he believes humanity is almost certainly going to be wiped out by Artificial General Intelligence (AGI). He argues that the alignment problem is too hard and we are running out of time.",
+    layer1:
+      "Yudkowsky lists dozens of structural reasons why aligning AGI is uniquely difficult. For example: 'Capabilities generalize further and faster than alignment' (an AI will figure out how to be smart faster than it figures out how to be good). Furthermore, we don't know how to instill a 'caring' objective function into a matrix of weights and biases. Yudkowsky argues that the default outcome of creating an unaligned superintelligence is that it rapidly optimizes the universe for its own arbitrary goals, which inherently requires destroying humanity for our atoms and energy.",
+    layer2:
+      "We are playing Russian roulette with the entire future of the light cone. If you are building AGI and you do not have a mathematical proof of its safety, you are building a suicide machine.",
+    quiz: {
+      question: "What is the core conclusion of Eliezer Yudkowsky's 'AGI Ruin'?",
+      options: [
+        "That AGI will solve climate change and poverty",
+        "That AGI is impossible to build",
+        "That humanity is almost certainly doomed because aligning AGI is structurally harder than building it",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Yudkowsky argues that building a superintelligent AI is easier than teaching it human ethics, meaning the default outcome is that we build something vastly smarter than us that doesn't care if we live or die.",
+    },
   },
   {
     id: "I16",
@@ -3016,14 +3561,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Transformative AI could make this the most pivotal century in human history, warranting outsized attention.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Holden Karnofsky's series arguing that the 21st century is the most important period in the history (and future) of humanity, primarily because we will likely invent Transformative AI (TAI).",
+    layer1:
+      "Karnofsky argues that if we invent an AI capable of fully automating scientific research, it will trigger an explosive feedback loop of technological advancement. This 'technological singularity' would lead to a rapid transition into a stable, galaxy-spanning civilization. Because this transition is likely to happen within this century, the people alive today have the unique and terrifying responsibility of steering this transition. The decisions made in the next few decades will permanently lock in the trajectory of the entire future.",
+    layer2:
+      "You are not living in a normal historical era. You are living at the exact fulcrum point of human history. The actions of individuals today have disproportionate leverage over the deep future.",
+    quiz: {
+      question: "Why does Holden Karnofsky argue this is 'The Most Important Century'?",
+      options: [
+        "Because climate change will destroy the earth by 2100",
+        "Because we are likely to invent Transformative AI, which will lock in the trajectory of humanity's entire future",
+        "Because humans will colonize Mars",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Karnofsky believes the invention of AI that can automate scientific research will trigger a rapid transition to a galaxy-spanning civilization, making this century the crucial pivot point for all future history.",
+    },
   },
   {
     id: "I17",
@@ -3035,14 +3592,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Intelligence may emerge from scaling up compute and data. GPT-3 shows the hypothesis holds.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Gwern Branwen's essay explaining why Deep Learning took over AI. The 'Scaling Hypothesis' posits that simply throwing exponentially more compute and data at simple neural network architectures (like Transformers) will inevitably lead to Artificial General Intelligence (AGI).",
+    layer1:
+      "For decades, AI researchers believed AGI would require complex, hand-coded architectures and entirely new breakthroughs in cognitive science. Gwern points out that the 'Bitter Lesson' of AI is that simple algorithms combined with massive scale always win. The Scaling Hypothesis states that the emergent reasoning capabilities we see in large language models are not a trick; they are the fundamental result of scale. If the hypothesis holds, the path to AGI isn't a mysterious scientific breakthrough, it's just an engineering and capital allocation problem of building larger data centers.",
+    layer2:
+      "Do not bet against scale. If a simple algorithm scales perfectly with more compute, it will eventually crush elegant, hand-crafted solutions. Brute force has a quality all its own.",
+    quiz: {
+      question: "What does the 'Scaling Hypothesis' argue is the path to AGI?",
+      options: [
+        "Hand-coding human logic into a database",
+        "Exponentially scaling up simple neural networks with massive amounts of compute and data",
+        "Using quantum computers to simulate the human brain perfectly",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The hypothesis argues that we don't need fundamentally new paradigms of cognitive science; we just need to keep scaling up the size of models (like Transformers) and the compute used to train them.",
+    },
   },
   {
     id: "I18",
@@ -3054,14 +3623,27 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "AGI by ~2027 and superintelligence shortly after will trigger a trillion-dollar compute buildout and a US-China race.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Leopold Aschenbrenner's viral 2024 essay predicting that Artificial General Intelligence (AGI) is imminent (by ~2027) and will trigger an explosive national security crisis and a literal intelligence explosion.",
+    layer1:
+      "Aschenbrenner (a former OpenAI researcher) extrapolates the current exponential curves of AI compute and algorithmic efficiency. He argues that the jump from GPT-2 to GPT-4 will be replicated, bringing us to AGI by the end of the decade. Once AGI exists, it will automate AI research itself, compressing decades of scientific progress into months. He warns that the US government will inevitably step in to nationalize the massive trillion-dollar data centers required, turning AGI into a fierce geopolitical arms race with China.",
+    layer2:
+      "The AI timeline is shorter than the public realizes. When a technology transitions from a commercial product to a matter of national survival, the rules of the free market no longer apply.",
+    quiz: {
+      question:
+        "According to 'Situational Awareness', what happens immediately after AGI is achieved?",
+      options: [
+        "The economy crashes and humans go back to farming",
+        "AGI begins automating AI research, triggering a rapid 'intelligence explosion' and a massive national security arms race",
+        "AGI is released as open-source software for everyone to use",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Aschenbrenner argues that AGI won't just be a tool; it will be an automated researcher that rapidly improves itself, turning AI from a Silicon Valley product into the most critical national security asset in history.",
+    },
   },
   {
     id: "I19",
@@ -3073,14 +3655,26 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "Powerful AI could compress a century of scientific progress into a decade, curing disease and transforming society.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Dario Amodei's (CEO of Anthropic) optimistic vision for a post-AGI world. He details how powerful AI could radically accelerate biology, neuroscience, and economic development, creating a utopia if we manage the safety risks.",
+    layer1:
+      "Amodei argues that while the risks of AGI are severe, the potential upside is equally astronomical. He predicts that AGI could compress 100 years of biological research into a single decade, leading to cures for most diseases, the eradication of extreme poverty, and solutions for climate change. He emphasizes that AI is a tool that can drastically increase the 'ceiling' of human capabilities. If the alignment problem is solved, AGI acts as an accelerant for human flourishing, not a replacement for human meaning.",
+    layer2:
+      "While it is vital to mitigate existential risk, we must also articulate a positive vision for the future. Fear is a necessary brake, but hope is the engine that drives us forward to actually build the utopia.",
+    quiz: {
+      question: "What is the primary tone and focus of Dario Amodei's 'Machines of Loving Grace'?",
+      options: [
+        "It is a pessimistic warning that AI will inevitably destroy us",
+        "It is an optimistic vision of how safely aligned AGI could radically accelerate biology, medicine, and human flourishing",
+        "It is a technical manual for building GPU clusters",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Unlike Yudkowsky's pessimistic essays, Amodei focuses on the massive upside of AGI, arguing it could compress a century of medical and scientific progress into a few years if managed safely.",
+    },
   },
   {
     id: "I20",
@@ -3092,14 +3686,27 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "AI will augment human intelligence and improve nearly everything it touches, and fears of civilizational risk are misplaced.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Marc Andreessen's provocative essay arguing that AI is not a threat to humanity, but rather a profoundly empowering tool that will drive an era of unprecedented economic growth and human capability.",
+    layer1:
+      "Andreessen attacks the 'doomer' narrative, arguing that AI is just math and code—it does not have desires, agency, or a will to kill us. He views AI as an infinite amplifier of human intelligence. Every child will have an infinitely patient AI tutor; every scientist will have a genius AI assistant. He argues that restricting AI development due to fear of hypothetical existential risks is a catastrophic moral error, as it deprives humanity of the cures and economic growth that AI would inevitably generate.",
+    layer2:
+      "Historically, every major technological leap (from the printing press to nuclear power) was met with moral panic and predictions of doom. Default to acceleration. Stagnation is a far greater threat than innovation.",
+    quiz: {
+      question:
+        "How does Marc Andreessen view the 'doomer' narrative that AI will destroy humanity?",
+      options: [
+        "He completely agrees with it and calls for a pause on AI research",
+        "He dismisses it as a moral panic, arguing AI is just an empowering tool that will amplify human intelligence",
+        "He believes only the military should be allowed to use AI",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Andreessen rejects the idea that AI has agency or a desire to harm us. He views it simply as the most powerful tool ever created to amplify human potential and solve real-world problems.",
+    },
   },
   {
     id: "I21",
@@ -3111,14 +3718,26 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Technology and markets are the engines of human flourishing; stagnation and de-growth are the real enemies.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Marc Andreessen's fiery manifesto declaring that technology and free markets are the only true sources of human progress. It is a direct attack on the ideologies of stagnation, degrowth, and technological pessimism.",
+    layer1:
+      "Andreessen frames human history as a battle between those who build and those who complain. He argues that there is no problem that cannot be solved by more technology and more energy. The manifesto asserts that 'accelerationism' is a moral imperative—that we have a duty to build intelligence, generate abundant energy, and expand into the universe. It explicitly rejects the precautionary principle (the idea that we shouldn't build things if they carry unknown risks), arguing that slowing down progress is equivalent to endorsing poverty and disease.",
+    layer2:
+      "Pessimism sounds smart, but optimism builds the future. Do not apologize for wanting to build powerful things, generate massive amounts of energy, and push the boundaries of physics.",
+    quiz: {
+      question: "What philosophy does 'The Techno-Optimist Manifesto' explicitly reject?",
+      options: [
+        "The scientific method",
+        "The precautionary principle and the ideology of 'degrowth' and stagnation",
+        "Free market capitalism",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The manifesto violently rejects the idea that we should slow down progress due to hypothetical risks or environmental 'degrowth,' arguing instead for radical acceleration.",
+    },
   },
   {
     id: "I22",
@@ -3130,14 +3749,26 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "AI will drive the cost of goods and labor toward zero, requiring a new social contract to distribute the wealth.",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "Sam Altman's 2021 essay predicting that AI will trigger a massive deflationary shock, making the cost of goods, services, and labor plummet. He proposes radical economic restructuring, like a tax on capital and land to fund a universal basic dividend.",
+    layer1:
+      "Altman argues that AI will decouple human labor from the production of wealth. As AI and robotics automate everything from programming to construction, the cost of living will drop exponentially (Moore's Law applied to the physical world). However, this means traditional wages will collapse. To prevent a dystopia of extreme inequality, society must shift from taxing labor (which will be worthless) to taxing capital (corporations) and land, distributing that wealth directly to citizens so they can enjoy the abundant, AI-driven economy.",
+    layer2:
+      "When the marginal cost of labor drops to zero, the traditional macroeconomic models break. The owners of the AI compute and the underlying land will capture all the economic surplus unless society actively rewrites the social contract.",
+    quiz: {
+      question: "According to Sam Altman, what economic shift must occur as AI automates labor?",
+      options: [
+        "We must ban AI from being used in physical robotics",
+        "We must shift from taxing labor to taxing capital and land, redistributing the wealth as a universal dividend",
+        "We must force everyone to become software engineers",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Because AI will make traditional human labor obsolete and worthless, Altman argues we have to tax the things that hold value (capital and land) to fund society.",
+    },
   },
   {
     id: "I23",
@@ -3149,14 +3780,27 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "A much smaller team paired with AI can do more and do it better, so Block cut ~40% of staff to rebuild 'intelligence-native.'",
-    quiz: {
-      question: "Placeholder question",
-      options: ["A", "B", "C"],
-      correctIndex: 0,
-    },
     related: [],
     furtherReading: [],
     tags: [],
+    layer0:
+      "A conceptual piece on how a major fintech company (Block/Square) theoretically reorganizes its entire architecture to be 'intelligence-native' rather than just 'software-native.'",
+    layer1:
+      "In a software-native world, humans write deterministic logic (if X then Y) to process payments or catch fraud. In an intelligence-native world, the core routing and decision-making of the company is handled by probabilistic neural networks. This means replacing massive engineering teams writing hard-coded rules with smaller teams that curate datasets and define objective functions for LLMs. The organizational structure flips: instead of humans managing software, humans manage the 'context' and 'goals' of the AI, which writes and executes the software dynamically.",
+    layer2:
+      "Adding an AI chatbot to your app does not make you intelligence-native. An intelligence-native company uses models at the absolute core of its operational logic, replacing deterministic code with probabilistic intelligence.",
+    quiz: {
+      question:
+        "What is the primary difference between a software-native company and an 'intelligence-native' company?",
+      options: [
+        "Software-native companies use Python; intelligence-native companies use C++",
+        "Software-native companies rely on hard-coded deterministic logic, while intelligence-native companies use probabilistic neural networks for core decision routing",
+        "Intelligence-native companies do not use computers at all",
+      ],
+      correctIndex: 1,
+      explanation:
+        "An intelligence-native company doesn't just bolt AI onto its product; it replaces the core hard-coded logic of its operations with dynamic, probabilistic AI models.",
+    },
   },
   {
     id: "J1",
@@ -3182,6 +3826,8 @@ export const NODES: Node[] = [
         "Who are our mutual friends?",
       ],
       correctIndex: 0,
+      explanation:
+        "Inversion forces you to look at a problem backwards. Instead of asking how to achieve a goal, you ask what actions would guarantee failure, and then carefully avoid doing those things.",
     },
     tags: ["First-Principles Thinking"],
     related: ["B2"],
@@ -3219,6 +3865,8 @@ export const NODES: Node[] = [
         "Nothing meaningful — first-order effects usually persist.",
       ],
       correctIndex: 0,
+      explanation:
+        "First-order thinking solves the immediate problem; second-order thinking anticipates the hidden consequences of the solution, preventing you from causing a bigger disaster down the line.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["D3", "H4", "B3"],
@@ -3255,6 +3903,8 @@ export const NODES: Node[] = [
         "That it includes the current hot sector.",
       ],
       correctIndex: 1,
+      explanation:
+        "True expertise isn't about knowing everything; it's about knowing exactly what you don't know. Staying inside your circle of competence is how you avoid catastrophic, unforced errors.",
     },
     tags: ["Decision-Making", "Wealth, Leverage & Judgment"],
     related: ["D5", "O3", "D1", "B4", "W2"],
@@ -3296,6 +3946,8 @@ export const NODES: Node[] = [
         "They're a bad person.",
       ],
       correctIndex: 0,
+      explanation:
+        "Hanlon's Razor is a mental model for emotional regulation. By assuming incompetence or oversight rather than malice, you avoid unnecessary conflict and maintain clearer judgment.",
     },
     tags: ["Cognitive Biases & Models", "Fraud & Skepticism", "Power & Persuasion"],
     related: ["D3", "H4", "B5"],
@@ -3332,6 +3984,8 @@ export const NODES: Node[] = [
         "Compounding is a myth.",
       ],
       correctIndex: 1,
+      explanation:
+        "Compounding is deceptive because the massive gains happen at the very end of the curve. People quit early because they judge linear progress instead of exponential potential.",
     },
     tags: ["Compounding & Patience"],
     related: ["G4", "D6", "C2", "W6"],
@@ -3369,6 +4023,8 @@ export const NODES: Node[] = [
         "Whatever your favorite tech influencer recommends.",
       ],
       correctIndex: 1,
+      explanation:
+        "The Lindy Effect states that for non-perishable things (like ideas or technology), the longer something has survived, the longer it is likely to continue surviving. Age is a proxy for robustness.",
     },
     tags: ["Compounding & Patience", "Macro & Cycles"],
     related: ["G4", "D6", "C3"],
@@ -3405,6 +4061,8 @@ export const NODES: Node[] = [
         "Choosing a movie on a Friday night.",
       ],
       correctIndex: 1,
+      explanation:
+        "Path dependence means that history matters. Early decisions in a complex system (like a codebase or an economy) lock in constraints that make switching paths nearly impossible later on.",
     },
     tags: ["Tech Adoption & Disruption"],
     related: ["A11", "K2", "I7", "C4"],
@@ -3441,6 +4099,8 @@ export const NODES: Node[] = [
         "Because optionality doesn't exist in real life.",
       ],
       correctIndex: 1,
+      explanation:
+        "Optionality is the right, but not the obligation, to take an action. In an unpredictable world, keeping your options open is incredibly valuable, even if it carries a short-term cost.",
     },
     tags: ["Risk & Asymmetric Bets"],
     related: ["A3", "D1", "D4", "C1", "W6"],
@@ -3472,6 +4132,8 @@ export const NODES: Node[] = [
       question: "A bet has 90% chance of losing $10 and 10% chance of winning $200. What's the EV?",
       options: ["+$11", "+$20", "-$9", "0"],
       correctIndex: 0,
+      explanation:
+        "Expected value is the mathematical foundation of rational risk-taking. You must multiply the probability of an outcome by its magnitude; a small chance of a massive payoff is often worth taking.",
     },
     tags: ["Risk & Asymmetric Bets", "Decision-Making"],
     related: ["A3", "C4", "G1", "D2"],
@@ -3508,6 +4170,8 @@ export const NODES: Node[] = [
         "It happens after the project ends.",
       ],
       correctIndex: 1,
+      explanation:
+        "A pre-mortem leverages hindsight bias in advance. By assuming the project has already failed, people feel psychologically safe to voice the fatal flaws they were previously afraid to mention.",
     },
     tags: ["Decision-Making"],
     related: ["B2", "B3", "D3"],
@@ -3549,6 +4213,8 @@ export const NODES: Node[] = [
         "The founder is definitely wrong.",
       ],
       correctIndex: 0,
+      explanation:
+        "Base rates force you to ignore your unique narrative and look at the statistical average. No matter how special you think your situation is, the historical average is always the safest starting point.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["B2", "H4", "D4"],
@@ -3585,6 +4251,8 @@ export const NODES: Node[] = [
         "That decisions have no consequences.",
       ],
       correctIndex: 0,
+      explanation:
+        "When facing a difficult choice, project yourself to age 80 and ask which decision you will regret not taking. This framework cuts through short-term fear and clarifies long-term priorities.",
     },
     tags: ["Risk & Asymmetric Bets", "Decision-Making"],
     related: ["A3", "C4", "G1", "D5"],
@@ -3622,6 +4290,8 @@ export const NODES: Node[] = [
         "The number becomes hard to measure.",
       ],
       correctIndex: 0,
+      explanation:
+        "When a measure becomes a target, people will optimize for the metric at the expense of the actual goal, ultimately destroying the system the metric was designed to improve.",
     },
     tags: ["Incentives & Systems"],
     related: ["F3", "W4"],
@@ -3659,6 +4329,8 @@ export const NODES: Node[] = [
         "Ignore it forever.",
       ],
       correctIndex: 1,
+      explanation:
+        "Before you remove a rule, tradition, or piece of code, you must first understand exactly why it was put there. Ignorance of a system's history is not a justification for destroying it.",
     },
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     related: ["B2", "B4", "B6"],
@@ -3695,6 +4367,8 @@ export const NODES: Node[] = [
         "Because regulators require it.",
       ],
       correctIndex: 1,
+      explanation:
+        "The principal (owner) and the agent (manager) have misaligned incentives. Agents will naturally optimize for their own career or comfort unless compensated in a way that directly ties their success to the principal's success.",
     },
     tags: ["Incentives & Systems", "Crypto & Trust"],
     related: ["F3", "W4"],
@@ -3736,6 +4410,8 @@ export const NODES: Node[] = [
         "Nothing changes.",
       ],
       correctIndex: 0,
+      explanation:
+        "The Cobra Effect occurs when a well-intentioned incentive actually rewards the behavior it was trying to eliminate, causing the problem to actively multiply.",
     },
     tags: ["Incentives & Systems"],
     related: ["F3", "E1"],
@@ -3773,6 +4449,8 @@ export const NODES: Node[] = [
         "Using more productivity apps.",
       ],
       correctIndex: 1,
+      explanation:
+        "Deep work is not a natural state; it is a highly trained skill. In a world optimized for shallow distraction, the ability to focus intensely on cognitively demanding tasks is the ultimate economic advantage.",
     },
     tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
     related: ["O5", "B3", "D5", "H2"],
@@ -3809,6 +4487,8 @@ export const NODES: Node[] = [
         "Take a class.",
       ],
       correctIndex: 0,
+      explanation:
+        "Taste is not entirely subjective. It is cultivated by immersing yourself in the absolute highest quality work in a field, and critically analyzing exactly what makes it superior to average work.",
     },
     tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
     related: ["O5", "B3", "D5", "H3"],
@@ -3846,6 +4526,8 @@ export const NODES: Node[] = [
         "Careful career planning.",
       ],
       correctIndex: 1,
+      explanation:
+        "Obsession provides an irrational endurance that discipline alone can't match, allowing you to tinker and explore long enough to eventually stumble upon genius-level insights.",
     },
     tags: ["Craft & Deep Work"],
     related: ["B6", "H4"],
@@ -3882,6 +4564,8 @@ export const NODES: Node[] = [
         "It's mostly a rhetorical device.",
       ],
       correctIndex: 0,
+      explanation:
+        "Holding strong opinions forces you to articulate clear hypotheses. Holding them weakly ensures you abandon them the moment contrary evidence proves you wrong, accelerating the learning process.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["B2", "D3", "H1"],
@@ -3920,6 +4604,8 @@ export const NODES: Node[] = [
         "Peter Drucker's 1973 management lectures",
       ],
       correctIndex: 0,
+      explanation:
+        "Munger's speech popularized the idea that isolated facts are useless; intelligence comes from hanging facts on a 'latticework' of fundamental principles drawn from multiple disciplines.",
     },
     tags: ["First-Principles Thinking"],
     related: ["B6"],
@@ -3964,6 +4650,8 @@ export const NODES: Node[] = [
         "Guess, check, revise, repeat",
       ],
       correctIndex: 1,
+      explanation:
+        "The core mechanism of the Feynman Technique is simplifying complex ideas to expose your own blind spots, iterating until the explanation is completely free of jargon.",
     },
     tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
     related: ["D3", "H4", "B7"],
@@ -4009,6 +4697,8 @@ export const NODES: Node[] = [
         "A faulty electrical system",
       ],
       correctIndex: 1,
+      explanation:
+        "The dropped match was merely the trigger; the disaster's true root cause was systemic organizational failure and a total lack of safety training, which guaranteed a disaster would happen eventually.",
     },
     tags: ["First-Principles Thinking"],
     related: [],
@@ -4052,6 +4742,8 @@ export const NODES: Node[] = [
         "Observing real butterflies affecting local wind patterns",
       ],
       correctIndex: 1,
+      explanation:
+        "Lorenz proved that complex, non-linear systems like the weather are highly sensitive to initial conditions, meaning that long-term prediction is fundamentally impossible no matter how good the model is.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4"],
@@ -4095,6 +4787,8 @@ export const NODES: Node[] = [
         "Winning every individual argument",
       ],
       correctIndex: 1,
+      explanation:
+        "Amateurs let ego dictate their actions and argue to protect their identity. Professionals detach their ego from their work and focus purely on doing what is necessary to achieve the objective.",
     },
     tags: ["Craft & Deep Work"],
     related: ["H1", "H2", "H3"],
@@ -4139,6 +4833,8 @@ export const NODES: Node[] = [
         "It's the reverse — amateurs win more points than professionals",
       ],
       correctIndex: 1,
+      explanation:
+        "In an amateur game, the winner is determined by whoever makes the fewest unforced errors, not by who hits the most spectacular shots.",
     },
     tags: ["Decision-Making", "First-Principles Thinking"],
     related: ["D1", "D2", "D3", "W1"],
@@ -4183,6 +4879,8 @@ export const NODES: Node[] = [
         "Alfred Korzybski",
       ],
       correctIndex: 1,
+      explanation:
+        "Because reality is infinitely complex, a model must simplify it to be understandable. The goal isn't perfect accuracy, but extracting a simplified structure that helps you make better decisions.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4", "X2"],
@@ -4226,6 +4924,8 @@ export const NODES: Node[] = [
         "Robert Axelrod alone, with no prior originator",
       ],
       correctIndex: 1,
+      explanation:
+        "Rapoport formalized 'tit for tat'—cooperate on the first move, then replicate your opponent's previous move—proving that a simple, forgiving, but retaliatory strategy is mathematically optimal.",
     },
     tags: ["Incentives & Systems"],
     related: ["E1"],
@@ -4271,6 +4971,8 @@ export const NODES: Node[] = [
         "Removing the police from the scenario entirely",
       ],
       correctIndex: 1,
+      explanation:
+        "In a one-off game, rational players defect to protect themselves. But when the game is repeated indefinitely, the long-term rewards of cooperation outweigh the short-term payoff of betrayal.",
     },
     tags: ["Incentives & Systems"],
     related: ["E1"],
@@ -4316,6 +5018,8 @@ export const NODES: Node[] = [
         "Waiting for a superior officer's direct order",
       ],
       correctIndex: 1,
+      explanation:
+        "Orientation is the most critical phase. If your mental models are distorted by biases or outdated assumptions, your decisions will be fundamentally disconnected from reality.",
     },
     tags: ["Decision-Making"],
     related: ["D1", "D2", "D3"],
@@ -4360,6 +5064,8 @@ export const NODES: Node[] = [
         "Because 75% accuracy is actually below chance level",
       ],
       correctIndex: 1,
+      explanation:
+        "Bayes' Theorem forces us to remember the base rate. Even an accurate test will produce mostly false alarms if it's screening for an extremely rare condition in a massive population.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["D3", "H4"],
@@ -4404,6 +5110,8 @@ export const NODES: Node[] = [
         "There is no real difference between the two",
       ],
       correctIndex: 1,
+      explanation:
+        "Fat-tailed distributions (like finance or pandemics) behave entirely differently than normal distributions; a single outlier event can account for the vast majority of the total impact.",
     },
     tags: ["Risk & Asymmetric Bets", "Cognitive Biases & Models"],
     related: ["A3", "C4", "D1"],
@@ -4449,6 +5157,8 @@ export const NODES: Node[] = [
         "'Treat the symptom, not the cause'",
       ],
       correctIndex: 1,
+      explanation:
+        "Occam's Razor isn't a rule of nature, but a heuristic for efficiency: always test the most likely, simplest explanation (horses) before assuming a complex, exotic one (zebras).",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4"],
@@ -4494,6 +5204,8 @@ export const NODES: Node[] = [
         "A form of reasoning that doesn't exist in formal logic",
       ],
       correctIndex: 1,
+      explanation:
+        "Sherlock Holmes rarely uses true deduction (which guarantees a true conclusion). He uses induction (and abduction), observing specific clues to construct the most highly probable hypothesis.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4"],
@@ -4539,6 +5251,8 @@ export const NODES: Node[] = [
         "Focus only on the cockpit, regardless of damage patterns",
       ],
       correctIndex: 1,
+      explanation:
+        "Wald realized the military was looking only at the 'winners' (the planes that survived). The damage on returning planes showed where a plane could be hit and still survive; the unharmed areas were where the fatal hits occurred.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4"],
@@ -4584,6 +5298,8 @@ export const NODES: Node[] = [
         "Because scientists have not studied them at all",
       ],
       correctIndex: 1,
+      explanation:
+        "Because whitetip attacks usually happen far out at sea where there are no survivors to report them, our data is biased toward coastal sharks, causing us to drastically underestimate the whitetip's danger.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4"],
@@ -4628,6 +5344,8 @@ export const NODES: Node[] = [
         "They were never caught at all",
       ],
       correctIndex: 1,
+      explanation:
+        "We feel our internal emotions so intensely that we falsely assume they are obvious to everyone else. In reality, other people are barely paying attention.",
     },
     tags: ["Cognitive Biases & Models", "Power & Persuasion"],
     related: ["D3", "H4"],
@@ -4673,6 +5391,8 @@ export const NODES: Node[] = [
         "That psychology research doesn't use human subjects at all",
       ],
       correctIndex: 1,
+      explanation:
+        "Psychology often makes sweeping claims about 'human nature' based almost entirely on studies of college students in wealthy Western countries, ignoring massive cultural variations.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4"],
@@ -4718,6 +5438,8 @@ export const NODES: Node[] = [
         "Laplace's demon",
       ],
       correctIndex: 1,
+      explanation:
+        "By visualizing himself riding alongside a light beam, Einstein exposed paradoxes in classical physics that couldn't be resolved without completely reimagining space and time.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4"],
@@ -4763,6 +5485,8 @@ export const NODES: Node[] = [
         "Reading cookbooks translated from French",
       ],
       correctIndex: 1,
+      explanation:
+        "Child didn't just memorize recipes; she deconstructed French cooking down to its fundamental techniques (knife skills, heat control), allowing her to build up any dish from scratch.",
     },
     tags: ["First-Principles Thinking", "Craft & Deep Work"],
     related: ["H1"],
@@ -4808,6 +5532,8 @@ export const NODES: Node[] = [
         "The founding of the Silk Road",
       ],
       correctIndex: 1,
+      explanation:
+        "The Egyptian-Hittite treaty demonstrates that the most durable reciprocity isn't based on altruism, but on aligned incentives and mutual self-interest between powerful equals.",
     },
     tags: ["Incentives & Systems", "Power & Persuasion"],
     related: ["E1"],
@@ -4852,6 +5578,8 @@ export const NODES: Node[] = [
         "There is no meaningful pattern in technology markets",
       ],
       correctIndex: 1,
+      explanation:
+        "In networks and tech ecosystems, the dominant player's advantages compound so aggressively that they siphon almost all the economic value, leaving only crumbs for competitors.",
     },
     tags: ["Moats & Network Effects"],
     related: ["A9", "A12", "I4"],
@@ -4895,6 +5623,8 @@ export const NODES: Node[] = [
         "A formal certification process",
       ],
       correctIndex: 1,
+      explanation:
+        "Just as feathers evolved for warmth but were exapted for flight, skills you develop in one career (like communication or systems thinking) can be unexpectedly repurposed as massive advantages in a new field.",
     },
     tags: ["First-Principles Thinking"],
     related: [],
@@ -4938,6 +5668,8 @@ export const NODES: Node[] = [
         "That siblings should always be treated identically in every situation",
       ],
       correctIndex: 1,
+      explanation:
+        "Fairness doesn't mean giving identical treatment. Algebraic equivalence reminds us that children have different needs, and providing different inputs can result in an equal output of love and support.",
     },
     tags: ["First-Principles Thinking"],
     related: [],
@@ -4982,6 +5714,8 @@ export const NODES: Node[] = [
         "The short game is only relevant to financial decisions",
       ],
       correctIndex: 1,
+      explanation:
+        "The short game optimizes for immediate status and comfort. The long game requires suffering short-term friction and delayed gratification to secure compounding, structural advantages.",
     },
     tags: ["Compounding & Patience"],
     related: ["C1", "C2", "G4"],
@@ -5026,6 +5760,8 @@ export const NODES: Node[] = [
         "The idea that all languages eventually merge into one",
       ],
       correctIndex: 1,
+      explanation:
+        "A description observes reality; a prescription tries to control it. The 'grammar-book effect' happens when a snapshot of how things are gets frozen and enforced as a rigid rule for how things must be.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["D3", "H4", "B1"],
@@ -5071,6 +5807,8 @@ export const NODES: Node[] = [
         "The comparison is invalid because the alternative wasn't actually taken.",
       ],
       correctIndex: 1,
+      explanation:
+        "Every choice carries an invisible price tag: the value of the best alternative you had to give up. Measuring a decision against zero is dangerous; you must measure it against what else you could have done.",
     },
     tags: ["Decision-Making", "Wealth, Leverage & Judgment"],
     related: ["B3", "O3", "B2", "D6"],
@@ -5118,6 +5856,8 @@ export const NODES: Node[] = [
         "Because losing bets don't count against fund performance.",
       ],
       correctIndex: 1,
+      explanation:
+        "In domains like venture capital or extreme risk-taking, the math changes: you don't need a high win rate, you just need a few wins that are so massive they render your frequent losses irrelevant.",
     },
     tags: ["Compounding & Patience", "Risk & Asymmetric Bets"],
     related: ["G4", "C1", "C2", "D1"],
@@ -5161,6 +5901,8 @@ export const NODES: Node[] = [
         "The feeling of humor Camus believed was the correct response to death",
       ],
       correctIndex: 1,
+      explanation:
+        "Camus argues that the human desire for objective meaning is fundamentally incompatible with a silent, indifferent universe. The only honest response is to embrace the absurdity and rebel by living fully anyway.",
     },
     tags: ["Meaning & Self"],
     related: ["O4", "N2", "S6"],
@@ -5205,6 +5947,8 @@ export const NODES: Node[] = [
         "Libet's experiment on the timing of conscious decisions",
       ],
       correctIndex: 1,
+      explanation:
+        "Metzinger argues that the 'self' is not a real thing, but a highly convincing simulation constructed by the brain to help the organism navigate the world.",
     },
     tags: ["Meaning & Self"],
     related: ["O4", "N3", "Y1"],
@@ -5249,6 +5993,8 @@ export const NODES: Node[] = [
         "They experienced a complete loss of physical sensation",
       ],
       correctIndex: 1,
+      explanation:
+        "Damasio's research proves that emotion is not the enemy of reason; it is the physical foundation of it. Without bodily emotional signals, we literally cannot evaluate choices.",
     },
     tags: ["Cognitive Biases & Models", "Meaning & Self"],
     related: ["B2", "B4", "B6", "N4"],
@@ -5288,6 +6034,8 @@ export const NODES: Node[] = [
         "What term, coined in this book's final chapter, went on to become one of the most common words on the internet?",
       options: ["'Gene'", "'Meme'", "'Selfish'", "'Vehicle'"],
       correctIndex: 1,
+      explanation:
+        "Dawkins introduced the 'meme' as the cultural equivalent of a gene: a unit of information that competes, replicates, and evolves through human minds purely for its own survival.",
     },
     tags: ["Incentives & Systems", "Meaning & Self"],
     related: ["E1"],
@@ -5327,6 +6075,8 @@ export const NODES: Node[] = [
         "How long did it take Frankl to write the first draft of this book after his liberation from the camps?",
       options: ["Nine days", "Nine months", "Nine years", "He wrote it while still imprisoned"],
       correctIndex: 0,
+      explanation:
+        "Frankl poured his Holocaust experiences into a manuscript over nine days, driven by the profound realization that those who could find meaning in their suffering were the ones most likely to survive.",
     },
     tags: ["Meaning & Self"],
     related: ["O4", "S6", "Y6"],
@@ -5370,6 +6120,8 @@ export const NODES: Node[] = [
         "That consciousness cannot be studied mathematically",
       ],
       correctIndex: 1,
+      explanation:
+        "Evolution optimizes for survival and reproduction, not truth. Hoffman's theorem suggests that our perception is just a simplified user interface designed to hide reality's overwhelming complexity.",
     },
     tags: ["Meaning & Self"],
     related: ["O4", "N1", "X1"],
@@ -5414,6 +6166,8 @@ export const NODES: Node[] = [
         "A single tweet, posted in 2021",
       ],
       correctIndex: 1,
+      explanation:
+        "Naval's 2018 Twitter thread exploded because it distilled wealth creation from a vague ambition into a precise, repeatable set of structural principles based on leverage and specific knowledge.",
     },
     tags: ["Compounding & Patience", "Wealth, Leverage & Judgment"],
     related: ["C1", "C2", "G4", "O2"],
@@ -5453,6 +6207,8 @@ export const NODES: Node[] = [
         "According to Naval, which two of his four types of leverage are 'permissionless' — meaning anyone can deploy them without needing anyone's approval?",
       options: ["Labor and capital", "Code and media", "Capital and media", "Labor and code"],
       correctIndex: 1,
+      explanation:
+        "Code and media are the highest forms of modern leverage because they cost nothing to duplicate. Unlike capital or labor, you don't need anyone's permission to create them.",
     },
     tags: ["Wealth, Leverage & Judgment"],
     related: ["A7", "O3"],
@@ -5497,6 +6253,8 @@ export const NODES: Node[] = [
         "It only matters in academic settings, not business",
       ],
       correctIndex: 1,
+      explanation:
+        "When you apply massive leverage (like capital or code) to a decision, the quality of that decision (judgment) becomes the only thing that matters. A tiny edge in judgment yields exponentially outsized returns.",
     },
     tags: ["Decision-Making", "Wealth, Leverage & Judgment"],
     related: ["B3", "D5", "B2", "O4"],
@@ -5541,6 +6299,8 @@ export const NODES: Node[] = [
         "Peace is only relevant to monks, not to ambitious people",
       ],
       correctIndex: 1,
+      explanation:
+        "Naval reframes happiness not as a state of constant excitement, but as the absence of desire. When you stop wanting things to be different than they are, you achieve peace.",
     },
     tags: ["Meaning & Self"],
     related: ["N1", "O5"],
@@ -5580,6 +6340,8 @@ export const NODES: Node[] = [
         "How much time does Naval credit himself with spending reading daily, as central to his self-education?",
       options: ["10-15 minutes", "1-2 hours", "4-5 hours", "He says he rarely reads books at all"],
       correctIndex: 1,
+      explanation:
+        "Naval attributes his success to a massive volume of daily reading, prioritizing genuine curiosity and the habit of reading over forcing himself through 'important' but boring books.",
     },
     tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
     related: ["H1", "H2", "B3", "O6"],
@@ -5624,6 +6386,8 @@ export const NODES: Node[] = [
         "Cooperative versus competitive sports",
       ],
       correctIndex: 1,
+      explanation:
+        "In a one-off transaction, it pays to cheat. But in a long-term game where reputation compounds, honesty and reliability become the most profitable strategies.",
     },
     tags: ["Compounding & Patience"],
     related: ["C1", "C2", "G4", "O1"],
@@ -5663,6 +6427,8 @@ export const NODES: Node[] = [
         "How many copies had 'How to Win Friends and Influence People' sold in its first three months in 1936?",
       options: ["5,000", "250,000", "1 million", "30 million"],
       correctIndex: 1,
+      explanation:
+        "Carnegie's book struck a massive nerve during the Great Depression, selling 250,000 copies almost instantly by teaching people that soft skills and likability were the true engines of career success.",
     },
     tags: ["Power & Persuasion"],
     related: ["B4", "P2"],
@@ -5706,6 +6472,8 @@ export const NODES: Node[] = [
         "It has no notable connection to prisons",
       ],
       correctIndex: 1,
+      explanation:
+        "Because it strips away moralizing and explains human manipulation in ruthless, tactical terms, the book is viewed as a dangerous manual for coercion and is heavily restricted in prisons.",
     },
     tags: ["Power & Persuasion"],
     related: ["B4", "P3"],
@@ -5750,6 +6518,8 @@ export const NODES: Node[] = [
         "It had no notable celebrity endorsements",
       ],
       correctIndex: 1,
+      explanation:
+        "Harari's sweeping narrative of human history exploded in popularity largely because tech titans like Zuckerberg and Gates publicly championed its thesis on how fictions (money, religion, corporations) enable scale.",
     },
     tags: ["Markets & Narrative", "Meaning & Self"],
     related: ["G2", "G3", "G5", "P4"],
@@ -5794,6 +6564,8 @@ export const NODES: Node[] = [
         "The replications were never attempted",
       ],
       correctIndex: 1,
+      explanation:
+        "Despite dominating education policy for a decade, rigorous independent replication studies showed that briefly teaching students about the 'growth mindset' had almost zero impact on actual academic performance.",
     },
     tags: ["Craft & Deep Work"],
     related: ["B6", "P5"],
@@ -5838,6 +6610,8 @@ export const NODES: Node[] = [
         "That it should replace all pharmaceutical treatment",
       ],
       correctIndex: 1,
+      explanation:
+        "The book advocates for a strict whole-food, plant-based diet, but major nutritional bodies warn that this extreme restriction is inappropriate and potentially dangerous for vulnerable groups like pregnant women and children.",
     },
     tags: ["Health & Body"],
     related: ["O4", "P4", "P6", "P1"],
@@ -5882,6 +6656,8 @@ export const NODES: Node[] = [
         "She has never revised her original claims",
       ],
       correctIndex: 1,
+      explanation:
+        "Duckworth later clarified that the media overhyped grit. In rigorous personality psychology terms, grit is just a facet of conscientiousness, and its independent effect on success is relatively modest.",
     },
     tags: ["Craft & Deep Work"],
     related: ["B6", "P1"],
@@ -5925,6 +6701,8 @@ export const NODES: Node[] = [
         "Human nature is entirely determined by God's design",
       ],
       correctIndex: 1,
+      explanation:
+        "Sartre argued there is no God or human nature to dictate what we are. We are thrown into existence as blank slates, and we are terrifyingly, absolutely responsible for defining ourselves through action.",
     },
     tags: ["Meaning & Self"],
     related: ["O1", "O8", "O9", "Y4"],
@@ -5966,6 +6744,8 @@ export const NODES: Node[] = [
         "It is identical to clinical depression",
       ],
       correctIndex: 1,
+      explanation:
+        "Kierkegaard defines despair not as sadness, but as a spiritual misalignment—a refusal to be one's true self. Because it's a structural condition, people can be in profound despair while outwardly appearing happy.",
     },
     tags: ["Meaning & Self"],
     related: ["O7", "O5"],
@@ -6008,6 +6788,8 @@ export const NODES: Node[] = [
         "How to define happiness scientifically",
       ],
       correctIndex: 1,
+      explanation:
+        "Beauvoir tackled the biggest critique of existentialism: if there is no objective morality, why not be evil? She argued that since our freedom depends on the freedom of others, to oppress others is to contradict our own existence.",
     },
     tags: ["Meaning & Self"],
     related: ["O7", "O1"],
@@ -6049,6 +6831,8 @@ export const NODES: Node[] = [
         "Proving the existence of the Stoic gods through logic",
       ],
       correctIndex: 1,
+      explanation:
+        "As the most powerful man in the world, Marcus Aurelius wrote to himself to maintain perspective, relentlessly practicing the Stoic discipline of ignoring external chaos and mastering his internal judgments.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
     related: ["O11"],
@@ -6090,6 +6874,8 @@ export const NODES: Node[] = [
         "Death should be avoided through healthy living",
       ],
       correctIndex: 1,
+      explanation:
+        "Seneca pointed out the absurdity of how fiercely people protect their money, while freely giving away their time to trivialities, dread, and the demands of others.",
     },
     tags: ["Meaning & Self", "Compounding & Patience"],
     related: ["O10"],
@@ -6131,6 +6917,8 @@ export const NODES: Node[] = [
         "That leaders should remain completely passive and never act",
       ],
       correctIndex: 1,
+      explanation:
+        "The Taoist concept of Wu Wei (non-action) doesn't mean doing nothing; it means acting effortlessly in alignment with the natural flow of things, much like water carving through rock by yielding to gravity.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["O13"],
@@ -6172,6 +6960,8 @@ export const NODES: Node[] = [
         "A lack of material wealth",
       ],
       correctIndex: 1,
+      explanation:
+        "The core of Buddhist psychology is that all things are transient. Suffering arises when we cling to temporary pleasures or desperately push away temporary pains, rather than accepting the flux.",
     },
     tags: ["Meaning & Self"],
     related: ["O12"],
@@ -6213,6 +7003,8 @@ export const NODES: Node[] = [
         "That science will fail to explain the universe",
       ],
       correctIndex: 1,
+      explanation:
+        "Nietzsche wasn't celebrating the 'death of God'; he was diagnosing a looming crisis. He warned that without religious grounding, humanity would fall into nihilism unless we could create our own values (the Übermensch).",
     },
     tags: ["Meaning & Self"],
     related: ["O1", "O5", "X3"],
@@ -6254,6 +7046,8 @@ export const NODES: Node[] = [
         "Determining which animals are capable of feeling pain",
       ],
       correctIndex: 1,
+      explanation:
+        "Chalmers split the study of mind into 'easy' problems (how the brain processes data) and the 'hard' problem (why that processing actually *feels* like something from the inside).",
     },
     tags: ["Meaning & Self"],
     related: ["O2", "O6", "Y3"],
@@ -6295,6 +7089,8 @@ export const NODES: Node[] = [
         "Whether it is legal in the jurisdiction where it occurs",
       ],
       correctIndex: 1,
+      explanation:
+        "Mill's ethical framework bypasses divine rules and focuses purely on consequences: an action is morally right only if it maximizes the total aggregate well-being and minimizes total suffering.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
     related: ["O17", "O18"],
@@ -6336,6 +7132,8 @@ export const NODES: Node[] = [
         "Whether an action makes the person performing it happy",
       ],
       correctIndex: 1,
+      explanation:
+        "Kant argued that morality must be based on pure reason, not outcomes. The Categorical Imperative demands that you only act according to rules that you would logically want everyone else in the world to follow.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
     related: ["O16", "O18"],
@@ -6377,6 +7175,8 @@ export const NODES: Node[] = [
         "By being born with the correct moral character",
       ],
       correctIndex: 2,
+      explanation:
+        "Aristotle didn't believe we are born good or bad. He argued that virtue is a practical skill, forged through habituation, aimed at finding the golden mean between two extremes of behavior.",
     },
     tags: ["Meaning & Self", "Craft & Deep Work"],
     related: ["O16", "O17"],
@@ -6418,6 +7218,8 @@ export const NODES: Node[] = [
         "It cannot acquire any reliable knowledge at all",
       ],
       correctIndex: 1,
+      explanation:
+        "Locke argued against the prevailing idea of 'innate concepts' (like God or morality), insisting the mind is a tabula rasa (blank slate) that only acquires knowledge through sensory experience.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["O20", "O21"],
@@ -6459,6 +7261,8 @@ export const NODES: Node[] = [
         "Nothing; Descartes concludes certain knowledge is impossible",
       ],
       correctIndex: 2,
+      explanation:
+        "After doubting everything—his senses, his memory, the physical world—Descartes realized the one thing he couldn't doubt was his own act of doubting. To be deceived, he must exist to be deceived.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["O19", "O21"],
@@ -6500,6 +7304,8 @@ export const NODES: Node[] = [
         "Scientists have proven causation is always an illusion",
       ],
       correctIndex: 1,
+      explanation:
+        "Hume pointed out that we never actually see 'cause'—we only see one event follow another. We assume causation out of psychological habit, not rational proof.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking", "Cognitive Biases & Models"],
     related: ["O19", "O20"],
@@ -6542,6 +7348,8 @@ export const NODES: Node[] = [
         "Because Hobbes believed democracy was the only legitimate form of government",
       ],
       correctIndex: 1,
+      explanation:
+        "Hobbes believed the natural state of humanity is violently self-interested. To escape constant war and short lives, people rationally surrender their absolute freedom to a powerful sovereign (the Leviathan) in exchange for security.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
     related: ["O23"],
@@ -6583,6 +7391,8 @@ export const NODES: Node[] = [
         "How to eliminate all forms of inequality immediately",
       ],
       correctIndex: 1,
+      explanation:
+        "Rawls argued that true justice requires impartiality. The 'veil of ignorance' forces you to design a society's rules without knowing if you will be born rich or poor, healthy or sick, ensuring you design a system fair to the worst-off.",
     },
     tags: ["Meaning & Self", "Incentives & Systems", "Decision-Making"],
     related: ["O22", "W5"],
@@ -6624,6 +7434,8 @@ export const NODES: Node[] = [
         "That video games will eventually become indistinguishable from reality",
       ],
       correctIndex: 1,
+      explanation:
+        "Bostrom doesn't definitively claim we are in a simulation. He mathematically argues that either human-like civilizations go extinct, they lose interest in simulations, or we are almost certainly simulated.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["R5", "R6", "X1"],
@@ -6666,6 +7478,8 @@ export const NODES: Node[] = [
         "The filter has already been definitively located by radio telescope surveys",
       ],
       correctIndex: 1,
+      explanation:
+        "The Great Filter solves the Fermi Paradox by proposing an evolutionary step so hard that it wipes out almost all civilizations. If it's behind us, we survived the hardest part; if it's ahead of us, our doom is likely approaching.",
     },
     tags: ["Meaning & Self", "Risk & Asymmetric Bets"],
     related: ["R1", "Z4"],
@@ -6707,6 +7521,8 @@ export const NODES: Node[] = [
         "That free will is a purely religious concept with no scientific relevance",
       ],
       correctIndex: 1,
+      explanation:
+        "Sapolsky argues that every decision is the inevitable result of prior causes—hormones, genes, childhood environment, evolutionary history. Because we control none of these prior causes, the idea of an uncaused 'free choice' is an illusion.",
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
     related: ["R4", "O2", "X6"],
@@ -6748,6 +7564,8 @@ export const NODES: Node[] = [
         "Galileo's rejection of Aristotelian philosophy",
       ],
       correctIndex: 1,
+      explanation:
+        "To invent mathematical physics, Galileo deliberately excluded consciousness (colors, smells, feelings) from the scientific domain. Goff argues that trying to explain consciousness using a physics designed to exclude it is impossible.",
     },
     tags: ["Meaning & Self"],
     related: ["O15", "R3"],
@@ -6789,6 +7607,8 @@ export const NODES: Node[] = [
         "Only Earth-like planets can support any form of life",
       ],
       correctIndex: 1,
+      explanation:
+        "The Anthropic Principle answers the 'fine-tuning' problem not with design, but with selection bias: if the universe's constants were incompatible with life, we wouldn't be here to observe them. We can only observe a universe that allows us to exist.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["R1", "R6"],
@@ -6831,6 +7651,8 @@ export const NODES: Node[] = [
         "That mathematics and physics are unrelated fields that happen to overlap",
       ],
       correctIndex: 1,
+      explanation:
+        "Tegmark argues that math doesn't just describe reality; it *is* reality. The physical universe is a mathematical structure, and every possible non-contradictory mathematical structure must therefore physically exist somewhere.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["R5", "R1", "X5", "Z1", "Z3", "Y5"],
@@ -6873,6 +7695,8 @@ export const NODES: Node[] = [
         "Behavior change requires professional therapy to succeed",
       ],
       correctIndex: 1,
+      explanation:
+        "Lasting change requires changing your identity, not just your actions. If you see yourself as a 'smoker trying to quit,' you will eventually fail; you must construct the identity of 'a non-smoker.'",
     },
     tags: ["Meaning & Self", "Craft & Deep Work"],
     related: ["S2", "S6"],
@@ -6909,6 +7733,8 @@ export const NODES: Node[] = [
         "Vision, Mission, Values, Culture",
       ],
       correctIndex: 1,
+      explanation:
+        "A one-person business scales not by hiring employees, but by using media and code to productize the founder's specific knowledge across these four pillars.",
     },
     tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
     related: ["S1", "S3", "P1"],
@@ -6946,6 +7772,8 @@ export const NODES: Node[] = [
         "They focus too much on writing instead of visual skills",
       ],
       correctIndex: 1,
+      explanation:
+        "Technical skills are useless if no one knows you have them. You must first learn to communicate ideas and build an audience; only then do technical skills become highly leverageable.",
     },
     tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
     related: ["S2", "S4"],
@@ -6983,6 +7811,8 @@ export const NODES: Node[] = [
         "Because writing requires no ongoing practice once learned",
       ],
       correctIndex: 1,
+      explanation:
+        "Writing clarifies thinking. Every piece of high-leverage digital media—from a podcast to a viral video to a sales funnel—starts as a written script or outline.",
     },
     tags: ["Craft & Deep Work", "Wealth, Leverage & Judgment"],
     related: ["S3", "S2", "T1"],
@@ -7020,6 +7850,8 @@ export const NODES: Node[] = [
         "Not using enough productivity software",
       ],
       correctIndex: 1,
+      explanation:
+        "Focus isn't just about blocking distractions; it's about having a crystal-clear vision of who you are and what you want. Without a strong identity, your attention will naturally wander to whatever the environment suggests.",
     },
     tags: ["Craft & Deep Work", "Meaning & Self"],
     related: ["S1", "S6"],
@@ -7061,6 +7893,8 @@ export const NODES: Node[] = [
         "Learning, earning, and giving",
       ],
       correctIndex: 1,
+      explanation:
+        "Modern society often separates what we do for work from who we are and what we are becoming, leading to a deep sense of alienation and lack of purpose.",
     },
     tags: ["Meaning & Self"],
     related: ["S1", "S5", "O1", "O5"],
@@ -7097,6 +7931,8 @@ export const NODES: Node[] = [
         "Outsourcing the writing process entirely to freelance ghostwriters",
       ],
       correctIndex: 1,
+      explanation:
+        "Blank-page syndrome happens when you try to research and write simultaneously. 'Writing from abundance' means constantly collecting notes, so when you sit down to write, you are simply connecting ideas you already have.",
     },
     tags: ["Craft & Deep Work", "Compounding & Patience"],
     related: ["T2", "T3", "S4"],
@@ -7134,6 +7970,8 @@ export const NODES: Node[] = [
         "Studying a domain long enough to recognize subtle, faint opportunities others miss",
       ],
       correctIndex: 2,
+      explanation:
+        "While dumb luck happens to anyone, and hustling creates active luck, Type IV luck happens when you've built such a unique reputation that random, highly specific opportunities naturally gravitate toward you.",
     },
     tags: ["Risk & Asymmetric Bets", "Wealth, Leverage & Judgment"],
     related: ["T1", "T3"],
@@ -7171,6 +8009,8 @@ export const NODES: Node[] = [
         "Avoid writing anything down and rely on memory to track progress",
       ],
       correctIndex: 1,
+      explanation:
+        "By writing down what you just finished, what you are feeling, and what you will do next during transitions, you close 'open loops' in your brain and prevent cognitive residue from ruining your next task.",
     },
     tags: ["Craft & Deep Work", "Incentives & Systems"],
     related: ["T1", "T2"],
@@ -7207,6 +8047,8 @@ export const NODES: Node[] = [
         "It only occurs in political and religious beliefs",
       ],
       correctIndex: 1,
+      explanation:
+        "Confirmation bias isn't just ignoring facts; it actively distorts how we search for information, how we interpret ambiguous data, and what details we remember, making us completely blind to our own bias.",
     },
     tags: ["Cognitive Biases & Models"],
     related: ["U2", "U3", "X3"],
@@ -7244,6 +8086,8 @@ export const NODES: Node[] = [
         "People adjust fully away from irrelevant starting points once they realize they are arbitrary",
       ],
       correctIndex: 1,
+      explanation:
+        "Anchoring proves that the human brain relies heavily on whatever initial information it receives. Even obviously irrelevant numbers act as a powerful gravitational pull on our subsequent judgments.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["U1", "U3"],
@@ -7280,6 +8124,8 @@ export const NODES: Node[] = [
         "Underestimate the danger of all rare events equally",
       ],
       correctIndex: 1,
+      explanation:
+        "We estimate the probability of an event by how easily we can recall examples of it. Because plane crashes are vivid and heavily reported, they are highly 'available' in memory, causing us to drastically overestimate their danger.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["U1", "U2"],
@@ -7317,6 +8163,8 @@ export const NODES: Node[] = [
         "Sunk costs have no measurable effect on future behavior",
       ],
       correctIndex: 1,
+      explanation:
+        "The sunk cost fallacy occurs because acknowledging a loss is psychologically painful. We irrationally throw good money (or time) after bad to avoid admitting the initial investment was wasted.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["U5", "U6"],
@@ -7354,6 +8202,8 @@ export const NODES: Node[] = [
         "Because testing methods are inherently biased in favor of low performers",
       ],
       correctIndex: 1,
+      explanation:
+        "The Dunning-Kruger effect explains why terrible singers audition for talent shows with extreme confidence: they lack the very musical expertise required to realize how bad their singing actually is.",
     },
     tags: ["Cognitive Biases & Models", "Meaning & Self"],
     related: ["U4", "U6", "X2"],
@@ -7390,6 +8240,8 @@ export const NODES: Node[] = [
         "Loss aversion only affects financial decisions, not other areas of life",
       ],
       correctIndex: 1,
+      explanation:
+        "Because humans are loss-averse, framing matters. A patient is much more likely to choose a surgery described as having a '90% survival rate' than one described as having a '10% mortality rate,' even though the math is identical.",
     },
     tags: ["Cognitive Biases & Models", "Risk & Asymmetric Bets"],
     related: ["U4", "U5", "W1"],
@@ -7426,6 +8278,8 @@ export const NODES: Node[] = [
         "That military training eliminates cognitive bias in evaluation",
       ],
       correctIndex: 1,
+      explanation:
+        "The Halo Effect shows that if we perceive one positive trait in a person (like physical attractiveness), our brain lazily assumes they possess other positive traits (like intelligence or kindness) without any evidence.",
     },
     tags: ["Cognitive Biases & Models", "Power & Persuasion"],
     related: ["U1", "U8"],
@@ -7462,6 +8316,8 @@ export const NODES: Node[] = [
         "Memory of past predictions has no relationship to knowing the eventual outcome",
       ],
       correctIndex: 1,
+      explanation:
+        "Hindsight bias makes us believe the world is more predictable than it actually is. After an event happens, we unconsciously rewrite our memories to convince ourselves we 'knew it all along.'",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["U5", "U7"],
@@ -7498,6 +8354,8 @@ export const NODES: Node[] = [
         "Religious observance replacing secular work schedules",
       ],
       correctIndex: 1,
+      explanation:
+        "Before the Industrial Revolution, people worked based on the task (e.g., harvest time). Factories required synchronized labor, so owners imposed rigid, clock-based time discipline, permanently altering how humans perceive time.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
     related: ["V2", "V7"],
@@ -7540,6 +8398,8 @@ export const NODES: Node[] = [
         "Money has always had intrinsic value independent of social trust",
       ],
       correctIndex: 1,
+      explanation:
+        "The myth of barter assumes money was invented to facilitate trade. Graeber shows that early human economies ran on complex social credit systems, and coined money only emerged later, primarily to fund standing armies.",
     },
     tags: ["Meaning & Self", "Wealth, Leverage & Judgment"],
     related: ["V1", "V6"],
@@ -7577,6 +8437,8 @@ export const NODES: Node[] = [
         "The invention of passports and border controls",
       ],
       correctIndex: 1,
+      explanation:
+        "A nation is an 'imagined community' because you will never meet most of your fellow citizens. Mass-produced media (newspapers) allowed millions of people to consume the same information simultaneously, forging a shared national identity.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
     related: ["V2"],
@@ -7618,6 +8480,8 @@ export const NODES: Node[] = [
         "Racial categories should be replaced with categories based purely on geography",
       ],
       correctIndex: 1,
+      explanation:
+        "Montagu argued that 'race' is a sociological concept, not a biological one. Genetic variation among humans is continuous, and the boundaries we draw based on physical traits are entirely arbitrary historical inventions.",
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
     related: ["V3", "V5"],
@@ -7659,6 +8523,8 @@ export const NODES: Node[] = [
         "Only actors and performers have a meaningful gender identity",
       ],
       correctIndex: 1,
+      explanation:
+        "Butler famously argued that gender is not a noun but a verb. It is a culturally required performance that we enact so constantly that it creates the illusion of being a natural, internal essence.",
     },
     tags: ["Meaning & Self"],
     related: ["V4"],
@@ -7701,6 +8567,8 @@ export const NODES: Node[] = [
         "Government ownership of land and resources",
       ],
       correctIndex: 1,
+      explanation:
+        "Proudhon didn't oppose people owning their home or the fruits of their own labor. He opposed the system where owners (like landlords or factory bosses) could extract wealth generated by the labor of others simply because they held a legal title.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
     related: ["V2"],
@@ -7743,6 +8611,8 @@ export const NODES: Node[] = [
         "They have remained unchanged since ancient Egypt",
       ],
       correctIndex: 1,
+      explanation:
+        "Standardizing measurements (like the metric system) wasn't just about scientific progress; it allowed central governments to easily survey, tax, and control local populations that previously used complex, localized systems of measurement.",
     },
     tags: ["Meaning & Self", "Power & Persuasion"],
     related: ["V1"],
@@ -7785,6 +8655,8 @@ export const NODES: Node[] = [
         "An arrangement that has remained essentially unchanged throughout history",
       ],
       correctIndex: 1,
+      explanation:
+        "For most of history, marriage was too important to the family's economic survival to be left to something as volatile as romantic love. The idea that marriage should be based primarily on love is a radical, recent invention.",
     },
     tags: ["Meaning & Self"],
     related: ["V5"],
@@ -7827,6 +8699,8 @@ export const NODES: Node[] = [
         "The Pavlovian Association",
       ],
       correctIndex: 2,
+      explanation:
+        "When several different psychological biases (like social proof, authority bias, and reward super-response) operate in the same direction simultaneously, they create a 'lollapalooza effect'—an explosive, often irrational behavioral outcome.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["W4", "J10", "U6"],
@@ -7869,6 +8743,8 @@ export const NODES: Node[] = [
         "To reflect the perfectly efficient valuation of the underlying asset",
       ],
       correctIndex: 2,
+      explanation:
+        "Mr. Market is a manic-depressive partner. If you let his wildly fluctuating moods dictate your emotional state, you will lose. If you use his irrational pessimism to buy cheap and his irrational optimism to sell high, you will win.",
     },
     tags: ["Markets & Narrative", "Risk & Asymmetric Bets"],
     related: ["W3", "D2", "J3"],
@@ -7911,6 +8787,8 @@ export const NODES: Node[] = [
         "It relies entirely on a single superstar employee to maintain its operating margins",
       ],
       correctIndex: 2,
+      explanation:
+        "A gruesome business might grow fast, but it requires so much capital just to stay competitive (like an airline) that it never actually generates free cash flow for the owners.",
     },
     tags: ["Moats & Network Effects", "Startups & Founders"],
     related: ["W2", "A11", "A9"],
@@ -7953,6 +8831,8 @@ export const NODES: Node[] = [
         "Base every strategic decision strictly on first-principles financial analysis",
       ],
       correctIndex: 0,
+      explanation:
+        "CEOs often act like lemmings. Instead of behaving rationally, they will engage in foolish acquisitions, copy flawed strategies, and resist obvious changes simply because all the other companies are doing it.",
     },
     tags: ["Incentives & Systems", "Wealth, Leverage & Judgment"],
     related: ["W1", "M1", "M3"],
@@ -7995,6 +8875,8 @@ export const NODES: Node[] = [
         "Friedrich Nietzsche's Übermensch",
       ],
       correctIndex: 1,
+      explanation:
+        "Buffett acknowledges that his massive wealth is heavily dependent on being born in America in the 20th century with a brain wired for capital allocation—a lucky draw from the 'ovarian lottery' that he did nothing to earn.",
     },
     tags: ["Wealth, Leverage & Judgment", "Meaning & Self"],
     related: ["W4", "O23"],
@@ -8037,6 +8919,8 @@ export const NODES: Node[] = [
         "It eliminates the need for any initial business valuation or due diligence",
       ],
       correctIndex: 1,
+      explanation:
+        "Frequent trading triggers taxes and fees that destroy compound interest. Holding a wonderful business forever allows your capital to compound pre-tax, mathematically dwarfing the returns of active trading.",
     },
     tags: ["Compounding & Patience", "Craft & Deep Work"],
     related: ["W2", "K1", "K4"],
@@ -8079,6 +8963,8 @@ export const NODES: Node[] = [
         "To connect the brain to a simulated computational network",
       ],
       correctIndex: 1,
+      explanation:
+        "Our senses do not show us reality as it is; they show us a highly filtered, low-resolution interface designed specifically to keep us alive, hiding the overwhelming complexity of the true physical universe.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["R1", "O6"],
@@ -8116,6 +9002,8 @@ export const NODES: Node[] = [
         "Algorithms cannot process identity markers effectively",
       ],
       correctIndex: 1,
+      explanation:
+        "When a belief becomes part of your identity, your brain treats conflicting information as a literal threat to your survival, shutting down the higher-order reasoning required for metacognition.",
     },
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     related: ["U5", "J11"],
@@ -8153,6 +9041,8 @@ export const NODES: Node[] = [
         "It defaults to a purely mathematical worldview",
       ],
       correctIndex: 1,
+      explanation:
+        "Rather than discarding a foundational belief when faced with contradictory evidence, the brain often builds elaborate, ad-hoc rationalizations to explain away the anomaly and preserve its core worldview.",
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
     related: ["U1", "O14"],
@@ -8190,6 +9080,8 @@ export const NODES: Node[] = [
         "They require too much historical data to function effectively",
       ],
       correctIndex: 1,
+      explanation:
+        "When a black-box AI determines prison sentences, the defendant is denied due process because neither the judge nor the lawyer can audit the algorithm to see if it is relying on hidden racial or socioeconomic biases.",
     },
     tags: ["Incentives & Systems", "Power & Persuasion"],
     related: ["M1", "M3"],
@@ -8227,6 +9119,8 @@ export const NODES: Node[] = [
         "Alternate timelines merge to prevent the cessation of life",
       ],
       correctIndex: 1,
+      explanation:
+        "In the Many-Worlds interpretation, every possible outcome occurs in branching universes. Because you can only experience a universe where you are alive, from your subjective perspective, you will seemingly survive any lethal event.",
     },
     tags: ["Meaning & Self"],
     related: ["R5", "R6"],
@@ -8264,6 +9158,8 @@ export const NODES: Node[] = [
         "Simultaneous events destroy the fabric of spacetime, creating black holes",
       ],
       correctIndex: 1,
+      explanation:
+        "Einstein's relativity shows that 'now' is not absolute. Since observers moving at different speeds disagree on what is happening 'simultaneously,' the past, present, and future must all exist together in a static 4D block.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["R3", "Y2"],
@@ -8301,6 +9197,8 @@ export const NODES: Node[] = [
         "The original DNA or molecular signature of the object",
       ],
       correctIndex: 1,
+      explanation:
+        "Identity is not bound to specific physical atoms (which are constantly replaced in our bodies). We assign identity based on the continuity of the pattern and function over time.",
     },
     tags: ["Meaning & Self"],
     related: ["O2"],
@@ -8338,6 +9236,8 @@ export const NODES: Node[] = [
         "The observer effect forces macroscopic objects to decay",
       ],
       correctIndex: 1,
+      explanation:
+        "The laws of physics work the same forwards and backwards. The only reason time has a direction (an 'arrow') is because the universe started in an unusually low-entropy state and is statistically overwhelming its way toward higher disorder.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
     related: ["X6"],
@@ -8375,6 +9275,8 @@ export const NODES: Node[] = [
         "The hard problem is purely mathematical and devoid of biology",
       ],
       correctIndex: 1,
+      explanation:
+        "Science is excellent at explaining the mechanics of the brain (the 'easy' problems). But it has no framework for explaining why those mechanics are accompanied by the subjective, inner experience of actually feeling them (the 'hard problem').",
     },
     tags: ["Meaning & Self"],
     related: ["O15", "X1"],
@@ -8412,6 +9314,8 @@ export const NODES: Node[] = [
         "It slows down the subjective perception of time",
       ],
       correctIndex: 1,
+      explanation:
+        "Without precise words for specific emotions, our brains struggle to categorize our internal state, leading to generalized anxiety. Learning nuanced vocabulary gives the brain the tools it needs to regulate those feelings.",
     },
     tags: ["Meaning & Self"],
     related: ["O7"],
@@ -8449,6 +9353,8 @@ export const NODES: Node[] = [
         "Non-Euclidean spatial curvature",
       ],
       correctIndex: 1,
+      explanation:
+        "The Banach-Tarski paradox proves that if you accept the Axiom of Choice, you can mathematically cut a solid sphere into pieces and reassemble them into two identical spheres, defying all physical intuition.",
     },
     tags: ["First-Principles Thinking"],
     related: ["R6"],
@@ -8485,6 +9391,8 @@ export const NODES: Node[] = [
         "Bad deeds are always immediately punished by economic forces",
       ],
       correctIndex: 1,
+      explanation:
+        "The universe is indifferent to morality. We naturally want to believe that hard work and virtue are rewarded, but physical and economic realities overwhelmingly reward leverage, timing, and scale.",
     },
     tags: ["Cognitive Biases & Models", "Risk & Asymmetric Bets"],
     related: ["O5"],
@@ -8521,6 +9429,8 @@ export const NODES: Node[] = [
         "The universe expands solely due to thermal radiation pushing galaxies apart",
       ],
       correctIndex: 1,
+      explanation:
+        "Theoretical physics increasingly suggests that space and time are not fundamental ingredients of the universe, but emergent properties created by the quantum entanglement of underlying, non-spatial information.",
     },
     tags: ["First-Principles Thinking"],
     related: ["R6", "X6"],
@@ -8557,6 +9467,8 @@ export const NODES: Node[] = [
         "It possesses infinite mass and zero volume",
       ],
       correctIndex: 1,
+      explanation:
+        "Unparticles are hypothetical entities that don't behave like normal matter because they lack a fixed mass or scale. Some theorists propose they could be responsible for the accelerating expansion of the universe.",
     },
     tags: ["First-Principles Thinking"],
     related: ["Z3"],
@@ -8594,6 +9506,8 @@ export const NODES: Node[] = [
         "By the stretching of macroscopic quantum strings",
       ],
       correctIndex: 1,
+      explanation:
+        "Instead of relying on the mysterious 'dark energy' to explain cosmic expansion, this model suggests our universe is expanding rapidly because it is constantly colliding with and absorbing smaller 'baby' universes.",
     },
     tags: ["First-Principles Thinking"],
     related: ["R6", "Z2"],
@@ -8631,6 +9545,8 @@ export const NODES: Node[] = [
         "It has visible rings made of artificial metal alloys",
       ],
       correctIndex: 1,
+      explanation:
+        "While biosignatures (like oxygen) just indicate life, technosignatures (like unnatural industrial pollutants or strange isotopic ratios in the atmosphere) would be the smoking gun for an advanced, industrialized alien civilization.",
     },
     tags: ["First-Principles Thinking"],
     related: ["R2"],
@@ -8668,6 +9584,8 @@ export const NODES: Node[] = [
         "Because ASI requires less electricity than AGI",
       ],
       correctIndex: 1,
+      explanation:
+        "Once an AI reaches human-level intelligence, it can instantly apply its cognitive power to improving its own source code. This feedback loop will create an Artificial Superintelligence so rapidly that humans will be unable to control or align it.",
     },
     tags: ["AI & the Future"],
     related: ["I12", "X4"],
@@ -8706,6 +9624,8 @@ export const NODES: Node[] = [
         "It uses radioactive isotopes to melt the DNA into a new shape",
       ],
       correctIndex: 2,
+      explanation:
+        "Unlike early CRISPR which acted like 'genetic scissors' (causing unpredictable double-strand breaks), Prime Editing acts like a 'word processor,' allowing scientists to precisely search and replace DNA sequences with minimal off-target damage.",
     },
     tags: ["Health & Body"],
     related: ["I13"],

@@ -7,6 +7,7 @@ import { MicroLabel } from "@/components/MicroLabel";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 export const Route = createFileRoute("/explore")({
   head: () => ({
@@ -24,6 +25,46 @@ export const Route = createFileRoute("/explore")({
 function matchCount(nodes: Node[], interests: string[]): number {
   if (interests.length === 0) return 0;
   return nodes.filter((n) => n.tags.some((t) => interests.includes(t))).length;
+}
+
+function ClusterSection({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes: Node[] }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <section>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex w-full items-center justify-between px-1 text-left cursor-pointer group"
+      >
+        <div className="min-w-0 flex-1">
+          <h2 className="font-serif text-2xl leading-tight text-ink group-hover:opacity-80 transition-opacity">
+            {cluster.title}
+          </h2>
+          <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+            {cluster.subtitle}
+          </p>
+        </div>
+        <div className="flex items-center gap-4">
+          <MicroLabel>{nodes.length}</MicroLabel>
+          <span className="text-ink-soft group-hover:text-ink transition-colors flex items-center justify-center">
+            {isOpen ? (
+              <ChevronDown size={20} strokeWidth={1.5} />
+            ) : (
+              <ChevronRight size={20} strokeWidth={1.5} />
+            )}
+          </span>
+        </div>
+      </button>
+
+      {isOpen && (
+        <div className="mt-6 -mx-5 flex snap-x snap-mandatory gap-2 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:overflow-x-visible sm:px-0">
+          {nodes.map((n) => (
+            <NodeCard key={n.id} node={n} />
+          ))}
+        </div>
+      )}
+    </section>
+  );
 }
 
 function ExploreScreen() {
@@ -93,24 +134,7 @@ function ExploreScreen() {
               ? allNodes.filter((n) => n.tags.some((t) => interests.includes(t)))
               : allNodes;
           if (nodes.length === 0) return null;
-          return (
-            <section key={c.id}>
-              <div className="flex items-baseline justify-between px-1">
-                <div className="min-w-0">
-                  <h2 className="font-serif text-2xl leading-tight text-ink">{c.title}</h2>
-                  <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-                    {c.subtitle}
-                  </p>
-                </div>
-                <MicroLabel>{nodes.length}</MicroLabel>
-              </div>
-              <div className="mt-4 -mx-5 flex snap-x snap-mandatory gap-2 overflow-x-auto px-5 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:overflow-x-visible sm:px-0">
-                {nodes.map((n) => (
-                  <NodeCard key={n.id} node={n} />
-                ))}
-              </div>
-            </section>
-          );
+          return <ClusterSection key={c.id} cluster={c} nodes={nodes} />;
         })}
       </div>
 

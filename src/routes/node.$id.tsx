@@ -70,6 +70,29 @@ function Sentences({ text, start }: { text: string; start: number }) {
   );
 }
 
+function getRecommendationReason(
+  sourceNode: NodeType,
+  targetNode: NodeType,
+  interests: string[],
+): string {
+  const sharedInterests = targetNode.tags.filter((t) => interests.includes(t));
+  if (sharedInterests.length > 0) {
+    return `Suggested: Matches your interest in ${sharedInterests[0]}`;
+  }
+
+  if (sourceNode.clusterId === targetNode.clusterId) {
+    const cluster = CLUSTER_BY_ID[sourceNode.clusterId];
+    return `Suggested: Continues the theme of ${cluster?.title || "this cluster"}`;
+  }
+
+  const sharedTags = targetNode.tags.filter((t) => sourceNode.tags.includes(t));
+  if (sharedTags.length > 0) {
+    return `Suggested: Explores related concepts like ${sharedTags[0]}`;
+  }
+
+  return "Suggested: Hand-picked for you to explore next";
+}
+
 function NodeScreen() {
   const { node } = Route.useLoaderData() as { node: NodeType };
   const cluster = CLUSTER_BY_ID[node.clusterId];
@@ -229,19 +252,34 @@ function NodeScreen() {
           </button>
         </div>
 
-        {(showL1 || showL2) && nextConnection && (
-          <section className="mt-14 border-t border-accent/40 pt-8 animate-in fade-in duration-500">
-            <MicroLabel className="text-accent">Follow the thread</MicroLabel>
-            <p className="mt-3 font-serif text-xl leading-snug text-ink">
-              If you liked <span className="italic">{node.title}</span>, here's how it connects to{" "}
-              <span className="italic">{nextConnection.title}</span>.
-            </p>
+        {nextConnection && (
+          <section className="mt-16 animate-in fade-in duration-500">
             <Link
               to="/node/$id"
               params={{ id: nextConnection.id }}
-              className="mt-5 inline-flex items-center justify-center border border-ink bg-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper"
+              className="group block border-2 border-ink p-6 sm:p-8 transition-colors duration-300 hover:bg-ink"
             >
-              Read next →
+              <div className="mb-4 flex flex-wrap items-center gap-3 font-mono text-[10px] uppercase tracking-[0.14em]">
+                <span className="bg-accent px-2 py-1 text-paper">Up Next</span>
+                <span className="text-ink group-hover:text-paper/80 transition-colors">
+                  {getRecommendationReason(node, nextConnection, interests)}
+                </span>
+              </div>
+              <h3 className="font-serif text-3xl sm:text-4xl leading-tight text-ink group-hover:text-paper transition-colors">
+                {nextConnection.title}
+              </h3>
+              <p className="mt-4 border-l-2 border-accent/50 pl-4 font-serif text-xl italic leading-relaxed text-ink-soft group-hover:text-paper/80 transition-colors">
+                "{nextConnection.thesis}"
+              </p>
+              <div className="mt-8 flex items-center justify-between">
+                <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft group-hover:text-paper/60 transition-colors">
+                  {nextConnection.author} · {nextConnection.medium}
+                </span>
+                <span className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ink group-hover:text-paper transition-all">
+                  <span>Continue</span>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </span>
+              </div>
             </Link>
 
             {related.length > 1 && (
