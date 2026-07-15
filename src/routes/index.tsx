@@ -1,13 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { CLUSTERS, NODES_BY_CLUSTER, NODE_BY_ID, type Node } from "@/data/nodes";
-import { NodeCard } from "@/components/NodeCard";
+import { NODES_BY_CLUSTER, NODE_BY_ID } from "@/data/nodes";
 import { SearchBar } from "@/components/SearchBar";
 import { MicroLabel } from "@/components/MicroLabel";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { useStore, dueCount, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
-import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,18 +21,12 @@ export const Route = createFileRoute("/")({
   component: MapScreen,
 });
 
-function matchCount(nodes: Node[], interests: string[]): number {
-  if (interests.length === 0) return 0;
-  return nodes.filter((n) => n.tags.some((t) => interests.includes(t))).length;
-}
-
 function MapScreen() {
   const navigate = useNavigate();
   const hydrated = useHydrated();
   const lastNodeId = useStore((s) => s.lastNodeId);
   const review = useStore((s) => s.review);
   const streakDays = useStore((s) => s.streakDays);
-  const interests = useStore((s) => s.interests);
   const onboardingComplete = useStore((s) => s.onboardingComplete);
   const due = hydrated ? dueCount(review) : 0;
   const streak = hydrated ? currentStreak(streakDays) : 0;
@@ -42,28 +34,11 @@ function MapScreen() {
   const starter = NODES_BY_CLUSTER["A"]?.[0] ?? Object.values(NODE_BY_ID)[0];
   const resume = cont ?? starter;
 
-  const [view, setView] = useState<"for-you" | "all">("all");
-
   useEffect(() => {
     if (hydrated && !onboardingComplete) {
       navigate({ to: "/onboarding" });
     }
   }, [hydrated, onboardingComplete, navigate]);
-
-  useEffect(() => {
-    if (hydrated && interests.length > 0) setView("for-you");
-  }, [hydrated]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  const hasInterests = hydrated && interests.length > 0;
-
-  const orderedClusters = useMemo(() => {
-    if (!hasInterests) return CLUSTERS;
-    return [...CLUSTERS].sort(
-      (a, b) =>
-        matchCount(NODES_BY_CLUSTER[b.id], interests) -
-        matchCount(NODES_BY_CLUSTER[a.id], interests),
-    );
-  }, [hasInterests, interests]);
 
   if (hydrated && !onboardingComplete) {
     return <div className="px-5 pt-8" />;
@@ -108,62 +83,6 @@ function MapScreen() {
             {due === 0 ? "You're caught up" : "Tap to review"}
           </p>
         </Link>
-      </div>
-
-      {hasInterests && (
-        <div className="mt-8 flex items-center gap-2">
-          <button
-            onClick={() => setView("for-you")}
-            className={cn(
-              "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
-              view === "for-you"
-                ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink",
-            )}
-          >
-            For you
-          </button>
-          <button
-            onClick={() => setView("all")}
-            className={cn(
-              "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
-              view === "all"
-                ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink",
-            )}
-          >
-            Everything
-          </button>
-        </div>
-      )}
-
-      <div className="mt-12 space-y-12">
-        {orderedClusters.map((c) => {
-          const allNodes = NODES_BY_CLUSTER[c.id];
-          const nodes =
-            hasInterests && view === "for-you"
-              ? allNodes.filter((n) => n.tags.some((t) => interests.includes(t)))
-              : allNodes;
-          if (nodes.length === 0) return null;
-          return (
-            <section key={c.id}>
-              <div className="flex items-baseline justify-between px-1">
-                <div className="min-w-0">
-                  <h2 className="font-serif text-2xl leading-tight text-ink">{c.title}</h2>
-                  <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-                    {c.subtitle}
-                  </p>
-                </div>
-                <MicroLabel>{nodes.length}</MicroLabel>
-              </div>
-              <div className="mt-4 -mx-5 flex snap-x snap-mandatory gap-2 overflow-x-auto px-5 pb-2">
-                {nodes.map((n) => (
-                  <NodeCard key={n.id} node={n} />
-                ))}
-              </div>
-            </section>
-          );
-        })}
       </div>
 
       <footer className="mt-16 border-t border-line pt-6 pb-2">

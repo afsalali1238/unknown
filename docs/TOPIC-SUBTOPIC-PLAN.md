@@ -140,27 +140,52 @@ Target: **6 new nodes**, cluster R.
 
 ---
 
-## 6. New topic 3 — Modern Creator Philosophy (new cluster, e.g. `S`)
+## 6. New topic 3 — Modern Creator Philosophy — **revised: split into two topics, not one**
 
-Dan Koe + comparable modern online essayists, organized **by idea, not by author** (matches the
-existing atomic-node model — Naval's cluster P is organized the same way: one node per theme, not
-one node per person). 5–6 nodes to start.
+You flagged this correctly: cramming Dan Koe + four other writers into one 5–6 node cluster means
+Dan Koe gets exactly one node — thin, given how important this topic is to you. The existing
+precedent in this project is cluster P, which gives **Naval alone** a full 6-node topic. Dan Koe
+deserves the same treatment, not a 1/5 share of a shared cluster. So: two separate new topics
+instead of one.
 
-| Subtopic (the idea) | Likely author/source | Note |
-|---|---|---|
-| Self-Authorship / Identity Design | Dan Koe | His core recurring framework across essays/newsletter |
-| One-Person Business / Leverage | Dan Koe, or Nathan Barry | Overlaps with existing "Wealth, Leverage & Judgment" tag — good cross-link to P (Naval) |
-| Writing as Leverage | David Perell | "Write of Passage" philosophy / online writing as compounding asset |
-| Curiosity-Driven Frameworks | Sahil Bloom | Newsletter-style mental-model synthesis, modern equivalent of Farnam Street |
-| Systems Over Goals / Mindful Productivity | Anne-Laure Le Cunff (Ness Labs) or Nat Eliason | Pick whichever has a clearer single flagship essay |
+### 6a. New topic — Dan Koe (dedicated cluster, e.g. `S`)
 
-**Flag before writing:** unlike the books/papers used elsewhere in this project, these are living
-newsletters/blogs — exact essay titles, dates, and URLs need a live web-search verification pass
-before drafting (not done in this planning pass, to avoid citing something that's since been
-retitled, paywalled, or taken down). Treat the table above as *candidate subtopics + likely authors*,
+Mirrors cluster P's shape exactly: one person, one topic, several nodes each covering a distinct
+core framework (not one node trying to summarize everything he's written). Proposed 6 subtopics —
+adjust freely, this is my read of his most recognizable recurring frameworks, not yet
+source-verified:
+
+| Subtopic | What it covers |
+|---|---|
+| Self-Authorship | Identity design — deciding who you want to become rather than defaulting to conditioning |
+| The One-Person Business | Productized knowledge, leverage without employees or a team |
+| High-Income Skill Stacking | How he frames acquiring and combining monetizable skills |
+| Content as Compounding Leverage | Writing/content strategy — the "2 Hour Writer" / audience-building approach |
+| Focus in the Attention Economy | Deep work framed against algorithmic distraction — "The Art of Focus" territory |
+| Ego, Nihilism & the Modern Self | His more philosophical essays — ego death, meaning-making outside religion/tradition |
+
+Target: **6 nodes**, dedicated cluster, same depth as Naval's P.
+
+### 6b. New topic — Modern Creator Essayists (separate cluster, e.g. `T`)
+
+The rest of the shortlist (Perell, Sahil Bloom, Le Cunff/Eliason), kept **out** of Dan Koe's cluster
+so his topic stays focused and theirs doesn't get diluted by association. One subtopic per writer to
+start — can deepen individually later the same way Dan Koe's topic just did, if any of them turns out
+to matter as much to you.
+
+| Subtopic (the idea) | Likely author/source |
+|---|---|
+| Writing as Leverage | David Perell — online writing as a compounding asset |
+| Curiosity-Driven Frameworks | Sahil Bloom — newsletter-style mental-model synthesis |
+| Systems Over Goals / Mindful Productivity | Anne-Laure Le Cunff (Ness Labs) or Nat Eliason |
+
+Target: **3 nodes** to start, cluster T.
+
+**Flag before writing (applies to both 6a and 6b):** unlike the books/papers used elsewhere in this
+project, these are living newsletters/blogs/YouTube scripts — exact essay titles, dates, and URLs
+need a live web-search verification pass before drafting, to avoid citing something retitled,
+paywalled, or taken down since. Treat both tables as *candidate subtopics + likely source themes*,
 not confirmed sources yet.
-
-Target: **5–6 new nodes**, cluster S.
 
 ---
 
@@ -170,8 +195,9 @@ Target: **5–6 new nodes**, cluster S.
 |---|---|---|
 | O — Philosophy (expanded) | +11–12 | ~17–18 |
 | R — Big Hypotheses (new) | +6 | 6 |
-| S — Modern Creator Philosophy (new) | +5–6 | 5–6 |
-| **Total new content** | **~22–24 nodes** | 155 → ~177–179 |
+| S — Dan Koe (new, dedicated) | +6 | 6 |
+| T — Modern Creator Essayists (new) | +3 | 3 |
+| **Total new content** | **~26–27 nodes** | 155 → ~181–182 |
 
 Plus the schema change in §2 (`subtopicId` field, `SUBTOPICS` list, applied first to J, I, and the
 expanded O since those are the clusters with 10+ nodes).
@@ -184,8 +210,9 @@ expanded O since those are the clusters with 10+ nodes).
    easier to browse, and gives O/R/S a subtopic slot to land in from day one.
 2. Philosophy (O) next — lowest risk, already 50% built, clearest source list (canonical texts).
 3. Big Hypotheses (R) — small, self-contained, sources are well-established (Bostrom, Tegmark, etc.).
-4. Modern Creator Philosophy (S) last — needs the web-search verification pass on live source URLs
-   first; do this after the two topics with settled, easily-citable sources are done.
+4. Dan Koe (S) — do this before T, since it's the one you said matters most; needs the web-search
+   verification pass on live source URLs first (his content is newsletter/YouTube-based, not books).
+5. Modern Creator Essayists (T) last — same verification need, lower priority than S.
 
 ---
 
@@ -195,5 +222,9 @@ expanded O since those are the clusters with 10+ nodes).
   cluster? This avoids duplicate coverage of Camus/Frankl-style content.
 - Pick one per gap where I listed 2–3 candidates (e.g. Marcus Aurelius vs. Epictetus vs. Seneca for
   Stoicism; Harris vs. Sapolsky for free will) — or say "your call" and I'll pick during drafting.
-- Confirm the Modern Creator Philosophy author shortlist (Dan Koe, Perell, Sahil Bloom, Le Cunff/
-  Eliason) is right, or swap any of them out.
+- Does the Dan Koe 6-subtopic breakdown (§6a) match how you'd actually describe his work, or does it
+  miss/misname a framework he's known for? This is my read of his public material, not yet verified
+  against his actual essays — worth you sanity-checking before I go source-verify it.
+- Confirm the "Modern Creator Essayists" shortlist (Perell, Sahil Bloom, Le Cunff/Eliason) for cluster
+  T is right, or swap any of them out — and confirm keeping T separate from Dan Koe's cluster (rather
+  than merging them back together) matches what you meant by "different topics and subtopics."

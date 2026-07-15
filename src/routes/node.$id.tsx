@@ -66,9 +66,11 @@ function NodeScreen() {
   const toggleBookmark = useStore((s) => s.toggleBookmark);
   const bookmarked = useStore((s) => !!s.bookmarks[node.id]);
   const gotItMap = useStore((s) => s.gotIt);
+  const interests = useStore((s) => s.interests);
 
   const [showL1, setShowL1] = useState(false);
   const [showL2, setShowL2] = useState(false);
+  const [showAllConnections, setShowAllConnections] = useState(false);
 
   useEffect(() => {
     visitNode(node.id);
@@ -79,8 +81,33 @@ function NodeScreen() {
   const l2Sents = splitSentences(node.layer2 ?? "").length;
   const totalSents = l0Sents + (showL1 ? l1Sents : 0) + (showL2 ? l2Sents : 0);
 
-  const related: NodeType[] = node.related.map((id: string) => NODE_BY_ID[id]).filter(Boolean);
-  const nextConnection = related.find((r: NodeType) => !gotItMap[r.id]) ?? related[0];
+  const related: NodeType[] = useMemo(() => {
+    const arr = node.related.map((id: string) => NODE_BY_ID[id]).filter(Boolean);
+    return arr.sort((a, b) => {
+      let scoreA = 0;
+      let scoreB = 0;
+
+      // Unread boost
+      if (!gotItMap[a.id]) scoreA += 100;
+      if (!gotItMap[b.id]) scoreB += 100;
+
+      // Same cluster boost
+      if (a.clusterId === node.clusterId) scoreA += 10;
+      if (b.clusterId === node.clusterId) scoreB += 10;
+
+      // User interests match
+      scoreA += a.tags.filter((t: string) => interests.includes(t)).length * 5;
+      scoreB += b.tags.filter((t: string) => interests.includes(t)).length * 5;
+
+      // Shared node tags match
+      scoreA += a.tags.filter((t: string) => node.tags.includes(t)).length;
+      scoreB += b.tags.filter((t: string) => node.tags.includes(t)).length;
+
+      return scoreB - scoreA;
+    });
+  }, [node, gotItMap, interests]);
+
+  const nextConnection = related[0];
 
   return (
     <>
@@ -186,23 +213,6 @@ function NodeScreen() {
           </ul>
         </section>
 
-        {related.length > 0 && (
-          <section className="mt-14 border-t border-line pt-8">
-            <div className="flex items-baseline justify-between">
-              <h2 className="font-serif text-3xl text-ink">Related ideas</h2>
-              <MicroLabel>The lattice</MicroLabel>
-            </div>
-            <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-              Where this thought connects
-            </p>
-            <div className="mt-6">
-              {related.map((r) => (
-                <RelatedCard key={r.id} node={r} />
-              ))}
-            </div>
-          </section>
-        )}
-
         <div className="mt-10 flex items-center gap-3">
           <button
             onClick={() => toggleBookmark(node.id)}
@@ -213,8 +223,8 @@ function NodeScreen() {
           </button>
         </div>
 
-        {nextConnection && (
-          <section className="mt-14 border-t border-accent/40 pt-8">
+        {(showL1 || showL2) && nextConnection && (
+          <section className="mt-14 border-t border-accent/40 pt-8 animate-in fade-in duration-500">
             <MicroLabel className="text-accent">Follow the thread</MicroLabel>
             <p className="mt-3 font-serif text-xl leading-snug text-ink">
               If you liked <span className="italic">{node.title}</span>, here's how it connects to{" "}
@@ -227,6 +237,37 @@ function NodeScreen() {
             >
               Read next →
             </Link>
+
+            {related.length > 1 && (
+              <div className="mt-10">
+                {!showAllConnections ? (
+                  <button
+                    onClick={() => setShowAllConnections(true)}
+                    className="flex w-full items-center justify-between border-t border-line py-4 text-left font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink"
+                  >
+                    <span>Show {related.length - 1} other connections</span>
+                    <span>+</span>
+                  </button>
+                ) : (
+                  <div className="animate-in fade-in slide-in-from-top-2 duration-300">
+                    <div className="flex items-baseline justify-between border-t border-line pt-8">
+                      <h2 className="font-serif text-3xl text-ink">Related ideas</h2>
+                      <MicroLabel>The lattice</MicroLabel>
+                    </div>
+                    <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+                      Where this thought connects
+                    </p>
+                    <div className="mt-6">
+                      {related
+                        .filter((r) => r.id !== nextConnection.id)
+                        .map((r) => (
+                          <RelatedCard key={r.id} node={r} />
+                        ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </section>
         )}
       </article>

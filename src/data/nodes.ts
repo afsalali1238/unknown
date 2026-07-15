@@ -124,8 +124,8 @@ export const CLUSTERS: Cluster[] = [
   },
   {
     id: "O",
-    title: "Mind, Self & Meaning",
-    subtitle: "Six thinkers on the self, the absurd, and what it means to be a person",
+    title: "Philosophy & the Self",
+    subtitle: "Schools of thought on the self, the absurd, and what it means to be a person",
   },
   {
     id: "P",
@@ -136,6 +136,16 @@ export const CLUSTERS: Cluster[] = [
     id: "Q",
     title: "Practical Wisdom",
     subtitle: "Widely-read life-advice bestsellers, closer to lived tactics than theory",
+  },
+  {
+    id: "R",
+    title: "Big Hypotheses",
+    subtitle: "Open questions science and philosophy haven't settled — simulation, consciousness, the Fermi paradox",
+  },
+  {
+    id: "S",
+    title: "Dan Koe",
+    subtitle: "Self-authorship, the one-person business, and modern meaning-making — one internet writer's full framework",
   },
 ];
 
@@ -5783,6 +5793,842 @@ export const NODES: Node[] = [
         url: "https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance",
           archive: { status: "unavailable" }
     },
+    ],
+  },
+  {
+    id: "O7",
+    clusterId: "O",
+    title: "Existentialism Is a Humanism",
+    author: "Jean-Paul Sartre",
+    year: 1946,
+    medium: "Essay",
+    category: "Philosophy of Meaning",
+    thesis:
+      "Sartre's central claim, 'existence precedes essence' — humans have no predetermined nature or purpose; we define ourselves entirely through the choices we make, and that total freedom is also total responsibility.",
+    layer0:
+      "Delivered as a 1945 lecture responding to critics who called existentialism nihilistic and pessimistic, Sartre's core move is 'existence precedes essence': unlike a manufactured object, built to a blueprint that exists before the object does, a human being exists first, with no given nature, and only afterward defines what they are through action. This makes humans radically free — and because there's no God or fixed human nature to lean on or blame, every choice is also, implicitly, a claim about what any human being should do in that situation.",
+    layer1:
+      "Since there's no essence to fall back on, you can't excuse a choice by appeal to 'human nature' or circumstance — you are fully authoring yourself with every act, and by extension endorsing that act as a model for humanity, since choosing for yourself is, in his framing, choosing for all. Anguish, abandonment, and despair are three moods that necessarily follow from this radical freedom. Sartre insists this is not a doctrine of despair but the opposite: the only philosophy that takes human dignity seriously, since it refuses to let you offload responsibility onto God, circumstance, or a fixed 'nature.'",
+    layer2:
+      "Where in your life have you excused a choice by saying 'that's just how I am' or 'I had no choice' — and what changes if you treat that as a story you're authoring rather than a fact about your nature?",
+    quiz: {
+      question: "What does Sartre mean by 'existence precedes essence'?",
+      options: [
+        "Humans are born with a fixed purpose that they gradually discover",
+        "A human being exists first, with no predetermined nature, and defines their essence only through the choices they make",
+        "Essence and existence are identical concepts in his philosophy",
+        "Human nature is entirely determined by God's design",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O1", "O8", "O9"],
+    furtherReading: [
+      {
+        label: "Existentialism Is a Humanism (full text)",
+        source: "Marxists Internet Archive",
+        url: "https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm",
+      },
+      {
+        label: "Re-reading Sartre's lecture Existentialism Is a Humanism",
+        source: "Aeon Essays",
+        url: "https://aeon.co/essays/re-reading-sartres-lecture-existentialism-is-a-humanism",
+      },
+    ],
+  },
+  {
+    id: "O8",
+    clusterId: "O",
+    title: "The Sickness Unto Death",
+    author: "Søren Kierkegaard",
+    year: 1849,
+    medium: "Book",
+    category: "Philosophy of Meaning",
+    thesis:
+      "Despair — a misrelation in the self's relation to itself — is a near-universal spiritual condition, most dangerous precisely when it goes unnoticed, and its cure is not happiness but a self that 'rests transparently in the power that established it.'",
+    layer0:
+      "Writing under the pseudonym Anti-Climacus, Kierkegaard defines the self not as a thing but as a relation — 'a relation that relates itself to itself' — something that exists only when a person actively takes a stand on their own existence rather than passively drifting. 'The sickness unto death' is despair, but stranger than sadness: a structural failure to be a self at all, and — the sharpest part — most people carrying it don't know they have it, because it can look exactly like an ordinary, successful life.",
+    layer1:
+      "He maps despair into forms: in despair, not wanting to be oneself (weakness), and in despair, wanting to be oneself entirely on one's own terms rather than the terms one was given (defiance) — the second is subtler and more common among people who look accomplished, because building an identity entirely out of your own will, answerable to nothing outside yourself, is itself a kind of despair. The opposite of despair, for Kierkegaard, isn't happiness — it's faith: a self that rests in, rather than fights, the ground of its own existence.",
+    layer2:
+      "Kierkegaard's 'unnoticed despair' describes success built entirely on self-will, with nothing outside yourself you answer to. Is there a part of your life running on willpower alone, with no larger structure of meaning underneath it — and what would it mean to notice that before it becomes a crisis?",
+    quiz: {
+      question: "According to Kierkegaard, what makes despair so dangerous?",
+      options: [
+        "It always causes visible sadness that others can identify",
+        "It is a structural failure in the self's relation to itself, and the person carrying it often doesn't know they have it",
+        "It only affects people who have failed at their goals",
+        "It is identical to clinical depression",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O7", "O5"],
+    furtherReading: [
+      {
+        label: "D. Anthony Storm's Commentary on The Sickness Unto Death",
+        source: "sorenkierkegaard.org",
+        url: "https://sorenkierkegaard.org/sickness-unto-death.html",
+      },
+      {
+        label: "The Sickness unto Death",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/The_Sickness_unto_Death",
+      },
+    ],
+  },
+  {
+    id: "O9",
+    clusterId: "O",
+    title: "The Ethics of Ambiguity",
+    author: "Simone de Beauvoir",
+    year: 1947,
+    medium: "Book",
+    category: "Philosophy of Meaning",
+    thesis:
+      "Freedom is not just a fact about human existence but an ethical demand — each person's freedom is bound up with everyone else's, so the existentialist project is not solitary self-creation but willing your own freedom in a way that also wills the freedom of others.",
+    layer0:
+      "Beauvoir wrote this to answer a real gap in Sartre's Being and Nothingness — if existentialism says we're radically free with no given values, doesn't that make ethics impossible? Her answer: freedom isn't just a private fact about you, it's 'ambiguous' — you're simultaneously a free subject and an object in other people's worlds, and your freedom is only real to the extent it's exercised in a world where others are also free to act. That interdependence is where ethics comes from, not from an external rulebook.",
+    layer1:
+      "She sketches failure modes — 'ways of being' that dodge the responsibility of freedom: the serious man who hides behind fixed values he never questions, the nihilist who concludes nothing matters, the adventurer who wills only their own freedom while ignoring everyone else's. The genuinely ethical existentialist treats expanding the field of others' freedom, through concrete acts rather than abstract goodwill, as inseparable from exercising your own — oppression becomes definable in these terms: a structure that closes off someone else's future.",
+    layer2:
+      "Beauvoir's ethics judges an action by whether it opens or closes the future for others, not just yourself. Pick a recent decision you made mostly for your own freedom — a career move, a boundary, blunt honesty — did it expand or narrow someone else's room to act?",
+    quiz: {
+      question: "What problem was Beauvoir specifically trying to solve in The Ethics of Ambiguity?",
+      options: [
+        "How to prove that free will exists",
+        "How existentialism, which denies fixed values, can still ground an ethics rather than collapsing into 'anything goes'",
+        "How to reconcile existentialism with Christian theology",
+        "How to define happiness scientifically",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O7", "O1"],
+    furtherReading: [
+      {
+        label: "The Ethics of Ambiguity (full text)",
+        source: "Marxists Internet Archive",
+        url: "https://www.marxists.org/reference/subject/ethics/de-beauvoir/ambiguity/index.htm",
+      },
+      {
+        label: "The Ethics of Ambiguity",
+        source: "Philosophy Now, Issue 69",
+        url: "https://philosophynow.org/issues/69/The_Ethics_of_Ambiguity",
+      },
+    ],
+  },
+  {
+    id: "O10",
+    clusterId: "O",
+    title: "Meditations",
+    author: "Marcus Aurelius",
+    year: 180,
+    medium: "Journal",
+    category: "Philosophy of Meaning",
+    thesis:
+      "Peace of mind comes from rigorously separating what's in your control — your judgments, intentions, reactions — from what isn't — external events, other people, outcomes, even your own body — and directing all effort at the former while accepting the latter without resistance.",
+    layer0:
+      "Written as a private journal by a Roman emperor during military campaigns, never intended for publication — part of why it reads as unusually honest self-coaching rather than a polished treatise. Its core move, inherited from earlier Stoics, is the dichotomy of control: events themselves are neutral, only your judgment about them causes suffering, so the discipline is to catch yourself assigning good or bad to something outside your control and correct it in real time.",
+    layer1:
+      "Marcus practices this through recurring techniques: reminding himself each morning that he'll meet difficult people that day and deciding in advance not to be surprised or angered by it; viewing setbacks as raw material the mind can use, since the impediment to action can itself advance action; regularly zooming out to cosmic or historical scale to shrink the apparent size of a present frustration. None of this is passivity — he ran an empire and fought wars while writing it — the discipline is about where you locate your peace of mind, not about disengaging from action.",
+    layer2:
+      "Take one thing bothering you today and run the dichotomy of control test: is the actual event in your control, or only your judgment or reaction to it? Write the honest answer down before you respond to it.",
+    quiz: {
+      question: "What is the core discipline Marcus Aurelius repeatedly practices in Meditations?",
+      options: [
+        "Avoiding all difficult emotions through meditation techniques",
+        "Separating what is in your control (judgments, reactions) from what isn't (external events), and only directing effort at the former",
+        "Withdrawing from public and political life to focus on philosophy",
+        "Proving the existence of the Stoic gods through logic",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Decision-Making"],
+    related: ["O11"],
+    furtherReading: [
+      {
+        label: "Meditations (full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/2680",
+      },
+      {
+        label: "Marcus Aurelius",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/marcus-aurelius/",
+      },
+    ],
+  },
+  {
+    id: "O11",
+    clusterId: "O",
+    title: "Letters from a Stoic",
+    author: "Seneca",
+    year: 65,
+    medium: "Letters",
+    category: "Philosophy of Meaning",
+    thesis:
+      "The fear of death — more precisely, the fear of wasted time, since death only reveals how much time was already squandered — is the central problem philosophy exists to solve, and solving it requires treating time, not money, as your only truly non-renewable asset.",
+    layer0:
+      "Written as a real correspondence to his friend Lucilius late in Seneca's life, these letters are practical Stoicism applied to an actual life — his own, as a wealthy statesman under an unstable emperor — rather than abstract theory. His most quoted line, that we are not given a short life but we make it short, reframes the anxiety of mortality: the problem was never that life is brief, it's that most of it gets lost to distraction, busyness performed for others, and postponed living.",
+    layer1:
+      "The practice he prescribes is a kind of accounting: treat every day as if it might be evaluated at the end of your life, ask honestly how much of your time is actually yours versus spent servicing other people's demands, obligations, or approval, and correct the ratio. He pairs this with a technique later Stoics formalized as premeditatio malorum — deliberately imagining loss of wealth, status, even life in advance, not to induce anxiety but to drain the eventual event of its power to surprise you and to sharpen appreciation for what you currently have.",
+    layer2:
+      "Seneca's test: if today were evaluated as spent or wasted at the end of your life, which would it be? What's the one recurring demand on your time this month that isn't actually yours to give?",
+    quiz: {
+      question: "What does Seneca mean by 'we are not given a short life, but we make it short'?",
+      options: [
+        "Human lifespans are naturally too brief for meaningful accomplishment",
+        "Most of a life's real length is lost to distraction, obligation, and postponement, not to its actual duration",
+        "Only wealthy people have the luxury of a long life",
+        "Death should be avoided through healthy living",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Compounding & Patience"],
+    related: ["O10"],
+    furtherReading: [
+      {
+        label: "Letters from a Stoic (selection)",
+        source: "Internet Archive",
+        url: "https://archive.org/details/lettersfromstoic0000lsen",
+      },
+      {
+        label: "Seneca",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/seneca/",
+      },
+    ],
+  },
+  {
+    id: "O12",
+    clusterId: "O",
+    title: "Tao Te Ching",
+    author: "Lao Tzu",
+    year: -600,
+    medium: "Text",
+    category: "Philosophy of Meaning",
+    thesis:
+      "The most effective way to live and lead is wu wei — effortless action aligned with the natural grain of things — and force, striving, and the pursuit of recognition are self-defeating compared to yielding, simplicity, and working with rather than against the nature of a situation.",
+    layer0:
+      "A short, deliberately paradoxical text of 81 verses traditionally attributed to Lao Tzu, foundational to Taoism. Its central image is water: soft, yielding, seeking the lowest position — and yet, over time, capable of wearing away stone and shaping entire landscapes. The text uses this to argue that apparent weakness, not forcing, not competing, not insisting, is often more powerful than direct force, because it doesn't generate the resistance and backlash that force does.",
+    layer1:
+      "Wu wei doesn't mean passivity or doing nothing; it means acting in a way so attuned to the actual shape of a situation that the action requires minimal friction, like a skilled woodcarver following the grain rather than cutting against it. Applied to leadership, the text's repeated claim is that the best leader is one whose people barely notice they're being led — control that announces itself, through force or visible effort, is treated as a sign of weak control, not strong control.",
+    layer2:
+      "Pick a situation where you've been pushing hard against resistance — a person, a market, a habit. What would working with the grain look like instead — the path of least resistance that still gets you where you're going?",
+    quiz: {
+      question: "What does the Tao Te Ching's image of water illustrate?",
+      options: [
+        "That physical strength always overcomes obstacles eventually",
+        "That yielding, low-friction action can be more powerful over time than direct force, because it avoids generating resistance",
+        "That emotions should be suppressed to achieve inner peace",
+        "That leaders should remain completely passive and never act",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["O13"],
+    furtherReading: [
+      {
+        label: "Tao Te Ching (Legge translation, full text)",
+        source: "Internet Sacred Text Archive",
+        url: "https://www.sacred-texts.com/tao/taote.htm",
+      },
+      {
+        label: "Laozi",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/laozi/",
+      },
+    ],
+  },
+  {
+    id: "O13",
+    clusterId: "O",
+    title: "The Dhammapada",
+    author: "Buddhist canon (attrib. Siddhartha Gautama)",
+    year: -300,
+    medium: "Text",
+    category: "Philosophy of Meaning",
+    thesis:
+      "Suffering originates in the untrained mind — specifically in craving and attachment to things that are inherently impermanent — and the discipline of the mind, not ritual, not belief, not birth, is the entire path out of it.",
+    layer0:
+      "A compact collection of the Buddha's core teachings in verse form, one of the most widely translated texts in the Pali Buddhist canon. Its opening line sets the frame for the whole text: all that we are is the result of what we have thought — mental states, not external circumstances, are treated as the actual source of both suffering and its end, which makes the mind itself the object of practice rather than any external ritual or deity.",
+    layer1:
+      "The text repeatedly returns to a specific chain: craving and attachment lead to clinging, clinging to things that are impermanent produces suffering when they change or are lost, and training attention through mindfulness and ethical conduct breaks the chain at the craving stage rather than trying to control the external world so nothing ever changes. This is why the text treats anger, ill will, and even self-hatred as failures of attention rather than fixed character traits — a trained mind is described as something that can be steadied, implying the untrained state is the default, not a personal flaw.",
+    layer2:
+      "Notice one recurring source of frustration this week and trace it back one step further than the event itself — what were you attached to that made this outcome painful rather than just neutral information?",
+    quiz: {
+      question: "According to the Dhammapada, what is the primary source of suffering?",
+      options: [
+        "External circumstances and bad luck beyond a person's control",
+        "Craving and attachment to things that are inherently impermanent",
+        "Failure to perform the correct religious rituals",
+        "A lack of material wealth",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O12"],
+    furtherReading: [
+      {
+        label: "The Dhammapada (Buddharakkhita translation)",
+        source: "Access to Insight",
+        url: "https://www.accesstoinsight.org/lib/authors/budrak/dhp.html",
+      },
+      {
+        label: "Buddha",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/buddha/",
+      },
+    ],
+  },
+  {
+    id: "O14",
+    clusterId: "O",
+    title: "Thus Spoke Zarathustra",
+    author: "Friedrich Nietzsche",
+    year: 1883,
+    medium: "Book",
+    category: "Philosophy of Meaning",
+    thesis:
+      "With traditional religious sources of meaning collapsing — 'God is dead' — humanity faces a choice between nihilism, the collapse of value itself, and the harder task of creating new values through self-overcoming, embodied in Nietzsche's image of the Übermensch.",
+    layer0:
+      "Written as a philosophical narrative following the prophet Zarathustra descending from a mountain to teach, the book's most famous claim, 'God is dead,' is not a triumphant atheist announcement — Nietzsche treats it as a genuine crisis: the shared moral framework that gave Western meaning its foundation is losing its grip, and most people haven't noticed the ground has shifted yet. The danger he's most worried about isn't atheism, it's nihilism — the vacuum left behind when old values die and nothing replaces them.",
+    layer1:
+      "His answer is the Übermensch, not a superhero but a person who takes on the task of creating their own values rather than inheriting or passively rejecting old ones — described through self-overcoming, a continuous process of outgrowing your current self rather than reaching a final fixed state. He pairs this with eternal recurrence as a thought experiment: could you will to live this exact life, in this exact form, infinitely repeating? If the honest answer is no, that's diagnostic information about which parts of your life are being lived passively rather than affirmed.",
+    layer2:
+      "Run Nietzsche's eternal recurrence test on your current daily routine specifically, not your life in the abstract — if you had to relive today, exactly as it happened, infinitely, which parts would you actually want to keep?",
+    quiz: {
+      question: "What is Nietzsche most worried about when he declares 'God is dead'?",
+      options: [
+        "That people will stop believing in an afterlife",
+        "Nihilism — the collapse of meaning and values once their traditional foundation is gone, with nothing yet built to replace it",
+        "That religious institutions will lose political power",
+        "That science will fail to explain the universe",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O1", "O5"],
+    furtherReading: [
+      {
+        label: "Thus Spoke Zarathustra (Common translation, full text)",
+        source: "Project Gutenberg",
+        url: "https://www.gutenberg.org/ebooks/1998",
+      },
+      {
+        label: "Friedrich Nietzsche",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/nietzsche/",
+      },
+    ],
+  },
+  {
+    id: "O15",
+    clusterId: "O",
+    title: "Facing Up to the Problem of Consciousness",
+    author: "David Chalmers",
+    year: 1995,
+    medium: "Paper",
+    category: "Philosophy of Mind",
+    thesis:
+      "Consciousness splits into 'easy problems' (explaining cognitive functions like attention or memory, tractable to standard science) and the 'hard problem' — explaining why any physical processing is accompanied by subjective experience at all — which resists reduction to physical explanation in principle, not just in current practice.",
+    layer0:
+      "Before this paper, consciousness in cognitive science often meant something functional and explainable: how we discriminate stimuli, integrate information, report mental states. Chalmers's move was to isolate a residue that survives even a complete functional explanation: even if you explain every mechanism behind how a brain processes red light and reports 'I see red,' you haven't yet explained why there's something it is like to see red at all, rather than the processing happening with no subjective experience attached.",
+    layer1:
+      "His central thought experiment is the philosophical zombie — a hypothetical being physically identical to a conscious human, performing every function identically, but with no inner experience whatsoever. If such a being is even conceivable without contradiction, Chalmers argues, that shows consciousness is not logically entailed by physical facts alone, which is why he proposes it may need to be treated as a fundamental feature of reality, like mass or charge, rather than something derived entirely from physical processes — a move that later informed panpsychist responses like Philip Goff's.",
+    layer2:
+      "Notice the gap Chalmers points to directly: can you describe what makes your current experience of reading this different from a machine processing the same words with no experience attached — without just redescribing the mechanism?",
+    quiz: {
+      question: "What is the 'hard problem of consciousness' as defined by Chalmers?",
+      options: [
+        "The difficulty of measuring brain activity accurately",
+        "Explaining why physical processing is accompanied by subjective experience at all, beyond just explaining the functions themselves",
+        "The technical challenge of building conscious AI",
+        "Determining which animals are capable of feeling pain",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O2", "O6"],
+    furtherReading: [
+      {
+        label: "Facing Up to the Problem of Consciousness (full PDF)",
+        source: "consc.net",
+        url: "https://consc.net/papers/facing.pdf",
+      },
+      {
+        label: "Consciousness",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/consciousness/",
+      },
+    ],
+  },
+  {
+    id: "R1",
+    clusterId: "R",
+    title: "Are You Living in a Computer Simulation?",
+    author: "Nick Bostrom",
+    year: 2003,
+    medium: "Paper",
+    category: "Open Questions",
+    thesis:
+      "At least one of three propositions must be true: civilizations almost never reach the technological stage capable of running ancestor-simulations, or those that reach it choose not to run them, or we are almost certainly living inside a simulation ourselves — and there's no principled way to rule out the third.",
+    layer0:
+      "Bostrom's argument doesn't claim we are in a simulation — it's a trilemma. If any future civilization eventually gains enough computing power to simulate entire conscious populations of their ancestors, and nothing stops them from wanting to, the number of simulated minds would vastly outnumber the one original population by many orders of magnitude. So if you accept that such simulations are possible and that at least some civilizations would choose to run many of them, simple probability suggests an average observer picked at random is far more likely to be one of the many simulated minds than the one original.",
+    layer1:
+      "The argument is structured as a disjunction, not a prediction: almost all civilizations go extinct before reaching posthuman technological capability, or posthuman civilizations exist but choose not to run ancestor-simulations for ethical, resource, or interest reasons, or we are almost certainly in a simulation. Bostrom's point is that you have to actively believe something specific to reject the third option — either that civilizations reliably self-destruct before reaching that capability, or that essentially none of the ones that survive would ever want to run such simulations — and neither is obviously more plausible than the third.",
+    layer2:
+      "Which of the three propositions do you find yourself least willing to believe, and why — do you doubt civilizations survive that long, doubt they'd bother simulating history, or doubt the third conclusion follows even if the first two are false?",
+    quiz: {
+      question: "What is Bostrom's simulation argument actually claiming?",
+      options: [
+        "That we are definitely living in a computer simulation",
+        "That at least one of three propositions must be true, one of which is that we are almost certainly in a simulation — without claiming to know which one",
+        "That technology will never be advanced enough to simulate consciousness",
+        "That video games will eventually become indistinguishable from reality",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["R5", "R6"],
+    furtherReading: [
+      {
+        label: "Are You Living in a Computer Simulation? (full paper)",
+        source: "simulation-argument.com",
+        url: "https://simulation-argument.com/simulation.html",
+      },
+      {
+        label: "Review of Bostrom's Simulation Argument",
+        source: "Stanford",
+        url: "https://web.stanford.edu/class/symbsys205/BostromReview.html",
+      },
+    ],
+  },
+  {
+    id: "R2",
+    clusterId: "R",
+    title: "The Great Filter — Are We Almost Past It?",
+    author: "Robin Hanson",
+    year: 1998,
+    medium: "Essay",
+    category: "Open Questions",
+    thesis:
+      "Given that we see no evidence of any other intelligent civilization in a universe old and vast enough to have produced many, some 'Great Filter' — an improbability barrier somewhere between lifeless matter and galaxy-colonizing civilization — must exist, and the crucial open question is whether humanity has already passed it or still has it ahead.",
+    layer0:
+      "This essay is Hanson's contribution to the Fermi paradox: if the universe is so old and vast, where is everybody? His framing: think of the path from dead matter to a civilization expanding across the galaxy as a sequence of hard steps — the origin of life, the jump to complex cells, the emergence of intelligence, the emergence of technological civilization, civilization surviving its own technology, among others. Since we observe zero visible galaxy-spanning civilizations anywhere, at least one of these steps must be extraordinarily improbable, a filter that almost nothing gets through.",
+    layer1:
+      "The stakes of the essay come from a single question: is the Great Filter behind us or ahead of us? If the hardest step is something humanity has already cleared, such as the origin of life itself, which may be extraordinarily rare, that's good news — intelligent civilizations like ours are rare, but our own survival prospects going forward are relatively unconstrained by the filter. If the hardest step is still ahead, such as a near-universal tendency for advanced civilizations to destroy themselves through war, engineered pathogens, or runaway technology, that's very bad news, because it implies we're likely to hit the same wall everyone else apparently has.",
+    layer2:
+      "If you had to bet: is the Great Filter behind humanity, something rare we already survived, or ahead of us, something we haven't faced yet? What evidence would actually change your answer?",
+    quiz: {
+      question: "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
+      options: [
+        "It doesn't matter either way for humanity's prospects",
+        "If the filter is ahead of us, it implies civilizations like ours tend to face a near-universal barrier to survival that we haven't yet cleared",
+        "It only matters for funding decisions in astrobiology research",
+        "The filter has already been definitively located by radio telescope surveys",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Risk & Asymmetric Bets"],
+    related: ["R1"],
+    furtherReading: [
+      {
+        label: "The Great Filter — Are We Almost Past It? (original essay)",
+        source: "George Mason University",
+        url: "http://hanson.gmu.edu/greatfilter.html",
+      },
+      {
+        label: "Great Filter",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Great_Filter",
+      },
+    ],
+  },
+  {
+    id: "R3",
+    clusterId: "R",
+    title: "Determined: A Science of Life Without Free Will",
+    author: "Robert Sapolsky",
+    year: 2023,
+    medium: "Book",
+    category: "Open Questions",
+    thesis:
+      "Every human action is the end product of an unbroken chain of prior causes — genes, hormones, childhood environment, immediate context, culture — stretching back before birth, which means free will in the sense most people believe in, the ability to have decided otherwise with all else being equal, does not exist.",
+    layer0:
+      "Sapolsky, a neuroscientist, builds his case biologically rather than purely philosophically: he walks through the causal chain behind any single behavior, from what happened in your brain one second before the action, to hormones and sensory context in the preceding hours, to childhood and adolescent development in preceding years, to genes and prenatal environment before you were even born. His claim is that at no point in that chain is there a gap where an uncaused 'you,' separate from all these prior causes, steps in and freely decides; every link is explicable by what came before it.",
+    layer1:
+      "The book is largely a rebuttal of what he calls 'the last two inches' arguments — accounts that concede most behavior is shaped by biology and environment but still carve out a small remaining space, willpower, conscious deliberation, moral effort, as genuinely free. Sapolsky argues neuroscience keeps shrinking that space rather than preserving it: even willpower and self-control show up as measurable, resource-limited brain processes shaped by the same prior causes as everything else, not an exception to the causal chain.",
+    layer2:
+      "Pick a decision you're proud of resisting an impulse on. Trace it back: what in your sleep, stress levels, upbringing, or immediate environment that day made that self-control more or less available to you — and does that change how you judge yourself, or others, for similar moments?",
+    quiz: {
+      question: "What is Sapolsky's central argument against free will in Determined?",
+      options: [
+        "That people should stop trying to make good decisions since nothing matters",
+        "That every action is the end product of an unbroken causal chain (biology, environment, history) with no gap for an uncaused free choice to intervene",
+        "That free will exists but only for a small percentage of highly disciplined people",
+        "That free will is a purely religious concept with no scientific relevance",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Cognitive Biases & Models"],
+    related: ["R4", "O2"],
+    furtherReading: [
+      {
+        label: "Determined: A Science of Life Without Free Will",
+        source: "Penguin Random House",
+        url: "https://www.penguinrandomhouse.com/books/690231/determined-by-robert-m-sapolsky/",
+      },
+      {
+        label: "Determined: A Science of Life Without Free Will",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Determined:_A_Science_of_Life_Without_Free_Will",
+      },
+    ],
+  },
+  {
+    id: "R4",
+    clusterId: "R",
+    title: "Galileo's Error",
+    author: "Philip Goff",
+    year: 2019,
+    medium: "Book",
+    category: "Open Questions",
+    thesis:
+      "Consciousness cannot be fully explained by physical science because physics, since Galileo, deliberately excluded qualitative experience from its domain to make nature mathematically tractable — so the fix isn't a better physical theory of consciousness, it's recognizing consciousness as a fundamental property of matter itself, present in some minimal form even at the level of basic particles.",
+    layer0:
+      "Goff's title refers to a specific historical decision: Galileo, in founding modern physics, split the world into quantitative properties — mass, motion, shape, measurable and mathematizable, the proper domain of science — and qualitative properties — color as experienced, taste, pain, treated as a separate, non-physical realm. Goff argues this founding split is why physical science, no matter how advanced, will never on its own terms explain subjective experience — it was designed from the start to describe everything except that.",
+    layer1:
+      "Rather than treating this as proof consciousness is supernatural, Goff's panpsychism proposes the opposite move: build a minimal form of experience into the definition of physical matter itself, rather than trying to derive experience from non-experiential particles later. On this view, fundamental particles have some unimaginably simple form of experience, and complex consciousness, like human minds, emerges from these combining in the right structure — avoiding both traditional dualism and standard materialism, which Goff argues both fail for related reasons.",
+    layer2:
+      "Goff's claim is that physics was built to leave subjective experience out by design, not by oversight. Does that change how much weight you put on 'science hasn't explained consciousness yet' as evidence about whether it ever will?",
+    quiz: {
+      question: "What historical decision does Goff's title 'Galileo's Error' refer to?",
+      options: [
+        "Galileo's incorrect claim that the Earth orbits the Sun",
+        "Galileo's founding split between quantitative properties (the domain of physics) and qualitative experience, which he excluded from science's scope",
+        "A mathematical error in Galileo's calculation of planetary motion",
+        "Galileo's rejection of Aristotelian philosophy",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["O15", "R3"],
+    furtherReading: [
+      {
+        label: "Galileo's Error",
+        source: "Penguin Random House",
+        url: "https://www.penguinrandomhouse.com/books/599229/galileos-error-by-philip-goff/",
+      },
+      {
+        label: "Galileo's Error (book review)",
+        source: "Philosophy Now, Issue 135",
+        url: "https://philosophynow.org/issues/135/Galileos_Error_by_Philip_Goff",
+      },
+    ],
+  },
+  {
+    id: "R5",
+    clusterId: "R",
+    title: "Large Number Coincidences and the Anthropic Principle in Cosmology",
+    author: "Brandon Carter",
+    year: 1974,
+    medium: "Paper",
+    category: "Open Questions",
+    thesis:
+      "Several of the universe's fundamental physical constants appear implausibly fine-tuned for the emergence of life — but this isn't necessarily evidence of design, because any universe where observers exist to notice the constants will, by definition, have constants compatible with observers existing.",
+    layer0:
+      "Carter's paper, presented in 1973 and published in 1974, formalized an observation physicists had noticed informally: numbers like the strength of gravity relative to electromagnetism, or the precise ratios governing stellar formation, sit in an extremely narrow range — if they were even slightly different, stars, chemistry, or stable planets, and therefore anyone around to measure them, likely couldn't exist. Carter's key move was pointing out a subtle selection effect: we should expect to find ourselves in a universe compatible with our own existence, no matter how statistically rare such a universe is among all possible ones, simply because we couldn't be observing it otherwise.",
+    layer1:
+      "Carter distinguished a 'weak' version — among possible times and places, we should expect to find ourselves in one compatible with observers existing, an observational selection effect, not a metaphysical claim — from a 'strong' version — the universe's constants must be such as to admit observers at some stage, a much bolder claim closer to teleology. The weak version is now widely accepted as basic statistical reasoning; the strong version remains genuinely contested, with critics arguing it risks becoming an unfalsifiable way to explain away any fine-tuning, and defenders arguing it's a legitimate response once you accept something like a multiverse of many universes with varying constants.",
+    layer2:
+      "Notice how often 'this outcome is surprisingly favorable to me' gets treated as evidence of intention, when it might just be a selection effect — you wouldn't be here to notice the unfavorable version. Where else in your own life might you be mistaking a selection effect for a special explanation?",
+    quiz: {
+      question: "What is the core insight of the (weak) anthropic principle?",
+      options: [
+        "The universe was deliberately designed to support human life",
+        "We should expect to observe a universe compatible with our own existence, regardless of how statistically rare such a universe is, because we couldn't be observing an incompatible one",
+        "Physical constants are randomly generated and have no pattern",
+        "Only Earth-like planets can support any form of life",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["R1", "R6"],
+    furtherReading: [
+      {
+        label: "Republication of: Large number coincidences and the anthropic principle in cosmology",
+        source: "General Relativity and Gravitation (Springer)",
+        url: "https://link.springer.com/article/10.1007/s10714-011-1258-7",
+      },
+      {
+        label: "Fine-Tuning",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/fine-tuning/",
+      },
+    ],
+  },
+  {
+    id: "R6",
+    clusterId: "R",
+    title: "Our Mathematical Universe",
+    author: "Max Tegmark",
+    year: 2014,
+    medium: "Book",
+    category: "Open Questions",
+    thesis:
+      "Physical reality is not merely described by mathematics — it is a mathematical structure, and this Mathematical Universe Hypothesis implies that every mathematically consistent structure exists physically somewhere, forming the most extreme of four nested levels of multiverse Tegmark proposes.",
+    layer0:
+      "Tegmark's starting observation is that physics has always used mathematics to describe reality, but usually treats the math and the reality it describes as two different things — the map versus the territory. His hypothesis collapses that distinction: if a theory of everything is ever found and it's purely mathematical with no ad hoc extra ingredients, that suggests reality just is that mathematical structure, not merely modeled by it — dissolving the older puzzle about the 'unreasonable effectiveness' of mathematics in physics by making it not a mystery at all: math works because reality is math.",
+    layer1:
+      "The book builds up four levels of multiverse, each stranger than the last: Level I, regions of space beyond our observable universe governed by the same physics, just too far away to see; Level II, regions with different physical constants, produced by cosmic inflation; Level III, the many-worlds interpretation of quantum mechanics, where every quantum measurement branches reality; and Level IV, the Mathematical Universe Hypothesis itself, where every self-consistent mathematical structure corresponds to a physically real universe, making our specific universe just one instance among an inconceivably large space of mathematically possible ones.",
+    layer2:
+      "Tegmark's Level IV claims mathematical existence and physical existence are the same thing. Do you find that clarifying, since it explains why math 'works' on reality, or does it feel like it explains too much, making the specific universe we're in unremarkable rather than special?",
+    quiz: {
+      question: "What does Tegmark's 'Mathematical Universe Hypothesis' claim?",
+      options: [
+        "That mathematics is simply a useful human tool for describing an independently-existing physical reality",
+        "That physical reality is itself a mathematical structure, and every self-consistent mathematical structure exists physically",
+        "That the universe will eventually be fully described by a single equation",
+        "That mathematics and physics are unrelated fields that happen to overlap",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "First-Principles Thinking"],
+    related: ["R5", "R1"],
+    furtherReading: [
+      {
+        label: "Is the Universe Made of Math? (excerpt)",
+        source: "Scientific American",
+        url: "https://www.scientificamerican.com/article/is-the-universe-made-of-math-excerpt/",
+      },
+      {
+        label: "Our Mathematical Universe",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Our_Mathematical_Universe",
+      },
+    ],
+  },
+  {
+    id: "S1",
+    clusterId: "S",
+    title: "The Art Of Self-Architecture (How To Change Who You Are)",
+    author: "Dan Koe",
+    year: 2023,
+    medium: "Essay",
+    category: "Self-Authorship",
+    thesis:
+      "Most people fail to change because they try to change their actions while leaving their underlying identity — their 'character,' the operating system of beliefs and self-concept built up since childhood — untouched; real change requires deliberately reconstructing that identity, not just adding new habits on top of it.",
+    layer0:
+      "Koe frames identity, or 'character,' as an intellectual structure built over time, mostly assembled unconsciously in childhood as a byproduct of environment rather than chosen deliberately. His claim is that most self-improvement fails at the habit layer because habits are downstream of identity: you don't rise to the level of your goals, you fall back to the level of who you believe you are — so a new habit stacked on an unchanged self-concept tends to erode back to baseline.",
+    layer1:
+      "He proposes a two-track process: the external game, the goals and work you pursue in the world, and the internal game, the philosophical and psychological work of examining and rebuilding your self-concept, arguing the two are recursive — pushing further in the external game surfaces internal work you didn't know you needed, and skipping the internal work caps how far the external pursuit can go before it collapses back to old patterns. Practically, he sequences this as starting with superficial, concrete changes (health, finances, basic skills) before attempting deep identity work, since attempting spiritual transformation without any concrete track record tends to be avoidance dressed up as growth.",
+    layer2:
+      "Pick one change you've tried and failed to sustain. Was the failure really about the habit itself, or about an unchanged self-concept — 'I'm not really a person who does X' — pulling you back to baseline once willpower ran out?",
+    quiz: {
+      question: "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
+      options: [
+        "People simply don't try hard enough or lack willpower",
+        "New habits are stacked on an unchanged underlying identity/self-concept, which pulls behavior back to its old baseline",
+        "Most people set goals that are objectively unrealistic",
+        "Behavior change requires professional therapy to succeed",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self", "Craft & Deep Work"],
+    related: ["S2", "S6"],
+    furtherReading: [
+      {
+        label: "The Art Of Self-Architecture (How To Change Who You Are)",
+        source: "Dan Koe",
+        url: "https://thedankoe.com/letters/the-art-of-self-architecture-how-to-change-who-you-are/",
+      },
+    ],
+  },
+  {
+    id: "S2",
+    clusterId: "S",
+    title: "The One-Person Business Model (How To Productize Yourself)",
+    author: "Dan Koe",
+    year: 2022,
+    medium: "Essay",
+    category: "One-Person Business",
+    thesis:
+      "For most people starting out, a one-person business built around personal experience, skills, and interests, distributed through social media and no-code tools, is a more viable path to self-reliance than either traditional employment or a venture-scale startup, because it removes the capital and team requirements that used to gate entrepreneurship.",
+    layer0:
+      "Koe's argument starts from a structural observation: the internet removed the two things that used to make starting a business hard, needing capital and needing a team, since a single person can now build an audience, a storefront (website), and a product with a few hundred dollars and self-taught skills. His one-person business isn't freelancing, trading time for money on a single skill; it's built on what he calls the Experience Model — turning your own goals and problem-solving process into content and, eventually, a product others can buy to shortcut their own version of that same journey.",
+    layer1:
+      "He structures it around four pillars: Brand, the goal you're visibly pursuing, which people follow for the outcome, not just the content; Content, which compounds in an audience's mind over months, not single posts; Offer, starting with a deliberately small Minimum Viable Offer, a $500-1000 service or consulting package, rather than waiting for a polished product; and Marketing, consistent, newsletter and thread-driven distribution rather than paid ads. The mechanism that makes this scale is that all four pillars reinforce each other: content builds the audience that buys the offer, and delivering the offer generates the case studies and experience that become new content.",
+    layer2:
+      "If you had to define your Minimum Viable Offer today — something sellable in a week, priced at $500-1000, built entirely from experience you already have — what would it be, and what's stopping you from listing it this week instead of when it's 'ready'?",
+    quiz: {
+      question: "What are Koe's four pillars of a one-person business?",
+      options: [
+        "Capital, Team, Product, Sales",
+        "Brand, Content, Offer, Marketing",
+        "Strategy, Execution, Funding, Scale",
+        "Vision, Mission, Values, Culture",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
+    related: ["S1", "S3", "P1"],
+    furtherReading: [
+      {
+        label: "The One-Person Business Model (How To Productize Yourself)",
+        source: "Dan Koe",
+        url: "https://thedankoe.com/letters/the-one-person-business-model-how-to-monetize-yourself/",
+      },
+    ],
+  },
+  {
+    id: "S3",
+    clusterId: "S",
+    title: "The $1 Million Dollar Skill Stack (Learn In This Order)",
+    author: "Dan Koe",
+    year: 2022,
+    medium: "Essay",
+    category: "High-Income Skills",
+    thesis:
+      "Rather than chasing single 'marketable skills' — web design, ads, funnels — sustainable income comes from stacking three layers in sequence: a valuable message, a medium to distribute it, and results-oriented technical skills, because each layer is close to worthless without the others.",
+    layer0:
+      "Koe frames his own decade of skill-hopping — fitness, SEO, web design, copywriting, and more — not as unfocused distraction but as deliberate skill stacking: building broad awareness across a domain rather than narrow depth in one lane, on the argument that specialists understand how A affects B but generalists understand the whole causal chain from A through Z, which produces better real-world results even without top-tier depth in any single skill.",
+    layer1:
+      "He orders the stack as: a valuable message, requiring marketing (crafting something relevant and attention-grabbing) and sales (making people aware of a problem and presenting a solution), essentially persuasive communication; a medium for distribution, reduced to writing and speaking as the root skills underneath every platform, since a tweet, a video script, and a sales page are all, at bottom, writing; and results-oriented technical skills (email marketing, design, video) that only compound once the first two layers exist to give them an audience and a message worth applying them to. Skipping straight to the third layer, which is what most 'learn this skill' advice recommends, is why most people's technical skills don't translate into income.",
+    layer2:
+      "Which layer are you missing, honestly: a message worth spreading, a medium to spread it through consistently, or the applied skills to deliver results once people show up? Most people assume it's the third when it's usually the first or second.",
+    quiz: {
+      question: "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
+      options: [
+        "They try to learn too many skills instead of specializing in one",
+        "They jump straight to technical/results-oriented skills without first building a valuable message and a medium to distribute it",
+        "They don't spend enough money on courses and certifications",
+        "They focus too much on writing instead of visual skills",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
+    related: ["S2", "S4"],
+    furtherReading: [
+      {
+        label: "The $1 Million Dollar Skill Stack (Learn In This Order)",
+        source: "Dan Koe",
+        url: "https://thedankoe.com/letters/the-1-million-dollar-skill-stack-learn-in-this-order/",
+      },
+    ],
+  },
+  {
+    id: "S4",
+    clusterId: "S",
+    title: "Learn This Skill If You Want To Thrive In The Next 10 Years",
+    author: "Dan Koe",
+    year: 2022,
+    medium: "Essay",
+    category: "Writing As Leverage",
+    thesis:
+      "Writing is the foundational skill of the internet economy — not because it's more valuable in isolation, but because every other medium of online distribution, tweets, threads, video scripts, ads, newsletters, is, underneath, a written artifact first.",
+    layer0:
+      "Koe's argument for writing as the highest-leverage skill to learn isn't aesthetic, it's structural: he breaks down nearly every format of online content — tweets, threads, newsletters, YouTube scripts, Instagram captions, cold emails, ads — and shows each one is written before it's anything else, meaning a single writing skill transfers across every platform rather than locking you into platform-specific technical skills that can be disrupted by an algorithm change.",
+    layer1:
+      "Practically, he runs what he calls a '2 hour content ecosystem': one long-form newsletter a week becomes a blog post, which gets broken into a thread, which gets broken further into daily tweets, meaning a single unit of writing gets repurposed across a week's worth of content on multiple platforms rather than requiring fresh material for each. The compounding effect isn't from any single post going viral, but from the same core message getting reinforced across many small touchpoints until, in his framing, the audience's understanding of what you stand for 'clicks' all at once, usually only after months of consistent output.",
+    layer2:
+      "Look at your last week of communication — posts, emails, messages. If you rewrote your single best idea from this month as one piece of long-form writing, then broke it into five smaller pieces, would you have a week of content already — and what's stopped you from doing that so far?",
+    quiz: {
+      question: "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
+      options: [
+        "Because writing pays more per hour than any other skill",
+        "Because nearly every format of online content (tweets, video scripts, ads, newsletters) is, underneath, a written artifact first, so the skill transfers across every platform",
+        "Because algorithms only reward text-based content over video",
+        "Because writing requires no ongoing practice once learned",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Craft & Deep Work", "Wealth, Leverage & Judgment"],
+    related: ["S3", "S2"],
+    furtherReading: [
+      {
+        label: "Learn This Skill If You Want To Thrive In The Next 10 Years",
+        source: "Dan Koe",
+        url: "https://thedankoe.com/letters/learn-this-skill-if-you-want-to-thrive-in-the-next-10-years/",
+      },
+    ],
+  },
+  {
+    id: "S5",
+    clusterId: "S",
+    title: "The Art of Focus",
+    author: "Dan Koe",
+    year: 2023,
+    medium: "Book",
+    category: "Focus",
+    thesis:
+      "In an attention economy engineered to fragment focus, the ability to sustain deep, deliberate attention on a self-chosen goal is the scarce skill that separates people who reinvent their circumstances from people who stay reactive to them — and focus is trainable, not fixed.",
+    layer0:
+      "Koe's book, structured around 27 principles, treats focus as the master skill underneath every other goal — health, wealth, relationships — on the argument that none of them are achievable without sustained, undistracted effort, and that the modern information environment, infinite feeds, notifications, algorithmically optimized content, is specifically engineered to work against that sustained effort by design, not by accident. His term 'the New Rich' describes people who've essentially opted out of this by building income and lifestyle around self-directed, focused work rather than a job requiring only reactive attention.",
+    layer1:
+      "A recurring theme is that focus fails less from lack of willpower and more from an unclear or unstable identity — without a clear sense of the person you're becoming, attention has no anchor and drifts toward whatever is most immediately stimulating, matching the identity-first argument in his Self-Architecture essay. His practical fix pairs a clear vision, what you're moving toward and away from, with deliberately engineered environments that remove triggers for distraction, rather than relying on willpower alone to resist a feed built by people whose job is to defeat exactly that willpower.",
+    layer2:
+      "Name one recurring source of fragmented attention in your day — a specific app, notification, or habit. Is the fix more willpower, or a structural change to your environment that removes the need for willpower entirely?",
+    quiz: {
+      question: "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
+      options: [
+        "A lack of caffeine or physical energy",
+        "An unclear or unstable sense of identity, leaving attention with no anchor to direct itself toward",
+        "Working in an office instead of remotely",
+        "Not using enough productivity software",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Craft & Deep Work", "Meaning & Self"],
+    related: ["S1", "S6"],
+    furtherReading: [
+      {
+        label: "The Art Of Focus: Official Book Summary By The Author",
+        source: "Dan Koe",
+        url: "https://thedankoe.com/letters/the-art-of-focus-official-book-summary-by-the-author-dan-koe/",
+      },
+      {
+        label: "The Art of Focus",
+        source: "theartoffocusbook.com",
+        url: "https://theartoffocusbook.com/",
+      },
+    ],
+  },
+  {
+    id: "S6",
+    clusterId: "S",
+    title: "The Meaning Crisis (How To Do Something That Matters)",
+    author: "Dan Koe",
+    year: 2024,
+    medium: "Essay",
+    category: "Ego & Modern Meaning",
+    thesis:
+      "Modern disconnection and meaninglessness come from getting stuck in 'doing' — reactive tasks, consumption, status-seeking — without enough 'being' — direct present-moment experience — or conscious 'becoming'; reconnecting the three, deliberately, is how an individual builds a life that feels like it matters without needing an externally-assigned belief system to supply that meaning.",
+    layer0:
+      "Koe, crediting the framing to philosopher John Vervaeke's meaning crisis concept, diagnoses modern meaninglessness structurally rather than morally: an education system built for compliance rather than curiosity, combined with an information environment that keeps attention locked on 'next' — the next task, notification, or scroll — rather than 'now,' produces people who've never consciously chosen their own goals or values, and only notice the resulting emptiness once they achieve the goals they were handed.",
+    layer1:
+      "His fix is a feedback loop between three modes: Being, direct present-moment experience unclouded by rehearsing the past or projecting the future; Doing, action and contribution that flow from that clearer state rather than from anxiety or reflex; and Becoming, the identity shift that results from sustained doing, which then changes what you're capable of being and doing next. He argues most people get stuck almost entirely in doing mode, reactive, task-to-task, which narrows perception until meaning itself becomes hard to locate, and that deliberately building in unstructured time for being, not networking, not optimizing, just direct experience, is what reopens the loop.",
+    layer2:
+      "Estimate honestly what fraction of your week is spent in reactive 'doing' versus unstructured 'being.' What's one small block of time you could protect this week purely for direct experience, with no task or output attached to it?",
+    quiz: {
+      question: "What three modes does Koe's 'meaning equation' propose reconnecting?",
+      options: [
+        "Thinking, feeling, and acting",
+        "Being, Doing, and Becoming",
+        "Working, resting, and playing",
+        "Learning, earning, and giving",
+      ],
+      correctIndex: 1,
+    },
+    tags: ["Meaning & Self"],
+    related: ["S1", "S5", "O1", "O5"],
+    furtherReading: [
+      {
+        label: "The Meaning Crisis (How To Do Something That Matters)",
+        source: "Dan Koe",
+        url: "https://thedankoe.com/letters/the-meaning-crisis-how-to-do-something-that-matters/",
+      },
     ],
   },
 ];

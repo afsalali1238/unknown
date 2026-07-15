@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as YouRouteImport } from './routes/you'
 import { Route as ReviewRouteImport } from './routes/review'
 import { Route as OnboardingRouteImport } from './routes/onboarding'
+import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NodeIdRouteImport } from './routes/node.$id'
 
@@ -30,6 +31,11 @@ const OnboardingRoute = OnboardingRouteImport.update({
   path: '/onboarding',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExploreRoute = ExploreRouteImport.update({
+  id: '/explore',
+  path: '/explore',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -43,6 +49,7 @@ const NodeIdRoute = NodeIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/explore': typeof ExploreRoute
   '/onboarding': typeof OnboardingRoute
   '/review': typeof ReviewRoute
   '/you': typeof YouRoute
@@ -50,6 +57,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/explore': typeof ExploreRoute
   '/onboarding': typeof OnboardingRoute
   '/review': typeof ReviewRoute
   '/you': typeof YouRoute
@@ -58,6 +66,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/explore': typeof ExploreRoute
   '/onboarding': typeof OnboardingRoute
   '/review': typeof ReviewRoute
   '/you': typeof YouRoute
@@ -65,14 +74,22 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/onboarding' | '/review' | '/you' | '/node/$id'
+  fullPaths: '/' | '/explore' | '/onboarding' | '/review' | '/you' | '/node/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/onboarding' | '/review' | '/you' | '/node/$id'
-  id: '__root__' | '/' | '/onboarding' | '/review' | '/you' | '/node/$id'
+  to: '/' | '/explore' | '/onboarding' | '/review' | '/you' | '/node/$id'
+  id:
+    | '__root__'
+    | '/'
+    | '/explore'
+    | '/onboarding'
+    | '/review'
+    | '/you'
+    | '/node/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ExploreRoute: typeof ExploreRoute
   OnboardingRoute: typeof OnboardingRoute
   ReviewRoute: typeof ReviewRoute
   YouRoute: typeof YouRoute
@@ -102,6 +119,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OnboardingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/explore': {
+      id: '/explore'
+      path: '/explore'
+      fullPath: '/explore'
+      preLoaderRoute: typeof ExploreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -121,6 +145,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ExploreRoute: ExploreRoute,
   OnboardingRoute: OnboardingRoute,
   ReviewRoute: ReviewRoute,
   YouRoute: YouRoute,
@@ -129,13 +154,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
