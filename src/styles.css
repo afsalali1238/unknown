@@ -12,9 +12,12 @@
   --color-paper: #faf8f3;
   --color-ink: #1a1a17;
   --color-ink-soft: #6b6b63;
-  --color-line: #e5e1d8;
+  /* Darkened from the original #e5e1d8 (1.2:1 against paper — effectively
+     invisible) to clear WCAG 1.4.11's 3:1 non-text-contrast minimum for
+     borders that are the primary boundary of an interactive element
+     (inputs, cards). Still the lightest token in the system. */
+  --color-line: #94886f;
   --color-accent: #b45309;
-  --color-accent-soft: #d97a2b;
   --color-focus: #b45309;
 }
 
