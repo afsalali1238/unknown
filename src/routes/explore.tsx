@@ -8,7 +8,6 @@ import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
 import { Check, Plus, Minus, ArrowLeft } from "lucide-react";
-import * as Icons from "lucide-react";
 
 const exploreSearchSchema = z.object({
   cluster: z.string().optional(),
@@ -40,17 +39,13 @@ function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes
   const progress = nodes.length > 0 ? readCount / nodes.length : 0;
   const circ = 2 * Math.PI * 16;
 
-  const IconName = cluster.icon as keyof typeof Icons;
-  const Icon = cluster.icon && Icons[IconName] ? (Icons[IconName] as React.ElementType) : Icons.HelpCircle;
-
   return (
     <Link
       to="/explore"
       search={{ cluster: cluster.id }}
       className="group flex flex-col border border-line bg-paper"
     >
-      <div className="flex-1 min-h-[220px] bg-paper p-5 flex flex-col justify-end relative overflow-hidden">
-        <Icon className="w-12 h-12 text-ink/5 absolute top-5 right-5 pointer-events-none" />
+      <div className="flex-1 min-h-[220px] bg-paper p-5 flex flex-col justify-end">
         <h2 className="font-serif text-xl sm:text-2xl leading-tight text-ink group-hover:opacity-80 transition-opacity break-words">
           {cluster.title}
         </h2>

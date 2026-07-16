@@ -58,7 +58,13 @@ function OnboardingScreen() {
 
   return (
     <>
-      <SpiralBackground />
+      <div className="fixed inset-0 overflow-hidden pointer-events-none flex items-center justify-center opacity-[0.03]">
+        <img
+          src="/logo.svg"
+          alt=""
+          className="w-[120vw] h-[120vw] max-w-none animate-[spin_120s_linear_infinite]"
+        />
+      </div>
       <div className="relative z-10 flex min-h-screen flex-col px-5 pt-12 pb-8">
         {step === 1 ? (
           <>
@@ -190,84 +196,5 @@ function OnboardingScreen() {
         )}
       </div>
     </>
-  );
-}
-
-function buildSpiralPath(
-  cx: number,
-  cy: number,
-  rOuter: number,
-  rInner: number,
-  turns: number,
-  phase: number,
-) {
-  const thetaMax = turns * Math.PI * 2;
-  const b = Math.log(rOuter / rInner) / thetaMax;
-  const steps = 260;
-  let d = "";
-  for (let i = 0; i <= steps; i++) {
-    const t = (i / steps) * thetaMax;
-    const r = rOuter * Math.exp(-b * t);
-    const theta = t + phase;
-    const x = cx + r * Math.cos(theta);
-    const y = cy + r * Math.sin(theta);
-    d += (i === 0 ? "M " : "L ") + x.toFixed(2) + " " + y.toFixed(2) + " ";
-  }
-  return d;
-}
-
-function SpiralBackground() {
-  const armCount = 3;
-  const turns = 4.5;
-  const rOuter = 190;
-  const rInner = 6;
-
-  const arms = [];
-  for (let i = 0; i < armCount; i++) {
-    const phase = (i / armCount) * Math.PI * 2;
-    arms.push({
-      d: buildSpiralPath(200, 200, rOuter, rInner, turns, phase),
-      width: 1.1 + (armCount - i) * 0.15,
-      opacity: (0.85 - i * 0.18).toFixed(2),
-    });
-  }
-
-  return (
-    <div className="fixed inset-0 z-0 flex items-center justify-center overflow-hidden pointer-events-none">
-      {/* spiral-spin now lives in styles.css as a shared @keyframes, reused by
-          the header logo too - CSS keyframes resolve by name regardless of
-          which stylesheet declares them, so the animation below still finds
-          it. spiral-pulse stays local: nothing else uses it yet. */}
-      <style>{`
-        @keyframes spiral-pulse { 0%, 100% { opacity: 0.9; } 50% { opacity: 0.55; } }
-      `}</style>
-      <svg
-        viewBox="0 0 400 400"
-        className="w-[150vw] h-[150vw] min-w-[800px] min-h-[800px] opacity-[0.04] sm:opacity-[0.03]"
-      >
-        <g style={{ transformOrigin: "200px 200px", animation: "spiral-spin 60s linear infinite" }}>
-          {arms.map((arm, i) => (
-            <path
-              key={i}
-              d={arm.d}
-              fill="none"
-              stroke="currentColor"
-              className="text-ink"
-              strokeWidth={arm.width}
-              strokeLinecap="round"
-              style={{ opacity: Number(arm.opacity) }}
-            />
-          ))}
-          <circle
-            cx="200"
-            cy="200"
-            r="4"
-            fill="currentColor"
-            className="text-ink"
-            style={{ animation: "spiral-pulse 15s ease-in-out infinite" }}
-          />
-        </g>
-      </svg>
-    </div>
   );
 }
