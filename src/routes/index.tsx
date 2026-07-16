@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import {
   Bookmark,
@@ -12,6 +12,7 @@ import {
   GripVertical,
   Minus,
   Plus,
+  List,
 } from "lucide-react";
 import { CLUSTERS, type Node, NODES } from "@/data/nodes";
 import { Quiz } from "@/components/Quiz";
@@ -38,68 +39,64 @@ const CLUSTER_TITLE: Record<string, string> = Object.fromEntries(
   CLUSTERS.map((c) => [c.id, c.title]),
 );
 
-function ReadNextPinned({ nodes }: { nodes: Node[] }) {
+function ReadNextList({ nodes, onClose }: { nodes: Node[]; onClose: () => void }) {
   const removeReadNext = useStore((s) => s.removeReadNext);
   const reorderReadNext = useStore((s) => s.reorderReadNext);
-  const [expanded, setExpanded] = useState(false);
   const [draggedIdx, setDraggedIdx] = useState<number | null>(null);
 
-  if (nodes.length === 0) return null;
+  if (nodes.length === 0) {
+    return (
+      <div className="absolute top-[44px] left-0 right-0 z-20 shrink-0 border-b border-line bg-paper px-5 py-6 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft shadow-card">
+        Your queue is empty
+      </div>
+    );
+  }
 
   return (
-    <div className="shrink-0 border-b border-line bg-paper">
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between px-5 py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
-      >
-        <span>Read Next · {nodes.length}</span>
-        {expanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-      </button>
-      {expanded && (
-        <div className="px-5 pb-3 max-h-[35vh] overflow-y-auto space-y-2">
-          {nodes.map((n, i) => (
-            <div
-              key={n.id}
-              draggable
-              onDragStart={(e) => {
-                setDraggedIdx(i);
-                e.dataTransfer.effectAllowed = "move";
+    <div className="absolute top-[44px] left-0 right-0 z-20 shrink-0 border-b border-line bg-paper shadow-card">
+      <div className="px-5 py-3 max-h-[40vh] overflow-y-auto space-y-2">
+        {nodes.map((n, i) => (
+          <div
+            key={n.id}
+            draggable
+            onDragStart={(e) => {
+              setDraggedIdx(i);
+              e.dataTransfer.effectAllowed = "move";
+            }}
+            onDragOver={(e) => {
+              e.preventDefault();
+              e.dataTransfer.dropEffect = "move";
+            }}
+            onDrop={(e) => {
+              e.preventDefault();
+              if (draggedIdx !== null && draggedIdx !== i) {
+                reorderReadNext(draggedIdx, i);
+              }
+              setDraggedIdx(null);
+            }}
+            className="flex items-center gap-2 p-2 border border-line bg-paper cursor-grab active:cursor-grabbing hover:border-ink transition-colors"
+          >
+            <GripVertical className="w-4 h-4 text-ink-soft shrink-0" />
+            <button
+              className="flex-1 text-left min-w-0"
+              onClick={() => {
+                document
+                  .getElementById(`feed-card-${n.id}`)
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
               }}
-              onDragOver={(e) => {
-                e.preventDefault();
-                e.dataTransfer.dropEffect = "move";
-              }}
-              onDrop={(e) => {
-                e.preventDefault();
-                if (draggedIdx !== null && draggedIdx !== i) {
-                  reorderReadNext(draggedIdx, i);
-                }
-                setDraggedIdx(null);
-              }}
-              className="flex items-center gap-2 p-2 border border-line bg-paper cursor-grab active:cursor-grabbing"
             >
-              <GripVertical className="w-4 h-4 text-ink-soft shrink-0" />
-              <button
-                className="flex-1 text-left min-w-0"
-                onClick={() => {
-                  document
-                    .getElementById(`feed-card-${n.id}`)
-                    ?.scrollIntoView({ behavior: "smooth" });
-                  setExpanded(false);
-                }}
-              >
-                <div className="truncate font-serif text-sm text-ink">{n.title}</div>
-              </button>
-              <button
-                onClick={() => removeReadNext(n.id)}
-                className="p-1 text-ink-soft hover:text-ink shrink-0"
-              >
-                <Minus className="w-4 h-4" />
-              </button>
-            </div>
-          ))}
-        </div>
-      )}
+              <div className="truncate font-serif text-sm text-ink">{n.title}</div>
+            </button>
+            <button
+              onClick={() => removeReadNext(n.id)}
+              className="p-1 text-ink-soft hover:text-ink shrink-0"
+            >
+              <Minus className="w-4 h-4" />
+            </button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -166,6 +163,8 @@ function FeedScreen() {
 
   const [seed] = useState(() => (Date.now() & 0xffffffff) >>> 0 || 1);
 
+  const [queueOpen, setQueueOpen] = useState(false);
+
   const feedResult = useMemo(() => {
     const likedIds = [
       ...Object.keys(bookmarks).filter((k) => bookmarks[k]),
@@ -190,21 +189,21 @@ function FeedScreen() {
 
   return (
     <div className="flex flex-col h-[100dvh]">
-      <header className="shrink-0 flex items-center justify-between px-5 py-2.5">
+      <header className="shrink-0 flex items-center justify-between px-5 py-2.5 relative z-30 bg-paper">
         <div className="flex items-center gap-2">
           <img src="/logo.svg" alt="" className="h-6 w-6 spiral-spin" />
           <span className="font-serif text-lg tracking-tight text-ink">Unknown</span>
         </div>
-        <Link
-          to="/map"
-          aria-label="Map view"
+        <button
+          onClick={() => setQueueOpen(!queueOpen)}
           className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
         >
-          <LayoutGrid className="h-4 w-4" /> Map
-        </Link>
+          <List className="h-4 w-4" /> Queue{" "}
+          {readNextItems.length > 0 && `(${readNextItems.length})`}
+        </button>
       </header>
 
-      <ReadNextPinned nodes={readNextItems} />
+      {queueOpen && <ReadNextList nodes={readNextItems} onClose={() => setQueueOpen(false)} />}
 
       <div className="flex-1 min-h-0 snap-y snap-mandatory overflow-y-auto overscroll-contain">
         {feedResult.needsTopics ? (

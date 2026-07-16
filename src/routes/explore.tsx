@@ -7,7 +7,7 @@ import { MicroLabel } from "@/components/MicroLabel";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
-import { Check, Plus, Minus, ArrowLeft } from "lucide-react";
+import { Check, Plus, Minus, ArrowLeft, LayoutGrid } from "lucide-react";
 
 const exploreSearchSchema = z.object({
   cluster: z.string().optional(),
@@ -44,11 +44,11 @@ function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes
       search={{ cluster: cluster.id }}
       className="group flex flex-col border border-line bg-paper"
     >
-      <div className="flex-1 min-h-[220px] bg-accent p-5 flex flex-col justify-end">
-        <h2 className="font-serif text-xl sm:text-2xl leading-tight text-paper group-hover:opacity-80 transition-opacity break-words">
+      <div className="flex-1 min-h-[220px] bg-paper p-5 flex flex-col justify-end">
+        <h2 className="font-serif text-xl sm:text-2xl leading-tight text-ink group-hover:opacity-80 transition-opacity break-words">
           {cluster.title}
         </h2>
-        <p className="mt-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-paper/80">
+        <p className="mt-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-ink-soft">
           {cluster.subtitle}
         </p>
       </div>
@@ -185,6 +185,13 @@ function ExploreScreen() {
     <div className="px-5 pt-8 pb-12">
       <header className="flex items-center justify-between">
         <h1 className="font-serif text-3xl leading-tight text-ink">Explore</h1>
+        <Link
+          to="/map"
+          aria-label="Map view"
+          className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
+        >
+          <LayoutGrid className="h-4 w-4" /> Map
+        </Link>
       </header>
 
       <div className="mt-6">
