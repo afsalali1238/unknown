@@ -97,7 +97,7 @@ function OnboardingScreen() {
                     <span
                       className={cn(
                         "ml-2 font-mono text-[10px] uppercase tracking-[0.14em]",
-                        on ? "text-paper/50" : "text-ink-soft/40",
+                        on ? "text-paper/70" : "text-ink-soft",
                       )}
                     >
                       {count}

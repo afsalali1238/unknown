@@ -34,13 +34,20 @@ export const Route = createFileRoute("/node/$id")({
 });
 
 function splitSentences(text: string): string[] {
+  // Primary: Intl.Segmenter with sentence granularity (Chrome/Safari/FF 99+)
   if (typeof Intl !== "undefined" && Intl.Segmenter) {
     const segmenter = new Intl.Segmenter("en", { granularity: "sentence" });
-    return Array.from(segmenter.segment(text))
+    const segs = Array.from(segmenter.segment(text))
       .map((s) => s.segment.trim())
       .filter(Boolean);
+    // Segmenter sometimes returns 1 big chunk — fall through to regex in that case
+    if (segs.length > 1) return segs;
   }
-  return text.split(/(?<=[.!?])\s+/).filter(Boolean);
+  // Fallback: split on sentence-ending punctuation followed by whitespace/end
+  return text
+    .split(/(?<=[.!?])\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
 }
 
 // New (never opened) > opened but not mastered > mastered (gotIt). Passive —
@@ -160,7 +167,7 @@ function NodeScreen() {
 
         <div className="mt-6">
           <MicroLabel>
-            {cluster?.title} · {node.medium}
+            {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}<span className="hidden sm:inline">{cluster?.title} · </span>{node.medium}
           </MicroLabel>
           <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink sm:text-5xl">
             {node.title}

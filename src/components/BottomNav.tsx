@@ -32,6 +32,8 @@ export function BottomNav() {
             <Link
               key={t.to}
               to={t.to}
+              aria-label={t.label}
+              aria-current={active ? "page" : undefined}
               className="relative flex flex-1 flex-col items-center justify-center gap-1 py-3 min-h-14"
             >
               <span

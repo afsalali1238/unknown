@@ -308,7 +308,8 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
         <div className="flex items-center gap-2">
           <MicroLabel>
             {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
-            {CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · {node.medium}
+            <span className="hidden sm:inline">{CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · </span>
+            {node.medium}
           </MicroLabel>
           {source === "adjacent" && (
             <span className="inline-block px-1.5 py-0.5 border border-accent/20 bg-accent/5 text-accent font-mono text-[9px] uppercase tracking-[0.1em]">
@@ -389,6 +390,8 @@ function RailButton({
         e.stopPropagation();
         onClick(e);
       }}
+      aria-label={label}
+      aria-pressed={active}
       className={cn(
         "group flex flex-col items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors",
         active ? "text-ink" : "text-ink-soft hover:text-ink",

@@ -42,7 +42,27 @@ if (nodesArray) {
       let status = "Contemporary";
       if (["X", "Y", "Z"].includes(clusterId)) {
         status = "Speculative";
-      } else if (["A", "B", "C", "D", "E", "F", "P", "W"].includes(clusterId)) {
+      } else if (
+        // Explicitly Canonical: primary-source clusters (A–F, P, W)
+        // + mental-model / timeless-framework clusters where source year
+        //   is a modern explainer but the idea itself is established
+        //   (J=Mental Models, K=Compounding, L=Decision-Making, U=Cognitive Biases)
+        ["A", "B", "C", "D", "E", "F", "J", "K", "L", "P", "U", "W"].includes(clusterId)
+      ) {
+        status = "Canonical";
+      }
+
+      // Year-based override: pre-1990 primary sources are foundational works
+      // regardless of cluster — calling Montagu (1942) or Lorenz (1963)
+      // "Contemporary" undercuts the whole tiering concept.
+      const yearProp = element
+        .getProperty("year")
+        ?.asKind(SyntaxKind.PropertyAssignment)
+        ?.getInitializer()
+        ?.getText()
+        .replace(/"/g, "");
+      const year = yearProp ? parseInt(yearProp, 10) : NaN;
+      if (!isNaN(year) && year <= 1990 && status === "Contemporary") {
         status = "Canonical";
       }
 

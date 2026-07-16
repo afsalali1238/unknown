@@ -215,10 +215,27 @@ export const useStore = create<State & Actions>()(
     }),
     {
       name: "unknown:v1",
+      version: 2,
       storage: createJSONStorage(() =>
         typeof window !== "undefined" ? idbStorage : (undefined as never),
       ),
       skipHydration: false,
+      // Merges persisted state with defaults so adding new fields never wipes
+      // existing user data (streaks, bookmarks, gotIt, etc.).
+      migrate: (persisted: unknown, fromVersion: number) => {
+        const base = persisted as Partial<State>;
+        if (fromVersion < 2) {
+          return {
+            ...initial,
+            ...base,
+            audioProgress: base.audioProgress ?? {},
+            ttsVoice: base.ttsVoice ?? undefined,
+            dailyGoal: base.dailyGoal ?? 3,
+            dailyProgress: base.dailyProgress ?? {},
+          };
+        }
+        return { ...initial, ...base };
+      },
     },
   ),
 );

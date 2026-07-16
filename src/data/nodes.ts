@@ -4233,7 +4233,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J2",
@@ -4273,7 +4273,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/J2-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J3",
@@ -4316,7 +4316,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J4",
@@ -4356,7 +4356,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/J4-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "K1",
@@ -4395,7 +4395,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K1-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "K2",
@@ -4435,7 +4435,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K2-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "K3",
@@ -4474,7 +4474,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K3-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "K4",
@@ -4513,7 +4513,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K4-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "L1",
@@ -4547,7 +4547,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/L1-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "L2",
@@ -4590,7 +4590,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "L3",
@@ -4630,7 +4630,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "L4",
@@ -4669,7 +4669,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/L4-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "M1",
@@ -4709,7 +4709,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/M1-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "M2",
@@ -4749,7 +4749,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/M2-0.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "M3",
@@ -4792,7 +4792,7 @@ export const NODES: Node[] = [
         },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "M4",
@@ -5038,7 +5038,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J6",
@@ -5085,7 +5085,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J7",
@@ -5132,7 +5132,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J8",
@@ -5178,7 +5178,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J9",
@@ -5224,7 +5224,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J10",
@@ -5271,7 +5271,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J11",
@@ -5318,7 +5318,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J12",
@@ -5365,7 +5365,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J13",
@@ -5413,7 +5413,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J14",
@@ -5460,7 +5460,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J15",
@@ -5507,7 +5507,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J16",
@@ -5555,7 +5555,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J17",
@@ -5603,7 +5603,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J18",
@@ -5651,7 +5651,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J19",
@@ -5699,7 +5699,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J20",
@@ -5746,7 +5746,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J21",
@@ -5794,7 +5794,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J22",
@@ -5842,7 +5842,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J23",
@@ -5890,7 +5890,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J24",
@@ -5938,7 +5938,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J25",
@@ -5985,7 +5985,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J26",
@@ -6032,7 +6032,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J27",
@@ -6078,7 +6078,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J28",
@@ -6124,7 +6124,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J29",
@@ -6171,7 +6171,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J30",
@@ -6219,7 +6219,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "L5",
@@ -6270,7 +6270,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "L6",
@@ -6316,7 +6316,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O1",
@@ -6362,7 +6362,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O1-1.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O2",
@@ -6498,7 +6498,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O4-1.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O5",
@@ -6540,7 +6540,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O5-1.md", retrieved: "2026-07-14" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O6",
@@ -6900,7 +6900,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "Q2",
@@ -7180,7 +7180,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O7-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O8",
@@ -7226,7 +7226,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O8-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O9",
@@ -7273,7 +7273,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O9-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O10",
@@ -7319,7 +7319,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O10-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O11",
@@ -7365,7 +7365,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O11-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O12",
@@ -7411,7 +7411,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O12-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O13",
@@ -7457,7 +7457,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O13-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O14",
@@ -7503,7 +7503,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O14-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O15",
@@ -7595,7 +7595,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O16-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O17",
@@ -7641,7 +7641,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O17-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O18",
@@ -7687,7 +7687,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O18-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O19",
@@ -7733,7 +7733,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O19-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O20",
@@ -7779,7 +7779,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O20-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O21",
@@ -7825,7 +7825,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O21-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O22",
@@ -7872,7 +7872,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O22-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O23",
@@ -7918,7 +7918,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "R1",
@@ -8150,7 +8150,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/R5-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "R6",
@@ -8608,7 +8608,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U1-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U2",
@@ -8649,7 +8649,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U2-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U3",
@@ -8689,7 +8689,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U3-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U4",
@@ -8730,7 +8730,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U4-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U5",
@@ -8771,7 +8771,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U5-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U6",
@@ -8811,7 +8811,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U6-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U7",
@@ -8851,7 +8851,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U7-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U8",
@@ -8891,7 +8891,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U8-0.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "V1",
@@ -8937,7 +8937,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V1-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "V2",
@@ -9025,7 +9025,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V3-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "V4",
@@ -9071,7 +9071,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V4-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "V5",
@@ -9117,7 +9117,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V5-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "V6",
@@ -9164,7 +9164,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V6-1.md", retrieved: "2026-07-16" },
       },
     ],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "V7",
@@ -10317,7 +10317,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Decision-Making", "Cognitive Biases & Models", "Markets & Narrative"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "J31",
@@ -10352,7 +10352,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "L8",
@@ -10392,7 +10392,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Decision-Making", "Meaning & Self"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "K5",
@@ -10432,7 +10432,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Meaning & Self", "Compounding & Patience"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "A13",
@@ -10594,7 +10594,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "T4",
@@ -10717,7 +10717,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Compounding & Patience"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "Q8",
@@ -10918,7 +10918,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U10",
@@ -10958,7 +10958,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "U11",
@@ -10998,7 +10998,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O25",
@@ -11039,7 +11039,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "V10",
@@ -11161,7 +11161,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Craft & Deep Work", "First-Principles Thinking"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O27",
@@ -11201,7 +11201,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O28",
@@ -11242,7 +11242,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "R7",
@@ -11283,7 +11283,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "O29",
@@ -11323,7 +11323,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "R8",
@@ -11444,7 +11444,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "Compounding & Patience"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "M6",

@@ -141,8 +141,16 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-paper pb-32">
+        <a
+          href="#main-content"
+          className="absolute -top-full left-2 z-50 px-4 py-2 bg-ink text-paper font-mono text-[11px] uppercase tracking-[0.18em] focus:top-2 transition-[top]"
+        >
+          Skip to content
+        </a>
         <div className="mx-auto max-w-2xl">
-          <Outlet />
+          <main id="main-content">
+            <Outlet />
+          </main>
         </div>
         <BottomNav />
       </div>
