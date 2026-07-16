@@ -52,8 +52,11 @@ export const stateSchema = z.object({
   // rather than fail validation.
   seenHints: z.record(z.boolean()).default({}),
   readNext: z.array(z.string()).default([]),
-  // Ordered read history (most-recent last), so we can show 'recently read'.
   readLog: z.array(z.string()).default([]),
+  audioProgress: z.record(z.number()).default({}),
+  ttsVoice: z.string().optional(),
+  dailyGoal: z.number().default(3),
+  dailyProgress: z.record(z.number()).default({}),
 });
 
 export type State = z.infer<typeof stateSchema>;
@@ -81,6 +84,8 @@ type Actions = {
   removeReadNext: (id: string) => void;
   reorderReadNext: (from: number, to: number) => void;
   clearReadNext: () => void;
+  setAudioProgress: (id: string, progress: number) => void;
+  setTtsVoice: (voiceUri: string) => void;
 };
 
 const initial: State = {
@@ -98,9 +103,13 @@ const initial: State = {
   seenHints: {},
   readNext: [],
   readLog: [],
+  audioProgress: {},
+  ttsVoice: undefined,
+  dailyGoal: 3,
+  dailyProgress: {},
 };
 
-function todayISO() {
+export function todayISO() {
   return new Date().toISOString().slice(0, 10);
 }
 
@@ -123,6 +132,14 @@ export const useStore = create<State & Actions>()(
           const prev = s.review[id] ?? { box: 0, due: Date.now() };
           const box = correct ? Math.min(5, prev.box + 1) : 0;
           const due = Date.now() + LEITNER_DAYS[box] * DAY_MS;
+
+          const today = todayISO();
+          // Only count progress if they didn't already 'gotIt' this node
+          const newDailyProgress = { ...s.dailyProgress };
+          if (correct && !s.gotIt[id]) {
+            newDailyProgress[today] = (newDailyProgress[today] || 0) + 1;
+          }
+
           return {
             review: {
               ...s.review,
@@ -130,6 +147,7 @@ export const useStore = create<State & Actions>()(
             },
             gotIt: correct ? { ...s.gotIt, [id]: true } : s.gotIt,
             streakDays: touchStreak(s.streakDays),
+            dailyProgress: newDailyProgress,
           };
         }),
       visitNode: (id) =>
@@ -185,12 +203,15 @@ export const useStore = create<State & Actions>()(
         })),
       reorderReadNext: (from, to) =>
         set((s) => {
-          const list = [...s.readNext];
-          const [moved] = list.splice(from, 1);
-          list.splice(to, 0, moved);
-          return { readNext: list };
+          const arr = [...s.readNext];
+          const [moved] = arr.splice(from, 1);
+          arr.splice(to, 0, moved);
+          return { readNext: arr };
         }),
       clearReadNext: () => set({ readNext: [] }),
+      setAudioProgress: (id, progress) =>
+        set((s) => ({ audioProgress: { ...s.audioProgress, [id]: progress } })),
+      setTtsVoice: (voiceUri) => set({ ttsVoice: voiceUri }),
     }),
     {
       name: "unknown:v1",

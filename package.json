@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && bun run scripts/inject-manifest.ts",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -57,7 +57,7 @@
     "idb-keyval": "^6.3.0",
     "input-otp": "^1.4.2",
     "jsdom": "^29.1.1",
-    "lucide-react": "^0.575.0",
+    "lucide-react": "^1.24.0",
     "minisearch": "^7.2.0",
     "pdf-parse": "^1.1.1",
     "react": "^19.2.0",

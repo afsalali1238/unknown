@@ -126,7 +126,7 @@ function ClusterDetail({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; node
         onClick={() => navigate({ to: "/explore" })}
         className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
       >
-        <ArrowLeft className="w-4 h-4" /> Back to playlists
+        <ArrowLeft className="w-4 h-4" /> Back to topics
       </button>
       <div>
         <h2 className="font-serif text-3xl leading-tight text-ink">{cluster.title}</h2>
@@ -187,7 +187,7 @@ function ExploreScreen() {
           Map
         </Link>
         <div className="flex items-center justify-center min-h-11 border border-ink bg-ink px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
-          Playlists
+          Topics
         </div>
       </div>
 

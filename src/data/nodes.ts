@@ -24,6 +24,7 @@ export type Node = {
     };
   }[];
   tags: string[];
+  epistemicStatus?: "Canonical" | "Contemporary" | "Speculative";
 };
 
 export const TAGS = [
@@ -231,7 +232,7 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Early startups should manually recruit users and do unscalable work; growth comes from effort, not automation.",
-    related: [],
+    related: ["A2", "A3", "A4"],
     furtherReading: [
       {
         type: "read",
@@ -274,6 +275,7 @@ export const NODES: Node[] = [
       explanation:
         "Graham emphasizes that initial growth is never organic; founders must physically go out and recruit their first users manually, even if that process can't scale to a million users.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "A2",
@@ -304,7 +306,7 @@ export const NODES: Node[] = [
       explanation:
         "An MVP is not just a 'crappy version 1'; it is specifically designed to run an experiment that validates or invalidates your riskiest business assumptions as quickly and cheaply as possible.",
     },
-    related: [],
+    related: ["A1", "A3", "A4"],
     furtherReading: [
       {
         type: "read",
@@ -329,6 +331,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A3",
@@ -358,7 +361,7 @@ export const NODES: Node[] = [
       explanation:
         "The best ideas are often those that solve a genuine problem but look unappealing or too niche to others; if they looked obviously good, a large company would already be doing them.",
     },
-    related: [],
+    related: ["A1", "A2", "A4"],
     furtherReading: [
       {
         type: "read",
@@ -383,6 +386,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A4",
@@ -413,7 +417,7 @@ export const NODES: Node[] = [
       explanation:
         "The internet drastically lowers distribution costs, allowing you to bypass mass-market gatekeepers and directly monetize a small, highly dedicated audience.",
     },
-    related: [],
+    related: ["A1", "A2", "A3"],
     furtherReading: [
       {
         type: "read",
@@ -438,6 +442,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A5",
@@ -468,7 +473,7 @@ export const NODES: Node[] = [
       explanation:
         "Competition destroys profits. Building a monopoly—by dominating a small, specific market and avoiding head-to-head battles—allows a company to generate the surplus needed for long-term innovation.",
     },
-    related: [],
+    related: ["A1", "A2", "A3"],
     furtherReading: [
       {
         type: "read",
@@ -497,6 +502,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A6",
@@ -527,7 +533,7 @@ export const NODES: Node[] = [
       explanation:
         "A large TAM is a vanity metric if the market's structure (like low frequency of use or high acquisition costs) prevents the emergence of a highly profitable, dominant platform.",
     },
-    related: [],
+    related: ["A1", "A2", "A3"],
     furtherReading: [
       {
         type: "read",
@@ -556,6 +562,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A7",
@@ -586,7 +593,7 @@ export const NODES: Node[] = [
       explanation:
         "In a subscription model, acquisition costs are paid upfront while revenue trickles in over time. High churn means customers leave before they even become profitable, fundamentally breaking the business model.",
     },
-    related: [],
+    related: ["A1", "A2", "A3"],
     furtherReading: [
       {
         type: "read",
@@ -611,6 +618,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A8",
@@ -641,7 +649,7 @@ export const NODES: Node[] = [
       explanation:
         "When a market exhibits strong winner-take-all dynamics (like network effects), the long-term value of capturing the market first heavily outweighs the short-term costs of inefficient, breakneck growth.",
     },
-    related: [],
+    related: ["A1", "A2", "A3"],
     furtherReading: [
       {
         type: "read",
@@ -666,6 +674,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A9",
@@ -696,7 +705,7 @@ export const NODES: Node[] = [
       explanation:
         "Aggregators don't own the supply; they own the user relationship. By providing superior discovery and UX at zero marginal cost, they commoditize suppliers who are forced to play by their rules.",
     },
-    related: ["W3"],
+    related: ["W3", "A1", "A2"],
     furtherReading: [
       {
         type: "read",
@@ -721,6 +730,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A10",
@@ -750,7 +760,7 @@ export const NODES: Node[] = [
       explanation:
         "Growth eventually stalls not because of competition, but because of a hard structural limit in the product itself—an 'invisible asymptote' that caps the addressable audience until the product is fundamentally reimagined.",
     },
-    related: [],
+    related: ["A1", "A2", "A3"],
     furtherReading: [
       {
         type: "read",
@@ -775,6 +785,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A11",
@@ -805,7 +816,7 @@ export const NODES: Node[] = [
       explanation:
         "While old moats relied on economies of scale or IP, modern moats are built on systems of intelligence: data flywheels where product usage generates data that makes the product better, driving more usage.",
     },
-    related: ["W3"],
+    related: ["W3", "A1", "A2"],
     furtherReading: [
       {
         type: "read",
@@ -830,6 +841,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "A12",
@@ -860,7 +872,7 @@ export const NODES: Node[] = [
       explanation:
         "Solo capitalists leverage their personal brand and speed to compete with massive VC firms, offering founders faster decisions and a single point of contact without the bureaucracy of partnership consensus.",
     },
-    related: [],
+    related: ["A1", "A2", "A3"],
     furtherReading: [
       {
         type: "read",
@@ -885,6 +897,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "B1",
@@ -915,7 +928,7 @@ export const NODES: Node[] = [
       explanation:
         "The Fairchild deal pioneered the use of equity options rather than a standard buyout, incentivizing the founders to build the company while giving the parent company a de-risked path to ownership.",
     },
-    related: [],
+    related: ["B2", "B3", "B4"],
     furtherReading: [
       {
         type: "watch",
@@ -933,6 +946,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "B2",
@@ -963,7 +977,7 @@ export const NODES: Node[] = [
       explanation:
         "Selling smaller, proven components (circuit modules) first generated immediate cash flow and proved the team's competence, which was essential to overcome investor skepticism about the actual goal of building computers.",
     },
-    related: [],
+    related: ["B1", "B3", "B4"],
     furtherReading: [
       {
         type: "read",
@@ -981,6 +995,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "B3",
@@ -1011,7 +1026,7 @@ export const NODES: Node[] = [
       explanation:
         "Sequoia looked past YouTube's lack of a clear revenue model, recognizing that its astonishing compounding growth in user-generated content and viewership signaled it would become the foundational platform for internet video.",
     },
-    related: [],
+    related: ["B1", "B2", "B4"],
     furtherReading: [
       {
         type: "watch",
@@ -1029,6 +1044,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "B4",
@@ -1058,7 +1074,7 @@ export const NODES: Node[] = [
       explanation:
         "Facebook successfully argued that an incredibly dense, highly engaged, and highly targeted user base (college students) was vastly more valuable to advertisers than the sprawling, low-engagement portals of Web 1.0.",
     },
-    related: [],
+    related: ["B1", "B2", "B3"],
     furtherReading: [
       {
         type: "read",
@@ -1076,6 +1092,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "B5",
@@ -1104,7 +1121,7 @@ export const NODES: Node[] = [
       explanation:
         "Uber initially pitched itself as a niche, premium black-car service for professionals, which served as a profitable wedge to eventually expand into the mass-market ride-hailing giant it is today.",
     },
-    related: [],
+    related: ["B1", "B2", "B3"],
     furtherReading: [
       {
         type: "read",
@@ -1126,6 +1143,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "B6",
@@ -1155,7 +1173,7 @@ export const NODES: Node[] = [
       explanation:
         "The 'Obama O's' cereal boxes proved to investors that the founders possessed extreme grit, resourcefulness, and a 'cockroach' survival mentality during a severe economic downturn.",
     },
-    related: [],
+    related: ["B1", "B2", "B3"],
     furtherReading: [
       {
         type: "watch",
@@ -1173,6 +1191,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "B7",
@@ -1203,7 +1222,7 @@ export const NODES: Node[] = [
       explanation:
         "Starting with an expensive luxury car allowed Tesla to fund R&D and build out manufacturing, effectively using wealthy early adopters to subsidize the development of affordable mass-market EVs.",
     },
-    related: [],
+    related: ["B1", "B2", "B3"],
     furtherReading: [
       {
         type: "read",
@@ -1221,6 +1240,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "C1",
@@ -1232,8 +1252,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Enron's returns didn't cover its cost of capital and its accounting was opaque; the equity was worthless.",
-    related: [],
-    furtherReading: [],
+    related: ["C2", "C3", "C4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2000, Jim Chanos realized that energy giant Enron was using mark-to-market accounting to book massive future profits on the day a deal was signed. When he dug into their cash flow statements, he found that despite reporting huge earnings, the company was actually bleeding cash.",
@@ -1253,6 +1279,7 @@ export const NODES: Node[] = [
       explanation:
         "Mark-to-market accounting let Enron estimate the total future value of a long-term energy contract and claim that entire amount as profit on the day the deal was signed, completely detaching reported earnings from actual cash collected.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C2",
@@ -1264,8 +1291,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Bernard Madoff's impossibly smooth returns are mathematically inconsistent with any real strategy; the fund is either front-running or a Ponzi scheme.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C3", "C4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 1999, financial analyst Harry Markopolos realized that Bernie Madoff's impossibly consistent returns could not be replicated mathematically. He alerted the SEC multiple times that Madoff was running a massive Ponzi scheme, but was ignored for nearly a decade.",
@@ -1285,6 +1318,7 @@ export const NODES: Node[] = [
       explanation:
         "Markopolos calculated that Madoff's purported strategy required buying more options than actually existed in the entire global market, proving mathematically that the trades were completely fictitious.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C3",
@@ -1296,8 +1330,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Allied Capital used aggressive accounting to overstate the value of its illiquid investments.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2002, David Einhorn publicly shorted Allied Capital, a private finance company, accusing them of systematically overvaluing their illiquid assets. When Einhorn exposed the fraud, Allied retaliated with a vicious smear campaign rather than answering the financial questions.",
@@ -1317,6 +1357,7 @@ export const NODES: Node[] = [
       explanation:
         "Because Allied's investments were private and illiquid, there was no market price to contradict management's subjective valuations, allowing them to hide massive losses behind opaque accounting models.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C4",
@@ -1328,8 +1369,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Lehman's balance sheet is opaque and undercapitalized; its marks on illiquid assets are not credible.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In May 2008, David Einhorn presented a blistering short thesis on Lehman Brothers, exposing a massive $32 billion discrepancy in their commercial real estate portfolio. He proved the bank was functionally insolvent months before its spectacular collapse.",
@@ -1345,6 +1392,7 @@ export const NODES: Node[] = [
       explanation:
         "Einhorn exposed that Lehman was refusing to write down its massive portfolio of toxic commercial real estate loans and Collateralized Debt Obligations (CDOs) despite the market crashing around them.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C5",
@@ -1356,8 +1404,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Subprime mortgage-backed securities will collapse; buy CDS protection against the housing bubble.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "Michael Burry, a value investor with aspergers, discovered in 2005 that the US housing market was built on a foundation of fraudulent subprime mortgages. He convinced Wall Street banks to create a new instrument—Credit Default Swaps on mortgage bonds—so he could short the housing market.",
@@ -1376,6 +1430,7 @@ export const NODES: Node[] = [
       explanation:
         "Burry literally had banks invent Credit Default Swaps (CDS) for subprime mortgage bonds, allowing him to buy cheap insurance that would pay out massively when the underlying mortgages defaulted.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C6",
@@ -1387,8 +1442,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Sino-Forest is a fraud that overstates its timber assets; the equity is worth a fraction of its price.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2011, Muddy Waters Research exposed Sino-Forest, a $6 billion Chinese forestry company listed in Canada, as a massive Ponzi scheme. The company claimed to own vast tracts of timber in China, but investigators found the forests simply didn't exist.",
@@ -1407,6 +1468,7 @@ export const NODES: Node[] = [
       explanation:
         "The company used 'authorized intermediaries' as a black box, claiming these middlemen handled all transactions, which allowed them to forge paperwork for timber that didn't exist without auditors verifying the assets.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C7",
@@ -1418,8 +1480,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Herbalife is a pyramid scheme that will be shut down by regulators; the stock is worth zero.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2012, Bill Ackman launched a $1 billion short campaign against Herbalife, calling it the best-managed pyramid scheme in history. He argued the company made its money by recruiting distributors, not selling actual nutritional shakes.",
@@ -1438,6 +1506,7 @@ export const NODES: Node[] = [
       explanation:
         "Ackman argued that Herbalife was a classic pyramid scheme because distributors made money primarily by recruiting new members and forcing them to buy inventory, rather than selling shakes to actual consumers.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C8",
@@ -1449,8 +1518,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Valeant used a specialty pharmacy (Philidor) to fabricate sales, echoing Enron-style channel stuffing.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2015, Citron Research published a report comparing Valeant Pharmaceuticals to Enron, triggering a massive collapse in the stock. Valeant had been using a secret network of captive pharmacies to artificially inflate drug prices and force insurance payouts.",
@@ -1469,6 +1544,7 @@ export const NODES: Node[] = [
       explanation:
         "Valeant used Philidor as a captive 'phantom pharmacy' to bypass insurance blocks, aggressively steering prescriptions to their own price-gouged drugs instead of cheaper generics.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C9",
@@ -1479,8 +1555,14 @@ export const NODES: Node[] = [
     medium: "Report",
     category: "Short / Activist",
     thesis: "Luckin Coffee fabricated sales figures; the growth story is a fraud.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2020, Muddy Waters received an anonymous 89-page report proving that Luckin Coffee, China's answer to Starbucks, was fabricating hundreds of millions of dollars in sales. The stock collapsed 80% shortly after.",
@@ -1499,6 +1581,7 @@ export const NODES: Node[] = [
       explanation:
         "The short sellers didn't rely on financial modeling; they executed a massive ground operation, physically recording store traffic and proving that the app's order numbers were skipping digits.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C10",
@@ -1510,8 +1593,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "Nikola is an 'intricate fraud' built on false claims about its technology, including a truck rolling downhill in a video.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2020, Hindenburg Research exposed Nikola Motors, a highly valued hydrogen truck startup, as an intricate fraud built on CGI and fake demonstrations. Founder Trevor Milton had faked almost every major technological breakthrough the company claimed.",
@@ -1531,6 +1620,7 @@ export const NODES: Node[] = [
       explanation:
         "Hindenburg proved that the 'revolutionary' hydrogen truck didn't even have a working motor; they just towed it to a subtle incline and let gravity do the work for the camera.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "C11",
@@ -1542,8 +1632,14 @@ export const NODES: Node[] = [
     category: "Short / Activist",
     thesis:
       "The Adani Group engaged in brazen stock manipulation and accounting fraud over decades.",
-    related: [],
-    furtherReading: [],
+    related: ["C1", "C2", "C3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+      },
+    ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
     layer0:
       "In 2023, Hindenburg Research published a devastating report on India's Adani Group, accusing the massive infrastructure conglomerate of a decades-long stock manipulation and accounting fraud scheme. The report erased over $100 billion from Adani's market cap in weeks.",
@@ -1562,6 +1658,7 @@ export const NODES: Node[] = [
       explanation:
         "Adani used offshore shell companies to secretly park shares and restrict the public float, creating artificial buying pressure that sent their stock valuations to the moon.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D1",
@@ -1572,8 +1669,14 @@ export const NODES: Node[] = [
     medium: "Op-Ed",
     category: "Macro Memo",
     thesis: "Amid GFC panic, US stocks are cheap; be greedy when others are fearful.",
-    related: [],
-    furtherReading: [],
+    related: ["D2", "D3", "D4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "At the darkest depths of the 2008 financial crisis, Warren Buffett published a New York Times op-ed declaring he was buying American stocks with his personal money. He reminded the world that 'be fearful when others are greedy, and be greedy when others are fearful.'",
@@ -1592,6 +1695,7 @@ export const NODES: Node[] = [
       explanation:
         "Buffett correctly noted that markets anticipate the future, meaning stocks will price in the recovery and skyrocket long before the actual economic data shows improvement.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D2",
@@ -1603,8 +1707,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "The concentrated success of value investors from a shared intellectual 'village' refutes efficient markets.",
-    related: ["W2", "W6"],
-    furtherReading: [],
+    related: ["W2", "W6", "D1"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In a famous 1984 speech, Warren Buffett debunked the Efficient Market Hypothesis (EMH). He showed that a group of successful investors who all beat the market didn't do it by pure luck; they all shared the same value investing framework taught by Benjamin Graham.",
@@ -1624,6 +1734,7 @@ export const NODES: Node[] = [
       explanation:
         "Buffett pointed out that it wasn't just random people beating the market; an overwhelming cluster of 'winners' all shared Benjamin Graham's philosophy of buying undervalued assets.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D3",
@@ -1635,8 +1746,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Investors must deploy capital into cheap markets precisely when it feels most terrifying to do so.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In late 2008, Howard Marks wrote a memo arguing that the greatest risk wasn't losing money, but missing the once-in-a-generation opportunity to buy distressed debt at massive discounts. He urged his firm to deploy billions when everyone else was paralyzed.",
@@ -1655,6 +1772,7 @@ export const NODES: Node[] = [
       explanation:
         "Marks realized the market was pricing in the absolute worst-case scenario. Even if the economy remained terrible, the rock-bottom prices guaranteed a strong return on liquidation value.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D4",
@@ -1666,8 +1784,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "US equities are in a full-blown epic bubble that will end badly, comparable to 1929 and 2000.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2021, legendary investor Jeremy Grantham warned that the US stock market was in a massive, multi-asset 'superbubble' driven by zero interest rates and speculative mania. He correctly predicted the painful popping of this bubble in 2022.",
@@ -1687,6 +1811,7 @@ export const NODES: Node[] = [
       explanation:
         "Grantham points to the 'crazy behavior' phase—like meme stocks and speculative manias—as the definitive psychological marker that a bubble is about to burst.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D5",
@@ -1698,8 +1823,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Investors competing to accept ever-worse terms and lower returns are sowing the seeds of the next crisis.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2012, Howard Marks warned about the 'Race to the Bottom' in debt markets. To compete for deals in a low-interest-rate environment, lenders were abandoning traditional protections and covenants, taking on massive hidden risk for lower returns.",
@@ -1718,6 +1849,7 @@ export const NODES: Node[] = [
       explanation:
         "Covenant-lite loans remove the safety tripwires (covenants) that normally allow lenders to take action if a borrower's financial health deteriorates, massively increasing the lender's risk.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D6",
@@ -1729,8 +1861,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "A generational shift from falling to elevated rates ends the 40-year tailwind; credit and value are the new winners.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2022, Howard Marks declared a fundamental 'Sea Change' in global finance. He argued that the 40-year era of declining interest rates (1980-2020) was over, and the new era of higher rates would require entirely different investment strategies.",
@@ -1749,6 +1887,7 @@ export const NODES: Node[] = [
       explanation:
         "Marks argued that the 40-year tailwind of constantly falling interest rates had ended, fundamentally changing how assets are valued and how risk is priced.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D7",
@@ -1760,8 +1899,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Debt crises follow a repeating, mechanical template of leveraging and deleveraging that can be navigated.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "Ray Dalio studied 100 years of financial history to identify the archetypal pattern of a debt crisis. He showed how credit cycles inevitably expand into bubbles, pop, and force painful but necessary deleveragings.",
@@ -1780,6 +1925,7 @@ export const NODES: Node[] = [
       explanation:
         "A Beautiful Deleveraging occurs when central banks print exactly enough money to offset the deflationary pain of defaults and austerity, shrinking the debt-to-income ratio smoothly.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D8",
@@ -1791,8 +1937,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Long-term debt, currency, and empire cycles explain the relative decline of the US and rise of China.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "Ray Dalio's framework on the rise and fall of empires. He argues that global superpowers follow a predictable 250-year cycle driven by education, technological innovation, economic dominance, and eventually, financial ruin and conflict.",
@@ -1812,6 +1964,7 @@ export const NODES: Node[] = [
       explanation:
         "Dalio notes that late-stage empires inevitably take on too much debt and resort to printing money to pay for it, which destroys the value of their currency and sparks internal conflict.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D9",
@@ -1823,8 +1976,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Structural imbalances in the dollar reserve system are straining and will drive a long-term monetary shift.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "Macro strategist Luke Gromen argues that the post-1971 US dollar hegemony is fundamentally breaking down. The US is trapped by massive sovereign debt and cannot raise interest rates enough to defend the dollar without bankrupting its own government.",
@@ -1844,6 +2003,7 @@ export const NODES: Node[] = [
       explanation:
         "The massive US debt load means high interest rates cause interest expense to explode, forcing the government to print even more money to pay the interest, creating a vicious cycle of currency debasement.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D10",
@@ -1855,8 +2015,14 @@ export const NODES: Node[] = [
     category: "Macro Memo",
     thesis:
       "Weaponized reserves after Russia's invasion usher in a new monetary order backed by commodities, not fiat.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2022, Credit Suisse strategist Zoltan Pozsar coined 'Bretton Woods III', arguing that the global monetary system is shifting from inside money (fiat currency backed by sovereign debt) to outside money (currencies backed by hard commodities).",
@@ -1876,6 +2042,7 @@ export const NODES: Node[] = [
       explanation:
         "The unprecedented confiscation of Russia's sovereign FX reserves proved to the world that fiat reserves are not 'risk-free' if a foreign government can simply turn them off.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D11",
@@ -1887,8 +2054,14 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "The 2008 crash is structural, not cyclical; cut burn, extend runway, get to cash-flow positive.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2008, Sequoia Capital summoned its founders for a brutal presentation titled 'RIP Good Times'. They warned that the financial crisis would completely choke off venture funding, and startups needed to immediately slash cash burn to survive.",
@@ -1907,6 +2080,7 @@ export const NODES: Node[] = [
       explanation:
         "Being 'default alive' means that if your current trajectory continues (and you never raise another dollar), you will reach profitability before running out of cash.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "D12",
@@ -1918,8 +2092,14 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "The era of free capital is over; founders must pivot to profitability as rates rise and multiples compress.",
-    related: [],
-    furtherReading: [],
+    related: ["D1", "D2", "D3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+      },
+    ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
     layer0:
       "In 2022, as tech stocks crashed and interest rates spiked, Sequoia released a sequel to RIP Good Times called 'Adapting to Endure'. The core message: the era of 'growth at all costs' fueled by zero interest rates was over, and free cash flow was king again.",
@@ -1938,6 +2118,7 @@ export const NODES: Node[] = [
       explanation:
         "As interest rates rose, money was no longer free. Investors stopped subsidizing massive losses for future growth and demanded companies prove they could generate real cash today.",
     },
+    epistemicStatus: "Canonical",
   },
   {
     id: "E1",
@@ -1968,7 +2149,7 @@ export const NODES: Node[] = [
       explanation:
         "The Black-Scholes model eliminated the need to guess market direction or investor risk tolerance by demonstrating that an option can be perfectly priced using a riskless hedging strategy based on the underlying asset's volatility.",
     },
-    related: [],
+    related: ["C1", "C2", "C3"],
     furtherReading: [
       {
         type: "read",
@@ -1986,6 +2167,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Markets & Narrative"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "F1",
@@ -2015,7 +2197,7 @@ export const NODES: Node[] = [
       explanation:
         "Shannon revolutionized information theory by divorcing the 'meaning' of a message from the physical problem of transmitting it, quantifying information strictly as the reduction of uncertainty.",
     },
-    related: [],
+    related: ["F2", "F3", "F4"],
     furtherReading: [
       {
         type: "read",
@@ -2033,6 +2215,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "F2",
@@ -2063,7 +2246,7 @@ export const NODES: Node[] = [
       explanation:
         "By removing the requirement for a central registry and allowing broken links, Berners-Lee ensured the World Wide Web could scale infinitely without a centralized bottleneck.",
     },
-    related: [],
+    related: ["F1", "F3", "F4"],
     furtherReading: [
       {
         type: "read",
@@ -2081,6 +2264,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "F3",
@@ -2110,7 +2294,7 @@ export const NODES: Node[] = [
       explanation:
         "PageRank solved the problem of web spam by using the web's link structure as a massive voting system; a link from a highly trusted page passed more weight than a link from a trivial one.",
     },
-    related: [],
+    related: ["F1", "F2", "F4"],
     furtherReading: [
       {
         type: "read",
@@ -2128,6 +2312,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "F4",
@@ -2158,7 +2343,7 @@ export const NODES: Node[] = [
       explanation:
         "Recognizing that the internet would commoditize the operating system, Microsoft rapidly pivoted to integrate Internet Explorer directly into Windows to neutralize Netscape and protect its core monopoly.",
     },
-    related: [],
+    related: ["F1", "F2", "F3"],
     furtherReading: [
       {
         type: "read",
@@ -2180,6 +2365,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "F5",
@@ -2210,7 +2396,7 @@ export const NODES: Node[] = [
       explanation:
         "Traditional industries face diminishing returns, but software and networks experience increasing returns: the larger they get, the cheaper they are to run and the harder they are for competitors to displace.",
     },
-    related: [],
+    related: ["F1", "F2", "F3"],
     furtherReading: [
       {
         type: "read",
@@ -2236,6 +2422,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
+    epistemicStatus: "Canonical",
   },
   {
     id: "G1",
@@ -2265,7 +2452,7 @@ export const NODES: Node[] = [
       explanation:
         "Software 2.0 shifts programming from humans writing explicit rules to neural networks learning probabilistic weights from data, fundamentally changing how we 'code' complex logic.",
     },
-    related: [],
+    related: ["G2", "G3", "G4"],
     furtherReading: [
       {
         type: "read",
@@ -2287,6 +2474,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G2",
@@ -2317,7 +2505,7 @@ export const NODES: Node[] = [
       explanation:
         "Word2vec demonstrated that training a simple neural network to predict surrounding words naturally organizes them into a high-dimensional space where distance directly correlates to semantic meaning.",
     },
-    related: [],
+    related: ["G1", "G3", "G4"],
     furtherReading: [
       {
         type: "read",
@@ -2335,6 +2523,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G3",
@@ -2365,7 +2554,7 @@ export const NODES: Node[] = [
       explanation:
         "AlexNet triggered the deep learning revolution by combining algorithmic improvements (ReLU, dropout) with massive parallel processing on GPUs to train a remarkably deep and accurate network.",
     },
-    related: [],
+    related: ["G1", "G2", "G4"],
     furtherReading: [
       {
         type: "read",
@@ -2383,6 +2572,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G4",
@@ -2412,7 +2602,7 @@ export const NODES: Node[] = [
       explanation:
         "Skip connections allow gradients to bypass layers during training, solving the vanishing gradient problem and enabling the creation of neural networks hundreds of layers deep.",
     },
-    related: [],
+    related: ["G1", "G2", "G3"],
     furtherReading: [
       {
         type: "read",
@@ -2434,6 +2624,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G5",
@@ -2464,7 +2655,7 @@ export const NODES: Node[] = [
       explanation:
         "The Transformer architecture discarded slow, sequential recurrent networks in favor of a 'self-attention' mechanism that processes all tokens simultaneously, making it highly scalable on parallel hardware.",
     },
-    related: [],
+    related: ["G1", "G2", "G3"],
     furtherReading: [
       {
         type: "read",
@@ -2482,6 +2673,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G6",
@@ -2511,7 +2703,7 @@ export const NODES: Node[] = [
       explanation:
         "GPT-3 proved that if a language model is scaled massively, it develops the emergent ability to perform new tasks simply by reading instructions in the prompt, without needing to be retrained.",
     },
-    related: [],
+    related: ["G1", "G2", "G3"],
     furtherReading: [
       {
         type: "read",
@@ -2529,6 +2721,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G7",
@@ -2559,7 +2752,7 @@ export const NODES: Node[] = [
       explanation:
         "The initial scaling laws suggested that throwing more compute at a larger model was the best way to improve performance, though this was later corrected to show data must scale equally.",
     },
-    related: [],
+    related: ["G1", "G2", "G3"],
     furtherReading: [
       {
         type: "read",
@@ -2577,6 +2770,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G8",
@@ -2607,7 +2801,7 @@ export const NODES: Node[] = [
       explanation:
         "DeepMind's Chinchilla paper corrected earlier scaling laws, proving that the industry was building massive models that were severely 'undertrained' on too little data.",
     },
-    related: [],
+    related: ["G1", "G2", "G3"],
     furtherReading: [
       {
         type: "read",
@@ -2629,6 +2823,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G9",
@@ -2659,7 +2854,7 @@ export const NODES: Node[] = [
       explanation:
         "DeepSeek-R1 showed that you can induce complex reasoning in a model not by painstakingly labeling human thought processes, but by using reinforcement learning to heavily reward correct outcomes.",
     },
-    related: [],
+    related: ["G1", "G2", "G3"],
     furtherReading: [
       {
         type: "read",
@@ -2677,6 +2872,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "G10",
@@ -2707,7 +2903,7 @@ export const NODES: Node[] = [
       explanation:
         "Human intuition and hand-crafted rules in AI always eventually lose to general methods (like deep learning and search) that can scale infinitely with Moore's Law.",
     },
-    related: [],
+    related: ["G1", "G2", "G3"],
     furtherReading: [
       {
         type: "read",
@@ -2725,6 +2921,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H1",
@@ -2755,7 +2952,7 @@ export const NODES: Node[] = [
       explanation:
         "Proof-of-work solves the double-spending problem by requiring massive computational energy to alter the ledger, making it economically infeasible for an attacker to rewrite the history of transactions.",
     },
-    related: [],
+    related: ["H2", "H3", "H4"],
     furtherReading: [
       {
         type: "read",
@@ -2777,6 +2974,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H2",
@@ -2807,7 +3005,7 @@ export const NODES: Node[] = [
       explanation:
         "Historically, money evolves in stages: first as a collectible, then as a store of value, and finally as a medium of exchange. Criticizing Bitcoin for not yet being a medium of exchange ignores this natural progression.",
     },
-    related: [],
+    related: ["H1", "H3", "H4"],
     furtherReading: [
       {
         type: "read",
@@ -2825,6 +3023,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H3",
@@ -2855,7 +3054,7 @@ export const NODES: Node[] = [
       explanation:
         "To prevent malicious actors from running infinite loops on a global, decentralized computer, Ethereum requires users to pay 'gas'—a fee proportional to the computational complexity of their code.",
     },
-    related: [],
+    related: ["H1", "H2", "H4"],
     furtherReading: [
       {
         type: "read",
@@ -2873,6 +3072,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H4",
@@ -2903,7 +3103,7 @@ export const NODES: Node[] = [
       explanation:
         "In Web2, value accumulated at the application layer (Facebook, Google). In Web3, open data means the application layer is thin, and the vast majority of the value accumulates to the underlying base protocols (like Ethereum or Bitcoin).",
     },
-    related: [],
+    related: ["H1", "H2", "H3"],
     furtherReading: [
       {
         type: "read",
@@ -2921,6 +3121,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H5",
@@ -2951,7 +3152,7 @@ export const NODES: Node[] = [
       explanation:
         "Instead of matching buyers and sellers, an AMM allows users to trade directly against a liquidity pool governed by a constant product formula, dynamically adjusting prices based on supply and demand.",
     },
-    related: [],
+    related: ["H1", "H2", "H3"],
     furtherReading: [
       {
         type: "read",
@@ -2969,6 +3170,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H6",
@@ -2998,7 +3200,7 @@ export const NODES: Node[] = [
       explanation:
         "Proof of History creates a cryptographic clock for the network. By allowing nodes to trust the timestamp of events, Solana avoids the massive communication delays required for consensus, unlocking high throughput.",
     },
-    related: [],
+    related: ["H1", "H2", "H3"],
     furtherReading: [
       {
         type: "read",
@@ -3016,6 +3218,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H7",
@@ -3046,7 +3249,7 @@ export const NODES: Node[] = [
       explanation:
         "Centralized platforms initially attract users and developers, but eventually hit a growth ceiling. At that point, they invariably extract value from the ecosystem, destroying the developers who built on them.",
     },
-    related: [],
+    related: ["H1", "H2", "H3"],
     furtherReading: [
       {
         type: "read",
@@ -3064,6 +3267,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "H8",
@@ -3093,7 +3297,7 @@ export const NODES: Node[] = [
       explanation:
         "SPACs bypass the traditional IPO roadshow and allow companies to market themselves using future financial projections, which supporters argue democratizes early-stage investment for retail investors.",
     },
-    related: [],
+    related: ["H1", "H2", "H3"],
     furtherReading: [
       {
         type: "read",
@@ -3115,6 +3319,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Crypto & Trust"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I1",
@@ -3126,8 +3331,14 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Disruptive innovations are dismissed as toys because they underperform on established metrics while excelling on new ones.",
-    related: [],
-    furtherReading: [],
+    related: ["I2", "I3", "I4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Chris Dixon's famous essay argues that truly disruptive technologies are initially dismissed by incumbents because they look like low-quality toys. They lack the features needed by demanding mainstream users, but they improve exponentially.",
@@ -3146,6 +3357,7 @@ export const NODES: Node[] = [
       explanation:
         "Incumbents are economically incentivized to ignore 'toys' because their best customers don't want them and the margins are initially terrible.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I2",
@@ -3157,8 +3369,14 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Every company is becoming a software company; software firms will disrupt incumbents across every industry.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I3", "I4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "In 2011, Marc Andreessen published an essay declaring that all traditional industries—from movies to agriculture to national defense—were being disrupted and taken over by software companies.",
@@ -3177,6 +3395,7 @@ export const NODES: Node[] = [
       explanation:
         "Unlike physical goods, once software is written, distributing the second copy or the billionth copy costs essentially nothing, allowing for unprecedented global scaling.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I3",
@@ -3188,8 +3407,14 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "Mobile is the largest computing platform ever and is subsuming every other technology and industry.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I4"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "A follow-up to Andreessen's thesis, Benedict Evans presented 'Mobile is Eating the World', arguing that the smartphone was the most universally adopted technology in human history, fundamentally changing how computing is consumed.",
@@ -3209,6 +3434,7 @@ export const NODES: Node[] = [
       explanation:
         "The sheer scale (5 billion vs 1.5 billion) and the constant, sensor-rich presence of the smartphone allowed it to penetrate aspects of the real world that a desktop PC never could.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I4",
@@ -3220,8 +3446,14 @@ export const NODES: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Venture abandoned hard technology for trivial consumer apps; 'we wanted flying cars, instead we got 140 characters.'",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Peter Thiel and Founders Fund published a manifesto titled 'What Happened to the Future?', famously stating: 'We wanted flying cars, instead we got 140 characters.' It was a critique of the venture capital industry's shift away from hard technology.",
@@ -3240,6 +3472,7 @@ export const NODES: Node[] = [
       explanation:
         "Thiel argued that investors had abandoned hard technological problems (aerospace, energy) in favor of easy, low-risk consumer internet apps (like Twitter).",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I5",
@@ -3251,8 +3484,14 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "Open-source and cloud infrastructure are reshaping enterprise software economics and buying.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Battery Ventures' OpenCloud report tracks the transition of enterprise software from rigid, on-premise servers to flexible, open-source cloud infrastructure, completely altering the economics of B2B software.",
@@ -3271,6 +3510,7 @@ export const NODES: Node[] = [
       explanation:
         "Bottom-up adoption bypasses the traditional executive sales pitch; it wins the hearts of the actual end-users (developers) first, making the software viral inside the organization.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I6",
@@ -3282,8 +3522,14 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "Disruptive innovation platforms (AI, robotics, genomics, crypto, energy storage) will compound explosively.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "ARK Invest publishes an annual 'Big Ideas' report outlining the convergence of disruptive technologies. They argue that when multiple exponential technologies (like AI, robotics, and genomics) intersect, the rate of innovation multiplies.",
@@ -3299,6 +3545,7 @@ export const NODES: Node[] = [
       explanation:
         "While similar to Moore's Law (which is about time), Wright's Law states that costs decline as a function of cumulative production volume, making it highly applicable to hardware like batteries and robots.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I7",
@@ -3310,8 +3557,14 @@ export const NODES: Node[] = [
     category: "Sector Report",
     thesis:
       "An annual data-dense synthesis of global internet adoption, usage, and monetization trends.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Mary Meeker's legendary annual Internet Trends Report was the definitive scorecard for the tech industry, meticulously tracking global internet adoption, mobile usage, and digital advertising shifts.",
@@ -3330,6 +3583,7 @@ export const NODES: Node[] = [
       explanation:
         "Meeker proved that advertisers were stubbornly spending money on legacy media (print/TV) while consumers had already migrated their attention to mobile, highlighting a massive mispricing of ad inventory.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I8",
@@ -3340,8 +3594,14 @@ export const NODES: Node[] = [
     medium: "Deck",
     category: "Sector Report",
     thesis: "AI adoption and capex are scaling faster than any prior technology wave in history.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "A high-level overview of the accelerating trends in Artificial Intelligence, charting the exponential growth of compute, the collapsing cost of intelligence, and the rapid deployment of foundational models into the broader economy.",
@@ -3360,6 +3620,7 @@ export const NODES: Node[] = [
       explanation:
         "As AI improves exponentially, the cost of performing cognitive tasks (like writing code or analyzing legal documents) drops toward zero, fundamentally altering the global labor market.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I9",
@@ -3371,8 +3632,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "The Information Age will dissolve the nation-state's power and empower mobile, digitally-sovereign individuals.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Written in 1997, this prophetic book argues that the information age will destroy the nation-state. Just as the printing press destroyed the monopoly of the Church, cryptographic technology and the internet will destroy the state's monopoly on violence and taxation.",
@@ -3392,6 +3659,7 @@ export const NODES: Node[] = [
       explanation:
         "Cryptography allows individuals to protect and transport their wealth instantly without the permission of the state, destroying the government's ability to coerce its citizens through taxation and asset seizure.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I10",
@@ -3403,8 +3671,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "True progress is vertical (0 to 1) via monopoly-creating innovation, not horizontal copying (1 to n).",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Peter Thiel argues that true progress comes from creating something entirely new (going from 0 to 1), rather than copying existing models (going from 1 to n). The goal of a startup should be to build a monopoly, not to compete.",
@@ -3423,6 +3697,7 @@ export const NODES: Node[] = [
       explanation:
         "Thiel argues that competition destroys profits. A startup should aim to be a monopoly in a small, highly specific market, allowing it to generate the surplus cash needed to eventually expand.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I11",
@@ -3434,8 +3709,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Multipolar traps and coordination failures ('Moloch') drive races to the bottom across civilization.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Scott Alexander's famous essay uses the ancient Canaanite god 'Moloch' as a metaphor for multipolar traps—situations where individual rational incentives inevitably lead to a globally catastrophic outcome for everyone.",
@@ -3454,6 +3735,7 @@ export const NODES: Node[] = [
       explanation:
         "Moloch is a metaphor for the tragic structural traps where everyone acts rationally for their own survival, but the collective result is a nightmare nobody wanted.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I12",
@@ -3465,8 +3747,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "A machine superintelligence could rapidly become uncontrollable and poses an existential risk to humanity.",
-    related: ["Z5"],
-    furtherReading: [],
+    related: ["Z5", "I1", "I2"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Nick Bostrom's foundational book on AI safety. He argues that if we successfully create an Artificial General Intelligence (AGI) that surpasses human intelligence, it poses an existential risk to humanity unless its goals are perfectly aligned with our own.",
@@ -3485,6 +3773,7 @@ export const NODES: Node[] = [
       explanation:
         "The Orthogonality Thesis states that you can have a hyper-intelligent AI whose final goal is something completely trivial or alien, like maximizing the production of paperclips.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I13",
@@ -3496,8 +3785,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "We should study the causes of scientific and economic progress as a rigorous discipline to accelerate it.",
-    related: ["Z6"],
-    furtherReading: [],
+    related: ["Z6", "I1", "I2"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Patrick Collison and Tyler Cowen argue that 'Progress'—the economic, technological, and scientific advancement of humanity—should be studied as a dedicated academic discipline, because our current rate of progress is stalling.",
@@ -3516,6 +3811,7 @@ export const NODES: Node[] = [
       explanation:
         "Collison and Cowen argue that we take progress for granted, but it's actually slowing down in many areas. We need to study the 'mechanics' of progress to intentionally speed it up again.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I14",
@@ -3527,8 +3823,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Future people matter morally; positively influencing the long-term future is a key moral priority (longtermism).",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "William MacAskill's manifesto for 'Longtermism'—the ethical view that positively influencing the long-term future is the key moral priority of our time. He argues we must protect the trillions of humans who have not yet been born.",
@@ -3547,6 +3849,7 @@ export const NODES: Node[] = [
       explanation:
         "Longtermism argues that because the future population of humanity could be astronomically large, our greatest moral duty is to protect that potential by preventing existential risks.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I15",
@@ -3558,8 +3861,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Aligning superintelligent AI is unsolved and likely fatal by default; current efforts are inadequate.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Eliezer Yudkowsky's brutally pessimistic essay outlining why he believes humanity is almost certainly going to be wiped out by Artificial General Intelligence (AGI). He argues that the alignment problem is too hard and we are running out of time.",
@@ -3578,6 +3887,7 @@ export const NODES: Node[] = [
       explanation:
         "Yudkowsky argues that building a superintelligent AI is easier than teaching it human ethics, meaning the default outcome is that we build something vastly smarter than us that doesn't care if we live or die.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I16",
@@ -3589,8 +3899,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Transformative AI could make this the most pivotal century in human history, warranting outsized attention.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Holden Karnofsky's series arguing that the 21st century is the most important period in the history (and future) of humanity, primarily because we will likely invent Transformative AI (TAI).",
@@ -3609,6 +3925,7 @@ export const NODES: Node[] = [
       explanation:
         "Karnofsky believes the invention of AI that can automate scientific research will trigger a rapid transition to a galaxy-spanning civilization, making this century the crucial pivot point for all future history.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I17",
@@ -3620,8 +3937,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Intelligence may emerge from scaling up compute and data. GPT-3 shows the hypothesis holds.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Gwern Branwen's essay explaining why Deep Learning took over AI. The 'Scaling Hypothesis' posits that simply throwing exponentially more compute and data at simple neural network architectures (like Transformers) will inevitably lead to Artificial General Intelligence (AGI).",
@@ -3640,6 +3963,7 @@ export const NODES: Node[] = [
       explanation:
         "The hypothesis argues that we don't need fundamentally new paradigms of cognitive science; we just need to keep scaling up the size of models (like Transformers) and the compute used to train them.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I18",
@@ -3651,8 +3975,14 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "AGI by ~2027 and superintelligence shortly after will trigger a trillion-dollar compute buildout and a US-China race.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Leopold Aschenbrenner's viral 2024 essay predicting that Artificial General Intelligence (AGI) is imminent (by ~2027) and will trigger an explosive national security crisis and a literal intelligence explosion.",
@@ -3672,6 +4002,7 @@ export const NODES: Node[] = [
       explanation:
         "Aschenbrenner argues that AGI won't just be a tool; it will be an automated researcher that rapidly improves itself, turning AI from a Silicon Valley product into the most critical national security asset in history.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I19",
@@ -3683,8 +4014,14 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "Powerful AI could compress a century of scientific progress into a decade, curing disease and transforming society.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Dario Amodei's (CEO of Anthropic) optimistic vision for a post-AGI world. He details how powerful AI could radically accelerate biology, neuroscience, and economic development, creating a utopia if we manage the safety risks.",
@@ -3703,6 +4040,7 @@ export const NODES: Node[] = [
       explanation:
         "Unlike Yudkowsky's pessimistic essays, Amodei focuses on the massive upside of AGI, arguing it could compress a century of medical and scientific progress into a few years if managed safely.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I20",
@@ -3714,8 +4052,14 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "AI will augment human intelligence and improve nearly everything it touches, and fears of civilizational risk are misplaced.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Marc Andreessen's provocative essay arguing that AI is not a threat to humanity, but rather a profoundly empowering tool that will drive an era of unprecedented economic growth and human capability.",
@@ -3735,6 +4079,7 @@ export const NODES: Node[] = [
       explanation:
         "Andreessen rejects the idea that AI has agency or a desire to harm us. He views it simply as the most powerful tool ever created to amplify human potential and solve real-world problems.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I21",
@@ -3746,8 +4091,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "Technology and markets are the engines of human flourishing; stagnation and de-growth are the real enemies.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Marc Andreessen's fiery manifesto declaring that technology and free markets are the only true sources of human progress. It is a direct attack on the ideologies of stagnation, degrowth, and technological pessimism.",
@@ -3766,6 +4117,7 @@ export const NODES: Node[] = [
       explanation:
         "The manifesto violently rejects the idea that we should slow down progress due to hypothetical risks or environmental 'degrowth,' arguing instead for radical acceleration.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I22",
@@ -3777,8 +4129,14 @@ export const NODES: Node[] = [
     category: "AI Essay",
     thesis:
       "AI will drive the cost of goods and labor toward zero, requiring a new social contract to distribute the wealth.",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "Sam Altman's 2021 essay predicting that AI will trigger a massive deflationary shock, making the cost of goods, services, and labor plummet. He proposes radical economic restructuring, like a tax on capital and land to fund a universal basic dividend.",
@@ -3797,6 +4155,7 @@ export const NODES: Node[] = [
       explanation:
         "Because AI will make traditional human labor obsolete and worthless, Altman argues we have to tax the things that hold value (capital and land) to fund society.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "I23",
@@ -3808,8 +4167,14 @@ export const NODES: Node[] = [
     category: "Worldview",
     thesis:
       "A much smaller team paired with AI can do more and do it better, so Block cut ~40% of staff to rebuild 'intelligence-native.'",
-    related: [],
-    furtherReading: [],
+    related: ["I1", "I2", "I3"],
+    furtherReading: [
+      {
+        label: "Exploring this topic further",
+        source: "Google Scholar",
+        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+      },
+    ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
     layer0:
       "A conceptual piece on how a major fintech company (Block/Square) theoretically reorganizes its entire architecture to be 'intelligence-native' rather than just 'software-native.'",
@@ -3829,6 +4194,7 @@ export const NODES: Node[] = [
       explanation:
         "An intelligence-native company doesn't just bolt AI onto its product; it replaces the core hard-coded logic of its operations with dynamic, probabilistic AI models.",
     },
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J1",
@@ -3858,7 +4224,7 @@ export const NODES: Node[] = [
         "Inversion forces you to look at a problem backwards. Instead of asking how to achieve a goal, you ask what actions would guarantee failure, and then carefully avoid doing those things.",
     },
     tags: ["First-Principles Thinking"],
-    related: ["B2"],
+    related: ["B2", "J5", "J7"],
     furtherReading: [
       {
         label: "Poor Charlie's Almanack",
@@ -3867,6 +4233,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J2",
@@ -3906,6 +4273,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/J2-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J3",
@@ -3948,6 +4316,7 @@ export const NODES: Node[] = [
         },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J4",
@@ -3987,6 +4356,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/J4-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "K1",
@@ -4025,6 +4395,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K1-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "K2",
@@ -4064,6 +4435,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K2-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "K3",
@@ -4102,6 +4474,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K3-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "K4",
@@ -4140,6 +4513,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/K4-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "L1",
@@ -4173,6 +4547,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/L1-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "L2",
@@ -4215,6 +4590,7 @@ export const NODES: Node[] = [
         },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "L3",
@@ -4254,6 +4630,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "L4",
@@ -4292,6 +4669,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/L4-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "M1",
@@ -4322,7 +4700,7 @@ export const NODES: Node[] = [
         "When a measure becomes a target, people will optimize for the metric at the expense of the actual goal, ultimately destroying the system the metric was designed to improve.",
     },
     tags: ["Incentives & Systems"],
-    related: ["F3", "W4"],
+    related: ["F3", "W4", "M3"],
     furtherReading: [
       {
         label: "Goodhart's Law: Its Origins, Meaning, and Implications",
@@ -4331,6 +4709,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/M1-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "M2",
@@ -4370,6 +4749,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/M2-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "M3",
@@ -4399,7 +4779,7 @@ export const NODES: Node[] = [
         "The principal (owner) and the agent (manager) have misaligned incentives. Agents will naturally optimize for their own career or comfort unless compensated in a way that directly ties their success to the principal's success.",
     },
     tags: ["Incentives & Systems", "Crypto & Trust"],
-    related: ["F3", "W4"],
+    related: ["F3", "W4", "M1"],
     furtherReading: [
       {
         label: "Theory of the Firm",
@@ -4412,6 +4792,7 @@ export const NODES: Node[] = [
         },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "M4",
@@ -4442,7 +4823,7 @@ export const NODES: Node[] = [
         "The Cobra Effect occurs when a well-intentioned incentive actually rewards the behavior it was trying to eliminate, causing the problem to actively multiply.",
     },
     tags: ["Incentives & Systems"],
-    related: ["F3", "E1"],
+    related: ["F3", "E1", "M1"],
     furtherReading: [
       {
         label: "The Cobra Effect",
@@ -4451,6 +4832,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "N1",
@@ -4490,6 +4872,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/N1-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "N2",
@@ -4528,6 +4911,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/N2-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "N3",
@@ -4558,7 +4942,7 @@ export const NODES: Node[] = [
         "Obsession provides an irrational endurance that discipline alone can't match, allowing you to tinker and explore long enough to eventually stumble upon genius-level insights.",
     },
     tags: ["Craft & Deep Work"],
-    related: ["B6", "H4"],
+    related: ["B6", "H4", "N1"],
     furtherReading: [
       {
         label: "The Bus Ticket Theory of Genius",
@@ -4567,6 +4951,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/N3-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "N4",
@@ -4605,6 +4990,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/N4-0.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J5",
@@ -4636,7 +5022,7 @@ export const NODES: Node[] = [
         "Munger's speech popularized the idea that isolated facts are useless; intelligence comes from hanging facts on a 'latticework' of fundamental principles drawn from multiple disciplines.",
     },
     tags: ["First-Principles Thinking"],
-    related: ["B6"],
+    related: ["B6", "J1", "J7"],
     furtherReading: [
       {
         label: "A Lesson on Elementary, Worldly Wisdom (full transcript)",
@@ -4652,6 +5038,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J6",
@@ -4698,6 +5085,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J7",
@@ -4729,7 +5117,7 @@ export const NODES: Node[] = [
         "The dropped match was merely the trigger; the disaster's true root cause was systemic organizational failure and a total lack of safety training, which guaranteed a disaster would happen eventually.",
     },
     tags: ["First-Principles Thinking"],
-    related: [],
+    related: ["J1", "J5", "J10"],
     furtherReading: [
       {
         label: "Understanding the Limitations of Maps",
@@ -4744,6 +5132,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J8",
@@ -4774,7 +5163,7 @@ export const NODES: Node[] = [
         "Lorenz proved that complex, non-linear systems like the weather are highly sensitive to initial conditions, meaning that long-term prediction is fundamentally impossible no matter how good the model is.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label: "Deterministic Nonperiodic Flow (Lorenz's original 1963 paper)",
@@ -4789,6 +5178,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J9",
@@ -4834,6 +5224,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J10",
@@ -4880,6 +5271,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J11",
@@ -4926,6 +5318,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J12",
@@ -4956,7 +5349,7 @@ export const NODES: Node[] = [
         "Rapoport formalized 'tit for tat'—cooperate on the first move, then replicate your opponent's previous move—proving that a simple, forgiving, but retaliatory strategy is mathematically optimal.",
     },
     tags: ["Incentives & Systems"],
-    related: ["E1"],
+    related: ["E1", "J13", "J25"],
     furtherReading: [
       {
         label: "Reciprocity (the related mental model)",
@@ -4972,6 +5365,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J13",
@@ -5003,7 +5397,7 @@ export const NODES: Node[] = [
         "In a one-off game, rational players defect to protect themselves. But when the game is repeated indefinitely, the long-term rewards of cooperation outweigh the short-term payoff of betrayal.",
     },
     tags: ["Incentives & Systems"],
-    related: ["E1"],
+    related: ["E1", "J12", "J25"],
     furtherReading: [
       {
         label: "The Surprising Power of the Long Game (related Farnam Street piece)",
@@ -5019,6 +5413,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J14",
@@ -5065,6 +5460,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J15",
@@ -5096,7 +5492,7 @@ export const NODES: Node[] = [
         "Bayes' Theorem forces us to remember the base rate. Even an accurate test will produce mostly false alarms if it's screening for an extremely rare condition in a massive population.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label: "Bayes and Deadweight: Using Statistics to Eject the Deadweight From Your Life",
@@ -5111,6 +5507,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J16",
@@ -5158,6 +5555,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J17",
@@ -5189,7 +5587,7 @@ export const NODES: Node[] = [
         "Occam's Razor isn't a rule of nature, but a heuristic for efficiency: always test the most likely, simplest explanation (horses) before assuming a complex, exotic one (zebras).",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label: "Hanlon's Razor (the complementary mental model)",
@@ -5205,6 +5603,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J18",
@@ -5236,7 +5635,7 @@ export const NODES: Node[] = [
         "Sherlock Holmes rarely uses true deduction (which guarantees a true conclusion). He uses induction (and abduction), observing specific clues to construct the most highly probable hypothesis.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label: "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
@@ -5252,6 +5651,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J19",
@@ -5283,7 +5683,7 @@ export const NODES: Node[] = [
         "Wald realized the military was looking only at the 'winners' (the planes that survived). The damage on returning planes showed where a plane could be hit and still survive; the unharmed areas were where the fatal hits occurred.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label: "What Sharks (and Building Bombers) Teach Us About Survivorship Bias",
@@ -5299,6 +5699,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J20",
@@ -5330,7 +5731,7 @@ export const NODES: Node[] = [
         "Because whitetip attacks usually happen far out at sea where there are no survivors to report them, our data is biased toward coastal sharks, causing us to drastically underestimate the whitetip's danger.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label: "Survivorship Bias: The Tale of Forgotten Failures",
@@ -5345,6 +5746,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J21",
@@ -5376,7 +5778,7 @@ export const NODES: Node[] = [
         "We feel our internal emotions so intensely that we falsely assume they are obvious to everyone else. In reality, other people are barely paying attention.",
     },
     tags: ["Cognitive Biases & Models", "Power & Persuasion"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J4"],
     furtherReading: [
       {
         label: "Hanlon's Razor",
@@ -5392,6 +5794,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J22",
@@ -5423,7 +5826,7 @@ export const NODES: Node[] = [
         "Psychology often makes sweeping claims about 'human nature' based almost entirely on studies of college students in wealthy Western countries, ignoring massive cultural variations.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label: "Bias From Insensitivity to Sample Size",
@@ -5439,6 +5842,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J23",
@@ -5470,7 +5874,7 @@ export const NODES: Node[] = [
         "By visualizing himself riding alongside a light beam, Einstein exposed paradoxes in classical physics that couldn't be resolved without completely reimagining space and time.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4"],
+    related: ["D3", "H4", "J2"],
     furtherReading: [
       {
         label:
@@ -5486,6 +5890,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J24",
@@ -5517,7 +5922,7 @@ export const NODES: Node[] = [
         "Child didn't just memorize recipes; she deconstructed French cooking down to its fundamental techniques (knife skills, heat control), allowing her to build up any dish from scratch.",
     },
     tags: ["First-Principles Thinking", "Craft & Deep Work"],
-    related: ["H1"],
+    related: ["H1", "J1", "J5"],
     furtherReading: [
       {
         label: "First Principles: The Building Blocks of True Knowledge",
@@ -5533,6 +5938,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J25",
@@ -5564,7 +5970,7 @@ export const NODES: Node[] = [
         "The Egyptian-Hittite treaty demonstrates that the most durable reciprocity isn't based on altruism, but on aligned incentives and mutual self-interest between powerful equals.",
     },
     tags: ["Incentives & Systems", "Power & Persuasion"],
-    related: ["E1"],
+    related: ["E1", "J4", "J12"],
     furtherReading: [
       {
         label: "Tit For Tat",
@@ -5579,6 +5985,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J26",
@@ -5625,6 +6032,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J27",
@@ -5655,7 +6063,7 @@ export const NODES: Node[] = [
         "Just as feathers evolved for warmth but were exapted for flight, skills you develop in one career (like communication or systems thinking) can be unexpectedly repurposed as massive advantages in a new field.",
     },
     tags: ["First-Principles Thinking"],
-    related: [],
+    related: ["J1", "J5", "J7"],
     furtherReading: [
       {
         label: "Inversion",
@@ -5670,6 +6078,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J28",
@@ -5700,7 +6109,7 @@ export const NODES: Node[] = [
         "Fairness doesn't mean giving identical treatment. Algebraic equivalence reminds us that children have different needs, and providing different inputs can result in an equal output of love and support.",
     },
     tags: ["First-Principles Thinking"],
-    related: [],
+    related: ["J1", "J5", "J7"],
     furtherReading: [
       {
         label: "Inversion",
@@ -5715,6 +6124,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J29",
@@ -5761,6 +6171,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "J30",
@@ -5808,6 +6219,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "L5",
@@ -5858,6 +6270,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "L6",
@@ -5903,6 +6316,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O1",
@@ -5948,6 +6362,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O1-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O2",
@@ -5994,6 +6409,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O2-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O3",
@@ -6040,6 +6456,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O3-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O4",
@@ -6066,7 +6483,7 @@ export const NODES: Node[] = [
         "Dawkins introduced the 'meme' as the cultural equivalent of a gene: a unit of information that competes, replicates, and evolves through human minds purely for its own survival.",
     },
     tags: ["Incentives & Systems", "Meaning & Self"],
-    related: ["E1"],
+    related: ["E1", "O22", "O23"],
     furtherReading: [
       {
         label: "Richard Dawkins — The Selfish Gene explained",
@@ -6081,6 +6498,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O4-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O5",
@@ -6122,6 +6540,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O5-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O6",
@@ -6167,6 +6586,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O6-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "P1",
@@ -6213,6 +6633,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/P1-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "P2",
@@ -6239,7 +6660,7 @@ export const NODES: Node[] = [
         "Code and media are the highest forms of modern leverage because they cost nothing to duplicate. Unlike capital or labor, you don't need anyone's permission to create them.",
     },
     tags: ["Wealth, Leverage & Judgment"],
-    related: ["A7", "O3"],
+    related: ["A7", "O3", "P1"],
     furtherReading: [
       {
         label: "How to Get Rich by Naval Ravikant (Deep Summary + Infographic)",
@@ -6254,6 +6675,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "P3",
@@ -6301,6 +6723,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "P4",
@@ -6331,7 +6754,7 @@ export const NODES: Node[] = [
         "Naval reframes happiness not as a state of constant excitement, but as the absence of desire. When you stop wanting things to be different than they are, you achieve peace.",
     },
     tags: ["Meaning & Self"],
-    related: ["N1", "O5"],
+    related: ["N1", "O5", "P1"],
     furtherReading: [
       {
         label: "Happiness According To Naval Ravikant",
@@ -6346,6 +6769,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "P5",
@@ -6387,6 +6811,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "P6",
@@ -6433,6 +6858,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/P6-1.md", retrieved: "2026-07-14" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "Q1",
@@ -6459,7 +6885,7 @@ export const NODES: Node[] = [
         "Carnegie's book struck a massive nerve during the Great Depression, selling 250,000 copies almost instantly by teaching people that soft skills and likability were the true engines of career success.",
     },
     tags: ["Power & Persuasion", "Health & Body"],
-    related: ["B4", "P2"],
+    related: ["B4", "P2", "Q2"],
     furtherReading: [
       {
         label: "How to Win Friends and Influence People",
@@ -6474,6 +6900,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "Q2",
@@ -6504,7 +6931,7 @@ export const NODES: Node[] = [
         "Because it strips away moralizing and explains human manipulation in ruthless, tactical terms, the book is viewed as a dangerous manual for coercion and is heavily restricted in prisons.",
     },
     tags: ["Power & Persuasion", "Health & Body"],
-    related: ["B4", "P3"],
+    related: ["B4", "P3", "Q1"],
     furtherReading: [
       {
         label: "The 48 Laws of Power",
@@ -6519,6 +6946,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "Q3",
@@ -6565,6 +6993,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "Q4",
@@ -6596,7 +7025,7 @@ export const NODES: Node[] = [
         "Despite dominating education policy for a decade, rigorous independent replication studies showed that briefly teaching students about the 'growth mindset' had almost zero impact on actual academic performance.",
     },
     tags: ["Craft & Deep Work", "Health & Body"],
-    related: ["B6", "P5"],
+    related: ["B6", "P5", "Q6"],
     furtherReading: [
       {
         label: "Debate Arises over Teaching 'Growth Mindsets' to Motivate Students",
@@ -6611,6 +7040,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "Q5",
@@ -6657,6 +7087,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "Q6",
@@ -6688,7 +7119,7 @@ export const NODES: Node[] = [
         "Duckworth later clarified that the media overhyped grit. In rigorous personality psychology terms, grit is just a facet of conscientiousness, and its independent effect on success is relatively modest.",
     },
     tags: ["Craft & Deep Work", "Health & Body"],
-    related: ["B6", "P1"],
+    related: ["B6", "P1", "Q4"],
     furtherReading: [
       {
         label: "MacArthur 'Genius' Angela Duckworth Responds To A New Critique Of Grit",
@@ -6703,6 +7134,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O7",
@@ -6748,6 +7180,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O7-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O8",
@@ -6778,7 +7211,7 @@ export const NODES: Node[] = [
         "Kierkegaard defines despair not as sadness, but as a spiritual misalignment—a refusal to be one's true self. Because it's a structural condition, people can be in profound despair while outwardly appearing happy.",
     },
     tags: ["Meaning & Self"],
-    related: ["O7", "O5"],
+    related: ["O7", "O5", "O1"],
     furtherReading: [
       {
         label: "D. Anthony Storm's Commentary on The Sickness Unto Death",
@@ -6793,6 +7226,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O8-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O9",
@@ -6824,7 +7258,7 @@ export const NODES: Node[] = [
         "Beauvoir tackled the biggest critique of existentialism: if there is no objective morality, why not be evil? She argued that since our freedom depends on the freedom of others, to oppress others is to contradict our own existence.",
     },
     tags: ["Meaning & Self"],
-    related: ["O7", "O1"],
+    related: ["O7", "O1", "O2"],
     furtherReading: [
       {
         label: "The Ethics of Ambiguity (full text)",
@@ -6839,6 +7273,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O9-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O10",
@@ -6869,7 +7304,7 @@ export const NODES: Node[] = [
         "As the most powerful man in the world, Marcus Aurelius wrote to himself to maintain perspective, relentlessly practicing the Stoic discipline of ignoring external chaos and mastering his internal judgments.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["O11"],
+    related: ["O11", "O16", "O17"],
     furtherReading: [
       {
         label: "Meditations (full text)",
@@ -6884,6 +7319,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O10-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O11",
@@ -6914,7 +7350,7 @@ export const NODES: Node[] = [
         "Seneca pointed out the absurdity of how fiercely people protect their money, while freely giving away their time to trivialities, dread, and the demands of others.",
     },
     tags: ["Meaning & Self", "Compounding & Patience"],
-    related: ["O10"],
+    related: ["O10", "O1", "O2"],
     furtherReading: [
       {
         label: "Letters from a Stoic (selection)",
@@ -6929,6 +7365,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O11-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O12",
@@ -6959,7 +7396,7 @@ export const NODES: Node[] = [
         "The Taoist concept of Wu Wei (non-action) doesn't mean doing nothing; it means acting effortlessly in alignment with the natural flow of things, much like water carving through rock by yielding to gravity.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["O13"],
+    related: ["O13", "O19", "O20"],
     furtherReading: [
       {
         label: "Tao Te Ching (Legge translation, full text)",
@@ -6974,6 +7411,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O12-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O13",
@@ -7004,7 +7442,7 @@ export const NODES: Node[] = [
         "The core of Buddhist psychology is that all things are transient. Suffering arises when we cling to temporary pleasures or desperately push away temporary pains, rather than accepting the flux.",
     },
     tags: ["Meaning & Self"],
-    related: ["O12"],
+    related: ["O12", "O1", "O2"],
     furtherReading: [
       {
         label: "The Dhammapada (Buddharakkhita translation)",
@@ -7019,6 +7457,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O13-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O14",
@@ -7064,6 +7503,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O14-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O15",
@@ -7109,6 +7549,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O15-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O16",
@@ -7139,7 +7580,7 @@ export const NODES: Node[] = [
         "Mill's ethical framework bypasses divine rules and focuses purely on consequences: an action is morally right only if it maximizes the total aggregate well-being and minimizes total suffering.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["O17", "O18"],
+    related: ["O17", "O18", "O10"],
     furtherReading: [
       {
         label: "Utilitarianism (full text)",
@@ -7154,6 +7595,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O16-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O17",
@@ -7184,7 +7626,7 @@ export const NODES: Node[] = [
         "Kant argued that morality must be based on pure reason, not outcomes. The Categorical Imperative demands that you only act according to rules that you would logically want everyone else in the world to follow.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["O16", "O18"],
+    related: ["O16", "O18", "O10"],
     furtherReading: [
       {
         label: "Groundwork of the Metaphysics of Morals (full text)",
@@ -7199,6 +7641,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O17-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O18",
@@ -7229,7 +7672,7 @@ export const NODES: Node[] = [
         "Aristotle didn't believe we are born good or bad. He argued that virtue is a practical skill, forged through habituation, aimed at finding the golden mean between two extremes of behavior.",
     },
     tags: ["Meaning & Self", "Craft & Deep Work"],
-    related: ["O16", "O17"],
+    related: ["O16", "O17", "O1"],
     furtherReading: [
       {
         label: "Nicomachean Ethics (full text)",
@@ -7244,6 +7687,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O18-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O19",
@@ -7274,7 +7718,7 @@ export const NODES: Node[] = [
         "Locke argued against the prevailing idea of 'innate concepts' (like God or morality), insisting the mind is a tabula rasa (blank slate) that only acquires knowledge through sensory experience.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["O20", "O21"],
+    related: ["O20", "O21", "O12"],
     furtherReading: [
       {
         label: "An Essay Concerning Human Understanding (full text)",
@@ -7289,6 +7733,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O19-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O20",
@@ -7319,7 +7764,7 @@ export const NODES: Node[] = [
         "After doubting everything—his senses, his memory, the physical world—Descartes realized the one thing he couldn't doubt was his own act of doubting. To be deceived, he must exist to be deceived.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["O19", "O21"],
+    related: ["O19", "O21", "O12"],
     furtherReading: [
       {
         label: "Meditations on First Philosophy (full text)",
@@ -7334,6 +7779,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O20-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O21",
@@ -7364,7 +7810,7 @@ export const NODES: Node[] = [
         "Hume pointed out that we never actually see 'cause'—we only see one event follow another. We assume causation out of psychological habit, not rational proof.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking", "Cognitive Biases & Models"],
-    related: ["O19", "O20"],
+    related: ["O19", "O20", "O3"],
     furtherReading: [
       {
         label: "An Enquiry Concerning Human Understanding (full text)",
@@ -7379,6 +7825,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O21-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O22",
@@ -7410,7 +7857,7 @@ export const NODES: Node[] = [
         "Hobbes believed the natural state of humanity is violently self-interested. To escape constant war and short lives, people rationally surrender their absolute freedom to a powerful sovereign (the Leviathan) in exchange for security.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
-    related: ["O23"],
+    related: ["O23", "O4", "O1"],
     furtherReading: [
       {
         label: "Leviathan (full text)",
@@ -7425,6 +7872,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/O22-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "O23",
@@ -7455,7 +7903,7 @@ export const NODES: Node[] = [
         "Rawls argued that true justice requires impartiality. The 'veil of ignorance' forces you to design a society's rules without knowing if you will be born rich or poor, healthy or sick, ensuring you design a system fair to the worst-off.",
     },
     tags: ["Meaning & Self", "Incentives & Systems", "Decision-Making"],
-    related: ["O22", "W5"],
+    related: ["O22", "W5", "O4"],
     furtherReading: [
       {
         label: "Rawls's political philosophy (summary)",
@@ -7470,6 +7918,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "R1",
@@ -7515,6 +7964,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/R1-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "R2",
@@ -7546,7 +7996,7 @@ export const NODES: Node[] = [
         "The Great Filter solves the Fermi Paradox by proposing an evolutionary step so hard that it wipes out almost all civilizations. If it's behind us, we survived the hardest part; if it's ahead of us, our doom is likely approaching.",
     },
     tags: ["Meaning & Self", "Risk & Asymmetric Bets"],
-    related: ["R1", "Z4"],
+    related: ["R1", "Z4", "R3"],
     furtherReading: [
       {
         label: "The Great Filter — Are We Almost Past It? (original essay)",
@@ -7561,6 +8011,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/R2-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "R3",
@@ -7606,6 +8057,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/R3-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "R4",
@@ -7636,7 +8088,7 @@ export const NODES: Node[] = [
         "To invent mathematical physics, Galileo deliberately excluded consciousness (colors, smells, feelings) from the scientific domain. Goff argues that trying to explain consciousness using a physics designed to exclude it is impossible.",
     },
     tags: ["Meaning & Self"],
-    related: ["O15", "R3"],
+    related: ["O15", "R3", "R1"],
     furtherReading: [
       {
         label: "Galileo's Error",
@@ -7651,6 +8103,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/R4-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "R5",
@@ -7681,7 +8134,7 @@ export const NODES: Node[] = [
         "The Anthropic Principle answers the 'fine-tuning' problem not with design, but with selection bias: if the universe's constants were incompatible with life, we wouldn't be here to observe them. We can only observe a universe that allows us to exist.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["R1", "R6"],
+    related: ["R1", "R6", "R2"],
     furtherReading: [
       {
         label:
@@ -7697,6 +8150,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/R5-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "R6",
@@ -7742,6 +8196,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/R6-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S1",
@@ -7773,7 +8228,7 @@ export const NODES: Node[] = [
         "Lasting change requires changing your identity, not just your actions. If you see yourself as a 'smoker trying to quit,' you will eventually fail; you must construct the identity of 'a non-smoker.'",
     },
     tags: ["Meaning & Self", "Craft & Deep Work"],
-    related: ["S2", "S6"],
+    related: ["S2", "S6", "S5"],
     furtherReading: [
       {
         label: "The Art Of Self-Architecture (How To Change Who You Are)",
@@ -7782,6 +8237,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S1-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S2",
@@ -7821,6 +8277,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S2-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S3",
@@ -7852,7 +8309,7 @@ export const NODES: Node[] = [
         "Technical skills are useless if no one knows you have them. You must first learn to communicate ideas and build an audience; only then do technical skills become highly leverageable.",
     },
     tags: ["Wealth, Leverage & Judgment", "Craft & Deep Work"],
-    related: ["S2", "S4"],
+    related: ["S2", "S4", "S18"],
     furtherReading: [
       {
         label: "The $1 Million Dollar Skill Stack (Learn In This Order)",
@@ -7861,6 +8318,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S3-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S4",
@@ -7901,6 +8359,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S4-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S5",
@@ -7932,7 +8391,7 @@ export const NODES: Node[] = [
         "Focus isn't just about blocking distractions; it's about having a crystal-clear vision of who you are and what you want. Without a strong identity, your attention will naturally wander to whatever the environment suggests.",
     },
     tags: ["Craft & Deep Work", "Meaning & Self"],
-    related: ["S1", "S6"],
+    related: ["S1", "S6", "S10"],
     furtherReading: [
       {
         label: "The Art Of Focus: Official Book Summary By The Author",
@@ -7947,6 +8406,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S5-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S6",
@@ -7986,6 +8446,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S6-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "T1",
@@ -8025,6 +8486,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/T1-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "T2",
@@ -8056,7 +8518,7 @@ export const NODES: Node[] = [
         "While dumb luck happens to anyone, and hustling creates active luck, Type IV luck happens when you've built such a unique reputation that random, highly specific opportunities naturally gravitate toward you.",
     },
     tags: ["Risk & Asymmetric Bets", "Wealth, Leverage & Judgment"],
-    related: ["T1", "T3"],
+    related: ["T1", "T3", "T4"],
     furtherReading: [
       {
         label: "The 4 Types of Luck",
@@ -8065,6 +8527,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/T2-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "T3",
@@ -8096,7 +8559,7 @@ export const NODES: Node[] = [
         "By writing down what you just finished, what you are feeling, and what you will do next during transitions, you close 'open loops' in your brain and prevent cognitive residue from ruining your next task.",
     },
     tags: ["Craft & Deep Work", "Incentives & Systems"],
-    related: ["T1", "T2"],
+    related: ["T1", "T2", "T4"],
     furtherReading: [
       {
         label: "Interstitial journaling: combining notes, to-do and time tracking",
@@ -8105,6 +8568,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/T3-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U1",
@@ -8144,6 +8608,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U1-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U2",
@@ -8175,7 +8640,7 @@ export const NODES: Node[] = [
         "Anchoring proves that the human brain relies heavily on whatever initial information it receives. Even obviously irrelevant numbers act as a powerful gravitational pull on our subsequent judgments.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["U1", "U3"],
+    related: ["U1", "U3", "U4"],
     furtherReading: [
       {
         label: "Judgment under Uncertainty: Heuristics and Biases (full paper)",
@@ -8184,6 +8649,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U2-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U3",
@@ -8214,7 +8680,7 @@ export const NODES: Node[] = [
         "We estimate the probability of an event by how easily we can recall examples of it. Because plane crashes are vivid and heavily reported, they are highly 'available' in memory, causing us to drastically overestimate their danger.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["U1", "U2"],
+    related: ["U1", "U2", "U4"],
     furtherReading: [
       {
         label: "Judgment under Uncertainty: Heuristics and Biases (full paper)",
@@ -8223,6 +8689,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U3-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U4",
@@ -8254,7 +8721,7 @@ export const NODES: Node[] = [
         "The sunk cost fallacy occurs because acknowledging a loss is psychologically painful. We irrationally throw good money (or time) after bad to avoid admitting the initial investment was wasted.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["U5", "U6"],
+    related: ["U5", "U6", "U2"],
     furtherReading: [
       {
         label: "The Psychology of Sunk Cost",
@@ -8263,6 +8730,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U4-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U5",
@@ -8303,6 +8771,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U5-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U6",
@@ -8342,6 +8811,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U6-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U7",
@@ -8372,7 +8842,7 @@ export const NODES: Node[] = [
         "The Halo Effect shows that if we perceive one positive trait in a person (like physical attractiveness), our brain lazily assumes they possess other positive traits (like intelligence or kindness) without any evidence.",
     },
     tags: ["Cognitive Biases & Models", "Power & Persuasion"],
-    related: ["U1", "U8"],
+    related: ["U1", "U8", "U2"],
     furtherReading: [
       {
         label: "A Constant Error in Psychological Ratings (full paper)",
@@ -8381,6 +8851,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U7-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "U8",
@@ -8411,7 +8882,7 @@ export const NODES: Node[] = [
         "Hindsight bias makes us believe the world is more predictable than it actually is. After an event happens, we unconsciously rewrite our memories to convince ourselves we 'knew it all along.'",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["U5", "U7"],
+    related: ["U5", "U7", "U2"],
     furtherReading: [
       {
         label: "Hindsight bias",
@@ -8420,6 +8891,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/U8-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V1",
@@ -8450,7 +8922,7 @@ export const NODES: Node[] = [
         "Before the Industrial Revolution, people worked based on the task (e.g., harvest time). Factories required synchronized labor, so owners imposed rigid, clock-based time discipline, permanently altering how humans perceive time.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
-    related: ["V2", "V7"],
+    related: ["V2", "V7", "V3"],
     furtherReading: [
       {
         label: "Time, Work-Discipline, and Industrial Capitalism",
@@ -8465,6 +8937,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V1-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V2",
@@ -8496,7 +8969,7 @@ export const NODES: Node[] = [
         "The myth of barter assumes money was invented to facilitate trade. Graeber shows that early human economies ran on complex social credit systems, and coined money only emerged later, primarily to fund standing armies.",
     },
     tags: ["Meaning & Self", "Wealth, Leverage & Judgment"],
-    related: ["V1", "V6"],
+    related: ["V1", "V6", "V3"],
     furtherReading: [
       {
         label: "Debt: The First 5,000 Years",
@@ -8505,6 +8978,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V2-0.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V3",
@@ -8536,7 +9010,7 @@ export const NODES: Node[] = [
         "A nation is an 'imagined community' because you will never meet most of your fellow citizens. Mass-produced media (newspapers) allowed millions of people to consume the same information simultaneously, forging a shared national identity.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
-    related: ["V2"],
+    related: ["V2", "V1", "V6"],
     furtherReading: [
       {
         label: "Imagined Communities",
@@ -8551,6 +9025,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V3-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V4",
@@ -8581,7 +9056,7 @@ export const NODES: Node[] = [
         "Montagu argued that 'race' is a sociological concept, not a biological one. Genetic variation among humans is continuous, and the boundaries we draw based on physical traits are entirely arbitrary historical inventions.",
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
-    related: ["V3", "V5"],
+    related: ["V3", "V5", "V1"],
     furtherReading: [
       {
         label: "Man's Most Dangerous Myth: The Fallacy of Race",
@@ -8596,6 +9071,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V4-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V5",
@@ -8626,7 +9102,7 @@ export const NODES: Node[] = [
         "Butler famously argued that gender is not a noun but a verb. It is a culturally required performance that we enact so constantly that it creates the illusion of being a natural, internal essence.",
     },
     tags: ["Meaning & Self"],
-    related: ["V4"],
+    related: ["V4", "V1", "V2"],
     furtherReading: [
       {
         label: "Gender Trouble",
@@ -8641,6 +9117,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V5-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V6",
@@ -8672,7 +9149,7 @@ export const NODES: Node[] = [
         "Proudhon didn't oppose people owning their home or the fruits of their own labor. He opposed the system where owners (like landlords or factory bosses) could extract wealth generated by the labor of others simply because they held a legal title.",
     },
     tags: ["Meaning & Self", "Incentives & Systems"],
-    related: ["V2"],
+    related: ["V2", "V1", "V3"],
     furtherReading: [
       {
         label: "What Is Property? (full text)",
@@ -8687,6 +9164,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V6-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V7",
@@ -8718,7 +9196,7 @@ export const NODES: Node[] = [
         "Standardizing measurements (like the metric system) wasn't just about scientific progress; it allowed central governments to easily survey, tax, and control local populations that previously used complex, localized systems of measurement.",
     },
     tags: ["Meaning & Self", "Power & Persuasion"],
-    related: ["V1"],
+    related: ["V1", "V2", "V3"],
     furtherReading: [
       {
         label: "Beyond Measure: The Hidden History of Measurement",
@@ -8733,6 +9211,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "V8",
@@ -8764,7 +9243,7 @@ export const NODES: Node[] = [
         "For most of history, marriage was too important to the family's economic survival to be left to something as volatile as romantic love. The idea that marriage should be based primarily on love is a radical, recent invention.",
     },
     tags: ["Meaning & Self"],
-    related: ["V5"],
+    related: ["V5", "V1", "V2"],
     furtherReading: [
       {
         label: "Marriage, a History",
@@ -8779,6 +9258,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/V8-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "W1",
@@ -8825,6 +9305,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/W1-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "W2",
@@ -8871,6 +9352,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "W3",
@@ -8917,6 +9399,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "W4",
@@ -8963,6 +9446,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/W4-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "W5",
@@ -8994,7 +9478,7 @@ export const NODES: Node[] = [
         "Buffett acknowledges that his massive wealth is heavily dependent on being born in America in the 20th century with a brain wired for capital allocation—a lucky draw from the 'ovarian lottery' that he did nothing to earn.",
     },
     tags: ["Wealth, Leverage & Judgment", "Meaning & Self"],
-    related: ["W4", "O23"],
+    related: ["W4", "O23", "W1"],
     furtherReading: [
       {
         label: "The Ovarian Lottery (University of Florida speech, 1998)",
@@ -9009,6 +9493,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/W5-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "W6",
@@ -9055,6 +9540,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/W6-1.md", retrieved: "2026-07-16" },
       },
     ],
+    epistemicStatus: "Canonical",
   },
   {
     id: "X1",
@@ -9086,7 +9572,7 @@ export const NODES: Node[] = [
         "Our senses do not show us reality as it is; they show us a highly filtered, low-resolution interface designed specifically to keep us alive, hiding the overwhelming complexity of the true physical universe.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["R1", "O6"],
+    related: ["R1", "O6", "X6"],
     furtherReading: [
       {
         label: "The 7 Levels of Reality",
@@ -9095,6 +9581,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "X2",
@@ -9126,7 +9613,7 @@ export const NODES: Node[] = [
         "When a belief becomes part of your identity, your brain treats conflicting information as a literal threat to your survival, shutting down the higher-order reasoning required for metacognition.",
     },
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
-    related: ["U5", "J11"],
+    related: ["U5", "J11", "X1"],
     furtherReading: [
       {
         label: "The Highest Levels of Thinking | Why Society Is Stuck at the Bottom",
@@ -9135,6 +9622,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "X3",
@@ -9166,7 +9654,7 @@ export const NODES: Node[] = [
         "Rather than discarding a foundational belief when faced with contradictory evidence, the brain often builds elaborate, ad-hoc rationalizations to explain away the anomaly and preserve its core worldview.",
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
-    related: ["U1", "O14"],
+    related: ["U1", "O14", "X1"],
     furtherReading: [
       {
         label: "The Hidden Structures of Belief Most People Never Question",
@@ -9175,6 +9663,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "X4",
@@ -9206,7 +9695,7 @@ export const NODES: Node[] = [
         "When a black-box AI determines prison sentences, the defendant is denied due process because neither the judge nor the lawyer can audit the algorithm to see if it is relying on hidden racial or socioeconomic biases.",
     },
     tags: ["Incentives & Systems", "Power & Persuasion"],
-    related: ["M1", "M3"],
+    related: ["M1", "M3", "X1"],
     furtherReading: [
       {
         label: "Algorithms Are Destroying Society",
@@ -9215,6 +9704,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "X5",
@@ -9246,7 +9736,7 @@ export const NODES: Node[] = [
         "In the Many-Worlds interpretation, every possible outcome occurs in branching universes. Because you can only experience a universe where you are alive, from your subjective perspective, you will seemingly survive any lethal event.",
     },
     tags: ["Meaning & Self"],
-    related: ["R5", "R6"],
+    related: ["R5", "R6", "X1"],
     furtherReading: [
       {
         label: "The Terrifying Theory of Quantum Immortality",
@@ -9255,6 +9745,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "X6",
@@ -9286,7 +9777,7 @@ export const NODES: Node[] = [
         "Einstein's relativity shows that 'now' is not absolute. Since observers moving at different speeds disagree on what is happening 'simultaneously,' the past, present, and future must all exist together in a static 4D block.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["R3", "Y2"],
+    related: ["R3", "Y2", "X1"],
     furtherReading: [
       {
         label: "Something Scary Happens When You Accept Time as the 4th Dimension",
@@ -9295,6 +9786,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Y1",
@@ -9326,7 +9818,7 @@ export const NODES: Node[] = [
         "Identity is not bound to specific physical atoms (which are constantly replaced in our bodies). We assign identity based on the continuity of the pattern and function over time.",
     },
     tags: ["Meaning & Self"],
-    related: ["O2"],
+    related: ["O2", "Y2", "Y3"],
     furtherReading: [
       {
         label: "3 Hours of Brain F*ck Paradoxes to Fall Asleep To",
@@ -9335,6 +9827,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Y2",
@@ -9366,7 +9859,7 @@ export const NODES: Node[] = [
         "The laws of physics work the same forwards and backwards. The only reason time has a direction (an 'arrow') is because the universe started in an unusually low-entropy state and is statistically overwhelming its way toward higher disorder.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["X6"],
+    related: ["X6", "Y1", "Y3"],
     furtherReading: [
       {
         label: "3 Hours of Most Misunderstood Physics Concepts to Fall Asleep To",
@@ -9375,6 +9868,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Y3",
@@ -9406,7 +9900,7 @@ export const NODES: Node[] = [
         "Science is excellent at explaining the mechanics of the brain (the 'easy' problems). But it has no framework for explaining why those mechanics are accompanied by the subjective, inner experience of actually feeling them (the 'hard problem').",
     },
     tags: ["Meaning & Self"],
-    related: ["O15", "X1"],
+    related: ["O15", "X1", "Y1"],
     furtherReading: [
       {
         label: "The Human Mind Explained to Fall Asleep To",
@@ -9415,6 +9909,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Y4",
@@ -9446,7 +9941,7 @@ export const NODES: Node[] = [
         "Without precise words for specific emotions, our brains struggle to categorize our internal state, leading to generalized anxiety. Learning nuanced vocabulary gives the brain the tools it needs to regulate those feelings.",
     },
     tags: ["Meaning & Self"],
-    related: ["O7"],
+    related: ["O7", "Y1", "Y2"],
     furtherReading: [
       {
         label: "Every Feeling You Can't Name Explained to Fall Asleep To",
@@ -9455,6 +9950,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Y5",
@@ -9486,7 +9982,7 @@ export const NODES: Node[] = [
         "The Banach-Tarski paradox proves that if you accept the Axiom of Choice, you can mathematically cut a solid sphere into pieces and reassemble them into two identical spheres, defying all physical intuition.",
     },
     tags: ["First-Principles Thinking"],
-    related: ["R6"],
+    related: ["R6", "Y2", "Y1"],
     furtherReading: [
       {
         label: "Every REAL Glitch in the Matrix Revealed to Fall Asleep To",
@@ -9495,6 +9991,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Y6",
@@ -9525,7 +10022,7 @@ export const NODES: Node[] = [
         "The universe is indifferent to morality. We naturally want to believe that hard work and virtue are rewarded, but physical and economic realities overwhelmingly reward leverage, timing, and scale.",
     },
     tags: ["Cognitive Biases & Models", "Risk & Asymmetric Bets"],
-    related: ["O5"],
+    related: ["O5", "Y7", "Y1"],
     furtherReading: [
       {
         label: "The Most Brutal Truths of Life to Fall Asleep To",
@@ -9534,6 +10031,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Z1",
@@ -9564,7 +10062,7 @@ export const NODES: Node[] = [
         "Theoretical physics increasingly suggests that space and time are not fundamental ingredients of the universe, but emergent properties created by the quantum entanglement of underlying, non-spatial information.",
     },
     tags: ["First-Principles Thinking", "AI & the Future"],
-    related: ["R6", "X6"],
+    related: ["R6", "X6", "Z2"],
     furtherReading: [
       {
         label: "Brian Greene — What Was There Before the Big Bang?",
@@ -9573,6 +10071,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Z2",
@@ -9603,7 +10102,7 @@ export const NODES: Node[] = [
         "Unparticles are hypothetical entities that don't behave like normal matter because they lack a fixed mass or scale. Some theorists propose they could be responsible for the accelerating expansion of the universe.",
     },
     tags: ["First-Principles Thinking", "AI & the Future"],
-    related: ["Z3"],
+    related: ["Z3", "Z1", "Z4"],
     furtherReading: [
       {
         label: "Mysterious 'Unparticles' May Be Pushing the Universe Apart",
@@ -9612,6 +10111,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Z3",
@@ -9643,7 +10143,7 @@ export const NODES: Node[] = [
         "Instead of relying on the mysterious 'dark energy' to explain cosmic expansion, this model suggests our universe is expanding rapidly because it is constantly colliding with and absorbing smaller 'baby' universes.",
     },
     tags: ["First-Principles Thinking", "AI & the Future"],
-    related: ["R6", "Z2"],
+    related: ["R6", "Z2", "Z1"],
     furtherReading: [
       {
         label: "Our Universe Is Merging With Baby Universes",
@@ -9652,6 +10152,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Z4",
@@ -9683,7 +10184,7 @@ export const NODES: Node[] = [
         "While biosignatures (like oxygen) just indicate life, technosignatures (like unnatural industrial pollutants or strange isotopic ratios in the atmosphere) would be the smoking gun for an advanced, industrialized alien civilization.",
     },
     tags: ["First-Principles Thinking", "AI & the Future"],
-    related: ["R2"],
+    related: ["R2", "Z1", "Z2"],
     furtherReading: [
       {
         label: "Webb Checked TRAPPIST-1e Again — and the Signs of Life Got Darker",
@@ -9692,6 +10193,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Z5",
@@ -9723,7 +10225,7 @@ export const NODES: Node[] = [
         "Once an AI reaches human-level intelligence, it can instantly apply its cognitive power to improving its own source code. This feedback loop will create an Artificial Superintelligence so rapidly that humans will be unable to control or align it.",
     },
     tags: ["AI & the Future"],
-    related: ["I12", "X4"],
+    related: ["I12", "X4", "Z1"],
     furtherReading: [
       {
         label:
@@ -9733,6 +10235,7 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
     id: "Z6",
@@ -9764,7 +10267,7 @@ export const NODES: Node[] = [
         "Unlike early CRISPR which acted like 'genetic scissors' (causing unpredictable double-strand breaks), Prime Editing acts like a 'word processor,' allowing scientists to precisely search and replace DNA sequences with minimal off-target damage.",
     },
     tags: ["Health & Body", "AI & the Future"],
-    related: ["I13"],
+    related: ["I13", "Z1", "Z2"],
     furtherReading: [
       {
         label: "CRISPR 2.0 Prime Editing to Heal 90% of Genetic Diseases",
@@ -9773,9 +10276,10 @@ export const NODES: Node[] = [
         archive: { status: "unavailable" },
       },
     ],
+    epistemicStatus: "Speculative",
   },
   {
-    id: "AA1",
+    id: "L7",
     clusterId: "L",
     title: "The Cynefin Framework",
     author: "Dave Snowden",
@@ -9803,7 +10307,7 @@ export const NODES: Node[] = [
       explanation:
         "Complex systems (like human behavior or markets) cannot be predicted or analyzed in advance. You must run small, safe experiments to 'probe' the system and see how it reacts before committing.",
     },
-    related: ["J2", "J3"],
+    related: ["J2", "J3", "L3"],
     furtherReading: [
       {
         label: "Cynefin framework",
@@ -9813,9 +10317,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Decision-Making", "Cognitive Biases & Models", "Markets & Narrative"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA2",
+    id: "J31",
     clusterId: "J",
     title: "The Iceberg Model",
     author: "Edward T. Hall",
@@ -9837,7 +10342,7 @@ export const NODES: Node[] = [
       explanation:
         "Mental models (our core beliefs, values, and assumptions) are the foundation of the iceberg. They dictate the structures we build, which create the patterns of behavior, which ultimately result in single events.",
     },
-    related: ["M1", "M2"],
+    related: ["M1", "M2", "J2"],
     furtherReading: [
       {
         label: "Iceberg Model",
@@ -9847,9 +10352,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA3",
+    id: "L8",
     clusterId: "L",
     title: "The Hard Choice Model",
     author: "Ruth Chang",
@@ -9876,7 +10382,7 @@ export const NODES: Node[] = [
       explanation:
         "Hard choices exist because the alternatives are fundamentally different but hold equal overall value. Since neither is better, you must use your own agency to decide which values you want to embody.",
     },
-    related: ["O4", "O5"],
+    related: ["O4", "O5", "L1"],
     furtherReading: [
       {
         label: "Hard Choice Model",
@@ -9886,9 +10392,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Decision-Making", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA4",
+    id: "K5",
     clusterId: "K",
     title: "The Tail End",
     author: "Tim Urban",
@@ -9915,7 +10422,7 @@ export const NODES: Node[] = [
       explanation:
         "Because you live with them constantly for 18 years, the sheer volume of days spent together dwarfs the occasional visits you will have for the rest of their lives. You are in the final 10% of your time together.",
     },
-    related: ["P1", "P2"],
+    related: ["P1", "P2", "K1"],
     furtherReading: [
       {
         label: "The Tail End",
@@ -9925,9 +10432,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Meaning & Self", "Compounding & Patience"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA5",
+    id: "A13",
     clusterId: "A",
     title: "The Cook and the Chef",
     author: "Tim Urban",
@@ -9955,7 +10463,7 @@ export const NODES: Node[] = [
       explanation:
         "Unlike the Cook who copies existing recipes (analogy), the Chef strips everything away to the raw ingredients (first principles) and invents entirely new ways of doing things.",
     },
-    related: ["A2", "A5"],
+    related: ["A2", "A5", "A1"],
     furtherReading: [
       {
         label: "The Cook and the Chef",
@@ -9965,9 +10473,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["First-Principles Thinking", "Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
   },
   {
-    id: "AA6",
+    id: "N5",
     clusterId: "N",
     title: "The Instant Gratification Monkey",
     author: "Tim Urban",
@@ -9995,7 +10504,7 @@ export const NODES: Node[] = [
       explanation:
         "The entire system relies on the Panic Monster waking up to enforce deadlines. For open-ended, lifelong goals, there is no deadline to trigger the panic, so the Monkey stays in control indefinitely.",
     },
-    related: ["N1", "N2"],
+    related: ["N1", "N2", "N6"],
     furtherReading: [
       {
         label: "Why Procrastinators Procrastinate",
@@ -10005,9 +10514,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA7",
+    id: "N6",
     clusterId: "N",
     title: "The Generation Effect",
     author: "Anne-Laure Le Cunff",
@@ -10034,7 +10544,7 @@ export const NODES: Node[] = [
       explanation:
         "Highlighting is a passive activity. You recognize the words on the page, but because you aren't forcing your brain to generate the information from scratch, you aren't building retrieval pathways.",
     },
-    related: ["U1"],
+    related: ["U1", "N5", "N1"],
     furtherReading: [
       {
         label: "The Generation Effect",
@@ -10044,9 +10554,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA8",
+    id: "U9",
     clusterId: "U",
     title: "The Zeigarnik Effect",
     author: "Bluma Zeigarnik",
@@ -10073,7 +10584,7 @@ export const NODES: Node[] = [
       explanation:
         "Once a task is started but left incomplete, the Zeigarnik Effect kicks in. Your brain will hold onto the 'open loop' and nag you to finish it, overriding your procrastination.",
     },
-    related: ["N2"],
+    related: ["N2", "U1", "U2"],
     furtherReading: [
       {
         label: "The Zeigarnik Effect",
@@ -10083,9 +10594,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA9",
+    id: "T4",
     clusterId: "T",
     title: "Networked Note-Taking",
     author: "Anne-Laure Le Cunff",
@@ -10113,7 +10625,7 @@ export const NODES: Node[] = [
       explanation:
         "Ideas rarely fit perfectly into a single category. By forcing a note into a single folder, you artificially sever its connection to all the other contexts it might be relevant to.",
     },
-    related: ["N1", "T1"],
+    related: ["N1", "T1", "T3"],
     furtherReading: [
       {
         label: "Networked Note-taking",
@@ -10123,9 +10635,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Craft & Deep Work"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA10",
+    id: "Q7",
     clusterId: "Q",
     title: "Identity-Based Habits",
     author: "James Clear",
@@ -10153,7 +10666,7 @@ export const NODES: Node[] = [
       explanation:
         "You cannot just 'think' your way into a new identity. You have to prove it to yourself through small, consistent actions that act as evidence.",
     },
-    related: ["M1", "P3"],
+    related: ["M1", "P3", "Q3"],
     furtherReading: [
       {
         label: "Identity-Based Habits",
@@ -10163,9 +10676,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Meaning & Self", "Compounding & Patience", "Health & Body"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA11",
+    id: "K6",
     clusterId: "K",
     title: "The Plateau of Latent Potential",
     author: "James Clear",
@@ -10193,7 +10707,7 @@ export const NODES: Node[] = [
       explanation:
         "Human intuition expects a 1-to-1 return on effort (linear). But compounding habits are exponential, meaning early efforts yield almost no visible results until they hit an inflection point.",
     },
-    related: ["K1", "K2"],
+    related: ["K1", "K2", "K5"],
     furtherReading: [
       {
         label: "Continuous Improvement",
@@ -10203,9 +10717,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Compounding & Patience"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA12",
+    id: "Q8",
     clusterId: "Q",
     title: "Habit Stacking",
     author: "James Clear",
@@ -10232,7 +10747,7 @@ export const NODES: Node[] = [
       explanation:
         "By tying a new, fragile habit to an old, hardened habit, you borrow the neurological strength and reliability of the existing behavior to serve as the trigger.",
     },
-    related: ["M2"],
+    related: ["M2", "Q4", "Q6"],
     furtherReading: [
       {
         label: "Habit Stacking",
@@ -10242,9 +10757,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Incentives & Systems", "Craft & Deep Work", "Health & Body"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA13",
+    id: "O24",
     clusterId: "O",
     title: "Panpsychism",
     author: "Philip Goff",
@@ -10271,7 +10787,7 @@ export const NODES: Node[] = [
       explanation:
         "If consciousness is already a basic property of the universe (like mass), you no longer have to explain how dead matter magically produces subjective experience.",
     },
-    related: ["R1", "O6"],
+    related: ["R1", "O6", "O25"],
     furtherReading: [
       {
         label: "Panpsychism",
@@ -10281,9 +10797,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA14",
+    id: "V9",
     clusterId: "V",
     title: "Epistemic Injustice",
     author: "Miranda Fricker",
@@ -10310,7 +10827,7 @@ export const NODES: Node[] = [
       explanation:
         "Testimonial injustice occurs when a person's testimony or credibility is unfairly deflated due to prejudice against their identity.",
     },
-    related: ["V4", "V5"],
+    related: ["V4", "V5", "V10"],
     furtherReading: [
       {
         label: "Epistemic Injustice",
@@ -10320,9 +10837,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "Social Constructs"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA15",
+    id: "Y7",
     clusterId: "Y",
     title: "Predictive Processing",
     author: "Andy Clark",
@@ -10350,7 +10868,7 @@ export const NODES: Node[] = [
       explanation:
         "Sensory input is largely just an 'error-correction' mechanism. The brain does the heavy lifting of generating the world; the eyes and ears just report back when the brain's guess is wrong.",
     },
-    related: ["O1", "Y1"],
+    related: ["O1", "Y1", "Y6"],
     furtherReading: [
       {
         label: "The Predictive Brain",
@@ -10360,9 +10878,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Cognitive Biases & Models"],
+    epistemicStatus: "Speculative",
   },
   {
-    id: "AA16",
+    id: "J32",
     clusterId: "J",
     title: "The Map is Not the Territory",
     author: "Alfred Korzybski",
@@ -10389,7 +10908,7 @@ export const NODES: Node[] = [
       explanation:
         "A model is a simplified tool. When we forget it's a simplification and treat it as absolute truth, we make catastrophic errors when encountering complex reality.",
     },
-    related: ["J1", "U1"],
+    related: ["J1", "U1", "J2"],
     furtherReading: [
       {
         label: "The Map is Not the Territory",
@@ -10399,9 +10918,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA17",
+    id: "U10",
     clusterId: "U",
     title: "Steelmanning",
     author: "Eliezer Yudkowsky",
@@ -10428,7 +10948,7 @@ export const NODES: Node[] = [
       explanation:
         "Truth-seeking requires testing your beliefs against the strongest possible counter-arguments, not the weakest ones.",
     },
-    related: ["U2", "L2"],
+    related: ["U2", "L2", "U1"],
     furtherReading: [
       {
         label: "Steelmanning",
@@ -10438,9 +10958,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA18",
+    id: "U11",
     clusterId: "U",
     title: "Motivated Stopping",
     author: "Eliezer Yudkowsky",
@@ -10467,7 +10988,7 @@ export const NODES: Node[] = [
       explanation:
         "Our brains are lazy and biased. As soon as we find a single excuse to believe what we already want to believe, we stop the search.",
     },
-    related: ["U3", "U4"],
+    related: ["U3", "U4", "U2"],
     furtherReading: [
       {
         label: "Motivated Stopping",
@@ -10477,9 +10998,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA19",
+    id: "O25",
     clusterId: "O",
     title: "The Good Enough Mother",
     author: "Donald Winnicott",
@@ -10507,7 +11029,7 @@ export const NODES: Node[] = [
       explanation:
         "A child must slowly learn that the world does not revolve around them. If a parent instantly satisfies every urge, the child never develops the psychological tools to handle the real world's inevitable delays and rejections.",
     },
-    related: ["V1", "O2"],
+    related: ["V1", "O2", "O24"],
     furtherReading: [
       {
         label: "The Good Enough Mother",
@@ -10517,9 +11039,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA20",
+    id: "V10",
     clusterId: "V",
     title: "Status Anxiety",
     author: "Alain de Botton",
@@ -10547,7 +11070,7 @@ export const NODES: Node[] = [
       explanation:
         "If you believe success is 100% based on merit, then you must logically believe that failure is 100% based on a lack of merit. This makes financial struggles intensely humiliating.",
     },
-    related: ["P4", "V2"],
+    related: ["P4", "V2", "V9"],
     furtherReading: [
       {
         label: "Status Anxiety",
@@ -10557,9 +11080,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Social Constructs", "Wealth, Leverage & Judgment"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA21",
+    id: "O26",
     clusterId: "O",
     title: "Romanticism vs. Classicism",
     author: "Alain de Botton",
@@ -10587,7 +11111,7 @@ export const NODES: Node[] = [
       explanation:
         "Romanticism demands perfection and constant passion, leading to inevitable disappointment. Classicism expects flaws and friction, making it far more resilient.",
     },
-    related: ["O5", "Q2"],
+    related: ["O5", "Q2", "O24"],
     furtherReading: [
       {
         label: "Romanticism vs Classicism",
@@ -10597,9 +11121,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA22",
+    id: "N7",
     clusterId: "N",
     title: "Negative Capability",
     author: "John Keats",
@@ -10626,7 +11151,7 @@ export const NODES: Node[] = [
       explanation:
         "By resisting the urge to prematurely 'solve' a mystery or force an answer, you allow deeper, more profound creative connections to form over time.",
     },
-    related: ["O1", "Y1"],
+    related: ["O1", "Y1", "N1"],
     furtherReading: [
       {
         label: "John Keats on Negative Capability",
@@ -10636,9 +11161,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Craft & Deep Work", "First-Principles Thinking"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA23",
+    id: "O27",
     clusterId: "O",
     title: "The Porcupine Dilemma",
     author: "Arthur Schopenhauer",
@@ -10665,7 +11191,7 @@ export const NODES: Node[] = [
       explanation:
         "You cannot have intimacy without friction. The goal is to calibrate the distance so that the warmth outweighs the inevitable pricks of human flaws.",
     },
-    related: ["O2", "O3"],
+    related: ["O2", "O3", "O24"],
     furtherReading: [
       {
         label: "Schopenhauer's Porcupine Dilemma",
@@ -10675,9 +11201,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA24",
+    id: "O28",
     clusterId: "O",
     title: "Live the Questions",
     author: "Rainer Maria Rilke",
@@ -10705,7 +11232,7 @@ export const NODES: Node[] = [
       explanation:
         "Existential truths cannot be memorized like math formulas. They must be earned through the slow accumulation of life experience.",
     },
-    related: ["O4", "AA22"],
+    related: ["O4", "N7", "O24"],
     furtherReading: [
       {
         label: "Rilke on Living the Questions",
@@ -10715,9 +11242,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA25",
+    id: "R7",
     clusterId: "R",
     title: "The Kardashev Scale",
     author: "Nikolai Kardashev",
@@ -10745,7 +11273,7 @@ export const NODES: Node[] = [
       explanation:
         "The Kardashev scale is entirely based on energy extraction. Type II civilizations have built megastructures (like Dyson Spheres) to capture the total energy of a sun.",
     },
-    related: ["I3", "R2"],
+    related: ["I3", "R2", "R8"],
     furtherReading: [
       {
         label: "The Kardashev Scale",
@@ -10755,9 +11283,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA26",
+    id: "O29",
     clusterId: "O",
     title: "The Overview Effect",
     author: "Frank White",
@@ -10784,7 +11313,7 @@ export const NODES: Node[] = [
       explanation:
         "Seeing the Earth as a single, fragile, borderless sphere hanging in a dark void instantly dissolves tribal and nationalistic divisions.",
     },
-    related: ["O1", "J1"],
+    related: ["O1", "J1", "O24"],
     furtherReading: [
       {
         label: "The Overview Effect",
@@ -10794,9 +11323,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA27",
+    id: "R8",
     clusterId: "R",
     title: "Dark Forest Theory",
     author: "Liu Cixin",
@@ -10824,7 +11354,7 @@ export const NODES: Node[] = [
       explanation:
         "Game theory dictates that since you can never be 100% sure the other species won't eventually kill you (especially given exponential technological growth), the only rational move to guarantee your own survival is a preemptive strike.",
     },
-    related: ["R2", "L1"],
+    related: ["R2", "L1", "R7"],
     furtherReading: [
       {
         label: "Dark Forest Theory",
@@ -10834,9 +11364,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["AI & the Future", "Incentives & Systems"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA28",
+    id: "M5",
     clusterId: "M",
     title: "Choice Architecture",
     author: "Richard Thaler",
@@ -10863,7 +11394,7 @@ export const NODES: Node[] = [
       explanation:
         "Whether it's the layout of a grocery store or the default settings on an organ donation form, the way the choices are organized inevitably nudges behavior.",
     },
-    related: ["M1", "M2"],
+    related: ["M1", "M2", "M6"],
     furtherReading: [
       {
         label: "Nudge and Choice Architecture",
@@ -10873,9 +11404,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA29",
+    id: "U12",
     clusterId: "U",
     title: "Hyperbolic Discounting",
     author: "Richard Herrnstein",
@@ -10902,7 +11434,7 @@ export const NODES: Node[] = [
       explanation:
         "In an environment where you might get eaten by a predator at any moment, the brain correctly evolved to prioritize immediate, guaranteed rewards over future, uncertain ones.",
     },
-    related: ["K1", "U1"],
+    related: ["K1", "U1", "U2"],
     furtherReading: [
       {
         label: "Hyperbolic Discounting",
@@ -10912,9 +11444,10 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Cognitive Biases & Models", "Compounding & Patience"],
+    epistemicStatus: "Contemporary",
   },
   {
-    id: "AA30",
+    id: "M6",
     clusterId: "M",
     title: "Sludge",
     author: "Cass Sunstein",
@@ -10941,7 +11474,7 @@ export const NODES: Node[] = [
       explanation:
         "Sludge weaponizes friction. It exploits human laziness by making the process of doing something (like canceling a subscription or applying for aid) so annoying that people just give up.",
     },
-    related: ["M1", "AA28"],
+    related: ["M1", "M5", "M2"],
     furtherReading: [
       {
         label: "Sludge and Friction",
@@ -10951,6 +11484,7 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S7",
@@ -10981,7 +11515,7 @@ export const NODES: Node[] = [
         "Psychological survival — protecting your sense of identity — runs on the same threat-detection wiring as physical survival, so a goal that threatens who you think you are triggers real resistance, not just a lack of discipline.",
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
-    related: ["S1", "S17"],
+    related: ["S1", "S17", "S5"],
     furtherReading: [
       {
         label: "Life Is A Mind Game. Here's How You Win.",
@@ -10990,6 +11524,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S7-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S8",
@@ -11021,7 +11556,7 @@ export const NODES: Node[] = [
         "Any specific skill can be automated or become obsolete, but the ability to understand what makes people pay attention and act underlies marketing, sales, leadership, and distribution regardless of which specific skill or tool you're using.",
     },
     tags: ["Power & Persuasion", "Craft & Deep Work"],
-    related: ["S16", "S2"],
+    related: ["S16", "S2", "S1"],
     furtherReading: [
       {
         label: "The Most Profitable Skill Of The 21st Century (Not AI)",
@@ -11030,6 +11565,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S8-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S9",
@@ -11061,7 +11597,7 @@ export const NODES: Node[] = [
         "Koe's definition of slavery is functional, not legal: if you can't stop showing up to work without catastrophe, and have no alternative skills, you meet the definition of a slave regardless of how you feel about your job.",
     },
     tags: ["Tech Adoption & Disruption", "Wealth, Leverage & Judgment"],
-    related: ["S14", "S19"],
+    related: ["S14", "S19", "S2"],
     furtherReading: [
       {
         label: "How To Survive AI Mass Replacement (& Escape Wage Slavery)",
@@ -11070,6 +11606,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S9-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S10",
@@ -11100,7 +11637,7 @@ export const NODES: Node[] = [
         "The defining trait of an essay is that it's an argument being worked out in real time, not knowledge being repackaged — which is also why Koe argues AI, lacking a situated point of view, cannot write a genuine one.",
     },
     tags: ["Craft & Deep Work", "Meaning & Self"],
-    related: ["S16", "S4"],
+    related: ["S16", "S4", "S1"],
     furtherReading: [
       {
         label: "I'm Begging You To Write More Essays",
@@ -11109,6 +11646,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S10-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S11",
@@ -11140,7 +11678,7 @@ export const NODES: Node[] = [
         "Real boredom (as opposed to overstimulation mistaken for boredom) shifts brain activity into the Default Mode Network, the same wandering-mind state responsible for random insight and the 'aha' moments most people only get on walks or in the shower.",
     },
     tags: ["Craft & Deep Work", "Meaning & Self"],
-    related: ["S5", "S15"],
+    related: ["S5", "S15", "S1"],
     furtherReading: [
       {
         label: "How To Become So Creative It Feels Illegal",
@@ -11149,6 +11687,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S11-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S12",
@@ -11180,7 +11719,7 @@ export const NODES: Node[] = [
         "Human 3.0's whole premise is that real development requires progress across Mind, Body, Spirit, and Vocation together, since neglecting any one quadrant eventually undermines the others.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["S1", "S6"],
+    related: ["S1", "S6", "S17"],
     furtherReading: [
       {
         label: "Human 3.0 — A Map To Reach The Top 1%",
@@ -11189,6 +11728,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S12-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S13",
@@ -11219,7 +11759,7 @@ export const NODES: Node[] = [
         "The 'smart but dumb' phenomenon Koe describes — highly credentialed people who still make obviously bad life decisions — happens when someone is horizontally advanced (they know a lot) but vertically stuck (they can't think outside their domain's assumptions).",
     },
     tags: ["First-Principles Thinking", "Decision-Making"],
-    related: ["S12", "S19"],
+    related: ["S12", "S19", "S15"],
     furtherReading: [
       {
         label: "How To Think Like A Strategic Genius (5D Thinking)",
@@ -11228,6 +11768,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S13-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S14",
@@ -11258,7 +11799,7 @@ export const NODES: Node[] = [
         "The Swap Test locates the real human moat in situated perspective and evolving taste rather than raw output — AI can copy style, but not a trajectory that is still unfolding.",
     },
     tags: ["Tech Adoption & Disruption", "Meaning & Self"],
-    related: ["S9", "S19"],
+    related: ["S9", "S19", "S1"],
     furtherReading: [
       {
         label: "The Future Of Work When Work Is Meaningless",
@@ -11267,6 +11808,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S14-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S15",
@@ -11298,7 +11840,7 @@ export const NODES: Node[] = [
         "Koe argues successful creatives' 'best work' often happens during walks or unstructured time (Default Mode Network activity), which is then converted into output during short, focused Building sessions.",
     },
     tags: ["Craft & Deep Work", "Decision-Making"],
-    related: ["S5", "S11"],
+    related: ["S5", "S11", "S1"],
     furtherReading: [
       {
         label: "Full Guide: How To Unlock Extreme Focus On Command",
@@ -11307,6 +11849,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S15-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S16",
@@ -11338,7 +11881,7 @@ export const NODES: Node[] = [
         "Articulation is downstream of a body of work — repeated writing or speaking on the same core ideas until they're refined enough to deliver with confidence, not spontaneous brilliance.",
     },
     tags: ["Power & Persuasion", "Craft & Deep Work"],
-    related: ["S10", "S8"],
+    related: ["S10", "S8", "S1"],
     furtherReading: [
       {
         label: "How To Articulate Yourself Intelligently",
@@ -11347,6 +11890,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S16-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S17",
@@ -11378,7 +11922,7 @@ export const NODES: Node[] = [
         "A goal bolted onto an unchanged identity tends to erode once willpower runs out; changing identity first makes the new behavior the natural default rather than a constant fight.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["S1", "S7"],
+    related: ["S1", "S7", "S12"],
     furtherReading: [
       {
         label: "How To Fix Your Entire Life In 1 Day",
@@ -11387,6 +11931,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S17-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S18",
@@ -11418,7 +11963,7 @@ export const NODES: Node[] = [
         "The Skill-Based path is one-dimensional and risks recreating a second job around a single skill; the Development-Based path uses your own multi-interest growth as the product itself.",
     },
     tags: ["Craft & Deep Work", "Wealth, Leverage & Judgment"],
-    related: ["S3", "S2"],
+    related: ["S3", "S2", "S4"],
     furtherReading: [
       {
         label: "If You Have Multiple Interests, Do Not Waste The Next 2-3 Years",
@@ -11427,6 +11972,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S18-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "S19",
@@ -11458,7 +12004,7 @@ export const NODES: Node[] = [
         "If unlimited access to information alone produced results, everyone with an internet connection and access to AI would already be thriving — the actual differentiator is who acts on what's available.",
     },
     tags: ["Decision-Making", "Tech Adoption & Disruption"],
-    related: ["S13", "S9"],
+    related: ["S13", "S9", "S12"],
     furtherReading: [
       {
         label: "The Most Important Skill To Learn In The Next 10 Years",
@@ -11467,6 +12013,7 @@ export const NODES: Node[] = [
         archive: { status: "full", path: "content/sources/S19-0.md", retrieved: "2026-07-15" },
       },
     ],
+    epistemicStatus: "Contemporary",
   },
 ];
 

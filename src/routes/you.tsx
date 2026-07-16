@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { InstallAppButton } from "@/components/InstallAppButton";
-import { useStore, currentStreak } from "@/lib/store";
+import { useStore, currentStreak, todayISO } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
 import { cn } from "@/lib/utils";
@@ -48,16 +48,43 @@ function YouScreen() {
         <h1 className="mt-2 font-serif text-4xl text-ink">Your practice</h1>
       </header>
 
-      <Section title="Streak" icon={Flame}>
+      <Section title="Daily Goal" icon={Flame}>
+        <div className="flex flex-col gap-2">
+          <div className="flex items-baseline gap-3">
+            <span className="font-mono text-6xl text-accent leading-none">
+              {hydrated ? state.dailyProgress[todayISO()] || 0 : 0}
+            </span>
+            <span className="font-mono text-2xl text-ink-soft leading-none">
+              / {hydrated ? state.dailyGoal : 3}
+            </span>
+            <MicroLabel>nodes learned today</MicroLabel>
+          </div>
+          <div className="h-2 w-full bg-line overflow-hidden mt-2">
+            <div
+              className="h-full bg-accent transition-all duration-500 ease-out"
+              style={{
+                width: `${Math.min(100, ((hydrated ? state.dailyProgress[todayISO()] || 0 : 0) / (hydrated ? state.dailyGoal : 3)) * 100)}%`,
+              }}
+            />
+          </div>
+          {hydrated && (state.dailyProgress[todayISO()] || 0) >= state.dailyGoal && (
+            <p className="text-xs text-accent mt-1 animate-in fade-in slide-in-from-bottom-2">
+              Daily goal achieved! Great work.
+            </p>
+          )}
+        </div>
+      </Section>
+
+      <Section title="Streak" icon={BarChart3}>
         <div className="flex items-baseline gap-3">
-          <span className="font-mono text-6xl text-accent leading-none">{streak}</span>
+          <span className="font-mono text-6xl text-ink leading-none">{streak}</span>
           <MicroLabel>consecutive days</MicroLabel>
         </div>
         <div className="mt-5 flex gap-1">
           {last14Days().map((d) => {
             const on = hydrated && state.streakDays.includes(d);
             return (
-              <div key={d} title={d} className={cn("h-2 flex-1", on ? "bg-accent" : "bg-line")} />
+              <div key={d} title={d} className={cn("h-2 flex-1", on ? "bg-ink" : "bg-line")} />
             );
           })}
         </div>

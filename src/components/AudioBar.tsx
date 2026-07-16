@@ -1,23 +1,81 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { useStore } from "@/lib/store";
+import type { Node } from "@/data/nodes";
 
 /**
  * Real narration via the browser's Web Speech API (SpeechSynthesis).
- * No external TTS service, no cost, works offline once the page is loaded.
- * Reads the on-page [data-sentence] spans in order, speaks them one at a
- * time, and highlights the active sentence as it is spoken.
+ * Includes progress tracking, voice selection, and basic MediaSession integration.
  */
-export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
+export function AudioBar({ node, sentenceCount }: { node: Node; sentenceCount: number }) {
   const [playing, setPlaying] = useState(false);
-  const [idx, setIdx] = useState(0);
+  const audioProgress = useStore((s) => s.audioProgress);
+  const setAudioProgress = useStore((s) => s.setAudioProgress);
+
+  const savedIdx = audioProgress[node.id] || 0;
+  // Ensure we don't start past the end if content changed
+  const initialIdx = savedIdx >= sentenceCount ? 0 : savedIdx;
+
+  const [idx, setIdx] = useState(initialIdx);
   const [supported, setSupported] = useState(true);
   const ttsRate = useStore((s) => s.ttsRate);
-  const idxRef = useRef(0);
+
+  const ttsVoice = useStore((s) => s.ttsVoice);
+  const setTtsVoice = useStore((s) => s.setTtsVoice);
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+
+  const idxRef = useRef(initialIdx);
   const stoppedRef = useRef(false);
+
+  // A tiny silent audio element to keep iOS background context alive
+  // and hook MediaSession controls effectively.
+  const silentAudioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     setSupported(typeof window !== "undefined" && "speechSynthesis" in window);
+
+    // Load voices
+    const updateVoices = () => {
+      const v = window.speechSynthesis.getVoices().filter((v) => v.lang.startsWith("en"));
+      setVoices(v);
+    };
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      updateVoices();
+      window.speechSynthesis.addEventListener("voiceschanged", updateVoices);
+    }
+
+    return () => {
+      if (typeof window !== "undefined" && "speechSynthesis" in window) {
+        window.speechSynthesis.removeEventListener("voiceschanged", updateVoices);
+      }
+    };
   }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      silentAudioRef.current = new Audio(
+        "data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA",
+      );
+      silentAudioRef.current.loop = true;
+    }
+  }, []);
+
+  function setupMediaSession() {
+    if ("mediaSession" in navigator) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: node.title,
+        artist: node.author,
+        album: "Unknown",
+        artwork: [{ src: "/icon-512.png", sizes: "512x512", type: "image/png" }],
+      });
+
+      navigator.mediaSession.setActionHandler("play", () => toggle());
+      navigator.mediaSession.setActionHandler("pause", () => toggle());
+      navigator.mediaSession.setActionHandler("stop", () => {
+        stop();
+        setPlaying(false);
+      });
+    }
+  }
 
   function sentenceEls(): HTMLElement[] {
     return Array.from(document.querySelectorAll<HTMLElement>("[data-sentence]")).sort(
@@ -51,10 +109,18 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
     stoppedRef.current = false;
     const u = new SpeechSynthesisUtterance(els[start].textContent ?? "");
     u.rate = ttsRate;
+
+    if (ttsVoice && voices.length > 0) {
+      const selected = voices.find((v) => v.voiceURI === ttsVoice);
+      if (selected) u.voice = selected;
+    }
+
     u.onstart = () => {
       idxRef.current = start;
       setIdx(start);
       highlight(start);
+      // Save progress to store
+      setAudioProgress(node.id, start);
     };
     u.onend = () => {
       if (stoppedRef.current) return;
@@ -62,6 +128,13 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
       if (next < els.length) speakFrom(next);
       else finish();
     };
+    u.onerror = (e) => {
+      console.error("Speech synthesis error", e);
+      if (e.error === "interrupted" || stoppedRef.current) return;
+      // On some errors (like iOS lock screen pause), we just pause UI
+      setPlaying(false);
+    };
+
     window.speechSynthesis.speak(u);
   }
 
@@ -69,13 +142,22 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
     setPlaying(false);
     setIdx(0);
     idxRef.current = 0;
+    setAudioProgress(node.id, 0); // reset progress on finish
     clearHighlight();
+    silentAudioRef.current?.pause();
+    if ("mediaSession" in navigator) {
+      navigator.mediaSession.playbackState = "none";
+    }
   }
 
   function stop() {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
     stoppedRef.current = true;
     window.speechSynthesis.cancel();
+    silentAudioRef.current?.pause();
+    if ("mediaSession" in navigator) {
+      navigator.mediaSession.playbackState = "paused";
+    }
   }
 
   function toggle() {
@@ -83,14 +165,18 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
     if (playing) {
       setPlaying(false);
       stop();
-      clearHighlight();
     } else {
       setPlaying(true);
+      silentAudioRef.current?.play().catch(() => {}); // Play silent track to keep alive
+      setupMediaSession();
+      if ("mediaSession" in navigator) {
+        navigator.mediaSession.playbackState = "playing";
+      }
       speakFrom(idxRef.current);
     }
   }
 
-  // Stop speech if the component unmounts (leaving the node screen).
+  // Stop speech if the component unmounts
   useEffect(() => stop, []);
 
   const total = Math.max(1, sentenceCount);
@@ -118,8 +204,25 @@ export function AudioBar({ sentenceCount }: { sentenceCount: number }) {
               style={{ width: `${pct}%` }}
             />
           </div>
-          <div className="mt-1 flex justify-between font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft">
-            <span>{supported ? "Listen" : "Audio not supported"}</span>
+          <div className="mt-1 flex justify-between items-center font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft">
+            <div className="flex items-center gap-2">
+              <span>{supported ? "Listen" : "Audio not supported"}</span>
+              {supported && voices.length > 0 && (
+                <select
+                  className="bg-transparent text-[9px] outline-none max-w-[100px] truncate"
+                  value={ttsVoice || ""}
+                  onChange={(e) => setTtsVoice(e.target.value)}
+                  aria-label="Select voice"
+                >
+                  <option value="">Default Voice</option>
+                  {voices.map((v) => (
+                    <option key={v.voiceURI} value={v.voiceURI}>
+                      {v.name}
+                    </option>
+                  ))}
+                </select>
+              )}
+            </div>
             <span>
               {Math.min(idx + (playing ? 1 : 0), total)} / {total}
             </span>

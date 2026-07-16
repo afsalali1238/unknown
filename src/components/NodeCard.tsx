@@ -17,7 +17,10 @@ export function NodeCard({ node }: { node: Node }) {
       className="group block w-64 shrink-0 snap-start border-l border-line pl-4 pr-2 py-2 sm:w-auto sm:shrink sm:snap-none"
     >
       <div className="flex items-start justify-between gap-2">
-        <MicroLabel>{node.medium}</MicroLabel>
+        <MicroLabel>
+          {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
+          {node.medium}
+        </MicroLabel>
         {hydrated &&
           (gotIt ? (
             <span aria-label="Mastered" className="font-mono text-[11px] text-accent">

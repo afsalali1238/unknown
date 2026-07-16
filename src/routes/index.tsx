@@ -307,6 +307,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex items-center gap-2">
           <MicroLabel>
+            {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
             {CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · {node.medium}
           </MicroLabel>
           {source === "adjacent" && (
