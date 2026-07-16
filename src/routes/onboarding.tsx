@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Bookmark, Check, HelpCircle, Plus } from "lucide-react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { NODES, TAGS } from "@/data/nodes";
@@ -33,6 +34,8 @@ function OnboardingScreen() {
     return c;
   }, []);
 
+  const [step, setStep] = useState<1 | 2>(1);
+
   function toggle(tag: string) {
     setPicked((p) => (p.includes(tag) ? p.filter((t) => t !== tag) : [...p, tag]));
   }
@@ -43,8 +46,12 @@ function OnboardingScreen() {
   }
 
   function skip() {
-    skipOnboarding();
-    navigate({ to: "/" });
+    if (step === 1) {
+      setStep(2);
+    } else {
+      skipOnboarding();
+      navigate({ to: "/" });
+    }
   }
 
   const canContinue = picked.length >= MIN_PICKS;
@@ -53,64 +60,134 @@ function OnboardingScreen() {
     <>
       <SpiralBackground />
       <div className="relative z-10 flex min-h-screen flex-col px-5 pt-12 pb-8">
-        <MicroLabel>Welcome</MicroLabel>
-        <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">Let's look into Unknown</h1>
-        <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-soft">
-          Choose your rabbit holes. Pick at least {MIN_PICKS} to start your descent into the
-          lattice. Don't worry, you can always change course later.
-        </p>
+        {step === 1 ? (
+          <>
+            <MicroLabel>Welcome</MicroLabel>
+            <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">
+              Let's look into Unknown
+            </h1>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-soft">
+              Choose your rabbit holes. Pick at least {MIN_PICKS} to start your descent into the
+              lattice. Don't worry, you can always change course later.
+            </p>
 
-        <div className="mt-8 flex flex-1 flex-wrap content-start gap-2">
-          {TAGS.map((t) => {
-            const on = picked.includes(t);
-            const count = counts[t] ?? 0;
-            return (
-              <button
-                key={t}
-                onClick={() => toggle(t)}
-                aria-pressed={on}
-                className={cn(
-                  "min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors",
-                  on && "border-ink bg-ink text-paper",
-                  !on &&
-                    "border-line bg-transparent text-ink-soft hover:border-ink/30 hover:text-ink",
-                )}
-              >
-                {t}
-                <span
-                  className={cn(
-                    "ml-2 font-mono text-[10px] uppercase tracking-[0.14em]",
-                    on ? "text-paper/50" : "text-ink-soft/40",
-                  )}
+            <div className="mt-8 flex flex-1 flex-wrap content-start gap-2">
+              {TAGS.map((t) => {
+                const on = picked.includes(t);
+                const count = counts[t] ?? 0;
+                return (
+                  <button
+                    key={t}
+                    onClick={() => toggle(t)}
+                    aria-pressed={on}
+                    className={cn(
+                      "min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors",
+                      on && "border-ink bg-ink text-paper",
+                      !on &&
+                        "border-line bg-transparent text-ink-soft hover:border-ink/30 hover:text-ink",
+                    )}
+                  >
+                    {t}
+                    <span
+                      className={cn(
+                        "ml-2 font-mono text-[10px] uppercase tracking-[0.14em]",
+                        on ? "text-paper/50" : "text-ink-soft/40",
+                      )}
+                    >
+                      {count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="sticky bottom-0 mt-10 border-t border-line bg-paper pt-5">
+              <div className="flex items-center justify-between">
+                <MicroLabel>
+                  {picked.length} selected
+                  {!canContinue && picked.length > 0
+                    ? ` · pick ${MIN_PICKS - picked.length} more`
+                    : ""}
+                </MicroLabel>
+                <button
+                  onClick={skip}
+                  className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink"
                 >
-                  {count}
-                </span>
+                  Skip for now
+                </button>
+              </div>
+              <button
+                onClick={() => setStep(2)}
+                disabled={!canContinue}
+                className="mt-4 w-full border border-ink bg-ink py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper disabled:opacity-30"
+              >
+                Continue →
               </button>
-            );
-          })}
-        </div>
+            </div>
+          </>
+        ) : (
+          <>
+            <MicroLabel>How it works</MicroLabel>
+            <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">Read, save, master</h1>
 
-        <div className="sticky bottom-0 mt-10 border-t border-line bg-paper pt-5">
-          <div className="flex items-center justify-between">
-            <MicroLabel>
-              {picked.length} selected
-              {!canContinue && picked.length > 0 ? ` · pick ${MIN_PICKS - picked.length} more` : ""}
-            </MicroLabel>
-            <button
-              onClick={skip}
-              className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink"
-            >
-              Skip for now
-            </button>
-          </div>
-          <button
-            onClick={finish}
-            disabled={!canContinue}
-            className="mt-4 w-full border border-ink bg-ink py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper disabled:opacity-30"
-          >
-            Continue →
-          </button>
-        </div>
+            <div className="mt-12 flex-1 space-y-8">
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-ink bg-ink text-paper">
+                  <Bookmark className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">Save for later</h3>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    Build your personal library of ideas.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
+                  <Plus className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">Read next</h3>
+                  <p className="mt-1 text-sm text-ink-soft">Queue ideas to read immediately.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
+                  <Check className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">Got it</h3>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    Mark ideas you've mastered for spaced repetition.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
+                  <HelpCircle className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">Quiz</h3>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    Test your understanding of complex topics.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="sticky bottom-0 mt-10 border-t border-line bg-paper pt-5">
+              <button
+                onClick={finish}
+                className="w-full border border-ink bg-ink py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper transition-opacity hover:opacity-90"
+              >
+                Got it, let's go
+              </button>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

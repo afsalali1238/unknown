@@ -51,146 +51,172 @@ export const TAGS = [
 ] as const;
 export type Tag = (typeof TAGS)[number];
 
-export type Cluster = { id: string; title: string; subtitle: string };
+export type Cluster = { id: string; title: string; subtitle: string; icon: string };
 
 export const CLUSTERS: Cluster[] = [
   {
     id: "A",
     title: "Startup Fundamentals",
     subtitle: "How founders think about building something from nothing",
+    icon: "Rocket",
   },
   {
     id: "B",
     title: "Company Origins",
     subtitle: "The actual pitch decks and memos that started famous companies",
+    icon: "Building2",
   },
   {
     id: "C",
     title: "Fraud & Short Cases",
     subtitle: "How professional skeptics spot a lie in a balance sheet",
+    icon: "Search",
   },
   {
     id: "D",
     title: "Macro & Investing",
     subtitle: "Cycles, debt, and reading the economy like a value investor",
+    icon: "LineChart",
   },
   {
     id: "E",
     title: "Finance Theory",
     subtitle: "The math that priced risk itself",
+    icon: "Calculator",
   },
   {
     id: "F",
     title: "Foundational Tech",
     subtitle: "The plumbing ideas the entire internet sits on",
+    icon: "Server",
   },
   {
     id: "G",
     title: "AI / ML Papers",
     subtitle: "The technical papers that built the modern AI stack, in order",
+    icon: "BrainCircuit",
   },
   {
     id: "H",
     title: "Crypto",
     subtitle: "The whitepapers behind Bitcoin, Ethereum, and DeFi",
+    icon: "Bitcoin",
   },
   {
     id: "I",
     title: "Worldview & Futurism",
     subtitle: "The biggest, most abstract bets on how the future unfolds",
+    icon: "Globe",
   },
   {
     id: "J",
     title: "Mental Models",
     subtitle: "Reusable lenses for thinking clearly",
+    icon: "Layers",
   },
   {
     id: "K",
     title: "Compounding & Time",
     subtitle: "The quiet force behind almost everything",
+    icon: "Hourglass",
   },
   {
     id: "L",
     title: "Decision-Making",
     subtitle: "Choosing well under uncertainty",
+    icon: "GitMerge",
   },
   {
     id: "M",
     title: "Systems & Incentives",
     subtitle: "Why smart people do strange things",
+    icon: "Settings2",
   },
   {
     id: "N",
     title: "Craft & Focus",
     subtitle: "Doing serious work in a distracted world",
+    icon: "Hammer",
   },
   {
     id: "O",
     title: "Philosophy & the Self",
     subtitle: "Schools of thought on the self, the absurd, and what it means to be a person",
+    icon: "Compass",
   },
   {
     id: "P",
     title: "The Almanack of Naval Ravikant",
     subtitle: "Wealth, judgment, and happiness in six parts",
+    icon: "Anchor",
   },
   {
     id: "Q",
     title: "Practical Wisdom",
     subtitle: "Widely-read life-advice bestsellers, closer to lived tactics than theory",
+    icon: "Lightbulb",
   },
   {
     id: "R",
     title: "Big Hypotheses",
     subtitle:
       "Open questions science and philosophy haven't settled — simulation, consciousness, the Fermi paradox",
+    icon: "Telescope",
   },
   {
     id: "S",
     title: "Dan Koe",
     subtitle:
       "Self-authorship, the one-person business, and modern meaning-making — one internet writer's full framework",
+    icon: "PenTool",
   },
   {
     id: "T",
     title: "Modern Creator Essayists",
     subtitle:
       "David Perell, Sahil Bloom, and Anne-Laure Le Cunff — writing, luck, and mindful productivity for the internet era",
+    icon: "Newspaper",
   },
   {
     id: "U",
     title: "Cognitive Biases",
     subtitle: "The systematic errors baked into how the mind judges, remembers, and decides",
+    icon: "EyeOff",
   },
   {
     id: "V",
     title: "Social Constructs",
     subtitle:
       "Things that feel like natural facts but are actually human inventions — time, money, race, gender, and more",
+    icon: "Users",
   },
   {
     id: "W",
     title: "Buffett & Munger Mental Models",
     subtitle:
       "Six frameworks behind Berkshire Hathaway's rejection of market efficiency in favor of psychological pragmatism",
+    icon: "Briefcase",
   },
   {
     id: "X",
     title: "The Architecture of Reality and Society",
     subtitle:
       "The hidden scaffolding behind human perception, belief, and social control — from Aperture's philosophy and psychology essays",
+    icon: "Network",
   },
   {
     id: "Y",
     title: "Paradoxes, Perception, and Unseen Realities",
     subtitle:
       "Where human logic, evolutionary psychology, and mathematical reality stop lining up — cognitive glitches and paradoxes at the edge of intuition",
+    icon: "Infinity",
   },
   {
     id: "Z",
     title: "Frontiers of Cosmological & Technological Evolution",
     subtitle:
       "The extreme vanguard of physics and biotechnology, where theory challenges the definition of existence itself",
+    icon: "Dna",
   },
 ];
 

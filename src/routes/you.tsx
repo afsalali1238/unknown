@@ -6,6 +6,18 @@ import { useStore, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
 import { cn } from "@/lib/utils";
+import {
+  Flame,
+  BarChart3,
+  BookOpen,
+  Heart,
+  Headphones,
+  Bookmark,
+  Library,
+  PenTool,
+  CloudOff,
+  Archive,
+} from "lucide-react";
 
 export const Route = createFileRoute("/you")({
   head: () => ({
@@ -36,7 +48,7 @@ function YouScreen() {
         <h1 className="mt-2 font-serif text-4xl text-ink">Your practice</h1>
       </header>
 
-      <Section title="Streak">
+      <Section title="Streak" icon={Flame}>
         <div className="flex items-baseline gap-3">
           <span className="font-mono text-6xl text-accent leading-none">{streak}</span>
           <MicroLabel>consecutive days</MicroLabel>
@@ -51,7 +63,7 @@ function YouScreen() {
         </div>
       </Section>
 
-      <Section title="Stats">
+      <Section title="Stats" icon={BarChart3}>
         <div className="grid grid-cols-3 gap-3">
           <Stat label="Learned" value={learned} hydrated={hydrated} />
           <Stat label="In review" value={inReview} hydrated={hydrated} />
@@ -64,7 +76,7 @@ function YouScreen() {
       <Interests />
       <AudioPreferences />
 
-      <Section title="Bookmarks">
+      <Section title="Bookmarks" icon={Bookmark}>
         {!hydrated ? (
           <div className="h-24 animate-pulse border border-line bg-line/20" aria-hidden="true" />
         ) : bookmarked.length === 0 ? (
@@ -126,7 +138,7 @@ function Reading() {
     : [];
 
   return (
-    <Section title="Reading">
+    <Section title="Reading" icon={BookOpen}>
       {!hydrated ? (
         <div className="h-16 animate-pulse border border-line bg-line/20" aria-hidden="true" />
       ) : (
@@ -188,10 +200,21 @@ function Reading() {
   );
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({
+  title,
+  icon: Icon,
+  children,
+}: {
+  title: string;
+  icon?: React.ElementType;
+  children: React.ReactNode;
+}) {
   return (
     <section className="border-t border-line pt-6">
-      <MicroLabel>{title}</MicroLabel>
+      <div className="flex items-center gap-2 text-ink-soft">
+        {Icon && <Icon className="w-4 h-4" />}
+        <MicroLabel>{title}</MicroLabel>
+      </div>
       <div className="mt-4">{children}</div>
     </section>
   );
@@ -221,7 +244,7 @@ function Interests() {
   const [hintsReset, setHintsReset] = useState(false);
 
   return (
-    <Section title="Interests">
+    <Section title="Interests" icon={Heart}>
       <p className="text-sm text-ink-soft">
         These decide what shows up first under "For you" on the Map.
       </p>
@@ -274,7 +297,7 @@ function AudioPreferences() {
   const speeds = [0.8, 1.0, 1.2, 1.5, 2.0];
 
   return (
-    <Section title="Audio Preferences">
+    <Section title="Audio Preferences" icon={Headphones}>
       <p className="text-sm text-ink-soft">Adjust the playback speed for the narrator.</p>
       <div className="mt-4 flex flex-wrap gap-2">
         {speeds.map((s) => (
@@ -320,7 +343,7 @@ function Glossary() {
       : list
   ).sort((a, b) => a.term.localeCompare(b.term));
   return (
-    <Section title="Glossary">
+    <Section title="Glossary" icon={Library}>
       <input
         value={q}
         onChange={(e) => setQ(e.target.value)}
@@ -395,7 +418,7 @@ function Scratchpad() {
   const value = useStore((s) => s.scratchpad);
   const set = useStore((s) => s.setScratchpad);
   return (
-    <Section title="Scratchpad">
+    <Section title="Scratchpad" icon={PenTool}>
       <textarea
         value={value}
         onChange={(e) => set(e.target.value)}
@@ -409,7 +432,7 @@ function Scratchpad() {
 
 function Offline() {
   return (
-    <Section title="Offline">
+    <Section title="Offline" icon={CloudOff}>
       <InstallAppButton />
     </Section>
   );
@@ -440,7 +463,7 @@ function Backup() {
   };
 
   return (
-    <Section title="Backup">
+    <Section title="Backup" icon={Archive}>
       <p className="text-sm text-ink-soft">
         All progress lives in this browser. Export to keep it.
       </p>
