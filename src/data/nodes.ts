@@ -6713,12 +6713,14 @@ export const NODES: Node[] = [
         label: "Existentialism Is a Humanism (full text)",
         source: "Marxists Internet Archive",
         url: "https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm",
-      },
+          archive: { status: "full", path: "content/sources/O7-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Re-reading Sartre's lecture Existentialism Is a Humanism",
         source: "Aeon Essays",
         url: "https://aeon.co/essays/re-reading-sartres-lecture-existentialism-is-a-humanism",
-      },
+          archive: { status: "full", path: "content/sources/O7-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -6756,12 +6758,14 @@ export const NODES: Node[] = [
         label: "D. Anthony Storm's Commentary on The Sickness Unto Death",
         source: "sorenkierkegaard.org",
         url: "https://sorenkierkegaard.org/sickness-unto-death.html",
-      },
+          archive: { status: "full", path: "content/sources/O8-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "The Sickness unto Death",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/The_Sickness_unto_Death",
-      },
+          archive: { status: "full", path: "content/sources/O8-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -6800,12 +6804,14 @@ export const NODES: Node[] = [
         label: "The Ethics of Ambiguity (full text)",
         source: "Marxists Internet Archive",
         url: "https://www.marxists.org/reference/subject/ethics/de-beauvoir/ambiguity/index.htm",
-      },
+          archive: { status: "full", path: "content/sources/O9-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "The Ethics of Ambiguity",
         source: "Philosophy Now, Issue 69",
         url: "https://philosophynow.org/issues/69/The_Ethics_of_Ambiguity",
-      },
+          archive: { status: "full", path: "content/sources/O9-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -6843,12 +6849,14 @@ export const NODES: Node[] = [
         label: "Meditations (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/2680",
-      },
+          archive: { status: "full", path: "content/sources/O10-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Marcus Aurelius",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/marcus-aurelius/",
-      },
+          archive: { status: "full", path: "content/sources/O10-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -6886,12 +6894,14 @@ export const NODES: Node[] = [
         label: "Letters from a Stoic (selection)",
         source: "Internet Archive",
         url: "https://archive.org/details/lettersfromstoic0000lsen",
-      },
+          archive: { status: "full", path: "content/sources/O11-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Seneca",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/seneca/",
-      },
+          archive: { status: "full", path: "content/sources/O11-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -6929,12 +6939,14 @@ export const NODES: Node[] = [
         label: "Tao Te Ching (Legge translation, full text)",
         source: "Internet Sacred Text Archive",
         url: "https://www.sacred-texts.com/tao/taote.htm",
-      },
+          archive: { status: "full", path: "content/sources/O12-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Laozi",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/laozi/",
-      },
+          archive: { status: "full", path: "content/sources/O12-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -6972,12 +6984,14 @@ export const NODES: Node[] = [
         label: "The Dhammapada (Buddharakkhita translation)",
         source: "Access to Insight",
         url: "https://www.accesstoinsight.org/lib/authors/budrak/dhp.html",
-      },
+          archive: { status: "full", path: "content/sources/O13-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Buddha",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/buddha/",
-      },
+          archive: { status: "full", path: "content/sources/O13-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7015,12 +7029,14 @@ export const NODES: Node[] = [
         label: "Thus Spoke Zarathustra (Common translation, full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/1998",
-      },
+          archive: { status: "full", path: "content/sources/O14-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Friedrich Nietzsche",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/nietzsche/",
-      },
+          archive: { status: "full", path: "content/sources/O14-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7058,12 +7074,14 @@ export const NODES: Node[] = [
         label: "Facing Up to the Problem of Consciousness (full PDF)",
         source: "consc.net",
         url: "https://consc.net/papers/facing.pdf",
-      },
+          archive: { status: "full", path: "content/sources/O15-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Consciousness",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/consciousness/",
-      },
+          archive: { status: "full", path: "content/sources/O15-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7101,12 +7119,14 @@ export const NODES: Node[] = [
         label: "Utilitarianism (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/11224",
-      },
+          archive: { status: "full", path: "content/sources/O16-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Mill's Moral and Political Philosophy",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/mill-moral-political/",
-      },
+          archive: { status: "full", path: "content/sources/O16-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7144,12 +7164,14 @@ export const NODES: Node[] = [
         label: "Groundwork of the Metaphysics of Morals (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/5682",
-      },
+          archive: { status: "full", path: "content/sources/O17-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Kant's Moral Philosophy",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/kant-moral/",
-      },
+          archive: { status: "full", path: "content/sources/O17-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7187,12 +7209,14 @@ export const NODES: Node[] = [
         label: "Nicomachean Ethics (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/8438",
-      },
+          archive: { status: "full", path: "content/sources/O18-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Aristotle's Ethics",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/aristotle-ethics/",
-      },
+          archive: { status: "full", path: "content/sources/O18-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7230,12 +7254,14 @@ export const NODES: Node[] = [
         label: "An Essay Concerning Human Understanding (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/10615",
-      },
+          archive: { status: "full", path: "content/sources/O19-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "John Locke",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/locke/",
-      },
+          archive: { status: "full", path: "content/sources/O19-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7273,12 +7299,14 @@ export const NODES: Node[] = [
         label: "Meditations on First Philosophy (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/59784",
-      },
+          archive: { status: "full", path: "content/sources/O20-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Descartes' Epistemology",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/descartes-epistemology/",
-      },
+          archive: { status: "full", path: "content/sources/O20-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7316,12 +7344,14 @@ export const NODES: Node[] = [
         label: "An Enquiry Concerning Human Understanding (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/9662",
-      },
+          archive: { status: "full", path: "content/sources/O21-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "David Hume",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/hume/",
-      },
+          archive: { status: "full", path: "content/sources/O21-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7360,12 +7390,14 @@ export const NODES: Node[] = [
         label: "Leviathan (full text)",
         source: "Project Gutenberg",
         url: "https://www.gutenberg.org/ebooks/3207",
-      },
+          archive: { status: "full", path: "content/sources/O22-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Hobbes's Moral and Political Philosophy",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/hobbes-moral/",
-      },
+          archive: { status: "full", path: "content/sources/O22-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7403,12 +7435,14 @@ export const NODES: Node[] = [
         label: "Rawls's political philosophy (summary)",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/rawls/",
-      },
+          archive: { status: "full", path: "content/sources/O23-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "A Theory of Justice",
         source: "Harvard University Press",
         url: "https://www.hup.harvard.edu/books/9780674000780",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -7446,12 +7480,14 @@ export const NODES: Node[] = [
         label: "Are You Living in a Computer Simulation? (full paper)",
         source: "simulation-argument.com",
         url: "https://simulation-argument.com/simulation.html",
-      },
+          archive: { status: "full", path: "content/sources/R1-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Review of Bostrom's Simulation Argument",
         source: "Stanford",
         url: "https://web.stanford.edu/class/symbsys205/BostromReview.html",
-      },
+          archive: { status: "full", path: "content/sources/R1-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7490,12 +7526,14 @@ export const NODES: Node[] = [
         label: "The Great Filter — Are We Almost Past It? (original essay)",
         source: "George Mason University",
         url: "http://hanson.gmu.edu/greatfilter.html",
-      },
+          archive: { status: "full", path: "content/sources/R2-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Great Filter",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Great_Filter",
-      },
+          archive: { status: "full", path: "content/sources/R2-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7533,12 +7571,14 @@ export const NODES: Node[] = [
         label: "Determined: A Science of Life Without Free Will",
         source: "Penguin Random House",
         url: "https://www.penguinrandomhouse.com/books/690231/determined-by-robert-m-sapolsky/",
-      },
+          archive: { status: "full", path: "content/sources/R3-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Determined: A Science of Life Without Free Will",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Determined:_A_Science_of_Life_Without_Free_Will",
-      },
+          archive: { status: "full", path: "content/sources/R3-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7576,12 +7616,14 @@ export const NODES: Node[] = [
         label: "Galileo's Error",
         source: "Penguin Random House",
         url: "https://www.penguinrandomhouse.com/books/599229/galileos-error-by-philip-goff/",
-      },
+          archive: { status: "full", path: "content/sources/R4-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Galileo's Error (book review)",
         source: "Philosophy Now, Issue 135",
         url: "https://philosophynow.org/issues/135/Galileos_Error_by_Philip_Goff",
-      },
+          archive: { status: "full", path: "content/sources/R4-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7620,12 +7662,14 @@ export const NODES: Node[] = [
           "Republication of: Large number coincidences and the anthropic principle in cosmology",
         source: "General Relativity and Gravitation (Springer)",
         url: "https://link.springer.com/article/10.1007/s10714-011-1258-7",
-      },
+          archive: { status: "full", path: "content/sources/R5-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Fine-Tuning",
         source: "Stanford Encyclopedia of Philosophy",
         url: "https://plato.stanford.edu/entries/fine-tuning/",
-      },
+          archive: { status: "full", path: "content/sources/R5-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7663,12 +7707,14 @@ export const NODES: Node[] = [
         label: "Is the Universe Made of Math? (excerpt)",
         source: "Scientific American",
         url: "https://www.scientificamerican.com/article/is-the-universe-made-of-math-excerpt/",
-      },
+          archive: { status: "full", path: "content/sources/R6-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Our Mathematical Universe",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Our_Mathematical_Universe",
-      },
+          archive: { status: "full", path: "content/sources/R6-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7707,7 +7753,8 @@ export const NODES: Node[] = [
         label: "The Art Of Self-Architecture (How To Change Who You Are)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-art-of-self-architecture-how-to-change-who-you-are/",
-      },
+          archive: { status: "full", path: "content/sources/S1-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7745,7 +7792,8 @@ export const NODES: Node[] = [
         label: "The One-Person Business Model (How To Productize Yourself)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-one-person-business-model-how-to-monetize-yourself/",
-      },
+          archive: { status: "full", path: "content/sources/S2-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7784,7 +7832,8 @@ export const NODES: Node[] = [
         label: "The $1 Million Dollar Skill Stack (Learn In This Order)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-1-million-dollar-skill-stack-learn-in-this-order/",
-      },
+          archive: { status: "full", path: "content/sources/S3-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7823,7 +7872,8 @@ export const NODES: Node[] = [
         label: "Learn This Skill If You Want To Thrive In The Next 10 Years",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/learn-this-skill-if-you-want-to-thrive-in-the-next-10-years/",
-      },
+          archive: { status: "full", path: "content/sources/S4-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7862,12 +7912,14 @@ export const NODES: Node[] = [
         label: "The Art Of Focus: Official Book Summary By The Author",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-art-of-focus-official-book-summary-by-the-author-dan-koe/",
-      },
+          archive: { status: "full", path: "content/sources/S5-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "The Art of Focus",
         source: "theartoffocusbook.com",
         url: "https://theartoffocusbook.com/",
-      },
+          archive: { status: "full", path: "content/sources/S5-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7905,7 +7957,8 @@ export const NODES: Node[] = [
         label: "The Meaning Crisis (How To Do Something That Matters)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-meaning-crisis-how-to-do-something-that-matters/",
-      },
+          archive: { status: "full", path: "content/sources/S6-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7943,7 +7996,8 @@ export const NODES: Node[] = [
         label: "The Ultimate Guide to Writing Online",
         source: "David Perell",
         url: "https://perell.com/essay/the-ultimate-guide-to-writing-online/",
-      },
+          archive: { status: "full", path: "content/sources/T1-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -7982,7 +8036,8 @@ export const NODES: Node[] = [
         label: "The 4 Types of Luck",
         source: "The Curiosity Chronicle (Sahil Bloom)",
         url: "https://www.sahilbloom.com/newsletter/the-4-types-of-luck",
-      },
+          archive: { status: "full", path: "content/sources/T2-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8021,7 +8076,8 @@ export const NODES: Node[] = [
         label: "Interstitial journaling: combining notes, to-do and time tracking",
         source: "Ness Labs",
         url: "https://nesslabs.com/interstitial-journaling",
-      },
+          archive: { status: "full", path: "content/sources/T3-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8059,7 +8115,8 @@ export const NODES: Node[] = [
         label: "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises (full paper)",
         source: "UC San Diego",
         url: "https://pages.ucsd.edu/~mckenzie/nickersonConfirmationBias.pdf",
-      },
+          archive: { status: "full", path: "content/sources/U1-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8098,7 +8155,8 @@ export const NODES: Node[] = [
         label: "Judgment under Uncertainty: Heuristics and Biases (full paper)",
         source: "Tufts University",
         url: "https://www.cs.tufts.edu/comp/150AIH/pdf/TverskyKa74.pdf",
-      },
+          archive: { status: "full", path: "content/sources/U2-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8136,7 +8194,8 @@ export const NODES: Node[] = [
         label: "Judgment under Uncertainty: Heuristics and Biases (full paper)",
         source: "Tufts University",
         url: "https://www.cs.tufts.edu/comp/150AIH/pdf/TverskyKa74.pdf",
-      },
+          archive: { status: "full", path: "content/sources/U3-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8175,7 +8234,8 @@ export const NODES: Node[] = [
         label: "The Psychology of Sunk Cost",
         source: "ScienceDirect",
         url: "https://www.sciencedirect.com/science/article/abs/pii/0749597885900494",
-      },
+          archive: { status: "full", path: "content/sources/U4-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8214,7 +8274,8 @@ export const NODES: Node[] = [
         label: "Unskilled and Unaware of It (full paper)",
         source: "University of Michigan",
         url: "https://sites.lsa.umich.edu/sasi/wp-content/uploads/sites/275/2015/11/krugerdunning99.pdf",
-      },
+          archive: { status: "full", path: "content/sources/U5-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8252,7 +8313,8 @@ export const NODES: Node[] = [
         label: "Prospect Theory: An Analysis of Decision under Risk",
         source: "The Econometric Society",
         url: "https://www.econometricsociety.org/publications/econometrica/1979/03/01/prospect-theory-analysis-decision-under-risk",
-      },
+          archive: { status: "full", path: "content/sources/U6-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8290,7 +8352,8 @@ export const NODES: Node[] = [
         label: "A Constant Error in Psychological Ratings (full paper)",
         source: "MIT",
         url: "https://web.mit.edu/curhan/www/docs/Articles/biases/4_J_Applied_Psychology_25_(Thorndike).pdf",
-      },
+          archive: { status: "full", path: "content/sources/U7-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8328,7 +8391,8 @@ export const NODES: Node[] = [
         label: "Hindsight bias",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Hindsight_bias",
-      },
+          archive: { status: "full", path: "content/sources/U8-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8366,12 +8430,14 @@ export const NODES: Node[] = [
         label: "Time, Work-Discipline, and Industrial Capitalism",
         source: "Past & Present, 1967 (Oxford Academic)",
         url: "https://academic.oup.com/past/article-abstract/38/1/56/1454624",
-      },
+          archive: { status: "unavailable" }
+    },
       {
         label: "Time, work-discipline and industrial capitalism (full text)",
         source: "libcom.org",
         url: "https://libcom.org/article/time-work-discipline-and-industrial-capitalism-e-p-thompson",
-      },
+          archive: { status: "full", path: "content/sources/V1-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8410,7 +8476,8 @@ export const NODES: Node[] = [
         label: "Debt: The First 5,000 Years",
         source: "davidgraeber.org",
         url: "https://davidgraeber.org/books/debt-the-first-5000-years/",
-      },
+          archive: { status: "full", path: "content/sources/V2-0.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8449,12 +8516,14 @@ export const NODES: Node[] = [
         label: "Imagined Communities",
         source: "Britannica",
         url: "https://www.britannica.com/topic/Imagined-Communities-Reflections-on-the-Origins-and-Spread-of-Nationalism",
-      },
+          archive: { status: "full", path: "content/sources/V3-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Imagined community",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Imagined_community",
-      },
+          archive: { status: "full", path: "content/sources/V3-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8492,12 +8561,14 @@ export const NODES: Node[] = [
         label: "Man's Most Dangerous Myth: The Fallacy of Race",
         source: "Amazon (Columbia University Press ed.)",
         url: "https://www.amazon.com/Mans-Most-Dangerous-Myth-Fallacy/dp/0803946481",
-      },
+          archive: { status: "full", path: "content/sources/V4-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Ashley Montagu",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Ashley_Montagu",
-      },
+          archive: { status: "full", path: "content/sources/V4-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8535,12 +8606,14 @@ export const NODES: Node[] = [
         label: "Gender Trouble",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Gender_Trouble",
-      },
+          archive: { status: "full", path: "content/sources/V5-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Judith Butler's Concept of Performativity",
         source: "literariness.org",
         url: "https://literariness.org/2016/10/10/judith-butlers-concept-of-performativity/",
-      },
+          archive: { status: "full", path: "content/sources/V5-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8579,12 +8652,14 @@ export const NODES: Node[] = [
         label: "What Is Property? (full text)",
         source: "csun.edu",
         url: "http://www.csun.edu/~kaddison/what_is_property.pdf",
-      },
+          archive: { status: "full", path: "content/sources/V6-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Pierre-Joseph Proudhon",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Pierre-Joseph_Proudhon",
-      },
+          archive: { status: "full", path: "content/sources/V6-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8623,12 +8698,14 @@ export const NODES: Node[] = [
         label: "Beyond Measure: The Hidden History of Measurement",
         source: "W. W. Norton & Company",
         url: "https://wwnorton.com/books/9781324035855",
-      },
+          archive: { status: "full", path: "content/sources/V7-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Beyond Measure (book review)",
         source: "The Washington Post",
         url: "https://www.washingtonpost.com/books/2022/11/30/measurement-james-vincent-book-review/",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -8667,12 +8744,14 @@ export const NODES: Node[] = [
         label: "Marriage, a History",
         source: "Penguin Random House",
         url: "https://www.penguinrandomhouse.com/books/291184/marriage-a-history-by-stephanie-coontz/",
-      },
+          archive: { status: "full", path: "content/sources/V8-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Stephanie Coontz's Marriage: A History (review)",
         source: "Slate",
         url: "https://slate.com/news-and-politics/2005/05/stephanie-coontz-s-marriage-a-history.html",
-      },
+          archive: { status: "full", path: "content/sources/V8-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8711,12 +8790,14 @@ export const NODES: Node[] = [
         label: "The Psychology of Human Misjudgment (transcript)",
         source: "Farnam Street",
         url: "https://fs.blog/great-talks/psychology-human-misjudgment/",
-      },
+          archive: { status: "unavailable" }
+    },
       {
         label: "Charlie Munger: 'The Psychology of Human Misjudgment,' Harvard 1995",
         source: "Speakola",
         url: "https://speakola.com/ideas/charlie-munger-human-misjudgement-harvard-1995",
-      },
+          archive: { status: "full", path: "content/sources/W1-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8755,12 +8836,14 @@ export const NODES: Node[] = [
         label: "Chairman's Letter — 1987",
         source: "Berkshire Hathaway",
         url: "https://www.berkshirehathaway.com/letters/1987.html",
-      },
+          archive: { status: "full", path: "content/sources/W2-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "The Timeless Parable of Mr. Market",
         source: "Farnam Street",
         url: "https://fs.blog/mr-market/",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -8799,12 +8882,14 @@ export const NODES: Node[] = [
         label: "Businesses – The Great, the Good and the Gruesome (2007 Chairman's Letter)",
         source: "Berkshire Hathaway",
         url: "https://www.berkshirehathaway.com/letters/2007ltr.pdf",
-      },
+          archive: { status: "full", path: "content/sources/W3-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Warren Buffett: Identifying Great, Good, & Gruesome Businesses",
         source: "Value Research",
         url: "https://www.valueresearchonline.com/stories/221868/warren-buffett-identifying-great-good-gruesome-businesses/",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -8843,12 +8928,14 @@ export const NODES: Node[] = [
         label: "Chairman's Letter — 1989",
         source: "Berkshire Hathaway",
         url: "https://www.berkshirehathaway.com/letters/1989.html",
-      },
+          archive: { status: "full", path: "content/sources/W4-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "Discussion: Buffett's 1989 Letter on the Institutional Imperative",
         source: "Hacker News",
         url: "https://news.ycombinator.com/item?id=14287430",
-      },
+          archive: { status: "full", path: "content/sources/W4-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8887,12 +8974,14 @@ export const NODES: Node[] = [
         label: "The Ovarian Lottery (University of Florida speech, 1998)",
         source: "Tilson Funds",
         url: "https://tilsonfunds.com/BuffettUofFloridaspeech.pdf",
-      },
+          archive: { status: "full", path: "content/sources/W5-0.md", retrieved: "2026-07-16" }
+    },
       {
         label: "What Is the Veil of Ignorance? (John Rawls)",
         source: "Sloww",
         url: "https://www.sloww.co/original-position-veil-of-ignorance/",
-      },
+          archive: { status: "full", path: "content/sources/W5-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8931,12 +9020,14 @@ export const NODES: Node[] = [
         label: "Chapter Three: The Munger Approach to Life, Learning, and Decision-Making",
         source: "Stripe Press",
         url: "https://www.stripe.press/poor-charlies-almanack/chapter-three",
-      },
+          archive: { status: "unavailable" }
+    },
       {
         label: "Poor Charlie's Almanack — Summary & Review",
         source: "BeFreed",
         url: "https://www.befreed.ai/book/poor-charlies-almanack-by-peter-d-kaufman",
-      },
+          archive: { status: "full", path: "content/sources/W6-1.md", retrieved: "2026-07-16" }
+    },
     ],
   },
   {
@@ -8975,7 +9066,8 @@ export const NODES: Node[] = [
         label: "The 7 Levels of Reality",
         source: "Aperture",
         url: "https://www.youtube.com/watch?v=stPzgS0fdYk",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9014,7 +9106,8 @@ export const NODES: Node[] = [
         label: "The Highest Levels of Thinking | Why Society Is Stuck at the Bottom",
         source: "Aperture",
         url: "https://www.youtube.com/watch?v=HraPf_MCcps",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9053,7 +9146,8 @@ export const NODES: Node[] = [
         label: "The Hidden Structures of Belief Most People Never Question",
         source: "Aperture",
         url: "https://www.youtube.com/watch?v=tswqCgoflQk",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9092,7 +9186,8 @@ export const NODES: Node[] = [
         label: "Algorithms Are Destroying Society",
         source: "Aperture",
         url: "https://www.youtube.com/watch?v=_k4p_3lJ74E",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9131,7 +9226,8 @@ export const NODES: Node[] = [
         label: "The Terrifying Theory of Quantum Immortality",
         source: "Aperture",
         url: "https://www.youtube.com/watch?v=xZO01FCcPE4",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9170,7 +9266,8 @@ export const NODES: Node[] = [
         label: "Something Scary Happens When You Accept Time as the 4th Dimension",
         source: "Aperture",
         url: "https://www.youtube.com/watch?v=swbBInPN5vs",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9209,7 +9306,8 @@ export const NODES: Node[] = [
         label: "3 Hours of Brain F*ck Paradoxes to Fall Asleep To",
         source: "SleepWise",
         url: "https://www.youtube.com/watch?v=l01DyPfV10Y",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9248,7 +9346,8 @@ export const NODES: Node[] = [
         label: "3 Hours of Most Misunderstood Physics Concepts to Fall Asleep To",
         source: "SleepWise",
         url: "https://www.youtube.com/watch?v=fQDm9AeED9M",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9287,7 +9386,8 @@ export const NODES: Node[] = [
         label: "The Human Mind Explained to Fall Asleep To",
         source: "SleepWise",
         url: "https://www.youtube.com/watch?v=ysxP1ZRngcQ",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9326,7 +9426,8 @@ export const NODES: Node[] = [
         label: "Every Feeling You Can't Name Explained to Fall Asleep To",
         source: "SleepWise",
         url: "https://www.youtube.com/watch?v=8nvt8zGY7cc",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9365,7 +9466,8 @@ export const NODES: Node[] = [
         label: "Every REAL Glitch in the Matrix Revealed to Fall Asleep To",
         source: "SleepWise",
         url: "https://www.youtube.com/watch?v=N-nIWs58As8",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9403,7 +9505,8 @@ export const NODES: Node[] = [
         label: "The Most Brutal Truths of Life to Fall Asleep To",
         source: "SleepWise",
         url: "https://www.youtube.com/watch?v=lQLBgPAcRhk",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9441,7 +9544,8 @@ export const NODES: Node[] = [
         label: "Brian Greene — What Was There Before the Big Bang?",
         source: "Science Time",
         url: "https://www.youtube.com/watch?v=PXixKGcctms",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9479,7 +9583,8 @@ export const NODES: Node[] = [
         label: "Mysterious 'Unparticles' May Be Pushing the Universe Apart",
         source: "Science Time",
         url: "https://www.youtube.com/shorts/tycPtqNX_KE",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9518,7 +9623,8 @@ export const NODES: Node[] = [
         label: "Our Universe Is Merging With Baby Universes",
         source: "Science Time",
         url: "https://www.youtube.com/shorts/teKKUYZC94s",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9557,7 +9663,8 @@ export const NODES: Node[] = [
         label: "Webb Checked TRAPPIST-1e Again — and the Signs of Life Got Darker",
         source: "Science Time",
         url: "https://www.youtube.com/watch?v=H6QTc-ifxbU",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9597,7 +9704,8 @@ export const NODES: Node[] = [
           "Artificial Superintelligence, AI in a Box & Machine Consciousness With Nick Bostrom",
         source: "Science Time",
         url: "https://www.youtube.com/watch?v=PVhFYCzn66g",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9636,7 +9744,8 @@ export const NODES: Node[] = [
         label: "CRISPR 2.0 Prime Editing to Heal 90% of Genetic Diseases",
         source: "Science Time",
         url: "https://www.youtube.com/watch?v=vP6DSIoOcIQ",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
   },
   {
@@ -9674,7 +9783,8 @@ export const NODES: Node[] = [
         label: "Cynefin framework",
         source: "Untools",
         url: "https://untools.co/cynefin-framework",
-      },
+          archive: { status: "full", path: "content/sources/AA1-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Decision-Making", "Cognitive Biases & Models", "Markets & Narrative"],
   },
@@ -9707,7 +9817,8 @@ export const NODES: Node[] = [
         label: "Iceberg Model",
         source: "Untools",
         url: "https://untools.co/iceberg-model",
-      },
+          archive: { status: "full", path: "content/sources/AA2-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
   },
@@ -9745,7 +9856,8 @@ export const NODES: Node[] = [
         label: "Hard Choice Model",
         source: "Untools",
         url: "https://untools.co/hard-choice-model",
-      },
+          archive: { status: "full", path: "content/sources/AA3-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Decision-Making", "Meaning & Self"],
   },
@@ -9783,7 +9895,8 @@ export const NODES: Node[] = [
         label: "The Tail End",
         source: "Wait But Why",
         url: "https://waitbutwhy.com/2015/12/the-tail-end.html",
-      },
+          archive: { status: "full", path: "content/sources/AA4-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Meaning & Self", "Compounding & Patience"],
   },
@@ -9822,7 +9935,8 @@ export const NODES: Node[] = [
         label: "The Cook and the Chef",
         source: "Wait But Why",
         url: "https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html",
-      },
+          archive: { status: "full", path: "content/sources/AA5-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["First-Principles Thinking", "Startups & Founders", "Moats & Network Effects"],
   },
@@ -9861,7 +9975,8 @@ export const NODES: Node[] = [
         label: "Why Procrastinators Procrastinate",
         source: "Wait But Why",
         url: "https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html",
-      },
+          archive: { status: "full", path: "content/sources/AA6-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
   },
@@ -9899,7 +10014,8 @@ export const NODES: Node[] = [
         label: "The Generation Effect",
         source: "Ness Labs",
         url: "https://nesslabs.com/generation-effect",
-      },
+          archive: { status: "full", path: "content/sources/AA7-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
   },
@@ -9937,7 +10053,8 @@ export const NODES: Node[] = [
         label: "The Zeigarnik Effect",
         source: "Ness Labs",
         url: "https://nesslabs.com/zeigarnik-effect",
-      },
+          archive: { status: "full", path: "content/sources/AA8-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
   },
@@ -9976,7 +10093,8 @@ export const NODES: Node[] = [
         label: "Networked Note-taking",
         source: "Ness Labs",
         url: "https://nesslabs.com/networked-note-taking",
-      },
+          archive: { status: "full", path: "content/sources/AA9-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Craft & Deep Work"],
   },
@@ -10015,7 +10133,8 @@ export const NODES: Node[] = [
         label: "Identity-Based Habits",
         source: "James Clear",
         url: "https://jamesclear.com/identity-based-habits",
-      },
+          archive: { status: "full", path: "content/sources/AA10-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Meaning & Self", "Compounding & Patience", "Health & Body"],
   },
@@ -10054,7 +10173,8 @@ export const NODES: Node[] = [
         label: "Continuous Improvement",
         source: "James Clear",
         url: "https://jamesclear.com/continuous-improvement",
-      },
+          archive: { status: "full", path: "content/sources/AA11-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Compounding & Patience"],
   },
@@ -10092,7 +10212,8 @@ export const NODES: Node[] = [
         label: "Habit Stacking",
         source: "James Clear",
         url: "https://jamesclear.com/habit-stacking",
-      },
+          archive: { status: "full", path: "content/sources/AA12-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Incentives & Systems", "Craft & Deep Work", "Health & Body"],
   },
@@ -10130,7 +10251,8 @@ export const NODES: Node[] = [
         label: "Panpsychism",
         source: "Aeon",
         url: "https://aeon.co/essays/panpsychism-is-crazy-but-its-also-most-probably-true",
-      },
+          archive: { status: "full", path: "content/sources/AA13-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
   },
@@ -10168,7 +10290,8 @@ export const NODES: Node[] = [
         label: "Epistemic Injustice",
         source: "Aeon",
         url: "https://aeon.co/essays/how-epistemic-injustice-harms-the-marginalised",
-      },
+          archive: { status: "full", path: "content/sources/AA14-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Social Constructs"],
   },
@@ -10207,7 +10330,8 @@ export const NODES: Node[] = [
         label: "The Predictive Brain",
         source: "Aeon",
         url: "https://aeon.co/essays/how-the-predictive-brain-makes-us-hallucinate-our-reality",
-      },
+          archive: { status: "full", path: "content/sources/AA15-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Philosophy & the Self", "Cognitive Biases & Models"],
   },
@@ -10245,7 +10369,8 @@ export const NODES: Node[] = [
         label: "The Map is Not the Territory",
         source: "LessWrong",
         url: "https://www.lesswrong.com/tag/the-map-is-not-the-territory",
-      },
+          archive: { status: "full", path: "content/sources/AA16-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
   },
@@ -10283,7 +10408,8 @@ export const NODES: Node[] = [
         label: "Steelmanning",
         source: "LessWrong",
         url: "https://www.lesswrong.com/tag/steelmanning",
-      },
+          archive: { status: "full", path: "content/sources/AA17-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
   },
@@ -10321,7 +10447,8 @@ export const NODES: Node[] = [
         label: "Motivated Stopping",
         source: "LessWrong",
         url: "https://www.lesswrong.com/tag/motivated-stopping-and-motivated-continuation",
-      },
+          archive: { status: "full", path: "content/sources/AA18-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
   },
@@ -10360,7 +10487,8 @@ export const NODES: Node[] = [
         label: "The Good Enough Mother",
         source: "The School of Life",
         url: "https://www.theschooloflife.com/article/the-good-enough-mother/",
-      },
+          archive: { status: "full", path: "content/sources/AA19-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
   },
@@ -10399,7 +10527,8 @@ export const NODES: Node[] = [
         label: "Status Anxiety",
         source: "The School of Life",
         url: "https://www.theschooloflife.com/article/status-anxiety/",
-      },
+          archive: { status: "full", path: "content/sources/AA20-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Social Constructs", "Wealth, Leverage & Judgment"],
   },
@@ -10438,7 +10567,8 @@ export const NODES: Node[] = [
         label: "Romanticism vs Classicism",
         source: "The School of Life",
         url: "https://www.theschooloflife.com/article/romanticism-and-classicism/",
-      },
+          archive: { status: "full", path: "content/sources/AA21-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
   },
@@ -10476,7 +10606,8 @@ export const NODES: Node[] = [
         label: "John Keats on Negative Capability",
         source: "The Marginalian",
         url: "https://www.themarginalian.org/2012/11/01/john-keats-on-negative-capability/",
-      },
+          archive: { status: "full", path: "content/sources/AA22-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Craft & Deep Work", "First-Principles Thinking"],
   },
@@ -10514,7 +10645,8 @@ export const NODES: Node[] = [
         label: "Schopenhauer's Porcupine Dilemma",
         source: "The Marginalian",
         url: "https://www.themarginalian.org/2015/02/10/schopenhauer-porcupine-dilemma-freud/",
-      },
+          archive: { status: "full", path: "content/sources/AA23-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
   },
@@ -10553,7 +10685,8 @@ export const NODES: Node[] = [
         label: "Rilke on Living the Questions",
         source: "The Marginalian",
         url: "https://www.themarginalian.org/2012/06/01/rilke-on-questions/",
-      },
+          archive: { status: "full", path: "content/sources/AA24-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
   },
@@ -10592,7 +10725,8 @@ export const NODES: Node[] = [
         label: "The Kardashev Scale",
         source: "Big Think",
         url: "https://bigthink.com/hard-science/kardashev-scale/",
-      },
+          archive: { status: "full", path: "content/sources/AA25-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["AI & the Future"],
   },
@@ -10630,7 +10764,8 @@ export const NODES: Node[] = [
         label: "The Overview Effect",
         source: "Big Think",
         url: "https://bigthink.com/space/overview-effect/",
-      },
+          archive: { status: "full", path: "content/sources/AA26-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
   },
@@ -10669,7 +10804,8 @@ export const NODES: Node[] = [
         label: "Dark Forest Theory",
         source: "Big Think",
         url: "https://bigthink.com/surprising-science/the-dark-forest-theory-a-terrifying-explanation-of-why-we-havent-heard-from-aliens-yet/",
-      },
+          archive: { status: "full", path: "content/sources/AA27-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["AI & the Future", "Incentives & Systems"],
   },
@@ -10707,7 +10843,8 @@ export const NODES: Node[] = [
         label: "Nudge and Choice Architecture",
         source: "Behavioral Scientist",
         url: "https://behavioralscientist.org/nudge-turns-10-a-conversation-with-richard-thaler/",
-      },
+          archive: { status: "full", path: "content/sources/AA28-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
   },
@@ -10745,7 +10882,8 @@ export const NODES: Node[] = [
         label: "Hyperbolic Discounting",
         source: "Behavioral Scientist",
         url: "https://behavioralscientist.org/topics/behavioral-economics/",
-      },
+          archive: { status: "full", path: "content/sources/AA29-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Compounding & Patience"],
   },
@@ -10783,7 +10921,8 @@ export const NODES: Node[] = [
         label: "Sludge and Friction",
         source: "Behavioral Scientist",
         url: "https://behavioralscientist.org/sludge-and-the-administrative-state/",
-      },
+          archive: { status: "full", path: "content/sources/AA30-0.md", retrieved: "2026-07-16" }
+    },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
   },
