@@ -44,11 +44,11 @@ function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes
       search={{ cluster: cluster.id }}
       className="group flex flex-col border border-line bg-paper"
     >
-      <div className="flex-1 min-h-[220px] bg-ink p-5 flex flex-col justify-end">
+      <div className="flex-1 min-h-[220px] bg-accent p-5 flex flex-col justify-end">
         <h2 className="font-serif text-xl sm:text-2xl leading-tight text-paper group-hover:opacity-80 transition-opacity break-words">
           {cluster.title}
         </h2>
-        <p className="mt-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-paper/70">
+        <p className="mt-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-paper/80">
           {cluster.subtitle}
         </p>
       </div>
