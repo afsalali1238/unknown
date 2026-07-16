@@ -10,12 +10,14 @@ sanctioned way to add content. Never write a new inject-batchN.ts. Never create 
 quiz-patch JSON. Never hand-edit ids.
 
 ## Backing scripts (the mechanical steps — call these, don't reinvent)
+
 - `bun run scripts/next-id.ts <PREFIX> [count]` — next free id(s) for a prefix.
 - `bun run scripts/archive-sources.ts <clusterId>` — snapshot furtherReading URLs.
 - `bun run scripts/validate-nodes.ts` — schema gate (must pass before "done").
 - `bun run scripts/audit-content.ts ...` — inspect tags/clusters/fields when unsure.
 
 ## Non-negotiables (carried over from ADD-NODE-PROMPT.md — do not relax)
+
 1. Never fabricate a source. If you can't identify the real primary source, ask.
 2. Original synthesis, not paraphrase. layer0/1/2 are your own words.
 3. Match the existing tone of the target cluster. House style: confident, plain,
@@ -34,11 +36,13 @@ quiz-patch JSON. Never hand-edit ids.
 ## The flow
 
 ### Step 1 — Ingest
+
 Take the pasted source(s). For each item, identify the real primary source(s). If a URL
 was given, you may fetch it; if only notes, treat the user as the source of the synthesis
 but still cite the real underlying work in furtherReading.
 
 ### Step 2 — Propose (and WAIT)
+
 For every proposed node, present a one-line proposal BEFORE writing full content:
 `<id> — <title> — cluster <X> (<cluster title>) — thesis: <one line>`
 Get the id from `next-id.ts <PREFIX>` (PREFIX is usually the cluster letter; use the
@@ -47,9 +51,11 @@ Do not write layer0/1/2 until the user confirms the proposal. For a batch, list 
 proposals at once and confirm the set.
 
 ### Step 3 — Write
+
 After confirmation, for each node write the full object matching the Node type:
 `id, clusterId, title, author, year, medium, category, thesis, layer0, layer1, layer2,
 quiz {question, options[3-4], correctIndex, explanation}, related[], furtherReading[], tags[]`.
+
 - `related`: link within the new content AND back to existing nodes with a real thematic
   tie (use `audit-content.ts` / read nodes.ts to find good cross-links — this is the point
   of the app). Every related id must resolve to a real node.
@@ -57,18 +63,22 @@ quiz {question, options[3-4], correctIndex, explanation}, related[], furtherRead
 - Insert into the NODES array in `src/data/nodes.ts`.
 
 ### Step 4 — Archive
+
 Run `bun run scripts/archive-sources.ts <clusterId>` to snapshot the new furtherReading
 URLs into `public/content/sources/`. Sources that can't be fetched are triaged to
 `unavailable` and logged to `archive-failures.log` — that's expected, not an error.
 
 ### Step 5 — Validate gate (automatic, before saying "done")
+
 Run, in order, and do not report success unless all pass:
+
 1. `bun run scripts/validate-nodes.ts`
 2. `bun run lint`
 3. `bun run build`
-Then report: the new id(s), the new total node count, and any archive-failures entries.
+   Then report: the new id(s), the new total node count, and any archive-failures entries.
 
 ## Batch behavior
+
 For many items, loop Steps 1-4 across all of them, confirm proposals as a set in Step 2,
 then run the Step 5 gate ONCE at the end. There is no separate "batch mode" and no
 per-batch script — same flow, more nodes.

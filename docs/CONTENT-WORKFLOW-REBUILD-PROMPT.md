@@ -4,7 +4,7 @@ Goal: replace the current content-authoring pipeline — three overlapping, undo
 with one conversational workflow: paste a source, Claude interviews you, writes the node(s),
 archives the source, validates everything, and commits. No throwaway scripts, no orphaned patch
 files, no silent data loss. All 296 existing nodes, the `content/sources/` archive, and
-`dan-koe-articles/` stay exactly as they are — this rebuilds the *tool*, not the *content*.
+`dan-koe-articles/` stay exactly as they are — this rebuilds the _tool_, not the _content_.
 
 ---
 
@@ -15,7 +15,7 @@ Three systems do the same job (`add content to nodes.ts`), none aware of the oth
 - **`docs/ADD-NODE-PROMPT.md`** — a conversational prompt for one node at a time. Works, but has no
   connection to the archiving pipeline or any validation step.
 - **`scripts/inject-batch1.ts` → `inject-batch5.ts`** — five near-identical scripts, each with node
-  content hardcoded as literal JS objects. A new file was written *every time* a batch of content
+  content hardcoded as literal JS objects. A new file was written _every time_ a batch of content
   needed adding instead of reusing one tool. Dead weight after each run; nothing marks them retired.
 - **`scripts/archive-sources.ts` + `build-nodes-ts.ts` + `merge-epistemoph.js`** — the offline-archive
   and cluster-merge pipeline, run manually with no logging of what succeeded/failed beyond stdout.
@@ -23,8 +23,8 @@ Three systems do the same job (`add content to nodes.ts`), none aware of the oth
 Specific bugs found while reading the code (fix all of these, not just the ones listed — this is
 the minimum bar):
 
-1. **Ambiguous archive path.** `archive-sources.ts` line 15 has a literal comment: *"Or should it be
-   content/sources? ... Let's stick to content/sources at root as per the plan"* — while also
+1. **Ambiguous archive path.** `archive-sources.ts` line 15 has a literal comment: _"Or should it be
+   content/sources? ... Let's stick to content/sources at root as per the plan"_ — while also
    defining an unused `rootSourcesDir` vs. the path it actually writes to. There are effectively two
    candidate locations and the code picked one with a shrug. Pin this down for real: `content/sources/`
    at repo root is what `nodes.ts` paths and `CLAUDE.md` already reference — make that the only
@@ -32,12 +32,12 @@ the minimum bar):
    anything ever writes elsewhere.
 2. **Silent archive data loss on retry.** In `archive-sources.ts`, if an `archive` prop exists but the
    referenced file is missing, the script just deletes the `archive` prop and re-queues it — with no
-   log of *why* it was missing (deleted file? failed fetch? renamed node?) and no cap on retries. A
+   log of _why_ it was missing (deleted file? failed fetch? renamed node?) and no cap on retries. A
    source that 404s forever gets silently retried forever with no visibility.
 3. **Quiz content generated out-of-band.** `missing-quizzes.json`, `batch1-quizzes.json`,
    `batch2-quizzes.json`, `batch3-quizzes.json` are patch files of quiz data that never got folded
    back into a canonical pipeline — someone had to backfill quizzes separately from node creation.
-   The new workflow must generate the quiz *as part of* node creation, always. No more quiz-shaped
+   The new workflow must generate the quiz _as part of_ node creation, always. No more quiz-shaped
    files sitting outside `nodes.ts`.
 4. **Non-idempotent cluster merge.** `merge-epistemoph.js` hardcodes a `CLUSTER_MAP` remap table
    (`{ B: "J", C: "K", ... }`) to fold `old_nodes.ts` into `nodes.ts`. Running it twice, or against
@@ -48,7 +48,7 @@ the minimum bar):
    in range, `related` ids actually exist. A bad manual edit or a bad batch script currently corrupts
    data silently — this is likely part of why the git index has needed repair before (see memory:
    recurring bad git index in this repo).
-6. **`nodes.ts` is one 765KB file** (296 nodes as of 2026-07-15), hand-edited *and* script-mutated.
+6. **`nodes.ts` is one 765KB file** (296 nodes as of 2026-07-15), hand-edited _and_ script-mutated.
    `TECH_DEBT.md` already flags splitting this once node count "meaningfully exceeds ~300–400" — we're
    at 296 now, right at that trigger. A single giant file being rewritten by five different scripts is
    a plausible root cause of the git corruption and of bugs 1–4 above being hard to spot in diffs.

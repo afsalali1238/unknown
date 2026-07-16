@@ -114,7 +114,8 @@ async function main() {
     case "hooks": {
       // A feed card shows layer0 as a cold open — it must stop the thumb without
       // any surrounding context. Flag hooks that bury the idea or don't fit a card.
-      const WEAK_OPENER = /^\s*(this |in this |the (essay|paper|article|author|book|video|piece|chapter|report)\b|here,? |it |these )/i;
+      const WEAK_OPENER =
+        /^\s*(this |in this |the (essay|paper|article|author|book|video|piece|chapter|report)\b|here,? |it |these )/i;
       const flagged: { id: string; title: string; reasons: string[] }[] = [];
       for (const n of NODES) {
         const l0 = (n.layer0 ?? "").trim();
@@ -123,12 +124,15 @@ async function main() {
         else {
           if (WEAK_OPENER.test(l0)) reasons.push("weak/meta opener");
           if (l0.length < 120) reasons.push(`short (${l0.length} chars)`);
-          const firstSentence = (l0.split(/(?<=[.!?])\s/)[0] ?? l0);
-          if (firstSentence.length > 240) reasons.push(`long first sentence (${firstSentence.length} chars)`);
+          const firstSentence = l0.split(/(?<=[.!?])\s/)[0] ?? l0;
+          if (firstSentence.length > 240)
+            reasons.push(`long first sentence (${firstSentence.length} chars)`);
         }
         if (reasons.length) flagged.push({ id: n.id, title: n.title, reasons });
       }
-      console.log(`Hook check: ${flagged.length}/${NODES.length} nodes flagged (review — not all are wrong).`);
+      console.log(
+        `Hook check: ${flagged.length}/${NODES.length} nodes flagged (review — not all are wrong).`,
+      );
       for (const f of flagged) console.log(`  ${f.id}  [${f.reasons.join(", ")}]  ${f.title}`);
       break;
     }

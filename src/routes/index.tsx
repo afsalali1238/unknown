@@ -1,6 +1,14 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { Bookmark, Check, Maximize2, HelpCircle, Share2, LayoutGrid, ChevronUp } from "lucide-react";
+import {
+  Bookmark,
+  Check,
+  Maximize2,
+  HelpCircle,
+  Share2,
+  LayoutGrid,
+  ChevronUp,
+} from "lucide-react";
 import { CLUSTERS, type Node } from "@/data/nodes";
 import { Quiz } from "@/components/Quiz";
 import { MicroLabel } from "@/components/MicroLabel";
@@ -113,8 +121,12 @@ function FeedCard({ node, first }: { node: Node; first: boolean }) {
         <MicroLabel>
           {CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · {node.medium}
         </MicroLabel>
-        <h2 className="mt-4 font-serif text-2xl leading-tight text-ink sm:text-3xl">{node.title}</h2>
-        <p className="mt-4 flex-1 font-serif text-lg leading-relaxed text-ink-soft">{node.layer0}</p>
+        <h2 className="mt-4 font-serif text-2xl leading-tight text-ink sm:text-3xl">
+          {node.title}
+        </h2>
+        <p className="mt-4 flex-1 font-serif text-lg leading-relaxed text-ink-soft">
+          {node.layer0}
+        </p>
 
         {deeper && (
           <div className="mt-5 space-y-4 border-t border-line pt-5">
