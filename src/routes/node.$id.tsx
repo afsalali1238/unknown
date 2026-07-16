@@ -105,6 +105,9 @@ function NodeScreen() {
   const visitedMap = useStore((s) => s.visited);
   const interests = useStore((s) => s.interests);
   const dismissHint = useStore((s) => s.dismissHint);
+  const queued = useStore((s) => s.readNext.includes(node.id));
+  const addReadNext = useStore((s) => s.addReadNext);
+  const removeReadNext = useStore((s) => s.removeReadNext);
 
   const [showL1, setShowL1] = useState(false);
   const [showL2, setShowL2] = useState(false);
@@ -258,13 +261,23 @@ function NodeScreen() {
           </ul>
         </section>
 
-        <div className="mt-10 flex items-center gap-3">
+        <div className="mt-10 flex flex-wrap items-center gap-3">
           <button
             onClick={() => toggleBookmark(node.id)}
             className="flex items-center gap-2 border border-line px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:border-ink"
           >
             <span className={hydrated && bookmarked ? "text-accent" : "text-ink-soft"}>★</span>
             <span>{hydrated && bookmarked ? "Bookmarked" : "Bookmark"}</span>
+          </button>
+          <button
+            onClick={() => queued ? removeReadNext(node.id) : addReadNext(node.id)}
+            className={cn(
+              "flex items-center gap-2 border px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors",
+              hydrated && queued ? "border-ink bg-ink text-paper" : "border-line text-ink hover:border-ink"
+            )}
+          >
+            <span>{hydrated && queued ? "− Remove" : "+ Queue"}</span>
+            <span className="hidden sm:inline">Read Next</span>
           </button>
         </div>
 
