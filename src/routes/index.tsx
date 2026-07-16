@@ -1,12 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { NODES_BY_CLUSTER, NODE_BY_ID } from "@/data/nodes";
-import { SearchBar } from "@/components/SearchBar";
+import { Bookmark, Check, Maximize2, HelpCircle, Share2, LayoutGrid, ChevronUp } from "lucide-react";
+import { CLUSTERS, type Node } from "@/data/nodes";
+import { Quiz } from "@/components/Quiz";
 import { MicroLabel } from "@/components/MicroLabel";
-import { InstallAppButton } from "@/components/InstallAppButton";
-import { LatticeIndex } from "@/components/LatticeIndex";
-import { useStore, dueCount, currentStreak } from "@/lib/store";
+import { buildFeed } from "@/lib/feed";
+import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -14,116 +15,179 @@ export const Route = createFileRoute("/")({
       { title: "Unknown — A latticework of powerful ideas" },
       {
         name: "description",
-        content:
-          "Cross-linked, layered, audio-narrated map of the world's most powerful ideas. Retain what you read.",
+        content: "A feed of the world's most powerful ideas, tuned to what you care about.",
       },
     ],
   }),
-  component: MapScreen,
+  component: FeedScreen,
 });
 
-function MapScreen() {
+const CLUSTER_TITLE: Record<string, string> = Object.fromEntries(
+  CLUSTERS.map((c) => [c.id, c.title]),
+);
+
+function FeedScreen() {
   const navigate = useNavigate();
   const hydrated = useHydrated();
-  const lastNodeId = useStore((s) => s.lastNodeId);
-  const review = useStore((s) => s.review);
-  const streakDays = useStore((s) => s.streakDays);
-  const visited = useStore((s) => s.visited);
   const onboardingComplete = useStore((s) => s.onboardingComplete);
   const interests = useStore((s) => s.interests);
-  const due = hydrated ? dueCount(review) : 0;
-  const streak = hydrated ? currentStreak(streakDays) : 0;
-  const cont = hydrated && lastNodeId ? NODE_BY_ID[lastNodeId] : null;
-  // Before a user has opened anything, "Start here" is the app's one shot
-  // at reflecting what they just picked in onboarding - it was hardcoded to
-  // cluster A's first node regardless of interests, so every new user saw
-  // the exact same suggestion no matter which tags they chose. Prefer the
-  // first node (in stable NODE_BY_ID order) matching any selected interest;
-  // fall back to the old default only when there are no interests to match
-  // (e.g. onboarding was skipped).
-  const interestMatch =
-    interests.length > 0
-      ? Object.values(NODE_BY_ID).find((n) => n.tags.some((t) => interests.includes(t)))
-      : undefined;
-  const starter = interestMatch ?? NODES_BY_CLUSTER["A"]?.[0] ?? Object.values(NODE_BY_ID)[0];
-  const resume = cont ?? starter;
+  const bookmarks = useStore((s) => s.bookmarks);
+  const gotIt = useStore((s) => s.gotIt);
+  const visited = useStore((s) => s.visited);
+
+  const [seed] = useState(() => (Date.now() & 0xffffffff) >>> 0 || 1);
+
+  const feed = useMemo(() => {
+    const likedIds = [
+      ...Object.keys(bookmarks).filter((k) => bookmarks[k]),
+      ...Object.keys(gotIt).filter((k) => gotIt[k]),
+    ];
+    return buildFeed({ interests, likedIds, visited, seed });
+    // Ordering is fixed for the session (seed) and the chosen interests; it
+    // deliberately does NOT re-shuffle as you browse (visited/bookmarks change),
+    // so your scroll position is never yanked out from under you.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [seed, interests]);
 
   useEffect(() => {
-    if (hydrated && !onboardingComplete) {
-      navigate({ to: "/onboarding" });
-    }
+    if (hydrated && !onboardingComplete) navigate({ to: "/onboarding" });
   }, [hydrated, onboardingComplete, navigate]);
 
-  if (hydrated && !onboardingComplete) {
-    return <div className="px-5 pt-8" />;
+  // Gate on hydration: the persisted store (interests, visited) loads async and
+  // the feed order is seeded, so rendering before hydration would mismatch SSR.
+  if (!hydrated) return <div className="px-5 pt-8" />;
+  if (!onboardingComplete) return <div className="px-5 pt-8" />;
+
+  return (
+    <div>
+      <header className="flex items-center justify-between px-5 py-2.5">
+        <div className="flex items-center gap-2">
+          <img src="/logo.svg" alt="" className="h-6 w-6 spiral-spin" />
+          <span className="font-serif text-lg tracking-tight text-ink">Unknown</span>
+        </div>
+        <Link
+          to="/map"
+          aria-label="Map view"
+          className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
+        >
+          <LayoutGrid className="h-4 w-4" /> Map
+        </Link>
+      </header>
+
+      <div className="h-[calc(100dvh-7.5rem)] snap-y snap-mandatory overflow-y-auto overscroll-contain">
+        {feed.map((node, i) => (
+          <FeedCard key={node.id} node={node} first={i === 0} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function FeedCard({ node, first }: { node: Node; first: boolean }) {
+  const bookmarked = useStore((s) => !!s.bookmarks[node.id]);
+  const mastered = useStore((s) => !!s.gotIt[node.id]);
+  const toggleBookmark = useStore((s) => s.toggleBookmark);
+  const markGotIt = useStore((s) => s.markGotIt);
+  const visitNode = useStore((s) => s.visitNode);
+  const [deeper, setDeeper] = useState(false);
+  const [quiz, setQuiz] = useState(false);
+
+  function openDeeper() {
+    setDeeper(true);
+    visitNode(node.id);
+  }
+
+  async function share() {
+    const url = `${window.location.origin}/node/${node.id}`;
+    try {
+      if (navigator.share) await navigator.share({ title: node.title, url });
+      else await navigator.clipboard.writeText(url);
+    } catch {
+      /* user cancelled */
+    }
   }
 
   return (
-    <div className="px-5 pt-8 sm:px-8 sm:pt-10">
-      <header className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img src="/logo.svg" alt="" className="h-8 w-8 spiral-spin" />
-          <h1 className="font-serif text-3xl leading-tight tracking-tight text-ink sm:text-4xl">
-            Unknown
-          </h1>
-        </div>
-        <div className="flex items-center gap-3">
-          {hydrated ? (
-            <MicroLabel>Streak · {streak}d</MicroLabel>
-          ) : (
-            <span aria-hidden="true" className="h-3 w-16 animate-pulse rounded-full bg-line" />
+    <section className="flex min-h-[calc(100dvh-7.5rem)] snap-start items-stretch gap-2 px-5 py-6">
+      <div className="flex min-w-0 flex-1 flex-col">
+        <MicroLabel>
+          {CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · {node.medium}
+        </MicroLabel>
+        <h2 className="mt-4 font-serif text-2xl leading-tight text-ink sm:text-3xl">{node.title}</h2>
+        <p className="mt-4 flex-1 font-serif text-lg leading-relaxed text-ink-soft">{node.layer0}</p>
+
+        {deeper && (
+          <div className="mt-5 space-y-4 border-t border-line pt-5">
+            <p className="font-serif text-base leading-relaxed text-ink">{node.layer1}</p>
+            <p className="font-serif text-base leading-relaxed text-ink">{node.layer2}</p>
+            <Link
+              to="/node/$id"
+              params={{ id: node.id }}
+              className="inline-flex font-mono text-[11px] uppercase tracking-[0.14em] text-accent hover:underline"
+            >
+              Open full node →
+            </Link>
+          </div>
+        )}
+
+        {quiz && <Quiz node={node} />}
+
+        <div className="mt-5 flex items-center justify-between">
+          <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+            {node.author} · {node.year}
+          </span>
+          {first && (
+            <span className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+              <ChevronUp className="h-3.5 w-3.5" /> swipe · next
+            </span>
           )}
-          <InstallAppButton variant="icon" />
         </div>
-      </header>
-      <p className="mt-2 font-serif text-lg italic leading-snug text-ink-soft sm:text-xl">
-        The latticework of powerful ideas.
-      </p>
-
-      <div className="mt-6">
-        <SearchBar />
       </div>
 
-      <div className="mt-8 grid grid-cols-2 gap-3">
-        <Link
-          to="/node/$id"
-          params={{ id: resume.id }}
-          className="group border border-line bg-paper p-4 shadow-[var(--shadow-card)] outline-none transition-colors duration-[var(--duration-base)] hover:border-ink active:bg-line/30 sm:p-5"
-        >
-          <MicroLabel>{cont ? "Continue" : "Start here"}</MicroLabel>
-          <p className="mt-2 font-serif text-base leading-snug text-ink group-hover:text-accent sm:text-lg">
-            {resume.title}
-          </p>
-          <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-            {resume.author}
-          </p>
-        </Link>
-        <Link
-          to="/review"
-          className="group border border-line bg-paper p-4 shadow-[var(--shadow-card)] outline-none transition-colors duration-[var(--duration-base)] hover:border-ink active:bg-line/30 sm:p-5"
-        >
-          <MicroLabel>Due today</MicroLabel>
-          {hydrated ? (
-            <p className="mt-2 font-serif text-4xl leading-none text-accent sm:text-5xl">{due}</p>
-          ) : (
-            <span
-              aria-hidden="true"
-              className="mt-2 block h-9 w-12 animate-pulse rounded-sm bg-line sm:h-11"
-            />
-          )}
-          <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-            {hydrated ? (due === 0 ? "You're caught up" : "Tap to review") : "Loading…"}
-          </p>
-        </Link>
+      <div className="flex w-12 shrink-0 flex-col items-center justify-center gap-5">
+        <RailButton label="Save" active={bookmarked} onClick={() => toggleBookmark(node.id)}>
+          <Bookmark className="h-5 w-5" />
+        </RailButton>
+        <RailButton label="Got it" active={mastered} onClick={() => markGotIt(node.id)}>
+          <Check className="h-5 w-5" />
+        </RailButton>
+        <RailButton label="Deeper" active={deeper} onClick={openDeeper}>
+          <Maximize2 className="h-5 w-5" />
+        </RailButton>
+        <RailButton label="Quiz" active={quiz} onClick={() => setQuiz((q) => !q)}>
+          <HelpCircle className="h-5 w-5" />
+        </RailButton>
+        <RailButton label="Share" onClick={share}>
+          <Share2 className="h-5 w-5" />
+        </RailButton>
       </div>
+    </section>
+  );
+}
 
-      <div className="mt-12 sm:mt-16">
-        <LatticeIndex visited={visited} hydrated={hydrated} />
-      </div>
-
-      <footer className="mt-16 border-t border-line pt-6 pb-2">
-        <MicroLabel>Retention over reach</MicroLabel>
-      </footer>
-    </div>
+function RailButton({
+  children,
+  label,
+  active,
+  onClick,
+}: {
+  children: ReactNode;
+  label: string;
+  active?: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-label={label}
+      aria-pressed={active}
+      className={cn(
+        "flex flex-col items-center gap-1 text-ink-soft transition-colors hover:text-ink",
+        active && "text-accent",
+      )}
+    >
+      {children}
+      <span className="font-mono text-[9px] uppercase tracking-[0.1em]">{label}</span>
+    </button>
   );
 }

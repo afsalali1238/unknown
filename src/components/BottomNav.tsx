@@ -9,7 +9,7 @@ export function BottomNav() {
   const due = hydrated ? dueCount(review) : 0;
 
   const tabs = [
-    { to: "/", label: "Home", match: (p: string) => p === "/" || p.startsWith("/node") },
+    { to: "/", label: "Feed", match: (p: string) => p === "/" || p.startsWith("/node") || p.startsWith("/map") },
     { to: "/explore", label: "Explore", match: (p: string) => p.startsWith("/explore") },
     { to: "/review", label: "Review", match: (p: string) => p.startsWith("/review"), badge: due },
     { to: "/you", label: "You", match: (p: string) => p.startsWith("/you") },
