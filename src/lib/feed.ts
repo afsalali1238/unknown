@@ -1,7 +1,6 @@
 import { NODES, type Node } from "@/data/nodes";
+import { readNextNodes } from "./store";
 
-// Deterministic PRNG so a session's feed order is stable across re-renders
-// (back-scroll returns the same card) but each new session feels fresh.
 function mulberry32(seed: number) {
   let a = seed >>> 0;
   return function () {
@@ -15,45 +14,122 @@ function mulberry32(seed: number) {
 
 export type FeedInputs = {
   interests: string[];
-  likedIds: string[]; // bookmarked or "got it" node ids
+  likedIds: string[];
   visited: Record<string, boolean>;
   seed: number;
+  readNext: string[];
+  adjacencyShare?: number;
 };
 
-// Serendipity + interest blend:
-//   0.60 interest-tag match · 0.25 seeded serendipity · 0.15 related-to-liked · 0.10 freshness
-// Returns ALL nodes, ordered, with no two same-cluster cards back to back.
-export function buildFeed({ interests, likedIds, visited, seed }: FeedInputs): Node[] {
+export type FeedSource = "queue" | "topic" | "adjacent";
+
+export type FeedResult = {
+  items: Node[];
+  source: FeedSource[];
+  exhausted: boolean;
+  needsTopics: boolean;
+};
+
+export function buildFeed({
+  interests,
+  likedIds,
+  visited,
+  seed,
+  readNext,
+  adjacencyShare = 0.15,
+}: FeedInputs): FeedResult {
+  if (interests.length === 0) {
+    return { items: [], source: [], exhausted: false, needsTopics: true };
+  }
+
   const rand = mulberry32(seed || 1);
   const interestSet = new Set(interests);
 
-  // ids that are related to something the user liked
-  const relatedToLiked = new Set<string>();
-  if (likedIds.length) {
-    const likedSet = new Set(likedIds);
-    for (const n of NODES) {
-      if (likedSet.has(n.id)) for (const r of n.related ?? []) relatedToLiked.add(r);
+  const items: Node[] = [];
+  const source: FeedSource[] = [];
+  const includedIds = new Set<string>();
+
+  // 1. Read Next nodes (deduped, queue order)
+  const queuedNodes = readNextNodes(readNext, NODES);
+  for (const n of queuedNodes) {
+    if (!includedIds.has(n.id)) {
+      items.push(n);
+      source.push("queue");
+      includedIds.add(n.id);
     }
   }
 
-  const scored = NODES.map((n) => {
-    const interestMatch = n.tags.some((t) => interestSet.has(t)) ? 1 : 0;
-    const related = relatedToLiked.has(n.id) ? 1 : 0;
-    const fresh = visited[n.id] ? 0 : 1;
-    const score = 0.6 * interestMatch + 0.25 * rand() + 0.15 * related + 0.1 * fresh;
-    return { node: n, score };
-  }).sort((a, b) => b.score - a.score);
+  // 2. Topic spine (tags intersect interests)
+  const spineCandidates = NODES.filter(
+    (n) => !includedIds.has(n.id) && n.tags.some((t) => interestSet.has(t))
+  );
 
-  // Greedy de-clustering: avoid consecutive cards from the same cluster.
-  const ordered: Node[] = [];
-  const pool = scored.map((s) => s.node);
-  let lastCluster = "";
-  while (pool.length) {
-    let idx = pool.findIndex((n) => n.clusterId !== lastCluster);
-    if (idx === -1) idx = 0; // only same-cluster left; accept it
-    const [pick] = pool.splice(idx, 1);
-    ordered.push(pick);
-    lastCluster = pick.clusterId;
+  // Sort spine: !visited first, then shuffle with seeded PRNG
+  spineCandidates.sort((a, b) => {
+    const aVisited = visited[a.id] ? 1 : 0;
+    const bVisited = visited[b.id] ? 1 : 0;
+    if (aVisited !== bVisited) return aVisited - bVisited;
+    return rand() - 0.5;
+  });
+
+  // Exhausted = user has seen all topic+queue nodes
+  const exhausted =
+    queuedNodes.every((n) => visited[n.id]) &&
+    spineCandidates.every((n) => visited[n.id]);
+
+  // Find adjacent candidates: NOT in interests, but in related of topic spine or liked nodes.
+  const adjacentIds = new Set<string>();
+  for (const n of NODES) {
+    if (n.tags.some((t) => interestSet.has(t)) || likedIds.includes(n.id)) {
+      if (n.related) {
+        for (const r of n.related) {
+          adjacentIds.add(r);
+        }
+      }
+    }
   }
-  return ordered;
+  
+  const adjacentCandidates = NODES.filter(
+    (n) => !includedIds.has(n.id) && !n.tags.some((t) => interestSet.has(t)) && adjacentIds.has(n.id)
+  );
+  
+  // Sort adjacent: !visited first, then shuffle
+  adjacentCandidates.sort((a, b) => {
+    const aVisited = visited[a.id] ? 1 : 0;
+    const bVisited = visited[b.id] ? 1 : 0;
+    if (aVisited !== bVisited) return aVisited - bVisited;
+    return rand() - 0.5;
+  });
+
+  let nonQueueCount = 0;
+  let lastCluster = items.length > 0 ? items[items.length - 1].clusterId : "";
+  const adjacentInterval = adjacencyShare > 0 ? Math.round(1 / adjacencyShare) : 0; // e.g. 1/0.15 = 7
+
+  while (spineCandidates.length > 0 || adjacentCandidates.length > 0) {
+    const isAdjacentTurn =
+      adjacentInterval > 0 &&
+      nonQueueCount > 0 &&
+      (nonQueueCount + 1) % adjacentInterval === 0;
+    
+    let activePool = isAdjacentTurn && adjacentCandidates.length > 0 ? adjacentCandidates : spineCandidates;
+    
+    if (activePool.length === 0) {
+      activePool = activePool === spineCandidates ? adjacentCandidates : spineCandidates;
+    }
+
+    if (activePool.length === 0) break;
+
+    let idx = activePool.findIndex((n) => n.clusterId !== lastCluster);
+    if (idx === -1) idx = 0;
+
+    const [pick] = activePool.splice(idx, 1);
+    
+    items.push(pick);
+    source.push(activePool === adjacentCandidates ? "adjacent" : "topic");
+    includedIds.add(pick.id);
+    lastCluster = pick.clusterId;
+    nonQueueCount++;
+  }
+
+  return { items, source, exhausted, needsTopics: false };
 }
