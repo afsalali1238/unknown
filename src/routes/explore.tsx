@@ -158,13 +158,13 @@ function ExploreScreen() {
   const hasInterests = hydrated && interests.length > 0;
 
   const orderedClusters = useMemo(() => {
-    if (!hasInterests) return CLUSTERS;
+    if (!hasInterests || view === "all") return CLUSTERS;
     return [...CLUSTERS].sort(
       (a, b) =>
         matchCount(NODES_BY_CLUSTER[b.id], interests) -
         matchCount(NODES_BY_CLUSTER[a.id], interests),
     );
-  }, [hasInterests, interests]);
+  }, [hasInterests, interests, view]);
 
   if (targetCluster) {
     const cluster = CLUSTERS.find((c) => c.id === targetCluster);
