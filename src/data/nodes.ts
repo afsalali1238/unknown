@@ -1255,9 +1255,9 @@ export const NODES: Node[] = [
     related: ["C2", "C3", "C4"],
     furtherReading: [
       {
-        label: "What happened after: Chanos on Enron two decades later",
-        source: "CNBC",
-        url: "https://www.cnbc.com/2024/02/20/jim-chanos-on-his-legendary-enron-short-bet-2-decades-later.html",
+        label: "What happened next: chronology of Enron's collapse",
+        source: "TIME",
+        url: "https://content.time.com/time/specials/packages/article/0,28804,2021097_2023262_2023247,00.html",
         archive: { status: "unavailable" },
       },
     ],
@@ -1295,9 +1295,9 @@ export const NODES: Node[] = [
     related: ["C1", "C3", "C4"],
     furtherReading: [
       {
-        label: "Markopolos on being ignored: SEC failed to do the math",
-        source: "NPR",
-        url: "https://www.npr.org/2010/03/02/124208012/madoff-whistleblower-sec-failed-to-do-the-math",
+        label: 'Interview with the Madoff whistleblower: "No One Would Listen"',
+        source: "WBUR",
+        url: "https://www.wbur.org/news/2010/02/26/markopolos-revisited",
         archive: { status: "unavailable" },
       },
     ],
@@ -1335,9 +1335,9 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C4"],
     furtherReading: [
       {
-        label: "The full Allied Capital story, with speech, correspondence and reference materials",
-        source: "David Einhorn — Fooling Some of the People",
-        url: "https://foolingsomepeople.com/",
+        label: "Review of Einhorn's Allied Capital short",
+        source: "CFA Institute (Financial Analysts Journal)",
+        url: "https://rpc.cfainstitute.org/research/financial-analysts-journal/2009/fooling-some-of-the-people-all-of-the-time",
         archive: { status: "unavailable" },
       },
     ],
@@ -1375,7 +1375,7 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "The $1.1 billion discrepancy: Einhorn's Lehman speech revisited",
+        label: 'Breakdown of Einhorn\'s "Accounting Ingenuity" Lehman speech',
         source: "The Acquirer's Multiple",
         url: "https://acquirersmultiple.com/2016/08/the-lehman-brothers-1-1-billion-discrepancy-accounting-ingenuity-david-einhorn/",
         archive: { status: "unavailable" },
@@ -1450,9 +1450,9 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Fraud confirmed: the OSC's final ruling on Sino-Forest",
-        source: "Wikipedia (OSC 2017 ruling + Muddy Waters case summary)",
-        url: "https://en.wikipedia.org/wiki/Sino-Forest_Corporation",
+        label: "Profile: the man who felled Sino-Forest",
+        source: "The Globe and Mail",
+        url: "https://www.theglobeandmail.com/report-on-business/careers/careers-leadership/carson-block-the-man-who-felled-a-forestry-giant/article587042/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1489,9 +1489,9 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Right thesis, wrong trade: Ackman's costly exit from Herbalife",
-        source: "Fortune",
-        url: "https://fortune.com/2024/02/15/bill-ackman-herbalife-32-percent-stock-fall-psychological-short/",
+        label: "Ackman vs. Herbalife: what happened",
+        source: "StreetFins",
+        url: "https://streetfins.com/bill-ackman-versus-herbalife-what-happened/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1528,7 +1528,7 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "After the crash: Valeant's CEO resigns, stock falls 90%",
+        label: 'Coverage of Citron\'s Valeant "pharmaceutical Enron" call',
         source: "Fortune",
         url: "https://fortune.com/2015/10/21/valeant-philidor-stock-plummet/",
         archive: { status: "unavailable" },
@@ -1566,9 +1566,9 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "From fraud to $180M settlement to turnaround",
-        source: "CNBC",
-        url: "https://www.cnbc.com/2025/11/12/luckin-coffee-us-nasdaq-relisting-five-year-turnaround-fraud-scandal-starbucks-jinyi-guo-xiamen.html",
+        label: "After the fraud: Luckin's improbable comeback",
+        source: "Fortune",
+        url: "https://fortune.com/2022/05/22/luckin-coffee-china-wall-street-listing-nasdaq-scandal-fraud-starbucks/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1605,7 +1605,7 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Vindicated: founder Trevor Milton sentenced for fraud",
+        label: "Outcome: Nikola founder sentenced for fraud",
         source: "CNBC",
         url: "https://www.cnbc.com/2023/12/18/nikola-founder-trevor-milton-sentencing-fraud-charges.html",
         archive: { status: "unavailable" },
@@ -1645,9 +1645,9 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "The regulator's verdict: SEBI dismisses Hindenburg's Adani allegations",
-        source: "The Week",
-        url: "https://www.theweek.in/news/biz-tech/2025/09/18/sebi-dismisses-hindenburg-researchs-allegations-against-gautam-adani-adani-group-firms.html",
+        label: "One year later: Adani rebounds from Hindenburg",
+        source: "CNN Business",
+        url: "https://www.cnn.com/2024/02/08/business/india-adani-hindenburg-report-aftermath-intl-hnk/index.html",
         archive: { status: "unavailable" },
       },
     ],
@@ -1683,9 +1683,9 @@ export const NODES: Node[] = [
     related: ["D2", "D3", "D4"],
     furtherReading: [
       {
-        label: "One-year retrospective on Buffett's 2008 market call",
-        source: "CNBC",
-        url: "https://www.cnbc.com/id/33361615",
+        label: 'How Buffett\'s "Buy American" call aged',
+        source: "Forbes",
+        url: "https://www.forbes.com/sites/greatspeculations/2010/07/01/warren-buffetts-buy-american-report-card/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1722,8 +1722,8 @@ export const NODES: Node[] = [
     related: ["W2", "W6", "D1"],
     furtherReading: [
       {
-        label: "Columbia Business School's own retrospective on the 1984 speech",
-        source: "Columbia Business School — Chazen Global Insights",
+        label: 'Columbia\'s retrospective on "Superinvestors"',
+        source: "Columbia Business School",
         url: "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
         archive: { status: "unavailable" },
       },
@@ -1762,9 +1762,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D4"],
     furtherReading: [
       {
-        label: "Long-form interview transcript with Klarman",
-        source: "The Big Picture (Barry Ritholtz)",
-        url: "https://ritholtz.com/2026/06/transcript-seth-klarman/",
+        label: "Related Klarman essay: The Forgotten Lessons of 2008",
+        source: "Farnam Street",
+        url: "https://fs.blog/the-forgotten-lessons-of-2008/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1801,9 +1801,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Grantham doubles down on his bubble warning (follow-up)",
-        source: "Bloomberg",
-        url: "https://www.bloomberg.com/news/articles/2021-01-05/grantham-doubles-down-on-epic-bubble-omen-for-u-s-markets",
+        label: "Secondary write-up on Grantham's memo",
+        source: "Marcellus",
+        url: "https://marcellus.in/story/waiting-for-the-last-dance/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1880,9 +1880,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Marks's own follow-up memo revisiting the Sea Change thesis",
-        source: "Oaktree Capital",
-        url: "https://www.oaktreecapital.com/insights/memo/further-thoughts-on-sea-change",
+        label: 'Breakdown of Marks\' "The Race to the Bottom"',
+        source: "StreetFins",
+        url: "https://streetfins.com/howard-marks-memo-breakdown-the-race-to-the-bottom/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1919,9 +1919,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Dalio's Yale Law School lecture on the book's framework",
-        source: "Yale Law School",
-        url: "https://law.yale.edu/yls-today/yale-law-school-videos/ray-dalio-principles-navigating-big-debt-crises",
+        label: "Analysis of Dalio's Big Debt Crises template",
+        source: "CMG Wealth",
+        url: "https://www.cmgwealth.com/ri/on-my-radar-ray-dalios-template-for-understanding-big-debt-crises/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1958,9 +1958,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Long-form interview with Dalio on the book's thesis",
-        source: "The Investor's Podcast (William Green)",
-        url: "https://www.theinvestorspodcast.com/episodes/the-changing-world-order-w-ray-dalio/",
+        label: "Summary of Dalio's Changing World Order",
+        source: "The Investor's Podcast",
+        url: "https://www.theinvestorspodcast.com/articles/changing-world-order/",
         archive: { status: "unavailable" },
       },
     ],
@@ -1998,9 +1998,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Detailed response essay on the reserve-currency fraying thesis",
-        source: "Lyn Alden",
-        url: "https://www.lynalden.com/fraying-petrodollar-system/",
+        label: "Follow-up on Dalio's dollar/reserve-currency thesis",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2025/09/19/ray-dalio-says-gold-non-fiat-currencies-will-be-stronger-stores-of-value-as-us-debt-mounts.html",
         archive: { status: "unavailable" },
       },
     ],
@@ -2038,9 +2038,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Full transcript interview with Pozsar unpacking the thesis",
-        source: "Bloomberg",
-        url: "https://www.bloomberg.com/news/articles/2022-04-07/transcript-this-is-zoltan-pozsar-s-vision-for-bretton-woods-iii",
+        label: "Explainer on Pozsar's Bretton Woods III",
+        source: "The Deep Dive",
+        url: "https://thedeepdive.ca/commodities-and-the-new-world-order-what-you-need-to-know-from-zoltan-pozsars-bretton-woods-iii/",
         archive: { status: "unavailable" },
       },
     ],
@@ -2078,7 +2078,7 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Sequoia's Roelof Botha revisiting the presentation years later",
+        label: 'Sequoia defends its "RIP Good Times" deck',
         source: "VentureBeat",
         url: "https://venturebeat.com/business/sequoia-rip-good-times/",
         archive: { status: "unavailable" },
@@ -2117,9 +2117,9 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Critical analysis and footnotes on the 2022 memo",
-        source: "TechCrunch",
-        url: "https://techcrunch.com/2022/05/28/footnotes-on-sequoias-startup-memo/",
+        label: 'Coverage of Sequoia\'s "Adapting to Endure"',
+        source: "Fortune",
+        url: "https://fortune.com/2022/05/25/sequoia-capital-slide-dek-warning-to-founders-downturn/",
         archive: { status: "unavailable" },
       },
     ],
@@ -3357,9 +3357,9 @@ export const NODES: Node[] = [
     related: ["I2", "I3", "I4"],
     furtherReading: [
       {
-        label: "Chris Dixon's companion essay on network effects",
-        source: "Chris Dixon (cdixon.org)",
-        url: "https://cdixon.org/2015/01/31/come-for-the-tool-stay-for-the-network/",
+        label: 'Analysis of Dixon\'s "toy" theory vs. disruption',
+        source: "Tor Grønsund (Medium)",
+        url: "https://tor.medium.com/advice-for-the-arrogant-fucks-start-with-a-toy-4e918d9dddda",
         archive: { status: "unavailable" },
       },
     ],
@@ -3396,9 +3396,9 @@ export const NODES: Node[] = [
     related: ["I1", "I3", "I4"],
     furtherReading: [
       {
-        label: "15 years later: has software really eaten the world?",
-        source: "Fortune",
-        url: "https://fortune.com/2026/02/13/marc-andreessen-software-eating-the-world-saaspocalypse-morgan-stanley-gut-check-displaced-labor/",
+        label: "10 years on: software really did eat the world",
+        source: "CIO Dive",
+        url: "https://www.ciodive.com/news/software-industry-marc-andreessen/605301/",
         archive: { status: "unavailable" },
       },
     ],
@@ -3435,9 +3435,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I4"],
     furtherReading: [
       {
-        label: "Evans's own follow-up: what comes after mobile",
-        source: "Benedict Evans",
-        url: "https://www.ben-evans.com/benedictevans/2018/11/16/the-end-of-the-beginning",
+        label: 'Write-up of Evans\' "Mobile Is Eating the World"',
+        source: "Forbes",
+        url: "https://www.forbes.com/sites/louiscolumbus/2014/11/09/mobile-is-eating-the-world/",
         archive: { status: "unavailable" },
       },
     ],
@@ -3475,9 +3475,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "A direct rebuttal: the real bottleneck is human, not technical",
-        source: "Taylor Davidson",
-        url: "https://taylordavidson.com/2011/human-technical/",
+        label: "Founders Fund & the manifesto (context/reception)",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Founders_Fund",
         archive: { status: "unavailable" },
       },
     ],
@@ -3514,9 +3514,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Prior year's edition of the same report, for comparison",
+        label: "State of the OpenCloud Report",
         source: "Battery Ventures",
-        url: "https://www.battery.com/blog/opencloud-2023/",
+        url: "https://www.battery.com/blog/state-of-the-opencloud-2024/",
         archive: { status: "unavailable" },
       },
     ],
@@ -3553,9 +3553,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "ARK's own counterpoint white paper to its bullish thesis",
-        source: "ARK Invest",
-        url: "https://www.ark-invest.com/white-papers/badideas",
+        label: "Cathie Wood / ARK, the controversy",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/news/cathie-wood-controversial-figure-behind-110000346.html",
         archive: { status: "unavailable" },
       },
     ],
@@ -3589,9 +3589,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Meeker's 2025 return-to-form AI trends deck, summarized",
-        source: "Nate's Newsletter (Substack)",
-        url: "https://natesnewsletter.substack.com/p/i-summarized-mary-meekers-incredible",
+        label: "Mary Meeker and the Internet Trends reports",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Mary_Meeker",
         archive: { status: "unavailable" },
       },
     ],
@@ -3627,9 +3627,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "12 takeaways from the latest AI Index report",
-        source: "Stanford HAI",
-        url: "https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report",
+        label: "Analysis of Meeker's 2025 AI Trends report",
+        source: "PitchBook",
+        url: "https://pitchbook.com/news/articles/mary-meeker-report-ai-race-2025",
         archive: { status: "unavailable" },
       },
     ],
@@ -3706,9 +3706,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Critical review of the book's arguments",
-        source: "The New Republic",
-        url: "https://newrepublic.com/article/119532/peter-thiels-zero-one-review",
+        label: "Summary of Thiel's Zero to One",
+        source: "Graham Mann",
+        url: "https://grahammann.net/book-notes/zero-to-one-peter-thiel",
         archive: { status: "unavailable" },
       },
     ],
@@ -3745,8 +3745,8 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "A direct response essay on the same multipolar-trap framework",
-        source: "LessWrong",
+        label: 'Response to Meditations on Moloch: "Moloch Hasn\'t Won"',
+        source: "LessWrong (Zvi)",
         url: "https://www.lesswrong.com/posts/ham9i5wf4JCexXnkN/moloch-hasn-t-won",
         archive: { status: "unavailable" },
       },
@@ -3784,9 +3784,9 @@ export const NODES: Node[] = [
     related: ["Z5", "I1", "I2"],
     furtherReading: [
       {
-        label: "Companion FAQ unpacking the book's core arguments",
-        source: "Scott Alexander — Slate Star Codex",
-        url: "https://slatestarcodex.com/superintelligence-faq/",
+        label: "Reception & critique of Superintelligence",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
         archive: { status: "unavailable" },
       },
     ],
@@ -3823,9 +3823,9 @@ export const NODES: Node[] = [
     related: ["Z6", "I1", "I2"],
     furtherReading: [
       {
-        label: "Collison's own curated page of responses to the essay",
-        source: "Patrick Collison",
-        url: "https://patrickcollison.com/progress",
+        label: "Cowen's follow-up on Progress Studies",
+        source: "Marginal Revolution",
+        url: "https://marginalrevolution.com/marginalrevolution/2024/04/the-progress-in-progress-studies.html",
         archive: { status: "unavailable" },
       },
     ],
@@ -3862,9 +3862,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Academic philosophical review of the book",
-        source: "Notre Dame Philosophical Reviews",
-        url: "https://ndpr.nd.edu/reviews/what-we-owe-the-future/",
+        label: "Review of What We Owe the Future",
+        source: "Asterisk Magazine",
+        url: "https://asteriskmag.com/issues/01/review-what-we-owe-the-future",
         archive: { status: "unavailable" },
       },
     ],
@@ -3901,9 +3901,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Paul Christiano's point-by-point response",
-        source: "AI Alignment Forum",
-        url: "https://www.alignmentforum.org/posts/CoZhXrhpQxpy9xw9y/where-i-agree-and-disagree-with-eliezer",
+        label: "Point-by-point response to AGI Ruin",
+        source: "LessWrong",
+        url: "https://www.lesswrong.com/posts/LLRtjkvh9AackwuNB/on-a-list-of-lethalities",
         archive: { status: "unavailable" },
       },
     ],
@@ -3940,7 +3940,7 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Long-form interview with Karnofsky discussing the thesis",
+        label: "Karnofsky interview on the Most Important Century",
         source: "80,000 Hours",
         url: "https://80000hours.org/podcast/episodes/holden-karnofsky-most-important-century/",
         archive: { status: "unavailable" },
@@ -3979,9 +3979,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "The best-known counter-argument to scaling-as-destiny",
-        source: "Gary Marcus, Nautilus",
-        url: "https://nautil.us/deep-learning-is-hitting-a-wall-238440",
+        label: "Analysis of Gwern's Scaling Hypothesis",
+        source: "LessWrong (Alignment Newsletter)",
+        url: "https://www.lesswrong.com/posts/XusDPpXr6FYJqWkxh/an-156-the-scaling-hypothesis-a-plan-for-building-agi",
         archive: { status: "unavailable" },
       },
     ],
@@ -4018,9 +4018,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Detailed critical response to the essay's claims and timelines",
+        label: "Situational Awareness: a one-year retrospective",
         source: "LessWrong",
-        url: "https://www.lesswrong.com/posts/Yig9oa4zGE97xM2os/response-to-aschenbrenner-s-situational-awareness",
+        url: "https://www.lesswrong.com/posts/EGGruXRxGQx6RQt8x/situational-awareness-a-one-year-retrospective",
         archive: { status: "unavailable" },
       },
     ],
@@ -4058,9 +4058,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Amodei's related essay on AI's societal trajectory",
-        source: "Dario Amodei",
-        url: "https://darioamodei.com/essay/the-adolescence-of-technology",
+        label: "Reflections on Machines of Loving Grace",
+        source: "Cambridge LCFI",
+        url: "https://www.lcfi.ac.uk/news-events/blog/post/reflections-on-machines-of-loving-grace",
         archive: { status: "unavailable" },
       },
     ],
@@ -4097,9 +4097,9 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "A defense of Andreessen's essay in the ongoing debate",
-        source: "AEI — Faster, Please! (Substack)",
-        url: "https://www.aei.org/articles/the-case-against-the-case-against-marc-andreessens-why-ai-will-save-the-world-essay/",
+        label: 'Andreessen interviewed on "Why AI Will Save the World"',
+        source: "EconTalk",
+        url: "https://www.econtalk.org/marc-andreessen-on-why-ai-will-save-the-world/",
         archive: { status: "unavailable" },
       },
     ],
@@ -4137,7 +4137,7 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Ideological critique of the manifesto",
+        label: "Critique of the Techno-Optimist Manifesto",
         source: "Jacobin",
         url: "https://jacobin.com/2024/01/marc-andreessen-techno-optimist-manifesto-reactionary-elitism-nietzsche-hayek-ideology",
         archive: { status: "unavailable" },
@@ -4176,7 +4176,7 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Experts push back on Altman's UBI-from-AI argument",
+        label: "Altman's UBI thesis and its critics",
         source: "CNBC",
         url: "https://www.cnbc.com/2021/03/30/openai-ceo-sam-altman-says-ai-could-pay-for-ubi-experts-disagree.html",
         archive: { status: "unavailable" },
@@ -4274,9 +4274,9 @@ export const NODES: Node[] = [
     related: ["I9", "I10", "H7", "I13"],
     furtherReading: [
       {
-        label: "The Network State — full online book",
-        source: "Balaji Srinivasan (thenetworkstate.com)",
-        url: "https://thenetworkstate.com",
+        label: 'Analysis of Block going "intelligence-native"',
+        source: "Forbes",
+        url: "https://www.forbes.com/sites/josipamajic/2026/04/01/jack-dorsey-bets-4000-jobs-that-ai-can-replace-the-org-chart/",
         archive: { status: "unavailable" },
       },
       {
