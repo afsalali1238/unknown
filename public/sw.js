@@ -1,5 +1,5 @@
 // Unknown service worker — makes the app installable and offline-capable.
-const VERSION = "unknown-v1";
+const VERSION = "unknown-v2";
 const APP_SHELL = "shell-" + VERSION;
 const RUNTIME = "runtime-" + VERSION;
 
