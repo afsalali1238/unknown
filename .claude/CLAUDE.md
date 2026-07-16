@@ -44,16 +44,21 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   handling. `src/hooks/` — `useInstallPrompt`, `useOfflineWarmup`, `use-mobile`.
 - `src/styles.css` — Tailwind v4 theme tokens. Color system is `paper`/`ink`/`ink-soft`/`line`/
   `accent` (see `@theme` block) — reuse these tokens, don't introduce new raw colors.
-- `content/sources/*.md` — curated source excerpts (100+ files, `A1-0.md` style IDs) backing
-  `furtherReading` entries. `docs/*.md` — planning docs; `PRODUCT-BRIEF.md` is authoritative,
-  `LOVABLE-PROMPT*.md` and `big-ideas-app-spec.md` are retired-app history, kept for reference.
-- `scripts/` — content pipeline, run manually, not wired into CI: `triage.ts` (classify source
-  URLs), `fetch-epistemoph.js` / `merge-epistemoph.js` / `extract-epistemoph.js` (pull + merge
-  legacy Epistemoph content), `archive-sources.ts` (snapshot sources), `build-nodes-ts.ts`
-  (regenerate `nodes.ts`), `rename-md.ts`, `restore-soft-clusters.ts`, `update-clusters.ts`,
-  `inject-batch1.ts`–`inject-batch5.ts` (fold `batch*-quizzes.json` / `missing-quizzes.json`
-  quiz data into `nodes.ts`). Ask before running these — they mutate `content/` and
-  `src/data/nodes.ts` in bulk.
+- **Archived sources** live on disk at `public/content/sources/<nodeId>-<index>.md` (127+ files,
+  `A1-0.md` style). Vite serves `public/` at the URL root, so each `furtherReading.archive.path`
+  stores the `public/`-stripped URL (`content/sources/A1-0.md`), NOT the disk path — writing these
+  files anywhere but `public/content/sources/` 404s in the app (the archiver asserts against it).
+  `docs/*.md` — planning docs; `PRODUCT-BRIEF.md` is authoritative.
+- `scripts/` — the content pipeline (permanent, idempotent, re-runnable):
+  `validate-nodes.ts` (schema gate: ids, clusterId∈CLUSTERS, tags⊆TAGS, quiz 3-4 options,
+  related resolve, archive files exist — read-only, non-zero exit on error),
+  `archive-sources.ts <clusterId|all> [--dry-run]` (snapshot sources to `public/content/sources/`;
+  idempotent, retry-capped, misses logged to `archive-failures.log`),
+  `next-id.ts <PREFIX> [count]` (deterministic next free id), `audit-content.ts` (content audit:
+  summary|tag|cluster|field|orphans|dupes), `build-nodes-ts.ts` (regenerate derived exports).
+  Adding content goes through the **add-content** skill (`.claude/skills/add-content/`) — it
+  proposes node(s), assigns ids, writes the node + quiz inline, archives sources, then runs the
+  validate gate. No per-batch inject scripts, no quiz-patch JSON.
 
 ## Design principles (from PRODUCT-BRIEF.md — obey these in UI work)
 

@@ -46,6 +46,8 @@ export const TAGS = [
   "Power & Persuasion",
   "Meaning & Self",
   "Health & Body",
+  "Philosophy & the Self",
+  "Social Constructs",
 ] as const;
 export type Tag = (typeof TAGS)[number];
 

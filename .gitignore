@@ -35,3 +35,6 @@ extracted_nodes.js
 
 # npm lockfile — Bun is canonical here (bun.lock)
 package-lock.json
+
+# archiver failure log
+archive-failures.log

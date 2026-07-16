@@ -1,28 +1,73 @@
-import { Project, ArrayLiteralExpression, ObjectLiteralExpression, SyntaxKind } from "ts-morph";
+/**
+ * archive-sources.ts — offline source archiver (rebuilt)
+ *
+ * Snapshots each furtherReading URL to a local markdown file and records an
+ * `archive` prop on the node so the app can serve it offline.
+ *
+ * CANONICAL LOCATIONS (do not "simplify" these — they differ on purpose):
+ *   - Disk write dir : public/content/sources/     (Vite serves public/ at URL root)
+ *   - Stored path    : content/sources/<id>-<i>.md  (the URL, public/-stripped)
+ *   The app links to `/${archive.path}` (see src/routes/node.$id.tsx), so a file
+ *   written to repo-root content/sources/ would 404. Writing anywhere other than
+ *   public/content/sources/ is a bug and is asserted against below.
+ *
+ * Fixes vs the old version:
+ *   #1 removes the ambiguous rootSourcesDir constant; one canonical dir, guarded.
+ *   #2 never silently drops an `archive` prop and re-queues — every miss/failure
+ *      is written to archive-failures.log with a reason, and retries are capped.
+ *
+ * Usage (from repo root):
+ *   bun run scripts/archive-sources.ts A          # one cluster
+ *   bun run scripts/archive-sources.ts all        # everything
+ *   bun run scripts/archive-sources.ts all --dry-run   # report, no fetch/write
+ */
+import { ObjectLiteralExpression, Project, SyntaxKind } from "ts-morph";
 import { JSDOM } from "jsdom";
 import { Readability } from "@mozilla/readability";
 import fs from "fs/promises";
+import fsSync from "fs";
 import path from "path";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 const pdfParse = require("pdf-parse");
 
-// Initialize ts-morph
-const project = new Project();
-const sourceFile = project.addSourceFileAtPath(path.join(process.cwd(), "src/data/nodes.ts"));
+// ---- canonical paths -------------------------------------------------------
+const SOURCES_DISK_DIR = path.join(process.cwd(), "public", "content", "sources");
+const URL_PREFIX = "content/sources"; // what gets stored in node.archive.path
+const FAILURE_LOG = path.join(process.cwd(), "archive-failures.log");
+const MAX_RETRIES = 3;
 
-// Ensure content/sources directory exists
-const sourcesDir = path.join(process.cwd(), "public/content/sources"); // Or should it be content/sources? The plan says content/sources/, but usually in vite it's public/content/sources or just content/sources at root. Let's stick to content/sources at root as per the plan.
-const rootSourcesDir = path.join(process.cwd(), "content/sources");
+const DRY_RUN = process.argv.includes("--dry-run");
+const clusterLimit = process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : "all";
 
-async function ensureDir() {
-  try {
-    await fs.mkdir(rootSourcesDir, { recursive: true });
-  } catch (e) {
-    // Ignore error
+// Assert every write stays inside the canonical dir. Called before any writeFile.
+function assertInSourcesDir(absPath: string) {
+  const rel = path.relative(SOURCES_DISK_DIR, absPath);
+  if (rel.startsWith("..") || path.isAbsolute(rel)) {
+    throw new Error(
+      `Refusing to write outside canonical sources dir.\n  target: ${absPath}\n  canonical: ${SOURCES_DISK_DIR}`,
+    );
   }
 }
 
+// ---- failure log + retry cap ----------------------------------------------
+type FailCounts = Record<string, number>;
+function loadFailureCounts(): FailCounts {
+  const counts: FailCounts = {};
+  if (!fsSync.existsSync(FAILURE_LOG)) return counts;
+  for (const line of fsSync.readFileSync(FAILURE_LOG, "utf-8").split("\n")) {
+    const m = line.match(/\bkey=([^\s]+)/);
+    if (m) counts[m[1]] = (counts[m[1]] ?? 0) + 1;
+  }
+  return counts;
+}
+async function logFailure(key: string, url: string, reason: string) {
+  const line = `${new Date().toISOString()} key=${key} reason="${reason}" url=${url}\n`;
+  await fs.appendFile(FAILURE_LOG, line, "utf-8");
+  console.warn(`  ! ${key}: ${reason}`);
+}
+
+// ---- triage buckets (unchanged — working correctly) ------------------------
 function getBucket(url: string): {
   bucket: "full" | "pdf-or-wiki" | "unavailable";
   reason: string;
@@ -33,12 +78,10 @@ function getBucket(url: string): {
   } catch (e) {
     domain = url;
   }
-
   if (url.endsWith(".pdf") || domain === "arxiv.org")
     return { bucket: "pdf-or-wiki", reason: "PDF" };
   if (domain === "en.wikipedia.org" || domain === "wikipedia.org")
     return { bucket: "pdf-or-wiki", reason: "Wiki" };
-
   if (
     domain.includes("youtube.com") ||
     domain.includes("youtu.be") ||
@@ -65,94 +108,109 @@ function getBucket(url: string): {
   ) {
     return { bucket: "unavailable", reason: "Media/Paywall" };
   }
-
   return { bucket: "full", reason: "Article" };
 }
 
 async function fetchWiki(url: string) {
-  try {
-    const title = url.split("/wiki/")[1];
-    const apiUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&titles=${title}&format=json`;
-    const res = await fetch(apiUrl, { headers: { "User-Agent": "Epistemoph/1.0" } });
-    const data = await res.json();
-    const pages = data.query?.pages;
-    if (!pages) return null;
-    const pageId = Object.keys(pages)[0];
-    return pages[pageId].extract;
-  } catch (e) {
-    console.error(`Failed to fetch wiki ${url}:`, e);
-    return null;
-  }
+  const title = url.split("/wiki/")[1];
+  const apiUrl = `https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&titles=${title}&format=json`;
+  const res = await fetch(apiUrl, { headers: { "User-Agent": "Epistemoph/1.0" } });
+  const data = await res.json();
+  const pages = data.query?.pages;
+  if (!pages) return null;
+  const pageId = Object.keys(pages)[0];
+  return pages[pageId].extract ?? null;
 }
-
 async function fetchPdf(url: string) {
-  try {
-    // If it's an arxiv link not ending in .pdf, convert to pdf link
-    if (url.includes("arxiv.org/abs/")) {
-      url = url.replace("/abs/", "/pdf/") + ".pdf";
-    }
-    const res = await fetch(url, { headers: { "User-Agent": "Epistemoph/1.0" } });
-    const buffer = await res.arrayBuffer();
-    const data = await pdfParse(Buffer.from(buffer));
-    return data.text;
-  } catch (e) {
-    console.error(`Failed to fetch pdf ${url}:`, e);
-    return null;
-  }
+  if (url.includes("arxiv.org/abs/")) url = url.replace("/abs/", "/pdf/") + ".pdf";
+  const res = await fetch(url, { headers: { "User-Agent": "Epistemoph/1.0" } });
+  const buffer = await res.arrayBuffer();
+  const data = await pdfParse(Buffer.from(buffer));
+  return data.text ?? null;
+}
+async function fetchArticle(url: string) {
+  const res = await fetch(url, { headers: { "User-Agent": "Epistemoph/1.0 (offline archiver)" } });
+  const html = await res.text();
+  const dom = new JSDOM(html, { url });
+  const reader = new Readability(dom.window.document);
+  return reader.parse()?.textContent ?? null;
 }
 
-async function fetchArticle(url: string) {
-  try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": "Epistemoph/1.0 (offline archiver)" },
-    });
-    const html = await res.text();
-    const dom = new JSDOM(html, { url });
-    const reader = new Readability(dom.window.document);
-    const article = reader.parse();
-    return article?.textContent;
-  } catch (e) {
-    console.error(`Failed to fetch article ${url}:`, e);
-    return null;
-  }
+// ---- attribution block (unchanged) -----------------------------------------
+function buildMarkdown(a: {
+  label: string;
+  sourceName: string;
+  url: string;
+  retrievedDate: string;
+  content: string;
+}) {
+  const esc = (s: string) => s.replace(/"/g, '\\"');
+  return `---
+title: "${esc(a.label)}"
+author: "${esc(a.sourceName)}"
+source: "${esc(a.sourceName)}"
+url: ${a.url}
+retrieved: ${a.retrievedDate}
+---
+
+> Originally published by ${a.sourceName}, ${a.sourceName} — ${a.url}
+> Archived ${a.retrievedDate} for personal offline reading. All rights remain with the original author.
+
+${a.content.trim()}
+`;
+}
+
+// ---- helpers to read prop string values ------------------------------------
+function propStr(obj: ObjectLiteralExpression, name: string): string | null {
+  const p = obj.getProperty(name) || obj.getProperty(`"${name}"`);
+  if (!p) return null;
+  const pa = p as unknown as {
+    getInitializerIfKind?: (k: SyntaxKind) => { getLiteralValue: () => string } | undefined;
+  };
+  const init =
+    pa.getInitializerIfKind?.(SyntaxKind.StringLiteral) ||
+    pa.getInitializerIfKind?.(SyntaxKind.NoSubstitutionTemplateLiteral);
+  return init ? init.getLiteralValue() : null;
 }
 
 async function run() {
-  await ensureDir();
-  const nodesDeclaration = sourceFile.getVariableDeclaration("NODES");
-  if (!nodesDeclaration) throw new Error("NODES array not found");
+  await fs.mkdir(SOURCES_DISK_DIR, { recursive: true });
+  const failCounts = loadFailureCounts();
 
-  const arrayLiteral = nodesDeclaration.getInitializerIfKind(SyntaxKind.ArrayLiteralExpression);
-  if (!arrayLiteral) throw new Error("NODES is not an array");
-
-  const nodes = arrayLiteral
+  const project = new Project();
+  const sourceFile = project.addSourceFileAtPath(path.join(process.cwd(), "src/data/nodes.ts"));
+  const nodesDecl = sourceFile.getVariableDeclarationOrThrow("NODES");
+  const arr = nodesDecl.getInitializerIfKindOrThrow(SyntaxKind.ArrayLiteralExpression);
+  const nodes = arr
     .getElements()
     .filter((e) => e.getKind() === SyntaxKind.ObjectLiteralExpression) as ObjectLiteralExpression[];
 
-  const clusterLimit = process.argv[2]; // e.g. "A" or "all"
-  const jobs: (() => Promise<any>)[] = [];
+  type Job = {
+    frItem: ObjectLiteralExpression;
+    key: string;
+    id: string;
+    idx: number;
+    url: string;
+    label: string;
+    sourceName: string;
+    bucket: ReturnType<typeof getBucket>["bucket"];
+    existingStatus: string | null;
+  };
+  const jobs: Job[] = [];
+  let skippedOk = 0;
+  let cappedCount = 0;
 
   for (const node of nodes) {
-    const idProp = node.getProperty("id") || node.getProperty('"id"');
-    const clusterIdProp = node.getProperty("clusterId") || node.getProperty('"clusterId"');
-    if (!idProp || !clusterIdProp) continue;
+    const id = propStr(node, "id");
+    const clusterId = propStr(node, "clusterId");
+    if (!id || !clusterId) continue;
+    if (clusterLimit !== "all" && clusterId !== clusterLimit) continue;
 
-    // Quick extract of id/clusterId value
-    const id = idProp.getText().split(":")[1].replace(/["']/g, "").trim();
-    const clusterId = clusterIdProp.getText().split(":")[1].replace(/["']/g, "").trim();
-
-    if (clusterLimit && clusterLimit !== "all" && clusterId !== clusterLimit) {
-      continue;
-    }
-
-    const furtherReadingProp =
-      node.getProperty("furtherReading") || node.getProperty('"furtherReading"');
-    if (!furtherReadingProp) continue;
-
-    const frArray = furtherReadingProp.getFirstChildByKind(SyntaxKind.ArrayLiteralExpression);
-    if (!frArray) continue;
-
-    const frItems = frArray
+    const frProp = node.getProperty("furtherReading") || node.getProperty('"furtherReading"');
+    if (!frProp) continue;
+    const frArr = frProp.getFirstChildByKind(SyntaxKind.ArrayLiteralExpression);
+    if (!frArr) continue;
+    const frItems = frArr
       .getElements()
       .filter(
         (e) => e.getKind() === SyntaxKind.ObjectLiteralExpression,
@@ -160,118 +218,130 @@ async function run() {
 
     for (let i = 0; i < frItems.length; i++) {
       const frItem = frItems[i];
-      // Check if archive field already exists and file exists
+      const key = `${id}-${i}`;
+      const diskFile = path.join(SOURCES_DISK_DIR, `${id}-${i}.md`);
       const archiveProp = frItem.getProperty("archive") || frItem.getProperty('"archive"');
-      if (archiveProp) {
-        const idVal = idProp.getText().split(":")[1].replace(/["']/g, "").trim();
-        const expectedFile = require("path").join(
-          process.cwd(),
-          "content",
-          "sources",
-          `${idVal}-${i}.md`,
-        );
-        if (require("fs").existsSync(expectedFile)) {
+      const existingStatus = archiveProp
+        ? propStr(archiveProp.getFirstChildByKind(SyntaxKind.ObjectLiteralExpression)!, "status")
+        : null;
+
+      // Idempotent: a valid archive whose file exists on disk needs nothing.
+      if (existingStatus && (existingStatus === "full" || existingStatus === "excerpt")) {
+        if (fsSync.existsSync(diskFile)) {
+          skippedOk++;
           continue;
-        } else {
-          archiveProp.remove();
         }
+        // File referenced but missing — record why, don't silently drop.
+        await logFailure(
+          key,
+          propStr(frItem, "url") ?? "",
+          `archived file missing on disk (status=${existingStatus})`,
+        );
+        if (existingStatus === "excerpt") continue; // excerpts are hand-curated, never auto-refetched
+      }
+      if (existingStatus === "unavailable") {
+        // Already triaged as unavailable — leave it, idempotent.
+        continue;
       }
 
-      const urlProp = frItem.getProperty("url") || frItem.getProperty('"url"');
-      const sourceProp = frItem.getProperty("source") || frItem.getProperty('"source"');
-      const labelProp = frItem.getProperty("label") || frItem.getProperty('"label"');
-      if (!urlProp || !sourceProp || !labelProp) continue;
+      // Retry cap
+      if ((failCounts[key] ?? 0) >= MAX_RETRIES) {
+        cappedCount++;
+        console.warn(
+          `  ⤫ ${key}: retry cap (${MAX_RETRIES}) reached — skipping. See ${path.basename(FAILURE_LOG)}`,
+        );
+        continue;
+      }
 
-      const urlInit =
-        urlProp.getInitializerIfKind(SyntaxKind.StringLiteral) ||
-        urlProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
-      const sourceInit =
-        sourceProp.getInitializerIfKind(SyntaxKind.StringLiteral) ||
-        sourceProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
-      const labelInit =
-        labelProp.getInitializerIfKind(SyntaxKind.StringLiteral) ||
-        labelProp.getInitializerIfKind(SyntaxKind.NoSubstitutionTemplateLiteral);
-
-      const url = urlInit ? urlInit.getLiteralValue() : "";
-      const sourceName = sourceInit ? sourceInit.getLiteralValue() : "";
-      const label = labelInit ? labelInit.getLiteralValue() : "";
-
+      const url = propStr(frItem, "url");
+      const sourceName = propStr(frItem, "source");
+      const label = propStr(frItem, "label");
       if (!url || !sourceName || !label) continue;
 
-      const { bucket } = getBucket(url);
-      jobs.push(async () => {
-        let archiveStatus = "unavailable";
-        const pathName = `content/sources/${id}-${i}.md`;
-        let contentToSave = null;
-        const retrievedDate = new Date().toISOString().split("T")[0];
-
-        console.log(`Processing ${id}-${i}: ${url} [${bucket}]`);
-
-        if (bucket === "full") {
-          contentToSave = await fetchArticle(url);
-          if (contentToSave) archiveStatus = "full";
-        } else if (bucket === "pdf-or-wiki") {
-          if (url.includes("wikipedia.org")) {
-            contentToSave = await fetchWiki(url);
-          } else {
-            contentToSave = await fetchPdf(url);
-          }
-          if (contentToSave) archiveStatus = "full";
-        }
-
-        return {
-          frItem,
-          archiveStatus,
-          pathName,
-          retrievedDate,
-          contentToSave,
-          label,
-          sourceName,
-          url,
-        };
+      jobs.push({
+        frItem,
+        key,
+        id,
+        idx: i,
+        url,
+        label,
+        sourceName,
+        bucket: getBucket(url).bucket,
+        existingStatus,
       });
     }
+  }
+
+  console.log(
+    `Cluster=${clusterLimit} — ${jobs.length} to process, ${skippedOk} already archived, ${cappedCount} retry-capped.${DRY_RUN ? " [DRY RUN]" : ""}`,
+  );
+  if (DRY_RUN) {
+    for (const j of jobs) console.log(`  would fetch ${j.key} [${j.bucket}] ${j.url}`);
+    return;
   }
 
   const MAX_CONCURRENT = 5;
-  const results = [];
+  const retrievedDate = new Date().toISOString().split("T")[0];
   for (let i = 0; i < jobs.length; i += MAX_CONCURRENT) {
     const chunk = jobs.slice(i, i + MAX_CONCURRENT);
-    const chunkResults = await Promise.all(chunk.map((j) => j()));
-    results.push(...chunkResults);
-  }
+    await Promise.all(
+      chunk.map(async (j) => {
+        console.log(`Processing ${j.key}: ${j.url} [${j.bucket}]`);
+        let content: string | null = null;
+        try {
+          if (j.bucket === "full") content = await fetchArticle(j.url);
+          else if (j.bucket === "pdf-or-wiki")
+            content = j.url.includes("wikipedia.org")
+              ? await fetchWiki(j.url)
+              : await fetchPdf(j.url);
+        } catch (e) {
+          await logFailure(
+            j.key,
+            j.url,
+            `fetch threw: ${e instanceof Error ? e.message : String(e)}`,
+          );
+          content = null;
+        }
 
-  for (const res of results) {
-    if (res.archiveStatus === "full" && res.contentToSave) {
-      const mdContent = `---
-title: "${res.label.replace(/"/g, '\\"')}"
-author: "${res.sourceName.replace(/"/g, '\\"')}"
-source: "${res.sourceName.replace(/"/g, '\\"')}"
-url: ${res.url}
-retrieved: ${res.retrievedDate}
----
+        // Remove any stale archive prop (we logged the reason above if it existed).
+        const stale = j.frItem.getProperty("archive") || j.frItem.getProperty('"archive"');
+        stale?.remove();
 
-> Originally published by ${res.sourceName}, ${res.sourceName} — ${res.url}
-> Archived ${res.retrievedDate} for personal offline reading. All rights remain with the original author.
-
-${res.contentToSave.trim()}
-`;
-      await fs.writeFile(path.join(process.cwd(), res.pathName), mdContent, "utf-8");
-
-      res.frItem.addPropertyAssignment({
-        name: "archive",
-        initializer: `{ status: "full", path: "${res.pathName}", retrieved: "${res.retrievedDate}" }`,
-      });
-    } else {
-      res.frItem.addPropertyAssignment({
-        name: "archive",
-        initializer: `{ status: "unavailable" }`,
-      });
-    }
+        if (content && content.trim()) {
+          const diskFile = path.join(SOURCES_DISK_DIR, `${j.id}-${j.idx}.md`);
+          assertInSourcesDir(diskFile);
+          await fs.writeFile(
+            diskFile,
+            buildMarkdown({
+              label: j.label,
+              sourceName: j.sourceName,
+              url: j.url,
+              retrievedDate,
+              content,
+            }),
+            "utf-8",
+          );
+          j.frItem.addPropertyAssignment({
+            name: "archive",
+            initializer: `{ status: "full", path: "${URL_PREFIX}/${j.id}-${j.idx}.md", retrieved: "${retrievedDate}" }`,
+          });
+        } else {
+          if (j.bucket !== "unavailable")
+            await logFailure(j.key, j.url, "fetch returned no content");
+          j.frItem.addPropertyAssignment({
+            name: "archive",
+            initializer: `{ status: "unavailable" }`,
+          });
+        }
+      }),
+    );
   }
 
   await sourceFile.save();
   console.log("Done.");
 }
 
-run().catch(console.error);
+run().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
