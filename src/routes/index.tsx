@@ -3,9 +3,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import {
   Bookmark,
   Check,
-  Maximize2,
   HelpCircle,
-  Share2,
   LayoutGrid,
   ChevronUp,
   GripVertical,
@@ -229,6 +227,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
   const addReadNext = useStore((s) => s.addReadNext);
   const removeReadNext = useStore((s) => s.removeReadNext);
   const [quiz, setQuiz] = useState(false);
+  const navigate = useNavigate();
 
   function toggleReadNext() {
     if (queued) removeReadNext(node.id);
@@ -248,9 +247,12 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
   return (
     <section
       id={`feed-card-${node.id}`}
-      className="flex min-h-[calc(100dvh-7.5rem)] snap-start items-stretch gap-2 px-5 py-6"
+      className="flex min-h-[calc(100dvh-7.5rem)] snap-start flex-col px-5 py-6"
     >
-      <div className="flex min-w-0 flex-1 flex-col">
+      <div 
+        className="flex min-w-0 flex-1 flex-col cursor-pointer"
+        onClick={() => navigate({ to: "/node/$id", params: { id: node.id } })}
+      >
         <div className="flex items-center gap-2">
           <MicroLabel>
             {CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · {node.medium}
@@ -287,7 +289,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
         </div>
       </div>
 
-      <div className="flex w-12 shrink-0 flex-col items-center justify-center gap-5">
+      <div className="flex shrink-0 items-center justify-around gap-2 pt-6 mt-4 border-t border-line/50">
         <RailButton label="Save" active={bookmarked} onClick={() => toggleBookmark(node.id)}>
           <Bookmark className="h-5 w-5" />
         </RailButton>
@@ -297,22 +299,8 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
         <RailButton label="Queue" active={queued} onClick={toggleReadNext}>
           {queued ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}
         </RailButton>
-        <Link
-          to="/node/$id"
-          params={{ id: node.id }}
-          aria-label="Open full node"
-          className="group flex flex-col items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ink hover:text-accent transition-colors"
-        >
-          <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line bg-paper text-ink transition-colors group-hover:border-ink group-hover:text-ink">
-            <Maximize2 className="h-5 w-5" />
-          </div>
-          <span className="hidden sm:inline text-ink-soft">Open</span>
-        </Link>
         <RailButton label="Quiz" active={quiz} onClick={() => setQuiz((q) => !q)}>
           <HelpCircle className="h-5 w-5" />
-        </RailButton>
-        <RailButton label="Share" onClick={share}>
-          <Share2 className="h-5 w-5" />
         </RailButton>
       </div>
     </section>
@@ -320,28 +308,38 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
 }
 
 function RailButton({
-  children,
   label,
   active,
   onClick,
+  children,
 }: {
-  children: ReactNode;
   label: string;
   active?: boolean;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent) => void;
+  children: ReactNode;
 }) {
   return (
     <button
-      onClick={onClick}
-      aria-label={label}
-      aria-pressed={active}
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick(e);
+      }}
       className={cn(
-        "flex flex-col items-center gap-1 text-ink-soft transition-colors hover:text-ink",
-        active && "text-accent",
+        "group flex flex-col items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors",
+        active ? "text-ink" : "text-ink-soft hover:text-ink",
       )}
     >
-      {children}
-      <span className="font-mono text-[9px] uppercase tracking-[0.1em]">{label}</span>
+      <div
+        className={cn(
+          "grid h-10 w-10 shrink-0 place-items-center rounded-full border transition-colors",
+          active
+            ? "border-ink bg-ink text-paper"
+            : "border-line bg-transparent text-ink-soft group-hover:border-ink group-hover:text-ink",
+        )}
+      >
+        {children}
+      </div>
+      <span className="opacity-80">{label}</span>
     </button>
   );
 }
