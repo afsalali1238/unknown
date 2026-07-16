@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
 import { CLUSTERS, NODES_BY_CLUSTER, type Node } from "@/data/nodes";
@@ -42,23 +42,23 @@ function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes
     <Link
       to="/explore"
       search={{ cluster: cluster.id }}
-      className="group block border border-line bg-paper"
+      className="group flex flex-col border border-line bg-paper"
     >
-      <div className="aspect-square bg-ink p-6 flex flex-col justify-end">
-        <h2 className="font-serif text-2xl leading-tight text-paper group-hover:opacity-80 transition-opacity">
+      <div className="flex-1 min-h-[220px] bg-ink p-5 flex flex-col justify-end">
+        <h2 className="font-serif text-xl sm:text-2xl leading-tight text-paper group-hover:opacity-80 transition-opacity break-words">
           {cluster.title}
         </h2>
-        <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-paper/70">
+        <p className="mt-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.14em] text-paper/70">
           {cluster.subtitle}
         </p>
       </div>
-      <div className="p-4 flex items-center justify-between">
+      <div className="p-4 flex items-center justify-between shrink-0">
         <MicroLabel>{nodes.length} ideas</MicroLabel>
         <div className="flex items-center gap-3">
           <span className="font-mono text-[11px] text-ink-soft">
             {masteredCount}/{nodes.length}
           </span>
-          <svg viewBox="0 0 36 36" className="w-5 h-5 -rotate-90">
+          <svg viewBox="0 0 36 36" className="w-5 h-5 -rotate-90 shrink-0">
             <circle cx="18" cy="18" r="16" fill="none" className="stroke-line" strokeWidth="4" />
             <circle
               cx="18"
@@ -218,7 +218,7 @@ function ExploreScreen() {
         </div>
       )}
 
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {orderedClusters.map((c) => {
           const allNodes = NODES_BY_CLUSTER[c.id];
           const nodes =
