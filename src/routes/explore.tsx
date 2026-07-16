@@ -146,25 +146,12 @@ function ExploreScreen() {
   const hydrated = useHydrated();
   const interests = useStore((s) => s.interests);
   const { cluster: targetCluster } = Route.useSearch();
-  const [view, setView] = useState<"for-you" | "all">("all");
-
-  useEffect(() => {
-    if (hydrated && interests.length > 0 && view === "all" && !targetCluster) {
-      setView("for-you");
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hydrated, interests.length, targetCluster]);
 
   const hasInterests = hydrated && interests.length > 0;
 
   const orderedClusters = useMemo(() => {
-    if (!hasInterests || view === "all") return CLUSTERS;
-    return [...CLUSTERS].sort(
-      (a, b) =>
-        matchCount(NODES_BY_CLUSTER[b.id], interests) -
-        matchCount(NODES_BY_CLUSTER[a.id], interests),
-    );
-  }, [hasInterests, interests, view]);
+    return CLUSTERS;
+  }, []);
 
   if (targetCluster) {
     const cluster = CLUSTERS.find((c) => c.id === targetCluster);
@@ -191,17 +178,17 @@ function ExploreScreen() {
         <SearchBar />
       </div>
 
-        <div className="mt-8 flex items-center gap-2">
-          <Link
-            to="/map"
-            className="flex items-center justify-center min-h-11 border border-line px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:border-ink hover:text-ink transition-colors"
-          >
-            Map
-          </Link>
-          <div className="flex items-center justify-center min-h-11 border border-ink bg-ink px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
-            Playlists
-          </div>
+      <div className="mt-8 flex items-center gap-2">
+        <Link
+          to="/map"
+          className="flex items-center justify-center min-h-11 border border-line px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:border-ink hover:text-ink transition-colors"
+        >
+          Map
+        </Link>
+        <div className="flex items-center justify-center min-h-11 border border-ink bg-ink px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
+          Playlists
         </div>
+      </div>
 
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {orderedClusters.map((c) => {
