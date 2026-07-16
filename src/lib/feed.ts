@@ -45,6 +45,13 @@ export function buildFeed({
   const rand = mulberry32(seed || 1);
   const interestSet = new Set(interests);
 
+  // Assign deterministic score to all nodes upfront so removing items from readNext 
+  // doesn't shift the PRNG sequence and cause the feed to reshuffle.
+  const nodeScores = new Map<string, number>();
+  for (const n of NODES) {
+    nodeScores.set(n.id, rand() - 0.5);
+  }
+
   const items: Node[] = [];
   const source: FeedSource[] = [];
   const includedIds = new Set<string>();
@@ -69,7 +76,7 @@ export function buildFeed({
     const aVisited = visited[a.id] ? 1 : 0;
     const bVisited = visited[b.id] ? 1 : 0;
     if (aVisited !== bVisited) return aVisited - bVisited;
-    return rand() - 0.5;
+    return nodeScores.get(a.id)! - nodeScores.get(b.id)!;
   });
 
   // Exhausted = user has seen all topic+queue nodes
@@ -98,7 +105,7 @@ export function buildFeed({
     const aVisited = visited[a.id] ? 1 : 0;
     const bVisited = visited[b.id] ? 1 : 0;
     if (aVisited !== bVisited) return aVisited - bVisited;
-    return rand() - 0.5;
+    return nodeScores.get(a.id)! - nodeScores.get(b.id)!;
   });
 
   let nonQueueCount = 0;
