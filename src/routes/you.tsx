@@ -4,7 +4,7 @@ import { MicroLabel } from "@/components/MicroLabel";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { useStore, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
-import { NODE_BY_ID, TAGS } from "@/data/nodes";
+import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/you")({
@@ -59,6 +59,8 @@ function YouScreen() {
         </div>
       </Section>
 
+      <Reading />
+
       <Interests />
       <AudioPreferences />
 
@@ -101,6 +103,88 @@ function YouScreen() {
       <Offline />
       <Backup />
     </div>
+  );
+}
+
+function Reading() {
+  const hydrated = useHydrated();
+  const visited = useStore((s) => s.visited);
+  const readLog = useStore((s) => s.readLog);
+  const lastNodeId = useStore((s) => s.lastNodeId);
+
+  const readCount = Object.values(visited).filter(Boolean).length;
+  const total = NODES.length;
+  const left = Math.max(0, total - readCount);
+  const pct = total ? Math.round((readCount / total) * 100) : 0;
+  const cont = hydrated && lastNodeId ? NODE_BY_ID[lastNodeId] : null;
+  const recent = hydrated
+    ? [...readLog]
+        .reverse()
+        .map((id) => NODE_BY_ID[id])
+        .filter(Boolean)
+        .slice(0, 8)
+    : [];
+
+  return (
+    <Section title="Reading">
+      {!hydrated ? (
+        <div className="h-16 animate-pulse border border-line bg-line/20" aria-hidden="true" />
+      ) : (
+        <>
+          <div className="flex items-baseline gap-3">
+            <span className="font-mono text-4xl text-accent leading-none">{readCount}</span>
+            <MicroLabel>
+              of {total} read · {left} left · {pct}%
+            </MicroLabel>
+          </div>
+          <div className="mt-3 h-1.5 w-full bg-line">
+            <div className="h-full bg-accent transition-all" style={{ width: `${pct}%` }} />
+          </div>
+
+          {cont && (
+            <Link
+              to="/node/$id"
+              params={{ id: cont.id }}
+              className="mt-5 block border border-line p-4 hover:border-ink"
+            >
+              <MicroLabel>Continue</MicroLabel>
+              <p className="mt-1 font-serif text-lg text-ink">{cont.title}</p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+                {cont.author}
+              </p>
+            </Link>
+          )}
+
+          {recent.length > 0 && (
+            <div className="mt-6">
+              <MicroLabel>Recently read</MicroLabel>
+              <ul className="mt-2 space-y-1">
+                {recent.map((n) => (
+                  <li key={n.id}>
+                    <Link
+                      to="/node/$id"
+                      params={{ id: n.id }}
+                      className="flex items-baseline justify-between gap-2 border-b border-line py-2"
+                    >
+                      <span className="truncate font-serif text-ink">{n.title}</span>
+                      <span className="shrink-0 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+                        {n.clusterId}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {readCount === 0 && (
+            <p className="mt-4 text-sm text-ink-soft">
+              Nothing read yet — open an idea from your feed to start.
+            </p>
+          )}
+        </>
+      )}
+    </Section>
   );
 }
 

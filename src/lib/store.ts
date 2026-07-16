@@ -52,6 +52,8 @@ export const stateSchema = z.object({
   // rather than fail validation.
   seenHints: z.record(z.boolean()).default({}),
   readNext: z.array(z.string()).default([]),
+  // Ordered read history (most-recent last), so we can show 'recently read'.
+  readLog: z.array(z.string()).default([]),
 });
 
 export type State = z.infer<typeof stateSchema>;
@@ -95,6 +97,7 @@ const initial: State = {
   ttsRate: 1,
   seenHints: {},
   readNext: [],
+  readLog: [],
 };
 
 function todayISO() {
@@ -133,6 +136,8 @@ export const useStore = create<State & Actions>()(
         set((s) => ({
           lastNodeId: id,
           visited: { ...s.visited, [id]: true },
+          // Move to end of the read log (dedupe), cap history at 200.
+          readLog: [...s.readLog.filter((x) => x !== id), id].slice(-200),
           streakDays: touchStreak(s.streakDays),
         })),
       setScratchpad: (v) => set({ scratchpad: v }),
