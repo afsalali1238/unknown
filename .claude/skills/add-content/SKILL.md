@@ -27,6 +27,9 @@ quiz-patch JSON. Never hand-edit ids.
    doesn't exist, stop and ask before adding to TAGS.
 6. If the right cluster is unclear, or the content would need a NEW cluster, STOP and
    ask. Never guess a new cluster.
+7. `layer0` is the feed cold-open — it must hook without any context. Lead with the idea, not
+   meta ("This essay argues…", "In this paper…"). Keep the first sentence tight (<~240 chars).
+   Run `bun run scripts/audit-content.ts hooks` to check.
 
 ## The flow
 
