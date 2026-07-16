@@ -84,6 +84,18 @@ function MapScreen() {
         <SearchBar />
       </div>
 
+      <div className="mt-8 flex items-center gap-2">
+        <div className="flex items-center justify-center min-h-11 border border-ink bg-ink px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
+          Map
+        </div>
+        <Link
+          to="/explore"
+          className="flex items-center justify-center min-h-11 border border-line px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:border-ink hover:text-ink transition-colors"
+        >
+          Playlists
+        </Link>
+      </div>
+
       <div className="mt-8 grid grid-cols-2 gap-3">
         <Link
           to="/node/$id"
