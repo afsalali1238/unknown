@@ -10,6 +10,7 @@ import { AudioBar } from "@/components/AudioBar";
 import { FirstTimeHint } from "@/components/FirstTimeHint";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
+import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/node/$id")({
   loader: ({ params }) => {
