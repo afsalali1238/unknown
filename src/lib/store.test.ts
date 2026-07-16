@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { currentStreak, dueCount, dueIds, stateSchema, type ReviewEntry } from "./store";
+import { currentStreak, dueCount, dueIds, stateSchema, isQueued, readNextNodes, type ReviewEntry } from "./store";
 
 describe("store.ts pure functions", () => {
   describe("currentStreak", () => {
@@ -66,6 +66,20 @@ describe("store.ts pure functions", () => {
     });
   });
 
+  describe("readNext queue selectors", () => {
+    it("isQueued works", () => {
+      expect(isQueued(["A1", "B2"], "A1")).toBe(true);
+      expect(isQueued(["A1", "B2"], "C3")).toBe(false);
+    });
+
+    it("readNextNodes returns ordered nodes and skips missing ones", () => {
+      const mockNodes = [{ id: "n1" }, { id: "n2" }, { id: "n3" }];
+      const queue = ["n3", "n1", "n99"]; // n99 is missing
+      const result = readNextNodes(queue, mockNodes);
+      expect(result).toEqual([{ id: "n3" }, { id: "n1" }]);
+    });
+  });
+
   describe("stateSchema (Zod validation)", () => {
     it("passes on valid partial JSON state with catch defaults", () => {
       const validJSON = {
@@ -79,10 +93,14 @@ describe("store.ts pure functions", () => {
         bookmarks: {},
         visited: {},
         scratchpad: "",
+        readNext: ["node1", "node2"],
       };
 
       const result = stateSchema.safeParse(validJSON);
       expect(result.success).toBe(true);
+      if (result.success) {
+        expect(result.data.readNext).toEqual(["node1", "node2"]);
+      }
     });
 
     it("fails cleanly when given malicious or fundamentally malformed structures", () => {
@@ -113,6 +131,8 @@ describe("store.ts pure functions", () => {
       expect(result.success).toBe(true);
       if (result.success) {
         expect((result.data as Record<string, unknown>).maliciousKey).toBeUndefined();
+        // and default readNext should be provided
+        expect(result.data.readNext).toEqual([]);
       }
     });
   });

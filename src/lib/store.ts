@@ -51,6 +51,7 @@ export const stateSchema = z.object({
   // and it should silently default to "nothing dismissed yet" on import
   // rather than fail validation.
   seenHints: z.record(z.boolean()).default({}),
+  readNext: z.array(z.string()).default([]),
 });
 
 export type State = z.infer<typeof stateSchema>;
@@ -74,6 +75,10 @@ type Actions = {
   setTtsRate: (rate: number) => void;
   dismissHint: (id: string) => void;
   resetHints: () => void;
+  addReadNext: (id: string) => void;
+  removeReadNext: (id: string) => void;
+  reorderReadNext: (from: number, to: number) => void;
+  clearReadNext: () => void;
 };
 
 const initial: State = {
@@ -89,6 +94,7 @@ const initial: State = {
   onboardingComplete: false,
   ttsRate: 1,
   seenHints: {},
+  readNext: [],
 };
 
 function todayISO() {
@@ -164,6 +170,22 @@ export const useStore = create<State & Actions>()(
       setTtsRate: (rate) => set({ ttsRate: rate }),
       dismissHint: (id) => set((s) => ({ seenHints: { ...s.seenHints, [id]: true } })),
       resetHints: () => set({ seenHints: {} }),
+      addReadNext: (id) =>
+        set((s) => ({
+          readNext: s.readNext.includes(id) ? s.readNext : [...s.readNext, id],
+        })),
+      removeReadNext: (id) =>
+        set((s) => ({
+          readNext: s.readNext.filter((queuedId) => queuedId !== id),
+        })),
+      reorderReadNext: (from, to) =>
+        set((s) => {
+          const list = [...s.readNext];
+          const [moved] = list.splice(from, 1);
+          list.splice(to, 0, moved);
+          return { readNext: list };
+        }),
+      clearReadNext: () => set({ readNext: [] }),
     }),
     {
       name: "unknown:v1",
@@ -201,4 +223,20 @@ export function currentStreak(days: string[]): number {
     d.setDate(d.getDate() - 1);
   }
   return count;
+}
+
+export function isQueued(readNext: string[], id: string): boolean {
+  return readNext.includes(id);
+}
+
+// Minimal type for the Node to avoid circular dependencies if any,
+// though usually importing from data/nodes is fine.
+export function readNextNodes<T extends { id: string }>(readNext: string[], allNodes: T[]): T[] {
+  const nodeMap = new Map(allNodes.map((n) => [n.id, n]));
+  const result: T[] = [];
+  for (const id of readNext) {
+    const node = nodeMap.get(id);
+    if (node) result.push(node);
+  }
+  return result;
 }
