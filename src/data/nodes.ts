@@ -1255,9 +1255,10 @@ export const NODES: Node[] = [
     related: ["C2", "C3", "C4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "What happened after: Chanos on Enron two decades later",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2024/02/20/jim-chanos-on-his-legendary-enron-short-bet-2-decades-later.html",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1294,9 +1295,10 @@ export const NODES: Node[] = [
     related: ["C1", "C3", "C4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "Markopolos on being ignored: SEC failed to do the math",
+        source: "NPR",
+        url: "https://www.npr.org/2010/03/02/124208012/madoff-whistleblower-sec-failed-to-do-the-math",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1333,9 +1335,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "The full Allied Capital story, with speech, correspondence and reference materials",
+        source: "David Einhorn — Fooling Some of the People",
+        url: "https://foolingsomepeople.com/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1372,9 +1375,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "The $1.1 billion discrepancy: Einhorn's Lehman speech revisited",
+        source: "The Acquirer's Multiple",
+        url: "https://acquirersmultiple.com/2016/08/the-lehman-brothers-1-1-billion-discrepancy-accounting-ingenuity-david-einhorn/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1407,9 +1411,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "Burry's own account: \"I Saw the Crisis Coming. Why Didn't the Fed?\"",
+        source: "The New York Times (op-ed), via The Big Picture",
+        url: "https://ritholtz.com/2010/04/why-didn%E2%80%99t-the-fed-see-the-crisis-coming/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1445,9 +1450,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "Fraud confirmed: the OSC's final ruling on Sino-Forest",
+        source: "Wikipedia (OSC 2017 ruling + Muddy Waters case summary)",
+        url: "https://en.wikipedia.org/wiki/Sino-Forest_Corporation",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1483,9 +1489,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "Right thesis, wrong trade: Ackman's costly exit from Herbalife",
+        source: "Fortune",
+        url: "https://fortune.com/2024/02/15/bill-ackman-herbalife-32-percent-stock-fall-psychological-short/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1521,9 +1528,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "After the crash: Valeant's CEO resigns, stock falls 90%",
+        source: "Fortune",
+        url: "https://fortune.com/2015/10/21/valeant-philidor-stock-plummet/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1558,9 +1566,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "From fraud to $180M settlement to turnaround",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2025/11/12/luckin-coffee-us-nasdaq-relisting-five-year-turnaround-fraud-scandal-starbucks-jinyi-guo-xiamen.html",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1596,9 +1605,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "Vindicated: founder Trevor Milton sentenced for fraud",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2023/12/18/nikola-founder-trevor-milton-sentencing-fraud-charges.html",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1635,9 +1645,10 @@ export const NODES: Node[] = [
     related: ["C1", "C2", "C3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("C"),
+        label: "The regulator's verdict: SEBI dismisses Hindenburg's Adani allegations",
+        source: "The Week",
+        url: "https://www.theweek.in/news/biz-tech/2025/09/18/sebi-dismisses-hindenburg-researchs-allegations-against-gautam-adani-adani-group-firms.html",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -1672,9 +1683,10 @@ export const NODES: Node[] = [
     related: ["D2", "D3", "D4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "One-year retrospective on Buffett's 2008 market call",
+        source: "CNBC",
+        url: "https://www.cnbc.com/id/33361615",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1710,9 +1722,10 @@ export const NODES: Node[] = [
     related: ["W2", "W6", "D1"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Columbia Business School's own retrospective on the 1984 speech",
+        source: "Columbia Business School — Chazen Global Insights",
+        url: "https://business.columbia.edu/insights/chazen-global-insights/superinvestors-graham-and-doddsville",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1749,9 +1762,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Long-form interview transcript with Klarman",
+        source: "The Big Picture (Barry Ritholtz)",
+        url: "https://ritholtz.com/2026/06/transcript-seth-klarman/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1787,9 +1801,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Grantham doubles down on his bubble warning (follow-up)",
+        source: "Bloomberg",
+        url: "https://www.bloomberg.com/news/articles/2021-01-05/grantham-doubles-down-on-epic-bubble-omen-for-u-s-markets",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1826,9 +1841,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: 'Line-by-line breakdown of Marks\'s "Race to the Bottom" memo',
+        source: "StreetFins",
+        url: "https://streetfins.com/howard-marks-memo-breakdown-the-race-to-the-bottom/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1864,9 +1880,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Marks's own follow-up memo revisiting the Sea Change thesis",
+        source: "Oaktree Capital",
+        url: "https://www.oaktreecapital.com/insights/memo/further-thoughts-on-sea-change",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1902,9 +1919,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Dalio's Yale Law School lecture on the book's framework",
+        source: "Yale Law School",
+        url: "https://law.yale.edu/yls-today/yale-law-school-videos/ray-dalio-principles-navigating-big-debt-crises",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1940,9 +1958,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Long-form interview with Dalio on the book's thesis",
+        source: "The Investor's Podcast (William Green)",
+        url: "https://www.theinvestorspodcast.com/episodes/the-changing-world-order-w-ray-dalio/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -1979,9 +1998,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Detailed response essay on the reserve-currency fraying thesis",
+        source: "Lyn Alden",
+        url: "https://www.lynalden.com/fraying-petrodollar-system/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -2018,9 +2038,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Full transcript interview with Pozsar unpacking the thesis",
+        source: "Bloomberg",
+        url: "https://www.bloomberg.com/news/articles/2022-04-07/transcript-this-is-zoltan-pozsar-s-vision-for-bretton-woods-iii",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -2057,9 +2078,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Sequoia's Roelof Botha revisiting the presentation years later",
+        source: "VentureBeat",
+        url: "https://venturebeat.com/business/sequoia-rip-good-times/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -2095,9 +2117,10 @@ export const NODES: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("D"),
+        label: "Critical analysis and footnotes on the 2022 memo",
+        source: "TechCrunch",
+        url: "https://techcrunch.com/2022/05/28/footnotes-on-sequoias-startup-memo/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -3334,9 +3357,10 @@ export const NODES: Node[] = [
     related: ["I2", "I3", "I4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Chris Dixon's companion essay on network effects",
+        source: "Chris Dixon (cdixon.org)",
+        url: "https://cdixon.org/2015/01/31/come-for-the-tool-stay-for-the-network/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3372,9 +3396,10 @@ export const NODES: Node[] = [
     related: ["I1", "I3", "I4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "15 years later: has software really eaten the world?",
+        source: "Fortune",
+        url: "https://fortune.com/2026/02/13/marc-andreessen-software-eating-the-world-saaspocalypse-morgan-stanley-gut-check-displaced-labor/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3410,9 +3435,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I4"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Evans's own follow-up: what comes after mobile",
+        source: "Benedict Evans",
+        url: "https://www.ben-evans.com/benedictevans/2018/11/16/the-end-of-the-beginning",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3449,9 +3475,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "A direct rebuttal: the real bottleneck is human, not technical",
+        source: "Taylor Davidson",
+        url: "https://taylordavidson.com/2011/human-technical/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3487,9 +3514,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Prior year's edition of the same report, for comparison",
+        source: "Battery Ventures",
+        url: "https://www.battery.com/blog/opencloud-2023/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3525,9 +3553,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "ARK's own counterpoint white paper to its bullish thesis",
+        source: "ARK Invest",
+        url: "https://www.ark-invest.com/white-papers/badideas",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3560,9 +3589,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Meeker's 2025 return-to-form AI trends deck, summarized",
+        source: "Nate's Newsletter (Substack)",
+        url: "https://natesnewsletter.substack.com/p/i-summarized-mary-meekers-incredible",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3597,9 +3627,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "12 takeaways from the latest AI Index report",
+        source: "Stanford HAI",
+        url: "https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3635,9 +3666,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Critique of the book's \"cognitive elite\" ideology and Thiel's embrace of it",
+        source: "The Conversation",
+        url: "https://theconversation.com/this-libertarian-manifesto-loved-by-peter-thiel-urges-a-cognitive-elite-to-see-selfishness-as-a-virtue-263742",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3674,9 +3706,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Critical review of the book's arguments",
+        source: "The New Republic",
+        url: "https://newrepublic.com/article/119532/peter-thiels-zero-one-review",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3712,9 +3745,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "A direct response essay on the same multipolar-trap framework",
+        source: "LessWrong",
+        url: "https://www.lesswrong.com/posts/ham9i5wf4JCexXnkN/moloch-hasn-t-won",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3750,9 +3784,10 @@ export const NODES: Node[] = [
     related: ["Z5", "I1", "I2"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Companion FAQ unpacking the book's core arguments",
+        source: "Scott Alexander — Slate Star Codex",
+        url: "https://slatestarcodex.com/superintelligence-faq/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3788,9 +3823,10 @@ export const NODES: Node[] = [
     related: ["Z6", "I1", "I2"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Collison's own curated page of responses to the essay",
+        source: "Patrick Collison",
+        url: "https://patrickcollison.com/progress",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3826,9 +3862,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Academic philosophical review of the book",
+        source: "Notre Dame Philosophical Reviews",
+        url: "https://ndpr.nd.edu/reviews/what-we-owe-the-future/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3864,9 +3901,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Paul Christiano's point-by-point response",
+        source: "AI Alignment Forum",
+        url: "https://www.alignmentforum.org/posts/CoZhXrhpQxpy9xw9y/where-i-agree-and-disagree-with-eliezer",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3902,9 +3940,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Long-form interview with Karnofsky discussing the thesis",
+        source: "80,000 Hours",
+        url: "https://80000hours.org/podcast/episodes/holden-karnofsky-most-important-century/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3940,9 +3979,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "The best-known counter-argument to scaling-as-destiny",
+        source: "Gary Marcus, Nautilus",
+        url: "https://nautil.us/deep-learning-is-hitting-a-wall-238440",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -3978,9 +4018,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Detailed critical response to the essay's claims and timelines",
+        source: "LessWrong",
+        url: "https://www.lesswrong.com/posts/Yig9oa4zGE97xM2os/response-to-aschenbrenner-s-situational-awareness",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -4017,9 +4058,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Amodei's related essay on AI's societal trajectory",
+        source: "Dario Amodei",
+        url: "https://darioamodei.com/essay/the-adolescence-of-technology",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -4055,9 +4097,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "A defense of Andreessen's essay in the ongoing debate",
+        source: "AEI — Faster, Please! (Substack)",
+        url: "https://www.aei.org/articles/the-case-against-the-case-against-marc-andreessens-why-ai-will-save-the-world-essay/",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -4094,9 +4137,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Ideological critique of the manifesto",
+        source: "Jacobin",
+        url: "https://jacobin.com/2024/01/marc-andreessen-techno-optimist-manifesto-reactionary-elitism-nietzsche-hayek-ideology",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -4132,9 +4176,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: "Experts push back on Altman's UBI-from-AI argument",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2021/03/30/openai-ceo-sam-altman-says-ai-could-pay-for-ubi-experts-disagree.html",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -4170,9 +4215,10 @@ export const NODES: Node[] = [
     related: ["I1", "I2", "I3"],
     furtherReading: [
       {
-        label: "Exploring this topic further",
-        source: "Google Scholar",
-        url: "https://scholar.google.com/scholar?q=" + encodeURIComponent("I"),
+        label: 'A skeptical take on Dorsey\'s "intelligence-native" narrative',
+        source: "The Tech Buzz",
+        url: "https://www.techbuzz.ai/articles/jack-dorsey-s-ai-native-company-is-a-compelling-piece-of-storytelling",
+        archive: { status: "unavailable" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -4195,6 +4241,53 @@ export const NODES: Node[] = [
         "An intelligence-native company doesn't just bolt AI onto its product; it replaces the core hard-coded logic of its operations with dynamic, probabilistic AI models.",
     },
     epistemicStatus: "Contemporary",
+  },
+  {
+    id: "I24",
+    clusterId: "I",
+    title: "The Network State",
+    author: "Balaji Srinivasan",
+    year: 2022,
+    medium: "Book / Essay",
+    category: "Worldview",
+    thesis:
+      "A network state is a highly aligned online community that crowdfunds territory, earns diplomatic recognition, and ultimately secedes — the startup path applied to nation-building.",
+    layer0:
+      "Balaji Srinivasan's 2022 book argues that the nation-state is an 18th-century technology ripe for disruption. Just as the internet allowed people to form communities regardless of geography, the next step is building communities that acquire land, govern themselves, and seek formal recognition — not through revolution, but through the startup playbook: iterate, grow, then legitimize.",
+    layer1:
+      "The canonical sequence: (1) Start a startup society online around a single moral innovation (e.g., a community committed to longevity, or to a specific economic model). (2) Build density — get members to co-locate in 'network archipelagos,' clusters of real estate spread across multiple countries but unified online. (3) Crowdfund a contiguous piece of territory. (4) Achieve diplomatic recognition. The key difference from a commune or separatist movement is legibility: you're building a trackable, auditable ledger of community actions from day one, making the group legible to existing states.",
+    layer2:
+      "The insight is that the internet collapsed the cost of forming a shared identity to nearly zero. The cost of forming a shared territory remains high — but crypto and DAOs lower the transaction costs for pooling capital and coordinating large groups. The nation-state's monopoly on legitimate territorial authority is, for the first time, contestable from below.",
+    quiz: {
+      question:
+        "According to Balaji Srinivasan, what distinguishes a 'network state' from a traditional separatist movement or commune?",
+      options: [
+        "A network state starts with violence and then seeks legitimacy; a commune starts peacefully",
+        "A network state starts online, builds a trackable moral community, crowds into real territory incrementally, and seeks diplomatic recognition — using the startup playbook rather than revolution",
+        "A network state is purely digital and never acquires physical land",
+        "A network state requires a population of at least one million before it can seek recognition",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The startup analogy is central: iterate online first, acquire territory incrementally, then seek recognition — rather than seizing land first and building legitimacy afterward.",
+    },
+    related: ["I9", "I10", "H7", "I13"],
+    furtherReading: [
+      {
+        label: "The Network State — full online book",
+        source: "Balaji Srinivasan (thenetworkstate.com)",
+        url: "https://thenetworkstate.com",
+        archive: { status: "unavailable" },
+      },
+      {
+        label: "Network School launch — putting theory into practice",
+        source: "The Defiant",
+        url: "https://thedefiant.io/news/culture/balaji-srinivasan-launches-network-school-a-real-world-experiment-in-building-a-network-state",
+        archive: { status: "unavailable" },
+      },
+    ],
+    tags: ["Tech Adoption & Disruption", "Crypto & Trust", "Power & Persuasion"],
+    epistemicStatus: "Speculative",
   },
   {
     id: "J1",
@@ -10473,6 +10566,53 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["First-Principles Thinking", "Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "A14",
+    clusterId: "A",
+    title: "Blue Ocean Strategy",
+    author: "W. Chan Kim & Renée Mauborgne",
+    year: 2004,
+    medium: "Book",
+    category: "VC Doctrine",
+    thesis:
+      "Lasting competitive advantage comes not from beating rivals in existing markets ('red oceans') but from creating uncontested market space ('blue oceans') where competition is irrelevant.",
+    layer0:
+      "Kim and Mauborgne studied 150 strategic moves across 30 industries over 100 years and found that the most profitable companies didn't win by out-competing rivals — they made the competition irrelevant by inventing entirely new demand. They called this 'blue ocean' strategy, contrasted with the blood-red zero-sum fighting of 'red oceans.'",
+    layer1:
+      "The central tool is the 'Strategy Canvas': plot yourself and all competitors on axes representing the industry's key factors (price, quality, speed, etc.), then ask the 'Four Actions Framework' — Eliminate (which factors should be dropped entirely?), Reduce (which are over-delivered relative to what buyers need?), Raise (which should be lifted above industry norms?), Create (which new factors has the industry never offered?). Cirque du Soleil is the canonical example: they eliminated expensive animal acts and big-name performers (red-ocean cost drivers), raised theatrical storytelling, and created a new genre that attracted non-circus audiences at ticket prices far above the industry norm.",
+    layer2:
+      "The inverse of Peter Thiel's 'Competition Is for Losers' from a business-school angle: Thiel says seek monopoly; Kim & Mauborgne say reconstruct market boundaries. Both converge on the same conclusion — the goal is not to win the tournament, it's to escape the tournament entirely.",
+    quiz: {
+      question:
+        "In Blue Ocean Strategy, what is the purpose of the 'Four Actions Framework' (Eliminate-Reduce-Raise-Create)?",
+      options: [
+        "To benchmark a company's product features against the market leader and catch up",
+        "To reconstruct the industry's value curve by dropping unnecessary costs, lifting key buyer values, and adding entirely new factors — making the competitive frame irrelevant",
+        "To set pricing strategy in a commoditised market",
+        "To rank employees by performance and eliminate the bottom tier",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The framework forces you to question every industry assumption: what can be eliminated (cost driver nobody needs), reduced, raised, and created (new demand nobody has offered). The result is a value curve that doesn't resemble any competitor — so comparison shopping becomes meaningless.",
+    },
+    related: ["A5", "A11", "A12", "A13"],
+    furtherReading: [
+      {
+        label: "Blue Ocean Strategy — Wikipedia overview",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Blue_Ocean_Strategy",
+        archive: { status: "unavailable" },
+      },
+      {
+        label: "Blue Ocean Strategy official site",
+        source: "blueoceanstrategy.com",
+        url: "https://www.blueoceanstrategy.com",
+        archive: { status: "unavailable" },
+      },
+    ],
+    tags: ["Startups & Founders", "Moats & Network Effects", "Markets & Narrative"],
     epistemicStatus: "Canonical",
   },
   {
