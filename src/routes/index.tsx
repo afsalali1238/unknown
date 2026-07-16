@@ -48,18 +48,18 @@ function ReadNextPinned({ nodes }: { nodes: Node[] }) {
 
   return (
     <div className="shrink-0 border-b border-line bg-paper">
-      <button 
-        onClick={() => setExpanded(!expanded)} 
+      <button
+        onClick={() => setExpanded(!expanded)}
         className="w-full flex items-center justify-between px-5 py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
       >
         <span>Read Next · {nodes.length}</span>
-        {expanded ? <ChevronUp className="w-4 h-4"/> : <ChevronDown className="w-4 h-4"/>}
+        {expanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
       </button>
       {expanded && (
         <div className="px-5 pb-3 max-h-[35vh] overflow-y-auto space-y-2">
           {nodes.map((n, i) => (
-            <div 
-              key={n.id} 
+            <div
+              key={n.id}
               draggable
               onDragStart={(e) => {
                 setDraggedIdx(i);
@@ -79,16 +79,18 @@ function ReadNextPinned({ nodes }: { nodes: Node[] }) {
               className="flex items-center gap-2 p-2 border border-line bg-paper cursor-grab active:cursor-grabbing"
             >
               <GripVertical className="w-4 h-4 text-ink-soft shrink-0" />
-              <button 
+              <button
                 className="flex-1 text-left min-w-0"
                 onClick={() => {
-                  document.getElementById(`feed-card-${n.id}`)?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .getElementById(`feed-card-${n.id}`)
+                    ?.scrollIntoView({ behavior: "smooth" });
                   setExpanded(false);
                 }}
               >
                 <div className="truncate font-serif text-sm text-ink">{n.title}</div>
               </button>
-              <button 
+              <button
                 onClick={() => removeReadNext(n.id)}
                 className="p-1 text-ink-soft hover:text-ink shrink-0"
               >
@@ -109,7 +111,10 @@ function NeedsTopicsCard() {
       <p className="mt-4 font-serif text-lg text-ink-soft max-w-sm">
         Tell us what you want to learn, and we'll build your feed.
       </p>
-      <Link to="/onboarding" className="mt-8 bg-ink text-paper px-6 py-3 font-mono text-[11px] uppercase tracking-[0.14em]">
+      <Link
+        to="/onboarding"
+        className="mt-8 bg-ink text-paper px-6 py-3 font-mono text-[11px] uppercase tracking-[0.14em]"
+      >
         Choose topics
       </Link>
     </section>
@@ -119,7 +124,7 @@ function NeedsTopicsCard() {
 function ExhaustedCard() {
   const review = useStore((s) => s.review);
   const due = dueCount(review);
-  
+
   return (
     <section className="flex min-h-full snap-start flex-col items-center justify-center p-8 text-center">
       <h2 className="font-serif text-3xl text-ink">You're caught up.</h2>
@@ -132,10 +137,16 @@ function ExhaustedCard() {
         </p>
       )}
       <div className="mt-8 flex gap-4">
-        <Link to="/onboarding" className="border border-ink px-6 py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink">
+        <Link
+          to="/onboarding"
+          className="border border-ink px-6 py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink"
+        >
           Add topics
         </Link>
-        <Link to="/explore" className="bg-ink text-paper px-6 py-3 font-mono text-[11px] uppercase tracking-[0.14em]">
+        <Link
+          to="/explore"
+          className="bg-ink text-paper px-6 py-3 font-mono text-[11px] uppercase tracking-[0.14em]"
+        >
           Explore library
         </Link>
       </div>
@@ -244,7 +255,10 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
   }
 
   return (
-    <section id={`feed-card-${node.id}`} className="flex min-h-[calc(100dvh-7.5rem)] snap-start items-stretch gap-2 px-5 py-6">
+    <section
+      id={`feed-card-${node.id}`}
+      className="flex min-h-[calc(100dvh-7.5rem)] snap-start items-stretch gap-2 px-5 py-6"
+    >
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex items-center gap-2">
           <MicroLabel>
@@ -346,4 +360,3 @@ function RailButton({
     </button>
   );
 }
-

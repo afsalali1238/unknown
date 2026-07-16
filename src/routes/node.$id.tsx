@@ -270,10 +270,12 @@ function NodeScreen() {
             <span>{hydrated && bookmarked ? "Bookmarked" : "Bookmark"}</span>
           </button>
           <button
-            onClick={() => queued ? removeReadNext(node.id) : addReadNext(node.id)}
+            onClick={() => (queued ? removeReadNext(node.id) : addReadNext(node.id))}
             className={cn(
               "flex items-center gap-2 border px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors",
-              hydrated && queued ? "border-ink bg-ink text-paper" : "border-line text-ink hover:border-ink"
+              hydrated && queued
+                ? "border-ink bg-ink text-paper"
+                : "border-line text-ink hover:border-ink",
             )}
           >
             <span>{hydrated && queued ? "− Remove" : "+ Queue"}</span>

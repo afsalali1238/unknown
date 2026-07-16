@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+ï»¿import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
 import { CLUSTERS, NODES_BY_CLUSTER, type Node } from "@/data/nodes";
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/explore")({
   validateSearch: exploreSearchSchema,
   head: () => ({
     meta: [
-      { title: "Explore — Unknown" },
+      { title: "Explore â€” Unknown" },
       {
         name: "description",
         content: "Browse the full latticework of powerful ideas.",
@@ -32,7 +32,7 @@ function matchCount(nodes: Node[], interests: string[]): number {
   return nodes.filter((n) => n.tags.some((t) => interests.includes(t))).length;
 }
 
-function PlaylistCard({ cluster, nodes }: { cluster: typeof CLUSTERS[0]; nodes: Node[] }) {
+function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes: Node[] }) {
   const gotIt = useStore((s) => s.gotIt);
   const masteredCount = nodes.filter((n) => gotIt[n.id]).length;
   const progress = nodes.length > 0 ? masteredCount / nodes.length : 0;
@@ -100,16 +100,14 @@ function TrackRow({ node }: { node: Node }) {
           {node.title}
         </div>
         <div className="truncate font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-          {node.author} · {node.medium}
+          {node.author} Â· {node.medium}
         </div>
       </div>
       <button
         onClick={() => (queued ? removeReadNext(node.id) : addReadNext(node.id))}
         className={cn(
           "shrink-0 p-2 border transition-colors",
-          queued
-            ? "border-ink bg-ink text-paper"
-            : "border-line text-ink hover:border-ink"
+          queued ? "border-ink bg-ink text-paper" : "border-line text-ink hover:border-ink",
         )}
         aria-label={queued ? "Remove from Read Next" : "Add to Read Next"}
       >
@@ -119,7 +117,7 @@ function TrackRow({ node }: { node: Node }) {
   );
 }
 
-function ClusterDetail({ cluster, nodes }: { cluster: typeof CLUSTERS[0]; nodes: Node[] }) {
+function ClusterDetail({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes: Node[] }) {
   const navigate = useNavigate();
   return (
     <div className="space-y-6">
@@ -164,7 +162,7 @@ function ExploreScreen() {
     return [...CLUSTERS].sort(
       (a, b) =>
         matchCount(NODES_BY_CLUSTER[b.id], interests) -
-        matchCount(NODES_BY_CLUSTER[a.id], interests)
+        matchCount(NODES_BY_CLUSTER[a.id], interests),
     );
   }, [hasInterests, interests]);
 
@@ -201,7 +199,7 @@ function ExploreScreen() {
               "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
               view === "for-you"
                 ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink"
+                : "border-line text-ink-soft hover:border-ink",
             )}
           >
             For you
@@ -212,7 +210,7 @@ function ExploreScreen() {
               "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
               view === "all"
                 ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink"
+                : "border-line text-ink-soft hover:border-ink",
             )}
           >
             Everything

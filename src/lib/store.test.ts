@@ -1,5 +1,13 @@
 import { describe, it, expect } from "vitest";
-import { currentStreak, dueCount, dueIds, stateSchema, isQueued, readNextNodes, type ReviewEntry } from "./store";
+import {
+  currentStreak,
+  dueCount,
+  dueIds,
+  stateSchema,
+  isQueued,
+  readNextNodes,
+  type ReviewEntry,
+} from "./store";
 
 describe("store.ts pure functions", () => {
   describe("currentStreak", () => {

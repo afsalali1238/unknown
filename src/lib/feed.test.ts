@@ -17,9 +17,9 @@ describe("buildFeed algorithm v2", () => {
       likedIds: [],
       visited: {},
       seed: 1,
-      readNext: ["A1", "A1", "B1"]
+      readNext: ["A1", "A1", "B1"],
     });
-    
+
     expect(res.needsTopics).toBe(false);
     expect(res.items.length).toBeGreaterThanOrEqual(2);
     expect(res.items[0].id).toBe("A1");
@@ -30,15 +30,15 @@ describe("buildFeed algorithm v2", () => {
 
   it("calculates exhausted state correctly", () => {
     const res = buildFeed({
-      interests: ["Startups Fundamentals"], 
+      interests: ["Startups Fundamentals"],
       likedIds: [],
-      visited: {}, 
+      visited: {},
       seed: 1,
-      readNext: []
+      readNext: [],
     });
 
     // Make all topics visited
-    const allTopicIds = res.items.filter((_, i) => res.source[i] === "topic").map(i => i.id);
+    const allTopicIds = res.items.filter((_, i) => res.source[i] === "topic").map((i) => i.id);
     const fullyVisited: Record<string, boolean> = {};
     for (const id of allTopicIds) fullyVisited[id] = true;
 
@@ -47,7 +47,7 @@ describe("buildFeed algorithm v2", () => {
       likedIds: [],
       visited: fullyVisited,
       seed: 1,
-      readNext: []
+      readNext: [],
     });
 
     expect(resExhausted.exhausted).toBe(true);
@@ -56,12 +56,12 @@ describe("buildFeed algorithm v2", () => {
   it("respects adjacency share", () => {
     // Pick an interest
     const res = buildFeed({
-      interests: ["Startups Fundamentals"], 
+      interests: ["Startups Fundamentals"],
       likedIds: [],
-      visited: {}, 
+      visited: {},
       seed: 1,
       readNext: [],
-      adjacencyShare: 0.15
+      adjacencyShare: 0.15,
     });
 
     // 15% adjacency -> 1/0.15 = 6.66 -> Math.round = 7. Every 7th card is adjacent.

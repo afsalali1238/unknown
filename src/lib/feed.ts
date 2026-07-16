@@ -45,7 +45,7 @@ export function buildFeed({
   const rand = mulberry32(seed || 1);
   const interestSet = new Set(interests);
 
-  // Assign deterministic score to all nodes upfront so removing items from readNext 
+  // Assign deterministic score to all nodes upfront so removing items from readNext
   // doesn't shift the PRNG sequence and cause the feed to reshuffle.
   const nodeScores = new Map<string, number>();
   for (const n of NODES) {
@@ -68,7 +68,7 @@ export function buildFeed({
 
   // 2. Topic spine (tags intersect interests)
   const spineCandidates = NODES.filter(
-    (n) => !includedIds.has(n.id) && n.tags.some((t) => interestSet.has(t))
+    (n) => !includedIds.has(n.id) && n.tags.some((t) => interestSet.has(t)),
   );
 
   // Sort spine: !visited first, then shuffle with seeded PRNG
@@ -81,8 +81,7 @@ export function buildFeed({
 
   // Exhausted = user has seen all topic+queue nodes
   const exhausted =
-    queuedNodes.every((n) => visited[n.id]) &&
-    spineCandidates.every((n) => visited[n.id]);
+    queuedNodes.every((n) => visited[n.id]) && spineCandidates.every((n) => visited[n.id]);
 
   // Find adjacent candidates: NOT in interests, but in related of topic spine or liked nodes.
   const adjacentIds = new Set<string>();
@@ -95,11 +94,12 @@ export function buildFeed({
       }
     }
   }
-  
+
   const adjacentCandidates = NODES.filter(
-    (n) => !includedIds.has(n.id) && !n.tags.some((t) => interestSet.has(t)) && adjacentIds.has(n.id)
+    (n) =>
+      !includedIds.has(n.id) && !n.tags.some((t) => interestSet.has(t)) && adjacentIds.has(n.id),
   );
-  
+
   // Sort adjacent: !visited first, then shuffle
   adjacentCandidates.sort((a, b) => {
     const aVisited = visited[a.id] ? 1 : 0;
@@ -114,12 +114,11 @@ export function buildFeed({
 
   while (spineCandidates.length > 0 || adjacentCandidates.length > 0) {
     const isAdjacentTurn =
-      adjacentInterval > 0 &&
-      nonQueueCount > 0 &&
-      (nonQueueCount + 1) % adjacentInterval === 0;
-    
-    let activePool = isAdjacentTurn && adjacentCandidates.length > 0 ? adjacentCandidates : spineCandidates;
-    
+      adjacentInterval > 0 && nonQueueCount > 0 && (nonQueueCount + 1) % adjacentInterval === 0;
+
+    let activePool =
+      isAdjacentTurn && adjacentCandidates.length > 0 ? adjacentCandidates : spineCandidates;
+
     if (activePool.length === 0) {
       activePool = activePool === spineCandidates ? adjacentCandidates : spineCandidates;
     }
@@ -130,7 +129,7 @@ export function buildFeed({
     if (idx === -1) idx = 0;
 
     const [pick] = activePool.splice(idx, 1);
-    
+
     items.push(pick);
     source.push(activePool === adjacentCandidates ? "adjacent" : "topic");
     includedIds.add(pick.id);
