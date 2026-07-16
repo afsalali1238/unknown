@@ -8,7 +8,6 @@ import {
   Share2,
   LayoutGrid,
   ChevronUp,
-  ChevronDown,
   GripVertical,
   Minus,
   Plus,
@@ -174,7 +173,7 @@ function FeedScreen() {
     // Ordering is fixed for the session (seed) and the chosen interests.
     // readNext updates no longer shuffle the unvisited nodes due to our upfront PRNG scoring.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [seed, interests, readNext, visited]);
+  }, [seed, interests, visited]);
 
   useEffect(() => {
     if (hydrated && !onboardingComplete) navigate({ to: "/onboarding" });
@@ -227,7 +226,6 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
   const queued = useStore((s) => s.readNext.includes(node.id));
   const toggleBookmark = useStore((s) => s.toggleBookmark);
   const markGotIt = useStore((s) => s.markGotIt);
-  const visitNode = useStore((s) => s.visitNode);
   const addReadNext = useStore((s) => s.addReadNext);
   const removeReadNext = useStore((s) => s.removeReadNext);
   const [quiz, setQuiz] = useState(false);
@@ -264,7 +262,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
           )}
           {source === "queue" && (
             <span className="inline-block px-1.5 py-0.5 border border-line bg-paper text-ink-soft font-mono text-[9px] uppercase tracking-[0.1em]">
-              In Read Next ?
+              In Read Next
             </span>
           )}
         </div>
@@ -303,7 +301,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
           to="/node/$id"
           params={{ id: node.id }}
           aria-label="Open full node"
-          className="flex flex-col items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ink hover:text-accent transition-colors"
+          className="group flex flex-col items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ink hover:text-accent transition-colors"
         >
           <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line bg-paper text-ink transition-colors group-hover:border-ink group-hover:text-ink">
             <Maximize2 className="h-5 w-5" />
