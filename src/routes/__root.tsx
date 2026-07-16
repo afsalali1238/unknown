@@ -74,7 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       // background here vs. accent everywhere else), so PWA chrome tinting
       // differed depending on whether a browser read this tag or the
       // manifest.
-      { name: "theme-color", content: "#B45309" },
+      { name: "theme-color", content: "#fcfbf9" },
       { title: "Unknown — A latticework of powerful ideas" },
       {
         name: "description",

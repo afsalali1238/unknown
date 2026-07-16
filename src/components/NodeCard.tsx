@@ -20,11 +20,14 @@ export function NodeCard({ node }: { node: Node }) {
         <MicroLabel>{node.medium}</MicroLabel>
         {hydrated &&
           (gotIt ? (
-            <span className="font-mono text-[11px] text-accent">✓</span>
+            <span aria-label="Mastered" className="font-mono text-[11px] text-accent">
+              ✓
+            </span>
           ) : box > 0 ? (
             <ProgressRing box={box} />
           ) : visited ? (
             <span
+              aria-label="Opened, not yet mastered"
               title="Opened, not yet mastered"
               className="mt-1 h-1.5 w-1.5 rounded-full bg-ink-soft"
             />

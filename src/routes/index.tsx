@@ -18,6 +18,22 @@ import { buildFeed, type FeedSource } from "@/lib/feed";
 import { useStore, dueCount, readNextNodes } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  sortableKeyboardCoordinates,
+  verticalListSortingStrategy,
+  useSortable,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,10 +52,82 @@ const CLUSTER_TITLE: Record<string, string> = Object.fromEntries(
   CLUSTERS.map((c) => [c.id, c.title]),
 );
 
-function ReadNextList({ nodes, onClose }: { nodes: Node[]; onClose: () => void }) {
+function SortableQueueItem({ n, onClose }: { n: Node; onClose: () => void }) {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
+    id: n.id,
+  });
+
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    zIndex: isDragging ? 1 : 0,
+  };
+
   const removeReadNext = useStore((s) => s.removeReadNext);
+
+  return (
+    <div
+      ref={setNodeRef}
+      style={style}
+      className={cn(
+        "flex items-center gap-2 p-2 border border-line bg-paper hover:border-ink transition-colors relative",
+        isDragging && "opacity-50 border-ink shadow-md z-10",
+      )}
+    >
+      <div
+        {...attributes}
+        {...listeners}
+        aria-label="Drag to reorder"
+        className="cursor-grab active:cursor-grabbing p-1 -ml-1 text-ink-soft shrink-0 touch-none"
+      >
+        <GripVertical className="w-4 h-4" />
+      </div>
+      <button
+        aria-label={`Go to card: ${n.title}`}
+        className="flex-1 text-left min-w-0"
+        onClick={() => {
+          document.getElementById(`feed-card-${n.id}`)?.scrollIntoView({ behavior: "smooth" });
+          onClose();
+        }}
+      >
+        <div className="truncate font-serif text-sm text-ink">{n.title}</div>
+      </button>
+      <button
+        aria-label="Remove from queue"
+        onClick={() => removeReadNext(n.id)}
+        className="p-1 text-ink-soft hover:text-ink shrink-0"
+      >
+        <Minus className="w-4 h-4" />
+      </button>
+    </div>
+  );
+}
+
+function ReadNextList({ nodes, onClose }: { nodes: Node[]; onClose: () => void }) {
   const reorderReadNext = useStore((s) => s.reorderReadNext);
-  const [draggedIdx, setDraggedIdx] = useState<number | null>(null);
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 5,
+      },
+    }),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    }),
+  );
+
+  function handleDragEnd(event: DragEndEvent) {
+    const { active, over } = event;
+
+    if (over && active.id !== over.id) {
+      const oldIndex = nodes.findIndex((n) => n.id === active.id);
+      const newIndex = nodes.findIndex((n) => n.id === over.id);
+      if (oldIndex !== -1 && newIndex !== -1) {
+        reorderReadNext(oldIndex, newIndex);
+      }
+    }
+  }
 
   if (nodes.length === 0) {
     return (
@@ -52,47 +140,13 @@ function ReadNextList({ nodes, onClose }: { nodes: Node[]; onClose: () => void }
   return (
     <div className="absolute top-[44px] left-0 right-0 z-20 shrink-0 border-b border-line bg-paper shadow-card">
       <div className="px-5 py-3 max-h-[40vh] overflow-y-auto space-y-2">
-        {nodes.map((n, i) => (
-          <div
-            key={n.id}
-            draggable
-            onDragStart={(e) => {
-              setDraggedIdx(i);
-              e.dataTransfer.effectAllowed = "move";
-            }}
-            onDragOver={(e) => {
-              e.preventDefault();
-              e.dataTransfer.dropEffect = "move";
-            }}
-            onDrop={(e) => {
-              e.preventDefault();
-              if (draggedIdx !== null && draggedIdx !== i) {
-                reorderReadNext(draggedIdx, i);
-              }
-              setDraggedIdx(null);
-            }}
-            className="flex items-center gap-2 p-2 border border-line bg-paper cursor-grab active:cursor-grabbing hover:border-ink transition-colors"
-          >
-            <GripVertical className="w-4 h-4 text-ink-soft shrink-0" />
-            <button
-              className="flex-1 text-left min-w-0"
-              onClick={() => {
-                document
-                  .getElementById(`feed-card-${n.id}`)
-                  ?.scrollIntoView({ behavior: "smooth" });
-                onClose();
-              }}
-            >
-              <div className="truncate font-serif text-sm text-ink">{n.title}</div>
-            </button>
-            <button
-              onClick={() => removeReadNext(n.id)}
-              className="p-1 text-ink-soft hover:text-ink shrink-0"
-            >
-              <Minus className="w-4 h-4" />
-            </button>
-          </div>
-        ))}
+        <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+          <SortableContext items={nodes.map((n) => n.id)} strategy={verticalListSortingStrategy}>
+            {nodes.map((n) => (
+              <SortableQueueItem key={n.id} n={n} onClose={onClose} />
+            ))}
+          </SortableContext>
+        </DndContext>
       </div>
     </div>
   );
@@ -250,10 +304,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
       id={`feed-card-${node.id}`}
       className="flex min-h-[calc(100dvh-7.5rem)] snap-start flex-col px-5 py-6"
     >
-      <div
-        className="flex min-w-0 flex-1 flex-col cursor-pointer"
-        onClick={() => navigate({ to: "/node/$id", params: { id: node.id } })}
-      >
+      <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex items-center gap-2">
           <MicroLabel>
             {CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · {node.medium}
@@ -269,14 +320,21 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
             </span>
           )}
           {isVisited && (
-            <span className="inline-block px-1.5 py-0.5 bg-ink text-paper font-mono text-[9px] uppercase tracking-[0.1em]">
+            <span
+              aria-label="Read"
+              className="inline-block px-1.5 py-0.5 bg-ink text-paper font-mono text-[9px] uppercase tracking-[0.1em]"
+            >
               Read ✓
             </span>
           )}
         </div>
-        <h2 className="mt-4 font-serif text-2xl leading-tight text-ink sm:text-3xl">
+        <Link
+          to="/node/$id"
+          params={{ id: node.id }}
+          className="mt-4 block font-serif text-2xl leading-tight text-ink sm:text-3xl hover:text-accent transition-colors"
+        >
           {node.title}
-        </h2>
+        </Link>
         <p className="mt-4 flex-1 font-serif text-lg leading-relaxed text-ink-soft">
           {node.layer0}
         </p>
