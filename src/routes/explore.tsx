@@ -33,9 +33,10 @@ function matchCount(nodes: Node[], interests: string[]): number {
 }
 
 function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes: Node[] }) {
-  const gotIt = useStore((s) => s.gotIt);
-  const masteredCount = nodes.filter((n) => gotIt[n.id]).length;
-  const progress = nodes.length > 0 ? masteredCount / nodes.length : 0;
+  const visited = useStore((s) => s.visited);
+  const readCount = nodes.filter((n) => visited[n.id]).length;
+  const leftCount = nodes.length - readCount;
+  const progress = nodes.length > 0 ? readCount / nodes.length : 0;
   const circ = 2 * Math.PI * 16;
 
   return (
@@ -56,7 +57,7 @@ function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes
         <MicroLabel>{nodes.length} ideas</MicroLabel>
         <div className="flex items-center gap-3">
           <span className="font-mono text-[11px] text-ink-soft">
-            {masteredCount}/{nodes.length}
+            {readCount} read · {leftCount} left
           </span>
           <svg viewBox="0 0 36 36" className="w-5 h-5 -rotate-90 shrink-0">
             <circle cx="18" cy="18" r="16" fill="none" className="stroke-line" strokeWidth="4" />

@@ -221,6 +221,7 @@ function FeedScreen() {
 function FeedCard({ node, first, source }: { node: Node; first: boolean; source: FeedSource }) {
   const bookmarked = useStore((s) => !!s.bookmarks[node.id]);
   const mastered = useStore((s) => !!s.gotIt[node.id]);
+  const isVisited = useStore((s) => !!s.visited[node.id]);
   const queued = useStore((s) => s.readNext.includes(node.id));
   const toggleBookmark = useStore((s) => s.toggleBookmark);
   const markGotIt = useStore((s) => s.markGotIt);
@@ -249,7 +250,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
       id={`feed-card-${node.id}`}
       className="flex min-h-[calc(100dvh-7.5rem)] snap-start flex-col px-5 py-6"
     >
-      <div 
+      <div
         className="flex min-w-0 flex-1 flex-col cursor-pointer"
         onClick={() => navigate({ to: "/node/$id", params: { id: node.id } })}
       >
@@ -265,6 +266,11 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
           {source === "queue" && (
             <span className="inline-block px-1.5 py-0.5 border border-line bg-paper text-ink-soft font-mono text-[9px] uppercase tracking-[0.1em]">
               In Read Next
+            </span>
+          )}
+          {isVisited && (
+            <span className="inline-block px-1.5 py-0.5 bg-ink text-paper font-mono text-[9px] uppercase tracking-[0.1em]">
+              Read ✓
             </span>
           )}
         </div>
