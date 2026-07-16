@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
 import { CLUSTERS, NODES_BY_CLUSTER, type Node } from "@/data/nodes";
@@ -7,7 +7,7 @@ import { MicroLabel } from "@/components/MicroLabel";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
-import { Check, Plus, Minus, ArrowLeft, LayoutGrid } from "lucide-react";
+import { Check, Plus, Minus, ArrowLeft } from "lucide-react";
 
 const exploreSearchSchema = z.object({
   cluster: z.string().optional(),
@@ -185,53 +185,28 @@ function ExploreScreen() {
     <div className="px-5 pt-8 pb-12">
       <header className="flex items-center justify-between">
         <h1 className="font-serif text-3xl leading-tight text-ink">Explore</h1>
-        <Link
-          to="/map"
-          aria-label="Map view"
-          className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
-        >
-          <LayoutGrid className="h-4 w-4" /> Map
-        </Link>
       </header>
 
       <div className="mt-6">
         <SearchBar />
       </div>
 
-      {hasInterests && (
         <div className="mt-8 flex items-center gap-2">
-          <button
-            onClick={() => setView("for-you")}
-            className={cn(
-              "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
-              view === "for-you"
-                ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink",
-            )}
+          <Link
+            to="/map"
+            className="flex items-center justify-center min-h-11 border border-line px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:border-ink hover:text-ink transition-colors"
           >
-            For you
-          </button>
-          <button
-            onClick={() => setView("all")}
-            className={cn(
-              "min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em]",
-              view === "all"
-                ? "border-ink bg-ink text-paper"
-                : "border-line text-ink-soft hover:border-ink",
-            )}
-          >
-            Everything
-          </button>
+            Map
+          </Link>
+          <div className="flex items-center justify-center min-h-11 border border-ink bg-ink px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
+            Playlists
+          </div>
         </div>
-      )}
 
       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {orderedClusters.map((c) => {
           const allNodes = NODES_BY_CLUSTER[c.id];
-          const nodes =
-            hasInterests && view === "for-you" && !targetCluster
-              ? allNodes.filter((n) => n.tags.some((t) => interests.includes(t)))
-              : allNodes;
+          const nodes = allNodes;
           if (nodes.length === 0) return null;
           return <PlaylistCard key={c.id} cluster={c} nodes={nodes} />;
         })}
