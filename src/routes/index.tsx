@@ -30,10 +30,22 @@ function MapScreen() {
   const streakDays = useStore((s) => s.streakDays);
   const visited = useStore((s) => s.visited);
   const onboardingComplete = useStore((s) => s.onboardingComplete);
+  const interests = useStore((s) => s.interests);
   const due = hydrated ? dueCount(review) : 0;
   const streak = hydrated ? currentStreak(streakDays) : 0;
   const cont = hydrated && lastNodeId ? NODE_BY_ID[lastNodeId] : null;
-  const starter = NODES_BY_CLUSTER["A"]?.[0] ?? Object.values(NODE_BY_ID)[0];
+  // Before a user has opened anything, "Start here" is the app's one shot
+  // at reflecting what they just picked in onboarding - it was hardcoded to
+  // cluster A's first node regardless of interests, so every new user saw
+  // the exact same suggestion no matter which tags they chose. Prefer the
+  // first node (in stable NODE_BY_ID order) matching any selected interest;
+  // fall back to the old default only when there are no interests to match
+  // (e.g. onboarding was skipped).
+  const interestMatch =
+    interests.length > 0
+      ? Object.values(NODE_BY_ID).find((n) => n.tags.some((t) => interests.includes(t)))
+      : undefined;
+  const starter = interestMatch ?? NODES_BY_CLUSTER["A"]?.[0] ?? Object.values(NODE_BY_ID)[0];
   const resume = cont ?? starter;
 
   useEffect(() => {
