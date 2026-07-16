@@ -14,7 +14,11 @@ export function BottomNav() {
       label: "Feed",
       match: (p: string) => p === "/" || p.startsWith("/node"),
     },
-    { to: "/explore", label: "Explore", match: (p: string) => p.startsWith("/explore") || p.startsWith("/map") },
+    {
+      to: "/explore",
+      label: "Explore",
+      match: (p: string) => p.startsWith("/explore") || p.startsWith("/map"),
+    },
     { to: "/review", label: "Review", match: (p: string) => p.startsWith("/review"), badge: due },
     { to: "/you", label: "You", match: (p: string) => p.startsWith("/you") },
   ] as const;
