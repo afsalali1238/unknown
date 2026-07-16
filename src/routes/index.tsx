@@ -230,13 +230,7 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
   const visitNode = useStore((s) => s.visitNode);
   const addReadNext = useStore((s) => s.addReadNext);
   const removeReadNext = useStore((s) => s.removeReadNext);
-  const [deeper, setDeeper] = useState(false);
   const [quiz, setQuiz] = useState(false);
-
-  function openDeeper() {
-    setDeeper(true);
-    visitNode(node.id);
-  }
 
   function toggleReadNext() {
     if (queued) removeReadNext(node.id);
@@ -281,20 +275,6 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
           {node.layer0}
         </p>
 
-        {deeper && (
-          <div className="mt-5 space-y-4 border-t border-line pt-5">
-            <p className="font-serif text-base leading-relaxed text-ink">{node.layer1}</p>
-            <p className="font-serif text-base leading-relaxed text-ink">{node.layer2}</p>
-            <Link
-              to="/node/$id"
-              params={{ id: node.id }}
-              className="inline-flex font-mono text-[11px] uppercase tracking-[0.14em] text-accent hover:underline"
-            >
-              Open full node ?
-            </Link>
-          </div>
-        )}
-
         {quiz && <Quiz node={node} />}
 
         <div className="mt-5 flex items-center justify-between">
@@ -319,9 +299,17 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
         <RailButton label="Queue" active={queued} onClick={toggleReadNext}>
           {queued ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}
         </RailButton>
-        <RailButton label="Deeper" active={deeper} onClick={openDeeper}>
-          <Maximize2 className="h-5 w-5" />
-        </RailButton>
+        <Link
+          to="/node/$id"
+          params={{ id: node.id }}
+          aria-label="Open full node"
+          className="flex flex-col items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-ink hover:text-accent transition-colors"
+        >
+          <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-line bg-paper text-ink transition-colors group-hover:border-ink group-hover:text-ink">
+            <Maximize2 className="h-5 w-5" />
+          </div>
+          <span className="hidden sm:inline text-ink-soft">Open</span>
+        </Link>
         <RailButton label="Quiz" active={quiz} onClick={() => setQuiz((q) => !q)}>
           <HelpCircle className="h-5 w-5" />
         </RailButton>
