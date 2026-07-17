@@ -179,7 +179,9 @@ function NodeScreen() {
 
         <div className="mt-6">
           <MicroLabel>
-            {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}<span className="hidden sm:inline">{cluster?.title} · </span>{node.medium}
+            {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
+            <span className="hidden sm:inline">{cluster?.title} · </span>
+            {node.medium}
           </MicroLabel>
           <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink sm:text-5xl">
             {node.title}

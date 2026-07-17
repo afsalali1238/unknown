@@ -192,10 +192,10 @@ function ExhaustedCard() {
           Add topics
         </Link>
         <Link
-          to="/explore"
+          to="/skim"
           className="bg-ink text-paper px-6 py-3 font-mono text-[11px] uppercase tracking-[0.14em]"
         >
-          Explore library
+          Skim the lattice
         </Link>
       </div>
     </section>
@@ -305,10 +305,12 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
       className="flex min-h-[calc(100dvh-7.5rem)] snap-start flex-col px-5 py-6"
     >
       <div className="flex min-w-0 flex-1 flex-col">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <MicroLabel>
             {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
-            <span className="hidden sm:inline">{CLUSTER_TITLE[node.clusterId] ?? node.clusterId} · </span>
+            <span className="hidden sm:inline">
+              {CLUSTER_TITLE[node.clusterId] ?? node.clusterId} ·{" "}
+            </span>
             {node.medium}
           </MicroLabel>
           {source === "adjacent" && (

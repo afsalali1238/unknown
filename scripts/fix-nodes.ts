@@ -10,7 +10,12 @@ const nodesArray = nodesDeclaration?.getInitializerIfKind(SyntaxKind.ArrayLitera
 
 if (nodesArray) {
   const elements = nodesArray.getElements();
-  const allNodes: any[] = [];
+  const allNodes: {
+    id: string;
+    clusterId: string;
+    tags: string[];
+    element: ObjectLiteralExpression;
+  }[] = [];
   const nodeExpressions: ObjectLiteralExpression[] = [];
 
   for (const element of elements) {
@@ -104,8 +109,12 @@ if (nodesArray) {
 
       // Sort by similarity (same cluster + same tags)
       candidates.sort((a, b) => {
-        const scoreA = (a.clusterId === n.clusterId ? 10 : 0) + a.tags.filter((t: string) => n.tags.includes(t)).length;
-        const scoreB = (b.clusterId === n.clusterId ? 10 : 0) + b.tags.filter((t: string) => n.tags.includes(t)).length;
+        const scoreA =
+          (a.clusterId === n.clusterId ? 10 : 0) +
+          a.tags.filter((t: string) => n.tags.includes(t)).length;
+        const scoreB =
+          (b.clusterId === n.clusterId ? 10 : 0) +
+          b.tags.filter((t: string) => n.tags.includes(t)).length;
         return scoreB - scoreA;
       });
 

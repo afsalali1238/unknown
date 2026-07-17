@@ -10,17 +10,23 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as YouRouteImport } from './routes/you'
+import { Route as SkimRouteImport } from './routes/skim'
 import { Route as ReviewRouteImport } from './routes/review'
 import { Route as OnboardingRouteImport } from './routes/onboarding'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as NodeIdRouteImport } from './routes/node.$id'
 import { Route as ReadIdRouteImport } from './routes/read.$id'
+import { Route as NodeIdRouteImport } from './routes/node.$id'
 
 const YouRoute = YouRouteImport.update({
   id: '/you',
   path: '/you',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SkimRoute = SkimRouteImport.update({
+  id: '/skim',
+  path: '/skim',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReviewRoute = ReviewRouteImport.update({
@@ -48,14 +54,14 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const NodeIdRoute = NodeIdRouteImport.update({
-  id: '/node/$id',
-  path: '/node/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ReadIdRoute = ReadIdRouteImport.update({
   id: '/read/$id',
   path: '/read/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NodeIdRoute = NodeIdRouteImport.update({
+  id: '/node/$id',
+  path: '/node/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/map': typeof MapRoute
   '/onboarding': typeof OnboardingRoute
   '/review': typeof ReviewRoute
+  '/skim': typeof SkimRoute
   '/you': typeof YouRoute
   '/node/$id': typeof NodeIdRoute
   '/read/$id': typeof ReadIdRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/map': typeof MapRoute
   '/onboarding': typeof OnboardingRoute
   '/review': typeof ReviewRoute
+  '/skim': typeof SkimRoute
   '/you': typeof YouRoute
   '/node/$id': typeof NodeIdRoute
   '/read/$id': typeof ReadIdRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/map': typeof MapRoute
   '/onboarding': typeof OnboardingRoute
   '/review': typeof ReviewRoute
+  '/skim': typeof SkimRoute
   '/you': typeof YouRoute
   '/node/$id': typeof NodeIdRoute
   '/read/$id': typeof ReadIdRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/map'
     | '/onboarding'
     | '/review'
+    | '/skim'
     | '/you'
     | '/node/$id'
     | '/read/$id'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/map'
     | '/onboarding'
     | '/review'
+    | '/skim'
     | '/you'
     | '/node/$id'
     | '/read/$id'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/map'
     | '/onboarding'
     | '/review'
+    | '/skim'
     | '/you'
     | '/node/$id'
     | '/read/$id'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   MapRoute: typeof MapRoute
   OnboardingRoute: typeof OnboardingRoute
   ReviewRoute: typeof ReviewRoute
+  SkimRoute: typeof SkimRoute
   YouRoute: typeof YouRoute
   NodeIdRoute: typeof NodeIdRoute
   ReadIdRoute: typeof ReadIdRoute
@@ -141,6 +154,13 @@ declare module '@tanstack/react-router' {
       path: '/you'
       fullPath: '/you'
       preLoaderRoute: typeof YouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/skim': {
+      id: '/skim'
+      path: '/skim'
+      fullPath: '/skim'
+      preLoaderRoute: typeof SkimRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/review': {
@@ -178,18 +198,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/node/$id': {
-      id: '/node/$id'
-      path: '/node/$id'
-      fullPath: '/node/$id'
-      preLoaderRoute: typeof NodeIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/read/$id': {
       id: '/read/$id'
       path: '/read/$id'
       fullPath: '/read/$id'
       preLoaderRoute: typeof ReadIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/node/$id': {
+      id: '/node/$id'
+      path: '/node/$id'
+      fullPath: '/node/$id'
+      preLoaderRoute: typeof NodeIdRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   MapRoute: MapRoute,
   OnboardingRoute: OnboardingRoute,
   ReviewRoute: ReviewRoute,
+  SkimRoute: SkimRoute,
   YouRoute: YouRoute,
   NodeIdRoute: NodeIdRoute,
   ReadIdRoute: ReadIdRoute,

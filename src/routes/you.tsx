@@ -7,7 +7,7 @@ import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
 import { cn } from "@/lib/utils";
 import {
-  Flame,
+  Target,
   BarChart3,
   BookOpen,
   Heart,
@@ -17,6 +17,7 @@ import {
   PenTool,
   CloudOff,
   Archive,
+  ArrowRight,
 } from "lucide-react";
 
 export const Route = createFileRoute("/you")({
@@ -48,7 +49,7 @@ function YouScreen() {
         <h1 className="mt-2 font-serif text-4xl text-ink">Your practice</h1>
       </header>
 
-      <Section title="Daily Goal" icon={Flame}>
+      <Section title="Daily Goal" icon={Target}>
         <div className="flex flex-col gap-2">
           <div className="flex items-baseline gap-3">
             <span className="font-mono text-6xl text-accent leading-none">
@@ -99,6 +100,8 @@ function YouScreen() {
       </Section>
 
       <Reading />
+
+      <LibrarySection />
 
       <Interests />
       <AudioPreferences />
@@ -223,6 +226,38 @@ function Reading() {
           )}
         </>
       )}
+    </Section>
+  );
+}
+
+function LibrarySection() {
+  return (
+    <Section title="Library" icon={Library}>
+      <p className="text-sm text-ink-soft">
+        Curated topic collections and the full lattice — every idea, sorted and searchable.
+      </p>
+      <Link
+        to="/explore"
+        search={{ view: "playlists" }}
+        className="mt-4 flex items-center justify-between border border-line p-4 hover:border-ink"
+      >
+        <div>
+          <p className="font-serif text-lg text-ink">Browse by topic</p>
+          <MicroLabel>Curated collections</MicroLabel>
+        </div>
+        <ArrowRight className="h-4 w-4 text-ink-soft" />
+      </Link>
+      <Link
+        to="/explore"
+        search={{ view: "lattice" }}
+        className="mt-2 flex items-center justify-between border border-line p-4 hover:border-ink"
+      >
+        <div>
+          <p className="font-serif text-lg text-ink">Every idea</p>
+          <MicroLabel>{NODES.length} nodes, full lattice</MicroLabel>
+        </div>
+        <ArrowRight className="h-4 w-4 text-ink-soft" />
+      </Link>
     </Section>
   );
 }

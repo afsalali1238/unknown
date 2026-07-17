@@ -219,6 +219,81 @@ export const CLUSTERS: Cluster[] = [
       "The extreme vanguard of physics and biotechnology, where theory challenges the definition of existence itself",
     icon: "Dna",
   },
+  {
+    id: "AA",
+    title: "Physics & Entropy",
+    subtitle:
+      "Thermodynamics, relativity, and chaos theory — the first-principles laws the rest of reality has to obey",
+    icon: "Atom",
+  },
+  {
+    id: "AB",
+    title: "Evolution & Life",
+    subtitle:
+      "Natural selection, biomimicry, and the selfish gene — how blind processes build complexity",
+    icon: "Leaf",
+  },
+  {
+    id: "AC",
+    title: "Logic & Mathematics",
+    subtitle:
+      "Gödel's incompleteness, probability, and calculus fundamentals — the rules underneath every other rule",
+    icon: "Sigma",
+  },
+  {
+    id: "AD",
+    title: "Neuroscience & Biology",
+    subtitle: "Neuroplasticity, the default mode network, and the hardware the mind runs on",
+    icon: "Brain",
+  },
+  {
+    id: "AE",
+    title: "Storytelling & Myth",
+    subtitle: "The hero's journey, mimetic desire, and the archetypes every story keeps reusing",
+    icon: "BookOpen",
+  },
+  {
+    id: "AF",
+    title: "Network Theory",
+    subtitle:
+      "Metcalfe's law, contagion, and scale-free graphs — why connected systems behave the way they do",
+    icon: "Share2",
+  },
+  {
+    id: "AG",
+    title: "Design & Engineering",
+    subtitle:
+      "Affordances, constraints, and form follows function — how physical things get built to work",
+    icon: "Ruler",
+  },
+  {
+    id: "AH",
+    title: "History & Civilizational Arcs",
+    subtitle:
+      "Big history, institutional decay, and revolutions — the long patterns civilizations repeat",
+    icon: "Landmark",
+  },
+  {
+    id: "AI",
+    title: "Governance & Power",
+    subtitle:
+      "Machiavelli, statecraft, and monopoly — how the sovereign actually holds and loses power",
+    icon: "Scale",
+  },
+  {
+    id: "AJ",
+    title: "Game Theory & Strategy",
+    subtitle:
+      "Nash equilibrium, signaling, and the prisoner's dilemma — strategy when others are also thinking",
+    icon: "Swords",
+  },
+  {
+    id: "AK",
+    title: "Media Theory & Information",
+    subtitle:
+      "McLuhan, hyperreality, and the medium as the message — how the channel shapes the content",
+    icon: "Radio",
+  },
 ];
 
 export const NODES: Node[] = [
@@ -10406,7 +10481,7 @@ export const NODES: Node[] = [
         label: "Cynefin framework",
         source: "Untools",
         url: "https://untools.co/cynefin-framework",
-        archive: { status: "full", path: "content/sources/AA1-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/L7-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Decision-Making", "Cognitive Biases & Models", "Markets & Narrative"],
@@ -10441,7 +10516,7 @@ export const NODES: Node[] = [
         label: "Iceberg Model",
         source: "Untools",
         url: "https://untools.co/iceberg-model",
-        archive: { status: "full", path: "content/sources/AA2-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/J31-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
@@ -10481,7 +10556,7 @@ export const NODES: Node[] = [
         label: "Hard Choice Model",
         source: "Untools",
         url: "https://untools.co/hard-choice-model",
-        archive: { status: "full", path: "content/sources/AA3-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/L8-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Decision-Making", "Meaning & Self"],
@@ -10521,7 +10596,7 @@ export const NODES: Node[] = [
         label: "The Tail End",
         source: "Wait But Why",
         url: "https://waitbutwhy.com/2015/12/the-tail-end.html",
-        archive: { status: "full", path: "content/sources/AA4-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/K5-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Meaning & Self", "Compounding & Patience"],
@@ -10562,7 +10637,7 @@ export const NODES: Node[] = [
         label: "The Cook and the Chef",
         source: "Wait But Why",
         url: "https://waitbutwhy.com/2015/11/the-cook-and-the-chef-musks-secret-sauce.html",
-        archive: { status: "full", path: "content/sources/AA5-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/A13-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["First-Principles Thinking", "Startups & Founders", "Moats & Network Effects"],
@@ -10650,7 +10725,7 @@ export const NODES: Node[] = [
         label: "Why Procrastinators Procrastinate",
         source: "Wait But Why",
         url: "https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html",
-        archive: { status: "full", path: "content/sources/AA6-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/N5-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
@@ -10690,7 +10765,7 @@ export const NODES: Node[] = [
         label: "The Generation Effect",
         source: "Ness Labs",
         url: "https://nesslabs.com/generation-effect",
-        archive: { status: "full", path: "content/sources/AA7-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/N6-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
@@ -10730,7 +10805,7 @@ export const NODES: Node[] = [
         label: "The Zeigarnik Effect",
         source: "Ness Labs",
         url: "https://nesslabs.com/zeigarnik-effect",
-        archive: { status: "full", path: "content/sources/AA8-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/U9-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
@@ -10771,7 +10846,7 @@ export const NODES: Node[] = [
         label: "Networked Note-taking",
         source: "Ness Labs",
         url: "https://nesslabs.com/networked-note-taking",
-        archive: { status: "full", path: "content/sources/AA9-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/T4-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Craft & Deep Work"],
@@ -10812,7 +10887,7 @@ export const NODES: Node[] = [
         label: "Identity-Based Habits",
         source: "James Clear",
         url: "https://jamesclear.com/identity-based-habits",
-        archive: { status: "full", path: "content/sources/AA10-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/Q7-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Meaning & Self", "Compounding & Patience", "Health & Body"],
@@ -10853,7 +10928,7 @@ export const NODES: Node[] = [
         label: "Continuous Improvement",
         source: "James Clear",
         url: "https://jamesclear.com/continuous-improvement",
-        archive: { status: "full", path: "content/sources/AA11-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/K6-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Compounding & Patience"],
@@ -10893,7 +10968,7 @@ export const NODES: Node[] = [
         label: "Habit Stacking",
         source: "James Clear",
         url: "https://jamesclear.com/habit-stacking",
-        archive: { status: "full", path: "content/sources/AA12-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/Q8-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Incentives & Systems", "Craft & Deep Work", "Health & Body"],
@@ -10933,7 +11008,7 @@ export const NODES: Node[] = [
         label: "Panpsychism",
         source: "Aeon",
         url: "https://aeon.co/essays/panpsychism-is-crazy-but-its-also-most-probably-true",
-        archive: { status: "full", path: "content/sources/AA13-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/O24-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
@@ -10973,7 +11048,7 @@ export const NODES: Node[] = [
         label: "Epistemic Injustice",
         source: "Aeon",
         url: "https://aeon.co/essays/how-epistemic-injustice-harms-the-marginalised",
-        archive: { status: "full", path: "content/sources/AA14-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/V9-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Cognitive Biases & Models", "Social Constructs"],
@@ -11014,7 +11089,7 @@ export const NODES: Node[] = [
         label: "The Predictive Brain",
         source: "Aeon",
         url: "https://aeon.co/essays/how-the-predictive-brain-makes-us-hallucinate-our-reality",
-        archive: { status: "full", path: "content/sources/AA15-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/Y7-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Philosophy & the Self", "Cognitive Biases & Models"],
@@ -11054,10 +11129,58 @@ export const NODES: Node[] = [
         label: "The Map is Not the Territory",
         source: "LessWrong",
         url: "https://www.lesswrong.com/tag/the-map-is-not-the-territory",
-        archive: { status: "full", path: "content/sources/AA16-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/J32-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "J33",
+    clusterId: "J",
+    title: "Mimetic Desire",
+    author: "René Girard",
+    year: 1961,
+    medium: "Book",
+    category: "Philosophical Anthropology",
+    thesis:
+      "Human desire is not autonomous but fundamentally imitative, leading inevitably to conflict, rivalry, and the scapegoat mechanism as communities seek to discharge the resulting violence.",
+    layer0:
+      "We do not want objects for their intrinsic value; we want them because we copy the desires of others. Our deepest pursuits are dictated by a mediator—an admired model who unconsciously guides our choices and shapes our reality.",
+    layer1:
+      "Desire operates as a triangle: subject, object, and mediator. External mediation occurs when the model exists on a separate plane, avoiding conflict. In internal mediation, the model shares our social plane; they become a direct rival for the same finite resource. This proximity breeds escalating conflict, transforming simple acquisitive desire into a metaphysical obsession to destroy the model and absorb their actual identity.",
+    layer2:
+      "Analyze your most intense professional or personal rivalry. Strip away the physical objective and look at your opponent—how much of your ambition is driven by a genuine need for the target versus a subconscious urge to possess their social prestige or validate your own status in their eyes?",
+    quiz: {
+      question:
+        "According to René Girard’s mimetic theory, what happens when a subject and their model occupy the same social plane (internal mediation)?",
+      options: [
+        "They peacefully coordinate their preferences to avoid conflict.",
+        "The subject seeks a new, external model to guide their choices.",
+        "They become direct rivals for the same object, leading to escalating conflict.",
+        "The model willingly surrenders the object to satisfy the subject.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Internal mediation places the subject and model in direct competition for the same finite object, inevitably transforming the admired model into a resented rival.",
+    },
+    related: ["J5", "U2"],
+    furtherReading: [
+      {
+        label: "Deceit, Desire, and the Novel: Self and Other in Literary Structure",
+        source: "book",
+        url: "https://www.press.jhu.edu/books/title/1414/deceit-desire-and-novel",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: [
+      "Cognitive Biases & Models",
+      "Incentives & Systems",
+      "Power & Persuasion",
+      "Social Constructs",
+    ],
     epistemicStatus: "Canonical",
   },
   {
@@ -11094,7 +11217,7 @@ export const NODES: Node[] = [
         label: "Steelmanning",
         source: "LessWrong",
         url: "https://www.lesswrong.com/tag/steelmanning",
-        archive: { status: "full", path: "content/sources/AA17-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/U10-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
@@ -11134,7 +11257,7 @@ export const NODES: Node[] = [
         label: "Motivated Stopping",
         source: "LessWrong",
         url: "https://www.lesswrong.com/tag/motivated-stopping-and-motivated-continuation",
-        archive: { status: "full", path: "content/sources/AA18-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/U11-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
@@ -11175,7 +11298,7 @@ export const NODES: Node[] = [
         label: "The Good Enough Mother",
         source: "The School of Life",
         url: "https://www.theschooloflife.com/article/the-good-enough-mother/",
-        archive: { status: "full", path: "content/sources/AA19-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/O25-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
@@ -11216,7 +11339,7 @@ export const NODES: Node[] = [
         label: "Status Anxiety",
         source: "The School of Life",
         url: "https://www.theschooloflife.com/article/status-anxiety/",
-        archive: { status: "full", path: "content/sources/AA20-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/V10-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Social Constructs", "Wealth, Leverage & Judgment"],
@@ -11257,7 +11380,7 @@ export const NODES: Node[] = [
         label: "Romanticism vs Classicism",
         source: "The School of Life",
         url: "https://www.theschooloflife.com/article/romanticism-and-classicism/",
-        archive: { status: "full", path: "content/sources/AA21-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/O26-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
@@ -11297,7 +11420,7 @@ export const NODES: Node[] = [
         label: "John Keats on Negative Capability",
         source: "The Marginalian",
         url: "https://www.themarginalian.org/2012/11/01/john-keats-on-negative-capability/",
-        archive: { status: "full", path: "content/sources/AA22-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/N7-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Craft & Deep Work", "First-Principles Thinking"],
@@ -11337,7 +11460,7 @@ export const NODES: Node[] = [
         label: "Schopenhauer's Porcupine Dilemma",
         source: "The Marginalian",
         url: "https://www.themarginalian.org/2015/02/10/schopenhauer-porcupine-dilemma-freud/",
-        archive: { status: "full", path: "content/sources/AA23-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/O27-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
@@ -11378,7 +11501,7 @@ export const NODES: Node[] = [
         label: "Rilke on Living the Questions",
         source: "The Marginalian",
         url: "https://www.themarginalian.org/2012/06/01/rilke-on-questions/",
-        archive: { status: "full", path: "content/sources/AA24-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/O28-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
@@ -11419,7 +11542,7 @@ export const NODES: Node[] = [
         label: "The Kardashev Scale",
         source: "Big Think",
         url: "https://bigthink.com/hard-science/kardashev-scale/",
-        archive: { status: "full", path: "content/sources/AA25-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/R7-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["AI & the Future"],
@@ -11459,7 +11582,7 @@ export const NODES: Node[] = [
         label: "The Overview Effect",
         source: "Big Think",
         url: "https://bigthink.com/space/overview-effect/",
-        archive: { status: "full", path: "content/sources/AA26-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/O29-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
@@ -11500,7 +11623,7 @@ export const NODES: Node[] = [
         label: "Dark Forest Theory",
         source: "Big Think",
         url: "https://bigthink.com/surprising-science/the-dark-forest-theory-a-terrifying-explanation-of-why-we-havent-heard-from-aliens-yet/",
-        archive: { status: "full", path: "content/sources/AA27-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/R8-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["AI & the Future", "Incentives & Systems"],
@@ -11540,7 +11663,7 @@ export const NODES: Node[] = [
         label: "Nudge and Choice Architecture",
         source: "Behavioral Scientist",
         url: "https://behavioralscientist.org/nudge-turns-10-a-conversation-with-richard-thaler/",
-        archive: { status: "full", path: "content/sources/AA28-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/M5-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
@@ -11580,7 +11703,7 @@ export const NODES: Node[] = [
         label: "Hyperbolic Discounting",
         source: "Behavioral Scientist",
         url: "https://behavioralscientist.org/topics/behavioral-economics/",
-        archive: { status: "full", path: "content/sources/AA29-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/U12-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Cognitive Biases & Models", "Compounding & Patience"],
@@ -11620,7 +11743,7 @@ export const NODES: Node[] = [
         label: "Sludge and Friction",
         source: "Behavioral Scientist",
         url: "https://behavioralscientist.org/sludge-and-the-administrative-state/",
-        archive: { status: "full", path: "content/sources/AA30-0.md", retrieved: "2026-07-16" },
+        archive: { status: "full", path: "content/sources/M6-0.md", retrieved: "2026-07-16" },
       },
     ],
     tags: ["Incentives & Systems", "Cognitive Biases & Models"],
@@ -12151,6 +12274,967 @@ export const NODES: Node[] = [
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2009320195848872014",
         archive: { status: "full", path: "content/sources/S19-0.md", retrieved: "2026-07-15" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AA1",
+    clusterId: "AA",
+    title: "Entropy and the Second Law of Thermodynamics",
+    author: "Rudolf Clausius",
+    year: 1865,
+    medium: "Model",
+    category: "Physics",
+    thesis:
+      "Every closed system trends toward disorder, and that one-way drift is the only law of physics that distinguishes past from future.",
+    layer0:
+      "Clausius gave disorder a name and a law in 1865: entropy only goes up. It's the reason ice melts but never un-melts — the only physical law that points in a single direction, forward.",
+    layer1:
+      "The Second Law says total entropy in an isolated system never decreases. Heat flows from hot to cold, gases spread to fill a room, eggs scramble but don't unscramble — not because it's forbidden, but because disordered states vastly outnumber ordered ones, so systems drift there by sheer probability. Every engine, organism, and star spends usable energy fighting a losing battle against this drift.",
+    layer2:
+      "Where in your own work are you spending energy just to hold something ordered — a codebase, a habit, a relationship — that decays the moment you stop maintaining it?",
+    quiz: {
+      question:
+        "Why does the Second Law of Thermodynamics give time a direction, while most physical laws don't care whether time runs forward or backward?",
+      options: [
+        "Because entropy always increases in an isolated system, and disordered states vastly outnumber ordered ones, so the arrow of time is really an arrow of increasing probability",
+        "Because gravity only pulls objects forward in time",
+        "Because the speed of light decreases as entropy increases",
+        "Because Newton's laws only work in one temporal direction",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Most of physics is time-symmetric — run the equations backward and they still hold. Entropy is the exception: disorder is simply far more probable than order, so degraded states almost never spontaneously reassemble, which is what makes time feel one-directional.",
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["J8", "R6", "AC1"],
+    furtherReading: [
+      {
+        label: "Entropy",
+        source: "article",
+        url: "http://www.scholarpedia.org/article/Entropy",
+        archive: {
+          status: "full",
+          path: "content/sources/AA1-entropy-0.md",
+          retrieved: "2026-07-17",
+        },
+      },
+      {
+        label: "Rudolf Clausius and the Second Law of Thermodynamics Explained",
+        source: "article",
+        url: "https://www.kroneckerwallis.com/rudolf-clausius-and-the-second-law-of-thermodynamics-explained/",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB1",
+    clusterId: "AB",
+    title: "On the Origin of Species: Natural Selection",
+    author: "Charles Darwin",
+    year: 1859,
+    medium: "Book",
+    category: "Evolutionary Biology",
+    thesis:
+      "Complex life needs no designer — small heritable advantages, repeated over enormous time, are enough to build every organism on Earth.",
+    layer0:
+      "Darwin's whole argument fits in one sentence: organisms that reproduce better, reproduce more. Run that filter for a few hundred million generations and you get eyes, wings, and brains — no blueprint required.",
+    layer1:
+      "Natural selection needs only three ingredients: variation between individuals, heredity, and differential survival — some variants leave more descendants than others. Nothing plans the outcome; the environment simply filters what already exists. Over deep time this blind filtering process, with zero foresight, produces adaptations so intricate they look engineered, from the vertebrate eye to the immune system.",
+    layer2:
+      "What's a blind filter operating on your own choices right now — market feedback, habit, reputation — that's quietly selecting for some version of you over another without you designing it?",
+    quiz: {
+      question:
+        "What mechanism did Darwin propose for how complex adaptations arise without any designer or plan?",
+      options: [
+        "Organisms consciously choose which traits to develop and pass on",
+        "Random heritable variation gets filtered by differential survival and reproduction, so advantageous traits accumulate over many generations",
+        "Species inherit traits their parents acquired during their own lifetime",
+        "A predetermined genetic blueprint unfolds over time",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The 'design without a designer' insight is the core of natural selection: variation plus heredity plus differential survival is sufficient — no foresight, intention, or blueprint required.",
+    },
+    tags: ["First-Principles Thinking", "Compounding & Patience"],
+    related: ["O5", "R6", "M2"],
+    furtherReading: [
+      {
+        label: "On the Origin of Species (1859, full text)",
+        source: "book",
+        url: "https://www.gutenberg.org/files/1228/1228-h/1228-h.htm",
+        archive: { status: "full", path: "content/sources/AB1-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AC1",
+    clusterId: "AC",
+    title: "Gödel's Incompleteness Theorems",
+    author: "Kurt Gödel",
+    year: 1931,
+    medium: "Paper",
+    category: "Mathematical Logic",
+    thesis:
+      "Any formal system powerful enough to describe arithmetic contains true statements it can never prove, and it can't even prove its own consistency.",
+    layer0:
+      "Gödel was 25 when he proved something unsettling about mathematics: any system rich enough to do arithmetic will always contain true statements it can't prove from within.",
+    layer1:
+      "Gödel's first theorem shows any consistent formal system capable of arithmetic contains true statements it can neither prove nor disprove — completeness and consistency can't both be had. His second theorem goes further: such a system can't prove its own consistency without stepping outside itself, by encoding 'this statement is unprovable' directly into arithmetic.",
+    layer2:
+      "Where in your own reasoning do you rely on assumptions your framework can't actually justify from inside itself — and what would it take to notice you're standing on one?",
+    quiz: {
+      question:
+        "What does Gödel's second incompleteness theorem say a consistent formal system capable of arithmetic can never do?",
+      options: [
+        "Prove any true statement whatsoever",
+        "Perform basic arithmetic operations correctly",
+        "Prove its own consistency using only its own axioms and rules",
+        "Contain any false statements",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Even if the system is in fact consistent, it cannot demonstrate that fact from within its own axioms — you always need a larger system to vouch for a smaller one.",
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["R6", "AA1", "J2"],
+    furtherReading: [
+      {
+        label: "Gödel's Incompleteness Theorems",
+        source: "article",
+        url: "https://plato.stanford.edu/entries/goedel-incompleteness/",
+        archive: { status: "full", path: "content/sources/AC1-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AD1",
+    clusterId: "AD",
+    title: "Hebbian Theory: Neurons That Fire Together, Wire Together",
+    author: "Donald Hebb",
+    year: 1949,
+    medium: "Book",
+    category: "Neuroscience",
+    thesis:
+      "Learning is physical — repeated co-activation between neurons strengthens the connection between them, which is how experience becomes structure.",
+    layer0:
+      "Hebb's 1949 rule is the closest thing neuroscience has to a founding law: neurons that fire together, wire together. Every habit, skill, and memory is this rule running on repeat.",
+    layer1:
+      "Hebb proposed that when one neuron repeatedly helps fire another, the connection between them physically strengthens, becoming more efficient next time. This synaptic plasticity is now the accepted basis for how memory and learning are encoded at the cellular level, decades before brain imaging could confirm it. It also explains why repetition builds skill, and why breaking a habit means weakening a wired pathway, not just willing it away.",
+    layer2:
+      "What pathway have you unconsciously wired together through repetition — a reaction, a scroll habit, a way of arguing — that you're now trying to consciously rewire?",
+    quiz: {
+      question:
+        "According to Hebbian theory, what physically changes in the brain when learning occurs?",
+      options: [
+        "New neurons are created every time something is learned",
+        "The synaptic connection between two neurons strengthens when one repeatedly helps activate the other",
+        "The brain's total size increases with each new memory",
+        "Neurons that fire together are chemically destroyed and replaced",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Hebb's postulate is about connection strength, not neuron count — repeated co-activation is what physically encodes a memory or skill.",
+    },
+    tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+    related: ["J9", "U8", "N7"],
+    furtherReading: [
+      {
+        label: "Hebbian Theory",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Hebbian_theory",
+        archive: { status: "full", path: "content/sources/AD1-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "Donald Olding Hebb",
+        source: "article",
+        url: "https://can-acn.org/donald-olding-hebb/",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AE1",
+    clusterId: "AE",
+    title: "The Hero's Journey (Monomyth)",
+    author: "Joseph Campbell",
+    year: 1949,
+    medium: "Book",
+    category: "Comparative Mythology",
+    thesis:
+      "Every culture's mythology encodes the same underlying story — a call to adventure, trials, and a transformed return — because it maps the psychological structure of growth itself.",
+    layer0:
+      "Campbell read myths from every continent in 1949 and found one skeleton underneath all of them: a hero leaves the ordinary world, is tested, and returns changed. He called it the monomyth.",
+    layer1:
+      "The monomyth's stages — a call to adventure, crossing into the unknown, trials with a mentor's help, a climactic ordeal, and a changed return — recur across Sumerian, Greek, Norse, and Indigenous myth with little variation. Campbell argued this isn't coincidence but psychology: the structure mirrors the actual shape of transformation, which is why storytellers from ancient priests to George Lucas keep reusing it.",
+    layer2:
+      "What ordinary world are you currently reluctant to leave, and what would your version of a call to adventure actually look like if you took it seriously?",
+    quiz: {
+      question:
+        "Why did Campbell argue the same basic story structure recurs across unrelated cultures' mythologies?",
+      options: [
+        "The structure mirrors the actual psychological shape of transformation and growth, so cultures independently converge on it",
+        "Colonial trade routes spread one story to every culture",
+        "All myths were plagiarized from a single ancient source text",
+        "It's a coincidence with no underlying explanation",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Campbell's claim was psychological, not historical — the story shape recurs because it tracks a real process of leaving comfort, being tested, and returning changed, which every culture has reason to encode.",
+    },
+    tags: ["Meaning & Self"],
+    related: ["O6", "S1", "N7"],
+    furtherReading: [
+      {
+        label: "The Hero with a Thousand Faces",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces",
+        archive: { status: "full", path: "content/sources/AE1-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "Joseph Campbell and the Hero's Journey",
+        source: "article",
+        url: "https://www.jcf.org/learn/joseph-campbell-heros-journey",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AF1",
+    clusterId: "AF",
+    title: "Metcalfe's Law",
+    author: "Robert Metcalfe",
+    year: 1980,
+    medium: "Model",
+    category: "Network Theory",
+    thesis:
+      "A network's value grows roughly with the square of its users, which is why the first users of a network are the hardest to get and the last are nearly free.",
+    layer0:
+      "Metcalfe sketched this on a slide in 1980, years before anyone called it a network effect: a network's value scales with the square of its connected users, not linearly.",
+    layer1:
+      "If a network has n users, possible connections grow as roughly n². Metcalfe used this to sell Ethernet: a network of 10 devices is worth far more than ten times one device, since value comes from connections, not nodes. George Gilder popularized the name in a 1993 Forbes piece, and it became the logic behind every platform's race to reach critical mass first — early users get a network nobody wants yet; late users get one everybody needs.",
+    layer2:
+      "What's the smallest number of connected users your product or idea needs before the network effect starts pulling new users in for you, instead of you pulling them in?",
+    quiz: {
+      question:
+        "Why does Metcalfe's Law make a platform's early users disproportionately hard to acquire, and later users disproportionately easy?",
+      options: [
+        "Early users pay lower prices due to promotional discounts",
+        "Network value grows with the square of connected users, so a small early network offers little value while a large late network offers enormous value",
+        "Early adopters are naturally more skeptical people",
+        "Company marketing budgets are always smaller at launch",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Because value scales roughly as n², a network of 10 people offers about 45 possible connections while one of 1,000 offers about 500,000 — the same product becomes exponentially more valuable to join purely from network size, independent of any product improvement.",
+    },
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
+    related: ["I2", "I10", "M5"],
+    furtherReading: [
+      {
+        label: "Metcalfe's Law",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Metcalfe's_law",
+        archive: { status: "full", path: "content/sources/AF1-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "Beyond Metcalfe's Law for Network Effects",
+        source: "article",
+        url: "https://a16z.com/beyond-metcalfes-law-for-network-effects/",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG1",
+    clusterId: "AG",
+    title: "Form Follows Function",
+    author: "Louis Sullivan",
+    year: 1896,
+    medium: "Essay",
+    category: "Design Philosophy",
+    thesis:
+      "A structure's shape should be dictated by what it needs to do, not by decorative tradition — form is a consequence of function, not a separate choice.",
+    layer0:
+      "Sullivan coined the modernist movement's founding rule in a single 1896 essay: form ever follows function. Strip away ornament that doesn't serve a purpose, and the true shape of a thing reveals itself.",
+    layer1:
+      "Writing about skyscraper design in 'The Tall Office Building Artistically Considered,' Sullivan argued that nature never puts a decorative flourish where it doesn't serve survival — a hawk's wing is shaped by flight, not fashion — and buildings should follow the same logic. The phrase became the rallying cry for Bauhaus and modernist design decades later, though Sullivan himself still used plenty of ornament in his own buildings.",
+    layer2:
+      "What's one piece of unnecessary ornament in something you've built — a feature, a slide, a process step — that exists purely from habit rather than function?",
+    quiz: {
+      question:
+        "What point was Sullivan actually making with 'form follows function' in his 1896 essay?",
+      options: [
+        "A structure's shape should be determined by its purpose, the way natural forms are shaped by what they need to do, not by inherited decorative convention",
+        "Buildings should have no decoration whatsoever",
+        "Function is less important than visual appeal",
+        "Ornament should be added only after a building's structural design is finished",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Sullivan's argument was about causality, not minimalism — shape should follow purpose the way a hawk's wing follows flight, rather than defaulting to ornamental tradition disconnected from what the structure actually does.",
+    },
+    tags: ["Craft & Deep Work", "First-Principles Thinking"],
+    related: ["G2", "M3"],
+    furtherReading: [
+      {
+        label: "Form follows function",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Form_follows_function",
+        archive: { status: "full", path: "content/sources/AG1-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "The Tall Office Building Artistically Considered (1896, primary source scan)",
+        source: "article",
+        url: "https://archive.org/details/tallofficebuildi00sull",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH1",
+    clusterId: "AH",
+    title: "Asabiyyah: The Cyclical Rise and Fall of Civilizations",
+    author: "Ibn Khaldun",
+    year: 1377,
+    medium: "Book",
+    category: "Philosophy of History",
+    thesis:
+      "Dynasties rise on group solidarity forged by hardship and collapse within three to four generations as comfort dissolves the very bond that built them.",
+    layer0:
+      "Writing in 1377, Ibn Khaldun mapped a cycle every empire since has repeated: hardened outsiders unite, conquer the soft center, get soft themselves within a few generations, and get conquered by the next hardened outsiders.",
+    layer1:
+      "Ibn Khaldun called the bonding force asabiyyah — solidarity forged by shared hardship. He argued cohesion is strongest among people without luxury, which is exactly what lets them topple comfort-softened dynasties. But asabiyyah has a shelf life: in power, rulers urbanize and accumulate wealth, diluting the loyalty that got them there within three or four generations, leaving them open to the next hungrier group.",
+    layer2:
+      "Where in an organization or team you're part of has that founding solidarity already started eroding as success replaced the original shared hardship that built it?",
+    quiz: {
+      question:
+        "According to Ibn Khaldun, what causes a dynasty's founding group solidarity (asabiyyah) to erode?",
+      options: [
+        "Foreign invasion is the sole cause of decline in every case",
+        "Urbanization, accumulated wealth, and generational distance from the original shared hardship dilute the cohesion that built the dynasty in the first place",
+        "Religious conversion always weakens ruling groups",
+        "Asabiyyah never actually erodes once established",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Ibn Khaldun's cycle is specifically about comfort dissolving cohesion — the very success and luxury that power brings removes the shared hardship that forged group loyalty, opening the door for the next hungrier group.",
+    },
+    tags: ["Macro & Cycles", "Incentives & Systems"],
+    related: ["I8", "AH2", "D9"],
+    furtherReading: [
+      {
+        label: "The Muqaddimah: An Introduction to History",
+        source: "book",
+        url: "https://archive.org/details/muqaddimahintrod0000ibnk",
+        archive: { status: "full", path: "content/sources/AH1-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AI1",
+    clusterId: "AI",
+    title: "The Prince: Power as It Actually Works",
+    author: "Niccolò Machiavelli",
+    year: 1513,
+    medium: "Book",
+    category: "Political Theory",
+    thesis:
+      "Rulers should be judged by whether their methods preserve power and stability, not by whether those methods are conventionally virtuous.",
+    layer0:
+      "Machiavelli wrote the book that made his own name an insult, in 1513: rulers should study how power is actually kept, not how moralists wish it were kept. Effectiveness, not virtue, is the real test.",
+    layer1:
+      "The Prince refuses to describe an ideal ruler, describing instead what keeps rulers in power in reality — calculated fear, strategic generosity, and ruthlessness deployed only when cheaper than the alternative. His most quoted line, that it's safer to be feared than loved if you can't be both, isn't cynicism for its own sake — it's a claim that fear is a lever the ruler actually controls.",
+    layer2:
+      "Where in your own leadership or negotiations are you optimizing for being liked, when the situation actually calls for being respected or predictable instead?",
+    quiz: {
+      question:
+        "What was actually novel about Machiavelli's approach in The Prince compared to earlier political philosophy?",
+      options: [
+        "He described how power is actually held and kept in practice, rather than prescribing an idealized virtuous ruler",
+        "He was the first to argue rulers should be virtuous above all else",
+        "He focused exclusively on religious justifications for rule",
+        "He argued that democracy was superior to monarchy",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Earlier political philosophy largely described an ideal ruler; Machiavelli broke from that tradition to describe effective rulers as they actually operate, which is why the book still reads as startlingly blunt five centuries later.",
+    },
+    tags: ["Power & Persuasion", "Decision-Making"],
+    related: ["AI2", "M4", "AH1"],
+    furtherReading: [
+      {
+        label: "The Prince (full text)",
+        source: "book",
+        url: "https://www.gutenberg.org/files/1232/1232-h/1232-h.htm",
+        archive: { status: "full", path: "content/sources/AI1-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AJ1",
+    clusterId: "AJ",
+    title: "Nash Equilibrium",
+    author: "John Nash",
+    year: 1950,
+    medium: "Paper",
+    category: "Game Theory",
+    thesis:
+      "In any strategic game, a stable outcome exists where no player can improve their result by changing strategy alone — everyone is already playing their best response to everyone else.",
+    layer0:
+      "Nash proved it in one page in 1950: every game has at least one point where nobody can do better by switching strategy alone. That point isn't necessarily the best outcome for anyone — just the one nobody can unilaterally escape.",
+    layer1:
+      "A Nash equilibrium is a set of strategies, one per player, where each is the best response to everyone else, so no single player benefits from changing course alone. Nash's 1950 PNAS paper proved such a point always exists in any finite game, which is why it became the backbone of economics and auction design. An equilibrium can be collectively terrible, as in the prisoner's dilemma, while still individually unbeatable.",
+    layer2:
+      "Where are you and someone else stuck in a mutually worse outcome that neither of you can improve by moving alone, and what would it take to change the game itself instead of your move within it?",
+    quiz: {
+      question:
+        "What makes a Nash equilibrium 'stable,' even when the outcome is bad for everyone involved?",
+      options: [
+        "Every player is achieving their absolute best possible outcome",
+        "No single player can improve their own result by changing strategy alone, even if a different combined set of strategies would make everyone better off",
+        "All players have identical payoffs",
+        "The game has ended and no further moves are possible",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Stability in game theory means no unilateral improvement is possible — it says nothing about collective optimality, which is exactly why equilibria like the prisoner's dilemma can trap everyone in a worse outcome that no one can escape alone.",
+    },
+    tags: ["Decision-Making", "Incentives & Systems"],
+    related: ["AJ2", "M4", "AI1"],
+    furtherReading: [
+      {
+        label: "Equilibrium Points in N-Person Games (1950, PNAS)",
+        source: "paper",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC1063129/",
+        archive: { status: "full", path: "content/sources/AJ1-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AK1",
+    clusterId: "AK",
+    title: "The Medium Is the Message",
+    author: "Marshall McLuhan",
+    year: 1964,
+    medium: "Book",
+    category: "Media Theory",
+    thesis:
+      "The form a communication technology takes shapes society more than the content it carries — the channel is never neutral.",
+    layer0:
+      "McLuhan opened Understanding Media in 1964 with a line that still unsettles media analysts: the medium is the message. What a technology is changes society more than whatever it happens to say.",
+    layer1:
+      "McLuhan's claim wasn't that content doesn't matter, but that a medium's form imposes its own logic on whoever uses it — television restructured attention spans before anyone analyzed a broadcast; a light bulb creates usable space at night with zero content at all. Every new medium extends some human faculty — the wheel extends the foot, print extends the eye — and it's that extension, not the message on it, that reshapes how people think.",
+    layer2:
+      "Which medium you use daily — short video, group chat, a feed — is reshaping how you think or relate to people, independent of anything specific you've ever consumed on it?",
+    quiz: {
+      question: "What did McLuhan mean by 'the medium is the message'?",
+      options: [
+        "A communication technology's form reshapes perception, attention, and society on its own, independent of and often more powerfully than the specific content it carries",
+        "Content doesn't matter at all, only the delivery format",
+        "Each medium's specific content is what determines its social impact, not its form",
+        "New media always improve upon the media they replace",
+      ],
+      correctIndex: 0,
+      explanation:
+        "McLuhan's point was about structural effects, not content quality — a medium like television or the light bulb changes how people live and think through its mere existence and form, regardless of which particular programs or messages pass through it.",
+    },
+    tags: ["Markets & Narrative", "Tech Adoption & Disruption"],
+    related: ["F1", "I2", "S1"],
+    furtherReading: [
+      {
+        label: "Understanding Media: The Extensions of Man, Ch.1 (excerpt)",
+        source: "book",
+        url: "https://web.mit.edu/allanmc/www/mcluhan.mediummessage.pdf",
+        archive: { status: "excerpt", path: "content/sources/AK1-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA2",
+    clusterId: "AA",
+    title: "Special Relativity",
+    author: "Albert Einstein",
+    year: 1905,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "Space and time aren't fixed backdrops — they stretch and compress depending on how fast you're moving relative to what you're measuring.",
+    layer0:
+      "A 26-year-old patent clerk rewrote physics in 1905 without a lab or a university post — showing space and time bend depending on your speed relative to what you're observing.",
+    layer1:
+      "Einstein's postulates were simple: physics laws are the same in every inertial frame, and light's speed is constant regardless of the observer's motion. Time dilation, length contraction, and E=mc² all fall out as consequences of that one idea, not as separate discoveries. Two events simultaneous to one observer can look sequential to another moving relative to them — neither observer is wrong.",
+    layer2:
+      "What assumption in your own thinking are you treating as a fixed reference point, when it might actually depend entirely on your vantage — your speed relative to the thing you're judging?",
+    quiz: {
+      question:
+        "What was the key insight that let Einstein derive time dilation and length contraction from just two postulates?",
+      options: [
+        "That gravity bends light around massive objects",
+        "That time moves at the same rate for every observer in the universe",
+        "That the speed of light is constant for all observers regardless of their motion, while the laws of physics stay the same in every inertial frame",
+        "That mass and energy are completely unrelated quantities",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Holding the speed of light constant while keeping physics consistent across frames is what forces space and time themselves to become relative — one starting assumption doing the entire theory's work.",
+    },
+    tags: ["First-Principles Thinking"],
+    related: ["AA1", "R6", "AC1"],
+    furtherReading: [
+      {
+        label: "On the Electrodynamics of Moving Bodies (1905, English translation)",
+        source: "paper",
+        url: "https://www.fourmilab.ch/etexts/einstein/specrel/specrel.pdf",
+        archive: {
+          status: "full",
+          path: "content/sources/AA2-relativity-0.md",
+          retrieved: "2026-07-17",
+        },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB2",
+    clusterId: "AB",
+    title: "Kin Selection and Inclusive Fitness",
+    author: "W.D. Hamilton",
+    year: 1964,
+    medium: "Paper",
+    category: "Evolutionary Biology",
+    thesis:
+      "Evolution doesn't just favor genes that help the individual survive — it favors genes that help copies of themselves survive, wherever they happen to sit, including in relatives.",
+    layer0:
+      "Hamilton solved a problem Darwin admitted he couldn't: why do animals sacrifice themselves for relatives? In 1964 he showed evolution favors genes, not individuals — and genes exist in relatives too.",
+    layer1:
+      "Hamilton's inclusive fitness reframes selection around the gene, not the organism. A gene that lowers an individual's own survival can still spread if it sufficiently boosts survival in relatives carrying copies of that gene — Hamilton's rule: favored when cost to the actor is less than benefit to the relative, discounted by relatedness. This explained altruism in ants, bees, and humans without group selection.",
+    layer2:
+      "Where do you act more generously toward people who share more of your interests or stake in an outcome — a family business, a close team — than toward strangers, without ever consciously running the math?",
+    quiz: {
+      question:
+        "What problem did Hamilton's theory of inclusive fitness solve that pure individual-survival selection couldn't explain?",
+      options: [
+        "Why animals sometimes sacrifice their own survival or reproduction to help close relatives survive and reproduce",
+        "Why some species migrate seasonally",
+        "Why mutation rates vary between species",
+        "Why predator populations cycle with prey populations",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Pure individual selection struggles to explain self-sacrificing altruism; Hamilton's insight was that a gene can spread by helping copies of itself in relatives survive, even at a cost to the individual carrying it.",
+    },
+    tags: ["Incentives & Systems", "First-Principles Thinking"],
+    related: ["AB1", "O5", "M2"],
+    furtherReading: [
+      {
+        label: "The Genetical Evolution of Social Behaviour",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/The_Genetical_Evolution_of_Social_Behaviour",
+        archive: { status: "full", path: "content/sources/AB2-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "Kin selection",
+        source: "article",
+        url: "https://www.britannica.com/topic/kin-selection",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AC2",
+    clusterId: "AC",
+    title: "Bayes' Theorem",
+    author: "Thomas Bayes (published by Richard Price)",
+    year: 1763,
+    medium: "Model",
+    category: "Probability Theory",
+    thesis:
+      "Belief should update in proportion to evidence — Bayes' theorem is the exact math for how much a new piece of evidence should move your confidence.",
+    layer0:
+      "Bayes never published this in his lifetime — a friend found it in his papers and printed it in 1763. It's the exact formula for how much a new piece of evidence should change what you believe.",
+    layer1:
+      "Bayes' theorem relates the probability of a hypothesis given evidence to the probability of that evidence given the hypothesis, weighted by the hypothesis's prior probability. The prior matters more than intuition suggests: a positive test for a rare disease can still mean you probably don't have it, if false positives from the healthy majority outnumber true positives. Updating correctly means multiplying prior by evidence, not replacing it.",
+    layer2:
+      "What's a belief you updated to near-certainty after one striking piece of evidence, without asking how likely that evidence would have been even if you were wrong?",
+    quiz: {
+      question:
+        "Why can a positive result on an accurate test for a rare disease still mean you probably don't have it?",
+      options: [
+        "Because a 99% accurate test becomes completely worthless whenever a disease is rare",
+        "Because probability theory doesn't meaningfully apply to individual medical diagnoses",
+        "Because test accuracy always decreases mechanically as a condition becomes rarer",
+        "Because when a condition is rare enough, false positives from the healthy majority can outnumber true positives from the small number who are actually sick",
+      ],
+      correctIndex: 3,
+      explanation:
+        "This is Bayes' theorem in action: a low prior probability of having a rare disease means even a highly accurate test generates more false positives from the large healthy population than true positives from the small sick one, so the posterior stays lower than intuition suggests.",
+    },
+    tags: ["Decision-Making", "First-Principles Thinking"],
+    related: ["AC1", "U3", "J2"],
+    furtherReading: [
+      {
+        label: "Bayes' Theorem",
+        source: "article",
+        url: "https://plato.stanford.edu/entries/bayes-theorem/",
+        archive: { status: "full", path: "content/sources/AC2-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AD2",
+    clusterId: "AD",
+    title: "The Default Mode Network",
+    author: "Marcus Raichle",
+    year: 2001,
+    medium: "Paper",
+    category: "Neuroscience",
+    thesis:
+      "The brain doesn't go idle at rest — a specific network becomes more active the moment you stop focusing on a task, and it burns a disproportionate share of the brain's total energy doing it.",
+    layer0:
+      "Raichle kept seeing the same brain regions go quiet exactly when a task started, scan after scan. In 2001 he named what they were doing instead: the brain's default mode.",
+    layer1:
+      "Brain imaging kept showing regions — medial prefrontal, posterior cingulate, lateral parietal cortex — that quiet down during external tasks, then reactivate when attention turns inward: mind-wandering, remembering, imagining the future. Raichle's 2001 paper named this baseline activity the 'default mode,' overturning the assumption that rest meant low brain activity — the network burns roughly 20% of the brain's energy doing 'nothing.'",
+    layer2:
+      "When was the last genuinely unstructured, unstimulated stretch of time you gave your mind — no podcast, no scroll — and what did it produce that focused work couldn't?",
+    quiz: {
+      question: "What did Raichle's 2001 discovery of the default mode network overturn?",
+      options: [
+        "The theory that different brain regions are specialized for different functions",
+        "The theory that memories are stored primarily in the hippocampus",
+        "The assumption that the resting brain is largely inactive — instead, a specific network becomes more active during rest and mind-wandering",
+        "The belief that neurons communicate via electrical signals",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Brain scans had long treated the 'resting' state as a low-activity baseline; Raichle showed a specific network actually increases activity during rest, consuming a large share of the brain's energy budget on internally-directed thought.",
+    },
+    tags: ["Craft & Deep Work", "Meaning & Self"],
+    related: ["AD1", "N7", "O2"],
+    furtherReading: [
+      {
+        label: "Default mode network",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Default_mode_network",
+        archive: { status: "full", path: "content/sources/AD2-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "A default mode of brain function (2001, PNAS)",
+        source: "paper",
+        url: "https://www.pnas.org/doi/10.1073/pnas.98.2.676",
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AE2",
+    clusterId: "AE",
+    title: "Mimetic Desire",
+    author: "René Girard",
+    year: 1961,
+    medium: "Book",
+    category: "Literary Theory / Anthropology",
+    thesis:
+      "We don't desire things independently — we desire what other people desire, borrowing our wants from a model we consciously or unconsciously want to become.",
+    layer0:
+      "Girard's 1961 debut argued desire is never truly original — you want what someone else wants, borrowed from a model, which is why trends, rivalries, and status races spread like contagion.",
+    layer1:
+      "Girard studied the great novelists — Stendhal, Flaubert, Proust, Dostoevsky — and found one structure inside every plot: characters desire objects through a mediator, wanting what the mediator wants because the mediator seems to access some fuller mode of being. This explains why two people suddenly want the same job or partner once one shows interest — desire is contagious because it's borrowed, not because the object is objectively better.",
+    layer2:
+      "Think of something you badly want right now — is the wanting really about the thing itself, or did it start after watching someone you admire want or have it?",
+    quiz: {
+      question:
+        "According to Girard's theory of mimetic desire, where does desire actually originate?",
+      options: [
+        "Desire arises independently within each individual based on the object's inherent qualities",
+        "Desire is entirely determined by economic scarcity",
+        "Desire is a fixed biological drive unrelated to social context",
+        "Desire is borrowed from a model or mediator — we want things because someone else wants or has them, not purely for the object's own qualities",
+      ],
+      correctIndex: 3,
+      explanation:
+        "Girard's core claim is that desire is triangular, not direct — a subject wants an object because a mediator's desire for it makes the object seem valuable, which is why desire spreads through imitation rather than independent evaluation.",
+    },
+    tags: ["Meaning & Self", "Markets & Narrative"],
+    related: ["AE1", "U8", "M2"],
+    furtherReading: [
+      {
+        label: "Mimetic theory",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Mimetic_theory",
+        archive: { status: "full", path: "content/sources/AE2-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "René Girard (Britannica)",
+        source: "article",
+        url: "https://www.britannica.com/biography/Rene-Girard",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AF2",
+    clusterId: "AF",
+    title: "Six Degrees of Separation (The Small-World Experiment)",
+    author: "Stanley Milgram",
+    year: 1967,
+    medium: "Paper",
+    category: "Network Theory",
+    thesis:
+      "Any two strangers are connected by a surprisingly short chain of acquaintances, because social networks are far more efficiently wired than their size would suggest.",
+    layer0:
+      "Milgram's 1967 mail experiment asked strangers in Nebraska to route a folder to one specific Boston stockbroker using only people they knew personally. It usually took just a handful of hops.",
+    layer1:
+      "Milgram's participants forwarded a folder person-to-person, each passing it to whoever seemed 'closer' to the target, with no map of the network. Chains that completed averaged about 4.4 intermediaries — later popularized as 'six degrees,' though Milgram never used that phrase. Social networks aren't the sprawling, clustered webs they look like from inside — a few long-range ties collapse the distance between any two people.",
+    layer2:
+      "Who's one person in your network who probably connects you, in two or three hops, to someone genuinely useful that you currently assume is completely out of reach?",
+    quiz: {
+      question:
+        "What made Milgram's small-world result surprising, given that participants had no map of the overall social network?",
+      options: [
+        "That most chains never reached the target at all",
+        "That every completed chain used exactly six intermediaries",
+        "That successful chains reached a specific stranger in only a handful of steps, implying social networks are collapsed by a few long-range connections rather than being purely local webs",
+        "That the experiment proved social networks are completely random",
+      ],
+      correctIndex: 2,
+      explanation:
+        "The short average chain length (about 4.4 steps) suggested that despite social networks looking locally clustered from any individual's viewpoint, a small number of well-placed long-range acquaintances make the whole network far smaller in practice than its size implies.",
+    },
+    tags: ["Moats & Network Effects"],
+    related: ["AF1", "I2", "M5"],
+    furtherReading: [
+      {
+        label: "Small-world experiment",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Small-world_experiment",
+        archive: { status: "full", path: "content/sources/AF2-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "Could it be a Big World After All? The 'Six Degrees of Separation' Myth",
+        source: "article",
+        url: "https://www.cs.princeton.edu/~chazelle/courses/BIB/big-world",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG2",
+    clusterId: "AG",
+    title: "Affordances",
+    author: "James J. Gibson",
+    year: 1966,
+    medium: "Model",
+    category: "Perceptual Psychology / Design",
+    thesis:
+      "Objects and environments don't just have properties — they signal what can be done with them, and that signal is what actually guides behavior, not conscious analysis of physical properties.",
+    layer0:
+      "Gibson's 1966 idea reframed perception itself: you don't see a chair and deduce you can sit on it — the 'sit-ability' is part of what you perceive directly. He called this an affordance.",
+    layer1:
+      "An affordance is a possibility for action an object offers a specific perceiver — a flat, knee-high, rigid surface affords sitting for an adult, not for an ant. Gibson's radical claim: we perceive these action-possibilities directly, without cataloguing physical properties and reasoning about them. Don Norman later popularized the term in design — a well-designed door handle makes 'push' or 'pull' obvious without a label; a bad one needs a sign.",
+    layer2:
+      "Where in something you've built — a product, a document, a room — are you relying on a label or instructions to explain something the design itself should be making obvious?",
+    quiz: {
+      question: "What did Gibson mean by an 'affordance'?",
+      options: [
+        "A visible label or instruction that explains how to use an object correctly",
+        "The market price a customer is willing to afford for a product",
+        "A product feature that has been explicitly documented in a manual",
+        "A possibility for action that an object or environment directly offers a specific perceiver, perceived without first analyzing its neutral physical properties",
+      ],
+      correctIndex: 3,
+      explanation:
+        "Gibson's claim was perceptual, not just design-related — we directly perceive what an environment lets us do (sit, climb, grasp) rather than deducing it from separately analyzed physical properties, which is why hiding an affordance forces conscious problem-solving.",
+    },
+    tags: ["Craft & Deep Work", "First-Principles Thinking"],
+    related: ["AG1", "M3", "N7"],
+    furtherReading: [
+      {
+        label: "Affordance",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Affordance",
+        archive: { status: "full", path: "content/sources/AG2-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "Top 10 Application-Design Mistakes (affordances & signifiers)",
+        source: "article",
+        url: "https://www.nngroup.com/articles/top-10-application-design-mistakes/",
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH2",
+    clusterId: "AH",
+    title: "The Decline and Fall of the Roman Empire",
+    author: "Edward Gibbon",
+    year: 1776,
+    medium: "Book",
+    category: "History",
+    thesis:
+      "Rome didn't fall to a single blow — it decayed from internal causes over centuries, with external invasion delivering the final push, not the root cause.",
+    layer0:
+      "Gibbon spent 1776 to 1788 answering one question: how does the most powerful state in the world quietly stop being able to defend itself? His answer was internal decay long before any external enemy mattered.",
+    layer1:
+      "Gibbon's core argument: Rome's collapse wasn't primarily military defeat but long internal erosion — declining civic virtue, a mercenary army with no stake in the state, bloated administration, and an elite preserving status over governing. He also blamed Christianity for redirecting civic energy, now seen as overstated. The barbarian invasions didn't cause the fall — they collected a debt Rome's institutions had already built up.",
+    layer2:
+      "In an organization you're part of, what's the internal debt quietly accumulating — disengaged people, unaccountable process, misaligned incentives — that an external shock would just be the excuse for, not the real cause?",
+    quiz: {
+      question: "What was Gibbon's central argument about why Rome fell?",
+      options: [
+        "Rome fell purely because barbarian armies were militarily superior",
+        "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline",
+        "Rome's collapse was primarily a long internal erosion of civic virtue, military loyalty, and institutional competence, with external invasion delivering the final blow rather than causing the decline itself",
+        "Rome fell because a single decisive battle destroyed its army beyond recovery",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Gibbon's framing put internal institutional and civic decay at the center of the story — external invasion was the mechanism of collapse, not its root cause, a distinction that shaped how historians analyze institutional decline ever since.",
+    },
+    tags: ["Macro & Cycles", "Incentives & Systems"],
+    related: ["AH1", "M3", "D9"],
+    furtherReading: [
+      {
+        label: "The History of the Decline and Fall of the Roman Empire, Vol. 1",
+        source: "book",
+        url: "https://www.gutenberg.org/ebooks/731",
+        archive: { status: "full", path: "content/sources/AH2-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AI2",
+    clusterId: "AI",
+    title: "Regulatory Capture",
+    author: "George Stigler",
+    year: 1971,
+    medium: "Paper",
+    category: "Political Economy",
+    thesis:
+      "Regulation is typically acquired by the industry it regulates and bent to that industry's benefit, not the public's, because the regulated have concentrated interest and lobbying power that diffuse consumers can't match.",
+    layer0:
+      "Stigler's 1971 paper demolished the comfortable assumption that regulators protect the public. His claim: regulation is usually captured by the very industry it's meant to police.",
+    layer1:
+      "Stigler modeled regulation as a good industries demand and regulators supply, under pressure from two sides — producers, few and highly motivated, and consumers, many and diffuse. Concentrated interests organize and lobby far more effectively than diffuse ones, so regulation drifts toward protecting incumbents — licensing, tariffs, and entry barriers that look like consumer protection but function as competitive moats for insiders.",
+    layer2:
+      "Where have you seen a rule, credential, or approval process that was justified as consumer protection but mainly functions to keep new competitors out?",
+    quiz: {
+      question:
+        "Why does Stigler's capture theory predict regulation will tend to favor the regulated industry over consumers?",
+      options: [
+        "Because regulators are always personally corrupt",
+        "Because regulators are legally required to consult industry representatives before writing any rule",
+        "Because consumers are unable to purchase regulated goods at any price",
+        "Because the regulated industry is small and concentrated with strong incentive to lobby, while consumers are numerous and diffuse with weak individual incentive to organize against any single rule",
+      ],
+      correctIndex: 3,
+      explanation:
+        "The mechanism isn't personal corruption — it's a structural asymmetry: concentrated producer interests can organize and apply sustained pressure far more effectively than the diffuse, weakly-motivated public, so regulatory outcomes drift toward protecting incumbents over time.",
+    },
+    tags: ["Power & Persuasion", "Incentives & Systems"],
+    related: ["AI1", "C1", "D9"],
+    furtherReading: [
+      {
+        label: "Let's Not Forget George Stigler's Lessons about Regulatory Capture",
+        source: "article",
+        url: "https://regulatorystudies.columbian.gwu.edu/lets-not-forget-george-stiglers-lessons-about-regulatory-capture",
+        archive: { status: "full", path: "content/sources/AI2-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AJ2",
+    clusterId: "AJ",
+    title: "The Prisoner's Dilemma",
+    author: "Merrill Flood and Melvin Dresher",
+    year: 1950,
+    medium: "Model",
+    category: "Game Theory",
+    thesis:
+      "Two rational actors who cannot communicate or trust each other will often choose mutual betrayal even when mutual cooperation would leave both better off.",
+    layer0:
+      "Two RAND researchers stumbled into game theory's most famous parable in 1950, later christened the prisoner's dilemma — showing rational self-interest can trap two people in a worse outcome than cooperation.",
+    layer1:
+      "The setup: two suspects held separately are each offered a lighter sentence for betraying the other, but both get a light sentence if neither confesses. Betraying is rational regardless of what the other does — free if they stay silent, safer if they also betray. So both rationally betray, worse off than if they'd cooperated. Flood and Dresher found the pattern at RAND in 1950; Tucker gave it the prison framing for a psychology audience.",
+    layer2:
+      "Where are you and someone else stuck defecting against each other by default — undercutting, hoarding information, competing instead of cooperating — because neither of you can verify the other will hold up their end?",
+    quiz: {
+      question:
+        "Why does betrayal remain the individually rational choice in the prisoner's dilemma, even though mutual cooperation produces a better combined outcome?",
+      options: [
+        "Because the two suspects can freely communicate and coordinate before deciding",
+        "Because each player assumes the other will automatically choose to cooperate",
+        "Because betraying is the best individual response regardless of what the other player does, so both players rationally betray even though mutual cooperation would leave both of them better off",
+        "Because the payoffs are identical no matter what either player chooses",
+      ],
+      correctIndex: 2,
+      explanation:
+        "The trap is structural: no matter what the other player does, betraying yields a better individual outcome than cooperating, so purely rational self-interest pushes both players toward mutual betrayal — a worse combined outcome than if they'd both cooperated.",
+    },
+    tags: ["Decision-Making", "Incentives & Systems"],
+    related: ["AJ1", "M4", "U6"],
+    furtherReading: [
+      {
+        label: "Prisoner's Dilemma",
+        source: "article",
+        url: "https://plato.stanford.edu/entries/prisoner-dilemma/",
+        archive: { status: "full", path: "content/sources/AJ2-0.md", retrieved: "2026-07-17" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AK2",
+    clusterId: "AK",
+    title: "Simulacra and Simulation (Hyperreality)",
+    author: "Jean Baudrillard",
+    year: 1981,
+    medium: "Book",
+    category: "Media Theory",
+    thesis:
+      "Modern media doesn't just represent reality anymore — it produces a self-referential simulation so complete that the distinction between the real and its copy collapses entirely.",
+    layer0:
+      "Baudrillard's 1981 essay argued something stranger than 'media distorts reality': in advanced media societies, the copy no longer refers to any original at all — it becomes hyperreal.",
+    layer1:
+      "Baudrillard traced simulacra through four stages: an image reflecting reality, one masking it, one masking its absence, and finally one with no relation to reality — pure simulation. Signs no longer represent anything real; they reference only other signs, forming a hyperreality more vivid than what it replaced, from theme parks to curated online personas. The danger isn't being lied to — it's losing stable ground to tell the difference.",
+    layer2:
+      "Where in your own life is a curated, simulated version of something — a persona, a highlight reel, a brand — now functioning as more 'real' to you and others than the underlying reality it was supposed to represent?",
+    quiz: {
+      question:
+        "What is the final stage of Baudrillard's four stages of the image, which he calls pure simulation?",
+      options: [
+        "An image that faithfully and accurately reflects an underlying reality",
+        "An image that deliberately masks the fact that no underlying reality exists",
+        "An image that is created to deceive with a known false version of the truth",
+        "A sign that no longer refers to any reality at all, and instead only references other signs, forming a self-contained 'hyperreality'",
+      ],
+      correctIndex: 3,
+      explanation:
+        "Baudrillard's most radical claim is the final stage — not that images lie about reality, but that they stop referring to reality altogether, circulating as free-floating signs that construct a hyperreality more emotionally 'real' than the world they nominally represent.",
+    },
+    tags: ["Markets & Narrative", "Meaning & Self"],
+    related: ["AK1", "I2", "O3"],
+    furtherReading: [
+      {
+        label: "Simulacra and Simulation",
+        source: "article",
+        url: "https://en.wikipedia.org/wiki/Simulacra_and_Simulation",
+        archive: { status: "full", path: "content/sources/AK2-0.md", retrieved: "2026-07-17" },
+      },
+      {
+        label: "Simulacra and Simulation (1981, full scan)",
+        source: "book",
+        url: "https://dn720006.ca.archive.org/0/items/baudrillard.-1970.-the-consumer-society/Baudrillard.1981.Simulacra-and-Simulation.pdf",
       },
     ],
     epistemicStatus: "Contemporary",

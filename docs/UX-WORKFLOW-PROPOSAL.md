@@ -22,8 +22,8 @@ The product brief's own principle (§5) is that six flat tabs caused decision pa
 
 **Feed · Skim · Review · You**
 
-- **Explore is folded, not deleted.** Its two views (curated topic collections, and the full lattice list with progress rings) move one tap down, inside **You**, under a single "Library" section — this is where a considered reader goes when they want the *whole* map, not the algorithmic feed. It doesn't need to compete for bottom-bar space with the two things you actually do daily (read, review).
-- **Skim absorbs Explore's "browse broadly" job.** Skimming through the lattice at speed already *is* browsing everything — a separate top-level tab for the same intent is redundant surface area, not a distinct job.
+- **Explore is folded, not deleted.** Its two views (curated topic collections, and the full lattice list with progress rings) move one tap down, inside **You**, under a single "Library" section — this is where a considered reader goes when they want the _whole_ map, not the algorithmic feed. It doesn't need to compete for bottom-bar space with the two things you actually do daily (read, review).
+- **Skim absorbs Explore's "browse broadly" job.** Skimming through the lattice at speed already _is_ browsing everything — a separate top-level tab for the same intent is redundant surface area, not a distinct job.
 - Four words, read once, understood permanently: **Feed** (what's for me today), **Skim** (flip through the lattice fast), **Review** (what I owe my memory), **You** (my library, my progress, myself).
 
 ```
@@ -86,13 +86,13 @@ Two save actions only, never blurred together, named for what they mean rather t
 
 The copy throughout should assume the reader already respects ideas — no manufactured urgency, no gamified language ("streak," if kept, should read as a quiet counter, not a flame emoji or a badge popup). A few concrete swaps:
 
-| Avoid | Use instead |
-|---|---|
-| "Swipe for your next hit of ideas" | "Skim the lattice" |
-| "Reels" | "Skim" |
-| icon-only buttons with no label | one word under every icon, at least on first use |
-| "🔥 3 day streak!" | "3 days" in quiet numerals, no emoji |
-| "You'll love this!" | the credential line — author, year, category — let the source's authority speak, not enthusiasm |
+| Avoid                              | Use instead                                                                                     |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------- |
+| "Swipe for your next hit of ideas" | "Skim the lattice"                                                                              |
+| "Reels"                            | "Skim"                                                                                          |
+| icon-only buttons with no label    | one word under every icon, at least on first use                                                |
+| "🔥 3 day streak!"                 | "3 days" in quiet numerals, no emoji                                                            |
+| "You'll love this!"                | the credential line — author, year, category — let the source's authority speak, not enthusiasm |
 
 ---
 
