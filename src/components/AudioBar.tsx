@@ -6,7 +6,24 @@ import type { Node } from "@/data/nodes";
  * Real narration via the browser's Web Speech API (SpeechSynthesis).
  * Includes progress tracking, voice selection, and basic MediaSession integration.
  */
-export function AudioBar({ node, sentenceCount }: { node: Node; sentenceCount: number }) {
+export function AudioBar({
+  node,
+  sentenceCount,
+  l0Sents,
+  l1Sents,
+  onReachLayer1,
+  onReachLayer2,
+}: {
+  node: Node;
+  sentenceCount: number;
+  /** Sentence-index boundaries, used to auto-reveal a layer's LayerReveal
+   * panel just before narration starts reading into it, so what's
+   * highlighted is never hidden behind a collapsed panel. */
+  l0Sents?: number;
+  l1Sents?: number;
+  onReachLayer1?: () => void;
+  onReachLayer2?: () => void;
+}) {
   const [playing, setPlaying] = useState(false);
   const audioProgress = useStore((s) => s.audioProgress);
   const setAudioProgress = useStore((s) => s.setAudioProgress);
@@ -100,6 +117,21 @@ export function AudioBar({ node, sentenceCount }: { node: Node; sentenceCount: n
     sentenceEls().forEach((el) => (el.dataset.active = "0"));
   }
 
+  // Auto-open the layer panel a given sentence index lives in, so the
+  // highlighted sentence is never hidden behind a collapsed panel. Uses >=
+  // rather than an exact boundary match so resuming from a saved mid-layer
+  // position (where the boundary-crossing moment isn't hit this mount)
+  // still reveals the right panel.
+  function revealForIndex(start: number) {
+    if (l0Sents === undefined || l1Sents === undefined) return;
+    if (start >= l0Sents + l1Sents) {
+      onReachLayer1?.();
+      onReachLayer2?.();
+    } else if (start >= l0Sents) {
+      onReachLayer1?.();
+    }
+  }
+
   function speakFrom(start: number) {
     const els = sentenceEls();
     if (start >= els.length) {
@@ -121,6 +153,7 @@ export function AudioBar({ node, sentenceCount }: { node: Node; sentenceCount: n
       highlight(start);
       // Save progress to store
       setAudioProgress(node.id, start);
+      revealForIndex(start);
     };
     u.onend = () => {
       if (stoppedRef.current) return;
@@ -139,10 +172,22 @@ export function AudioBar({ node, sentenceCount }: { node: Node; sentenceCount: n
   }
 
   function finish() {
+    // Flush any stray queued utterance defensively — nothing should be left
+    // once the last sentence's onend has fired, but a rapid replay/toggle
+    // race could otherwise leave the engine primed to speak again.
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+    const finishedCount = sentenceEls().length;
     setPlaying(false);
-    setIdx(0);
+    // Show the completed state (progress bar full, "N / N") instead of
+    // snapping idx back to 0 — resetting idx immediately made a normal
+    // finish visually indistinguishable from restarting from the top,
+    // which read as the audio "looping back". idxRef still resets so the
+    // next Play tap starts over from the beginning, as intended.
+    setIdx(finishedCount);
     idxRef.current = 0;
-    setAudioProgress(node.id, 0); // reset progress on finish
+    setAudioProgress(node.id, 0); // reset saved resume position on finish
     clearHighlight();
     silentAudioRef.current?.pause();
     if ("mediaSession" in navigator) {
@@ -172,7 +217,12 @@ export function AudioBar({ node, sentenceCount }: { node: Node; sentenceCount: n
       if ("mediaSession" in navigator) {
         navigator.mediaSession.playbackState = "playing";
       }
-      speakFrom(idxRef.current);
+      // If resuming into a still-collapsed layer2 panel, reveal it now and
+      // defer speakFrom a tick — revealForIndex's setState needs to reach
+      // the DOM before sentenceEls() can see the newly-mounted spans.
+      const startAt = idxRef.current;
+      revealForIndex(startAt);
+      setTimeout(() => speakFrom(startAt), 0);
     }
   }
 

@@ -140,7 +140,17 @@ function NodeScreen() {
   const l0Sents = splitSentences(node.layer0 ?? "").length;
   const l1Sents = splitSentences(node.layer1 ?? "").length;
   const l2Sents = splitSentences(node.layer2 ?? "").length;
-  const totalSents = l0Sents + (showL1 ? l1Sents : 0) + (showL2 ? l2Sents : 0);
+  // The layer1 LayerReveal below is always mounted (it only CSS-collapses,
+  // never unmounts), so its [data-sentence] spans exist from first render —
+  // count l1Sents unconditionally. The layer2 LayerReveal, unlike layer1, is
+  // only mounted once showL1 is true ({showL1 && <LayerReveal ...>} below),
+  // so l2Sents must stay gated on showL1 to match what's actually in the
+  // DOM. AudioBar's playback loop queries the live DOM for its stop
+  // condition, so sentenceCount has to track this exactly — miscounting
+  // it (previously gated l1Sents on showL1 too, undercounting) desynced the
+  // progress bar from actual playback and produced the
+  // finished-then-snaps-back-to-0 "looping" symptom.
+  const totalSents = l0Sents + l1Sents + (showL1 ? l2Sents : 0);
 
   const related: NodeType[] = useMemo(() => {
     const arr = node.related.map((id: string) => NODE_BY_ID[id]).filter(Boolean);
@@ -374,7 +384,18 @@ function NodeScreen() {
           </section>
         )}
       </article>
-      <AudioBar key={node.id} node={node} sentenceCount={totalSents} />
+      <AudioBar
+        key={node.id}
+        node={node}
+        sentenceCount={totalSents}
+        l0Sents={l0Sents}
+        l1Sents={l1Sents}
+        onReachLayer1={() => {
+          setShowL1(true);
+          dismissHint("hint-layers");
+        }}
+        onReachLayer2={() => setShowL2(true)}
+      />
     </>
   );
 }
