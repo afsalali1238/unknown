@@ -6,7 +6,7 @@ import { MicroLabel } from "@/components/MicroLabel";
 import { SearchBar } from "@/components/SearchBar";
 import { useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
-import { ChevronUp } from "lucide-react";
+import { ChevronUp, Bookmark } from "lucide-react";
 
 const skimSearchSchema = z.object({
   cluster: z.string().optional(),
@@ -104,14 +104,34 @@ function SkimScreen() {
 
 function SkimCard({ node, first }: { node: Node; first: boolean }) {
   const isVisited = useStore((s) => !!s.visited[node.id]);
+  const bookmarked = useStore((s) => !!s.bookmarks[node.id]);
+  const toggleBookmark = useStore((s) => s.toggleBookmark);
 
   return (
     <Link
       to="/node/$id"
       params={{ id: node.id }}
-      className="flex min-h-[calc(100dvh-3.75rem)] snap-start flex-col justify-between px-5 py-8"
+      className="relative flex min-h-[calc(100dvh-3.75rem)] snap-start flex-col justify-between px-5 py-8"
     >
-      <div>
+      <button
+        aria-label={bookmarked ? "Remove from saved" : "Save"}
+        aria-pressed={bookmarked}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleBookmark(node.id);
+        }}
+        className={cn(
+          "absolute right-5 top-8 z-10 flex h-10 w-10 items-center justify-center rounded-full border transition-colors",
+          bookmarked
+            ? "border-ink bg-ink text-paper"
+            : "border-line bg-paper text-ink-soft hover:border-ink hover:text-ink",
+        )}
+      >
+        <Bookmark className="h-4 w-4" fill={bookmarked ? "currentColor" : "none"} />
+      </button>
+
+      <div className="pr-14">
         <div className="flex flex-wrap items-center gap-2">
           <MicroLabel>
             {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}

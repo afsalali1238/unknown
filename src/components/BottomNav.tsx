@@ -1,12 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { useStore, dueCount } from "@/lib/store";
-import { useHydrated } from "@/lib/hydrated";
 
 export function BottomNav() {
   const { pathname } = useLocation();
-  const review = useStore((s) => s.review);
-  const hydrated = useHydrated();
-  const due = hydrated ? dueCount(review) : 0;
 
   const tabs = [
     {
@@ -19,7 +14,11 @@ export function BottomNav() {
       label: "Skim",
       match: (p: string) => p.startsWith("/skim") || p.startsWith("/map"),
     },
-    { to: "/review", label: "Review", match: (p: string) => p.startsWith("/review"), badge: due },
+    {
+      to: "/explore",
+      label: "Explore",
+      match: (p: string) => p.startsWith("/explore"),
+    },
     { to: "/you", label: "You", match: (p: string) => p.startsWith("/you") },
   ] as const;
 
@@ -43,11 +42,6 @@ export function BottomNav() {
               >
                 {t.label}
               </span>
-              {"badge" in t && t.badge && t.badge > 0 ? (
-                <span className="absolute top-2 right-1/2 translate-x-6 rounded-full bg-accent px-1.5 py-0.5 font-mono text-[10px] leading-none text-paper">
-                  {t.badge}
-                </span>
-              ) : null}
               {active && <span className="absolute inset-x-6 top-0 h-px bg-accent" />}
             </Link>
           );

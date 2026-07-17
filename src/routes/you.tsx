@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { InstallAppButton } from "@/components/InstallAppButton";
-import { useStore, currentStreak, todayISO } from "@/lib/store";
+import { useStore, currentStreak, todayISO, dueCount } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
 import { cn } from "@/lib/utils";
@@ -18,6 +18,7 @@ import {
   CloudOff,
   Archive,
   ArrowRight,
+  RotateCcw,
 } from "lucide-react";
 
 export const Route = createFileRoute("/you")({
@@ -101,7 +102,7 @@ function YouScreen() {
 
       <Reading />
 
-      <LibrarySection />
+      <ReviewSection />
 
       <Interests />
       <AudioPreferences />
@@ -230,31 +231,33 @@ function Reading() {
   );
 }
 
-function LibrarySection() {
+function ReviewSection() {
+  const hydrated = useHydrated();
+  const review = useStore((s) => s.review);
+  const due = hydrated ? dueCount(review) : 0;
+  const total = Object.keys(review).length;
+
   return (
-    <Section title="Library" icon={Library}>
+    <Section title="Review" icon={RotateCcw}>
       <p className="text-sm text-ink-soft">
-        Curated topic collections and the full lattice — every idea, sorted and searchable.
+        Spaced repetition for what you've already read — a quiz queue that resurfaces ideas right
+        before you'd forget them.
       </p>
       <Link
-        to="/explore"
-        search={{ view: "playlists" }}
+        to="/review"
         className="mt-4 flex items-center justify-between border border-line p-4 hover:border-ink"
       >
         <div>
-          <p className="font-serif text-lg text-ink">Browse by topic</p>
-          <MicroLabel>Curated collections</MicroLabel>
-        </div>
-        <ArrowRight className="h-4 w-4 text-ink-soft" />
-      </Link>
-      <Link
-        to="/explore"
-        search={{ view: "lattice" }}
-        className="mt-2 flex items-center justify-between border border-line p-4 hover:border-ink"
-      >
-        <div>
-          <p className="font-serif text-lg text-ink">Every idea</p>
-          <MicroLabel>{NODES.length} nodes, full lattice</MicroLabel>
+          <p className="font-serif text-lg text-ink">
+            {!hydrated
+              ? "Review queue"
+              : due > 0
+                ? `${due} due now`
+                : total > 0
+                  ? "All caught up"
+                  : "Nothing in review yet"}
+          </p>
+          <MicroLabel>{total} tracked</MicroLabel>
         </div>
         <ArrowRight className="h-4 w-4 text-ink-soft" />
       </Link>
