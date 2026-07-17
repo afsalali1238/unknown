@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
 import { CLUSTERS, NODES, type Node } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
@@ -106,18 +106,25 @@ function SkimCard({ node, first }: { node: Node; first: boolean }) {
   const isVisited = useStore((s) => !!s.visited[node.id]);
   const bookmarked = useStore((s) => !!s.bookmarks[node.id]);
   const toggleBookmark = useStore((s) => s.toggleBookmark);
+  const navigate = useNavigate();
 
   return (
-    <Link
-      to="/node/$id"
-      params={{ id: node.id }}
-      className="relative flex min-h-[calc(100dvh-3.75rem)] snap-start flex-col justify-between px-5 py-8"
+    <div
+      role="link"
+      tabIndex={0}
+      onClick={() => navigate({ to: "/node/$id", params: { id: node.id } })}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          navigate({ to: "/node/$id", params: { id: node.id } });
+        }
+      }}
+      className="relative flex min-h-[calc(100dvh-3.75rem)] snap-start flex-col justify-between px-5 py-8 cursor-pointer"
     >
       <button
         aria-label={bookmarked ? "Remove from saved" : "Save"}
         aria-pressed={bookmarked}
         onClick={(e) => {
-          e.preventDefault();
           e.stopPropagation();
           toggleBookmark(node.id);
         }}
@@ -162,6 +169,6 @@ function SkimCard({ node, first }: { node: Node; first: boolean }) {
           </span>
         )}
       </div>
-    </Link>
+    </div>
   );
 }
