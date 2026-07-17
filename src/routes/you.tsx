@@ -19,6 +19,7 @@ import {
   Archive,
   ArrowRight,
   RotateCcw,
+  SunMoon,
 } from "lucide-react";
 
 export const Route = createFileRoute("/you")({
@@ -105,6 +106,7 @@ function YouScreen() {
       <ReviewSection />
 
       <Interests />
+      <AppearanceSection />
       <AudioPreferences />
 
       <Section title="Saved" icon={Bookmark}>
@@ -349,6 +351,41 @@ function Interests() {
         >
           {hintsReset ? "Hints reset" : "Show hints again"}
         </button>
+      </div>
+    </Section>
+  );
+}
+
+function AppearanceSection() {
+  const theme = useStore((s) => s.theme);
+  const setTheme = useStore((s) => s.setTheme);
+  const options = [
+    { value: "light" as const, label: "Light" },
+    { value: "dark" as const, label: "Dark" },
+    { value: "system" as const, label: "System" },
+  ];
+
+  return (
+    <Section title="Appearance" icon={SunMoon}>
+      <p className="text-sm text-ink-soft">
+        System matches your device's light/dark setting automatically.
+      </p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        {options.map((o) => (
+          <button
+            key={o.value}
+            onClick={() => setTheme(o.value)}
+            aria-pressed={theme === o.value}
+            className={cn(
+              "border px-4 py-2 font-mono text-[11px] uppercase tracking-[0.14em]",
+              theme === o.value
+                ? "border-ink bg-ink text-paper"
+                : "border-line text-ink-soft hover:border-ink hover:text-ink",
+            )}
+          >
+            {o.label}
+          </button>
+        ))}
       </div>
     </Section>
   );

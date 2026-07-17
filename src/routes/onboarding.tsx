@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Bookmark, Check, HelpCircle, Plus } from "lucide-react";
+import { Bookmark, Check, HelpCircle, Plus, MousePointerClick, Headphones } from "lucide-react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { NODES, TAGS } from "@/data/nodes";
@@ -139,6 +139,19 @@ function OnboardingScreen() {
             <div className="mt-12 flex-1 space-y-8">
               <div className="flex gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-ink bg-ink text-paper">
+                  <MousePointerClick className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">Tap to open</h3>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    Tap any card, anywhere, to open the full idea — the layers, the sources, the
+                    quiz.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
                   <Bookmark className="h-5 w-5" />
                 </div>
                 <div>
@@ -179,6 +192,18 @@ function OnboardingScreen() {
                   <h3 className="font-serif text-lg text-ink">Quiz</h3>
                   <p className="mt-1 text-sm text-ink-soft">
                     Test your understanding of complex topics.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
+                  <Headphones className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">Listen</h3>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    Every idea can be read aloud — open a card and hit play to listen instead.
                   </p>
                 </div>
               </div>

@@ -21,6 +21,24 @@
   --color-focus: #b45309;
 }
 
+/* Dark mode: same warm, editorial palette inverted, not a stock
+   blue-black tech dark theme. Every component reads these tokens
+   (bg-paper, text-ink, border-line, text-accent, ...) rather than raw
+   Tailwind colors, so overriding the custom properties here re-themes the
+   whole app with no component changes needed. Contrast re-verified for
+   this palette, not just inherited from the light-mode numbers:
+   ink/paper 14.9:1, ink-soft/paper 6.2:1, accent/paper 5.5:1 (all clear
+   the 4.5:1 text minimum), line/paper 3.3:1 (clears the 3:1 non-text
+   minimum the light-mode line token was already tuned for above). */
+.dark {
+  --color-paper: #1c1a17;
+  --color-ink: #f2ede4;
+  --color-ink-soft: #a39a8a;
+  --color-line: #716b5c;
+  --color-accent: #d97706;
+  --color-focus: #d97706;
+}
+
 @theme inline {
   --radius-sm: 4px;
   --radius-md: 6px;

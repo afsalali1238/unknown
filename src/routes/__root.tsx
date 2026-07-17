@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { BottomNav } from "@/components/BottomNav";
 import { useOfflineWarmup } from "@/hooks/useOfflineWarmup";
+import { useThemeSync } from "@/hooks/useThemeSync";
 
 function NotFoundComponent() {
   return (
@@ -138,6 +139,7 @@ function RootComponent() {
   // Silently preloads every route so the installed app works fully offline,
   // not just the pages the user happened to open first.
   useOfflineWarmup();
+  useThemeSync();
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-paper pb-32">

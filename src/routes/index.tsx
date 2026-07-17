@@ -335,21 +335,20 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
         <Link
           to="/node/$id"
           params={{ id: node.id }}
-          className="mt-4 block font-serif text-2xl leading-tight text-ink sm:text-3xl hover:text-accent transition-colors"
+          className="group mt-4 -mx-4 flex flex-1 flex-col border border-transparent px-4 py-2 transition-colors hover:border-line hover:bg-line/10 active:bg-line/20"
         >
-          {node.title}
-        </Link>
-        <p className="mt-4 flex-1 font-serif text-lg leading-relaxed text-ink-soft">
-          {node.layer0}
-        </p>
-
-        <Link
-          to="/node/$id"
-          params={{ id: node.id }}
-          className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
-        >
-          Continue reading — the mechanism, how to apply it, and what it connects to
-          <span aria-hidden="true">→</span>
+          <span className="block font-serif text-2xl leading-tight text-ink transition-colors group-hover:text-accent sm:text-3xl">
+            {node.title}
+          </span>
+          <span className="mt-4 block flex-1 font-serif text-lg leading-relaxed text-ink-soft">
+            {node.layer0}
+          </span>
+          <span className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft transition-colors group-hover:text-ink">
+            Continue reading
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">
+              →
+            </span>
+          </span>
         </Link>
 
         {quiz && <Quiz node={node} />}

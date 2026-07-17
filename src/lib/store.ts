@@ -57,6 +57,7 @@ export const stateSchema = z.object({
   ttsVoice: z.string().optional(),
   dailyGoal: z.number().default(3),
   dailyProgress: z.record(z.number()).default({}),
+  theme: z.enum(["light", "dark", "system"]).default("system"),
 });
 
 export type State = z.infer<typeof stateSchema>;
@@ -86,6 +87,7 @@ type Actions = {
   clearReadNext: () => void;
   setAudioProgress: (id: string, progress: number) => void;
   setTtsVoice: (voiceUri: string) => void;
+  setTheme: (theme: "light" | "dark" | "system") => void;
 };
 
 const initial: State = {
@@ -107,6 +109,7 @@ const initial: State = {
   ttsVoice: undefined,
   dailyGoal: 3,
   dailyProgress: {},
+  theme: "system",
 };
 
 export function todayISO() {
@@ -212,6 +215,7 @@ export const useStore = create<State & Actions>()(
       setAudioProgress: (id, progress) =>
         set((s) => ({ audioProgress: { ...s.audioProgress, [id]: progress } })),
       setTtsVoice: (voiceUri) => set({ ttsVoice: voiceUri }),
+      setTheme: (theme) => set({ theme }),
     }),
     {
       name: "unknown:v1",
