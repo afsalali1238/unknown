@@ -33,6 +33,18 @@ export const Route = createFileRoute("/node/$id")({
   component: NodeScreen,
 });
 
+// Archived source files always live at content/sources/<slug>.md (see
+// docs/OFFLINE-ARCHIVE-PLAN.md); the reader route just needs the slug.
+function archiveSlug(path: string): string {
+  return path.replace(/^content\/sources\//, "").replace(/\.md$/, "");
+}
+
+const epistemicStatusExplainer: Record<string, string> = {
+  Canonical: "Canonical — the original, primary-source explanation, not a summary of one.",
+  Contemporary: "Contemporary — a current, actively-debated framing rather than a settled classic.",
+  Speculative: "Speculative — a reasoned hypothesis, presented as one, not established fact.",
+};
+
 function splitSentences(text: string): string[] {
   // Primary: Intl.Segmenter with sentence granularity (Chrome/Safari/FF 99+)
   if (typeof Intl !== "undefined" && Intl.Segmenter) {
@@ -173,16 +185,22 @@ function NodeScreen() {
             {node.title}
           </h1>
           <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-            {node.author} · {node.year} · {node.medium}
+            {node.author} · {node.year}
           </p>
         </div>
+
+        {node.epistemicStatus && (
+          <FirstTimeHint id="hint-epistemic-status" className="mt-4">
+            {epistemicStatusExplainer[node.epistemicStatus]}
+          </FirstTimeHint>
+        )}
 
         <blockquote className="mt-8 border-l-2 border-accent pl-5">
           <p className="font-serif text-xl italic leading-snug text-ink">"{node.thesis}"</p>
         </blockquote>
 
         <section className="mt-8">
-          <MicroLabel>Layer 0 — Plain English</MicroLabel>
+          <MicroLabel>The idea</MicroLabel>
           <div className="mt-3">
             <Sentences text={node.layer0 ?? ""} start={0} />
           </div>
@@ -197,14 +215,14 @@ function NodeScreen() {
         )}
 
         <LayerReveal
-          label="Show me how it works"
+          label="Why it works"
           onReveal={() => {
             setShowL1(true);
             dismissHint("hint-layers");
           }}
         >
           <section>
-            <MicroLabel>Layer 1 — The mechanism</MicroLabel>
+            <MicroLabel>Why it works</MicroLabel>
             <div className="mt-3">
               <Sentences text={node.layer1 ?? ""} start={l0Sents} />
             </div>
@@ -212,9 +230,9 @@ function NodeScreen() {
         </LayerReveal>
 
         {showL1 && (
-          <LayerReveal label="Apply it" onReveal={() => setShowL2(true)}>
+          <LayerReveal label="How to apply it" onReveal={() => setShowL2(true)}>
             <section>
-              <MicroLabel>Layer 2 — Apply it</MicroLabel>
+              <MicroLabel>How to apply it</MicroLabel>
               <div className="mt-3">
                 <Sentences text={node.layer2 ?? ""} start={l0Sents + l1Sents} />
               </div>
@@ -222,8 +240,8 @@ function NodeScreen() {
           </LayerReveal>
         )}
 
-        <Quiz node={node} />
         <RecallReveal text={node.thesis} />
+        <Quiz node={node} />
 
         <section className="mt-14">
           <MicroLabel>Further reading</MicroLabel>
@@ -246,14 +264,14 @@ function NodeScreen() {
                 <div className="mt-2 flex items-center gap-4">
                   {(f.archive?.status === "full" || f.archive?.status === "excerpt") &&
                     f.archive.path && (
-                      <a
-                        href={`/${f.archive.path}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        to="/read/$id"
+                        params={{ id: archiveSlug(f.archive.path) }}
+                        search={{ label: f.label, source: f.source, url: f.url }}
                         className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent hover:underline flex items-center gap-1"
                       >
                         <span>↓ Read offline</span>
-                      </a>
+                      </Link>
                     )}
                   <a
                     href={f.url}
@@ -275,7 +293,7 @@ function NodeScreen() {
             className="flex items-center gap-2 border border-line px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:border-ink"
           >
             <span className={hydrated && bookmarked ? "text-accent" : "text-ink-soft"}>★</span>
-            <span>{hydrated && bookmarked ? "Bookmarked" : "Bookmark"}</span>
+            <span>{hydrated && bookmarked ? "Saved" : "Save"}</span>
           </button>
           <button
             onClick={() => (queued ? removeReadNext(node.id) : addReadNext(node.id))}

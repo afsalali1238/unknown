@@ -341,6 +341,15 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
           {node.layer0}
         </p>
 
+        <Link
+          to="/node/$id"
+          params={{ id: node.id }}
+          className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft hover:text-ink"
+        >
+          Continue reading — the mechanism, how to apply it, and what it connects to
+          <span aria-hidden="true">→</span>
+        </Link>
+
         {quiz && <Quiz node={node} />}
 
         <div className="mt-5 flex items-center justify-between">

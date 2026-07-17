@@ -22,7 +22,12 @@ import { NODES } from "@/data/nodes";
  * static data bundled into the JS, not fetched per-node, so there's
  * nothing to warm per node id: every `/node/$id` URL is served by the
  * same route chunk. Warming it once (with any valid id) is enough to
- * make every node page available offline.
+ * make every node page available offline. The archive reader
+ * (`/read/$id`) is the one screen that *does* fetch per-item content (the
+ * markdown source file itself), so its route chunk gets the same
+ * one-time warm as the other tabs; the individual .md files are cached
+ * lazily by the service worker's stale-while-revalidate rule the first
+ * time each one is actually opened.
  */
 export function useOfflineWarmup() {
   const router = useRouter();
@@ -59,6 +64,15 @@ export function useOfflineWarmup() {
       if (cancelled) return;
       if (firstNodeId) {
         await router.preloadRoute({ to: "/node/$id", params: { id: firstNodeId } }).catch(() => {});
+      }
+      const firstArchived = NODES.flatMap((n) => n.furtherReading)
+        .find((f) => f.archive?.status === "full" && f.archive.path)
+        ?.archive?.path?.replace(/^content\/sources\//, "")
+        .replace(/\.md$/, "");
+      if (firstArchived) {
+        await router
+          .preloadRoute({ to: "/read/$id", params: { id: firstArchived } })
+          .catch(() => {});
       }
     }
 

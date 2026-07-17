@@ -24,6 +24,11 @@ export function RecallReveal({ text }: { text: string }) {
           </span>
         )}
       </button>
+      {shown && (
+        <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+          Just for you — the quiz below is what schedules this in Review.
+        </p>
+      )}
     </section>
   );
 }

@@ -103,14 +103,14 @@ function YouScreen() {
       <Interests />
       <AudioPreferences />
 
-      <Section title="Bookmarks" icon={Bookmark}>
+      <Section title="Saved" icon={Bookmark}>
         {!hydrated ? (
           <div className="h-24 animate-pulse border border-line bg-line/20" aria-hidden="true" />
         ) : bookmarked.length === 0 ? (
           <div className="border border-line border-dashed p-6 text-center">
-            <p className="font-serif text-lg text-ink">No bookmarks yet.</p>
+            <p className="font-serif text-lg text-ink">Nothing saved yet.</p>
             <p className="mt-2 text-sm text-ink-soft">
-              Star ideas from any node to save them here.
+              Save ideas from any node to build your library here.
             </p>
             <Link
               to="/"
@@ -272,9 +272,7 @@ function Interests() {
 
   return (
     <Section title="Interests" icon={Heart}>
-      <p className="text-sm text-ink-soft">
-        These decide what shows up first under "For you" on the Map.
-      </p>
+      <p className="text-sm text-ink-soft">These decide what shows up first in your Feed.</p>
       <div className="mt-4 flex flex-wrap gap-2">
         {TAGS.map((tag) => {
           const active = interests.includes(tag);

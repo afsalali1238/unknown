@@ -59,7 +59,7 @@ function ReviewScreen() {
             to="/"
             className="inline-flex border border-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink"
           >
-            Back to map
+            Back to feed
           </Link>
         </div>
       </div>

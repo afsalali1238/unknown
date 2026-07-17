@@ -1,9 +1,9 @@
-import { useMemo } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
 import { CLUSTERS, NODES_BY_CLUSTER, type Node } from "@/data/nodes";
 import { SearchBar } from "@/components/SearchBar";
 import { MicroLabel } from "@/components/MicroLabel";
+import { LatticeIndex } from "@/components/LatticeIndex";
 import { useStore } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
@@ -11,6 +11,7 @@ import { Check, Plus, Minus, ArrowLeft } from "lucide-react";
 
 const exploreSearchSchema = z.object({
   cluster: z.string().optional(),
+  view: z.enum(["playlists", "lattice"]).optional(),
 });
 
 export const Route = createFileRoute("/explore")({
@@ -26,11 +27,6 @@ export const Route = createFileRoute("/explore")({
   }),
   component: ExploreScreen,
 });
-
-function matchCount(nodes: Node[], interests: string[]): number {
-  if (interests.length === 0) return 0;
-  return nodes.filter((n) => n.tags.some((t) => interests.includes(t))).length;
-}
 
 function PlaylistCard({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; nodes: Node[] }) {
   const visited = useStore((s) => s.visited);
@@ -145,14 +141,8 @@ function ClusterDetail({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; node
 
 function ExploreScreen() {
   const hydrated = useHydrated();
-  const interests = useStore((s) => s.interests);
-  const { cluster: targetCluster } = Route.useSearch();
-
-  const hasInterests = hydrated && interests.length > 0;
-
-  const orderedClusters = useMemo(() => {
-    return CLUSTERS;
-  }, []);
+  const visited = useStore((s) => s.visited);
+  const { cluster: targetCluster, view = "playlists" } = Route.useSearch();
 
   if (targetCluster) {
     const cluster = CLUSTERS.find((c) => c.id === targetCluster);
@@ -181,24 +171,45 @@ function ExploreScreen() {
 
       <div className="mt-8 flex items-center gap-2">
         <Link
-          to="/map"
-          className="flex items-center justify-center min-h-11 border border-line px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:border-ink hover:text-ink transition-colors"
+          to="/explore"
+          search={{ view: "playlists" }}
+          className={cn(
+            "flex items-center justify-center min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors",
+            view === "playlists"
+              ? "border-ink bg-ink text-paper"
+              : "border-line text-ink-soft hover:border-ink hover:text-ink",
+          )}
         >
-          Map
-        </Link>
-        <div className="flex items-center justify-center min-h-11 border border-ink bg-ink px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-paper">
           Topics
-        </div>
+        </Link>
+        <Link
+          to="/explore"
+          search={{ view: "lattice" }}
+          className={cn(
+            "flex items-center justify-center min-h-11 border px-4 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors",
+            view === "lattice"
+              ? "border-ink bg-ink text-paper"
+              : "border-line text-ink-soft hover:border-ink hover:text-ink",
+          )}
+        >
+          Every idea
+        </Link>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {orderedClusters.map((c) => {
-          const allNodes = NODES_BY_CLUSTER[c.id];
-          const nodes = allNodes;
-          if (nodes.length === 0) return null;
-          return <PlaylistCard key={c.id} cluster={c} nodes={nodes} />;
-        })}
-      </div>
+      {view === "lattice" ? (
+        <div className="mt-12">
+          <LatticeIndex visited={visited} hydrated={hydrated} />
+        </div>
+      ) : (
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {CLUSTERS.map((c) => {
+            const allNodes = NODES_BY_CLUSTER[c.id];
+            const nodes = allNodes;
+            if (nodes.length === 0) return null;
+            return <PlaylistCard key={c.id} cluster={c} nodes={nodes} />;
+          })}
+        </div>
+      )}
 
       <footer className="mt-16 border-t border-line pt-6">
         <MicroLabel>Retention over reach</MicroLabel>
