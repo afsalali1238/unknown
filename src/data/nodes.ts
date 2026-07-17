@@ -5243,7 +5243,7 @@ export const NODES: Node[] = [
         label: "Why Write? (on how writing reveals gaps in understanding)",
         source: "Farnam Street",
         url: "https://fs.blog/why-write/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J6-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -5383,7 +5383,7 @@ export const NODES: Node[] = [
         label: "Circle of Competence (referenced concept)",
         source: "Farnam Street",
         url: "https://fs.blog/circle-of-competence/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J9-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Farnam Street's Knowledge Project podcast (Shane Parrish's long-form interviews)",
@@ -5430,7 +5430,7 @@ export const NODES: Node[] = [
         label: "Inversion (the related mental model of solving problems backward)",
         source: "Farnam Street",
         url: "https://fs.blog/inversion/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J10-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Charlie Munger biography and talks archive",
@@ -5477,7 +5477,7 @@ export const NODES: Node[] = [
         label: "The Map is Not the Territory",
         source: "Farnam Street",
         url: "https://fs.blog/map-and-territory/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J11-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Great Mental Models book series overview",
