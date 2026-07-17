@@ -14778,10 +14778,11 @@ export const NODES: Node[] = [
     related: ["U1", "U2"],
     furtherReading: [
       {
-        label: "9 Psychology Concepts for Marketing (user-provided image; exact original post unverified)",
-        source: "Pierre Herubel, infographic",
-        url: "https://x.com/search?q=%229%20Psychology%20Concepts%20for%20Marketing%22%20Pierre%20Herubel",
+        label: "Persuasion",
+        source: "Psychology Today",
+        url: "https://www.psychologytoday.com/us/basics/persuasion",
         type: "article",
+        archive: { status: "full", path: "content/sources/U14-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Cognitive Biases & Models", "Power & Persuasion"],
@@ -14819,10 +14820,11 @@ export const NODES: Node[] = [
     related: ["E1", "E3"],
     furtherReading: [
       {
-        label: "Revenue vs Profit vs Cash: What's the Difference? (user-provided image; exact original post unverified)",
-        source: "Nathan Liao, CMA, infographic",
-        url: "https://x.com/search?q=%22Revenue%20vs%20Profit%20vs%20Cash%22%20Nathan%20Liao",
+        label: "Cash Flow vs. Profit: What's the Difference?",
+        source: "Harvard Business School Online",
+        url: "https://online.hbs.edu/blog/post/cash-flow-vs-profit",
         type: "article",
+        archive: { status: "full", path: "content/sources/E4-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
@@ -14901,10 +14903,11 @@ export const NODES: Node[] = [
     related: ["Q1", "Q9"],
     furtherReading: [
       {
-        label: "Active Listening: What Not to Say... and What To Say Instead (user-provided image; exact original post unverified)",
-        source: "George Stern, infographic",
-        url: "https://x.com/search?q=%22Active%20Listening%22%20%22What%20Not%20to%20Say%22%20George%20Stern",
+        label: "33 Powerful Phrases That Show Active Listening",
+        source: "Parade",
+        url: "https://parade.com/1225650/judykoutsky/active-listening-phrases/",
         type: "article",
+        archive: { status: "full", path: "content/sources/Q15-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
@@ -14942,10 +14945,11 @@ export const NODES: Node[] = [
     related: ["Q1", "Q15"],
     furtherReading: [
       {
-        label: "50 Ways to Fuel a Conversation (image excerpt; edition/page unverified)",
-        source: "The Fine Art of Small Talk by Debra Fine",
-        url: "https://www.google.com/search?q=%22The+Fine+Art+of+Small+Talk%22+Debra+Fine",
+        label: "The Fine Art of Small Talk: Book Summary",
+        source: "getAbstract",
+        url: "https://www.getabstract.com/en/summary/the-fine-art-of-small-talk/5324",
         type: "article",
+        archive: { status: "full", path: "content/sources/Q16-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
@@ -15024,10 +15028,11 @@ export const NODES: Node[] = [
     related: ["AE1", "AE2"],
     furtherReading: [
       {
-        label: "How to Be a Great Storyteller (user-provided image; no author credited, original post unverified)",
-        source: "Unattributed infographic",
-        url: "https://x.com/search?q=%22How%20to%20Be%20a%20Great%20Storyteller%22%20infographic",
+        label: "Leaders: Seven Tips For Becoming A Better Storyteller",
+        source: "Forbes Coaches Council",
+        url: "https://www.forbes.com/councils/forbescoachescouncil/2020/09/30/leaders-seven-tips-for-becoming-a-better-storyteller/",
         type: "article",
+        archive: { status: "full", path: "content/sources/AE3-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Power & Persuasion", "Craft & Deep Work"],
@@ -15187,10 +15192,11 @@ export const NODES: Node[] = [
     related: ["L1", "L13"],
     furtherReading: [
       {
-        label: "Negotiate Like a CEO (user-provided image; original post unverified)",
-        source: "Eric Partaker, The CEO Accelerator, infographic",
-        url: "https://x.com/search?q=%22Negotiate%20Like%20a%20CEO%22%20Eric%20Partaker",
+        label: "7 Negotiation Strategies CEOs Must Know",
+        source: "CEO Coaching International",
+        url: "https://ceocoachinginternational.com/ceo-negotiation-strategies/",
         type: "article",
+        archive: { status: "full", path: "content/sources/L15-0.md", retrieved: "2026-07-17" },
       },
     ],
     tags: ["Decision-Making", "Power & Persuasion"],
