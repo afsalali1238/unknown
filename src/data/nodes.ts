@@ -11136,54 +11136,6 @@ export const NODES: Node[] = [
     epistemicStatus: "Canonical",
   },
   {
-    id: "J33",
-    clusterId: "J",
-    title: "Mimetic Desire",
-    author: "René Girard",
-    year: 1961,
-    medium: "Book",
-    category: "Philosophical Anthropology",
-    thesis:
-      "Human desire is not autonomous but fundamentally imitative, leading inevitably to conflict, rivalry, and the scapegoat mechanism as communities seek to discharge the resulting violence.",
-    layer0:
-      "We do not want objects for their intrinsic value; we want them because we copy the desires of others. Our deepest pursuits are dictated by a mediator—an admired model who unconsciously guides our choices and shapes our reality.",
-    layer1:
-      "Desire operates as a triangle: subject, object, and mediator. External mediation occurs when the model exists on a separate plane, avoiding conflict. In internal mediation, the model shares our social plane; they become a direct rival for the same finite resource. This proximity breeds escalating conflict, transforming simple acquisitive desire into a metaphysical obsession to destroy the model and absorb their actual identity.",
-    layer2:
-      "Analyze your most intense professional or personal rivalry. Strip away the physical objective and look at your opponent—how much of your ambition is driven by a genuine need for the target versus a subconscious urge to possess their social prestige or validate your own status in their eyes?",
-    quiz: {
-      question:
-        "According to René Girard’s mimetic theory, what happens when a subject and their model occupy the same social plane (internal mediation)?",
-      options: [
-        "They peacefully coordinate their preferences to avoid conflict.",
-        "The subject seeks a new, external model to guide their choices.",
-        "They become direct rivals for the same object, leading to escalating conflict.",
-        "The model willingly surrenders the object to satisfy the subject.",
-      ],
-      correctIndex: 2,
-      explanation:
-        "Internal mediation places the subject and model in direct competition for the same finite object, inevitably transforming the admired model into a resented rival.",
-    },
-    related: ["J5", "U2"],
-    furtherReading: [
-      {
-        label: "Deceit, Desire, and the Novel: Self and Other in Literary Structure",
-        source: "book",
-        url: "https://www.press.jhu.edu/books/title/1414/deceit-desire-and-novel",
-        archive: {
-          status: "unavailable",
-        },
-      },
-    ],
-    tags: [
-      "Cognitive Biases & Models",
-      "Incentives & Systems",
-      "Power & Persuasion",
-      "Social Constructs",
-    ],
-    epistemicStatus: "Canonical",
-  },
-  {
     id: "U10",
     clusterId: "U",
     title: "Steelmanning",
@@ -13238,6 +13190,2093 @@ export const NODES: Node[] = [
       },
     ],
     epistemicStatus: "Contemporary",
+  },
+  {
+    id: "N8",
+    clusterId: "N",
+    title: "The Wheel of Focus",
+    author: "Suren Samarchyan",
+    year: 2026,
+    medium: "Infographic",
+    category: "Productivity",
+    thesis:
+      "Concentration is not a single skill you either have or lack — it is the output of four separate systems (mindset, energy, environment, technique) that all have to be tuned at once.",
+    layer0:
+      "Most people try to fix their focus by attacking only one lever — willpower, or a productivity app, or more sleep. None of those alone hold for long.",
+    layer1:
+      "Split the problem into four quadrants. Mindset is how you frame distraction (as a challenge, not a threat) and where you aim your intention before you start. Energy is the physical substrate — sleep, hydration, movement — that determines how much attention you have to spend in the first place. Environment is the removal of friction: clutter, notifications, an unmistakably 'focus' space. Technique is the tactical layer on top of the other three — Pomodoro sprints, single-priority days, batching similar tasks.",
+    layer2:
+      "The reason generic focus advice fails is that it treats one quadrant as the whole problem. A perfect Pomodoro schedule collapses if you're running on four hours of sleep. A clean desk doesn't help if your mindset treats every distraction as a crisis. Which of your four quadrants is actually the weak link right now?",
+    quiz: {
+      question:
+        "According to the Wheel of Focus framework, why does fixing only one lever (like willpower) usually fail to produce lasting concentration?",
+      options: [
+        "Because willpower is a myth and doesn't exist as a psychological resource.",
+        "Because focus is the joint output of mindset, energy, environment, and technique, and neglecting the other three undermines the one you fixed.",
+        "Because concentration is purely genetic and can't be trained.",
+        "Because productivity apps are inherently distracting.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The framework treats focus as multi-causal: a strong technique layer (like Pomodoro) still fails if energy (sleep, hydration) or environment (clutter, notifications) are working against it.",
+    },
+    related: ["N1", "N5", "N6"],
+    furtherReading: [
+      {
+        label: "Wheel of Focus (original post)",
+        source: "LinkedIn",
+        url: "https://www.linkedin.com/in/surensamarchyan/",
+        type: "article",
+      },
+    ],
+    tags: ["Craft & Deep Work", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "N9",
+    clusterId: "N",
+    title: "How to Enjoy the Classics",
+    author: "Steve Allen",
+    year: 1980,
+    medium: "Magazine essay",
+    category: "Reading",
+    thesis:
+      "Classics feel unreadable because people approach them as assignments to survive rather than books to be read on their own terms — with context, patience, and a willingness to keep going past the slow opening.",
+    layer0:
+      "Steve Allen hated Moby Dick in school. He came back to it as an adult, on his own schedule, and found a book he genuinely loved.",
+    layer1:
+      "His method has five parts: know what you're reading before you start (novel, biography, history — check the preface and the encyclopedia entry first), don't read in bed where your guard is already dropping, don't let the sheer number of characters (Dostoevsky throws fifty at you) scare you off — they sort themselves out, read in big bites rather than short nibbles so the rhythm of the book has a chance to grab you, and give the author a chance — some books, like Plato's Republic, take three attempts before they open up.",
+    layer2:
+      "The common thread is that a classic is not a test you pass by finishing it — it's a long-running relationship you enter into with the wrong expectations if you were assigned it at fifteen. What book did school ruin for you that might be worth a second, adult attempt?",
+    quiz: {
+      question:
+        "Per Steve Allen's approach, what mistake most often kills a person's enjoyment of a classic novel?",
+      options: [
+        "Reading a translation instead of the original language.",
+        "Approaching it as a school assignment to survive rather than a book to be read on your own terms, and giving up before it opens up.",
+        "Choosing a book that's too short to develop real characters.",
+        "Reading it too quickly instead of slowly.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Allen's own turnaround came from re-reading Moby Dick as an adult, without the assignment framing — and he notes some books (like Plato's Republic) took him three tries before they clicked.",
+    },
+    related: ["N10", "N2"],
+    furtherReading: [
+      {
+        label: "How to Enjoy the Classics",
+        source: "International Paper 'Power of the Printed Word' series",
+        url: "https://www.printedword.info/",
+        type: "article",
+      },
+    ],
+    tags: ["Craft & Deep Work"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "N10",
+    clusterId: "N",
+    title: "How to Improve Your Vocabulary",
+    author: "Tony Randall",
+    year: 1980,
+    medium: "Magazine essay",
+    category: "Reading",
+    thesis:
+      "Vocabulary grows fastest not from memorizing word lists but from context first (guessing a word's meaning from how it's used), then verifying with a real dictionary, then tracing the word back to its root.",
+    layer0:
+      "Tony Randall calls words 'the most powerful drug of mankind' — and says the average adult vocabulary of 30,000 to 60,000 words is a fraction of the roughly one million words in English.",
+    layer1:
+      "His method: first try to guess a word's meaning from context — most of what you 'know' about a word came from seeing it used, not from a definition. Then look it up properly in a real dictionary rather than a shorthand glossary, reading the full entry including etymology. Then dig into the root — most English roots trace to Latin, Greek, or Old French, and knowing 'manacle' comes from Latin manus (hand) makes the whole word family easier to remember and recognize elsewhere.",
+    layer2:
+      "The method works because it builds a word into your memory through three independent hooks — usage, definition, and origin — instead of one. A word you only memorized from a list has one thin thread holding it in place. What's a word you've seen a hundred times but still couldn't define if asked?",
+    quiz: {
+      question: "What is the first step in Tony Randall's three-step method for learning a new word?",
+      options: [
+        "Look it up immediately in a dictionary before doing anything else.",
+        "Try to guess at least part of its meaning from how it's used in the sentence.",
+        "Write it on a flashcard and review it daily.",
+        "Find a word with the same number of syllables to compare it to.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Randall argues most vocabulary is actually built this way already — by encountering words in context — and that starting there before the dictionary makes the definition stick.",
+    },
+    related: ["N9", "N11"],
+    furtherReading: [
+      {
+        label: "How to Improve Your Vocabulary",
+        source: "International Paper 'Power of the Printed Word' series",
+        url: "https://www.printedword.info/",
+        type: "article",
+      },
+    ],
+    tags: ["Craft & Deep Work"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "N11",
+    clusterId: "N",
+    title: "How to Write Clearly",
+    author: "Edward T. Thompson",
+    year: 1980,
+    medium: "Magazine essay",
+    category: "Writing",
+    thesis:
+      "Clear writing is a product of outlining before you write, knowing exactly how much your reader already knows, and ruthlessly cutting anything that shows off instead of explains.",
+    layer0:
+      "Edward T. Thompson, then editor-in-chief of Reader's Digest, reduced nineteen years of editing down to five rules that cover almost every clarity problem a writer runs into.",
+    layer1:
+      "Outline first — on index cards, one point per card, grouped and sequenced before a word of prose gets written. Start exactly where your readers are, not a level above or below their actual knowledge. Avoid jargon: a scientist who wrote 'the biota exhibited a one hundred percent mortality response' meant 'all the fish died.' Use familiar combinations of words rather than inflated ones — a Roosevelt speechwriter changed 'We are endeavoring to construct a more inclusive society' to 'We're going to make a country in which no one is left out.' And use 'first-degree' words — ones that bring an image to mind immediately, without needing to be mentally translated first.",
+    layer2:
+      "The underlying rule beneath all five is that your job as a writer is to explain, not to prove you're smarter than your reader. Every one of Thompson's examples is a translation from a fancier phrase to a plainer one that says exactly the same thing, faster. Where in your own writing are you reaching for the impressive word instead of the clear one?",
+    quiz: {
+      question:
+        "In Edward T. Thompson's example, what did the scientist's line 'the biota exhibited a one hundred percent mortality response' actually mean?",
+      options: [
+        "The fish population had doubled.",
+        "All the fish died.",
+        "The water quality had improved.",
+        "The experiment was inconclusive.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Thompson uses this as his central example of jargon: a simple, complete fact buried inside needlessly technical language, which he uses to argue for plain, familiar word combinations.",
+    },
+    related: ["N9", "N10"],
+    furtherReading: [
+      {
+        label: "How to Write Clearly",
+        source: "International Paper 'Power of the Printed Word' series",
+        url: "https://www.printedword.info/",
+        type: "article",
+      },
+    ],
+    tags: ["Craft & Deep Work"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AD3",
+    clusterId: "AD",
+    title: "Active Parents Raise Active Children",
+    author: "Lynn L. Moore et al.",
+    year: 1991,
+    medium: "Journal article",
+    category: "Health & Behavior",
+    thesis:
+      "A child's physical activity level correlates far more strongly with an active mother than with an active father — and children of two active parents are nearly six times more likely to be active than children of two inactive parents.",
+    layer0:
+      "Researchers strapped accelerometers onto 100 four-to-seven-year-olds and both of their parents for a full year. The pattern that fell out was not subtle.",
+    layer1:
+      "Published in the Journal of Pediatrics from the Framingham Children's Study, the study found children of active mothers were about twice as likely to be active themselves; children of active fathers, only modestly more so. When both parents were active, children were 5.8 times more likely to be active than children of two inactive parents. The authors point to several possible mechanisms: parents as role models the child imitates, shared family activity time, and active parents actively enrolling their kids in physical pursuits.",
+    layer2:
+      "This is a correlational study, not a controlled experiment — the '5.8 times more likely' finding doesn't prove that watching Mom exercise is the causal lever, since genetics and shared environment are tangled together with modeling. But the asymmetry between mother and father effect sizes is itself a data point worth sitting with: what does it suggest about who children are actually watching?",
+    quiz: {
+      question:
+        "In the Framingham Children's Study, which parent's activity level correlated most strongly with a young child's own physical activity?",
+      options: [
+        "The father's activity level, more than the mother's.",
+        "The mother's activity level, more than the father's.",
+        "Neither parent's activity showed any correlation.",
+        "Only the activity of same-sex parent and child correlated.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The study found children of active mothers were roughly twice as likely to be active, a notably stronger effect than the correlation found with active fathers.",
+    },
+    related: ["AD1", "AD2"],
+    furtherReading: [
+      {
+        label:
+          "Influence of parents' physical activity levels on activity levels of young children",
+        source: "Journal of Pediatrics, 118(2):215-9",
+        url: "https://pubmed.ncbi.nlm.nih.gov/1993953/",
+        type: "paper",
+      },
+    ],
+    tags: ["Health & Body"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "J34",
+    clusterId: "J",
+    title: "How to Understand Anything",
+    author: "Polymathinvestor",
+    year: 2025,
+    medium: "Newsletter",
+    category: "Mental Models",
+    thesis:
+      "A handful of reusable heuristics — first principles, the Pareto principle, decomposition, structural mapping, and zooming across levels of abstraction — let you build working understanding of almost any complex system from scratch.",
+    layer0:
+      "You don't need domain expertise to understand a new field fast. You need a small toolkit of thinking heuristics you can point at anything.",
+    layer1:
+      "First principles thinking strips a problem to its indisputable basics rather than reasoning by analogy. Decomposition breaks a complex system (an engine, a business, a market) into smaller pieces you can understand one at a time before recombining them. The Pareto-style 'key drivers' heuristic focuses attention on the small set of factors that actually move outcomes, since not all variables matter equally. Structural mapping sketches how the parts of a system fit together — mentally or on paper — the same way you'd map a new codebase or a new language's grammar. And 'zoom in and out' means deliberately moving between the big-picture architecture of a system and its granular mechanics, since tunnel vision on one layer alone produces a distorted model.",
+    layer2:
+      "Every one of these heuristics is really doing the same job: substituting a slow, effortful process (building a real mental model) for the fast, lazy one (borrowing someone else's conclusion or the first analogy that comes to mind). Which of these five do you actually use, versus which do you just recognize the name of?",
+    quiz: {
+      question:
+        "According to the 'Levels of Abstraction' heuristic, why is constantly zooming between the big picture and granular detail important when learning a new complex system?",
+      options: [
+        "Because granular detail is always more important than the big picture.",
+        "Because staying at only one layer — all overview or all detail — produces an incomplete or distorted understanding.",
+        "Because it's the fastest way to memorize technical vocabulary.",
+        "Because experts only ever think at the detail level.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The framework argues understanding has multiple layers, and skipping between the broad context and the fine mechanics is what prevents tunnel vision on any single layer.",
+    },
+    related: ["J1", "J2", "J3"],
+    furtherReading: [
+      {
+        label: "How to Understand Anything",
+        source: "Polymathinvestor.com",
+        url: "https://polymathinvestor.com/",
+        type: "article",
+      },
+    ],
+    tags: ["First-Principles Thinking", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "M7",
+    clusterId: "M",
+    title: "The French Garden and the English Garden",
+    author: "Will Manidis",
+    year: 2026,
+    medium: "Essay",
+    category: "Systems Design",
+    thesis:
+      "New systems are usually built like French formal gardens — a geometry imposed from above that flattens whatever was already there — when they could instead be built like English landscape gardens, which study the existing terrain and work with what's already load-bearing.",
+    layer0:
+      "Versailles was designed on paper before anyone visited the site — its geometry imposed on the land, the land's own contours flattened to fit. The English landscape tradition did the opposite: walk the ground first, then ask what it's already trying to become.",
+    layer1:
+      "Manidis traces this through Le Nôtre's Versailles (rivers diverted, hills leveled, hundreds of gardeners deployed forever after just to hold the geometry in place against nature) versus Capability Brown's English estates (months spent walking the land, working with existing streams and tree stands, pronouncing that a place had 'great capabilities'). He argues most new technology is built the French way: it surveys an existing system — healthcare, financial markets, an old industry's workflows — and flattens it, importing its own 'topsoil' rather than incorporating what already worked. The maintenance cost then shows up later, paid by users rather than the system's designers, the way Versailles's upkeep was paid by taxed French subjects who never set foot in the garden.",
+    layer2:
+      "His alternative is 'parallel construction' — building the new system alongside the old rather than razing it, letting genuine improvements diffuse back into the existing landscape instead of demanding total replacement on day one. Where in your own work are you about to level a system's existing contours instead of asking what it's already trying to become?",
+    quiz: {
+      question:
+        "In Will Manidis's garden metaphor, what is the central difference between the French (Versailles) and English (Capability Brown) approaches to building a new system?",
+      options: [
+        "The French approach is cheaper to maintain long-term than the English approach.",
+        "The French approach imposes a pre-planned geometry on the land and flattens what's already there; the English approach studies existing contours first and works with them.",
+        "The English approach requires more gardeners to maintain than the French approach.",
+        "There is no meaningful difference — both produce identical outcomes.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Manidis uses Versailles's imposed, paper-first geometry as an analogy for how new technology typically flattens existing systems, versus Capability Brown's method of working with a landscape's existing 'great capabilities.'",
+    },
+    related: ["M1", "M2", "M3"],
+    furtherReading: [
+      {
+        label: "On the Garden (against Citrini)",
+        source: "X (Twitter) Article",
+        url: "https://x.com/WillManidis/status/2026084115049562341",
+        type: "article",
+      },
+    ],
+    tags: ["Incentives & Systems", "Tech Adoption & Disruption"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "S20",
+    clusterId: "S",
+    title: "Human 3.0 — A Map to Reach the Top 1%",
+    author: "Dan Koe",
+    year: 2026,
+    medium: "Newsletter",
+    category: "Self-Development",
+    thesis:
+      "Personal development happens across four independent quadrants — mind, body, spirit, and vocation — and real growth means progressing all four rather than maxing out one while the others stagnate.",
+    layer0:
+      "Dan Koe built a framework, adapted from Ken Wilber's AQAL model, to explain why someone can be a spiritually advanced but broke and unfit guru, or a wealthy founder with no relationships.",
+    layer1:
+      "The four quadrants: Mind (your internal thoughts, beliefs, emotions), Body (behavior and physical appearance — how the world reads you), Spirit (your relationship to community and meaning), and Vocation (your relationship to career, systems, and institutions). Within each quadrant, people move through three levels — Conformist (values inherited authority), Individualist (rejects the norm, pursues personal status), and Synthesist (can hold multiple perspectives and combine them) — and each level transition passes through three phases: Dissonance (growing tired of your current stage), Uncertainty (stepping into the unknown), and Discovery (finding what's next).",
+    layer2:
+      "The trap Koe names is 'False Transformation' — believing you've leveled up in one quadrant because you leveled up in another. A founder who scaled a business (Vocation) can mistake that for having also matured emotionally (Spirit). Which of your four quadrants is quietly stuck at Conformist while the others have moved on?",
+    quiz: {
+      question: "What does Dan Koe call it when someone mistakes progress in one Human 3.0 quadrant for progress in another?",
+      options: [
+        "The Synthesist Trap",
+        "False Transformation",
+        "Quadrant Drift",
+        "The Conformist Fallacy",
+      ],
+      correctIndex: 1,
+      explanation:
+        "False Transformation is Koe's term for imitating what a higher level of development looks like in one domain (e.g. Vocation) without the underlying trait development, often while assuming growth in another domain (e.g. Spirit) as a result.",
+    },
+    related: ["S1", "S2", "S19"],
+    furtherReading: [
+      {
+        label: "Human 3.0 – A Map To Reach The Top 1%",
+        source: "X (Twitter) Article",
+        url: "https://x.com/thedankoe/status/2023779299367809063",
+        type: "article",
+      },
+    ],
+    tags: ["Meaning & Self", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "Q9",
+    clusterId: "Q",
+    title: "How Highly Effective People Speak",
+    author: "Peter Andrei",
+    year: 2025,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "High performers use identifiable, learnable psychological tactics — emotional priming, tactical language, and structured argument — to influence people, rather than relying on raw charisma.",
+    layer0:
+      "Persuasion is not a personality trait. It's a set of tactics you can name, learn, and use on purpose.",
+    layer1:
+      "Andrei groups the tactics into layers: psychological levers of influence (emotional priming, cognitive ease, authority and credibility, precision and clarity), tactical language strategies (conversational framing, powerful openings and closings, the rule of three, building arguments like a story), and nonverbal reinforcement (tone, pace, posture, and body language that either supports or undercuts the words). Cognitive ease matters because a message that's simple to process is judged as more true — vague, jargon-heavy language works against you even when the underlying argument is sound.",
+    layer2:
+      "The common failure mode this corrects is treating persuasion as purely a content problem — having the better argument — when audiences respond as much to how easy a message is to process and how credible the speaker feels as to the logic itself. Where in your own communication are you sacrificing cognitive ease for precision, and losing the room as a result?",
+    quiz: {
+      question:
+        "Why does 'cognitive ease' function as a persuasion lever, according to this framework?",
+      options: [
+        "Because audiences are too unintelligent to follow complex arguments.",
+        "Because a message that is simple and easy to process tends to be judged as more true, independent of its actual logical strength.",
+        "Because cognitive ease only matters in written communication, not speech.",
+        "Because it replaces the need for any supporting evidence.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "This is a documented persuasion effect — processing fluency increases perceived truth — which is why the framework treats plain, well-structured language as a tactical choice, not just a stylistic one.",
+    },
+    related: ["Q1", "Q2"],
+    furtherReading: [
+      {
+        label: "Summary of How Highly Effective People Speak",
+        source: "X (Twitter) post",
+        url: "https://x.com/MindBranches/status/2064134335574237362",
+        type: "article",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "N12",
+    clusterId: "N",
+    title: "The Six Triggers Behind Burnout",
+    author: "Rian Doris",
+    year: 2026,
+    medium: "Essay",
+    category: "Health & Performance",
+    thesis:
+      "Burnout has six distinct psychological triggers — lack of control, values conflict, insufficient reward, work overload, unfairness, and breakdown of community — and taking time off only addresses one of them, which is why rest alone often fails to fix it.",
+    layer0:
+      "Rian Doris took a week off to cure his burnout. He came back and felt just as flat within days. Work overload was never the actual problem.",
+    layer1:
+      "Drawing on Christina Maslach's Burnout Inventory, Doris names three hallmarks of burnout — exhaustion, cynicism, and low self-efficacy — and six root triggers, of which overwork is only one. The other five (lack of autonomy, misaligned values, feeling under-recognized, unfair treatment, and a broken sense of team) keep firing even after a vacation. His fix is to diagnose which specific triggers are active and address each directly, plus stay below your 'allostatic load limit' — the threshold past which sustained effort starts producing cynicism instead of output — using active recovery (hormetic stressors like cold exposure, heat, and exercise) rather than passive rest.",
+    layer2:
+      "The reframe worth sitting with: burnout is a diagnosis problem before it's a rest problem. Treating every case with 'take a vacation' is like treating every fever with the same medicine regardless of the infection. Which of the six triggers is actually driving your own version of burnout — and is it one that a week off would even touch?",
+    quiz: {
+      question:
+        "Why did taking a week off fail to fix Rian Doris's burnout, according to his own account?",
+      options: [
+        "Because burnout can't be treated with rest under any circumstances.",
+        "Because his specific triggers were lack of control, unfairness, and insufficient reward — not work overload, which is the only trigger that time off actually addresses.",
+        "Because he didn't take enough time off.",
+        "Because burnout isn't a real medical phenomenon.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Doris identifies six distinct burnout triggers; simple time off only resolves work overload, leaving the other active triggers (in his case, control, fairness, and reward) untouched.",
+    },
+    related: ["N1", "N8"],
+    furtherReading: [
+      {
+        label: "The 6 Triggers Behind Every Burnout Episode",
+        source: "X (Twitter) Article",
+        url: "https://x.com/RianSweetDoris/status/2050267394237759984",
+        type: "article",
+      },
+    ],
+    tags: ["Health & Body", "Craft & Deep Work"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "O30",
+    clusterId: "O",
+    title: "The People-First Approach",
+    author: "Haitham Al-Beik",
+    year: 2026,
+    medium: "Essay",
+    category: "Philosophy of Technology",
+    thesis:
+      "Technology should be built around the Human as an irreducible constant — a 'driver' separate from mind and body who retains the right to keep changing — rather than treating people as optimization targets a system can fully model and predict.",
+    layer0:
+      "Al-Beik argues most modern systems are built for a person who is not allowed to change their mind — and that this, not any technical failure, is the actual design flaw.",
+    layer1:
+      "He proposes a three-layer stack: body, mind, and 'soul' (the driver, the thing noticing your own thoughts). AI, in his framing, is a sophisticated one-layer or two-layer system — mind and sometimes body — but has no access to the third layer, and no amount of scaling closes that gap, because it's a difference in kind, not degree. He also argues no one can fully know another person's interior — we only ever interact with each other's 'vehicles' — which should make systems more humble about profiling, scoring, or predicting people. His alternative to zero-sum and positive-sum economics is what he calls 'creative-sum': interactions that bring something into being rather than redistributing or growing an existing pie.",
+    layer2:
+      "The practical test he offers for any system — a product, an algorithm, an institution — is whether it's designed for a person who's allowed to change their mind. Recommendation engines that assume your past predicts your future, credit systems that punish revision, and social platforms that preserve your worst sentence forever all fail this test. Does anything you rely on daily pass it?",
+    quiz: {
+      question:
+        "What operational test does Al-Beik propose for judging whether a technology or system is genuinely 'people-first'?",
+      options: [
+        "Whether the system generates the most revenue for its owners.",
+        "Whether the system is designed for a person who is allowed to change their mind, rather than one whose past behavior is assumed to fix their future.",
+        "Whether the system uses the most advanced AI available.",
+        "Whether the system has the fewest number of steps to complete a task.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "This is the specific test Al-Beik gives: most recommendation engines, credit systems, and social platforms fail it because they treat past behavior as a fixed predictor rather than allowing for genuine revision.",
+    },
+    related: ["O1", "O2"],
+    furtherReading: [
+      {
+        label: "The People-First Approach",
+        source: "X (Twitter) Article, reproduced from albeik.com/pfa/human",
+        url: "https://x.com/albeik/status/2043694057671798899",
+        type: "article",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "Q10",
+    clusterId: "Q",
+    title: "The Self-Help Trap",
+    author: "Tim Ferriss",
+    year: 2026,
+    medium: "Essay",
+    category: "Self-Development",
+    thesis:
+      "After two decades of professional 'optimizing,' Tim Ferriss argues self-help can become its own trap — the compulsive pursuit of self-improvement can substitute for actually living, making the cure worse than the original problem.",
+    layer0:
+      "\"The older I get, the more I think that self-help can be a trap. Sometimes the cure is worse than the disease.\" — from someone who built a career on self-optimization.",
+    layer1:
+      "The critique lands hardest coming from Ferriss specifically, since he's spent twenty years popularizing productivity systems, biohacking, and self-experimentation. His argument is that constant optimization can become a way of avoiding presence — always fixing the next system instead of living inside the one you have — and that some of what gets sold as self-improvement is actually a more sophisticated form of self-avoidance.",
+    layer2:
+      "This isn't an argument against self-improvement — it's an argument against treating it as a permanent state rather than a tool you pick up for a specific problem and put down again. Is there a self-help habit in your own life that's become the distraction rather than the fix?",
+    quiz: {
+      question:
+        "What is the core critique in Tim Ferriss's 'Self-Help Trap' argument?",
+      options: [
+        "That all self-help advice is scientifically unfounded.",
+        "That compulsive optimization can itself become a way of avoiding actually living, making it a trap rather than a solution.",
+        "That self-help books should never be read more than once.",
+        "That only professional coaches should give self-improvement advice.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Ferriss's point, coming after 20+ years of building a career on optimization, is that the pursuit itself can become the avoidance — the 'cure' substituting for genuinely being present in your life.",
+    },
+    related: ["Q9", "N12"],
+    furtherReading: [
+      {
+        label: "The Self-Help Trap: What 20+ Years of 'Optimizing' Has Taught Me",
+        source: "tim.blog",
+        url: "https://tim.blog/2026/03/04/the-self-help-trap/",
+        type: "article",
+      },
+    ],
+    tags: ["Meaning & Self", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AJ3",
+    clusterId: "AJ",
+    title: "Game Theory (Bonanno)",
+    author: "Giacomo Bonanno",
+    year: 2015,
+    medium: "Textbook",
+    category: "Game Theory",
+    thesis:
+      "Non-cooperative game theory formalizes strategic interaction — situations where your best move depends on what others do — starting from strategic-form games and building up to the equilibrium concepts that predict how rational agents behave under mutual interdependence.",
+    layer0:
+      "Most decisions that matter aren't made in isolation — they're made against other people who are also deciding. Game theory is the formal language for that situation.",
+    layer1:
+      "Bonanno's textbook builds from strategic-form (normal-form) games — where players choose actions simultaneously and payoffs depend on the combination chosen — toward the equilibrium concepts (like Nash equilibrium) that predict stable outcomes when every player is best-responding to everyone else. The core move is representing a strategic situation formally enough that you can reason about it rigorously instead of just intuiting it.",
+    layer2:
+      "The value of formalizing strategic interaction is that intuition about 'what the other side will do' is often wrong in specific, predictable ways — the same way intuition about probability is wrong in predictable ways. Where in your own decisions are you failing to model the other player's incentives explicitly?",
+    quiz: {
+      question:
+        "What does a 'strategic-form' (normal-form) game formally represent?",
+      options: [
+        "A game where players take turns and can see all prior moves.",
+        "A situation where players choose their actions simultaneously and the payoff to each depends on the full combination of actions chosen.",
+        "A game with only one possible outcome regardless of player choices.",
+        "A cooperative negotiation where players share all payoffs equally.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Strategic-form games are the foundational representation in non-cooperative game theory: simultaneous choice, interdependent payoffs, no assumed communication or binding agreements between players.",
+    },
+    related: ["AJ1", "AJ2"],
+    furtherReading: [
+      {
+        label: "Game Theory",
+        source: "Giacomo Bonanno, UC Davis (open textbook)",
+        url: "https://x.com/techwith_ram/status/2033924852961444264",
+        type: "paper",
+      },
+    ],
+    tags: ["Decision-Making", "Cognitive Biases & Models"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "J35",
+    clusterId: "J",
+    title: "10 Books That Sharpen Critical Thinking in an AI-Dominated World",
+    author: "Steve Burns",
+    year: 2026,
+    medium: "Essay",
+    category: "Critical Thinking",
+    thesis:
+      "As algorithms increasingly curate what people see and think, independent critical thinking becomes a survival skill rather than an academic nicety — and a specific set of books (on cognitive bias, randomness, algorithmic power, and disciplined attention) function as a practical defense.",
+    layer0:
+      "Algorithms are optimized to trigger fast, automatic thinking — clickbait, personalized feeds, emotionally-charged content. Defending against that requires understanding how your own mind gets exploited.",
+    layer1:
+      "Burns's list spans Kahneman's Thinking, Fast and Slow (System 1 vs. System 2 thinking, and why algorithms target System 1), Julia Galef's Scout Mindset (updating on evidence vs. defending existing beliefs), Taleb's Fooled by Randomness (mistaking noise for signal, which AI pattern-matching can amplify), Cathy O'Neil's Weapons of Math Destruction (algorithmic feedback loops that entrench bias), and Marcus Aurelius's Meditations (disciplined separation of perception from judgment — a 2,000-year-old precedent for the same underlying skill).",
+    layer2:
+      "The thread connecting all ten, per Burns, is what the Stoics called prosoche — attention to your own thinking process. AI doesn't threaten people who think critically; it threatens people who've outsourced their thinking without noticing. Which of these books addresses the specific way you're most likely to get manipulated by an algorithm?",
+    quiz: {
+      question:
+        "According to the framework built from this reading list, who does AI actually threaten most?",
+      options: [
+        "People who refuse to use any AI tools.",
+        "People who have outsourced their thinking to algorithms without realizing it.",
+        "People who read too many books.",
+        "Only professional researchers and scientists.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The article's conclusion is explicit: 'AI does not threaten people who think critically. It threatens people who have outsourced their thinking without realizing it.'",
+    },
+    related: ["J1", "U1"],
+    furtherReading: [
+      {
+        label: "10 Books That Sharpen Critical Thinking in an AI-Dominated World",
+        source: "X (Twitter) Article",
+        url: "https://x.com/SJosephBurns/status/2028069256231834054",
+        type: "article",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "I25",
+    clusterId: "I",
+    title: "Apple, SaaS, and the 18-Month Window",
+    author: "Attributed to Naval Ravikant (via secondary commentary)",
+    year: 2026,
+    medium: "X (Twitter) Article",
+    category: "Tech Futurism",
+    thesis:
+      "A secondary commentary claims Naval Ravikant argued on a podcast that pure software has become uninvestable as AI commoditizes the interface layer — and that SaaS founders have roughly 18 months to build a defensible moat (distribution, network effects, data flywheels, or hardware) before their valuations compress.",
+    layer0:
+      "This node summarizes a claim, not a primary source: the specific podcast episode where Naval reportedly said this could not be located or verified directly.",
+    layer1:
+      "The argument as relayed: AI is commoditizing the software interface layer (agents generating UI on demand instead of curated apps), which threatens both hardware companies whose margins depend on superior software (the piece uses Apple as the example) and SaaS companies whose moat was really just 'this was hard to build' — a difficulty that AI coding tools are rapidly erasing. The proposed durable moats that remain: distribution, network effects, proprietary data flywheels, hardware integration, and vertical depth.",
+    layer2:
+      "Treat the 'Naval said this' framing skeptically — this is included because the underlying argument about AI commoditizing software moats is worth engaging with on its own merits, not because the Naval attribution is confirmed. What's the actual moat in your own work, independent of who did or didn't say this on a podcast?",
+    quiz: {
+      question:
+        "Why is this node marked with a cautious epistemic status rather than treated as a confirmed Naval Ravikant quote?",
+      options: [
+        "Because Naval Ravikant has publicly denied saying anything like this.",
+        "Because the specific podcast episode containing this claim could not be independently located or verified, so it's presented as secondary commentary rather than a primary source.",
+        "Because the claim is mathematically false.",
+        "Because Naval Ravikant does not have a podcast.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The house rule here is never to present an unverifiable attribution as fact — the argument itself (AI commoditizing software moats) is worth including, but the sourcing is flagged as unconfirmed.",
+    },
+    related: ["I1", "I2"],
+    furtherReading: [
+      {
+        label: "Naval Ravikant: Apple is dead, SaaS is next, you have 18 months",
+        source: "X (Twitter) Article (secondary commentary, primary source unverified)",
+        url: "https://x.com/mustufa4socials/status/2049518414377480218",
+        type: "article",
+      },
+    ],
+    tags: ["AI & the Future", "Moats & Network Effects"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "U13",
+    clusterId: "U",
+    title: "Eight Cognitive Laws Worth Knowing Early",
+    author: "Curious Minds",
+    year: 2026,
+    medium: "X (Twitter) thread",
+    category: "Cognitive Biases",
+    thesis:
+      "A compact list of well-established cognitive and social effects — led by the Dunning-Kruger effect — that repeatedly explain why confident people are often wrong and quiet people are often right.",
+    layer0:
+      "The Dunning-Kruger effect: the less competent someone is at a task, the less able they are to recognize their own incompetence — which is why the most confident person in the room is often the least qualified to be.",
+    layer1:
+      "This is a summary thread rather than original research — it compiles named effects (Dunning-Kruger among them) that are individually well-documented in the psychology literature, packaged as practical life lessons rather than academic claims.",
+    layer2:
+      "The value of a list like this isn't the citations — it's a checklist of blind spots to test yourself against. Which of these effects have you personally fallen for in the last month, and did you notice at the time?",
+    quiz: {
+      question: "What does the Dunning-Kruger effect describe?",
+      options: [
+        "The tendency for experts to always underestimate their own skill.",
+        "The tendency for people with low competence at a task to lack the self-awareness to recognize that low competence.",
+        "The tendency for group decisions to always outperform individual ones.",
+        "The tendency for confidence to decrease as expertise increases, with no exceptions.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The defining feature of Dunning-Kruger is the metacognitive gap: the same lack of skill that produces poor performance also impairs the ability to judge that performance accurately.",
+    },
+    related: ["U1", "U2"],
+    furtherReading: [
+      {
+        label: "8 Greatest Laws I know at 35, I wish I knew at 20",
+        source: "X (Twitter) thread",
+        url: "https://x.com/CuriousMindsHub/status/2029013144777924881",
+        type: "article",
+      },
+    ],
+    tags: ["Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "Q11",
+    clusterId: "Q",
+    title: "Why Smart Parents Spend Money on Experiences",
+    author: "Aspireachieve",
+    year: 2026,
+    medium: "X (Twitter) thread",
+    category: "Family & Parenting",
+    thesis:
+      "Toys are forgotten within weeks, but shared trips and experiences become the memories children actually carry into adulthood — making experiential spending a higher-leverage use of a limited parenting budget than material goods.",
+    layer0:
+      "Toys fade. Memories don't. That's the entire argument, and it's simple enough to test against your own childhood.",
+    layer1:
+      "The thread's practical claim is that experiences compound in ways toys don't: they build shared reference points a family returns to for years, they expose kids to novelty and problem-solving outside routine environments, and — unlike a toy sitting unused in a bin — the 'value' doesn't decay after the first week of novelty wears off.",
+    layer2:
+      "This is an assertion, not a study — worth treating as one person's practical philosophy rather than settled research. But it's testable against your own memory: try to name your five favorite toys from childhood, then your five favorite family trips. Which list came faster?",
+    quiz: {
+      question:
+        "What is the central claim of the 'toys fade, memories don't' argument for spending on experiences over material goods?",
+      options: [
+        "That toys are more expensive than trips over a child's lifetime.",
+        "That the novelty and value of toys decay quickly, while shared experiences become durable memories that compound over time.",
+        "That children who receive toys perform worse academically.",
+        "That trips are legally required for healthy child development.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The thread's core comparison is about durability of value — a toy's appeal fades fast, while an experience becomes a lasting shared reference point.",
+    },
+    related: ["AD3", "Q1"],
+    furtherReading: [
+      {
+        label: "Why smart parents spend money on trips with their kids",
+        source: "X (Twitter) thread",
+        url: "https://x.com/Aspireachievee/status/2046921673304322503",
+        type: "article",
+      },
+    ],
+    tags: ["Meaning & Self"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "Q12",
+    clusterId: "Q",
+    title: "The 90-Day Turnaround Framework",
+    author: "EP",
+    year: 2026,
+    medium: "X (Twitter) thread",
+    category: "Self-Development",
+    thesis:
+      "A life turnaround compresses into 90 days when you stack a small number of high-leverage habit changes simultaneously rather than sequentially, using the short deadline itself as forcing function.",
+    layer0:
+      "A 90-day window is short enough to stay urgent and long enough to actually change a habit — which is the entire logic behind using it as a self-improvement unit.",
+    layer1:
+      "The framework's core move is compression: instead of one change every few months, stack diet, exercise, sleep, and a single focused goal within the same 90-day sprint, using the visible finish line to sustain motivation past the point where open-ended resolutions usually collapse.",
+    layer2:
+      "The risk with any 90-day framework is mistaking a sprint for a permanent change — habits built under deadline pressure sometimes unravel the moment the deadline passes. Worth asking: what's your plan for day 91?",
+    quiz: {
+      question:
+        "What is the main psychological mechanism the 90-day framework relies on to sustain motivation?",
+      options: [
+        "Removing all deadlines so there's no pressure.",
+        "Using a short, visible finish line as a forcing function to sustain urgency that open-ended goals usually lose.",
+        "Focusing on only one habit at a time, never stacking changes.",
+        "Relying entirely on willpower with no structural support.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The 90-day compression works by keeping the deadline close enough to feel urgent, which is the lever open-ended New Year's-resolution-style goals typically lack.",
+    },
+    related: ["N12", "Q11"],
+    furtherReading: [
+      {
+        label: "How to turn your life around in 90 days",
+        source: "X (Twitter) thread",
+        url: "https://x.com/eptwts/status/2035360684775485632",
+        type: "article",
+      },
+    ],
+    tags: ["Craft & Deep Work", "Decision-Making"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "AD4",
+    clusterId: "AD",
+    title: "Neuroplasticity: The Brain That Changes Itself",
+    author: "InspiroQuest",
+    year: 2026,
+    medium: "X (Twitter) thread",
+    category: "Neuroscience",
+    thesis:
+      "The brain physically rewires itself in response to repeated thought and behavior throughout adulthood, not just childhood — meaning habits, skills, and even chronic thought patterns are more changeable at a neural level than 'fixed personality' framing suggests.",
+    layer0:
+      "Your brain isn't the fixed hardware it feels like. It's closer to software that rewrites its own wiring based on what you repeatedly do and think.",
+    layer1:
+      "Neuroplasticity describes the brain's capacity to form new neural connections and reorganize existing ones throughout life, not only during a childhood 'critical period' as older models assumed. Repeated practice strengthens specific neural pathways (the popularized shorthand is 'neurons that fire together wire together'), which is the mechanistic basis for skill acquisition, habit formation, and — the thread's more provocative claim — the ability to consciously reshape ingrained thought patterns rather than accept them as permanent traits.",
+    layer2:
+      "The caution worth adding: popular neuroplasticity content often overstates how fast or how completely adult rewiring happens compared to what the research actually shows. Real change is possible but typically requires sustained, deliberate repetition over a much longer horizon than most threads imply. What's a thought pattern you've been treating as fixed that might actually just be well-worn?",
+    quiz: {
+      question:
+        "What does neuroplasticity fundamentally challenge about older models of brain development?",
+      options: [
+        "That the brain can only change during a narrow childhood critical period, with no meaningful rewiring possible in adulthood.",
+        "That the brain has no capacity to change at all, at any age.",
+        "That only physical injury can alter brain structure.",
+        "That memory and learning are unrelated to brain structure.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "The core update neuroplasticity research made to older neuroscience was demonstrating that meaningful neural reorganization continues well into adulthood, not just during early developmental windows.",
+    },
+    related: ["AD1", "AD3"],
+    furtherReading: [
+      {
+        label: "The neuroplasticity theory",
+        source: "X (Twitter) thread",
+        url: "https://x.com/InspiroQuest/status/2027683581636841778",
+        type: "article",
+      },
+    ],
+    tags: ["Health & Body", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "L9",
+    clusterId: "L",
+    title: "The Donkey Principle",
+    author: "InspiroQuest",
+    year: 2026,
+    medium: "X (Twitter) thread",
+    category: "Argumentation",
+    thesis:
+      "Named for the fable of the man who wastes his time arguing with a donkey, this principle holds that not every disagreement deserves a response — engaging a bad-faith or unwinnable argument often costs more than losing it silently would.",
+    layer0:
+      "You can't win an argument with a donkey. You can only lower yourself to its level and get kicked for your trouble.",
+    layer1:
+      "The practical filter this principle offers: before engaging a disagreement, ask whether the other party is arguing in good faith and is even capable of updating their position. If not, the 'foolish argument' isn't the position being argued — it's the decision to argue at all, since no outcome of the exchange changes anything except your own time and composure.",
+    layer2:
+      "This overlaps with Nassim Taleb's similar advice about not debating people who have nothing to lose from being wrong. The hard part isn't knowing the principle — it's recognizing, in the moment your ego is already engaged, that you're standing in front of a donkey. What's the last argument you regret having, and would this filter have caught it beforehand?",
+    quiz: {
+      question:
+        "According to the Donkey Principle, what determines whether an argument is worth having?",
+      options: [
+        "Whether you are certain you are factually correct.",
+        "Whether the other party is arguing in good faith and is actually capable of updating their position based on the exchange.",
+        "Whether the argument happens in public or private.",
+        "Whether you have more social status than the other person.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The principle's filter is about the other party's capacity for good-faith engagement, not about who is factually right — arguing with someone who can't or won't update is framed as a losing proposition regardless of your position's merit.",
+    },
+    related: ["L1", "L2"],
+    furtherReading: [
+      {
+        label: "The Donkey Principle: How To Avoid Foolish Arguments",
+        source: "X (Twitter) thread",
+        url: "https://x.com/InspiroQuest/status/2024455996173930548",
+        type: "article",
+      },
+    ],
+    tags: ["Decision-Making", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "A15",
+    clusterId: "A",
+    title: "Distribution Follows a Power Law",
+    author: "Peter Thiel",
+    year: 2014,
+    medium: "Book excerpt",
+    category: "Startups",
+    thesis:
+      "Most startups fail from poor distribution, not a bad product — and since distribution channels themselves follow a power law, the winning strategy is to find and dominate a single channel rather than spreading thin across several mediocre ones.",
+    layer0:
+      "Poor sales, not bad product, is the most common cause of startup failure. Peter Thiel's claim is blunt and runs against founder instinct.",
+    layer1:
+      "From Thiel's Zero to One: most entrepreneurs assume 'more is more' and try a kitchen-sink approach — a few salespeople, some ads, a viral feature bolted on as an afterthought. That rarely works. Instead, distribution channels themselves are power-law distributed: one channel will outperform every other by an order of magnitude for a given company, and finding it is worth more than diversifying across several average ones. Thiel cites Codecademy, Mint, and Reddit growing through blogs; Wikipedia and Stack Exchange through community formation; Evernote through Apple's App Store; and PayPal and Dropbox through referral virality.",
+    layer2:
+      "The uncomfortable implication is that 'try everything and see what sticks' is usually worse advice than 'commit hard to your single best bet, even before you're sure it's the right one' — because half-hearted distribution across five channels tends to produce zero working channels rather than one working channel diluted five ways. Which single channel would you bet your whole company on if you had to pick just one?",
+    quiz: {
+      question:
+        "According to Thiel, why does the 'kitchen sink' approach to distribution (a few salespeople, some ads, a viral feature) usually fail?",
+      options: [
+        "Because it's illegal to use more than one distribution channel at once.",
+        "Because distribution channels follow a power law — one channel dramatically outperforms the rest, and spreading effort thin across several usually means none of them get pursued hard enough to work.",
+        "Because customers only trust companies that use a single marketing channel.",
+        "Because viral features are always counterproductive.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Thiel's argument is structural: since one channel will vastly outperform the others for any given company, diluting effort across many channels usually means failing to find and commit to the one that would have actually worked.",
+    },
+    related: ["A1", "A2"],
+    furtherReading: [
+      {
+        label: "Distribution Follows A Power Law",
+        source: "The Startup Archive Daily Founder Series (excerpting Peter Thiel, Zero to One)",
+        url: "https://x.com/CuriousMindsHub/status/2029013144777924881",
+        type: "article",
+      },
+    ],
+    tags: ["Moats & Network Effects", "Startups & Founders"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "J36",
+    clusterId: "J",
+    title: "16 Mental Models to Sharpen Your Thinking",
+    author: "Unattributed compilation",
+    year: 2026,
+    medium: "Infographic",
+    category: "Mental Models",
+    thesis:
+      "A compact reference of sixteen widely-used mental models — spanning economics, psychology, and systems thinking — intended as a checklist to apply against a decision rather than a single unifying theory.",
+    layer0:
+      "A mental model is only useful the moment you actually reach for it. A list like this is a reminder of which tool exists for which kind of problem.",
+    layer1:
+      "This node exists as a pointer/index rather than deep coverage of any one model — most of the sixteen (inversion, second-order thinking, circle of competence, opportunity cost, and similar staples) already have their own dedicated nodes elsewhere in Cluster J with fuller treatment. Treat this as the 'table of contents' version.",
+    layer2:
+      "The failure mode with mental-model lists is collecting them like trading cards without ever applying one under pressure. Which model on a list like this have you actually used this month, on a real decision, rather than just recognized the name of?",
+    quiz: {
+      question:
+        "What is the main risk of collecting long lists of mental models, as this node's framing suggests?",
+      options: [
+        "That there are too few mental models to be useful.",
+        "That people recognize and collect the names of models without ever applying them to a real decision.",
+        "That mental models are only theoretical and can't be applied practically.",
+        "That using more than one model at a time is always a mistake.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The practical value of a mental model comes from active use under real constraints — passively knowing a list of names provides none of that value on its own.",
+    },
+    related: ["J1", "J2", "J3"],
+    furtherReading: [
+      {
+        label: "16 Mental Models To Get To The Top 1%",
+        source: "X (Twitter) infographic",
+        url: "https://x.com/InspiroQuest/status/2024455996173930548",
+        type: "article",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "N13",
+    clusterId: "N",
+    title: "How to Remember Everything You Read",
+    author: "Polymathinvestor",
+    year: 2025,
+    medium: "Newsletter",
+    category: "Reading & Retention",
+    thesis:
+      "Retention comes from active engagement with material — summarizing in your own words, spacing repetition over time, and connecting new ideas to what you already know — rather than from passive re-reading, which is the most common and least effective study habit.",
+    layer0:
+      "Re-reading a page feels like studying. It's mostly an illusion of familiarity that produces almost no durable memory.",
+    layer1:
+      "The core techniques: active recall (testing yourself on material instead of re-reading it, which forces genuine retrieval rather than passive recognition), spaced repetition (reviewing material at expanding intervals rather than cramming it once), and elaboration (explaining an idea in your own words or connecting it to something you already understand, which is what actually builds durable memory structures).",
+    layer2:
+      "All three techniques share a common principle: memory is a byproduct of effortful retrieval, not exposure. The more work your brain does to reconstruct an idea, the stronger the memory gets — which is exactly why re-reading, the easiest and most common study method, is also one of the weakest. What's the last thing you 're-read' instead of actually testing yourself on?",
+    quiz: {
+      question:
+        "Why is passive re-reading generally considered one of the least effective ways to retain information?",
+      options: [
+        "Because it takes too long compared to other methods.",
+        "Because it creates a false sense of familiarity without requiring the effortful retrieval that actually builds durable memory.",
+        "Because reading itself doesn't engage the brain at all.",
+        "Because it only works for fiction, not nonfiction.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Active recall and spaced repetition work because they force effortful retrieval; re-reading substitutes recognition (the material feels familiar) for the harder, memory-building work of reconstruction.",
+    },
+    related: ["N1", "J34"],
+    furtherReading: [
+      {
+        label: "How to Remember Everything You Read",
+        source: "Polymathinvestor.com",
+        url: "https://polymathinvestor.com/",
+        type: "article",
+      },
+    ],
+    tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "Q13",
+    clusterId: "Q",
+    title: "Ten Questions to Fix Your Life in a Day",
+    author: "Unattributed",
+    year: 2026,
+    medium: "Infographic",
+    category: "Self-Development",
+    thesis:
+      "A single sitting of blunt self-interrogation — about complacency, fear, and what you'd regret — can surface the specific change a person has been avoiding faster than months of passive reflection.",
+    layer0:
+      "If the next year looked exactly like the last two weeks, would you be proud? That's the entire diagnostic in one question.",
+    layer1:
+      "The format is a set of ten forcing questions rather than a step-by-step plan: what's the cost of staying exactly where you are, what are you avoiding because failure feels scary, who would you be if you weren't afraid of others' opinions, what would you do if you stripped away every excuse. Each question is designed to short-circuit a specific rationalization people use to avoid a decision they've already half-made.",
+    layer2:
+      "The honest limitation here is that answering ten sharp questions in an afternoon doesn't itself produce change — it produces clarity about what change is needed, which is a different and easier thing. The real test is whether you act on the answer or file it away as a good afternoon of reflection. Which one of these ten actually stung?",
+    quiz: {
+      question:
+        "What is the actual output of this kind of ten-question self-interrogation exercise, as distinct from producing change itself?",
+      options: [
+        "Guaranteed behavior change within 24 hours.",
+        "Clarity about what specific change is needed — which is necessary but not sufficient, since acting on that clarity is a separate step.",
+        "A complete financial plan.",
+        "Nothing useful; the questions are purely rhetorical.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Forcing questions are diagnostic tools — they're good at surfacing what you already half-know you're avoiding, but they don't substitute for the follow-through of actually acting on the answer.",
+    },
+    related: ["Q12", "N12"],
+    furtherReading: [
+      {
+        label: "How to fix your Entire Life In One Day",
+        source: "X (Twitter) infographic",
+        url: "https://x.com/InspiroQuest/status/2027683581636841778",
+        type: "article",
+      },
+    ],
+    tags: ["Meaning & Self", "Decision-Making"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "E2",
+    clusterId: "E",
+    title: "Twenty Finance Terms Everyone Confuses",
+    author: "Wealth (thecapitalistt0)",
+    year: 2026,
+    medium: "X (Twitter) thread",
+    category: "Finance Literacy",
+    thesis:
+      "A working financial vocabulary — knowing the precise difference between terms like liquidity and solvency, or nominal and real returns — prevents the specific category of investing mistakes that come from conflating two related but distinct concepts.",
+    layer0:
+      "Two companies can both be 'losing money' in completely different ways — one is illiquid, the other is insolvent — and confusing the two leads to exactly the wrong read on how serious the problem is.",
+    layer1:
+      "This node functions as a glossary anchor rather than a single deep idea: it compiles commonly-confused finance pairs (liquidity vs. solvency, nominal vs. real returns, gross vs. net margin, market cap vs. enterprise value) that are individually well-defined in finance theory, packaged as a fast reference rather than original analysis.",
+    layer2:
+      "Vocabulary gaps in finance rarely announce themselves — you don't feel confused, you just quietly draw the wrong conclusion from a headline or a balance sheet. Which of these twenty terms would you have to pause and think about before defining precisely?",
+    quiz: {
+      question:
+        "What is the practical danger of confusing closely related finance terms, such as liquidity and solvency?",
+      options: [
+        "There is no real danger; the terms are interchangeable in practice.",
+        "Conflating two distinct concepts can lead to badly misjudging how serious a company's financial problem actually is.",
+        "It only matters for accountants, not investors.",
+        "It affects tax filings but nothing else.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Liquidity (short-term cash access) and solvency (whether liabilities exceed assets) point to very different severities of financial trouble — treating them as synonyms leads to misdiagnosing which problem a company actually has.",
+    },
+    related: ["E1"],
+    furtherReading: [
+      {
+        label: "20 confusing finance terms",
+        source: "X (Twitter) thread",
+        url: "https://x.com/thecapitalistt0/status/2028717928632430997",
+        type: "article",
+      },
+    ],
+    tags: ["Markets & Narrative", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "L10",
+    clusterId: "L",
+    title: "Five Tips to Improve Your Critical Thinking",
+    author: "Samantha Agoos",
+    year: 2016,
+    medium: "Video lesson",
+    category: "Critical Thinking",
+    thesis:
+      "Critical thinking is a trainable skill built from five concrete habits — identifying a claim's origin, questioning your own information sources, spotting fallacies, considering other viewpoints, and evaluating your own reasoning process — not an innate trait some people simply have.",
+    layer0:
+      "Critical thinking isn't a personality type. It's five specific habits you can practice like any other skill.",
+    layer1:
+      "Agoos's TED-Ed lesson breaks it down into: formulate your question clearly before answering it, gather your information from multiple and reliable sources, apply the information by asking what's assumed versus what's actually shown, consider the implications of your conclusion, and explore other points of view before settling. The lesson's throughline is that most bad reasoning isn't a failure of intelligence — it's skipping one of these steps under time pressure.",
+    layer2:
+      "The uncomfortable part of taking this seriously is that it applies most when you're most certain — the moment you feel sure you're right is exactly when skipping the 'consider other points of view' step is most tempting and most costly. When was the last time you deliberately looked for the strongest counter-argument to something you already believed?",
+    quiz: {
+      question:
+        "Per this framework, what is the most common reason people reason badly, according to the lesson's own framing?",
+      options: [
+        "A lack of raw intelligence.",
+        "Skipping one of the concrete steps (like considering other viewpoints) under time pressure, rather than a deficit of ability.",
+        "Not having access to enough information.",
+        "Being naturally predisposed to logical fallacies from birth.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The lesson frames critical thinking as a trainable process with discrete steps, and frames most reasoning failures as skipped steps rather than a fixed lack of capability.",
+    },
+    related: ["L9", "J35"],
+    furtherReading: [
+      {
+        label: "5 tips to improve your critical thinking",
+        source: "TED-Ed",
+        url: "https://ed.ted.com/lessons/5-tips-to-improve-your-critical-thinking-samantha-agoos",
+        type: "video",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "L11",
+    clusterId: "L",
+    title: "The Demon of Reason: Logical Fallacies",
+    author: "TED-Ed",
+    year: 2016,
+    medium: "Video collection",
+    category: "Logic",
+    thesis:
+      "Logical fallacies are structural flaws in an argument's reasoning, independent of whether the conclusion happens to be true — which means an argument can be both persuasive and invalid at the same time, and learning to spot the structure is what protects you from the persuasion.",
+    layer0:
+      "A conclusion can be true and the argument for it can still be garbage. Those are two separate questions, and most people only ever check one of them.",
+    layer1:
+      "The collection catalogs recurring fallacy patterns — strawman (misrepresenting an opponent's position to make it easier to attack), false dilemma (presenting only two options when more exist), ad hominem (attacking the arguer instead of the argument), circular reasoning (assuming the conclusion within the premise) — each illustrated with a short animated case so the pattern becomes recognizable rather than just named.",
+    layer2:
+      "The reason fallacy-spotting matters practically is that persuasive language is often optimized for feeling convincing regardless of validity — advertising, political rhetoric, and social media arguments all reward fallacious structures that land emotionally. Which fallacy do you personally fall for most often when you're the one being persuaded, rather than the one arguing?",
+    quiz: {
+      question:
+        "What is the key distinction this collection draws between an argument's conclusion and its logical structure?",
+      options: [
+        "A conclusion and its supporting argument are always either both true or both false together.",
+        "An argument's conclusion can be true even while its logical structure is flawed (a fallacy) — validity and truth are separate questions.",
+        "Fallacies only occur in written arguments, never in spoken ones.",
+        "There is no meaningful difference between a fallacy and a false conclusion.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Logical validity concerns the structure of the reasoning; truth concerns the conclusion. A fallacious argument can accidentally arrive at a true conclusion, and a valid argument can still contain a false premise — recognizing this separation is the point of the lesson.",
+    },
+    related: ["L10", "U1"],
+    furtherReading: [
+      {
+        label: "The Demon of Reason (logical fallacies collection)",
+        source: "TED-Ed",
+        url: "https://ed.ted.com/ted_ed_collections/the-demon-of-reason",
+        type: "video",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "L12",
+    clusterId: "L",
+    title: "To Solve a Tough Problem, Reframe It",
+    author: "Harvard Business Review",
+    year: 2024,
+    medium: "Article",
+    category: "Problem-Solving",
+    thesis:
+      "Many 'unsolvable' problems are actually poorly framed ones — changing the question you're asking often surfaces a solution that was invisible under the original framing, making reframing a higher-leverage move than harder analysis of the original question.",
+    layer0:
+      "Teams spend weeks grinding on a problem's original framing when the actual unlock was asking a different question entirely.",
+    layer1:
+      "The article's core method: treat your initial problem statement as a hypothesis, not a fixed fact. Before searching for solutions, deliberately generate multiple alternative framings of the same underlying issue — a 'sales are down' problem might reframe as a retention problem, a positioning problem, or a pricing problem, each pointing toward completely different solution spaces. The framing you start with quietly constrains every solution you'll consider afterward.",
+    layer2:
+      "This is a specific, more actionable case of a broader idea: your first framing of any problem is rarely neutral — it already encodes assumptions about where the fix must live. Before your next hard problem, try writing three different framings of it before generating a single solution. Which framing changes the answer the most?",
+    quiz: {
+      question:
+        "According to this reframing approach, why is a team's initial problem statement risky to treat as fixed?",
+      options: [
+        "Because initial problem statements are always factually incorrect.",
+        "Because the framing already constrains which solutions get considered, so a poor framing can make a solvable problem look unsolvable.",
+        "Because problem statements should never be written down.",
+        "Because only senior leadership is allowed to define problems.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The article's central claim is that framing acts as an invisible filter on the solution space — reframing the question is often what unlocks a solution that direct analysis of the original framing couldn't reach.",
+    },
+    related: ["L1", "J3"],
+    furtherReading: [
+      {
+        label: "To Solve a Tough Problem, Reframe It",
+        source: "Harvard Business Review",
+        url: "https://hbr.org/2024/01/to-solve-a-tough-problem-reframe-it",
+        type: "article",
+      },
+    ],
+    tags: ["Decision-Making", "First-Principles Thinking"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "L13",
+    clusterId: "L",
+    title: "The 5 Whys Method",
+    author: "Sakichi Toyoda / Toyota Production System",
+    year: 1930,
+    medium: "Framework",
+    category: "Root Cause Analysis",
+    thesis:
+      "Repeatedly asking 'why' about a problem — typically five times — peels back surface symptoms to reach the actual root cause, preventing teams from implementing fixes that address symptoms while leaving the underlying issue free to resurface.",
+    layer0:
+      "The first answer to 'why did this fail' is almost never the real cause. It's usually just the most visible symptom.",
+    layer1:
+      "Originating in the Toyota Production System, the method is mechanically simple: state the problem, ask why it happened, then ask why that answer happened, repeating roughly five times until you reach a cause that's actually actionable — usually a process or systemic gap rather than an individual mistake. A car won't start → the battery is dead → the alternator isn't charging it → the alternator belt is broken → the belt was never replaced on schedule → there's no preventive maintenance schedule. The fix for that last answer prevents recurrence; the fix for the first answer (a jump-start) doesn't.",
+    layer2:
+      "The discipline required is resisting the urge to stop at the second or third 'why,' where the answer often already feels satisfying enough to act on. The method works because organizations are structurally biased toward the fastest plausible explanation, not the truest one. Where in your own work did you stop asking 'why' one level too early?",
+    quiz: {
+      question:
+        "In the 5 Whys example (car won't start), why is fixing the alternator belt still an incomplete solution?",
+      options: [
+        "Because alternator belts are too expensive to replace regularly.",
+        "Because it doesn't address the deeper root cause — the absence of a preventive maintenance schedule — which means a similar failure can recur.",
+        "Because the car needed a new battery, not a new belt.",
+        "Because five whys is always excessive and three is sufficient.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The method's value is reaching the systemic cause (no maintenance schedule) rather than stopping at a proximate, individual-component cause (the belt) that would only prevent this one specific failure from recurring.",
+    },
+    related: ["L12", "M2"],
+    furtherReading: [
+      {
+        label: "5 Whys",
+        source: "Interaction Design Foundation",
+        url: "https://interaction-design.org/literature/topics/5-whys",
+        type: "article",
+      },
+    ],
+    tags: ["Decision-Making", "Incentives & Systems"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "L14",
+    clusterId: "L",
+    title: "Deductive vs. Inductive Reasoning",
+    author: "Khan Academy",
+    year: 2015,
+    medium: "Video lesson",
+    category: "Logic",
+    thesis:
+      "Deductive reasoning guarantees a true conclusion if the premises are true, while inductive reasoning only makes a conclusion probable — conflating the two leads people to treat strong patterns as proven certainties.",
+    layer0:
+      "\"All observed swans are white, therefore all swans are white\" feels airtight until you find one black swan. That's the entire difference between the two modes of reasoning in a single example.",
+    layer1:
+      "Deductive reasoning moves from general premises to a specific conclusion that is logically certain, provided the premises are true and the logic is valid (all men are mortal; Socrates is a man; therefore Socrates is mortal). Inductive reasoning moves from specific observations to a general conclusion that is probable, not certain, no matter how much supporting evidence accumulates — which is why induction is always vulnerable to a single disconfirming case.",
+    layer2:
+      "Most everyday reasoning, including most scientific reasoning, is inductive rather than deductive — which means most of what feels like 'proof' in daily life is really strong probabilistic confidence. Where are you treating an inductive pattern (this has always worked before) as if it were a deductive certainty?",
+    quiz: {
+      question:
+        "Why is inductive reasoning always vulnerable in a way deductive reasoning, applied correctly, is not?",
+      options: [
+        "Because inductive reasoning is never used in science.",
+        "Because inductive conclusions are only probable, not certain, so a single disconfirming observation can overturn them no matter how much prior evidence supported them.",
+        "Because deductive reasoning doesn't require any premises.",
+        "Because inductive reasoning always produces false conclusions.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "This is the classic 'black swan' vulnerability of induction: unlike valid deduction from true premises, no quantity of confirming observations makes an inductive conclusion logically certain.",
+    },
+    related: ["L11", "AC2"],
+    furtherReading: [
+      {
+        label: "Deductive reasoning",
+        source: "Khan Academy",
+        url: "https://khanacademy.org/math/algebra-home/alg-series-and-induction/alg-deductive-and-inductive-reasoning/v/deductive-reasoning-1",
+        type: "video",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "D13",
+    clusterId: "D",
+    title: "20 Golden Rules from Peter Lynch",
+    author: "Peter Lynch",
+    year: 1989,
+    medium: "Book excerpt",
+    category: "Investing",
+    thesis:
+      "Amateur investors have structural advantages over Wall Street professionals — the freedom to hold five stocks instead of five hundred, to ignore quarterly performance pressure, and to research industries they actually understand — and Lynch's rules are mostly about not squandering that edge.",
+    layer0:
+      "Your investor's edge isn't something you get from Wall Street experts. It's something you already have — as long as you don't throw it away chasing what the herd is doing.",
+    layer1:
+      "Several rules cluster around one insight: professional money managers are structurally disadvantaged by career risk and herd behavior, which the amateur investor doesn't share. Others are about company-level discipline — never invest in a company without understanding its finances, avoid hot stocks in hot industries (great companies in unglamorous, cold industries are consistently better performers), and study more companies rather than fewer, since 'if you study 10 companies, you'll find one for which the story is better than expected. If you study 50, you'll find five.' Lynch also stresses time horizon: 'time is on your side when you own shares of superior companies' and volatility itself ('a stock market decline is as routine as a January blizzard in Colorado') should be treated as opportunity, not crisis.",
+    layer2:
+      "The rule that cuts hardest against instinct is rule six: there is no correlation between a company's operational success and its stock's success over a few years, but a 100% correlation over the long term. Most investing mistakes come from confusing short-term stock price with long-term business performance. Which of your own holdings are you judging on the wrong time horizon right now?",
+    quiz: {
+      question:
+        "According to Lynch, what is the relationship between a company's operational success and its stock price success?",
+      options: [
+        "There is a perfect correlation at every timescale, including day to day.",
+        "Over a few years there's essentially no correlation, but over the long term the correlation approaches 100%.",
+        "Stock price success always precedes operational success.",
+        "The two are entirely unrelated at any timescale.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "This is one of Lynch's most quoted rules: short-term stock price movement is noisy and often disconnected from the underlying business, but over a long enough horizon, the company's actual performance is what determines the stock's outcome.",
+    },
+    related: ["D1", "D2"],
+    furtherReading: [
+      {
+        label: "20 Golden Rules from Peter Lynch",
+        source: "One Up on Wall Street (excerpt)",
+        url: "https://x.com/QCompounding/status/1909637977279508601",
+        type: "article",
+      },
+    ],
+    tags: ["Markets & Narrative", "Compounding & Patience"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "P7",
+    clusterId: "P",
+    title: "Naval's Life Formulas",
+    author: "Naval Ravikant",
+    year: 2008,
+    medium: "Book excerpt",
+    category: "Personal Philosophy",
+    thesis:
+      "Naval treats life outcomes as decomposable equations rather than vague aspirations — happiness, wealth, and income each break down into a small number of controllable inputs, making an otherwise abstract goal into something you can audit and act on directly.",
+    layer0:
+      "\"These are not definitions — these are algorithms for success.\" Naval reduces happiness itself to an equation: Health + Wealth + Good Relationships.",
+    layer1:
+      "Each formula decomposes further: Health = Exercise + Diet + Sleep. Wealth = Income + Wealth × (Return on Investment) — a compounding formula, not a static one. Income = Accountability + Leverage + Specific Knowledge, where Specific Knowledge is defined precisely as 'knowing how to do something society cannot yet easily train other people to do' — the thing that can't be outsourced or automated because it hasn't been codified. Leverage = Capital + People + Intellectual Property, the three multipliers that let one person's judgment scale beyond their own hours.",
+    layer2:
+      "Naval's own caveat matters as much as the formulas: 'these are notes to myself. Your frame of reference, and therefore your calculations, may vary.' The value isn't memorizing his specific breakdown — it's the habit of decomposing a vague life goal into named, separately-improvable variables. If you wrote your own formula for 'a good life' right now, what would the terms be?",
+    quiz: {
+      question:
+        "How does Naval define 'Specific Knowledge' in his Income formula?",
+      options: [
+        "Any knowledge learned in a formal degree program.",
+        "Knowledge of how to do something society cannot yet easily train other people to do.",
+        "Knowledge of financial markets specifically.",
+        "Any skill that can be fully automated by software.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Naval's specific definition ties directly to why it can't be commoditized: because it isn't yet teachable through standard institutions, it resists being copied or automated the way trainable skills can be.",
+    },
+    related: ["P1", "P2"],
+    furtherReading: [
+      {
+        label: "Life Formulas I (2008)",
+        source: "The Almanack of Naval Ravikant",
+        url: "https://x.com/RobDance_/status/1909607167084077412",
+        type: "article",
+      },
+    ],
+    tags: ["Wealth, Leverage & Judgment", "Compounding & Patience"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "O31",
+    clusterId: "O",
+    title: "Seven Stoic Principles to Simplify Life",
+    author: "Marcus Frick",
+    year: 2026,
+    medium: "Infographic",
+    category: "Stoicism",
+    thesis:
+      "A working Stoic practice compresses to seven paired principle-and-action-item combinations — from 'less is more' to 'you're not in control' — that translate 2,000-year-old maxims into weekly calendar audits and journaling habits.",
+    layer0:
+      "Stoic quotes are easy to like and hard to apply. This compilation pairs each one with a specific action so the philosophy has somewhere to land.",
+    layer1:
+      "The seven: Less Is More (Marcus Aurelius's 'is this necessary?', paired with auditing your calendar for meetings that could be an email), Question Everything (Socrates), Take Bold Action (Theodore Roosevelt's line that the man who never makes a mistake never does anything, paired with negotiating a raise or scaring yourself on purpose), Be Patient With Results, Urgent With Action (Charlie Munger), Do Work That Matters (Marcus Aurelius's mortality-check question, 'am I afraid of death because I won't be able to do this anymore?'), You're Not in Control (Marcus Aurelius, paired with journaling the dichotomy of control — what you can and can't influence), and Want What Is Right (Seneca).",
+    layer2:
+      "What makes this more than a quote collage is the consistent action-item structure — each principle is paired with something concrete enough to actually do this week, which is the difference between finding Stoicism inspiring and using it. Which of the seven action items would actually change something if you did it today?",
+    quiz: {
+      question:
+        "What structural feature distinguishes this compilation from a typical inspirational Stoic-quotes list?",
+      options: [
+        "It only includes quotes from Marcus Aurelius.",
+        "Each Stoic principle is paired with a specific, concrete action item to apply it immediately.",
+        "It rejects all classical Stoic sources in favor of modern reinterpretations.",
+        "It is written entirely in the first person as a diary.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The compilation's format pairs each quoted principle with an 'action item' — a specific, doable step — which is what separates it from a purely inspirational quote list.",
+    },
+    related: ["O1", "O2"],
+    furtherReading: [
+      {
+        label: "7 Stoic Principles I've Used to Simplify My Life",
+        source: "X (Twitter) infographic",
+        url: "https://x.com/aliscodes/status/1909515304318738758",
+        type: "article",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Craft & Deep Work"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "Q14",
+    clusterId: "Q",
+    title: "38 Letters from J.D. Rockefeller to His Son",
+    author: "John D. Rockefeller (compiled)",
+    year: 2026,
+    medium: "Book summary",
+    category: "Business Philosophy",
+    thesis:
+      "Rockefeller's advice to his son treats character, patience, and integrity as the actual load-bearing structure of durable wealth — with specific claims that reputation, saving habits, and daily small decisions compound more than any single deal.",
+    layer0:
+      "\"The vast majority of people never aim high enough — they doom themselves to mediocrity before they've even begun.\" That's rule one of thirty-eight.",
+    layer1:
+      "Recurring themes across the list: character is formed in small daily decisions, not grand declarations — what you do when no one is watching defines you. Patience with investments separates the wealthy from the merely ambitious, since true fortunes require time to compound. Reputation takes decades to build and can be destroyed in a single day. And a specific claim worth sitting with: fortunes are rarely lost in one catastrophe but rather through a thousand tiny leaks — pay attention to small expenses.",
+    layer2:
+      "The letters read as a rebuttal to the 'one big break' theory of wealth — nearly every rule points toward compounding, consistency, and reputation instead of a single lucky deal. Which of the thirty-eight would your own daily habits actually fail if tested against it honestly?",
+    quiz: {
+      question:
+        "According to this list, how are fortunes typically lost, more often than not?",
+      options: [
+        "Through one single catastrophic financial event.",
+        "Through a thousand tiny, unwatched leaks in spending rather than one big loss.",
+        "Through inheritance disputes exclusively.",
+        "Fortunes are never actually lost once accumulated.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "This is a specific, named claim in the list: rule 20 states fortunes are 'rarely lost in one catastrophe but rather through a thousand tiny leaks' — reframing wealth preservation as a matter of consistent small discipline rather than avoiding one big mistake.",
+    },
+    related: ["Q1", "Q13"],
+    furtherReading: [
+      {
+        label: "38 Letters from J.D. Rockefeller (favorite ideas)",
+        source: "X (Twitter) compilation",
+        url: "https://x.com/thejustinmecham/status/1909588401281810839",
+        type: "article",
+      },
+    ],
+    tags: ["Compounding & Patience", "Wealth, Leverage & Judgment"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "J37",
+    clusterId: "J",
+    title: "The Feynman Technique and the Leitner System",
+    author: "Josh Sanders (compiling Feynman and Leitner)",
+    year: 2026,
+    medium: "Infographic",
+    category: "Learning Methods",
+    thesis:
+      "Genuine understanding is tested by whether you can explain a concept simply enough for a child, and genuine retention is engineered by spacing review intervals according to how well you already know the material — two separate mechanisms that most study habits conflate into one vague 'studying' activity.",
+    layer0:
+      "If you can't explain it simply, you don't understand it yet. That's the entire Feynman Technique in one sentence.",
+    layer1:
+      "The Feynman Technique has four steps: select a topic and study it, explain it in plain language as if teaching a child, identify the specific gaps where your explanation breaks down or gets vague, then return to the source material to fill exactly those gaps. The Leitner System handles the separate problem of retention over time: flashcards move between boxes reviewed at different frequencies (3x/week, 2x/week, 1x/week) based on how reliably you're recalling them, so your limited review time concentrates on what you're actually failing rather than re-reviewing what you already know cold.",
+    layer2:
+      "The two techniques solve different problems and are often wrongly treated as interchangeable: Feynman tests whether you understand a concept's structure, Leitner optimizes when you revisit a fact you already understand so it doesn't decay. Which of your current 'studying' habits is actually neither — just passive exposure with no explanation and no spacing?",
+    quiz: {
+      question:
+        "What distinct problem does the Leitner System solve, separate from the Feynman Technique?",
+      options: [
+        "It tests whether you actually understand a concept's underlying structure.",
+        "It schedules review intervals based on how reliably you recall material, concentrating limited study time on what you're actually failing rather than what you already know.",
+        "It replaces the need to ever review material more than once.",
+        "It is only useful for language learning, not other subjects.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Feynman targets comprehension (do you understand it); Leitner targets retention over time (will you still remember it), using spaced, frequency-adjusted review to allocate effort efficiently.",
+    },
+    related: ["J34", "N13"],
+    furtherReading: [
+      {
+        label: "Master the Art of Learning — How to Remember and Retain Knowledge",
+        source: "X (Twitter) infographic",
+        url: "https://x.com/aaditsh/status/1909595121579962847",
+        type: "article",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "E3",
+    clusterId: "E",
+    title: "EBITDA, Decomposed",
+    author: "Abir Haddoud",
+    year: 2026,
+    medium: "Infographic",
+    category: "Financial Analysis",
+    thesis:
+      "EBITDA strips out financing structure, tax jurisdiction, and accounting depreciation choices to expose a company's core operating performance — which makes it useful for comparing companies fairly, but only if you separately track the real cash flow and capital expense risks it deliberately ignores.",
+    layer0:
+      "Two companies with identical operations can report wildly different net income just because one carries more debt or depreciates its equipment differently. EBITDA is the attempt to see past that noise.",
+    layer1:
+      "Built as Net Income + Interest + Taxes + Depreciation + Amortization (or equivalently, Revenue minus operating expenses excluding D&A), EBITDA compares companies fairly across different capital structures, removes financing and tax-jurisdiction differences, and simplifies performance tracking over time. But it also has real blind spots: it isn't actual cash flow, it ignores working capital changes, it excludes capital expenditures entirely, and it can flatter companies with heavy ongoing capex needs (industries differ sharply — software runs 20-30% EBITDA margins, manufacturing runs 10-15%) by making them look more efficient than their true cash generation supports.",
+    layer2:
+      "The practical discipline is using EBITDA as one lens among several rather than the whole picture — checking cash flow alongside it, knowing your industry's typical margin band, and normalizing for one-time events and owner-specific expenses before comparing across companies. Where have you seen EBITDA used to make a capital-intensive business look healthier than its actual cash position?",
+    quiz: {
+      question:
+        "What is the primary blind spot of EBITDA as a performance metric?",
+      options: [
+        "It excludes revenue entirely from the calculation.",
+        "It is not actual cash flow and excludes capital expenditures, which can make capital-intensive businesses look more efficient than their true cash generation supports.",
+        "It cannot be calculated for private companies.",
+        "It only applies to companies with no debt.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "EBITDA deliberately strips out financing, tax, and depreciation effects to enable comparison, but that same stripping means it ignores real cash outflows like capital expenditure and working capital changes.",
+    },
+    related: ["E1", "E2"],
+    furtherReading: [
+      {
+        label: "EBITDA Explained",
+        source: "X (Twitter) infographic",
+        url: "https://x.com/PhilosophyMonk/status/1909159024559370300",
+        type: "article",
+      },
+    ],
+    tags: ["Markets & Narrative", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "A16",
+    clusterId: "A",
+    title: "You're Probably Too Early",
+    author: "Marc Andreessen (via The Startup Archive)",
+    year: 2026,
+    medium: "Essay",
+    category: "Startups",
+    thesis:
+      "Founders are far more likely to fail from being too early — building the right idea before the infrastructure or market is ready — than from being too late, which means a founder's own sense of 'someone must already be doing this' is a poor signal to act on.",
+    layer0:
+      "\"The great founders almost always feel like they're too late, and you're almost always too early.\" — Marc Andreessen.",
+    layer1:
+      "The essay's evidence is a graveyard of correctly-timed ideas executed too soon: General Magic tried to build the iPhone in the 1990s, WebVan had Instacart's model a decade early, SixDegrees predated Facebook and LinkedIn by years, Pets.com flamed out before Chewy made online pet retail viable, and the Newton preceded the iPad. In each case the vision was largely right — the problem was that supporting infrastructure, consumer readiness, or execution capability hadn't caught up yet. Andreessen's proposed heuristic: if an idea was hot 3-4 years ago but didn't quite work, you're probably right on time now.",
+    layer2:
+      "The founder-level implication is uncomfortable: the instinct to abandon an idea because 'if this were good, someone would already be doing it successfully' is exactly backwards when the actual failure mode is timing, not vision. The startups that win aren't always first to see the future — they're first to make it work once the infrastructure exists. Is there an idea you shelved that might just have been early rather than wrong?",
+    quiz: {
+      question:
+        "According to Andreessen's heuristic in this essay, what suggests an idea's timing might now be right?",
+      options: [
+        "The idea has never been attempted by anyone before.",
+        "The idea was 'hot' 3-4 years ago but the attempt at the time didn't quite work — suggesting infrastructure and market readiness may have since caught up.",
+        "The idea requires no new technology whatsoever.",
+        "A large company has already built a competing product.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The heuristic treats a prior near-miss as a timing signal: if the vision was validated as directionally right a few years ago but failed on execution or infrastructure, the gap has often since closed.",
+    },
+    related: ["A15", "A1"],
+    furtherReading: [
+      {
+        label: "You're Probably Too Early",
+        source: "The Startup Archive Daily Founder Series",
+        url: "https://x.com/Book_therapy223/status/1908912063306486058",
+        type: "article",
+      },
+    ],
+    tags: ["Startups & Founders", "Tech Adoption & Disruption"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "N14",
+    clusterId: "N",
+    title: "Put the Pressure on Yourself",
+    author: "Thomas Edison (quoted); compiled excerpt",
+    year: 2026,
+    medium: "Book excerpt",
+    category: "Self-Discipline",
+    thesis:
+      "External motivation rarely arrives on schedule, so the people who actually reach their potential are the roughly 2% who can work without supervision — putting pressure on themselves rather than waiting for someone else to demand it of them.",
+    layer0:
+      "\"The first requisite for success is the ability to apply your physical and mental energies to one problem incessantly without growing weary.\" — Thomas Edison.",
+    layer1:
+      "The excerpt's central image: most people are waiting for a bus on a street where no buses pass — waiting for someone to arrive and motivate them into the person they wish they could be. No one is coming. The claim that only about 2% of people can work entirely without supervision is used to define leadership itself: the capacity for self-directed pressure, not any formal title.",
+    layer2:
+      "The uncomfortable test this poses is specific and checkable: are you currently waiting for a condition (more motivation, better circumstances, someone else's permission) that isn't going to arrive on its own? What's the one problem you'd apply incessant energy to if you stopped waiting for the bus?",
+    quiz: {
+      question:
+        "What does this excerpt claim distinguishes the roughly 2% of people it calls 'leaders'?",
+      options: [
+        "Having a formal leadership title or position.",
+        "The ability to work entirely without external supervision or motivation, applying self-generated pressure instead.",
+        "Being born with exceptional natural talent.",
+        "Having access to more resources than average.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The excerpt explicitly defines this group by their capacity for self-directed work rather than any formal role — the willingness to put pressure on themselves rather than wait for external motivation.",
+    },
+    related: ["N1", "N12"],
+    furtherReading: [
+      {
+        label: "Put the Pressure on Yourself",
+        source: "Book excerpt (X/Twitter repost)",
+        url: "https://x.com/thejustinmecham/status/1909226034849104340",
+        type: "article",
+      },
+    ],
+    tags: ["Craft & Deep Work", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "U14",
+    clusterId: "U",
+    title: "Nine Psychology Concepts Marketers Exploit",
+    author: "Pierre Herubel",
+    year: 2026,
+    medium: "Infographic",
+    category: "Marketing Psychology",
+    thesis:
+      "Marketing works by triggering nine well-documented cognitive effects — halo effect, loss aversion, social proof, confirmation bias, scarcity, anchoring, goal-gradient, mere-exposure, and authority bias — rather than through rational persuasion about product merit.",
+    layer0:
+      "Consumers rarely decide with pure logic. Nine specific, named psychological levers do most of the actual work.",
+    layer1:
+      "Loss aversion (fear of losing something motivates more than the prospect of gaining it) and anchoring (the first number you see distorts every judgment after it) are the two most exploited in pricing pages. Social proof and authority bias both borrow credibility from other people rather than the product itself. The goal-gradient effect — people accelerate effort as they approach a finish line — is why progress bars and 'almost there' loyalty programs work.",
+    layer2:
+      "Each of these is independently documented in the psychology literature; this compilation packages them as a marketer's toolkit, not new research. Which one have you personally been moved by in the last week without noticing it was happening?",
+    quiz: {
+      question: "What does the 'goal-gradient effect' predict about human motivation?",
+      options: [
+        "That effort stays constant regardless of proximity to a goal.",
+        "That people accelerate their effort as they get closer to completing a goal.",
+        "That people lose motivation entirely once a goal is 90% complete.",
+        "That goals only motivate people who set them publicly.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "This is why progress bars and near-complete loyalty cards work: proximity to completion itself increases motivation, independent of the reward's actual value.",
+    },
+    related: ["U1", "U2"],
+    furtherReading: [
+      {
+        label: "9 Psychology Concepts for Marketing (user-provided image; exact original post unverified)",
+        source: "Pierre Herubel, infographic",
+        url: "https://x.com/search?q=%229%20Psychology%20Concepts%20for%20Marketing%22%20Pierre%20Herubel",
+        type: "article",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Power & Persuasion"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "E4",
+    clusterId: "E",
+    title: "Revenue, Profit, and Cash Are Not the Same Number",
+    author: "Nathan Liao, CMA",
+    year: 2026,
+    medium: "Infographic",
+    category: "Financial Literacy",
+    thesis:
+      "Revenue, profit, and cash measure three different things at three different points in a transaction's lifecycle, and conflating them is the single most common misconception in reading a business's financial health.",
+    layer0:
+      "A $500 bag sale can simultaneously mean $500 in revenue, $50 in profit, and a $40 increase in cash — three true numbers from one transaction, each answering a different question.",
+    layer1:
+      "Revenue is the top line: everything earned before any cost is deducted. Profit is what's left after expenses — gross profit after cost of goods sold, net profit after every operating expense, tax, and interest on top of that. Cash is the actual liquid money on hand, which tracks separately because of timing: delayed payments, prepayments, and financing activity mean cash movement often doesn't match profit in the same period.",
+    layer2:
+      "The summary line worth internalizing: revenue is your top line, profit indicates operational efficiency, and cash is the liability that actually sustains the company day to day — a profitable business can still die from a cash crunch. Which of the three would you check first if you were deciding whether to trust a company's numbers?",
+    quiz: {
+      question:
+        "Why can a company be profitable on paper but still fail from a cash problem?",
+      options: [
+        "Because profit and cash are always identical figures.",
+        "Because profit is an accounting measure while cash tracks actual liquid money on hand, and timing gaps (delayed payments, prepayments) mean the two can diverge significantly.",
+        "Because revenue always equals cash by definition.",
+        "Because cash flow is irrelevant to business survival.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Profit reflects accounting performance over a period; cash reflects actual liquidity at a moment in time. A company can report a profit while still running out of cash if receivables are delayed or obligations come due faster than collections.",
+    },
+    related: ["E1", "E3"],
+    furtherReading: [
+      {
+        label: "Revenue vs Profit vs Cash: What's the Difference? (user-provided image; exact original post unverified)",
+        source: "Nathan Liao, CMA, infographic",
+        url: "https://x.com/search?q=%22Revenue%20vs%20Profit%20vs%20Cash%22%20Nathan%20Liao",
+        type: "article",
+      },
+    ],
+    tags: ["Markets & Narrative", "Decision-Making"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "E5",
+    clusterId: "E",
+    title: "How to Select a Valuation Method",
+    author: "BojanFin.com",
+    year: 2026,
+    medium: "Infographic",
+    category: "Valuation",
+    thesis:
+      "The correct valuation method depends jointly on a company's lifecycle stage and the purpose of the valuation — the same startup might be valued by the Berkscore method when raising funds and by a DCF when being acquired, because different purposes demand different assumptions.",
+    layer0:
+      "There's no single 'correct' way to value a company. The right method changes depending on why you're valuing it and how mature the business is.",
+    layer1:
+      "The framework crosses two axes: company lifecycle (startup through decline) against valuation purpose (selling, buying, funding, taxation, restructuring). A startup being funded typically uses the Berkus method (qualitative risk-factor scoring, since there's no revenue history to model). A mature, stable company being sold might use EV/EBITDA multiples. A company in decline being liquidated defaults to net book value or price-to-book, since going-concern methods like DCF stop making sense once the business isn't expected to keep operating.",
+    layer2:
+      "The practical error this framework corrects is applying a single favorite method (DCF is the common offender) to every situation regardless of fit — a DCF on a pre-revenue startup is mostly assumption-stacking dressed up as precision. Which valuation method have you seen misapplied to a situation it wasn't built for?",
+    quiz: {
+      question:
+        "Why would a pre-revenue startup typically be valued using the Berkus method rather than a DCF?",
+      options: [
+        "Because DCF is illegal to use on startups.",
+        "Because DCF requires projecting future cash flows, which is mostly unfounded assumption-stacking without a revenue history to anchor it, while Berkus scores qualitative risk factors instead.",
+        "Because the Berkus method always produces a higher valuation.",
+        "Because startups don't have any assets to value.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "DCF's reliability depends on having a reasonable basis for projecting future cash flows — something a pre-revenue company lacks, which is why lifecycle-appropriate methods like Berkus substitute qualitative risk scoring instead.",
+    },
+    related: ["E1", "E3"],
+    furtherReading: [
+      {
+        label: "How to Select Valuation Method",
+        source: "BojanFin.com (Financial Modeling and FP&A Program)",
+        url: "https://bojanfin.com",
+        type: "article",
+      },
+    ],
+    tags: ["Markets & Narrative", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "Q15",
+    clusterId: "Q",
+    title: "Active Listening: What Not to Say",
+    author: "George Stern",
+    year: 2026,
+    medium: "Infographic",
+    category: "Communication",
+    thesis:
+      "Most well-intentioned listening responses ('I know exactly how you feel,' 'you shouldn't feel that way') actually shut a conversation down because they assert the listener's authority over the speaker's experience — the fix is consistently responding with a question that hands control back.",
+    layer0:
+      "\"I know exactly what you mean\" sounds supportive. It actually tells the other person their experience is already understood, which ends the conversation instead of opening it.",
+    layer1:
+      "The framework pairs common dismissive responses with the reason they fail and a better alternative: instead of 'that doesn't make any sense,' ask 'can you help me understand that better?'; instead of 'I already know where you're going with this,' say 'go ahead — I want to hear the full story.' The common failure pattern across all of them is taking control of the conversation's direction or meaning instead of leaving it with the speaker.",
+    layer2:
+      "The pattern worth noticing in your own speech: nearly every 'bad' response in this list is well-intentioned — it just centers the listener's judgment instead of the speaker's experience. Which of these phrases have you used this week without noticing it shut someone down?",
+    quiz: {
+      question:
+        "What common failure connects most of the dismissive active-listening responses in this framework?",
+      options: [
+        "They are all too long and detailed.",
+        "They assert the listener's own judgment or authority over the speaker's experience instead of leaving control of the conversation with the speaker.",
+        "They only fail when used with strangers, not friends.",
+        "They are grammatically incorrect.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Phrases like 'I know exactly how you feel' or 'you shouldn't feel that way' substitute the listener's interpretation for the speaker's own account — the fix consistently redirects control back with an open question.",
+    },
+    related: ["Q1", "Q9"],
+    furtherReading: [
+      {
+        label: "Active Listening: What Not to Say... and What To Say Instead (user-provided image; exact original post unverified)",
+        source: "George Stern, infographic",
+        url: "https://x.com/search?q=%22Active%20Listening%22%20%22What%20Not%20to%20Say%22%20George%20Stern",
+        type: "article",
+      },
+    ],
+    tags: ["Power & Persuasion", "Meaning & Self"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "Q16",
+    clusterId: "Q",
+    title: "Fifty Ways to Fuel a Conversation",
+    author: "Debra Fine",
+    year: 2005,
+    medium: "Book",
+    category: "Communication",
+    thesis:
+      "Small talk is a learnable set of specific behaviors — being first to say hello, using names, asking open-ended questions, showing genuine curiosity — rather than a fixed personality trait some people simply have and others lack.",
+    layer0:
+      "Debra Fine built an entire career on the claim that conversational ease is a skill, not a personality type — and that most 'naturally' good conversationalists are actually running a specific, learnable set of behaviors.",
+    layer1:
+      "Recurring patterns across the fifty: initiating first (be the first to say hello, introduce yourself, offer a handshake) removes the ambiguity that kills most conversations before they start. Using names and asking follow-up questions signals genuine interest more reliably than any single clever line. And several rules target listening over talking — letting others do more of it, asking open-ended questions, and demonstrating you're listening by restating what you heard.",
+    layer2:
+      "The book's underlying premise cuts against the common excuse of being 'just an introvert' — most of what reads as natural charisma is a set of specific, copyable habits rather than an innate trait. Which of the fifty would change your next conversation with a stranger the most?",
+    quiz: {
+      question:
+        "What is the central premise behind treating small talk as a learnable skill rather than a fixed trait?",
+      options: [
+        "That charismatic people are born, not made, and the skill can't actually be taught.",
+        "That conversational ease breaks down into specific, copyable behaviors (initiating first, using names, asking open questions) that anyone can practice.",
+        "That small talk should always be avoided in favor of deep conversation.",
+        "That only professional networkers benefit from these techniques.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Fine's framing treats what looks like natural charisma as a decomposable skill set — specific, practiceable behaviors rather than an innate personality trait.",
+    },
+    related: ["Q1", "Q15"],
+    furtherReading: [
+      {
+        label: "50 Ways to Fuel a Conversation (image excerpt; edition/page unverified)",
+        source: "The Fine Art of Small Talk by Debra Fine",
+        url: "https://www.google.com/search?q=%22The+Fine+Art+of+Small+Talk%22+Debra+Fine",
+        type: "article",
+      },
+    ],
+    tags: ["Power & Persuasion", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "J38",
+    clusterId: "J",
+    title: "The Johari Window and the DiSC Model",
+    author: "Joseph Luft & Harry Ingham (Johari); William Marston (DiSC)",
+    year: 1955,
+    medium: "Infographic",
+    category: "Interpersonal Psychology",
+    thesis:
+      "Self-awareness and team dynamics can both be mapped with simple two-axis models — the Johari Window splits what's known/unknown to self versus others, while DiSC categorizes behavioral style along dominance and sociability — giving structured vocabulary to traits that otherwise stay vague.",
+    layer0:
+      "There are things about you that you know and others don't, and things about you that others see and you don't. The Johari Window is just a grid that makes that asymmetry visible.",
+    layer1:
+      "The Johari Window has four quadrants: Open (known to self and others), Hidden (known to self, hidden from others), Blind (visible to others, unknown to self — the specific target of honest feedback), and Unknown (neither party has access). The DiSC model separately maps behavioral style on Dominance, Influence, Steadiness, and Conscientiousness — used practically to predict how someone prefers to communicate and make decisions under pressure.",
+    layer2:
+      "The Blind quadrant is the most practically useful of the four, since it's the only one that can only be closed by someone else's honest feedback — no amount of self-reflection alone reaches it. When was the last time you actively asked someone to tell you something from your own blind spot?",
+    quiz: {
+      question:
+        "Which quadrant of the Johari Window can only be reduced through other people's feedback, not through self-reflection alone?",
+      options: [
+        "The Open quadrant.",
+        "The Blind quadrant — traits others can see about you that you can't see yourself.",
+        "The Hidden quadrant.",
+        "The Unknown quadrant.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The Blind quadrant is defined specifically as information others have access to that you don't — by definition, only external feedback can shrink it, unlike the Hidden quadrant which you can choose to disclose yourself.",
+    },
+    related: ["J3", "J37"],
+    furtherReading: [
+      {
+        label: "Personal Development: Johari Window, DiSC, Active Listening, EI",
+        source: "X (Twitter) infographic, curated by Igor Buinevici",
+        url: "https://x.com/Igor_Buinevici/status/1941138480903688285",
+        type: "article",
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AE3",
+    clusterId: "AE",
+    title: "How to Be a Great Storyteller",
+    author: "Unattributed compilation",
+    year: 2026,
+    medium: "Infographic",
+    category: "Storytelling",
+    thesis:
+      "Effective storytelling follows a consistent structural pattern — relatable characters, compelling conflict, a clear beginning-middle-end arc, and a strong ending — which explains why stories persuade more reliably than raw data even when the data is stronger.",
+    layer0:
+      "People remember stories better than raw data and make decisions based on how they feel, not just what they're told — which is why the same fact lands differently packaged as a story versus a statistic.",
+    layer1:
+      "The recurring structural elements: a relatable protagonist the audience can empathize with, compelling conflict that creates tension and drives the narrative forward, a clear arc (beginning, middle, end) rather than a meandering account, and a strong ending that leaves a takeaway or emotional resonance rather than trailing off. In applied storytelling (business, marketing), the same structure gets reused: highlighting a customer's transformation, pairing data with a human narrative, or using a 'twist ending' to keep attention.",
+    layer2:
+      "The mechanism worth noting is why story beats data at all — conflict and character create emotional stakes that pure statistics don't, and people act on emotional stakes more reliably than on abstract numbers. Where in your own communication are you leading with data when a short story would land harder?",
+    quiz: {
+      question:
+        "According to this framework, why does storytelling tend to be more persuasive than presenting raw data alone?",
+      options: [
+        "Because data is always factually incorrect.",
+        "Because stories create emotional stakes through character and conflict, and people tend to act on emotional stakes more reliably than on abstract numbers.",
+        "Because storytelling requires no supporting evidence at all.",
+        "Because audiences cannot process numerical information.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The structural elements (character, conflict, arc) work together to create emotional investment, which is what drives action and memory more reliably than statistics presented without narrative framing.",
+    },
+    related: ["AE1", "AE2"],
+    furtherReading: [
+      {
+        label: "How to Be a Great Storyteller (user-provided image; no author credited, original post unverified)",
+        source: "Unattributed infographic",
+        url: "https://x.com/search?q=%22How%20to%20Be%20a%20Great%20Storyteller%22%20infographic",
+        type: "article",
+      },
+    ],
+    tags: ["Power & Persuasion", "Craft & Deep Work"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "M8",
+    clusterId: "M",
+    title: "Friendship as Negative ROI",
+    author: "Pankaj (the2ndfloorguy)",
+    year: 2026,
+    medium: "X (Twitter) Article",
+    category: "Social Systems",
+    thesis:
+      "Treating friendship formation as a quantifiable investment — tracking the roughly 128-192 hours it takes to build a deep friendship from scratch against a fixed personal capacity for close relationships — makes an uncomfortable case that most new-friendship attempts are a worse use of time than deepening existing ones.",
+    layer0:
+      "128 to 192 hours to build one meaningful friendship from scratch, a roughly 70% chance it fails within two years anyway, versus investing that same time in friendships that already cleared that bar.",
+    layer1:
+      "Pankaj built a personal tracking system logging contact hours, trust-building time, and relationship depth across six new-friendship attempts from 2019-2025. His numbers: initial trust-baseline takes 45-60 hours over 3-6 months, most attempts don't survive that phase; reaching real vulnerability depth takes another 80-120 hours over 12-18 months. His core claim is that relationship capacity is fixed — he can maintain roughly 5-8 deep relationships and 10-12 meaningful ones — so every new person added either displaces an existing one or dilutes all of them.",
+    layer2:
+      "He's explicit that this is 'rough math, small sample, personal dataset — take it as perspective, not proof,' which is exactly the right level of confidence to hold it at. The provocative part isn't the specific numbers, it's the reframe: if relationship capacity really is fixed, then saying yes to a new person is also implicitly saying no to depth with an existing one. Does your own social life actually reflect a fixed-capacity model, or are you quietly assuming you have infinite bandwidth?",
+    quiz: {
+      question:
+        "What is the central mechanism behind Pankaj's argument that adding new friends can be a net negative?",
+      options: [
+        "New friends are statistically more likely to betray you than old ones.",
+        "Relationship capacity is treated as fixed, so time invested in a new friendship is time necessarily displaced from deepening an existing one.",
+        "New friendships are illegal to track using personal data systems.",
+        "He argues no one should ever make new friends under any circumstances.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The core reframe is opportunity cost: since he treats his capacity for deep relationships as fixed, hours spent building a new friendship (with roughly a 70% failure rate within two years, by his numbers) are hours not spent compounding an existing one with already-proven odds.",
+    },
+    related: ["M1", "N12"],
+    furtherReading: [
+      {
+        label: "i tracked my relationships for 6 years. new friends are negative roi. here is the math.",
+        source: "X (Twitter) Article",
+        url: "https://x.com/the2ndfloorguy/status/2023377751374188903",
+        type: "article",
+      },
+    ],
+    tags: ["Decision-Making", "Meaning & Self"],
+    epistemicStatus: "Speculative",
+  },
+  {
+    id: "T5",
+    clusterId: "T",
+    title: "35 Things I Know At 35 I Wish I Knew At 25",
+    author: "Sahil Bloom",
+    year: 2026,
+    medium: "X (Twitter) Article",
+    category: "Self-Development",
+    thesis:
+      "A birthday-prompted reflection compiling 35 life lessons that cluster around a small number of repeated themes — action beats information-gathering, nobody is watching as closely as you fear, and durable things take longer to build than shortcuts promise.",
+    layer0:
+      "\"Nobody cares\" is rule four. Not as cynicism — as permission. When you're winning, nobody cares. When you're losing, nobody cares. So the thing you've always wanted to do: go do it.",
+    layer1:
+      "The 35 lessons compress into a handful of recurring mechanisms: dopamine from action beats dopamine from information-gathering (rule 5), reliability beats occasional brilliance (rule 29), 'anything above zero compounds' so consistency beats perfection (rule 11), and the most repeated idea across the whole list — that real, durable things (careers, relationships, health) take a long time to build and chasing shortcuts leads to peril (rule 14). Bloom also flags a specific failure pattern: 'life will test you with the same challenge until you learn the lesson' — the same fight in every relationship, the same burnout in every job — until the underlying pattern actually gets addressed.",
+    layer2:
+      "The honest tension in a list like this is that any single lesson sounds like generic self-help, but the accumulation across 35 has more evidential weight — it's one person's attempt to name the patterns that kept recurring across a full decade. Which of the 35 is currently the one your own life is testing you on repeatedly?",
+    quiz: {
+      question:
+        "What does Bloom mean by 'life will test you with the same challenge until you learn the lesson'?",
+      options: [
+        "That bad luck is randomly distributed and unrelated to personal patterns.",
+        "That recurring problems (the same fight in every relationship, the same burnout in every job) tend to persist until the underlying personal pattern causing them is actually addressed.",
+        "That life gets easier automatically after age 30.",
+        "That every challenge is unique and never repeats.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "This lesson frames recurring struggles as diagnostic rather than random — the same category of problem showing up across different contexts (relationships, jobs, pursuits) is treated as a signal that the internal pattern, not the external circumstance, is the actual variable to fix.",
+    },
+    related: ["T1", "T2"],
+    furtherReading: [
+      {
+        label: "35 Things I Know At 35 I Wish I Knew At 25",
+        source: "X (Twitter) Article",
+        url: "https://x.com/SahilBloom/status/2010376554199572482",
+        type: "article",
+      },
+    ],
+    tags: ["Meaning & Self", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "O32",
+    clusterId: "O",
+    title: "The Empty Boat",
+    author: "Zhuangzi (classical parable)",
+    year: -300,
+    medium: "Parable",
+    category: "Taoism",
+    thesis:
+      "Anger at being wronged usually depends on believing another person intended it — the same collision that enrages you when caused by a person barely registers when caused by an empty, driverless boat, which means most anger is really a reaction to perceived intention, not to the harm itself.",
+    layer0:
+      "If a boat with no one steering it drifts into yours, you don't get angry — you just push it away. If a person is steering it, you shout. The boat did the exact same damage either way.",
+    layer1:
+      "The classical Zhuangzi parable: a man crossing a river gets furious when another boat rams his — until he realizes the second boat is empty, with no one aboard, and his anger instantly dissolves into mere annoyance at circumstance. The parable's argument is that the *event* was identical in both cases; only the presence of a perceived intentional actor changed the emotional response. The practical extension: much of what enrages people about other drivers, colleagues, or strangers assumes a level of deliberate intent that usually isn't there — most people bumping into you, cutting you off, or being curt are 'empty boats,' reacting to their own pressures rather than targeting you specifically.",
+    layer2:
+      "Treating people as 'empty boats' more often — assuming distraction or their own bad day rather than malice — doesn't excuse harmful behavior, but it changes the emotional cost of it to you. Which recent frustration would dissolve if you genuinely believed the other person wasn't steering at you on purpose?",
+    quiz: {
+      question:
+        "In the Empty Boat parable, what specifically causes the man's anger to disappear once he sees the second boat is empty?",
+      options: [
+        "He realizes his own boat wasn't actually damaged.",
+        "He realizes there is no intentional actor behind the collision — the harm was identical, but the absence of perceived intent removes the target for his anger.",
+        "He decides to no longer care about his boat at all.",
+        "The empty boat apologizes to him.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The parable isolates intention as the actual variable driving anger — the physical event (a collision) stays constant, but removing a perceived intentional agent behind it removes the anger almost entirely.",
+    },
+    related: ["O1", "O31"],
+    furtherReading: [
+      {
+        label: "The Empty Boat Mindset",
+        source: "X (Twitter) visual thread (paraphrasing the classical Zhuangzi parable)",
+        url: "https://x.com/YourPrimePath/status/2007762244202107104",
+        type: "article",
+      },
+    ],
+    tags: ["Philosophy & the Self", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "L15",
+    clusterId: "L",
+    title: "Negotiate Like a CEO",
+    author: "Eric Partaker (compiling Lewicki, Fisher, Ury, Hiam)",
+    year: 2026,
+    medium: "Infographic",
+    category: "Negotiation",
+    thesis:
+      "Effective negotiation combines four established frameworks — a four-phase structure, a clear BATNA (walk-away alternative), a relationship-versus-outcome matrix for choosing your approach, and the Harvard Principled Negotiation method of separating people from the problem — rather than relying on instinct or aggression alone.",
+    layer0:
+      "The strongest position in any negotiation isn't a better argument — it's a better walk-away option. That's the entire logic of BATNA (Best Alternative to a Negotiated Agreement).",
+    layer1:
+      "The four phases (Roy Lewicki): preparation (research and define goals and BATNA), bargaining (propose and counter-propose), information exchange (share needs and understand the other side's), and commitment (finalize terms). BATNA (Fisher and Ury) sets your walk-away point and defines the ZOPA — the Zone of Possible Agreement — the overlapping range between both parties' acceptable terms where a deal can actually happen. The Negotiation Matrix (Lewicki and Hiam) maps five approaches — competing, collaborating, compromising, accommodating, avoiding — based on how much you value the outcome versus the relationship. And the Harvard Principled Negotiation Method (Fisher, Ury, Patton) insists on separating the person from the problem, focusing on underlying interests rather than rigid positions, generating multiple options for mutual gain, and grounding terms in objective criteria rather than raw leverage.",
+    layer2:
+      "The frameworks compound: knowing your BATNA tells you when to walk, the matrix tells you which posture fits the relationship at stake, and principled negotiation keeps the conversation from collapsing into a zero-sum fight over positions. Before your next negotiation, do you actually know your own walk-away point — or are you improvising it in the room?",
+    quiz: {
+      question: "What does BATNA (Best Alternative to a Negotiated Agreement) determine in a negotiation?",
+      options: [
+        "The exact price both sides must agree to.",
+        "Your walk-away point — the strongest position you have if the negotiation fails, which strengthens your leverage in the actual conversation.",
+        "How many rounds of bargaining are allowed.",
+        "The relationship history between the two parties.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "BATNA defines what you'll do if no agreement is reached — the stronger your alternative, the less pressure you're under to accept unfavorable terms, which is why identifying it before negotiating matters more than any single tactic used during the conversation.",
+    },
+    related: ["L1", "L13"],
+    furtherReading: [
+      {
+        label: "Negotiate Like a CEO (user-provided image; original post unverified)",
+        source: "Eric Partaker, The CEO Accelerator, infographic",
+        url: "https://x.com/search?q=%22Negotiate%20Like%20a%20CEO%22%20Eric%20Partaker",
+        type: "article",
+      },
+    ],
+    tags: ["Decision-Making", "Power & Persuasion"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "L16",
+    clusterId: "L",
+    title: "80/20 Strategic Planning",
+    author: "Justin Mecham",
+    year: 2025,
+    medium: "X (Twitter) thread",
+    category: "Productivity",
+    thesis:
+      "Most underperformance isn't from doing too little — it's from spending time on the wrong 80% of tasks, so applying the Pareto principle deliberately to planning (identifying and prioritizing the 20% of actions that drive most results) outperforms simply working harder or longer.",
+    layer0:
+      "You're not doing too little. You're doing too many of the wrong things — and 'busy' has never been the same thing as 'productive.'",
+    layer1:
+      "The applied method: clarify objectives so your goals actually align with your vision, prioritize the tasks with the highest impact rather than the most items completed, simplify decisions by cutting non-essential options, and track only the metrics that actually matter, adjusting the plan as you go. The supporting habits — preventing scope creep, time-blocking for high-impact work, and using tools that support top priorities rather than adding overhead — exist specifically to protect the 20% once you've identified it.",
+    layer2:
+      "The distinction worth holding onto is between activity and leverage: a full calendar is not evidence of good prioritization, and a plan that doesn't explicitly identify which 20% matters most will default to whatever feels urgent instead. Which item on your current to-do list is actually in your top 20%, and which are you doing out of habit?",
+    quiz: {
+      question:
+        "According to this framework, what is the actual cause of most people's underperformance, as distinct from simply 'not working hard enough'?",
+      options: [
+        "A lack of raw effort or hours worked.",
+        "Spending time on low-impact tasks instead of deliberately identifying and prioritizing the roughly 20% of actions that drive most of the results.",
+        "Not having access to enough productivity tools.",
+        "Setting too few goals.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The framework's core reframe is that busyness and productivity are separate things — the fix isn't more hours, it's applying the Pareto principle to deliberately identify and protect the highest-leverage 20% of tasks.",
+    },
+    related: ["J34", "L1"],
+    furtherReading: [
+      {
+        label: "You're Not Doing Too Little — You're Doing Too Many of the Wrong Things",
+        source: "X (Twitter) thread",
+        url: "https://x.com/thejustinmecham/status/1908501288603836821",
+        type: "article",
+      },
+    ],
+    tags: ["Decision-Making", "Craft & Deep Work"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "L17",
+    clusterId: "L",
+    title: "The Eisenhower Matrix",
+    author: "Attributed to Dwight D. Eisenhower",
+    year: 1954,
+    medium: "Framework",
+    category: "Prioritization",
+    thesis:
+      "Tasks fall into four categories along two independent axes — urgent versus not urgent, important versus not important — and most people's schedules are dominated by the urgent-but-unimportant quadrant, which crowds out the important-but-not-urgent work that actually compounds.",
+    layer0:
+      "\"What is important is seldom urgent, and what is urgent is seldom important.\" The line attributed to Eisenhower is the entire matrix compressed into one sentence.",
+    layer1:
+      "The four quadrants: urgent and important (do it now — crises, deadlines), important but not urgent (schedule it — planning, relationship-building, health, the work that compounds but never screams for attention), urgent but not important (delegate it — most interruptions and other people's emergencies), and neither urgent nor important (eliminate it). The matrix's practical value is forcing tasks out of a single undifferentiated to-do list and into a structure where 'urgent' and 'important' are explicitly treated as two separate variables rather than one.",
+    layer2:
+      "The quadrant most people neglect is important-but-not-urgent — exactly because nothing forces you to do it today, it's the one that erodes first when a schedule gets crowded, even though it's usually where compounding returns (health, relationships, deep work, planning) actually live. Which item in your own important-but-not-urgent quadrant has been quietly postponed for months?",
+    quiz: {
+      question:
+        "Which quadrant of the Eisenhower Matrix is most commonly neglected, and why?",
+      options: [
+        "Urgent and important, because crises are easy to ignore.",
+        "Important but not urgent, because nothing forces immediate action on it, so it gets crowded out by louder, more urgent demands even though it often produces the most compounding value.",
+        "Urgent but not important, because it requires the most skill to complete.",
+        "Neither urgent nor important, because it's usually the majority of any schedule.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Because important-but-not-urgent tasks have no deadline pressure, they're the easiest quadrant to postpone indefinitely — even though this is typically where planning, relationships, and long-term compounding work live.",
+    },
+    related: ["L16", "N1"],
+    furtherReading: [
+      {
+        label: "Top Performers Don't Think Like Everyone Else (compilation including the Eisenhower Matrix)",
+        source: "X (Twitter) thread, compiled by Justin Mecham",
+        url: "https://x.com/thejustinmecham/status/1908140667693666374",
+        type: "article",
+      },
+    ],
+    tags: ["Decision-Making", "Craft & Deep Work"],
+    epistemicStatus: "Canonical",
   },
 ];
 
