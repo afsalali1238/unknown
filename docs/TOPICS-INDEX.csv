@@ -139,10 +139,6 @@ K,Compounding & Time,K3,Path Dependence,Paul David,1985,Time
 K,Compounding & Time,K4,Optionality,Nassim Taleb,2012,Time
 K,Compounding & Time,K5,The Tail End,Tim Urban,2015,Life & Time
 K,Compounding & Time,K6,The Plateau of Latent Potential,James Clear,2018,Habits
-L,Decision-Making,J10,Avoiding Stupidity is Easier than Seeking Brilliance,Farnam Street (Shane Parrish),2014,Decision-Making
-L,Decision-Making,J14,The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions,"Farnam Street, after Col. John Boyd",2021,Decision-Making
-L,Decision-Making,J15,Predicting the Future with Bayes' Theorem,"Farnam Street (Shane Parrish), after Thomas Bayes",2022,Decision-Making
-L,Decision-Making,J16,"The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes",Farnam Street (Shane Parrish),2018,Decision-Making
 L,Decision-Making,L1,Expected Value,Blaise Pascal,1654,Decisions
 L,Decision-Making,L2,Pre-Mortem,Gary Klein,2007,Decisions
 L,Decision-Making,L3,Base Rates,Daniel Kahneman,2011,Decisions
@@ -151,13 +147,18 @@ L,Decision-Making,L5,Opportunity Cost,Friedrich von Wieser,1914,Decisions
 L,Decision-Making,L6,Asymmetric Payoffs,Nassim Taleb,2012,Decisions
 L,Decision-Making,L7,The Cynefin Framework,Dave Snowden,1999,Decision-Making
 L,Decision-Making,L8,The Hard Choice Model,Ruth Chang,2014,Decision-Making
+L,Decision-Making,J10,Avoiding Stupidity is Easier than Seeking Brilliance,Farnam Street (Shane Parrish),2014,Decision-Making
 L,Decision-Making,L10,Five Tips to Improve Your Critical Thinking,Samantha Agoos,2016,Critical Thinking
 L,Decision-Making,L11,The Demon of Reason: Logical Fallacies,TED-Ed,2016,Logic
 L,Decision-Making,L12,"To Solve a Tough Problem, Reframe It",Harvard Business Review,2024,Problem-Solving
 L,Decision-Making,L13,The 5 Whys Method,Sakichi Toyoda / Toyota Production System,1930,Root Cause Analysis
+L,Decision-Making,J14,The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions,"Farnam Street, after Col. John Boyd",2021,Decision-Making
+L,Decision-Making,J15,Predicting the Future with Bayes' Theorem,"Farnam Street (Shane Parrish), after Thomas Bayes",2022,Decision-Making
 L,Decision-Making,L15,Negotiate Like a CEO,"Eric Partaker (compiling Lewicki, Fisher, Ury, Hiam)",2026,Negotiation
+L,Decision-Making,J16,"The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes",Farnam Street (Shane Parrish),2018,Decision-Making
 L,Decision-Making,L16,80/20 Strategic Planning,Justin Mecham,2025,Productivity
 L,Decision-Making,L17,The Eisenhower Matrix,Attributed to Dwight D. Eisenhower,1954,Prioritization
+L,Decision-Making,L18,"The Casino's Four Gears: Edge, Volume, Sizing, and Bankroll",John Kelly Jr.; Edward Thorp,1956,Decisions
 M,Systems & Incentives,M1,Goodhart's Law,Charles Goodhart,1975,Systems
 M,Systems & Incentives,M2,Chesterton's Fence,G. K. Chesterton,1929,Systems
 M,Systems & Incentives,M3,Principal–Agent Problem,Michael Jensen & William Meckling,1976,Systems

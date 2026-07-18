@@ -15180,6 +15180,59 @@ export const NODES: Node[] = [
     epistemicStatus: "Canonical",
   },
   {
+    id: "L18",
+    clusterId: "L",
+    title: "The Casino's Four Gears: Edge, Volume, Sizing, and Bankroll",
+    author: "John Kelly Jr.; Edward Thorp",
+    year: 1956,
+    medium: "Framework",
+    category: "Decisions",
+    thesis:
+      "A tiny, repeatable statistical edge becomes a near-certain profit only when combined with three other things — enormous volume, bets sized to the edge rather than to conviction, and a bankroll large enough to survive a bad stretch. Miss any one of the four and having an edge stops mattering.",
+    layer0:
+      "American roulette pays 35-to-1 on a bet that wins 1-in-38 times, which works out to a 5.26% house edge — invisible on any single spin, but the entire casino industry runs on it.",
+    layer1:
+      "The edge alone does nothing; it needs the other three gears to turn into a certainty. Jacob Bernoulli's 1713 Law of Large Numbers is why the edge becomes reliable at all: repeated enough times, the average outcome converges on the true expected value, which is why casinos want you playing longer, not winning more on any one spin. John Kelly's 1956 Bell Labs paper solved the second problem — how much to bet — proving that betting a fraction proportional to your edge (roughly twice your edge for an even-money bet) grows a bankroll fastest without risking ruin; betting more than that, even with a real edge, leads to eventual blowup. The fourth gear is bankroll: in the classic gambler's-ruin problem, two players flipping a fair coin until one goes broke — the player with less money is overwhelmingly likely to bust first, even with zero edge on either side, simply because a small bankroll runs out of room to survive variance before a large one does.",
+    layer2:
+      "Edward Thorp is the person who moved this from casino theory to lived proof twice. In 1962 he published Beat the Dealer, showing that counting cards in blackjack produces a real, small, Kelly-sizeable edge — casinos changed their rules in response. He then pointed the same four gears at markets: his fund Princeton/Newport Partners ran for roughly two decades averaging about 20% a year with almost no down quarters, hunting small mispricings, sizing with Kelly's formula, and repeating at scale. Jim Simons later took the same machine further at Renaissance Technologies — Simons said Medallion was right only about 50.75% of the time, yet compounded roughly 66% a year before fees for three decades by running that half-percent edge through enough volume. None of these people were predicting outcomes; they were running a system with all four gears present. Where in your own decisions do you have a real edge but are sizing bets on conviction instead of on the edge itself?",
+    quiz: {
+      question:
+        "According to the Kelly Criterion, what happens if someone with a real, small statistical edge bets a large fraction of their bankroll on it, rather than a fraction proportional to the edge?",
+      options: [
+        "Nothing changes, since having a real edge guarantees eventual profit regardless of bet size.",
+        "They grow their bankroll faster than the mathematically optimal rate.",
+        "They risk eventual ruin — overbetting relative to the edge leads to blowup even when the edge itself is genuine.",
+        "The casino's house edge cancels out their personal edge automatically.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Kelly's formula shows there is an optimal bet fraction for a given edge; betting beyond it doesn't just risk lower growth, it mathematically increases the probability of ruin, regardless of whether the edge is real.",
+    },
+    related: ["L1", "L6", "K1"],
+    furtherReading: [
+      {
+        label: "A New Interpretation of Information Rate",
+        source: "John L. Kelly Jr., Bell System Technical Journal 35 (1956), via Internet Archive",
+        url: "https://archive.org/details/bstj35-4-917",
+        archive: { status: "full", path: "content/sources/L18-0.md", retrieved: "2026-07-18" },
+      },
+      {
+        label: "Edward O. Thorp",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Edward_O._Thorp",
+        archive: { status: "full", path: "content/sources/L18-1.md", retrieved: "2026-07-18" },
+      },
+      {
+        label: "Renaissance Technologies",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Renaissance_Technologies",
+        archive: { status: "full", path: "content/sources/L18-2.md", retrieved: "2026-07-18" },
+      },
+    ],
+    tags: ["Risk & Asymmetric Bets", "Decision-Making", "Compounding & Patience"],
+    epistemicStatus: "Canonical",
+  },
+  {
     id: "AL1",
     clusterId: "AL",
     title: "Getting to Yes",
