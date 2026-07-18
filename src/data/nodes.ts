@@ -5571,7 +5571,7 @@ export const NODES: Node[] = [
         label: "The Surprising Power of the Long Game (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/long-game/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J13-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -5713,7 +5713,7 @@ export const NODES: Node[] = [
         label: "The Pygmalion Effect: Proving Them Right (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/pygmalion-effect/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J16-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -5761,7 +5761,7 @@ export const NODES: Node[] = [
         label: "Hanlon's Razor (the complementary mental model)",
         source: "Farnam Street",
         url: "https://fs.blog/2017/04/mental-model-hanlons-razor/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J17-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -5911,7 +5911,7 @@ export const NODES: Node[] = [
         label: "Indianapolis: The True Story of the Worst Sea Disaster in US Naval History",
         source: "Lynn Vincent and Sara Vladic (book, referenced in this piece)",
         url: "https://fs.blog/sharks-survivorship-bias/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J21-0.md", retrieved: "2026-07-18" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -5952,7 +5952,7 @@ export const NODES: Node[] = [
         label: "Hanlon's Razor",
         source: "Farnam Street",
         url: "https://fs.blog/2017/04/mental-model-hanlons-razor/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J21-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -6000,7 +6000,7 @@ export const NODES: Node[] = [
         label: "Bias From Insensitivity to Sample Size",
         source: "Farnam Street",
         url: "https://fs.blog/mental-model-bias-from-insensitivity-to-sample-size/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J22-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -6049,7 +6049,7 @@ export const NODES: Node[] = [
           "Occam's Razor (referenced in this piece as informing how scientists choose among thought-experiment hypotheses)",
         source: "Farnam Street",
         url: "https://fs.blog/occams-razor/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J23-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Great Mental Models book series overview",
@@ -6096,7 +6096,7 @@ export const NODES: Node[] = [
         label: "First Principles: The Building Blocks of True Knowledge",
         source: "Farnam Street",
         url: "https://fs.blog/2018/04/first-principles/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J24-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -6283,7 +6283,7 @@ export const NODES: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J29-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Nature: An Economic History (Geerat Vermeij, referenced in this piece)",
@@ -6330,7 +6330,7 @@ export const NODES: Node[] = [
         label: "An Antifragile Way of Life (the original 2014 piece this article expands on)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/10/an-antifragile-way-of-life/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J29-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Second-Order Thinking (related Farnam Street piece on long-horizon consequences)",
@@ -10678,7 +10678,7 @@ export const NODES: Node[] = [
         label: "Blue Ocean Strategy — Wikipedia overview",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Blue_Ocean_Strategy",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/A14-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Blue Ocean Strategy official site",
