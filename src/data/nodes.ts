@@ -13290,7 +13290,8 @@ export const NODES: Node[] = [
     layer2:
       "The method works because it builds a word into your memory through three independent hooks — usage, definition, and origin — instead of one. A word you only memorized from a list has one thin thread holding it in place. What's a word you've seen a hundred times but still couldn't define if asked?",
     quiz: {
-      question: "What is the first step in Tony Randall's three-step method for learning a new word?",
+      question:
+        "What is the first step in Tony Randall's three-step method for learning a new word?",
       options: [
         "Look it up immediately in a dictionary before doing anything else.",
         "Try to guess at least part of its meaning from how it's used in the sentence.",
@@ -13495,7 +13496,8 @@ export const NODES: Node[] = [
     layer2:
       "The trap Koe names is 'False Transformation' — believing you've leveled up in one quadrant because you leveled up in another. A founder who scaled a business (Vocation) can mistake that for having also matured emotionally (Spirit). Which of your four quadrants is quietly stuck at Conformist while the others have moved on?",
     quiz: {
-      question: "What does Dan Koe call it when someone mistakes progress in one Human 3.0 quadrant for progress in another?",
+      question:
+        "What does Dan Koe call it when someone mistakes progress in one Human 3.0 quadrant for progress in another?",
       options: [
         "The Synthesist Trap",
         "False Transformation",
@@ -13652,14 +13654,13 @@ export const NODES: Node[] = [
     thesis:
       "After two decades of professional 'optimizing,' Tim Ferriss argues self-help can become its own trap — the compulsive pursuit of self-improvement can substitute for actually living, making the cure worse than the original problem.",
     layer0:
-      "\"The older I get, the more I think that self-help can be a trap. Sometimes the cure is worse than the disease.\" — from someone who built a career on self-optimization.",
+      '"The older I get, the more I think that self-help can be a trap. Sometimes the cure is worse than the disease." — from someone who built a career on self-optimization.',
     layer1:
       "The critique lands hardest coming from Ferriss specifically, since he's spent twenty years popularizing productivity systems, biohacking, and self-experimentation. His argument is that constant optimization can become a way of avoiding presence — always fixing the next system instead of living inside the one you have — and that some of what gets sold as self-improvement is actually a more sophisticated form of self-avoidance.",
     layer2:
       "This isn't an argument against self-improvement — it's an argument against treating it as a permanent state rather than a tool you pick up for a specific problem and put down again. Is there a self-help habit in your own life that's become the distraction rather than the fix?",
     quiz: {
-      question:
-        "What is the core critique in Tim Ferriss's 'Self-Help Trap' argument?",
+      question: "What is the core critique in Tim Ferriss's 'Self-Help Trap' argument?",
       options: [
         "That all self-help advice is scientifically unfounded.",
         "That compulsive optimization can itself become a way of avoiding actually living, making it a trap rather than a solution.",
@@ -13699,8 +13700,7 @@ export const NODES: Node[] = [
     layer2:
       "The value of formalizing strategic interaction is that intuition about 'what the other side will do' is often wrong in specific, predictable ways — the same way intuition about probability is wrong in predictable ways. Where in your own decisions are you failing to model the other player's incentives explicitly?",
     quiz: {
-      question:
-        "What does a 'strategic-form' (normal-form) game formally represent?",
+      question: "What does a 'strategic-form' (normal-form) game formally represent?",
       options: [
         "A game where players take turns and can see all prior moves.",
         "A situation where players choose their actions simultaneously and the payoff to each depends on the full combination of actions chosen.",
@@ -14389,7 +14389,7 @@ export const NODES: Node[] = [
     thesis:
       "Deductive reasoning guarantees a true conclusion if the premises are true, while inductive reasoning only makes a conclusion probable — conflating the two leads people to treat strong patterns as proven certainties.",
     layer0:
-      "\"All observed swans are white, therefore all swans are white\" feels airtight until you find one black swan. That's the entire difference between the two modes of reasoning in a single example.",
+      '"All observed swans are white, therefore all swans are white" feels airtight until you find one black swan. That\'s the entire difference between the two modes of reasoning in a single example.',
     layer1:
       "Deductive reasoning moves from general premises to a specific conclusion that is logically certain, provided the premises are true and the logic is valid (all men are mortal; Socrates is a man; therefore Socrates is mortal). Inductive reasoning moves from specific observations to a general conclusion that is probable, not certain, no matter how much supporting evidence accumulates — which is why induction is always vulnerable to a single disconfirming case.",
     layer2:
@@ -14471,14 +14471,13 @@ export const NODES: Node[] = [
     thesis:
       "Naval treats life outcomes as decomposable equations rather than vague aspirations — happiness, wealth, and income each break down into a small number of controllable inputs, making an otherwise abstract goal into something you can audit and act on directly.",
     layer0:
-      "\"These are not definitions — these are algorithms for success.\" Naval reduces happiness itself to an equation: Health + Wealth + Good Relationships.",
+      '"These are not definitions — these are algorithms for success." Naval reduces happiness itself to an equation: Health + Wealth + Good Relationships.',
     layer1:
       "Each formula decomposes further: Health = Exercise + Diet + Sleep. Wealth = Income + Wealth × (Return on Investment) — a compounding formula, not a static one. Income = Accountability + Leverage + Specific Knowledge, where Specific Knowledge is defined precisely as 'knowing how to do something society cannot yet easily train other people to do' — the thing that can't be outsourced or automated because it hasn't been codified. Leverage = Capital + People + Intellectual Property, the three multipliers that let one person's judgment scale beyond their own hours.",
     layer2:
       "Naval's own caveat matters as much as the formulas: 'these are notes to myself. Your frame of reference, and therefore your calculations, may vary.' The value isn't memorizing his specific breakdown — it's the habit of decomposing a vague life goal into named, separately-improvable variables. If you wrote your own formula for 'a good life' right now, what would the terms be?",
     quiz: {
-      question:
-        "How does Naval define 'Specific Knowledge' in his Income formula?",
+      question: "How does Naval define 'Specific Knowledge' in his Income formula?",
       options: [
         "Any knowledge learned in a formal degree program.",
         "Knowledge of how to do something society cannot yet easily train other people to do.",
@@ -14559,8 +14558,7 @@ export const NODES: Node[] = [
     layer2:
       "The letters read as a rebuttal to the 'one big break' theory of wealth — nearly every rule points toward compounding, consistency, and reputation instead of a single lucky deal. Which of the thirty-eight would your own daily habits actually fail if tested against it honestly?",
     quiz: {
-      question:
-        "According to this list, how are fortunes typically lost, more often than not?",
+      question: "According to this list, how are fortunes typically lost, more often than not?",
       options: [
         "Through one single catastrophic financial event.",
         "Through a thousand tiny, unwatched leaks in spending rather than one big loss.",
@@ -14641,8 +14639,7 @@ export const NODES: Node[] = [
     layer2:
       "The practical discipline is using EBITDA as one lens among several rather than the whole picture — checking cash flow alongside it, knowing your industry's typical margin band, and normalizing for one-time events and owner-specific expenses before comparing across companies. Where have you seen EBITDA used to make a capital-intensive business look healthier than its actual cash position?",
     quiz: {
-      question:
-        "What is the primary blind spot of EBITDA as a performance metric?",
+      question: "What is the primary blind spot of EBITDA as a performance metric?",
       options: [
         "It excludes revenue entirely from the calculation.",
         "It is not actual cash flow and excludes capital expenditures, which can make capital-intensive businesses look more efficient than their true cash generation supports.",
@@ -14717,7 +14714,7 @@ export const NODES: Node[] = [
     thesis:
       "External motivation rarely arrives on schedule, so the people who actually reach their potential are the roughly 2% who can work without supervision — putting pressure on themselves rather than waiting for someone else to demand it of them.",
     layer0:
-      "\"The first requisite for success is the ability to apply your physical and mental energies to one problem incessantly without growing weary.\" — Thomas Edison.",
+      '"The first requisite for success is the ability to apply your physical and mental energies to one problem incessantly without growing weary." — Thomas Edison.',
     layer1:
       "The excerpt's central image: most people are waiting for a bus on a street where no buses pass — waiting for someone to arrive and motivate them into the person they wish they could be. No one is coming. The claim that only about 2% of people can work entirely without supervision is used to define leadership itself: the capacity for self-directed pressure, not any formal title.",
     layer2:
@@ -14805,8 +14802,7 @@ export const NODES: Node[] = [
     layer2:
       "The summary line worth internalizing: revenue is your top line, profit indicates operational efficiency, and cash is the liability that actually sustains the company day to day — a profitable business can still die from a cash crunch. Which of the three would you check first if you were deciding whether to trust a company's numbers?",
     quiz: {
-      question:
-        "Why can a company be profitable on paper but still fail from a cash problem?",
+      question: "Why can a company be profitable on paper but still fail from a cash problem?",
       options: [
         "Because profit and cash are always identical figures.",
         "Because profit is an accounting measure while cash tracks actual liquid money on hand, and timing gaps (delayed payments, prepayments) mean the two can diverge significantly.",
@@ -14882,7 +14878,7 @@ export const NODES: Node[] = [
     thesis:
       "Most well-intentioned listening responses ('I know exactly how you feel,' 'you shouldn't feel that way') actually shut a conversation down because they assert the listener's authority over the speaker's experience — the fix is consistently responding with a question that hands control back.",
     layer0:
-      "\"I know exactly what you mean\" sounds supportive. It actually tells the other person their experience is already understood, which ends the conversation instead of opening it.",
+      '"I know exactly what you mean" sounds supportive. It actually tells the other person their experience is already understood, which ends the conversation instead of opening it.',
     layer1:
       "The framework pairs common dismissive responses with the reason they fail and a better alternative: instead of 'that doesn't make any sense,' ask 'can you help me understand that better?'; instead of 'I already know where you're going with this,' say 'go ahead — I want to hear the full story.' The common failure pattern across all of them is taking control of the conversation's direction or meaning instead of leaving it with the speaker.",
     layer2:
@@ -14972,7 +14968,8 @@ export const NODES: Node[] = [
     layer2:
       "Housel's sharpest reframe is that wealth is what you don't see — it's the car not bought, the upgrade declined, the income quietly not spent — while the visible signals of being rich (the car, the watch, the house) are often the very thing eating the wealth that would have compounded. If someone judged your financial health only by what's visible, would they be right?",
     quiz: {
-      question: "According to Housel's distinction between 'rich' and 'wealthy,' what does true wealth actually look like?",
+      question:
+        "According to Housel's distinction between 'rich' and 'wealthy,' what does true wealth actually look like?",
       options: [
         "Wealth is measured by the visible assets you own — cars, houses, watches.",
         "Wealth is what you don't see: the income deliberately not converted into visible spending, left to compound instead.",
@@ -15018,7 +15015,8 @@ export const NODES: Node[] = [
     layer2:
       "Kahneman's WYSIATI principle — 'What You See Is All There Is' — is the deepest cut: System 1 builds a confident story out of whatever evidence is in front of it, without pausing to ask what evidence might be missing. The story feels complete regardless of how incomplete the evidence actually was. What's a confident judgment you've made recently that was built on less evidence than it felt like at the time?",
     quiz: {
-      question: "What mechanism does Kahneman identify as the source of most systematic cognitive biases?",
+      question:
+        "What mechanism does Kahneman identify as the source of most systematic cognitive biases?",
       options: [
         "System 2 deliberately overriding System 1's correct intuitions.",
         "Substitution — System 1 quietly answers an easier question than the hard one actually being asked, and System 2 accepts it without checking.",
@@ -15064,7 +15062,8 @@ export const NODES: Node[] = [
     layer2:
       "Duhigg extends this from individuals to organizations, arguing that companies and institutions have 'keystone habits' — a single changed routine (like Alcoa's obsessive focus on worker safety) that cascades into unrelated improvements elsewhere, because fixing one visible habit forces the surrounding systems and incentives to reorganize around it. What's one small routine in your own day that, if you changed it, would probably drag several other things along with it?",
     quiz: {
-      question: "According to Duhigg's 'Golden Rule of Habit Change,' what is the most reliable way to change an existing habit?",
+      question:
+        "According to Duhigg's 'Golden Rule of Habit Change,' what is the most reliable way to change an existing habit?",
       options: [
         "Eliminate the cue that triggers the habit entirely.",
         "Rely on willpower alone to suppress the routine until the habit fades.",
@@ -15208,7 +15207,8 @@ export const NODES: Node[] = [
     related: ["M1", "N12"],
     furtherReading: [
       {
-        label: "i tracked my relationships for 6 years. new friends are negative roi. here is the math.",
+        label:
+          "i tracked my relationships for 6 years. new friends are negative roi. here is the math.",
         source: "X (Twitter) Article",
         url: "https://x.com/the2ndfloorguy/status/2023377751374188903",
         type: "article",
@@ -15316,7 +15316,8 @@ export const NODES: Node[] = [
     layer2:
       "The frameworks compound: knowing your BATNA tells you when to walk, the matrix tells you which posture fits the relationship at stake, and principled negotiation keeps the conversation from collapsing into a zero-sum fight over positions. Before your next negotiation, do you actually know your own walk-away point — or are you improvising it in the room?",
     quiz: {
-      question: "What does BATNA (Best Alternative to a Negotiated Agreement) determine in a negotiation?",
+      question:
+        "What does BATNA (Best Alternative to a Negotiated Agreement) determine in a negotiation?",
       options: [
         "The exact price both sides must agree to.",
         "Your walk-away point — the strongest position you have if the negotiation fails, which strengthens your leverage in the actual conversation.",
@@ -15392,14 +15393,13 @@ export const NODES: Node[] = [
     thesis:
       "Tasks fall into four categories along two independent axes — urgent versus not urgent, important versus not important — and most people's schedules are dominated by the urgent-but-unimportant quadrant, which crowds out the important-but-not-urgent work that actually compounds.",
     layer0:
-      "\"What is important is seldom urgent, and what is urgent is seldom important.\" The line attributed to Eisenhower is the entire matrix compressed into one sentence.",
+      '"What is important is seldom urgent, and what is urgent is seldom important." The line attributed to Eisenhower is the entire matrix compressed into one sentence.',
     layer1:
       "The four quadrants: urgent and important (do it now — crises, deadlines), important but not urgent (schedule it — planning, relationship-building, health, the work that compounds but never screams for attention), urgent but not important (delegate it — most interruptions and other people's emergencies), and neither urgent nor important (eliminate it). The matrix's practical value is forcing tasks out of a single undifferentiated to-do list and into a structure where 'urgent' and 'important' are explicitly treated as two separate variables rather than one.",
     layer2:
       "The quadrant most people neglect is important-but-not-urgent — exactly because nothing forces you to do it today, it's the one that erodes first when a schedule gets crowded, even though it's usually where compounding returns (health, relationships, deep work, planning) actually live. Which item in your own important-but-not-urgent quadrant has been quietly postponed for months?",
     quiz: {
-      question:
-        "Which quadrant of the Eisenhower Matrix is most commonly neglected, and why?",
+      question: "Which quadrant of the Eisenhower Matrix is most commonly neglected, and why?",
       options: [
         "Urgent and important, because crises are easy to ignore.",
         "Important but not urgent, because nothing forces immediate action on it, so it gets crowded out by louder, more urgent demands even though it often produces the most compounding value.",
@@ -15413,7 +15413,8 @@ export const NODES: Node[] = [
     related: ["L16", "N1"],
     furtherReading: [
       {
-        label: "Top Performers Don't Think Like Everyone Else (compilation including the Eisenhower Matrix)",
+        label:
+          "Top Performers Don't Think Like Everyone Else (compilation including the Eisenhower Matrix)",
         source: "X (Twitter) thread, compiled by Justin Mecham",
         url: "https://x.com/thejustinmecham/status/1908140667693666374",
         type: "article",

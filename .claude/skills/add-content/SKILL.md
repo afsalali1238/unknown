@@ -73,8 +73,9 @@ URLs into `public/content/sources/`. Sources that can't be fetched are triaged t
 Run, in order, and do not report success unless all pass:
 
 1. `bun run scripts/validate-nodes.ts`
-2. `bun run lint`
-3. `bun run build`
+2. `bun run scripts/topics-index.ts`
+3. `bun run lint`
+4. `bun run build`
    Then report: the new id(s), the new total node count, and any archive-failures entries.
 
 ## Batch behavior
