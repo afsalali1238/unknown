@@ -570,7 +570,7 @@ export const NODES: Node[] = [
         source: "VentureBeat",
         url: "https://venturebeat.com/business/how-peter-thiel-teaches-stanford-students-to-create-billion-dollar-monopolies-in-3-quotes",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/A5-2.md",
           retrieved: "2026-07-14",
         },
@@ -623,7 +623,7 @@ export const NODES: Node[] = [
         source: "Equity Mates",
         url: "https://equitymates.com/general/the-bill-gurley-chronicles-vcs-marketplaces-and-early-stage-investing/",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/A6-1.md",
           retrieved: "2026-07-14",
         },
@@ -1211,7 +1211,7 @@ export const NODES: Node[] = [
         source: "Recode",
         url: "https://www.recode.net/2017/8/23/16189048/uber-pitch-deck-2008-ubercab-travis-kalanick-founder-startup",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/B5-1.md",
           retrieved: "2026-07-14",
         },
@@ -2449,7 +2449,7 @@ export const NODES: Node[] = [
         source: "BBC-hosted archive",
         url: "http://news.bbc.co.uk/2/shared/bsp/hi/pdfs/18_06_08_internet%20tidal%20wave.pdf",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/F4-0.md",
           retrieved: "2026-07-14",
         },
@@ -2502,7 +2502,7 @@ export const NODES: Node[] = [
         source: "Harvard Business Review, 1996",
         url: "https://sites.santafe.edu/~wbarthur/Papers/HBR.pdf",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/F5-0.md",
           retrieved: "2026-07-14",
         },
@@ -2513,7 +2513,7 @@ export const NODES: Node[] = [
         source: "Santa Fe Institute",
         url: "https://www.santafe.edu/people/profile/w-brian-arthur",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/F5-1.md",
           retrieved: "2026-07-14",
         },
@@ -2565,7 +2565,7 @@ export const NODES: Node[] = [
         source: "Towards Data Science",
         url: "https://towardsdatascience.com/the-rise-of-software-2-0-you-dont-want-to-be-left-behind-cbaa75f6d19",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/G1-1.md",
           retrieved: "2026-07-14",
         },
@@ -2715,7 +2715,7 @@ export const NODES: Node[] = [
         source: "Towards Data Science",
         url: "https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/G4-1.md",
           retrieved: "2026-07-14",
         },
@@ -2914,7 +2914,7 @@ export const NODES: Node[] = [
         source: "LessWrong",
         url: "https://www.lesswrong.com/posts/6Fpvch8TREZXbdmEB/chinchilla-s-wild-implications",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/G8-1.md",
           retrieved: "2026-07-14",
         },
@@ -3065,7 +3065,7 @@ export const NODES: Node[] = [
         source: "Naval Ravikant",
         url: "https://startupboy.com/2013/11/07/bitcoin-the-internet-of-money/",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/H1-1.md",
           retrieved: "2026-07-14",
         },
@@ -3403,7 +3403,7 @@ export const NODES: Node[] = [
         source: "socialcapital.com",
         url: "https://www.socialcapital.com/",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/H8-0.md",
           retrieved: "2026-07-14",
         },
@@ -4478,7 +4478,7 @@ export const NODES: Node[] = [
         source: "berkshirehathaway.com",
         url: "https://www.berkshirehathaway.com/letters/letters.html",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/J3-0.md",
           retrieved: "2026-07-14",
         },
@@ -4752,7 +4752,7 @@ export const NODES: Node[] = [
         source: "HBR",
         url: "https://hbr.org/2007/09/performing-a-project-premortem",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/L2-0.md",
           retrieved: "2026-07-14",
         },
@@ -4954,7 +4954,7 @@ export const NODES: Node[] = [
         source: "paper",
         url: "https://www.sciencedirect.com/science/article/pii/0304405X7690026X",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/M3-0.md",
           retrieved: "2026-07-14",
         },
@@ -6426,7 +6426,7 @@ export const NODES: Node[] = [
         source: "James M. Buchanan, 1969",
         url: "https://www.econlib.org/library/Buchanan/buchCC.html",
         archive: {
-          status: "unavailable",
+          status: "full",
           path: "content/sources/L5-0.md",
           retrieved: "2026-07-14",
         },
