@@ -2,7 +2,7 @@
 
 Internal directory of every cluster and node in src/data/nodes.ts. Not shown in the frontend — for coverage checking only.
 
-Regenerated: 2026-07-18. Total nodes: 384. Total clusters: 38.
+Regenerated: 2026-07-18. Total nodes: 387. Total clusters: 38.
 
 ## A — Startup Fundamentals (16)
 
@@ -53,7 +53,7 @@ Regenerated: 2026-07-18. Total nodes: 384. Total clusters: 38.
 | C10 | Nikola: How to Parlay an Ocean of Lies | Hindenburg Research | 2020 | Short / Activist |
 | C11 | Adani Group: How the World's 3rd Richest Man Is Pulling the Largest Con | Hindenburg Research | 2023 | Short / Activist |
 
-## D — Macro & Investing (13)
+## D — Macro & Investing (14)
 
 | ID | Title | Author | Year | Category |
 |---|---|---|---|---|
@@ -70,6 +70,7 @@ Regenerated: 2026-07-18. Total nodes: 384. Total clusters: 38.
 | D11 | RIP Good Times | Sequoia Capital | 2008 | VC Doctrine |
 | D12 | Adapting to Endure | Sequoia Capital | 2022 | VC Doctrine |
 | D13 | 20 Golden Rules from Peter Lynch | Peter Lynch | 1989 | Investing |
+| D14 | The Memory Supercycle: When Demand Outruns What Physics Can Build | SK hynix (Chey Tae-won); TSMC; ASML | 2026 | Macro & Investing |
 
 ## E — Finance Theory (5)
 
@@ -119,7 +120,7 @@ Regenerated: 2026-07-18. Total nodes: 384. Total clusters: 38.
 | H7 | Why Decentralization Matters | Chris Dixon | 2018 | VC Doctrine |
 | H8 | IPO 2.0 / SPAC Investor Letters | Chamath Palihapitiya | 2020 | Crypto |
 
-## I — Worldview & Futurism (25)
+## I — Worldview & Futurism (27)
 
 | ID | Title | Author | Year | Category |
 |---|---|---|---|---|
@@ -148,6 +149,8 @@ Regenerated: 2026-07-18. Total nodes: 384. Total clusters: 38.
 | I23 | Block Goes Intelligence-Native | Jack Dorsey | 2026 | Worldview |
 | I24 | The Network State | Balaji Srinivasan | 2022 | Worldview |
 | I25 | Apple, SaaS, and the 18-Month Window | Attributed to Naval Ravikant (via secondary commentary) | 2026 | Tech Futurism |
+| I26 | The Pelican Test: Why Every AI Benchmark Eventually Dies | Simon Willison | 2026 | Tech Futurism |
+| I27 | Two Ways to Win the Robot Race: Smarter vs. Cheaper | TrendForce | 2026 | Tech Futurism |
 
 ## J — Mental Models (34)
 

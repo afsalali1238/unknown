@@ -4875,7 +4875,7 @@ export const NODES: Node[] = [
         "When a measure becomes a target, people will optimize for the metric at the expense of the actual goal, ultimately destroying the system the metric was designed to improve.",
     },
     tags: ["Incentives & Systems"],
-    related: ["F3", "W4", "M3"],
+    related: ["F3", "W4", "M3", "I26"],
     furtherReading: [
       {
         label: "Goodhart's Law: Its Origins, Meaning, and Implications",
@@ -13766,6 +13766,94 @@ export const NODES: Node[] = [
     epistemicStatus: "Speculative",
   },
   {
+    id: "I26",
+    clusterId: "I",
+    title: "The Pelican Test: Why Every AI Benchmark Eventually Dies",
+    author: "Simon Willison",
+    year: 2026,
+    medium: "Blog Post",
+    category: "Tech Futurism",
+    thesis:
+      "A benchmark that becomes famous enough to matter also becomes a target — and once labs and models start optimizing (deliberately or not) for whatever the benchmark measures, its correlation with real capability quietly decays, even while the benchmark itself keeps getting cited.",
+    layer0:
+      "In 2024, Simon Willison started asking every new AI model to 'generate an SVG of a pelican riding a bicycle' as an informal way to compare them. For about a year, the quality of the pelican tracked real model quality surprisingly well. By mid-2026, that correlation had mostly broken: GPT-5.6 and Claude Fable 5's pelicans are outclassed by GLM-5.2, a model nobody seriously considers Fable-class.",
+    layer1:
+      "This is a live, ongoing case of Goodhart's Law — 'when a measure becomes a target, it ceases to be a good measure' — playing out in public, one model release at a time. Willison is careful not to claim labs are deliberately training on his specific prompt; he thinks it's more likely that general-purpose capability gains and general-purpose overfitting to popular benchmark *styles* (SVG generation, in this case) have simply diverged from the underlying reasoning and agentic-tool-use ability that actually matters now. The tell is that the pelican test never measured what came to matter most: reliable multi-step tool use over long agentic conversations. A benchmark can decay in relevance even without anyone gaming it directly — the ground truth of what 'good' means can simply move faster than the benchmark can track it.",
+    layer2:
+      "Willison's response to his own benchmark's decay is instructive: he didn't discard it, he demoted it. He still runs it on every new model, but now treats it as a cheap 'hello world' sanity check and rough cost estimate rather than a capability ranking. Kimi K3 (Moonshot AI's July 2026, 2.8-trillion-parameter release) cost 25 cents and used 16,658 tokens to draw a passable pelican — useful as a first contact with the model, useless as a claim about its true frontier standing. What's the metric in your own work that used to correlate with the thing you actually cared about, and has anyone checked lately whether it still does?",
+    quiz: {
+      question:
+        "According to Willison, why did the pelican-riding-a-bicycle test stop correlating well with real model quality after its first year?",
+      options: [
+        "He is certain that AI labs specifically trained their models on his exact prompt to game the benchmark.",
+        "The test never measured the thing that came to matter most for real usage — reliable agentic tool-calling over long conversations — so as models specialized there, the test's relevance to real capability quietly decayed.",
+        "SVG generation became technically impossible for newer models to perform.",
+        "He stopped running the test after the first year, so there is no more data to compare.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Willison explicitly says he isn't convinced labs are training for the benchmark — the more likely explanation is that the test simply never covered agentic tool use, which is now the dominant axis of real-world model quality, so the two measures drifted apart.",
+    },
+    related: ["M1", "G7", "I18"],
+    furtherReading: [
+      {
+        label: "Kimi K3, and what we can still learn from the pelican benchmark",
+        source: "Simon Willison's Weblog",
+        url: "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+        archive: { status: "full", path: "content/sources/I26-0.md", retrieved: "2026-07-19" },
+      },
+      {
+        label: "Welcome Inkling by Thinking Machines",
+        source: "Hugging Face Blog",
+        url: "https://huggingface.co/blog/thinkingmachines-inkling",
+        archive: { status: "full", path: "content/sources/I26-1.md", retrieved: "2026-07-19" },
+      },
+    ],
+    tags: ["AI & the Future", "Cognitive Biases & Models"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "I27",
+    clusterId: "I",
+    title: "Two Ways to Win the Robot Race: Smarter vs. Cheaper",
+    author: "TrendForce",
+    year: 2026,
+    medium: "Industry Report",
+    category: "Tech Futurism",
+    thesis:
+      "The US and China are running two structurally different playbooks for humanoid robots — the US is betting that intelligence (AI models trained on real-world data flywheels) will be the deciding moat, while China is betting that supply-chain scale and manufacturing speed will out-iterate any intelligence gap, echoing how China caught up in electric vehicles.",
+    layer0:
+      "US firms like Tesla, Figure AI, Boston Dynamics, and Apptronik are racing to make their robots' AI smarter through real-world data collection. Chinese firms like Unitree and AgiBot are racing to make robots cheaper and more numerous, scaling one firm's production from 1,000 to 10,000 units in about sixteen months.",
+    layer1:
+      "TrendForce frames this as a rerun of the electric-vehicle playbook: build a complete domestic supply chain, localize core components (servo motors, reducers, batteries) quickly, drive costs down, and win on volume and iteration speed rather than a single technological edge. The US counter-bet is that hardware specs matter less than they used to — value is shifting to the AI layer (NVIDIA's Cosmos and Isaac Lab, Google DeepMind's Gemini Robotics), and whichever company accumulates the most real-world interaction data fastest compounds an intelligence advantage that manufacturing scale alone can't close. TrendForce's own supply chain index (CSCII) shows this split concretely: the US dominates the 'Mental' plane (AI chips and compute, via NVIDIA and Qualcomm's near-monopoly), while China has the most comprehensive presence across all four component categories and leads the 'Power' plane outright.",
+    layer2:
+      "The genuinely interesting risk TrendForce flags is that these two strategies might not stay separate: China's manufacturing scale is generating a real-world deployment volume of its own, which produces training data — meaning the 'dumb but cheap and everywhere' strategy could eventually feed a 'deploy, collect data, update the model, redeploy' loop that closes the intelligence gap from the other direction. Which of your own competitive bets assumes your rival's strength (speed, or intelligence, or scale) can't also become their route to closing the gap on your strength?",
+    quiz: {
+      question:
+        "What is the central strategic difference TrendForce identifies between the US and Chinese approaches to humanoid robots?",
+      options: [
+        "The US is focused entirely on manufacturing cost reduction while China is focused entirely on novel hardware designs.",
+        "The US is prioritizing AI intelligence and data flywheels as the deciding moat, while China is prioritizing supply-chain scale, cost, and rapid iteration — similar to its earlier EV playbook.",
+        "Both countries are pursuing identical strategies, with the only difference being funding levels.",
+        "China has abandoned humanoid robots entirely in favor of quadruped robots.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "TrendForce explicitly compares China's approach to 'the early development model of electric vehicles' — building supply chain completeness and cost advantage first — while describing US firms as focused on building 'a data flywheel' to win through AI capability rather than hardware specs.",
+    },
+    related: ["I17", "I19"],
+    furtherReading: [
+      {
+        label: "Humanoid Robots Part 1: The US-China Divide and Who Controls the Supply Chain",
+        source: "TrendForce Insights (Substack)",
+        url: "https://insights.trendforce.com/p/humanoid-robots-us-china-divide",
+        archive: { status: "full", path: "content/sources/I27-0.md", retrieved: "2026-07-19" },
+      },
+    ],
+    tags: ["AI & the Future", "Incentives & Systems"],
+    epistemicStatus: "Contemporary",
+  },
+  {
     id: "U13",
     clusterId: "U",
     title: "Eight Cognitive Laws Worth Knowing Early",
@@ -14214,6 +14302,65 @@ export const NODES: Node[] = [
     ],
     tags: ["Markets & Narrative", "Compounding & Patience"],
     epistemicStatus: "Canonical",
+  },
+  {
+    id: "D14",
+    clusterId: "D",
+    title: "The Memory Supercycle: When Demand Outruns What Physics Can Build",
+    author: "SK hynix (Chey Tae-won); TSMC; ASML",
+    year: 2026,
+    medium: "Framework",
+    category: "Macro & Investing",
+    thesis:
+      "AI demand for compute and memory is compounding faster than physical fabrication capacity can be built, because building a new chip fab takes five-plus years no matter how much capital is thrown at it — creating a structural, multi-year supply gap that no amount of urgent spending can close early.",
+    layer0:
+      "SK hynix's chairman says customers want 4x-5x more memory supply, but even doubling wafer capacity will take until 2030. TSMC and ASML both raised 2026 capital spending guidance mid-year and are still telling investors the demand-supply gap is 'really big' and unquantifiable.",
+    layer1:
+      "The mechanism is a lead-time mismatch, not a willingness-to-invest problem. SK hynix's chairman put a new ('greenfield') memory fab's build time at more than five years — meaning capacity ordered today lands near the tail end of the shortage window he's forecasting through 2030, not before it. TSMC's CEO said the same about advanced logic nodes: 'Building the capacity and then ramping it up now takes five to seven years. There are no shortcuts.' ASML, the sole supplier of the EUV lithography machines both companies depend on, is 'investigating' a further 30% capacity expansion for 2028 specifically because customer order signals are strong enough to justify it — but its own CFO wouldn't commit to a number, since matching supply to a demand curve that's still rising is inherently a moving target. Within memory specifically, the gap compounds further: high-bandwidth memory (HBM) consumes far more wafers per bit than ordinary DRAM and carries higher margins, so new capacity keeps tilting toward HBM — which starves standard DRAM supply even as chipmakers add wafers overall, explaining why DRAM contract prices reportedly rose roughly 63% quarter-over-quarter even as capacity investment accelerated.",
+    layer2:
+      "J.P. Morgan frames the same dynamic from the financing side, describing AI infrastructure build-out as a $1.5 trillion, decade-long undertaking on the scale of prior 'generational' infrastructure waves like highways and railroads — the point being that this isn't a shortage that gets fixed by writing a bigger check next quarter; the physical build time is the binding constraint, not the capital. When you're facing a demand surge in your own work, is the bottleneck actually money — or is it something with a fixed lead time that more money can't compress, and are you budgeting your patience accordingly?",
+    quiz: {
+      question:
+        "According to SK hynix's chairman and TSMC's CEO, why can't the AI-driven chip and memory shortage be resolved quickly even with aggressive capital spending?",
+      options: [
+        "Because chipmakers are refusing to raise capital expenditure despite strong demand signals.",
+        "Because building and ramping a new fab has a fixed lead time of roughly five to seven years regardless of how much capital is deployed, so today's spending increases can't produce supply before the early 2030s.",
+        "Because AI demand for chips is actually expected to decline within the next year.",
+        "Because export controls make it illegal to build new fabs anywhere outside of Taiwan.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Both SK hynix's Chey Tae-won and TSMC's C.C. Wei independently cite the same structural constraint: a new fab's multi-year build-and-ramp timeline is fixed by physics and engineering complexity, not by capital availability — which is why both companies are raising 2026 spending while still forecasting shortages persisting through 2030.",
+    },
+    related: ["D11", "K1"],
+    furtherReading: [
+      {
+        label: "Thread on the memory supercycle",
+        source: "Zephyr (@zephyr_z9) on X, corroborated by Bloomberg via Tom's Hardware",
+        url: "https://x.com/zephyr_z9/status/2076652343307964879",
+        archive: { status: "full", path: "content/sources/D14-0.md", retrieved: "2026-07-19" },
+      },
+      {
+        label: "TSMC (TSM) Q2 2026 Earnings Call Transcript",
+        source: "Benzinga",
+        url: "https://www.benzinga.com/news/26/07/60504620/taiwan-semiconductor-reports-q2-2026-results-full-earnings-call-transcript",
+        archive: { status: "full", path: "content/sources/D14-1.md", retrieved: "2026-07-19" },
+      },
+      {
+        label: "ASML Holding Q2 2026 Earnings Call Transcript",
+        source: "Benzinga",
+        url: "https://www.benzinga.com/news/26/07/60488275/asml-holding-q2-2026-earnings-call-complete-transcript",
+        archive: { status: "full", path: "content/sources/D14-2.md", retrieved: "2026-07-19" },
+      },
+      {
+        label: "Powering the AI Revolution",
+        source: "J.P. Morgan Insights",
+        url: "https://www.jpmorgan.com/insights/technology/artificial-intelligence/powering-the-ai-revolution",
+        archive: { status: "full", path: "content/sources/D14-3.md", retrieved: "2026-07-19" },
+      },
+    ],
+    tags: ["Macro & Cycles", "Compounding & Patience"],
+    epistemicStatus: "Contemporary",
   },
   {
     id: "P7",
