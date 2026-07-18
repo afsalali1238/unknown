@@ -1,10 +1,14 @@
 /**
- * topics-index.ts — regenerates docs/TOPICS-INDEX.md, a full internal directory of every
- * cluster (topic) and every node (id, title, author, category/subtopic) currently in
- * src/data/nodes.ts.
+ * topics-index.ts — regenerates docs/TOPICS-INDEX.md AND docs/TOPICS-INDEX.csv, a full
+ * internal directory of every cluster (topic) and every node (id, title, author,
+ * category/subtopic) currently in src/data/nodes.ts.
  *
- * This is NOT wired into any route or the public/ folder — it's a maintenance artifact for
- * checking coverage (e.g. "do we have a node for Atomic Habits yet?"), not a feature.
+ * The .csv is the one to open for quick checking — sort/filter by cluster, author, or
+ * category in Excel/Sheets to answer "do we already have a node for X?" at a glance.
+ * The .md is the same data as a readable table.
+ *
+ * Neither is wired into any route or the public/ folder — both are maintenance artifacts,
+ * not a feature.
  *
  * Run after any content addition: `bun run scripts/topics-index.ts`
  * (also invoked automatically as the last step of the add-content skill's validate gate)
@@ -61,7 +65,43 @@ async function main() {
 
   const outPath = path.join(process.cwd(), "docs/TOPICS-INDEX.md");
   fs.writeFileSync(outPath, lines.join("\n") + "\n");
-  console.log(`Wrote ${outPath} — ${NODES.length} nodes across ${CLUSTERS.length} clusters.`);
+
+  // --- CSV (the one to open for checking coverage) ---
+  const csvEscape = (v: string) => {
+    const s = String(v ?? "");
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const csvRows: string[] = ["cluster_id,cluster_title,node_id,title,author,year,category_subtopic"];
+  for (const c of CLUSTERS) {
+    const nodes = NODES.filter((n) => n.clusterId === c.id).sort((a, b) =>
+      a.id.localeCompare(b.id, undefined, { numeric: true }),
+    );
+    if (nodes.length === 0) {
+      csvRows.push([c.id, c.title, "", "", "", "", ""].map(csvEscape).join(","));
+      continue;
+    }
+    for (const n of nodes) {
+      csvRows.push(
+        [
+          c.id,
+          c.title,
+          n.id,
+          n.title,
+          n.author ?? "",
+          n.year ?? "",
+          n.subtopicId ?? n.category ?? "",
+        ]
+          .map(csvEscape)
+          .join(","),
+      );
+    }
+  }
+  const csvPath = path.join(process.cwd(), "docs/TOPICS-INDEX.csv");
+  fs.writeFileSync(csvPath, csvRows.join("\n") + "\n");
+
+  console.log(
+    `Wrote ${outPath} and ${csvPath} — ${NODES.length} nodes across ${CLUSTERS.length} clusters.`,
+  );
 }
 
 main().catch((e) => {

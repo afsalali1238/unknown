@@ -294,6 +294,13 @@ export const CLUSTERS: Cluster[] = [
       "McLuhan, hyperreality, and the medium as the message — how the channel shapes the content",
     icon: "Radio",
   },
+  {
+    id: "AL",
+    title: "Negotiation & Persuasion",
+    subtitle:
+      "The primary texts behind getting to yes, saying no, and changing someone's mind on purpose",
+    icon: "Handshake",
+  },
 ];
 
 export const NODES: Node[] = [
@@ -4789,7 +4796,7 @@ export const NODES: Node[] = [
         "Base rates force you to ignore your unique narrative and look at the statistical average. No matter how special you think your situation is, the historical average is always the safest starting point.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["B2", "H4", "D4"],
+    related: ["B2", "H4", "D4", "J39"],
     furtherReading: [
       {
         label: "Thinking, Fast and Slow",
@@ -5396,7 +5403,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J10",
-    clusterId: "J",
+    clusterId: "L",
     title: "Avoiding Stupidity is Easier than Seeking Brilliance",
     author: "Farnam Street (Shane Parrish)",
     year: 2014,
@@ -5585,7 +5592,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J14",
-    clusterId: "J",
+    clusterId: "L",
     title: "The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions",
     author: "Farnam Street, after Col. John Boyd",
     year: 2021,
@@ -5632,7 +5639,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J15",
-    clusterId: "J",
+    clusterId: "L",
     title: "Predicting the Future with Bayes' Theorem",
     author: "Farnam Street (Shane Parrish), after Thomas Bayes",
     year: 2022,
@@ -5679,7 +5686,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J16",
-    clusterId: "J",
+    clusterId: "L",
     title: "The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes",
     author: "Farnam Street (Shane Parrish)",
     year: 2018,
@@ -5802,8 +5809,8 @@ export const NODES: Node[] = [
       explanation:
         "Sherlock Holmes rarely uses true deduction (which guarantees a true conclusion). He uses induction (and abduction), observing specific clues to construct the most highly probable hypothesis.",
     },
-    tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4", "J2"],
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+    related: ["D3", "H4", "J2", "L11", "AC2", "J39"],
     furtherReading: [
       {
         label: "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
@@ -11934,7 +11941,7 @@ export const NODES: Node[] = [
         "Human 3.0's whole premise is that real development requires progress across Mind, Body, Spirit, and Vocation together, since neglecting any one quadrant eventually undermines the others.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["S1", "S6", "S17"],
+    related: ["S1", "S6", "S17", "S19"],
     furtherReading: [
       {
         label: "Human 3.0 — A Map To Reach The Top 1%",
@@ -13480,52 +13487,11 @@ export const NODES: Node[] = [
     epistemicStatus: "Contemporary",
   },
   {
-    id: "S20",
-    clusterId: "S",
-    title: "Human 3.0 — A Map to Reach the Top 1%",
-    author: "Dan Koe",
-    year: 2026,
-    medium: "Newsletter",
-    category: "Self-Development",
-    thesis:
-      "Personal development happens across four independent quadrants — mind, body, spirit, and vocation — and real growth means progressing all four rather than maxing out one while the others stagnate.",
-    layer0:
-      "Dan Koe built a framework, adapted from Ken Wilber's AQAL model, to explain why someone can be a spiritually advanced but broke and unfit guru, or a wealthy founder with no relationships.",
-    layer1:
-      "The four quadrants: Mind (your internal thoughts, beliefs, emotions), Body (behavior and physical appearance — how the world reads you), Spirit (your relationship to community and meaning), and Vocation (your relationship to career, systems, and institutions). Within each quadrant, people move through three levels — Conformist (values inherited authority), Individualist (rejects the norm, pursues personal status), and Synthesist (can hold multiple perspectives and combine them) — and each level transition passes through three phases: Dissonance (growing tired of your current stage), Uncertainty (stepping into the unknown), and Discovery (finding what's next).",
-    layer2:
-      "The trap Koe names is 'False Transformation' — believing you've leveled up in one quadrant because you leveled up in another. A founder who scaled a business (Vocation) can mistake that for having also matured emotionally (Spirit). Which of your four quadrants is quietly stuck at Conformist while the others have moved on?",
-    quiz: {
-      question:
-        "What does Dan Koe call it when someone mistakes progress in one Human 3.0 quadrant for progress in another?",
-      options: [
-        "The Synthesist Trap",
-        "False Transformation",
-        "Quadrant Drift",
-        "The Conformist Fallacy",
-      ],
-      correctIndex: 1,
-      explanation:
-        "False Transformation is Koe's term for imitating what a higher level of development looks like in one domain (e.g. Vocation) without the underlying trait development, often while assuming growth in another domain (e.g. Spirit) as a result.",
-    },
-    related: ["S1", "S2", "S19"],
-    furtherReading: [
-      {
-        label: "Human 3.0 – A Map To Reach The Top 1%",
-        source: "X (Twitter) Article",
-        url: "https://x.com/thedankoe/status/2023779299367809063",
-        type: "article",
-      },
-    ],
-    tags: ["Meaning & Self", "Decision-Making"],
-    epistemicStatus: "Contemporary",
-  },
-  {
     id: "Q9",
     clusterId: "Q",
     title: "How Highly Effective People Speak",
     author: "Peter Andrei",
-    year: 2025,
+    year: 2021,
     medium: "Book",
     category: "Persuasion",
     thesis:
@@ -13552,9 +13518,9 @@ export const NODES: Node[] = [
     related: ["Q1", "Q2"],
     furtherReading: [
       {
-        label: "Summary of How Highly Effective People Speak",
-        source: "X (Twitter) post",
-        url: "https://x.com/MindBranches/status/2064134335574237362",
+        label: "How Highly Effective People Speak: How High Performers Use Psychology to Influence With Ease",
+        source: "Peter Andrei (Amazon listing)",
+        url: "https://www.amazon.com/How-Highly-Effective-People-Speak/dp/B089CSW3Y6",
         type: "article",
       },
     ],
@@ -13846,94 +13812,12 @@ export const NODES: Node[] = [
     epistemicStatus: "Contemporary",
   },
   {
-    id: "Q11",
-    clusterId: "Q",
-    title: "Why Smart Parents Spend Money on Experiences",
-    author: "Aspireachieve",
-    year: 2026,
-    medium: "X (Twitter) thread",
-    category: "Family & Parenting",
-    thesis:
-      "Toys are forgotten within weeks, but shared trips and experiences become the memories children actually carry into adulthood — making experiential spending a higher-leverage use of a limited parenting budget than material goods.",
-    layer0:
-      "Toys fade. Memories don't. That's the entire argument, and it's simple enough to test against your own childhood.",
-    layer1:
-      "The thread's practical claim is that experiences compound in ways toys don't: they build shared reference points a family returns to for years, they expose kids to novelty and problem-solving outside routine environments, and — unlike a toy sitting unused in a bin — the 'value' doesn't decay after the first week of novelty wears off.",
-    layer2:
-      "This is an assertion, not a study — worth treating as one person's practical philosophy rather than settled research. But it's testable against your own memory: try to name your five favorite toys from childhood, then your five favorite family trips. Which list came faster?",
-    quiz: {
-      question:
-        "What is the central claim of the 'toys fade, memories don't' argument for spending on experiences over material goods?",
-      options: [
-        "That toys are more expensive than trips over a child's lifetime.",
-        "That the novelty and value of toys decay quickly, while shared experiences become durable memories that compound over time.",
-        "That children who receive toys perform worse academically.",
-        "That trips are legally required for healthy child development.",
-      ],
-      correctIndex: 1,
-      explanation:
-        "The thread's core comparison is about durability of value — a toy's appeal fades fast, while an experience becomes a lasting shared reference point.",
-    },
-    related: ["AD3", "Q1"],
-    furtherReading: [
-      {
-        label: "Why smart parents spend money on trips with their kids",
-        source: "X (Twitter) thread",
-        url: "https://x.com/Aspireachievee/status/2046921673304322503",
-        type: "article",
-      },
-    ],
-    tags: ["Meaning & Self"],
-    epistemicStatus: "Speculative",
-  },
-  {
-    id: "Q12",
-    clusterId: "Q",
-    title: "The 90-Day Turnaround Framework",
-    author: "EP",
-    year: 2026,
-    medium: "X (Twitter) thread",
-    category: "Self-Development",
-    thesis:
-      "A life turnaround compresses into 90 days when you stack a small number of high-leverage habit changes simultaneously rather than sequentially, using the short deadline itself as forcing function.",
-    layer0:
-      "A 90-day window is short enough to stay urgent and long enough to actually change a habit — which is the entire logic behind using it as a self-improvement unit.",
-    layer1:
-      "The framework's core move is compression: instead of one change every few months, stack diet, exercise, sleep, and a single focused goal within the same 90-day sprint, using the visible finish line to sustain motivation past the point where open-ended resolutions usually collapse.",
-    layer2:
-      "The risk with any 90-day framework is mistaking a sprint for a permanent change — habits built under deadline pressure sometimes unravel the moment the deadline passes. Worth asking: what's your plan for day 91?",
-    quiz: {
-      question:
-        "What is the main psychological mechanism the 90-day framework relies on to sustain motivation?",
-      options: [
-        "Removing all deadlines so there's no pressure.",
-        "Using a short, visible finish line as a forcing function to sustain urgency that open-ended goals usually lose.",
-        "Focusing on only one habit at a time, never stacking changes.",
-        "Relying entirely on willpower with no structural support.",
-      ],
-      correctIndex: 1,
-      explanation:
-        "The 90-day compression works by keeping the deadline close enough to feel urgent, which is the lever open-ended New Year's-resolution-style goals typically lack.",
-    },
-    related: ["N12", "Q11"],
-    furtherReading: [
-      {
-        label: "How to turn your life around in 90 days",
-        source: "X (Twitter) thread",
-        url: "https://x.com/eptwts/status/2035360684775485632",
-        type: "article",
-      },
-    ],
-    tags: ["Craft & Deep Work", "Decision-Making"],
-    epistemicStatus: "Speculative",
-  },
-  {
     id: "AD4",
     clusterId: "AD",
     title: "Neuroplasticity: The Brain That Changes Itself",
-    author: "InspiroQuest",
-    year: 2026,
-    medium: "X (Twitter) thread",
+    author: "Norman Doidge",
+    year: 2007,
+    medium: "Book",
     category: "Neuroscience",
     thesis:
       "The brain physically rewires itself in response to repeated thought and behavior throughout adulthood, not just childhood — meaning habits, skills, and even chronic thought patterns are more changeable at a neural level than 'fixed personality' framing suggests.",
@@ -13959,55 +13843,14 @@ export const NODES: Node[] = [
     related: ["AD1", "AD3"],
     furtherReading: [
       {
-        label: "The neuroplasticity theory",
-        source: "X (Twitter) thread",
-        url: "https://x.com/InspiroQuest/status/2027683581636841778",
+        label: "The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science",
+        source: "Norman Doidge (Penguin Random House)",
+        url: "https://www.penguinrandomhouse.com/books/54295/the-brain-that-changes-itself-by-norman-doidge-md/",
         type: "article",
       },
     ],
     tags: ["Health & Body", "Cognitive Biases & Models"],
-    epistemicStatus: "Contemporary",
-  },
-  {
-    id: "L9",
-    clusterId: "L",
-    title: "The Donkey Principle",
-    author: "InspiroQuest",
-    year: 2026,
-    medium: "X (Twitter) thread",
-    category: "Argumentation",
-    thesis:
-      "Named for the fable of the man who wastes his time arguing with a donkey, this principle holds that not every disagreement deserves a response — engaging a bad-faith or unwinnable argument often costs more than losing it silently would.",
-    layer0:
-      "You can't win an argument with a donkey. You can only lower yourself to its level and get kicked for your trouble.",
-    layer1:
-      "The practical filter this principle offers: before engaging a disagreement, ask whether the other party is arguing in good faith and is even capable of updating their position. If not, the 'foolish argument' isn't the position being argued — it's the decision to argue at all, since no outcome of the exchange changes anything except your own time and composure.",
-    layer2:
-      "This overlaps with Nassim Taleb's similar advice about not debating people who have nothing to lose from being wrong. The hard part isn't knowing the principle — it's recognizing, in the moment your ego is already engaged, that you're standing in front of a donkey. What's the last argument you regret having, and would this filter have caught it beforehand?",
-    quiz: {
-      question:
-        "According to the Donkey Principle, what determines whether an argument is worth having?",
-      options: [
-        "Whether you are certain you are factually correct.",
-        "Whether the other party is arguing in good faith and is actually capable of updating their position based on the exchange.",
-        "Whether the argument happens in public or private.",
-        "Whether you have more social status than the other person.",
-      ],
-      correctIndex: 1,
-      explanation:
-        "The principle's filter is about the other party's capacity for good-faith engagement, not about who is factually right — arguing with someone who can't or won't update is framed as a losing proposition regardless of your position's merit.",
-    },
-    related: ["L1", "L2"],
-    furtherReading: [
-      {
-        label: "The Donkey Principle: How To Avoid Foolish Arguments",
-        source: "X (Twitter) thread",
-        url: "https://x.com/InspiroQuest/status/2024455996173930548",
-        type: "article",
-      },
-    ],
-    tags: ["Decision-Making", "Cognitive Biases & Models"],
-    epistemicStatus: "Contemporary",
+    epistemicStatus: "Canonical",
   },
   {
     id: "A15",
@@ -14133,47 +13976,6 @@ export const NODES: Node[] = [
     epistemicStatus: "Contemporary",
   },
   {
-    id: "Q13",
-    clusterId: "Q",
-    title: "Ten Questions to Fix Your Life in a Day",
-    author: "Unattributed",
-    year: 2026,
-    medium: "Infographic",
-    category: "Self-Development",
-    thesis:
-      "A single sitting of blunt self-interrogation — about complacency, fear, and what you'd regret — can surface the specific change a person has been avoiding faster than months of passive reflection.",
-    layer0:
-      "If the next year looked exactly like the last two weeks, would you be proud? That's the entire diagnostic in one question.",
-    layer1:
-      "The format is a set of ten forcing questions rather than a step-by-step plan: what's the cost of staying exactly where you are, what are you avoiding because failure feels scary, who would you be if you weren't afraid of others' opinions, what would you do if you stripped away every excuse. Each question is designed to short-circuit a specific rationalization people use to avoid a decision they've already half-made.",
-    layer2:
-      "The honest limitation here is that answering ten sharp questions in an afternoon doesn't itself produce change — it produces clarity about what change is needed, which is a different and easier thing. The real test is whether you act on the answer or file it away as a good afternoon of reflection. Which one of these ten actually stung?",
-    quiz: {
-      question:
-        "What is the actual output of this kind of ten-question self-interrogation exercise, as distinct from producing change itself?",
-      options: [
-        "Guaranteed behavior change within 24 hours.",
-        "Clarity about what specific change is needed — which is necessary but not sufficient, since acting on that clarity is a separate step.",
-        "A complete financial plan.",
-        "Nothing useful; the questions are purely rhetorical.",
-      ],
-      correctIndex: 1,
-      explanation:
-        "Forcing questions are diagnostic tools — they're good at surfacing what you already half-know you're avoiding, but they don't substitute for the follow-through of actually acting on the answer.",
-    },
-    related: ["Q12", "N12"],
-    furtherReading: [
-      {
-        label: "How to fix your Entire Life In One Day",
-        source: "X (Twitter) infographic",
-        url: "https://x.com/InspiroQuest/status/2027683581636841778",
-        type: "article",
-      },
-    ],
-    tags: ["Meaning & Self", "Decision-Making"],
-    epistemicStatus: "Speculative",
-  },
-  {
     id: "E2",
     clusterId: "E",
     title: "Twenty Finance Terms Everyone Confuses",
@@ -14243,7 +14045,7 @@ export const NODES: Node[] = [
       explanation:
         "The lesson frames critical thinking as a trainable process with discrete steps, and frames most reasoning failures as skipped steps rather than a fixed lack of capability.",
     },
-    related: ["L9", "J35"],
+    related: ["J35", "L3"],
     furtherReading: [
       {
         label: "5 tips to improve your critical thinking",
@@ -14379,47 +14181,6 @@ export const NODES: Node[] = [
     epistemicStatus: "Canonical",
   },
   {
-    id: "L14",
-    clusterId: "L",
-    title: "Deductive vs. Inductive Reasoning",
-    author: "Khan Academy",
-    year: 2015,
-    medium: "Video lesson",
-    category: "Logic",
-    thesis:
-      "Deductive reasoning guarantees a true conclusion if the premises are true, while inductive reasoning only makes a conclusion probable — conflating the two leads people to treat strong patterns as proven certainties.",
-    layer0:
-      '"All observed swans are white, therefore all swans are white" feels airtight until you find one black swan. That\'s the entire difference between the two modes of reasoning in a single example.',
-    layer1:
-      "Deductive reasoning moves from general premises to a specific conclusion that is logically certain, provided the premises are true and the logic is valid (all men are mortal; Socrates is a man; therefore Socrates is mortal). Inductive reasoning moves from specific observations to a general conclusion that is probable, not certain, no matter how much supporting evidence accumulates — which is why induction is always vulnerable to a single disconfirming case.",
-    layer2:
-      "Most everyday reasoning, including most scientific reasoning, is inductive rather than deductive — which means most of what feels like 'proof' in daily life is really strong probabilistic confidence. Where are you treating an inductive pattern (this has always worked before) as if it were a deductive certainty?",
-    quiz: {
-      question:
-        "Why is inductive reasoning always vulnerable in a way deductive reasoning, applied correctly, is not?",
-      options: [
-        "Because inductive reasoning is never used in science.",
-        "Because inductive conclusions are only probable, not certain, so a single disconfirming observation can overturn them no matter how much prior evidence supported them.",
-        "Because deductive reasoning doesn't require any premises.",
-        "Because inductive reasoning always produces false conclusions.",
-      ],
-      correctIndex: 1,
-      explanation:
-        "This is the classic 'black swan' vulnerability of induction: unlike valid deduction from true premises, no quantity of confirming observations makes an inductive conclusion logically certain.",
-    },
-    related: ["L11", "AC2"],
-    furtherReading: [
-      {
-        label: "Deductive reasoning",
-        source: "Khan Academy",
-        url: "https://khanacademy.org/math/algebra-home/alg-series-and-induction/alg-deductive-and-inductive-reasoning/v/deductive-reasoning-1",
-        type: "video",
-      },
-    ],
-    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
-    epistemicStatus: "Canonical",
-  },
-  {
     id: "D13",
     clusterId: "D",
     title: "20 Golden Rules from Peter Lynch",
@@ -14539,46 +14300,6 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Philosophy & the Self", "Craft & Deep Work"],
-    epistemicStatus: "Contemporary",
-  },
-  {
-    id: "Q14",
-    clusterId: "Q",
-    title: "38 Letters from J.D. Rockefeller to His Son",
-    author: "John D. Rockefeller (compiled)",
-    year: 2026,
-    medium: "Book summary",
-    category: "Business Philosophy",
-    thesis:
-      "Rockefeller's advice to his son treats character, patience, and integrity as the actual load-bearing structure of durable wealth — with specific claims that reputation, saving habits, and daily small decisions compound more than any single deal.",
-    layer0:
-      "\"The vast majority of people never aim high enough — they doom themselves to mediocrity before they've even begun.\" That's rule one of thirty-eight.",
-    layer1:
-      "Recurring themes across the list: character is formed in small daily decisions, not grand declarations — what you do when no one is watching defines you. Patience with investments separates the wealthy from the merely ambitious, since true fortunes require time to compound. Reputation takes decades to build and can be destroyed in a single day. And a specific claim worth sitting with: fortunes are rarely lost in one catastrophe but rather through a thousand tiny leaks — pay attention to small expenses.",
-    layer2:
-      "The letters read as a rebuttal to the 'one big break' theory of wealth — nearly every rule points toward compounding, consistency, and reputation instead of a single lucky deal. Which of the thirty-eight would your own daily habits actually fail if tested against it honestly?",
-    quiz: {
-      question: "According to this list, how are fortunes typically lost, more often than not?",
-      options: [
-        "Through one single catastrophic financial event.",
-        "Through a thousand tiny, unwatched leaks in spending rather than one big loss.",
-        "Through inheritance disputes exclusively.",
-        "Fortunes are never actually lost once accumulated.",
-      ],
-      correctIndex: 1,
-      explanation:
-        "This is a specific, named claim in the list: rule 20 states fortunes are 'rarely lost in one catastrophe but rather through a thousand tiny leaks' — reframing wealth preservation as a matter of consistent small discipline rather than avoiding one big mistake.",
-    },
-    related: ["Q1", "Q13"],
-    furtherReading: [
-      {
-        label: "38 Letters from J.D. Rockefeller (favorite ideas)",
-        source: "X (Twitter) compilation",
-        url: "https://x.com/thejustinmecham/status/1909588401281810839",
-        type: "article",
-      },
-    ],
-    tags: ["Compounding & Patience", "Wealth, Leverage & Judgment"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -15134,10 +14855,51 @@ export const NODES: Node[] = [
     epistemicStatus: "Canonical",
   },
   {
+    id: "J39",
+    clusterId: "J",
+    title: "Correlation and Causation",
+    author: "Tyler Vigen",
+    year: 2015,
+    medium: "Website / Book",
+    category: "Reasoning",
+    thesis:
+      "Two variables moving together over time is never, by itself, evidence that one causes the other — with a large enough dataset, data dredging alone will always turn up strong-looking correlations between things that have nothing to do with each other.",
+    layer0:
+      "Bachelor's degrees awarded in psychology track almost perfectly with the number of groundskeepers in Utah, year over year. Nobody thinks psychology graduates are causing a groundskeeper boom. That's the entire lesson, made visible.",
+    layer1:
+      "Tyler Vigen's Spurious Correlations project compares thousands of real datasets against each other and publishes the ones that happen to line up — margarine consumption tracking the divorce rate in Maine, or the number of judges in Indiana tracking viewership of a sitcom. These aren't fabricated; the numbers are real and the statistical correlation is real. What's missing is any causal mechanism connecting them. The project exists specifically to make an abstract warning ('correlation isn't causation') impossible to forget, by showing just how easily a strong correlation appears between variables that obviously can't be causing each other.",
+    layer2:
+      "Vigen names the actual mechanisms that manufacture these illusions: data dredging (testing thousands of variable pairs until some match by chance alone), confounding variables (a hidden third factor, like a shared trend over time, driving both), non-independent observations (each year isn't a fresh random draw if the same underlying trend carries over from the year before), and misleading chart design (a truncated y-axis exaggerating how tightly two lines track). The next time a chart convinces you of a cause, ask: is there a plausible mechanism, or did someone just find one match among thousands of comparisons?",
+    quiz: {
+      question:
+        "According to the Spurious Correlations project, what is 'data dredging' and why does it produce misleading results?",
+      options: [
+        "Fabricating data points that don't exist in the real dataset.",
+        "Testing enormous numbers of variable pairs against each other until some match up by pure chance, then presenting that chance match as if it were meaningful.",
+        "Rounding numbers to make a chart look smoother.",
+        "Using only data from a single, small country to avoid outliers.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Data dredging means comparing huge numbers of unrelated variables (Vigen's project runs over 600 million comparisons) until some pairs randomly align — the correlation is mathematically real, but finding it says nothing about causation, since a large enough search will always turn up coincidental matches.",
+    },
+    related: ["J18", "L3", "U1"],
+    furtherReading: [
+      {
+        label: "Spurious Correlations",
+        source: "Tyler Vigen (tylervigen.com)",
+        url: "https://www.tylervigen.com/spurious-correlations",
+        archive: { status: "full", path: "content/sources/J39-0.md", retrieved: "2026-07-18" },
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
     id: "AE3",
     clusterId: "AE",
     title: "How to Be a Great Storyteller",
-    author: "Unattributed compilation",
+    author: "Lisa Christen, Forbes Coaches Council",
     year: 2026,
     medium: "Infographic",
     category: "Storytelling",
@@ -15421,6 +15183,1661 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Decision-Making", "Craft & Deep Work"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL1",
+    clusterId: "AL",
+    title: "Getting to Yes",
+    author: "Roger Fisher & William Ury",
+    year: 1981,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "Negotiation goes better when you separate the people from the problem and argue over underlying interests instead of fixed positions.",
+    layer0:
+      "Two Harvard negotiators noticed the same failure in labor talks, divorces, and hostage crises alike: both sides dig into positions and the deal dies. Their fix, published in 1981, became the negotiation standard.",
+    layer1:
+      "Fisher and Ury's method rests on four moves. Separate the people from the problem — attack the issue, not the person, so ego and defensiveness don't derail substance. Focus on interests, not positions — 'I want the window shut' is a position; 'I'm cold' is the interest underneath it, and interests have more workable solutions than positions do. Invent options for mutual gain before deciding — brainstorm broadly before narrowing, so you don't settle for the first workable split. Insist on objective criteria — market value, precedent, expert judgment — so the outcome is argued on fairness, not on who has more leverage in the room that day.",
+    layer2:
+      "In your last disagreement, did you ever ask what the other side actually needed underneath their stated demand — or did you just negotiate against the position they opened with?",
+    quiz: {
+      question:
+        "According to Getting to Yes, why does focusing on 'interests' instead of 'positions' open up more possible solutions?",
+      options: [
+        "Interests are easier to fake than positions, so negotiators can bluff more effectively",
+        "A stated position is usually just one solution to an underlying need, and that same need can often be met several other ways once it's made explicit",
+        "Positions are illegal to discuss in most formal negotiations",
+        "Interests always favor the party who reveals them first",
+      ],
+      correctIndex: 1,
+      explanation:
+        "A position like 'I want the window shut' hides the real interest ('I'm cold'), and once the interest is visible, other solutions — a sweater, a different seat — become available that neither side saw while arguing about the window.",
+    },
+    related: ["AL2", "AL5", "L15", "M4"],
+    furtherReading: [
+      {
+        label: "Getting to Yes: Negotiating Agreement Without Giving In",
+        source: "Penguin Books",
+        url: "https://www.penguinrandomhouse.com/books/291434/getting-to-yes-by-roger-fisher-william-ury-and-bruce-patton/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL2",
+    clusterId: "AL",
+    title: "Never Split the Difference",
+    author: "Chris Voss",
+    year: 2016,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "The FBI's top hostage negotiator argues that logic loses to emotion in real negotiations — so the job is to hear and label the other side's feelings before you ever propose a number.",
+    layer0:
+      "Chris Voss spent 24 years talking kidnappers into releasing hostages. His conclusion after leaving the FBI: 'splitting the difference' — the compromise everyone's taught to seek — is usually a bad deal for both sides.",
+    layer1:
+      "Voss's core tool is tactical empathy: naming the other person's emotion out loud ('It sounds like you're worried about the deadline') to defuse it and build trust, without agreeing to their position. Mirroring — repeating their last few words back — buys time and pulls out more information. Calibrated questions that start with 'how' or 'what' ('How am I supposed to do that?') hand the other side the illusion of control while steering them toward your constraints. And he trains for a specific vocal tone — the late-night FM DJ voice — because a calm, downward-inflected voice signals safety and lowers the other person's guard before a single term is discussed.",
+    layer2:
+      "Next time you're negotiating something small — a price, a deadline, a chore split — try naming the other person's likely objection out loud before they raise it. Does it disarm them, or does it feel forced until you've actually practiced it?",
+    quiz: {
+      question: "What is 'tactical empathy' in Voss's framework, and what is it NOT?",
+      options: [
+        "Agreeing with the other side's demands to keep the peace",
+        "Naming and acknowledging the other person's emotions out loud to build trust and lower defensiveness — without conceding to their position",
+        "A polygraph technique used to detect when someone is lying",
+        "Refusing to discuss emotions at all during a negotiation",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Tactical empathy is about demonstrating you understand the other person's perspective and feelings — which builds the trust needed to actually negotiate — while keeping your own position and terms completely separate from that acknowledgment.",
+    },
+    related: ["AL1", "AL16", "U3"],
+    furtherReading: [
+      {
+        label: "Never Split the Difference: Negotiating As If Your Life Depended On It",
+        source: "HarperBusiness",
+        url: "https://www.harpercollins.com/products/never-split-the-difference-chris-voss",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL3",
+    clusterId: "AL",
+    title: "Influence: The Psychology of Persuasion",
+    author: "Robert Cialdini",
+    year: 1984,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "People say yes for six predictable, exploitable reasons — reciprocity, commitment, social proof, liking, authority, and scarcity — and knowing the levers is the best defense against having them pulled on you.",
+    layer0:
+      "Cialdini spent years undercover training as a used-car salesman, fundraiser, and telemarketer to catalog the tricks that actually work. In 1984 he distilled them into six weapons of influence that still explain most modern persuasion, from ads to cults.",
+    layer1:
+      "Reciprocity: an unsolicited free sample creates a felt obligation to return the favor, often disproportionately. Commitment and consistency: getting someone to make a small public commitment (even signing a petition) makes them far more likely to agree to a larger, related request later, because reversing course threatens their self-image. Social proof: people copy the behavior of others, especially under uncertainty, which is why fake laugh tracks and 'most popular' labels work. Liking: we say yes more to people who resemble us, compliment us, or cooperate with us. Authority: white coats, titles, and uniforms trigger compliance even when the authority is irrelevant to the request. Scarcity: 'limited time' and 'only 3 left' increase desire not because the item improved, but because losing access feels worse than never having had the option.",
+    layer2:
+      "Which of the six — reciprocity, commitment, social proof, liking, authority, scarcity — got you to buy or agree to something in the last week, and would you have said yes without it?",
+    quiz: {
+      question:
+        "Why does getting someone to make a small, voluntary commitment early make them more likely to agree to a bigger related request later?",
+      options: [
+        "It creates a legal obligation to comply with future requests",
+        "Small commitments are usually forgotten, so people default to agreeing anyway",
+        "Once someone has acted or stated a position publicly, staying consistent with that self-image becomes a powerful internal pressure, even when the new request is much larger",
+        "It has no real effect — Cialdini's studies found commitment doesn't influence later behavior",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Cialdini's commitment-and-consistency principle works because people want to see themselves (and be seen) as consistent — once you've said or done something small, contradicting it later with a refusal creates internal discomfort, which most people resolve by going along with the bigger ask.",
+    },
+    related: ["AL4", "AL20", "U1", "U5"],
+    furtherReading: [
+      {
+        label: "Influence: The Psychology of Persuasion",
+        source: "Harper Business",
+        url: "https://www.influenceatwork.com/principles-of-persuasion/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Cognitive Biases & Models"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL4",
+    clusterId: "AL",
+    title: "Pre-Suasion",
+    author: "Robert Cialdini",
+    year: 2016,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "The most effective persuasion happens before the actual request — by directing someone's attention to the right idea in the moment right before you ask.",
+    layer0:
+      "Thirty years after Influence, Cialdini asked a different question: what if the real leverage point isn't the pitch itself, but the seconds right before it? Pre-Suasion is his answer.",
+    layer1:
+      "Cialdini's 'privileged moment' is the brief window where you can prime someone's attention toward a concept that makes your coming request feel more natural or valuable. A wine shop that plays French accordion music sells more French wine, not because the pitch changed but because attention was pre-directed. Asking 'do you consider yourself adventurous?' before a request primes people to act in ways that confirm that self-image. The mechanism is associative: whatever is most vivid in someone's mind in that moment disproportionately shapes the decision they make next, so the persuader's real job is managing what's vivid, not just what's true.",
+    layer2:
+      "Before you make your next ask — a raise, a favor, a sale — what's the one idea you could put in the other person's head sixty seconds beforehand that would make your actual request feel like the obvious next step?",
+    quiz: {
+      question: "What does Cialdini mean by a 'privileged moment' in Pre-Suasion?",
+      options: [
+        "A legal loophole that makes a contract unenforceable",
+        "A brief window right before a request where directing someone's attention to a related concept increases the odds they'll agree to what follows",
+        "The exact instant a negotiation legally becomes binding",
+        "A moment when persuasion techniques stop working entirely",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Pre-suasion's central claim is that persuasion is won or lost before the ask itself — by controlling what's momentarily most vivid or salient in someone's attention, a persuader shapes the frame the eventual request gets evaluated in.",
+    },
+    related: ["AL3", "AL19", "U6"],
+    furtherReading: [
+      {
+        label: "Pre-Suasion: A Revolutionary Way to Influence and Persuade",
+        source: "Simon & Schuster",
+        url: "https://www.simonandschuster.com/books/Pre-Suasion/Robert-Cialdini/9781501109812",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Cognitive Biases & Models"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL5",
+    clusterId: "AL",
+    title: "Bargaining for Advantage",
+    author: "G. Richard Shell",
+    year: 1999,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "Your instinctive negotiation style is a variable, not a constant — and the biggest gains come from diagnosing it and deliberately adjusting it to the situation instead of running the same style everywhere.",
+    layer0:
+      "A Wharton negotiation professor built his course around a finding students didn't expect: most people negotiate the same way in every situation, whether or not that style fits — and the fix is knowing your default before you walk in.",
+    layer1:
+      "Shell maps five negotiating styles — competing, collaborating, compromising, accommodating, avoiding — and shows most people over-rely on one regardless of context, because it's the style they're most comfortable with, not the one the situation calls for. He pairs this with an information-and-standards framework: negotiators who research the other side's real constraints, and who anchor arguments in external, legitimate standards (industry norms, prior deals, published data) rather than raw assertion, consistently out-negotiate those relying on charisma or aggression alone. His 'foundations' also include self-knowledge of your own reservation price and walk-away point before any conversation starts.",
+    layer2:
+      "What's your default negotiating style in a disagreement — do you compete, accommodate, or avoid — and is that the style the situation you're in right now actually calls for?",
+    quiz: {
+      question:
+        "Why does Shell argue that knowing your default negotiating style matters, even before learning any specific tactics?",
+      options: [
+        "Because only one style — competing — ever produces good outcomes",
+        "Most people unconsciously default to the same style in every negotiation regardless of fit, so recognizing that default is a precondition for choosing the style the situation actually requires",
+        "Negotiating styles are fixed at birth and cannot be adjusted",
+        "Style doesn't affect outcomes — only information does",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Shell's research found that negotiators tend to reuse whichever style feels most natural to them across very different situations, which means the first real skill isn't a tactic at all — it's recognizing your own habitual style so you can override it when the context calls for something else.",
+    },
+    related: ["AL1", "AL6", "L15"],
+    furtherReading: [
+      {
+        label: "Bargaining for Advantage: Negotiation Strategies for Reasonable People",
+        source: "Penguin Books",
+        url: "https://www.penguinrandomhouse.com/books/295870/bargaining-for-advantage-by-g-richard-shell/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL6",
+    clusterId: "AL",
+    title: "Start with No",
+    author: "Jim Camp",
+    year: 2002,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "Chasing agreement makes you weak — a negotiator who needs a 'yes' has already given up leverage, while one who invites 'no' keeps the decision, and the deal, fully in the other side's honest control.",
+    layer0:
+      "Jim Camp trained Fortune 500 negotiating teams on a principle that inverts most sales advice: stop trying to get to yes. Let the other side say no, on purpose, as early as possible.",
+    layer1:
+      "Camp's argument is that 'need' is the single biggest liability in a negotiation — a negotiator who visibly needs the deal to close will unconsciously concede to get it, and skilled counterparts can smell that need and exploit it. Inviting 'no' removes pressure from both sides: it signals the other party can walk away freely, which paradoxically makes them more honest and more willing to actually engage, since agreeing no longer feels like being cornered. Camp pairs this with a strict no-compromise-on-mission-and-purpose stance early in the process, replacing the fuzzy goal of 'reaching a deal' with a clear, written mission for what the negotiation is actually meant to accomplish.",
+    layer2:
+      "In your last important negotiation, did the other side sense that you needed the deal more than they did — and if they did, what would inviting a 'no' from them have actually cost you?",
+    quiz: {
+      question: "According to Jim Camp, why does inviting the other side to say 'no' strengthen a negotiation?",
+      options: [
+        "'No' always means the deal is permanently dead",
+        "It removes the pressure of a forced yes, which makes the other party more comfortable being honest and more willing to genuinely engage, rather than agreeing just to escape discomfort",
+        "It is a legal requirement in formal business negotiations",
+        "Saying no is a sign the negotiator has lost control of the conversation",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Camp's method treats 'no' as a decision, not a rejection — by making it safe to say, both sides stop performing agreement they don't actually feel, which produces more honest information and, often, a stronger deal than one reached under pressure.",
+    },
+    related: ["AL5", "AL15", "AJ1"],
+    furtherReading: [
+      {
+        label: "Start with No: The Negotiating Tools That the Pros Don't Want You to Know",
+        source: "Crown Business",
+        url: "https://www.penguinrandomhouse.com/books/149298/start-with-no-by-jim-camp/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL7",
+    clusterId: "AL",
+    title: "You Can Negotiate Anything",
+    author: "Herb Cohen",
+    year: 1980,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "Every negotiation, no matter how it's dressed up, runs on just three variables — power, time, and information — and whoever understands them best usually wins, regardless of who seems to hold the stronger position.",
+    layer0:
+      "Herb Cohen negotiated hostage releases for the U.S. government and once said he treated every deal, personal or geopolitical, the same way — as a game with three moving parts he could learn to read.",
+    layer1:
+      "Power, in Cohen's framework, is often perceived rather than real — the party who acts like they have alternatives usually gets treated as if they do, whether or not that's true. Time creates pressure asymmetrically: the side facing a real or believed deadline concedes more, which is why most serious concessions in any negotiation happen near the deadline, not at the start. Information is the great equalizer — the side that has done more homework on the other party's actual constraints, alternatives, and pressures negotiates from a position that looks like power even without any formal leverage. Cohen's larger claim is that almost nothing is fixed-price if you understand which of these three levers is actually driving the other side's behavior.",
+    layer2:
+      "In a recent negotiation where you felt powerless, was your actual power lower than the other side's — or did you simply have less information about their real deadline and alternatives than they had about yours?",
+    quiz: {
+      question: "Why does Cohen argue that most concessions happen near a negotiation's deadline?",
+      options: [
+        "Deadlines are legally required to trigger a final offer",
+        "Time pressure builds asymmetrically as a deadline approaches, and the side under more time pressure typically concedes more to avoid losing the deal entirely",
+        "Negotiators get bored and stop paying attention near deadlines",
+        "Deadlines have no measurable effect on negotiation outcomes",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Cohen's time variable works because the closer a real or perceived deadline gets, the more the party who fears missing it will trade away favorable terms just to close before time runs out — which is why skilled negotiators often manufacture or reveal deadlines strategically.",
+    },
+    related: ["AL6", "AL14", "L15"],
+    furtherReading: [
+      {
+        label: "You Can Negotiate Anything",
+        source: "Bantam Books",
+        url: "https://www.penguinrandomhouse.com/books/176269/you-can-negotiate-anything-by-herb-cohen/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL8",
+    clusterId: "AL",
+    title: "Crucial Conversations",
+    author: "Kerry Patterson, Joseph Grenny, Ron McMillan & Al Switzler",
+    year: 2002,
+    medium: "Book",
+    category: "Communication",
+    thesis:
+      "When stakes are high, opinions differ, and emotions run strong, most people either go silent or go aggressive — and the way back to a productive conversation is to make it psychologically safe before you try to make it right.",
+    layer0:
+      "Four researchers studied what separates people who navigate high-stakes, emotional conversations well from everyone else who either shuts down or blows up. The answer wasn't talent — it was a repeatable structure.",
+    layer1:
+      "Their central diagnostic: when people feel unsafe, they distort communication in one of two directions — silence (withholding, sarcasm, avoiding) or violence (controlling, labeling, attacking) — and neither produces a real conversation. Their fix starts with tracking your own physical and emotional signals that a conversation has turned crucial, then explicitly restoring safety by clarifying mutual purpose ('I want us both to win here') and mutual respect before returning to content. They introduce STATE — Share your facts, Tell your story, Ask for others' paths, Talk tentatively, Encourage testing — as the sequence for raising a hard topic without triggering the other person's defenses.",
+    layer2:
+      "Think of the last conversation where you either went silent or got sharp instead of saying what you actually meant — what would have needed to feel safer in that moment for you to actually say it straight?",
+    quiz: {
+      question:
+        "According to Crucial Conversations, what typically triggers people to shift into 'silence' or 'violence' during a high-stakes conversation?",
+      options: [
+        "A lack of vocabulary to express their opinion",
+        "A feeling that psychological safety has broken down — that mutual purpose or mutual respect is at risk — which distorts communication into withholding or attacking regardless of the topic itself",
+        "Disagreeing with the other person is inherently violent",
+        "Running out of time to finish the conversation",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The book's core finding is that content isn't usually what derails hard conversations — safety is. Once someone senses the conversation threatens the relationship or their standing, they default to silence or aggression regardless of how reasonable the actual disagreement is.",
+    },
+    related: ["AL9", "AL10", "U9"],
+    furtherReading: [
+      {
+        label: "Crucial Conversations: Tools for Talking When Stakes Are High",
+        source: "McGraw-Hill",
+        url: "https://cruciallearning.com/crucial-conversations-book/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL9",
+    clusterId: "AL",
+    title: "Difficult Conversations",
+    author: "Douglas Stone, Bruce Patton & Sheila Heen",
+    year: 1999,
+    medium: "Book",
+    category: "Communication",
+    thesis:
+      "Every hard conversation is secretly three conversations at once — what happened, the feelings involved, and what it says about each person's identity — and most arguments fail because people only ever address the first.",
+    layer0:
+      "Three members of the Harvard Negotiation Project noticed that couples, coworkers, and families all fought the same underlying fight, no matter the topic on the surface. They mapped it into three layers.",
+    layer1:
+      "The 'What Happened' conversation is the surface dispute — who said what, whose fault it was — and it's usually unwinnable because both parties genuinely experienced different, equally valid versions of events shaped by different information and intentions. The 'Feelings' conversation runs underneath it, unacknowledged, driving tone and defensiveness even when neither party names it. The 'Identity' conversation is the deepest and most volatile — it's the internal question 'what does this say about me,' and threats to identity (am I competent, am I a good person, am I loved) are what actually cause people to escalate, shut down, or leave the room. The book's fix is to move from arguing over 'who's right' about what happened to a curious 'and stance' that holds both stories as partially true at once.",
+    layer2:
+      "In your last real argument, which layer actually blew it up — the facts of what happened, the unspoken feelings, or a threat to how you see yourself — and did you ever name that layer out loud?",
+    quiz: {
+      question:
+        "Why does the book argue the 'What Happened' conversation is usually unwinnable as a dispute over facts?",
+      options: [
+        "Because facts don't matter in interpersonal conflict",
+        "Because both parties typically experienced genuinely different, information-shaped versions of the same event, so debating whose version is 'true' misses that both can be honestly held",
+        "Because memory is always completely unreliable",
+        "Because only one person is ever telling the truth in any disagreement",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The authors' point isn't that facts are unknowable — it's that each party's account is shaped by different information, assumptions, and intentions they had access to, so 'who's right' is usually the wrong question when the real goal is understanding, not verdict.",
+    },
+    related: ["AL8", "AL10", "O4"],
+    furtherReading: [
+      {
+        label: "Difficult Conversations: How to Discuss What Matters Most",
+        source: "Penguin Books",
+        url: "https://www.penguinrandomhouse.com/books/294466/difficult-conversations-by-douglas-stone-bruce-patton-and-sheila-heen/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL10",
+    clusterId: "AL",
+    title: "Nonviolent Communication",
+    author: "Marshall Rosenberg",
+    year: 2003,
+    medium: "Book",
+    category: "Communication",
+    thesis:
+      "Most conflict is fueled by moralistic judgment disguised as fact — replacing 'you're being selfish' with a plain statement of observation, feeling, need, and request removes the blame that makes people defensive.",
+    layer0:
+      "A clinical psychologist who mediated in war zones and gang conflicts built a communication method on a simple bet: almost every accusation is a poorly worded, unmet need — and needs are far easier to negotiate than accusations.",
+    layer1:
+      "Rosenberg's four-part structure: observation (what actually happened, stripped of evaluation — 'you were 20 minutes late' not 'you're always late'), feeling (the emotion it produced in you, owned as yours, not caused by them), need (the underlying human need not being met — reliability, respect, rest), and request (a specific, doable ask, not a demand). The method's power is in separating observation from judgment: 'you're inconsiderate' is a verdict that triggers defense, while 'when you were late, I felt anxious because I need reliability, would you text me if you're running behind' invites cooperation instead of a fight over character.",
+    layer2:
+      "Take the last thing you snapped at someone about — can you rewrite it as observation, feeling, need, and request, without a single word that judges who they are?",
+    quiz: {
+      question:
+        "Why does Rosenberg's method separate 'observation' from 'evaluation' as a first step?",
+      options: [
+        "Because evaluations are always factually incorrect",
+        "Because stating a judgment ('you're inconsiderate') rather than a neutral fact ('you were 20 minutes late') triggers defensiveness and shuts down the actual need underneath the complaint",
+        "Because the law requires neutral language in formal disputes",
+        "Because observations are easier to remember than feelings",
+      ],
+      correctIndex: 1,
+      explanation:
+        "A moralistic judgment implies a verdict about someone's character, which triggers self-protection rather than problem-solving — a neutral observation of what actually happened leaves room for the real conversation, about the need behind the complaint, to happen at all.",
+    },
+    related: ["AL8", "AL9", "AJ1"],
+    furtherReading: [
+      {
+        label: "Nonviolent Communication: A Language of Life",
+        source: "PuddleDancer Press",
+        url: "https://www.cnvc.org/what-is-nvc",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL11",
+    clusterId: "AL",
+    title: "Negotiating the Impossible",
+    author: "Deepak Malhotra",
+    year: 2016,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "Deadlocks that look unsolvable through direct bargaining usually get broken by changing the game itself — the frame, the players at the table, or the process — rather than by pushing harder within the existing structure.",
+    layer0:
+      "A Harvard Business School professor studied negotiations that looked hopeless on paper — hostage standoffs, corporate takeovers, the Cuban Missile Crisis — and found the ones that resolved shared a pattern: someone stopped negotiating the terms and started negotiating the game.",
+    layer1:
+      "Malhotra identifies three levers beyond direct bargaining. Changing the process — who talks to whom, in what order, on what timeline — can unstick a deadlock that no new argument would have moved. Changing the players — bringing in a mediator, a new stakeholder, or removing someone whose presence is triggering positional digging-in — resets the dynamic entirely. And reframing what's actually being negotiated (from 'who's right' to 'what future are we both trying to avoid') can turn a zero-sum fight into a shared problem. His case studies show that the negotiators who succeeded in 'impossible' situations rarely won by being more persuasive within the existing frame — they won by refusing to accept that frame as fixed.",
+    layer2:
+      "In a conflict you consider genuinely stuck, have you only tried arguing harder for your position — or have you tried changing who's in the room, the order of the conversation, or the actual question being asked?",
+    quiz: {
+      question:
+        "According to Malhotra, what do successful resolutions of 'impossible' negotiations typically have in common?",
+      options: [
+        "One side eventually applies overwhelming pressure until the other concedes",
+        "They change the game itself — the process, the players, or the frame of what's being negotiated — rather than just arguing harder for the same position within the existing structure",
+        "A neutral third party always makes the final binding decision",
+        "Both sides simply wait until the deadline forces a compromise",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Malhotra's case studies consistently show that the breakthrough in seemingly unsolvable negotiations came from redesigning the negotiation itself — who's involved, how it's structured, or what question is actually on the table — rather than from better arguments made inside an unchanged frame.",
+    },
+    related: ["AL6", "AL12", "AJ2"],
+    furtherReading: [
+      {
+        label: "Negotiating the Impossible: How to Break Deadlocks and Resolve Ugly Conflicts",
+        source: "Berrett-Koehler",
+        url: "https://www.bkconnection.com/books/title/negotiating-the-impossible",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL12",
+    clusterId: "AL",
+    title: "3-D Negotiation",
+    author: "David A. Lax & James K. Sebenius",
+    year: 2006,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "Most negotiation training only covers tactics at the table (the first dimension) — the bigger wins come from designing the deal's structure (the second dimension) and shaping the setup before anyone sits down (the third dimension).",
+    layer0:
+      "Two Harvard negotiation scholars argued that most books teach only one-third of the skill — what to say across the table — while ignoring the two dimensions that determine whether the table even produces a good outcome.",
+    layer1:
+      "Tactics (1-D) are the conversational moves most books focus on: framing, concessions, persuasion in the room. Deal design (2-D) is architecture — sequencing agreements, structuring contingent contracts that let both sides bet on their own predictions, and finding a value-creating structure before value gets divided. Setup (3-D) happens away from the table entirely: who else needs to agree before this deal can close, what alternatives exist for each party, and what should happen before the first meeting so the table conversation is set up to succeed rather than doomed by a bad structure. Lax and Sebenius's core claim is that negotiators who lose usually didn't lose at the table — they lost in the setup, before the table conversation ever started.",
+    layer2:
+      "For a deal or agreement you're currently negotiating, how much of your prep time went into what you'll say at the table versus who else needs to be brought in, or convinced, before that conversation even happens?",
+    quiz: {
+      question:
+        "What is the key difference between Lax and Sebenius's '3-D' (setup) and '1-D' (tactics) dimensions of negotiation?",
+      options: [
+        "3-D refers to negotiating in person versus 1-D negotiating by phone",
+        "1-D is what happens at the table — moves, framing, persuasion — while 3-D happens before the table, shaping who's involved and what alternatives exist so the eventual table conversation is set up to succeed",
+        "1-D only applies to business deals, 3-D only to personal disputes",
+        "There is no meaningful difference; the terms are interchangeable",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The '3-D' framework's insight is that a negotiator can be brilliant at the table (1-D) and still lose, if the setup — the parties involved, their alternatives, the sequencing — was structured against them before the conversation ever began.",
+    },
+    related: ["AL11", "AL14", "L15"],
+    furtherReading: [
+      {
+        label: "3-D Negotiation: Powerful Tools to Change the Game in Your Most Important Deals",
+        source: "Harvard Business Review Press",
+        url: "https://www.hbs.edu/faculty/Pages/item.aspx?num=25152",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL13",
+    clusterId: "AL",
+    title: "Give and Take",
+    author: "Adam Grant",
+    year: 2013,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "People sort into givers, takers, and matchers based on their default reciprocity style — and while givers cluster at both the bottom and the top of success, the specific kind of giving that wins is strategic, not self-sacrificing.",
+    layer0:
+      "A Wharton organizational psychologist found something counterintuitive tracking career outcomes: the people who consistently give more than they take without limit are the least successful — and also, separately, the most successful. The difference is which kind of giver you are.",
+    layer1:
+      "Grant's typology: takers try to get more than they give and optimize for short-term self-interest; matchers keep score and trade favor-for-favor; givers give more than they expect back. Self-sacrificing givers burn out and get exploited by takers, landing at the bottom of most success metrics. But 'otherish' givers — who give generously while still protecting their own interests and time — land at the top, because giving builds a reputation and network effects that compound over years, and because givers get better information (people are more honest with someone who isn't obviously extracting from them). The mechanism isn't altruism paying off morally — it's that generosity, done without self-erasure, produces disproportionate goodwill and referrals over a long enough time horizon.",
+    layer2:
+      "Are you a giver who protects your own time and interests while helping others, or one who says yes to everyone until you're depleted — and which of your regular takers have you never actually said no to?",
+    quiz: {
+      question:
+        "Why does Grant argue that 'otherish' givers outperform both takers and self-sacrificing givers over time?",
+      options: [
+        "Because giving is always immediately rewarded with reciprocal favors",
+        "Because they combine generosity with protecting their own interests and time, which avoids the burnout and exploitation that sink self-sacrificing givers while still building the reputation and trust that compound into long-term advantage",
+        "Because takers always fail in the long run regardless of skill",
+        "Because matchers are statistically the most successful group overall",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Grant's data shows self-sacrificing givers get exploited and burn out, landing at the bottom, while 'otherish' givers — generous but boundaried — build long-term trust and network effects without being drained by it, which is what lands them at the top instead.",
+    },
+    related: ["AL2", "AL20", "M4"],
+    furtherReading: [
+      {
+        label: "Give and Take: Why Helping Others Drives Our Success",
+        source: "Viking",
+        url: "https://www.penguinrandomhouse.com/books/210318/give-and-take-by-adam-grant/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Incentives & Systems"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL14",
+    clusterId: "AL",
+    title: "Split the Pie",
+    author: "Barry Nalebuff",
+    year: 2022,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "Fairness in negotiation isn't dividing based on who has more leverage or a bigger existing pie — game theory shows the value created jointly by a deal should be split equally, regardless of each side's size or starting power.",
+    layer0:
+      "A Yale game theorist and Trivial Pursuit co-creator built a negotiation framework on one reframe: stop asking 'how much of my pie do I keep,' and start asking 'how much new pie did this deal create, and who actually made that possible.'",
+    layer1:
+      "Nalebuff's 'pie' is the additional value created specifically by the deal happening — the gain over each side's next-best alternative (their BATNA). His game-theoretic claim, following the Nash bargaining solution, is that this pie should be split 50/50 between the two parties whose joint agreement created it, because neither side could have generated that specific surplus alone — even if one party is a giant corporation and the other a single supplier. Size and pre-existing leverage matter for the size of each party's BATNA (which sets the baseline), but once the baseline is set, the incremental value from cooperating belongs equally to both parties who made the cooperation possible. This directly contradicts the common instinct to split proportionally by company size or negotiating power.",
+    layer2:
+      "In your last negotiation over splitting value, did you argue for a bigger share because of your size or leverage — or did you calculate what NEW value the deal specifically created that neither side could get alone, and split that?",
+    quiz: {
+      question:
+        "Why does Nalebuff argue the pie — the value created specifically by the deal — should be split equally, even between parties of very different size?",
+      options: [
+        "Because larger parties are legally required to give smaller ones an equal share",
+        "Because neither party could have generated that specific incremental value alone, so the surplus created jointly belongs equally to both, regardless of each party's separate size or leverage outside the deal",
+        "Because equal splits are always easier to calculate than proportional ones",
+        "Because the smaller party in any deal deserves compensation for the size difference",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Nalebuff's game-theoretic argument separates the size of each party's BATNA (which does depend on leverage and size) from the incremental value the deal itself creates — and it's specifically that incremental value, generated only through joint agreement, that the Nash bargaining logic says should be split evenly.",
+    },
+    related: ["AL7", "AL12", "AJ1"],
+    furtherReading: [
+      {
+        label: "Split the Pie: A Radical New Way to Negotiate",
+        source: "HarperCollins",
+        url: "https://www.harpercollins.com/products/split-the-pie-barry-nalebuff",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL15",
+    clusterId: "AL",
+    title: "The Power of a Positive No",
+    author: "William Ury",
+    year: 2007,
+    medium: "Book",
+    category: "Negotiation",
+    thesis:
+      "A well-formed 'no' isn't a wall — it's a 'yes-no-yes' sandwich that protects what you actually value while still leaving the relationship and a path forward intact.",
+    layer0:
+      "One of the co-authors of Getting to Yes wrote a sequel about the word that book never fully addressed: how do you refuse, firmly, without the relationship or the deal collapsing?",
+    layer1:
+      "Ury's structure is Yes-No-Yes: start with a 'yes' that affirms what you care about and want to protect ('I really value our partnership'), state a clear, non-negotiable 'no' to the specific request, then close with a 'yes' that proposes a positive alternative or path forward. He distinguishes a 'Positive No' from an 'Accommodation No' (a disguised yes that resents itself and damages the relationship anyway) and an 'Attack No' (a no delivered as aggression, which torches the relationship even when the refusal was justified). His core claim is that most people's discomfort with saying no comes from believing it's binary — you either preserve the relationship or you protect your interests — when a properly structured no can do both at once.",
+    layer2:
+      "Think of a 'yes' you regret giving because you were afraid of how a 'no' would land — what would the yes-no-yes version of that refusal have actually sounded like?",
+    quiz: {
+      question: "What is the 'Yes-No-Yes' structure Ury proposes for a 'Positive No'?",
+      options: [
+        "Saying yes twice to soften the eventual no so it's barely noticed",
+        "Affirming what you value first, then stating a clear no to the specific request, then offering a positive alternative or path forward — protecting both the relationship and your actual interests",
+        "Asking the other person to say yes twice before you'll consider saying no",
+        "A negotiation tactic used only in legal contract disputes",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The Yes-No-Yes structure works because it separates the relationship (affirmed in the first yes) from the specific refusal (the no) from the path forward (the second yes) — so the no doesn't have to carry the full weight of the relationship on its own.",
+    },
+    related: ["AL1", "AL6"],
+    furtherReading: [
+      {
+        label: "The Power of a Positive No: How to Say No and Still Get to Yes",
+        source: "Bantam Books",
+        url: "https://www.penguinrandomhouse.com/books/173596/the-power-of-a-positive-no-by-william-ury/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL16",
+    clusterId: "AL",
+    title: "The Like Switch",
+    author: "Jack Schafer & Marvin Karlins",
+    year: 2015,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "A former FBI behavior analyst argues that likability and rapport follow identifiable, learnable behavioral patterns — friendship signals, similarity, and validation — rather than being a fixed trait some people have and others don't.",
+    layer0:
+      "Jack Schafer spent decades teaching FBI agents to build instant trust with sources and suspects who had every reason not to trust them. His conclusion: liking someone is triggered by specific, repeatable signals, not chemistry.",
+    layer1:
+      "Schafer's 'Friendship Formula' — proximity, frequency, duration, intensity — predicts how quickly rapport builds, which is why repeated brief contact often builds more trust than one long conversation. His nonverbal 'friend signal' catalog (eyebrow flash, head tilt, genuine smile reaching the eyes) are largely involuntary cues people read subconsciously to judge trustworthiness in seconds. He also emphasizes the 'golden rule of friendship' — people like those who make them feel good about themselves — operationalized through specific tactics like the 'ask for a small favor' (the Ben Franklin effect, where doing you a favor makes someone like you more, not less) and validating the other person's self-image before making any request.",
+    layer2:
+      "Think of someone who instantly put you at ease when you met them — which of Schafer's signals (proximity, a genuine smile, making you feel understood) were they actually using, and could you name it in the moment?",
+    quiz: {
+      question:
+        "Why does asking someone for a small favor (the 'Ben Franklin effect') tend to make them like you more, according to this line of research?",
+      options: [
+        "Because people enjoy being asked for favors more than giving compliments",
+        "Because people resolve the discomfort of having helped someone by unconsciously concluding they must like that person, since helping someone you dislike feels inconsistent",
+        "Because favors create a binding legal obligation between two people",
+        "Because it has no measurable effect on liking at all",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The effect works through self-perception: having already done someone a favor, people look for a reason that's consistent with their own action, and 'I must like them' resolves that inconsistency more comfortably than 'I helped someone I don't even like.'",
+    },
+    related: ["AL2", "AL3"],
+    furtherReading: [
+      {
+        label: "The Like Switch: An Ex-FBI Agent's Guide to Influencing, Attracting, and Winning People Over",
+        source: "Touchstone",
+        url: "https://www.simonandschuster.com/books/The-Like-Switch/Jack-Schafer/9781476754487",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Cognitive Biases & Models"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL17",
+    clusterId: "AL",
+    title: "The Art of War",
+    author: "Sun Tzu",
+    year: -500,
+    medium: "Book",
+    category: "Strategy",
+    thesis:
+      "The greatest victories come from winning before the fight starts — through positioning, information, and denying the opponent a fight worth having — not from superior force applied in direct confrontation.",
+    layer0:
+      "Written roughly 2,500 years ago for Chinese generals, Sun Tzu's treatise became one of the most cited strategy texts in business and negotiation, not because war and deal-making are the same, but because both are contests decided mostly before contact.",
+    layer1:
+      "'The supreme art of war is to subdue the enemy without fighting' — Sun Tzu's core claim is that decisive advantage comes from positioning and intelligence, not brute engagement: know yourself and know your opponent, and you need not fear the outcome of a hundred battles. He treats deception and misdirection as legitimate strategic tools ('all warfare is based on deception'), and repeatedly emphasizes terrain and timing — choosing the ground and moment where your relative strength is maximized rather than confronting strength with strength. Applied to negotiation and business strategy centuries later, the throughline is the same: shape the conditions in your favor before the confrontation, because the party who has to fight hardest in the room has usually already lost the setup.",
+    layer2:
+      "In a competitive situation you're currently in, are you preparing to win the direct confrontation — or are you shaping the terrain, timing, and information asymmetry so the confrontation barely needs to happen?",
+    quiz: {
+      question: "What does Sun Tzu mean by 'the supreme art of war is to subdue the enemy without fighting'?",
+      options: [
+        "That armies should always avoid combat under any circumstances",
+        "That the highest form of strategic victory comes from positioning, intelligence, and shaping conditions so favorably that the opponent is defeated or deterred before any direct confrontation is even necessary",
+        "That war is fundamentally unwinnable and should never be attempted",
+        "That negotiation and warfare have no meaningful strategic overlap",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Sun Tzu isn't arguing against ever fighting — he's arguing that the best strategists win the contest before it starts, through preparation, information, and positioning, so that when confrontation does happen, the outcome is close to already decided.",
+    },
+    related: ["AL6", "AJ1"],
+    furtherReading: [
+      {
+        label: "The Art of War (Lionel Giles translation, 1910)",
+        source: "public domain translation",
+        url: "https://www.gutenberg.org/ebooks/132",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL18",
+    clusterId: "AL",
+    title: "Made to Stick",
+    author: "Chip Heath & Dan Heath",
+    year: 2007,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "Ideas that persuade and spread share six identifiable traits — the SUCCESS framework — while most ideas that fail to stick lack them despite being just as true or important.",
+    layer0:
+      "Two brothers, a Stanford professor and a Duke researcher, asked why urban legends and half-true rumors outcompete accurate, well-supported ideas for attention. Their answer: stickiness has a structure, and it's teachable.",
+    layer1:
+      "SUCCESS: Simple (the core message stripped to one compressed idea, not dumbed down but distilled — a proverb, not a paragraph), Unexpected (violating a prediction creates a knowledge gap the audience wants closed), Concrete (sensory, specific language beats abstraction — 'a can of Coke has more sugar than a donut' sticks where 'high sugar content' doesn't), Credible (via authority, but also via vivid detail and testable claims, not just credentials), Emotional (people act on feeling, not statistics — making someone care, not just informed, drives behavior), and Stories (narrative is a flight simulator for the brain, letting people mentally rehearse a scenario rather than just receiving a claim). The Heaths argue most communicators over-invest in accuracy and under-invest in structure, which is why worse ideas often spread faster than better ones.",
+    layer2:
+      "Take an idea you've struggled to get someone to act on — which of the six traits (simple, unexpected, concrete, credible, emotional, story) is missing from how you're currently presenting it?",
+    quiz: {
+      question: "Why does the Heath brothers' SUCCESS framework argue that concrete, sensory language outperforms abstract statistics for persuasion?",
+      options: [
+        "Because abstract statistics are usually inaccurate",
+        "Because concrete, specific images are easier for the brain to encode, remember, and mentally simulate than abstract claims, which makes them more likely to be recalled and acted on later",
+        "Because audiences distrust numbers on principle",
+        "Because concrete language is required by advertising law",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The Heaths' research draws on how memory works — vivid, sensory details give the brain something specific to hold onto and mentally rehearse, while abstract statistics are quickly forgotten because there's nothing concrete for memory to attach to.",
+    },
+    related: ["AL4", "AL19", "S1"],
+    furtherReading: [
+      {
+        label: "Made to Stick: Why Some Ideas Survive and Others Die",
+        source: "Random House",
+        url: "https://heathbrothers.com/books/made-to-stick/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Markets & Narrative"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL19",
+    clusterId: "AL",
+    title: "Thank You for Arguing",
+    author: "Jay Heinrichs",
+    year: 2007,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "Aristotle's three levers of persuasion — ethos (credibility), pathos (emotion), and logos (logic) — still explain why arguments land or fail, and knowing which one is missing from a failed pitch tells you exactly what to fix.",
+    layer0:
+      "A former magazine editor turned rhetoric obsessive rebuilt Aristotle's 2,300-year-old persuasion framework for modern arguments — sales pitches, political speeches, family disputes — and found it explained failures that felt mysterious in the moment.",
+    layer1:
+      "Ethos is why the audience should trust you as the speaker — established through demonstrated competence, disinterest (not obviously self-serving), or values shared with the audience, not just claimed authority. Pathos moves the audience emotionally, and Heinrichs stresses it's not manipulation when used honestly — it's recognizing that decisions are made emotionally and justified rationally after the fact, so ignoring emotion means losing arguments to people who don't. Logos is the actual logical structure of the case — premises and evidence leading to a conclusion — and Heinrichs argues logos alone rarely persuades, because an airtight argument nobody trusts or feels invested in still fails. His diagnostic move for a failed pitch: identify which of the three was weakest, rather than assuming the content itself was wrong.",
+    layer2:
+      "Think of a pitch or argument that fell flat even though you were factually right — was the actual gap in your credibility (ethos), the audience's emotional stake (pathos), or your logical structure (logos)?",
+    quiz: {
+      question: "Why does Heinrichs argue that logos (logical argument) alone rarely persuades an audience?",
+      options: [
+        "Because logic is always factually incorrect",
+        "Because a logically sound argument that the audience doesn't trust the speaker on, or doesn't feel emotionally invested in, still fails to move people to act, since decisions are made emotionally and rationalized afterward",
+        "Because audiences cannot process logical arguments at all",
+        "Because logos only applies to written arguments, not spoken ones",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Heinrichs's point, following Aristotle, is that persuasion requires all three levers working together — a flawless logical case still fails if the audience doesn't trust the speaker (ethos) or feel any emotional stake in the conclusion (pathos).",
+    },
+    related: ["AL4", "AL18"],
+    furtherReading: [
+      {
+        label: "Thank You for Arguing: What Aristotle, Lincoln, and Homer Simpson Can Teach Us About the Art of Persuasion",
+        source: "Crown",
+        url: "https://www.penguinrandomhouse.com/books/97281/thank-you-for-arguing-by-jay-heinrichs/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Markets & Narrative"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AL20",
+    clusterId: "AL",
+    title: "The Small BIG",
+    author: "Steve J. Martin, Noah Goldstein & Robert Cialdini",
+    year: 2014,
+    medium: "Book",
+    category: "Persuasion",
+    thesis:
+      "Small, precisely targeted changes to how a request is framed — not bigger incentives or more effort — routinely produce outsized shifts in whether people comply, and each one is backed by a controlled behavioral experiment.",
+    layer0:
+      "Cialdini teamed with two behavioral scientists to catalog dozens of tiny wording and framing changes — each tested in real field experiments — that moved compliance rates by double digits without changing the underlying offer at all.",
+    layer1:
+      "Example patterns: telling hotel guests that 'the majority of guests in this room reused their towels' outperformed generic environmental appeals, because specific, local social proof beats abstract appeals to virtue. Adding a small, easy-to-refuse justification ('may I go first, I'm in a hurry') to a request increased compliance even when the reason was flimsy, because a stated reason of any kind reads as more legitimate than a bare request. Framing a request in terms of what's already been lost, rather than what could be gained, exploits loss aversion to increase urgency without changing the actual offer. The book's throughline is that persuasion effectiveness is often bottlenecked by phrasing and sequencing, not by the substance of the ask — meaning most persuasion failures are fixable without changing what you're actually offering.",
+    layer2:
+      "Think of an ask that got refused recently — was the offer itself the problem, or could a small reframe (specific social proof, a stated reason, a loss frame) have changed the answer without changing the offer at all?",
+    quiz: {
+      question:
+        "Why did citing 'the majority of guests in this room' outperform a generic environmental appeal in the hotel towel-reuse experiments?",
+      options: [
+        "Because guests dislike environmental messaging on principle",
+        "Because specific, local social proof (people like me, in this exact situation) is a stronger behavioral cue than an abstract appeal to values, since it signals what similar others are actually doing right now",
+        "Because the towel signs were printed in a larger font",
+        "Because guests were legally obligated to comply with posted hotel policies",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Social proof is strongest when it's specific and similar to the observer's own situation — 'guests in this room' is a much closer, more credible reference group than 'people who care about the environment,' which is why it moved behavior more even though the underlying request was identical.",
+    },
+    related: ["AL3", "AL13"],
+    furtherReading: [
+      {
+        label: "The Small BIG: Small Changes That Spark Big Influence",
+        source: "Grand Central Publishing",
+        url: "https://www.influenceatwork.com/",
+        type: "book",
+      },
+    ],
+    tags: ["Power & Persuasion", "Cognitive Biases & Models"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA3",
+    clusterId: "AA",
+    title: "Hubble's Law and the Expanding Universe",
+    author: "Edwin Hubble",
+    year: 1929,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "Distant galaxies are receding from us at speeds proportional to their distance — the first hard observational evidence that the universe itself is expanding, which run backward in time implies it began from a single point.",
+    layer0:
+      "In 1929, using the 100-inch telescope at Mount Wilson, Hubble measured something nobody had confirmed before: the farther away a galaxy is, the faster it's flying away from us. Run that expansion backward, and everything converges.",
+    layer1:
+      "Hubble plotted the redshift (a Doppler-like stretching of light toward red wavelengths, indicating motion away from the observer) of dozens of galaxies against their estimated distances and found a striking linear relationship — velocity equals a constant (now called the Hubble constant) times distance. This wasn't predicted by intuition; static-universe models were the default assumption at the time, including one Einstein had built a 'cosmological constant' fudge factor into specifically to avoid an expanding universe. Hubble's data forced the opposite conclusion: space itself is stretching, carrying galaxies apart. Extrapolated backward, an expanding universe implies a moment when all matter and energy were compressed into an extremely hot, dense state — the observational seed of Big Bang cosmology, though the theory itself would be built out by others over the following decades.",
+    layer2:
+      "Every model you use to predict the future implicitly assumes some things stay fixed — what would you need to observe, like Hubble did, to notice one of those 'fixed' assumptions is actually moving?",
+    quiz: {
+      question: "What did Hubble's 1929 redshift-distance data show, and why did it matter for cosmology?",
+      options: [
+        "That the universe is static and unchanging, confirming the prevailing view of the time",
+        "That galaxies are receding at speeds proportional to their distance from us, meaning space itself is expanding — which, projected backward, implies the universe began in a compressed, hot state",
+        "That distant galaxies are moving toward us, meaning the universe is contracting",
+        "That light travels at different speeds depending on the observer's location",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Hubble's velocity-distance relationship was the first hard observational evidence against a static universe — it directly seeded Big Bang cosmology by implying that running the expansion backward in time leads to an extremely dense, hot origin point.",
+    },
+    related: ["AA5", "AA6", "AA9", "R5"],
+    furtherReading: [
+      {
+        label: "A Relation between Distance and Radial Velocity among Extra-Galactic Nebulae",
+        source: "Proceedings of the National Academy of Sciences, 1929",
+        url: "https://www.pnas.org/doi/10.1073/pnas.15.3.168",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA4",
+    clusterId: "AA",
+    title: "Discovery of the Cosmic Microwave Background",
+    author: "Arno Penzias & Robert Wilson",
+    year: 1965,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "A faint, uniform microwave hiss detectable in every direction of the sky is the cooled-down afterglow of the universe's hot early state — direct physical evidence, not just a mathematical inference, that the Big Bang happened.",
+    layer0:
+      "Two Bell Labs engineers trying to eliminate radio noise from a satellite antenna in 1965 couldn't get rid of a faint hiss no matter what they cleaned. It turned out to be leftover heat from the birth of the universe.",
+    layer1:
+      "Penzias and Wilson ruled out every mundane source of interference — including, famously, pigeon droppings in the antenna — before realizing the signal was coming uniformly from all directions in space, not from any specific source. Unknown to them, Princeton physicists nearby (Dicke, Peebles) had predicted exactly this kind of relic radiation should exist if the Big Bang model were correct: as the early universe cooled from an extremely hot, dense state, the radiation filling it would stretch to microwave wavelengths and persist as a near-uniform background today. The two groups connected, and the discovery instantly converted the Big Bang from one competing cosmological theory (against the rival 'Steady State' model) into the scientific consensus, since the Steady State model had no mechanism to produce this background at all.",
+    layer2:
+      "Penzias and Wilson found their answer by refusing to dismiss an inconvenient signal as noise — where in your own work have you explained away a small, persistent anomaly instead of asking what it might actually mean?",
+    quiz: {
+      question: "Why did the discovery of the cosmic microwave background settle the Big Bang vs. Steady State debate?",
+      options: [
+        "Because it proved the universe is not expanding after all",
+        "Because the Big Bang model predicted exactly this kind of uniform relic radiation from the universe's hot early state, while the rival Steady State model had no mechanism to produce it at all",
+        "Because it was the first direct photograph ever taken of a galaxy",
+        "Because it disproved Einstein's theory of general relativity",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The CMB wasn't just consistent with the Big Bang model, it was specifically predicted by it — a near-uniform microwave glow from all directions is exactly what cooled relic radiation from a hot early universe should look like, and no competing model could explain it.",
+    },
+    related: ["AA3", "AA6"],
+    furtherReading: [
+      {
+        label: "A Measurement of Excess Antenna Temperature at 4080 Mc/s",
+        source: "The Astrophysical Journal, 1965",
+        url: "https://articles.adsabs.harvard.edu/pdf/1965ApJ...142..419P",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA5",
+    clusterId: "AA",
+    title: "General Relativity",
+    author: "Albert Einstein",
+    year: 1915,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "Gravity isn't a force pulling objects together — it's the curvature of spacetime itself caused by mass and energy, and objects simply follow the straightest possible path through that curved geometry.",
+    layer0:
+      "A decade after special relativity, Einstein extended the theory to acceleration and gravity, replacing Newton's invisible pulling force with something stranger: mass literally bends the shape of space and time around it.",
+    layer1:
+      "Einstein's field equations describe how matter and energy determine the curvature of four-dimensional spacetime, and how that curvature in turn determines how matter moves through it — famously summarized by physicist John Wheeler as 'spacetime tells matter how to move; matter tells spacetime how to curve.' A planet orbits the sun not because it's being pulled by a force, but because it's traveling in a straight line through spacetime that the sun's mass has curved into a well. The theory made testable predictions Newton's gravity couldn't — including the exact bending of starlight around the sun, confirmed in a famous 1919 eclipse expedition — and it remains the foundation for modern cosmology, including how the Big Bang and an expanding universe are modeled mathematically.",
+    layer2:
+      "Newton's model of gravity worked well enough for centuries before it broke down at the extremes — what 'good enough' model are you relying on that might be quietly wrong at the edges you haven't tested yet?",
+    quiz: {
+      question: "How does general relativity's explanation of gravity differ from Newton's?",
+      options: [
+        "General relativity says gravity doesn't exist at all",
+        "Newton described gravity as an invisible pulling force between masses; general relativity describes it as the curvature of spacetime itself, with objects following the straightest path through that curved geometry",
+        "General relativity only applies to objects moving faster than light",
+        "The two theories make identical predictions in every situation, with no measurable difference",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Newton's force model and Einstein's curvature model can agree in weak gravitational fields, but they diverge in extreme cases — like light bending around the sun or the behavior near black holes — where only general relativity's spacetime-curvature picture matches what's actually observed.",
+    },
+    related: ["AA3", "AA9", "Z1"],
+    furtherReading: [
+      {
+        label: "The Field Equations of Gravitation (1915)",
+        source: "Prussian Academy of Sciences",
+        url: "https://einsteinpapers.press.princeton.edu/vol6-doc/272",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA6",
+    clusterId: "AA",
+    title: "The Primeval Atom Hypothesis",
+    author: "Georges Lemaître",
+    year: 1931,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "A Belgian priest-physicist proposed, years before Hubble's data was fully digested, that the universe began from a single, extremely dense 'primeval atom' that has been expanding and cooling ever since — the first real formulation of what became the Big Bang theory.",
+    layer0:
+      "The Big Bang wasn't Hubble's idea. In 1927, a Catholic priest who also held a physics doctorate proposed the universe expanded from an initial dense state — before most physicists, including Einstein at first, took it seriously.",
+    layer1:
+      "Lemaître combined Einstein's general relativity equations with the idea of an expanding universe to argue that running expansion backward implies a beginning — a single, extremely compact 'primeval atom' that has been unpacking into the universe we observe ever since. Einstein reportedly told him at first that his physics was correct but his cosmology was 'abominable,' since a universe with a beginning raised uncomfortable philosophical and theological questions many scientists preferred to avoid. Hubble's 1929 observations gave Lemaître's proposal the empirical backing it needed, and the discovery of the cosmic microwave background decades later confirmed it further. Ironically, the term 'Big Bang' was coined by astronomer Fred Hoyle, a rival who intended it as mockery of a theory he didn't believe — the name stuck anyway.",
+    layer2:
+      "Lemaître's idea was resisted less on the evidence and more because it was philosophically uncomfortable — what idea have you dismissed recently not because the logic was weak, but because the implication was uncomfortable?",
+    quiz: {
+      question: "What was significant about Lemaître's 'primeval atom' proposal relative to Hubble's later observations?",
+      options: [
+        "Lemaître copied Hubble's data years after it was published",
+        "Lemaître theoretically proposed an expanding universe originating from a compact initial state before Hubble's 1929 observations provided the empirical evidence supporting it",
+        "Lemaître's theory was immediately accepted by all physicists including Einstein",
+        "Lemaître and Hubble worked together on the same research team",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Lemaître derived the expanding-universe-with-a-beginning idea from theory (combining general relativity with an expanding universe) in 1927, ahead of Hubble's 1929 observational confirmation — theory and observation arrived from two different directions and converged.",
+    },
+    related: ["AA3", "AA4"],
+    furtherReading: [
+      {
+        label: "A Homogeneous Universe of Constant Mass and Increasing Radius",
+        source: "Annales de la Société Scientifique de Bruxelles, 1927 (English translation 1931, MNRAS)",
+        url: "https://articles.adsabs.harvard.edu/pdf/1931MNRAS..91..483L",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA7",
+    clusterId: "AA",
+    title: "The Uncertainty Principle",
+    author: "Werner Heisenberg",
+    year: 1927,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "There is a fundamental limit to how precisely you can simultaneously know a particle's position and momentum — not because of instrument error, but because of the underlying nature of reality at the quantum scale.",
+    layer0:
+      "Heisenberg showed in 1927 that some pairs of properties in nature — like a particle's exact location and exact speed — can never both be known precisely at once. Not because measurement is imperfect, but because reality itself doesn't have both values pinned down simultaneously.",
+    layer1:
+      "The uncertainty principle states that the product of the uncertainties in position and momentum can never fall below a fixed constant (related to Planck's constant) — the more precisely you pin down one, the less precisely the other can be known, and this isn't a limitation of technology or technique, it's a property of quantum systems themselves. This broke classical physics' core assumption that a system has definite, simultaneously knowable properties waiting to be measured. It became a foundation stone of quantum mechanics, explaining why electrons don't spiral into atomic nuclei (a definite position would require infinite momentum uncertainty) and why the quantum world resists the kind of precise, deterministic prediction Newtonian physics offered.",
+    layer2:
+      "Classical physics assumed you could know everything about a system if you measured carefully enough — where in your own decisions are you assuming more precision or predictability is available than actually exists?",
+    quiz: {
+      question:
+        "Why is the uncertainty principle considered a fundamental feature of reality rather than a limitation of measurement technology?",
+      options: [
+        "Because scientists haven't yet built instruments precise enough to overcome it",
+        "Because the uncertainty is a mathematical consequence of how quantum systems are structured — position and momentum genuinely cannot both have precise, definite values at the same time, regardless of how good the measuring instrument is",
+        "Because it only applies to objects larger than atoms",
+        "Because it was later disproven by more advanced physics",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Unlike classical measurement error, which could in principle be reduced with better instruments, the uncertainty principle describes a genuine limit built into the mathematics of quantum mechanics — the properties themselves aren't simultaneously well-defined, not just poorly measured.",
+    },
+    related: ["AA5", "R6"],
+    furtherReading: [
+      {
+        label: "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik (1927, summary and translation)",
+        source: "Zeitschrift für Physik",
+        url: "https://uncertaintyprinciple.wordpress.com/wp-content/uploads/2010/07/hq.pdf",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA8",
+    clusterId: "AA",
+    title: "Deterministic Chaos",
+    author: "Edward Lorenz",
+    year: 1963,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "Fully deterministic systems — with no randomness anywhere in their equations — can still become practically unpredictable, because tiny differences in starting conditions grow exponentially over time until prediction becomes impossible.",
+    layer0:
+      "A meteorologist rerunning a weather simulation in 1961 rounded one input from six decimal places to three, expecting a negligible difference. The forecast came out completely different — and chaos theory was born.",
+    layer1:
+      "Lorenz's simplified model of atmospheric convection was entirely deterministic — the same starting conditions always produced the same output, with no randomness in the equations at all. Yet a minuscule rounding difference in initial conditions, smaller than any real-world measurement could ever detect, produced wildly divergent outcomes after enough iterations. This 'sensitive dependence on initial conditions' — later nicknamed the butterfly effect — meant that even a perfectly deterministic, fully-understood system could be practically unpredictable beyond a certain time horizon, because no measurement of the starting state is ever infinitely precise. This reframed a huge class of real-world systems — weather, ecosystems, some economic and biological systems — as inherently limited in long-range predictability, regardless of how good the underlying model is.",
+    layer2:
+      "Where are you currently trying to predict a system's long-term behavior — a market, a relationship, a project — that might be more like weather than like a simple machine, no matter how well you understand its rules?",
+    quiz: {
+      question: "What did Lorenz's 1963 discovery reveal about deterministic systems?",
+      options: [
+        "That deterministic systems are always perfectly predictable if you have enough computing power",
+        "That even a fully deterministic system with no randomness can become practically unpredictable over time, because tiny, unmeasurable differences in starting conditions grow exponentially into large differences in outcome",
+        "That weather patterns are fundamentally random rather than governed by physical laws",
+        "That rounding errors in computer simulations are always negligible and can be safely ignored",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Lorenz's finding wasn't about randomness — his equations were entirely deterministic — it was that sensitivity to initial conditions can be so extreme that even infinitesimally small measurement imprecision makes long-range prediction practically impossible, a property now called chaos.",
+    },
+    related: ["AA1", "L4"],
+    furtherReading: [
+      {
+        label: "Deterministic Nonperiodic Flow",
+        source: "Journal of the Atmospheric Sciences, 1963",
+        url: "https://journals.ametsoc.org/view/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.xml",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AA9",
+    clusterId: "AA",
+    title: "Mass-Energy Equivalence",
+    author: "Albert Einstein",
+    year: 1905,
+    medium: "Paper",
+    category: "Physics",
+    thesis:
+      "Mass and energy are the same underlying quantity expressed in two forms — a small amount of mass corresponds to an enormous amount of energy, a relationship that later explained how stars generate light and how nuclear reactions release power.",
+    layer0:
+      "In a three-page follow-up to special relativity, Einstein asked a small question — does a body's energy content affect its mass — and derived the most famous equation in physics: E=mc².",
+    layer1:
+      "Einstein showed that when a body emits energy (as radiation), its mass decreases by an amount equal to that energy divided by the speed of light squared — meaning mass isn't just 'stuff,' it's a concentrated form of energy, related by an enormous conversion factor (c², the speed of light squared, a huge number). This meant even a tiny amount of mass, if fully converted, releases a staggering amount of energy — the principle later underlying both nuclear fission (splitting heavy atoms) and fusion (the process powering the sun and every other star, converting a small fraction of hydrogen's mass into the energy that lights the universe). The equation itself is simple, but the implication reshaped physics: matter and energy were no longer separate categories, just different forms of one underlying thing.",
+    layer2:
+      "Einstein found something enormous by asking a small, precise question about a follow-up detail — what small, precise question about something you already believe you understand haven't you actually asked yet?",
+    quiz: {
+      question: "What does E=mc² mean physically, beyond being a formula?",
+      options: [
+        "That energy and mass are unrelated quantities that happen to share a formula",
+        "That mass and energy are two forms of the same underlying quantity, related by an enormous conversion factor — meaning even a small amount of mass corresponds to a huge amount of energy",
+        "That only objects moving faster than light can convert mass into energy",
+        "That the formula applies only to nuclear reactions and nowhere else in physics",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The equation states a general equivalence between mass and energy for any object, not a rule specific to nuclear physics — nuclear reactions are simply the clearest real-world demonstration of it, because they convert a measurable fraction of mass into a very large amount of energy.",
+    },
+    related: ["AA5", "AA3"],
+    furtherReading: [
+      {
+        label: "Does the Inertia of a Body Depend Upon Its Energy Content? (1905, English translation)",
+        source: "Annalen der Physik",
+        url: "https://einsteinpapers.press.princeton.edu/vol2-trans/187",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB3",
+    clusterId: "AB",
+    title: "The Selfish Gene",
+    author: "Richard Dawkins",
+    year: 1976,
+    medium: "Book",
+    category: "Evolutionary Biology",
+    thesis:
+      "Natural selection is best understood as operating at the level of the gene, not the individual or the species — organisms are best thought of as survival machines built by genes to make more copies of themselves.",
+    layer0:
+      "Dawkins reframed a century of evolutionary biology around one shift in perspective: stop asking what's good for the animal, and ask what's good for the gene riding inside it. Everything else follows.",
+    layer1:
+      "Dawkins argued that genes, not individuals or groups, are the real unit that natural selection acts on and that persists across generations — an individual organism is a temporary vehicle, but a gene (or more precisely, an allele) can persist, in copies, indefinitely. This reframing explained behaviors that looked paradoxical under individual- or group-selection models, such as self-sacrificing behavior toward relatives (which Hamilton's kin selection had already shown made sense once you count gene copies, not individuals) and apparent conflicts of interest within a single body (different genes 'wanting' different things, like parent-offspring conflict over resources). Dawkins was explicit that 'selfish' described the gene's effective behavior over evolutionary time, not any conscious intent — genes have no minds — but the metaphor made an otherwise abstract statistical process intuitive.",
+    layer2:
+      "Reframe a behavior you or someone close to you does that seems irrational for you as an individual — does it make more sense once you ask what it does for your genes, your family, or the group you belong to, rather than for you specifically?",
+    quiz: {
+      question: "In Dawkins's framework, why does natural selection make more sense analyzed at the level of the gene rather than the individual organism?",
+      options: [
+        "Because individual organisms never actually reproduce",
+        "Because genes, not individual bodies, are the unit that can persist in copies across many generations, so behaviors that look self-sacrificing at the individual level (like helping relatives) can still favor the survival of that individual's genes",
+        "Because Dawkins proved individual organisms have no influence on their own survival",
+        "Because genes are conscious and make deliberate strategic choices",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The gene's-eye view resolves apparent evolutionary paradoxes — like self-sacrifice for relatives — by tracking what persists across generations (copies of genes) rather than what happens to any one individual body, which is temporary regardless of its genes' long-run success.",
+    },
+    related: ["AB2", "AB9", "M4"],
+    furtherReading: [
+      {
+        label: "The Selfish Gene (1976)",
+        source: "Oxford University Press",
+        url: "https://richarddawkins.net/books/the-selfish-gene/",
+        type: "book",
+      },
+    ],
+    tags: ["First-Principles Thinking", "Incentives & Systems"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB4",
+    clusterId: "AB",
+    title: "Experiments on Plant Hybridization",
+    author: "Gregor Mendel",
+    year: 1866,
+    medium: "Paper",
+    category: "Genetics",
+    thesis:
+      "Traits are passed from parent to offspring as discrete, countable units — not as a smooth blend of parental characteristics — following statistical ratios predictable enough that Mendel derived the basic laws of inheritance from pea plants alone, decades before genes or DNA were known to exist.",
+    layer0:
+      "An Augustinian friar spent eight years cross-breeding pea plants in a monastery garden and, without knowing what a gene physically was, worked out the mathematical rules of inheritance that genetics is still built on.",
+    layer1:
+      "Mendel tracked seven distinct pea plant traits (seed shape, flower color, and others) across generations and found offspring didn't blend parental traits, as the dominant theory of the time assumed — instead, traits appeared in predictable ratios (like the famous 3:1 ratio in second-generation crosses), implying each parent contributes a discrete, particulate unit of inheritance for each trait, one of which can mask the other (dominant vs. recessive). His law of segregation (each parent's two copies of a trait separate, passing only one to each offspring) and law of independent assortment (different traits are typically inherited independently of each other) were derived purely from breeding statistics — the physical basis (genes on chromosomes, later DNA) wouldn't be understood for decades. His 1866 paper was largely ignored during his lifetime and only recognized as foundational around 1900, when other researchers rediscovered the same patterns independently.",
+    layer2:
+      "Mendel found the pattern by counting thousands of plants meticulously rather than theorizing from a handful of examples — where in your own thinking are you generalizing from a small, convenient sample instead of actually counting?",
+    quiz: {
+      question: "What did Mendel's pea plant experiments reveal about inheritance that contradicted the prevailing theory of his time?",
+      options: [
+        "That traits blend smoothly between parent and offspring, confirming the dominant theory",
+        "That traits are inherited as discrete, particulate units passed intact from each parent — not blended — appearing in predictable statistical ratios across generations",
+        "That plants and animals inherit traits through completely different mechanisms",
+        "That environment, not heredity, determines nearly all observable traits",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The dominant 'blending inheritance' theory of Mendel's era predicted offspring traits should be an intermediate mix of both parents' traits — Mendel's data instead showed discrete traits reappearing intact in predictable ratios, implying inheritance works through countable, particulate units, which we now call genes.",
+    },
+    related: ["AB5", "AB8"],
+    furtherReading: [
+      {
+        label: "Experiments on Plant Hybridization (Versuche über Pflanzen-Hybriden), 1866",
+        source: "Verhandlungen des naturforschenden Vereines in Brünn (English translation)",
+        url: "https://www.esp.org/foundations/genetics/classical/gm-65.pdf",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB5",
+    clusterId: "AB",
+    title: "Nothing in Biology Makes Sense Except in the Light of Evolution",
+    author: "Theodosius Dobzhansky",
+    year: 1973,
+    medium: "Essay",
+    category: "Evolutionary Biology",
+    thesis:
+      "By the mid-20th century, genetics (Mendel's discrete units) and natural selection (Darwin's mechanism) had been fused into a single coherent framework — the Modern Synthesis — that made evolutionary theory the organizing principle underneath every other branch of biology.",
+    layer0:
+      "For decades after Darwin, genetics and evolution were seen as separate, even conflicting fields. Dobzhansky's famous 1973 essay title stated the resolution as settled fact: they were never actually separate at all.",
+    layer1:
+      "Early geneticists initially thought Mendelian inheritance (traits passed in discrete jumps) contradicted Darwin's model of gradual natural selection acting on continuous variation. The Modern Synthesis, built through the 1930s–40s by researchers including Dobzhansky, Ernst Mayr, and Julian Huxley, resolved this by showing that mutations create the discrete genetic variation Mendel described, while natural selection acts gradually on the resulting frequency of those variants across a population — the two mechanisms weren't competitors, they were two halves of one process operating at different scales. Dobzhansky's essay argued this synthesis wasn't just one useful theory among many in biology — it was the necessary organizing lens for the entire field, since anatomy, behavior, ecology, and disease resistance all only become fully coherent once understood as products of this same evolutionary process.",
+    layer2:
+      "In your own field, is there a foundational, organizing idea you technically know but don't actually use to interpret the specific problems you work on day to day?",
+    quiz: {
+      question: "What tension did the Modern Synthesis resolve between early genetics and Darwinian evolution?",
+      options: [
+        "It proved that genetics and evolution are completely unrelated fields that should be studied separately",
+        "It reconciled Mendelian genetics' discrete, particulate inheritance with Darwinian natural selection's gradual change, showing mutations create genetic variation while selection acts gradually on that variation's frequency across a population",
+        "It disproved Mendel's laws of inheritance in favor of blending inheritance",
+        "It showed that natural selection only applies to single-celled organisms",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Early 20th-century biologists saw Mendel's discrete inheritance units and Darwin's gradual selection as conflicting models; the Modern Synthesis showed they operate at different scales of the same process — mutation supplies discrete variation, selection gradually shifts how common each variant is.",
+    },
+    related: ["AB4", "AB6"],
+    furtherReading: [
+      {
+        label: "Nothing in Biology Makes Sense Except in the Light of Evolution",
+        source: "The American Biology Teacher, 1973",
+        url: "https://www.jstor.org/stable/4444260",
+        type: "essay",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB6",
+    clusterId: "AB",
+    title: "Punctuated Equilibrium",
+    author: "Niles Eldredge & Stephen Jay Gould",
+    year: 1972,
+    medium: "Paper",
+    category: "Evolutionary Biology",
+    thesis:
+      "Species don't typically evolve at a smooth, constant rate — the fossil record shows long periods of near-stasis punctuated by relatively rapid bursts of change, usually tied to speciation events, rather than continuous gradual transformation.",
+    layer0:
+      "The fossil record has an awkward feature Darwin himself worried about: it's full of gaps rather than smooth transitions. In 1972, two paleontologists argued the gaps weren't missing evidence — they were the actual pattern.",
+    layer1:
+      "Eldredge and Gould challenged 'phyletic gradualism' — the assumption, inherited from Darwin, that evolutionary change happens at a roughly constant, slow rate across a species' entire history, meaning the fossil record's gaps must just be incomplete sampling. They proposed instead that most species remain in morphological stasis for long stretches, and that significant change is concentrated in relatively short bursts, usually coinciding with a small population splitting off and speciating rapidly (consistent with existing population genetics models showing rapid change is more likely in small, isolated populations). This didn't challenge natural selection or common descent — it challenged the assumption about the pace and pattern of change, and reframed the fossil record's apparent gaps as genuine signal rather than a data-collection failure to be embarrassed about.",
+    layer2:
+      "In your own growth or a project's progress, have you assumed change should be smooth and steady — and dismissed the actual pattern of long plateaus and sudden jumps as a failure, rather than as the normal shape of change?",
+    quiz: {
+      question: "What did Eldredge and Gould's punctuated equilibrium model challenge about traditional Darwinian gradualism?",
+      options: [
+        "That evolution happens at all",
+        "The assumption that evolutionary change proceeds at a roughly constant, slow rate — they argued the fossil record's pattern of long stasis punctuated by rapid bursts, tied to speciation, is real signal rather than incomplete sampling",
+        "That natural selection is the mechanism driving evolutionary change",
+        "That species can go extinct",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Punctuated equilibrium didn't dispute that evolution happens through natural selection — it disputed the assumed pace and pattern, arguing that most visible change is concentrated in relatively rapid speciation events rather than spread evenly across a species' whole existence.",
+    },
+    related: ["AB5", "AB7"],
+    furtherReading: [
+      {
+        label: "Punctuated Equilibria: An Alternative to Phyletic Gradualism",
+        source: "Models in Paleobiology, 1972",
+        url: "https://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB7",
+    clusterId: "AB",
+    title: "Serial Endosymbiotic Theory",
+    author: "Lynn Margulis",
+    year: 1967,
+    medium: "Paper",
+    category: "Evolutionary Biology",
+    thesis:
+      "The complex cells that make up plants, animals, and fungi arose when free-living bacteria were engulfed by other cells and, instead of being digested, survived as permanent internal partners — meaning every complex cell in your body is descended from an ancient merger between separate organisms.",
+    layer0:
+      "Margulis's paper was rejected by roughly 15 journals before publication in 1967. Her claim sounded implausible: the power plants inside your cells used to be independent bacteria that got swallowed and never left.",
+    layer1:
+      "Mitochondria (the energy-producing structures in nearly all complex cells) and chloroplasts (in plant cells) have their own DNA, separate from the cell's main genome, and that DNA resembles bacterial DNA far more than it resembles the host cell's. Margulis argued this wasn't coincidence — these structures were once free-living bacteria that an ancestral cell engulfed, and rather than being digested, the engulfed bacteria survived and the relationship became mutually beneficial (the host provided protection and resources, the engulfed bacteria provided efficient energy production), eventually becoming permanent and obligatory for both. This meant complex ('eukaryotic') cells didn't arise through gradual internal mutation alone, but through a merger between separate organisms — cooperation, not just competition, was a major creative force in the history of life. The theory was fiercely resisted for years before genetic evidence (the bacterial-like DNA itself) confirmed it.",
+    layer2:
+      "Margulis's idea was rejected for years not because the evidence was weak, but because it didn't fit the era's assumption that evolution was purely about competition — where are you dismissing a good idea because it doesn't fit your default frame, rather than because the evidence is actually against it?",
+    quiz: {
+      question: "What key evidence supports Margulis's claim that mitochondria were once independent bacteria?",
+      options: [
+        "Mitochondria are visually identical to the rest of the cell under a microscope",
+        "Mitochondria contain their own DNA, separate from the cell's main genome, and that DNA closely resembles bacterial DNA rather than the host cell's DNA",
+        "Mitochondria can survive and reproduce completely outside of any cell",
+        "There is no genetic evidence; the theory rests entirely on structural resemblance",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The presence of separate, bacterial-like DNA inside mitochondria (and chloroplasts) is the strongest evidence for endosymbiotic theory — it's very difficult to explain that separate genome any other way than as a remnant of a once-independent organism.",
+    },
+    related: ["AB3", "AB6"],
+    furtherReading: [
+      {
+        label: "On the Origin of Mitosing Cells",
+        source: "Journal of Theoretical Biology, 1967",
+        url: "https://www.sciencedirect.com/science/article/abs/pii/0022519367900790",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB8",
+    clusterId: "AB",
+    title: "The Molecular Structure of DNA",
+    author: "James Watson & Francis Crick",
+    year: 1953,
+    medium: "Paper",
+    category: "Genetics",
+    thesis:
+      "DNA's double-helix structure — two complementary strands wound around each other — immediately suggested how genetic information could be both stored and accurately copied, turning Mendel's abstract 'units of inheritance' into a physical, mechanistic explanation.",
+    layer0:
+      "In a paper barely a page long, Watson and Crick described a molecule's shape — and in doing so, answered a question biology had circled for decades: what is a gene, physically, and how does it copy itself?",
+    layer1:
+      "The double helix consists of two strands of nucleotide bases wound around each other, held together by specific pairing rules (adenine with thymine, guanine with cytosine) — a structure Watson and Crick noted, in a now-famous understatement, 'has not escaped our notice' immediately suggests a copying mechanism, since each strand can serve as a template for building its complementary partner. This gave Mendel's statistically-inferred 'discrete units of inheritance' a physical home and mechanism nearly a century after his pea plant experiments, and explained how genetic information is both stored stably and copied with high fidelity across cell divisions and generations. The paper's data relied heavily on X-ray crystallography images taken by Rosalind Franklin, whose contribution went largely uncredited at the time despite being central to deriving the correct structure.",
+    layer2:
+      "Watson and Crick's structure worked because complementary pairing makes copying nearly automatic — where in a system you're designing (a process, a habit, a team workflow) could you build in a similarly automatic 'self-copying' mechanism instead of relying on manual repetition?",
+    quiz: {
+      question: "Why did the double-helix structure of DNA immediately suggest a mechanism for genetic copying?",
+      options: [
+        "Because DNA molecules can only exist inside a laboratory",
+        "Because each of the two complementary strands, held together by specific base-pairing rules, can serve as a template to build an exact copy of its partner strand",
+        "Because DNA has no physical structure and exists only as an abstract concept",
+        "Because the double helix shape prevents any copying from occurring at all",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The specific pairing rules (A with T, G with C) mean that if the two strands separate, each one alone contains enough information to rebuild an exact copy of its original partner — the structure itself explains the copying mechanism, which is why the paper's authors immediately flagged the implication.",
+    },
+    related: ["AB4", "AB7"],
+    furtherReading: [
+      {
+        label: "Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid",
+        source: "Nature, 1953",
+        url: "https://www.nature.com/articles/171737a0",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AB9",
+    clusterId: "AB",
+    title: "The Red Queen Hypothesis",
+    author: "Leigh Van Valen",
+    year: 1973,
+    medium: "Paper",
+    category: "Evolutionary Biology",
+    thesis:
+      "Species are locked in a constant evolutionary arms race with predators, prey, parasites, and competitors — meaning a species must keep adapting continuously just to maintain its current relative fitness, since every other species around it is adapting too.",
+    layer0:
+      "Van Valen named his 1973 theory after the Red Queen in Through the Looking-Glass, who tells Alice: 'it takes all the running you can do, to keep in the same place.' He argued species face exactly that problem.",
+    layer1:
+      "Studying extinction rates across many groups of fossil organisms, Van Valen found something odd: a species' probability of going extinct in any given time period didn't decrease the longer it had already survived, contrary to what you'd expect if species simply 'perfected' their adaptation to a fixed environment over time. His explanation: the environment a species adapts to isn't fixed — it's made up largely of other evolving species (predators getting faster, parasites getting better at infecting, competitors getting better at competing), so standing still means falling behind relative to everyone else who keeps adapting. This reframed evolutionary fitness as fundamentally relative and relentless rather than a finish line to be reached — there's no stable, final state of being 'well-adapted,' only continuous adaptation just to hold your current position in a system where everyone else is also improving.",
+    layer2:
+      "In a competitive area of your own life or work, are you running to actually get ahead — or running just to avoid falling behind competitors who are improving at the same time you are?",
+    quiz: {
+      question: "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
+      options: [
+        "Older species were far less likely to go extinct than newly evolved ones",
+        "A species' probability of extinction in a given time period didn't decrease the longer it had already survived, suggesting species don't reach a stable 'finished' state of adaptation, since their competitors and predators keep evolving too",
+        "All species in the fossil record went extinct at exactly the same rate regardless of type",
+        "Extinction rates were found to be entirely random and unrelated to any biological factor",
+      ],
+      correctIndex: 1,
+      explanation:
+        "If species reached a stable, well-adapted state over time, older species should show declining extinction risk — Van Valen found no such decline, which pointed to an environment that's constantly shifting because other species are also continuously evolving, requiring perpetual adaptation just to maintain relative position.",
+    },
+    related: ["AB3", "M4"],
+    furtherReading: [
+      {
+        label: "A New Evolutionary Law",
+        source: "Evolutionary Theory, 1973",
+        url: "https://www.mn.uio.no/cees/english/services/van-valen/evolutionary-theory/volume-1/vol-1-no-1-pages-1-30-l-van-valen-a-new-evolutionary-law.pdf",
+        type: "paper",
+      },
+    ],
+    tags: ["First-Principles Thinking", "Incentives & Systems"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH3",
+    clusterId: "AH",
+    title: "Guns, Germs, and Steel",
+    author: "Jared Diamond",
+    year: 1997,
+    medium: "Book",
+    category: "History",
+    thesis:
+      "Which civilizations ended up conquering others was driven overwhelmingly by geographic and environmental accident — access to domesticable plants and animals, and an east-west continental axis that let farming spread easily — not by any difference in the people themselves.",
+    layer0:
+      "Diamond built an entire theory of world history around a question a New Guinean politician asked him: why did Europeans end up with so much 'cargo' and New Guineans so little? His answer had nothing to do with people and everything to do with geography.",
+    layer1:
+      "Diamond's argument rests on a few compounding geographic accidents. Eurasia had far more species of large mammals suitable for domestication (horses, cattle, pigs) than the Americas, Africa, or Australia, providing labor, transport, and military advantage. Eurasia's east-west continental axis meant crops and livestock domesticated in one region could spread across similar latitudes and climates relatively easily, while the Americas' and Africa's north-south axes meant agricultural innovations had to cross very different climate zones to spread, slowing diffusion drastically. Denser agricultural populations living close to domesticated animals also developed immunity to diseases (smallpox, measles) that then devastated populations without that exposure history on contact — 'germs' did more to enable conquest than European weaponry alone. Diamond's broader claim is that these environmental starting conditions, not any innate difference in ingenuity or ability between peoples, set civilizations on radically different long-run trajectories.",
+    layer2:
+      "When you look at large gaps in outcomes between groups, companies, or even people, how much do you attribute to ability versus starting conditions and accumulated compounding advantage that had nothing to do with talent?",
+    quiz: {
+      question: "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
+      options: [
+        "Innate differences in intelligence or ability between different peoples",
+        "Geographic and environmental accidents — available domesticable species, a continent's east-west versus north-south orientation, and resulting disease immunity — that compounded over millennia into large differences in technology and population",
+        "Random chance events with no identifiable underlying pattern",
+        "Religious differences between civilizations",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Diamond's central thesis explicitly rejects explanations based on innate differences between peoples, arguing instead that environmental starting conditions — domesticable species, continental geography, and the resulting disease exposure — compounded over thousands of years into vastly different technological and demographic trajectories.",
+    },
+    related: ["AH1", "AH5", "AH6"],
+    furtherReading: [
+      {
+        label: "Guns, Germs, and Steel: The Fates of Human Societies",
+        source: "W. W. Norton & Company",
+        url: "https://www.wwnorton.com/books/9780393317558",
+        type: "book",
+      },
+    ],
+    tags: ["Macro & Cycles", "First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH4",
+    clusterId: "AH",
+    title: "The Rise and Fall of the Great Powers",
+    author: "Paul Kennedy",
+    year: 1987,
+    medium: "Book",
+    category: "History",
+    thesis:
+      "Great powers decline for a consistent structural reason across five centuries of history — military commitments grow to exceed the economic base that funds them, a pattern Kennedy called 'imperial overstretch.'",
+    layer0:
+      "A Yale historian studied five centuries of great-power rises and falls — Habsburg Spain, the Dutch Republic, the British Empire — and found the same failure mode recurring: military ambition outrunning the economy that has to pay for it.",
+    layer1:
+      "Kennedy's central mechanism is 'imperial overstretch': as a great power's relative economic strength grows, it typically takes on expanding global military and strategic commitments, but those commitments tend to keep growing even after the underlying economic base that funds them starts to relatively decline (often because economic growth shifts to rising rival powers). The gap between commitments and resources gets bridged temporarily through debt, tax increases, or currency debasement, all of which further erode the long-term economic base, accelerating decline. Kennedy's history shows this pattern across very different eras and technologies — Habsburg Spain's silver-funded wars, Britain's post-WWII imperial commitments outlasting its industrial dominance — arguing the mechanism is structural, not specific to any one empire's particular mistakes, and applies to any power whose military ambitions outpace the economic growth that has to sustain them.",
+    layer2:
+      "In your own life or organization, where are your current commitments — obligations, projects, promises — sized for the resource base you had a few years ago, rather than the one you actually have now?",
+    quiz: {
+      question: "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
+      options: [
+        "A power's military becomes too large to physically defend its own borders",
+        "A power's strategic and military commitments continue expanding even as its relative economic base declines, and the resulting funding gap — bridged by debt or taxation — further erodes the economy, accelerating the decline",
+        "A power expands its territory too quickly for its population to fill",
+        "A power loses a single decisive military battle that it never recovers from",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Kennedy's argument is about a structural mismatch over time, not a single defeat — commitments that made sense when a power's economy was relatively strongest tend to persist and even grow after that relative economic advantage starts fading, creating a widening, self-reinforcing gap.",
+    },
+    related: ["AH1", "AH3", "D8"],
+    furtherReading: [
+      {
+        label: "The Rise and Fall of the Great Powers: Economic Change and Military Conflict from 1500 to 2000",
+        source: "Random House",
+        url: "https://www.penguinrandomhouse.com/books/165506/the-rise-and-fall-of-the-great-powers-by-paul-kennedy/",
+        type: "book",
+      },
+    ],
+    tags: ["Macro & Cycles"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH5",
+    clusterId: "AH",
+    title: "Sapiens: The Cognitive Revolution",
+    author: "Yuval Noah Harari",
+    year: 2011,
+    medium: "Book",
+    category: "History",
+    thesis:
+      "What let Homo sapiens outcompete every other human species and build large-scale civilization wasn't tool use or intelligence alone — it was the unique ability to believe in, and coordinate around, shared fictions like money, nations, and religions that don't physically exist.",
+    layer0:
+      "Harari's central claim in Sapiens is disarmingly simple: humans don't just cooperate, we cooperate flexibly in huge numbers with total strangers, and the only reason that's possible is that we collectively believe in things that aren't physically real.",
+    layer1:
+      "Harari argues chimpanzees can cooperate in groups of dozens through direct personal relationships, but no primate can coordinate thousands of strangers the way humans routinely do — at a company, a nation, a religion. His explanation is that roughly 70,000 years ago, a 'cognitive revolution' gave Homo sapiens the capacity for genuinely abstract, shared fiction: money has no inherent value beyond collective belief, a corporation is a legal fiction with no physical body, a nation is a story millions of strangers agree to act as if is real. This ability to construct and believe shared myths, Harari argues, is what let sapiens organize at scales other human species (Neanderthals, Homo erectus) couldn't match, and it's the same mechanism — not superior individual intelligence — that scaled from hunter-gatherer bands to global empires and modern corporations.",
+    layer2:
+      "Name one large-scale institution you participate in daily — money, your employer, a legal system — and notice that it works only because a huge number of strangers, including you, agree to treat a shared story as if it were physically real.",
+    quiz: {
+      question: "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
+      options: [
+        "Sapiens had significantly larger brains and higher individual intelligence than all other human species",
+        "The capacity for genuinely abstract shared fiction — collectively believing in things like money, nations, and corporations that have no independent physical existence — which let strangers coordinate at scales no other species could match",
+        "Sapiens were the only human species capable of using tools",
+        "Sapiens had no need for cooperation because they were physically stronger than rival species",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Harari's core claim isn't about raw intelligence or physical capability — it's that shared, collectively-believed fictions (money, law, nationhood) let strangers trust and coordinate with each other at a scale that purely personal, chimp-style relationships never could reach.",
+    },
+    related: ["AH3", "I11", "V1"],
+    furtherReading: [
+      {
+        label: "Sapiens: A Brief History of Humankind",
+        source: "Harper",
+        url: "https://www.ynharari.com/book/sapiens/",
+        type: "book",
+      },
+    ],
+    tags: ["Social Constructs", "Macro & Cycles"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH6",
+    clusterId: "AH",
+    title: "The Silk Roads",
+    author: "Peter Frankopan",
+    year: 2015,
+    medium: "Book",
+    category: "History",
+    thesis:
+      "World history looks fundamentally different when told from the perspective of Central Asia's trade networks instead of Western Europe — the region connecting East and West, not the Atlantic seaboard, was the actual center of global exchange, wealth, and power for most of recorded history.",
+    layer0:
+      "Frankopan argued that centuries of history education got the map wrong — the real center of the world for most of human history wasn't Rome, London, or Paris, it was the corridor of trade routes running through Central Asia and the Middle East.",
+    layer1:
+      "Frankopan traces how goods, religions, diseases, technologies, and ideas moved along overland and maritime routes connecting China, India, Persia, the Middle East, and Europe for over two thousand years, and argues these routes — not any single civilization — were the primary engine of world-historical change. Silk, spices, paper-making, gunpowder, and the Black Death all spread along these networks; major religions (Buddhism, Christianity, Islam) expanded largely by following the same trade corridors merchants used. Western Europe's later dominance, in Frankopan's telling, was a relatively late and temporary deviation from a much older pattern in which the connective tissue between East and West — not any single endpoint — held the real economic and strategic center of gravity, a pattern he argues is reasserting itself as global economic weight shifts back toward Asia.",
+    layer2:
+      "The 'center' of any system — an industry, a network, an organization — is often assumed to be wherever you personally are standing. Where might the actual center of gravity in something you're part of be somewhere you've never thought to look?",
+    quiz: {
+      question:
+        "What is Frankopan's central reframing of traditional world history in The Silk Roads?",
+      options: [
+        "That Western Europe has always been the uncontested center of global trade and power",
+        "That the trade corridors connecting Central Asia, the Middle East, China, and India — not any single Western civilization — were the primary engine and center of gravity of world history for most of recorded time",
+        "That trade routes had no significant influence on the spread of religion or technology",
+        "That the Silk Roads were only active for a brief period in the ancient world",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Frankopan's argument repositions the connective trade network itself, rather than any single endpoint civilization like Rome or Britain, as the actual long-run center of world-historical exchange and power — with Western European dominance framed as a comparatively recent and possibly temporary deviation from that older pattern.",
+    },
+    related: ["AH3", "AH4"],
+    furtherReading: [
+      {
+        label: "The Silk Roads: A New History of the World",
+        source: "Bloomsbury",
+        url: "https://www.bloomsbury.com/uk/silk-roads-9781408839973/",
+        type: "book",
+      },
+    ],
+    tags: ["Macro & Cycles"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH7",
+    clusterId: "AH",
+    title: "The Structure of Scientific Revolutions",
+    author: "Thomas Kuhn",
+    year: 1962,
+    medium: "Book",
+    category: "History of Science",
+    thesis:
+      "Science doesn't progress through smooth, cumulative accumulation of facts — it alternates between long periods of stable 'normal science' within an accepted paradigm and rare, disruptive 'paradigm shifts' where the entire framework for interpreting evidence is replaced.",
+    layer0:
+      "Kuhn's 1962 book introduced the phrase 'paradigm shift' to describe something historians of science had noticed but not fully named: scientific revolutions don't add new facts to old theories, they replace the entire lens the facts are viewed through.",
+    layer1:
+      "'Normal science,' in Kuhn's framework, is puzzle-solving within an accepted paradigm — a shared set of assumptions, methods, and exemplary solved problems that a scientific community treats as settled foundations, not open questions. Anomalies — observations that don't fit the paradigm — accumulate slowly and are usually explained away or set aside rather than treated as immediately fatal to the paradigm. A genuine crisis emerges only when anomalies accumulate past a threshold, and a paradigm shift happens when a new framework emerges that resolves the anomalies by reorganizing the field's basic assumptions, not just adding new facts to the old ones — the switch from Ptolemaic to Copernican astronomy, or Newtonian to Einsteinian physics, are Kuhn's central examples. Crucially, Kuhn argued paradigms are often incommensurable — practitioners on either side of a shift can partly talk past each other, because the shift changes what counts as a relevant fact or a good explanation in the first place, not just which specific claims are believed true.",
+    layer2:
+      "In your own field or belief system, what anomaly have you been quietly setting aside as an exception, rather than treating as a signal that your whole framework might need replacing rather than patching?",
+    quiz: {
+      question: "According to Kuhn, what typically triggers a genuine scientific 'paradigm shift'?",
+      options: [
+        "A single new experiment that instantly convinces the entire scientific community",
+        "An accumulation of anomalies — observations that don't fit the existing accepted framework — reaching a crisis point, resolved by a new framework that reorganizes the field's basic assumptions rather than just adding new facts",
+        "A government or funding body mandating that scientists adopt a new theory",
+        "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Kuhn's model rejects the idea of smooth cumulative progress — paradigm shifts happen when unresolved anomalies build into a crisis, and the resolution isn't just new data added to the old theory, it's a new framework that changes what counts as a relevant fact or valid explanation in the first place.",
+    },
+    related: ["AH3", "O1"],
+    furtherReading: [
+      {
+        label: "The Structure of Scientific Revolutions",
+        source: "University of Chicago Press",
+        url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
+        type: "book",
+      },
+    ],
+    tags: ["First-Principles Thinking", "Macro & Cycles"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH8",
+    clusterId: "AH",
+    title: "Why Nations Fail",
+    author: "Daron Acemoglu & James A. Robinson",
+    year: 2012,
+    medium: "Book",
+    category: "History",
+    thesis:
+      "Nations grow rich or stay poor mainly because of their political and economic institutions — whether they're 'inclusive' (broadly distributing power and property rights) or 'extractive' (concentrating both in a narrow elite) — not because of geography, culture, or the knowledge available to their leaders.",
+    layer0:
+      "Acemoglu and Robinson studied cities split by the same border — like Nogales, split between Arizona and Mexico, same geography and culture on both sides — and found wealth gaps that geography and culture couldn't explain. Institutions could.",
+    layer1:
+      "Inclusive institutions secure broad property rights, enforce contracts fairly, and allow political power to be contested and limited, which creates incentives for ordinary people to invest, innovate, and start businesses because they can keep the gains. Extractive institutions concentrate political power and economic rents in a narrow elite, who then have every incentive to block the kind of broad-based innovation and investment that might threaten their position — even when it would grow the overall economy — because 'creative destruction' also threatens their own extracted rents. The authors argue this explains persistent poverty better than geography (their border-city comparisons hold climate and terrain constant) or culture (similarly matched populations diverge sharply once split by different institutions), and that the specific historical junctures at which a nation's institutions get locked into an inclusive or extractive path — often centuries earlier via colonization choices — cast a very long shadow.",
+    layer2:
+      "In an organization you're part of, do the people with power actually benefit when new ideas succeed and displace the old way of doing things — or do they benefit more from things staying exactly as they are?",
+    quiz: {
+      question:
+        "Why do Acemoglu and Robinson argue that 'extractive' institutions tend to produce long-run poverty, even when they might not always block growth in the short term?",
+      options: [
+        "Because extractive institutions are always run by less intelligent leaders",
+        "Because the narrow elites who benefit from extractive institutions have a direct incentive to block broad-based innovation and creative destruction, since new competition threatens the very concentration of power and rents that benefits them",
+        "Because extractive institutions are found only in countries with poor geography",
+        "Because extractive institutions were outlawed by international treaties",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The authors' mechanism is about incentives, not intelligence or geography — an elite that captures disproportionate rents from the existing economic order has a rational, self-interested reason to resist the disruptive innovation that inclusive institutions instead reward and protect.",
+    },
+    related: ["AH3", "AH4", "M1"],
+    furtherReading: [
+      {
+        label: "Why Nations Fail: The Origins of Power, Prosperity, and Poverty",
+        source: "Crown Business",
+        url: "https://www.penguinrandomhouse.com/books/174768/why-nations-fail-by-daron-acemoglu-and-james-a-robinson/",
+        type: "book",
+      },
+    ],
+    tags: ["Macro & Cycles", "Incentives & Systems"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AH9",
+    clusterId: "AH",
+    title: "1177 B.C.: The Year Civilization Collapsed",
+    author: "Eric H. Cline",
+    year: 2014,
+    medium: "Book",
+    category: "History",
+    thesis:
+      "The Late Bronze Age's interconnected civilizations — Egypt, the Hittites, Mycenaean Greece, and others — collapsed within a few decades not from any single cause but from a cluster of simultaneous shocks (drought, earthquakes, invasion, trade collapse) hitting a system too interdependent to absorb them all at once.",
+    layer0:
+      "Around 1177 B.C., a wave of destruction swept through the Eastern Mediterranean's major civilizations almost simultaneously. Cline's argument: it wasn't one cause, like the mysterious 'Sea Peoples' invaders long blamed — it was a systemic collapse under compounding stress.",
+    layer1:
+      "The Late Bronze Age Mediterranean was a densely interconnected trade network — Egypt, the Hittite Empire, Mycenaean Greece, Cyprus, and others exchanged tin, copper, grain, and diplomatic correspondence in a system as globalized as anything before the modern era. Cline marshals archaeological and climate evidence for multiple, roughly simultaneous stresses around 1200–1150 B.C.: prolonged drought reducing agricultural surplus, a cluster of major earthquakes, internal rebellions, and disruptive migrations (including the 'Sea Peoples'). No single shock was necessarily fatal on its own — Bronze Age civilizations had weathered individual crises before — but Cline argues the system's very interconnectedness, which had been a source of shared prosperity, became a liability once several shocks hit simultaneously, since trade disruption in one node cascaded into famine, unrest, and state failure in others that depended on it. The result was a systems collapse rather than a single military defeat, and it took the Eastern Mediterranean centuries to recover comparable complexity.",
+    layer2:
+      "A tightly interconnected system — a supply chain, a friend group, an economy — is efficient exactly because of its interdependence. Where in your own life is a system's efficiency also quietly making it fragile to several small shocks arriving at once?",
+    quiz: {
+      question: "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
+      options: [
+        "A single invasion by the 'Sea Peoples' that no civilization could have survived",
+        "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
+        "A sudden, unexplained climate event with no connection to trade or political factors",
+        "Deliberate, coordinated destruction ordered by Egyptian pharaohs",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Cline's 'systems collapse' argument moves away from single-cause explanations (like blaming the Sea Peoples alone) toward a model where the Bronze Age Mediterranean's interconnected trade network amplified several simultaneous regional shocks into a civilization-wide collapse none of them would have caused individually.",
+    },
+    related: ["AH4", "AH6"],
+    furtherReading: [
+      {
+        label: "1177 B.C.: The Year Civilization Collapsed",
+        source: "Princeton University Press",
+        url: "https://press.princeton.edu/books/paperback/9780691208015/1177-bc",
+        type: "book",
+      },
+    ],
+    tags: ["Macro & Cycles", "Risk & Asymmetric Bets"],
     epistemicStatus: "Canonical",
   },
 ];
