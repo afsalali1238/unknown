@@ -5523,7 +5523,7 @@ export const NODES: Node[] = [
         label: "Reciprocity (the related mental model)",
         source: "Farnam Street",
         url: "https://fs.blog/reciprocity/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J12-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -5857,7 +5857,7 @@ export const NODES: Node[] = [
         label: "What Sharks (and Building Bombers) Teach Us About Survivorship Bias",
         source: "Farnam Street",
         url: "https://fs.blog/sharks-survivorship-bias/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J19-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -5905,7 +5905,7 @@ export const NODES: Node[] = [
         label: "Survivorship Bias: The Tale of Forgotten Failures",
         source: "Farnam Street",
         url: "https://fs.blog/survivorship-bias/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J20-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Indianapolis: The True Story of the Worst Sea Disaster in US Naval History",
@@ -14953,6 +14953,144 @@ export const NODES: Node[] = [
       },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "Q17",
+    clusterId: "Q",
+    title: "The Psychology of Money",
+    author: "Morgan Housel",
+    year: 2020,
+    medium: "Book",
+    category: "Behavioral Finance",
+    thesis:
+      "Financial outcomes are driven far more by behavior, temperament, and the narrow slice of personal history you happened to live through than by intelligence, income, or formal financial knowledge.",
+    layer0:
+      "Two people can earn the exact same income for thirty years and retire on completely different footing — one broke, one wealthy. Housel's claim is that the gap is almost never intelligence. It's behavior: how each person handles fear, greed, ego, and time.",
+    layer1:
+      "Nobody is 'crazy' with money — everyone's decisions make sense given the tiny, non-random slice of the world they've personally lived through. Someone who came of age during a market crash and someone who came of age during a boom will build opposite instincts about risk, and both are being rational given their own evidence. This is why financial advice that ignores someone's personal history so often fails to land.",
+    layer2:
+      "Housel's sharpest reframe is that wealth is what you don't see — it's the car not bought, the upgrade declined, the income quietly not spent — while the visible signals of being rich (the car, the watch, the house) are often the very thing eating the wealth that would have compounded. If someone judged your financial health only by what's visible, would they be right?",
+    quiz: {
+      question: "According to Housel's distinction between 'rich' and 'wealthy,' what does true wealth actually look like?",
+      options: [
+        "Wealth is measured by the visible assets you own — cars, houses, watches.",
+        "Wealth is what you don't see: the income deliberately not converted into visible spending, left to compound instead.",
+        "Wealth is primarily a function of income level, independent of spending habits.",
+        "Wealth and being 'rich' are functionally the same thing in Housel's framework.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Housel argues 'rich' is a visible, current income signal, while wealth is the invisible, un-spent portion of it — assets not yet converted into stuff, which is exactly what gives them room to compound.",
+    },
+    related: ["K1", "L6", "Q4"],
+    furtherReading: [
+      {
+        label: "The Psychology of Money",
+        source: "Morgan Housel, Collaborative Fund (2018 essay)",
+        url: "https://collabfund.com/blog/the-psychology-of-money/",
+        archive: { status: "unavailable" },
+      },
+      {
+        label: "Book: The Psychology of Money",
+        source: "Collaborative Fund",
+        url: "https://collabfund.com/blog/book-the-psychology-of-money/",
+        archive: { status: "full", path: "content/sources/Q17-1.md", retrieved: "2026-07-18" },
+      },
+    ],
+    tags: ["Wealth, Leverage & Judgment", "Compounding & Patience", "Cognitive Biases & Models"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "Q18",
+    clusterId: "Q",
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    year: 2011,
+    medium: "Book",
+    category: "Cognitive Psychology",
+    thesis:
+      "Two systems drive human judgment — System 1, fast and intuitive, and System 2, slow and deliberate — and most systematic biases occur when System 1 quietly substitutes an easy question for the hard one actually being asked.",
+    layer0:
+      "You know instantly that 2+2=4 and instantly that a stranger's face looks angry. You do not know instantly what 17×24 is — that takes deliberate work. Kahneman's whole book rests on naming that gap: System 1 (fast, automatic, effortless) and System 2 (slow, effortful, deliberate).",
+    layer1:
+      "System 2 believes it's in charge, but it's lazy — it tends to endorse whatever answer System 1 hands it rather than checking the work. The mechanism behind most cognitive biases is 'substitution': when System 2 is asked a hard question ('how do I feel about my life overall?'), System 1 quietly answers an easier, related one instead ('how do I feel right now?') and System 2 accepts it as the answer without noticing the swap happened.",
+    layer2:
+      "Kahneman's WYSIATI principle — 'What You See Is All There Is' — is the deepest cut: System 1 builds a confident story out of whatever evidence is in front of it, without pausing to ask what evidence might be missing. The story feels complete regardless of how incomplete the evidence actually was. What's a confident judgment you've made recently that was built on less evidence than it felt like at the time?",
+    quiz: {
+      question: "What mechanism does Kahneman identify as the source of most systematic cognitive biases?",
+      options: [
+        "System 2 deliberately overriding System 1's correct intuitions.",
+        "Substitution — System 1 quietly answers an easier question than the hard one actually being asked, and System 2 accepts it without checking.",
+        "A simple lack of intelligence or education in the person making the judgment.",
+        "Random noise in memory recall with no identifiable underlying pattern.",
+      ],
+      correctIndex: 1,
+      explanation:
+        "The substitution mechanism is Kahneman's central explanation for bias: a hard question gets silently swapped for an easier, related one, and the lazy System 2 rubber-stamps the substitute answer as if it addressed the original question.",
+    },
+    related: ["L3", "U2", "U3", "U6"],
+    furtherReading: [
+      {
+        label: "Of 2 Minds: How Fast and Slow Thinking Shape Perception and Choice (Excerpt)",
+        source: "Scientific American",
+        url: "https://www.scientificamerican.com/article/kahneman-excerpt-thinking-fast-and-slow/",
+        archive: { status: "full", path: "content/sources/Q18-0.md", retrieved: "2026-07-18" },
+      },
+      {
+        label: "Thinking, Fast and Slow",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow",
+        archive: { status: "full", path: "content/sources/Q18-1.md", retrieved: "2026-07-18" },
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Decision-Making", "First-Principles Thinking"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "Q19",
+    clusterId: "Q",
+    title: "The Power of Habit",
+    author: "Charles Duhigg",
+    year: 2012,
+    medium: "Book",
+    category: "Habits",
+    thesis:
+      "Habits run on a neurological loop of cue, routine, and reward, and the reliable way to change an existing habit is to keep the same cue and reward while deliberately swapping out the routine in between — not to rely on willpower alone.",
+    layer0:
+      "Duhigg's core claim is that habits aren't decisions you keep re-making — they're a loop your brain runs on autopilot to save effort: a cue triggers a routine, the routine delivers a reward, and repetition wires the loop so tightly that eventually the cue alone triggers a craving for the reward before the routine even starts.",
+    layer1:
+      "This is why willpower-only habit change fails so often: it tries to delete the routine but leaves the cue and the craving for the reward fully intact, so the old routine keeps getting pulled back in under stress. Duhigg's 'Golden Rule of Habit Change' instead keeps the cue and the reward exactly the same and only swaps the routine in the middle — which is why, for instance, replacing a stress-triggered snack habit works best when the replacement still delivers a comparable reward (a walk, a call to a friend) rather than just removing the snack and leaving the craving unanswered.",
+    layer2:
+      "Duhigg extends this from individuals to organizations, arguing that companies and institutions have 'keystone habits' — a single changed routine (like Alcoa's obsessive focus on worker safety) that cascades into unrelated improvements elsewhere, because fixing one visible habit forces the surrounding systems and incentives to reorganize around it. What's one small routine in your own day that, if you changed it, would probably drag several other things along with it?",
+    quiz: {
+      question: "According to Duhigg's 'Golden Rule of Habit Change,' what is the most reliable way to change an existing habit?",
+      options: [
+        "Eliminate the cue that triggers the habit entirely.",
+        "Rely on willpower alone to suppress the routine until the habit fades.",
+        "Keep the same cue and the same reward, but consciously substitute a new routine in between.",
+        "Replace the reward with a larger, more motivating one.",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Duhigg's research found that habits persist because cue and reward stay linked; deleting the routine without replacing it leaves the craving unanswered, so the old routine creeps back. Substituting a new routine between the same cue and reward is what actually sticks.",
+    },
+    related: ["Q7", "Q8", "K6"],
+    furtherReading: [
+      {
+        label: "The Power of Habit",
+        source: "Charles Duhigg (official book page)",
+        url: "https://charlesduhigg.com/the-power-of-habit/",
+        archive: { status: "full", path: "content/sources/Q19-0.md", retrieved: "2026-07-18" },
+      },
+      {
+        label: "The Power of Habit — Chapter One (excerpt)",
+        source: "Charles Duhigg / Random House",
+        url: "https://charlesduhigg.com/wp-content/uploads/2025/01/Power-of-Habit-Chapter-One.pdf",
+        archive: { status: "full", path: "content/sources/Q19-1.md", retrieved: "2026-07-18" },
+      },
+    ],
+    tags: ["Incentives & Systems", "Compounding & Patience", "Health & Body"],
     epistemicStatus: "Canonical",
   },
   {
