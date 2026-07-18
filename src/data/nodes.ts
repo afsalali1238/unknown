@@ -12273,17 +12273,14 @@ export const NODES: Node[] = [
         label: "Entropy",
         source: "article",
         url: "http://www.scholarpedia.org/article/Entropy",
-        archive: {
-          status: "full",
-          path: "content/sources/AA1-entropy-0.md",
-          retrieved: "2026-07-17",
-        },
-      },
+          archive: { status: "full", path: "content/sources/AA1-0.md", retrieved: "2026-07-18" }
+    },
       {
         label: "Rudolf Clausius and the Second Law of Thermodynamics Explained",
         source: "article",
         url: "https://www.kroneckerwallis.com/rudolf-clausius-and-the-second-law-of-thermodynamics-explained/",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12752,12 +12749,8 @@ export const NODES: Node[] = [
         label: "On the Electrodynamics of Moving Bodies (1905, English translation)",
         source: "paper",
         url: "https://www.fourmilab.ch/etexts/einstein/specrel/specrel.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/AA2-relativity-0.md",
-          retrieved: "2026-07-17",
-        },
-      },
+          archive: { status: "full", path: "content/sources/AA2-0.md", retrieved: "2026-07-18" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12803,7 +12796,8 @@ export const NODES: Node[] = [
         label: "Kin selection",
         source: "article",
         url: "https://www.britannica.com/topic/kin-selection",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -15221,7 +15215,8 @@ export const NODES: Node[] = [
         source: "Penguin Books",
         url: "https://www.penguinrandomhouse.com/books/291434/getting-to-yes-by-roger-fisher-william-ury-and-bruce-patton/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL1-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15261,7 +15256,8 @@ export const NODES: Node[] = [
         source: "HarperBusiness",
         url: "https://www.harpercollins.com/products/never-split-the-difference-chris-voss",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL2-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15302,7 +15298,8 @@ export const NODES: Node[] = [
         source: "Harper Business",
         url: "https://www.influenceatwork.com/principles-of-persuasion/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL3-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -15342,7 +15339,8 @@ export const NODES: Node[] = [
         source: "Simon & Schuster",
         url: "https://www.simonandschuster.com/books/Pre-Suasion/Robert-Cialdini/9781501109812",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL4-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -15383,7 +15381,8 @@ export const NODES: Node[] = [
         source: "Penguin Books",
         url: "https://www.penguinrandomhouse.com/books/295870/bargaining-for-advantage-by-g-richard-shell/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL5-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15423,7 +15422,8 @@ export const NODES: Node[] = [
         source: "Crown Business",
         url: "https://www.penguinrandomhouse.com/books/149298/start-with-no-by-jim-camp/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL6-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15463,7 +15463,8 @@ export const NODES: Node[] = [
         source: "Bantam Books",
         url: "https://www.penguinrandomhouse.com/books/176269/you-can-negotiate-anything-by-herb-cohen/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL7-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15504,7 +15505,8 @@ export const NODES: Node[] = [
         source: "McGraw-Hill",
         url: "https://cruciallearning.com/crucial-conversations-book/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL8-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15545,7 +15547,8 @@ export const NODES: Node[] = [
         source: "Penguin Books",
         url: "https://www.penguinrandomhouse.com/books/294466/difficult-conversations-by-douglas-stone-bruce-patton-and-sheila-heen/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL9-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15586,7 +15589,8 @@ export const NODES: Node[] = [
         source: "PuddleDancer Press",
         url: "https://www.cnvc.org/what-is-nvc",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL10-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15627,7 +15631,8 @@ export const NODES: Node[] = [
         source: "Berrett-Koehler",
         url: "https://www.bkconnection.com/books/title/negotiating-the-impossible",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL11-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15668,7 +15673,8 @@ export const NODES: Node[] = [
         source: "Harvard Business Review Press",
         url: "https://www.hbs.edu/faculty/Pages/item.aspx?num=25152",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL12-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15709,7 +15715,8 @@ export const NODES: Node[] = [
         source: "Viking",
         url: "https://www.penguinrandomhouse.com/books/210318/give-and-take-by-adam-grant/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL13-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -15750,7 +15757,8 @@ export const NODES: Node[] = [
         source: "HarperCollins",
         url: "https://www.harpercollins.com/products/split-the-pie-barry-nalebuff",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL14-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15790,7 +15798,8 @@ export const NODES: Node[] = [
         source: "Bantam Books",
         url: "https://www.penguinrandomhouse.com/books/173596/the-power-of-a-positive-no-by-william-ury/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL15-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15831,7 +15840,8 @@ export const NODES: Node[] = [
         source: "Touchstone",
         url: "https://www.simonandschuster.com/books/The-Like-Switch/Jack-Schafer/9781476754487",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL16-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -15871,7 +15881,8 @@ export const NODES: Node[] = [
         source: "public domain translation",
         url: "https://www.gutenberg.org/ebooks/132",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL17-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15911,7 +15922,8 @@ export const NODES: Node[] = [
         source: "Random House",
         url: "https://heathbrothers.com/books/made-to-stick/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL18-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Markets & Narrative"],
     epistemicStatus: "Canonical",
@@ -15951,7 +15963,8 @@ export const NODES: Node[] = [
         source: "Crown",
         url: "https://www.penguinrandomhouse.com/books/97281/thank-you-for-arguing-by-jay-heinrichs/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL19-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Markets & Narrative"],
     epistemicStatus: "Canonical",
@@ -15992,7 +16005,8 @@ export const NODES: Node[] = [
         source: "Grand Central Publishing",
         url: "https://www.influenceatwork.com/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AL20-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -16032,7 +16046,8 @@ export const NODES: Node[] = [
         source: "Proceedings of the National Academy of Sciences, 1929",
         url: "https://www.pnas.org/doi/10.1073/pnas.15.3.168",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AA3-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16072,7 +16087,8 @@ export const NODES: Node[] = [
         source: "The Astrophysical Journal, 1965",
         url: "https://articles.adsabs.harvard.edu/pdf/1965ApJ...142..419P",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AA4-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16112,7 +16128,8 @@ export const NODES: Node[] = [
         source: "Prussian Academy of Sciences",
         url: "https://einsteinpapers.press.princeton.edu/vol6-doc/272",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AA5-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16152,7 +16169,8 @@ export const NODES: Node[] = [
         source: "Annales de la Société Scientifique de Bruxelles, 1927 (English translation 1931, MNRAS)",
         url: "https://articles.adsabs.harvard.edu/pdf/1931MNRAS..91..483L",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AA6-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16193,7 +16211,8 @@ export const NODES: Node[] = [
         source: "Zeitschrift für Physik",
         url: "https://uncertaintyprinciple.wordpress.com/wp-content/uploads/2010/07/hq.pdf",
         type: "paper",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16233,7 +16252,8 @@ export const NODES: Node[] = [
         source: "Journal of the Atmospheric Sciences, 1963",
         url: "https://journals.ametsoc.org/view/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.xml",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AA8-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -16273,7 +16293,8 @@ export const NODES: Node[] = [
         source: "Annalen der Physik",
         url: "https://einsteinpapers.press.princeton.edu/vol2-trans/187",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AA9-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16313,7 +16334,8 @@ export const NODES: Node[] = [
         source: "Oxford University Press",
         url: "https://richarddawkins.net/books/the-selfish-gene/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AB3-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -16353,7 +16375,8 @@ export const NODES: Node[] = [
         source: "Verhandlungen des naturforschenden Vereines in Brünn (English translation)",
         url: "https://www.esp.org/foundations/genetics/classical/gm-65.pdf",
         type: "paper",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16393,7 +16416,8 @@ export const NODES: Node[] = [
         source: "The American Biology Teacher, 1973",
         url: "https://www.jstor.org/stable/4444260",
         type: "essay",
-      },
+          archive: { status: "full", path: "content/sources/AB5-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16433,7 +16457,8 @@ export const NODES: Node[] = [
         source: "Models in Paleobiology, 1972",
         url: "https://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf",
         type: "paper",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16473,7 +16498,8 @@ export const NODES: Node[] = [
         source: "Journal of Theoretical Biology, 1967",
         url: "https://www.sciencedirect.com/science/article/abs/pii/0022519367900790",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AB7-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16513,7 +16539,8 @@ export const NODES: Node[] = [
         source: "Nature, 1953",
         url: "https://www.nature.com/articles/171737a0",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AB8-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16553,7 +16580,8 @@ export const NODES: Node[] = [
         source: "Evolutionary Theory, 1973",
         url: "https://www.mn.uio.no/cees/english/services/van-valen/evolutionary-theory/volume-1/vol-1-no-1-pages-1-30-l-van-valen-a-new-evolutionary-law.pdf",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AB9-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -16593,7 +16621,8 @@ export const NODES: Node[] = [
         source: "W. W. Norton & Company",
         url: "https://www.wwnorton.com/books/9780393317558",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AH3-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Macro & Cycles", "First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16633,7 +16662,8 @@ export const NODES: Node[] = [
         source: "Random House",
         url: "https://www.penguinrandomhouse.com/books/165506/the-rise-and-fall-of-the-great-powers-by-paul-kennedy/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AH4-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -16673,7 +16703,8 @@ export const NODES: Node[] = [
         source: "Harper",
         url: "https://www.ynharari.com/book/sapiens/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AH5-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Social Constructs", "Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -16714,7 +16745,8 @@ export const NODES: Node[] = [
         source: "Bloomsbury",
         url: "https://www.bloomsbury.com/uk/silk-roads-9781408839973/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AH6-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -16754,7 +16786,8 @@ export const NODES: Node[] = [
         source: "University of Chicago Press",
         url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AH7-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["First-Principles Thinking", "Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -16795,7 +16828,8 @@ export const NODES: Node[] = [
         source: "Crown Business",
         url: "https://www.penguinrandomhouse.com/books/174768/why-nations-fail-by-daron-acemoglu-and-james-a-robinson/",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AH8-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Macro & Cycles", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -16835,7 +16869,8 @@ export const NODES: Node[] = [
         source: "Princeton University Press",
         url: "https://press.princeton.edu/books/paperback/9780691208015/1177-bc",
         type: "book",
-      },
+          archive: { status: "full", path: "content/sources/AH9-0.md", retrieved: "2026-07-18" }
+    },
     ],
     tags: ["Macro & Cycles", "Risk & Asymmetric Bets"],
     epistemicStatus: "Canonical",
