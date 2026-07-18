@@ -5291,7 +5291,7 @@ export const NODES: Node[] = [
         label: "Understanding the Limitations of Maps",
         source: "Farnam Street",
         url: "https://fs.blog/understanding-limitations-maps/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J7-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The 5 Whys technique explained (as used in root cause analysis)",
@@ -5619,7 +5619,7 @@ export const NODES: Node[] = [
         label: "Decision Journal (a related practical tool referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/02/decision-journal/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J14-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Farnam Street's Knowledge Project podcast — decision-making series",
@@ -5666,7 +5666,7 @@ export const NODES: Node[] = [
         label: "Bayes and Deadweight: Using Statistics to Eject the Deadweight From Your Life",
         source: "Farnam Street",
         url: "https://fs.blog/2018/01/bayes-deadweight/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J15-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Julia Galef on Bayesian reasoning changing how you think",
@@ -5809,7 +5809,7 @@ export const NODES: Node[] = [
         label: "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/02/peter-cathcart-wason-falsification/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J18-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
@@ -6191,7 +6191,7 @@ export const NODES: Node[] = [
         label: "Power Laws",
         source: "Farnam Street",
         url: "https://fs.blog/2017/11/power-laws/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J26-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Economics of Superstars (Sherwin Rosen, referenced in this piece)",
@@ -6237,7 +6237,7 @@ export const NODES: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/J27-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Bayesian Casino (Bayes and Deadweight, referenced in this piece)",
