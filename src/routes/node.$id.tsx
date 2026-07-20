@@ -122,16 +122,30 @@ type FurtherReading = NodeType["furtherReading"][number];
 // opening /read/$id, so tapping "download" while offline-prepping and then
 // losing signal before ever opening the reader silently failed. Checks
 // cache on mount too, so an already-downloaded item shows as done instead
-// of offering to redownload it.
-function DownloadButton({ path }: { path: string }) {
-  const url = `/${path}`;
+// of offering to redownload it. Once done, swaps to a "Downloaded" badge
+// plus an explicit Open action, rather than leaving download and reading
+// as the same button.
+function DownloadButton({
+  path,
+  id,
+  label,
+  source,
+  url: sourceUrl,
+}: {
+  path: string;
+  id: string;
+  label: string;
+  source: string;
+  url: string;
+}) {
+  const fileUrl = `/${path}`;
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
 
   useEffect(() => {
     let cancelled = false;
     if (typeof window === "undefined" || !("caches" in window)) return;
     window.caches
-      .match(url)
+      .match(fileUrl)
       .then((res) => {
         if (!cancelled && res) setState("done");
       })
@@ -139,7 +153,7 @@ function DownloadButton({ path }: { path: string }) {
     return () => {
       cancelled = true;
     };
-  }, [url]);
+  }, [fileUrl]);
 
   async function download(e: MouseEvent) {
     e.preventDefault();
@@ -147,7 +161,7 @@ function DownloadButton({ path }: { path: string }) {
     if (state === "loading" || state === "done") return;
     setState("loading");
     try {
-      const res = await fetch(url, { cache: "reload" });
+      const res = await fetch(fileUrl, { cache: "reload" });
       if (!res.ok) throw new Error("failed to fetch");
       setState("done");
     } catch {
@@ -155,14 +169,23 @@ function DownloadButton({ path }: { path: string }) {
     }
   }
 
-  const label =
-    state === "done"
-      ? "✓ Downloaded"
-      : state === "loading"
-        ? "Downloading…"
-        : state === "error"
-          ? "Retry download"
-          : "↓ Download";
+  if (state === "done") {
+    return (
+      <div className="flex items-center gap-2">
+        <span className="inline-flex items-center gap-1.5 border border-accent/40 px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+          ✓ Downloaded
+        </span>
+        <Link
+          to="/read/$id"
+          params={{ id }}
+          search={{ label, source, url: sourceUrl }}
+          className="inline-flex items-center gap-1.5 border border-line px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:border-ink"
+        >
+          Open →
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <button
@@ -171,12 +194,10 @@ function DownloadButton({ path }: { path: string }) {
       disabled={state === "loading"}
       className={cn(
         "inline-flex items-center gap-1.5 border px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors disabled:opacity-60",
-        state === "done"
-          ? "border-accent/40 text-accent"
-          : "border-line text-ink-soft hover:border-ink hover:text-ink",
+        "border-line text-ink-soft hover:border-ink hover:text-ink",
       )}
     >
-      {label}
+      {state === "loading" ? "Downloading…" : state === "error" ? "Retry download" : "↓ Download"}
     </button>
   );
 }
@@ -184,49 +205,45 @@ function DownloadButton({ path }: { path: string }) {
 function FurtherReadingItem({ item }: { item: FurtherReading }) {
   const archived =
     (item.archive?.status === "full" || item.archive?.status === "excerpt") && item.archive.path;
-
-  const titleBlock = (
-    <>
-      <span className="block font-serif text-lg leading-snug text-ink group-hover:text-accent">
-        {item.label}
-      </span>
-      <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-        {item.source}
-      </span>
-      <span className="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
-        Read more →
-      </span>
-    </>
-  );
+  const [open, setOpen] = useState(false);
 
   return (
     <li className="py-5">
-      {archived ? (
-        <Link
-          to="/read/$id"
-          params={{ id: archiveSlug(item.archive!.path!) }}
-          search={{ label: item.label, source: item.source, url: item.url }}
-          className="group block"
-        >
-          {titleBlock}
-        </Link>
-      ) : (
-        <a href={item.url} target="_blank" rel="noopener noreferrer" className="group block">
-          {titleBlock}
-        </a>
-      )}
+      <span className="block font-serif text-lg leading-snug text-ink">{item.label}</span>
+      <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+        {item.source}
+      </span>
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        className="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-accent"
+      >
+        <span>{open ? "Hide" : "Read more"}</span>
+        <span className={cn("transition-transform duration-200", open && "rotate-180")}>↓</span>
+      </button>
 
-      <div className="mt-3 flex flex-wrap items-center gap-3">
-        {archived && <DownloadButton path={item.archive!.path!} />}
-        <a
-          href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline"
-        >
-          ↗ Read online
-        </a>
-      </div>
+      {open && (
+        <div className="mt-3 flex flex-wrap items-center gap-3 animate-in fade-in slide-in-from-top-1 duration-200">
+          {archived && (
+            <DownloadButton
+              path={item.archive!.path!}
+              id={archiveSlug(item.archive!.path!)}
+              label={item.label}
+              source={item.source}
+              url={item.url}
+            />
+          )}
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline"
+          >
+            ↗ Read online
+          </a>
+        </div>
+      )}
     </li>
   );
 }
