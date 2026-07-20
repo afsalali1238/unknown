@@ -5918,8 +5918,8 @@ export const NODES: Node[] = [
         label: "Indianapolis: The True Story of the Worst Sea Disaster in US Naval History",
         source: "Lynn Vincent and Sara Vladic (book, referenced in this piece)",
         url: "https://fs.blog/sharks-survivorship-bias/",
-        archive: { status: "full", path: "content/sources/J21-0.md", retrieved: "2026-07-18" },
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -6290,8 +6290,8 @@ export const NODES: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-        archive: { status: "full", path: "content/sources/J29-0.md", retrieved: "2026-07-18" },
-      },
+          archive: { status: "unavailable" }
+    },
       {
         label: "Nature: An Economic History (Geerat Vermeij, referenced in this piece)",
         source: "Book, cited via Farnam Street",
@@ -12408,7 +12408,8 @@ export const NODES: Node[] = [
         label: "Donald Olding Hebb",
         source: "article",
         url: "https://can-acn.org/donald-olding-hebb/",
-      },
+          archive: { status: "full", path: "content/sources/AD1-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12454,7 +12455,8 @@ export const NODES: Node[] = [
         label: "Joseph Campbell and the Hero's Journey",
         source: "article",
         url: "https://www.jcf.org/learn/joseph-campbell-heros-journey",
-      },
+          archive: { status: "full", path: "content/sources/AE1-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12500,7 +12502,8 @@ export const NODES: Node[] = [
         label: "Beyond Metcalfe's Law for Network Effects",
         source: "article",
         url: "https://a16z.com/beyond-metcalfes-law-for-network-effects/",
-      },
+          archive: { status: "full", path: "content/sources/AF1-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12546,7 +12549,8 @@ export const NODES: Node[] = [
         label: "The Tall Office Building Artistically Considered (1896, primary source scan)",
         source: "article",
         url: "https://archive.org/details/tallofficebuildi00sull",
-      },
+          archive: { status: "full", path: "content/sources/AG1-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12883,7 +12887,8 @@ export const NODES: Node[] = [
         label: "A default mode of brain function (2001, PNAS)",
         source: "paper",
         url: "https://www.pnas.org/doi/10.1073/pnas.98.2.676",
-      },
+          archive: { status: "full", path: "content/sources/AD2-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Contemporary",
   },
@@ -12929,7 +12934,8 @@ export const NODES: Node[] = [
         label: "René Girard (Britannica)",
         source: "article",
         url: "https://www.britannica.com/biography/Rene-Girard",
-      },
+          archive: { status: "full", path: "content/sources/AE2-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12975,7 +12981,8 @@ export const NODES: Node[] = [
         label: "Could it be a Big World After All? The 'Six Degrees of Separation' Myth",
         source: "article",
         url: "https://www.cs.princeton.edu/~chazelle/courses/BIB/big-world",
-      },
+          archive: { status: "full", path: "content/sources/AF2-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -13020,7 +13027,8 @@ export const NODES: Node[] = [
         label: "Top 10 Application-Design Mistakes (affordances & signifiers)",
         source: "article",
         url: "https://www.nngroup.com/articles/top-10-application-design-mistakes/",
-      },
+          archive: { status: "full", path: "content/sources/AG2-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Canonical",
   },
@@ -13188,7 +13196,8 @@ export const NODES: Node[] = [
         label: "Simulacra and Simulation (1981, full scan)",
         source: "book",
         url: "https://dn720006.ca.archive.org/0/items/baudrillard.-1970.-the-consumer-society/Baudrillard.1981.Simulacra-and-Simulation.pdf",
-      },
+          archive: { status: "full", path: "content/sources/AK2-1.md", retrieved: "2026-07-20" }
+    },
     ],
     epistemicStatus: "Contemporary",
   },
@@ -13228,7 +13237,8 @@ export const NODES: Node[] = [
         source: "LinkedIn",
         url: "https://www.linkedin.com/in/surensamarchyan/",
         type: "article",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["Craft & Deep Work", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -13269,7 +13279,8 @@ export const NODES: Node[] = [
         source: "International Paper 'Power of the Printed Word' series",
         url: "https://www.printedword.info/",
         type: "article",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -13310,7 +13321,8 @@ export const NODES: Node[] = [
         source: "International Paper 'Power of the Printed Word' series",
         url: "https://www.printedword.info/",
         type: "article",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -13351,7 +13363,8 @@ export const NODES: Node[] = [
         source: "International Paper 'Power of the Printed Word' series",
         url: "https://www.printedword.info/",
         type: "article",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -13393,7 +13406,8 @@ export const NODES: Node[] = [
         source: "Journal of Pediatrics, 118(2):215-9",
         url: "https://pubmed.ncbi.nlm.nih.gov/1993953/",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AD3-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Health & Body"],
     epistemicStatus: "Canonical",
@@ -13434,7 +13448,8 @@ export const NODES: Node[] = [
         source: "Polymathinvestor.com",
         url: "https://polymathinvestor.com/",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/J34-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["First-Principles Thinking", "Cognitive Biases & Models"],
     epistemicStatus: "Contemporary",
@@ -13475,7 +13490,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/WillManidis/status/2026084115049562341",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/M7-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Incentives & Systems", "Tech Adoption & Disruption"],
     epistemicStatus: "Contemporary",
@@ -13516,7 +13532,8 @@ export const NODES: Node[] = [
         source: "Peter Andrei (Amazon listing)",
         url: "https://www.amazon.com/How-Highly-Effective-People-Speak/dp/B089CSW3Y6",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/Q9-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -13557,7 +13574,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/RianSweetDoris/status/2050267394237759984",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/N12-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Health & Body", "Craft & Deep Work"],
     epistemicStatus: "Contemporary",
@@ -13598,7 +13616,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article, reproduced from albeik.com/pfa/human",
         url: "https://x.com/albeik/status/2043694057671798899",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/O30-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
     epistemicStatus: "Contemporary",
@@ -13638,7 +13657,8 @@ export const NODES: Node[] = [
         source: "tim.blog",
         url: "https://tim.blog/2026/03/04/the-self-help-trap/",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/Q10-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Meaning & Self", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -13678,7 +13698,8 @@ export const NODES: Node[] = [
         source: "Giacomo Bonanno, UC Davis (open textbook)",
         url: "https://x.com/techwith_ram/status/2033924852961444264",
         type: "paper",
-      },
+          archive: { status: "full", path: "content/sources/AJ3-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Decision-Making", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -13719,7 +13740,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/SJosephBurns/status/2028069256231834054",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/J35-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
@@ -13760,7 +13782,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article (secondary commentary, primary source unverified)",
         url: "https://x.com/mustufa4socials/status/2049518414377480218",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/I25-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["AI & the Future", "Moats & Network Effects"],
     epistemicStatus: "Speculative",
@@ -13888,7 +13911,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread",
         url: "https://x.com/CuriousMindsHub/status/2029013144777924881",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/U13-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Cognitive Biases & Models"],
     epistemicStatus: "Contemporary",
@@ -13929,7 +13953,8 @@ export const NODES: Node[] = [
         source: "Norman Doidge (Penguin Random House)",
         url: "https://www.penguinrandomhouse.com/books/54295/the-brain-that-changes-itself-by-norman-doidge-md/",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/AD4-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Health & Body", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -13970,7 +13995,8 @@ export const NODES: Node[] = [
         source: "The Startup Archive Daily Founder Series (excerpting Peter Thiel, Zero to One)",
         url: "https://x.com/CuriousMindsHub/status/2029013144777924881",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/A15-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Moats & Network Effects", "Startups & Founders"],
     epistemicStatus: "Canonical",
@@ -14011,7 +14037,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/InspiroQuest/status/2024455996173930548",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/J36-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
@@ -14052,7 +14079,8 @@ export const NODES: Node[] = [
         source: "Polymathinvestor.com",
         url: "https://polymathinvestor.com/",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/N13-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
     epistemicStatus: "Contemporary",
@@ -14093,7 +14121,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread",
         url: "https://x.com/thecapitalistt0/status/2028717928632430997",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/E2-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -14134,7 +14163,8 @@ export const NODES: Node[] = [
         source: "TED-Ed",
         url: "https://ed.ted.com/lessons/5-tips-to-improve-your-critical-thinking-samantha-agoos",
         type: "video",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -14175,7 +14205,8 @@ export const NODES: Node[] = [
         source: "TED-Ed",
         url: "https://ed.ted.com/ted_ed_collections/the-demon-of-reason",
         type: "video",
-      },
+          archive: { status: "unavailable" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -14216,7 +14247,8 @@ export const NODES: Node[] = [
         source: "Harvard Business Review",
         url: "https://hbr.org/2024/01/to-solve-a-tough-problem-reframe-it",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/L12-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Decision-Making", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
@@ -14257,7 +14289,8 @@ export const NODES: Node[] = [
         source: "Interaction Design Foundation",
         url: "https://interaction-design.org/literature/topics/5-whys",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/L13-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Decision-Making", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -14298,7 +14331,8 @@ export const NODES: Node[] = [
         source: "One Up on Wall Street (excerpt)",
         url: "https://x.com/QCompounding/status/1909637977279508601",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/D13-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Markets & Narrative", "Compounding & Patience"],
     epistemicStatus: "Canonical",
@@ -14397,7 +14431,8 @@ export const NODES: Node[] = [
         source: "The Almanack of Naval Ravikant",
         url: "https://x.com/RobDance_/status/1909607167084077412",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/P7-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Wealth, Leverage & Judgment", "Compounding & Patience"],
     epistemicStatus: "Canonical",
@@ -14438,7 +14473,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/aliscodes/status/1909515304318738758",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/O31-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Philosophy & the Self", "Craft & Deep Work"],
     epistemicStatus: "Contemporary",
@@ -14479,7 +14515,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/aaditsh/status/1909595121579962847",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/J37-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -14519,7 +14556,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/PhilosophyMonk/status/1909159024559370300",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/E3-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -14560,7 +14598,8 @@ export const NODES: Node[] = [
         source: "The Startup Archive Daily Founder Series",
         url: "https://x.com/Book_therapy223/status/1908912063306486058",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/A16-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Startups & Founders", "Tech Adoption & Disruption"],
     epistemicStatus: "Contemporary",
@@ -14601,7 +14640,8 @@ export const NODES: Node[] = [
         source: "Book excerpt (X/Twitter repost)",
         url: "https://x.com/thejustinmecham/status/1909226034849104340",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/N14-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Craft & Deep Work", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -14724,7 +14764,8 @@ export const NODES: Node[] = [
         source: "BojanFin.com (Financial Modeling and FP&A Program)",
         url: "https://bojanfin.com",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/E5-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -14990,7 +15031,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic, curated by Igor Buinevici",
         url: "https://x.com/Igor_Buinevici/status/1941138480903688285",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/J38-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Cognitive Biases & Models", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15115,7 +15157,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/the2ndfloorguy/status/2023377751374188903",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/M8-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Decision-Making", "Meaning & Self"],
     epistemicStatus: "Speculative",
@@ -15156,7 +15199,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/SahilBloom/status/2010376554199572482",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/T5-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Meaning & Self", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -15197,7 +15241,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) visual thread (paraphrasing the classical Zhuangzi parable)",
         url: "https://x.com/YourPrimePath/status/2007762244202107104",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/O32-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15280,7 +15325,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread",
         url: "https://x.com/thejustinmecham/status/1908501288603836821",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/L16-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Decision-Making", "Craft & Deep Work"],
     epistemicStatus: "Contemporary",
@@ -15321,7 +15367,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread, compiled by Justin Mecham",
         url: "https://x.com/thejustinmecham/status/1908140667693666374",
         type: "article",
-      },
+          archive: { status: "full", path: "content/sources/L17-0.md", retrieved: "2026-07-20" }
+    },
     ],
     tags: ["Decision-Making", "Craft & Deep Work"],
     epistemicStatus: "Canonical",
