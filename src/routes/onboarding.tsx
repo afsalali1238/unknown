@@ -1,7 +1,16 @@
 import { useMemo, useState } from "react";
-import { Bookmark, Check, HelpCircle, Plus, MousePointerClick, Headphones } from "lucide-react";
+import {
+  Bookmark,
+  Check,
+  HelpCircle,
+  Plus,
+  MousePointerClick,
+  Headphones,
+  Download,
+} from "lucide-react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
+import { InstallAppButton } from "@/components/InstallAppButton";
 import { NODES, TAGS } from "@/data/nodes";
 import { useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -207,9 +216,26 @@ function OnboardingScreen() {
                   </p>
                 </div>
               </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
+                  <Download className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-ink">Install for offline</h3>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    Add Unknown to your home screen — the map, every node, and Review work with no
+                    connection.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <div className="sticky bottom-0 mt-10 border-t border-line bg-paper pt-5">
+            <div className="mt-8">
+              <InstallAppButton />
+            </div>
+
+            <div className="sticky bottom-0 mt-6 border-t border-line bg-paper pt-5">
               <button
                 onClick={finish}
                 className="w-full border border-ink bg-ink py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper transition-opacity hover:opacity-90"

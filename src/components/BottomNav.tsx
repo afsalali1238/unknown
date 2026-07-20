@@ -1,26 +1,9 @@
 import { Link, useLocation } from "@tanstack/react-router";
+import { MAIN_TABS } from "@/lib/mainRoutes";
 
 export function BottomNav() {
   const { pathname } = useLocation();
-
-  const tabs = [
-    {
-      to: "/",
-      label: "Feed",
-      match: (p: string) => p === "/" || p.startsWith("/node"),
-    },
-    {
-      to: "/skim",
-      label: "Skim",
-      match: (p: string) => p.startsWith("/skim") || p.startsWith("/map"),
-    },
-    {
-      to: "/explore",
-      label: "Explore",
-      match: (p: string) => p.startsWith("/explore"),
-    },
-    { to: "/you", label: "You", match: (p: string) => p.startsWith("/you") },
-  ] as const;
+  const tabs = MAIN_TABS;
 
   return (
     <nav className="fixed bottom-0 inset-x-0 z-40 border-t border-line bg-paper/95 backdrop-blur">

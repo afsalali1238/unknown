@@ -1,11 +1,21 @@
 // Unknown service worker — makes the app installable and offline-capable.
-const VERSION = "unknown-v2";
+const VERSION = "unknown-v3";
 const APP_SHELL = "shell-" + VERSION;
 const RUNTIME = "runtime-" + VERSION;
 
+// Replaced at build time (see scripts/inject-manifest.ts) with the full list
+// of hashed JS/CSS assets plus every archived source markdown file, so a
+// fresh install has the whole archive available offline immediately instead
+// of caching each article lazily on first read.
+const PRECACHE_URLS = ["/", "/manifest.webmanifest"];
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(APP_SHELL).then((cache) => cache.addAll(["/", "/manifest.webmanifest"])),
+    caches.open(APP_SHELL).then((cache) =>
+      // Use per-file add() with a swallowed catch instead of addAll(), since
+      // addAll aborts the entire install if even one of ~700 requests 404s.
+      Promise.all(PRECACHE_URLS.map((url) => cache.add(url).catch(() => {}))),
+    ),
   );
   self.skipWaiting();
 });
