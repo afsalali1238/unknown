@@ -180,6 +180,14 @@ function NodeScreen() {
 
   const nextConnection = related[0];
 
+  const downloadable = useMemo(
+    () =>
+      node.furtherReading.filter(
+        (f) => (f.archive?.status === "full" || f.archive?.status === "excerpt") && f.archive.path,
+      ),
+    [node],
+  );
+
   return (
     <>
       <article className="px-5 pt-8 pb-8">
@@ -255,45 +263,66 @@ function NodeScreen() {
         <RecallReveal text={node.thesis} />
         <Quiz node={node} />
 
-        <section className="mt-14">
-          <MicroLabel>Further reading</MicroLabel>
-          <ul className="mt-4 space-y-3">
+        {downloadable.length > 0 && (
+          <section className="mt-14">
+            <MicroLabel>Download</MicroLabel>
+            <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+              Saved to this app — read with no connection
+            </p>
+            <ul className="mt-4 divide-y divide-line border-t border-line">
+              {downloadable.map((f) => (
+                <li key={f.url}>
+                  <Link
+                    to="/read/$id"
+                    params={{ id: archiveSlug(f.archive!.path!) }}
+                    search={{ label: f.label, source: f.source, url: f.url }}
+                    className="group flex items-center justify-between gap-4 py-4 hover:bg-line/20"
+                  >
+                    <span className="min-w-0">
+                      <span className="block font-serif text-lg leading-snug text-ink">
+                        {f.label}
+                      </span>
+                      <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+                        {f.source}
+                      </span>
+                    </span>
+                    <span className="flex shrink-0 items-center gap-2 border border-line px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ink group-hover:border-ink">
+                      <span>↓</span>
+                      <span className="hidden sm:inline">Read offline</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        <section className="mt-10">
+          <MicroLabel>Resources</MicroLabel>
+          <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+            Original sources, opens in a new tab
+          </p>
+          <ul className="mt-4 divide-y divide-line border-t border-line">
             {node.furtherReading.map((f) => (
-              <li key={f.url} className="border-b border-line pb-3">
-                <div className="flex items-baseline justify-between gap-4">
-                  <span>
-                    <span className="font-serif text-lg text-ink">{f.label}</span>
-                    <span className="ml-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+              <li key={f.url}>
+                <a
+                  href={f.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-4 py-4 hover:bg-line/20"
+                >
+                  <span className="min-w-0">
+                    <span className="block font-serif text-base leading-snug text-ink-soft group-hover:text-ink">
+                      {f.label}
+                    </span>
+                    <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
                       {f.source}
                     </span>
                   </span>
-                  {f.archive?.status === "unavailable" && (
-                    <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft whitespace-nowrap bg-line/30 px-1.5 py-0.5">
-                      requires internet
-                    </span>
-                  )}
-                </div>
-                <div className="mt-2 flex items-center gap-4">
-                  {(f.archive?.status === "full" || f.archive?.status === "excerpt") &&
-                    f.archive.path && (
-                      <Link
-                        to="/read/$id"
-                        params={{ id: archiveSlug(f.archive.path) }}
-                        search={{ label: f.label, source: f.source, url: f.url }}
-                        className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent hover:underline flex items-center gap-1"
-                      >
-                        <span>↓ Read offline</span>
-                      </Link>
-                    )}
-                  <a
-                    href={f.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline flex items-center gap-1"
-                  >
-                    <span>↗ Open original</span>
-                  </a>
-                </div>
+                  <span className="shrink-0 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft group-hover:text-ink">
+                    ↗
+                  </span>
+                </a>
               </li>
             ))}
           </ul>

@@ -147,7 +147,7 @@ function SkimCard({ node, first }: { node: Node; first: boolean }) {
           {isVisited && (
             <span
               aria-label="Read"
-              className="inline-block px-1.5 py-0.5 bg-ink text-paper font-mono text-[9px] uppercase tracking-[0.1em]"
+              className="inline-block px-1.5 py-0.5 bg-ink text-paper font-mono text-[10px] uppercase tracking-[0.1em]"
             >
               Read
             </span>

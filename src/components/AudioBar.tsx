@@ -259,7 +259,7 @@ export function AudioBar({
               <span>{supported ? "Listen" : "Audio not supported"}</span>
               {supported && voices.length > 0 && (
                 <select
-                  className="bg-transparent text-[9px] outline-none max-w-[100px] truncate"
+                  className="bg-transparent text-[10px] outline-none max-w-[100px] truncate"
                   value={ttsVoice || ""}
                   onChange={(e) => setTtsVoice(e.target.value)}
                   aria-label="Select voice"

@@ -314,19 +314,19 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
             {node.medium}
           </MicroLabel>
           {source === "adjacent" && (
-            <span className="inline-block px-1.5 py-0.5 border border-accent/20 bg-accent/5 text-accent font-mono text-[9px] uppercase tracking-[0.1em]">
+            <span className="inline-block px-1.5 py-0.5 border border-accent/20 bg-accent/5 text-accent font-mono text-[10px] uppercase tracking-[0.1em]">
               Beyond your topics
             </span>
           )}
           {source === "queue" && (
-            <span className="inline-block px-1.5 py-0.5 border border-line bg-paper text-ink-soft font-mono text-[9px] uppercase tracking-[0.1em]">
+            <span className="inline-block px-1.5 py-0.5 border border-line bg-paper text-ink-soft font-mono text-[10px] uppercase tracking-[0.1em]">
               In Read Next
             </span>
           )}
           {isVisited && (
             <span
               aria-label="Read"
-              className="inline-block px-1.5 py-0.5 bg-ink text-paper font-mono text-[9px] uppercase tracking-[0.1em]"
+              className="inline-block px-1.5 py-0.5 bg-ink text-paper font-mono text-[10px] uppercase tracking-[0.1em]"
             >
               Read ✓
             </span>
