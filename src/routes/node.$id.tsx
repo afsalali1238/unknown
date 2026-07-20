@@ -217,10 +217,14 @@ function FurtherReadingItem({ item }: { item: FurtherReading }) {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-accent"
+        className="mt-3 flex min-h-11 w-full items-center justify-between border border-accent/40 bg-accent/5 px-4 py-2.5 font-mono text-xs uppercase tracking-[0.18em] text-accent transition-colors hover:border-accent hover:bg-accent/10 sm:w-auto"
       >
         <span>{open ? "Hide" : "Read more"}</span>
-        <span className={cn("transition-transform duration-200", open && "rotate-180")}>↓</span>
+        <span
+          className={cn("ml-3 text-base transition-transform duration-200", open && "rotate-180")}
+        >
+          ↓
+        </span>
       </button>
 
       {open && (
@@ -392,7 +396,7 @@ function NodeScreen() {
         <section className="mt-14">
           <MicroLabel>Further reading</MicroLabel>
           <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-            Read more here, or grab a copy to keep reading offline
+            Read more about the topic
           </p>
           <ul className="mt-4 divide-y divide-line border-t border-line">
             {node.furtherReading.map((f) => (
