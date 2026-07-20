@@ -5918,8 +5918,8 @@ export const NODES: Node[] = [
         label: "Indianapolis: The True Story of the Worst Sea Disaster in US Naval History",
         source: "Lynn Vincent and Sara Vladic (book, referenced in this piece)",
         url: "https://fs.blog/sharks-survivorship-bias/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -6290,8 +6290,8 @@ export const NODES: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
       {
         label: "Nature: An Economic History (Geerat Vermeij, referenced in this piece)",
         source: "Book, cited via Farnam Street",
@@ -12273,14 +12273,14 @@ export const NODES: Node[] = [
         label: "Entropy",
         source: "article",
         url: "http://www.scholarpedia.org/article/Entropy",
-          archive: { status: "full", path: "content/sources/AA1-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA1-0.md", retrieved: "2026-07-18" },
+      },
       {
         label: "Rudolf Clausius and the Second Law of Thermodynamics Explained",
         source: "article",
         url: "https://www.kroneckerwallis.com/rudolf-clausius-and-the-second-law-of-thermodynamics-explained/",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12408,8 +12408,8 @@ export const NODES: Node[] = [
         label: "Donald Olding Hebb",
         source: "article",
         url: "https://can-acn.org/donald-olding-hebb/",
-          archive: { status: "full", path: "content/sources/AD1-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AD1-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12455,8 +12455,8 @@ export const NODES: Node[] = [
         label: "Joseph Campbell and the Hero's Journey",
         source: "article",
         url: "https://www.jcf.org/learn/joseph-campbell-heros-journey",
-          archive: { status: "full", path: "content/sources/AE1-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AE1-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12502,8 +12502,8 @@ export const NODES: Node[] = [
         label: "Beyond Metcalfe's Law for Network Effects",
         source: "article",
         url: "https://a16z.com/beyond-metcalfes-law-for-network-effects/",
-          archive: { status: "full", path: "content/sources/AF1-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AF1-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12549,8 +12549,8 @@ export const NODES: Node[] = [
         label: "The Tall Office Building Artistically Considered (1896, primary source scan)",
         source: "article",
         url: "https://archive.org/details/tallofficebuildi00sull",
-          archive: { status: "full", path: "content/sources/AG1-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AG1-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12753,8 +12753,8 @@ export const NODES: Node[] = [
         label: "On the Electrodynamics of Moving Bodies (1905, English translation)",
         source: "paper",
         url: "https://www.fourmilab.ch/etexts/einstein/specrel/specrel.pdf",
-          archive: { status: "full", path: "content/sources/AA2-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA2-0.md", retrieved: "2026-07-18" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12800,8 +12800,8 @@ export const NODES: Node[] = [
         label: "Kin selection",
         source: "article",
         url: "https://www.britannica.com/topic/kin-selection",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12887,8 +12887,8 @@ export const NODES: Node[] = [
         label: "A default mode of brain function (2001, PNAS)",
         source: "paper",
         url: "https://www.pnas.org/doi/10.1073/pnas.98.2.676",
-          archive: { status: "full", path: "content/sources/AD2-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AD2-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Contemporary",
   },
@@ -12934,8 +12934,8 @@ export const NODES: Node[] = [
         label: "René Girard (Britannica)",
         source: "article",
         url: "https://www.britannica.com/biography/Rene-Girard",
-          archive: { status: "full", path: "content/sources/AE2-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AE2-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -12981,8 +12981,8 @@ export const NODES: Node[] = [
         label: "Could it be a Big World After All? The 'Six Degrees of Separation' Myth",
         source: "article",
         url: "https://www.cs.princeton.edu/~chazelle/courses/BIB/big-world",
-          archive: { status: "full", path: "content/sources/AF2-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AF2-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -13027,8 +13027,8 @@ export const NODES: Node[] = [
         label: "Top 10 Application-Design Mistakes (affordances & signifiers)",
         source: "article",
         url: "https://www.nngroup.com/articles/top-10-application-design-mistakes/",
-          archive: { status: "full", path: "content/sources/AG2-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AG2-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Canonical",
   },
@@ -13196,8 +13196,8 @@ export const NODES: Node[] = [
         label: "Simulacra and Simulation (1981, full scan)",
         source: "book",
         url: "https://dn720006.ca.archive.org/0/items/baudrillard.-1970.-the-consumer-society/Baudrillard.1981.Simulacra-and-Simulation.pdf",
-          archive: { status: "full", path: "content/sources/AK2-1.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AK2-1.md", retrieved: "2026-07-20" },
+      },
     ],
     epistemicStatus: "Contemporary",
   },
@@ -13237,8 +13237,8 @@ export const NODES: Node[] = [
         source: "LinkedIn",
         url: "https://www.linkedin.com/in/surensamarchyan/",
         type: "article",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["Craft & Deep Work", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -13279,8 +13279,8 @@ export const NODES: Node[] = [
         source: "International Paper 'Power of the Printed Word' series",
         url: "https://www.printedword.info/",
         type: "article",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -13321,8 +13321,8 @@ export const NODES: Node[] = [
         source: "International Paper 'Power of the Printed Word' series",
         url: "https://www.printedword.info/",
         type: "article",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -13363,8 +13363,8 @@ export const NODES: Node[] = [
         source: "International Paper 'Power of the Printed Word' series",
         url: "https://www.printedword.info/",
         type: "article",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -13406,8 +13406,8 @@ export const NODES: Node[] = [
         source: "Journal of Pediatrics, 118(2):215-9",
         url: "https://pubmed.ncbi.nlm.nih.gov/1993953/",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AD3-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AD3-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Health & Body"],
     epistemicStatus: "Canonical",
@@ -13448,8 +13448,8 @@ export const NODES: Node[] = [
         source: "Polymathinvestor.com",
         url: "https://polymathinvestor.com/",
         type: "article",
-          archive: { status: "full", path: "content/sources/J34-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/J34-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["First-Principles Thinking", "Cognitive Biases & Models"],
     epistemicStatus: "Contemporary",
@@ -13490,8 +13490,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/WillManidis/status/2026084115049562341",
         type: "article",
-          archive: { status: "full", path: "content/sources/M7-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/M7-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Incentives & Systems", "Tech Adoption & Disruption"],
     epistemicStatus: "Contemporary",
@@ -13528,12 +13528,13 @@ export const NODES: Node[] = [
     related: ["Q1", "Q2"],
     furtherReading: [
       {
-        label: "How Highly Effective People Speak: How High Performers Use Psychology to Influence With Ease",
+        label:
+          "How Highly Effective People Speak: How High Performers Use Psychology to Influence With Ease",
         source: "Peter Andrei (Amazon listing)",
         url: "https://www.amazon.com/How-Highly-Effective-People-Speak/dp/B089CSW3Y6",
         type: "article",
-          archive: { status: "full", path: "content/sources/Q9-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/Q9-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -13574,8 +13575,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/RianSweetDoris/status/2050267394237759984",
         type: "article",
-          archive: { status: "full", path: "content/sources/N12-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/N12-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Health & Body", "Craft & Deep Work"],
     epistemicStatus: "Contemporary",
@@ -13616,8 +13617,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article, reproduced from albeik.com/pfa/human",
         url: "https://x.com/albeik/status/2043694057671798899",
         type: "article",
-          archive: { status: "full", path: "content/sources/O30-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/O30-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
     epistemicStatus: "Contemporary",
@@ -13657,8 +13658,8 @@ export const NODES: Node[] = [
         source: "tim.blog",
         url: "https://tim.blog/2026/03/04/the-self-help-trap/",
         type: "article",
-          archive: { status: "full", path: "content/sources/Q10-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/Q10-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Meaning & Self", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -13698,8 +13699,8 @@ export const NODES: Node[] = [
         source: "Giacomo Bonanno, UC Davis (open textbook)",
         url: "https://x.com/techwith_ram/status/2033924852961444264",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AJ3-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AJ3-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Decision-Making", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -13740,8 +13741,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/SJosephBurns/status/2028069256231834054",
         type: "article",
-          archive: { status: "full", path: "content/sources/J35-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/J35-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
@@ -13782,8 +13783,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article (secondary commentary, primary source unverified)",
         url: "https://x.com/mustufa4socials/status/2049518414377480218",
         type: "article",
-          archive: { status: "full", path: "content/sources/I25-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/I25-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["AI & the Future", "Moats & Network Effects"],
     epistemicStatus: "Speculative",
@@ -13911,8 +13912,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread",
         url: "https://x.com/CuriousMindsHub/status/2029013144777924881",
         type: "article",
-          archive: { status: "full", path: "content/sources/U13-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/U13-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Cognitive Biases & Models"],
     epistemicStatus: "Contemporary",
@@ -13949,12 +13950,13 @@ export const NODES: Node[] = [
     related: ["AD1", "AD3"],
     furtherReading: [
       {
-        label: "The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science",
+        label:
+          "The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science",
         source: "Norman Doidge (Penguin Random House)",
         url: "https://www.penguinrandomhouse.com/books/54295/the-brain-that-changes-itself-by-norman-doidge-md/",
         type: "article",
-          archive: { status: "full", path: "content/sources/AD4-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/AD4-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Health & Body", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -13995,8 +13997,8 @@ export const NODES: Node[] = [
         source: "The Startup Archive Daily Founder Series (excerpting Peter Thiel, Zero to One)",
         url: "https://x.com/CuriousMindsHub/status/2029013144777924881",
         type: "article",
-          archive: { status: "full", path: "content/sources/A15-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/A15-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Moats & Network Effects", "Startups & Founders"],
     epistemicStatus: "Canonical",
@@ -14037,8 +14039,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/InspiroQuest/status/2024455996173930548",
         type: "article",
-          archive: { status: "full", path: "content/sources/J36-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/J36-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
@@ -14079,8 +14081,8 @@ export const NODES: Node[] = [
         source: "Polymathinvestor.com",
         url: "https://polymathinvestor.com/",
         type: "article",
-          archive: { status: "full", path: "content/sources/N13-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/N13-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Craft & Deep Work", "Cognitive Biases & Models"],
     epistemicStatus: "Contemporary",
@@ -14121,8 +14123,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread",
         url: "https://x.com/thecapitalistt0/status/2028717928632430997",
         type: "article",
-          archive: { status: "full", path: "content/sources/E2-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/E2-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -14163,8 +14165,8 @@ export const NODES: Node[] = [
         source: "TED-Ed",
         url: "https://ed.ted.com/lessons/5-tips-to-improve-your-critical-thinking-samantha-agoos",
         type: "video",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -14205,8 +14207,8 @@ export const NODES: Node[] = [
         source: "TED-Ed",
         url: "https://ed.ted.com/ted_ed_collections/the-demon-of-reason",
         type: "video",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -14247,8 +14249,8 @@ export const NODES: Node[] = [
         source: "Harvard Business Review",
         url: "https://hbr.org/2024/01/to-solve-a-tough-problem-reframe-it",
         type: "article",
-          archive: { status: "full", path: "content/sources/L12-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/L12-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Decision-Making", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
@@ -14289,8 +14291,8 @@ export const NODES: Node[] = [
         source: "Interaction Design Foundation",
         url: "https://interaction-design.org/literature/topics/5-whys",
         type: "article",
-          archive: { status: "full", path: "content/sources/L13-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/L13-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Decision-Making", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -14331,8 +14333,8 @@ export const NODES: Node[] = [
         source: "One Up on Wall Street (excerpt)",
         url: "https://x.com/QCompounding/status/1909637977279508601",
         type: "article",
-          archive: { status: "full", path: "content/sources/D13-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/D13-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Markets & Narrative", "Compounding & Patience"],
     epistemicStatus: "Canonical",
@@ -14431,8 +14433,8 @@ export const NODES: Node[] = [
         source: "The Almanack of Naval Ravikant",
         url: "https://x.com/RobDance_/status/1909607167084077412",
         type: "article",
-          archive: { status: "full", path: "content/sources/P7-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/P7-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Wealth, Leverage & Judgment", "Compounding & Patience"],
     epistemicStatus: "Canonical",
@@ -14473,8 +14475,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/aliscodes/status/1909515304318738758",
         type: "article",
-          archive: { status: "full", path: "content/sources/O31-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/O31-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Philosophy & the Self", "Craft & Deep Work"],
     epistemicStatus: "Contemporary",
@@ -14515,8 +14517,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/aaditsh/status/1909595121579962847",
         type: "article",
-          archive: { status: "full", path: "content/sources/J37-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/J37-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -14556,8 +14558,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/PhilosophyMonk/status/1909159024559370300",
         type: "article",
-          archive: { status: "full", path: "content/sources/E3-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/E3-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -14598,8 +14600,8 @@ export const NODES: Node[] = [
         source: "The Startup Archive Daily Founder Series",
         url: "https://x.com/Book_therapy223/status/1908912063306486058",
         type: "article",
-          archive: { status: "full", path: "content/sources/A16-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/A16-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Startups & Founders", "Tech Adoption & Disruption"],
     epistemicStatus: "Contemporary",
@@ -14640,8 +14642,8 @@ export const NODES: Node[] = [
         source: "Book excerpt (X/Twitter repost)",
         url: "https://x.com/thejustinmecham/status/1909226034849104340",
         type: "article",
-          archive: { status: "full", path: "content/sources/N14-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/N14-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Craft & Deep Work", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -14764,8 +14766,8 @@ export const NODES: Node[] = [
         source: "BojanFin.com (Financial Modeling and FP&A Program)",
         url: "https://bojanfin.com",
         type: "article",
-          archive: { status: "full", path: "content/sources/E5-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/E5-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -15031,8 +15033,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) infographic, curated by Igor Buinevici",
         url: "https://x.com/Igor_Buinevici/status/1941138480903688285",
         type: "article",
-          archive: { status: "full", path: "content/sources/J38-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/J38-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Cognitive Biases & Models", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15157,8 +15159,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/the2ndfloorguy/status/2023377751374188903",
         type: "article",
-          archive: { status: "full", path: "content/sources/M8-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/M8-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Decision-Making", "Meaning & Self"],
     epistemicStatus: "Speculative",
@@ -15199,8 +15201,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/SahilBloom/status/2010376554199572482",
         type: "article",
-          archive: { status: "full", path: "content/sources/T5-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/T5-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Meaning & Self", "Decision-Making"],
     epistemicStatus: "Contemporary",
@@ -15241,8 +15243,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) visual thread (paraphrasing the classical Zhuangzi parable)",
         url: "https://x.com/YourPrimePath/status/2007762244202107104",
         type: "article",
-          archive: { status: "full", path: "content/sources/O32-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/O32-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Philosophy & the Self", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15325,8 +15327,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread",
         url: "https://x.com/thejustinmecham/status/1908501288603836821",
         type: "article",
-          archive: { status: "full", path: "content/sources/L16-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/L16-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Decision-Making", "Craft & Deep Work"],
     epistemicStatus: "Contemporary",
@@ -15367,8 +15369,8 @@ export const NODES: Node[] = [
         source: "X (Twitter) thread, compiled by Justin Mecham",
         url: "https://x.com/thejustinmecham/status/1908140667693666374",
         type: "article",
-          archive: { status: "full", path: "content/sources/L17-0.md", retrieved: "2026-07-20" }
-    },
+        archive: { status: "full", path: "content/sources/L17-0.md", retrieved: "2026-07-20" },
+      },
     ],
     tags: ["Decision-Making", "Craft & Deep Work"],
     epistemicStatus: "Canonical",
@@ -15462,8 +15464,8 @@ export const NODES: Node[] = [
         source: "Penguin Books",
         url: "https://www.penguinrandomhouse.com/books/291434/getting-to-yes-by-roger-fisher-william-ury-and-bruce-patton/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL1-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL1-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15503,8 +15505,8 @@ export const NODES: Node[] = [
         source: "HarperBusiness",
         url: "https://www.harpercollins.com/products/never-split-the-difference-chris-voss",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL2-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL2-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15545,8 +15547,8 @@ export const NODES: Node[] = [
         source: "Harper Business",
         url: "https://www.influenceatwork.com/principles-of-persuasion/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL3-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL3-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -15586,8 +15588,8 @@ export const NODES: Node[] = [
         source: "Simon & Schuster",
         url: "https://www.simonandschuster.com/books/Pre-Suasion/Robert-Cialdini/9781501109812",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL4-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL4-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -15628,8 +15630,8 @@ export const NODES: Node[] = [
         source: "Penguin Books",
         url: "https://www.penguinrandomhouse.com/books/295870/bargaining-for-advantage-by-g-richard-shell/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL5-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL5-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15651,7 +15653,8 @@ export const NODES: Node[] = [
     layer2:
       "In your last important negotiation, did the other side sense that you needed the deal more than they did — and if they did, what would inviting a 'no' from them have actually cost you?",
     quiz: {
-      question: "According to Jim Camp, why does inviting the other side to say 'no' strengthen a negotiation?",
+      question:
+        "According to Jim Camp, why does inviting the other side to say 'no' strengthen a negotiation?",
       options: [
         "'No' always means the deal is permanently dead",
         "It removes the pressure of a forced yes, which makes the other party more comfortable being honest and more willing to genuinely engage, rather than agreeing just to escape discomfort",
@@ -15669,8 +15672,8 @@ export const NODES: Node[] = [
         source: "Crown Business",
         url: "https://www.penguinrandomhouse.com/books/149298/start-with-no-by-jim-camp/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL6-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL6-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15710,8 +15713,8 @@ export const NODES: Node[] = [
         source: "Bantam Books",
         url: "https://www.penguinrandomhouse.com/books/176269/you-can-negotiate-anything-by-herb-cohen/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL7-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL7-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15752,8 +15755,8 @@ export const NODES: Node[] = [
         source: "McGraw-Hill",
         url: "https://cruciallearning.com/crucial-conversations-book/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL8-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL8-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15794,8 +15797,8 @@ export const NODES: Node[] = [
         source: "Penguin Books",
         url: "https://www.penguinrandomhouse.com/books/294466/difficult-conversations-by-douglas-stone-bruce-patton-and-sheila-heen/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL9-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL9-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15836,8 +15839,8 @@ export const NODES: Node[] = [
         source: "PuddleDancer Press",
         url: "https://www.cnvc.org/what-is-nvc",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL10-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL10-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -15878,8 +15881,8 @@ export const NODES: Node[] = [
         source: "Berrett-Koehler",
         url: "https://www.bkconnection.com/books/title/negotiating-the-impossible",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL11-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL11-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15920,8 +15923,8 @@ export const NODES: Node[] = [
         source: "Harvard Business Review Press",
         url: "https://www.hbs.edu/faculty/Pages/item.aspx?num=25152",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL12-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL12-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -15962,8 +15965,8 @@ export const NODES: Node[] = [
         source: "Viking",
         url: "https://www.penguinrandomhouse.com/books/210318/give-and-take-by-adam-grant/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL13-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL13-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -16004,8 +16007,8 @@ export const NODES: Node[] = [
         source: "HarperCollins",
         url: "https://www.harpercollins.com/products/split-the-pie-barry-nalebuff",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL14-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL14-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -16045,8 +16048,8 @@ export const NODES: Node[] = [
         source: "Bantam Books",
         url: "https://www.penguinrandomhouse.com/books/173596/the-power-of-a-positive-no-by-william-ury/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL15-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL15-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Meaning & Self"],
     epistemicStatus: "Canonical",
@@ -16083,12 +16086,13 @@ export const NODES: Node[] = [
     related: ["AL2", "AL3"],
     furtherReading: [
       {
-        label: "The Like Switch: An Ex-FBI Agent's Guide to Influencing, Attracting, and Winning People Over",
+        label:
+          "The Like Switch: An Ex-FBI Agent's Guide to Influencing, Attracting, and Winning People Over",
         source: "Touchstone",
         url: "https://www.simonandschuster.com/books/The-Like-Switch/Jack-Schafer/9781476754487",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL16-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL16-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -16110,7 +16114,8 @@ export const NODES: Node[] = [
     layer2:
       "In a competitive situation you're currently in, are you preparing to win the direct confrontation — or are you shaping the terrain, timing, and information asymmetry so the confrontation barely needs to happen?",
     quiz: {
-      question: "What does Sun Tzu mean by 'the supreme art of war is to subdue the enemy without fighting'?",
+      question:
+        "What does Sun Tzu mean by 'the supreme art of war is to subdue the enemy without fighting'?",
       options: [
         "That armies should always avoid combat under any circumstances",
         "That the highest form of strategic victory comes from positioning, intelligence, and shaping conditions so favorably that the opponent is defeated or deterred before any direct confrontation is even necessary",
@@ -16128,8 +16133,8 @@ export const NODES: Node[] = [
         source: "public domain translation",
         url: "https://www.gutenberg.org/ebooks/132",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL17-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL17-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -16151,7 +16156,8 @@ export const NODES: Node[] = [
     layer2:
       "Take an idea you've struggled to get someone to act on — which of the six traits (simple, unexpected, concrete, credible, emotional, story) is missing from how you're currently presenting it?",
     quiz: {
-      question: "Why does the Heath brothers' SUCCESS framework argue that concrete, sensory language outperforms abstract statistics for persuasion?",
+      question:
+        "Why does the Heath brothers' SUCCESS framework argue that concrete, sensory language outperforms abstract statistics for persuasion?",
       options: [
         "Because abstract statistics are usually inaccurate",
         "Because concrete, specific images are easier for the brain to encode, remember, and mentally simulate than abstract claims, which makes them more likely to be recalled and acted on later",
@@ -16169,8 +16175,8 @@ export const NODES: Node[] = [
         source: "Random House",
         url: "https://heathbrothers.com/books/made-to-stick/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL18-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL18-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Markets & Narrative"],
     epistemicStatus: "Canonical",
@@ -16192,7 +16198,8 @@ export const NODES: Node[] = [
     layer2:
       "Think of a pitch or argument that fell flat even though you were factually right — was the actual gap in your credibility (ethos), the audience's emotional stake (pathos), or your logical structure (logos)?",
     quiz: {
-      question: "Why does Heinrichs argue that logos (logical argument) alone rarely persuades an audience?",
+      question:
+        "Why does Heinrichs argue that logos (logical argument) alone rarely persuades an audience?",
       options: [
         "Because logic is always factually incorrect",
         "Because a logically sound argument that the audience doesn't trust the speaker on, or doesn't feel emotionally invested in, still fails to move people to act, since decisions are made emotionally and rationalized afterward",
@@ -16206,12 +16213,13 @@ export const NODES: Node[] = [
     related: ["AL4", "AL18"],
     furtherReading: [
       {
-        label: "Thank You for Arguing: What Aristotle, Lincoln, and Homer Simpson Can Teach Us About the Art of Persuasion",
+        label:
+          "Thank You for Arguing: What Aristotle, Lincoln, and Homer Simpson Can Teach Us About the Art of Persuasion",
         source: "Crown",
         url: "https://www.penguinrandomhouse.com/books/97281/thank-you-for-arguing-by-jay-heinrichs/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL19-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL19-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Markets & Narrative"],
     epistemicStatus: "Canonical",
@@ -16252,8 +16260,8 @@ export const NODES: Node[] = [
         source: "Grand Central Publishing",
         url: "https://www.influenceatwork.com/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AL20-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AL20-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Power & Persuasion", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
@@ -16275,7 +16283,8 @@ export const NODES: Node[] = [
     layer2:
       "Every model you use to predict the future implicitly assumes some things stay fixed — what would you need to observe, like Hubble did, to notice one of those 'fixed' assumptions is actually moving?",
     quiz: {
-      question: "What did Hubble's 1929 redshift-distance data show, and why did it matter for cosmology?",
+      question:
+        "What did Hubble's 1929 redshift-distance data show, and why did it matter for cosmology?",
       options: [
         "That the universe is static and unchanging, confirming the prevailing view of the time",
         "That galaxies are receding at speeds proportional to their distance from us, meaning space itself is expanding — which, projected backward, implies the universe began in a compressed, hot state",
@@ -16293,8 +16302,8 @@ export const NODES: Node[] = [
         source: "Proceedings of the National Academy of Sciences, 1929",
         url: "https://www.pnas.org/doi/10.1073/pnas.15.3.168",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AA3-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA3-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16316,7 +16325,8 @@ export const NODES: Node[] = [
     layer2:
       "Penzias and Wilson found their answer by refusing to dismiss an inconvenient signal as noise — where in your own work have you explained away a small, persistent anomaly instead of asking what it might actually mean?",
     quiz: {
-      question: "Why did the discovery of the cosmic microwave background settle the Big Bang vs. Steady State debate?",
+      question:
+        "Why did the discovery of the cosmic microwave background settle the Big Bang vs. Steady State debate?",
       options: [
         "Because it proved the universe is not expanding after all",
         "Because the Big Bang model predicted exactly this kind of uniform relic radiation from the universe's hot early state, while the rival Steady State model had no mechanism to produce it at all",
@@ -16334,8 +16344,8 @@ export const NODES: Node[] = [
         source: "The Astrophysical Journal, 1965",
         url: "https://articles.adsabs.harvard.edu/pdf/1965ApJ...142..419P",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AA4-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA4-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16375,8 +16385,8 @@ export const NODES: Node[] = [
         source: "Prussian Academy of Sciences",
         url: "https://einsteinpapers.press.princeton.edu/vol6-doc/272",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AA5-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA5-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16398,7 +16408,8 @@ export const NODES: Node[] = [
     layer2:
       "Lemaître's idea was resisted less on the evidence and more because it was philosophically uncomfortable — what idea have you dismissed recently not because the logic was weak, but because the implication was uncomfortable?",
     quiz: {
-      question: "What was significant about Lemaître's 'primeval atom' proposal relative to Hubble's later observations?",
+      question:
+        "What was significant about Lemaître's 'primeval atom' proposal relative to Hubble's later observations?",
       options: [
         "Lemaître copied Hubble's data years after it was published",
         "Lemaître theoretically proposed an expanding universe originating from a compact initial state before Hubble's 1929 observations provided the empirical evidence supporting it",
@@ -16413,11 +16424,12 @@ export const NODES: Node[] = [
     furtherReading: [
       {
         label: "A Homogeneous Universe of Constant Mass and Increasing Radius",
-        source: "Annales de la Société Scientifique de Bruxelles, 1927 (English translation 1931, MNRAS)",
+        source:
+          "Annales de la Société Scientifique de Bruxelles, 1927 (English translation 1931, MNRAS)",
         url: "https://articles.adsabs.harvard.edu/pdf/1931MNRAS..91..483L",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AA6-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA6-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16454,12 +16466,13 @@ export const NODES: Node[] = [
     related: ["AA5", "R6"],
     furtherReading: [
       {
-        label: "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik (1927, summary and translation)",
+        label:
+          "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik (1927, summary and translation)",
         source: "Zeitschrift für Physik",
         url: "https://uncertaintyprinciple.wordpress.com/wp-content/uploads/2010/07/hq.pdf",
         type: "paper",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16499,8 +16512,8 @@ export const NODES: Node[] = [
         source: "Journal of the Atmospheric Sciences, 1963",
         url: "https://journals.ametsoc.org/view/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.xml",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AA8-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA8-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking", "Decision-Making"],
     epistemicStatus: "Canonical",
@@ -16536,12 +16549,13 @@ export const NODES: Node[] = [
     related: ["AA5", "AA3"],
     furtherReading: [
       {
-        label: "Does the Inertia of a Body Depend Upon Its Energy Content? (1905, English translation)",
+        label:
+          "Does the Inertia of a Body Depend Upon Its Energy Content? (1905, English translation)",
         source: "Annalen der Physik",
         url: "https://einsteinpapers.press.princeton.edu/vol2-trans/187",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AA9-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AA9-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16563,7 +16577,8 @@ export const NODES: Node[] = [
     layer2:
       "Reframe a behavior you or someone close to you does that seems irrational for you as an individual — does it make more sense once you ask what it does for your genes, your family, or the group you belong to, rather than for you specifically?",
     quiz: {
-      question: "In Dawkins's framework, why does natural selection make more sense analyzed at the level of the gene rather than the individual organism?",
+      question:
+        "In Dawkins's framework, why does natural selection make more sense analyzed at the level of the gene rather than the individual organism?",
       options: [
         "Because individual organisms never actually reproduce",
         "Because genes, not individual bodies, are the unit that can persist in copies across many generations, so behaviors that look self-sacrificing at the individual level (like helping relatives) can still favor the survival of that individual's genes",
@@ -16581,8 +16596,8 @@ export const NODES: Node[] = [
         source: "Oxford University Press",
         url: "https://richarddawkins.net/books/the-selfish-gene/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AB3-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AB3-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -16604,7 +16619,8 @@ export const NODES: Node[] = [
     layer2:
       "Mendel found the pattern by counting thousands of plants meticulously rather than theorizing from a handful of examples — where in your own thinking are you generalizing from a small, convenient sample instead of actually counting?",
     quiz: {
-      question: "What did Mendel's pea plant experiments reveal about inheritance that contradicted the prevailing theory of his time?",
+      question:
+        "What did Mendel's pea plant experiments reveal about inheritance that contradicted the prevailing theory of his time?",
       options: [
         "That traits blend smoothly between parent and offspring, confirming the dominant theory",
         "That traits are inherited as discrete, particulate units passed intact from each parent — not blended — appearing in predictable statistical ratios across generations",
@@ -16622,8 +16638,8 @@ export const NODES: Node[] = [
         source: "Verhandlungen des naturforschenden Vereines in Brünn (English translation)",
         url: "https://www.esp.org/foundations/genetics/classical/gm-65.pdf",
         type: "paper",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16645,7 +16661,8 @@ export const NODES: Node[] = [
     layer2:
       "In your own field, is there a foundational, organizing idea you technically know but don't actually use to interpret the specific problems you work on day to day?",
     quiz: {
-      question: "What tension did the Modern Synthesis resolve between early genetics and Darwinian evolution?",
+      question:
+        "What tension did the Modern Synthesis resolve between early genetics and Darwinian evolution?",
       options: [
         "It proved that genetics and evolution are completely unrelated fields that should be studied separately",
         "It reconciled Mendelian genetics' discrete, particulate inheritance with Darwinian natural selection's gradual change, showing mutations create genetic variation while selection acts gradually on that variation's frequency across a population",
@@ -16663,8 +16680,8 @@ export const NODES: Node[] = [
         source: "The American Biology Teacher, 1973",
         url: "https://www.jstor.org/stable/4444260",
         type: "essay",
-          archive: { status: "full", path: "content/sources/AB5-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AB5-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16686,7 +16703,8 @@ export const NODES: Node[] = [
     layer2:
       "In your own growth or a project's progress, have you assumed change should be smooth and steady — and dismissed the actual pattern of long plateaus and sudden jumps as a failure, rather than as the normal shape of change?",
     quiz: {
-      question: "What did Eldredge and Gould's punctuated equilibrium model challenge about traditional Darwinian gradualism?",
+      question:
+        "What did Eldredge and Gould's punctuated equilibrium model challenge about traditional Darwinian gradualism?",
       options: [
         "That evolution happens at all",
         "The assumption that evolutionary change proceeds at a roughly constant, slow rate — they argued the fossil record's pattern of long stasis punctuated by rapid bursts, tied to speciation, is real signal rather than incomplete sampling",
@@ -16704,8 +16722,8 @@ export const NODES: Node[] = [
         source: "Models in Paleobiology, 1972",
         url: "https://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf",
         type: "paper",
-          archive: { status: "unavailable" }
-    },
+        archive: { status: "unavailable" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16727,7 +16745,8 @@ export const NODES: Node[] = [
     layer2:
       "Margulis's idea was rejected for years not because the evidence was weak, but because it didn't fit the era's assumption that evolution was purely about competition — where are you dismissing a good idea because it doesn't fit your default frame, rather than because the evidence is actually against it?",
     quiz: {
-      question: "What key evidence supports Margulis's claim that mitochondria were once independent bacteria?",
+      question:
+        "What key evidence supports Margulis's claim that mitochondria were once independent bacteria?",
       options: [
         "Mitochondria are visually identical to the rest of the cell under a microscope",
         "Mitochondria contain their own DNA, separate from the cell's main genome, and that DNA closely resembles bacterial DNA rather than the host cell's DNA",
@@ -16745,8 +16764,8 @@ export const NODES: Node[] = [
         source: "Journal of Theoretical Biology, 1967",
         url: "https://www.sciencedirect.com/science/article/abs/pii/0022519367900790",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AB7-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AB7-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16768,7 +16787,8 @@ export const NODES: Node[] = [
     layer2:
       "Watson and Crick's structure worked because complementary pairing makes copying nearly automatic — where in a system you're designing (a process, a habit, a team workflow) could you build in a similarly automatic 'self-copying' mechanism instead of relying on manual repetition?",
     quiz: {
-      question: "Why did the double-helix structure of DNA immediately suggest a mechanism for genetic copying?",
+      question:
+        "Why did the double-helix structure of DNA immediately suggest a mechanism for genetic copying?",
       options: [
         "Because DNA molecules can only exist inside a laboratory",
         "Because each of the two complementary strands, held together by specific base-pairing rules, can serve as a template to build an exact copy of its partner strand",
@@ -16786,8 +16806,8 @@ export const NODES: Node[] = [
         source: "Nature, 1953",
         url: "https://www.nature.com/articles/171737a0",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AB8-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AB8-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16809,7 +16829,8 @@ export const NODES: Node[] = [
     layer2:
       "In a competitive area of your own life or work, are you running to actually get ahead — or running just to avoid falling behind competitors who are improving at the same time you are?",
     quiz: {
-      question: "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
+      question:
+        "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
       options: [
         "Older species were far less likely to go extinct than newly evolved ones",
         "A species' probability of extinction in a given time period didn't decrease the longer it had already survived, suggesting species don't reach a stable 'finished' state of adaptation, since their competitors and predators keep evolving too",
@@ -16827,8 +16848,8 @@ export const NODES: Node[] = [
         source: "Evolutionary Theory, 1973",
         url: "https://www.mn.uio.no/cees/english/services/van-valen/evolutionary-theory/volume-1/vol-1-no-1-pages-1-30-l-van-valen-a-new-evolutionary-law.pdf",
         type: "paper",
-          archive: { status: "full", path: "content/sources/AB9-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AB9-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -16850,7 +16871,8 @@ export const NODES: Node[] = [
     layer2:
       "When you look at large gaps in outcomes between groups, companies, or even people, how much do you attribute to ability versus starting conditions and accumulated compounding advantage that had nothing to do with talent?",
     quiz: {
-      question: "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
+      question:
+        "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
       options: [
         "Innate differences in intelligence or ability between different peoples",
         "Geographic and environmental accidents — available domesticable species, a continent's east-west versus north-south orientation, and resulting disease immunity — that compounded over millennia into large differences in technology and population",
@@ -16868,8 +16890,8 @@ export const NODES: Node[] = [
         source: "W. W. Norton & Company",
         url: "https://www.wwnorton.com/books/9780393317558",
         type: "book",
-          archive: { status: "full", path: "content/sources/AH3-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AH3-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Macro & Cycles", "First-Principles Thinking"],
     epistemicStatus: "Canonical",
@@ -16891,7 +16913,8 @@ export const NODES: Node[] = [
     layer2:
       "In your own life or organization, where are your current commitments — obligations, projects, promises — sized for the resource base you had a few years ago, rather than the one you actually have now?",
     quiz: {
-      question: "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
+      question:
+        "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
       options: [
         "A power's military becomes too large to physically defend its own borders",
         "A power's strategic and military commitments continue expanding even as its relative economic base declines, and the resulting funding gap — bridged by debt or taxation — further erodes the economy, accelerating the decline",
@@ -16905,12 +16928,13 @@ export const NODES: Node[] = [
     related: ["AH1", "AH3", "D8"],
     furtherReading: [
       {
-        label: "The Rise and Fall of the Great Powers: Economic Change and Military Conflict from 1500 to 2000",
+        label:
+          "The Rise and Fall of the Great Powers: Economic Change and Military Conflict from 1500 to 2000",
         source: "Random House",
         url: "https://www.penguinrandomhouse.com/books/165506/the-rise-and-fall-of-the-great-powers-by-paul-kennedy/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AH4-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AH4-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -16932,7 +16956,8 @@ export const NODES: Node[] = [
     layer2:
       "Name one large-scale institution you participate in daily — money, your employer, a legal system — and notice that it works only because a huge number of strangers, including you, agree to treat a shared story as if it were physically real.",
     quiz: {
-      question: "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
+      question:
+        "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
       options: [
         "Sapiens had significantly larger brains and higher individual intelligence than all other human species",
         "The capacity for genuinely abstract shared fiction — collectively believing in things like money, nations, and corporations that have no independent physical existence — which let strangers coordinate at scales no other species could match",
@@ -16950,8 +16975,8 @@ export const NODES: Node[] = [
         source: "Harper",
         url: "https://www.ynharari.com/book/sapiens/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AH5-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AH5-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Social Constructs", "Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -16992,8 +17017,8 @@ export const NODES: Node[] = [
         source: "Bloomsbury",
         url: "https://www.bloomsbury.com/uk/silk-roads-9781408839973/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AH6-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AH6-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -17033,8 +17058,8 @@ export const NODES: Node[] = [
         source: "University of Chicago Press",
         url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
         type: "book",
-          archive: { status: "full", path: "content/sources/AH7-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AH7-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["First-Principles Thinking", "Macro & Cycles"],
     epistemicStatus: "Canonical",
@@ -17075,8 +17100,8 @@ export const NODES: Node[] = [
         source: "Crown Business",
         url: "https://www.penguinrandomhouse.com/books/174768/why-nations-fail-by-daron-acemoglu-and-james-a-robinson/",
         type: "book",
-          archive: { status: "full", path: "content/sources/AH8-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AH8-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Macro & Cycles", "Incentives & Systems"],
     epistemicStatus: "Canonical",
@@ -17098,7 +17123,8 @@ export const NODES: Node[] = [
     layer2:
       "A tightly interconnected system — a supply chain, a friend group, an economy — is efficient exactly because of its interdependence. Where in your own life is a system's efficiency also quietly making it fragile to several small shocks arriving at once?",
     quiz: {
-      question: "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
+      question:
+        "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
       options: [
         "A single invasion by the 'Sea Peoples' that no civilization could have survived",
         "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
@@ -17116,8 +17142,8 @@ export const NODES: Node[] = [
         source: "Princeton University Press",
         url: "https://press.princeton.edu/books/paperback/9780691208015/1177-bc",
         type: "book",
-          archive: { status: "full", path: "content/sources/AH9-0.md", retrieved: "2026-07-18" }
-    },
+        archive: { status: "full", path: "content/sources/AH9-0.md", retrieved: "2026-07-18" },
+      },
     ],
     tags: ["Macro & Cycles", "Risk & Asymmetric Bets"],
     epistemicStatus: "Canonical",
