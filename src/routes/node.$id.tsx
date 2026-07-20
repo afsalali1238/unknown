@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type MouseEvent } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { NODE_BY_ID, CLUSTER_BY_ID, type Node as NodeType } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
@@ -114,6 +114,123 @@ function getRecommendationReason(
   return "Suggested: Hand-picked for you to explore next";
 }
 
+type FurtherReading = NodeType["furtherReading"][number];
+
+// Explicitly pulls a source's archived copy into the Cache Storage the
+// service worker reads from, so "Download" actually means something —
+// previously the archived .md was only ever cached as a side effect of
+// opening /read/$id, so tapping "download" while offline-prepping and then
+// losing signal before ever opening the reader silently failed. Checks
+// cache on mount too, so an already-downloaded item shows as done instead
+// of offering to redownload it.
+function DownloadButton({ path }: { path: string }) {
+  const url = `/${path}`;
+  const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
+
+  useEffect(() => {
+    let cancelled = false;
+    if (typeof window === "undefined" || !("caches" in window)) return;
+    window.caches
+      .match(url)
+      .then((res) => {
+        if (!cancelled && res) setState("done");
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [url]);
+
+  async function download(e: MouseEvent) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (state === "loading" || state === "done") return;
+    setState("loading");
+    try {
+      const res = await fetch(url, { cache: "reload" });
+      if (!res.ok) throw new Error("failed to fetch");
+      setState("done");
+    } catch {
+      setState("error");
+    }
+  }
+
+  const label =
+    state === "done"
+      ? "✓ Downloaded"
+      : state === "loading"
+        ? "Downloading…"
+        : state === "error"
+          ? "Retry download"
+          : "↓ Download";
+
+  return (
+    <button
+      type="button"
+      onClick={download}
+      disabled={state === "loading"}
+      className={cn(
+        "inline-flex items-center gap-1.5 border px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] transition-colors disabled:opacity-60",
+        state === "done"
+          ? "border-accent/40 text-accent"
+          : "border-line text-ink-soft hover:border-ink hover:text-ink",
+      )}
+    >
+      {label}
+    </button>
+  );
+}
+
+function FurtherReadingItem({ item }: { item: FurtherReading }) {
+  const archived =
+    (item.archive?.status === "full" || item.archive?.status === "excerpt") && item.archive.path;
+
+  const titleBlock = (
+    <>
+      <span className="block font-serif text-lg leading-snug text-ink group-hover:text-accent">
+        {item.label}
+      </span>
+      <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+        {item.source}
+      </span>
+      <span className="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+        Read more →
+      </span>
+    </>
+  );
+
+  return (
+    <li className="py-5">
+      {archived ? (
+        <Link
+          to="/read/$id"
+          params={{ id: archiveSlug(item.archive!.path!) }}
+          search={{ label: item.label, source: item.source, url: item.url }}
+          className="group block"
+        >
+          {titleBlock}
+        </Link>
+      ) : (
+        <a href={item.url} target="_blank" rel="noopener noreferrer" className="group block">
+          {titleBlock}
+        </a>
+      )}
+
+      <div className="mt-3 flex flex-wrap items-center gap-3">
+        {archived && <DownloadButton path={item.archive!.path!} />}
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline"
+        >
+          ↗ Read online
+        </a>
+      </div>
+    </li>
+  );
+}
+
 function NodeScreen() {
   const { node } = Route.useLoaderData() as { node: NodeType };
   const cluster = CLUSTER_BY_ID[node.clusterId];
@@ -179,14 +296,6 @@ function NodeScreen() {
   }, [node, gotItMap, visitedMap, interests]);
 
   const nextConnection = related[0];
-
-  const downloadable = useMemo(
-    () =>
-      node.furtherReading.filter(
-        (f) => (f.archive?.status === "full" || f.archive?.status === "excerpt") && f.archive.path,
-      ),
-    [node],
-  );
 
   return (
     <>
@@ -263,67 +372,14 @@ function NodeScreen() {
         <RecallReveal text={node.thesis} />
         <Quiz node={node} />
 
-        {downloadable.length > 0 && (
-          <section className="mt-14">
-            <MicroLabel>Download</MicroLabel>
-            <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-              Saved to this app — read with no connection
-            </p>
-            <ul className="mt-4 divide-y divide-line border-t border-line">
-              {downloadable.map((f) => (
-                <li key={f.url}>
-                  <Link
-                    to="/read/$id"
-                    params={{ id: archiveSlug(f.archive!.path!) }}
-                    search={{ label: f.label, source: f.source, url: f.url }}
-                    className="group flex items-center justify-between gap-4 py-4 hover:bg-line/20"
-                  >
-                    <span className="min-w-0">
-                      <span className="block font-serif text-lg leading-snug text-ink">
-                        {f.label}
-                      </span>
-                      <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-                        {f.source}
-                      </span>
-                    </span>
-                    <span className="flex shrink-0 items-center gap-2 border border-line px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ink group-hover:border-ink">
-                      <span>↓</span>
-                      <span className="hidden sm:inline">Read offline</span>
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        <section className="mt-10">
-          <MicroLabel>Resources</MicroLabel>
+        <section className="mt-14">
+          <MicroLabel>Further reading</MicroLabel>
           <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-            Original sources, opens in a new tab
+            Read more here, or grab a copy to keep reading offline
           </p>
           <ul className="mt-4 divide-y divide-line border-t border-line">
             {node.furtherReading.map((f) => (
-              <li key={f.url}>
-                <a
-                  href={f.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center justify-between gap-4 py-4 hover:bg-line/20"
-                >
-                  <span className="min-w-0">
-                    <span className="block font-serif text-base leading-snug text-ink-soft group-hover:text-ink">
-                      {f.label}
-                    </span>
-                    <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-                      {f.source}
-                    </span>
-                  </span>
-                  <span className="shrink-0 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft group-hover:text-ink">
-                    ↗
-                  </span>
-                </a>
-              </li>
+              <FurtherReadingItem key={f.url} item={f} />
             ))}
           </ul>
         </section>

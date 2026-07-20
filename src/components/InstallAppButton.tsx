@@ -63,7 +63,7 @@ export function InstallAppButton({ variant = "button" }: { variant?: "button" | 
           onClick={handleClick}
           aria-label="Install app"
           title="Install app"
-          className="flex h-7 w-7 shrink-0 items-center justify-center border border-line text-ink-soft transition-colors hover:border-ink hover:text-ink"
+          className="flex h-11 w-11 shrink-0 items-center justify-center border border-line text-ink-soft transition-colors hover:border-ink hover:text-ink"
         >
           <span className="font-mono text-[14px]">⇩</span>
         </button>
