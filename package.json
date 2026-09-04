@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "test": "vitest run",
+    "build:content": "bun run scripts/build-content.ts",
     "validate": "bun run scripts/validate-nodes.ts --quiet",
     "check": "bun run validate && bun run lint && bun run test && bun run build"
   },
@@ -91,7 +92,6 @@
     "nitro": "3.0.260603-beta",
     "pdf-parse": "^1.1.1",
     "prettier": "^3.7.3",
-    "ts-morph": "^28.0.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^8.0.16",

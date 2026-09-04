@@ -4,8 +4,12 @@ import { NODES } from "@/data/nodes";
 import { MicroLabel } from "./MicroLabel";
 import MiniSearch from "minisearch";
 
+// Indexes the bundled index only. layer1/layer2 live in the on-demand body
+// files (lib/bodies.ts) and aren't searched — title + thesis + layer0 is
+// what a query is realistically matching anyway; the deeper layers mostly
+// re-use those terms. Revisit if search misses show up in feedback.
 const miniSearch = new MiniSearch({
-  fields: ["title", "author", "thesis", "layer0", "layer1", "layer2"],
+  fields: ["title", "author", "thesis", "layer0"],
   storeFields: ["id", "title", "author", "year"],
 });
 

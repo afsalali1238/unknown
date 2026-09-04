@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
-import { CLUSTERS, NODES_BY_CLUSTER, type Node } from "@/data/nodes";
+import { CLUSTERS, NODES_BY_CLUSTER, type NodeIndex as Node } from "@/data/nodes";
 import { SearchBar } from "@/components/SearchBar";
 import { MicroLabel } from "@/components/MicroLabel";
 import { LatticeIndex } from "@/components/LatticeIndex";

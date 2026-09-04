@@ -10,7 +10,7 @@ import {
   Plus,
   List,
 } from "lucide-react";
-import { CLUSTERS, type Node, NODES } from "@/data/nodes";
+import { CLUSTERS, type NodeIndex as Node, NODES } from "@/data/nodes";
 import { Quiz } from "@/components/Quiz";
 import { MicroLabel } from "@/components/MicroLabel";
 import { IdeaGlyph } from "@/components/Artwork";

@@ -1,4 +1,4 @@
-import type { Node } from "@/data/nodes";
+import type { Quiz } from "@/data/nodes";
 import { seededPermutation } from "./random";
 
 export type ShuffledOption = { originalIndex: number; text: string; correct: boolean };
@@ -16,11 +16,11 @@ export type ShuffledOption = { originalIndex: number; text: string; correct: boo
  * `salt` varies the order between sittings of the same node — Review passes
  * the Leitner box — so a returning user can't rely on "it was the third one".
  */
-export function shuffledOptions(node: Node, salt = 0): ShuffledOption[] {
-  const order = seededPermutation(node.quiz.options.length, node.id, salt);
+export function shuffledOptions(nodeId: string, quiz: Quiz, salt = 0): ShuffledOption[] {
+  const order = seededPermutation(quiz.options.length, nodeId, salt);
   return order.map((originalIndex) => ({
     originalIndex,
-    text: node.quiz.options[originalIndex],
-    correct: originalIndex === node.quiz.correctIndex,
+    text: quiz.options[originalIndex],
+    correct: originalIndex === quiz.correctIndex,
   }));
 }

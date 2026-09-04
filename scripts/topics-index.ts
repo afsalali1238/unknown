@@ -1,7 +1,7 @@
 /**
  * topics-index.ts — regenerates docs/TOPICS-INDEX.md AND docs/TOPICS-INDEX.csv, a full
  * internal directory of every cluster (topic) and every node (id, title, author,
- * category/subtopic) currently in src/data/nodes.ts.
+ * category/subtopic) currently in content/clusters/*.json.
  *
  * The .csv is the one to open for quick checking — sort/filter by cluster, author, or
  * category in Excel/Sheets to answer "do we already have a node for X?" at a glance.
@@ -14,6 +14,7 @@
  * (also invoked automatically as the last step of the add-content skill's validate gate)
  */
 import fs from "fs";
+import { readAllContent } from "./lib/content";
 import path from "path";
 
 type Node = Record<string, unknown> & {
@@ -27,9 +28,9 @@ type Node = Record<string, unknown> & {
 };
 
 async function main() {
-  const mod = await import(path.join(process.cwd(), "src/data/nodes.ts"));
-  const NODES: Node[] = mod.NODES;
-  const CLUSTERS: { id: string; title: string; subtitle?: string }[] = mod.CLUSTERS;
+  const content = readAllContent();
+  const NODES: Node[] = content.nodes;
+  const CLUSTERS: { id: string; title: string; subtitle?: string }[] = content.clusters;
 
   const lines: string[] = [];
   lines.push("# Topics Index (auto-generated — do not hand-edit)");

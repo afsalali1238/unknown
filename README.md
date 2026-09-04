@@ -53,5 +53,5 @@ bun run check   # validate content schema + lint + test + build (what CI runs)
 - `src/components/`: feature components (`LayerReveal`, `Quiz`, `RecallReveal`, `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `LatticeIndex`); `src/components/ui/` is the shadcn primitive layer.
 - `src/routes/`: TanStack Router page definitions (Feed at `/`, `/skim`, `/explore`, `/node/$id`, `/review`, `/you`, `/onboarding`, `/read/$id`).
 - `src/lib/`: Zustand store (IndexedDB-persisted), feed sequencing, seeded randomness.
-- `src/data/`: `nodes.ts`, the static data layer storing all nodes and edges for the lattice (387 nodes, 38 clusters).
-- `scripts/`: the content pipeline — `validate-nodes.ts`, `archive-sources.ts`, `next-id.ts`, `audit-content.ts`, `topics-index.ts`. See `.claude/CLAUDE.md` and `docs/PRODUCT-BRIEF.md`.
+- `content/`: the content source of truth — one JSON file per cluster (387 nodes, 38 clusters). `bun run build:content` derives `src/data/nodes.ts` (the bundled index) and `public/content/bodies/` (per-cluster bodies fetched on demand) from it. See `docs/CONTENT-LAYER.md`.
+- `scripts/`: the content pipeline — `build-content.ts`, `validate-nodes.ts`, `archive-sources.ts`, `next-id.ts`, `audit-content.ts`, `topics-index.ts`. See `.claude/CLAUDE.md` and `docs/PRODUCT-BRIEF.md`.

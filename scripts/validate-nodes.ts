@@ -1,14 +1,16 @@
 /**
- * validate-nodes.ts — schema validator for src/data/nodes.ts
+ * validate-nodes.ts — schema validator for the content layer (content/clusters/*.json)
  *
- * READ-ONLY. Never mutates nodes.ts or any file. Exits 1 if any ERROR is found,
+ * READ-ONLY. Never mutates content or any file. Exits 1 if any ERROR is found,
  * 0 otherwise. Warnings never fail the build.
  *
  * Run from repo root:
- *   bun run _rebuild-staging/scripts/validate-nodes.ts
- *   bun run _rebuild-staging/scripts/validate-nodes.ts --quiet   # errors only
+ *   bun run scripts/validate-nodes.ts
+ *   bun run scripts/validate-nodes.ts --quiet   # errors only
  *
- * After moving into place: bun run scripts/validate-nodes.ts
+ * Reads the source of truth directly (not the generated src/data/nodes.ts,
+ * which no longer carries quiz/furtherReading). It also fails if the generated
+ * files are stale relative to content/ — run `bun run build:content`.
  *
  * Checks (ERROR unless noted):
  *   - id is a non-empty string and unique
@@ -32,6 +34,8 @@
  */
 import path from "path";
 import fs from "fs";
+import { execFileSync } from "child_process";
+import { readAllContent } from "./lib/content";
 
 type Archive = { status?: string; path?: string; retrieved?: string };
 type FurtherReading = {
@@ -66,13 +70,21 @@ const warn = (id: string, msg: string) => warnings.push(`  [${id}] ${msg}`);
 async function main() {
   const quiet = process.argv.includes("--quiet");
   const strict = process.argv.includes("--strict");
-  const nodesPath = path.join(process.cwd(), "src/data/nodes.ts");
-  const mod = await import(nodesPath);
-  const NODES: Node[] = mod.NODES;
-  const CLUSTERS: { id: string }[] = mod.CLUSTERS;
-  const TAGS: readonly string[] = mod.TAGS;
+  const content = readAllContent();
+  const NODES: Node[] = content.nodes;
+  const CLUSTERS: { id: string }[] = content.clusters;
+  const TAGS: readonly string[] = content.tags;
 
-  if (!Array.isArray(NODES)) throw new Error("NODES export not found or not an array");
+  if (!Array.isArray(NODES) || NODES.length === 0) throw new Error("no nodes found in content/");
+
+  // Generated outputs must match the source of truth, or the app ships
+  // something other than what was reviewed.
+  try {
+    execFileSync("bun", ["run", "scripts/build-content.ts", "--check"], { stdio: "pipe" });
+  } catch (e) {
+    const out = e instanceof Error && "stderr" in e ? String((e as { stderr: Buffer }).stderr) : "";
+    errors.push(`  [generated] ${out.trim().split("\n").join("\n  [generated] ")}`);
+  }
   const clusterIds = new Set(CLUSTERS.map((c) => c.id));
   const tagSet = new Set(TAGS);
   const idSet = new Set<string>();

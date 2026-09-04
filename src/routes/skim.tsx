@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
-import { CLUSTERS, NODES, type Node } from "@/data/nodes";
+import { CLUSTERS, NODES, type NodeIndex as Node } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
 import { IdeaGlyph } from "@/components/Artwork";
 import { SearchBar } from "@/components/SearchBar";

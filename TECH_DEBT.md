@@ -11,24 +11,27 @@ This document tracks actionable technical debt that was intentionally deferred. 
 **Trigger Condition / "Done" Definition:**
 Run a proper accessibility audit before a full public launch. Use automated tools (like axe-core) to guarantee compliance.
 
-## 2. Split Data Bundle (`nodes.ts`)
+## 2. ~~Split Data Bundle (`nodes.ts`)~~ — DONE 2026-09-04
 
-**Current State (measured 2026-09-04):** the entire knowledge graph — **387 nodes across 38
-clusters** — is bundled into a single JavaScript chunk from `src/data/nodes.ts`. The source file
-is ~1.18 MB raw / ~351 KB gzipped, and the client `index-*.js` chunk that contains it is
-**~442 KB gzipped**, loaded in full on every visit. 69% of that payload is `layer1` / `layer2` /
-`quiz` / `furtherReading`, which only the node page needs; the index fields (`title`, `thesis`,
-`layer0`, `tags`, `related`, …) that Feed/Explore/Search actually use are ~320 KB raw.
+Shipped. Source of truth is `content/clusters/<clusterId>.json`; `src/data/nodes.ts` is a
+generated index (110 KB gz) and `public/content/bodies/<clusterId>.json` carry
+`layer1`/`layer2`/`quiz`/`furtherReading` (243 KB gz total, ≤ 21 KB per cluster), fetched on
+first open of a node in that cluster via `src/lib/bodies.ts` and precached by the service
+worker. Client JS went 447 → 284 KB gz; the largest chunk 442 → 206 KB gz, and CI now fails
+above 260 KB. `ts-morph` and the three one-off AST writers are gone; the archiver edits JSON.
+Decision detail in `docs/NODES-SPLIT-DECISION.md`, layout in `docs/CONTENT-LAYER.md`.
 
-**Trigger status: BOTH triggers set in `docs/NODES-SPLIT-DECISION.md` (350 nodes OR 400 KB
-gzipped) have been crossed.** This item is now due, not deferred.
+**Left over from this item:**
 
-**Plan:** split into an always-bundled index (id/title/author/year/medium/category/thesis/layer0/
-tags/related/epistemicStatus) plus per-cluster body JSON (`layer1`, `layer2`, `quiz`,
-`furtherReading`) fetched on first open of a node in that cluster and precached by the service
-worker. Do it as per-cluster JSON on disk too (one file per cluster, assembled at build), which
-also turns content PRs into reviewable diffs and retires the ts-morph mutate-a-1.2 MB-TS-file
-archiver. CI's "Bundle size report" step should become a hard limit once this lands.
+- Search indexes the bundled fields only (title/author/thesis/layer0). If "no results" for a
+  phrase that's only in `layer1`/`layer2` shows up in feedback, index bodies lazily from the
+  in-memory cache as clusters load.
+- The node page still streams the body in on the client after hydration. If pre-rendering or
+  per-idea og cards land, read the body server-side in the loader (`createIsomorphicFn`) and
+  serialize it into the HTML instead.
+- The remaining 206 KB gz `index-*.js` is now mostly React + router + the 110 KB index; the
+  next payload win is the index itself (e.g. dropping `layer0` from Feed cards that never
+  expand it), not more splitting.
 
 ## 3. Content-quality warnings backlog
 

@@ -32,10 +32,17 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
 
 ## Where things live
 
-- `src/data/nodes.ts` — the `Node`/`Cluster`/`Tag` types and all static content data (clusters,
-  tags, nodes with `layer0`/`layer1`/`layer2`/`quiz`/`related`/`furtherReading`). This is the
-  content backbone; changes here ripple into search, review, and routing. 387 nodes / 38 clusters
-  as of 2026-09-04 — past the split trigger, see `TECH_DEBT.md` §2.
+- `content/` — the content **source of truth**: `clusters/<clusterId>.json` (one file per
+  cluster: `{cluster, nodes[]}` with full node objects), `clusters.json` (display order),
+  `tags.json` (interest vocabulary). Edit these, never the generated files. 387 nodes /
+  38 clusters as of 2026-09-04. See `docs/CONTENT-LAYER.md`.
+- `src/data/nodes.ts` — **GENERATED** by `bun run build:content`: the `NodeIndex`/`Node`/
+  `NodeBody`/`Cluster`/`Tag` types plus the always-bundled INDEX (every node minus
+  `layer1`/`layer2`/`quiz`/`furtherReading`) and the `NODE_BY_ID`/`NODES_BY_CLUSTER`/
+  `CLUSTER_BY_ID` maps. `public/content/bodies/<clusterId>.json` (also generated) holds the
+  body half, fetched on demand by `src/lib/bodies.ts` (`useNodeBody(node)`) and precached by
+  the service worker. Anything that needs a quiz or the deeper layers goes through that hook;
+  the feed/explore/search/review screens work from the index alone.
 - `src/lib/random.ts` — seeded PRNG + `seededPermutation`. Anything that renders in a shuffled
   order (feed sequencing, quiz options) MUST use this, never `Math.random()`, so SSR and client
   agree and nothing reshuffles under the user's thumb.
@@ -64,7 +71,9 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   `archive-sources.ts <clusterId|all> [--dry-run]` (snapshot sources to `public/content/sources/`;
   idempotent, retry-capped, misses logged to `archive-failures.log`),
   `next-id.ts <PREFIX> [count]` (deterministic next free id), `audit-content.ts` (content audit:
-  summary|tag|cluster|field|orphans|dupes), `build-nodes-ts.ts` (regenerate derived exports).
+  summary|tag|cluster|field|orphans|dupes), `build-content.ts` (regenerate `src/data/nodes.ts` +
+  `public/content/bodies/` from `content/`; `--check` is what CI/validate use to catch stale or
+  hand-edited generated files). All of them read `content/` via `scripts/lib/content.ts`.
   Adding content goes through the **add-content** skill (`.claude/skills/add-content/`) — it
   proposes node(s), assigns ids, writes the node + quiz inline, archives sources, then runs the
   validate gate. No per-batch inject scripts, no quiz-patch JSON.

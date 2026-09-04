@@ -1,7 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { shuffledOptions } from "./quiz";
-import { NODES } from "@/data/nodes";
 import { seededPermutation, hashString } from "./random";
+import { allFullNodes } from "./testContent";
+
+// Whole corpus with bodies (the quiz lives in the body half after the split).
+const NODES = allFullNodes();
 
 describe("seededPermutation", () => {
   it("is a valid permutation, stable for a key, and varies with key and salt", () => {
@@ -22,7 +25,7 @@ describe("seededPermutation", () => {
 describe("shuffledOptions", () => {
   it("keeps exactly one correct option and preserves every option text", () => {
     for (const n of NODES) {
-      const opts = shuffledOptions(n);
+      const opts = shuffledOptions(n.id, n.quiz);
       expect(opts.filter((o) => o.correct)).toHaveLength(1);
       expect(opts.find((o) => o.correct)!.text).toBe(n.quiz.options[n.quiz.correctIndex]);
       expect([...opts.map((o) => o.text)].sort()).toEqual([...n.quiz.options].sort());
@@ -34,7 +37,7 @@ describe("shuffledOptions", () => {
     expect(authored).toBeGreaterThan(0.7); // documents the leak this guards against
 
     const displayed = [0, 0, 0, 0];
-    for (const n of NODES) displayed[shuffledOptions(n).findIndex((o) => o.correct)]++;
+    for (const n of NODES) displayed[shuffledOptions(n.id, n.quiz).findIndex((o) => o.correct)]++;
     // Ideal is ~25% per slot for 4-option quizzes (3-option ones can't land
     // in slot D, which pulls it a little low). No slot may dominate.
     for (let i = 0; i < 4; i++) {
@@ -46,10 +49,10 @@ describe("shuffledOptions", () => {
   it("changes the order for a different salt (Review passes the Leitner box)", () => {
     const changed = NODES.filter(
       (n) =>
-        shuffledOptions(n, 0)
+        shuffledOptions(n.id, n.quiz, 0)
           .map((o) => o.originalIndex)
           .join() !==
-        shuffledOptions(n, 2)
+        shuffledOptions(n.id, n.quiz, 2)
           .map((o) => o.originalIndex)
           .join(),
     ).length;

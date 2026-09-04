@@ -1,18 +1,58 @@
 import { useMemo, useState, type ReactNode } from "react";
-import type { Node } from "@/data/nodes";
+import type { NodeIndex, Quiz as QuizData } from "@/data/nodes";
 import { useStore } from "@/lib/store";
 import { shuffledOptions } from "@/lib/quiz";
+import { useNodeBody } from "@/lib/bodies";
 import { MicroLabel } from "./MicroLabel";
 import { FirstTimeHint } from "./FirstTimeHint";
+import { Bone } from "./Skeleton";
 import { cn } from "@/lib/utils";
 
-export function Quiz({
+/**
+ * Loads the node's body (the quiz lives there, not in the bundled index) and
+ * renders the quiz once it's in. Feed cards, the node page and Review all
+ * render this with just an index entry; the body is one small per-cluster
+ * fetch, cached for the session (see lib/bodies.ts).
+ */
+export function Quiz(props: {
+  node: NodeIndex;
+  hideHeader?: boolean;
+  renderFooter?: (correct: boolean) => ReactNode;
+  salt?: number;
+}) {
+  const { status, body, error } = useNodeBody(props.node);
+  if (status === "ready") return <QuizInner {...props} quiz={body.quiz} />;
+  return (
+    <section
+      aria-busy={status === "loading"}
+      className={props.hideHeader ? "" : "mt-10 border-t border-line pt-8"}
+    >
+      {!props.hideHeader && <MicroLabel>Check your understanding</MicroLabel>}
+      {status === "error" ? (
+        <p className="mt-3 text-sm text-ink-soft">
+          Couldn't load this quiz{error?.message.includes("HTTP") ? "" : " — you may be offline"}.
+        </p>
+      ) : (
+        <div className="mt-3 space-y-3">
+          <Bone className="h-6 w-5/6" />
+          <Bone className="h-14 w-full" />
+          <Bone className="h-14 w-full" />
+          <Bone className="h-14 w-full" />
+        </div>
+      )}
+    </section>
+  );
+}
+
+function QuizInner({
   node,
+  quiz,
   hideHeader = false,
   renderFooter,
   salt = 0,
 }: {
-  node: Node;
+  node: NodeIndex;
+  quiz: QuizData;
   /** Skip the "Check your understanding" label and outer section chrome —
    * used on /review, which already supplies its own header/progress bar
    * around the question. */
@@ -25,7 +65,7 @@ export function Quiz({
   salt?: number;
 }) {
   const submitQuiz = useStore((s) => s.submitQuiz);
-  const options = useMemo(() => shuffledOptions(node, salt), [node, salt]);
+  const options = useMemo(() => shuffledOptions(node.id, quiz, salt), [node.id, quiz, salt]);
   const [picked, setPicked] = useState<number | null>(null);
   const correct = picked !== null && options[picked].correct;
 
@@ -35,7 +75,7 @@ export function Quiz({
       <p
         className={cn("font-serif leading-snug text-ink", hideHeader ? "text-2xl" : "mt-3 text-xl")}
       >
-        {node.quiz.question}
+        {quiz.question}
       </p>
       <div className="mt-5 space-y-2">
         {options.map((opt, i) => {
@@ -77,8 +117,8 @@ export function Quiz({
           >
             {correct ? "Correct — moved up a box" : "Not quite — resets to box 0"}
           </p>
-          {node.quiz.explanation && (
-            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{node.quiz.explanation}</p>
+          {quiz.explanation && (
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{quiz.explanation}</p>
           )}
         </div>
       )}

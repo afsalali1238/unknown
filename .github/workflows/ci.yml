@@ -40,14 +40,28 @@ jobs:
       - name: Production build
         run: bun run build
 
-      - name: Bundle size report
-        # Informational for now. TECH_DEBT §2's split trigger (400 KB gzipped)
-        # is already exceeded; once the data layer is split, turn this into a
-        # hard limit so it can't silently regress.
+      - name: Bundle size limit
+        # Hard limit since the data-layer split (TECH_DEBT §2, 2026-09-04):
+        # the largest client chunk is ~206 KB gzipped, down from 442 KB. The
+        # limit is set ~25% above that so normal feature work fits but
+        # accidentally bundling the node bodies (or another 100 KB of content
+        # into the index) fails loudly instead of silently regressing.
+        env:
+          LIMIT_KB: 260
         run: |
-          echo "### Client bundle (gzipped)" >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
-          for f in dist/client/assets/*.js; do
-            printf "%8s KB  %s\n" "$(( $(gzip -c "$f" | wc -c) / 1024 ))" "$(basename "$f")"
-          done | sort -rn | head -8 >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          max=0; maxf=""
+          {
+            echo "### Client bundle (gzipped, limit ${LIMIT_KB} KB per chunk)"
+            echo '```'
+            for f in dist/client/assets/*.js; do
+              kb=$(( $(gzip -c "$f" | wc -c) / 1024 ))
+              if [ "$kb" -gt "$max" ]; then max=$kb; maxf=$(basename "$f"); fi
+              printf "%8s KB  %s\n" "$kb" "$(basename "$f")"
+            done | sort -rn | head -8
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "largest chunk: ${maxf} = ${max} KB gz"
+          if [ "$max" -gt "$LIMIT_KB" ]; then
+            echo "::error::${maxf} is ${max} KB gzipped, over the ${LIMIT_KB} KB limit. Did the node bodies end up in the bundle? See docs/CONTENT-LAYER.md."
+            exit 1
+          fi
