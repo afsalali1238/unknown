@@ -129,6 +129,13 @@ function ClusterDetail({ cluster, nodes }: { cluster: (typeof CLUSTERS)[0]; node
         <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
           {cluster.subtitle}
         </p>
+        <Link
+          to="/skim"
+          search={{ cluster: cluster.id }}
+          className="mt-4 inline-flex min-h-11 items-center border border-line px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:border-ink hover:text-ink"
+        >
+          Skim this topic →
+        </Link>
       </div>
       <div className="divide-y divide-line border-y border-line">
         {nodes.map((n) => (
@@ -193,6 +200,17 @@ function ExploreScreen() {
           )}
         >
           Every idea
+        </Link>
+        {/* Skim is the third way through the lattice — one thesis per
+            screen, at speed. It lives here rather than in the bottom bar:
+            it is a mode of browsing, not a distinct daily job (see
+            PRODUCT-BRIEF.md §5). */}
+        <Link
+          to="/skim"
+          search={{}}
+          className="flex items-center justify-center min-h-11 border border-line px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft transition-colors hover:border-ink hover:text-ink"
+        >
+          Skim →
         </Link>
       </div>
 

@@ -224,7 +224,7 @@ function OnboardingScreen() {
                 <div>
                   <h3 className="font-serif text-lg text-ink">Install for offline</h3>
                   <p className="mt-1 text-sm text-ink-soft">
-                    Add Unknown to your home screen — the map, every node, and Review work with no
+                    Add Unknown to your home screen — the feed, every node, and Review work with no
                     connection.
                   </p>
                 </div>

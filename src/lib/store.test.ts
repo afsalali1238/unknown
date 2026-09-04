@@ -9,6 +9,8 @@ import {
   localDay,
   useStore,
   LEITNER_DAYS,
+  nextDueAt,
+  formatUntil,
   type ReviewEntry,
 } from "./store";
 
@@ -93,6 +95,30 @@ describe("store.ts pure functions", () => {
     it("returns 0 for empty review map", () => {
       expect(dueCount({})).toBe(0);
       expect(dueIds({})).toEqual([]);
+    });
+  });
+
+  describe("nextDueAt / formatUntil", () => {
+    const H = 3600000;
+    it("finds the earliest future due, ignoring overdue entries", () => {
+      const now = 1_000_000_000_000;
+      const review: Record<string, ReviewEntry> = {
+        a: { box: 1, due: now - H },
+        b: { box: 2, due: now + 5 * H },
+        c: { box: 3, due: now + 2 * H },
+      };
+      expect(nextDueAt(review, now)).toBe(now + 2 * H);
+      expect(nextDueAt({ a: { box: 0, due: now - 1 } }, now)).toBeNull();
+      expect(nextDueAt({}, now)).toBeNull();
+    });
+
+    it("formats coarse, human intervals", () => {
+      const now = 0;
+      expect(formatUntil(now, now)).toBe("now");
+      expect(formatUntil(20 * 60000, now)).toBe("within the hour");
+      expect(formatUntil(3 * H, now)).toBe("in 3 hours");
+      expect(formatUntil(24 * H, now)).toBe("tomorrow");
+      expect(formatUntil(5 * 24 * H, now)).toBe("in 5 days");
     });
   });
 

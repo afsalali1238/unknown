@@ -45,7 +45,7 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   node reader), `read.$id` (archived-source reader), `review` (spaced-repetition loop), `you`
   (progress/saved/glossary/scratchpad/backup), `onboarding`, `map` (redirect), `__root`.
 - `src/components/` — feature components (`LayerReveal`, `NodeCard`, `Quiz`, `RecallReveal`,
-  `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `ProgressRing`); `src/components/ui/` is
+  `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `LatticeIndex`); `src/components/ui/` is
   the shadcn primitive layer — prefer composing these over hand-rolling new primitives.
 - `src/lib/store.ts` — Zustand state. `src/lib/error-capture.ts` / `error-page.ts` — error
   handling. `src/hooks/` — `useInstallPrompt`, `useOfflineWarmup`, `use-mobile`.
@@ -70,9 +70,11 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
 
 ## Design principles (from PRODUCT-BRIEF.md — obey these in UI work)
 
-Three primary nav destinations only: **Map** (browse + continue + due-today), **Review**
-(spaced-repetition drilling), **You** (progress/reading-list/glossary/scratchpad — one tap down,
-not top-level). Node is not a nav tab, it's reached from Map/Review. Layers reveal progressively
+Four primary nav destinations only (brief §5, revised 2026-09-04): **Feed** (today's reading),
+**Explore** (topics / every idea / search / Skim), **Review** (spaced-repetition drilling, with
+the due badge on the tab), **You** (progress/saved/glossary/scratchpad — one tap down, not
+top-level). Node is not a nav tab, it's reached from Feed/Explore/Review. The tab list lives in
+`src/lib/mainRoutes.ts` — change it there, never in BottomNav directly. Layers reveal progressively
 (don't dump L0/L1/L2 at once). Cross-links are a designed, visible section — not footer links.
 Offline caching is silent, no download-manager UI.
 

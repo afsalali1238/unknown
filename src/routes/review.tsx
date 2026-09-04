@@ -3,9 +3,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { NODE_BY_ID } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
 import { Quiz } from "@/components/Quiz";
-import { useStore, dueIds, currentStreak } from "@/lib/store";
+import { useStore, dueIds, currentStreak, nextDueAt, formatUntil } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { FirstTimeHint } from "@/components/FirstTimeHint";
+import { seededPermutation } from "@/lib/random";
 
 export const Route = createFileRoute("/review")({
   head: () => ({
@@ -35,7 +36,11 @@ function ReviewScreen() {
   const queue = useMemo(() => {
     if (!hydrated) return [] as string[];
     const ids = dueIds(review);
-    return ids.sort(() => Math.random() - 0.5);
+    // Seeded (not Math.random) so the order is stable for the session and
+    // identical under StrictMode's double-invoke; keyed on the day so each
+    // day's session is shuffled differently.
+    const order = seededPermutation(ids.length, `review:${new Date().toDateString()}`);
+    return order.map((i) => ids[i]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hydrated]);
 
@@ -44,22 +49,41 @@ function ReviewScreen() {
   if (!hydrated) return <div className="px-5 pt-8" />;
 
   if (queue.length === 0 || idx >= queue.length) {
+    const tracked = Object.keys(review).length;
+    const finishedSession = queue.length > 0;
+    const upcoming = nextDueAt(review);
     return (
       <div className="px-5 pt-16 text-center">
         <MicroLabel>Review</MicroLabel>
-        <h1 className="mt-3 font-serif text-4xl text-ink">You're all caught up.</h1>
-        <p className="mt-3 font-serif text-lg italic text-ink-soft">Come back tomorrow.</p>
+        <h1 className="mt-3 font-serif text-4xl text-ink">
+          {finishedSession ? "Session done." : "Nothing due."}
+        </h1>
+        <p className="mt-3 font-serif text-lg italic text-ink-soft">
+          {tracked === 0
+            ? "Answer a quiz or mark an idea Got it, and it starts its schedule here."
+            : upcoming
+              ? `Next one resurfaces ${formatUntil(upcoming)}.`
+              : "Come back tomorrow."}
+        </p>
         <div className="mt-8 inline-flex items-baseline gap-3 border-t border-b border-line py-4">
           <span className="font-mono text-4xl text-accent">{streak}</span>
           <MicroLabel>Day streak</MicroLabel>
         </div>
-        <div className="mt-10">
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
           <Link
             to="/"
-            className="inline-flex border border-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink"
+            className="inline-flex border border-ink bg-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-paper"
           >
-            Back to feed
+            Read something new
           </Link>
+          {tracked > 0 && (
+            <Link
+              to="/you"
+              className="inline-flex border border-line px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:border-ink"
+            >
+              See your boxes
+            </Link>
+          )}
         </div>
       </div>
     );

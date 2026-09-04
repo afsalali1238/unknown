@@ -127,7 +127,7 @@ function YouScreen() {
               to="/"
               className="mt-4 inline-block bg-ink text-paper px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em]"
             >
-              Explore the map
+              Open the feed
             </Link>
           </div>
         ) : (
@@ -238,21 +238,24 @@ function Reading() {
   );
 }
 
+// Review is a bottom-nav tab (with the due badge) — this section is the
+// progress view of the same queue: how it's distributed across the Leitner
+// boxes, plus a link through. It deliberately doesn't restate the mechanic
+// the tab already explains.
 function ReviewSection() {
   const hydrated = useHydrated();
   const review = useStore((s) => s.review);
   const due = hydrated ? dueCount(review) : 0;
-  const total = Object.keys(review).length;
+  const entries = Object.values(review);
+  const total = entries.length;
+  const boxes = [0, 1, 2, 3, 4, 5].map((b) => entries.filter((r) => r.box === b).length);
+  const max = Math.max(1, ...boxes);
 
   return (
     <Section title="Review" icon={RotateCcw}>
-      <p className="text-sm text-ink-soft">
-        Spaced repetition for what you've already read — a quiz queue that resurfaces ideas right
-        before you'd forget them.
-      </p>
       <Link
         to="/review"
-        className="mt-4 flex items-center justify-between border border-line p-4 hover:border-ink"
+        className="flex items-center justify-between border border-line p-4 hover:border-ink"
       >
         <div>
           <p className="font-serif text-lg text-ink">
@@ -268,6 +271,25 @@ function ReviewSection() {
         </div>
         <ArrowRight className="h-4 w-4 text-ink-soft" />
       </Link>
+      {hydrated && total > 0 && (
+        <div className="mt-4">
+          <MicroLabel>Leitner boxes · 0 = just learned, 5 = 35-day interval</MicroLabel>
+          <div className="mt-2 flex items-end gap-1" aria-hidden="true">
+            {boxes.map((count, b) => (
+              <div key={b} className="flex flex-1 flex-col items-center gap-1">
+                <div className="flex h-10 w-full items-end">
+                  <div
+                    className={cn("w-full", b >= 4 ? "bg-accent" : "bg-ink")}
+                    style={{ height: `${Math.max(count > 0 ? 8 : 2, (count / max) * 100)}%` }}
+                  />
+                </div>
+                <span className="font-mono text-[10px] text-ink-soft">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="sr-only">{boxes.map((c, b) => `box ${b}: ${c}`).join(", ")}</p>
+        </div>
+      )}
     </Section>
   );
 }

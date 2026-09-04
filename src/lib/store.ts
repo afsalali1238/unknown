@@ -309,6 +309,27 @@ export function dueIds(review: Record<string, ReviewEntry>): string[] {
     .map(([id]) => id);
 }
 
+/** Earliest future `due` timestamp across the queue, or null if none is scheduled ahead. */
+export function nextDueAt(review: Record<string, ReviewEntry>, now: number = Date.now()) {
+  let next: number | null = null;
+  for (const r of Object.values(review)) {
+    if (r.due > now && (next === null || r.due < next)) next = r.due;
+  }
+  return next;
+}
+
+/** "in 3 hours" / "tomorrow" / "in 5 days" — coarse on purpose, this is a reading app not a timer. */
+export function formatUntil(ts: number, now: number = Date.now()): string {
+  const ms = ts - now;
+  if (ms <= 0) return "now";
+  const hours = Math.round(ms / 3600000);
+  if (hours < 1) return "within the hour";
+  if (hours < 20) return `in ${hours} hour${hours === 1 ? "" : "s"}`;
+  const days = Math.round(ms / DAY_MS);
+  if (days <= 1) return "tomorrow";
+  return `in ${days} days`;
+}
+
 export function currentStreak(days: string[], now: Date = new Date()): number {
   if (!days.length) return 0;
   const set = new Set(days);

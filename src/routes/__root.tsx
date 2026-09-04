@@ -21,13 +21,13 @@ function NotFoundComponent() {
         <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft">404</p>
         <h1 className="mt-3 font-serif text-4xl text-ink">Not in the lattice</h1>
         <p className="mt-3 text-sm text-ink-soft">
-          This idea isn't wired up. Head back to the map and follow another thread.
+          This idea isn't wired up. Head back to the feed and follow another thread.
         </p>
         <Link
           to="/"
           className="mt-6 inline-flex items-center justify-center border border-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:bg-ink hover:text-paper"
         >
-          Back to map
+          Back to feed
         </Link>
       </div>
     </div>
