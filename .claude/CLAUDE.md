@@ -45,8 +45,9 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   node reader), `read.$id` (archived-source reader), `review` (spaced-repetition loop), `you`
   (progress/saved/glossary/scratchpad/backup), `onboarding`, `map` (redirect), `__root`.
 - `src/components/` — feature components (`LayerReveal`, `NodeCard`, `Quiz`, `RecallReveal`,
-  `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `LatticeIndex`); `src/components/ui/` is
-  the shadcn primitive layer — prefer composing these over hand-rolling new primitives.
+  `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `LatticeIndex`, `Artwork` (generated
+  `TopicPlate` / `IdeaGlyph`), `Skeleton`); `src/components/ui/` is the shadcn primitive layer —
+  prefer composing these over hand-rolling new primitives.
 - `src/lib/store.ts` — Zustand state. `src/lib/error-capture.ts` / `error-page.ts` — error
   handling. `src/hooks/` — `useInstallPrompt`, `useOfflineWarmup`, `use-mobile`.
 - `src/styles.css` — Tailwind v4 theme tokens. Color system is `paper`/`ink`/`ink-soft`/`line`/
@@ -77,6 +78,15 @@ top-level). Node is not a nav tab, it's reached from Feed/Explore/Review. The ta
 `src/lib/mainRoutes.ts` — change it there, never in BottomNav directly. Layers reveal progressively
 (don't dump L0/L1/L2 at once). Cross-links are a designed, visible section — not footer links.
 Offline caching is silent, no download-manager UI.
+
+**Imagery and motion** (`docs/VISUAL-SYSTEM.md`): there are no raster illustrations. Every image
+is generated from an id by `src/lib/artwork.ts` and rendered by `TopicPlate` / `IdeaGlyph` in the
+tokens — never add PNG/JPG artwork to the app. Every animation is a utility declared once in
+`styles.css` ("Motion grammar": `rise`, `settle`, `pulse-beat`, `pop`, `*-draw`, `shimmer`) using
+the `--duration-*` / `--ease-*` tokens; don't add per-component keyframes or `tw-animate`
+classes. Route transitions are typed by `routeDepth()` in `src/lib/mainRoutes.ts`. Hydration
+gaps show `Skeleton` bones, not empty divs. Static brand assets (OG card, icons, per-topic SVGs)
+come from `bun run scripts/brand-assets.ts`.
 
 ## Conventions
 

@@ -14,6 +14,12 @@ import { BottomNav } from "@/components/BottomNav";
 import { useOfflineWarmup } from "@/hooks/useOfflineWarmup";
 import { useThemeSync } from "@/hooks/useThemeSync";
 
+/** Canonical origin for absolute URLs in meta tags. Override per deploy with
+ *  VITE_SITE_URL (e.g. a preview URL); defaults to production. */
+const SITE_URL =
+  (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, "") ??
+  "https://unknown-ighb.vercel.app";
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6">
@@ -89,7 +95,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
       },
       { property: "og:type", content: "website" },
+      // Absolute URL is required by most scrapers; generated from the
+      // brand tokens by scripts/brand-assets.ts (see docs/VISUAL-SYSTEM.md).
+      { property: "og:image", content: `${SITE_URL}/brand/og.png` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Unknown — a latticework of powerful ideas" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${SITE_URL}/brand/og.png` },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

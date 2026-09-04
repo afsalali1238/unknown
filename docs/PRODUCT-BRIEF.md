@@ -93,7 +93,7 @@ Everything else (glossary, scratchpad, stats, reading list) exists to _serve_ th
 2. **The node is the hero.** One clean reading column, layers revealed progressively (don't dump L0/L1/L2 at once — gate them so the user commits before the mechanism unlocks).
 3. **Retention beats reach.** A visible streak + due badge matters more than a bigger catalog. Depth over breadth.
 4. **Cross-links are loud, not buried.** Related ideas are a designed section mid/late in the node, styled as the payoff — not grey footer links.
-5. **One visual system.** Kill the two-codebase split: one type scale, one color system (Epistemoph's `paper/ink/accent` tokens), one component library. Consistency _is_ the redesign.
+5. **One visual system.** Kill the two-codebase split: one type scale, one color system (Epistemoph's `paper/ink/accent` tokens), one component library. Consistency _is_ the redesign. _Extended 2026-09-04:_ imagery and motion are part of that one system — artwork is generated from the spiral/thread/dot of the mark, in the tokens, per topic and per idea (`docs/VISUAL-SYSTEM.md`); no illustrations that live outside it.
 6. **Offline is invisible.** Starred nodes cache silently; no download-manager UI in v1.
 
 ## 8. What to merge, what to drop
