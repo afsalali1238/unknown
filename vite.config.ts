@@ -14,6 +14,17 @@ export default defineConfig({
     // @ts-ignore
     tsconfigPaths: true,
   },
+  build: {
+    chunkSizeWarningLimit: 600,
+    rollupOptions: {
+      output: {
+        manualChunks: (id: string) => {
+          if (id.includes("src/data/nodes.ts")) return "nodes";
+          return undefined;
+        },
+      },
+    },
+  },
   plugins: [
     tailwindcss(),
     tanstackStart({

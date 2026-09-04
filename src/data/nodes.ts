@@ -5403,7 +5403,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J10",
-    clusterId: "L",
+    clusterId: "J",
     title: "Avoiding Stupidity is Easier than Seeking Brilliance",
     author: "Farnam Street (Shane Parrish)",
     year: 2014,
@@ -5592,7 +5592,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J14",
-    clusterId: "L",
+    clusterId: "J",
     title: "The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions",
     author: "Farnam Street, after Col. John Boyd",
     year: 2021,
@@ -5639,7 +5639,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J15",
-    clusterId: "L",
+    clusterId: "J",
     title: "Predicting the Future with Bayes' Theorem",
     author: "Farnam Street (Shane Parrish), after Thomas Bayes",
     year: 2022,
@@ -5686,7 +5686,7 @@ export const NODES: Node[] = [
   },
   {
     id: "J16",
-    clusterId: "L",
+    clusterId: "J",
     title: "The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes",
     author: "Farnam Street (Shane Parrish)",
     year: 2018,

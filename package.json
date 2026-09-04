@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && bun run scripts/inject-manifest.ts",
+    "build": "vite build && npx tsx scripts/inject-manifest.ts",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "validate": "npx tsx scripts/validate-nodes.ts",
+    "audit": "npx tsx scripts/audit-content.ts"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

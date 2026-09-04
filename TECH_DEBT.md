@@ -13,11 +13,11 @@ Run a proper accessibility audit before a full public launch. Use automated tool
 
 ## 2. Split Data Bundle (`nodes.ts`)
 
-**Current State:** The entire knowledge graph (currently 270 nodes, as of the 2026-07-15 S-series
-content add) is bundled into a single JavaScript chunk from `src/data/nodes.ts`. The source file
-itself is ~765KB raw / ~233KB gzipped and loads in full on every visit.
+**Current State:** The entire knowledge graph (currently **387 nodes** as of 2026-09-04, 406 archived sources) is bundled from `src/data/nodes.ts`. Source file is ~1.18 MB raw. Built bundle: client `index` chunk was **1,373 KB raw / 445 KB gzipped** before mitigation — **exceeding the 400 KB gzipped trigger**. A Vite `manualChunks` split now isolates `nodes.ts` into its own `nodes-*.js` chunk (see `vite.config.ts`), which reduces the main entry chunk and makes the split explicit for caching. Full per-cluster lazy-loading (per `docs/NODES-SPLIT-DECISION.md`) is still deferred but the trigger condition is now **MET** — this partial split is a stopgap.
 
 **Deferred Work:** The monolithic `nodes.ts` needs to be split into per-cluster JSON files, enabling lazy-loading of a cluster's nodes only when its section is opened in Explore or a node within it is visited.
 
 **Trigger Condition / "Done" Definition:**
-Implement this chunk splitting once node count reaches **350** OR `src/data/nodes.ts` exceeds **400KB gzipped** in the built bundle (decided 2026-07-16 — see docs/NODES-SPLIT-DECISION.md). Actual count is **270** (the earlier ~296 figure mistakenly counted the 26 CLUSTERS objects). Node count has grown from ~257 to 270 in the most recent content session alone, so re-check this number before assuming there's headroom. At the current size (~233KB gzipped), the performance impact is still negligible, but it grows linearly. Note that this change will require re-architecting the Service Worker to pre-cache these chunks dynamically for the offline PWA experience.
+Implement this chunk splitting once node count reaches **350** OR `src/data/nodes.ts` exceeds **400KB gzipped** in the built bundle (decided 2026-07-16 — see docs/NODES-SPLIT-DECISION.md). **Status 2026-09-04: TRIGGERED** — 387 nodes, ~445 KB gzipped before mitigation; isolated chunk now applied. Next step is per-cluster dynamic `import()` + Service Worker dynamic precache re-architecture.
+
+**Mitigation applied 2026-09-04:** `vite.config.ts` `build.rollupOptions.output.manualChunks.nodes = ["./src/data/nodes.ts"]` to extract the graph into a separate cacheable chunk. Run `npm run build` and verify `dist/client/assets/nodes-*.js` exists and SW precache includes it.
