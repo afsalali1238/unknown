@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
 import { MicroLabel } from "@/components/MicroLabel";
+import { Bone } from "@/components/Skeleton";
 
 // `url` ends up as an <a href> on the page, so only accept http(s) — a
 // crafted /read/x?url=javascript:... link must not render as a clickable
@@ -147,9 +148,9 @@ function ReadScreen() {
       <div className="mt-8">
         {status === "loading" && (
           <div className="space-y-3" aria-hidden="true">
-            <div className="h-4 w-full animate-pulse bg-line/40" />
-            <div className="h-4 w-11/12 animate-pulse bg-line/40" />
-            <div className="h-4 w-4/5 animate-pulse bg-line/40" />
+            <Bone className="h-4 w-full" />
+            <Bone className="h-4 w-11/12" />
+            <Bone className="h-4 w-4/5" />
           </div>
         )}
 

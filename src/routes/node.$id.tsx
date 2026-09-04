@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, type MouseEvent } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { NODE_BY_ID, CLUSTER_BY_ID, type Node as NodeType } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
+import { IdeaGlyph } from "@/components/Artwork";
 import { LayerReveal } from "@/components/LayerReveal";
 import { Quiz } from "@/components/Quiz";
 import { RecallReveal } from "@/components/RecallReveal";
@@ -228,7 +229,7 @@ function FurtherReadingItem({ item }: { item: FurtherReading }) {
       </button>
 
       {open && (
-        <div className="mt-3 flex flex-wrap items-center gap-3 animate-in fade-in slide-in-from-top-1 duration-200">
+        <div className="rise mt-3 flex flex-wrap items-center gap-3">
           {archived && (
             <DownloadButton
               path={item.archive!.path!}
@@ -325,8 +326,11 @@ function NodeScreen() {
           <MicroLabel>← Home</MicroLabel>
         </Link>
 
-        <div className="mt-6">
-          <MicroLabel>
+        <div className="mt-6 rise">
+          {/* The idea's mark, large: the same glyph the feed card carried,
+              drawing itself on as the page opens. */}
+          <IdeaGlyph nodeId={node.id} animate className="h-12 w-12 -ml-1" />
+          <MicroLabel className="mt-4 block">
             {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
             <span className="hidden sm:inline">{cluster?.title} · </span>
             {node.medium}
@@ -345,11 +349,11 @@ function NodeScreen() {
           </FirstTimeHint>
         )}
 
-        <blockquote className="mt-8 border-l-2 border-accent pl-5">
+        <blockquote className="mt-8 rise border-l-2 border-accent pl-5 [animation-delay:80ms]">
           <p className="font-serif text-xl italic leading-snug text-ink">"{node.thesis}"</p>
         </blockquote>
 
-        <section className="mt-8">
+        <section className="mt-8 rise [animation-delay:160ms]">
           <MicroLabel>The idea</MicroLabel>
           <div className="mt-3">
             <Sentences text={node.layer0 ?? ""} start={0} />
@@ -429,7 +433,7 @@ function NodeScreen() {
         </div>
 
         {nextConnection && (
-          <section className="mt-16 animate-in fade-in duration-500">
+          <section className="mt-16 rise [animation-delay:240ms]">
             <Link
               to="/node/$id"
               params={{ id: nextConnection.id }}
@@ -469,7 +473,7 @@ function NodeScreen() {
                     <span>+</span>
                   </button>
                 ) : (
-                  <div className="animate-in fade-in slide-in-from-top-2 duration-300">
+                  <div className="rise">
                     <div className="flex items-baseline justify-between border-t border-line pt-8">
                       <h2 className="font-serif text-3xl text-ink">Related ideas</h2>
                       <MicroLabel>The lattice</MicroLabel>

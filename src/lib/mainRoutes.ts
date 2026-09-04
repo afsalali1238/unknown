@@ -50,3 +50,28 @@ export const MAIN_TAB_PATHS = MAIN_TABS.map((t) => t.to);
  * useOfflineWarmup) keeps "what is a destination" in one file.
  */
 export const SECONDARY_PATHS = ["/skim" as const];
+
+/**
+ * How "deep" a path is in the information architecture, for route
+ * transitions: a tab is 0, a screen reached from a tab is 1, an idea (node
+ * or its source) is 2. Going deeper slides the new page up, coming back
+ * slides it down, same-depth changes cross-fade (see styles.css, "Route
+ * transitions"). The numbers only matter relative to each other.
+ */
+export function routeDepth(pathname: string): number {
+  if (pathname.startsWith("/node") || pathname.startsWith("/read")) return 2;
+  if (MAIN_TAB_PATHS.includes(pathname as (typeof MAIN_TAB_PATHS)[number])) return 0;
+  return 1;
+}
+
+/** View-transition type for a navigation, consumed by CSS. */
+export function transitionType(
+  from: string | undefined,
+  to: string,
+): "deeper" | "shallower" | "lateral" {
+  if (from === undefined) return "lateral";
+  const d = routeDepth(to) - routeDepth(from);
+  if (d > 0) return "deeper";
+  if (d < 0) return "shallower";
+  return "lateral";
+}

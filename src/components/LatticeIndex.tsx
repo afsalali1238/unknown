@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { CLUSTERS, NODES_BY_CLUSTER } from "@/data/nodes";
+import { Bone } from "@/components/Skeleton";
 
 const DEFAULT_VISIBLE = 8;
 
@@ -47,7 +48,7 @@ export function LatticeIndex({
             {totalVisited} of {totalNodes} opened
           </p>
         ) : (
-          <span aria-hidden="true" className="h-3 w-24 animate-pulse rounded-full bg-line" />
+          <Bone className="h-3 w-24 rounded-full" />
         )}
       </div>
       <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
@@ -64,7 +65,7 @@ export function LatticeIndex({
           const isLastVisible = i === visibleClusters.length - 1;
 
           return (
-            <li key={cluster.id}>
+            <li key={cluster.id} className="settle" style={{ "--i": i } as React.CSSProperties}>
               {/* resetScroll={false}: the router's own scroll restoration
                   (enabled in router.tsx) resets scroll to top on every
                   navigation by default, which fires after commit and wins

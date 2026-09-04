@@ -71,23 +71,25 @@ function OnboardingScreen() {
         <img
           src="/logo.svg"
           alt=""
-          className="w-[120vw] h-[120vw] max-w-none animate-[spin_120s_linear_infinite]"
+          className="w-[120vw] h-[120vw] max-w-none spiral-spin [animation-duration:120s]"
         />
       </div>
       <div className="relative z-10 flex min-h-screen flex-col px-5 pt-12 pb-8">
         {step === 1 ? (
           <>
-            <MicroLabel>Welcome</MicroLabel>
-            <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">
-              Let's look into Unknown
-            </h1>
+            <div className="rise">
+              <MicroLabel>Welcome</MicroLabel>
+              <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">
+                Let's look into Unknown
+              </h1>
+            </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-soft">
               Choose your rabbit holes. Pick at least {MIN_PICKS} to start your descent into the
               lattice. Don't worry, you can always change course later.
             </p>
 
             <div className="mt-8 flex flex-1 flex-wrap content-start gap-2">
-              {TAGS.map((t) => {
+              {TAGS.map((t, i) => {
                 const on = picked.includes(t);
                 const count = counts[t] ?? 0;
                 return (
@@ -95,8 +97,9 @@ function OnboardingScreen() {
                     key={t}
                     onClick={() => toggle(t)}
                     aria-pressed={on}
+                    style={{ "--i": Math.floor(i / 3) } as React.CSSProperties}
                     className={cn(
-                      "min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-colors",
+                      "settle min-h-11 border px-4 py-2.5 text-left font-serif text-sm leading-snug transition-[background-color,border-color,color,transform] duration-[var(--duration-fast)] active:scale-[0.98]",
                       on && "border-ink bg-ink text-paper",
                       !on &&
                         "border-line bg-transparent text-ink-soft hover:border-ink/30 hover:text-ink",
@@ -142,11 +145,15 @@ function OnboardingScreen() {
           </>
         ) : (
           <>
-            <MicroLabel>How it works</MicroLabel>
-            <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">Read, save, master</h1>
+            <div className="rise">
+              <MicroLabel>How it works</MicroLabel>
+              <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">
+                Read, save, master
+              </h1>
+            </div>
 
             <div className="mt-12 flex-1 space-y-8">
-              <div className="flex gap-4">
+              <div className="settle flex gap-4" style={{ "--i": 1 } as React.CSSProperties}>
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-ink bg-ink text-paper">
                   <MousePointerClick className="h-5 w-5" />
                 </div>
@@ -159,7 +166,7 @@ function OnboardingScreen() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="settle flex gap-4" style={{ "--i": 2 } as React.CSSProperties}>
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
                   <Bookmark className="h-5 w-5" />
                 </div>
@@ -171,7 +178,7 @@ function OnboardingScreen() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="settle flex gap-4" style={{ "--i": 3 } as React.CSSProperties}>
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
                   <Plus className="h-5 w-5" />
                 </div>
@@ -181,7 +188,7 @@ function OnboardingScreen() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="settle flex gap-4" style={{ "--i": 4 } as React.CSSProperties}>
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
                   <Check className="h-5 w-5" />
                 </div>
@@ -193,7 +200,7 @@ function OnboardingScreen() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="settle flex gap-4" style={{ "--i": 5 } as React.CSSProperties}>
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
                   <HelpCircle className="h-5 w-5" />
                 </div>
@@ -205,7 +212,7 @@ function OnboardingScreen() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="settle flex gap-4" style={{ "--i": 6 } as React.CSSProperties}>
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
                   <Headphones className="h-5 w-5" />
                 </div>
@@ -217,7 +224,7 @@ function OnboardingScreen() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="settle flex gap-4" style={{ "--i": 7 } as React.CSSProperties}>
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line bg-paper text-ink">
                   <Download className="h-5 w-5" />
                 </div>

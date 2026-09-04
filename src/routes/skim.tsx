@@ -3,6 +3,7 @@ import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { z } from "zod";
 import { CLUSTERS, NODES, type Node } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
+import { IdeaGlyph } from "@/components/Artwork";
 import { SearchBar } from "@/components/SearchBar";
 import { useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -129,7 +130,8 @@ function SkimCard({ node, first }: { node: Node; first: boolean }) {
           toggleBookmark(node.id);
         }}
         className={cn(
-          "absolute right-5 top-8 z-10 flex h-10 w-10 items-center justify-center rounded-full border transition-colors",
+          "absolute right-5 top-8 z-10 flex h-10 w-10 items-center justify-center rounded-full border transition-colors active:scale-95",
+          bookmarked && "pulse-beat",
           bookmarked
             ? "border-ink bg-ink text-paper"
             : "border-line bg-paper text-ink-soft hover:border-ink hover:text-ink",
@@ -140,6 +142,7 @@ function SkimCard({ node, first }: { node: Node; first: boolean }) {
 
       <div className="pr-14">
         <div className="flex flex-wrap items-center gap-2">
+          <IdeaGlyph nodeId={node.id} animate={first} className="h-6 w-6 shrink-0" />
           <MicroLabel>
             {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
             {CLUSTER_TITLE[node.clusterId] ?? node.clusterId}

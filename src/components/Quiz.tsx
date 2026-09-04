@@ -41,10 +41,14 @@ export function Quiz({
         {options.map((opt, i) => {
           const isPicked = picked === i;
           const revealed = picked !== null;
-          let cls = "border-line hover:border-ink";
-          if (revealed && opt.correct) cls = "border-accent bg-accent/5";
+          let cls = "border-line hover:border-ink active:scale-[0.99]";
+          // The correct answer pulses once when revealed — whether or not it
+          // was the one picked, so a wrong guess still draws the eye to the
+          // right line.
+          if (revealed && opt.correct) cls = "pulse-beat border-accent bg-accent/5";
           else if (revealed && isPicked && !opt.correct)
             cls = "border-ink text-ink-soft line-through";
+          else if (revealed) cls = "border-line opacity-60";
           return (
             <button
               key={opt.originalIndex}
@@ -53,7 +57,7 @@ export function Quiz({
                 setPicked(i);
                 submitQuiz(node.id, opt.correct);
               }}
-              className={`flex w-full items-start gap-3 border ${cls} p-4 text-left transition-colors`}
+              className={`flex w-full items-start gap-3 border ${cls} p-4 text-left transition-[border-color,background-color,opacity,transform] duration-[var(--duration-fast)]`}
             >
               <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
                 {String.fromCharCode(65 + i)}
@@ -65,7 +69,8 @@ export function Quiz({
       </div>
       {picked !== null && (
         <div
-          className={`mt-4 border-l-2 p-3 ${correct ? "border-accent bg-accent/5" : "border-ink-soft bg-line/10"}`}
+          role="status"
+          className={`rise mt-4 border-l-2 p-3 ${correct ? "border-accent bg-accent/5" : "border-ink-soft bg-line/10"}`}
         >
           <p
             className={`font-mono text-[11px] uppercase tracking-[0.18em] ${correct ? "text-accent" : "text-ink-soft"}`}

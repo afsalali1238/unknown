@@ -2,6 +2,8 @@ import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { NODE_BY_ID } from "@/data/nodes";
 import { MicroLabel } from "@/components/MicroLabel";
+import { IdeaGlyph } from "@/components/Artwork";
+import { ScreenSkeleton } from "@/components/Skeleton";
 import { Quiz } from "@/components/Quiz";
 import { useStore, dueIds, currentStreak, nextDueAt, formatUntil } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
@@ -46,15 +48,16 @@ function ReviewScreen() {
 
   const [idx, setIdx] = useState(0);
 
-  if (!hydrated) return <div className="px-5 pt-8" />;
+  if (!hydrated) return <ScreenSkeleton title="Review" />;
 
   if (queue.length === 0 || idx >= queue.length) {
     const tracked = Object.keys(review).length;
     const finishedSession = queue.length > 0;
     const upcoming = nextDueAt(review);
     return (
-      <div className="px-5 pt-16 text-center">
-        <MicroLabel>Review</MicroLabel>
+      <div className="rise px-5 pt-16 text-center">
+        <img src="/logo.svg" alt="" className="mx-auto h-10 w-10 spiral-spin opacity-70" />
+        <MicroLabel className="mt-5 block">Review</MicroLabel>
         <h1 className="mt-3 font-serif text-4xl text-ink">
           {finishedSession ? "Session done." : "Nothing due."}
         </h1>
@@ -97,11 +100,19 @@ function ReviewScreen() {
   }
 
   return (
-    <div className="px-5 pt-8 pb-10">
-      <div className="flex items-baseline justify-between">
-        <MicroLabel>
-          Review · {idx + 1} / {queue.length}
-        </MicroLabel>
+    <div key={node.id} className="rise px-5 pt-8 pb-10">
+      <div className="flex items-center justify-between">
+        <span className="flex items-center gap-2">
+          <IdeaGlyph
+            nodeId={node.id}
+            animate
+            progress={(review[node.id]?.box ?? 0) / 5}
+            className="h-6 w-6"
+          />
+          <MicroLabel>
+            Review · {idx + 1} / {queue.length}
+          </MicroLabel>
+        </span>
         <MicroLabel>Streak · {streak}d</MicroLabel>
       </div>
 

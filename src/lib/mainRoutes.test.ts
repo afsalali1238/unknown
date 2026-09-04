@@ -1,5 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { MAIN_TABS, MAIN_TAB_PATHS, SECONDARY_PATHS } from "./mainRoutes";
+import {
+  MAIN_TABS,
+  MAIN_TAB_PATHS,
+  SECONDARY_PATHS,
+  routeDepth,
+  transitionType,
+} from "./mainRoutes";
 
 // The bar is a product decision recorded in docs/PRODUCT-BRIEF.md §5. This
 // test exists so a change to it is a deliberate, reviewed edit of both.
@@ -38,5 +44,26 @@ describe("primary navigation contract", () => {
 
   it("keeps Skim warm for offline as a secondary destination", () => {
     expect(SECONDARY_PATHS).toContain("/skim");
+  });
+});
+
+describe("route transitions", () => {
+  it("tabs are depth 0, secondary screens 1, ideas 2", () => {
+    expect(routeDepth("/")).toBe(0);
+    expect(routeDepth("/explore")).toBe(0);
+    expect(routeDepth("/review")).toBe(0);
+    expect(routeDepth("/you")).toBe(0);
+    expect(routeDepth("/skim")).toBe(1);
+    expect(routeDepth("/onboarding")).toBe(1);
+    expect(routeDepth("/node/A1")).toBe(2);
+    expect(routeDepth("/read/A1-0")).toBe(2);
+  });
+
+  it("types a navigation by the change in depth", () => {
+    expect(transitionType("/", "/node/A1")).toBe("deeper");
+    expect(transitionType("/node/A1", "/")).toBe("shallower");
+    expect(transitionType("/", "/explore")).toBe("lateral");
+    expect(transitionType("/explore", "/skim")).toBe("deeper");
+    expect(transitionType(undefined, "/node/A1")).toBe("lateral");
   });
 });

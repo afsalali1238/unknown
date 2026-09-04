@@ -36,15 +36,17 @@ export function LayerReveal({
             onReveal?.();
           }}
           aria-expanded={false}
-          className="mt-8 flex w-full items-center justify-between border-y border-line py-4 text-left transition-colors hover:bg-line/40"
+          className="group mt-8 flex w-full items-center justify-between border-y border-line py-4 text-left transition-colors duration-[var(--duration-fast)] hover:bg-line/40"
         >
           <MicroLabel className="text-accent">{label}</MicroLabel>
-          <span className="font-mono text-lg text-accent">↓</span>
+          <span className="font-mono text-lg text-accent transition-transform duration-[var(--duration-base)] ease-[var(--ease-out)] group-hover:translate-y-0.5">
+            ↓
+          </span>
         </button>
       )}
       <div
         className={cn(
-          "grid transition-all duration-500 ease-in-out",
+          "grid transition-[grid-template-rows,opacity,margin] duration-[var(--duration-slow)] ease-[var(--ease-out)]",
           open ? "mt-8 grid-rows-[1fr] opacity-100" : "mt-0 grid-rows-[0fr] opacity-0",
         )}
         aria-hidden={!open}
