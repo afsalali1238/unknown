@@ -4,7 +4,6 @@ import {
   Bookmark,
   Check,
   HelpCircle,
-  LayoutGrid,
   ChevronUp,
   GripVertical,
   Minus,
@@ -15,6 +14,7 @@ import { CLUSTERS, type Node, NODES } from "@/data/nodes";
 import { Quiz } from "@/components/Quiz";
 import { MicroLabel } from "@/components/MicroLabel";
 import { buildFeed, type FeedSource } from "@/lib/feed";
+import { getFeedSeed, getSessionVisited } from "@/lib/feedSession";
 import { useStore, dueCount, readNextNodes } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { cn } from "@/lib/utils";
@@ -212,20 +212,31 @@ function FeedScreen() {
   const visited = useStore((s) => s.visited);
   const readNext = useStore((s) => s.readNext);
 
-  const [seed] = useState(() => (Date.now() & 0xffffffff) >>> 0 || 1);
-
   const [queueOpen, setQueueOpen] = useState(false);
 
+  // Seed and visited-snapshot are per browser session (sessionStorage), so
+  // the order survives Feed → node → Back and a reload, and only changes when
+  // the tab is closed or interests change. Both are read after hydration
+  // only — before that `visited` is still the empty SSR default.
   const feedResult = useMemo(() => {
+    if (!hydrated) return null;
     const likedIds = [
       ...Object.keys(bookmarks).filter((k) => bookmarks[k]),
       ...Object.keys(gotIt).filter((k) => gotIt[k]),
     ];
-    return buildFeed({ interests, likedIds, visited, seed, readNext });
-    // Ordering is fixed for the session (seed) and the chosen interests.
-    // readNext updates no longer shuffle the unvisited nodes due to our upfront PRNG scoring.
+    return buildFeed({
+      interests,
+      likedIds,
+      visited: getSessionVisited(visited),
+      seed: getFeedSeed(),
+      readNext,
+    });
+    // Deliberately NOT keyed on `visited`/`bookmarks`/`gotIt`/`readNext`:
+    // the order is fixed for the session; those only affect per-card badges
+    // (read live inside FeedCard) and queue membership (upfront PRNG
+    // scoring keeps queue edits from reshuffling the rest).
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [seed, interests, visited]);
+  }, [hydrated, interests]);
 
   useEffect(() => {
     if (hydrated && !onboardingComplete) navigate({ to: "/onboarding" });
@@ -233,7 +244,7 @@ function FeedScreen() {
 
   // Gate on hydration: the persisted store (interests, visited) loads async and
   // the feed order is seeded, so rendering before hydration would mismatch SSR.
-  if (!hydrated) return <div className="px-5 pt-8" />;
+  if (!hydrated || !feedResult) return <div className="px-5 pt-8" />;
   if (!onboardingComplete) return <div className="px-5 pt-8" />;
 
   const readNextItems = readNextNodes(readNext, NODES);
@@ -282,21 +293,10 @@ function FeedCard({ node, first, source }: { node: Node; first: boolean; source:
   const addReadNext = useStore((s) => s.addReadNext);
   const removeReadNext = useStore((s) => s.removeReadNext);
   const [quiz, setQuiz] = useState(false);
-  const navigate = useNavigate();
 
   function toggleReadNext() {
     if (queued) removeReadNext(node.id);
     else addReadNext(node.id);
-  }
-
-  async function share() {
-    const url = `${window.location.origin}/node/${node.id}`;
-    try {
-      if (navigator.share) await navigator.share({ title: node.title, url });
-      else await navigator.clipboard.writeText(url);
-    } catch {
-      /* user cancelled */
-    }
   }
 
   return (

@@ -1,6 +1,7 @@
-import { useState, type ReactNode } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import type { Node } from "@/data/nodes";
 import { useStore } from "@/lib/store";
+import { shuffledOptions } from "@/lib/quiz";
 import { MicroLabel } from "./MicroLabel";
 import { FirstTimeHint } from "./FirstTimeHint";
 import { cn } from "@/lib/utils";
@@ -9,6 +10,7 @@ export function Quiz({
   node,
   hideHeader = false,
   renderFooter,
+  salt = 0,
 }: {
   node: Node;
   /** Skip the "Check your understanding" label and outer section chrome —
@@ -18,10 +20,14 @@ export function Quiz({
   /** Extra content rendered below the feedback box once an answer is
    * picked, e.g. Review's "From <node> · author" recap + Next button. */
   renderFooter?: (correct: boolean) => ReactNode;
+  /** Varies the option order between sittings (Review passes the Leitner
+   * box). See lib/quiz.ts for why options are shuffled at all. */
+  salt?: number;
 }) {
   const submitQuiz = useStore((s) => s.submitQuiz);
+  const options = useMemo(() => shuffledOptions(node, salt), [node, salt]);
   const [picked, setPicked] = useState<number | null>(null);
-  const correct = picked !== null && picked === node.quiz.correctIndex;
+  const correct = picked !== null && options[picked].correct;
 
   return (
     <section className={hideHeader ? "" : "mt-10 border-t border-line pt-8"}>
@@ -32,28 +38,27 @@ export function Quiz({
         {node.quiz.question}
       </p>
       <div className="mt-5 space-y-2">
-        {node.quiz.options.map((opt, i) => {
+        {options.map((opt, i) => {
           const isPicked = picked === i;
-          const isCorrect = i === node.quiz.correctIndex;
           const revealed = picked !== null;
           let cls = "border-line hover:border-ink";
-          if (revealed && isCorrect) cls = "border-accent bg-accent/5";
-          else if (revealed && isPicked && !isCorrect)
+          if (revealed && opt.correct) cls = "border-accent bg-accent/5";
+          else if (revealed && isPicked && !opt.correct)
             cls = "border-ink text-ink-soft line-through";
           return (
             <button
-              key={i}
+              key={opt.originalIndex}
               disabled={picked !== null}
               onClick={() => {
                 setPicked(i);
-                submitQuiz(node.id, i === node.quiz.correctIndex);
+                submitQuiz(node.id, opt.correct);
               }}
               className={`flex w-full items-start gap-3 border ${cls} p-4 text-left transition-colors`}
             >
               <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
                 {String.fromCharCode(65 + i)}
               </span>
-              <span className="flex-1 text-sm leading-relaxed">{opt}</span>
+              <span className="flex-1 text-sm leading-relaxed">{opt.text}</span>
             </button>
           );
         })}

@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { InstallAppButton } from "@/components/InstallAppButton";
-import { useStore, currentStreak, todayISO, dueCount } from "@/lib/store";
+import { useStore, currentStreak, todayISO, dueCount, localDay } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
 import { cn } from "@/lib/utils";
@@ -34,15 +34,26 @@ export const Route = createFileRoute("/you")({
 
 function YouScreen() {
   const hydrated = useHydrated();
-  const state = useStore();
-  const streak = hydrated ? currentStreak(state.streakDays) : 0;
-  const learned = Object.values(state.gotIt).filter(Boolean).length;
-  const inReview = Object.keys(state.review).length;
-  const mastered = Object.values(state.review).filter((r) => r.box >= 4).length;
-  const bookmarked = Object.entries(state.bookmarks)
+  // Individual selectors, not a bare useStore(): this screen also hosts the
+  // Scratchpad textarea, and subscribing to the whole store re-rendered all
+  // ~600 lines of it on every keystroke.
+  const streakDays = useStore((s) => s.streakDays);
+  const gotIt = useStore((s) => s.gotIt);
+  const review = useStore((s) => s.review);
+  const bookmarks = useStore((s) => s.bookmarks);
+  const dailyGoal = useStore((s) => s.dailyGoal);
+  const dailyProgress = useStore((s) => s.dailyProgress);
+
+  const streak = hydrated ? currentStreak(streakDays) : 0;
+  const learned = Object.values(gotIt).filter(Boolean).length;
+  const inReview = Object.keys(review).length;
+  const mastered = Object.values(review).filter((r) => r.box >= 4).length;
+  const bookmarked = Object.entries(bookmarks)
     .filter(([, v]) => v)
     .map(([id]) => NODE_BY_ID[id])
     .filter(Boolean);
+  const todayCount = hydrated ? dailyProgress[todayISO()] || 0 : 0;
+  const goal = hydrated ? dailyGoal : 3;
 
   return (
     <div className="px-5 pt-8 pb-10 space-y-12">
@@ -54,23 +65,17 @@ function YouScreen() {
       <Section title="Daily Goal" icon={Target}>
         <div className="flex flex-col gap-2">
           <div className="flex items-baseline gap-3">
-            <span className="font-mono text-6xl text-accent leading-none">
-              {hydrated ? state.dailyProgress[todayISO()] || 0 : 0}
-            </span>
-            <span className="font-mono text-2xl text-ink-soft leading-none">
-              / {hydrated ? state.dailyGoal : 3}
-            </span>
+            <span className="font-mono text-6xl text-accent leading-none">{todayCount}</span>
+            <span className="font-mono text-2xl text-ink-soft leading-none">/ {goal}</span>
             <MicroLabel>nodes learned today</MicroLabel>
           </div>
           <div className="h-2 w-full bg-line overflow-hidden mt-2">
             <div
               className="h-full bg-accent transition-all duration-500 ease-out"
-              style={{
-                width: `${Math.min(100, ((hydrated ? state.dailyProgress[todayISO()] || 0 : 0) / (hydrated ? state.dailyGoal : 3)) * 100)}%`,
-              }}
+              style={{ width: `${Math.min(100, (todayCount / goal) * 100)}%` }}
             />
           </div>
-          {hydrated && (state.dailyProgress[todayISO()] || 0) >= state.dailyGoal && (
+          {hydrated && todayCount >= goal && (
             <p className="text-xs text-accent mt-1 animate-in fade-in slide-in-from-bottom-2">
               Daily goal achieved! Great work.
             </p>
@@ -85,7 +90,7 @@ function YouScreen() {
         </div>
         <div className="mt-5 flex gap-1">
           {last14Days().map((d) => {
-            const on = hydrated && state.streakDays.includes(d);
+            const on = hydrated && streakDays.includes(d);
             return (
               <div key={d} title={d} className={cn("h-2 flex-1", on ? "bg-ink" : "bg-line")} />
             );
@@ -425,7 +430,8 @@ function last14Days(): string[] {
   for (let i = 13; i >= 0; i--) {
     const x = new Date(d);
     x.setDate(d.getDate() - i);
-    out.push(x.toISOString().slice(0, 10));
+    // Local calendar days, same as touchStreak writes them.
+    out.push(localDay(x));
   }
   return out;
 }
