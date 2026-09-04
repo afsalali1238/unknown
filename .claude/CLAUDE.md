@@ -22,8 +22,9 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
 - Deploys to Vercel via nitro's `vercel` preset. `api/index.js` wraps `dist/server/server.js` as
   the serverless handler; `vercel.json` rewrites everything through it.
 - Scripts: `bun run dev`, `bun run build`, `bun run build:dev` (dev mode build), `bun run preview`,
-  `bun run lint` (eslint), `bun run format` (prettier --write .). Tests run via `vitest`
-  (`bun run test`).
+  `bun run lint` (eslint), `bun run format` (prettier --write .), `bun run test` (vitest),
+  `bun run validate` (content schema gate), and `bun run check` (validate + lint + test + build —
+  the full gate, identical to what `.github/workflows/ci.yml` runs on every push/PR).
 
 ⚠️ `vite.config.ts` was migrated off `@lovable.dev/vite-tanstack-config` without a verified
 `bun install` in the migration environment — it hasn't been confirmed against a real
@@ -33,10 +34,16 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
 
 - `src/data/nodes.ts` — the `Node`/`Cluster`/`Tag` types and all static content data (clusters,
   tags, nodes with `layer0`/`layer1`/`layer2`/`quiz`/`related`/`furtherReading`). This is the
-  content backbone; changes here ripple into search, review, and routing.
-- `src/routes/` — TanStack Router pages: `index` (Map/home), `explore`, `node.$id` (the node
-  reader), `review` (spaced-repetition loop), `you` (progress/reading list/glossary/scratchpad),
-  `onboarding`, `__root`.
+  content backbone; changes here ripple into search, review, and routing. 387 nodes / 38 clusters
+  as of 2026-09-04 — past the split trigger, see `TECH_DEBT.md` §2.
+- `src/lib/random.ts` — seeded PRNG + `seededPermutation`. Anything that renders in a shuffled
+  order (feed sequencing, quiz options) MUST use this, never `Math.random()`, so SSR and client
+  agree and nothing reshuffles under the user's thumb.
+- `src/lib/feedSession.ts` — per-tab feed seed + visited snapshot (sessionStorage) so the feed
+  order survives Feed → node → Back. Interest changes reset it (wired in `store.ts`).
+- `src/routes/` — TanStack Router pages: `index` (Feed/home), `skim`, `explore`, `node.$id` (the
+  node reader), `read.$id` (archived-source reader), `review` (spaced-repetition loop), `you`
+  (progress/saved/glossary/scratchpad/backup), `onboarding`, `map` (redirect), `__root`.
 - `src/components/` — feature components (`LayerReveal`, `NodeCard`, `Quiz`, `RecallReveal`,
   `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `ProgressRing`); `src/components/ui/` is
   the shadcn primitive layer — prefer composing these over hand-rolling new primitives.
@@ -51,7 +58,8 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   `docs/*.md` — planning docs; `PRODUCT-BRIEF.md` is authoritative.
 - `scripts/` — the content pipeline (permanent, idempotent, re-runnable):
   `validate-nodes.ts` (schema gate: ids, clusterId∈CLUSTERS, tags⊆TAGS, quiz 3-4 options,
-  related resolve, archive files exist — read-only, non-zero exit on error),
+  related resolve, archive files exist — read-only, non-zero exit on error; WARNS on quiz
+  answer-length leaks and zero-inbound nodes, `--strict` promotes warnings to errors),
   `archive-sources.ts <clusterId|all> [--dry-run]` (snapshot sources to `public/content/sources/`;
   idempotent, retry-capped, misses logged to `archive-failures.log`),
   `next-id.ts <PREFIX> [count]` (deterministic next free id), `audit-content.ts` (content audit:
@@ -79,11 +87,15 @@ Offline caching is silent, no download-manager UI.
   naming or `@tanstack/react-start/server-only` instead.
 - No `.env` file currently exists in this repo; if one is added, never read or print its contents.
 
+- Dates: streaks and the daily goal key on `localDay()` from `store.ts` (local calendar date) —
+  never `toISOString().slice(0, 10)`, which is the UTC date and rolls over at 04:00 in Dubai.
+
 ## Operational safety
 
 - `git push` is gated on `bun run lint` and `bun run build` passing (see
-  `.claude/hooks/pre-push-check.sh`). If either fails, fix it — don't bypass with `--no-verify`
-  or force flags without asking.
+  `.claude/hooks/pre-push-check.sh`), and GitHub Actions runs the full `bun run check` gate on
+  every push/PR. If either fails, fix it — don't bypass with `--no-verify` or force flags without
+  asking.
 - Reads of `.env`, `.env.*`, and anything under `**/secrets/**` are blocked at the tool level.
 - `dist/`, `.output/`, `.vinxi/`, `.tanstack/`, and `node_modules/` are build/tooling output —
   never hand-edit them; regenerate via `bun run build` / `bun run dev` instead.

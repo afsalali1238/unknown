@@ -13,8 +13,8 @@ const DEFAULT_VISIBLE = 8;
  * bottom, it's the shape of what's left.
  *
  * Collapsed to the first 8 clusters by default: the brief explicitly warns
- * against dropping the user onto a wall of equal choices, so the full
- * 26-cluster breadth is one deliberate tap away ("Show all") rather than
+ * against dropping the user onto a wall of equal choices, so the
+ * full 38-cluster breadth is one deliberate tap away ("Show all") rather than
  * forced on every visit to the home screen.
  */
 export function LatticeIndex({

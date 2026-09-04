@@ -42,9 +42,16 @@ To build the application for production:
 bun run build
 ```
 
+### Checks
+
+```bash
+bun run check   # validate content schema + lint + test + build (what CI runs)
+```
+
 ## Structure
 
-- `src/components/`: Reusable UI components (shadcn/ui + custom components like LayerReveal, NodeCard).
-- `src/routes/`: Tanstack Router page definitions.
-- `src/data/`: Contains `nodes.ts`, the static data layer storing all nodes and edges for the lattice.
-- `scripts/`: Helper scripts for data generation and testing.
+- `src/components/`: feature components (`LayerReveal`, `Quiz`, `RecallReveal`, `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `LatticeIndex`); `src/components/ui/` is the shadcn primitive layer.
+- `src/routes/`: TanStack Router page definitions (Feed at `/`, `/skim`, `/explore`, `/node/$id`, `/review`, `/you`, `/onboarding`, `/read/$id`).
+- `src/lib/`: Zustand store (IndexedDB-persisted), feed sequencing, seeded randomness.
+- `src/data/`: `nodes.ts`, the static data layer storing all nodes and edges for the lattice (387 nodes, 38 clusters).
+- `scripts/`: the content pipeline — `validate-nodes.ts`, `archive-sources.ts`, `next-id.ts`, `audit-content.ts`, `topics-index.ts`. See `.claude/CLAUDE.md` and `docs/PRODUCT-BRIEF.md`.

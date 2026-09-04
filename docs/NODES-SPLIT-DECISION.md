@@ -36,3 +36,8 @@ Split when **either**:
 - `validate-nodes.ts` runs before every add and in the build gate, so a bad edit can't land
   silently (the likeliest past cause of index corruption).
 - Update `TECH_DEBT.md`: count 270, new trigger numbers above.
+
+## Status update — 2026-09-04
+
+Both triggers are now exceeded: **387 nodes / 38 clusters**, source ~351 KB gzipped, client
+chunk ~442 KB gzipped. The deferral has expired; see `TECH_DEBT.md` §2 for the split plan.
