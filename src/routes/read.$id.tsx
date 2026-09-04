@@ -3,10 +3,20 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
 import { MicroLabel } from "@/components/MicroLabel";
 
+// `url` ends up as an <a href> on the page, so only accept http(s) — a
+// crafted /read/x?url=javascript:... link must not render as a clickable
+// original-source link. Anything else is dropped, not rejected: the archived
+// copy itself never depended on it.
+const httpUrl = z
+  .string()
+  .refine((u) => /^https?:\/\//i.test(u), { message: "must be http(s)" })
+  .optional()
+  .catch(undefined);
+
 const readSearchSchema = z.object({
   label: z.string().optional(),
   source: z.string().optional(),
-  url: z.string().optional(),
+  url: httpUrl,
 });
 
 export const Route = createFileRoute("/read/$id")({
