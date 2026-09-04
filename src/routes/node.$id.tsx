@@ -1,7 +1,16 @@
 import { useEffect, useMemo, useState, type MouseEvent } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { NODE_BY_ID, CLUSTER_BY_ID, type Node as NodeType } from "@/data/nodes";
+import {
+  NODE_BY_ID,
+  CLUSTER_BY_ID,
+  type NodeIndex,
+  type NodeBody,
+  type FurtherReading,
+} from "@/data/nodes";
+import { useNodeBody } from "@/lib/bodies";
+import { Bone } from "@/components/Skeleton";
 import { MicroLabel } from "@/components/MicroLabel";
+import { IdeaGlyph } from "@/components/Artwork";
 import { LayerReveal } from "@/components/LayerReveal";
 import { Quiz } from "@/components/Quiz";
 import { RecallReveal } from "@/components/RecallReveal";
@@ -92,8 +101,8 @@ function Sentences({ text, start }: { text: string; start: number }) {
 }
 
 function getRecommendationReason(
-  sourceNode: NodeType,
-  targetNode: NodeType,
+  sourceNode: NodeIndex,
+  targetNode: NodeIndex,
   interests: string[],
 ): string {
   const sharedInterests = targetNode.tags.filter((t) => interests.includes(t));
@@ -113,8 +122,6 @@ function getRecommendationReason(
 
   return "Suggested: Hand-picked for you to explore next";
 }
-
-type FurtherReading = NodeType["furtherReading"][number];
 
 // Explicitly pulls a source's archived copy into the Cache Storage the
 // service worker reads from, so "Download" actually means something —
@@ -228,7 +235,7 @@ function FurtherReadingItem({ item }: { item: FurtherReading }) {
       </button>
 
       {open && (
-        <div className="mt-3 flex flex-wrap items-center gap-3 animate-in fade-in slide-in-from-top-1 duration-200">
+        <div className="rise mt-3 flex flex-wrap items-center gap-3">
           {archived && (
             <DownloadButton
               path={item.archive!.path!}
@@ -252,8 +259,33 @@ function FurtherReadingItem({ item }: { item: FurtherReading }) {
   );
 }
 
+/** Skeleton lines while the body loads; a one-line notice if it can't. */
+function BodyPending({ state, lines }: { state: ReturnType<typeof useNodeBody>; lines: number }) {
+  if (state.status === "error") {
+    return (
+      <p className="text-sm text-ink-soft">
+        Couldn't load this part — you may be offline. The summary above is always available.
+      </p>
+    );
+  }
+  return (
+    <div aria-busy="true" className="space-y-2.5">
+      {Array.from({ length: lines }, (_, i) => (
+        <Bone key={i} className={cn("h-4", i === lines - 1 ? "w-2/3" : "w-full")} />
+      ))}
+    </div>
+  );
+}
+
 function NodeScreen() {
-  const { node } = Route.useLoaderData() as { node: NodeType };
+  const { node: index } = Route.useLoaderData() as { node: NodeIndex };
+  // The index (title, thesis, layer0, related, tags) is bundled and renders on
+  // the server; the body (layer1, layer2, quiz, further reading) is one small
+  // per-cluster fetch, cached for the session — see lib/bodies.ts. Until it
+  // lands, the deeper layers show skeletons behind their reveal buttons.
+  const bodyState = useNodeBody(index);
+  const body: NodeBody | undefined = bodyState.body;
+  const node = useMemo(() => (body ? { ...index, ...body } : index), [index, body]);
   const cluster = CLUSTER_BY_ID[node.clusterId];
   const hydrated = useHydrated();
   const visitNode = useStore((s) => s.visitNode);
@@ -276,8 +308,8 @@ function NodeScreen() {
   }, [node.id, visitNode]);
 
   const l0Sents = splitSentences(node.layer0 ?? "").length;
-  const l1Sents = splitSentences(node.layer1 ?? "").length;
-  const l2Sents = splitSentences(node.layer2 ?? "").length;
+  const l1Sents = splitSentences(body?.layer1 ?? "").length;
+  const l2Sents = splitSentences(body?.layer2 ?? "").length;
   // The layer1 LayerReveal below is always mounted (it only CSS-collapses,
   // never unmounts), so its [data-sentence] spans exist from first render —
   // count l1Sents unconditionally. The layer2 LayerReveal, unlike layer1, is
@@ -290,7 +322,7 @@ function NodeScreen() {
   // finished-then-snaps-back-to-0 "looping" symptom.
   const totalSents = l0Sents + l1Sents + (showL1 ? l2Sents : 0);
 
-  const related: NodeType[] = useMemo(() => {
+  const related: NodeIndex[] = useMemo(() => {
     const arr = node.related.map((id: string) => NODE_BY_ID[id]).filter(Boolean);
     return arr.sort((a, b) => {
       let scoreA = 0;
@@ -325,8 +357,11 @@ function NodeScreen() {
           <MicroLabel>← Home</MicroLabel>
         </Link>
 
-        <div className="mt-6">
-          <MicroLabel>
+        <div className="mt-6 rise">
+          {/* The idea's mark, large: the same glyph the feed card carried,
+              drawing itself on as the page opens. */}
+          <IdeaGlyph nodeId={node.id} animate className="h-12 w-12 -ml-1" />
+          <MicroLabel className="mt-4 block">
             {node.epistemicStatus ? `${node.epistemicStatus} · ` : ""}
             <span className="hidden sm:inline">{cluster?.title} · </span>
             {node.medium}
@@ -345,11 +380,11 @@ function NodeScreen() {
           </FirstTimeHint>
         )}
 
-        <blockquote className="mt-8 border-l-2 border-accent pl-5">
+        <blockquote className="mt-8 rise border-l-2 border-accent pl-5 [animation-delay:80ms]">
           <p className="font-serif text-xl italic leading-snug text-ink">"{node.thesis}"</p>
         </blockquote>
 
-        <section className="mt-8">
+        <section className="mt-8 rise [animation-delay:160ms]">
           <MicroLabel>The idea</MicroLabel>
           <div className="mt-3">
             <Sentences text={node.layer0 ?? ""} start={0} />
@@ -366,6 +401,7 @@ function NodeScreen() {
 
         <LayerReveal
           label="Why it works"
+          open={showL1}
           onReveal={() => {
             setShowL1(true);
             dismissHint("hint-layers");
@@ -374,35 +410,49 @@ function NodeScreen() {
           <section>
             <MicroLabel>Why it works</MicroLabel>
             <div className="mt-3">
-              <Sentences text={node.layer1 ?? ""} start={l0Sents} />
+              {body ? (
+                <Sentences text={body.layer1 ?? ""} start={l0Sents} />
+              ) : (
+                <BodyPending state={bodyState} lines={5} />
+              )}
             </div>
           </section>
         </LayerReveal>
 
         {showL1 && (
-          <LayerReveal label="How to apply it" onReveal={() => setShowL2(true)}>
+          <LayerReveal label="How to apply it" open={showL2} onReveal={() => setShowL2(true)}>
             <section>
               <MicroLabel>How to apply it</MicroLabel>
               <div className="mt-3">
-                <Sentences text={node.layer2 ?? ""} start={l0Sents + l1Sents} />
+                {body ? (
+                  <Sentences text={body.layer2 ?? ""} start={l0Sents + l1Sents} />
+                ) : (
+                  <BodyPending state={bodyState} lines={5} />
+                )}
               </div>
             </section>
           </LayerReveal>
         )}
 
         <RecallReveal text={node.thesis} />
-        <Quiz node={node} />
+        <Quiz node={index} />
 
         <section className="mt-14">
           <MicroLabel>Further reading</MicroLabel>
           <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
             Read more about the topic
           </p>
-          <ul className="mt-4 divide-y divide-line border-t border-line">
-            {node.furtherReading.map((f) => (
-              <FurtherReadingItem key={f.url} item={f} />
-            ))}
-          </ul>
+          {body ? (
+            <ul className="mt-4 divide-y divide-line border-t border-line">
+              {body.furtherReading.map((f) => (
+                <FurtherReadingItem key={f.url} item={f} />
+              ))}
+            </ul>
+          ) : (
+            <div className="mt-4 border-t border-line pt-4">
+              <BodyPending state={bodyState} lines={2} />
+            </div>
+          )}
         </section>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -428,7 +478,7 @@ function NodeScreen() {
         </div>
 
         {nextConnection && (
-          <section className="mt-16 animate-in fade-in duration-500">
+          <section className="mt-16 rise [animation-delay:240ms]">
             <Link
               to="/node/$id"
               params={{ id: nextConnection.id }}
@@ -468,7 +518,7 @@ function NodeScreen() {
                     <span>+</span>
                   </button>
                 ) : (
-                  <div className="animate-in fade-in slide-in-from-top-2 duration-300">
+                  <div className="rise">
                     <div className="flex items-baseline justify-between border-t border-line pt-8">
                       <h2 className="font-serif text-3xl text-ink">Related ideas</h2>
                       <MicroLabel>The lattice</MicroLabel>

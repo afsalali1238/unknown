@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
+import { Bone } from "@/components/Skeleton";
 import { InstallAppButton } from "@/components/InstallAppButton";
-import { useStore, currentStreak, todayISO, dueCount } from "@/lib/store";
+import { useStore, currentStreak, todayISO, dueCount, localDay } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
 import { cn } from "@/lib/utils";
@@ -34,58 +35,61 @@ export const Route = createFileRoute("/you")({
 
 function YouScreen() {
   const hydrated = useHydrated();
-  const state = useStore();
-  const streak = hydrated ? currentStreak(state.streakDays) : 0;
-  const learned = Object.values(state.gotIt).filter(Boolean).length;
-  const inReview = Object.keys(state.review).length;
-  const mastered = Object.values(state.review).filter((r) => r.box >= 4).length;
-  const bookmarked = Object.entries(state.bookmarks)
+  // Individual selectors, not a bare useStore(): this screen also hosts the
+  // Scratchpad textarea, and subscribing to the whole store re-rendered all
+  // ~600 lines of it on every keystroke.
+  const streakDays = useStore((s) => s.streakDays);
+  const gotIt = useStore((s) => s.gotIt);
+  const review = useStore((s) => s.review);
+  const bookmarks = useStore((s) => s.bookmarks);
+  const dailyGoal = useStore((s) => s.dailyGoal);
+  const dailyProgress = useStore((s) => s.dailyProgress);
+
+  const streak = hydrated ? currentStreak(streakDays) : 0;
+  const learned = Object.values(gotIt).filter(Boolean).length;
+  const inReview = Object.keys(review).length;
+  const mastered = Object.values(review).filter((r) => r.box >= 4).length;
+  const bookmarked = Object.entries(bookmarks)
     .filter(([, v]) => v)
     .map(([id]) => NODE_BY_ID[id])
     .filter(Boolean);
+  const todayCount = hydrated ? dailyProgress[todayISO()] || 0 : 0;
+  const goal = hydrated ? dailyGoal : 3;
 
   return (
     <div className="px-5 pt-8 pb-10 space-y-12">
-      <header>
+      <header className="rise">
         <MicroLabel>You</MicroLabel>
         <h1 className="mt-2 font-serif text-4xl text-ink">Your practice</h1>
       </header>
 
-      <Section title="Daily Goal" icon={Target}>
+      <Section title="Daily Goal" index={1} icon={Target}>
         <div className="flex flex-col gap-2">
           <div className="flex items-baseline gap-3">
-            <span className="font-mono text-6xl text-accent leading-none">
-              {hydrated ? state.dailyProgress[todayISO()] || 0 : 0}
-            </span>
-            <span className="font-mono text-2xl text-ink-soft leading-none">
-              / {hydrated ? state.dailyGoal : 3}
-            </span>
+            <span className="font-mono text-6xl text-accent leading-none">{todayCount}</span>
+            <span className="font-mono text-2xl text-ink-soft leading-none">/ {goal}</span>
             <MicroLabel>nodes learned today</MicroLabel>
           </div>
           <div className="h-2 w-full bg-line overflow-hidden mt-2">
             <div
-              className="h-full bg-accent transition-all duration-500 ease-out"
-              style={{
-                width: `${Math.min(100, ((hydrated ? state.dailyProgress[todayISO()] || 0 : 0) / (hydrated ? state.dailyGoal : 3)) * 100)}%`,
-              }}
+              className="h-full bg-accent transition-[width] duration-[var(--duration-slow)] ease-[var(--ease-out)]"
+              style={{ width: `${Math.min(100, (todayCount / goal) * 100)}%` }}
             />
           </div>
-          {hydrated && (state.dailyProgress[todayISO()] || 0) >= state.dailyGoal && (
-            <p className="text-xs text-accent mt-1 animate-in fade-in slide-in-from-bottom-2">
-              Daily goal achieved! Great work.
-            </p>
+          {hydrated && todayCount >= goal && (
+            <p className="rise mt-1 text-xs text-accent">Daily goal achieved! Great work.</p>
           )}
         </div>
       </Section>
 
-      <Section title="Streak" icon={BarChart3}>
+      <Section title="Streak" index={2} icon={BarChart3}>
         <div className="flex items-baseline gap-3">
           <span className="font-mono text-6xl text-ink leading-none">{streak}</span>
           <MicroLabel>consecutive days</MicroLabel>
         </div>
         <div className="mt-5 flex gap-1">
           {last14Days().map((d) => {
-            const on = hydrated && state.streakDays.includes(d);
+            const on = hydrated && streakDays.includes(d);
             return (
               <div key={d} title={d} className={cn("h-2 flex-1", on ? "bg-ink" : "bg-line")} />
             );
@@ -93,7 +97,7 @@ function YouScreen() {
         </div>
       </Section>
 
-      <Section title="Stats" icon={BarChart3}>
+      <Section title="Stats" index={3} icon={BarChart3}>
         <div className="grid grid-cols-3 gap-3">
           <Stat label="Learned" value={learned} hydrated={hydrated} />
           <Stat label="In review" value={inReview} hydrated={hydrated} />
@@ -111,7 +115,7 @@ function YouScreen() {
 
       <Section title="Saved" icon={Bookmark}>
         {!hydrated ? (
-          <div className="h-24 animate-pulse border border-line bg-line/20" aria-hidden="true" />
+          <Bone className="h-24 border border-line" />
         ) : bookmarked.length === 0 ? (
           <div className="border border-line border-dashed p-6 text-center">
             <p className="font-serif text-lg text-ink">Nothing saved yet.</p>
@@ -122,7 +126,7 @@ function YouScreen() {
               to="/"
               className="mt-4 inline-block bg-ink text-paper px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em]"
             >
-              Explore the map
+              Open the feed
             </Link>
           </div>
         ) : (
@@ -171,9 +175,9 @@ function Reading() {
     : [];
 
   return (
-    <Section title="Reading" icon={BookOpen}>
+    <Section title="Reading" index={4} icon={BookOpen}>
       {!hydrated ? (
-        <div className="h-16 animate-pulse border border-line bg-line/20" aria-hidden="true" />
+        <Bone className="h-16 border border-line" />
       ) : (
         <>
           <div className="flex items-baseline gap-3">
@@ -233,21 +237,24 @@ function Reading() {
   );
 }
 
+// Review is a bottom-nav tab (with the due badge) — this section is the
+// progress view of the same queue: how it's distributed across the Leitner
+// boxes, plus a link through. It deliberately doesn't restate the mechanic
+// the tab already explains.
 function ReviewSection() {
   const hydrated = useHydrated();
   const review = useStore((s) => s.review);
   const due = hydrated ? dueCount(review) : 0;
-  const total = Object.keys(review).length;
+  const entries = Object.values(review);
+  const total = entries.length;
+  const boxes = [0, 1, 2, 3, 4, 5].map((b) => entries.filter((r) => r.box === b).length);
+  const max = Math.max(1, ...boxes);
 
   return (
-    <Section title="Review" icon={RotateCcw}>
-      <p className="text-sm text-ink-soft">
-        Spaced repetition for what you've already read — a quiz queue that resurfaces ideas right
-        before you'd forget them.
-      </p>
+    <Section title="Review" index={5} icon={RotateCcw}>
       <Link
         to="/review"
-        className="mt-4 flex items-center justify-between border border-line p-4 hover:border-ink"
+        className="flex items-center justify-between border border-line p-4 hover:border-ink"
       >
         <div>
           <p className="font-serif text-lg text-ink">
@@ -263,6 +270,28 @@ function ReviewSection() {
         </div>
         <ArrowRight className="h-4 w-4 text-ink-soft" />
       </Link>
+      {hydrated && total > 0 && (
+        <div className="mt-4">
+          <MicroLabel>Leitner boxes · 0 = just learned, 5 = 35-day interval</MicroLabel>
+          <div className="mt-2 flex items-end gap-1" aria-hidden="true">
+            {boxes.map((count, b) => (
+              <div key={b} className="flex flex-1 flex-col items-center gap-1">
+                <div className="flex h-10 w-full items-end">
+                  <div
+                    className={cn(
+                      "w-full origin-bottom transition-[height] duration-[var(--duration-slow)] ease-[var(--ease-out)]",
+                      b >= 4 ? "bg-accent" : "bg-ink",
+                    )}
+                    style={{ height: `${Math.max(count > 0 ? 8 : 2, (count / max) * 100)}%` }}
+                  />
+                </div>
+                <span className="font-mono text-[10px] text-ink-soft">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="sr-only">{boxes.map((c, b) => `box ${b}: ${c}`).join(", ")}</p>
+        </div>
+      )}
     </Section>
   );
 }
@@ -271,13 +300,19 @@ function Section({
   title,
   icon: Icon,
   children,
+  index,
 }: {
   title: string;
   icon?: React.ElementType;
   children: React.ReactNode;
+  /** Position on the page; sections settle in top-to-bottom. */
+  index?: number;
 }) {
   return (
-    <section className="border-t border-line pt-6">
+    <section
+      className="settle border-t border-line pt-6"
+      style={{ "--i": index ?? 0 } as React.CSSProperties}
+    >
       <div className="flex items-center gap-2 text-ink-soft">
         {Icon && <Icon className="w-4 h-4" />}
         <MicroLabel>{title}</MicroLabel>
@@ -293,7 +328,7 @@ function Stat({ label, value, hydrated }: { label: string; value: number; hydrat
       {hydrated ? (
         <p className="font-mono text-3xl text-ink leading-none">{value}</p>
       ) : (
-        <span aria-hidden="true" className="block h-7 w-8 animate-pulse rounded-sm bg-line" />
+        <Bone className="h-7 w-8" />
       )}
       <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-soft">
         {label}
@@ -425,7 +460,8 @@ function last14Days(): string[] {
   for (let i = 13; i >= 0; i--) {
     const x = new Date(d);
     x.setDate(d.getDate() - i);
-    out.push(x.toISOString().slice(0, 10));
+    // Local calendar days, same as touchStreak writes them.
+    out.push(localDay(x));
   }
   return out;
 }

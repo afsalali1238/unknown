@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage, type StateStorage } from "zustand/middleware";
 import { get, set, del } from "idb-keyval";
+import { resetFeedSession } from "./feedSession";
 
 const idbStorage: StateStorage = {
   getItem: async (name: string): Promise<string | null> => {
@@ -12,6 +13,16 @@ const idbStorage: StateStorage = {
   removeItem: async (name: string): Promise<void> => {
     await del(name);
   },
+};
+
+// Off the browser (SSR render, vitest) there is nothing to persist to. The
+// previous `undefined as never` made zustand's persist call
+// `undefined.setItem` and throw on the first `set()` outside a window —
+// which is also why store actions had never been unit-tested.
+const noopStorage: StateStorage = {
+  getItem: async () => null,
+  setItem: async () => {},
+  removeItem: async () => {},
 };
 
 export const LEITNER_DAYS = [0, 1, 3, 7, 16, 35];
@@ -112,8 +123,24 @@ const initial: State = {
   theme: "system",
 };
 
+/**
+ * Calendar day of `d` in the user's LOCAL timezone, as "YYYY-MM-DD".
+ *
+ * Deliberately not `toISOString().slice(0, 10)` — that is the UTC date, which
+ * meant the daily goal and the streak rolled over at 04:00 in Dubai and at
+ * 16:00 in California, so one afternoon session could count as two "days"
+ * (or a late-evening session as tomorrow). Every streak/goal calculation
+ * must go through this so they all agree on what "today" is.
+ */
+export function localDay(d: Date = new Date()): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
 export function todayISO() {
-  return new Date().toISOString().slice(0, 10);
+  return localDay();
 }
 
 function touchStreak(days: string[]): string[] {
@@ -122,12 +149,30 @@ function touchStreak(days: string[]): string[] {
   return [...days, t].sort();
 }
 
+/**
+ * Schedule (or keep) a node in the Leitner queue when the user marks it
+ * "Got it". Onboarding promises exactly this ("Mark ideas you've mastered
+ * for spaced repetition"), but markGotIt used to only flip a flag — a Feed
+ * user who tapped ✓ on fifty cards never had a single one resurface in
+ * Review. Seeds box 1 (due tomorrow) so the first check happens after one
+ * night's sleep; a node already in the queue is left exactly where it is,
+ * so re-tapping never resets earned progress.
+ */
+function scheduleIfNew(review: Record<string, ReviewEntry>, id: string) {
+  if (review[id]) return review;
+  return { ...review, [id]: { box: 1, due: Date.now() + LEITNER_DAYS[1] * DAY_MS } };
+}
+
 export const useStore = create<State & Actions>()(
   persist(
     (set, get) => ({
       ...initial,
       markGotIt: (id) =>
-        set((s) => ({ gotIt: { ...s.gotIt, [id]: true }, streakDays: touchStreak(s.streakDays) })),
+        set((s) => ({
+          gotIt: { ...s.gotIt, [id]: true },
+          review: scheduleIfNew(s.review, id),
+          streakDays: touchStreak(s.streakDays),
+        })),
       toggleBookmark: (id) =>
         set((s) => ({ bookmarks: { ...s.bookmarks, [id]: !s.bookmarks[id] } })),
       submitQuiz: (id, correct) =>
@@ -183,14 +228,24 @@ export const useStore = create<State & Actions>()(
         }
       },
       reset: () => set(initial),
-      setInterests: (tags) => set({ interests: tags }),
-      toggleInterest: (tag) =>
+      // Any change to interests invalidates the session's feed order (see
+      // lib/feedSession.ts) so the new topics take effect immediately.
+      setInterests: (tags) => {
+        resetFeedSession();
+        set({ interests: tags });
+      },
+      toggleInterest: (tag) => {
+        resetFeedSession();
         set((s) => ({
           interests: s.interests.includes(tag)
             ? s.interests.filter((t) => t !== tag)
             : [...s.interests, tag],
-        })),
-      completeOnboarding: (tags) => set({ interests: tags, onboardingComplete: true }),
+        }));
+      },
+      completeOnboarding: (tags) => {
+        resetFeedSession();
+        set({ interests: tags, onboardingComplete: true });
+      },
       skipOnboarding: () => set({ onboardingComplete: true }),
       redoOnboarding: () => set({ onboardingComplete: false }),
       setTtsRate: (rate) => set({ ttsRate: rate }),
@@ -220,9 +275,7 @@ export const useStore = create<State & Actions>()(
     {
       name: "unknown:v1",
       version: 2,
-      storage: createJSONStorage(() =>
-        typeof window !== "undefined" ? idbStorage : (undefined as never),
-      ),
+      storage: createJSONStorage(() => (typeof window !== "undefined" ? idbStorage : noopStorage)),
       skipHydration: false,
       // Merges persisted state with defaults so adding new fields never wipes
       // existing user data (streaks, bookmarks, gotIt, etc.).
@@ -256,16 +309,37 @@ export function dueIds(review: Record<string, ReviewEntry>): string[] {
     .map(([id]) => id);
 }
 
-export function currentStreak(days: string[]): number {
+/** Earliest future `due` timestamp across the queue, or null if none is scheduled ahead. */
+export function nextDueAt(review: Record<string, ReviewEntry>, now: number = Date.now()) {
+  let next: number | null = null;
+  for (const r of Object.values(review)) {
+    if (r.due > now && (next === null || r.due < next)) next = r.due;
+  }
+  return next;
+}
+
+/** "in 3 hours" / "tomorrow" / "in 5 days" — coarse on purpose, this is a reading app not a timer. */
+export function formatUntil(ts: number, now: number = Date.now()): string {
+  const ms = ts - now;
+  if (ms <= 0) return "now";
+  const hours = Math.round(ms / 3600000);
+  if (hours < 1) return "within the hour";
+  if (hours < 20) return `in ${hours} hour${hours === 1 ? "" : "s"}`;
+  const days = Math.round(ms / DAY_MS);
+  if (days <= 1) return "tomorrow";
+  return `in ${days} days`;
+}
+
+export function currentStreak(days: string[], now: Date = new Date()): number {
   if (!days.length) return 0;
   const set = new Set(days);
   let count = 0;
-  const d = new Date();
-  if (!set.has(d.toISOString().slice(0, 10))) {
+  const d = new Date(now);
+  if (!set.has(localDay(d))) {
     d.setDate(d.getDate() - 1);
-    if (!set.has(d.toISOString().slice(0, 10))) return 0;
+    if (!set.has(localDay(d))) return 0;
   }
-  while (set.has(d.toISOString().slice(0, 10))) {
+  while (set.has(localDay(d))) {
     count++;
     d.setDate(d.getDate() - 1);
   }

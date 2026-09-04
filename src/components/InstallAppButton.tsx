@@ -76,7 +76,7 @@ export function InstallAppButton({ variant = "button" }: { variant?: "button" | 
           <span>
             <span className="font-serif text-base text-ink">Download for offline</span>
             <span className="mt-1 block font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-              Install the app — the map, every node, and review work with no connection
+              Install the app — the feed, every node, and Review work with no connection
             </span>
           </span>
           <span className="font-mono text-lg text-accent">⇩</span>

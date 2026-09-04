@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useStore } from "@/lib/store";
-import type { Node } from "@/data/nodes";
+import type { NodeIndex as Node } from "@/data/nodes";
 
 /**
  * Real narration via the browser's Web Speech API (SpeechSynthesis).
