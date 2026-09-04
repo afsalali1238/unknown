@@ -22,6 +22,13 @@
  *     exists on disk under public/<path>  (path is the served URL, e.g.
  *     "content/sources/A1-0.md" -> public/content/sources/A1-0.md)
  *   - (WARN) related is empty; quiz.explanation missing; id doesn't match clusterId prefix
+ *   - (WARN) quiz answer-length leak: the correct option is >LENGTH_LEAK_RATIO x longer
+ *     than the longest distractor (the app shuffles positions, but "pick the longest"
+ *     still works if distractors are terse — tighten or lengthen them)
+ *   - (WARN) no inbound links: no other node's `related` points here, so the node is
+ *     unreachable via "follow the thread" — add a back-link from a related node
+ *
+ * Pass --strict to promote warnings to errors (use in CI once the backlog is cleared).
  */
 import path from "path";
 import fs from "fs";
@@ -45,6 +52,10 @@ type Node = {
 };
 
 const ARCHIVE_STATUSES = new Set(["full", "excerpt", "unavailable"]);
+// Correct option longer than the best distractor by more than this factor is
+// flagged. Measured 2026-09-04: 321/387 nodes exceed 1.3x, 193 exceed 2x — the
+// authored answers are systematically the most detailed option.
+const LENGTH_LEAK_RATIO = 1.3;
 const PUBLIC_DIR = path.join(process.cwd(), "public");
 
 const errors: string[] = [];
@@ -54,6 +65,7 @@ const warn = (id: string, msg: string) => warnings.push(`  [${id}] ${msg}`);
 
 async function main() {
   const quiet = process.argv.includes("--quiet");
+  const strict = process.argv.includes("--strict");
   const nodesPath = path.join(process.cwd(), "src/data/nodes.ts");
   const mod = await import(nodesPath);
   const NODES: Node[] = mod.NODES;
@@ -65,8 +77,13 @@ async function main() {
   const tagSet = new Set(TAGS);
   const idSet = new Set<string>();
 
-  // First pass: collect ids so related-checks can resolve forward references
-  for (const n of NODES) if (typeof n.id === "string") idSet.add(n.id);
+  // First pass: collect ids so related-checks can resolve forward references,
+  // and count inbound links so unreachable nodes can be flagged.
+  const inbound = new Map<string, number>();
+  for (const n of NODES) {
+    if (typeof n.id === "string") idSet.add(n.id);
+    for (const r of n.related ?? []) inbound.set(r, (inbound.get(r) ?? 0) + 1);
+  }
 
   const seen = new Set<string>();
   for (const n of NODES) {
@@ -110,6 +127,23 @@ async function main() {
         err(id, `quiz.correctIndex must be an integer 0..${maxIdx} (is ${q.correctIndex})`);
       }
       if (!q.explanation) warn(id, "quiz has no explanation");
+      if (
+        Array.isArray(q.options) &&
+        typeof q.correctIndex === "number" &&
+        q.options[q.correctIndex] !== undefined
+      ) {
+        const correctLen = q.options[q.correctIndex].length;
+        const longestDistractor = Math.max(
+          0,
+          ...q.options.filter((_, i) => i !== q.correctIndex).map((o) => o.length),
+        );
+        if (longestDistractor > 0 && correctLen > LENGTH_LEAK_RATIO * longestDistractor) {
+          warn(
+            id,
+            `quiz answer-length leak: correct option is ${(correctLen / longestDistractor).toFixed(1)}x the longest distractor`,
+          );
+        }
+      }
     }
 
     // related
@@ -117,6 +151,9 @@ async function main() {
       if (!idSet.has(r)) err(id, `related id "${r}" does not resolve to a real node`);
     }
     if ((n.related ?? []).length === 0) warn(id, "node has no related links");
+    if (id !== "<missing-id>" && !inbound.has(id)) {
+      warn(id, "no inbound links — unreachable via 'follow the thread'");
+    }
 
     // furtherReading
     (n.furtherReading ?? []).forEach((f, i) => {
@@ -145,9 +182,17 @@ async function main() {
 
   // Report
   console.log(`Validated ${NODES.length} nodes.`);
-  if (!quiet && warnings.length) {
-    console.log(`\n${warnings.length} WARNING(S):`);
-    console.log(warnings.join("\n"));
+  if (strict && warnings.length) {
+    errors.push(...warnings);
+    warnings.length = 0;
+  }
+  if (warnings.length) {
+    if (quiet) {
+      console.log(`${warnings.length} warning(s) (run without --quiet to list them).`);
+    } else {
+      console.log(`\n${warnings.length} WARNING(S):`);
+      console.log(warnings.join("\n"));
+    }
   }
   if (errors.length) {
     console.log(`\n${errors.length} ERROR(S):`);

@@ -71,7 +71,9 @@ async function main() {
     const s = String(v ?? "");
     return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
   };
-  const csvRows: string[] = ["cluster_id,cluster_title,node_id,title,author,year,category_subtopic"];
+  const csvRows: string[] = [
+    "cluster_id,cluster_title,node_id,title,author,year,category_subtopic",
+  ];
   for (const c of CLUSTERS) {
     const nodes = NODES.filter((n) => n.clusterId === c.id).sort((a, b) =>
       a.id.localeCompare(b.id, undefined, { numeric: true }),

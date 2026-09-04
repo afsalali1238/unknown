@@ -33,7 +33,11 @@ if (fs.existsSync(dir)) {
     // version (no needless cache churn); any deploy that does gets a new
     // version automatically, so the old caches are guaranteed to be dropped
     // in the activate handler - nobody has to remember to bump anything.
-    const hash = crypto.createHash("sha256").update(manifestList.join(",")).digest("hex").slice(0, 10);
+    const hash = crypto
+      .createHash("sha256")
+      .update(manifestList.join(","))
+      .digest("hex")
+      .slice(0, 10);
     sw = sw.replace(/const VERSION = "[^"]+";/, `const VERSION = "unknown-${hash}";`);
 
     sw = sw.replace(replaceTarget, newManifest);

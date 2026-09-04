@@ -1,0 +1,53 @@
+# The same gate as .claude/hooks/pre-push-check.sh, but enforced for every
+# push and PR regardless of who (or what) made it. The hook only runs inside
+# Claude Code sessions; a human pushing from a terminal — or a squash-merge
+# in the GitHub UI — used to bypass it entirely, which is how `main` ended up
+# with lint failing (2026-09-04).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install (lockfile must be in sync)
+        run: bun install --frozen-lockfile
+
+      - name: Validate content schema
+        run: bun run scripts/validate-nodes.ts --quiet
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Unit tests
+        run: bun run test
+
+      - name: Production build
+        run: bun run build
+
+      - name: Bundle size report
+        # Informational for now. TECH_DEBT §2's split trigger (400 KB gzipped)
+        # is already exceeded; once the data layer is split, turn this into a
+        # hard limit so it can't silently regress.
+        run: |
+          echo "### Client bundle (gzipped)" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          for f in dist/client/assets/*.js; do
+            printf "%8s KB  %s\n" "$(( $(gzip -c "$f" | wc -c) / 1024 ))" "$(basename "$f")"
+          done | sort -rn | head -8 >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
