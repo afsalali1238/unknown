@@ -1,7 +1,7 @@
 # Topics Index (auto-generated — do not hand-edit)
 
 Regenerate with `bun run scripts/topics-index.ts`. Last generated: 2026-09-05.
-Total clusters: 38. Total nodes: 387.
+Total clusters: 38. Total nodes: 437.
 
 Internal reference only — not linked from the app, not served from public/.
 
@@ -77,7 +77,7 @@ _Cycles, debt, and reading the economy like a value investor_
 | D13 | 20 Golden Rules from Peter Lynch | Peter Lynch | Investing |
 | D14 | The Memory Supercycle: When Demand Outruns What Physics Can Build | SK hynix (Chey Tae-won); TSMC; ASML | Macro & Investing |
 
-## E — Finance Theory (5)
+## E — Finance Theory (8)
 _The math that priced risk itself_
 
 | id | title | author | category/subtopic |
@@ -87,8 +87,11 @@ _The math that priced risk itself_
 | E3 | EBITDA, Decomposed | Abir Haddoud | Financial Analysis |
 | E4 | Revenue, Profit, and Cash Are Not the Same Number | Nathan Liao, CMA | Financial Literacy |
 | E5 | How to Select a Valuation Method | BojanFin.com | Valuation |
+| E6 | The Capital Asset Pricing Model (CAPM) | William Sharpe | Finance Theory |
+| E7 | The Efficient Market Hypothesis | Eugene Fama | Finance Theory |
+| E8 | The Kelly Criterion & Position Sizing | John L. Kelly / Edward Thorp | Finance Theory |
 
-## F — Foundational Tech (5)
+## F — Foundational Tech (8)
 _The plumbing ideas the entire internet sits on_
 
 | id | title | author | category/subtopic |
@@ -98,6 +101,9 @@ _The plumbing ideas the entire internet sits on_
 | F3 | The Anatomy of a Large-Scale Hypertextual Web Search Engine | Sergey Brin, Lawrence Page | Technical Paper |
 | F4 | The Internet Tidal Wave | Bill Gates | Worldview |
 | F5 | Increasing Returns and the New World of Business | W. Brian Arthur | Worldview |
+| F6 | TCP/IP & the End-to-End Principle | Vint Cerf & Bob Kahn | Foundational Tech |
+| F7 | The Unix Philosophy | Ken Thompson & Dennis Ritchie | Foundational Tech |
+| F8 | Moore's Law & the Exponential | Gordon Moore | Foundational Tech |
 
 ## G — AI / ML Papers (10)
 _The technical papers that built the modern AI stack, in order_
@@ -511,15 +517,21 @@ _Natural selection, biomimicry, and the selfish gene — how blind processes bui
 | AB8 | The Molecular Structure of DNA | James Watson & Francis Crick | Genetics |
 | AB9 | The Red Queen Hypothesis | Leigh Van Valen | Evolutionary Biology |
 
-## AC — Logic & Mathematics (2)
+## AC — Logic & Mathematics (8)
 _Gödel's incompleteness, probability, and calculus fundamentals — the rules underneath every other rule_
 
 | id | title | author | category/subtopic |
 | --- | --- | --- | --- |
 | AC1 | Gödel's Incompleteness Theorems | Kurt Gödel | Mathematical Logic |
 | AC2 | Bayes' Theorem | Thomas Bayes (published by Richard Price) | Probability Theory |
+| AC3 | Turing Machines & the Halting Problem | Alan Turing | Computation |
+| AC4 | Russell's Paradox & the Foundations Crisis | Bertrand Russell | Mathematical Logic |
+| AC5 | The Law of Large Numbers | Jacob Bernoulli / Andrey Kolmogorov | Probability Theory |
+| AC6 | Fractals & Self-Similarity | Benoît Mandelbrot | Geometry |
+| AC7 | The Monty Hall Problem & Conditional Probability | Steve Selvin / Marilyn vos Savant | Probability Theory |
+| AC8 | P vs NP & Computational Complexity | Stephen Cook / Leonid Levin | Computation |
 
-## AD — Neuroscience & Biology (4)
+## AD — Neuroscience & Biology (8)
 _Neuroplasticity, the default mode network, and the hardware the mind runs on_
 
 | id | title | author | category/subtopic |
@@ -528,8 +540,12 @@ _Neuroplasticity, the default mode network, and the hardware the mind runs on_
 | AD2 | The Default Mode Network | Marcus Raichle | Neuroscience |
 | AD3 | Active Parents Raise Active Children | Lynn L. Moore et al. | Health & Behavior |
 | AD4 | Neuroplasticity: The Brain That Changes Itself | Norman Doidge | Neuroscience |
+| AD5 | Circadian Rhythm & Sleep Homeostasis | Nathaniel Kleitman / Satchin Panda | Neuroscience |
+| AD6 | Fight-or-Flight & the Amygdala Hijack | Walter Cannon / Joseph LeDoux | Neuroscience |
+| AD7 | Mirror Neurons & Embodied Simulation | Giacomo Rizzolatti | Neuroscience |
+| AD8 | Epigenetics: Experience Writes on the Genome | Conrad Waddington / Michael Meaney | Biology |
 
-## AE — Storytelling & Myth (3)
+## AE — Storytelling & Myth (8)
 _The hero's journey, mimetic desire, and the archetypes every story keeps reusing_
 
 | id | title | author | category/subtopic |
@@ -537,22 +553,39 @@ _The hero's journey, mimetic desire, and the archetypes every story keeps reusin
 | AE1 | The Hero's Journey (Monomyth) | Joseph Campbell | Comparative Mythology |
 | AE2 | Mimetic Desire | René Girard | Literary Theory / Anthropology |
 | AE3 | How to Be a Great Storyteller | Lisa Christen, Forbes Coaches Council | Storytelling |
+| AE4 | The Narrative Fallacy | Nassim Nicholas Taleb | Critical Thinking |
+| AE5 | Pixar's 22 Rules of Storytelling | Emma Coats | Storytelling |
+| AE6 | Kishōtenketsu: The Four-Act Without Conflict | Japanese & Chinese narrative tradition | Storytelling |
+| AE7 | The Storytelling Animal | Jonathan Gottschall | Psychology |
+| AE8 | The Seven Basic Plots | Christopher Booker | Comparative Literature |
 
-## AF — Network Theory (2)
+## AF — Network Theory (8)
 _Metcalfe's law, contagion, and scale-free graphs — why connected systems behave the way they do_
 
 | id | title | author | category/subtopic |
 | --- | --- | --- | --- |
 | AF1 | Metcalfe's Law | Robert Metcalfe | Network Theory |
 | AF2 | Six Degrees of Separation (The Small-World Experiment) | Stanley Milgram | Network Theory |
+| AF3 | The Strength of Weak Ties | Mark Granovetter | Network Theory |
+| AF4 | Power Laws & Scale-Free Networks | Albert-László Barabási | Network Theory |
+| AF5 | Dunbar's Number | Robin Dunbar | Anthropology |
+| AF6 | Reed's Law & Group-Forming Networks | David P. Reed | Network Theory |
+| AF7 | Preferential Attachment & the Matthew Effect | Robert K. Merton / Derek de Solla Price | Network Theory |
+| AF8 | Threshold Models & Cascades | Mark Granovetter / Thomas Schelling | Network Theory |
 
-## AG — Design & Engineering (2)
+## AG — Design & Engineering (8)
 _Affordances, constraints, and form follows function — how physical things get built to work_
 
 | id | title | author | category/subtopic |
 | --- | --- | --- | --- |
 | AG1 | Form Follows Function | Louis Sullivan | Design Philosophy |
 | AG2 | Affordances | James J. Gibson | Perceptual Psychology / Design |
+| AG3 | The Design of Everyday Things & Signifiers | Don Norman | Design Philosophy |
+| AG4 | Dieter Rams' 10 Principles of Good Design | Dieter Rams | Design Philosophy |
+| AG5 | Jobs-to-Be-Done | Clayton Christensen / Bob Moesta | Product Theory |
+| AG6 | Conway's Law | Melvin Conway | Systems / Organization |
+| AG7 | Gall's Law | John Gall | Systems |
+| AG8 | MAYA: Most Advanced Yet Acceptable | Raymond Loewy | Design Philosophy |
 
 ## AH — History & Civilizational Arcs (9)
 _Big history, institutional decay, and revolutions — the long patterns civilizations repeat_
@@ -569,15 +602,21 @@ _Big history, institutional decay, and revolutions — the long patterns civiliz
 | AH8 | Why Nations Fail | Daron Acemoglu & James A. Robinson | History |
 | AH9 | 1177 B.C.: The Year Civilization Collapsed | Eric H. Cline | History |
 
-## AI — Governance & Power (2)
+## AI — Governance & Power (8)
 _Machiavelli, statecraft, and monopoly — how the sovereign actually holds and loses power_
 
 | id | title | author | category/subtopic |
 | --- | --- | --- | --- |
 | AI1 | The Prince: Power as It Actually Works | Niccolò Machiavelli | Political Theory |
 | AI2 | Regulatory Capture | George Stigler | Political Economy |
+| AI3 | Leviathan & the Social Contract | Thomas Hobbes | Political Theory |
+| AI4 | The Dictator's Handbook & Selectorate Theory | Bruce Bueno de Mesquita & Alastair Smith | Political Economy |
+| AI5 | Checks and Balances & the Separation of Powers | Montesquieu / The Federalists | Governance |
+| AI6 | The Iron Law of Oligarchy | Robert Michels | Sociology |
+| AI7 | Soft Power vs Hard Power | Joseph Nye | International Relations |
+| AI8 | The Overton Window | Joseph P. Overton | Policy Theory |
 
-## AJ — Game Theory & Strategy (3)
+## AJ — Game Theory & Strategy (8)
 _Nash equilibrium, signaling, and the prisoner's dilemma — strategy when others are also thinking_
 
 | id | title | author | category/subtopic |
@@ -585,14 +624,25 @@ _Nash equilibrium, signaling, and the prisoner's dilemma — strategy when other
 | AJ1 | Nash Equilibrium | John Nash | Game Theory |
 | AJ2 | The Prisoner's Dilemma | Merrill Flood and Melvin Dresher | Game Theory |
 | AJ3 | Game Theory (Bonanno) | Giacomo Bonanno | Game Theory |
+| AJ4 | Repeated Games & Axelrod's Tournaments | Robert Axelrod | Game Theory |
+| AJ5 | Signaling & Costly Signaling Theory | Amotz Zahavi / Michael Spence | Game Theory |
+| AJ6 | Chicken & Brinkmanship | Bertrand Russell / Thomas Schelling | Game Theory |
+| AJ7 | Mechanism Design & Auctions | Leonid Hurwicz / William Vickrey | Economics |
+| AJ8 | Zero-Sum vs Positive-Sum Games | John von Neumann / Oskar Morgenstern | Game Theory |
 
-## AK — Media Theory & Information (2)
+## AK — Media Theory & Information (8)
 _McLuhan, hyperreality, and the medium as the message — how the channel shapes the content_
 
 | id | title | author | category/subtopic |
 | --- | --- | --- | --- |
 | AK1 | The Medium Is the Message | Marshall McLuhan | Media Theory |
 | AK2 | Simulacra and Simulation (Hyperreality) | Jean Baudrillard | Media Theory |
+| AK3 | Manufacturing Consent | Noam Chomsky & Edward Herman | Media Theory |
+| AK4 | Amusing Ourselves to Death | Neil Postman | Media Theory |
+| AK5 | The Attention Merchants | Tim Wu | Media Economics |
+| AK6 | The Filter Bubble | Eli Pariser | Media Theory |
+| AK7 | Agenda-Setting Theory | Maxwell McCombs & Donald Shaw | Media Effects |
+| AK8 | The Shallows: How the Internet Changes the Brain | Nicholas Carr | Media Effects |
 
 ## AL — Negotiation & Persuasion (20)
 _The primary texts behind getting to yes, saying no, and changing someone's mind on purpose_

@@ -20,10 +20,10 @@ export const CLUSTER_E: Node[] = [
       question:
         "Why doesn't the Black-Scholes formula require knowing an investor's risk tolerance or the stock's expected future return?",
       options: [
-        "Because options are always priced at a fixed government-set rate — this alternative is popular online but misstates the mechanism the author defends.",
-        "Because the formula only applies to options that are guaranteed to expire worthless — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because options are always priced at a fixed government-set rate — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because the formula only applies to options that are guaranteed to expire worthless — a common simplification that omits the key mechanism behind the effect.",
         "Because it prices the option via a riskless hedge whose return must equal the risk-free rate regardless of investor preferences — only volatility, not expected return, matters",
-        "Because Black and Scholes assumed all investors are risk-neutral by law — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because Black and Scholes assumed all investors are risk-neutral by law — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 2,
       explanation:
@@ -75,9 +75,9 @@ export const CLUSTER_E: Node[] = [
       question:
         "What is the practical danger of confusing closely related finance terms, such as liquidity and solvency?",
       options: [
-        "There is no real danger; the terms are interchangeable in practice. — this alternative is popular online but misstates the mechanism.",
-        "It only matters for accountants, not investors. — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "It affects tax filings but nothing else. — this view reverses the causal direction the source material argues for.",
+        "There is no real danger; the terms are interchangeable in practice. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "It only matters for accountants, not investors. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It affects tax filings but nothing else. — a common simplification that omits the key mechanism behind the effect.",
         "Conflating two distinct concepts can lead to badly misjudging how serious a company's financial problem actually is.",
       ],
       correctIndex: 3,
@@ -120,10 +120,10 @@ export const CLUSTER_E: Node[] = [
     quiz: {
       question: "What is the primary blind spot of EBITDA as a performance metric?",
       options: [
-        "It excludes revenue entirely from the calculation. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
+        "It excludes revenue entirely from the calculation. — a compact misstatement that leaves out the scope in which the claim holds.",
         "It is not actual cash flow and excludes capital expenditures, which can make capital-intensive businesses look more efficient than their true cash generation supports.",
-        "It cannot be calculated for private companies. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "It only applies to companies with no debt. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "It cannot be calculated for private companies. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It only applies to companies with no debt. — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 1,
       explanation:
@@ -165,10 +165,10 @@ export const CLUSTER_E: Node[] = [
     quiz: {
       question: "Why can a company be profitable on paper but still fail from a cash problem?",
       options: [
-        "Because profit and cash are always identical figures. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
+        "Because profit and cash are always identical figures. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
         "Because profit is an accounting measure while cash tracks actual liquid money on hand, and timing gaps (delayed payments, prepayments) mean the two can diverge significantly.",
-        "Because revenue always equals cash by definition. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Because cash flow is irrelevant to business survival. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because revenue always equals cash by definition. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because cash flow is irrelevant to business survival. — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 1,
       explanation:
@@ -211,10 +211,10 @@ export const CLUSTER_E: Node[] = [
       question:
         "Why would a pre-revenue startup typically be valued using the Berkus method rather than a DCF?",
       options: [
-        "Because DCF is illegal to use on startups. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Because the Berkus method always produces a higher valuation. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because DCF is illegal to use on startups. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because the Berkus method always produces a higher valuation. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
         "Because DCF requires projecting future cash flows, which is mostly unfounded assumption-stacking without a revenue history to anchor it, while Berkus scores qualitative risk factors instead.",
-        "Because startups don't have any assets to value. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because startups don't have any assets to value. — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 2,
       explanation:
@@ -236,5 +236,127 @@ export const CLUSTER_E: Node[] = [
     ],
     tags: ["Markets & Narrative", "Decision-Making"],
     epistemicStatus: "Contemporary",
+  },
+  {
+    id: "E6",
+    clusterId: "E",
+    title: "The Capital Asset Pricing Model (CAPM)",
+    author: "William Sharpe",
+    year: 1964,
+    medium: "Paper",
+    category: "Finance Theory",
+    thesis:
+      "CAPM isolates the price of systematic risk — expected return rises linearly with beta to the market, so only non-diversifiable risk earns a premium and alpha is excess over that line.",
+    layer0:
+      "Sharpe asked in 1964: why do some assets reliably earn more than others, and some never do? His answer was a single line — expected return = risk-free rate + beta × market premium — that still anchors every DCF and hurdle rate.",
+    layer1:
+      "If investors hold diversified portfolios, idiosyncratic risk washes out and only covariance with the market (beta) matters. CAPM's security market line predicts that an asset with beta 1.5 should earn 1.5× the market's excess return; anything above that line is alpha, below is underperformance. The model is famously imperfect empirically — Fama-French add size and value — but its mechanism — separating priced vs. diversifiable risk — is the lens through which modern finance still prices risk.",
+    layer2:
+      "What 'high-conviction' bet in your portfolio is actually high-beta market exposure in disguise — and what would remain if you hedged out the beta and looked for true alpha?",
+    quiz: {
+      question: "What does CAPM claim is the only kind of risk that earns an expected premium?",
+      options: [
+        "Systematic risk that covaries with the market (beta), because idiosyncratic risk can be diversified away",
+        "Total volatility of an asset, since any risk that makes returns choppy deserves a premium",
+        "Only the risk of holding cash, so all risky assets should earn the same expected return",
+        "Idiosyncratic company-specific risk, because it is the most visible to investors",
+      ],
+      correctIndex: 0,
+      explanation:
+        "CAPM's core is diversification: unsystematic risk is free to eliminate by holding the market, so the market only compensates the systematic component measured by beta.",
+    },
+    tags: ["Wealth, Leverage & Judgment", "Risk & Asymmetric Bets"],
+    related: ["E7", "E1", "D2", "L1"],
+    furtherReading: [
+      {
+        label: "Capital Asset Prices (1964, Journal of Finance)",
+        source: "William Sharpe",
+        url: "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "E7",
+    clusterId: "E",
+    title: "The Efficient Market Hypothesis",
+    author: "Eugene Fama",
+    year: 1970,
+    medium: "Paper",
+    category: "Finance Theory",
+    thesis:
+      "Fama formalized that in an efficient market, prices already reflect all available information of that form — weak, semi-strong, or strong — so consistently beating the market requires either private information or a risk premium, not just public analysis.",
+    layer0:
+      "Fama's 1970 review made a stark claim: if markets are efficient, the chart pattern you think you see has already been arbitraged away before you saw it.",
+    layer1:
+      "Weak form: past prices already in price. Semi-strong: all public info already in price. Strong: even private info is in price (rarely holds). Efficiency is not that prices are right, but that they are hard to systematically beat after costs, because competition among informed traders moves price toward value quickly. The tradable insight is not nihilism but cost: active outperformance must overcome fees, taxes, and the fact that everyone else read the same filing.",
+    layer2:
+      "Where are you paying active costs for public information that an efficient-market view would say is already in price — and what would you do differently if you assumed price already knows?",
+    quiz: {
+      question:
+        "What does semi-strong market efficiency imply about using public filings to consistently outperform?",
+      options: [
+        "Public information is already reflected in price, so systematic outperformance on public data alone should be rare after costs",
+        "Public filings are ignored by markets, so any public data guarantees easy outperformance with no competition",
+        "Semi-strong efficiency means insider private information is also instantly in price with certainty",
+        "Efficiency implies prices are always exactly correct and never deviate from fundamental value",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Semi-strong efficiency says competition among informed analysts prices public info quickly; beating the market then requires either private insight, a risk tilt, or lower costs, not just reading the same 10-K harder.",
+    },
+    tags: ["Markets & Narrative", "Risk & Asymmetric Bets"],
+    related: ["E8", "E6", "C1", "L1"],
+    furtherReading: [
+      {
+        label: "Efficient Capital Markets: A Review of Theory and Empirical Work (1970)",
+        source: "Eugene Fama, Journal of Finance",
+        url: "https://doi.org/10.1111/j.1540-6261.1970.tb00518.x",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "E8",
+    clusterId: "E",
+    title: "The Kelly Criterion & Position Sizing",
+    author: "John L. Kelly / Edward Thorp",
+    year: 1956,
+    medium: "Paper",
+    category: "Finance Theory",
+    thesis:
+      "Kelly derived the fraction of bankroll to bet to maximize long-run logarithmic growth — bet too little and you compound slowly, bet too much and a single bad run wipes out the geometric advantage even with a positive edge.",
+    layer0:
+      "Kelly asked Bell Labs' question in 1956: if you have an edge, what fraction should you actually bet? The answer — edge divided by odds — is the fastest sustainable compounding path, and most investors bet far past it.",
+    layer1:
+      "With a 60/40 edge and even payoff, Kelly says bet 20% of capital; bet 40% and you grow slower, bet 100% and a short streak ruins you despite the edge. The formula maximizes log wealth, which is geometric growth, not expected value alone. Practitioners use half-Kelly because estimates are noisy — volatility is the tax on misestimating your own edge, so position size is inseparable from uncertainty about the edge.",
+    layer2:
+      "What 'high-conviction' position size are you running at full edge when half-Kelly — same thesis, half the size — would already capture most of the geometric growth with far less ruin risk?",
+    quiz: {
+      question:
+        "Why does the Kelly Criterion recommend betting less than full expected-value maximization would suggest?",
+      options: [
+        "To maximize long-run geometric growth, since overbetting increases volatility drag and can wipe out compounding even with a positive edge",
+        "Because any bet above Kelly is guaranteed to lose money on every single trial — a precise misstatement that ignores the probabilistic nature of the edge.",
+        "Kelly only applies to horse racing and has no relevance to investing or bankroll management — a narrow reading that confuses the original example with the general principle.",
+        "The criterion argues you should always bet your entire bankroll to maximize short-term expected value — a common inversion that maximizes arithmetic expectation at the cost of geometric compounding.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Kelly maximizes log(wealth), balancing edge against volatility drag; maximizing arithmetic expected value ignores ruin path and overbets, destroying geometric compounding.",
+    },
+    tags: ["Risk & Asymmetric Bets", "Decision-Making"],
+    related: ["E6", "E7", "L1", "AC5"],
+    furtherReading: [
+      {
+        label: "A New Interpretation of Information Rate (1956)",
+        source: "J. L. Kelly",
+        url: "https://doi.org/10.1002/j.1538-7305.1956.tb03809.x",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
   },
 ];

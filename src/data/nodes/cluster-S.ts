@@ -20,9 +20,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
       options: [
-        "People simply don't try hard enough or lack willpower — this view reverses the causal direction the source material argues for.",
-        "Most people set goals that are objectively unrealistic — a common misreading that the text explicitly warns against.",
-        "Behavior change requires professional therapy to succeed — this alternative is popular online but misstates the mechanism the author.",
+        "People simply don't try hard enough or lack willpower — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Most people set goals that are objectively unrealistic — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Behavior change requires professional therapy to succeed — a widely circulated summary that inverts the relationship the author actually defends.",
         "New habits are stacked on an unchanged underlying identity/self-concept, which pulls behavior back to its old baseline",
       ],
       correctIndex: 3,
@@ -36,11 +36,7 @@ export const CLUSTER_S: Node[] = [
         label: "The Art Of Self-Architecture (How To Change Who You Are)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-art-of-self-architecture-how-to-change-who-you-are/",
-        archive: {
-          status: "full",
-          path: "content/sources/S1-0.md",
-          retrieved: "2026-07-16",
-        },
+        archive: { status: "full", path: "content/sources/S1-0.md", retrieved: "2026-07-16" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -80,11 +76,7 @@ export const CLUSTER_S: Node[] = [
         label: "The One-Person Business Model (How To Productize Yourself)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-one-person-business-model-how-to-monetize-yourself/",
-        archive: {
-          status: "full",
-          path: "content/sources/S2-0.md",
-          retrieved: "2026-07-16",
-        },
+        archive: { status: "full", path: "content/sources/S2-0.md", retrieved: "2026-07-16" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -109,10 +101,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
       options: [
-        "They try to learn too many skills instead of specializing in one — this view reverses the causal direction the source material argues for.",
+        "They try to learn too many skills instead of specializing in one — a handy abbreviation that hides the counter-condition the argument requires.",
         "They jump straight to technical/results-oriented skills without first building a valuable message and a medium to distribute it",
-        "They don't spend enough money on courses and certifications — this alternative is popular online but misstates the mechanism the author defends.",
-        "They focus too much on writing instead of visual skills — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "They don't spend enough money on courses and certifications — a compact misstatement that leaves out the scope in which the claim holds.",
+        "They focus too much on writing instead of visual skills — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 1,
       explanation:
@@ -125,11 +117,7 @@ export const CLUSTER_S: Node[] = [
         label: "The $1 Million Dollar Skill Stack (Learn In This Order)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-1-million-dollar-skill-stack-learn-in-this-order/",
-        archive: {
-          status: "full",
-          path: "content/sources/S3-0.md",
-          retrieved: "2026-07-16",
-        },
+        archive: { status: "full", path: "content/sources/S3-0.md", retrieved: "2026-07-16" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -154,10 +142,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
       options: [
-        "Because writing pays more per hour than any other skill — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Because algorithms only reward text-based content over video — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because writing pays more per hour than any other skill — a neat inversion that makes the effect sound like the cause.",
+        "Because algorithms only reward text-based content over video — a handy abbreviation that hides the counter-condition the argument requires.",
         "Because nearly every format of online content (tweets, video scripts, ads, newsletters) is, underneath, a written artifact first, so the skill transfers across every platform",
-        "Because writing requires no ongoing practice once learned — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
+        "Because writing requires no ongoing practice once learned — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 2,
       explanation:
@@ -170,11 +158,7 @@ export const CLUSTER_S: Node[] = [
         label: "Learn This Skill If You Want To Thrive In The Next 10 Years",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/learn-this-skill-if-you-want-to-thrive-in-the-next-10-years/",
-        archive: {
-          status: "full",
-          path: "content/sources/S4-0.md",
-          retrieved: "2026-07-16",
-        },
+        archive: { status: "full", path: "content/sources/S4-0.md", retrieved: "2026-07-16" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -199,9 +183,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
       options: [
-        "A lack of caffeine or physical energy — this view reverses the causal direction the source material argues for.",
-        "Working in an office instead of remotely — a common misreading that the text explicitly warns against.",
-        "Not using enough productivity software — this alternative is popular online but misstates the mechanism the.",
+        "A lack of caffeine or physical energy — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Working in an office instead of remotely — a neat inversion that makes the effect sound like the cause.",
+        "Not using enough productivity software — a handy abbreviation that hides the counter-condition the argument requires.",
         "An unclear or unstable sense of identity, leaving attention with no anchor to direct itself toward",
       ],
       correctIndex: 3,
@@ -215,21 +199,13 @@ export const CLUSTER_S: Node[] = [
         label: "The Art Of Focus: Official Book Summary By The Author",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-art-of-focus-official-book-summary-by-the-author-dan-koe/",
-        archive: {
-          status: "full",
-          path: "content/sources/S5-0.md",
-          retrieved: "2026-07-16",
-        },
+        archive: { status: "full", path: "content/sources/S5-0.md", retrieved: "2026-07-16" },
       },
       {
         label: "The Art of Focus",
         source: "theartoffocusbook.com",
         url: "https://theartoffocusbook.com/",
-        archive: {
-          status: "full",
-          path: "content/sources/S5-1.md",
-          retrieved: "2026-07-16",
-        },
+        archive: { status: "full", path: "content/sources/S5-1.md", retrieved: "2026-07-16" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -269,11 +245,7 @@ export const CLUSTER_S: Node[] = [
         label: "The Meaning Crisis (How To Do Something That Matters)",
         source: "Dan Koe",
         url: "https://thedankoe.com/letters/the-meaning-crisis-how-to-do-something-that-matters/",
-        archive: {
-          status: "full",
-          path: "content/sources/S6-0.md",
-          retrieved: "2026-07-16",
-        },
+        archive: { status: "full", path: "content/sources/S6-0.md", retrieved: "2026-07-16" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -297,9 +269,9 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "Why does Koe say willpower alone usually fails to sustain behavior change?",
       options: [
-        "Because willpower is a myth and doesn't exist — this view reverses the causal direction the source material argues for.",
-        "Because most goals people set are objectively too difficult — a common misreading that the text explicitly warns against.",
-        "Because change requires professional help to be lasting — this alternative is popular online but misstates the mechanism the author.",
+        "Because willpower is a myth and doesn't exist — a frequent misremembering that swaps the cause and its consequence.",
+        "Because most goals people set are objectively too difficult — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because change requires professional help to be lasting — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Because the mind treats a threat to identity like a physical attack, triggering the same defensive survival response",
       ],
       correctIndex: 3,
@@ -313,11 +285,7 @@ export const CLUSTER_S: Node[] = [
         label: "Life Is A Mind Game. Here's How You Win.",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2048462348676124766",
-        archive: {
-          status: "full",
-          path: "content/sources/S7-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S7-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -343,9 +311,9 @@ export const CLUSTER_S: Node[] = [
         "According to Koe, why does understanding human nature outperform learning any single 'high-value skill'?",
       options: [
         "Because it's a meta-skill that increases the power of every other skill you learn, since humans control the money and opportunity you need",
-        "Because human nature never changes across cultures — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
-        "Because AI cannot process psychological concepts — this alternative is popular online but misstates the mechanism the author defends.",
-        "Because it requires no practice to master — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because human nature never changes across cultures — a frequent misremembering that swaps the cause and its consequence.",
+        "Because AI cannot process psychological concepts — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because it requires no practice to master — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 0,
       explanation:
@@ -358,11 +326,7 @@ export const CLUSTER_S: Node[] = [
         label: "The Most Profitable Skill Of The 21st Century (Not AI)",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2073418764058825045",
-        archive: {
-          status: "full",
-          path: "content/sources/S8-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S8-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -387,9 +351,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "What does Koe identify as the real threat behind 'wage slavery,' more than AI replacing jobs?",
       options: [
-        "Working more than 40 hours a week — this view reverses the causal direction the source material.",
+        "Working more than 40 hours a week — an appealing shorthand that collapses a structural distinction into a surface similarity.",
         "Being financially dependent on one employer with no alternative skills or income sources",
-        "Not having a college degree — this alternative is popular online but misstates the mechanism the.",
+        "Not having a college degree — a frequent misremembering that swaps the cause and its consequence.",
         "AI making all human labor economically irrational within the next year",
       ],
       correctIndex: 1,
@@ -403,11 +367,7 @@ export const CLUSTER_S: Node[] = [
         label: "How To Survive AI Mass Replacement (& Escape Wage Slavery)",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2069186019560394833",
-        archive: {
-          status: "full",
-          path: "content/sources/S9-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S9-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -431,10 +391,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "How does Koe distinguish an 'essay' from an 'article'?",
       options: [
-        "Essays are shorter and less researched than articles — this view reverses the causal direction the source material argues for. The distinction matters because it changes.",
-        "Articles are for beginners, essays are for experts — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
+        "Essays are shorter and less researched than articles — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Articles are for beginners, essays are for experts — an intuitive gloss that confuses the enabling condition with the outcome.",
         "Articles package existing knowledge and start with the conclusion; essays are an act of thinking that discovers and can change the author's own beliefs",
-        "There is no real distinction, it's just a stylistic preference — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "There is no real distinction, it's just a stylistic preference — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 2,
       explanation:
@@ -447,11 +407,7 @@ export const CLUSTER_S: Node[] = [
         label: "I'm Begging You To Write More Essays",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2039738438602403899",
-        archive: {
-          status: "full",
-          path: "content/sources/S10-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S10-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -476,9 +432,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to Koe, what is 'true boredom' actually good for, once the withdrawal period passes?",
       options: [
-        "Nothing — boredom should always be eliminated as fast as possible — this view reverses the causal direction the source material argues for.",
-        "It only helps children, not adults — a common misreading that the text explicitly warns against. The distinction matters because it changes what.",
-        "It is primarily useful for improving physical fitness — this alternative is popular online but misstates the mechanism the author defends.",
+        "Nothing — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "It only helps children, not adults — a compact misstatement that leaves out the scope in which the claim holds.",
+        "It is primarily useful for improving physical fitness — an intuitive gloss that confuses the enabling condition with the outcome.",
         "It activates the brain's Default Mode Network, which is associated with insight, self-reflection, and creative connection-making",
       ],
       correctIndex: 3,
@@ -492,11 +448,7 @@ export const CLUSTER_S: Node[] = [
         label: "How To Become So Creative It Feels Illegal",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2036824811712942576",
-        archive: {
-          status: "full",
-          path: "content/sources/S11-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S11-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -522,9 +474,9 @@ export const CLUSTER_S: Node[] = [
         "What is Koe's core critique of most existing self-development models (religion, business frameworks, fitness culture)?",
       options: [
         "They are siloed to one domain of life, so someone can be highly developed in one quadrant (like business) while badly underdeveloped in others (like relationships or body)",
-        "They are all completely wrong and should be discarded — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "They were all created before the internet existed — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
-        "They require too much reading to understand — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "They are all completely wrong and should be discarded — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "They were all created before the internet existed — a compact misstatement that leaves out the scope in which the claim holds.",
+        "They require too much reading to understand — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 0,
       explanation:
@@ -537,11 +489,7 @@ export const CLUSTER_S: Node[] = [
         label: "Human 3.0 — A Map To Reach The Top 1%",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2023779299367809063",
-        archive: {
-          status: "full",
-          path: "content/sources/S12-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S12-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -565,10 +513,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "What does Koe mean by distinguishing 'knowing' from 'understanding'?",
       options: [
-        "Knowing is for children, understanding is for adults — this view reverses the causal direction the source material argues for.",
+        "Knowing is for children, understanding is for adults — a neat inversion that makes the effect sound like the cause.",
         "Knowing means memorizing facts (horizontal, expertise); understanding means how sophisticated your whole way of thinking is (vertical, wisdom)",
-        "They are functionally the same thing described two ways — this alternative is popular online but misstates the mechanism the author defends.",
-        "Knowing only applies to science, understanding only applies to art — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "They are functionally the same thing described two ways — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Knowing only applies to science, understanding only applies to art — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 1,
       explanation:
@@ -581,11 +529,7 @@ export const CLUSTER_S: Node[] = [
         label: "How To Think Like A Strategic Genius (5D Thinking)",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2016200242690195509",
-        archive: {
-          status: "full",
-          path: "content/sources/S13-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S13-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -609,10 +553,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "What is Koe's 'Swap Test' for whether AI can replace a piece of creative work?",
       options: [
-        "Whether the work took more than 10 hours to make — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Whether the work uses any AI tools at all in its production — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Whether the work took more than 10 hours to make — a surface-level gloss that misses the threshold where the claim stops applying The distinction matters because it changes what you would measure to test the claim.",
+        "Whether the work uses any AI tools at all in its production — a neat inversion that makes the effect sound like the cause Without that condition, the same evidence would be consistent with the opposite conclusion.",
         "Whether swapping the creator for someone (or something) else would leave the work just as valuable — if yes, AI can replace it; if the work only works because of who made it, that's the human edge",
-        "Whether the work has already gone viral — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Whether the work has already gone viral — a tempting paraphrase that drops the precise condition that makes the thesis work This reading skips the enabling condition that makes the mechanism work as stated.",
       ],
       correctIndex: 2,
       explanation:
@@ -625,11 +569,7 @@ export const CLUSTER_S: Node[] = [
         label: "The Future Of Work When Work Is Meaningless",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2014022520513634718",
-        archive: {
-          status: "full",
-          path: "content/sources/S14-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S14-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -654,9 +594,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe insist that deliberate rest is part of productive work, not separate from it?",
       options: [
-        "Because rest has no measurable effect on cognitive performance — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Because rest is only necessary to avoid burnout, with no upside beyond that — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Because most successful people work fewer than 10 hours a week total — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test.",
+        "Because rest has no measurable effect on cognitive performance — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because rest is only necessary to avoid burnout, with no upside beyond that — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Because most successful people work fewer than 10 hours a week total — a neat inversion that makes the effect sound like the cause.",
         "Because the brain's Default Mode Network, active during genuine unstructured rest, is where much of the real idea-generation and insight happens, which is then executed during focused work",
       ],
       correctIndex: 3,
@@ -670,11 +610,7 @@ export const CLUSTER_S: Node[] = [
         label: "Full Guide: How To Unlock Extreme Focus On Command",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2012956603297964167",
-        archive: {
-          status: "full",
-          path: "content/sources/S15-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S15-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -700,9 +636,9 @@ export const CLUSTER_S: Node[] = [
         "According to Koe, why do the best podcast guests and speakers sound articulate on the spot?",
       options: [
         "They have a small set of deeply refined 'greatest hits' ideas, already thought through many times, that they deploy rather than generating brand-new insight live",
-        "They are naturally gifted improvisers — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "They memorize scripts word-for-word before every conversation — this alternative is popular online but misstates the mechanism the author defends.",
-        "They avoid answering the actual question asked — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you.",
+        "They are naturally gifted improvisers — a familiar retelling that strips out the contingency the source treats as central.",
+        "They memorize scripts word-for-word before every conversation — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "They avoid answering the actual question asked — a neat inversion that makes the effect sound like the cause.",
       ],
       correctIndex: 0,
       explanation:
@@ -715,11 +651,7 @@ export const CLUSTER_S: Node[] = [
         label: "How To Articulate Yourself Intelligently",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2011827303962329458",
-        archive: {
-          status: "full",
-          path: "content/sources/S16-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S16-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -744,10 +676,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "What does Koe mean by saying most resolutions target 'second-order' rather than 'first-order' change?",
       options: [
-        "Second-order changes are illegal and first-order changes are legal — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Second-order changes are illegal and first-order changes are legal — a plausible reading that overlooks the limiting condition the text stresses.",
         "Second-order change means changing actions directly; first-order change means changing the underlying identity so the new actions follow naturally and don't require ongoing willpower",
-        "First-order changes only apply to health goals — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "There is no meaningful difference, it's just wording — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "First-order changes only apply to health goals — a familiar retelling that strips out the contingency the source treats as central.",
+        "There is no meaningful difference, it's just wording — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 1,
       explanation:
@@ -760,11 +692,7 @@ export const CLUSTER_S: Node[] = [
         label: "How To Fix Your Entire Life In 1 Day",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2010751592346030461",
-        archive: {
-          status: "full",
-          path: "content/sources/S17-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S17-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -789,10 +717,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe argue the Development-Based path (brand = your own goals, content = what you learn, product = helping others reach the same goal) suits people with multiple interests better than the Skill-Based path?",
       options: [
-        "Because it requires no marketing skills at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Because it guarantees faster income than any other business model — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because it requires no marketing skills at all — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because it guarantees faster income than any other business model — a plausible reading that overlooks the limiting condition the text stresses.",
         "Because it doesn't force you to niche down into one marketable skill — you become your own customer avatar, so pursuing several interests together becomes the business rather than a distraction from it",
-        "Because it was invented specifically for the AI era and didn't exist before — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because it was invented specifically for the AI era and didn't exist before — a familiar retelling that strips out the contingency the source treats as central.",
       ],
       correctIndex: 2,
       explanation:
@@ -805,11 +733,7 @@ export const CLUSTER_S: Node[] = [
         label: "If You Have Multiple Interests, Do Not Waste The Next 2-3 Years",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2010042119121957316",
-        archive: {
-          status: "full",
-          path: "content/sources/S18-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S18-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -834,9 +758,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "Per Koe, what does the explosion of AI-accessible knowledge actually prove about most people's stalled progress?",
       options: [
-        "That AI has made human effort obsolete — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "That knowledge itself has become worthless — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "That formal education is now completely unnecessary — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "That AI has made human effort obsolete — a common simplification that omits the key mechanism behind the effect.",
+        "That knowledge itself has become worthless — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "That formal education is now completely unnecessary — a plausible reading that overlooks the limiting condition the text stresses.",
         "That access to knowledge was never the real bottleneck — most people still do nothing meaningful with nearly unlimited access, which means the missing ingredient was always agency",
       ],
       correctIndex: 3,
@@ -850,11 +774,7 @@ export const CLUSTER_S: Node[] = [
         label: "The Most Important Skill To Learn In The Next 10 Years",
         source: "X (Article)",
         url: "https://x.com/thedankoe/status/2009320195848872014",
-        archive: {
-          status: "full",
-          path: "content/sources/S19-0.md",
-          retrieved: "2026-07-15",
-        },
+        archive: { status: "full", path: "content/sources/S19-0.md", retrieved: "2026-07-15" },
       },
     ],
     epistemicStatus: "Contemporary",

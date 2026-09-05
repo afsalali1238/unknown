@@ -21,9 +21,9 @@ export const CLUSTER_AE: Node[] = [
         "Why did Campbell argue the same basic story structure recurs across unrelated cultures' mythologies?",
       options: [
         "The structure mirrors the actual psychological shape of transformation and growth, so cultures independently converge on it",
-        "Colonial trade routes spread one story to every culture — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "All myths were plagiarized from a single ancient source text — this view reverses the causal direction the source material argues for.",
-        "It's a coincidence with no underlying explanation — a common misreading that the text explicitly warns against.",
+        "Colonial trade routes spread one story to every culture — a handy abbreviation that hides the counter-condition the argument requires.",
+        "All myths were plagiarized from a single ancient source text — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "It's a coincidence with no underlying explanation — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 0,
       explanation:
@@ -36,21 +36,13 @@ export const CLUSTER_AE: Node[] = [
         label: "The Hero with a Thousand Faces",
         source: "article",
         url: "https://en.wikipedia.org/wiki/The_Hero_with_a_Thousand_Faces",
-        archive: {
-          status: "full",
-          path: "content/sources/AE1-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AE1-0.md", retrieved: "2026-07-17" },
       },
       {
         label: "Joseph Campbell and the Hero's Journey",
         source: "article",
         url: "https://www.jcf.org/learn/joseph-campbell-heros-journey",
-        archive: {
-          status: "full",
-          path: "content/sources/AE1-1.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AE1-1.md", retrieved: "2026-07-20" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -75,9 +67,9 @@ export const CLUSTER_AE: Node[] = [
       question:
         "According to Girard's theory of mimetic desire, where does desire actually originate?",
       options: [
-        "Desire arises independently within each individual based on the object's inherent qualities — this view emphasize",
-        "Desire is entirely determined by economic scarcity — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Desire is a fixed biological drive unrelated to social context — this view reverses the causal direction the source material argues for.",
+        "Desire arises independently within each individual based on the object's inherent qualities — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Desire is entirely determined by economic scarcity — a neat inversion that makes the effect sound like the cause.",
+        "Desire is a fixed biological drive unrelated to social context — a handy abbreviation that hides the counter-condition the argument requires.",
         "Desire is borrowed from a model or mediator — we want things because someone else wants or has them, not purely for the object's own qualities",
       ],
       correctIndex: 3,
@@ -91,21 +83,13 @@ export const CLUSTER_AE: Node[] = [
         label: "Mimetic theory",
         source: "article",
         url: "https://en.wikipedia.org/wiki/Mimetic_theory",
-        archive: {
-          status: "full",
-          path: "content/sources/AE2-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AE2-0.md", retrieved: "2026-07-17" },
       },
       {
         label: "René Girard (Britannica)",
         source: "article",
         url: "https://www.britannica.com/biography/Rene-Girard",
-        archive: {
-          status: "full",
-          path: "content/sources/AE2-1.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AE2-1.md", retrieved: "2026-07-20" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -130,15 +114,16 @@ export const CLUSTER_AE: Node[] = [
       question:
         "According to this framework, why does storytelling tend to be more persuasive than presenting raw data alone?",
       options: [
-        "Because data is always factually incorrect. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what.",
-        "Because storytelling requires no supporting evidence at all. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because data is always factually incorrect. — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because storytelling requires no supporting evidence at all. — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Because stories create emotional stakes through character and conflict, and people tend to act on emotional stakes more reliably than on abstract numbers.",
-        "Because audiences cannot process numerical information. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
+        "Because audiences cannot process numerical information. — a handy abbreviation that hides the counter-condition the argument requires.",
       ],
       correctIndex: 2,
       explanation:
         "The structural elements (character, conflict, arc) work together to create emotional investment, which is what drives action and memory more reliably than statistics presented without narrative framing.",
     },
+    tags: ["Power & Persuasion", "Craft & Deep Work"],
     related: ["AE1", "AE2"],
     furtherReading: [
       {
@@ -146,14 +131,211 @@ export const CLUSTER_AE: Node[] = [
         source: "Forbes Coaches Council",
         url: "https://www.forbes.com/councils/forbescoachescouncil/2020/09/30/leaders-seven-tips-for-becoming-a-better-storyteller/",
         type: "article",
-        archive: {
-          status: "full",
-          path: "content/sources/AE3-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AE3-0.md", retrieved: "2026-07-17" },
       },
     ],
-    tags: ["Power & Persuasion", "Craft & Deep Work"],
     epistemicStatus: "Speculative",
+  },
+  {
+    id: "AE4",
+    clusterId: "AE",
+    title: "The Narrative Fallacy",
+    author: "Nassim Nicholas Taleb",
+    year: 2007,
+    medium: "Book",
+    category: "Critical Thinking",
+    thesis:
+      "Taleb argues we compulsively compress noisy, high-variance histories into tidy causal stories — and then mistake the story's coherence for predictive power, hiding randomness where it matters most.",
+    layer0:
+      "Taleb's warning in The Black Swan: we don't experience history, we story it. A coherent narrative feels like an explanation, but often it's just randomness given a plot.",
+    layer1:
+      "The fallacy exploits narrative's compression — a good story drops contradictions, invents causes after the fact, and links events with 'because.' That makes past volatility look explainable and future volatility look forecastable, fueling overconfidence and fragility. Taleb pairs it with the ludic fallacy — mistaking the randomness of structured games for the wilder randomness of real markets and lives — so the antidote is not a better story but exposure to disconfirming data and skin in the game.",
+    layer2:
+      "What recent outcome did you already retrofit into a clean story — founder genius, market timing, personal discipline — that was at least partly a sample path of randomness?",
+    quiz: {
+      question: "What is the core harm of the narrative fallacy according to Taleb?",
+      options: [
+        "We mistake a coherent retrospective story for a true causal explanation and overestimate our ability to predict the next variation",
+        "We fail to tell any stories at all, leaving important events unexplained and unmemorable This reading skips the enabling condition that makes.",
+        "Narratives are always intentionally deceptive and their authors should be distrusted The distinction matters because it changes what you would.",
+        "The fallacy only applies to ancient myths, not to modern markets or personal careers Without that condition, the same evidence would be.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Taleb's point is epistemic: story coherence substitutes for predictive validity, making randomness-retrodicted-as-destiny feel forecastable when it is not.",
+    },
+    tags: ["Cognitive Biases & Models", "Markets & Narrative"],
+    related: ["AE5", "AE1", "U12", "D5"],
+    furtherReading: [
+      {
+        label: "The Black Swan (2007), Ch. 6: The Narrative Fallacy",
+        source: "Nassim Taleb",
+        url: "https://www.fooledbyrandomness.com/",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AE5",
+    clusterId: "AE",
+    title: "Pixar's 22 Rules of Storytelling",
+    author: "Emma Coats",
+    year: 2011,
+    medium: "Essay",
+    category: "Storytelling",
+    thesis:
+      "Coats distilled Pixar's internal story rules — lead with the character's want, make stakes clear, prefer a flawed protagonist who earns transformation — and they work because they align narrative structure with how audiences simulate intention.",
+    layer0:
+      "In 2011 Emma Coats tweeted Pixar's internal story rules she had collected as a story artist: 'You gotta keep in mind what's interesting to you as an audience, not what's fun to do as a writer.'",
+    layer1:
+      "Rules like 'a character's opinions must be tested against obstacles,' 'give them opinions, not just traits,' and 'what is your character good at, comfortable with? Throw the polar opposite at them' operationalize classic structure — want vs. obstacle — in workshopable form. They compress Hero's Journey and three-act beats into daily checks: does the protagonist have an active want by page two, does every scene pass 'because' not 'and then,' does the ending feel earned rather than announced?",
+    layer2:
+      "Take the last update, memo, or pitch you wrote — does the protagonist (user, reader, team) have a clear want by the second paragraph, and does each next section follow 'because' rather than 'and then'?",
+    quiz: {
+      question:
+        "What unifying principle do Pixar's 22 rules operationalize for working storytellers?",
+      options: [
+        "Give the protagonist a clear want early, test it against escalating obstacles, and ensure each scene connects by 'because' so transformation feels earned",
+        "Always add more jokes and visual gags, since humor is the only reliable way to hold attention The distinction matters because it changes what you would measure to test the claim.",
+        "Stories should avoid any protagonist want and instead present a series of unconnected pleasant events Without that condition, the same evidence would be consistent.",
+        "Pixar's rules are strict formulas that guarantee a hit if followed mechanically without revision It holds only within the scope the author defines, not as a universal claim.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Coats' list translates abstract structure into testable craft: want + obstacle + because-chain + earned ending, which is why the same rules help memos and product narratives, not just films.",
+    },
+    tags: ["Power & Persuasion", "Craft & Deep Work"],
+    related: ["AE6", "AE1", "AE4", "N12"],
+    furtherReading: [
+      {
+        label: "Pixar's 22 Rules of Storytelling (2011)",
+        source: "Emma Coats / io9",
+        url: "https://gizmodo.com/pixars-22-rules-of-storytelling-5916970",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AE6",
+    clusterId: "AE",
+    title: "Kishōtenketsu: The Four-Act Without Conflict",
+    author: "Japanese & Chinese narrative tradition",
+    year: 735,
+    medium: "Form",
+    category: "Storytelling",
+    thesis:
+      "Kishōtenketsu builds narratives in four beats — introduction, development, twist, conclusion — with no required central conflict, letting meaning emerge from juxtaposition rather than opposition.",
+    layer0:
+      "Much of East Asian storytelling doesn't require a hero vs. villain — it runs ki (introduce), shō (develop), ten (twist), ketsu (conclude), where the third beat surprises by recontextualizing rather than antagonizing.",
+    layer1:
+      "Western three-act presumes conflict as engine; kishōtenketsu treats contrast and surprise as engine. Ki and shō establish a world on its own terms; ten introduces an element that seems unrelated and forces a re-read; ketsu binds them. The structure mirrors how many everyday experiences actually cohere — not through opposition but through an unexpected connection that makes earlier details matter differently. It underlies yonkoma, Studio Ghibli digressions, and many product stories that persuade without manufacturing an enemy.",
+    layer2:
+      "Where are you forcing a false 'enemy' into your story — the market, the incumbent — when a kishōtenketsu twist that recontextualizes what you already showed would land more honestly?",
+    quiz: {
+      question:
+        "How does kishōtenketsu create narrative interest without a required central conflict?",
+      options: [
+        "It introduces, develops, then twists with an unexpected recontextualizing element before concluding, letting meaning arise from juxtaposition",
+        "It simply omits the middle of the story, so audiences must invent the missing conflict themselves Without that condition, the same evidence would be.",
+        "It relies exclusively on surprise endings that contradict everything established earlier It holds only within the scope the author defines, not as a universal claim.",
+        "Kishōtenketsu is identical to three-act structure and differs only in the names of its beats This reading skips the enabling condition that makes the.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "The ten (twist) beat creates surprise by bringing an apparently unrelated element that forces retroactive sense-making, rather than by escalating a protagonist-antagonist confrontation.",
+    },
+    tags: ["Power & Persuasion", "Tech Adoption & Disruption"],
+    related: ["AE7", "AE1", "AE5", "O12"],
+    furtherReading: [
+      {
+        label: "Kishōtenketsu",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Kish%C5%8Dtenketsu",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AE7",
+    clusterId: "AE",
+    title: "The Storytelling Animal",
+    author: "Jonathan Gottschall",
+    year: 2012,
+    medium: "Book",
+    category: "Psychology",
+    thesis:
+      "Gottschall argues humans are wired for story the way birds are wired for flight — fiction is not escapism but the mind's flight simulator for social life, letting us rehearse intentions and consequences at low cost.",
+    layer0:
+      "Gottschall opens with a simple number: humans spend a huge share of waking life inside stories — daydreams, novels, gossip, games — far more than any other species.",
+    layer1:
+      "Stories function as social simulation: they let us model other minds, track coalitions, and test 'what would I do if...' without paying real costs. Narrative transports attention via character intention — we track wants and obstacles, not facts — which is why data alone rarely persuades where a lived example does. Understanding story as simulator reframes craft: you are not decorating information, you are sneaking it past the mind's defenses via a rehearsal it cannot help but run.",
+    layer2:
+      "What skill in your team is currently taught as a manual when it should be taught as a simulation — a short story where a character must use the skill under realistic constraints?",
+    quiz: {
+      question: "Why does Gottschall call fiction a 'flight simulator' for social life?",
+      options: [
+        "Stories let humans safely rehearse intentions, coalitions, and consequences by simulating other minds at low cost",
+        "Fiction is a literal neurological simulation of flying that evolved for physical navigation",
+        "Humans enjoy stories only as passive entertainment with no cognitive function",
+        "Storytelling evolved solely to record historical facts accurately for future generations",
+      ],
+      correctIndex: 0,
+      explanation:
+        "The simulator metaphor is functional: narrative lets us practice tracking wants, obstacles, and social consequences without real stakes, building the same social-cognitive skills the situation would require.",
+    },
+    tags: ["Meaning & Self", "Cognitive Biases & Models"],
+    related: ["AE8", "AE2", "U2", "N3"],
+    furtherReading: [
+      {
+        label: "The Storytelling Animal (2012)",
+        source: "Jonathan Gottschall",
+        url: "https://www.jonathangottschall.com/the-storytelling-animal",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AE8",
+    clusterId: "AE",
+    title: "The Seven Basic Plots",
+    author: "Christopher Booker",
+    year: 2004,
+    medium: "Book",
+    category: "Comparative Literature",
+    thesis:
+      "Booker argues almost every story can be mapped to seven recurring plots — Overcoming the Monster, Rags to Riches, Voyage and Return, The Quest, Comedy, Tragedy, Rebirth — because they recycle the same underlying psychological tensions.",
+    layer0:
+      "Booker spent 34 years cataloguing plots and concluded there are really seven. Every Pixar film, every founder myth, every redemption memoir fits one of them with small variations.",
+    layer1:
+      "The seven plots compress to polar tensions: threatened order vs. monster, depleted ego vs. restored wholeness, departure vs. return. 'Overcoming the Monster' externalizes a shadow; 'Rags to Riches' enacts maturation; 'Voyage and Return' tests the self in an alien world then re-integrates. Recognizing the plot you are in predicts which beats audiences expect next — and which subversion will feel meaningful rather than merely confusing.",
+    layer2:
+      "Which of the seven plots is the default story you tell about your own life right now — and what would change if you deliberately recast the same facts as a different plot, like Voyage and Return instead of Tragedy?",
+    quiz: {
+      question: "What do Booker's seven basic plots claim to capture about storytelling?",
+      options: [
+        "A small set of recurring psychological tensions that underlie most narratives, so most stories are variations on the same few structures",
+        "A legal taxonomy that proves only seven distinct stories can ever be copyrighted This reading skips the enabling condition that makes the mechanism work as stated.",
+        "An argument that all good stories must include a literal monster and a literal quest The distinction matters because it changes what you would.",
+        "The claim that Eastern and Western storytelling share no common plots whatsoever Without that condition, the same evidence would be consistent with.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Booker's thesis is structural and psychological: the same tensions (monster, quest, rebirth) recur because they dramatize universal maturation and integration problems.",
+    },
+    tags: ["Meaning & Self", "Power & Persuasion"],
+    related: ["AE4", "AE1", "AE6", "S9"],
+    furtherReading: [
+      {
+        label: "The Seven Basic Plots (2004)",
+        source: "Christopher Booker",
+        url: "https://en.wikipedia.org/wiki/The_Seven_Basic_Plots",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
   },
 ];

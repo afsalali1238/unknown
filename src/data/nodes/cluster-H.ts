@@ -20,41 +20,33 @@ export const CLUSTER_H: Node[] = [
       question:
         "How does Bitcoin prevent double-spending without a central trusted authority like a bank?",
       options: [
-        "Every transaction requires a government ID to verify identity — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Transactions are limited to once per day per user — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Proof-of-work makes rewriting transaction history computationally expensive — an attacker would need to out-compute the majority of the network's processing power to build a longer alternate chain",
-        "A single trusted server verifies every transaction centrally — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Every transaction requires a government ID to verify identity — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Transactions are limited to once per day per user — a frequent misremembering that swaps the cause and its consequence.",
+        "Proof-of-work makes rewriting transaction history computationally expensive — a familiar retelling that strips out the contingency the source treats as central.",
+        "A single trusted server verifies every transaction centrally — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 2,
       explanation:
         "Proof-of-work solves the double-spending problem by requiring massive computational energy to alter the ledger, making it economically infeasible for an attacker to rewrite the history of transactions.",
     },
+    tags: ["Crypto & Trust"],
     related: ["H8", "H3", "H4", "H5"],
     furtherReading: [
       {
-        type: "read",
         label: "Bitcoin: A Peer-to-Peer Electronic Cash System (original whitepaper)",
         source: "bitcoin.org, 2008",
         url: "https://bitcoin.org/bitcoin.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/H1-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H1-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "Bitcoin: The Internet of Money",
         source: "Naval Ravikant",
         url: "https://startupboy.com/2013/11/07/bitcoin-the-internet-of-money/",
-        archive: {
-          status: "full",
-          path: "content/sources/H1-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H1-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -77,39 +69,33 @@ export const CLUSTER_H: Node[] = [
       question:
         "According to Boyapati's framework, why is it backwards to judge Bitcoin as a failure for not yet being widely used to buy everyday goods?",
       options: [
-        "Because Bitcoin was never intended to be used as money at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Because government regulation legally prohibits using Bitcoin for purchases — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Because Bitcoin's supply is unlimited, unlike gold — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because Bitcoin was never intended to be used as money at all — an appealing shorthand that collapses a structural distinction into a surface similarity The distinction matters because it changes what you would measure to test the claim.",
+        "Because government regulation legally prohibits using Bitcoin for purchases — a plausible reading that overlooks the limiting condition the text stresses Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Because Bitcoin's supply is unlimited, unlike gold — a frequent misremembering that swaps the cause and its consequence It holds only within the scope the author defines, not as a universal claim.",
         "Because becoming a widely-used medium of exchange historically requires first becoming a trusted store of value — Bitcoin was still in that earlier stage, and skipping ahead isn't how monetization has historically worked",
       ],
       correctIndex: 3,
       explanation:
         "Historically, money evolves in stages: first as a collectible, then as a store of value, and finally as a medium of exchange. Criticizing Bitcoin for not yet being a medium of exchange ignores this natural progression.",
     },
+    tags: ["Crypto & Trust"],
     related: ["H8", "H3", "H4", "H5"],
     furtherReading: [
       {
-        type: "read",
         label: "The Bullish Case for Bitcoin (original essay)",
         source: "Vijay Boyapati on Medium, 2018",
         url: "https://vijayboyapati.medium.com/the-bullish-case-for-bitcoin-6ecc8bdecc1",
-        archive: {
-          status: "full",
-          path: "content/sources/H2-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H2-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "watch",
         label: "The Bull Case for Bitcoin",
         source: "The Investor's Podcast Network",
         url: "https://www.theinvestorspodcast.com/millennial-investing/the-bull-case-for-btc/",
-        archive: {
-          status: "unavailable",
-        },
+        type: "watch",
+        archive: { status: "unavailable" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -133,40 +119,32 @@ export const CLUSTER_H: Node[] = [
         "Why does Ethereum require paying 'gas' fees for every computation, unlike Bitcoin's simpler transaction model?",
       options: [
         "Because Ethereum allows unrestricted, Turing-complete computation, and gas fees (scaling with computational complexity) prevent infinite loops or spam from freezing the shared network",
-        "To generate charitable donations for the Ethereum Foundation — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test.",
-        "To convert Ether into Bitcoin automatically during each transaction — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
-        "Because Ethereum has no consensus mechanism and needs fees to select validators randomly — this view reverses the causal direction the source material argues for.",
+        "To generate charitable donations for the Ethereum Foundation — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "To convert Ether into Bitcoin automatically during each transaction — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because Ethereum has no consensus mechanism and needs fees to select validators randomly — a frequent misremembering that swaps the cause and its consequence.",
       ],
       correctIndex: 0,
       explanation:
         "To prevent malicious actors from running infinite loops on a global, decentralized computer, Ethereum requires users to pay 'gas'—a fee proportional to the computational complexity of their code.",
     },
+    tags: ["Crypto & Trust"],
     related: ["H8", "H2", "H4", "H5"],
     furtherReading: [
       {
-        type: "read",
         label: "Ethereum Whitepaper (original)",
         source: "ethereum.org",
         url: "https://ethereum.org/en/whitepaper/",
-        archive: {
-          status: "full",
-          path: "content/sources/H3-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H3-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "Ethereum: A Next-Generation Smart Contract Platform (context)",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Ethereum",
-        archive: {
-          status: "full",
-          path: "content/sources/H3-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H3-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -189,41 +167,33 @@ export const CLUSTER_H: Node[] = [
       question:
         "Why does Joel Monegro argue that value in crypto accrues to the protocol layer rather than the application layer, unlike the internet?",
       options: [
-        "Because crypto applications are illegal in most jurisdictions — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because crypto applications are illegal in most jurisdictions — a widely circulated summary that inverts the relationship the author actually defends.",
         "Because blockchain data is shared and open rather than proprietary, weakening individual applications' moats, while the base protocol token captures value as the whole ecosystem built on it grows",
-        "Because protocols require government licensing fees that applications don't — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test.",
-        "Because applications on blockchains cannot generate any revenue at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because protocols require government licensing fees that applications don't — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because applications on blockchains cannot generate any revenue at all — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 1,
       explanation:
         "In Web2, value accumulated at the application layer (Facebook, Google). In Web3, open data means the application layer is thin, and the vast majority of the value accumulates to the underlying base protocols (like Ethereum or Bitcoin).",
     },
+    tags: ["Crypto & Trust"],
     related: ["H1", "H2", "H3", "H6"],
     furtherReading: [
       {
-        type: "read",
         label: "Fat Protocols (original essay)",
         source: "Union Square Ventures, 2016",
         url: "https://www.usv.com/writing/2016/08/fat-protocols/",
-        archive: {
-          status: "full",
-          path: "content/sources/H4-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H4-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "watch",
         label: "The industry is growing out of the Fat Protocol Thesis (debate)",
         source: "The Blockchain Debate Podcast",
         url: "https://blockdebate.buzzsprout.com/767033/episodes/9694662-motion-the-industry-is-growing-out-of-the-fat-protocol-thesis-jeff-dorman-vs-joel-monegro",
-        archive: {
-          status: "full",
-          path: "content/sources/H4-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "watch",
+        archive: { status: "full", path: "content/sources/H4-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -246,39 +216,33 @@ export const CLUSTER_H: Node[] = [
       question:
         "How does Uniswap determine the price of a trade, given that there's no order book matching buyers and sellers?",
       options: [
-        "A central Uniswap server sets prices manually based on other exchanges — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Prices are fixed permanently when the pool is created and never change — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "A central Uniswap server sets prices manually based on other exchanges — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Prices are fixed permanently when the pool is created and never change — a widely circulated summary that inverts the relationship the author actually defends.",
         "A smart contract holds a pool of two tokens and enforces that their product stays constant (x*y=k); trading against the pool shifts the ratio, and price is derived automatically from that formula",
-        "Every trade requires a human liquidity provider to personally approve the price — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Every trade requires a human liquidity provider to personally approve the price — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 2,
       explanation:
         "Instead of matching buyers and sellers, an AMM allows users to trade directly against a liquidity pool governed by a constant product formula, dynamically adjusting prices based on supply and demand.",
     },
+    tags: ["Crypto & Trust"],
     related: ["H1", "H2", "H3", "H6"],
     furtherReading: [
       {
-        type: "read",
         label: "Uniswap Whitepaper (v1, original concept document)",
         source: "Hayden Adams",
         url: "https://hackmd.io/@HaydenAdams/HJ9jLsfTz",
-        archive: {
-          status: "unavailable",
-        },
+        type: "read",
+        archive: { status: "unavailable" },
       },
       {
-        type: "read",
         label: "Uniswap v3 Core whitepaper",
         source: "uniswap.org",
         url: "https://app.uniswap.org/whitepaper-v3.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/H5-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H5-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -300,41 +264,33 @@ export const CLUSTER_H: Node[] = [
     quiz: {
       question: "What problem does Solana's Proof of History primarily solve?",
       options: [
-        "It encrypts transaction contents so no one can see them — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "It eliminates the need for any validators on the network — this alternative is popular online but misstates the mechanism the author defends.",
-        "It converts all transactions into a single batched transaction per day — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "It encrypts transaction contents so no one can see them — a compact misstatement that leaves out the scope in which the claim holds.",
+        "It eliminates the need for any validators on the network — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "It converts all transactions into a single batched transaction per day — a widely circulated summary that inverts the relationship the author actually defends.",
         "It creates a verifiable, decentralized way to prove the order and timing of events, cutting the communication overhead nodes would otherwise need to agree on ordering",
       ],
       correctIndex: 3,
       explanation:
         "Proof of History creates a cryptographic clock for the network. By allowing nodes to trust the timestamp of events, Solana avoids the massive communication delays required for consensus, unlocking high throughput.",
     },
+    tags: ["Crypto & Trust"],
     related: ["H1", "H2", "H3"],
     furtherReading: [
       {
-        type: "read",
         label: "Solana: A New Architecture for a High Performance Blockchain (original whitepaper)",
         source: "solana.com",
         url: "https://solana.com/solana-whitepaper.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/H6-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H6-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "Proof of History: what is it good for?",
         source: "Victor Shoup",
         url: "https://www.shoup.net/papers/poh.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/H6-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H6-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -358,40 +314,32 @@ export const CLUSTER_H: Node[] = [
         "According to Chris Dixon, why do centralized platforms tend to become adversarial toward the developers and users who helped them grow?",
       options: [
         "Because once a platform dominates its market, its incentives shift from courting an ecosystem to extracting value from it, and there's no structural mechanism stopping that shift the way there is with decentralized protocols",
-        "Because governments force platforms to extract more value once they reach a certain size — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Because developers always eventually violate platform terms of service — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "Because centralized platforms run out of technical capacity as they grow — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because governments force platforms to extract more value once they reach a certain size — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Because developers always eventually violate platform terms of service — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because centralized platforms run out of technical capacity as they grow — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 0,
       explanation:
         "Centralized platforms initially attract users and developers, but eventually hit a growth ceiling. At that point, they invariably extract value from the ecosystem, destroying the developers who built on them.",
     },
+    tags: ["Crypto & Trust"],
     related: ["H1", "H2", "H3", "H6"],
     furtherReading: [
       {
-        type: "read",
         label: "Why Decentralization Matters (original essay)",
         source: "Chris Dixon, cdixon.org",
         url: "https://cdixon.org/2018/02/18/why-decentralization-matters",
-        archive: {
-          status: "full",
-          path: "content/sources/H7-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H7-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "Why Decentralization Matters (mirror)",
         source: "OneZero / Medium",
         url: "https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e",
-        archive: {
-          status: "full",
-          path: "content/sources/H7-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H7-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -413,39 +361,33 @@ export const CLUSTER_H: Node[] = [
     quiz: {
       question: "What specific advantage did Palihapitiya claim SPACs had over traditional IPOs?",
       options: [
-        "SPACs are legally required to have lower fees than IPOs — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "SPACs are legally required to have lower fees than IPOs — a handy abbreviation that hides the counter-condition the argument requires.",
         "SPACs let companies share forward-looking financial projections (restricted in traditional IPOs) and bypass the underwriter-controlled roadshow, giving retail investors earlier and more direct access",
-        "SPACs guarantee a higher stock price than a traditional IPO — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "SPACs eliminate the need for any regulatory disclosure at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "SPACs guarantee a higher stock price than a traditional IPO — a compact misstatement that leaves out the scope in which the claim holds.",
+        "SPACs eliminate the need for any regulatory disclosure at all — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 1,
       explanation:
         "SPACs bypass the traditional IPO roadshow and allow companies to market themselves using future financial projections, which supporters argue democratizes early-stage investment for retail investors.",
     },
+    tags: ["Crypto & Trust"],
     related: ["H1", "H2", "H3"],
     furtherReading: [
       {
-        type: "read",
         label: "Social Capital investor letters (Chamath Palihapitiya)",
         source: "socialcapital.com",
         url: "https://www.socialcapital.com/",
-        archive: {
-          status: "full",
-          path: "content/sources/H8-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/H8-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "watch",
         label: "All-In Podcast (hosted by Chamath Palihapitiya & co-hosts)",
         source: "YouTube",
         url: "https://www.youtube.com/@allin",
-        archive: {
-          status: "unavailable",
-        },
+        type: "watch",
+        archive: { status: "unavailable" },
       },
     ],
-    tags: ["Crypto & Trust"],
     epistemicStatus: "Contemporary",
   },
 ];

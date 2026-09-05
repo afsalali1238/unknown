@@ -119,8 +119,8 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "Why did Howard Marks aggressively buy distressed debt in 2008?",
       options: [
-        "Because he knew the Federal Reserve would print money — a common misreading that the text explicitly warns against.",
-        "Because debt instruments are legally risk-free — this alternative is popular online but misstates the mechanism the author.",
+        "Because he knew the Federal Reserve would print money — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because debt instruments are legally risk-free — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Because the prices were so low they assumed an apocalyptic default rate, providing a massive margin of safety",
       ],
       correctIndex: 2,
@@ -164,8 +164,8 @@ export const CLUSTER_D: Node[] = [
         "According to Grantham, what psychological indicator signals the final stage of a superbubble?",
       options: [
         "A speculative frenzy and extreme overconfidence in low-quality, highly risky assets",
-        "High corporate tax rates — this alternative is popular online but misstates the mechanism the.",
-        "A sudden drop in the price of gold — an intuitive but incorrect explanation that conflates.",
+        "High corporate tax rates — a familiar retelling that strips out the contingency the source treats as central.",
+        "A sudden drop in the price of gold — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 0,
       explanation:
@@ -206,9 +206,9 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "What is a 'covenant-lite' loan?",
       options: [
-        "A loan issued exclusively to governments — a common misreading that the text explicitly warns against.",
+        "A loan issued exclusively to governments — a plausible reading that overlooks the limiting condition the text stresses.",
         "A loan that strips away traditional financial protections and monitoring requirements for the lender",
-        "A loan with an interest rate below inflation — an intuitive but incorrect explanation that conflates correlation.",
+        "A loan with an interest rate below inflation — a familiar retelling that strips out the contingency the source treats as central.",
       ],
       correctIndex: 1,
       explanation:
@@ -249,8 +249,8 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "What was the primary driver of the 'Sea Change' Howard Marks identified in 2022?",
       options: [
-        "The invention of cryptocurrency — a common misreading that the text explicitly warns against.",
-        "The transition from physical to digital retail — this alternative is popular online but misstates the mechanism the.",
+        "The invention of cryptocurrency — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "The transition from physical to digital retail — a plausible reading that overlooks the limiting condition the text stresses.",
         "The end of a 40-year cycle of declining interest rates, moving to a structurally higher rate environment",
       ],
       correctIndex: 2,
@@ -293,8 +293,8 @@ export const CLUSTER_D: Node[] = [
       question: "What is a 'Beautiful Deleveraging' in Dalio's framework?",
       options: [
         "When policymakers perfectly balance deflationary debt restructuring with inflationary money printing to reduce the debt burden without crashing the economy",
-        "When all debt is completely forgiven by the government — this alternative is popular online but misstates the mechanism the author defends.",
-        "When a country adopts the gold standard to prevent inflation — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "When all debt is completely forgiven by the government — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "When a country adopts the gold standard to prevent inflation — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 0,
       explanation:
@@ -336,9 +336,9 @@ export const CLUSTER_D: Node[] = [
       question:
         "According to Dalio's cycle, what is the ultimate financial catalyst for an empire's decline?",
       options: [
-        "A lack of natural resources — a common misreading that the text explicitly warns against.",
+        "A lack of natural resources — a widely circulated summary that inverts the relationship the author actually defends.",
         "Massive wealth inequality combined with printing money to monetize unsustainable debts",
-        "An over-reliance on agricultural exports — an intuitive but incorrect explanation that conflates.",
+        "An over-reliance on agricultural exports — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 1,
       explanation:
@@ -378,8 +378,8 @@ export const CLUSTER_D: Node[] = [
       question:
         "What core dynamic makes it difficult for the US to defend the value of the dollar, according to this thesis?",
       options: [
-        "The US produces too much oil domestically — a common misreading that the text explicitly warns against.",
-        "The Federal Reserve is not allowed to buy foreign currencies — this alternative is popular online but misstates the mechanism.",
+        "The US produces too much oil domestically — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "The Federal Reserve is not allowed to buy foreign currencies — a widely circulated summary that inverts the relationship the author actually defends.",
         "The US has so much sovereign debt that raising interest rates to defend the dollar would bankrupt the government",
       ],
       correctIndex: 2,
@@ -421,8 +421,8 @@ export const CLUSTER_D: Node[] = [
         "What specific event catalyzed the shift to 'Bretton Woods III' according to Pozsar?",
       options: [
         "The freezing of Russia's foreign exchange reserves by the West in 2022",
-        "The invention of Bitcoin in 2009 — this alternative is popular online but.",
-        "The collapse of the Lehman Brothers in 2008 — this view ",
+        "The invention of Bitcoin in 2009 — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "The collapse of the Lehman Brothers in 2008 — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 0,
       explanation:
@@ -461,9 +461,9 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "What did Sequoia mean by telling founders they must become 'default alive'?",
       options: [
-        "They must immediately IPO to raise cash — a common misreading that the text explicitly warns against.",
+        "They must immediately IPO to raise cash — a widely circulated summary that inverts the relationship the author actually defends.",
         "They must cut expenses enough to reach profitability without ever needing to raise another round of funding",
-        "They must pivot to healthcare software — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "They must pivot to healthcare software — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 1,
       explanation:
@@ -502,8 +502,8 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "What fundamental shift in investor behavior did 'Adapting to Endure' highlight?",
       options: [
-        "A shift from investing in software to investing in crypto — this vie",
-        "A shift from public markets to private equity — this alternative is popular online but misstates.",
+        "A shift from investing in software to investing in crypto — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "A shift from public markets to private equity — a widely circulated summary that inverts the relationship the author actually defends.",
         "A shift from valuing 'growth at all costs' to valuing free cash flow and profitability",
       ],
       correctIndex: 2,
@@ -533,9 +533,9 @@ export const CLUSTER_D: Node[] = [
         "According to Lynch, what is the relationship between a company's operational success and its stock price success?",
       options: [
         "Over a few years there's essentially no correlation, but over the long term the correlation approaches 100%.",
-        "There is a perfect correlation at every timescale, including day to day. — this view e",
-        "Stock price success always precedes operational success. — an intuitive but incorrect explanation that conflates correlation.",
-        "The two are entirely unrelated at any timescale. — this view reverses the causal direction the source material argues for.",
+        "There is a perfect correlation at every timescale, including day to day. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Stock price success always precedes operational success. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "The two are entirely unrelated at any timescale. — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 0,
       explanation:
@@ -578,10 +578,10 @@ export const CLUSTER_D: Node[] = [
       question:
         "According to SK hynix's chairman and TSMC's CEO, why can't the AI-driven chip and memory shortage be resolved quickly even with aggressive capital spending?",
       options: [
-        "Because chipmakers are refusing to raise capital expenditure despite strong demand signals. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because chipmakers are refusing to raise capital expenditure despite strong demand signals. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
         "Because building and ramping a new fab has a fixed lead time of roughly five to seven years regardless of how much capital is deployed, so today's spending increases can't produce supply before the early 2030s.",
-        "Because AI demand for chips is actually expected to decline within the next year. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "Because export controls make it illegal to build new fabs anywhere outside of Taiwan. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because AI demand for chips is actually expected to decline within the next year. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because export controls make it illegal to build new fabs anywhere outside of Taiwan. — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 1,
       explanation:

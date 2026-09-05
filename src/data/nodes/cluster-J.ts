@@ -19,9 +19,9 @@ export const CLUSTER_J: Node[] = [
       question: "You want to build a lasting friendship. Inversion suggests asking:",
       options: [
         "How can I maximize how much fun we have? ",
-        "What's the fastest path to trust? — this ",
+        "What's the fastest path to trust? — an appealing shorthand that collapses a structural distinction into a surface similarity.",
         "What are ten ways to guarantee this friendship dies?",
-        "Who are our mutual friends? — this view e",
+        "Who are our mutual friends? — a frequent misremembering that swaps the cause and its consequence.",
       ],
       correctIndex: 2,
       explanation:
@@ -34,9 +34,7 @@ export const CLUSTER_J: Node[] = [
         label: "Poor Charlie's Almanack",
         source: "book",
         url: "https://www.stripe.press/poor-charlies-almanack",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -60,9 +58,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "A CEO cuts prices to gain market share. First-order effect: sales rise. What's the classic missed second-order effect?",
       options: [
-        "The CEO gets a bonus. — an intuitive but incorrect explanation that conflates correlation with.",
-        "The stock price always rises. — this view reverses the causal direction the source material argues.",
-        "Nothing meaningful — first-order effects usually persist. — this view",
+        "The CEO gets a bonus. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "The stock price always rises. — a common simplification that omits the key mechanism behind the effect.",
+        "Nothing meaningful — an appealing shorthand that collapses a structural distinction into a surface similarity.",
         "Competitors match, margins fall for everyone, and customers now expect the lower price.",
       ],
       correctIndex: 3,
@@ -76,11 +74,7 @@ export const CLUSTER_J: Node[] = [
         label: "The Most Important Thing",
         source: "book",
         url: "https://www.oaktreecapital.com/insights/memos",
-        archive: {
-          status: "full",
-          path: "content/sources/J2-0.md",
-          retrieved: "2026-07-14",
-        },
+        archive: { status: "full", path: "content/sources/J2-0.md", retrieved: "2026-07-14" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -119,11 +113,7 @@ export const CLUSTER_J: Node[] = [
         label: "Berkshire Hathaway Shareholder Letters",
         source: "berkshirehathaway.com",
         url: "https://www.berkshirehathaway.com/letters/letters.html",
-        archive: {
-          status: "full",
-          path: "content/sources/J3-0.md",
-          retrieved: "2026-07-14",
-        },
+        archive: { status: "full", path: "content/sources/J3-0.md", retrieved: "2026-07-14" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -147,10 +137,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "A coworker leaves you out of a meeting invite. Hanlon's Razor prompts you to first suspect:",
       options: [
-        "They're trying to sabotage you. — this view ",
+        "They're trying to sabotage you. — a compact misstatement that leaves out the scope in which the claim holds.",
         "They forgot or didn't realize you needed to be included.",
-        "They dislike you personally. — this view emp",
-        "They're a bad person. — this alternative is popular online but.",
+        "They dislike you personally. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "They're a bad person. — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 1,
       explanation:
@@ -163,11 +153,7 @@ export const CLUSTER_J: Node[] = [
         label: "Murphy's Law and other reasons things go wrong",
         source: "book",
         url: "https://en.wikipedia.org/wiki/Hanlon%27s_razor",
-        archive: {
-          status: "full",
-          path: "content/sources/J4-0.md",
-          retrieved: "2026-07-14",
-        },
+        archive: { status: "full", path: "content/sources/J4-0.md", retrieved: "2026-07-14" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -208,18 +194,14 @@ export const CLUSTER_J: Node[] = [
         label: "A Lesson on Elementary, Worldly Wisdom (full transcript)",
         source: "Farnam Street / Charlie Munger, 1994 speech",
         url: "https://fs.blog/great-talks/a-lesson-on-worldly-wisdom/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
       {
         label:
           "Charlie Munger Lecture: Elementary Worldly Wisdom as it Relates to Investing & Business",
         source: "YouTube",
         url: "https://www.youtube.com/watch?v=vP2QPLGnjGo",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -243,9 +225,9 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What are the four steps of the Feynman Technique, in order?",
       options: [
-        "Read, memorize, recite, forget — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Watch a lecture, take notes, highlight, re-read — this view reverses the causal direction the source material argues.",
-        "Guess, check, revise, repeat — a common misreading that the text explicitly warns against.",
+        "Read, memorize, recite, forget — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Watch a lecture, take notes, highlight, re-read — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Guess, check, revise, repeat — a compact misstatement that leaves out the scope in which the claim holds.",
         "Select a concept and map your knowledge; teach it to a 12-year-old; review and refine; test and archive",
       ],
       correctIndex: 3,
@@ -259,20 +241,14 @@ export const CLUSTER_J: Node[] = [
         label: "Why Write? (on how writing reveals gaps in understanding)",
         source: "Farnam Street",
         url: "https://fs.blog/why-write/",
-        archive: {
-          status: "full",
-          path: "content/sources/J6-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J6-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "This is Water — David Foster Wallace's 2005 Kenyon College commencement speech (full transcript and audio)",
         source: "Farnam Street",
         url: "https://fs.blog/david-foster-wallace-this-is-water/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -298,9 +274,9 @@ export const CLUSTER_J: Node[] = [
         "In the 1987 King's Cross fire investigation, what was identified as the actual root cause, as distinct from the proximate cause (a dropped match)?",
       options: [
         "Untrained staff with no knowledge of how to evacuate people or fight the fire",
-        "The wooden escalators alone — this view reverses the causal direction the source.",
-        "A bomb planted by an unknown attacker — a common misreading that the text explicitly.",
-        "A faulty electrical system — this alternative is popular online but misstates the.",
+        "The wooden escalators alone — a handy abbreviation that hides the counter-condition the argument requires.",
+        "A bomb planted by an unknown attacker — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "A faulty electrical system — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 0,
       explanation:
@@ -313,19 +289,13 @@ export const CLUSTER_J: Node[] = [
         label: "Understanding the Limitations of Maps",
         source: "Farnam Street",
         url: "https://fs.blog/understanding-limitations-maps/",
-        archive: {
-          status: "full",
-          path: "content/sources/J7-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J7-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The 5 Whys technique explained (as used in root cause analysis)",
         source: "General reference — verify specific video before use",
         url: "https://fs.blog/proximate-vs-root-causes/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -349,10 +319,10 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What discovery led Edward Lorenz to found chaos theory in the 1960s?",
       options: [
-        "A supercomputer malfunction that predicted an impossible weather pattern — this view emphas",
+        "A supercomputer malfunction that predicted an impossible weather pattern — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Entering a weather-model starting value as 0.506 instead of the full 0.506127 produced a wildly different forecast",
-        "A failed experiment trying to control the weather artificially — a common misreading that the text explicitly warns against.",
-        "Observing real butterflies affecting local wind patterns — this alternative is popular online but misstates the mechanism the.",
+        "A failed experiment trying to control the weather artificially — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Observing real butterflies affecting local wind patterns — a tempting paraphrase that drops the precise condition that makes the thesis work.",
       ],
       correctIndex: 1,
       explanation:
@@ -365,17 +335,13 @@ export const CLUSTER_J: Node[] = [
         label: "Deterministic Nonperiodic Flow (Lorenz's original 1963 paper)",
         source: "Edward Lorenz, MIT",
         url: "http://eaps4.mit.edu/research/Lorenz/Deterministic_63.pdf",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
       {
         label: "The Value of Play As a Driver of Innovation (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/value-play-driver-innovation/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -415,19 +381,13 @@ export const CLUSTER_J: Node[] = [
         label: "Circle of Competence (referenced concept)",
         source: "Farnam Street",
         url: "https://fs.blog/circle-of-competence/",
-        archive: {
-          status: "full",
-          path: "content/sources/J9-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J9-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Farnam Street's Knowledge Project podcast (Shane Parrish's long-form interviews)",
         source: "The Knowledge Project",
         url: "https://fs.blog/knowledge-project-podcast/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -452,9 +412,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "In Simon Ramo's distinction, what percentage of points are won (not lost) in professional tennis, versus amateur tennis?",
       options: [
-        "50% in both — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Points are lost equally often at both levels — this view reverses the causal direction the source material argues.",
-        "It's the reverse — amateurs win more points than professionals — this view empha",
+        "50% in both — a neat inversion that makes the effect sound like the cause.",
+        "Points are lost equally often at both levels — a handy abbreviation that hides the counter-condition the argument requires.",
+        "It's the reverse — a tempting paraphrase that drops the precise condition that makes the thesis work.",
         "About 80% of points are won in professional tennis; about 80% are lost (via errors) in amateur tennis",
       ],
       correctIndex: 3,
@@ -468,19 +428,13 @@ export const CLUSTER_J: Node[] = [
         label: "Inversion (the related mental model of solving problems backward)",
         source: "Farnam Street",
         url: "https://fs.blog/inversion/",
-        archive: {
-          status: "full",
-          path: "content/sources/J10-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J10-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Charlie Munger biography and talks archive",
         source: "Farnam Street",
         url: "https://fs.blog/charlie-munger/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -506,9 +460,9 @@ export const CLUSTER_J: Node[] = [
         "Who coined the phrase 'all models are wrong, but some are useful,' cited as the origin of this piece's title?",
       options: [
         "George Box, in a 1976 paper",
-        "Charlie Munger — this",
-        "Nassim Taleb — this v",
-        "Alfred Korzybski — th",
+        "Charlie Munger — a neat inversion that makes the effect sound like the cause.",
+        "Nassim Taleb — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Alfred Korzybski — a tempting paraphrase that drops the precise condition that makes the thesis work.",
       ],
       correctIndex: 0,
       explanation:
@@ -521,19 +475,13 @@ export const CLUSTER_J: Node[] = [
         label: "The Map is Not the Territory",
         source: "Farnam Street",
         url: "https://fs.blog/map-and-territory/",
-        archive: {
-          status: "full",
-          path: "content/sources/J11-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J11-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Great Mental Models book series overview",
         source: "Farnam Street",
         url: "https://fs.blog/tgmm/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -573,20 +521,14 @@ export const CLUSTER_J: Node[] = [
         label: "Reciprocity (the related mental model)",
         source: "Farnam Street",
         url: "https://fs.blog/reciprocity/",
-        archive: {
-          status: "full",
-          path: "content/sources/J12-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J12-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "The Multidisciplinary Approach to Thinking (Peter Kaufman talk, referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/great-talks/multidisciplinary-approach-thinking-peter-kaufman/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -611,10 +553,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What changes the incentive structure of the Prisoner's Dilemma from favoring defection to making cooperation more likely?",
       options: [
-        "Making the prison sentences longer — an intuitive but incorrect explanation that conflates.",
-        "Allowing the prisoners to communicate just once — this view emph",
+        "Making the prison sentences longer — a frequent misremembering that swaps the cause and its consequence.",
+        "Allowing the prisoners to communicate just once — a familiar retelling that strips out the contingency the source treats as central.",
         "Repeating (iterating) the game an unknown or effectively infinite number of times",
-        "Removing the police from the scenario entirely — this view empha",
+        "Removing the police from the scenario entirely — a neat inversion that makes the effect sound like the cause.",
       ],
       correctIndex: 2,
       explanation:
@@ -627,20 +569,14 @@ export const CLUSTER_J: Node[] = [
         label: "The Surprising Power of the Long Game (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/long-game/",
-        archive: {
-          status: "full",
-          path: "content/sources/J13-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J13-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "Finite and Infinite Games: Two Ways to Play the Game of Life (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/finite-and-infinite-games/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -665,9 +601,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What does the 'Orient' stage of the OODA Loop specifically involve, according to Boyd?",
       options: [
-        "Simply gathering more raw data about the situation — this view emphasize",
-        "Immediately acting on the first available option — this view reverses the causal direction the source.",
-        "Waiting for a superior officer's direct order — a common misreading that the text explicitly warns.",
+        "Simply gathering more raw data about the situation — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Immediately acting on the first available option — a frequent misremembering that swaps the cause and its consequence.",
+        "Waiting for a superior officer's direct order — a familiar retelling that strips out the contingency the source treats as central.",
         "Stripping away cultural, genetic, and cognitive biases to see the situation as it truly is",
       ],
       correctIndex: 3,
@@ -681,19 +617,13 @@ export const CLUSTER_J: Node[] = [
         label: "Decision Journal (a related practical tool referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/02/decision-journal/",
-        archive: {
-          status: "full",
-          path: "content/sources/J14-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J14-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Farnam Street's Knowledge Project podcast — decision-making series",
         source: "The Knowledge Project",
         url: "https://fs.blog/knowledge-project-podcast/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -719,9 +649,9 @@ export const CLUSTER_J: Node[] = [
         "In the mammogram example used in this piece, why can a test that's 75% accurate still produce mostly false positives in absolute numbers?",
       options: [
         "Because the underlying disease rate (the prior/base rate) is very low, so false positives from the much larger healthy population swamp true positives",
-        "Because the test itself is fundamentally broken — this view reverses the causal direction the source material argues for. The distinction matters because it changes what.",
-        "Because doctors deliberately misread the results — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
-        "Because 75% accuracy is actually below chance level — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because the test itself is fundamentally broken — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because doctors deliberately misread the results — a frequent misremembering that swaps the cause and its consequence.",
+        "Because 75% accuracy is actually below chance level — a familiar retelling that strips out the contingency the source treats as central.",
       ],
       correctIndex: 0,
       explanation:
@@ -734,19 +664,13 @@ export const CLUSTER_J: Node[] = [
         label: "Bayes and Deadweight: Using Statistics to Eject the Deadweight From Your Life",
         source: "Farnam Street",
         url: "https://fs.blog/2018/01/bayes-deadweight/",
-        archive: {
-          status: "full",
-          path: "content/sources/J15-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J15-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Julia Galef on Bayesian reasoning changing how you think",
         source: "Big Think, via YouTube",
         url: "https://www.youtube.com/watch?v=NEqHML98RgU",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -771,10 +695,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What distinguishes a 'fat-tailed' distribution (like wealth or market crashes) from a normal bell-curve distribution (like human height)?",
       options: [
-        "Fat-tailed distributions have no meaningful average at all — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Fat-tailed distributions have no meaningful average at all — a common simplification that omits the key mechanism behind the effect.",
         "Fat-tailed distributions have no natural cap on extreme outliers, making rare extreme events far more likely than bell-curve intuition suggests",
-        "Fat-tailed distributions only apply to biological measurements — a common misreading that the text explicitly warns against.",
-        "There is no real difference between the two — this alternative is popular online but misstates the mechanism the author defends.",
+        "Fat-tailed distributions only apply to biological measurements — a plausible reading that overlooks the limiting condition the text stresses.",
+        "There is no real difference between the two — a frequent misremembering that swaps the cause and its consequence.",
       ],
       correctIndex: 1,
       explanation:
@@ -787,20 +711,14 @@ export const CLUSTER_J: Node[] = [
         label: "The Pygmalion Effect: Proving Them Right (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/pygmalion-effect/",
-        archive: {
-          status: "full",
-          path: "content/sources/J16-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J16-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "Farnam Street's Knowledge Project podcast — probabilistic thinking and poker with Annie Duke",
         source: "The Knowledge Project",
         url: "https://fs.blog/annie-duke/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -825,10 +743,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the classic medical-training version of Occam's Razor mentioned in this piece?",
       options: [
-        "'First, do no harm' — this view emphasiz",
-        "'The patient is always right' — this vie",
+        "'First, do no harm' — a widely circulated summary that inverts the relationship the author actually defends.",
+        "'The patient is always right' — a common simplification that omits the key mechanism behind the effect.",
         "'When you hear hoofbeats, think horses, not zebras'",
-        "'Treat the symptom, not the cause' — thi",
+        "'Treat the symptom, not the cause' — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 2,
       explanation:
@@ -841,20 +759,14 @@ export const CLUSTER_J: Node[] = [
         label: "Hanlon's Razor (the complementary mental model)",
         source: "Farnam Street",
         url: "https://fs.blog/2017/04/mental-model-hanlons-razor/",
-        archive: {
-          status: "full",
-          path: "content/sources/J17-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J17-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "Illusion of Transparency: Your Poker Face is Better Than You Think (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/illusion-of-transparency/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -879,9 +791,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to this article, what kind of reasoning is Sherlock Holmes actually using in his famous 'deductions,' despite the popular label?",
       options: [
-        "Genuine deductive reasoning, exactly as advertised — this view emp",
-        "Pure guesswork with no logical structure — this view reverses the causal direction the source.",
-        "A form of reasoning that doesn't exist in formal logic — this view",
+        "Genuine deductive reasoning, exactly as advertised — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Pure guesswork with no logical structure — a widely circulated summary that inverts the relationship the author actually defends.",
+        "A form of reasoning that doesn't exist in formal logic — a common simplification that omits the key mechanism behind the effect.",
         "Inductive reasoning — probable inference from observed clues, not certain deduction",
       ],
       correctIndex: 3,
@@ -895,20 +807,14 @@ export const CLUSTER_J: Node[] = [
         label: "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/02/peter-cathcart-wason-falsification/",
-        archive: {
-          status: "full",
-          path: "content/sources/J18-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J18-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "Three Buckets of Knowledge — Peter Kaufman's framework for identifying universal principles (referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2016/02/three-buckets-lessons-of-history/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -934,9 +840,9 @@ export const CLUSTER_J: Node[] = [
         "What was Abraham Wald's key insight about WWII bomber planes and where to add armor?",
       options: [
         "Reinforce the areas showing little to no damage on returning planes, since hits there likely caused planes to never return at all",
-        "Reinforce wherever returning planes showed the most bullet damage — this view reverses the causal direction the source material argues for.",
-        "Add armor evenly across the entire aircraft — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
-        "Focus only on the cockpit, regardless of damage patterns — this alternative is popular online but misstates the mechanism the author defends.",
+        "Reinforce wherever returning planes showed the most bullet damage — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Add armor evenly across the entire aircraft — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Focus only on the cockpit, regardless of damage patterns — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 0,
       explanation:
@@ -949,20 +855,14 @@ export const CLUSTER_J: Node[] = [
         label: "What Sharks (and Building Bombers) Teach Us About Survivorship Bias",
         source: "Farnam Street",
         url: "https://fs.blog/sharks-survivorship-bias/",
-        archive: {
-          status: "full",
-          path: "content/sources/J19-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J19-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "The Narrative Fallacy (related Farnam Street piece, on how we turn the past into false patterns)",
         source: "Farnam Street",
         url: "https://fs.blog/2016/04/narrative-fallacy/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -987,10 +887,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "Why does this piece argue oceanic whitetip sharks may be more dangerous than their attack statistics suggest?",
       options: [
-        "Because they are larger than great whites — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because they are larger than great whites — a widely circulated summary that inverts the relationship the author actually defends.",
         "Because their attacks happen in the open ocean, in isolated situations with fewer potential survivors and witnesses to report them",
-        "Because they are faster swimmers — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
-        "Because scientists have not studied them at all — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because they are faster swimmers — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because scientists have not studied them at all — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 1,
       explanation:
@@ -1003,19 +903,13 @@ export const CLUSTER_J: Node[] = [
         label: "Survivorship Bias: The Tale of Forgotten Failures",
         source: "Farnam Street",
         url: "https://fs.blog/survivorship-bias/",
-        archive: {
-          status: "full",
-          path: "content/sources/J20-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J20-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Indianapolis: The True Story of the Worst Sea Disaster in US Naval History",
         source: "Lynn Vincent and Sara Vladic (book, referenced in this piece)",
         url: "https://fs.blog/sharks-survivorship-bias/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1040,10 +934,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "In the lying-detection study referenced in this piece, how often were participants who lied actually caught, versus how often they expected to be caught?",
       options: [
-        "They were caught about half the time, exactly as they expected — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "They were caught almost every time, far more than expected — this view reverses the causal direction the source material argues for.",
+        "They were caught about half the time, exactly as they expected — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "They were caught almost every time, far more than expected — a widely circulated summary that inverts the relationship the author actually defends.",
         "They expected to be caught about half the time but were actually only detected about a quarter of the time — a rate low enough to be chance",
-        "They were never caught at all — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes.",
+        "They were never caught at all — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 2,
       explanation:
@@ -1056,20 +950,14 @@ export const CLUSTER_J: Node[] = [
         label: "Hanlon's Razor",
         source: "Farnam Street",
         url: "https://fs.blog/2017/04/mental-model-hanlons-razor/",
-        archive: {
-          status: "full",
-          path: "content/sources/J21-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J21-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "Risk Intelligence: How to Live With Uncertainty (Dylan Evans, referenced in this piece)",
         source: "Book excerpt via Farnam Street",
         url: "https://fs.blog/illusion-of-transparency/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1094,9 +982,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What does the 'WEIRD' critique (Henrich, Heine, Norenzayan) argue about a large share of psychology research?",
       options: [
-        "That psychology experiments are always too large to be useful — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
-        "That anecdotes are always more accurate than statistics — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "That psychology research doesn't use human subjects at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "That psychology experiments are always too large to be useful — a compact misstatement that leaves out the scope in which the claim holds.",
+        "That anecdotes are always more accurate than statistics — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "That psychology research doesn't use human subjects at all — a widely circulated summary that inverts the relationship the author actually defends.",
         "That findings from Western, Educated, Industrialized, Rich, Democratic subjects are generalized to all humans despite being one of the least representative populations available",
       ],
       correctIndex: 3,
@@ -1110,20 +998,14 @@ export const CLUSTER_J: Node[] = [
         label: "Bias From Insensitivity to Sample Size",
         source: "Farnam Street",
         url: "https://fs.blog/mental-model-bias-from-insensitivity-to-sample-size/",
-        archive: {
-          status: "full",
-          path: "content/sources/J22-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J22-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "The Psychology of Human Misjudgment (Charlie Munger talk, referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/great-talks/psychology-human-misjudgment/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1149,9 +1031,9 @@ export const CLUSTER_J: Node[] = [
         "What thought experiment is credited with leading Einstein toward the special theory of relativity?",
       options: [
         "Imagining what he would observe if he could travel alongside a beam of light",
-        "Schrödinger's cat — this view reverses the causal direction the source material argues.",
-        "The trolley problem — a common misreading that the text explicitly warns against.",
-        "Laplace's demon — this alternative is popular online but misstates the mechanism the.",
+        "Schrödinger's cat — a compact misstatement that leaves out the scope in which the claim holds.",
+        "The trolley problem — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Laplace's demon — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -1165,19 +1047,13 @@ export const CLUSTER_J: Node[] = [
           "Occam's Razor (referenced in this piece as informing how scientists choose among thought-experiment hypotheses)",
         source: "Farnam Street",
         url: "https://fs.blog/occams-razor/",
-        archive: {
-          status: "full",
-          path: "content/sources/J23-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J23-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Great Mental Models book series overview",
         source: "Farnam Street",
         url: "https://fs.blog/tgmm/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1202,10 +1078,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What specific event is credited with giving Julia Child her breakthrough understanding of first-principles cooking?",
       options: [
-        "Watching televised cooking shows as a child — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Watching televised cooking shows as a child — a handy abbreviation that hides the counter-condition the argument requires.",
         "Enrolling at the Cordon Bleu cooking school in Paris in 1949, where she broke every dish down into its smallest steps",
-        "Being taught by her mother growing up — a common misreading that the text explicitly warns against.",
-        "Reading cookbooks translated from French — this alternative is popular online but misstates the mechanism the author defends.",
+        "Being taught by her mother growing up — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Reading cookbooks translated from French — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 1,
       explanation:
@@ -1218,20 +1094,14 @@ export const CLUSTER_J: Node[] = [
         label: "First Principles: The Building Blocks of True Knowledge",
         source: "Farnam Street",
         url: "https://fs.blog/2018/04/first-principles/",
-        archive: {
-          status: "full",
-          path: "content/sources/J24-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J24-0.md", retrieved: "2026-07-18" },
       },
       {
         label:
           "Something from the Oven (Laura Shapiro's biography of Julia Child, primary source for this piece)",
         source: "Book, referenced via Farnam Street",
         url: "https://fs.blog/how-julia-child-used-first-principles-thinking/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1256,10 +1126,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What historical event does this piece use as an example of reciprocity based on mutual self-interest between two ancient powers?",
       options: [
-        "The signing of the Magna Carta — an intuitive but incorrect explanation that conflates.",
-        "The Treaty of Westphalia — this view reverses the causal direction the source material argues for.",
+        "The signing of the Magna Carta — a neat inversion that makes the effect sound like the cause.",
+        "The Treaty of Westphalia — a handy abbreviation that hides the counter-condition the argument requires.",
         "The 1259 BCE 'Eternal Treaty' between Egypt's Ramesses and the Hittite king Hattusili",
-        "The founding of the Silk Road — this alternative is popular online but misstates the mechanism.",
+        "The founding of the Silk Road — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 2,
       explanation:
@@ -1272,17 +1142,13 @@ export const CLUSTER_J: Node[] = [
         label: "Tit For Tat",
         source: "Farnam Street",
         url: "https://fs.blog/tit-for-tat/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
       {
         label: "The Great Mental Models Volume 2: Physics, Chemistry, and Biology",
         source: "Farnam Street book",
         url: "https://fs.blog/tgmm/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1307,8 +1173,8 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to Marc Andreessen's 2013 comment cited in this piece, what share of profits does the #1 player typically capture in a technology market, versus the #2 player?",
       options: [
-        "50% versus 50%, an even split — this view empha",
-        "70% versus 30% — this view reverses the causal direction the source.",
+        "50% versus 50%, an even split — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "70% versus 30% — a neat inversion that makes the effect sound like the cause.",
         "There is no meaningful pattern in technology markets",
         "About 90% for the #1 player and about 10% for the #2 player",
       ],
@@ -1323,19 +1189,13 @@ export const CLUSTER_J: Node[] = [
         label: "Power Laws",
         source: "Farnam Street",
         url: "https://fs.blog/2017/11/power-laws/",
-        archive: {
-          status: "full",
-          path: "content/sources/J26-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J26-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Economics of Superstars (Sherwin Rosen, referenced in this piece)",
         source: "Academic paper, cited via Farnam Street",
         url: "https://fs.blog/mental-model-winner-take-all/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1360,9 +1220,9 @@ export const CLUSTER_J: Node[] = [
       question: "What is exaptation, as used in this piece's career-change framework?",
       options: [
         "A trait or skill that evolved or was built for one purpose but gets repurposed for a completely different, unrelated use",
-        "A financial exit strategy for leaving a company — this view reverses the causal direction the source material argues for.",
-        "A type of severance negotiation — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
-        "A formal certification process — this alternative is popular online but misstates the mechanism the author defends.",
+        "A financial exit strategy for leaving a company — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "A type of severance negotiation — a neat inversion that makes the effect sound like the cause.",
+        "A formal certification process — a handy abbreviation that hides the counter-condition the argument requires.",
       ],
       correctIndex: 0,
       explanation:
@@ -1375,19 +1235,13 @@ export const CLUSTER_J: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-        archive: {
-          status: "full",
-          path: "content/sources/J27-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J27-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "The Bayesian Casino (Bayes and Deadweight, referenced in this piece)",
         source: "Farnam Street",
         url: "https://fs.blog/2018/01/bayes-deadweight/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1411,10 +1265,10 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What does 'algebraic equivalence,' as used in this parenting piece, help explain?",
       options: [
-        "That every child must receive the exact same amount of physical items to be treated fairly — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That every child must receive the exact same amount of physical items to be treated fairly — a frequent misremembering that swaps the cause and its consequence.",
         "That two different things (like different kinds of attention to different children) can be unequal in form but equal in value, just as different values of x and y can equally satisfy x+y=5",
-        "That parenting requires no math at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "That siblings should always be treated identically in every situation — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
+        "That parenting requires no math at all — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "That siblings should always be treated identically in every situation — a neat inversion that makes the effect sound like the cause.",
       ],
       correctIndex: 1,
       explanation:
@@ -1427,17 +1281,13 @@ export const CLUSTER_J: Node[] = [
         label: "Inversion",
         source: "Farnam Street",
         url: "https://fs.blog/2013/10/inversion/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
       {
         label: "Nature: An Economic History (Geerat Vermeij, referenced in this piece)",
         source: "Book, cited via Farnam Street",
         url: "https://fs.blog/parenting-mental-models/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1462,10 +1312,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to this piece, what characterizes the 'short game' as opposed to the 'long game'?",
       options: [
-        "The short game requires more patience than the long game — this view emp",
-        "The short game and long game produce identical results eventually — this",
+        "The short game requires more patience than the long game — a plausible reading that overlooks the limiting condition the text stresses.",
+        "The short game and long game produce identical results eventually — a frequent misremembering that swaps the cause and its consequence.",
         "The short game offers visible, immediate benefits but compounds into larger costs over time",
-        "The short game is only relevant to financial decisions — this view empha",
+        "The short game is only relevant to financial decisions — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 2,
       explanation:
@@ -1478,19 +1328,13 @@ export const CLUSTER_J: Node[] = [
         label: "An Antifragile Way of Life (the original 2014 piece this article expands on)",
         source: "Farnam Street",
         url: "https://fs.blog/2014/10/an-antifragile-way-of-life/",
-        archive: {
-          status: "full",
-          path: "content/sources/J29-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J29-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Second-Order Thinking (related Farnam Street piece on long-horizon consequences)",
         source: "Farnam Street",
         url: "https://fs.blog/second-order-thinking/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1515,9 +1359,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the 'grammar-book effect,' as described by David Graeber and cited in this piece?",
       options: [
-        "The tendency for grammar books to become bestsellers — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "A method for teaching children to read faster — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "The idea that all languages eventually merge into one — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "The tendency for grammar books to become bestsellers — a familiar retelling that strips out the contingency the source treats as central Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "A method for teaching children to read faster — a surface-level gloss that misses the threshold where the claim stops applying It holds only within the scope the author defines, not as a universal claim.",
+        "The idea that all languages eventually merge into one — a neat inversion that makes the effect sound like the cause This reading skips the enabling condition that makes the mechanism work as stated.",
         "Once a description of how people currently speak is written down and taught in schools, people start treating it as a fixed prescription for how they must speak, even as the living language keeps evolving",
       ],
       correctIndex: 3,
@@ -1531,18 +1375,14 @@ export const CLUSTER_J: Node[] = [
         label: "The Map is Not the Territory",
         source: "Farnam Street",
         url: "https://fs.blog/map-and-territory/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
       {
         label:
           "The Utopia of Rules: On Technology, Stupidity, and the Secret Joys of Bureaucracy (David Graeber, primary source for this piece)",
         source: "Book, cited via Farnam Street",
         url: "https://fs.blog/descriptions-arent-prescriptions/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -1570,20 +1410,16 @@ export const CLUSTER_J: Node[] = [
       explanation:
         "Mental models (our core beliefs, values, and assumptions) are the foundation of the iceberg. They dictate the structures we build, which create the patterns of behavior, which ultimately result in single events.",
     },
+    tags: ["Incentives & Systems", "Cognitive Biases & Models"],
     related: ["M1", "M2", "J2"],
     furtherReading: [
       {
         label: "Iceberg Model",
         source: "Untools",
         url: "https://untools.co/iceberg-model",
-        archive: {
-          status: "full",
-          path: "content/sources/J31-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/J31-0.md", retrieved: "2026-07-17" },
       },
     ],
-    tags: ["Incentives & Systems", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
   },
   {
@@ -1614,20 +1450,16 @@ export const CLUSTER_J: Node[] = [
       explanation:
         "A model is a simplified tool. When we forget it's a simplification and treat it as absolute truth, we make catastrophic errors when encountering complex reality.",
     },
+    tags: ["Cognitive Biases & Models", "Decision-Making"],
     related: ["J15", "U1", "J2"],
     furtherReading: [
       {
         label: "The Map is Not the Territory",
         source: "LessWrong",
         url: "https://www.lesswrong.com/tag/the-map-is-not-the-territory",
-        archive: {
-          status: "full",
-          path: "content/sources/J32-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/J32-0.md", retrieved: "2026-07-17" },
       },
     ],
-    tags: ["Cognitive Biases & Models", "Decision-Making"],
     epistemicStatus: "Canonical",
   },
   {
@@ -1650,15 +1482,16 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the 'Levels of Abstraction' heuristic, why is constantly zooming between the big picture and granular detail important when learning a new complex system?",
       options: [
-        "Because granular detail is always more important than the big picture. — this view emphasize",
-        "Because it's the fastest way to memorize technical vocabulary. — this view reverses the causal direction the source material argues.",
-        "Because experts only ever think at the detail level. — a common misreading that the text explicitly warns against.",
+        "Because granular detail is always more important than the big picture. — a common simplification that omits the key mechanism behind the effect.",
+        "Because it's the fastest way to memorize technical vocabulary. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because experts only ever think at the detail level. — a plausible reading that overlooks the limiting condition the text stresses.",
         "Because staying at only one layer — all overview or all detail — produces an incomplete or distorted understanding.",
       ],
       correctIndex: 3,
       explanation:
         "The framework argues understanding has multiple layers, and skipping between the broad context and the fine mechanics is what prevents tunnel vision on any single layer.",
     },
+    tags: ["First-Principles Thinking", "Cognitive Biases & Models"],
     related: ["J1", "J2", "J36"],
     furtherReading: [
       {
@@ -1666,14 +1499,9 @@ export const CLUSTER_J: Node[] = [
         source: "Polymathinvestor.com",
         url: "https://polymathinvestor.com/",
         type: "article",
-        archive: {
-          status: "full",
-          path: "content/sources/J34-0.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/J34-0.md", retrieved: "2026-07-20" },
       },
     ],
-    tags: ["First-Principles Thinking", "Cognitive Biases & Models"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -1696,15 +1524,16 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the framework built from this reading list, who does AI actually threaten most?",
       options: [
-        "People who refuse to use any AI tools. — an intuitive but incorrect explanation that.",
-        "People who read too many books. — this view reverses the causal direction the source.",
+        "People who refuse to use any AI tools. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "People who read too many books. — a common simplification that omits the key mechanism behind the effect.",
         "People who have outsourced their thinking to algorithms without realizing it.",
-        "Only professional researchers and scientists. — this view emp",
+        "Only professional researchers and scientists. — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 2,
       explanation:
         "The article's conclusion is explicit: 'AI does not threaten people who think critically. It threatens people who have outsourced their thinking without realizing it.'",
     },
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     related: ["J36", "Q18", "J24"],
     furtherReading: [
       {
@@ -1712,14 +1541,9 @@ export const CLUSTER_J: Node[] = [
         source: "X (Twitter) Article",
         url: "https://x.com/SJosephBurns/status/2028069256231834054",
         type: "article",
-        archive: {
-          status: "full",
-          path: "content/sources/J35-0.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/J35-0.md", retrieved: "2026-07-20" },
       },
     ],
-    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -1742,15 +1566,16 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the main risk of collecting long lists of mental models, as this node's framing suggests?",
       options: [
-        "That there are too few mental models to be useful. — an intuitive but incorrect explanation that conflates.",
+        "That there are too few mental models to be useful. — an intuitive gloss that confuses the enabling condition with the outcome.",
         "That people recognize and collect the names of models without ever applying them to a real decision.",
-        "That mental models are only theoretical and can't be applied practically. — this",
-        "That using more than one model at a time is always a mistake. — this view emphas",
+        "That mental models are only theoretical and can't be applied practically. — a common simplification that omits the key mechanism behind the effect.",
+        "That using more than one model at a time is always a mistake. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 1,
       explanation:
         "The practical value of a mental model comes from active use under real constraints — passively knowing a list of names provides none of that value on its own.",
     },
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     related: ["J28", "J2", "J27"],
     furtherReading: [
       {
@@ -1758,14 +1583,9 @@ export const CLUSTER_J: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/InspiroQuest/status/2024455996173930548",
         type: "article",
-        archive: {
-          status: "full",
-          path: "content/sources/J36-0.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/J36-0.md", retrieved: "2026-07-20" },
       },
     ],
-    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     epistemicStatus: "Contemporary",
   },
   {
@@ -1789,14 +1609,15 @@ export const CLUSTER_J: Node[] = [
         "What distinct problem does the Leitner System solve, separate from the Feynman Technique?",
       options: [
         "It schedules review intervals based on how reliably you recall material, concentrating limited study time on what you're actually failing rather than what you already know.",
-        "It tests whether you actually understand a concept's underlying structure. — this view reverses the causal direction the source material argues for.",
-        "It replaces the need to ever review material more than once. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "It is only useful for language learning, not other subjects. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
+        "It tests whether you actually understand a concept's underlying structure. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "It replaces the need to ever review material more than once. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It is only useful for language learning, not other subjects. — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 0,
       explanation:
         "Feynman targets comprehension (do you understand it); Leitner targets retention over time (will you still remember it), using spaced, frequency-adjusted review to allocate effort efficiently.",
     },
+    tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
     related: ["J34", "N13", "J6", "J9"],
     furtherReading: [
       {
@@ -1804,14 +1625,9 @@ export const CLUSTER_J: Node[] = [
         source: "X (Twitter) infographic",
         url: "https://x.com/aaditsh/status/1909595121579962847",
         type: "article",
-        archive: {
-          status: "full",
-          path: "content/sources/J37-0.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/J37-0.md", retrieved: "2026-07-20" },
       },
     ],
-    tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
     epistemicStatus: "Canonical",
   },
   {
@@ -1835,14 +1651,15 @@ export const CLUSTER_J: Node[] = [
         "Which quadrant of the Johari Window can only be reduced through other people's feedback, not through self-reflection alone?",
       options: [
         "The Blind quadrant — traits others can see about you that you can't see yourself.",
-        "The Open quadrant. — this view reverses the causal direction the source material argues for.",
-        "The Hidden quadrant. — a common misreading that the text explicitly warns against.",
-        "The Unknown quadrant. — this alternative is popular online but misstates the mechanism the.",
+        "The Open quadrant. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "The Hidden quadrant. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "The Unknown quadrant. — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 0,
       explanation:
         "The Blind quadrant is defined specifically as information others have access to that you don't — by definition, only external feedback can shrink it, unlike the Hidden quadrant which you can choose to disclose yourself.",
     },
+    tags: ["Cognitive Biases & Models", "Meaning & Self"],
     related: ["J3", "J37", "J31"],
     furtherReading: [
       {
@@ -1850,14 +1667,9 @@ export const CLUSTER_J: Node[] = [
         source: "X (Twitter) infographic, curated by Igor Buinevici",
         url: "https://x.com/Igor_Buinevici/status/1941138480903688285",
         type: "article",
-        archive: {
-          status: "full",
-          path: "content/sources/J38-0.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/J38-0.md", retrieved: "2026-07-20" },
       },
     ],
-    tags: ["Cognitive Biases & Models", "Meaning & Self"],
     epistemicStatus: "Canonical",
   },
   {
@@ -1880,29 +1692,25 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the Spurious Correlations project, what is 'data dredging' and why does it produce misleading results?",
       options: [
-        "Fabricating data points that don't exist in the real dataset. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Fabricating data points that don't exist in the real dataset. — a handy abbreviation that hides the counter-condition the argument requires.",
         "Testing enormous numbers of variable pairs against each other until some match up by pure chance, then presenting that chance match as if it were meaningful.",
-        "Rounding numbers to make a chart look smoother. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Using only data from a single, small country to avoid outliers. — this alternative is popular online but misstates the mechanism the author defends.",
+        "Rounding numbers to make a chart look smoother. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Using only data from a single, small country to avoid outliers. — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 1,
       explanation:
         "Data dredging means comparing huge numbers of unrelated variables (Vigen's project runs over 600 million comparisons) until some pairs randomly align — the correlation is mathematically real, but finding it says nothing about causation, since a large enough search will always turn up coincidental matches.",
     },
+    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     related: ["J18", "L3", "U1"],
     furtherReading: [
       {
         label: "Spurious Correlations",
         source: "Tyler Vigen (tylervigen.com)",
         url: "https://www.tylervigen.com/spurious-correlations",
-        archive: {
-          status: "full",
-          path: "content/sources/J39-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/J39-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
 ];

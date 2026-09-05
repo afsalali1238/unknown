@@ -20,9 +20,9 @@ export const CLUSTER_V: Node[] = [
       question: "According to Thompson, what replaced task-oriented time during industrialization?",
       options: [
         "Clock-based, uniform time discipline, deliberately imposed by factory owners to synchronize and control labor",
-        "A more accurate scientific measurement of natural rhythms — this view reverses the causal direction the source material.",
-        "A voluntary agreement among workers to standardize schedules — a common misreading that the text explicitly warns against.",
-        "Religious observance replacing secular work schedules — this alternative is popular online but misstates the mechanism the.",
+        "A more accurate scientific measurement of natural rhythms — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "A voluntary agreement among workers to standardize schedules — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Religious observance replacing secular work schedules — a frequent misremembering that swaps the cause and its consequence.",
       ],
       correctIndex: 0,
       explanation:
@@ -72,10 +72,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What is Graeber's central challenge to the standard economic story of money's origin?",
       options: [
-        "Money was invented by ancient governments to collect taxes more efficiently — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Money was invented by ancient governments to collect taxes more efficiently — a widely circulated summary that inverts the relationship the author actually defends.",
         "There is little historical evidence that money arose to fix the inefficiencies of barter; societies instead used credit and debt-tracking systems long before coined money existed",
-        "Barter was actually more efficient than money and should be reinstated — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Money has always had intrinsic value independent of social trust — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
+        "Barter was actually more efficient than money and should be reinstated — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Money has always had intrinsic value independent of social trust — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 1,
       explanation:
@@ -117,10 +117,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What does Anderson identify as the key technology enabling nations to be 'imagined communities'?",
       options: [
-        "Military conquest and forced unification — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes.",
-        "Religious institutions imposing a single shared belief system — this view reverses the causal direction the source material argues for.",
+        "Military conquest and forced unification — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Religious institutions imposing a single shared belief system — a widely circulated summary that inverts the relationship the author actually defends.",
         "Print capitalism — newspapers and novels in shared vernacular languages that let large populations synchronize a sense of belonging to one community",
-        "The invention of passports and border controls — this alternative is popular online but misstates the mechanism the author defends.",
+        "The invention of passports and border controls — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 2,
       explanation:
@@ -171,9 +171,9 @@ export const CLUSTER_V: Node[] = [
     quiz: {
       question: "What is Montagu's central argument about race?",
       options: [
-        "Racial categories accurately reflect deep, fixed biological and genetic differences between groups — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Human genetic variation does not exist at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Racial categories should be replaced with categories based purely on geography — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Racial categories accurately reflect deep, fixed biological and genetic differences between groups — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Human genetic variation does not exist at all — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Racial categories should be replaced with categories based purely on geography — a widely circulated summary that inverts the relationship the author actually defends.",
         "Race, as popularly understood, does not map onto actual human genetic variation; racial categories are social and historical constructions built mainly from visible traits like skin color",
       ],
       correctIndex: 3,
@@ -226,9 +226,9 @@ export const CLUSTER_V: Node[] = [
       question: "What does Butler mean when she argues gender is 'performative'?",
       options: [
         "Gender is not an inner essence expressed through behavior, but is itself continuously produced and maintained through repeated acts, creating only the appearance of a fixed underlying nature",
-        "Gender is a conscious choice people make once, like choosing a career — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Gender has no relationship to social behavior at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Only actors and performers have a meaningful gender identity — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Gender is a conscious choice people make once, like choosing a career — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Gender has no relationship to social behavior at all — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Only actors and performers have a meaningful gender identity — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -280,10 +280,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What specific target does Proudhon's 'property is theft' argument actually attack?",
       options: [
-        "All forms of personal possession, including a person's home and tools — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "All forms of personal possession, including a person's home and tools — a handy abbreviation that hides the counter-condition the argument requires.",
         "Property that entitles an owner to extract profit or income from something worked, used, or improved by someone else's labor, without contributing proportional labor themselves",
-        "The existence of markets and voluntary trade in general — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Government ownership of land and resources — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "The existence of markets and voluntary trade in general — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Government ownership of land and resources — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 1,
       explanation:
@@ -335,10 +335,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What does Vincent argue is often the hidden function of imposing standardized measurement systems?",
       options: [
-        "They are purely neutral scientific tools with no political dimension — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "They were only ever developed for scientific research purposes — this view reverses the causal direction the source material argues for.",
+        "They are purely neutral scientific tools with no political dimension — a neat inversion that makes the effect sound like the cause.",
+        "They were only ever developed for scientific research purposes — a handy abbreviation that hides the counter-condition the argument requires.",
         "They function as tools of political power and control, making populations and labor legible, taxable, and comparable to whoever sets the standard",
-        "They have remained unchanged since ancient Egypt — this alternative is popular online but misstates the mechanism the author defends.",
+        "They have remained unchanged since ancient Egypt — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 2,
       explanation:
@@ -388,9 +388,9 @@ export const CLUSTER_V: Node[] = [
       question:
         "According to Coontz, what was marriage's primary function for most of human history, before the nineteenth century?",
       options: [
-        "A personal, romantic partnership chosen freely by both individuals — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "A purely religious ceremony with no economic function — this view reverses the causal direction the source material argues for.",
-        "An arrangement that has remained essentially unchanged throughout history — a common misreading that the text explicitly warns against.",
+        "A personal, romantic partnership chosen freely by both individuals — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "A purely religious ceremony with no economic function — a neat inversion that makes the effect sound like the cause.",
+        "An arrangement that has remained essentially unchanged throughout history — a handy abbreviation that hides the counter-condition the argument requires.",
         "A strategic alliance between families to secure economic, political, or social advantage, with romantic love treated as secondary or even distrusted",
       ],
       correctIndex: 3,
@@ -442,10 +442,10 @@ export const CLUSTER_V: Node[] = [
     quiz: {
       question: "What is an example of 'Testimonial Injustice'?",
       options: [
-        "Refusing to hire someone because of their background. — this view emphasiz",
-        "Failing to understand a complex philosophical argument. — this view emphas",
+        "Refusing to hire someone because of their background. — a familiar retelling that strips out the contingency the source treats as central.",
+        "Failing to understand a complex philosophical argument. — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Dismissing a patient's description of their physical pain because of unconscious gender bias.",
-        "Lacking the vocabulary to describe a new sociological phenomenon. — this v",
+        "Lacking the vocabulary to describe a new sociological phenomenon. — a handy abbreviation that hides the counter-condition the argument requires.",
       ],
       correctIndex: 2,
       explanation:
@@ -488,9 +488,9 @@ export const CLUSTER_V: Node[] = [
         "Why does the concept of 'Meritocracy' actually increase our psychological suffering?",
       options: [
         "Because it implies that if you are unsuccessful, it is entirely your own fault, turning poverty into a source of deep personal shame.",
-        "Because meritocracies inevitably collapse into aristocracies. — this view reverses the causal direction the source material argues for.",
-        "Because meritocracies force everyone to work 80-hour weeks. — a common misreading that the text explicitly warns against.",
-        "Because it makes the wealthy feel guilty about their success. — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because meritocracies inevitably collapse into aristocracies. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because meritocracies force everyone to work 80-hour weeks. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Because it makes the wealthy feel guilty about their success. — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 0,
       explanation:

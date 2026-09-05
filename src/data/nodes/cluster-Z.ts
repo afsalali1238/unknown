@@ -19,10 +19,10 @@ export const CLUSTER_Z: Node[] = [
     quiz: {
       question: "How does the concept of temperature relate to the theory of Emergent Spacetime?",
       options: [
-        "Spacetime physically freezes and shatters at absolute zero — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Gravity only emerges in extremely hot cosmological environments — this view reverses the causal direction the source material argues for.",
+        "Spacetime physically freezes and shatters at absolute zero — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Gravity only emerges in extremely hot cosmological environments — a compact misstatement that leaves out the scope in which the claim holds.",
         "Just as temperature is an emergent property of moving atoms, spacetime may be an emergent property of underlying quantum information",
-        "The universe expands solely due to thermal radiation pushing galaxies apart — this alternative is popular online but misstates the mechanism the author.",
+        "The universe expands solely due to thermal radiation pushing galaxies apart — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -61,9 +61,9 @@ export const CLUSTER_Z: Node[] = [
     quiz: {
       question: "What defines the 'scale invariance' of a hypothetical unparticle?",
       options: [
-        "It dynamically changes size depending on the observer's relative speed — t",
-        "It can only be measured on a microscopic, sub-atomic scale — this view emp",
-        "It possesses infinite mass and zero volume — a common misreading that the text explicitly warns against.",
+        "It dynamically changes size depending on the observer's relative speed — a handy abbreviation that hides the counter-condition the argument requires.",
+        "It can only be measured on a microscopic, sub-atomic scale — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "It possesses infinite mass and zero volume — a compact misstatement that leaves out the scope in which the claim holds.",
         "It looks and behaves identically regardless of the energy scale or distance it is observed at",
       ],
       correctIndex: 3,
@@ -105,9 +105,9 @@ export const CLUSTER_Z: Node[] = [
         "How does the baby universe absorption model explain current cosmic expansion without relying on dark energy?",
       options: [
         "By the continuous collision and assimilation of smaller universes, which abruptly adds their volume to ours",
-        "Through the repulsive force of internal dark matter decaying — this view reverses the causal direction the source material.",
-        "Through the slow evaporation of supermassive black holes — a common misreading that the text explicitly warns against.",
-        "By the stretching of macroscopic quantum strings — this alternative is popular online but misstates the mechanism the.",
+        "Through the repulsive force of internal dark matter decaying — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Through the slow evaporation of supermassive black holes — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "By the stretching of macroscopic quantum strings — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 0,
       explanation:
@@ -147,10 +147,10 @@ export const CLUSTER_Z: Node[] = [
       question:
         "What makes the atmospheric data of TRAPPIST-1e particularly intriguing to astrobiologists searching for technosignatures?",
       options: [
-        "It emits strong, repeating radio signals in Morse code — an intuitive but incorrect explanation that conflates.",
+        "It emits strong, repeating radio signals in Morse code — a surface-level gloss that misses the threshold where the claim stops applying.",
         "It displays temporal variations and chemical ratios that defy standard natural geochemical models",
         "The planet has a perfect oxygen atmosphere mathematically identical to Earth ",
-        "It has visible rings made of artificial metal alloys — this alternative is popular online but misstates the.",
+        "It has visible rings made of artificial metal alloys — a tempting paraphrase that drops the precise condition that makes the thesis work.",
       ],
       correctIndex: 1,
       explanation:
@@ -190,10 +190,10 @@ export const CLUSTER_Z: Node[] = [
       question:
         "Why is the transition from AGI to ASI expected to be incredibly rapid, leading to an 'Intelligence Explosion'?",
       options: [
-        "Because humans will rapidly build better silicon hardware — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Because narrow AI will naturally merge into ASI without human intervention — this view reverses the causal direction the source material argues for.",
+        "Because humans will rapidly build better silicon hardware — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because narrow AI will naturally merge into ASI without human intervention — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Through recursive self-improvement, the AGI will rewrite its own code at electronic speeds, continually accelerating its own cognitive growth",
-        "Because ASI requires less electricity than AGI — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because ASI requires less electricity than AGI — a handy abbreviation that hides the counter-condition the argument requires.",
       ],
       correctIndex: 2,
       explanation:
@@ -234,9 +234,9 @@ export const CLUSTER_Z: Node[] = [
       question:
         "How does Prime Editing fundamentally improve upon the original CRISPR-Cas9 system?",
       options: [
-        "It cuts both strands of DNA much faster, accelerating cell replication — an intuitive but incorrect explanation that conflates correlation with.",
-        "It relies entirely on the cell's natural repair mechanisms without external interference — this view empha",
-        "It uses radioactive isotopes to melt the DNA into a new shape — a common misreading that the text explicitly warns against.",
+        "It cuts both strands of DNA much faster, accelerating cell replication — a frequent misremembering that swaps the cause and its consequence.",
+        "It relies entirely on the cell's natural repair mechanisms without external interference — a familiar retelling that strips out the contingency the source treats as central.",
+        "It uses radioactive isotopes to melt the DNA into a new shape — a surface-level gloss that misses the threshold where the claim stops applying.",
         'It only nicks one DNA strand and uses reverse transcriptase to actively "search and replace" code, preventing unpredictable mutations',
       ],
       correctIndex: 3,

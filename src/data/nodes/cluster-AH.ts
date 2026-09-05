@@ -20,9 +20,9 @@ export const CLUSTER_AH: Node[] = [
       question:
         "According to Ibn Khaldun, what causes a dynasty's founding group solidarity (asabiyyah) to erode?",
       options: [
-        "Foreign invasion is the sole cause of decline in every case — this alternative is popular online but misstates the mechanism the author defends.",
-        "Religious conversion always weakens ruling groups — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Asabiyyah never actually erodes once established — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you.",
+        "Foreign invasion is the sole cause of decline in every case — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Religious conversion always weakens ruling groups — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Asabiyyah never actually erodes once established — a widely circulated summary that inverts the relationship the author actually defends.",
         "Urbanization, accumulated wealth, and generational distance from the original shared hardship dilute the cohesion that built the dynasty in the first place",
       ],
       correctIndex: 3,
@@ -36,11 +36,7 @@ export const CLUSTER_AH: Node[] = [
         label: "The Muqaddimah: An Introduction to History",
         source: "book",
         url: "https://archive.org/details/muqaddimahintrod0000ibnk",
-        archive: {
-          status: "full",
-          path: "content/sources/AH1-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AH1-0.md", retrieved: "2026-07-17" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -64,10 +60,10 @@ export const CLUSTER_AH: Node[] = [
     quiz: {
       question: "What was Gibbon's central argument about why Rome fell?",
       options: [
-        "Rome fell purely because barbarian armies were militarily superior — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Rome fell purely because barbarian armies were militarily superior — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline — a compact misstatement that leaves out the scope in which the claim holds.",
         "Rome's collapse was primarily a long internal erosion of civic virtue, military loyalty, and institutional competence, with external invasion delivering the final blow rather than causing the decline itself",
-        "Rome fell because a single decisive battle destroyed its army beyond recovery — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Rome fell because a single decisive battle destroyed its army beyond recovery — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -80,11 +76,7 @@ export const CLUSTER_AH: Node[] = [
         label: "The History of the Decline and Fall of the Roman Empire, Vol. 1",
         source: "book",
         url: "https://www.gutenberg.org/ebooks/731",
-        archive: {
-          status: "full",
-          path: "content/sources/AH2-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AH2-0.md", retrieved: "2026-07-17" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -110,14 +102,15 @@ export const CLUSTER_AH: Node[] = [
         "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
       options: [
         "Geographic and environmental accidents — available domesticable species, a continent's east-west versus north-south orientation, and resulting disease immunity — that compounded over millennia into large differences in technology and population",
-        "Innate differences in intelligence or ability between different peoples — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "Random chance events with no identifiable underlying pattern — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
-        "Religious differences between civilizations — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "Innate differences in intelligence or ability between different peoples — a tempting paraphrase that drops the precise condition that makes the thesis work This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Random chance events with no identifiable underlying pattern — a compact misstatement that leaves out the scope in which the claim holds The distinction matters because it changes what you would measure to test the claim.",
+        "Religious differences between civilizations — an intuitive gloss that confuses the enabling condition with the outcome Without that condition, the same evidence would be consistent with the opposite conclusion.",
       ],
       correctIndex: 0,
       explanation:
         "Diamond's central thesis explicitly rejects explanations based on innate differences between peoples, arguing instead that environmental starting conditions — domesticable species, continental geography, and the resulting disease exposure — compounded over thousands of years into vastly different technological and demographic trajectories.",
     },
+    tags: ["Macro & Cycles", "First-Principles Thinking"],
     related: ["AH7", "AH9", "AH6", "AH5"],
     furtherReading: [
       {
@@ -125,14 +118,9 @@ export const CLUSTER_AH: Node[] = [
         source: "W. W. Norton & Company",
         url: "https://www.wwnorton.com/books/9780393317558",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AH3-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AH3-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["Macro & Cycles", "First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -155,15 +143,16 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
       options: [
-        "A power's military becomes too large to physically defend its own borders — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "A power's military becomes too large to physically defend its own borders — a neat inversion that makes the effect sound like the cause This reading skips the enabling condition that makes the mechanism work as stated.",
         "A power's strategic and military commitments continue expanding even as its relative economic base declines, and the resulting funding gap — bridged by debt or taxation — further erodes the economy, accelerating the decline",
-        "A power expands its territory too quickly for its population to fill — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "A power loses a single decisive military battle that it never recovers from — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "A power expands its territory too quickly for its population to fill — a tempting paraphrase that drops the precise condition that makes the thesis work Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "A power loses a single decisive military battle that it never recovers from — a compact misstatement that leaves out the scope in which the claim holds It holds only within the scope the author defines, not as a universal claim.",
       ],
       correctIndex: 1,
       explanation:
         "Kennedy's argument is about a structural mismatch over time, not a single defeat — commitments that made sense when a power's economy was relatively strongest tend to persist and even grow after that relative economic advantage starts fading, creating a widening, self-reinforcing gap.",
     },
+    tags: ["Macro & Cycles"],
     related: ["AH1", "AH3", "D8"],
     furtherReading: [
       {
@@ -172,14 +161,9 @@ export const CLUSTER_AH: Node[] = [
         source: "Random House",
         url: "https://www.penguinrandomhouse.com/books/165506/the-rise-and-fall-of-the-great-powers-by-paul-kennedy/",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AH4-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AH4-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["Macro & Cycles"],
     epistemicStatus: "Canonical",
   },
   {
@@ -202,15 +186,16 @@ export const CLUSTER_AH: Node[] = [
       question:
         "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
       options: [
-        "Sapiens had significantly larger brains and higher individual intelligence than all other human species — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Sapiens were the only human species capable of using tools — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Sapiens had significantly larger brains and higher individual intelligence than all other human species — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Sapiens were the only human species capable of using tools — a neat inversion that makes the effect sound like the cause.",
         "The capacity for genuinely abstract shared fiction — collectively believing in things like money, nations, and corporations that have no independent physical existence — which let strangers coordinate at scales no other species could match",
-        "Sapiens had no need for cooperation because they were physically stronger than rival species — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Sapiens had no need for cooperation because they were physically stronger than rival species — a tempting paraphrase that drops the precise condition that makes the thesis work.",
       ],
       correctIndex: 2,
       explanation:
         "Harari's core claim isn't about raw intelligence or physical capability — it's that shared, collectively-believed fictions (money, law, nationhood) let strangers trust and coordinate with each other at a scale that purely personal, chimp-style relationships never could reach.",
     },
+    tags: ["Social Constructs", "Macro & Cycles"],
     related: ["AH3", "I11", "V1"],
     furtherReading: [
       {
@@ -218,14 +203,9 @@ export const CLUSTER_AH: Node[] = [
         source: "Harper",
         url: "https://www.ynharari.com/book/sapiens/",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AH5-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AH5-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["Social Constructs", "Macro & Cycles"],
     epistemicStatus: "Canonical",
   },
   {
@@ -248,15 +228,16 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What is Frankopan's central reframing of traditional world history in The Silk Roads?",
       options: [
-        "That Western Europe has always been the uncontested center of global trade and power — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "That trade routes had no significant influence on the spread of religion or technology — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "That the Silk Roads were only active for a brief period in the ancient world — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "That Western Europe has always been the uncontested center of global trade and power — a familiar retelling that strips out the contingency the source treats as central.",
+        "That trade routes had no significant influence on the spread of religion or technology — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "That the Silk Roads were only active for a brief period in the ancient world — a neat inversion that makes the effect sound like the cause.",
         "That the trade corridors connecting Central Asia, the Middle East, China, and India — not any single Western civilization — were the primary engine and center of gravity of world history for most of recorded time",
       ],
       correctIndex: 3,
       explanation:
         "Frankopan's argument repositions the connective trade network itself, rather than any single endpoint civilization like Rome or Britain, as the actual long-run center of world-historical exchange and power — with Western European dominance framed as a comparatively recent and possibly temporary deviation from that older pattern.",
     },
+    tags: ["Macro & Cycles"],
     related: ["AH3", "AH4"],
     furtherReading: [
       {
@@ -264,14 +245,9 @@ export const CLUSTER_AH: Node[] = [
         source: "Bloomsbury",
         url: "https://www.bloomsbury.com/uk/silk-roads-9781408839973/",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AH6-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AH6-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["Macro & Cycles"],
     epistemicStatus: "Canonical",
   },
   {
@@ -294,14 +270,15 @@ export const CLUSTER_AH: Node[] = [
       question: "According to Kuhn, what typically triggers a genuine scientific 'paradigm shift'?",
       options: [
         "An accumulation of anomalies — observations that don't fit the existing accepted framework — reaching a crisis point, resolved by a new framework that reorganizes the field's basic assumptions rather than just adding new facts",
-        "A single new experiment that instantly convinces the entire scientific community — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "A government or funding body mandating that scientists adopt a new theory — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "A single new experiment that instantly convinces the entire scientific community — a familiar retelling that strips out the contingency the source treats as central.",
+        "A government or funding body mandating that scientists adopt a new theory — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions — a neat inversion that makes the effect sound like the cause.",
       ],
       correctIndex: 0,
       explanation:
         "Kuhn's model rejects the idea of smooth cumulative progress — paradigm shifts happen when unresolved anomalies build into a crisis, and the resolution isn't just new data added to the old theory, it's a new framework that changes what counts as a relevant fact or valid explanation in the first place.",
     },
+    tags: ["First-Principles Thinking", "Macro & Cycles"],
     related: ["AH3", "O1"],
     furtherReading: [
       {
@@ -309,14 +286,9 @@ export const CLUSTER_AH: Node[] = [
         source: "University of Chicago Press",
         url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AH7-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AH7-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking", "Macro & Cycles"],
     epistemicStatus: "Canonical",
   },
   {
@@ -339,15 +311,16 @@ export const CLUSTER_AH: Node[] = [
       question:
         "Why do Acemoglu and Robinson argue that 'extractive' institutions tend to produce long-run poverty, even when they might not always block growth in the short term?",
       options: [
-        "Because extractive institutions are always run by less intelligent leaders — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because extractive institutions are always run by less intelligent leaders — a plausible reading that overlooks the limiting condition the text stresses This reading skips the enabling condition that makes the mechanism work as stated.",
         "Because the narrow elites who benefit from extractive institutions have a direct incentive to block broad-based innovation and creative destruction, since new competition threatens the very concentration of power and rents that benefits them",
-        "Because extractive institutions are found only in countries with poor geography — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Because extractive institutions were outlawed by international treaties — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "Because extractive institutions are found only in countries with poor geography — a familiar retelling that strips out the contingency the source treats as central Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Because extractive institutions were outlawed by international treaties — a surface-level gloss that misses the threshold where the claim stops applying It holds only within the scope the author defines, not as a universal claim.",
       ],
       correctIndex: 1,
       explanation:
         "The authors' mechanism is about incentives, not intelligence or geography — an elite that captures disproportionate rents from the existing economic order has a rational, self-interested reason to resist the disruptive innovation that inclusive institutions instead reward and protect.",
     },
+    tags: ["Macro & Cycles", "Incentives & Systems"],
     related: ["AH3", "AH4", "M1"],
     furtherReading: [
       {
@@ -355,14 +328,9 @@ export const CLUSTER_AH: Node[] = [
         source: "Crown Business",
         url: "https://www.penguinrandomhouse.com/books/174768/why-nations-fail-by-daron-acemoglu-and-james-a-robinson/",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AH8-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AH8-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["Macro & Cycles", "Incentives & Systems"],
     epistemicStatus: "Canonical",
   },
   {
@@ -385,15 +353,16 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
       options: [
-        "A single invasion by the 'Sea Peoples' that no civilization could have survived — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "A sudden, unexplained climate event with no connection to trade or political factors — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "A single invasion by the 'Sea Peoples' that no civilization could have survived — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "A sudden, unexplained climate event with no connection to trade or political factors — a plausible reading that overlooks the limiting condition the text stresses.",
         "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
-        "Deliberate, coordinated destruction ordered by Egyptian pharaohs — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "Deliberate, coordinated destruction ordered by Egyptian pharaohs — a familiar retelling that strips out the contingency the source treats as central.",
       ],
       correctIndex: 2,
       explanation:
         "Cline's 'systems collapse' argument moves away from single-cause explanations (like blaming the Sea Peoples alone) toward a model where the Bronze Age Mediterranean's interconnected trade network amplified several simultaneous regional shocks into a civilization-wide collapse none of them would have caused individually.",
     },
+    tags: ["Macro & Cycles", "Risk & Asymmetric Bets"],
     related: ["AH4", "AH6"],
     furtherReading: [
       {
@@ -401,14 +370,9 @@ export const CLUSTER_AH: Node[] = [
         source: "Princeton University Press",
         url: "https://press.princeton.edu/books/paperback/9780691208015/1177-bc",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AH9-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AH9-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["Macro & Cycles", "Risk & Asymmetric Bets"],
     epistemicStatus: "Canonical",
   },
 ];

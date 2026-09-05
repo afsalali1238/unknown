@@ -20,10 +20,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What mechanism did Darwin propose for how complex adaptations arise without any designer or plan?",
       options: [
-        "Organisms consciously choose which traits to develop and pass on — this alternative is popular online but misstates the mechanism the author defends.",
+        "Organisms consciously choose which traits to develop and pass on — a frequent misremembering that swaps the cause and its consequence.",
         "Random heritable variation gets filtered by differential survival and reproduction, so advantageous traits accumulate over many generations",
-        "Species inherit traits their parents acquired during their own lifetime — this view reverses the causal direction the source material argues for.",
-        "A predetermined genetic blueprint unfolds over time — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
+        "Species inherit traits their parents acquired during their own lifetime — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "A predetermined genetic blueprint unfolds over time — a neat inversion that makes the effect sound like the cause.",
       ],
       correctIndex: 1,
       explanation:
@@ -36,11 +36,7 @@ export const CLUSTER_AB: Node[] = [
         label: "On the Origin of Species (1859, full text)",
         source: "book",
         url: "https://www.gutenberg.org/files/1228/1228-h/1228-h.htm",
-        archive: {
-          status: "full",
-          path: "content/sources/AB1-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AB1-0.md", retrieved: "2026-07-17" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -66,9 +62,9 @@ export const CLUSTER_AB: Node[] = [
         "What problem did Hamilton's theory of inclusive fitness solve that pure individual-survival selection couldn't explain?",
       options: [
         "Why animals sometimes sacrifice their own survival or reproduction to help close relatives survive and reproduce",
-        "Why some species migrate seasonally — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Why mutation rates vary between species — this view reverses the causal direction the source material argues for.",
-        "Why predator populations cycle with prey populations — a common misreading that the text explicitly warns against.",
+        "Why some species migrate seasonally — a frequent misremembering that swaps the cause and its consequence.",
+        "Why mutation rates vary between species — a familiar retelling that strips out the contingency the source treats as central.",
+        "Why predator populations cycle with prey populations — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 0,
       explanation:
@@ -81,19 +77,13 @@ export const CLUSTER_AB: Node[] = [
         label: "The Genetical Evolution of Social Behaviour",
         source: "article",
         url: "https://en.wikipedia.org/wiki/The_Genetical_Evolution_of_Social_Behaviour",
-        archive: {
-          status: "full",
-          path: "content/sources/AB2-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AB2-0.md", retrieved: "2026-07-17" },
       },
       {
         label: "Kin selection",
         source: "article",
         url: "https://www.britannica.com/topic/kin-selection",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -118,15 +108,16 @@ export const CLUSTER_AB: Node[] = [
       question:
         "In Dawkins's framework, why does natural selection make more sense analyzed at the level of the gene rather than the individual organism?",
       options: [
-        "Because individual organisms never actually reproduce — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "Because individual organisms never actually reproduce — an appealing shorthand that collapses a structural distinction into a surface similarity The distinction matters because it changes what you would measure to test the claim.",
         "Because genes, not individual bodies, are the unit that can persist in copies across many generations, so behaviors that look self-sacrificing at the individual level (like helping relatives) can still favor the survival of that individual's genes",
-        "Because Dawkins proved individual organisms have no influence on their own survival — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Because genes are conscious and make deliberate strategic choices — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "Because Dawkins proved individual organisms have no influence on their own survival — a frequent misremembering that swaps the cause and its consequence It holds only within the scope the author defines, not as a universal claim.",
+        "Because genes are conscious and make deliberate strategic choices — a familiar retelling that strips out the contingency the source treats as central This reading skips the enabling condition that makes the mechanism work as stated.",
       ],
       correctIndex: 1,
       explanation:
         "The gene's-eye view resolves apparent evolutionary paradoxes — like self-sacrifice for relatives — by tracking what persists across generations (copies of genes) rather than what happens to any one individual body, which is temporary regardless of its genes' long-run success.",
     },
+    tags: ["First-Principles Thinking", "Incentives & Systems"],
     related: ["AB2", "AB9", "M4"],
     furtherReading: [
       {
@@ -134,14 +125,9 @@ export const CLUSTER_AB: Node[] = [
         source: "Oxford University Press",
         url: "https://richarddawkins.net/books/the-selfish-gene/",
         type: "book",
-        archive: {
-          status: "full",
-          path: "content/sources/AB3-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AB3-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking", "Incentives & Systems"],
     epistemicStatus: "Canonical",
   },
   {
@@ -164,15 +150,16 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What did Mendel's pea plant experiments reveal about inheritance that contradicted the prevailing theory of his time?",
       options: [
-        "That traits blend smoothly between parent and offspring, confirming the dominant theory — this alternative is popular online but misstates the mechanism the author defends.",
-        "That plants and animals inherit traits through completely different mechanisms — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "That traits are inherited as discrete, particulate units passed intact from each parent — not blended — appearing in predictable statistical ratios across generations",
-        "That environment, not heredity, determines nearly all observable traits — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
+        "That traits blend smoothly between parent and offspring, confirming the dominant theory — a common simplification that omits the key mechanism behind the effect.",
+        "That plants and animals inherit traits through completely different mechanisms — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "That traits are inherited as discrete, particulate units passed intact from each parent — a plausible reading that overlooks the limiting condition the text stresses.",
+        "That environment, not heredity, determines nearly all observable traits — a frequent misremembering that swaps the cause and its consequence.",
       ],
       correctIndex: 2,
       explanation:
         "The dominant 'blending inheritance' theory of Mendel's era predicted offspring traits should be an intermediate mix of both parents' traits — Mendel's data instead showed discrete traits reappearing intact in predictable ratios, implying inheritance works through countable, particulate units, which we now call genes.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AB5", "AB8"],
     furtherReading: [
       {
@@ -180,12 +167,9 @@ export const CLUSTER_AB: Node[] = [
         source: "Verhandlungen des naturforschenden Vereines in Brünn (English translation)",
         url: "https://www.esp.org/foundations/genetics/classical/gm-65.pdf",
         type: "paper",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -208,15 +192,16 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What tension did the Modern Synthesis resolve between early genetics and Darwinian evolution?",
       options: [
-        "It proved that genetics and evolution are completely unrelated fields that should be studied separately — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "It disproved Mendel's laws of inheritance in favor of blending inheritance — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "It showed that natural selection only applies to single-celled organisms — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "It proved that genetics and evolution are completely unrelated fields that should be studied separately — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It disproved Mendel's laws of inheritance in favor of blending inheritance — a common simplification that omits the key mechanism behind the effect.",
+        "It showed that natural selection only applies to single-celled organisms — an appealing shorthand that collapses a structural distinction into a surface similarity.",
         "It reconciled Mendelian genetics' discrete, particulate inheritance with Darwinian natural selection's gradual change, showing mutations create genetic variation while selection acts gradually on that variation's frequency across a population",
       ],
       correctIndex: 3,
       explanation:
         "Early 20th-century biologists saw Mendel's discrete inheritance units and Darwin's gradual selection as conflicting models; the Modern Synthesis showed they operate at different scales of the same process — mutation supplies discrete variation, selection gradually shifts how common each variant is.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AB4", "AB6"],
     furtherReading: [
       {
@@ -224,14 +209,9 @@ export const CLUSTER_AB: Node[] = [
         source: "The American Biology Teacher, 1973",
         url: "https://www.jstor.org/stable/4444260",
         type: "essay",
-        archive: {
-          status: "full",
-          path: "content/sources/AB5-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AB5-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -255,14 +235,15 @@ export const CLUSTER_AB: Node[] = [
         "What did Eldredge and Gould's punctuated equilibrium model challenge about traditional Darwinian gradualism?",
       options: [
         "The assumption that evolutionary change proceeds at a roughly constant, slow rate — they argued the fossil record's pattern of long stasis punctuated by rapid bursts, tied to speciation, is real signal rather than incomplete sampling",
-        "That evolution happens at all — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
-        "That natural selection is the mechanism driving evolutionary change — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "That species can go extinct — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "That evolution happens at all — a widely circulated summary that inverts the relationship the author actually defends The distinction matters because it changes what you would measure to test the claim.",
+        "That natural selection is the mechanism driving evolutionary change — a common simplification that omits the key mechanism behind the effect Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "That species can go extinct — an appealing shorthand that collapses a structural distinction into a surface similarity It holds only within the scope the author defines, not as a universal claim.",
       ],
       correctIndex: 0,
       explanation:
         "Punctuated equilibrium didn't dispute that evolution happens through natural selection — it disputed the assumed pace and pattern, arguing that most visible change is concentrated in relatively rapid speciation events rather than spread evenly across a species' whole existence.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AB5", "AB7"],
     furtherReading: [
       {
@@ -270,12 +251,9 @@ export const CLUSTER_AB: Node[] = [
         source: "Models in Paleobiology, 1972",
         url: "https://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf",
         type: "paper",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -298,15 +276,16 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What key evidence supports Margulis's claim that mitochondria were once independent bacteria?",
       options: [
-        "Mitochondria are visually identical to the rest of the cell under a microscope — this alternative is popular online but misstates the mechanism the author defends.",
+        "Mitochondria are visually identical to the rest of the cell under a microscope — a compact misstatement that leaves out the scope in which the claim holds.",
         "Mitochondria contain their own DNA, separate from the cell's main genome, and that DNA closely resembles bacterial DNA rather than the host cell's DNA",
-        "Mitochondria can survive and reproduce completely outside of any cell — this view reverses the causal direction the source material argues for.",
-        "There is no genetic evidence; the theory rests entirely on structural resemblance — a common misreading that the text explicitly warns against.",
+        "Mitochondria can survive and reproduce completely outside of any cell — a widely circulated summary that inverts the relationship the author actually defends.",
+        "There is no genetic evidence; the theory rests entirely on structural resemblance — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 1,
       explanation:
         "The presence of separate, bacterial-like DNA inside mitochondria (and chloroplasts) is the strongest evidence for endosymbiotic theory — it's very difficult to explain that separate genome any other way than as a remnant of a once-independent organism.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AB3", "AB6"],
     furtherReading: [
       {
@@ -314,14 +293,9 @@ export const CLUSTER_AB: Node[] = [
         source: "Journal of Theoretical Biology, 1967",
         url: "https://www.sciencedirect.com/science/article/abs/pii/0022519367900790",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AB7-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AB7-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -344,15 +318,16 @@ export const CLUSTER_AB: Node[] = [
       question:
         "Why did the double-helix structure of DNA immediately suggest a mechanism for genetic copying?",
       options: [
-        "Because DNA molecules can only exist inside a laboratory — this alternative is popular online but misstates the mechanism the author defends.",
-        "Because DNA has no physical structure and exists only as an abstract concept — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because DNA molecules can only exist inside a laboratory — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Because DNA has no physical structure and exists only as an abstract concept — a compact misstatement that leaves out the scope in which the claim holds.",
         "Because each of the two complementary strands, held together by specific base-pairing rules, can serve as a template to build an exact copy of its partner strand",
-        "Because the double helix shape prevents any copying from occurring at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what.",
+        "Because the double helix shape prevents any copying from occurring at all — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 2,
       explanation:
         "The specific pairing rules (A with T, G with C) mean that if the two strands separate, each one alone contains enough information to rebuild an exact copy of its original partner — the structure itself explains the copying mechanism, which is why the paper's authors immediately flagged the implication.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AB4", "AB7"],
     furtherReading: [
       {
@@ -360,14 +335,9 @@ export const CLUSTER_AB: Node[] = [
         source: "Nature, 1953",
         url: "https://www.nature.com/articles/171737a0",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AB8-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AB8-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -390,15 +360,16 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
       options: [
-        "Older species were far less likely to go extinct than newly evolved ones — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "All species in the fossil record went extinct at exactly the same rate regardless of type — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "Extinction rates were found to be entirely random and unrelated to any biological factor — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Older species were far less likely to go extinct than newly evolved ones — a handy abbreviation that hides the counter-condition the argument requires.",
+        "All species in the fossil record went extinct at exactly the same rate regardless of type — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Extinction rates were found to be entirely random and unrelated to any biological factor — a compact misstatement that leaves out the scope in which the claim holds.",
         "A species' probability of extinction in a given time period didn't decrease the longer it had already survived, suggesting species don't reach a stable 'finished' state of adaptation, since their competitors and predators keep evolving too",
       ],
       correctIndex: 3,
       explanation:
         "If species reached a stable, well-adapted state over time, older species should show declining extinction risk — Van Valen found no such decline, which pointed to an environment that's constantly shifting because other species are also continuously evolving, requiring perpetual adaptation just to maintain relative position.",
     },
+    tags: ["First-Principles Thinking", "Incentives & Systems"],
     related: ["AB3", "M4"],
     furtherReading: [
       {
@@ -406,14 +377,9 @@ export const CLUSTER_AB: Node[] = [
         source: "Evolutionary Theory, 1973",
         url: "https://www.mn.uio.no/cees/english/services/van-valen/evolutionary-theory/volume-1/vol-1-no-1-pages-1-30-l-van-valen-a-new-evolutionary-law.pdf",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AB9-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AB9-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking", "Incentives & Systems"],
     epistemicStatus: "Canonical",
   },
 ];

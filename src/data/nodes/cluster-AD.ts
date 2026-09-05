@@ -20,9 +20,9 @@ export const CLUSTER_AD: Node[] = [
       question:
         "According to Hebbian theory, what physically changes in the brain when learning occurs?",
       options: [
-        "New neurons are created every time something is learned — this alternative is popular online but misstates the.",
-        "The brain's total size increases with each new memory — an intuitive but incorrect explanation that conflates.",
-        "Neurons that fire together are chemically destroyed and replaced — this view emp",
+        "New neurons are created every time something is learned — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "The brain's total size increases with each new memory — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Neurons that fire together are chemically destroyed and replaced — a frequent misremembering that swaps the cause and its consequence.",
         "The synaptic connection between two neurons strengthens when one repeatedly helps activate the other",
       ],
       correctIndex: 3,
@@ -36,21 +36,13 @@ export const CLUSTER_AD: Node[] = [
         label: "Hebbian Theory",
         source: "article",
         url: "https://en.wikipedia.org/wiki/Hebbian_theory",
-        archive: {
-          status: "full",
-          path: "content/sources/AD1-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AD1-0.md", retrieved: "2026-07-17" },
       },
       {
         label: "Donald Olding Hebb",
         source: "article",
         url: "https://can-acn.org/donald-olding-hebb/",
-        archive: {
-          status: "full",
-          path: "content/sources/AD1-1.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AD1-1.md", retrieved: "2026-07-20" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -74,10 +66,10 @@ export const CLUSTER_AD: Node[] = [
     quiz: {
       question: "What did Raichle's 2001 discovery of the default mode network overturn?",
       options: [
-        "The theory that different brain regions are specialized for different functions — this alternative is popular online but misstates the mechanism the author.",
-        "The theory that memories are stored primarily in the hippocampus — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "The theory that different brain regions are specialized for different functions — a common simplification that omits the key mechanism behind the effect.",
+        "The theory that memories are stored primarily in the hippocampus — an appealing shorthand that collapses a structural distinction into a surface similarity.",
         "The assumption that the resting brain is largely inactive — instead, a specific network becomes more active during rest and mind-wandering",
-        "The belief that neurons communicate via electrical signals — a common misreading that the text explicitly warns against.",
+        "The belief that neurons communicate via electrical signals — a frequent misremembering that swaps the cause and its consequence.",
       ],
       correctIndex: 2,
       explanation:
@@ -90,21 +82,13 @@ export const CLUSTER_AD: Node[] = [
         label: "Default mode network",
         source: "article",
         url: "https://en.wikipedia.org/wiki/Default_mode_network",
-        archive: {
-          status: "full",
-          path: "content/sources/AD2-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AD2-0.md", retrieved: "2026-07-17" },
       },
       {
         label: "A default mode of brain function (2001, PNAS)",
         source: "paper",
         url: "https://www.pnas.org/doi/10.1073/pnas.98.2.676",
-        archive: {
-          status: "full",
-          path: "content/sources/AD2-1.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AD2-1.md", retrieved: "2026-07-20" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -138,6 +122,7 @@ export const CLUSTER_AD: Node[] = [
       explanation:
         "The study found children of active mothers were roughly twice as likely to be active, a notably stronger effect than the correlation found with active fathers.",
     },
+    tags: ["Health & Body"],
     related: ["AD1", "AD2", "AD4"],
     furtherReading: [
       {
@@ -146,14 +131,9 @@ export const CLUSTER_AD: Node[] = [
         source: "Journal of Pediatrics, 118(2):215-9",
         url: "https://pubmed.ncbi.nlm.nih.gov/1993953/",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AD3-0.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AD3-0.md", retrieved: "2026-07-20" },
       },
     ],
-    tags: ["Health & Body"],
     epistemicStatus: "Canonical",
   },
   {
@@ -176,15 +156,16 @@ export const CLUSTER_AD: Node[] = [
       question:
         "What does neuroplasticity fundamentally challenge about older models of brain development?",
       options: [
-        "That the brain has no capacity to change at all, at any age. — this alternative is popular online but misstates the mechanism the author.",
-        "That only physical injury can alter brain structure. — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "That memory and learning are unrelated to brain structure. — this view reverses the causal direction the source material argues for.",
+        "That the brain has no capacity to change at all, at any age. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "That only physical injury can alter brain structure. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "That memory and learning are unrelated to brain structure. — a common simplification that omits the key mechanism behind the effect.",
         "That the brain can only change during a narrow childhood critical period, with no meaningful rewiring possible in adulthood.",
       ],
       correctIndex: 3,
       explanation:
         "The core update neuroplasticity research made to older neuroscience was demonstrating that meaningful neural reorganization continues well into adulthood, not just during early developmental windows.",
     },
+    tags: ["Health & Body", "Cognitive Biases & Models"],
     related: ["AD1", "AD3"],
     furtherReading: [
       {
@@ -193,14 +174,169 @@ export const CLUSTER_AD: Node[] = [
         source: "Norman Doidge (Penguin Random House)",
         url: "https://www.penguinrandomhouse.com/books/54295/the-brain-that-changes-itself-by-norman-doidge-md/",
         type: "article",
-        archive: {
-          status: "full",
-          path: "content/sources/AD4-0.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AD4-0.md", retrieved: "2026-07-20" },
       },
     ],
-    tags: ["Health & Body", "Cognitive Biases & Models"],
     epistemicStatus: "Canonical",
+  },
+  {
+    id: "AD5",
+    clusterId: "AD",
+    title: "Circadian Rhythm & Sleep Homeostasis",
+    author: "Nathaniel Kleitman / Satchin Panda",
+    year: 1939,
+    medium: "Book",
+    category: "Neuroscience",
+    thesis:
+      "Two processes govern sleep — a 24-hour circadian clock that schedules alertness, and a homeostatic pressure that builds with time awake — and violating either by irregular light, meals, or bedtime impairs cognition the next day more than most people realize.",
+    layer0:
+      "Kleitman showed in the 1930s that body temperature, alertness, and sleep are not random — they follow a clock. Panda showed in the 2010s that when you eat and when you see light shifts that clock as strongly as when you sleep.",
+    layer1:
+      "The suprachiasmatic nucleus runs a roughly 24-hour oscillator entrained by light and feeding; adenosine and other sleep-pressure signals accumulate with waking hours. Light at night, erratic meals, and social jet lag desynchronize the two — you can be 'in bed 8 hours' but out of phase, getting fragmented sleep and blunted morning alertness. Consolidating sleep, light, and meal windows is the highest-leverage lever for deep work capacity the next day.",
+    layer2:
+      "Is your 'bad sleeper' story actually a circadian story — same bedtime window, same dark, same first-light and first-meal timing for the next seven days?",
+    quiz: {
+      question: "Which two processes interact to govern the timing and quality of sleep?",
+      options: [
+        "A 24-hour circadian clock entrained by light and meal timing, plus a homeostatic sleep pressure that accumulates with time awake",
+        "Only the total number of hours spent in bed, regardless of circadian timing or light exposure",
+        "A purely psychological expectation about sleep that has no underlying biological clock",
+        "REM sleep alone determines sleep quality, with circadian rhythm playing no measurable role",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Sleep is gated by both the SCN-driven circadian oscillator and accumulating homeostatic pressure; misalignment of either fragments sleep and degrades next-day cognition even if time in bed looks adequate.",
+    },
+    tags: ["Health & Body", "Craft & Deep Work"],
+    related: ["AD6", "AD2", "AD1", "N8"],
+    furtherReading: [
+      {
+        label: "Circadian rhythm",
+        source: "National Institute of General Medical Sciences",
+        url: "https://nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AD6",
+    clusterId: "AD",
+    title: "Fight-or-Flight & the Amygdala Hijack",
+    author: "Walter Cannon / Joseph LeDoux",
+    year: 1915,
+    medium: "Model",
+    category: "Neuroscience",
+    thesis:
+      "Cannon's fight-or-flight describes the body's rapid mobilization under threat, and LeDoux showed the amygdala can route a fear signal before conscious cortex catches up — so you react before you have a reasoned perception of what you're reacting to.",
+    layer0:
+      "Cannon named fight-or-flight in 1915. Seven decades later LeDoux traced why you flinch at a stick that looks like a snake — the amygdala fires before visual cortex finishes identifying the object.",
+    layer1:
+      "The amygdala's 'low road' — thalamus → amygdala — is a fast, coarse threat detector that triggers adrenaline, cortisol, and sympathetic arousal within milliseconds, while the 'high road' through cortex is slower and more accurate. In modern contexts — a sharp Slack message, a dip in metrics — the same circuitry fires on social threat, mobilizing a body built for predators. Regulation is not suppression but reappraisal after the initial surge: name, breathe, re-evaluate once cortex comes online 6–8 seconds later.",
+    layer2:
+      "What cue this week triggered a full-body mobilization for a social threat that needed only a sentence-level response — and what 10-second protocol would have let cortex catch up?",
+    quiz: {
+      question: "What does the amygdala's 'low road' explain about threat responses?",
+      options: [
+        "A fast, coarse fear signal can trigger bodily mobilization before conscious visual cortex has fully identified the stimulus",
+        "Fear responses only occur after conscious, deliberative reasoning about the threat has completed",
+        "The amygdala inhibits all bodily arousal during threat, promoting calm analysis",
+        "Fight-or-flight only activates during physical predator threats, never during social or work stressors",
+      ],
+      correctIndex: 0,
+      explanation:
+        "LeDoux's dual-path model shows a rapid subcortical route drives physiological mobilization ahead of accurate cortical identification, explaining pre-conscious flinches and stress reactions to social cues.",
+    },
+    tags: ["Health & Body", "Cognitive Biases & Models"],
+    related: ["AD7", "AD1", "U6", "AD5"],
+    furtherReading: [
+      {
+        label: "The Emotional Brain (1996)",
+        source: "Joseph LeDoux",
+        url: "https://en.wikipedia.org/wiki/The_Emotional_Brain",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AD7",
+    clusterId: "AD",
+    title: "Mirror Neurons & Embodied Simulation",
+    author: "Giacomo Rizzolatti",
+    year: 1996,
+    medium: "Paper",
+    category: "Neuroscience",
+    thesis:
+      "Rizzolatti's team found neurons that fire both when a macaque grasps and when it watches another grasp — suggesting understanding others is not abstract inference alone but embodied simulation of their actions and intentions.",
+    layer0:
+      "In Parma in 1996, electrodes in a monkey's premotor cortex spiked when the monkey grabbed a peanut — and, unprompted, when a researcher grabbed a peanut in front of it.",
+    layer1:
+      "Mirror neurons (and the broader mirroring system in humans — inferior frontal, parietal, STS) activate overlapping circuitry for executed and observed actions, and likely for felt vs. observed disgust and pain. The system doesn't 'read minds' directly; it reuses your own motor and affective maps to simulate what the other's state would feel like from inside. It grounds empathy, imitation learning, and why live demonstration beats written instruction for motor skills.",
+    layer2:
+      "When you struggle to understand someone's resistance, have you actually simulated their action context — same constraints, same tools, same time pressure — or only argued against their conclusion?",
+    quiz: {
+      question: "What is the core interpretation of mirror neuron findings?",
+      options: [
+        "Understanding others partly reuses your own motor and affective circuitry to simulate their actions and states, rather than relying solely on abstract inference",
+        "Mirror neurons allow perfect mind-reading of another person's exact thoughts with no simulation required This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Humans lack a mirror system and must consciously reason about others without any embodied simulation The distinction matters because it changes what you would measure to test the claim.",
+        "Mirror neurons fire only during actual movement and are silent during observation of others Without that condition, the same evidence would be consistent with the opposite conclusion.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "The mirroring system overlaps execution and observation, supporting embodied simulation as a fast, non-inferential route to understanding actions and emotions, complementing slower explicit reasoning.",
+    },
+    tags: ["Health & Body", "Meaning & Self"],
+    related: ["AD8", "AD1", "O7", "U7"],
+    furtherReading: [
+      {
+        label: "Mirror neurons",
+        source: "Nature Reviews Neuroscience",
+        url: "https://www.nature.com/scitable/topicpage/mirror-neurons-15730860/",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AD8",
+    clusterId: "AD",
+    title: "Epigenetics: Experience Writes on the Genome",
+    author: "Conrad Waddington / Michael Meaney",
+    year: 1942,
+    medium: "Field",
+    category: "Biology",
+    thesis:
+      "Epigenetics shows experience can leave chemical marks on DNA that change gene expression without changing the code — and some marks, via careful animal models, appear responsive to stress, nutrition, and care.",
+    layer0:
+      "Waddington coined 'epigenetics' in 1942 for how the same genome produces different outcomes by context. Meaney showed in the 2000s that rat pups licked more by mothers grew different stress responses because of a chemical mark, not a different gene.",
+    layer1:
+      "Methyl groups and histone modifications act like annotations on the genome — turning volume up or down on existing genes. In rodents, variation in maternal care methylates the glucocorticoid receptor promoter, shifting HPA-axis calibration for life; diet and toxins do similar in specific windows. In humans, evidence is largely correlational and modest-effect — popular coverage overclaims 'trauma is inherited' — but the mechanistic principle stands: environment biases which parts of the inherited system get expressed.",
+    layer2:
+      "Which 'fixed trait' story — temperament, stress reactivity, willpower — might be better framed as an expression setting that has been tuned by sustained earlier context?",
+    quiz: {
+      question: "What does epigenetics demonstrate about gene-environment interaction?",
+      options: [
+        "Environmental context can produce chemical annotations on DNA that alter gene expression without changing the underlying genetic code",
+        "Experience rewrites the DNA base sequence itself, creating entirely new genes within a single lifetime",
+        "Genes determine outcomes independently of any environmental influence or chemical marking",
+        "Epigenetic marks have been proven to transmit specific learned memories unchanged across many human generations",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Epigenetics is about regulation — methylation and histone marks change how much a gene is expressed given the same code, with some animal models showing experience-dependent marks, while human transgenerational claims remain weakly evidenced.",
+    },
+    tags: ["Health & Body", "Cognitive Biases & Models"],
+    related: ["AD7", "AB2", "AD3", "AB6"],
+    furtherReading: [
+      {
+        label: "Epigenetics",
+        source: "National Human Genome Research Institute",
+        url: "https://www.genome.gov/genetics-glossary/Epigenetics",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
   },
 ];

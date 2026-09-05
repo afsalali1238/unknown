@@ -21,9 +21,9 @@ export const CLUSTER_AA: Node[] = [
         "Why does the Second Law give time a direction while most physical laws are time-symmetric?",
       options: [
         "Because isolated systems evolve toward higher-entropy macrostates, which vastly outnumber ordered ones — the arrow of time is an arrow of probability",
-        "Because gravity pulls matter only forward in time and reverses if time is run backward — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Because the speed of light steadily decreases as entropy increases, creating a one-way gradient — this view reverses the causal direction the source material argues for.",
-        "Because Newton's laws contain an explicit time-asymmetry that forbids backward evolution — a common misreading that the text explicitly warns against.",
+        "Because gravity pulls matter only forward in time and reverses if time is run backward — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because the speed of light steadily decreases as entropy increases, creating a one-way gradient — a common simplification that omits the key mechanism behind the effect.",
+        "Because Newton's laws contain an explicit time-asymmetry that forbids backward evolution — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 0,
       explanation:
@@ -36,19 +36,13 @@ export const CLUSTER_AA: Node[] = [
         label: "Entropy",
         source: "article",
         url: "http://www.scholarpedia.org/article/Entropy",
-        archive: {
-          status: "full",
-          path: "content/sources/AA1-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA1-0.md", retrieved: "2026-07-18" },
       },
       {
         label: "Rudolf Clausius and the Second Law of Thermodynamics Explained",
         source: "article",
         url: "https://www.kroneckerwallis.com/rudolf-clausius-and-the-second-law-of-thermodynamics-explained/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -73,9 +67,9 @@ export const CLUSTER_AA: Node[] = [
       question:
         "What was the key insight that let Einstein derive time dilation and length contraction from just two postulates?",
       options: [
-        "That gravity bends light around massive objects — this alternative is popular online but misstates the mechanism the author defends.",
-        "That time moves at the same rate for every observer in the universe — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "That mass and energy are completely unrelated quantities — this view reverses the causal direction the source material argues for.",
+        "That gravity bends light around massive objects — a compact misstatement that leaves out the scope in which the claim holds.",
+        "That time moves at the same rate for every observer in the universe — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "That mass and energy are completely unrelated quantities — a widely circulated summary that inverts the relationship the author actually defends.",
         "That the speed of light is constant for all observers regardless of their motion, while the laws of physics stay the same in every inertial frame",
       ],
       correctIndex: 3,
@@ -89,11 +83,7 @@ export const CLUSTER_AA: Node[] = [
         label: "On the Electrodynamics of Moving Bodies (1905, English translation)",
         source: "paper",
         url: "https://www.fourmilab.ch/etexts/einstein/specrel/specrel.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/AA2-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA2-0.md", retrieved: "2026-07-18" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -118,15 +108,16 @@ export const CLUSTER_AA: Node[] = [
       question:
         "What did Hubble's 1929 redshift-distance data show, and why did it matter for cosmology?",
       options: [
-        "That the universe is static and unchanging, confirming the prevailing view of the time — this alternative is popular online but misstates the mechanism the author defends.",
-        "That distant galaxies are moving toward us, meaning the universe is contracting — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
+        "That the universe is static and unchanging, confirming the prevailing view of the time — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "That distant galaxies are moving toward us, meaning the universe is contracting — a compact misstatement that leaves out the scope in which the claim holds.",
         "That galaxies are receding at speeds proportional to their distance from us, meaning space itself is expanding — which, projected backward, implies the universe began in a compressed, hot state",
-        "That light travels at different speeds depending on the observer's location — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "That light travels at different speeds depending on the observer's location — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 2,
       explanation:
         "Hubble's velocity-distance relationship was the first hard observational evidence against a static universe — it directly seeded Big Bang cosmology by implying that running the expansion backward in time leads to an extremely dense, hot origin point.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AA7", "AA6", "AA9", "R5"],
     furtherReading: [
       {
@@ -134,14 +125,9 @@ export const CLUSTER_AA: Node[] = [
         source: "Proceedings of the National Academy of Sciences, 1929",
         url: "https://www.pnas.org/doi/10.1073/pnas.15.3.168",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AA3-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA3-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -164,15 +150,16 @@ export const CLUSTER_AA: Node[] = [
       question:
         "Why did the discovery of the cosmic microwave background settle the Big Bang vs. Steady State debate?",
       options: [
-        "Because it proved the universe is not expanding after all — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Because it was the first direct photograph ever taken of a galaxy — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "Because it disproved Einstein's theory of general relativity — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because it proved the universe is not expanding after all — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because it was the first direct photograph ever taken of a galaxy — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Because it disproved Einstein's theory of general relativity — a compact misstatement that leaves out the scope in which the claim holds.",
         "Because the Big Bang model predicted exactly this kind of uniform relic radiation from the universe's hot early state, while the rival Steady State model had no mechanism to produce it at all",
       ],
       correctIndex: 3,
       explanation:
         "The CMB wasn't just consistent with the Big Bang model, it was specifically predicted by it — a near-uniform microwave glow from all directions is exactly what cooled relic radiation from a hot early universe should look like, and no competing model could explain it.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AA3", "AA6"],
     furtherReading: [
       {
@@ -180,14 +167,9 @@ export const CLUSTER_AA: Node[] = [
         source: "The Astrophysical Journal, 1965",
         url: "https://articles.adsabs.harvard.edu/pdf/1965ApJ...142..419P",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AA4-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA4-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -210,14 +192,15 @@ export const CLUSTER_AA: Node[] = [
       question: "How does general relativity's explanation of gravity differ from Newton's?",
       options: [
         "Newton described gravity as an invisible pulling force between masses; general relativity describes it as the curvature of spacetime itself, with objects following the straightest path through that curved geometry",
-        "General relativity says gravity doesn't exist at all — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "General relativity only applies to objects moving faster than light — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "The two theories make identical predictions in every situation, with no measurable difference — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "General relativity says gravity doesn't exist at all — a handy abbreviation that hides the counter-condition the argument requires.",
+        "General relativity only applies to objects moving faster than light — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "The two theories make identical predictions in every situation, with no measurable difference — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 0,
       explanation:
         "Newton's force model and Einstein's curvature model can agree in weak gravitational fields, but they diverge in extreme cases — like light bending around the sun or the behavior near black holes — where only general relativity's spacetime-curvature picture matches what's actually observed.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AA2", "AA9", "Z1"],
     furtherReading: [
       {
@@ -225,14 +208,9 @@ export const CLUSTER_AA: Node[] = [
         source: "Prussian Academy of Sciences",
         url: "https://einsteinpapers.press.princeton.edu/vol6-doc/272",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AA5-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA5-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -255,15 +233,16 @@ export const CLUSTER_AA: Node[] = [
       question:
         "What was significant about Lemaître's 'primeval atom' proposal relative to Hubble's later observations?",
       options: [
-        "Lemaître copied Hubble's data years after it was published — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
+        "Lemaître copied Hubble's data years after it was published — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Lemaître theoretically proposed an expanding universe originating from a compact initial state before Hubble's 1929 observations provided the empirical evidence supporting it",
-        "Lemaître's theory was immediately accepted by all physicists including Einstein — this view reverses the causal direction the source material argues for.",
-        "Lemaître and Hubble worked together on the same research team — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Lemaître's theory was immediately accepted by all physicists including Einstein — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Lemaître and Hubble worked together on the same research team — a tempting paraphrase that drops the precise condition that makes the thesis work.",
       ],
       correctIndex: 1,
       explanation:
         "Lemaître derived the expanding-universe-with-a-beginning idea from theory (combining general relativity with an expanding universe) in 1927, ahead of Hubble's 1929 observational confirmation — theory and observation arrived from two different directions and converged.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AA3", "AA4"],
     furtherReading: [
       {
@@ -272,14 +251,9 @@ export const CLUSTER_AA: Node[] = [
           "Annales de la Société Scientifique de Bruxelles, 1927 (English translation 1931, MNRAS)",
         url: "https://articles.adsabs.harvard.edu/pdf/1931MNRAS..91..483L",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AA6-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA6-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -302,15 +276,16 @@ export const CLUSTER_AA: Node[] = [
       question:
         "Why is the uncertainty principle considered a fundamental feature of reality rather than a limitation of measurement technology?",
       options: [
-        "Because scientists haven't yet built instruments precise enough to overcome it — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Because it only applies to objects larger than atoms — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because scientists haven't yet built instruments precise enough to overcome it — a familiar retelling that strips out the contingency the source treats as central Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Because it only applies to objects larger than atoms — a surface-level gloss that misses the threshold where the claim stops applying It holds only within the scope the author defines, not as a universal claim.",
         "Because the uncertainty is a mathematical consequence of how quantum systems are structured — position and momentum genuinely cannot both have precise, definite values at the same time, regardless of how good the measuring instrument is",
-        "Because it was later disproven by more advanced physics — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "Because it was later disproven by more advanced physics — a handy abbreviation that hides the counter-condition the argument requires The distinction matters because it changes what you would measure to test the claim.",
       ],
       correctIndex: 2,
       explanation:
         "Unlike classical measurement error, which could in principle be reduced with better instruments, the uncertainty principle describes a genuine limit built into the mathematics of quantum mechanics — the properties themselves aren't simultaneously well-defined, not just poorly measured.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AA5", "R6"],
     furtherReading: [
       {
@@ -319,12 +294,9 @@ export const CLUSTER_AA: Node[] = [
         source: "Zeitschrift für Physik",
         url: "https://uncertaintyprinciple.wordpress.com/wp-content/uploads/2010/07/hq.pdf",
         type: "paper",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "unavailable" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
   {
@@ -346,15 +318,16 @@ export const CLUSTER_AA: Node[] = [
     quiz: {
       question: "What did Lorenz's 1963 discovery reveal about deterministic systems?",
       options: [
-        "That deterministic systems are always perfectly predictable if you have enough computing power — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "That weather patterns are fundamentally random rather than governed by physical laws — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "That rounding errors in computer simulations are always negligible and can be safely ignored — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "That deterministic systems are always perfectly predictable if you have enough computing power — a frequent misremembering that swaps the cause and its consequence.",
+        "That weather patterns are fundamentally random rather than governed by physical laws — a familiar retelling that strips out the contingency the source treats as central.",
+        "That rounding errors in computer simulations are always negligible and can be safely ignored — a surface-level gloss that misses the threshold where the claim stops applying.",
         "That even a fully deterministic system with no randomness can become practically unpredictable over time, because tiny, unmeasurable differences in starting conditions grow exponentially into large differences in outcome",
       ],
       correctIndex: 3,
       explanation:
         "Lorenz's finding wasn't about randomness — his equations were entirely deterministic — it was that sensitivity to initial conditions can be so extreme that even infinitesimally small measurement imprecision makes long-range prediction practically impossible, a property now called chaos.",
     },
+    tags: ["First-Principles Thinking", "Decision-Making"],
     related: ["AA1", "L4"],
     furtherReading: [
       {
@@ -362,14 +335,9 @@ export const CLUSTER_AA: Node[] = [
         source: "Journal of the Atmospheric Sciences, 1963",
         url: "https://journals.ametsoc.org/view/journals/atsc/20/2/1520-0469_1963_020_0130_dnf_2_0_co_2.xml",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AA8-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA8-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking", "Decision-Making"],
     epistemicStatus: "Canonical",
   },
   {
@@ -392,14 +360,15 @@ export const CLUSTER_AA: Node[] = [
       question: "What does E=mc² mean physically, beyond being a formula?",
       options: [
         "That mass and energy are two forms of the same underlying quantity, related by an enormous conversion factor — meaning even a small amount of mass corresponds to a huge amount of energy",
-        "That energy and mass are unrelated quantities that happen to share a formula — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "That only objects moving faster than light can convert mass into energy — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test.",
-        "That the formula applies only to nuclear reactions and nowhere else in physics — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "That energy and mass are unrelated quantities that happen to share a formula — a frequent misremembering that swaps the cause and its consequence.",
+        "That only objects moving faster than light can convert mass into energy — a familiar retelling that strips out the contingency the source treats as central.",
+        "That the formula applies only to nuclear reactions and nowhere else in physics — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 0,
       explanation:
         "The equation states a general equivalence between mass and energy for any object, not a rule specific to nuclear physics — nuclear reactions are simply the clearest real-world demonstration of it, because they convert a measurable fraction of mass into a very large amount of energy.",
     },
+    tags: ["First-Principles Thinking"],
     related: ["AA5", "AA3"],
     furtherReading: [
       {
@@ -408,14 +377,9 @@ export const CLUSTER_AA: Node[] = [
         source: "Annalen der Physik",
         url: "https://einsteinpapers.press.princeton.edu/vol2-trans/187",
         type: "paper",
-        archive: {
-          status: "full",
-          path: "content/sources/AA9-0.md",
-          retrieved: "2026-07-18",
-        },
+        archive: { status: "full", path: "content/sources/AA9-0.md", retrieved: "2026-07-18" },
       },
     ],
-    tags: ["First-Principles Thinking"],
     epistemicStatus: "Canonical",
   },
 ];

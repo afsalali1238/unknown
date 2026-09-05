@@ -63,9 +63,9 @@ export const CLUSTER_X: Node[] = [
       question:
         "Why does identity-based thinking prevent metacognition, according to this framework?",
       options: [
-        "It makes thinking too complex and energy-intensive — this view empha",
-        "It requires too much memory recall to function — this view emphasize",
-        "Algorithms cannot process identity markers effectively — this view e",
+        "It makes thinking too complex and energy-intensive — a compact misstatement that leaves out the scope in which the claim holds.",
+        "It requires too much memory recall to function — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Algorithms cannot process identity markers effectively — a widely circulated summary that inverts the relationship the author actually defends.",
         "Challenges to ideas are perceived as biological threats, triggering emotional defenses",
       ],
       correctIndex: 3,
@@ -108,8 +108,8 @@ export const CLUSTER_X: Node[] = [
       options: [
         "It employs complex rationalizations to protect the axiom and avoid epistemic crisis",
         "It instantly updates the belief structure to reflect the new data ",
-        "It stops processing external information entirely — this view emph",
-        "It defaults to a purely mathematical worldview — this view emphasi",
+        "It stops processing external information entirely — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "It defaults to a purely mathematical worldview — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -192,10 +192,10 @@ export const CLUSTER_X: Node[] = [
       question:
         "Why does the subject in the quantum suicide experiment always experience survival under the Many-Worlds Interpretation?",
       options: [
-        "The lethal mechanism is programmed to recognize and fail for living biological matter — this view emp",
-        "The observer controls the quantum decay with their mind — this alternative is popular online but misstates the mechanism the author defends.",
+        "The lethal mechanism is programmed to recognize and fail for living biological matter — a neat inversion that makes the effect sound like the cause.",
+        "The observer controls the quantum decay with their mind — a handy abbreviation that hides the counter-condition the argument requires.",
         "The observer can only subjectively experience the specific timelines where their biological consciousness continues to function",
-        "Alternate timelines merge to prevent the cessation of life — this view reverses the causal direction the source material argues for.",
+        "Alternate timelines merge to prevent the cessation of life — a compact misstatement that leaves out the scope in which the claim holds.",
       ],
       correctIndex: 2,
       explanation:
@@ -235,9 +235,9 @@ export const CLUSTER_X: Node[] = [
       question:
         "What is the primary implication of the relativity of simultaneity regarding the nature of the future?",
       options: [
-        "The future is highly malleable and changes based on quantum observation — a common misreading that the text explicitly warns against.",
-        "Time speeds up as objects approach the speed of light — this alternative is popular online but misstates the mechanism the author defends.",
-        "Simultaneous events destroy the fabric of spacetime, creating black holes — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "The future is highly malleable and changes based on quantum observation — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Time speeds up as objects approach the speed of light — a neat inversion that makes the effect sound like the cause.",
+        "Simultaneous events destroy the fabric of spacetime, creating black holes — a handy abbreviation that hides the counter-condition the argument requires.",
         'Because different observers have different "nows," the future of one observer is already happening for another, implying the future already exists',
       ],
       correctIndex: 3,

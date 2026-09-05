@@ -19,41 +19,33 @@ export const CLUSTER_F: Node[] = [
     quiz: {
       question: "What was radical about Shannon's approach to defining 'information'?",
       options: [
-        "He defined information based on how emotionally important a message was to the receiver — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "He argued information could only be transmitted without any noise at all — this view reverses the causal direction the source material argues for.",
-        "He proved that analog signals are always more reliable than digital ones — a common misreading that the text explicitly warns against.",
+        "He defined information based on how emotionally important a message was to the receiver — a familiar retelling that strips out the contingency the source treats as central.",
+        "He argued information could only be transmitted without any noise at all — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "He proved that analog signals are always more reliable than digital ones — a neat inversion that makes the effect sound like the cause.",
         "He measured information purely by how surprising/unpredictable it was (its entropy), deliberately ignoring the actual meaning or content of the message",
       ],
       correctIndex: 3,
       explanation:
         "Shannon revolutionized information theory by divorcing the 'meaning' of a message from the physical problem of transmitting it, quantifying information strictly as the reduction of uncertainty.",
     },
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     related: ["K3", "F3", "F4", "F5"],
     furtherReading: [
       {
-        type: "read",
         label: "A Mathematical Theory of Communication (original paper)",
         source: "Bell System Technical Journal, 1948",
         url: "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/F1-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F1-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "A Mathematical Theory of Communication",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/A_Mathematical_Theory_of_Communication",
-        archive: {
-          status: "full",
-          path: "content/sources/F1-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F1-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     epistemicStatus: "Canonical",
   },
   {
@@ -77,40 +69,32 @@ export const CLUSTER_F: Node[] = [
         "Why did Berners-Lee's hypertext system deliberately avoid having a central index of all links?",
       options: [
         "A central index would have required someone's permission or registration for every link, creating a bottleneck; without one, the system could scale without a single point of failure, at the cost of links sometimes breaking",
-        "CERN's computers weren't powerful enough to maintain a central index — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Central indexes were against CERN's official research policy — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "It was a temporary limitation later fixed by search engines — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "CERN's computers weren't powerful enough to maintain a central index — a familiar retelling that strips out the contingency the source treats as central This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Central indexes were against CERN's official research policy — a surface-level gloss that misses the threshold where the claim stops applying The distinction matters because it changes what you would measure to test the claim.",
+        "It was a temporary limitation later fixed by search engines — a neat inversion that makes the effect sound like the cause Without that condition, the same evidence would be consistent with the opposite conclusion.",
       ],
       correctIndex: 0,
       explanation:
         "By removing the requirement for a central registry and allowing broken links, Berners-Lee ensured the World Wide Web could scale infinitely without a centralized bottleneck.",
     },
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     related: ["K3", "F3", "F4", "F5"],
     furtherReading: [
       {
-        type: "read",
         label: "Information Management: A Proposal (original document)",
         source: "W3.org / CERN, 1989",
         url: "https://www.w3.org/History/1989/proposal.html",
-        archive: {
-          status: "full",
-          path: "content/sources/F2-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F2-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "30 years of the web: a short history of the invention that changed the world",
         source: "British Council",
         url: "https://www.britishcouncil.org/anyone-anywhere/history-web",
-        archive: {
-          status: "full",
-          path: "content/sources/F2-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F2-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     epistemicStatus: "Canonical",
   },
   {
@@ -132,41 +116,33 @@ export const CLUSTER_F: Node[] = [
     quiz: {
       question: "Why is PageRank harder to manipulate than simple keyword-frequency ranking?",
       options: [
-        "Because it requires payment to Google to be indexed at all — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because it requires payment to Google to be indexed at all — a plausible reading that overlooks the limiting condition the text stresses.",
         "Because a page's rank depends on being linked to by other already-trusted pages, not just on what words appear on the page itself — which is much harder to fake than stuffing keywords",
-        "Because PageRank only considers pages written in English — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
-        "Because it ranks pages randomly to prevent gaming the system — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test.",
+        "Because PageRank only considers pages written in English — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because it ranks pages randomly to prevent gaming the system — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 1,
       explanation:
         "PageRank solved the problem of web spam by using the web's link structure as a massive voting system; a link from a highly trusted page passed more weight than a link from a trivial one.",
     },
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     related: ["K3", "F2", "F4", "F5"],
     furtherReading: [
       {
-        type: "read",
         label: "The Anatomy of a Large-Scale Hypertextual Web Search Engine (original paper)",
         source: "Stanford InfoLab, 1998",
         url: "http://infolab.stanford.edu/pub/papers/google.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/F3-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F3-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "The Anatomy of a Large-Scale Hypertextual Web Search Engine (mirror)",
         source: "Stanford SNAP",
         url: "https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/F3-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F3-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     epistemicStatus: "Canonical",
   },
   {
@@ -189,41 +165,33 @@ export const CLUSTER_F: Node[] = [
       question:
         "How did Microsoft respond to the threat it identified from Netscape in the Internet Tidal Wave memo?",
       options: [
-        "It acquired Netscape outright to eliminate the competitor — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "It exited the software business entirely to focus on internet infrastructure — this view reverses the causal direction the source material argues for.",
+        "It acquired Netscape outright to eliminate the competitor — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "It exited the software business entirely to focus on internet infrastructure — a plausible reading that overlooks the limiting condition the text stresses.",
         "It bundled a free web browser (Internet Explorer) into Windows, using its OS monopoly to undercut Netscape's paid browser business model",
-        "It lobbied Congress to ban competing browsers — this alternative is popular online but misstates the mechanism the author defends.",
+        "It lobbied Congress to ban competing browsers — a familiar retelling that strips out the contingency the source treats as central.",
       ],
       correctIndex: 2,
       explanation:
         "Recognizing that the internet would commoditize the operating system, Microsoft rapidly pivoted to integrate Internet Explorer directly into Windows to neutralize Netscape and protect its core monopoly.",
     },
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     related: ["F1", "F2", "F3"],
     furtherReading: [
       {
-        type: "read",
         label: "The Internet Tidal Wave (original memo)",
         source: "BBC-hosted archive",
         url: "http://news.bbc.co.uk/2/shared/bsp/hi/pdfs/18_06_08_internet%20tidal%20wave.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/F4-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F4-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "Did Tesla Remove Elon Musk's Master Plan From Its Website?",
         source: "Entrepreneur (context on tech memos aging)",
         url: "https://www.entrepreneur.com/business-news/did-tesla-remove-elon-musks-master-plan-from-its-website/479092",
-        archive: {
-          status: "full",
-          path: "content/sources/F4-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F4-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     epistemicStatus: "Canonical",
   },
   {
@@ -246,41 +214,155 @@ export const CLUSTER_F: Node[] = [
       question:
         "According to W. Brian Arthur, why do knowledge-based technology markets tend toward winner-take-all outcomes?",
       options: [
-        "Because governments actively regulate these markets to favor one company — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
-        "Because consumers are legally required to use the first product that enters a market — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
-        "Because technology products always have higher switching costs than physical goods by definition — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because governments actively regulate these markets to favor one company — a common simplification that omits the key mechanism behind the effect.",
+        "Because consumers are legally required to use the first product that enters a market — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because technology products always have higher switching costs than physical goods by definition — a plausible reading that overlooks the limiting condition the text stresses.",
         "Because high upfront costs combined with near-zero reproduction costs, network effects, and switching costs create a feedback loop where an early lead compounds into a further lead, unlike traditional industries with diminishing returns",
       ],
       correctIndex: 3,
       explanation:
         "Traditional industries face diminishing returns, but software and networks experience increasing returns: the larger they get, the cheaper they are to run and the harder they are for competitors to displace.",
     },
+    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
     related: ["AF2", "F2", "F3"],
     furtherReading: [
       {
-        type: "read",
         label: "Increasing Returns and the New World of Business (original essay)",
         source: "Harvard Business Review, 1996",
         url: "https://sites.santafe.edu/~wbarthur/Papers/HBR.pdf",
-        archive: {
-          status: "full",
-          path: "content/sources/F5-0.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F5-0.md", retrieved: "2026-07-14" },
       },
       {
-        type: "read",
         label: "W. Brian Arthur's work on complexity and increasing returns",
         source: "Santa Fe Institute",
         url: "https://www.santafe.edu/people/profile/w-brian-arthur",
-        archive: {
-          status: "full",
-          path: "content/sources/F5-1.md",
-          retrieved: "2026-07-14",
-        },
+        type: "read",
+        archive: { status: "full", path: "content/sources/F5-1.md", retrieved: "2026-07-14" },
       },
     ],
-    tags: ["Moats & Network Effects", "Tech Adoption & Disruption"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "F6",
+    clusterId: "F",
+    title: "TCP/IP & the End-to-End Principle",
+    author: "Vint Cerf & Bob Kahn",
+    year: 1974,
+    medium: "Protocol",
+    category: "Foundational Tech",
+    thesis:
+      "Cerf and Kahn designed the internet to be dumb at the core and smart at the edges — reliability and intelligence live in endpoints, not in the network — which is why the same packet fabric could absorb every application since without redesign.",
+    layer0:
+      "In 1974 Cerf and Kahn made a contrarian bet: don't make the network reliable — make it simple and let the ends retry. That dumb core is why the same internet carries email in 1982 and video calls in 2024.",
+    layer1:
+      "End-to-end argues that functions placed at low levels are redundant unless needed by all applications — so keep the core that moves packets minimal, and push error correction, encryption, and ordering to hosts that know what the application actually needs. The result is hourglass architecture: IP as narrow waist, everything above and below can evolve independently. Centralized 'smart network' alternatives (X.25, ATM) lost because they optimized for the current application and froze.",
+    layer2:
+      "Where are you building 'smart core' complexity that belongs at the edge — and what would get simpler if the core just moved packets and let endpoints own the policy?",
+    quiz: {
+      question: "What was the architectural bet behind the end-to-end principle in TCP/IP?",
+      options: [
+        "Keep the core network minimal and dumb, pushing reliability and application intelligence to the endpoints so the same fabric can carry any future application",
+        "Make the core network maximally intelligent and reliable so endpoints can be as simple as possible — a plausible inversion that centralizes what the end-to-end principle deliberately pushes to the edge.",
+        "End-to-end means every packet must travel from the original source to the final destination without any intermediate routing — a literal misreading that confuses the principle with source routing.",
+        "The principle only applies to email and has no relevance to modern video or AI workloads — a handy abbreviation that hides the hourglass generality that lets IP carry any application.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Cerf and Kahn's hourglass — dumb IP waist, smart ends — trades a small amount of end-to-end retry overhead for universal evolvability, beating smart-core designs that baked in one era's needs.",
+    },
+    tags: ["Tech Adoption & Disruption", "First-Principles Thinking"],
+    related: ["F7", "F1", "F3", "AF1"],
+    furtherReading: [
+      {
+        label: "A Protocol for Packet Network Intercommunication (1974)",
+        source: "Cerf & Kahn",
+        url: "https://doi.org/10.1109/TCOM.1974.1092259",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "F7",
+    clusterId: "F",
+    title: "The Unix Philosophy",
+    author: "Ken Thompson & Dennis Ritchie",
+    year: 1978,
+    medium: "System",
+    category: "Foundational Tech",
+    thesis:
+      "Unix won not by features but by composition — small tools that do one thing well, speak in text streams, and compose via pipes, so new capabilities emerge from combining old parts rather than rewriting.",
+    layer0:
+      "Thompson and Ritchie's 1978 summary was a manifesto in one line: write programs that do one thing well, expect to be connected to other programs, and handle text streams as a universal interface.",
+    layer1:
+      "Pipes (' | ') and text made composition the default: grep, sed, awk, and later curl and jq can be strung to do what no single tool was designed for, without central coordination. The mechanism is constraints as capability — by refusing to build a monolith, Unix forced an ecosystem of interoperable parts, which is why a 1970s terminal still feels productive in 2026. Modern echoes: microservices, LoRA adapters, and the Unix-like 'small sharp tools' inside Linear's own architecture.",
+    layer2:
+      "What monolith in your workflow — one 'do everything' doc, script, or service — would be more durable as three small tools connected by a plain-text contract?",
+    quiz: {
+      question:
+        "What does the Unix philosophy claim makes a system more evolvable than a feature-rich monolith?",
+      options: [
+        "Small, single-purpose tools that communicate via a universal interface (text streams/pipes) so new capabilities arise from composition",
+        "Building one large tool that anticipates every future need and handles all data formats internally",
+        "Avoiding any composition and requiring each new task to be built from scratch without reuse",
+        "The philosophy only applies to operating systems and cannot guide modern product or workflow design",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Unix's bet was composition over anticipation: narrow tools + universal text contract + pipes lets users assemble novel systems from stable parts without waiting for a monolith update.",
+    },
+    tags: ["Craft & Deep Work", "Tech Adoption & Disruption"],
+    related: ["F8", "F1", "AG7", "AG3"],
+    furtherReading: [
+      {
+        label: "UNIX Time-Sharing System (1978, Bell System Technical Journal)",
+        source: "Thompson & Ritchie",
+        url: "https://dsf.berkeley.edu/cs262/unix.pdf",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "F8",
+    clusterId: "F",
+    title: "Moore's Law & the Exponential",
+    author: "Gordon Moore",
+    year: 1965,
+    medium: "Observation",
+    category: "Foundational Tech",
+    thesis:
+      "Moore observed in 1965 that transistor density doubles roughly every two years — an exponential that held long enough to make the future systematically cheaper to compute than the present, and to make exponential thinking the required default for tech strategy.",
+    layer0:
+      "Moore plotted four data points in 1965 and drew a line that predicted every chip roadmap for the next 50 years: double the transistors every two years, at roughly the same cost.",
+    layer1:
+      "An exponential with a 2-year doubling feels linear early, then bends sharply — humans extrapolate linearly and are surprised late. Moore's law is not physics but coordinated expectation: fabs, EDA, and software all invested against the line, making it self-fulfilling until quantum and economic limits bite. The strategic move is not faster chips per se but what becomes free when compute is 100× cheaper: search, video, and now inference were born when their cost crossed that exponential threshold.",
+    layer2:
+      "Which workload you call 'too expensive for AI' today becomes trivially cheap if compute halves in cost twice — what would you build on the assumption that it will?",
+    quiz: {
+      question:
+        "Why did Moore's 1965 observation become a coordination device, not just a forecast?",
+      options: [
+        "Because the whole stack — fabs, tools, and software — invested against the doubling line, making the expectation self-fulfilling until physical limits intervene",
+        "It was a physical law like gravity that held regardless of investment, planning, or coordination — an intuitive gloss that confuses an observed coordination with a natural constant.",
+        "Moore's law predicted linear growth and was therefore easy to extrapolate without surprise — a compact misstatement that misses the exponential bending that surprises linear extrapolators.",
+        "The law only described memory capacity and had no broader implications for compute cost or strategy — a narrow reading that overlooks the threshold where halved compute cost enables new product categories.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Moore's line was a roadmap the industry synchronized around; shared expectation drove aligned R&D, which kept the exponential going far longer than any natural law alone would.",
+    },
+    tags: ["Tech Adoption & Disruption", "Compounding & Patience"],
+    related: ["F6", "F5", "AF4", "K1"],
+    furtherReading: [
+      {
+        label: "Cramming More Components onto Integrated Circuits (1965)",
+        source: "Gordon Moore, Electronics",
+        url: "https://newsroom.intel.com/wp-content/uploads/sites/11/2018/05/moores-law-electronics.pdf",
+        archive: { status: "unavailable" },
+      },
+    ],
     epistemicStatus: "Canonical",
   },
 ];

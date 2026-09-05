@@ -21,9 +21,9 @@ export const CLUSTER_AI: Node[] = [
         "What was actually novel about Machiavelli's approach in The Prince compared to earlier political philosophy?",
       options: [
         "He described how power is actually held and kept in practice, rather than prescribing an idealized virtuous ruler",
-        "He was the first to argue rulers should be virtuous above all else — an intuitive but incorrect explanation that conflates.",
-        "He focused exclusively on religious justifications for rule — this view reverses the causal direction the source material argues.",
-        "He argued that democracy was superior to monarchy — a common misreading that the text explicitly warns against.",
+        "He was the first to argue rulers should be virtuous above all else — a frequent misremembering that swaps the cause and its consequence.",
+        "He focused exclusively on religious justifications for rule — a familiar retelling that strips out the contingency the source treats as central.",
+        "He argued that democracy was superior to monarchy — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 0,
       explanation:
@@ -36,11 +36,7 @@ export const CLUSTER_AI: Node[] = [
         label: "The Prince (full text)",
         source: "book",
         url: "https://www.gutenberg.org/files/1232/1232-h/1232-h.htm",
-        archive: {
-          status: "full",
-          path: "content/sources/AI1-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AI1-0.md", retrieved: "2026-07-17" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -65,9 +61,9 @@ export const CLUSTER_AI: Node[] = [
       question:
         "Why does Stigler's capture theory predict regulation will tend to favor the regulated industry over consumers?",
       options: [
-        "Because regulators are always personally corrupt — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Because regulators are legally required to consult industry representatives before writing any rule — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Because consumers are unable to purchase regulated goods at any price — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because regulators are always personally corrupt — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because regulators are legally required to consult industry representatives before writing any rule — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because consumers are unable to purchase regulated goods at any price — a frequent misremembering that swaps the cause and its consequence.",
         "Because the regulated industry is small and concentrated with strong incentive to lobby, while consumers are numerous and diffuse with weak individual incentive to organize against any single rule",
       ],
       correctIndex: 3,
@@ -81,13 +77,252 @@ export const CLUSTER_AI: Node[] = [
         label: "Let's Not Forget George Stigler's Lessons about Regulatory Capture",
         source: "article",
         url: "https://regulatorystudies.columbian.gwu.edu/lets-not-forget-george-stiglers-lessons-about-regulatory-capture",
-        archive: {
-          status: "full",
-          path: "content/sources/AI2-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AI2-0.md", retrieved: "2026-07-17" },
       },
     ],
     epistemicStatus: "Canonical",
+  },
+  {
+    id: "AI3",
+    clusterId: "AI",
+    title: "Leviathan & the Social Contract",
+    author: "Thomas Hobbes",
+    year: 1651,
+    medium: "Book",
+    category: "Political Theory",
+    thesis:
+      "Hobbes argued that without a sovereign to enforce agreement, life is 'solitary, poor, nasty, brutish, and short' — so rational individuals trade some freedom for security, authorizing a common power that makes promises credible.",
+    layer0:
+      "Hobbes wrote Leviathan during the English Civil War and asked: why would free people ever agree to be ruled? Because the alternative — everyone enforcing their own contract — is war.",
+    layer1:
+      "In the state of nature, every person can defect without consequence, so cooperation unravels even among the well-meaning. A sovereign solves this not by being wise but by being the third-party enforcer that makes defection costlier than cooperation. Locke and Rousseau later revise the terms — consent, rights, general will — but keep Hobbes's frame: legitimate power is the thing that makes credible commitment possible among strangers.",
+    layer2:
+      "What agreement in your organization keeps failing not for lack of goodwill but for lack of a credible enforcer — and what minimal sovereign would make defection costlier than keeping the promise?",
+    quiz: {
+      question: "What problem does Hobbes' social contract primarily claim to solve?",
+      options: [
+        "How to make cooperation and promises credible among strangers who would otherwise defect without a common enforcer",
+        "How to prove that humans are naturally altruistic and need no enforcement to cooperate",
+        "How to justify unlimited sovereign power without any need to trade freedom for security",
+        "The social contract only addresses economic inequality and has no bearing on cooperation or security",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Hobbes' mechanism is enforcement: the sovereign makes agreements credible by raising the cost of defection, moving the game from war to contract.",
+    },
+    tags: ["Power & Persuasion", "Incentives & Systems"],
+    related: ["AI4", "AI1", "AH1", "M4"],
+    furtherReading: [
+      {
+        label: "Leviathan (1651)",
+        source: "Thomas Hobbes",
+        url: "https://www.gutenberg.org/files/3207/3207-h/3207-h.htm",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AI4",
+    clusterId: "AI",
+    title: "The Dictator's Handbook & Selectorate Theory",
+    author: "Bruce Bueno de Mesquita & Alastair Smith",
+    year: 2011,
+    medium: "Book",
+    category: "Political Economy",
+    thesis:
+      "Selectorate theory says leaders survive by rewarding the small coalition that actually keeps them in power, not the broader population — so policy that looks 'irrational' often makes perfect sense as coalition maintenance.",
+    layer0:
+      "Bueno de Mesquita opened The Dictator's Handbook with a cold rule: no leader ever ruled alone — every ruler's first job is to keep the few who can actually remove him paid and loyal.",
+    layer1:
+      "The selectorate is everyone who can theoretically select a leader; the winning coalition is the subset whose support is actually needed. When that coalition is small (a junta, a board, a key customer), private goods to loyalists beat public goods for everyone. When it is large (a democracy, a mass market), public goods dominate because buying off individuals gets too expensive. 'Corruption' and 'bad policy' often describe coalition-maintenance that is privately rational even when publicly wasteful.",
+    layer2:
+      "Whose winning coalition are you confusing with 'the market' or 'the public' — and what behavior that looks irrational becomes rational once you map who actually keeps that decision-maker in their seat?",
+    quiz: {
+      question:
+        "What does selectorate theory predict about leaders who depend on a small winning coalition?",
+      options: [
+        "They will favor targeted private rewards to loyalists over broad public goods, because buying a small coalition is cheaper and more reliable",
+        "They will always provide broad public goods regardless of coalition size, since public goods are inherently better",
+        "Small coalitions make leaders more accountable to the general population than large coalitions do",
+        "Leaders with small coalitions are immune to removal and can safely ignore coalition maintenance",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Theory's lever is coalition size: small coalitions make private transfers efficient for survival; large coalitions make public goods the only affordable retention strategy.",
+    },
+    tags: ["Power & Persuasion", "Incentives & Systems"],
+    related: ["AI5", "AI1", "AI2", "C1"],
+    furtherReading: [
+      {
+        label: "The Dictator's Handbook (2011)",
+        source: "Bueno de Mesquita & Smith",
+        url: "https://www.buenodemesquita.com/",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AI5",
+    clusterId: "AI",
+    title: "Checks and Balances & the Separation of Powers",
+    author: "Montesquieu / The Federalists",
+    year: 1748,
+    medium: "Treatise",
+    category: "Governance",
+    thesis:
+      "Montesquieu and the Federalists argued that concentrating power in one body makes its abuse inevitable — so liberty requires splitting power across competing institutions that can check each other.",
+    layer0:
+      "Montesquieu wrote in 1748 that any person with power is apt to abuse it. The American founders took that warning and built three branches that can each block the other two.",
+    layer1:
+      "Separation assigns distinct functions — legislature, executive, judiciary — to distinct bodies with distinct selection and tenure, while checks give each a veto over the others (veto, confirmation, judicial review). The design assumes ambition will counteract ambition, rather than hoping office-holders become virtuous. Institutional version of incentives: make abuse expensive by requiring collusion across independent bodies rather than willpower from a single one.",
+    layer2:
+      "Where have you concentrated approval, spend, and review in a single role and then relied on that person's good judgment not to abuse a combination you explicitly made abusable?",
+    quiz: {
+      question:
+        "What is the operative mechanism behind checks and balances as a liberty-preserving design?",
+      options: [
+        "Splitting power across competing institutions with mutual vetoes so that abuse requires costly collusion, not just individual willpower",
+        "Concentrating all power in a single efficient body that can act without any internal friction or veto",
+        "Relying on the personal virtue and education of office-holders to voluntarily restrain their own power",
+        "Checks and balances have no practical effect and are purely ceremonial declarations",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Montesquieu's insight is structural, not moral: competing institutions with overlapping vetoes raise the price of abuse, assuming ambition rather than virtue.",
+    },
+    tags: ["Incentives & Systems", "Power & Persuasion"],
+    related: ["AI6", "AI3", "AI1", "M5"],
+    furtherReading: [
+      {
+        label: "The Spirit of the Laws (1748), Book XI",
+        source: "Montesquieu",
+        url: "https://oll.libertyfund.org/title/montesquieu-complete-works-vol-1-the-spirit-of-laws",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AI6",
+    clusterId: "AI",
+    title: "The Iron Law of Oligarchy",
+    author: "Robert Michels",
+    year: 1911,
+    medium: "Book",
+    category: "Sociology",
+    thesis:
+      "Michels argued that any organization — no matter how democratic its ideals — tends toward oligarchy as complexity, expertise, and delegation concentrate real power in a small permanent leadership.",
+    layer0:
+      "Michels, studying the German Social Democratic Party in 1911, coined a grim law: who says organization, says oligarchy.",
+    layer1:
+      "As organizations grow, decisions require specialized knowledge and full-time coordination; members delegate, leaders professionalize, and information asymmetries widen. Even with elections, incumbents control agenda, communication, and tenure, and the cost of monitoring them exceeds any single member's benefit from doing so. The law doesn't claim democracy is pointless — it claims formal democracy without counter-oligarchic design (term limits, rotation, transparency, subunits) drifts toward rule by a few.",
+    layer2:
+      "What ostensibly democratic group — team, DAO, community — are you in that is actually run by a permanent 3–5 person core, and what counter-design would put oligarchy back under tension?",
+    quiz: {
+      question: "What organizational mechanism drives Michels' Iron Law of Oligarchy?",
+      options: [
+        "Growing complexity forces delegation and professionalization, concentrating information and agenda control in a small permanent leadership despite formal democracy",
+        "Organizations naturally become more democratic as they grow because more members participate Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Oligarchy only arises when leaders are personally corrupt or power-hungry, not from organizational structure itself It holds only within the scope the author defines, not as a universal claim.",
+        "The law claims any hierarchy is instantly oligarchic regardless of size, complexity, or delegation This reading skips the enabling condition that makes the mechanism work as stated.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Michels' mechanism is structural — complexity → specialization → delegation → entrenched leadership — not primarily moral; counter-design must raise monitoring and rotation.",
+    },
+    tags: ["Power & Persuasion", "Incentives & Systems"],
+    related: ["AI7", "AI4", "M1", "V3"],
+    furtherReading: [
+      {
+        label: "Political Parties (1911)",
+        source: "Robert Michels",
+        url: "https://en.wikipedia.org/wiki/Iron_law_of_oligarchy",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AI7",
+    clusterId: "AI",
+    title: "Soft Power vs Hard Power",
+    author: "Joseph Nye",
+    year: 1990,
+    medium: "Book",
+    category: "International Relations",
+    thesis:
+      "Nye distinguished hard power (coercion via force or payment) from soft power (attraction via culture, values, and policies others want to join) — and argued durable influence relies more on the second than the first.",
+    layer0:
+      "Nye coined 'soft power' in 1990 watching American culture do what carrier groups could not: get others to want what you want without issuing an order.",
+    layer1:
+      "Hard power coerces — 'do this or I punish/pay you.' Soft power attracts — 'I want what you want because your culture, values, or policies are appealing enough to emulate.' Soft power is cheaper and more durable but slower to build and fragile to hypocrisy; hard power is fast and visible but expensive and breeds resistance. Effective strategy mixes both into 'smart power,' but most actors overinvest in the measurable (hard) and underinvest in the attractive (soft) because attraction has no quarterly dashboard.",
+    layer2:
+      "Where are you reaching for hard power — mandate, incentive, enforcement — where building soft power — a culture or standard others want to emulate — would have made compliance voluntary?",
+    quiz: {
+      question: "What makes soft power 'power' in Nye's definition?",
+      options: [
+        "It gets others to want what you want through attraction to your culture, values, or policies, so they align without coercion or payment",
+        "It is simply the absence of any influence, letting other actors do whatever they please It holds only within the scope the author defines, not as a.",
+        "Soft power is identical to hard power but rebranded with more appealing language This reading skips the enabling condition that makes the mechanism.",
+        "Soft power works only through military deterrence and economic sanctions The distinction matters because it changes what you would measure to test the claim.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Nye's distinction is mechanism: hard power coerces via threats/payments; soft power attracts via legitimacy and desirability, producing voluntary alignment.",
+    },
+    tags: ["Power & Persuasion", "Markets & Narrative"],
+    related: ["AI8", "AI1", "AK5", "M4"],
+    furtherReading: [
+      {
+        label: "Bound to Lead: The Changing Nature of American Power (1990)",
+        source: "Joseph Nye",
+        url: "https://www.belfercenter.org/person/joseph-s-nye",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "AI8",
+    clusterId: "AI",
+    title: "The Overton Window",
+    author: "Joseph P. Overton",
+    year: 1998,
+    medium: "Model",
+    category: "Policy Theory",
+    thesis:
+      "Overton proposed that at any time only a window of policies feels politically acceptable — and that serious change requires moving the window itself, not just proposing a policy inside the current one.",
+    layer0:
+      "Overton, a vice president at the Mackinac Center, noticed in the 1990s that politicians rarely move public opinion; they move within the window public opinion already allows.",
+    layer1:
+      "Policies fall on a spectrum from unthinkable through radical, acceptable, sensible, popular, to policy. The window is the acceptable slice. Think tanks, artists, and activists shift it by making the previously unthinkable debated and the radical acceptable — after which the same politician can endorse what was once untouchable without paying the earlier cost. Most advocacy fails because it pitches a policy without first doing the window-shifting work.",
+    layer2:
+      "What idea you want adopted is currently outside the window — and what one conversation, demonstration, or artifact would move it from 'unthinkable' to merely 'radical'?",
+    quiz: {
+      question:
+        "What does successfully 'moving the Overton Window' make possible that direct policy advocacy inside the current window cannot?",
+      options: [
+        "It shifts the range of what the public will consider acceptable, so a previously unthinkable policy can be endorsed without prohibitive political cost",
+        "It immediately makes any fringe policy law without needing public deliberation or elite adoption This reading skips the enabling condition that makes the mechanism work as stated.",
+        "The Overton window is fixed and cannot be moved, so advocacy should never attempt to shift it The distinction matters because it changes what you would measure to test the claim.",
+        "Moving the window only works by suppressing all opposing viewpoints through censorship Without that condition, the same evidence would be consistent with the opposite conclusion.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Overton's mechanism is acceptability, not immediate enactment: the window defines which ideas are debatable; shifting it through discourse and demonstration changes what politicians can support at tolerable cost.",
+    },
+    tags: ["Power & Persuasion", "Markets & Narrative"],
+    related: ["AI5", "AK7", "AK1", "AH4"],
+    furtherReading: [
+      {
+        label: "The Overton Window",
+        source: "Mackinac Center for Public Policy",
+        url: "https://www.mackinac.org/OvertonWindow",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Contemporary",
   },
 ];

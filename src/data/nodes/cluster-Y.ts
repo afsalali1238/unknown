@@ -63,10 +63,10 @@ export const CLUSTER_Y: Node[] = [
       question:
         "Why do macroscopic events (like a breaking egg) demonstrate an Arrow of Time, while microscopic events (like particle collisions) are generally time-symmetric?",
       options: [
-        "Microscopic particles do not experience the force of gravity — this alternative is popular online but misstates the mechanism the.",
+        "Microscopic particles do not experience the force of gravity — a plausible reading that overlooks the limiting condition the text stresses.",
         "Macroscopic systems are governed by statistical probability, which heavily favors states of higher entropy (disorder)",
-        "Quantum mechanics overrides thermodynamics on a large scale — this view reverses the causal direction the source material argues for.",
-        "The observer effect forces macroscopic objects to decay — a common misreading that the text explicitly warns against.",
+        "Quantum mechanics overrides thermodynamics on a large scale — a familiar retelling that strips out the contingency the source treats as central.",
+        "The observer effect forces macroscopic objects to decay — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 1,
       explanation:
@@ -106,10 +106,10 @@ export const CLUSTER_Y: Node[] = [
       question:
         "What fundamentally differentiates the 'Hard Problem' of consciousness from the 'easy problems'?",
       options: [
-        "The hard problem requires quantum computing to model — this alternative is popular online but misstates the mechanism the author defends.",
-        "The hard problem deals with memory retention, while the easy problem deals with visual acuity — this view empha",
+        "The hard problem requires quantum computing to model — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "The hard problem deals with memory retention, while the easy problem deals with visual acuity — a plausible reading that overlooks the limiting condition the text stresses.",
         "The easy problem maps neurological functions, while the hard problem questions why these functions result in subjective experience (qualia)",
-        "The hard problem is purely mathematical and devoid of biology — a common misreading that the text explicitly warns against.",
+        "The hard problem is purely mathematical and devoid of biology — a familiar retelling that strips out the contingency the source treats as central.",
       ],
       correctIndex: 2,
       explanation:
@@ -149,9 +149,9 @@ export const CLUSTER_Y: Node[] = [
       question:
         "What psychological benefit is directly associated with increasing one's 'emotional granularity' by learning specific words for highly nuanced feelings?",
       options: [
-        "It improves long-term memory retention — this alternative is popular online but misstates the mechanism the.",
-        "It permanently eliminates negative emotional responses — an intuitive but incorrect explanation that conflates.",
-        "It slows down the subjective perception of time — this view reverses the causal direction the source material.",
+        "It improves long-term memory retention — a common simplification that omits the key mechanism behind the effect.",
+        "It permanently eliminates negative emotional responses — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "It slows down the subjective perception of time — a plausible reading that overlooks the limiting condition the text stresses.",
         "It reduces anxiety and enhances emotional regulation by accurately contextualizing internal states",
       ],
       correctIndex: 3,
@@ -193,9 +193,9 @@ export const CLUSTER_Y: Node[] = [
         "What foundational mathematical rule is required to make the Banach-Tarski paradox logically function?",
       options: [
         "The Axiom of Choice applied to uncountably infinite point sets",
-        "The Pythagorean Theorem — an intuitive but incorrect explanation that.",
-        "The Second Law of Thermodynamics — this view emph",
-        "Non-Euclidean spatial curvature — this view empha",
+        "The Pythagorean Theorem — a common simplification that omits the key mechanism behind the effect.",
+        "The Second Law of Thermodynamics — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Non-Euclidean spatial curvature — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 0,
       explanation:
@@ -234,10 +234,10 @@ export const CLUSTER_Y: Node[] = [
     quiz: {
       question: "How do societal reward structures conflict with the Just-World Hypothesis?",
       options: [
-        "Society perfectly tracks and rewards moral purity over time — thi",
+        "Society perfectly tracks and rewards moral purity over time — an intuitive gloss that confuses the enabling condition with the outcome.",
         "The world primarily rewards leverage and scale, not inherently hard work or virtue",
-        "Society only rewards manual, physical labor — this view emphasize",
-        "Bad deeds are always immediately punished by economic forces — th",
+        "Society only rewards manual, physical labor — a common simplification that omits the key mechanism behind the effect.",
+        "Bad deeds are always immediately punished by economic forces — an appealing shorthand that collapses a structural distinction into a surface similarity.",
       ],
       correctIndex: 1,
       explanation:
@@ -278,8 +278,8 @@ export const CLUSTER_Y: Node[] = [
         "According to Predictive Processing, what is the primary role of your sensory organs?",
       options: [
         "To stream high-definition reality into the brain for processing. —",
-        "To generate the hallucinations that form consciousness. — this vie",
-        "To permanently store long-term memories. — this view reverses the causal direction the source.",
+        "To generate the hallucinations that form consciousness. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "To permanently store long-term memories. — a widely circulated summary that inverts the relationship the author actually defends.",
         "To send signals to the brain only when reality differs from the brain's prediction.",
       ],
       correctIndex: 3,

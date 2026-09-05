@@ -56,9 +56,9 @@ export const CLUSTER_L: Node[] = [
     quiz: {
       question: "Why does a pre-mortem surface more failure modes than a normal risk review?",
       options: [
-        "It uses better software. — a common misreading that the text explicitly warns against. The distinction matters because it.",
-        "It replaces judgment with data. — this alternative is popular online but misstates the mechanism the author defends.",
-        "It happens after the project ends. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "It uses better software. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "It replaces judgment with data. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "It happens after the project ends. — a widely circulated summary that inverts the relationship the author actually defends.",
         "Imagining the failure has already occurred lets people describe causes without seeming disloyal or negative.",
       ],
       correctIndex: 3,
@@ -101,9 +101,9 @@ export const CLUSTER_L: Node[] = [
         "A founder says 'our startup will succeed because our team is unusually talented.' What is the base-rates critique?",
       options: [
         "Most founders think their team is unusually talented, and most startups still fail. Start with the outside view and adjust modestly.",
-        "Talent doesn't matter. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes.",
-        "You should ignore team quality entirely. — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "The founder is definitely wrong. — this view reverses the causal direction the source material argues for. The distinction matters because it changes.",
+        "Talent doesn't matter. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "You should ignore team quality entirely. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "The founder is definitely wrong. — a widely circulated summary that inverts the relationship the author actually defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -141,10 +141,10 @@ export const CLUSTER_L: Node[] = [
     quiz: {
       question: "Regret minimization mostly protects against which asymmetry?",
       options: [
-        "That people are too optimistic about the future. — a common misreading that the text explicitly warns against.",
+        "That people are too optimistic about the future. — a handy abbreviation that hides the counter-condition the argument requires.",
         "That short-term risks feel large while long-term inaction quietly compounds into the biggest regret.",
-        "That risk is impossible to measure. — an intuitive but incorrect explanation that conflates correlation with.",
-        "That decisions have no consequences. — this view reverses the causal direction the source material argues for.",
+        "That risk is impossible to measure. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "That decisions have no consequences. — an intuitive gloss that confuses the enabling condition with the outcome.",
       ],
       correctIndex: 1,
       explanation:
@@ -238,10 +238,10 @@ export const CLUSTER_L: Node[] = [
       question:
         "A venture firm loses money on 9 of 10 investments but the 10th returns 50x. Why does the firm still come out far ahead?",
       options: [
-        "Because it correctly predicted which startup would win in advance. — a common misreading that the text explicitly warns against.",
+        "Because it correctly predicted which startup would win in advance. — a surface-level gloss that misses the threshold where the claim stops applying.",
         "Because the downside per bet was capped while the upside on the winner was effectively uncapped, so one win overwhelms nine capped losses.",
-        "Because diversification always guarantees a positive return. — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Because losing bets don't count against fund performance. — this view reverses the causal direction the source material argues for.",
+        "Because diversification always guarantees a positive return. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because losing bets don't count against fund performance. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
       ],
       correctIndex: 1,
       explanation:
@@ -381,9 +381,9 @@ export const CLUSTER_L: Node[] = [
         "Per this framework, what is the most common reason people reason badly, according to the lesson's own framing?",
       options: [
         "Skipping one of the concrete steps (like considering other viewpoints) under time pressure, rather than a deficit of ability.",
-        "A lack of raw intelligence. — this alternative is popular online but misstates the mechanism the author defends.",
-        "Not having access to enough information. — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Being naturally predisposed to logical fallacies from birth. — this view reverses the causal direction the source material argues for.",
+        "A lack of raw intelligence. — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Not having access to enough information. — a neat inversion that makes the effect sound like the cause.",
+        "Being naturally predisposed to logical fallacies from birth. — a handy abbreviation that hides the counter-condition the argument requires.",
       ],
       correctIndex: 0,
       explanation:
@@ -424,10 +424,10 @@ export const CLUSTER_L: Node[] = [
       question:
         "What is the key distinction this collection draws between an argument's conclusion and its logical structure?",
       options: [
-        "A conclusion and its supporting argument are always either both true or both false together. — this view emp",
+        "A conclusion and its supporting argument are always either both true or both false together. — a frequent misremembering that swaps the cause and its consequence.",
         "An argument's conclusion can be true even while its logical structure is flawed (a fallacy) — validity and truth are separate questions.",
-        "Fallacies only occur in written arguments, never in spoken ones. — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "There is no meaningful difference between a fallacy and a false conclusion. — this view reverses the causal direction the source material argues for.",
+        "Fallacies only occur in written arguments, never in spoken ones. — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "There is no meaningful difference between a fallacy and a false conclusion. — a neat inversion that makes the effect sound like the cause.",
       ],
       correctIndex: 1,
       explanation:
@@ -468,10 +468,10 @@ export const CLUSTER_L: Node[] = [
       question:
         "According to this reframing approach, why is a team's initial problem statement risky to treat as fixed?",
       options: [
-        "Because initial problem statements are always factually incorrect. — a common misreading that the text explicitly warns against.",
-        "Because problem statements should never be written down. — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because initial problem statements are always factually incorrect. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because problem statements should never be written down. — a frequent misremembering that swaps the cause and its consequence.",
         "Because the framing already constrains which solutions get considered, so a poor framing can make a solvable problem look unsolvable.",
-        "Because only senior leadership is allowed to define problems. — this view reverses the causal direction the source material argues for.",
+        "Because only senior leadership is allowed to define problems. — a surface-level gloss that misses the threshold where the claim stops applying.",
       ],
       correctIndex: 2,
       explanation:
@@ -514,9 +514,9 @@ export const CLUSTER_L: Node[] = [
       question:
         "In the 5 Whys example (car won't start), why is fixing the alternator belt still an incomplete solution?",
       options: [
-        "Because alternator belts are too expensive to replace regularly. — a common misreading that the text explicitly warns against.",
-        "Because the car needed a new battery, not a new belt. — this alternative is popular online but misstates the mechanism the author defends.",
-        "Because five whys is always excessive and three is sufficient. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because alternator belts are too expensive to replace regularly. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because the car needed a new battery, not a new belt. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because five whys is always excessive and three is sufficient. — a frequent misremembering that swaps the cause and its consequence.",
         "Because it doesn't address the deeper root cause — the absence of a preventive maintenance schedule — which means a similar failure can recur.",
       ],
       correctIndex: 3,
@@ -560,10 +560,10 @@ export const CLUSTER_L: Node[] = [
       question:
         "What does BATNA (Best Alternative to a Negotiated Agreement) determine in a negotiation?",
       options: [
-        "The exact price both sides must agree to. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
-        "How many rounds of bargaining are allowed. — this alternative is popular online but misstates the mechanism the author defends.",
+        "The exact price both sides must agree to. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "How many rounds of bargaining are allowed. — a common simplification that omits the key mechanism behind the effect.",
         "Your walk-away point — the strongest position you have if the negotiation fails, which strengthens your leverage in the actual conversation.",
-        "The relationship history between the two parties. — this view reverses the causal direction the source material argues for.",
+        "The relationship history between the two parties. — a plausible reading that overlooks the limiting condition the text stresses.",
       ],
       correctIndex: 2,
       explanation:
@@ -606,9 +606,9 @@ export const CLUSTER_L: Node[] = [
       question:
         "According to this framework, what is the actual cause of most people's underperformance, as distinct from simply 'not working hard enough'?",
       options: [
-        "A lack of raw effort or hours worked. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test.",
-        "Not having access to enough productivity tools. — this alternative is popular online but misstates the mechanism the author defends.",
-        "Setting too few goals. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
+        "A lack of raw effort or hours worked. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Not having access to enough productivity tools. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Setting too few goals. — a common simplification that omits the key mechanism behind the effect.",
         "Spending time on low-impact tasks instead of deliberately identifying and prioritizing the roughly 20% of actions that drive most of the results.",
       ],
       correctIndex: 3,
@@ -652,9 +652,9 @@ export const CLUSTER_L: Node[] = [
       question: "Which quadrant of the Eisenhower Matrix is most commonly neglected, and why?",
       options: [
         "Important but not urgent, because nothing forces immediate action on it, so it gets crowded out by louder, more urgent demands even though it often produces the most compounding value.",
-        "Urgent and important, because crises are easy to ignore. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
-        "Urgent but not important, because it requires the most skill to complete. — an intuitive but incorrect explanation that conflates correlation with causation.",
-        "Neither urgent nor important, because it's usually the majority of any schedule. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you.",
+        "Urgent and important, because crises are easy to ignore. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Urgent but not important, because it requires the most skill to complete. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Neither urgent nor important, because it's usually the majority of any schedule. — a common simplification that omits the key mechanism behind the effect.",
       ],
       correctIndex: 0,
       explanation:

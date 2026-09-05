@@ -20,10 +20,10 @@ export const CLUSTER_AG: Node[] = [
       question:
         "What point was Sullivan actually making with 'form follows function' in his 1896 essay?",
       options: [
-        "Buildings should have no decoration whatsoever — this alternative is popular online but misstates the mechanism the author defends.",
-        "Function is less important than visual appeal — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes.",
+        "Buildings should have no decoration whatsoever — a familiar retelling that strips out the contingency the source treats as central.",
+        "Function is less important than visual appeal — a surface-level gloss that misses the threshold where the claim stops applying.",
         "A structure's shape should be determined by its purpose, the way natural forms are shaped by what they need to do, not by inherited decorative convention",
-        "Ornament should be added only after a building's structural design is finished — a common misreading that the text explicitly warns against.",
+        "Ornament should be added only after a building's structural design is finished — a handy abbreviation that hides the counter-condition the argument requires.",
       ],
       correctIndex: 2,
       explanation:
@@ -36,21 +36,13 @@ export const CLUSTER_AG: Node[] = [
         label: "Form follows function",
         source: "article",
         url: "https://en.wikipedia.org/wiki/Form_follows_function",
-        archive: {
-          status: "full",
-          path: "content/sources/AG1-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AG1-0.md", retrieved: "2026-07-17" },
       },
       {
         label: "The Tall Office Building Artistically Considered (1896, primary source scan)",
         source: "article",
         url: "https://archive.org/details/tallofficebuildi00sull",
-        archive: {
-          status: "full",
-          path: "content/sources/AG1-1.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AG1-1.md", retrieved: "2026-07-20" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -74,10 +66,10 @@ export const CLUSTER_AG: Node[] = [
     quiz: {
       question: "What did Gibson mean by an 'affordance'?",
       options: [
-        "A visible label or instruction that explains how to use an object correctly — this alternative is popular online but misstates the mechanism the author defends.",
+        "A visible label or instruction that explains how to use an object correctly — a frequent misremembering that swaps the cause and its consequence.",
         "A possibility for action that an object or environment directly offers a specific perceiver, perceived without first analyzing its neutral physical properties",
-        "The market price a customer is willing to afford for a product — this view reverses the causal direction the source material argues for.",
-        "A product feature that has been explicitly documented in a manual — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
+        "The market price a customer is willing to afford for a product — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "A product feature that has been explicitly documented in a manual — a neat inversion that makes the effect sound like the cause.",
       ],
       correctIndex: 1,
       explanation:
@@ -90,21 +82,255 @@ export const CLUSTER_AG: Node[] = [
         label: "Affordance",
         source: "article",
         url: "https://en.wikipedia.org/wiki/Affordance",
-        archive: {
-          status: "full",
-          path: "content/sources/AG2-0.md",
-          retrieved: "2026-07-17",
-        },
+        archive: { status: "full", path: "content/sources/AG2-0.md", retrieved: "2026-07-17" },
       },
       {
         label: "Top 10 Application-Design Mistakes (affordances & signifiers)",
         source: "article",
         url: "https://www.nngroup.com/articles/top-10-application-design-mistakes/",
-        archive: {
-          status: "full",
-          path: "content/sources/AG2-1.md",
-          retrieved: "2026-07-20",
-        },
+        archive: { status: "full", path: "content/sources/AG2-1.md", retrieved: "2026-07-20" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG3",
+    clusterId: "AG",
+    title: "The Design of Everyday Things & Signifiers",
+    author: "Don Norman",
+    year: 1988,
+    medium: "Book",
+    category: "Design Philosophy",
+    thesis:
+      "Norman showed everyday errors are usually not user stupidity but design failures — objects must signal how to use them via signifiers, constraints, and feedback, not via labels and manuals.",
+    layer0:
+      "Norman's bestseller is built on a doormat of complaints: doors you push when they say pull, stovetops where you burn the wrong burner — not bad users, bad signifiers.",
+    layer1:
+      "Affordances are what an object can do; signifiers are the perceptible cue that communicates it. Good design makes the correct action discoverable without instruction by aligning signifier, constraint, mapping, and feedback — the handle's shape says pull, the flat plate says push. Norman's test: if a simple object needs a label, the signifier has failed.",
+    layer2:
+      "Walk through the last screen you shipped and count every tooltip, label, or onboarding hint — how many exist only because the signifier underneath is ambiguous?",
+    quiz: {
+      question: "What distinction does Norman insist on between affordances and signifiers?",
+      options: [
+        "Affordances are what an object can do; signifiers are the perceptible cues that communicate what to do, and design fails when signifiers are missing",
+        "Affordances and signifiers are synonyms and any design can treat them interchangeably The distinction matters because it changes what you would measure to test the claim.",
+        "Signifiers are purely decorative and have no effect on whether a user can discover the correct action Without that condition, the same evidence would be.",
+        "Good design should hide all signifiers and force users to discover affordances through trial and error It holds only within the scope the author defines, not as.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Norman refined Gibson: an affordance is a possible action, a signifier communicates it; errors arise when possible action exists but its cue is invisible or contradictory.",
+    },
+    tags: ["Craft & Deep Work", "First-Principles Thinking"],
+    related: ["AG4", "AG2", "AG1", "N5"],
+    furtherReading: [
+      {
+        label: "The Design of Everyday Things (1988)",
+        source: "Don Norman",
+        url: "https://jnd.org/books/design-of-everyday-things-revised/",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG4",
+    clusterId: "AG",
+    title: "Dieter Rams' 10 Principles of Good Design",
+    author: "Dieter Rams",
+    year: 1976,
+    medium: "Manifesto",
+    category: "Design Philosophy",
+    thesis:
+      "Rams, Braun's chief designer, reduced good design to ten checks — innovative, useful, aesthetic, understandable, unobtrusive, honest, long-lasting, thorough, environmentally friendly, and as little design as possible — and applied them for decades to beat fashion cycles.",
+    layer0:
+      "In the 1970s Rams watched Braun's catalog swell with trendy radios and wrote a checklist on a single sheet: if a product fails any of ten principles, it is not good design.",
+    layer1:
+      "The list functions as a constraint lattice: honesty forbids styling that pretends to be more capable than it is; 'as little design as possible' forbids ornament that serves no function; longevity forbids chasing seasonal silhouettes. Apple, Muji, and Linear cite it because the principles trade short-term novelty for durable coherence — every new feature must pass all ten or be cut.",
+    layer2:
+      "Run your current feature through Rams' ten — which principle does it most clearly violate, and what would you cut to make it pass?",
+    quiz: {
+      question: "What does Rams' 'as little design as possible' actually require?",
+      options: [
+        "Concentrate on the essential and remove ornament that serves no purpose, rather than pursuing minimalist styling for its own sake",
+        "Make every product look visually minimal regardless of whether that helps its utility",
+        "Add as many features as possible so that minimalism is achieved through maximal options",
+        "Good design should be invisible to the point that users cannot perceive the product at all",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Rams' minimalism is subtractive in service of essence and longevity, not aesthetic minimalism — less but better, not just less.",
+    },
+    tags: ["Craft & Deep Work", "First-Principles Thinking"],
+    related: ["AG5", "AG1", "AG3", "N4"],
+    furtherReading: [
+      {
+        label: "Ten Principles of Good Design",
+        source: "Dieter Rams / Vitsoe",
+        url: "https://www.vitsoe.com/gb/about/good-design",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG5",
+    clusterId: "AG",
+    title: "Jobs-to-Be-Done",
+    author: "Clayton Christensen / Bob Moesta",
+    year: 2007,
+    medium: "Theory",
+    category: "Product Theory",
+    thesis:
+      "Christensen argues customers don't buy products, they hire them to make progress in a specific struggling moment — so segmentation by job, not by persona, predicts when a product will actually be pulled into use.",
+    layer0:
+      "Christensen's milkshake study flipped briefs: McDonald's wasn't competing with Burger King for breakfast; the morning milkshake was hired to make a boring commute feel less boring and to last until lunch.",
+    layer1:
+      "A job has a functional dimension, an emotional one, and a social one, plus a pushing situation and a pull of a new way. Interviewing the struggle — when did you first look, what did you hire before, what almost stopped you — reveals causality in a way demographics can't. Products that win nail the job's progress, not the persona's attributes, which is why personas predict attitude but jobs predict behavior.",
+    layer2:
+      "Rewrite your last persona as a job: 'When [situation], I want [progress], so I can [outcome]' — does the product still appear hired, or does it disappear?",
+    quiz: {
+      question:
+        "Why does Christensen argue segmentation by job outperforms segmentation by persona?",
+      options: [
+        "A job captures the causal struggling moment and desired progress that actually pulls a product into use, while personas describe attributes that predict attitudes but not behavior",
+        "Jobs are simply another word for personas and the two approaches are identical in predictive power It holds only within the scope the author defines, not as a universal claim.",
+        "Personas are illegal to collect under modern privacy regulations, so jobs are the only permissible alternative This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Jobs focus exclusively on functional utility and ignore emotional or social dimensions of the hire The distinction matters because it changes what you would measure to test the claim.",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Jobs theory is causal — it identifies the pushing situation and desired progress that causes a hire — whereas attribute-based personas correlate loosely with preferences but not with the moment of switch.",
+    },
+    tags: ["Craft & Deep Work", "Tech Adoption & Disruption"],
+    related: ["AG6", "AG3", "A5", "A2"],
+    furtherReading: [
+      {
+        label: "Know Your Customers' Jobs to Be Done (2007, HBR)",
+        source: "Clayton Christensen",
+        url: "https://hbr.org/2007/12/know-your-customers-jobs-to-be-done",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG6",
+    clusterId: "AG",
+    title: "Conway's Law",
+    author: "Melvin Conway",
+    year: 1967,
+    medium: "Paper",
+    category: "Systems / Organization",
+    thesis:
+      "Conway observed that the structure of any system you design will be a copy of the communication structure of the organization that built it — so you cannot cleanly separate product architecture from org architecture.",
+    layer0:
+      "Conway wrote in Datamation in 1967: any organization that designs a system will produce a design whose structure copies its own communication structure. The org chart is the blueprint.",
+    layer1:
+      "If three teams barely talk, the product will be three modules with awkward interfaces where the teams meet — regardless of what the ideal architecture diagram says. This is not morale advice but a constraint: information that cannot flow between builders cannot be embodied between parts. Classic fixes either mirror the desired architecture in the org (re-org first) or invest in the missing communication edge until it is high-bandwidth enough to let the intended architecture actually emerge.",
+    layer2:
+      "What awkward seam in your product exactly mirrors an awkward seam — missing meeting, misaligned incentives — between the teams that built the two sides of it?",
+    quiz: {
+      question:
+        "What does Conway's Law claim about the relationship between organization and product?",
+      options: [
+        "The system's structure will mirror the communication structure of the organization that built it, constraints and seams included",
+        "Product architecture is independent of organizational structure and can be designed in isolation",
+        "More hierarchical organizations always produce more modular and superior architectures",
+        "Conway's law only applies to military organizations and has no relevance to modern software teams",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Conway's insight is isomorphic: communication paths become component couplings, so product seams reveal org seams and architectural fixes often require org fixes first.",
+    },
+    tags: ["Incentives & Systems", "Craft & Deep Work"],
+    related: ["AG7", "AG1", "M3", "AF4"],
+    furtherReading: [
+      {
+        label: "How Do Committees Invent? (1968, Datamation)",
+        source: "Melvin Conway",
+        url: "https://www.melvinconway.com/research/committees.html",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG7",
+    clusterId: "AG",
+    title: "Gall's Law",
+    author: "John Gall",
+    year: 1975,
+    medium: "Book",
+    category: "Systems",
+    thesis:
+      "Gall's law states that a complex system that works is invariably found to have evolved from a simple system that worked — so starting with a complex spec and hoping it works on day one is the most common path to expensive failure.",
+    layer0:
+      "John Gall opened Systemantics with a one-liner engineers quote weekly: a complex system that works always evolved from a simple system that worked.",
+    layer1:
+      "Complex systems have many interacting failure modes; building them monolithically hides integration bugs until they compound. Evolution — ship the simple core that actually works, then grow one validated increment at a time — surfaces misfits early when they are cheap to fix. This is why successful platforms (Unix, AWS, iPhone) started embarrassingly small on purpose, not from lack of ambition.",
+    layer2:
+      "What 'version one must contain X, Y, and Z' assumption are you carrying that would be cheaper to falsify by shipping a 1-feature core that is already useful this week?",
+    quiz: {
+      question: "What does Gall's Law prescribe for building a complex working system?",
+      options: [
+        "Start from a simple system that already works and evolve it incrementatively, rather than specifying the full complex system upfront",
+        "Design the full complex system in complete detail before building any part of it to ensure nothing is missed",
+        "Complex systems work best when built entirely from scratch without reference to any simpler predecessor",
+        "Gall's law only applies to biological systems and has no bearing on engineered products",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Gall's claim is evolutionary: complexity that works is grown, not designed whole, because incremental growth exposes cross-component misfits early.",
+    },
+    tags: ["First-Principles Thinking", "Craft & Deep Work"],
+    related: ["AG8", "AG6", "A2", "M7"],
+    furtherReading: [
+      {
+        label: "Systemantics (1975)",
+        source: "John Gall",
+        url: "https://en.wikipedia.org/wiki/Systemantics",
+        archive: { status: "unavailable" },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AG8",
+    clusterId: "AG",
+    title: "MAYA: Most Advanced Yet Acceptable",
+    author: "Raymond Loewy",
+    year: 1951,
+    medium: "Principle",
+    category: "Design Philosophy",
+    thesis:
+      "Loewy argued successful designs sit at the tension between novelty and familiarity — the most advanced solution the audience can still accept as familiar enough to adopt — so pushing too far ahead of what feels acceptable kills adoption even if the design is objectively superior.",
+    layer0:
+      "Loewy, who designed everything from Greyhounds to the Coca-Cola bottle, kept a gauge: MAYA. Be as advanced as possible, but not so advanced that it stops feeling acceptable.",
+    layer1:
+      "Too familiar is boring; too novel is alienating. MAYA locates the acceptance frontier — where the product feels fresh enough to want and familiar enough to use without relearning. iPhone kept the phone metaphor; Model S kept the sedan silhouette; Notion kept the document metaphor. Each was more radical underneath than its surface suggested, matching advancement to acceptability cue by cue.",
+    layer2:
+      "Which feature in your roadmap is objectively advanced but still unacceptable — and what familiar cue would you keep to drag it into MAYA range without dumbing down the capability?",
+    quiz: {
+      question: "What tension does Loewy's MAYA principle argue designers must balance?",
+      options: [
+        "Maximize advancement while staying within what the audience will still recognize and accept as familiar enough to adopt",
+        "Always maximize novelty regardless of whether users find the design alienating or unusable",
+        "Always prioritize familiarity over any advancement, never introducing anything new",
+        "MAYA suggests advancement and acceptability are unrelated dimensions that can be optimized independently",
+      ],
+      correctIndex: 0,
+      explanation:
+        "MAYA is a frontier concept: push advancement to the edge of acceptability, not beyond it, because adoption requires both perceived novelty and tolerable familiarity.",
+    },
+    tags: ["Craft & Deep Work", "Tech Adoption & Disruption"],
+    related: ["AG3", "AG4", "F4", "I9"],
+    furtherReading: [
+      {
+        label: "MAYA — Most Advanced Yet Acceptable",
+        source: "Raymond Loewy",
+        url: "https://en.wikipedia.org/wiki/Raymond_Loewy#MAYA_principle",
+        archive: { status: "unavailable" },
       },
     ],
     epistemicStatus: "Canonical",
