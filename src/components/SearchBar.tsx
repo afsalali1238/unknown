@@ -1,26 +1,91 @@
-import { useState, useMemo, useId } from "react";
+import { useEffect, useState, useMemo, useId, useRef } from "react";
 import { Link } from "@tanstack/react-router";
 import { NODES } from "@/data/nodes";
 import { MicroLabel } from "./MicroLabel";
 import MiniSearch from "minisearch";
 
-const miniSearch = new MiniSearch({
-  fields: ["title", "author", "thesis", "layer0", "layer1", "layer2"],
-  storeFields: ["id", "title", "author", "year"],
-});
+// Lazy, non-blocking index build — defers the ~400-node MiniSearch
+// construction until after first paint (or first focus), so the feed's
+// initial interaction isn't janked by ~50KB of text indexing work.
+let sharedIndex: MiniSearch | null = null;
+let indexing: Promise<MiniSearch> | null = null;
 
-miniSearch.addAll(NODES);
+function getSearchIndex(): Promise<MiniSearch> {
+  if (sharedIndex) return Promise.resolve(sharedIndex);
+  if (indexing) return indexing;
+  indexing = new Promise((resolve) => {
+    const build = () => {
+      const ms = new MiniSearch({
+        fields: ["title", "author", "thesis", "layer0", "layer1", "layer2"],
+        storeFields: ["id", "title", "author", "year"],
+        searchOptions: { boost: { title: 2, author: 1.5 } },
+      });
+      ms.addAll(NODES);
+      sharedIndex = ms;
+      resolve(ms);
+    };
+    // Use idle time if available, otherwise next tick
+    const win = window as unknown as { requestIdleCallback?: (cb: () => void) => number };
+    if (typeof win.requestIdleCallback === "function") {
+      win.requestIdleCallback(build);
+    } else {
+      setTimeout(build, 0);
+    }
+  });
+  return indexing;
+}
 
 export function SearchBar() {
   const [q, setQ] = useState("");
   const [focused, setFocused] = useState(false);
+  const [index, setIndex] = useState<MiniSearch | null>(sharedIndex);
+  const [indexingState, setIndexingState] = useState(false);
   const listboxId = useId();
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Start building index lazily — on mount via idle, or immediately on focus
+  useEffect(() => {
+    if (index) return;
+    let cancelled = false;
+    setIndexingState(true);
+    getSearchIndex().then((ms) => {
+      if (!cancelled) {
+        setIndex(ms);
+        setIndexingState(false);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [index]);
+
+  const ensureIndex = () => {
+    if (!index && !indexing) {
+      setIndexingState(true);
+      getSearchIndex().then((ms) => {
+        setIndex(ms);
+        setIndexingState(false);
+      });
+    }
+  };
 
   const trimmed = q.trim();
-  const results = useMemo(() => {
-    if (trimmed.length < 2) return [];
-    return miniSearch.search(trimmed, { prefix: true, fuzzy: 0.2 }).slice(0, 8);
+  // Debounce input by 80ms (cheap, avoids search on every keystroke)
+  const [debounced, setDebounced] = useState(trimmed);
+  useEffect(() => {
+    const t = window.setTimeout(() => setDebounced(trimmed), 80);
+    return () => window.clearTimeout(t);
   }, [trimmed]);
+
+  const results = useMemo(() => {
+    if (!index) return [];
+    if (debounced.length < 2) return [];
+    try {
+      return index.search(debounced, { prefix: true, fuzzy: 0.2 }).slice(0, 8);
+    } catch {
+      return [];
+    }
+  }, [index, debounced]);
 
   const showPanel = focused && trimmed.length >= 2;
   const hasResults = results.length > 0;
@@ -31,26 +96,33 @@ export function SearchBar() {
         Search ideas, authors, and themes
       </label>
       <input
+        ref={inputRef}
         id="lattice-search"
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        onFocus={() => setFocused(true)}
+        onFocus={() => {
+          setFocused(true);
+          ensureIndex();
+        }}
         onBlur={() => setTimeout(() => setFocused(false), 150)}
-        placeholder="Search ideas, authors, themes…"
+        placeholder={indexingState ? "Indexing ideas…" : "Search ideas, authors, themes…"}
         role="combobox"
         aria-expanded={showPanel}
         aria-controls={listboxId}
         aria-autocomplete="list"
+        aria-busy={indexingState}
         autoComplete="off"
-        className="w-full border-b border-line bg-transparent py-3 font-serif text-lg text-ink placeholder:text-ink-soft/60 transition-colors duration-[var(--duration-fast)] focus:border-ink focus-visible:outline-none"
+        className="w-full border-b border-line bg-transparent py-3 font-serif text-lg text-ink placeholder:text-ink-soft/60 transition-colors duration-[var(--duration-fast)] focus:border-ink focus-visible:outline-none disabled:opacity-60"
       />
 
       {/* Announces result count to screen readers without moving focus. */}
       <p className="sr-only" role="status" aria-live="polite">
         {showPanel
-          ? hasResults
-            ? `${results.length} result${results.length === 1 ? "" : "s"} for ${trimmed}`
-            : `No results for ${trimmed}`
+          ? !index
+            ? "Search index loading"
+            : hasResults
+              ? `${results.length} result${results.length === 1 ? "" : "s"} for ${debounced}`
+              : `No results for ${debounced}`
           : ""}
       </p>
 
@@ -61,7 +133,11 @@ export function SearchBar() {
           aria-label="Search results"
           className="absolute inset-x-0 top-full z-20 mt-2 border border-line bg-paper shadow-[var(--shadow-raised)]"
         >
-          {hasResults ? (
+          {!index ? (
+            <div className="px-4 py-4 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+              Indexing… try again in a moment
+            </div>
+          ) : hasResults ? (
             results.map((n) => (
               <Link
                 key={n.id}

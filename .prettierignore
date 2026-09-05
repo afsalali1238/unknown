@@ -7,5 +7,7 @@ package-lock.json
 bun.lock
 routeTree.gen.ts
 public/content/sources
+public/sitemap.xml
+public/robots.txt
 docs/TOPICS-INDEX.md
 docs/TOPICS-INDEX.csv

@@ -1,6 +1,6 @@
 # Topics Index (auto-generated — do not hand-edit)
 
-Regenerate with `bun run scripts/topics-index.ts`. Last generated: 2026-09-04.
+Regenerate with `bun run scripts/topics-index.ts`. Last generated: 2026-09-05.
 Total clusters: 38. Total nodes: 387.
 
 Internal reference only — not linked from the app, not served from public/.

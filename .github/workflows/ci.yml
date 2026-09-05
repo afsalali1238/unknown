@@ -1,0 +1,41 @@
+name: CI
+on:
+  push:
+    branches: [main, "arena/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install (bun preferred, npm fallback)
+        run: |
+          if [ -f bun.lock ]; then
+            bun install || npm install --legacy-peer-deps
+          else
+            npm install --legacy-peer-deps
+          fi
+      - name: Validate nodes
+        run: npx tsx scripts/validate-nodes.ts
+      - name: Lint
+        run: npx eslint . --max-warnings 10
+      - name: Typecheck
+        run: npx tsc --noEmit
+      - name: Tests
+        run: npm test
+      - name: Build (+ SW manifest)
+        run: npm run build
+      - name: Check TOPICS-INDEX freshness
+        run: |
+          npx tsx scripts/topics-index.ts
+          git diff --exit-code docs/TOPICS-INDEX.md docs/TOPICS-INDEX.csv || (echo "::warning::TOPICS-INDEX out of date — run npx tsx scripts/topics-index.ts and commit" && exit 1)
