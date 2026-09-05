@@ -83,7 +83,7 @@ export const CLUSTER_W: Node[] = [
         "Mr. Market is a manic-depressive partner. If you let his wildly fluctuating moods dictate your emotional state, you will lose. If you use his irrational pessimism to buy cheap and his irrational optimism to sell high, you will win.",
     },
     tags: ["Markets & Narrative", "Risk & Asymmetric Bets"],
-    related: ["W3", "D2", "J3"],
+    related: ["W3", "D2", "W7"],
     furtherReading: [
       {
         label: "Chairman's Letter — 1987",
@@ -136,7 +136,7 @@ export const CLUSTER_W: Node[] = [
         "A gruesome business might grow fast, but it requires so much capital just to stay competitive (like an airline) that it never actually generates free cash flow for the owners.",
     },
     tags: ["Moats & Network Effects", "Startups & Founders"],
-    related: ["W2", "A11", "A9"],
+    related: ["W2", "A11", "W8"],
     furtherReading: [
       {
         label: "Businesses – The Great, the Good and the Gruesome (2007 Chairman's Letter)",
@@ -299,7 +299,7 @@ export const CLUSTER_W: Node[] = [
         "Frequent trading triggers taxes and fees that destroy compound interest. Holding a wonderful business forever allows your capital to compound pre-tax, mathematically dwarfing the returns of active trading.",
     },
     tags: ["Compounding & Patience", "Craft & Deep Work"],
-    related: ["W2", "K1", "K4"],
+    related: ["W2", "K1", "W7"],
     furtherReading: [
       {
         label: "Chapter Three: The Munger Approach to Life, Learning, and Decision-Making",
@@ -320,6 +320,93 @@ export const CLUSTER_W: Node[] = [
         },
       },
     ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "W7",
+    clusterId: "W",
+    title: "Waiting for the Fat Pitch",
+    author: "Warren Buffett",
+    year: 1997,
+    medium: "Shareholder Letter",
+    category: "Investing",
+    thesis:
+      "Investing has no called strikes. Buffett borrows Ted Williams' 77-cell strike zone to argue that returns come from swinging only at pitches in your best cell — and that the hardest discipline is standing at the plate for years with the bat on your shoulder while the crowd screams at you to swing.",
+    layer0:
+      "In The Science of Hitting, Ted Williams carved the strike zone into 77 cells, each the size of a baseball. Swinging only at balls in his best cells, he calculated, would let him bat .400; reaching for pitches in the worst spot, the low outside corner, would drop him to .230. Waiting for the fat pitch meant the Hall of Fame; swinging indiscriminately meant the minors. Buffett quoted this in his 1997 letter to explain why Berkshire, sitting on billions after a 34.1% gain in book value, was buying almost nothing: the business 'pitches' on offer were barely catching the lower outside corner, and swinging would lock in low returns. He added the twist that makes investing easier and harder than baseball at once — nobody can call you out for letting three good-looking pitches go by, but 'just standing there, day after day, with my bat on my shoulder is not my idea of fun'.",
+    layer1:
+      "The letter pairs the strike zone with a quiz about hamburgers. If you plan to eat hamburgers for the rest of your life and do not raise cattle, should you want beef prices higher or lower? Obviously lower. Then the final exam: if you will be a net saver for the next five years, should you hope the stock market rises or falls? Most investors get this wrong — they cheer when prices rise for the very 'hamburgers' they are about to buy. Only someone who will soon sell should welcome higher prices; a net buyer should prefer sinking ones. Buffett points out that Berkshire shareholders are savers whether they know it or not, because the company retains every dollar and redeploys it, and that the buybacks at Coca-Cola, The Washington Post and Wells Fargo bought far more ownership per dollar in past years, when their shares were cheap, than today's repurchases at loftier prices. Read a headline that says 'investors lose as market falls' and edit it: disinvestors lose, investors gain. Together the two images define the temperament: a fixed idea of what a fat pitch looks like, patience measured in years, and a preference for falling prices in everything you intend to keep buying. The same letter also admits the discomfort of the stance, and reports what Berkshire did while waiting — short-term Treasuries, some silver, and a large position in zero-coupon bonds — commitments it expected to profit from but explicitly did not 'know' it would.",
+    layer2:
+      "Two questions from the letter travel well beyond stocks. First, what is your best cell — the narrow set of opportunities where your knowledge gives you a real edge — and how many of your recent decisions were swings at the low outside corner because standing still felt like doing nothing? Second, for anything you expect to keep buying for years — shares, houses, talent, your own skills — are you rooting for prices to rise or to fall? If your emotional reaction to a market drop is dread rather than appetite, which of Buffett's two lessons is the one you have not yet absorbed?",
+    quiz: {
+      question:
+        "Why does Buffett say a net saver should hope for a falling stock market rather than a rising one?",
+      options: [
+        "Because falling markets signal a recession, during which savings accounts and bonds pay higher interest than equities",
+        "Because someone who will be buying shares for years is a purchaser of 'hamburgers' and benefits from lower prices, just as a hamburger eater benefits from cheap beef",
+        "Because a falling market forces companies to cut dividends, which frees up cash for the share repurchases that savers ultimately profit from",
+        "Because rising markets attract inexperienced investors whose trading raises costs for everyone else who holds the same securities",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Buffett's hamburger quiz turns on who is buying and who is selling: only a near-term seller should welcome higher prices, while a net buyer — including every Berkshire shareholder, since the company retains and reinvests earnings — should prefer them lower.",
+    },
+    related: ["W6", "W2", "J3", "K4"],
+    furtherReading: [
+      {
+        label: "Chairman's Letter — 1997",
+        source: "Berkshire Hathaway",
+        url: "https://www.berkshirehathaway.com/letters/1997.html",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Compounding & Patience", "Decision-Making"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "W8",
+    clusterId: "W",
+    title: "Owner Earnings",
+    author: "Warren Buffett",
+    year: 1986,
+    medium: "Shareholder Letter",
+    category: "Valuation",
+    thesis:
+      "The number that matters for valuation is not reported earnings or 'cash flow' but owner earnings: reported earnings, plus depreciation and other non-cash charges, minus the capital spending needed just to hold the business's competitive position. Skip the last subtraction and you are pricing the business as if it were the Pyramids.",
+    layer0:
+      "Berkshire bought Scott Fetzer in January 1986. Under purchase accounting the same company, run by the same people, selling the same products, reported $28.6 million of earnings instead of $40.2 million — the difference being $11.6 million of new non-cash charges for stepped-up inventory, depreciation and goodwill that were not even tax-deductible. Buffett's question in the appendix to that year's letter was simple: did Berkshire buy a business earning $40 million or one earning $29 million? Both figures were GAAP-correct, and neither was the answer.",
+    layer1:
+      "His answer is owner earnings: (a) reported earnings, plus (b) depreciation, depletion, amortization and other non-cash charges, minus (c) the average annual capital expenditure the business needs to fully maintain its long-term competitive position and unit volume, including any working capital it must add to do so. Item (c) is a guess, and sometimes a hard one, which is why the formula gives no deceptively precise GAAP figure — Buffett quotes Keynes: better to be vaguely right than precisely wrong. Applied to the two versions of Scott Fetzer, owner earnings come out identical, as common sense says they should, because (a) plus (b) is the same in both columns and (c) does not care about accounting. The sharper edge of the appendix is aimed at Wall Street's 'cash flow', which adds (b) to (a) and never subtracts (c). That implies the business is the commercial counterpart of the Pyramids — forever state of the art, never needing replacement. For a bridge or a very long-lived gas field the shorthand may serve; for manufacturers, retailers, extractive companies and utilities, (c) is always significant and 'cash flow' is meaningless. Even See's Candies, a business that needs little capital, spent $500,000 to $1 million a year more than its depreciation simply to hold its ground. Buffett's cynicism about why the number is popular is explicit: when GAAP earnings cannot justify a junk bond's debt or a foolish stock price, salesmen switch to (a) plus (b). Ignore your teeth and they will go away, he notes; the same is not true of (c).",
+    layer2:
+      "The next time you see EBITDA or 'free cash flow' in a pitch, an annual report or a startup's investor update, do the subtraction yourself: what does this business have to spend every year, forever, just to stay where it is? Then compare that maintenance figure to the depreciation it reports — if the real number is bigger, reported earnings overstate what an owner could actually take out. For your own work or company, what is the equivalent of item (c) — the reinvestment in skills, tools or relationships that keeps you competitive — and are you counting it as a cost or quietly pretending you are a pyramid?",
+    quiz: {
+      question:
+        "According to Buffett, what is wrong with the 'cash flow' figure commonly presented in Wall Street reports?",
+      options: [
+        "It includes depreciation and other non-cash charges as if they were income, which inflates the figure above what the business actually earns",
+        "It adds non-cash charges back to reported earnings but never subtracts the capital spending required to maintain the business's competitive position",
+        "It relies on GAAP accounting conventions that vary between companies, which makes cash flow figures impossible to compare across industries",
+        "It measures cash at a single point in time, so it misses the seasonal working-capital swings that determine whether a company can pay its debts",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Buffett's owner-earnings formula is (a) reported earnings plus (b) non-cash charges minus (c) maintenance capital expenditure; 'cash flow' stops at (a) plus (b), which treats the business as if it never needed to replace or refurbish anything.",
+    },
+    related: ["W3", "E3", "E4", "E5"],
+    furtherReading: [
+      {
+        label:
+          "Chairman's Letter — 1986 (Appendix: Purchase-Price Accounting Adjustments and the 'Cash Flow' Fallacy)",
+        source: "Berkshire Hathaway",
+        url: "https://www.berkshirehathaway.com/letters/1986.html",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Wealth, Leverage & Judgment", "Fraud & Skepticism"],
     epistemicStatus: "Canonical",
   },
 ];

@@ -28,7 +28,7 @@ export const CLUSTER_K: Node[] = [
         "Compounding is deceptive because the massive gains happen at the very end of the curve. People quit early because they judge linear progress instead of exponential potential.",
     },
     tags: ["Compounding & Patience"],
-    related: ["J29", "W6", "K6", "D6"],
+    related: ["J29", "W6", "K6", "K7"],
     furtherReading: [
       {
         label: "The Psychology of Money",
@@ -72,7 +72,7 @@ export const CLUSTER_K: Node[] = [
         "The Lindy Effect states that for non-perishable things (like ideas or technology), the longer something has survived, the longer it is likely to continue surviving. Age is a proxy for robustness.",
     },
     tags: ["Compounding & Patience", "Macro & Cycles"],
-    related: ["D14", "D6", "C3", "K6"],
+    related: ["D14", "D6", "K8", "K6"],
     furtherReading: [
       {
         label: "Antifragile",
@@ -115,7 +115,7 @@ export const CLUSTER_K: Node[] = [
         "Path dependence means that history matters. Early decisions in a complex system (like a codebase or an economy) lock in constraints that make switching paths nearly impossible later on.",
     },
     tags: ["Tech Adoption & Disruption"],
-    related: ["A11", "K2", "I7", "C4"],
+    related: ["A11", "K2", "I7", "K8"],
     furtherReading: [
       {
         label: "Clio and the Economics of QWERTY",
@@ -158,7 +158,7 @@ export const CLUSTER_K: Node[] = [
         "Optionality is the right, but not the obligation, to take an action. In an unpredictable world, keeping your options open is incredibly valuable, even if it carries a short-term cost.",
     },
     tags: ["Risk & Asymmetric Bets"],
-    related: ["A3", "D1", "D4", "C1"],
+    related: ["A3", "D1", "K7", "C1"],
     furtherReading: [
       {
         label: "Antifragile",
@@ -261,5 +261,109 @@ export const CLUSTER_K: Node[] = [
     ],
     tags: ["Compounding & Patience"],
     epistemicStatus: "Canonical",
+  },
+  {
+    id: "K7",
+    clusterId: "K",
+    title: "The Ergodicity Problem",
+    author: "Ole Peters",
+    year: 2019,
+    medium: "Paper",
+    category: "Time",
+    thesis:
+      "The average outcome across many people is not the outcome any one person gets over time. When gains and losses compound, a bet can have positive expected value while nearly everyone who keeps playing goes broke — and most of economics quietly assumes the two averages are the same.",
+    layer0:
+      "Offer a bet: flip a coin, and on heads your wealth rises 50%, on tails it falls 40%. The expected value is +5% per flip, so textbook rationality says take it, and keep taking it. Play a hundred rounds and you will almost certainly end up with a small fraction of what you started with. Nothing is rigged. The average across a million parallel players really does grow 5% a round — because a handful of astronomically lucky ones drag the mean up while the typical player shrinks by about 5% a round. Ole Peters, a physicist at the London Mathematical Laboratory, calls this the ergodicity problem: expectation values describe an ensemble, and you do not live in an ensemble. You live in one trajectory through time.",
+    layer1:
+      "An observable is ergodic when its time average equals its ensemble average. A bank balance, a stock price and an evolutionary lineage are all multiplicative processes, and multiplicative processes are not ergodic. Peters' 2019 Nature Physics paper points out that the tools economics uses for risk were built before that was even a question — expected value in the 1650s, Bernoulli's expected utility in 1738 — while ergodicity arrived with 19th-century statistical mechanics. Expected-utility theory patches the gap by positing curved psychological utility functions that make people 'risk averse'. Peters drops the psychology: ask instead what maximizes the growth rate of wealth over time, and logarithmic utility falls out as a consequence of the dynamics rather than a taste — the same rule as the Kelly criterion. Insurance, a puzzle under expected value because a fairly priced contract cannot benefit both parties, becomes obvious under time averages: each side raises its own long-run growth rate. A Copenhagen experiment that switched subjects between additive and multiplicative gambles found their risk behaviour shifted with the dynamics, as the time-average view predicts and a fixed utility function does not.",
+    layer2:
+      "The practical test is simple: before accepting any repeated risk, ask whether a bad run could set you back so far that you cannot keep playing. If it could, the expected value is the wrong number; the time-average growth rate is the one that describes your life, and it punishes variance even when the mean looks generous. Where in your own finances or career are you taking a series of bets that look positive on average but expose you to a drawdown you could not recover from — and what would sizing them for the time average, not the ensemble, change?",
+    quiz: {
+      question:
+        "In Peters' coin-toss example (+50% on heads, −40% on tails), why do almost all repeated players lose money even though each toss has a positive expected value?",
+      options: [
+        "Because the coin is biased toward tails in practice, which lowers the true frequency of heads below the 50% assumed in the expected-value calculation",
+        "Because wealth compounds multiplicatively, so the time-average growth rate is negative even though the ensemble average is pulled up by a few extreme winners",
+        "Because transaction costs and taxes on each toss steadily erode the small positive edge that the expected-value calculation promises to players",
+        "Because players become risk averse after early losses and stop betting before the positive expected value has had enough tosses to show up",
+      ],
+      correctIndex: 1,
+      explanation:
+        "A 50% gain followed by a 40% loss leaves 0.9 of the starting stake, so the typical trajectory shrinks about 5% per round; the +5% expectation is real only as an average across many parallel players, not as the fate of any one of them.",
+    },
+    related: ["K1", "K4", "E8", "L1"],
+    furtherReading: [
+      {
+        type: "paper",
+        label: "The ergodicity problem in economics",
+        source: "Nature Physics 15, 1216–1221 (2019)",
+        url: "https://www.nature.com/articles/s41567-019-0732-0",
+        archive: {
+          status: "unavailable",
+        },
+      },
+      {
+        type: "book",
+        label: "An Introduction to Ergodicity Economics (Peters & Adamou, 2025)",
+        source: "LML Press",
+        url: "https://ergodicityeconomics.com/an-introduction-to-ergodicity-economics/",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Risk & Asymmetric Bets", "Compounding & Patience"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "K8",
+    clusterId: "K",
+    title: "Pace Layering",
+    author: "Stewart Brand",
+    year: 1999,
+    medium: "Book Concept",
+    category: "Time",
+    thesis:
+      "A durable civilization runs on six layers moving at different speeds — fashion, commerce, infrastructure, governance, culture, nature. The fast layers innovate and get all the attention; the slow layers stabilize and hold all the power. Trouble comes when one layer is forced to move at another's pace.",
+    layer0:
+      "Fast learns, slow remembers. Fast proposes, slow disposes. Fast gets all our attention; slow has all the power. Stewart Brand's pace-layer diagram stacks six strata of a society from quickest to slowest — fashion and art on top, then commerce, infrastructure, governance, culture, and nature at the bottom — and claims the whole thing stays adaptable precisely because the layers do not move in step. Fashion churns in a season; a constitution changes over decades; a language or a religion over centuries; a climate over millennia. Each layer absorbs shocks the layer below can then ignore, which is why a resilient system yields like something soft instead of snapping like something brittle.",
+    layer1:
+      "Brand took the idea from ecology — R. V. O'Neill and C. S. Holling on how ecosystems absorb change — and from his own earlier work on buildings, where site, structure, skin, services, space plan and stuff wear out on different clocks. A coniferous forest is the template: a needle turns over within a year, a crown over several years, a patch over decades, a stand over a couple of centuries, the whole forest over a thousand years, the biome over ten thousand. Constraint flows upward — the biome bounds what any needle can do — while innovation percolates downward through competition among individual trees. The layers must respect one another's speed. Let commerce push nature at a commercial pace and you lose forests, fisheries and aquifers; change governance suddenly instead of gradually and you get the French and Russian revolutions. Brand's cautionary case is the Soviet Union, which forced a five-year-plan infrastructure tempo onto commerce and art while ignoring culture and nature, cutting itself off from both support and innovation. Brian Eno's name for the healthy version is the 'long now': civilizations with long nows look after things better.",
+    layer2:
+      "Most strategic mistakes are pace errors — treating a fashion as a culture shift and over-investing in a trend, treating a culture shift as a fashion and missing a real change, or trying to reform governance at the speed of a product launch. Brand notes that people's interests migrate down the stack as they age: adolescents obsess over fashion, elders over culture. Take one decision in front of you and ask which layer it actually lives in, and which layer you have been treating it as — are you asking a slow layer to move fast, or mistaking froth for structure?",
+    quiz: {
+      question:
+        "In Brand's pace-layer model, what is the relationship between the fast layers (fashion, commerce) and the slow layers (culture, nature)?",
+      options: [
+        "Fast layers gradually accelerate the slow layers beneath them until the whole system eventually moves at the pace of fashion and commerce",
+        "Slow layers are legacy residue that a well-designed society steadily eliminates so that governance and culture can respond as quickly as markets do",
+        "Fast layers innovate and absorb shocks while slow layers constrain and stabilize; the system stays resilient because the layers move at different speeds",
+        "Fast and slow layers operate in complete isolation, so changes in fashion or commerce never influence governance, culture or nature at all",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Brand's line is 'fast learns, slow remembers': the quick layers experiment and propose, the slow ones dispose and hold power, and a durable civilization lets each run at its own pace rather than forcing them into step.",
+    },
+    related: ["K2", "K3", "M2", "AH1"],
+    furtherReading: [
+      {
+        label: "Pace Layering: How Complex Systems Learn and Keep Learning",
+        source: "Long Now Foundation",
+        url: "https://longnow.org/ideas/pace-layers/",
+        archive: {
+          status: "unavailable",
+        },
+      },
+      {
+        label: "Pace Layering: How Complex Systems Learn and Keep Learning (2018)",
+        source: "Journal of Design and Science, MIT Press",
+        url: "https://jods.mitpress.mit.edu/pub/issue3-brand/release/2",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Compounding & Patience", "Incentives & Systems"],
+    epistemicStatus: "Contemporary",
   },
 ];

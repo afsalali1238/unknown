@@ -29,7 +29,7 @@ export const CLUSTER_P: Node[] = [
         "Naval frames wealth as ownership of productive assets, money as IOUs for wealth transfer, and status as positional — you can't create status without taking it from someone else.",
     },
     tags: ["Compounding & Patience", "Wealth, Leverage & Judgment"],
-    related: ["Q17", "P3", "P7"],
+    related: ["Q17", "P3", "P7", "P8"],
     furtherReading: [
       {
         label: "I Took Naval Ravikant's Tweet Thread & Made $1.55M With It — Here's How",
@@ -79,7 +79,7 @@ export const CLUSTER_P: Node[] = [
         "Code and media are the highest forms of modern leverage because they cost nothing to duplicate. Unlike capital or labor, you don't need anyone's permission to create them.",
     },
     tags: ["Wealth, Leverage & Judgment"],
-    related: ["P7", "O3", "P1"],
+    related: ["P7", "O3", "P1", "P8"],
     furtherReading: [
       {
         label: "How to Get Rich by Naval Ravikant (Deep Summary + Infographic)",
@@ -350,6 +350,48 @@ export const CLUSTER_P: Node[] = [
       },
     ],
     tags: ["Wealth, Leverage & Judgment", "Compounding & Patience"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "P8",
+    clusterId: "P",
+    title: "Escape Competition Through Authenticity",
+    author: "Naval Ravikant",
+    year: 2019,
+    medium: "Essay",
+    category: "Wealth Creation",
+    thesis:
+      "No one can compete with you on being you. Competition drags you into games chosen by other people's desires; the way out is to build something that is an extension of who you actually are, then adjust until it meets a market.",
+    layer0:
+      "Who is going to write a better Dilbert than Scott Adams, or a better Calvin and Hobbes than Bill Watterson? Who out-Rogans Joe Rogan? Naval's point is that these people have no competitors — not because they beat everyone, but because what they sell is an extension of who they are, and nobody else can be them. Most people never get there because they are busy competing. We are mimetic creatures: surrounded by artists we want to be artists, surrounded by founders we want to be founders, and self-esteem gets outsourced to whichever status game the people nearby happen to be playing. Competition is not just stressful; it drives you to the wrong answer.",
+    layer1:
+      "Naval builds on Peter Thiel's claim that competition is beside the point — and on Thiel's own story of chasing a Supreme Court clerkship because everyone at law school wanted one, getting rejected, and being pushed out of a lesser game into a greater one. The mechanism has two guardrails. First, authenticity is recognized, not invented: friends and family, and the record of what you have actually done, are better guides to who you are than what your ego wishes you were. Second, authenticity is not a licence to ignore the market — you may be the world's best juggler on a unicycle with no buyers, so you adjust toward founder-product-market fit. A crowded market usually means the masses have arrived and the game is over-competed; a completely empty one can mean you have drifted too far from anything people want. The practical form is a skill stack. Everyone is multivariate — one banker is good at finance, another at sales, another at reading macro trends — and the durable niche is the combination nobody else has, which is why Naval quotes Robert Frost's ambition to unite his avocation with his vocation.",
+    layer2:
+      "The tell Naval offers is that if you succeed, over the long run you find yourself doing almost all of your hobbies for a living; smart bosses, co-workers and investors push you toward the one thing you are world-class at, and you recruit people for the rest. Look at the work you keep gravitating toward without being asked — the tasks you are good at because you have quietly put in the hours. If you built your next project as an expression of that combination rather than as a better version of what your peers are doing, what would it be, and who would it be for?",
+    quiz: {
+      question: "According to Naval, why does authenticity let you escape competition?",
+      options: [
+        "Because authentic founders are legally protected from imitation through personal branding, trademarks and exclusive distribution agreements",
+        "Because most markets reward sincerity over quality, so an honest but average product will typically outsell a superior but impersonal one",
+        "Because being authentic means refusing product-market fit entirely, which removes you from any market in which competitors could appear",
+        "Because a product that is an extension of who you are cannot be copied by anyone else, whereas competing on others' desires traps you in games they chose",
+      ],
+      correctIndex: 3,
+      explanation:
+        "Naval's line is 'no one can compete with you on being you': competition means copying other people's desires and playing their game, while an authentic product has no substitute — provided you still adjust toward a real market.",
+    },
+    related: ["P2", "A5", "S2", "AE2"],
+    furtherReading: [
+      {
+        label: "Escape Competition Through Authenticity",
+        source: "nav.al",
+        url: "https://nav.al/competition-authenticity",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Wealth, Leverage & Judgment", "Meaning & Self"],
     epistemicStatus: "Canonical",
   },
 ];

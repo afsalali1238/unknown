@@ -200,7 +200,7 @@ export const CLUSTER_Z: Node[] = [
         "Once an AI reaches human-level intelligence, it can instantly apply its cognitive power to improving its own source code. This feedback loop will create an Artificial Superintelligence so rapidly that humans will be unable to control or align it.",
     },
     tags: ["AI & the Future"],
-    related: ["I12", "X4", "Z1"],
+    related: ["I12", "X4", "Z8"],
     furtherReading: [
       {
         label:
@@ -244,7 +244,7 @@ export const CLUSTER_Z: Node[] = [
         "Unlike early CRISPR which acted like 'genetic scissors' (causing unpredictable double-strand breaks), Prime Editing acts like a 'word processor,' allowing scientists to precisely search and replace DNA sequences with minimal off-target damage.",
     },
     tags: ["Health & Body", "AI & the Future"],
-    related: ["I13", "Z1", "Z2"],
+    related: ["I13", "Z1", "Z7"],
     furtherReading: [
       {
         label: "CRISPR 2.0 Prime Editing to Heal 90% of Genetic Diseases",
@@ -256,5 +256,110 @@ export const CLUSTER_Z: Node[] = [
       },
     ],
     epistemicStatus: "Speculative",
+  },
+  {
+    id: "Z7",
+    clusterId: "Z",
+    title: "AlphaFold and the End of the Protein Folding Problem",
+    author: "John Jumper et al. (DeepMind)",
+    year: 2021,
+    medium: "Paper",
+    category: "Biotechnology / AI",
+    thesis:
+      "For fifty years, going from a protein's amino-acid sequence to its three-dimensional shape took months or years of experiment per protein. In 2020 a neural network did it in minutes at near-experimental accuracy, and two years later the predicted structure of nearly every catalogued protein was free to download.",
+    layer0:
+      "By 2020, after decades of X-ray crystallography, NMR and cryo-electron microscopy, biologists had determined the structures of roughly 100,000 unique proteins. Sequencing had by then catalogued billions. The gap existed because a protein's shape — the thing that decides what it does — is encoded in its sequence in a way nobody could compute: Christian Anfinsen showed in the 1960s that sequence alone determines the fold, and Cyrus Levinthal pointed out that a chain trying its conformations at random would take longer than the age of the universe to find the right one. At the 2020 CASP14 blind assessment, DeepMind's AlphaFold produced predictions competitive with experimental structures for a majority of targets, with a median accuracy score of 92.4 GDT. The organizers said the problem was, in essence, solved.",
+    layer1:
+      "The 2021 Nature paper describes a system that folds physical and biological priors into an attention-based network rather than simulating physics. Its input is not just the target sequence but a multiple sequence alignment of evolutionary relatives: residues that mutate together across species tend to touch in the folded structure, a signal the network learns to exploit. Two representations — one over the alignment, one over pairs of residues — exchange information through repeated attention blocks, then a structure module places every atom in 3D and the whole output is fed back through the network several times to refine itself. Every residue comes with a confidence score, so the model tells you where not to trust it. DeepMind open-sourced the code and, with EMBL-EBI, built a public database: by July 2022 it had grown from under a million predicted structures to more than 200 million, against about 190,000 experimentally solved structures in the Protein Data Bank, and had been used by more than half a million researchers. The 2024 Nobel Prize in Chemistry went to Demis Hassabis and John Jumper for the prediction work and to David Baker for computational protein design. The honest caveats still stand: a prediction is a single static shape, not the dynamics or complexes that biology runs on, and confidence drops on proteins with few evolutionary relatives.",
+    layer2:
+      "AlphaFold is the cleanest example yet of a grand challenge falling not to a new theory but to learned pattern recognition over accumulated data — the same lesson Rich Sutton drew for AI generally. It also shifted the bottleneck rather than removing it: structures are now cheap, and the scarce inputs are good questions, wet-lab validation and the ability to design new proteins rather than merely read existing ones. In your own field, what is the equivalent of the 100,000 painstakingly solved structures — the expensive measurement everyone treats as the bottleneck — and what would change if it became a free lookup?",
+    quiz: {
+      question:
+        "What evolutionary signal does AlphaFold exploit when it takes a multiple sequence alignment as input?",
+      options: [
+        "Residues that are perfectly conserved across species mark the protein's active site, which anchors the rest of the fold around them",
+        "Pairs of residues that mutate together across related species tend to be in physical contact in the folded structure",
+        "Older protein families have had more time to reach their lowest-energy fold, so alignment depth indicates how stable the structure is",
+        "Sequence differences between species reveal the order in which the chain folds, allowing the network to simulate the folding pathway step by step",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Co-evolution is the key prior: if a mutation at one position is repeatedly compensated by a mutation at another, the two residues are likely neighbours in 3D, and AlphaFold's attention over the alignment and pair representations learns to turn that into geometry.",
+    },
+    related: ["Z6", "Z8", "G5", "AB8"],
+    furtherReading: [
+      {
+        type: "paper",
+        label: "Highly accurate protein structure prediction with AlphaFold",
+        source: "Nature 596, 583–589 (2021)",
+        url: "https://www.nature.com/articles/s41586-021-03819-2",
+        archive: {
+          status: "unavailable",
+        },
+      },
+      {
+        label: "AlphaFold reveals the structure of the protein universe",
+        source: "Google DeepMind blog, 28 July 2022",
+        url: "https://deepmind.google/blog/alphafold-reveals-the-structure-of-the-protein-universe/",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["AI & the Future", "Health & Body"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "Z8",
+    clusterId: "Z",
+    title: "Fusion Ignition at the National Ignition Facility",
+    author: "Lawrence Livermore National Laboratory",
+    year: 2022,
+    medium: "Report",
+    category: "Energy / Plasma Physics",
+    thesis:
+      "On 5 December 2022, 192 lasers delivered 2.05 megajoules to a peppercorn-sized capsule of hydrogen isotopes and got 3.15 megajoules of fusion energy back — the first laboratory fusion reaction to release more energy than was put into the fuel. It proved the physics of ignition and left every engineering problem of fusion power still to solve.",
+    layer0:
+      "Just after 1 a.m. on 5 December 2022, the National Ignition Facility in California fired its 192 laser beams into a gold cylinder the size of a pencil eraser. The cylinder converted the light into X-rays, which crushed a BB-sized capsule of deuterium and tritium to densities and temperatures greater than the centre of the Sun. The lasers delivered 2.05 megajoules to the target; the fusing fuel gave back 3.15 megajoules. For the first time in sixty years of trying, a controlled fusion reaction in a laboratory had produced more energy than the energy used to start it. When the result was announced eight days later, the U.S. Energy Secretary compared it to the Wright brothers' first flight at Kitty Hawk.",
+    layer1:
+      "What NIF achieved is ignition in the technical sense: the alpha particles from the first fusion reactions deposited enough heat in the compressed fuel to drive a self-sustaining burn that outran the losses, so the plasma heated itself faster than it cooled. The criterion is named for John Lawson, who set out in the 1950s the combination of density, temperature and confinement time a plasma must reach. NIF had crossed the Lawson threshold on a 1.35 megajoule shot in August 2021 without exceeding the laser energy; the December 2022 shot was the first with target gain above one, and it was reproduced and exceeded in later experiments. The approach is inertial confinement — compress the fuel so violently that fusion happens before it can fly apart — as opposed to the magnetic confinement of tokamaks like ITER. The result was peer-reviewed and published by the Indirect Drive ICF Collaboration in Physical Review Letters in 2024. The Kitty Hawk analogy is exact in an unflattering way too: the facility's lasers drew roughly 300 megajoules from the grid to deliver those 2.05, each target is a precision-machined one-off, and NIF fires about once a day, whereas a power plant would need cheap targets igniting several times a second with efficient lasers and a way to turn the neutron flux into electricity. The laboratory's director said as much at the announcement: a few decades of research on the underlying technologies could put us in a position to build a plant. NIF was also never built as an energy project — its funding comes from the nuclear-weapons stockpile stewardship programme, for which ignition opens a new window on conditions inside a detonation.",
+    layer2:
+      "Ignition is a useful pattern for reading any 'breakthrough' headline: separate the scientific proof — the thing that was uncertain and is now settled — from the engineering distance to a product, which can be decades and is not shortened by the proof. Sixty years of steady failure preceded a single successful shot, and the people who kept funding it were betting on a threshold effect rather than incremental returns. Which long-horizon bet in your own field looks like NIF in 2021 — repeatedly just short, dismissed as perpetually thirty years away — and what would actually change the day it crossed?",
+    quiz: {
+      question:
+        "What was demonstrated by the 5 December 2022 shot at the National Ignition Facility?",
+      options: [
+        "That a fusion power plant could deliver net electricity to the grid, since the reaction produced more energy than the entire facility consumed",
+        "That magnetic confinement in a tokamak can sustain a fusion plasma indefinitely, a milestone previously reached only in theory",
+        "That fusion energy released by the fuel exceeded the laser energy delivered to the target, achieving target gain above one for the first time in a laboratory",
+        "That fusion can be triggered at room temperature using a catalytic hydrogen isotope reaction inside a gold hohlraum",
+      ],
+      correctIndex: 2,
+      explanation:
+        "The 2.05 megajoules of laser energy on target yielded 3.15 megajoules of fusion output — scientific ignition and target gain above one — but the lasers drew roughly 300 megajoules from the grid, so the shot was a proof of physics, not of a power plant.",
+    },
+    related: ["Z7", "AA9", "R7", "I13"],
+    furtherReading: [
+      {
+        label:
+          "A shot for the ages: Fusion ignition breakthrough hailed as 'one of the most impressive scientific feats of the 21st century'",
+        source: "Lawrence Livermore National Laboratory, 14 December 2022",
+        url: "https://www.llnl.gov/article/49301/lawrence-livermore-national-laboratory-achieves-fusion-ignition",
+        archive: {
+          status: "unavailable",
+        },
+      },
+      {
+        type: "paper",
+        label: "Achievement of Target Gain Larger than Unity in an Inertial Fusion Experiment",
+        source: "Physical Review Letters 132, 065102 (2024)",
+        url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.065102",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["First-Principles Thinking", "Tech Adoption & Disruption"],
+    epistemicStatus: "Contemporary",
   },
 ];

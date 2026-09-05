@@ -234,7 +234,7 @@ export const CLUSTERS: Cluster[] = [
     id: "W",
     title: "Buffett & Munger Mental Models",
     subtitle:
-      "Six frameworks behind Berkshire Hathaway's rejection of market efficiency in favor of psychological pragmatism",
+      "Eight frameworks behind Berkshire Hathaway's rejection of market efficiency in favor of psychological pragmatism",
     icon: "Briefcase",
   },
   {

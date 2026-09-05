@@ -22,6 +22,7 @@ B,Company Origins,B4,Facebook (thefacebook) Media Kit / Early Pitch,Facebook,200
 B,Company Origins,B5,UberCab Pitch Deck,Uber (Garrett Camp / Travis Kalanick),2008,Pitch Deck
 B,Company Origins,B6,Airbnb Series A Pitch Deck,Airbnb (Brian Chesky et al.),2009,Pitch Deck
 B,Company Origins,B7,The Secret Tesla Motors Master Plan (just between you and me),Elon Musk,2006,Worldview
+B,Company Origins,B8,LinkedIn Series B Pitch Deck (Greylock),Reid Hoffman,2004,Pitch Deck
 C,Fraud & Short Cases,C1,Enron Short Thesis,Jim Chanos / Kynikos,2001,Short / Activist
 C,Fraud & Short Cases,C2,The World's Largest Hedge Fund Is a Fraud,Harry Markopolos,2005,Short / Activist
 C,Fraud & Short Cases,C3,Fooling Some of the People All of the Time (Allied Capital Short),David Einhorn / Greenlight,2002,Short / Activist
@@ -61,7 +62,7 @@ F,Foundational Tech,F3,The Anatomy of a Large-Scale Hypertextual Web Search Engi
 F,Foundational Tech,F4,The Internet Tidal Wave,Bill Gates,1995,Worldview
 F,Foundational Tech,F5,Increasing Returns and the New World of Business,W. Brian Arthur,1996,Worldview
 F,Foundational Tech,F6,TCP/IP & the End-to-End Principle,Vint Cerf & Bob Kahn,1974,Foundational Tech
-F,Foundational Tech,F7,The Unix Philosophy,Ken Thompson & Dennis Ritchie,1978,Foundational Tech
+F,Foundational Tech,F7,The Unix Philosophy,"Ken Thompson, Dennis Ritchie & Doug McIlroy",1978,Foundational Tech
 F,Foundational Tech,F8,Moore's Law & the Exponential,Gordon Moore,1965,Foundational Tech
 G,AI / ML Papers,G1,Software 2.0,Andrej Karpathy,2017,AI Essay
 G,AI / ML Papers,G2,Efficient Estimation of Word Representations (word2vec),Mikolov et al. (Google),2013,Technical Paper
@@ -152,6 +153,8 @@ K,Compounding & Time,K3,Path Dependence,Paul David,1985,Time
 K,Compounding & Time,K4,Optionality,Nassim Taleb,2012,Time
 K,Compounding & Time,K5,The Tail End,Tim Urban,2015,Life & Time
 K,Compounding & Time,K6,The Plateau of Latent Potential,James Clear,2018,Habits
+K,Compounding & Time,K7,The Ergodicity Problem,Ole Peters,2019,Time
+K,Compounding & Time,K8,Pace Layering,Stewart Brand,1999,Time
 L,Decision-Making,L1,Expected Value,Blaise Pascal,1654,Decisions
 L,Decision-Making,L2,Pre-Mortem,Gary Klein,2007,Decisions
 L,Decision-Making,L3,Base Rates,Daniel Kahneman,2011,Decisions
@@ -229,6 +232,7 @@ P,The Almanack of Naval Ravikant,P4,Happiness Is a Choice / Peace Is Happiness a
 P,The Almanack of Naval Ravikant,P5,Read What You Love Until You Love to Read,Naval Ravikant,2016,Learning
 P,The Almanack of Naval Ravikant,P6,Play Long-Term Games with Long-Term People,Naval Ravikant,2018,Relationships & Compounding
 P,The Almanack of Naval Ravikant,P7,Naval's Life Formulas,Naval Ravikant,2008,Personal Philosophy
+P,The Almanack of Naval Ravikant,P8,Escape Competition Through Authenticity,Naval Ravikant,2019,Wealth Creation
 Q,Practical Wisdom,Q1,How to Win Friends and Influence People,Dale Carnegie,1936,Social Skills
 Q,Practical Wisdom,Q2,The 48 Laws of Power,Robert Greene,1998,Power & Strategy
 Q,Practical Wisdom,Q3,Sapiens: A Brief History of Humankind,Yuval Noah Harari,2011,Big History
@@ -276,6 +280,9 @@ T,Modern Creator Essayists,T2,The 4 Types of Luck,Sahil Bloom,2023,Frameworks
 T,Modern Creator Essayists,T3,Interstitial Journaling,Anne-Laure Le Cunff,2020,Mindful Productivity
 T,Modern Creator Essayists,T4,Networked Note-Taking,Anne-Laure Le Cunff,2020,Productivity
 T,Modern Creator Essayists,T5,35 Things I Know At 35 I Wish I Knew At 25,Sahil Bloom,2026,Self-Development
+T,Modern Creator Essayists,T6,"Imitate, Then Innovate",David Perell,2022,Craft & Creativity
+T,Modern Creator Essayists,T7,The 5 Types of Wealth,Sahil Bloom,2025,Frameworks
+T,Modern Creator Essayists,T8,"Make a PACT, Not a SMART Goal",Anne-Laure Le Cunff,2019,Mindful Productivity
 U,Cognitive Biases,U1,Confirmation Bias: A Ubiquitous Phenomenon in Many Guises,Raymond Nickerson,1998,Cognitive Bias
 U,Cognitive Biases,U2,Judgment under Uncertainty: Heuristics and Biases (Anchoring),Amos Tversky & Daniel Kahneman,1974,Cognitive Bias
 U,Cognitive Biases,U3,Judgment under Uncertainty: Heuristics and Biases (Availability),Amos Tversky & Daniel Kahneman,1974,Cognitive Bias
@@ -306,12 +313,16 @@ W,Buffett & Munger Mental Models,W3,"Great, Good, and Gruesome Businesses",Warre
 W,Buffett & Munger Mental Models,W4,The Institutional Imperative,Warren Buffett,1989,Systems
 W,Buffett & Munger Mental Models,W5,The Ovarian Lottery,Warren Buffett,1998,Philosophy
 W,Buffett & Munger Mental Models,W6,Sit-on-Your-Ass Investing,Charlie Munger,2005,Investing
+W,Buffett & Munger Mental Models,W7,Waiting for the Fat Pitch,Warren Buffett,1997,Investing
+W,Buffett & Munger Mental Models,W8,Owner Earnings,Warren Buffett,1986,Valuation
 X,The Architecture of Reality and Society,X1,The Strata of Perceptual Reality,Aperture,2024,Philosophy / Metaphysics
 X,The Architecture of Reality and Society,X2,Metacognition and the Hierarchy of Thought,Aperture,2024,Psychology
 X,The Architecture of Reality and Society,X3,The Architecture of Axiomatic Beliefs,Aperture,2024,Philosophy / Sociology
 X,The Architecture of Reality and Society,X4,Algorithmic Determinism and Judicial Opacity,Aperture,2024,Society / Technology
 X,The Architecture of Reality and Society,X5,Quantum Immortality and Subjective Survival,Aperture,2024,Quantum Physics / Philosophy
 X,The Architecture of Reality and Society,X6,The Block Universe and the Illusion of the Present,Aperture,2024,Physics / Philosophy
+X,The Architecture of Reality and Society,X7,Panopticism: Power That Watches Without Being Seen,Michel Foucault,1975,Philosophy / Sociology
+X,The Architecture of Reality and Society,X8,Preference Falsification,Timur Kuran,1995,Society / Politics
 Y,"Paradoxes, Perception, and Unseen Realities",Y1,The Ontology of Identity and the Ship of Theseus,SleepWise,2023,Philosophy / Paradox
 Y,"Paradoxes, Perception, and Unseen Realities",Y2,Entropic Inevitability and the Arrow of Time,SleepWise,2023,Physics
 Y,"Paradoxes, Perception, and Unseen Realities",Y3,The Hard Problem and the Illusion of Objective Reality,SleepWise,2023,Neuroscience / Philosophy
@@ -319,12 +330,15 @@ Y,"Paradoxes, Perception, and Unseen Realities",Y4,Lexical Voids and Untranslata
 Y,"Paradoxes, Perception, and Unseen Realities",Y5,Axiomatic Ruptures: The Banach-Tarski Paradox,SleepWise,2024,Mathematics / Physics
 Y,"Paradoxes, Perception, and Unseen Realities",Y6,The Asymmetry of Cosmic Justice,SleepWise,2023,Psychology / Sociology
 Y,"Paradoxes, Perception, and Unseen Realities",Y7,Predictive Processing,Andy Clark,2013,Cognition
+Y,"Paradoxes, Perception, and Unseen Realities",Y8,Inattentional Blindness: The Invisible Gorilla,Daniel Simons & Christopher Chabris,1999,Psychology / Perception
 Z,Frontiers of Cosmological & Technological Evolution,Z1,Spacetime as an Emergent Property,Science Time,2024,Quantum Physics / Cosmology
 Z,Frontiers of Cosmological & Technological Evolution,Z2,Scale-Invariant Unparticles and Cosmic Expansion,Science Time,2024,Astrophysics
 Z,Frontiers of Cosmological & Technological Evolution,Z3,Cosmological Cannibalism and Baby Universes,Science Time,2024,Cosmology / Multiverse
 Z,Frontiers of Cosmological & Technological Evolution,Z4,Atmospheric Anomalies and Technosignatures on TRAPPIST-1e,Science Time,2024,Astrobiology
 Z,Frontiers of Cosmological & Technological Evolution,Z5,The Intelligence Explosion and ASI Alignment,Science Time,2023,Computer Science / Futurism
 Z,Frontiers of Cosmological & Technological Evolution,Z6,Prime Editing and the Reprogrammable Human Genome,Science Time,2019,Biotechnology
+Z,Frontiers of Cosmological & Technological Evolution,Z7,AlphaFold and the End of the Protein Folding Problem,John Jumper et al. (DeepMind),2021,Biotechnology / AI
+Z,Frontiers of Cosmological & Technological Evolution,Z8,Fusion Ignition at the National Ignition Facility,Lawrence Livermore National Laboratory,2022,Energy / Plasma Physics
 AA,Physics & Entropy,AA1,Entropy and the Second Law of Thermodynamics,Rudolf Clausius,1865,Physics
 AA,Physics & Entropy,AA2,Special Relativity,Albert Einstein,1905,Physics
 AA,Physics & Entropy,AA3,Hubble's Law and the Expanding Universe,Edwin Hubble,1929,Physics

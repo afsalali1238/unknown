@@ -116,7 +116,7 @@ export const CLUSTER_X: Node[] = [
         "Rather than discarding a foundational belief when faced with contradictory evidence, the brain often builds elaborate, ad-hoc rationalizations to explain away the anomaly and preserve its core worldview.",
     },
     tags: ["Meaning & Self", "Cognitive Biases & Models"],
-    related: ["U1", "O14", "X1"],
+    related: ["U1", "O14", "X8"],
     furtherReading: [
       {
         label: "The Hidden Structures of Belief Most People Never Question",
@@ -159,7 +159,7 @@ export const CLUSTER_X: Node[] = [
         "When a black-box AI determines prison sentences, the defendant is denied due process because neither the judge nor the lawyer can audit the algorithm to see if it is relying on hidden racial or socioeconomic biases.",
     },
     tags: ["Incentives & Systems", "Power & Persuasion"],
-    related: ["M1", "M3", "X1"],
+    related: ["M1", "M3", "X7"],
     furtherReading: [
       {
         label: "Algorithms Are Destroying Society",
@@ -257,5 +257,101 @@ export const CLUSTER_X: Node[] = [
       },
     ],
     epistemicStatus: "Speculative",
+  },
+  {
+    id: "X7",
+    clusterId: "X",
+    title: "Panopticism: Power That Watches Without Being Seen",
+    author: "Michel Foucault",
+    year: 1975,
+    medium: "Book",
+    category: "Philosophy / Sociology",
+    thesis:
+      "Bentham's Panopticon — a prison where every inmate can be seen at any moment but can never tell whether anyone is looking — is, for Foucault, the diagram of modern power: visible and unverifiable surveillance that makes people discipline themselves, in schools, factories, hospitals and barracks as much as in prisons.",
+    layer0:
+      "In 1787 Jeremy Bentham sketched a prison he called the Inspection-House. A ring of cells surrounds a central tower; every cell is backlit so its occupant is always visible, and the tower's windows are shuttered so the occupant can never tell whether the inspector is there. He borrowed the idea from his brother Samuel, who had used a 'central inspection principle' to supervise unskilled workers in Russia, and promised it would deliver 'a new mode of obtaining power of mind over mind, in a quantity hitherto without example'. The building was never constructed to his design — Tate Britain now stands on the site he bought for it — but Michel Foucault argued in Discipline and Punish that its principle was built everywhere else.",
+    layer1:
+      "Foucault opens the book with two scenes eighty years apart: the public torture and execution of the regicide Damiens in 1757, and a minute-by-minute timetable for young prisoners in Paris in 1838. The shift from spectacle to schedule is not simply humane progress; punishment has moved from the body to what he calls the soul, and its instrument is discipline — the ranking, timetabling, examining and recording of individuals. The Panopticon is that instrument's ideal form. Its major effect, in his phrase, is to induce 'a state of conscious and permanent visibility that assures the automatic functioning of power'. Because the watcher cannot be verified, the inmate must assume he is watched at all times, and so 'becomes the principle of his own subjection': the constraint is internalized and the guard becomes unnecessary. Power of this kind is cheap, continuous, and needs no violence, which is why the same diagram spreads to any institution that needs to manage bodies at scale. 'Is it surprising,' Foucault asks, 'that prisons resemble factories, schools, barracks, hospitals, which all resemble prisons?' The disciplinary society is not one big prison but a network of institutions sharing one technique.",
+    layer2:
+      "The test of panoptic power is not whether anyone is actually watching but whether you behave as if they might be — which is why the phrase 'this call may be recorded' works, and why a dashcam changes driving before it records anything. Foucault's uncomfortable addition is that the internalized inspector eventually feels like conscience. Where in your own week do you perform for a watcher who may not exist — a metrics dashboard, an activity indicator, an imagined audience — and how much of what you call self-discipline is that tower doing its work?",
+    quiz: {
+      question:
+        "According to Foucault, what is the essential mechanism that makes the Panopticon an effective model of power?",
+      options: [
+        "Constant physical presence of guards who can intervene the instant a rule is broken, which deters misbehaviour through certainty of punishment",
+        "Visible but unverifiable surveillance, which leads inmates to assume they are always watched and so to discipline themselves without any force",
+        "Architectural isolation that prevents prisoners from communicating, which eliminates the collective organization needed to resist authority",
+        "Public exhibition of punishment, which reasserts the sovereign's power through spectacle and warns onlookers of the consequences of crime",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Foucault's formula is that power should be 'visible and unverifiable': the inmate can always see the tower but never know whether he is being observed, so he internalizes the gaze and becomes the principle of his own subjection.",
+    },
+    related: ["X4", "X8", "AI1", "AK5"],
+    furtherReading: [
+      {
+        type: "book",
+        label: "Discipline and Punish: The Birth of the Prison",
+        source: "Vintage (Penguin Random House), trans. Alan Sheridan",
+        url: "https://www.penguinrandomhouse.com/books/55026/discipline-and-punish-by-michel-foucault-and-alan-sheridan/",
+        archive: {
+          status: "unavailable",
+        },
+      },
+      {
+        label: "The Panopticon",
+        source: "UCL Bentham Project",
+        url: "https://www.ucl.ac.uk/laws/research/research-projects/bentham-project/about-jeremy-bentham/panopticon",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Power & Persuasion", "Social Constructs"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "X8",
+    clusterId: "X",
+    title: "Preference Falsification",
+    author: "Timur Kuran",
+    year: 1995,
+    medium: "Book",
+    category: "Society / Politics",
+    thesis:
+      "People routinely misrepresent what they want under social pressure. Aggregated, those small lies hold up regimes and norms almost nobody privately supports, make them look stable right up to the moment they collapse, and corrupt what a society is able to know about itself.",
+    layer0:
+      "You tell the host the food is delicious. Multiply that reflex by a whole society and you get a country where everyone applauds a system that almost no one believes in — and where each person, seeing everyone else applaud, concludes they are alone in their doubt. Timur Kuran, an economist, calls the reflex preference falsification: misrepresenting your wants under perceived social pressure. His claim in Private Truths, Public Lies is that it is not a footnote to social life but one of its load-bearing structures — the reason widely disliked arrangements persist, the reason their fall surprises everyone including the experts, and the reason public opinion can be a poor guide to what the public actually thinks.",
+    layer1:
+      "Kuran splits the payoff from expressing an opinion into three parts: intrinsic utility from the policy itself, reputational utility from how others treat you for your stated position, and expressive utility from saying what you believe. When reputational stakes dominate, people publicly endorse what they privately reject. Because each person's willingness to speak depends on how many others already have, everyone carries a threshold — and the distribution of thresholds decides whether a society is stable or merely looks it. If a small shock pushes a few low-threshold people to speak, their visible dissent lowers the cost for the next group, and a bandwagon runs until the public consensus flips almost overnight. That, Kuran argues, is why the 1989 revolutions in Eastern Europe stunned intelligence agencies and dissidents alike: private preferences had shifted years earlier, but the public lie held until it suddenly didn't. The damage is not only political. When falsification lasts long enough, public discourse stops transmitting the arguments and evidence people need, so the next generation inherits the lie as sincere belief — knowledge falsification — which is how, on his account, structures like India's caste system or a policy consensus no one dares challenge can outlive their support by centuries.",
+    layer2:
+      "Two consequences follow for anyone trying to read a group. First, unanimity is weak evidence: the more costly dissent is, the less the public agreement tells you. Second, the leading indicator of change is not the average opinion but the number of people just below their threshold, which is why brave early speakers matter out of all proportion to their numbers. In your own organization, which opinion do you suspect is privately common and publicly unsayable — and what is the smallest signal that would let the second person speak?",
+    quiz: {
+      question:
+        "Why, according to Kuran, do regimes and norms sustained by preference falsification tend to collapse suddenly rather than erode gradually?",
+      options: [
+        "Because economic conditions in such societies deteriorate slowly until a crisis point, at which the government can no longer pay for enforcement",
+        "Because people's private preferences change abruptly in response to a single event, which causes everyone to switch sides at the same moment",
+        "Because each person's willingness to dissent depends on how many others already have, so a small shock can trigger a threshold cascade that flips public opinion",
+        "Because foreign pressure typically forces a regime to lift censorship all at once, revealing the private opposition that was previously hidden",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Private preferences may have shifted long before; what changes suddenly is public expression, as a few low-threshold dissenters lower the reputational cost for the next group and a bandwagon runs until the falsified consensus collapses.",
+    },
+    related: ["X3", "X7", "AF8", "AI8"],
+    furtherReading: [
+      {
+        type: "book",
+        label: "Private Truths, Public Lies: The Social Consequences of Preference Falsification",
+        source: "Harvard University Press",
+        url: "https://www.hup.harvard.edu/books/9780674707580",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Social Constructs", "Power & Persuasion"],
+    epistemicStatus: "Contemporary",
   },
 ];

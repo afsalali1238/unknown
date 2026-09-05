@@ -193,7 +193,7 @@ export const CLUSTER_B: Node[] = [
       explanation:
         "Facebook successfully argued that an incredibly dense, highly engaged, and highly targeted user base (college students) was vastly more valuable to advertisers than the sprawling, low-engagement portals of Web 1.0.",
     },
-    related: ["B1", "B2", "B3", "B5"],
+    related: ["B1", "B2", "B3", "B8"],
     furtherReading: [
       {
         type: "read",
@@ -248,7 +248,7 @@ export const CLUSTER_B: Node[] = [
       explanation:
         "Uber initially pitched itself as a niche, premium black-car service for professionals, which served as a profitable wedge to eventually expand into the mass-market ride-hailing giant it is today.",
     },
-    related: ["B1", "B2", "B3"],
+    related: ["B1", "B2", "B3", "B8"],
     furtherReading: [
       {
         type: "read",
@@ -381,6 +381,50 @@ export const CLUSTER_B: Node[] = [
           status: "full",
           path: "content/sources/B7-1.md",
           retrieved: "2026-07-14",
+        },
+      },
+    ],
+    tags: ["Startups & Founders", "Moats & Network Effects"],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "B8",
+    clusterId: "B",
+    title: "LinkedIn Series B Pitch Deck (Greylock)",
+    author: "Reid Hoffman",
+    year: 2004,
+    medium: "Deck",
+    category: "Pitch Deck",
+    thesis:
+      "Pitch the investment thesis, not the product: LinkedIn raised a $10 million Series B in 2004 with no revenue by steering straight into investors' biggest objection and arguing by analogy that networks — eBay, PayPal, Google — beat directories.",
+    layer0:
+      "In the summer of 2004 LinkedIn had no revenue, no revenue-capable product, modest organic growth, and was routinely dismissed as 'Friendster for business' while Friendster and MySpace had millions of users. Reid Hoffman still raised a $10 million Series B from Greylock — and in 2013, on LinkedIn's tenth anniversary, he published the full deck with slide-by-slide commentary. Its first move is the tell: instead of showing the product, the deck goes straight to revenue — ads, listings, subscriptions — because the loudest question from investors still nursing dot-com wounds was whether a consumer internet company could make money at all.",
+    layer1:
+      "The structure is an argument, not a tour. Hoffman frames LinkedIn as 'professional people search 2.0' and argues that the 1.0 tools — yellow pages, résumé databases, directories — all fail from adverse selection: the people worth finding don't participate, and those who do misrepresent themselves. A network with identity and reputation fixes the incentive. Then he pitches by analogy: classifieds became valuable as eBay once a network was added; bank transfers became PayPal; AltaVista's keyword matching lost to Google's PageRank, itself a network signal. Each analogy monetizes around the network rather than charging for membership — you pay for the eBay transaction, not the reputation system. He also flags his own mistakes: listing three revenue streams reads as lack of focus (LinkedIn turned out to be the exception), and a customer-logo slide belongs in enterprise pitches, not consumer ones. Greylock's actual thesis was narrower than the vision — a great recruiting business with an option on more — and that is roughly what happened: recruiting, not networking, became the principal market, and subscriptions became the largest line faster than expected.",
+    layer2:
+      "Hoffman's rule is that the winning moment comes when the investor concludes the thesis on their own, so open and close with the three to eight bullets they must believe, and steer into the one to three objections that could kill the round while you still have their full attention. He also ran two firms in parallel, so a fast offer from the 'likely' investor forced a term sheet from the 'ideal' one the day after the pitch. If you had to write the six bullets an investor must believe about your project — and name the single objection you would address on slide two — what would they be?",
+    quiz: {
+      question:
+        "Why did LinkedIn's 2004 Series B deck open with revenue models instead of the product?",
+      options: [
+        "Because post-dot-com investors' loudest objection was whether a consumer internet company could make money, so the deck addressed it before anything else",
+        "Because LinkedIn was already generating meaningful subscription revenue in 2004, which made the product story unnecessary for the pitch",
+        "Because Greylock's partners had asked for a financials-only presentation and explicitly declined to see the product until after the term sheet",
+        "Because the product had not yet launched publicly in 2004, so financial projections were the only material the team could credibly present",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Hoffman's advice is to steer into investors' biggest concern while you have their full attention; in 2004 that concern was revenue, so the deck covered ads, listings, and subscriptions before it explained the product.",
+    },
+    related: ["B4", "B6", "B3", "A8"],
+    furtherReading: [
+      {
+        type: "read",
+        label: "LinkedIn's Series B Pitch to Greylock: Pitch Advice for Entrepreneurs",
+        source: "reidhoffman.org",
+        url: "https://www.reidhoffman.org/linkedin-pitch-to-greylock/",
+        archive: {
+          status: "unavailable",
         },
       },
     ],

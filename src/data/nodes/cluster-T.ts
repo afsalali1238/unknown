@@ -29,7 +29,7 @@ export const CLUSTER_T: Node[] = [
         "Blank-page syndrome happens when you try to research and write simultaneously. 'Writing from abundance' means constantly collecting notes, so when you sit down to write, you are simply connecting ideas you already have.",
     },
     tags: ["Craft & Deep Work", "Compounding & Patience"],
-    related: ["T2", "T3", "S4"],
+    related: ["T2", "T3", "S4", "T6"],
     furtherReading: [
       {
         label: "The Ultimate Guide to Writing Online",
@@ -119,7 +119,7 @@ export const CLUSTER_T: Node[] = [
         "By writing down what you just finished, what you are feeling, and what you will do next during transitions, you close 'open loops' in your brain and prevent cognitive residue from ruining your next task.",
     },
     tags: ["Craft & Deep Work", "Incentives & Systems"],
-    related: ["T1", "T2", "T4"],
+    related: ["T1", "T2", "T8"],
     furtherReading: [
       {
         label: "Interstitial journaling: combining notes, to-do and time tracking",
@@ -163,7 +163,7 @@ export const CLUSTER_T: Node[] = [
       explanation:
         "Ideas rarely fit perfectly into a single category. By forcing a note into a single folder, you artificially sever its connection to all the other contexts it might be relevant to.",
     },
-    related: ["N1", "T1", "T3"],
+    related: ["N1", "T1", "T8"],
     furtherReading: [
       {
         label: "Networked Note-taking",
@@ -208,7 +208,7 @@ export const CLUSTER_T: Node[] = [
       explanation:
         "This lesson frames recurring struggles as diagnostic rather than random — the same category of problem showing up across different contexts (relationships, jobs, pursuits) is treated as a signal that the internal pattern, not the external circumstance, is the actual variable to fix.",
     },
-    related: ["T1", "T2"],
+    related: ["T1", "T2", "T7"],
     furtherReading: [
       {
         label: "35 Things I Know At 35 I Wish I Knew At 25",
@@ -223,6 +223,143 @@ export const CLUSTER_T: Node[] = [
       },
     ],
     tags: ["Meaning & Self", "Decision-Making"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "T6",
+    clusterId: "T",
+    title: "Imitate, Then Innovate",
+    author: "David Perell",
+    year: 2022,
+    medium: "Essay",
+    category: "Craft & Creativity",
+    thesis:
+      "The fastest route to an original voice runs through deliberate imitation. Creators who make originality their highest virtue — Perell's 'Originality Disease' — produce less and sound like everyone else; those who copy their heroes and fail to match them end up unique.",
+    layer0:
+      "Johnny Carson tried to copy Jack Benny, failed, and won six Emmys. David Letterman tried to copy Carson, failed, and became one of the great television hosts. Conan O'Brien, looking at the same lineage, concluded that 'it is our failure to become our perceived ideal that ultimately defines us and makes us unique'. David Perell calls the opposite instinct the Originality Disease: the modern creator's fear that studying anyone else's style will contaminate their own, so they spend far more time straining for novelty than apprenticing to the people they admire — and quality is the casualty.",
+    layer1:
+      "Perell's evidence is that the people we treat as singular talents describe themselves as thieves. Tarantino: 'I steal from every single movie ever made.' George Lucas rewrote Star Wars to fit Joseph Campbell's hero's journey. Hunter S. Thompson retyped The Great Gatsby to feel what writing that well was like; Kobe Bryant said all his moves were stolen. Creators consume differently from audiences — a director watches a film for how the score builds empathy and how a camera move foreshadows a plot turn, building a mental board of techniques to borrow. Perell traces the disease to three sources: a misunderstanding of inspiration as lightning that must strike an uncontaminated mind; academia's fetish for the 'nobody has written this before' box, which confuses originality with usefulness; and a post-Freudian, post-1960s turn inward that treats the self as the only legitimate source of answers. His fix is a two-step apprenticeship. Imitate closely enough to learn the machinery, then let your own inevitable deviations accumulate — a painting teacher he quotes defines an artist's voice as the delta between their style and the painter they emulate. Imitating from far afield works too: Thiel from Girard, Jobs from Star Trek.",
+    layer2:
+      "Perell's test from teaching writers is blunt: the surest sign of an amateur is someone who names originality as their goal instead of quality, beauty or clear communication. So pick one piece of work you admire in your own medium and copy it properly — reverse-engineer its structure, rewrite it in your own context, notice exactly where you cannot help departing from it. That departure is the raw material of your style. What is the one piece you would be embarrassed to admit you want to imitate, and what would you learn from doing it anyway?",
+    quiz: {
+      question: "What does Perell mean by the 'Originality Disease'?",
+      options: [
+        "The tendency of established creators to copy their own earlier hits rather than risk producing anything genuinely new",
+        "The fear of imitating other people's styles that leads creators to prize novelty over quality and cuts them off from the fastest way to develop a voice",
+        "The industry practice of rewarding the first person to publish an idea regardless of whether the execution is any good",
+        "The habit of consuming art purely as entertainment instead of studying how it was made, which leaves creators with nothing to draw on",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Perell's diagnosis is that modern creators refuse to imitate and hold originality as their highest virtue even at the expense of quality; his cure is to copy your heroes closely, because your failure to match them is where a unique style comes from.",
+    },
+    related: ["T1", "T7", "AE1", "N2"],
+    furtherReading: [
+      {
+        label: "Imitate, then Innovate",
+        source: "David Perell",
+        url: "https://perell.com/essay/imitate-then-innovate/",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Craft & Deep Work", "Meaning & Self"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "T7",
+    clusterId: "T",
+    title: "The 5 Types of Wealth",
+    author: "Sahil Bloom",
+    year: 2025,
+    medium: "Book",
+    category: "Frameworks",
+    thesis:
+      "Money is one of five kinds of wealth, and the only one most people keep score of. Bloom's scoreboard adds Time, Social, Mental and Physical wealth alongside Financial, on the argument that a broken scoreboard produces broken actions — you optimize what you measure.",
+    layer0:
+      "A friend once asked Sahil Bloom how often he saw his parents. About once a year, he said — they lived on the other coast and were in their mid-sixties. The friend did the arithmetic: so you will see them roughly fifteen more times before they die. Bloom moved back east within months. The story became the seed of a book whose claim is simple: we have been trained to treat money as the only form of wealth, so we run our lives on a scoreboard with one column and are surprised when winning on it does not feel like winning. Peter Drucker's line that what gets measured gets managed cuts both ways — a broken scoreboard produces broken actions.",
+    layer1:
+      "Bloom's scoreboard has five columns. Time Wealth is control over how you spend your hours and awareness of their finitude — the currency you cannot earn back. Social Wealth is depth and breadth of relationships, the asset that most reliably predicts a good life in the longitudinal data. Mental Wealth is purpose, growth and space to think. Physical Wealth is health and vitality, built on a handful of unglamorous principles about movement, food and sleep. Financial Wealth is the familiar one, reframed around defining your own 'enough' rather than chasing an open-ended number. The book, published in February 2025 after three years of research and interviews, argues that the five interact dynamically and that their relative weight changes across seasons of life: a founder in a sprint may deliberately run down Time and Social wealth for a while, but treating that as the permanent default is how people arrive at retirement rich and alone. The practical instrument is measurement — score yourself on all five, notice which column you have been ignoring, and let the weakest one set the next action. Bloom's recurring promise is that a single year of deliberate reallocation is enough to change the trajectory.",
+    layer2:
+      "Rate yourself honestly from one to ten on each of the five — time, social, mental, physical, financial — and look at the spread rather than the sum. The column with the lowest score is usually the one you have been quietly trading away to raise another. Bloom's fifteen-more-visits arithmetic works for anything finite: how many more summers with your kids at home, how many more conversations with a mentor, how many more years your body will tolerate the routine you are running. Which finite count would change your calendar this month if you actually did the math?",
+    quiz: {
+      question:
+        "What is the core argument behind Bloom's decision to add four non-financial types of wealth to the scoreboard?",
+      options: [
+        "That financial wealth becomes irrelevant once basic needs are met, so ambitious people should stop tracking money altogether",
+        "That the four non-financial types can be converted into money at predictable rates, which makes them useful leading indicators of income",
+        "That people optimize whatever they measure, so a scoreboard with only a money column systematically produces choices that make life worse",
+        "That most self-help frameworks have too few categories to be memorable, and five is the number research shows people can hold in mind",
+      ],
+      correctIndex: 2,
+      explanation:
+        "Bloom's framing is 'broken scoreboard, broken actions': because what gets measured gets managed, measuring only money quietly steers decisions away from time, relationships, purpose and health.",
+    },
+    related: ["T2", "T5", "T6", "P1"],
+    furtherReading: [
+      {
+        label: "The 5 Types of Wealth (newsletter launch essay)",
+        source: "Sahil Bloom",
+        url: "https://www.sahilbloom.com/newsletter/the-5-types-of-wealth",
+        archive: {
+          status: "unavailable",
+        },
+      },
+      {
+        type: "book",
+        label: "The 5 Types of Wealth: A Transformative Guide to Design Your Dream Life",
+        source: "Ballantine Books (Penguin Random House), 2025",
+        url: "https://www.penguinrandomhouse.com/books/731381/the-5-types-of-wealth-by-sahil-bloom/",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Meaning & Self", "Wealth, Leverage & Judgment"],
+    epistemicStatus: "Contemporary",
+  },
+  {
+    id: "T8",
+    clusterId: "T",
+    title: "Make a PACT, Not a SMART Goal",
+    author: "Anne-Laure Le Cunff",
+    year: 2019,
+    medium: "Essay",
+    category: "Mindful Productivity",
+    thesis:
+      "SMART goals fixate on an outcome you do not control. Le Cunff's alternative, the PACT — Purposeful, Actionable, Continuous, Trackable — commits you to a repeatable output for a set period, turns the result into data, and is the unit of what she later called tiny experiments.",
+    layer0:
+      "'Get 5,000 subscribers in 25 weeks' is a SMART goal: specific, measurable, achievable, relevant, time-bound. It is also almost entirely outside your control, and for ambitious, long-horizon aims — learn to code, write a book, change careers — the framework quietly discourages you from starting at all, because you cannot know how long it will take or whether it is 'achievable'. Anne-Laure Le Cunff's replacement is the PACT: 'Publish 25 newsletters over the next 25 weeks.' Same ambition, but every part of it is an action you can take this week and mark as done or not done.",
+    layer1:
+      "PACT is Purposeful, Actionable, Continuous and Trackable. Purposeful means aligned with a long-term aim rather than merely relevant right now — you will not sustain a commitment you do not care about. Actionable shifts attention from distant outcomes to present outputs you control: the run, the call, the draft. Continuous means the action is simple and repeatable, which sidesteps the research-forever paralysis of too many options and lets you adapt as you learn. Trackable is deliberately not 'measurable': stats are overrated for most goals, so the tracking is binary, like a GitHub contribution graph — did you do the thing today, yes or no? The shift is from outcome to output, from a finish line to a cadence. In her 2025 book Tiny Experiments Le Cunff makes the PACT the core unit of a curiosity-driven life: 'I will [action] for [duration]', run for the stated period, then reviewed — continue, tweak or stop — with the outcome treated as information rather than a verdict. A missed day is a data point, not a failed goal, and the review is where the learning happens.",
+    layer2:
+      "Take one ambition you have been circling for a year and rewrite it as a PACT: name the single repeatable action, the duration, and the yes/no you will record. 'Get fit' becomes 'run three times a week for twelve weeks'; 'build an audience' becomes 'publish one essay a week for twenty weeks'. Then schedule the review at the end of the period before you start, so the commitment has an exit and a decision point built in. What is the one action you would be willing to do for the next ten weeks regardless of the results it produces?",
+    quiz: {
+      question:
+        "What is the key difference between a SMART goal and a PACT, in Le Cunff's framing?",
+      options: [
+        "A SMART goal targets an outcome you often cannot control, while a PACT commits you to a repeatable output you can perform and track as done or not done",
+        "A SMART goal is designed for long-term ambitions, while a PACT is a short-term daily to-do list that should be rewritten every morning",
+        "A SMART goal requires numerical measurement, while a PACT rejects tracking of any kind in favour of intuition about whether you are progressing",
+        "A SMART goal is set individually, while a PACT is a formal agreement made with an accountability partner who enforces the deadline",
+      ],
+      correctIndex: 0,
+      explanation:
+        "Le Cunff's example is the contrast between 'get 5,000 subscribers in 25 weeks' and 'publish 25 newsletters in 25 weeks': the first depends on factors outside your control, the second is purposeful, actionable, continuous and trackable with a simple yes or no.",
+    },
+    related: ["T3", "T4", "T7", "Q8"],
+    furtherReading: [
+      {
+        label: "SMART goals are not so smart: make a PACT instead",
+        source: "Ness Labs",
+        url: "https://nesslabs.com/smart-goals-pact",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Craft & Deep Work", "Decision-Making"],
     epistemicStatus: "Contemporary",
   },
 ];

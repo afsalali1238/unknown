@@ -116,7 +116,7 @@ export const CLUSTER_Y: Node[] = [
         "Science is excellent at explaining the mechanics of the brain (the 'easy' problems). But it has no framework for explaining why those mechanics are accompanied by the subjective, inner experience of actually feeling them (the 'hard problem').",
     },
     tags: ["Meaning & Self"],
-    related: ["O15", "X1", "Y1", "Y5"],
+    related: ["O15", "X1", "Y8", "Y5"],
     furtherReading: [
       {
         label: "The Human Mind Explained to Fall Asleep To",
@@ -286,7 +286,7 @@ export const CLUSTER_Y: Node[] = [
       explanation:
         "Sensory input is largely just an 'error-correction' mechanism. The brain does the heavy lifting of generating the world; the eyes and ears just report back when the brain's guess is wrong.",
     },
-    related: ["O1", "Y1", "Y6"],
+    related: ["O1", "Y1", "Y8"],
     furtherReading: [
       {
         label: "The Predictive Brain",
@@ -301,5 +301,58 @@ export const CLUSTER_Y: Node[] = [
     ],
     tags: ["Philosophy & the Self", "Cognitive Biases & Models"],
     epistemicStatus: "Speculative",
+  },
+  {
+    id: "Y8",
+    clusterId: "Y",
+    title: "Inattentional Blindness: The Invisible Gorilla",
+    author: "Daniel Simons & Christopher Chabris",
+    year: 1999,
+    medium: "Paper",
+    category: "Psychology / Perception",
+    thesis:
+      "Attention is not a spotlight that dims the periphery; it is a gate. When you are focused on one task, a fully visible, unexpected event can pass through the middle of your visual field and never reach awareness — and you will be certain you would have seen it.",
+    layer0:
+      "Two teams pass basketballs around; your job is to count the passes made by the team in white. Halfway through, a person in a full gorilla suit walks into the middle of the frame, faces the camera, thumps her chest, and walks off — about nine seconds on screen. Roughly half of the people counting passes never see the gorilla. Told about it and shown the tape again, many insist it must be a different video. Daniel Simons and Christopher Chabris ran the study in 1999 under the title 'Gorillas in Our Midst'; the clip has since been watched tens of millions of times, and it still works on people who know something is coming.",
+    layer1:
+      "The phenomenon is inattentional blindness, a term coined by Arien Mack and Irvin Rock the year before; Simons and Chabris' contribution was to show it lasted for seconds, in a dynamic natural scene, with an object nobody could call subtle. The design descends from Ulric Neisser's 1970s 'selective looking' films, in which a woman with an umbrella strolled through a ball game unnoticed. Two findings sharpen the picture. Observers were far more likely to notice the gorilla when they were counting passes by the black-shirted team than by the white — the unexpected object slips through more easily when it resembles what you have been told to ignore — and a harder counting task made it more likely to be missed. Spatial proximity did not help: the gorilla walked right through the attended region, which suggests attention selects objects and events, not places on the retina. The deeper lesson is the illusion of attention. We experience a rich, complete visual world and assume anything salient would announce itself; in fact we perceive and remember only what receives focused attention, and we badly overestimate how much that covers. Simons and colleagues later named the meta-error — overrating your own ability to detect change — change blindness blindness.",
+    layer2:
+      "The gorilla is a laboratory version of every 'I looked right at it and didn't see it': the motorcyclist the driver never registered, the anomaly in the data nobody was tasked to look for, the radiologist hunting lung nodules who scrolls past a gorilla pasted into the scan. The fix is not to try harder to notice — attention is a finite resource, and its narrowness is the cost of its usefulness — but to stop trusting the feeling of having seen everything. Where in your work does the count-the-passes task sit, and who or what is assigned to watch for the gorilla you are structurally unable to see?",
+    quiz: {
+      question:
+        "What did Simons and Chabris' gorilla experiment demonstrate about visual attention?",
+      options: [
+        "That people notice unexpected events reliably but forget them within seconds, so failures to report the gorilla were failures of memory rather than perception",
+        "That focused attention on one task can prevent a fully visible, unexpected event from reaching awareness at all, even when it passes through the attended region",
+        "That peripheral vision is too low-resolution to identify large objects, which is why the gorilla was only detected by observers looking directly at it",
+        "That observers detect unexpected objects more readily the more demanding their primary task is, because effortful attention heightens overall vigilance",
+      ],
+      correctIndex: 1,
+      explanation:
+        "About half the participants counting passes never saw the gorilla even though it walked through the middle of the scene for several seconds — sustained inattentional blindness — and the miss rate rose when the counting task was harder.",
+    },
+    related: ["Y7", "Y3", "Q18", "X1"],
+    furtherReading: [
+      {
+        type: "paper",
+        label: "Gorillas in Our Midst: Sustained Inattentional Blindness for Dynamic Events",
+        source: "Perception 28(9), 1059–1074 (1999)",
+        url: "https://journals.sagepub.com/doi/10.1068/p281059",
+        archive: {
+          status: "unavailable",
+        },
+      },
+      {
+        type: "watch",
+        label: "Selective attention test (the original gorilla video)",
+        source: "Daniel Simons, YouTube",
+        url: "https://www.youtube.com/watch?v=vJG698U2Mvo",
+        archive: {
+          status: "unavailable",
+        },
+      },
+    ],
+    tags: ["Cognitive Biases & Models", "Meaning & Self"],
+    epistemicStatus: "Canonical",
   },
 ];
