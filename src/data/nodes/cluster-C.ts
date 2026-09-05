@@ -78,8 +78,8 @@ export const CLUSTER_C: Node[] = [
       question:
         "What was the mathematical smoking gun that proved Madoff was a fraud years before he was caught?",
       options: [
-        "His firm had too many employees for the assets under management — a common simplification that omits the key mechanism behind the effect.",
-        "He was using an offshore bank in the Cayman Islands — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "His firm had too many employees for the assets under management",
+        "He was using an offshore bank in the Cayman Islands",
         "The options volume required for his strategy exceeded the total volume of the entire exchange",
       ],
       correctIndex: 2,
@@ -123,8 +123,8 @@ export const CLUSTER_C: Node[] = [
         "Why was Allied Capital able to hide the poor performance of its portfolio companies for so long?",
       options: [
         "They used Level 3 'mark-to-model' accounting to inflate the value of illiquid private assets",
-        "They bribed the SEC auditors to look the other way — a common simplification that omits the key mechanism behind the effect.",
-        "They only invested in government bonds which never defaulted — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "They bribed the SEC auditors to look the other way",
+        "They only invested in government bonds which never defaulted",
       ],
       correctIndex: 0,
       explanation:
@@ -163,11 +163,7 @@ export const CLUSTER_C: Node[] = [
     quiz: {
       question:
         "What specific asset class did David Einhorn focus on to prove Lehman Brothers was hiding massive losses?",
-      options: [
-        "Tech stocks — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Commercial real estate and CDOs",
-        "Emerging market currencies",
-      ],
+      options: ["Tech stocks", "Commercial real estate and CDOs", "Emerging market currencies"],
       correctIndex: 1,
       explanation:
         "Einhorn exposed that Lehman was refusing to write down its massive portfolio of toxic commercial real estate loans and Collateralized Debt Obligations (CDOs) despite the market crashing around them.",
@@ -251,8 +247,8 @@ export const CLUSTER_C: Node[] = [
       question: "How did Sino-Forest fake its massive timber revenues?",
       options: [
         "By using a web of opaque 'authorized intermediaries' to forge purchase and sale contracts",
-        "By hacking the Canadian stock exchange servers — a compact misstatement that leaves out the scope in which the claim holds.",
-        "By buying satellite imagery of forests they didn't own — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "By hacking the Canadian stock exchange servers",
+        "By buying satellite imagery of forests they didn't own",
       ],
       correctIndex: 0,
       explanation:
@@ -293,9 +289,9 @@ export const CLUSTER_C: Node[] = [
     quiz: {
       question: "What was the core argument of Bill Ackman's short thesis against Herbalife?",
       options: [
-        "The nutritional shakes contained toxic ingredients — a handy abbreviation that hides the counter-condition the argument requires.",
+        "The nutritional shakes contained toxic ingredients",
         "The company was a pyramid scheme where revenue came from recruiting distributors, not retail sales",
-        "The CEO was embezzling money to offshore accounts — a compact misstatement that leaves out the scope in which the claim holds.",
+        "The CEO was embezzling money to offshore accounts",
       ],
       correctIndex: 1,
       explanation:
@@ -465,8 +461,8 @@ export const CLUSTER_C: Node[] = [
     quiz: {
       question: "How did the Adani Group artificially inflate its stock prices?",
       options: [
-        "By bribing the Indian stock exchange officials — a common simplification that omits the key mechanism behind the effect.",
-        "By reporting fake infrastructure projects that didn't exist — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "By bribing the Indian stock exchange officials",
+        "By reporting fake infrastructure projects that didn't exist",
         "By using a network of offshore shell companies to secretly buy their own shares",
       ],
       correctIndex: 2,

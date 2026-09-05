@@ -20,10 +20,10 @@ export const CLUSTER_H: Node[] = [
       question:
         "How does Bitcoin prevent double-spending without a central trusted authority like a bank?",
       options: [
-        "Every transaction requires a government ID to verify identity — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Transactions are limited to once per day per user — a frequent misremembering that swaps the cause and its consequence.",
-        "Proof-of-work makes rewriting transaction history computationally expensive — a familiar retelling that strips out the contingency the source treats as central.",
-        "A single trusted server verifies every transaction centrally — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Every transaction requires a government ID to verify identity",
+        "Transactions are limited to once per day per user",
+        "Proof-of-work makes rewriting transaction history computationally expensive",
+        "A single trusted server verifies every transaction centrally",
       ],
       correctIndex: 2,
       explanation:
@@ -69,9 +69,9 @@ export const CLUSTER_H: Node[] = [
       question:
         "According to Boyapati's framework, why is it backwards to judge Bitcoin as a failure for not yet being widely used to buy everyday goods?",
       options: [
-        "Because Bitcoin was never intended to be used as money at all — an appealing shorthand that collapses a structural distinction into a surface similarity The distinction matters because it changes what you would measure to test the claim.",
-        "Because government regulation legally prohibits using Bitcoin for purchases — a plausible reading that overlooks the limiting condition the text stresses Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "Because Bitcoin's supply is unlimited, unlike gold — a frequent misremembering that swaps the cause and its consequence It holds only within the scope the author defines, not as a universal claim.",
+        "Because Bitcoin was never intended to be used as money at all",
+        "Because government regulation legally prohibits using Bitcoin for purchases",
+        "Because Bitcoin's supply is unlimited, unlike gold",
         "Because becoming a widely-used medium of exchange historically requires first becoming a trusted store of value — Bitcoin was still in that earlier stage, and skipping ahead isn't how monetization has historically worked",
       ],
       correctIndex: 3,
@@ -119,9 +119,9 @@ export const CLUSTER_H: Node[] = [
         "Why does Ethereum require paying 'gas' fees for every computation, unlike Bitcoin's simpler transaction model?",
       options: [
         "Because Ethereum allows unrestricted, Turing-complete computation, and gas fees (scaling with computational complexity) prevent infinite loops or spam from freezing the shared network",
-        "To generate charitable donations for the Ethereum Foundation — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "To convert Ether into Bitcoin automatically during each transaction — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Because Ethereum has no consensus mechanism and needs fees to select validators randomly — a frequent misremembering that swaps the cause and its consequence.",
+        "To generate charitable donations for the Ethereum Foundation",
+        "To convert Ether into Bitcoin automatically during each transaction",
+        "Because Ethereum has no consensus mechanism and needs fees to select validators randomly",
       ],
       correctIndex: 0,
       explanation:
@@ -167,10 +167,10 @@ export const CLUSTER_H: Node[] = [
       question:
         "Why does Joel Monegro argue that value in crypto accrues to the protocol layer rather than the application layer, unlike the internet?",
       options: [
-        "Because crypto applications are illegal in most jurisdictions — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because crypto applications are illegal in most jurisdictions",
         "Because blockchain data is shared and open rather than proprietary, weakening individual applications' moats, while the base protocol token captures value as the whole ecosystem built on it grows",
-        "Because protocols require government licensing fees that applications don't — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because applications on blockchains cannot generate any revenue at all — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because protocols require government licensing fees that applications don't",
+        "Because applications on blockchains cannot generate any revenue at all",
       ],
       correctIndex: 1,
       explanation:
@@ -216,10 +216,10 @@ export const CLUSTER_H: Node[] = [
       question:
         "How does Uniswap determine the price of a trade, given that there's no order book matching buyers and sellers?",
       options: [
-        "A central Uniswap server sets prices manually based on other exchanges — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Prices are fixed permanently when the pool is created and never change — a widely circulated summary that inverts the relationship the author actually defends.",
+        "A central Uniswap server sets prices manually based on other exchanges",
+        "Prices are fixed permanently when the pool is created and never change",
         "A smart contract holds a pool of two tokens and enforces that their product stays constant (x*y=k); trading against the pool shifts the ratio, and price is derived automatically from that formula",
-        "Every trade requires a human liquidity provider to personally approve the price — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Every trade requires a human liquidity provider to personally approve the price",
       ],
       correctIndex: 2,
       explanation:
@@ -264,9 +264,9 @@ export const CLUSTER_H: Node[] = [
     quiz: {
       question: "What problem does Solana's Proof of History primarily solve?",
       options: [
-        "It encrypts transaction contents so no one can see them — a compact misstatement that leaves out the scope in which the claim holds.",
-        "It eliminates the need for any validators on the network — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "It converts all transactions into a single batched transaction per day — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It encrypts transaction contents so no one can see them",
+        "It eliminates the need for any validators on the network",
+        "It converts all transactions into a single batched transaction per day",
         "It creates a verifiable, decentralized way to prove the order and timing of events, cutting the communication overhead nodes would otherwise need to agree on ordering",
       ],
       correctIndex: 3,
@@ -314,9 +314,9 @@ export const CLUSTER_H: Node[] = [
         "According to Chris Dixon, why do centralized platforms tend to become adversarial toward the developers and users who helped them grow?",
       options: [
         "Because once a platform dominates its market, its incentives shift from courting an ecosystem to extracting value from it, and there's no structural mechanism stopping that shift the way there is with decentralized protocols",
-        "Because governments force platforms to extract more value once they reach a certain size — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Because developers always eventually violate platform terms of service — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Because centralized platforms run out of technical capacity as they grow — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because governments force platforms to extract more value once they reach a certain size",
+        "Because developers always eventually violate platform terms of service",
+        "Because centralized platforms run out of technical capacity as they grow",
       ],
       correctIndex: 0,
       explanation:
@@ -361,10 +361,10 @@ export const CLUSTER_H: Node[] = [
     quiz: {
       question: "What specific advantage did Palihapitiya claim SPACs had over traditional IPOs?",
       options: [
-        "SPACs are legally required to have lower fees than IPOs — a handy abbreviation that hides the counter-condition the argument requires.",
+        "SPACs are legally required to have lower fees than IPOs",
         "SPACs let companies share forward-looking financial projections (restricted in traditional IPOs) and bypass the underwriter-controlled roadshow, giving retail investors earlier and more direct access",
-        "SPACs guarantee a higher stock price than a traditional IPO — a compact misstatement that leaves out the scope in which the claim holds.",
-        "SPACs eliminate the need for any regulatory disclosure at all — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "SPACs guarantee a higher stock price than a traditional IPO",
+        "SPACs eliminate the need for any regulatory disclosure at all",
       ],
       correctIndex: 1,
       explanation:

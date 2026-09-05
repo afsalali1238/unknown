@@ -20,10 +20,10 @@ export const CLUSTER_AC: Node[] = [
       question:
         "What does Gödel's second incompleteness theorem say a consistent formal system capable of arithmetic can never do?",
       options: [
-        "Prove any true statement whatsoever — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Perform basic arithmetic operations correctly — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Prove any true statement whatsoever",
+        "Perform basic arithmetic operations correctly",
         "Prove its own consistency using only its own axioms and rules",
-        "Contain any false statements — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Contain any false statements",
       ],
       correctIndex: 2,
       explanation:
@@ -61,10 +61,10 @@ export const CLUSTER_AC: Node[] = [
       question:
         "Why can a positive result on an accurate test for a rare disease still mean you probably don't have it?",
       options: [
-        "Because a 99% accurate test becomes completely worthless whenever a disease is rare — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because a 99% accurate test becomes completely worthless whenever a disease is rare",
         "Because when a condition is rare enough, false positives from the healthy majority can outnumber true positives from the small number who are actually sick",
-        "Because probability theory doesn't meaningfully apply to individual medical diagnoses — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Because test accuracy always decreases mechanically as a condition becomes rarer — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because probability theory doesn't meaningfully apply to individual medical diagnoses",
+        "Because test accuracy always decreases mechanically as a condition becomes rarer",
       ],
       correctIndex: 1,
       explanation:
@@ -139,7 +139,7 @@ export const CLUSTER_AC: Node[] = [
     thesis:
       "Russell showed that naive set theory lets you define 'the set of all sets that don't contain themselves,' which both contains and doesn't contain itself — forcing mathematics to rebuild its foundations with stricter rules.",
     layer0:
-      "Gottlob Frege thought he had finished the foundations of mathematics. Russell mailed him a one-paragraph counterexample in 1901 that began with 'the set of all sets that do not contain themselves' — and Frege's system collapsed.",
+      "Gottlob Frege thought he had finished the foundations of mathematics. Russell found the counterexample in 1901 and mailed it to him in June 1902, as Frege's second volume was going to press: 'the set of all sets that do not contain themselves' — and Frege's system collapsed.",
     layer1:
       "Naive comprehension says any describable collection is a set. Russell's set R = {x | x ∉ x} breaks it: if R ∈ R then by definition R ∉ R, and if R ∉ R then R ∈ R. The paradox is not a word game; it exposed self-reference in the underlying logic, leading to type theory and Zermelo-Fraenkel's restricted comprehension. The lesson survives in product and org design: any system that can describe itself needs explicit rules to avoid self-contradictory definitions.",
     layer2:
@@ -148,9 +148,9 @@ export const CLUSTER_AC: Node[] = [
       question: "Why did Russell's set R = { x | x ∉ x } break Frege's naive set theory?",
       options: [
         "It cannot consistently be classified as either containing or not containing itself, contradicting the axiom that any describable collection is a set",
-        "It is simply too large to be a set, and mathematics already had a rule against sets above a certain size Without that condition, the same evidence would be.",
-        "It uses a symbol that was not defined in Frege's notation, so the paradox is merely a typo It holds only within the scope the author defines, not as a universal claim.",
-        "It only appears paradoxical if you assume the axiom of choice, which Frege had explicitly rejected This reading skips the enabling condition that makes the.",
+        "It is simply too large to be a set, and mathematics already had a rule against sets above a certain size",
+        "It uses a symbol that was not defined in Frege's notation, so the paradox is merely a typo",
+        "It only appears paradoxical if you assume the axiom of choice, which Frege had explicitly rejected",
       ],
       correctIndex: 0,
       explanation:
@@ -240,7 +240,7 @@ export const CLUSTER_AC: Node[] = [
     related: ["AC7", "AC5", "AA8", "D4"],
     furtherReading: [
       {
-        label: "Fractals: Form, Chance and Dimension (1977)",
+        label: "The Fractal Geometry of Nature (1982)",
         source: "Benoît Mandelbrot",
         url: "https://en.wikipedia.org/wiki/The_Fractal_Geometry_of_Nature",
         archive: { status: "unavailable" },
@@ -268,9 +268,9 @@ export const CLUSTER_AC: Node[] = [
       question: "Why does switching win 2/3 of the time in the Monty Hall problem?",
       options: [
         "The host's non-random action of opening a losing door transfers the 2/3 probability mass of the two unchosen doors onto the single remaining unchosen door",
-        "The host is trying to trick you, so the opposite of what he offers must be the better choice The distinction matters because it changes what you would measure to test the claim.",
-        "After one door is opened, the remaining two doors become symmetric, so each must be 50/50 Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "Switching only helps if the prize was randomly placed after you made your initial choice It holds only within the scope the author defines, not as a universal claim.",
+        "The host is trying to trick you, so the opposite of what he offers must be the better choice",
+        "After one door is opened, the remaining two doors become symmetric, so each must be 50/50",
+        "Switching only helps if the prize was randomly placed after you made your initial choice",
       ],
       correctIndex: 0,
       explanation:
@@ -308,9 +308,9 @@ export const CLUSTER_AC: Node[] = [
       question: "What is the practical consequence if P were proven equal to NP?",
       options: [
         "Every problem whose solution can be verified quickly could also be solved quickly, making most current optimization and cryptographic assumptions collapse",
-        "Computers would become infinitely fast and energy consumption would drop to zero Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "All NP problems would be proven to have no solution at all, formalizing their impossibility It holds only within the scope the author defines, not as a universal claim.",
-        "P vs NP only applies to abstract machines with no implications for real-world scheduling or routing This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Computers would become infinitely fast and energy consumption would drop to zero",
+        "All NP problems would be proven to have no solution at all, formalizing their impossibility",
+        "P vs NP only applies to abstract machines with no implications for real-world scheduling or routing",
       ],
       correctIndex: 0,
       explanation:

@@ -20,10 +20,10 @@ export const CLUSTER_AG: Node[] = [
       question:
         "What point was Sullivan actually making with 'form follows function' in his 1896 essay?",
       options: [
-        "Buildings should have no decoration whatsoever — a familiar retelling that strips out the contingency the source treats as central.",
-        "Function is less important than visual appeal — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Buildings should have no decoration whatsoever",
+        "Function is less important than visual appeal",
         "A structure's shape should be determined by its purpose, the way natural forms are shaped by what they need to do, not by inherited decorative convention",
-        "Ornament should be added only after a building's structural design is finished — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Ornament should be added only after a building's structural design is finished",
       ],
       correctIndex: 2,
       explanation:
@@ -66,10 +66,10 @@ export const CLUSTER_AG: Node[] = [
     quiz: {
       question: "What did Gibson mean by an 'affordance'?",
       options: [
-        "A visible label or instruction that explains how to use an object correctly — a frequent misremembering that swaps the cause and its consequence.",
+        "A visible label or instruction that explains how to use an object correctly",
         "A possibility for action that an object or environment directly offers a specific perceiver, perceived without first analyzing its neutral physical properties",
-        "The market price a customer is willing to afford for a product — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "A product feature that has been explicitly documented in a manual — a neat inversion that makes the effect sound like the cause.",
+        "The market price a customer is willing to afford for a product",
+        "A product feature that has been explicitly documented in a manual",
       ],
       correctIndex: 1,
       explanation:
@@ -113,9 +113,9 @@ export const CLUSTER_AG: Node[] = [
       question: "What distinction does Norman insist on between affordances and signifiers?",
       options: [
         "Affordances are what an object can do; signifiers are the perceptible cues that communicate what to do, and design fails when signifiers are missing",
-        "Affordances and signifiers are synonyms and any design can treat them interchangeably The distinction matters because it changes what you would measure to test the claim.",
-        "Signifiers are purely decorative and have no effect on whether a user can discover the correct action Without that condition, the same evidence would be.",
-        "Good design should hide all signifiers and force users to discover affordances through trial and error It holds only within the scope the author defines, not as.",
+        "Affordances and signifiers are synonyms and any design can treat them interchangeably",
+        "Signifiers are purely decorative and have no effect on whether a user can discover the correct action",
+        "Good design should hide all signifiers and force users to discover affordances through trial and error",
       ],
       correctIndex: 0,
       explanation:
@@ -125,9 +125,9 @@ export const CLUSTER_AG: Node[] = [
     related: ["AG4", "AG2", "AG1", "N5"],
     furtherReading: [
       {
-        label: "The Design of Everyday Things (1988)",
-        source: "Don Norman",
-        url: "https://jnd.org/books/design-of-everyday-things-revised/",
+        label: "The Design of Everyday Things, Revised and Expanded Edition (2013)",
+        source: "Don Norman (jnd.org)",
+        url: "https://jnd.org/books/the-design-of-everyday-things-revised-and-expanded-edition/",
         archive: { status: "unavailable" },
       },
     ],
@@ -194,9 +194,9 @@ export const CLUSTER_AG: Node[] = [
         "Why does Christensen argue segmentation by job outperforms segmentation by persona?",
       options: [
         "A job captures the causal struggling moment and desired progress that actually pulls a product into use, while personas describe attributes that predict attitudes but not behavior",
-        "Jobs are simply another word for personas and the two approaches are identical in predictive power It holds only within the scope the author defines, not as a universal claim.",
-        "Personas are illegal to collect under modern privacy regulations, so jobs are the only permissible alternative This reading skips the enabling condition that makes the mechanism work as stated.",
-        "Jobs focus exclusively on functional utility and ignore emotional or social dimensions of the hire The distinction matters because it changes what you would measure to test the claim.",
+        "Jobs are simply another word for personas and the two approaches are identical in predictive power",
+        "Personas are illegal to collect under modern privacy regulations, so jobs are the only permissible alternative",
+        "Jobs focus exclusively on functional utility and ignore emotional or social dimensions of the hire",
       ],
       correctIndex: 0,
       explanation:
@@ -206,9 +206,9 @@ export const CLUSTER_AG: Node[] = [
     related: ["AG6", "AG3", "A5", "A2"],
     furtherReading: [
       {
-        label: "Know Your Customers' Jobs to Be Done (2007, HBR)",
-        source: "Clayton Christensen",
-        url: "https://hbr.org/2007/12/know-your-customers-jobs-to-be-done",
+        label: "Know Your Customers' Jobs to Be Done (2016, HBR)",
+        source: "Christensen, Hall, Dillon & Duncan",
+        url: "https://hbr.org/2016/09/know-your-customers-jobs-to-be-done",
         archive: { status: "unavailable" },
       },
     ],
@@ -274,7 +274,7 @@ export const CLUSTER_AG: Node[] = [
     quiz: {
       question: "What does Gall's Law prescribe for building a complex working system?",
       options: [
-        "Start from a simple system that already works and evolve it incrementatively, rather than specifying the full complex system upfront",
+        "Start from a simple system that already works and evolve it incrementally, rather than specifying the full complex system upfront",
         "Design the full complex system in complete detail before building any part of it to ensure nothing is missed",
         "Complex systems work best when built entirely from scratch without reference to any simpler predecessor",
         "Gall's law only applies to biological systems and has no bearing on engineered products",

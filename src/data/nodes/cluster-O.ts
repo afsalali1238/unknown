@@ -19,10 +19,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is 'the absurd' in Camus's framework?",
       options: [
-        "The universe being fundamentally meaningless — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "A synonym for existentialism, the philosophical school Camus founded — a plausible reading that overlooks the limiting condition the text stresses.",
+        "The universe being fundamentally meaningless",
+        "A synonym for existentialism, the philosophical school Camus founded",
         "The collision between the human need for meaning and the universe's silent refusal to provide it",
-        "The feeling of humor Camus believed was the correct response to death — a familiar retelling that strips out the contingency the source treats as central.",
+        "The feeling of humor Camus believed was the correct response to death",
       ],
       correctIndex: 2,
       explanation:
@@ -74,9 +74,9 @@ export const CLUSTER_O: Node[] = [
       question:
         "What experiment does Metzinger use to show that even bodily 'ownership' is a constructed model rather than a fact?",
       options: [
-        "The Stanford Prison Experiment — a common simplification that omits the key mechanism behind the effect.",
-        "The Milgram obedience experiment — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Libet's experiment on the timing of conscious decisions — a plausible reading that overlooks the limiting condition the text stresses.",
+        "The Stanford Prison Experiment",
+        "The Milgram obedience experiment",
+        "Libet's experiment on the timing of conscious decisions",
         "The rubber-hand illusion, where subjects come to feel a fake hand is their own",
       ],
       correctIndex: 3,
@@ -129,8 +129,8 @@ export const CLUSTER_O: Node[] = [
       options: [
         "Their logic and IQ remained intact, but they lost the ability to make even simple decisions",
         "They lost the ability to speak but retained perfect emotional expression",
-        "They became unable to form new long-term memories — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "They experienced a complete loss of physical sensation — a plausible reading that overlooks the limiting condition the text stresses.",
+        "They became unable to form new long-term memories",
+        "They experienced a complete loss of physical sensation",
       ],
       correctIndex: 0,
       explanation:
@@ -275,9 +275,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What does Hoffman's peer-reviewed 'Fitness-Beats-Truth' theorem show?",
       options: [
-        "That accurate perception of reality always outcompetes fitness-tuned perception — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "That human perception is more accurate than that of any other species — a compact misstatement that leaves out the scope in which the claim holds.",
-        "That consciousness cannot be studied mathematically — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "That accurate perception of reality always outcompetes fitness-tuned perception",
+        "That human perception is more accurate than that of any other species",
+        "That consciousness cannot be studied mathematically",
         "That organisms tuned to perceive fitness-relevant information systematically outcompete organisms tuned to perceive reality accurately",
       ],
       correctIndex: 3,
@@ -328,9 +328,9 @@ export const CLUSTER_O: Node[] = [
       question: "What does Sartre mean by 'existence precedes essence'?",
       options: [
         "A human being exists first, with no predetermined nature, and defines their essence only through the choices they make",
-        "Humans are born with a fixed purpose that they gradually discover — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Essence and existence are identical concepts in his philosophy — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Human nature is entirely determined by God's design — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Humans are born with a fixed purpose that they gradually discover",
+        "Essence and existence are identical concepts in his philosophy",
+        "Human nature is entirely determined by God's design",
       ],
       correctIndex: 0,
       explanation:
@@ -381,10 +381,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "According to Kierkegaard, what makes despair so dangerous?",
       options: [
-        "It always causes visible sadness that others can identify — a neat inversion that makes the effect sound like the cause.",
+        "It always causes visible sadness that others can identify",
         "It is a structural failure in the self's relation to itself, and the person carrying it often doesn't know they have it",
-        "It only affects people who have failed at their goals — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "It is identical to clinical depression — a compact misstatement that leaves out the scope in which the claim holds.",
+        "It only affects people who have failed at their goals",
+        "It is identical to clinical depression",
       ],
       correctIndex: 1,
       explanation:
@@ -436,10 +436,10 @@ export const CLUSTER_O: Node[] = [
       question:
         "What problem was Beauvoir specifically trying to solve in The Ethics of Ambiguity?",
       options: [
-        "How to prove that free will exists — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "How to reconcile existentialism with Christian theology — a neat inversion that makes the effect sound like the cause.",
+        "How to prove that free will exists",
+        "How to reconcile existentialism with Christian theology",
         "How existentialism, which denies fixed values, can still ground an ethics rather than collapsing into 'anything goes'",
-        "How to define happiness scientifically — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "How to define happiness scientifically",
       ],
       correctIndex: 2,
       explanation:
@@ -490,9 +490,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is the core discipline Marcus Aurelius repeatedly practices in Meditations?",
       options: [
-        "Avoiding all difficult emotions through meditation techniques — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Withdrawing from public and political life to focus on philosophy — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Proving the existence of the Stoic gods through logic — a frequent misremembering that swaps the cause and its consequence.",
+        "Avoiding all difficult emotions through meditation techniques",
+        "Withdrawing from public and political life to focus on philosophy",
+        "Proving the existence of the Stoic gods through logic",
         "Separating what is in your control (judgments, reactions) from what isn't (external events), and only directing effort at the former",
       ],
       correctIndex: 3,
@@ -545,9 +545,9 @@ export const CLUSTER_O: Node[] = [
       question: "What does Seneca mean by 'we are not given a short life, but we make it short'?",
       options: [
         "Most of a life's real length is lost to distraction, obligation, and postponement, not to its actual duration",
-        "Human lifespans are naturally too brief for meaningful accomplishment — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Only wealthy people have the luxury of a long life — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Death should be avoided through healthy living — a frequent misremembering that swaps the cause and its consequence.",
+        "Human lifespans are naturally too brief for meaningful accomplishment",
+        "Only wealthy people have the luxury of a long life",
+        "Death should be avoided through healthy living",
       ],
       correctIndex: 0,
       explanation:
@@ -598,10 +598,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What does the Tao Te Ching's image of water illustrate?",
       options: [
-        "That physical strength always overcomes obstacles eventually — a widely circulated summary that inverts the relationship the author actually defends.",
+        "That physical strength always overcomes obstacles eventually",
         "That yielding, low-friction action can be more powerful over time than direct force, because it avoids generating resistance",
-        "That emotions should be suppressed to achieve inner peace — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "That leaders should remain completely passive and never act — a plausible reading that overlooks the limiting condition the text stresses.",
+        "That emotions should be suppressed to achieve inner peace",
+        "That leaders should remain completely passive and never act",
       ],
       correctIndex: 1,
       explanation:
@@ -706,9 +706,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is Nietzsche most worried about when he declares 'God is dead'?",
       options: [
-        "That people will stop believing in an afterlife — a compact misstatement that leaves out the scope in which the claim holds.",
-        "That religious institutions will lose political power — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "That science will fail to explain the universe — a widely circulated summary that inverts the relationship the author actually defends.",
+        "That people will stop believing in an afterlife",
+        "That religious institutions will lose political power",
+        "That science will fail to explain the universe",
         "Nihilism — the collapse of meaning and values once their traditional foundation is gone, with nothing yet built to replace it",
       ],
       correctIndex: 3,
@@ -761,9 +761,9 @@ export const CLUSTER_O: Node[] = [
       question: "What is the 'hard problem of consciousness' as defined by Chalmers?",
       options: [
         "Explaining why physical processing is accompanied by subjective experience at all, beyond just explaining the functions themselves",
-        "The difficulty of measuring brain activity accurately — a compact misstatement that leaves out the scope in which the claim holds.",
-        "The technical challenge of building conscious AI — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Determining which animals are capable of feeling pain — a widely circulated summary that inverts the relationship the author actually defends.",
+        "The difficulty of measuring brain activity accurately",
+        "The technical challenge of building conscious AI",
+        "Determining which animals are capable of feeling pain",
       ],
       correctIndex: 0,
       explanation:
@@ -814,10 +814,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What does Mill's utilitarianism use to judge whether an action is right or wrong?",
       options: [
-        "The intentions behind the action, regardless of outcome — a handy abbreviation that hides the counter-condition the argument requires.",
+        "The intentions behind the action, regardless of outcome",
         "Whether it produces the greatest net happiness for the greatest number of people affected",
-        "Whether it follows a fixed set of moral rules — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Whether it is legal in the jurisdiction where it occurs — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Whether it follows a fixed set of moral rules",
+        "Whether it is legal in the jurisdiction where it occurs",
       ],
       correctIndex: 1,
       explanation:
@@ -868,10 +868,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What does Kant's categorical imperative test for?",
       options: [
-        "Whether an action produces the best overall outcome — a neat inversion that makes the effect sound like the cause.",
-        "Whether an action is legal in a given society — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Whether an action produces the best overall outcome",
+        "Whether an action is legal in a given society",
         "Whether the underlying principle behind an action could be willed to become a universal law that everyone follows",
-        "Whether an action makes the person performing it happy — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Whether an action makes the person performing it happy",
       ],
       correctIndex: 2,
       explanation:
@@ -977,9 +977,9 @@ export const CLUSTER_O: Node[] = [
       question: "What is Locke's central claim about the mind at birth?",
       options: [
         "It is a blank slate with no innate ideas; all knowledge derives from sensory experience and reflection on it",
-        "It contains innate knowledge of God, logic, and morality — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "It is pre-programmed with mathematical truths — a neat inversion that makes the effect sound like the cause.",
-        "It cannot acquire any reliable knowledge at all — a handy abbreviation that hides the counter-condition the argument requires.",
+        "It contains innate knowledge of God, logic, and morality",
+        "It is pre-programmed with mathematical truths",
+        "It cannot acquire any reliable knowledge at all",
       ],
       correctIndex: 0,
       explanation:
@@ -1030,9 +1030,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What survives Descartes's process of radical doubt in the Meditations?",
       options: [
-        "The reliability of sensory experience — a neat inversion that makes the effect sound like the cause.",
-        "The fact that he is thinking, and therefore exists — a handy abbreviation that hides the counter-condition the argument requires.",
-        "The existence of God, proven first — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "The reliability of sensory experience",
+        "The fact that he is thinking, and therefore exists",
+        "The existence of God, proven first",
         "Nothing; Descartes concludes certain knowledge is impossible",
       ],
       correctIndex: 1,
@@ -1084,10 +1084,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is Hume's central problem with our belief in cause and effect?",
       options: [
-        "Cause and effect don't exist at all — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Causation only applies to physical objects, not human behavior — a neat inversion that makes the effect sound like the cause.",
+        "Cause and effect don't exist at all",
+        "Causation only applies to physical objects, not human behavior",
         "We never directly observe causation itself, only the constant conjunction of two events, and our belief in causal connection can't be justified by pure reason or past experience alone",
-        "Scientists have proven causation is always an illusion — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Scientists have proven causation is always an illusion",
       ],
       correctIndex: 2,
       explanation:
@@ -1139,9 +1139,9 @@ export const CLUSTER_O: Node[] = [
       question:
         "According to Hobbes, why do rational individuals agree to submit to a sovereign authority?",
       options: [
-        "Because the sovereign is chosen by God and deserves obedience — a familiar retelling that strips out the contingency the source treats as central.",
-        "Because a sovereign guarantees equal wealth distribution — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Because Hobbes believed democracy was the only legitimate form of government — a neat inversion that makes the effect sound like the cause.",
+        "Because the sovereign is chosen by God and deserves obedience",
+        "Because a sovereign guarantees equal wealth distribution",
+        "Because Hobbes believed democracy was the only legitimate form of government",
         "Because life without a common power to enforce order collapses into a war of all against all, and any stable authority is better than that chaos",
       ],
       correctIndex: 3,
@@ -1194,9 +1194,9 @@ export const CLUSTER_O: Node[] = [
       question: "What is Rawls's 'veil of ignorance' thought experiment used to determine?",
       options: [
         "What principles of justice rational people would choose for a society if they didn't know what position they'd occupy within it",
-        "The best strategy for winning a negotiation — a familiar retelling that strips out the contingency the source treats as central.",
-        "Whether democracy is superior to other forms of government — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "How to eliminate all forms of inequality immediately — a neat inversion that makes the effect sound like the cause.",
+        "The best strategy for winning a negotiation",
+        "Whether democracy is superior to other forms of government",
+        "How to eliminate all forms of inequality immediately",
       ],
       correctIndex: 0,
       explanation:
@@ -1245,10 +1245,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "How does Panpsychism solve the 'Hard Problem' of consciousness?",
       options: [
-        "By proving that consciousness is merely an illusion generated by software. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "By proving that consciousness is merely an illusion generated by software.",
         "By suggesting that consciousness is a fundamental property of matter, meaning it doesn't need to 'magically' emerge from dead atoms.",
-        "By showing that only organisms with complex nervous systems can process information. — a familiar retelling that strips out the contingency the source treats as central.",
-        "By relying on quantum mechanics to explain free will. — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "By showing that only organisms with complex nervous systems can process information.",
+        "By relying on quantum mechanics to explain free will.",
       ],
       correctIndex: 1,
       explanation:
@@ -1290,9 +1290,9 @@ export const CLUSTER_O: Node[] = [
       question:
         "According to Winnicott, why is a 'perfect' parent actually harmful to a developing child?",
       options: [
-        "Because perfection is impossible, so the parent will eventually suffer burnout. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because it makes the child too independent too quickly. — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Because the child will realize the parent is faking their perfection. — a frequent misremembering that swaps the cause and its consequence.",
+        "Because perfection is impossible, so the parent will eventually suffer burnout.",
+        "Because it makes the child too independent too quickly.",
+        "Because the child will realize the parent is faking their perfection.",
         "Because the child will never experience the necessary, tolerable frustrations required to develop resilience and self-soothing.",
       ],
       correctIndex: 3,
@@ -1335,10 +1335,10 @@ export const CLUSTER_O: Node[] = [
       question:
         "How does a 'Classicist' view a long-term relationship differently than a 'Romantic'?",
       options: [
-        "A Classicist believes in finding a perfect soulmate, while a Romantic settles for whoever is closest. — a common simplification that omits the key mechanism behind the effect.",
+        "A Classicist believes in finding a perfect soulmate, while a Romantic settles for whoever is closest.",
         "A Classicist believes love is a choice built on compromise and realistic expectations, while a Romantic believes it must be based on constant, passionate feeling.",
-        "A Classicist relies entirely on horoscopes to choose a partner. — a plausible reading that overlooks the limiting condition the text stresses.",
-        "A Classicist avoids relationships entirely to focus on their career. — a frequent misremembering that swaps the cause and its consequence.",
+        "A Classicist relies entirely on horoscopes to choose a partner.",
+        "A Classicist avoids relationships entirely to focus on their career.",
       ],
       correctIndex: 1,
       explanation:
@@ -1379,9 +1379,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is the metaphorical lesson of Schopenhauer's Porcupine Dilemma?",
       options: [
-        "Humans should remain entirely isolated to avoid getting hurt. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "We must completely dull our 'quills' (flaws) before we are worthy of love. — a common simplification that omits the key mechanism behind the effect.",
-        "The coldness of the universe makes all human relationships ultimately meaningless. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Humans should remain entirely isolated to avoid getting hurt.",
+        "We must completely dull our 'quills' (flaws) before we are worthy of love.",
+        "The coldness of the universe makes all human relationships ultimately meaningless.",
         "Intimacy is a delicate balance of finding the right psychological distance to share warmth without inflicting too much pain on each other.",
       ],
       correctIndex: 3,
@@ -1425,9 +1425,9 @@ export const CLUSTER_O: Node[] = [
         "Why does Rilke advise against frantically searching for the answers to life's biggest dilemmas?",
       options: [
         "Because even if someone gave you the answer, you lack the lived experience required to actually understand and embody it.",
-        "Because the answers to life's questions do not actually exist. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "Because asking questions is a sign of philosophical weakness. — a common simplification that omits the key mechanism behind the effect.",
-        "Because the universe is inherently chaotic and randomly assigns fates. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because the answers to life's questions do not actually exist.",
+        "Because asking questions is a sign of philosophical weakness.",
+        "Because the universe is inherently chaotic and randomly assigns fates.",
       ],
       correctIndex: 0,
       explanation:
@@ -1513,9 +1513,9 @@ export const CLUSTER_O: Node[] = [
       question:
         "What operational test does Al-Beik propose for judging whether a technology or system is genuinely 'people-first'?",
       options: [
-        "Whether the system generates the most revenue for its owners. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "Whether the system uses the most advanced AI available. — a common simplification that omits the key mechanism behind the effect.",
-        "Whether the system has the fewest number of steps to complete a task. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Whether the system generates the most revenue for its owners.",
+        "Whether the system uses the most advanced AI available.",
+        "Whether the system has the fewest number of steps to complete a task.",
         "Whether the system is designed for a person who is allowed to change their mind, rather than one whose past behavior is assumed to fix their future.",
       ],
       correctIndex: 3,
@@ -1559,9 +1559,9 @@ export const CLUSTER_O: Node[] = [
       question:
         "What structural feature distinguishes this compilation from a typical inspirational Stoic-quotes list?",
       options: [
-        "It only includes quotes from Marcus Aurelius. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "It only includes quotes from Marcus Aurelius.",
         "It rejects all classical Stoic sources in favor of modern reinterpretations.",
-        "It is written entirely in the first person as a diary. — a common simplification that omits the key mechanism behind the effect.",
+        "It is written entirely in the first person as a diary.",
         "Each Stoic principle is paired with a specific, concrete action item to apply it immediately.",
       ],
       correctIndex: 3,
@@ -1605,10 +1605,10 @@ export const CLUSTER_O: Node[] = [
       question:
         "In the Empty Boat parable, what specifically causes the man's anger to disappear once he sees the second boat is empty?",
       options: [
-        "He realizes his own boat wasn't actually damaged. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "He realizes his own boat wasn't actually damaged.",
         "He realizes there is no intentional actor behind the collision — the harm was identical, but the absence of perceived intent removes the target for his anger.",
-        "He decides to no longer care about his boat at all. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "The empty boat apologizes to him. — a common simplification that omits the key mechanism behind the effect.",
+        "He decides to no longer care about his boat at all.",
+        "The empty boat apologizes to him.",
       ],
       correctIndex: 1,
       explanation:

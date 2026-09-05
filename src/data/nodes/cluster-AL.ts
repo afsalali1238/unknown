@@ -20,10 +20,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "According to Getting to Yes, why does focusing on 'interests' instead of 'positions' open up more possible solutions?",
       options: [
-        "Interests are easier to fake than positions, so negotiators can bluff more effectively — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Positions are illegal to discuss in most formal negotiations — a neat inversion that makes the effect sound like the cause.",
+        "Interests are easier to fake than positions, so negotiators can bluff more effectively",
+        "Positions are illegal to discuss in most formal negotiations",
         "A stated position is usually just one solution to an underlying need, and that same need can often be met several other ways once it's made explicit",
-        "Interests always favor the party who reveals them first — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Interests always favor the party who reveals them first",
       ],
       correctIndex: 2,
       explanation:
@@ -105,9 +105,9 @@ export const CLUSTER_AL: Node[] = [
         "Why does getting someone to make a small, voluntary commitment early make them more likely to agree to a bigger related request later?",
       options: [
         "Once someone has acted or stated a position publicly, staying consistent with that self-image becomes a powerful internal pressure, even when the new request is much larger",
-        "It creates a legal obligation to comply with future requests — a familiar retelling that strips out the contingency the source treats as central.",
-        "Small commitments are usually forgotten, so people default to agreeing anyway — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "It has no real effect — a neat inversion that makes the effect sound like the cause.",
+        "It creates a legal obligation to comply with future requests",
+        "Small commitments are usually forgotten, so people default to agreeing anyway",
+        "It has no real effect",
       ],
       correctIndex: 0,
       explanation:
@@ -145,10 +145,10 @@ export const CLUSTER_AL: Node[] = [
     quiz: {
       question: "What does Cialdini mean by a 'privileged moment' in Pre-Suasion?",
       options: [
-        "A legal loophole that makes a contract unenforceable — a plausible reading that overlooks the limiting condition the text stresses.",
+        "A legal loophole that makes a contract unenforceable",
         "A brief window right before a request where directing someone's attention to a related concept increases the odds they'll agree to what follows",
-        "The exact instant a negotiation legally becomes binding — a familiar retelling that strips out the contingency the source treats as central.",
-        "A moment when persuasion techniques stop working entirely — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "The exact instant a negotiation legally becomes binding",
+        "A moment when persuasion techniques stop working entirely",
       ],
       correctIndex: 1,
       explanation:
@@ -187,10 +187,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Shell argue that knowing your default negotiating style matters, even before learning any specific tactics?",
       options: [
-        "Because only one style — an appealing shorthand that collapses a structural distinction into a surface similarity The distinction matters because it changes what you would measure to test the claim.",
-        "Negotiating styles are fixed at birth and cannot be adjusted — a plausible reading that overlooks the limiting condition the text stresses Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Because only one style — hard competitive bargaining — reliably wins, so everyone should learn to adopt it",
+        "Negotiating styles are fixed at birth and cannot be adjusted, so knowing yours only tells you which deals to avoid",
         "Most people unconsciously default to the same style in every negotiation regardless of fit, so recognizing that default is a precondition for choosing the style the situation actually requires",
-        "Style doesn't affect outcomes — a familiar retelling that strips out the contingency the source treats as central This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Style doesn't affect outcomes, so the audit is purely a self-awareness exercise with no tactical payoff",
       ],
       correctIndex: 2,
       explanation:
@@ -229,9 +229,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "According to Jim Camp, why does inviting the other side to say 'no' strengthen a negotiation?",
       options: [
-        "'No' always means the deal is permanently dead — a common simplification that omits the key mechanism behind the effect.",
-        "It is a legal requirement in formal business negotiations — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Saying no is a sign the negotiator has lost control of the conversation — a plausible reading that overlooks the limiting condition the text stresses.",
+        "'No' always means the deal is permanently dead",
+        "It is a legal requirement in formal business negotiations",
+        "Saying no is a sign the negotiator has lost control of the conversation",
         "It removes the pressure of a forced yes, which makes the other party more comfortable being honest and more willing to genuinely engage, rather than agreeing just to escape discomfort",
       ],
       correctIndex: 3,
@@ -271,9 +271,9 @@ export const CLUSTER_AL: Node[] = [
       question: "Why does Cohen argue that most concessions happen near a negotiation's deadline?",
       options: [
         "Time pressure builds asymmetrically as a deadline approaches, and the side under more time pressure typically concedes more to avoid losing the deal entirely",
-        "Deadlines are legally required to trigger a final offer — a common simplification that omits the key mechanism behind the effect.",
-        "Negotiators get bored and stop paying attention near deadlines — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Deadlines have no measurable effect on negotiation outcomes — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Deadlines are legally required to trigger a final offer",
+        "Negotiators get bored and stop paying attention near deadlines",
+        "Deadlines have no measurable effect on negotiation outcomes",
       ],
       correctIndex: 0,
       explanation:
@@ -312,10 +312,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "According to Crucial Conversations, what typically triggers people to shift into 'silence' or 'violence' during a high-stakes conversation?",
       options: [
-        "A lack of vocabulary to express their opinion — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "A lack of vocabulary to express their opinion",
         "A feeling that psychological safety has broken down — that mutual purpose or mutual respect is at risk — which distorts communication into withholding or attacking regardless of the topic itself",
-        "Disagreeing with the other person is inherently violent — a common simplification that omits the key mechanism behind the effect.",
-        "Running out of time to finish the conversation — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Disagreeing with the other person is inherently violent",
+        "Running out of time to finish the conversation",
       ],
       correctIndex: 1,
       explanation:
@@ -354,10 +354,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does the book argue the 'What Happened' conversation is usually unwinnable as a dispute over facts?",
       options: [
-        "Because facts don't matter in interpersonal conflict — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Because memory is always completely unreliable — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because facts don't matter in interpersonal conflict",
+        "Because memory is always completely unreliable",
         "Because both parties typically experienced genuinely different, information-shaped versions of the same event, so debating whose version is 'true' misses that both can be honestly held",
-        "Because only one person is ever telling the truth in any disagreement — a common simplification that omits the key mechanism behind the effect.",
+        "Because only one person is ever telling the truth in any disagreement",
       ],
       correctIndex: 2,
       explanation:
@@ -396,9 +396,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Rosenberg's method separate 'observation' from 'evaluation' as a first step?",
       options: [
-        "Because evaluations are always factually incorrect — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Because the law requires neutral language in formal disputes — a neat inversion that makes the effect sound like the cause.",
-        "Because observations are easier to remember than feelings — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because evaluations are always factually incorrect",
+        "Because the law requires neutral language in formal disputes",
+        "Because observations are easier to remember than feelings",
         "Because stating a judgment ('you're inconsiderate') rather than a neutral fact ('you were 20 minutes late') triggers defensiveness and shuts down the actual need underneath the complaint",
       ],
       correctIndex: 3,
@@ -439,9 +439,9 @@ export const CLUSTER_AL: Node[] = [
         "According to Malhotra, what do successful resolutions of 'impossible' negotiations typically have in common?",
       options: [
         "They change the game itself — the process, the players, or the frame of what's being negotiated — rather than just arguing harder for the same position within the existing structure",
-        "One side eventually applies overwhelming pressure until the other concedes — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "A neutral third party always makes the final binding decision — a neat inversion that makes the effect sound like the cause.",
-        "Both sides simply wait until the deadline forces a compromise — a handy abbreviation that hides the counter-condition the argument requires.",
+        "One side eventually applies overwhelming pressure until the other concedes",
+        "A neutral third party always makes the final binding decision",
+        "Both sides simply wait until the deadline forces a compromise",
       ],
       correctIndex: 0,
       explanation:
@@ -480,10 +480,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "What is the key difference between Lax and Sebenius's '3-D' (setup) and '1-D' (tactics) dimensions of negotiation?",
       options: [
-        "3-D refers to negotiating in person versus 1-D negotiating by phone — a frequent misremembering that swaps the cause and its consequence It holds only within the scope the author defines, not as a universal claim.",
+        "3-D refers to negotiating in person versus 1-D negotiating by phone",
         "1-D is what happens at the table — moves, framing, persuasion — while 3-D happens before the table, shaping who's involved and what alternatives exist so the eventual table conversation is set up to succeed",
-        "1-D only applies to business deals, 3-D only to personal disputes — a surface-level gloss that misses the threshold where the claim stops applying The distinction matters because it changes what you would measure to test the claim.",
-        "There is no meaningful difference; the terms are interchangeable — a neat inversion that makes the effect sound like the cause Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "1-D only applies to business deals, 3-D only to personal disputes",
+        "There is no meaningful difference; the terms are interchangeable",
       ],
       correctIndex: 1,
       explanation:
@@ -522,10 +522,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Grant argue that 'otherish' givers outperform both takers and self-sacrificing givers over time?",
       options: [
-        "Because giving is always immediately rewarded with reciprocal favors — a plausible reading that overlooks the limiting condition the text stresses This reading skips the enabling condition that makes the mechanism work as stated.",
-        "Because takers always fail in the long run regardless of skill — a frequent misremembering that swaps the cause and its consequence The distinction matters because it changes what you would measure to test the claim.",
+        "Because giving is always immediately rewarded with reciprocal favors",
+        "Because takers always fail in the long run regardless of skill",
         "Because they combine generosity with protecting their own interests and time, which avoids the burnout and exploitation that sink self-sacrificing givers while still building the reputation and trust that compound into long-term advantage",
-        "Because matchers are statistically the most successful group overall — a surface-level gloss that misses the threshold where the claim stops applying It holds only within the scope the author defines, not as a universal claim.",
+        "Because matchers are statistically the most successful group overall",
       ],
       correctIndex: 2,
       explanation:
@@ -564,9 +564,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Nalebuff argue the pie — the value created specifically by the deal — should be split equally, even between parties of very different size?",
       options: [
-        "Because larger parties are legally required to give smaller ones an equal share — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because equal splits are always easier to calculate than proportional ones — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Because the smaller party in any deal deserves compensation for the size difference — a frequent misremembering that swaps the cause and its consequence.",
+        "Because larger parties are legally required to give smaller ones an equal share",
+        "Because equal splits are always easier to calculate than proportional ones",
+        "Because the smaller party in any deal deserves compensation for the size difference",
         "Because neither party could have generated that specific incremental value alone, so the surplus created jointly belongs equally to both, regardless of each party's separate size or leverage outside the deal",
       ],
       correctIndex: 3,
@@ -606,9 +606,9 @@ export const CLUSTER_AL: Node[] = [
       question: "What is the 'Yes-No-Yes' structure Ury proposes for a 'Positive No'?",
       options: [
         "Affirming what you value first, then stating a clear no to the specific request, then offering a positive alternative or path forward — protecting both the relationship and your actual interests",
-        "Saying yes twice to soften the eventual no so it's barely noticed — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Asking the other person to say yes twice before you'll consider saying no — a plausible reading that overlooks the limiting condition the text stresses.",
-        "A negotiation tactic used only in legal contract disputes — a frequent misremembering that swaps the cause and its consequence.",
+        "Saying yes twice to soften the eventual no so it's barely noticed",
+        "Asking the other person to say yes twice before you'll consider saying no",
+        "A negotiation tactic used only in legal contract disputes",
       ],
       correctIndex: 0,
       explanation:
@@ -647,10 +647,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does asking someone for a small favor (the 'Ben Franklin effect') tend to make them like you more, according to this line of research?",
       options: [
-        "Because people enjoy being asked for favors more than giving compliments — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because people enjoy being asked for favors more than giving compliments",
         "Because people resolve the discomfort of having helped someone by unconsciously concluding they must like that person, since helping someone you dislike feels inconsistent",
-        "Because favors create a binding legal obligation between two people — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because it has no measurable effect on liking at all — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because favors create a binding legal obligation between two people",
+        "Because it has no measurable effect on liking at all",
       ],
       correctIndex: 1,
       explanation:
@@ -690,10 +690,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "What does Sun Tzu mean by 'the supreme art of war is to subdue the enemy without fighting'?",
       options: [
-        "That armies should always avoid combat under any circumstances — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "That war is fundamentally unwinnable and should never be attempted — a widely circulated summary that inverts the relationship the author actually defends.",
+        "That armies should always avoid combat under any circumstances",
+        "That war is fundamentally unwinnable and should never be attempted",
         "That the highest form of strategic victory comes from positioning, intelligence, and shaping conditions so favorably that the opponent is defeated or deterred before any direct confrontation is even necessary",
-        "That negotiation and warfare have no meaningful strategic overlap — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "That negotiation and warfare have no meaningful strategic overlap",
       ],
       correctIndex: 2,
       explanation:
@@ -732,9 +732,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does the Heath brothers' SUCCESS framework argue that concrete, sensory language outperforms abstract statistics for persuasion?",
       options: [
-        "Because abstract statistics are usually inaccurate — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Because audiences distrust numbers on principle — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Because concrete language is required by advertising law — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because abstract statistics are usually inaccurate",
+        "Because audiences distrust numbers on principle",
+        "Because concrete language is required by advertising law",
         "Because concrete, specific images are easier for the brain to encode, remember, and mentally simulate than abstract claims, which makes them more likely to be recalled and acted on later",
       ],
       correctIndex: 3,
@@ -775,9 +775,9 @@ export const CLUSTER_AL: Node[] = [
         "Why does Heinrichs argue that logos (logical argument) alone rarely persuades an audience?",
       options: [
         "Because a logically sound argument that the audience doesn't trust the speaker on, or doesn't feel emotionally invested in, still fails to move people to act, since decisions are made emotionally and rationalized afterward",
-        "Because logic is always factually incorrect — a compact misstatement that leaves out the scope in which the claim holds It holds only within the scope the author defines, not as a universal claim.",
-        "Because audiences cannot process logical arguments at all — an intuitive gloss that confuses the enabling condition with the outcome This reading skips the enabling condition that makes the mechanism work as stated.",
-        "Because logos only applies to written arguments, not spoken ones — a widely circulated summary that inverts the relationship the author actually defends The distinction matters because it changes what you would measure to test the claim.",
+        "Because logic is always factually incorrect",
+        "Because audiences cannot process logical arguments at all",
+        "Because logos only applies to written arguments, not spoken ones",
       ],
       correctIndex: 0,
       explanation:
@@ -817,10 +817,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why did citing 'the majority of guests in this room' outperform a generic environmental appeal in the hotel towel-reuse experiments?",
       options: [
-        "Because guests dislike environmental messaging on principle — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because guests dislike environmental messaging on principle",
         "Because specific, local social proof (people like me, in this exact situation) is a stronger behavioral cue than an abstract appeal to values, since it signals what similar others are actually doing right now",
-        "Because the towel signs were printed in a larger font — a common simplification that omits the key mechanism behind the effect.",
-        "Because guests were legally obligated to comply with posted hotel policies — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because the towel signs were printed in a larger font",
+        "Because guests were legally obligated to comply with posted hotel policies",
       ],
       correctIndex: 1,
       explanation:

@@ -20,10 +20,10 @@ export const CLUSTER_E: Node[] = [
       question:
         "Why doesn't the Black-Scholes formula require knowing an investor's risk tolerance or the stock's expected future return?",
       options: [
-        "Because options are always priced at a fixed government-set rate — a widely circulated summary that inverts the relationship the author actually defends.",
-        "Because the formula only applies to options that are guaranteed to expire worthless — a common simplification that omits the key mechanism behind the effect.",
+        "Because options are always priced at a fixed government-set rate",
+        "Because the formula only applies to options that are guaranteed to expire worthless",
         "Because it prices the option via a riskless hedge whose return must equal the risk-free rate regardless of investor preferences — only volatility, not expected return, matters",
-        "Because Black and Scholes assumed all investors are risk-neutral by law — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because Black and Scholes assumed all investors are risk-neutral by law",
       ],
       correctIndex: 2,
       explanation:
@@ -75,9 +75,9 @@ export const CLUSTER_E: Node[] = [
       question:
         "What is the practical danger of confusing closely related finance terms, such as liquidity and solvency?",
       options: [
-        "There is no real danger; the terms are interchangeable in practice. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "It only matters for accountants, not investors. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "It affects tax filings but nothing else. — a common simplification that omits the key mechanism behind the effect.",
+        "There is no real danger; the terms are interchangeable in practice.",
+        "It only matters for accountants, not investors.",
+        "It affects tax filings but nothing else.",
         "Conflating two distinct concepts can lead to badly misjudging how serious a company's financial problem actually is.",
       ],
       correctIndex: 3,
@@ -120,10 +120,10 @@ export const CLUSTER_E: Node[] = [
     quiz: {
       question: "What is the primary blind spot of EBITDA as a performance metric?",
       options: [
-        "It excludes revenue entirely from the calculation. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "It excludes revenue entirely from the calculation.",
         "It is not actual cash flow and excludes capital expenditures, which can make capital-intensive businesses look more efficient than their true cash generation supports.",
-        "It cannot be calculated for private companies. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "It only applies to companies with no debt. — a common simplification that omits the key mechanism behind the effect.",
+        "It cannot be calculated for private companies.",
+        "It only applies to companies with no debt.",
       ],
       correctIndex: 1,
       explanation:
@@ -165,10 +165,10 @@ export const CLUSTER_E: Node[] = [
     quiz: {
       question: "Why can a company be profitable on paper but still fail from a cash problem?",
       options: [
-        "Because profit and cash are always identical figures. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Because profit and cash are always identical figures.",
         "Because profit is an accounting measure while cash tracks actual liquid money on hand, and timing gaps (delayed payments, prepayments) mean the two can diverge significantly.",
-        "Because revenue always equals cash by definition. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Because cash flow is irrelevant to business survival. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because revenue always equals cash by definition.",
+        "Because cash flow is irrelevant to business survival.",
       ],
       correctIndex: 1,
       explanation:
@@ -211,10 +211,10 @@ export const CLUSTER_E: Node[] = [
       question:
         "Why would a pre-revenue startup typically be valued using the Berkus method rather than a DCF?",
       options: [
-        "Because DCF is illegal to use on startups. — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Because the Berkus method always produces a higher valuation. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Because DCF is illegal to use on startups.",
+        "Because the Berkus method always produces a higher valuation.",
         "Because DCF requires projecting future cash flows, which is mostly unfounded assumption-stacking without a revenue history to anchor it, while Berkus scores qualitative risk factors instead.",
-        "Because startups don't have any assets to value. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because startups don't have any assets to value.",
       ],
       correctIndex: 2,
       explanation:
@@ -339,9 +339,9 @@ export const CLUSTER_E: Node[] = [
         "Why does the Kelly Criterion recommend betting less than full expected-value maximization would suggest?",
       options: [
         "To maximize long-run geometric growth, since overbetting increases volatility drag and can wipe out compounding even with a positive edge",
-        "Because any bet above Kelly is guaranteed to lose money on every single trial — a precise misstatement that ignores the probabilistic nature of the edge.",
-        "Kelly only applies to horse racing and has no relevance to investing or bankroll management — a narrow reading that confuses the original example with the general principle.",
-        "The criterion argues you should always bet your entire bankroll to maximize short-term expected value — a common inversion that maximizes arithmetic expectation at the cost of geometric compounding.",
+        "Because any bet above Kelly is guaranteed to lose money on every single trial",
+        "Kelly only applies to horse racing and has no relevance to investing or bankroll management",
+        "The criterion argues you should always bet your entire bankroll to maximize short-term expected value",
       ],
       correctIndex: 0,
       explanation:

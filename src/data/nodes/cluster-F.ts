@@ -19,9 +19,9 @@ export const CLUSTER_F: Node[] = [
     quiz: {
       question: "What was radical about Shannon's approach to defining 'information'?",
       options: [
-        "He defined information based on how emotionally important a message was to the receiver — a familiar retelling that strips out the contingency the source treats as central.",
-        "He argued information could only be transmitted without any noise at all — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "He proved that analog signals are always more reliable than digital ones — a neat inversion that makes the effect sound like the cause.",
+        "He defined information based on how emotionally important a message was to the receiver",
+        "He argued information could only be transmitted without any noise at all",
+        "He proved that analog signals are always more reliable than digital ones",
         "He measured information purely by how surprising/unpredictable it was (its entropy), deliberately ignoring the actual meaning or content of the message",
       ],
       correctIndex: 3,
@@ -69,9 +69,9 @@ export const CLUSTER_F: Node[] = [
         "Why did Berners-Lee's hypertext system deliberately avoid having a central index of all links?",
       options: [
         "A central index would have required someone's permission or registration for every link, creating a bottleneck; without one, the system could scale without a single point of failure, at the cost of links sometimes breaking",
-        "CERN's computers weren't powerful enough to maintain a central index — a familiar retelling that strips out the contingency the source treats as central This reading skips the enabling condition that makes the mechanism work as stated.",
-        "Central indexes were against CERN's official research policy — a surface-level gloss that misses the threshold where the claim stops applying The distinction matters because it changes what you would measure to test the claim.",
-        "It was a temporary limitation later fixed by search engines — a neat inversion that makes the effect sound like the cause Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "CERN's computers weren't powerful enough to maintain a central index",
+        "Central indexes were against CERN's official research policy",
+        "It was a temporary limitation later fixed by search engines",
       ],
       correctIndex: 0,
       explanation:
@@ -116,10 +116,10 @@ export const CLUSTER_F: Node[] = [
     quiz: {
       question: "Why is PageRank harder to manipulate than simple keyword-frequency ranking?",
       options: [
-        "Because it requires payment to Google to be indexed at all — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because it requires payment to Google to be indexed at all",
         "Because a page's rank depends on being linked to by other already-trusted pages, not just on what words appear on the page itself — which is much harder to fake than stuffing keywords",
-        "Because PageRank only considers pages written in English — a familiar retelling that strips out the contingency the source treats as central.",
-        "Because it ranks pages randomly to prevent gaming the system — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Because PageRank only considers pages written in English",
+        "Because it ranks pages randomly to prevent gaming the system",
       ],
       correctIndex: 1,
       explanation:
@@ -165,10 +165,10 @@ export const CLUSTER_F: Node[] = [
       question:
         "How did Microsoft respond to the threat it identified from Netscape in the Internet Tidal Wave memo?",
       options: [
-        "It acquired Netscape outright to eliminate the competitor — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "It exited the software business entirely to focus on internet infrastructure — a plausible reading that overlooks the limiting condition the text stresses.",
+        "It acquired Netscape outright to eliminate the competitor",
+        "It exited the software business entirely to focus on internet infrastructure",
         "It bundled a free web browser (Internet Explorer) into Windows, using its OS monopoly to undercut Netscape's paid browser business model",
-        "It lobbied Congress to ban competing browsers — a familiar retelling that strips out the contingency the source treats as central.",
+        "It lobbied Congress to ban competing browsers",
       ],
       correctIndex: 2,
       explanation:
@@ -214,9 +214,9 @@ export const CLUSTER_F: Node[] = [
       question:
         "According to W. Brian Arthur, why do knowledge-based technology markets tend toward winner-take-all outcomes?",
       options: [
-        "Because governments actively regulate these markets to favor one company — a common simplification that omits the key mechanism behind the effect.",
-        "Because consumers are legally required to use the first product that enters a market — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because technology products always have higher switching costs than physical goods by definition — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because governments actively regulate these markets to favor one company",
+        "Because consumers are legally required to use the first product that enters a market",
+        "Because technology products always have higher switching costs than physical goods by definition",
         "Because high upfront costs combined with near-zero reproduction costs, network effects, and switching costs create a feedback loop where an early lead compounds into a further lead, unlike traditional industries with diminishing returns",
       ],
       correctIndex: 3,
@@ -263,9 +263,9 @@ export const CLUSTER_F: Node[] = [
       question: "What was the architectural bet behind the end-to-end principle in TCP/IP?",
       options: [
         "Keep the core network minimal and dumb, pushing reliability and application intelligence to the endpoints so the same fabric can carry any future application",
-        "Make the core network maximally intelligent and reliable so endpoints can be as simple as possible — a plausible inversion that centralizes what the end-to-end principle deliberately pushes to the edge.",
-        "End-to-end means every packet must travel from the original source to the final destination without any intermediate routing — a literal misreading that confuses the principle with source routing.",
-        "The principle only applies to email and has no relevance to modern video or AI workloads — a handy abbreviation that hides the hourglass generality that lets IP carry any application.",
+        "Make the core network maximally intelligent and reliable so endpoints can be as simple as possible",
+        "End-to-end means every packet must travel from the original source to the final destination without any intermediate routing",
+        "The principle only applies to email and has no relevance to modern video or AI workloads",
       ],
       correctIndex: 0,
       explanation:
@@ -287,14 +287,14 @@ export const CLUSTER_F: Node[] = [
     id: "F7",
     clusterId: "F",
     title: "The Unix Philosophy",
-    author: "Ken Thompson & Dennis Ritchie",
+    author: "Ken Thompson, Dennis Ritchie & Doug McIlroy",
     year: 1978,
     medium: "System",
     category: "Foundational Tech",
     thesis:
       "Unix won not by features but by composition — small tools that do one thing well, speak in text streams, and compose via pipes, so new capabilities emerge from combining old parts rather than rewriting.",
     layer0:
-      "Thompson and Ritchie's 1978 summary was a manifesto in one line: write programs that do one thing well, expect to be connected to other programs, and handle text streams as a universal interface.",
+      "Doug McIlroy's foreword to the 1978 Bell System Technical Journal issue on Unix compressed a decade of Thompson and Ritchie's practice into a three-line manifesto: write programs that do one thing well, write programs to work together, and handle text streams as a universal interface.",
     layer1:
       "Pipes (' | ') and text made composition the default: grep, sed, awk, and later curl and jq can be strung to do what no single tool was designed for, without central coordination. The mechanism is constraints as capability — by refusing to build a monolith, Unix forced an ecosystem of interoperable parts, which is why a 1970s terminal still feels productive in 2026. Modern echoes: microservices, LoRA adapters, and the Unix-like 'small sharp tools' inside Linear's own architecture.",
     layer2:
@@ -316,9 +316,9 @@ export const CLUSTER_F: Node[] = [
     related: ["F8", "F1", "AG7", "AG3"],
     furtherReading: [
       {
-        label: "UNIX Time-Sharing System (1978, Bell System Technical Journal)",
-        source: "Thompson & Ritchie",
-        url: "https://dsf.berkeley.edu/cs262/unix.pdf",
+        label: "UNIX Time-Sharing System: Foreword (1978, Bell System Technical Journal)",
+        source: "McIlroy, Pinson & Tague",
+        url: "https://archive.org/details/bstj57-6-1899",
         archive: { status: "unavailable" },
       },
     ],
@@ -333,9 +333,9 @@ export const CLUSTER_F: Node[] = [
     medium: "Observation",
     category: "Foundational Tech",
     thesis:
-      "Moore observed in 1965 that transistor density doubles roughly every two years — an exponential that held long enough to make the future systematically cheaper to compute than the present, and to make exponential thinking the required default for tech strategy.",
+      "Moore observed in 1965 that the number of components per chip was doubling every year (a rate he revised to every two years in 1975) — an exponential that held long enough to make the future systematically cheaper to compute than the present, and to make exponential thinking the required default for tech strategy.",
     layer0:
-      "Moore plotted four data points in 1965 and drew a line that predicted every chip roadmap for the next 50 years: double the transistors every two years, at roughly the same cost.",
+      "Moore plotted five data points in 1965 and drew a line that steered every chip roadmap for the next 50 years: components per chip doubling every year — revised to every two years in 1975 — at roughly the same cost.",
     layer1:
       "An exponential with a 2-year doubling feels linear early, then bends sharply — humans extrapolate linearly and are surprised late. Moore's law is not physics but coordinated expectation: fabs, EDA, and software all invested against the line, making it self-fulfilling until quantum and economic limits bite. The strategic move is not faster chips per se but what becomes free when compute is 100× cheaper: search, video, and now inference were born when their cost crossed that exponential threshold.",
     layer2:
@@ -345,9 +345,9 @@ export const CLUSTER_F: Node[] = [
         "Why did Moore's 1965 observation become a coordination device, not just a forecast?",
       options: [
         "Because the whole stack — fabs, tools, and software — invested against the doubling line, making the expectation self-fulfilling until physical limits intervene",
-        "It was a physical law like gravity that held regardless of investment, planning, or coordination — an intuitive gloss that confuses an observed coordination with a natural constant.",
-        "Moore's law predicted linear growth and was therefore easy to extrapolate without surprise — a compact misstatement that misses the exponential bending that surprises linear extrapolators.",
-        "The law only described memory capacity and had no broader implications for compute cost or strategy — a narrow reading that overlooks the threshold where halved compute cost enables new product categories.",
+        "It was a physical law like gravity that held regardless of investment, planning, or coordination",
+        "Moore's law predicted linear growth and was therefore easy to extrapolate without surprise",
+        "The law only described memory capacity and had no broader implications for compute cost or strategy",
       ],
       correctIndex: 0,
       explanation:
@@ -359,7 +359,7 @@ export const CLUSTER_F: Node[] = [
       {
         label: "Cramming More Components onto Integrated Circuits (1965)",
         source: "Gordon Moore, Electronics",
-        url: "https://newsroom.intel.com/wp-content/uploads/sites/11/2018/05/moores-law-electronics.pdf",
+        url: "https://www.computerhistory.org/collections/catalog/102770822",
         archive: { status: "unavailable" },
       },
     ],

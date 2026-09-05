@@ -56,8 +56,8 @@ export const CLUSTER_A: Node[] = [
         "According to Paul Graham, what is the biggest mistake founders make regarding early customer acquisition?",
       options: [
         "Assuming users will naturally discover the product, rather than manually recruiting them one by one",
-        "Spending too much money on television advertising — a familiar retelling that strips out the contingency the source treats as central.",
-        "Hiring salespeople too early — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Spending too much money on television advertising",
+        "Hiring salespeople too early",
       ],
       correctIndex: 0,
       explanation:
@@ -152,10 +152,10 @@ export const CLUSTER_A: Node[] = [
     quiz: {
       question: "According to Paul Graham, why do the best startup ideas often sound bad at first?",
       options: [
-        "Because founders deliberately disguise good ideas to avoid competition — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because investors intentionally reject good ideas to keep valuations low — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because founders deliberately disguise good ideas to avoid competition",
+        "Because investors intentionally reject good ideas to keep valuations low",
         "Because the market for them doesn't obviously exist yet — they're noticed early, before demand is visible to everyone",
-        "Because bad-sounding ideas get more attention in pitch meetings — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because bad-sounding ideas get more attention in pitch meetings",
       ],
       correctIndex: 2,
       explanation:
@@ -218,9 +218,9 @@ export const CLUSTER_A: Node[] = [
       question:
         "What does Kevin Kelly's '1,000 True Fans' model actually depend on to work economically?",
       options: [
-        "Going viral and reaching millions of casual followers — a common simplification that omits the key mechanism behind the effect.",
-        "Securing a distribution deal with a major publisher or label — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Charging fans a one-time high price rather than recurring smaller amounts — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Going viral and reaching millions of casual followers",
+        "Securing a distribution deal with a major publisher or label",
+        "Charging fans a one-time high price rather than recurring smaller amounts",
         "Low-cost direct distribution and payment, so serving a small, deeply loyal audience becomes profitable on its own",
       ],
       correctIndex: 3,
@@ -285,9 +285,9 @@ export const CLUSTER_A: Node[] = [
         "Why does Peter Thiel argue that intense competition is actually bad for a company's long-term prospects?",
       options: [
         "Because it drives margins toward zero, leaving little capital to reinvest in the long term",
-        "Because competition is illegal in most software markets — a common simplification that omits the key mechanism behind the effect.",
-        "Because competitors always eventually merge into monopolies anyway — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because customers dislike having too many choices — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because competition is illegal in most software markets",
+        "Because competitors always eventually merge into monopolies anyway",
+        "Because customers dislike having too many choices",
       ],
       correctIndex: 0,
       explanation:
@@ -348,10 +348,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "What is Bill Gurley's central warning about using TAM (Total Addressable Market) to judge a startup?",
       options: [
-        "TAM figures are always fabricated by founders to look good — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "TAM figures are always fabricated by founders to look good",
         "A large TAM number alone says little; the market's underlying structure (frequency, consolidation tendency, supply/demand cost) determines whether it can produce a durable, valuable winner",
-        "TAM should be measured in number of users, not dollars — a common simplification that omits the key mechanism behind the effect.",
-        "Only regulated markets have accurate TAM estimates — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "TAM should be measured in number of users, not dollars",
+        "Only regulated markets have accurate TAM estimates",
       ],
       correctIndex: 1,
       explanation:
@@ -416,10 +416,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "Why is customer churn especially dangerous in a SaaS/subscription business, more than in a one-time-purchase business?",
       options: [
-        "Because churned customers always leave negative reviews — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Because SaaS companies can't legally re-acquire a churned customer — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because churned customers always leave negative reviews",
+        "Because SaaS companies can't legally re-acquire a churned customer",
         "Because revenue arrives gradually over time, so if a customer leaves before you've earned back what it cost to acquire them, that cost is never recovered",
-        "Because churn only affects gross margin, not net revenue — a common simplification that omits the key mechanism behind the effect.",
+        "Because churn only affects gross margin, not net revenue",
       ],
       correctIndex: 2,
       explanation:
@@ -482,9 +482,9 @@ export const CLUSTER_A: Node[] = [
       question:
         "Under what condition does 'blitzscaling' — deliberately sacrificing efficiency for speed — actually make strategic sense?",
       options: [
-        "Only when a company has unlimited funding with no investor oversight — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "In any market, since speed is always better than efficiency — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Only for companies that plan to go public within two years — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Only when a company has unlimited funding with no investor oversight",
+        "In any market, since speed is always better than efficiency",
+        "Only for companies that plan to go public within two years",
         "In winner-take-most markets, where being first lets you build a compounding, durable advantage (network effects, data, brand) that's hard for slower competitors to overcome",
       ],
       correctIndex: 3,
@@ -549,9 +549,9 @@ export const CLUSTER_A: Node[] = [
         "According to Ben Thompson's Aggregation Theory, why did the internet shift power from suppliers to platforms that don't even own the supply?",
       options: [
         "Because distribution became nearly free online, so the scarce resource shifted to user attention/relationship, which aggregators capture and then dictate terms to suppliers",
-        "Because platforms have better legal teams than suppliers — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Because governments began regulating physical distribution channels more heavily — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Because suppliers voluntarily gave up control to reduce their own costs — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Because platforms have better legal teams than suppliers",
+        "Because governments began regulating physical distribution channels more heavily",
+        "Because suppliers voluntarily gave up control to reduce their own costs",
       ],
       correctIndex: 0,
       explanation:
@@ -615,10 +615,10 @@ export const CLUSTER_A: Node[] = [
     quiz: {
       question: "What does Eugene Wei mean by an 'invisible asymptote' in a growing business?",
       options: [
-        "A ceiling caused by running out of investor funding — a frequent misremembering that swaps the cause and its consequence.",
+        "A ceiling caused by running out of investor funding",
         "A structural, mechanical limit built into how the business currently works, which stays hidden in the growth curve until the business actually hits it",
-        "A legal cap on market share imposed by antitrust regulators — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "The point at which a company's stock price stops rising — a neat inversion that makes the effect sound like the cause.",
+        "A legal cap on market share imposed by antitrust regulators",
+        "The point at which a company's stock price stops rising",
       ],
       correctIndex: 1,
       explanation:
@@ -681,10 +681,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "Why does Jerry Chen argue that a 'system of intelligence' is a stronger moat than older forms of competitive advantage?",
       options: [
-        "Because it requires expensive proprietary hardware only large companies can afford — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Because governments grant patents automatically to AI-based products — a frequent misremembering that swaps the cause and its consequence.",
+        "Because it requires expensive proprietary hardware only large companies can afford",
+        "Because governments grant patents automatically to AI-based products",
         "Because it compounds over time through a data flywheel — usage generates data, data improves the product, a better product attracts more usage — which a copycat with no usage history can't quickly replicate",
-        "Because it eliminates the need for any sales or marketing spend — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Because it eliminates the need for any sales or marketing spend",
       ],
       correctIndex: 2,
       explanation:
@@ -745,9 +745,9 @@ export const CLUSTER_A: Node[] = [
       question:
         "What structural advantage does a 'solo capitalist' typically have over a traditional multi-partner VC firm when competing for a deal?",
       options: [
-        "They can legally invest more total capital per fund — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "They are exempt from securities regulations that apply to larger firms — a plausible reading that overlooks the limiting condition the text stresses.",
-        "They only invest in later-stage, lower-risk companies — a frequent misremembering that swaps the cause and its consequence.",
+        "They can legally invest more total capital per fund",
+        "They are exempt from securities regulations that apply to larger firms",
+        "They only invest in later-stage, lower-risk companies",
         "They can decide and commit quickly since there's no partner committee to convince, and founders get a direct relationship with the actual decision-maker",
       ],
       correctIndex: 3,
@@ -854,10 +854,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "In Blue Ocean Strategy, what is the purpose of the 'Four Actions Framework' (Eliminate-Reduce-Raise-Create)?",
       options: [
-        "To benchmark a company's product features against the market leader and catch up — a widely circulated summary that inverts the relationship the author actually defends.",
+        "To benchmark a company's product features against the market leader and catch up",
         "To reconstruct the industry's value curve by dropping unnecessary costs, lifting key buyer values, and adding entirely new factors — making the competitive frame irrelevant",
-        "To set pricing strategy in a commoditised market — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "To rank employees by performance and eliminate the bottom tier — a plausible reading that overlooks the limiting condition the text stresses.",
+        "To set pricing strategy in a commoditised market",
+        "To rank employees by performance and eliminate the bottom tier",
       ],
       correctIndex: 1,
       explanation:
@@ -908,9 +908,9 @@ export const CLUSTER_A: Node[] = [
         "According to Thiel, why does the 'kitchen sink' approach to distribution (a few salespeople, some ads, a viral feature) usually fail?",
       options: [
         "Because distribution channels follow a power law — one channel dramatically outperforms the rest, and spreading effort thin across several usually means none of them get pursued hard enough to work.",
-        "Because it's illegal to use more than one distribution channel at once. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "Because customers only trust companies that use a single marketing channel. — a common simplification that omits the key mechanism behind the effect.",
-        "Because viral features are always counterproductive. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Because it's illegal to use more than one distribution channel at once.",
+        "Because customers only trust companies that use a single marketing channel.",
+        "Because viral features are always counterproductive.",
       ],
       correctIndex: 0,
       explanation:
@@ -953,10 +953,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "According to Andreessen's heuristic in this essay, what suggests an idea's timing might now be right?",
       options: [
-        "The idea has never been attempted by anyone before. — a compact misstatement that leaves out the scope in which the claim holds.",
-        "The idea requires no new technology whatsoever. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "The idea has never been attempted by anyone before.",
+        "The idea requires no new technology whatsoever.",
         "The idea was 'hot' 3-4 years ago but the attempt at the time didn't quite work — suggesting infrastructure and market readiness may have since caught up.",
-        "A large company has already built a competing product. — a common simplification that omits the key mechanism behind the effect.",
+        "A large company has already built a competing product.",
       ],
       correctIndex: 2,
       explanation:

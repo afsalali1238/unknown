@@ -18,10 +18,10 @@ export const CLUSTER_K: Node[] = [
     quiz: {
       question: "Why do most people underestimate compounding?",
       options: [
-        "The math is genuinely wrong for long horizons. — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "It only works for money. — a neat inversion that makes the effect sound like the cause.",
+        "The math is genuinely wrong for long horizons.",
+        "It only works for money.",
         "The early years look linear and boring, so people quit before the curve bends.",
-        "Compounding is a myth. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Compounding is a myth.",
       ],
       correctIndex: 2,
       explanation:
@@ -106,9 +106,9 @@ export const CLUSTER_K: Node[] = [
       question: "Which is the best example of path dependence?",
       options: [
         "Choosing a programming language early in a codebase and being unable to reasonably switch a decade later.",
-        "A random daily choice with no lasting effect. — a familiar retelling that strips out the contingency the source treats as central.",
-        "Picking what to eat for lunch. — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Choosing a movie on a Friday night. — a neat inversion that makes the effect sound like the cause.",
+        "A random daily choice with no lasting effect.",
+        "Picking what to eat for lunch.",
+        "Choosing a movie on a Friday night.",
       ],
       correctIndex: 0,
       explanation:
@@ -148,10 +148,10 @@ export const CLUSTER_K: Node[] = [
     quiz: {
       question: "Why is optionality often undervalued?",
       options: [
-        "Because options are usually free. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because options are usually free.",
         "Because people prefer certainty and pay too little for the right to act later in a volatile world.",
-        "Because options only pay off if exercised. — a familiar retelling that strips out the contingency the source treats as central.",
-        "Because optionality doesn't exist in real life. — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Because options only pay off if exercised.",
+        "Because optionality doesn't exist in real life.",
       ],
       correctIndex: 1,
       explanation:
@@ -237,9 +237,9 @@ export const CLUSTER_K: Node[] = [
       question:
         "Why do most people quit new habits early, according to the Plateau of Latent Potential?",
       options: [
-        "They set goals that are physically impossible to achieve. — a common simplification that omits the key mechanism behind the effect.",
-        "They run out of willpower because they didn't rely on systems. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "They fail to establish an identity-based goal. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "They set goals that are physically impossible to achieve.",
+        "They run out of willpower because they didn't rely on systems.",
+        "They fail to establish an identity-based goal.",
         "They expect linear progress and get discouraged in the 'Valley of Disappointment' when the exponential curve starts flat.",
       ],
       correctIndex: 3,

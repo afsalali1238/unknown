@@ -19,10 +19,10 @@ export const CLUSTER_M: Node[] = [
       question:
         "A support team is measured only on 'tickets closed per day.' What's the classic Goodhart failure?",
       options: [
-        "Tickets take too long to close. — a frequent misremembering that swaps the cause and its consequence.",
-        "Agents refuse to work. — a familiar retelling that strips out the contingency the source treats as central.",
+        "Tickets take too long to close.",
+        "Agents refuse to work.",
         "Agents close tickets quickly without solving problems, hurting customers but hitting the number.",
-        "The number becomes hard to measure. — a neat inversion that makes the effect sound like the cause.",
+        "The number becomes hard to measure.",
       ],
       correctIndex: 2,
       explanation:
@@ -63,9 +63,9 @@ export const CLUSTER_M: Node[] = [
       question:
         "A new engineer wants to delete a mysterious cron job no one documents. Chesterton's Fence says:",
       options: [
-        "Delete it — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Rewrite it in a new language. — a frequent misremembering that swaps the cause and its consequence.",
-        "Ignore it forever. — a familiar retelling that strips out the contingency the source treats as central.",
+        "Delete it",
+        "Rewrite it in a new language.",
+        "Ignore it forever.",
         "Find out why it exists first; the surprising cost of removal is often invisible.",
       ],
       correctIndex: 3,
@@ -107,9 +107,9 @@ export const CLUSTER_M: Node[] = [
       question: "Why do publicly traded companies use stock-based executive compensation?",
       options: [
         "To align the agent's incentives with the principal's long-term outcome.",
-        "To reduce taxes only. — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Because it's cheap. — a frequent misremembering that swaps the cause and its consequence.",
-        "Because regulators require it. — a familiar retelling that strips out the contingency the source treats as central.",
+        "To reduce taxes only.",
+        "Because it's cheap.",
+        "Because regulators require it.",
       ],
       correctIndex: 0,
       explanation:
@@ -150,10 +150,10 @@ export const CLUSTER_M: Node[] = [
       question:
         "A city pays residents per pound of trash collected. What's the likely cobra outcome?",
       options: [
-        "Trash collection immediately drops. — a common simplification that omits the key mechanism behind the effect.",
+        "Trash collection immediately drops.",
         "People bring in trash from neighboring cities to collect payment.",
-        "Streets become permanently clean. — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Nothing changes. — a frequent misremembering that swaps the cause and its consequence.",
+        "Streets become permanently clean.",
+        "Nothing changes.",
       ],
       correctIndex: 1,
       explanation:
@@ -193,9 +193,9 @@ export const CLUSTER_M: Node[] = [
       question: "What is the core premise of 'Choice Architecture'?",
       options: [
         "There is no neutral way to present options; the design of the environment always influences the decision.",
-        "Humans will always make rational decisions regardless of the environment. — a common simplification that omits the key mechanism behind the effect.",
-        "People hate having choices and prefer to be told what to do. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Restricting people's choices is the only way to ensure good behavior. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Humans will always make rational decisions regardless of the environment.",
+        "People hate having choices and prefer to be told what to do.",
+        "Restricting people's choices is the only way to ensure good behavior.",
       ],
       correctIndex: 0,
       explanation:
@@ -236,10 +236,10 @@ export const CLUSTER_M: Node[] = [
     quiz: {
       question: "How does 'Sludge' differ from a 'Nudge' in behavioral economics?",
       options: [
-        "A Nudge is used by the government, while Sludge is only used by corporations. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "A Nudge relies on financial incentives, while Sludge relies on emotional manipulation. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "A Nudge is used by the government, while Sludge is only used by corporations.",
+        "A Nudge relies on financial incentives, while Sludge relies on emotional manipulation.",
         "A Nudge removes friction to encourage a beneficial behavior, while Sludge intentionally adds friction to discourage a behavior.",
-        "Sludge is a physical environmental change, while a Nudge is a digital change. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Sludge is a physical environmental change, while a Nudge is a digital change.",
       ],
       correctIndex: 2,
       explanation:
@@ -282,9 +282,9 @@ export const CLUSTER_M: Node[] = [
         "In Will Manidis's garden metaphor, what is the central difference between the French (Versailles) and English (Capability Brown) approaches to building a new system?",
       options: [
         "The French approach imposes a pre-planned geometry on the land and flattens what's already there; the English approach studies existing contours first and works with them.",
-        "The French approach is cheaper to maintain long-term than the English approach. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "The English approach requires more gardeners to maintain than the French approach. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "There is no meaningful difference — a common simplification that omits the key mechanism behind the effect.",
+        "The French approach is cheaper to maintain long-term than the English approach.",
+        "The English approach requires more gardeners to maintain than the French approach.",
+        "There is no meaningful difference",
       ],
       correctIndex: 0,
       explanation:
@@ -327,9 +327,9 @@ export const CLUSTER_M: Node[] = [
       question:
         "What is the central mechanism behind Pankaj's argument that adding new friends can be a net negative?",
       options: [
-        "New friends are statistically more likely to betray you than old ones. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "New friendships are illegal to track using personal data systems. — a compact misstatement that leaves out the scope in which the claim holds.",
-        "He argues no one should ever make new friends under any circumstances. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "New friends are statistically more likely to betray you than old ones.",
+        "New friendships are illegal to track using personal data systems.",
+        "He argues no one should ever make new friends under any circumstances.",
         "Relationship capacity is treated as fixed, so time invested in a new friendship is time necessarily displaced from deepening an existing one.",
       ],
       correctIndex: 3,

@@ -63,9 +63,9 @@ export const CLUSTER_X: Node[] = [
       question:
         "Why does identity-based thinking prevent metacognition, according to this framework?",
       options: [
-        "It makes thinking too complex and energy-intensive — a compact misstatement that leaves out the scope in which the claim holds.",
-        "It requires too much memory recall to function — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Algorithms cannot process identity markers effectively — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It makes thinking too complex and energy-intensive",
+        "It requires too much memory recall to function",
+        "Algorithms cannot process identity markers effectively",
         "Challenges to ideas are perceived as biological threats, triggering emotional defenses",
       ],
       correctIndex: 3,
@@ -107,9 +107,9 @@ export const CLUSTER_X: Node[] = [
         "How does the brain typically respond when a core axiomatic belief is directly contradicted by observable evidence?",
       options: [
         "It employs complex rationalizations to protect the axiom and avoid epistemic crisis",
-        "It instantly updates the belief structure to reflect the new data ",
-        "It stops processing external information entirely — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "It defaults to a purely mathematical worldview — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It instantly updates the belief structure to reflect the new data",
+        "It stops processing external information entirely",
+        "It defaults to a purely mathematical worldview",
       ],
       correctIndex: 0,
       explanation:
@@ -192,10 +192,10 @@ export const CLUSTER_X: Node[] = [
       question:
         "Why does the subject in the quantum suicide experiment always experience survival under the Many-Worlds Interpretation?",
       options: [
-        "The lethal mechanism is programmed to recognize and fail for living biological matter — a neat inversion that makes the effect sound like the cause.",
-        "The observer controls the quantum decay with their mind — a handy abbreviation that hides the counter-condition the argument requires.",
+        "The lethal mechanism is programmed to recognize and fail for living biological matter",
+        "The observer controls the quantum decay with their mind",
         "The observer can only subjectively experience the specific timelines where their biological consciousness continues to function",
-        "Alternate timelines merge to prevent the cessation of life — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Alternate timelines merge to prevent the cessation of life",
       ],
       correctIndex: 2,
       explanation:
@@ -235,9 +235,9 @@ export const CLUSTER_X: Node[] = [
       question:
         "What is the primary implication of the relativity of simultaneity regarding the nature of the future?",
       options: [
-        "The future is highly malleable and changes based on quantum observation — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Time speeds up as objects approach the speed of light — a neat inversion that makes the effect sound like the cause.",
-        "Simultaneous events destroy the fabric of spacetime, creating black holes — a handy abbreviation that hides the counter-condition the argument requires.",
+        "The future is highly malleable and changes based on quantum observation",
+        "Time speeds up as objects approach the speed of light",
+        "Simultaneous events destroy the fabric of spacetime, creating black holes",
         'Because different observers have different "nows," the future of one observer is already happening for another, implying the future already exists',
       ],
       correctIndex: 3,

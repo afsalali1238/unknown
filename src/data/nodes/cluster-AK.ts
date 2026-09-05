@@ -19,10 +19,10 @@ export const CLUSTER_AK: Node[] = [
     quiz: {
       question: "What did McLuhan mean by 'the medium is the message'?",
       options: [
-        "Content doesn't matter at all, only the delivery format — a common simplification that omits the key mechanism behind the effect.",
-        "Each medium's specific content is what determines its social impact, not its form — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Content doesn't matter at all, only the delivery format",
+        "Each medium's specific content is what determines its social impact, not its form",
         "A communication technology's form reshapes perception, attention, and society on its own, independent of and often more powerfully than the specific content it carries",
-        "New media always improve upon the media they replace — a frequent misremembering that swaps the cause and its consequence.",
+        "New media always improve upon the media they replace",
       ],
       correctIndex: 2,
       explanation:
@@ -60,10 +60,10 @@ export const CLUSTER_AK: Node[] = [
       question:
         "What is the final stage of Baudrillard's four stages of the image, which he calls pure simulation?",
       options: [
-        "An image that faithfully and accurately reflects an underlying reality — a widely circulated summary that inverts the relationship the author actually defends.",
+        "An image that faithfully and accurately reflects an underlying reality",
         "A sign that no longer refers to any reality at all, and instead only references other signs, forming a self-contained 'hyperreality'",
-        "An image that deliberately masks the fact that no underlying reality exists — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "An image that is created to deceive with a known false version of the truth — a plausible reading that overlooks the limiting condition the text stresses.",
+        "An image that deliberately masks the fact that no underlying reality exists",
+        "An image that is created to deceive with a known false version of the truth",
       ],
       correctIndex: 1,
       explanation:
@@ -108,9 +108,9 @@ export const CLUSTER_AK: Node[] = [
         "What does the 'propaganda model' in Manufacturing Consent claim about media filtering?",
       options: [
         "Five structural filters — ownership, advertising, sourcing, flak, and dominant ideology — systematically narrow which stories can reach publication even without direct orders",
-        "A secret central committee edits every newsroom's output before publication to enforce ideological uniformity The distinction matters because it changes what you would measure to test the claim.",
-        "Media bias is entirely explained by individual reporters' personal political opinions with no structural component Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "The model claims American media is uniquely free of any filtering and reports all important stories equally It holds only within the scope the author defines, not as a universal claim.",
+        "A secret central committee edits every newsroom's output before publication to enforce ideological uniformity",
+        "Media bias is entirely explained by individual reporters' personal political opinions with no structural component",
+        "The model claims American media is uniquely free of any filtering and reports all important stories equally",
       ],
       correctIndex: 0,
       explanation:
@@ -179,7 +179,7 @@ export const CLUSTER_AK: Node[] = [
     thesis:
       "Wu traces how, from the first penny press to Instagram, the business of capturing and reselling human attention has grown into the dominant engine of media — and how every attention boom triggers a backlash that resets expectations about what should be free from capture.",
     layer0:
-      "Wu opens with 1833: Benjamin Day drops the price of the New York Sun to a penny and recoups by selling readers' attention to advertisers. The reader stopped being the customer and became the product.",
+      "Wu opens with 1833: Benjamin Day launches the New York Sun at a penny while rivals charge six cents, and recoups the loss by selling readers' attention to advertisers. The reader stopped being the customer and became the product.",
     layer1:
       "Each medium discovers an attention surplus — blank pages, idle commutes, waiting rooms — and industrializes its harvest: radio into programming, television into seasons, the feed into infinite scroll. The cycle is boom (capture), saturation (resentment), and reform (ad blockers, subscription, regulation). Wu's usable move reframes product design: are you building a tool the user hires for a job, or an attention trap the user must resist to use?",
     layer2:
@@ -188,9 +188,9 @@ export const CLUSTER_AK: Node[] = [
       question: "What recurring cycle does Wu's history of attention merchants describe?",
       options: [
         "A new medium discovers an idle attention surplus, industrializes its capture and sale, saturates, then triggers a backlash that seeks to reclaim or ransom that attention",
-        "Attention economics has always been stable, with no historical cycles of capture and backlash It holds only within the scope the author defines, not as a universal claim.",
-        "Merchants capture attention only through coercive government mandates, never through voluntary media adoption This reading skips the enabling condition that makes the mechanism work as stated.",
-        "The cycle only applies to newspapers and has no relevance to radio, television, or social feeds The distinction matters because it changes what you would measure to test the claim.",
+        "Attention economics has always been stable, with no historical cycles of capture and backlash",
+        "Merchants capture attention only through coercive government mandates, never through voluntary media adoption",
+        "The cycle only applies to newspapers and has no relevance to radio, television, or social feeds",
       ],
       correctIndex: 0,
       explanation:
@@ -202,7 +202,7 @@ export const CLUSTER_AK: Node[] = [
       {
         label: "The Attention Merchants (2016)",
         source: "Tim Wu",
-        url: "https://www.timwu.org/attention-merchants.html",
+        url: "https://www.penguinrandomhouse.com/books/234876/the-attention-merchants-by-tim-wu/",
         archive: { status: "unavailable" },
       },
     ],
@@ -242,7 +242,7 @@ export const CLUSTER_AK: Node[] = [
       {
         label: "The Filter Bubble (2011)",
         source: "Eli Pariser",
-        url: "https://www.thefilterbubble.com/",
+        url: "https://www.penguinrandomhouse.com/books/309214/the-filter-bubble-by-eli-pariser/",
         archive: { status: "unavailable" },
       },
     ],
@@ -268,9 +268,9 @@ export const CLUSTER_AK: Node[] = [
       question: "What does agenda-setting theory claim media most powerfully determines?",
       options: [
         "Which issues and attributes the public treats as salient and therefore worthy of attention and judgment, more than the public's final stance on each issue",
-        "The specific opinion every individual will hold after exposure to a single article, with no variation The distinction matters because it changes what you would measure.",
-        "That media has no effect whatsoever on what the public considers important Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "Only the factual accuracy of reporting, with no effect on perceived importance or evaluative criteria It holds only within the scope the author defines, not as a universal claim.",
+        "The specific opinion every individual will hold after exposure to a single article, with no variation",
+        "That media has no effect whatsoever on what the public considers important",
+        "Only the factual accuracy of reporting, with no effect on perceived importance or evaluative criteria",
       ],
       correctIndex: 0,
       explanation:

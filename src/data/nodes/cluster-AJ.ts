@@ -20,10 +20,10 @@ export const CLUSTER_AJ: Node[] = [
       question:
         "What makes a Nash equilibrium 'stable,' even when the outcome is bad for everyone involved?",
       options: [
-        "Every player is achieving their absolute best possible outcome — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Every player is achieving their absolute best possible outcome",
         "No single player can improve their own result by changing strategy alone, even if a different combined set of strategies would make everyone better off",
-        "All players have identical payoffs — a compact misstatement that leaves out the scope in which the claim holds.",
-        "The game has ended and no further moves are possible — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "All players have identical payoffs",
+        "The game has ended and no further moves are possible",
       ],
       correctIndex: 1,
       explanation:
@@ -62,9 +62,9 @@ export const CLUSTER_AJ: Node[] = [
         "Why does betrayal remain the individually rational choice in the prisoner's dilemma, even though mutual cooperation produces a better combined outcome?",
       options: [
         "Because betraying is the best individual response regardless of what the other player does, so both players rationally betray even though mutual cooperation would leave both of them better off",
-        "Because the two suspects can freely communicate and coordinate before deciding — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Because each player assumes the other will automatically choose to cooperate — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Because the payoffs are identical no matter what either player chooses — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Because the two suspects can freely communicate and coordinate before deciding",
+        "Because each player assumes the other will automatically choose to cooperate",
+        "Because the payoffs are identical no matter what either player chooses",
       ],
       correctIndex: 0,
       explanation:
@@ -101,10 +101,10 @@ export const CLUSTER_AJ: Node[] = [
     quiz: {
       question: "What does a 'strategic-form' (normal-form) game formally represent?",
       options: [
-        "A game where players take turns and can see all prior moves. — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "A game where players take turns and can see all prior moves.",
         "A situation where players choose their actions simultaneously and the payoff to each depends on the full combination of actions chosen.",
-        "A game with only one possible outcome regardless of player choices. — a handy abbreviation that hides the counter-condition the argument requires.",
-        "A cooperative negotiation where players share all payoffs equally. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "A game with only one possible outcome regardless of player choices.",
+        "A cooperative negotiation where players share all payoffs equally.",
       ],
       correctIndex: 1,
       explanation:
@@ -144,9 +144,9 @@ export const CLUSTER_AJ: Node[] = [
         "Why did Tit for Tat win Axelrod's iterated prisoner's dilemma tournaments despite its simplicity?",
       options: [
         "It was nice, retaliatory, forgiving, and clear, which made sustained mutual cooperation the most profitable long-run strategy when future rounds were expected",
-        "It defected on every single round, maximizing its score against all cooperative opponents It holds only within the scope the author defines, not as a universal claim.",
-        "It used a complex machine-learning model that predicted opponents' moves with near-perfect accuracy This reading skips the enabling condition that makes the mechanism work as stated.",
-        "It won only because Axelrod manually disqualified stronger strategies before the tournament The distinction matters because it changes what you would measure to test the claim.",
+        "It defected on every single round, maximizing its score against all cooperative opponents",
+        "It used a complex machine-learning model that predicted opponents' moves with near-perfect accuracy",
+        "It won only because Axelrod manually disqualified stronger strategies before the tournament",
       ],
       correctIndex: 0,
       explanation:
@@ -184,9 +184,9 @@ export const CLUSTER_AJ: Node[] = [
       question: "What makes a signal credible under costly signaling theory?",
       options: [
         "It imposes a cost that a liar or weaker type could not profitably afford to mimic, so only honest types find it worthwhile to send",
-        "It is as cheap and easy to produce as possible, so that everyone can send it regardless of type This reading skips the enabling condition that.",
-        "The signal's credibility comes from the sender's verbal insistence that it is true The distinction matters because it changes what you would.",
-        "Costly signals are never credible and always indicate dishonesty Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "It is as cheap and easy to produce as possible, so that everyone can send it regardless of type",
+        "The signal's credibility comes from the sender's verbal insistence that it is true",
+        "Costly signals are never credible and always indicate dishonesty",
       ],
       correctIndex: 0,
       explanation:
@@ -224,9 +224,9 @@ export const CLUSTER_AJ: Node[] = [
       question: "What is the strategic logic of credibly committing not to swerve in Chicken?",
       options: [
         "By visibly removing your ability to swerve, you force a rational opponent to swerve to avoid mutual catastrophe, provided you leave them a face-saving exit",
-        "Committing never helps because the opponent will simply ignore any visible commitment you make The distinction matters because it changes what you would measure to test the claim.",
-        "The optimal play is always to swerve immediately regardless of what the opponent does or signals Without that condition, the same evidence would be consistent with the.",
-        "Brinkmanship only works when both sides have identical risk tolerance and neither can gain by committing It holds only within the scope the author defines, not as a universal claim.",
+        "Committing never helps because the opponent will simply ignore any visible commitment you make",
+        "The optimal play is always to swerve immediately regardless of what the opponent does or signals",
+        "Brinkmanship only works when both sides have identical risk tolerance and neither can gain by committing",
       ],
       correctIndex: 0,
       explanation:
@@ -264,9 +264,9 @@ export const CLUSTER_AJ: Node[] = [
       question: "What does a second-price (Vickrey) auction make individually optimal for bidders?",
       options: [
         "Bidding your true private valuation, because you pay the second-highest price and shading your bid can only cause you to lose a profitable win",
-        "Always bidding far below your valuation to ensure you never overpay, regardless of the pricing rule Without that condition, the same evidence would be.",
-        "Bidding randomly, since the mechanism makes all bidding strategies equally profitable It holds only within the scope the author defines, not as a universal claim.",
-        "Colluding with other bidders to jointly lower all bids to the minimum This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Always bidding far below your valuation to ensure you never overpay, regardless of the pricing rule",
+        "Bidding randomly, since the mechanism makes all bidding strategies equally profitable",
+        "Colluding with other bidders to jointly lower all bids to the minimum",
       ],
       correctIndex: 0,
       explanation:

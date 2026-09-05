@@ -20,9 +20,9 @@ export const CLUSTER_V: Node[] = [
       question: "According to Thompson, what replaced task-oriented time during industrialization?",
       options: [
         "Clock-based, uniform time discipline, deliberately imposed by factory owners to synchronize and control labor",
-        "A more accurate scientific measurement of natural rhythms — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "A voluntary agreement among workers to standardize schedules — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Religious observance replacing secular work schedules — a frequent misremembering that swaps the cause and its consequence.",
+        "A more accurate scientific measurement of natural rhythms",
+        "A voluntary agreement among workers to standardize schedules",
+        "Religious observance replacing secular work schedules",
       ],
       correctIndex: 0,
       explanation:
@@ -72,10 +72,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What is Graeber's central challenge to the standard economic story of money's origin?",
       options: [
-        "Money was invented by ancient governments to collect taxes more efficiently — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Money was invented by ancient governments to collect taxes more efficiently",
         "There is little historical evidence that money arose to fix the inefficiencies of barter; societies instead used credit and debt-tracking systems long before coined money existed",
-        "Barter was actually more efficient than money and should be reinstated — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Money has always had intrinsic value independent of social trust — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Barter was actually more efficient than money and should be reinstated",
+        "Money has always had intrinsic value independent of social trust",
       ],
       correctIndex: 1,
       explanation:
@@ -117,10 +117,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What does Anderson identify as the key technology enabling nations to be 'imagined communities'?",
       options: [
-        "Military conquest and forced unification — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Religious institutions imposing a single shared belief system — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Military conquest and forced unification",
+        "Religious institutions imposing a single shared belief system",
         "Print capitalism — newspapers and novels in shared vernacular languages that let large populations synchronize a sense of belonging to one community",
-        "The invention of passports and border controls — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "The invention of passports and border controls",
       ],
       correctIndex: 2,
       explanation:
@@ -171,9 +171,9 @@ export const CLUSTER_V: Node[] = [
     quiz: {
       question: "What is Montagu's central argument about race?",
       options: [
-        "Racial categories accurately reflect deep, fixed biological and genetic differences between groups — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Human genetic variation does not exist at all — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Racial categories should be replaced with categories based purely on geography — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Racial categories accurately reflect deep, fixed biological and genetic differences between groups",
+        "Human genetic variation does not exist at all",
+        "Racial categories should be replaced with categories based purely on geography",
         "Race, as popularly understood, does not map onto actual human genetic variation; racial categories are social and historical constructions built mainly from visible traits like skin color",
       ],
       correctIndex: 3,
@@ -226,9 +226,9 @@ export const CLUSTER_V: Node[] = [
       question: "What does Butler mean when she argues gender is 'performative'?",
       options: [
         "Gender is not an inner essence expressed through behavior, but is itself continuously produced and maintained through repeated acts, creating only the appearance of a fixed underlying nature",
-        "Gender is a conscious choice people make once, like choosing a career — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Gender has no relationship to social behavior at all — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Only actors and performers have a meaningful gender identity — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Gender is a conscious choice people make once, like choosing a career",
+        "Gender has no relationship to social behavior at all",
+        "Only actors and performers have a meaningful gender identity",
       ],
       correctIndex: 0,
       explanation:
@@ -280,10 +280,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What specific target does Proudhon's 'property is theft' argument actually attack?",
       options: [
-        "All forms of personal possession, including a person's home and tools — a handy abbreviation that hides the counter-condition the argument requires.",
+        "All forms of personal possession, including a person's home and tools",
         "Property that entitles an owner to extract profit or income from something worked, used, or improved by someone else's labor, without contributing proportional labor themselves",
-        "The existence of markets and voluntary trade in general — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Government ownership of land and resources — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "The existence of markets and voluntary trade in general",
+        "Government ownership of land and resources",
       ],
       correctIndex: 1,
       explanation:
@@ -335,10 +335,10 @@ export const CLUSTER_V: Node[] = [
       question:
         "What does Vincent argue is often the hidden function of imposing standardized measurement systems?",
       options: [
-        "They are purely neutral scientific tools with no political dimension — a neat inversion that makes the effect sound like the cause.",
-        "They were only ever developed for scientific research purposes — a handy abbreviation that hides the counter-condition the argument requires.",
+        "They are purely neutral scientific tools with no political dimension",
+        "They were only ever developed for scientific research purposes",
         "They function as tools of political power and control, making populations and labor legible, taxable, and comparable to whoever sets the standard",
-        "They have remained unchanged since ancient Egypt — a compact misstatement that leaves out the scope in which the claim holds.",
+        "They have remained unchanged since ancient Egypt",
       ],
       correctIndex: 2,
       explanation:
@@ -388,9 +388,9 @@ export const CLUSTER_V: Node[] = [
       question:
         "According to Coontz, what was marriage's primary function for most of human history, before the nineteenth century?",
       options: [
-        "A personal, romantic partnership chosen freely by both individuals — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "A purely religious ceremony with no economic function — a neat inversion that makes the effect sound like the cause.",
-        "An arrangement that has remained essentially unchanged throughout history — a handy abbreviation that hides the counter-condition the argument requires.",
+        "A personal, romantic partnership chosen freely by both individuals",
+        "A purely religious ceremony with no economic function",
+        "An arrangement that has remained essentially unchanged throughout history",
         "A strategic alliance between families to secure economic, political, or social advantage, with romantic love treated as secondary or even distrusted",
       ],
       correctIndex: 3,
@@ -442,10 +442,10 @@ export const CLUSTER_V: Node[] = [
     quiz: {
       question: "What is an example of 'Testimonial Injustice'?",
       options: [
-        "Refusing to hire someone because of their background. — a familiar retelling that strips out the contingency the source treats as central.",
-        "Failing to understand a complex philosophical argument. — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Refusing to hire someone because of their background.",
+        "Failing to understand a complex philosophical argument.",
         "Dismissing a patient's description of their physical pain because of unconscious gender bias.",
-        "Lacking the vocabulary to describe a new sociological phenomenon. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Lacking the vocabulary to describe a new sociological phenomenon.",
       ],
       correctIndex: 2,
       explanation:
@@ -488,9 +488,9 @@ export const CLUSTER_V: Node[] = [
         "Why does the concept of 'Meritocracy' actually increase our psychological suffering?",
       options: [
         "Because it implies that if you are unsuccessful, it is entirely your own fault, turning poverty into a source of deep personal shame.",
-        "Because meritocracies inevitably collapse into aristocracies. — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Because meritocracies force everyone to work 80-hour weeks. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Because it makes the wealthy feel guilty about their success. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Because meritocracies inevitably collapse into aristocracies.",
+        "Because meritocracies force everyone to work 80-hour weeks.",
+        "Because it makes the wealthy feel guilty about their success.",
       ],
       correctIndex: 0,
       explanation:

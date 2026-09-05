@@ -20,9 +20,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
       options: [
-        "People simply don't try hard enough or lack willpower — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Most people set goals that are objectively unrealistic — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Behavior change requires professional therapy to succeed — a widely circulated summary that inverts the relationship the author actually defends.",
+        "People simply don't try hard enough or lack willpower",
+        "Most people set goals that are objectively unrealistic",
+        "Behavior change requires professional therapy to succeed",
         "New habits are stacked on an unchanged underlying identity/self-concept, which pulls behavior back to its old baseline",
       ],
       correctIndex: 3,
@@ -101,10 +101,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
       options: [
-        "They try to learn too many skills instead of specializing in one — a handy abbreviation that hides the counter-condition the argument requires.",
+        "They try to learn too many skills instead of specializing in one",
         "They jump straight to technical/results-oriented skills without first building a valuable message and a medium to distribute it",
-        "They don't spend enough money on courses and certifications — a compact misstatement that leaves out the scope in which the claim holds.",
-        "They focus too much on writing instead of visual skills — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "They don't spend enough money on courses and certifications",
+        "They focus too much on writing instead of visual skills",
       ],
       correctIndex: 1,
       explanation:
@@ -142,10 +142,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
       options: [
-        "Because writing pays more per hour than any other skill — a neat inversion that makes the effect sound like the cause.",
-        "Because algorithms only reward text-based content over video — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because writing pays more per hour than any other skill",
+        "Because algorithms only reward text-based content over video",
         "Because nearly every format of online content (tweets, video scripts, ads, newsletters) is, underneath, a written artifact first, so the skill transfers across every platform",
-        "Because writing requires no ongoing practice once learned — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Because writing requires no ongoing practice once learned",
       ],
       correctIndex: 2,
       explanation:
@@ -183,9 +183,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
       options: [
-        "A lack of caffeine or physical energy — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Working in an office instead of remotely — a neat inversion that makes the effect sound like the cause.",
-        "Not using enough productivity software — a handy abbreviation that hides the counter-condition the argument requires.",
+        "A lack of caffeine or physical energy",
+        "Working in an office instead of remotely",
+        "Not using enough productivity software",
         "An unclear or unstable sense of identity, leaving attention with no anchor to direct itself toward",
       ],
       correctIndex: 3,
@@ -269,9 +269,9 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "Why does Koe say willpower alone usually fails to sustain behavior change?",
       options: [
-        "Because willpower is a myth and doesn't exist — a frequent misremembering that swaps the cause and its consequence.",
-        "Because most goals people set are objectively too difficult — a familiar retelling that strips out the contingency the source treats as central.",
-        "Because change requires professional help to be lasting — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Because willpower is a myth and doesn't exist",
+        "Because most goals people set are objectively too difficult",
+        "Because change requires professional help to be lasting",
         "Because the mind treats a threat to identity like a physical attack, triggering the same defensive survival response",
       ],
       correctIndex: 3,
@@ -311,9 +311,9 @@ export const CLUSTER_S: Node[] = [
         "According to Koe, why does understanding human nature outperform learning any single 'high-value skill'?",
       options: [
         "Because it's a meta-skill that increases the power of every other skill you learn, since humans control the money and opportunity you need",
-        "Because human nature never changes across cultures — a frequent misremembering that swaps the cause and its consequence.",
-        "Because AI cannot process psychological concepts — a familiar retelling that strips out the contingency the source treats as central.",
-        "Because it requires no practice to master — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Because human nature never changes across cultures",
+        "Because AI cannot process psychological concepts",
+        "Because it requires no practice to master",
       ],
       correctIndex: 0,
       explanation:
@@ -351,9 +351,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "What does Koe identify as the real threat behind 'wage slavery,' more than AI replacing jobs?",
       options: [
-        "Working more than 40 hours a week — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Working more than 40 hours a week",
         "Being financially dependent on one employer with no alternative skills or income sources",
-        "Not having a college degree — a frequent misremembering that swaps the cause and its consequence.",
+        "Not having a college degree",
         "AI making all human labor economically irrational within the next year",
       ],
       correctIndex: 1,
@@ -391,10 +391,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "How does Koe distinguish an 'essay' from an 'article'?",
       options: [
-        "Essays are shorter and less researched than articles — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Articles are for beginners, essays are for experts — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Essays are shorter and less researched than articles",
+        "Articles are for beginners, essays are for experts",
         "Articles package existing knowledge and start with the conclusion; essays are an act of thinking that discovers and can change the author's own beliefs",
-        "There is no real distinction, it's just a stylistic preference — a common simplification that omits the key mechanism behind the effect.",
+        "There is no real distinction, it's just a stylistic preference",
       ],
       correctIndex: 2,
       explanation:
@@ -432,9 +432,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to Koe, what is 'true boredom' actually good for, once the withdrawal period passes?",
       options: [
-        "Nothing — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "It only helps children, not adults — a compact misstatement that leaves out the scope in which the claim holds.",
-        "It is primarily useful for improving physical fitness — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Nothing",
+        "It only helps children, not adults",
+        "It is primarily useful for improving physical fitness",
         "It activates the brain's Default Mode Network, which is associated with insight, self-reflection, and creative connection-making",
       ],
       correctIndex: 3,
@@ -474,9 +474,9 @@ export const CLUSTER_S: Node[] = [
         "What is Koe's core critique of most existing self-development models (religion, business frameworks, fitness culture)?",
       options: [
         "They are siloed to one domain of life, so someone can be highly developed in one quadrant (like business) while badly underdeveloped in others (like relationships or body)",
-        "They are all completely wrong and should be discarded — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "They were all created before the internet existed — a compact misstatement that leaves out the scope in which the claim holds.",
-        "They require too much reading to understand — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "They are all completely wrong and should be discarded",
+        "They were all created before the internet existed",
+        "They require too much reading to understand",
       ],
       correctIndex: 0,
       explanation:
@@ -513,10 +513,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "What does Koe mean by distinguishing 'knowing' from 'understanding'?",
       options: [
-        "Knowing is for children, understanding is for adults — a neat inversion that makes the effect sound like the cause.",
+        "Knowing is for children, understanding is for adults",
         "Knowing means memorizing facts (horizontal, expertise); understanding means how sophisticated your whole way of thinking is (vertical, wisdom)",
-        "They are functionally the same thing described two ways — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Knowing only applies to science, understanding only applies to art — a compact misstatement that leaves out the scope in which the claim holds.",
+        "They are functionally the same thing described two ways",
+        "Knowing only applies to science, understanding only applies to art",
       ],
       correctIndex: 1,
       explanation:
@@ -553,10 +553,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "What is Koe's 'Swap Test' for whether AI can replace a piece of creative work?",
       options: [
-        "Whether the work took more than 10 hours to make — a surface-level gloss that misses the threshold where the claim stops applying The distinction matters because it changes what you would measure to test the claim.",
-        "Whether the work uses any AI tools at all in its production — a neat inversion that makes the effect sound like the cause Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Whether the work took more than 10 hours to make",
+        "Whether the work uses any AI tools at all in its production",
         "Whether swapping the creator for someone (or something) else would leave the work just as valuable — if yes, AI can replace it; if the work only works because of who made it, that's the human edge",
-        "Whether the work has already gone viral — a tempting paraphrase that drops the precise condition that makes the thesis work This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Whether the work has already gone viral",
       ],
       correctIndex: 2,
       explanation:
@@ -594,9 +594,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe insist that deliberate rest is part of productive work, not separate from it?",
       options: [
-        "Because rest has no measurable effect on cognitive performance — a familiar retelling that strips out the contingency the source treats as central.",
-        "Because rest is only necessary to avoid burnout, with no upside beyond that — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Because most successful people work fewer than 10 hours a week total — a neat inversion that makes the effect sound like the cause.",
+        "Because rest has no measurable effect on cognitive performance",
+        "Because rest is only necessary to avoid burnout, with no upside beyond that",
+        "Because most successful people work fewer than 10 hours a week total",
         "Because the brain's Default Mode Network, active during genuine unstructured rest, is where much of the real idea-generation and insight happens, which is then executed during focused work",
       ],
       correctIndex: 3,
@@ -636,9 +636,9 @@ export const CLUSTER_S: Node[] = [
         "According to Koe, why do the best podcast guests and speakers sound articulate on the spot?",
       options: [
         "They have a small set of deeply refined 'greatest hits' ideas, already thought through many times, that they deploy rather than generating brand-new insight live",
-        "They are naturally gifted improvisers — a familiar retelling that strips out the contingency the source treats as central.",
-        "They memorize scripts word-for-word before every conversation — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "They avoid answering the actual question asked — a neat inversion that makes the effect sound like the cause.",
+        "They are naturally gifted improvisers",
+        "They memorize scripts word-for-word before every conversation",
+        "They avoid answering the actual question asked",
       ],
       correctIndex: 0,
       explanation:
@@ -676,10 +676,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "What does Koe mean by saying most resolutions target 'second-order' rather than 'first-order' change?",
       options: [
-        "Second-order changes are illegal and first-order changes are legal — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Second-order changes are illegal and first-order changes are legal",
         "Second-order change means changing actions directly; first-order change means changing the underlying identity so the new actions follow naturally and don't require ongoing willpower",
-        "First-order changes only apply to health goals — a familiar retelling that strips out the contingency the source treats as central.",
-        "There is no meaningful difference, it's just wording — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "First-order changes only apply to health goals",
+        "There is no meaningful difference, it's just wording",
       ],
       correctIndex: 1,
       explanation:
@@ -717,10 +717,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe argue the Development-Based path (brand = your own goals, content = what you learn, product = helping others reach the same goal) suits people with multiple interests better than the Skill-Based path?",
       options: [
-        "Because it requires no marketing skills at all — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because it guarantees faster income than any other business model — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because it requires no marketing skills at all",
+        "Because it guarantees faster income than any other business model",
         "Because it doesn't force you to niche down into one marketable skill — you become your own customer avatar, so pursuing several interests together becomes the business rather than a distraction from it",
-        "Because it was invented specifically for the AI era and didn't exist before — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because it was invented specifically for the AI era and didn't exist before",
       ],
       correctIndex: 2,
       explanation:
@@ -758,9 +758,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "Per Koe, what does the explosion of AI-accessible knowledge actually prove about most people's stalled progress?",
       options: [
-        "That AI has made human effort obsolete — a common simplification that omits the key mechanism behind the effect.",
-        "That knowledge itself has become worthless — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "That formal education is now completely unnecessary — a plausible reading that overlooks the limiting condition the text stresses.",
+        "That AI has made human effort obsolete",
+        "That knowledge itself has become worthless",
+        "That formal education is now completely unnecessary",
         "That access to knowledge was never the real bottleneck — most people still do nothing meaningful with nearly unlimited access, which means the missing ingredient was always agency",
       ],
       correctIndex: 3,

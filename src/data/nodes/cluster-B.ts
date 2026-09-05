@@ -21,9 +21,9 @@ export const CLUSTER_B: Node[] = [
         "What made the Fairchild deal structurally different from a normal stock purchase, and why did that matter?",
       options: [
         "Fairchild Camera and Instrument got an option to buy the entire new company later, rather than just purchasing shares upfront — letting founders keep control while proving the business worked",
-        "The founders were required to repay the investment in cash within one year regardless of performance — a compact misstatement that leaves out the scope in which the claim holds.",
-        "The deal was funded entirely by a government small-business grant, not a private company — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Shockley Semiconductor itself provided the funding as a severance package — a widely circulated summary that inverts the relationship the author actually defends.",
+        "The founders were required to repay the investment in cash within one year regardless of performance",
+        "The deal was funded entirely by a government small-business grant, not a private company",
+        "Shockley Semiconductor itself provided the funding as a severance package",
       ],
       correctIndex: 0,
       explanation:
@@ -75,10 +75,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "Why did Olsen and Anderson pitch selling circuit modules before pitching interactive computers?",
       options: [
-        "Circuit modules were more profitable long-term than computers would ever be — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Circuit modules were more profitable long-term than computers would ever be",
         "The computer business had a reputation as an investor money-loser at the time, so a smaller proven product de-risked the pitch and built credibility toward the bigger ambition",
-        "IBM required them to prove circuit expertise before entering the computer market — a compact misstatement that leaves out the scope in which the claim holds.",
-        "ARD's charter legally prohibited it from funding computer companies directly — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "IBM required them to prove circuit expertise before entering the computer market",
+        "ARD's charter legally prohibited it from funding computer companies directly",
       ],
       correctIndex: 1,
       explanation:
@@ -130,10 +130,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "What did Roelof Botha's YouTube investment memo prioritize as evidence the company was worth backing, despite having little revenue?",
       options: [
-        "A signed advertising contract with a major brand — a neat inversion that makes the effect sound like the cause.",
-        "A patent filing for YouTube's video compression technology — a handy abbreviation that hides the counter-condition the argument requires.",
+        "A signed advertising contract with a major brand",
+        "A patent filing for YouTube's video compression technology",
         "The explosive volume and growth rate of user-generated video uploads, as a leading indicator of becoming the default place for online video",
-        "Projected profitability within the first 12 months — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Projected profitability within the first 12 months",
       ],
       correctIndex: 2,
       explanation:
@@ -184,9 +184,9 @@ export const CLUSTER_B: Node[] = [
     quiz: {
       question: "What was the core argument of Facebook's 2004 media kit pitch to advertisers?",
       options: [
-        "That Facebook had more total users than any competing site — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "That Facebook had already signed exclusive contracts with major brands — a neat inversion that makes the effect sound like the cause.",
-        "That the site would soon expand beyond colleges to the general public — a handy abbreviation that hides the counter-condition the argument requires.",
+        "That Facebook had more total users than any competing site",
+        "That Facebook had already signed exclusive contracts with major brands",
+        "That the site would soon expand beyond colleges to the general public",
         "That dense, repeated engagement from a narrow, targetable audience was more valuable to advertisers than a larger but less engaged audience",
       ],
       correctIndex: 3,
@@ -240,9 +240,9 @@ export const CLUSTER_B: Node[] = [
       question: "How did Kalanick and Camp initially position UberCab in their 2008 pitch deck?",
       options: [
         "As a premium, invite-only black-car service comparable to NetJets, aimed at professionals rather than the general public",
-        "As a direct, mass-market replacement for city taxi services — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "As a logistics platform for package delivery that would later add rides — a neat inversion that makes the effect sound like the cause.",
-        "As a public transit partnership with city governments — a handy abbreviation that hides the counter-condition the argument requires.",
+        "As a direct, mass-market replacement for city taxi services",
+        "As a logistics platform for package delivery that would later add rides",
+        "As a public transit partnership with city governments",
       ],
       correctIndex: 0,
       explanation:
@@ -295,10 +295,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "Why did the bootstrapped 'cereal box' story matter to Airbnb's fundraising, beyond being a memorable anecdote?",
       options: [
-        "It generated enough direct revenue to fund the company without needing investors — a frequent misremembering that swaps the cause and its consequence.",
+        "It generated enough direct revenue to fund the company without needing investors",
         "It demonstrated the founders' resourcefulness and execution under extreme constraint, which mattered for trust during a financial crisis when the core idea itself looked unproven",
-        "It was a marketing campaign specifically designed to attract Sequoia's attention — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "It proved there was already strong demand for the room-booking platform itself — a neat inversion that makes the effect sound like the cause.",
+        "It was a marketing campaign specifically designed to attract Sequoia's attention",
+        "It proved there was already strong demand for the room-booking platform itself",
       ],
       correctIndex: 1,
       explanation:
@@ -350,10 +350,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "Why did Tesla's master plan start with an expensive, low-volume sports car instead of an affordable mass-market car?",
       options: [
-        "Musk wanted to establish a luxury brand identity permanently, with no plan to go cheaper — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Regulations at the time prohibited EV manufacturers from selling low-cost vehicles — a frequent misremembering that swaps the cause and its consequence.",
+        "Musk wanted to establish a luxury brand identity permanently, with no plan to go cheaper",
+        "Regulations at the time prohibited EV manufacturers from selling low-cost vehicles",
         "The expensive early car funded and proved out the technology, manufacturing capability, and credibility needed to eventually build cheaper, higher-volume cars",
-        "Battery technology only existed in a form suitable for sports cars in 2006 — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Battery technology only existed in a form suitable for sports cars in 2006",
       ],
       correctIndex: 2,
       explanation:

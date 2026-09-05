@@ -21,9 +21,9 @@ export const CLUSTER_AI: Node[] = [
         "What was actually novel about Machiavelli's approach in The Prince compared to earlier political philosophy?",
       options: [
         "He described how power is actually held and kept in practice, rather than prescribing an idealized virtuous ruler",
-        "He was the first to argue rulers should be virtuous above all else — a frequent misremembering that swaps the cause and its consequence.",
-        "He focused exclusively on religious justifications for rule — a familiar retelling that strips out the contingency the source treats as central.",
-        "He argued that democracy was superior to monarchy — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "He was the first to argue rulers should be virtuous above all else",
+        "He focused exclusively on religious justifications for rule",
+        "He argued that democracy was superior to monarchy",
       ],
       correctIndex: 0,
       explanation:
@@ -61,9 +61,9 @@ export const CLUSTER_AI: Node[] = [
       question:
         "Why does Stigler's capture theory predict regulation will tend to favor the regulated industry over consumers?",
       options: [
-        "Because regulators are always personally corrupt — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because regulators are legally required to consult industry representatives before writing any rule — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Because consumers are unable to purchase regulated goods at any price — a frequent misremembering that swaps the cause and its consequence.",
+        "Because regulators are always personally corrupt",
+        "Because regulators are legally required to consult industry representatives before writing any rule",
+        "Because consumers are unable to purchase regulated goods at any price",
         "Because the regulated industry is small and concentrated with strong incentive to lobby, while consumers are numerous and diffuse with weak individual incentive to organize against any single rule",
       ],
       correctIndex: 3,
@@ -157,7 +157,7 @@ export const CLUSTER_AI: Node[] = [
       {
         label: "The Dictator's Handbook (2011)",
         source: "Bueno de Mesquita & Smith",
-        url: "https://www.buenodemesquita.com/",
+        url: "https://www.hachettebookgroup.com/titles/bruce-bueno-de-mesquita/the-dictators-handbook/9781610390453/",
         archive: { status: "unavailable" },
       },
     ],
@@ -198,7 +198,7 @@ export const CLUSTER_AI: Node[] = [
       {
         label: "The Spirit of the Laws (1748), Book XI",
         source: "Montesquieu",
-        url: "https://oll.libertyfund.org/title/montesquieu-complete-works-vol-1-the-spirit-of-laws",
+        url: "https://oll.libertyfund.org/titles/montesquieu-complete-works-vol-1-the-spirit-of-laws",
         archive: { status: "unavailable" },
       },
     ],
@@ -224,9 +224,9 @@ export const CLUSTER_AI: Node[] = [
       question: "What organizational mechanism drives Michels' Iron Law of Oligarchy?",
       options: [
         "Growing complexity forces delegation and professionalization, concentrating information and agenda control in a small permanent leadership despite formal democracy",
-        "Organizations naturally become more democratic as they grow because more members participate Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "Oligarchy only arises when leaders are personally corrupt or power-hungry, not from organizational structure itself It holds only within the scope the author defines, not as a universal claim.",
-        "The law claims any hierarchy is instantly oligarchic regardless of size, complexity, or delegation This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Organizations naturally become more democratic as they grow because more members participate",
+        "Oligarchy only arises when leaders are personally corrupt or power-hungry, not from organizational structure itself",
+        "The law claims any hierarchy is instantly oligarchic regardless of size, complexity, or delegation",
       ],
       correctIndex: 0,
       explanation:
@@ -264,9 +264,9 @@ export const CLUSTER_AI: Node[] = [
       question: "What makes soft power 'power' in Nye's definition?",
       options: [
         "It gets others to want what you want through attraction to your culture, values, or policies, so they align without coercion or payment",
-        "It is simply the absence of any influence, letting other actors do whatever they please It holds only within the scope the author defines, not as a.",
-        "Soft power is identical to hard power but rebranded with more appealing language This reading skips the enabling condition that makes the mechanism.",
-        "Soft power works only through military deterrence and economic sanctions The distinction matters because it changes what you would measure to test the claim.",
+        "It is simply the absence of any influence, letting other actors do whatever they please",
+        "Soft power is identical to hard power but rebranded with more appealing language",
+        "Soft power works only through military deterrence and economic sanctions",
       ],
       correctIndex: 0,
       explanation:
@@ -305,9 +305,9 @@ export const CLUSTER_AI: Node[] = [
         "What does successfully 'moving the Overton Window' make possible that direct policy advocacy inside the current window cannot?",
       options: [
         "It shifts the range of what the public will consider acceptable, so a previously unthinkable policy can be endorsed without prohibitive political cost",
-        "It immediately makes any fringe policy law without needing public deliberation or elite adoption This reading skips the enabling condition that makes the mechanism work as stated.",
-        "The Overton window is fixed and cannot be moved, so advocacy should never attempt to shift it The distinction matters because it changes what you would measure to test the claim.",
-        "Moving the window only works by suppressing all opposing viewpoints through censorship Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "It immediately makes any fringe policy law without needing public deliberation or elite adoption",
+        "The Overton window is fixed and cannot be moved, so advocacy should never attempt to shift it",
+        "Moving the window only works by suppressing all opposing viewpoints through censorship",
       ],
       correctIndex: 0,
       explanation:

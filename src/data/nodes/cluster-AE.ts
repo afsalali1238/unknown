@@ -21,9 +21,9 @@ export const CLUSTER_AE: Node[] = [
         "Why did Campbell argue the same basic story structure recurs across unrelated cultures' mythologies?",
       options: [
         "The structure mirrors the actual psychological shape of transformation and growth, so cultures independently converge on it",
-        "Colonial trade routes spread one story to every culture — a handy abbreviation that hides the counter-condition the argument requires.",
-        "All myths were plagiarized from a single ancient source text — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "It's a coincidence with no underlying explanation — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Colonial trade routes spread one story to every culture",
+        "All myths were plagiarized from a single ancient source text",
+        "It's a coincidence with no underlying explanation",
       ],
       correctIndex: 0,
       explanation:
@@ -67,9 +67,9 @@ export const CLUSTER_AE: Node[] = [
       question:
         "According to Girard's theory of mimetic desire, where does desire actually originate?",
       options: [
-        "Desire arises independently within each individual based on the object's inherent qualities — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Desire is entirely determined by economic scarcity — a neat inversion that makes the effect sound like the cause.",
-        "Desire is a fixed biological drive unrelated to social context — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Desire arises independently within each individual based on the object's inherent qualities",
+        "Desire is entirely determined by economic scarcity",
+        "Desire is a fixed biological drive unrelated to social context",
         "Desire is borrowed from a model or mediator — we want things because someone else wants or has them, not purely for the object's own qualities",
       ],
       correctIndex: 3,
@@ -114,10 +114,10 @@ export const CLUSTER_AE: Node[] = [
       question:
         "According to this framework, why does storytelling tend to be more persuasive than presenting raw data alone?",
       options: [
-        "Because data is always factually incorrect. — a familiar retelling that strips out the contingency the source treats as central.",
-        "Because storytelling requires no supporting evidence at all. — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Because data is always factually incorrect.",
+        "Because storytelling requires no supporting evidence at all.",
         "Because stories create emotional stakes through character and conflict, and people tend to act on emotional stakes more reliably than on abstract numbers.",
-        "Because audiences cannot process numerical information. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Because audiences cannot process numerical information.",
       ],
       correctIndex: 2,
       explanation:
@@ -156,9 +156,9 @@ export const CLUSTER_AE: Node[] = [
       question: "What is the core harm of the narrative fallacy according to Taleb?",
       options: [
         "We mistake a coherent retrospective story for a true causal explanation and overestimate our ability to predict the next variation",
-        "We fail to tell any stories at all, leaving important events unexplained and unmemorable This reading skips the enabling condition that makes.",
-        "Narratives are always intentionally deceptive and their authors should be distrusted The distinction matters because it changes what you would.",
-        "The fallacy only applies to ancient myths, not to modern markets or personal careers Without that condition, the same evidence would be.",
+        "We fail to tell any stories at all, leaving important events unexplained and unmemorable",
+        "Narratives are always intentionally deceptive and their authors should be distrusted",
+        "The fallacy only applies to ancient myths, not to modern markets or personal careers",
       ],
       correctIndex: 0,
       explanation:
@@ -197,9 +197,9 @@ export const CLUSTER_AE: Node[] = [
         "What unifying principle do Pixar's 22 rules operationalize for working storytellers?",
       options: [
         "Give the protagonist a clear want early, test it against escalating obstacles, and ensure each scene connects by 'because' so transformation feels earned",
-        "Always add more jokes and visual gags, since humor is the only reliable way to hold attention The distinction matters because it changes what you would measure to test the claim.",
-        "Stories should avoid any protagonist want and instead present a series of unconnected pleasant events Without that condition, the same evidence would be consistent.",
-        "Pixar's rules are strict formulas that guarantee a hit if followed mechanically without revision It holds only within the scope the author defines, not as a universal claim.",
+        "Always add more jokes and visual gags, since humor is the only reliable way to hold attention",
+        "Stories should avoid any protagonist want and instead present a series of unconnected pleasant events",
+        "Pixar's rules are strict formulas that guarantee a hit if followed mechanically without revision",
       ],
       correctIndex: 0,
       explanation:
@@ -211,7 +211,7 @@ export const CLUSTER_AE: Node[] = [
       {
         label: "Pixar's 22 Rules of Storytelling (2011)",
         source: "Emma Coats / io9",
-        url: "https://gizmodo.com/pixars-22-rules-of-storytelling-5916970",
+        url: "https://gizmodo.com/the-22-rules-of-storytelling-according-to-pixar-5916970",
         archive: { status: "unavailable" },
       },
     ],
@@ -238,9 +238,9 @@ export const CLUSTER_AE: Node[] = [
         "How does kishōtenketsu create narrative interest without a required central conflict?",
       options: [
         "It introduces, develops, then twists with an unexpected recontextualizing element before concluding, letting meaning arise from juxtaposition",
-        "It simply omits the middle of the story, so audiences must invent the missing conflict themselves Without that condition, the same evidence would be.",
-        "It relies exclusively on surprise endings that contradict everything established earlier It holds only within the scope the author defines, not as a universal claim.",
-        "Kishōtenketsu is identical to three-act structure and differs only in the names of its beats This reading skips the enabling condition that makes the.",
+        "It simply omits the middle of the story, so audiences must invent the missing conflict themselves",
+        "It relies exclusively on surprise endings that contradict everything established earlier",
+        "Kishōtenketsu is identical to three-act structure and differs only in the names of its beats",
       ],
       correctIndex: 0,
       explanation:
@@ -292,7 +292,7 @@ export const CLUSTER_AE: Node[] = [
       {
         label: "The Storytelling Animal (2012)",
         source: "Jonathan Gottschall",
-        url: "https://www.jonathangottschall.com/the-storytelling-animal",
+        url: "https://www.jonathangottschall.com/storytelling-animal",
         archive: { status: "unavailable" },
       },
     ],
@@ -318,9 +318,9 @@ export const CLUSTER_AE: Node[] = [
       question: "What do Booker's seven basic plots claim to capture about storytelling?",
       options: [
         "A small set of recurring psychological tensions that underlie most narratives, so most stories are variations on the same few structures",
-        "A legal taxonomy that proves only seven distinct stories can ever be copyrighted This reading skips the enabling condition that makes the mechanism work as stated.",
-        "An argument that all good stories must include a literal monster and a literal quest The distinction matters because it changes what you would.",
-        "The claim that Eastern and Western storytelling share no common plots whatsoever Without that condition, the same evidence would be consistent with.",
+        "A legal taxonomy that proves only seven distinct stories can ever be copyrighted",
+        "An argument that all good stories must include a literal monster and a literal quest",
+        "The claim that Eastern and Western storytelling share no common plots whatsoever",
       ],
       correctIndex: 0,
       explanation:

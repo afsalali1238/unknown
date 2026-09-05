@@ -20,9 +20,9 @@ export const CLUSTER_P: Node[] = [
       question: "What is Naval's central distinction between wealth, money, and status?",
       options: [
         "Wealth is assets that earn while you sleep; money is the transfer mechanism; status is a zero-sum game that doesn't create wealth",
-        "Wealth and money are identical, and status is the only reliable way to build either — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Wealth comes only from inheritance; money is printed by governments to control status — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Status is the same as wealth; both are measured directly in dollars — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Wealth and money are identical, and status is the only reliable way to build either",
+        "Wealth comes only from inheritance; money is printed by governments to control status",
+        "Status is the same as wealth; both are measured directly in dollars",
       ],
       correctIndex: 0,
       explanation:
@@ -272,10 +272,10 @@ export const CLUSTER_P: Node[] = [
       question:
         "What game-theoretic distinction does Naval use to explain why long-term games reward honesty?",
       options: [
-        "Zero-sum versus positive-sum games — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Zero-sum versus positive-sum games",
         "Single-round interactions reward defection, while repeated, long-horizon interactions reward honesty and reciprocity",
-        "Games of skill versus games of chance — a frequent misremembering that swaps the cause and its consequence.",
-        "Cooperative versus competitive sports — a familiar retelling that strips out the contingency the source treats as central.",
+        "Games of skill versus games of chance",
+        "Cooperative versus competitive sports",
       ],
       correctIndex: 1,
       explanation:
@@ -326,10 +326,10 @@ export const CLUSTER_P: Node[] = [
     quiz: {
       question: "How does Naval define 'Specific Knowledge' in his Income formula?",
       options: [
-        "Any knowledge learned in a formal degree program. — a common simplification that omits the key mechanism behind the effect.",
-        "Knowledge of financial markets specifically. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "Any knowledge learned in a formal degree program.",
+        "Knowledge of financial markets specifically.",
         "Knowledge of how to do something society cannot yet easily train other people to do.",
-        "Any skill that can be fully automated by software. — a frequent misremembering that swaps the cause and its consequence.",
+        "Any skill that can be fully automated by software.",
       ],
       correctIndex: 2,
       explanation:

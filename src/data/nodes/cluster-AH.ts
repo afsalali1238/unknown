@@ -20,9 +20,9 @@ export const CLUSTER_AH: Node[] = [
       question:
         "According to Ibn Khaldun, what causes a dynasty's founding group solidarity (asabiyyah) to erode?",
       options: [
-        "Foreign invasion is the sole cause of decline in every case — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Religious conversion always weakens ruling groups — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Asabiyyah never actually erodes once established — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Foreign invasion is the sole cause of decline in every case",
+        "Religious conversion always weakens ruling groups",
+        "Asabiyyah never actually erodes once established",
         "Urbanization, accumulated wealth, and generational distance from the original shared hardship dilute the cohesion that built the dynasty in the first place",
       ],
       correctIndex: 3,
@@ -60,10 +60,10 @@ export const CLUSTER_AH: Node[] = [
     quiz: {
       question: "What was Gibbon's central argument about why Rome fell?",
       options: [
-        "Rome fell purely because barbarian armies were militarily superior — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Rome fell purely because barbarian armies were militarily superior",
+        "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline",
         "Rome's collapse was primarily a long internal erosion of civic virtue, military loyalty, and institutional competence, with external invasion delivering the final blow rather than causing the decline itself",
-        "Rome fell because a single decisive battle destroyed its army beyond recovery — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Rome fell because a single decisive battle destroyed its army beyond recovery",
       ],
       correctIndex: 2,
       explanation:
@@ -102,9 +102,9 @@ export const CLUSTER_AH: Node[] = [
         "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
       options: [
         "Geographic and environmental accidents — available domesticable species, a continent's east-west versus north-south orientation, and resulting disease immunity — that compounded over millennia into large differences in technology and population",
-        "Innate differences in intelligence or ability between different peoples — a tempting paraphrase that drops the precise condition that makes the thesis work This reading skips the enabling condition that makes the mechanism work as stated.",
-        "Random chance events with no identifiable underlying pattern — a compact misstatement that leaves out the scope in which the claim holds The distinction matters because it changes what you would measure to test the claim.",
-        "Religious differences between civilizations — an intuitive gloss that confuses the enabling condition with the outcome Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Innate differences in intelligence or ability between different peoples",
+        "Random chance events with no identifiable underlying pattern",
+        "Religious differences between civilizations",
       ],
       correctIndex: 0,
       explanation:
@@ -143,10 +143,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
       options: [
-        "A power's military becomes too large to physically defend its own borders — a neat inversion that makes the effect sound like the cause This reading skips the enabling condition that makes the mechanism work as stated.",
+        "A power's military becomes too large to physically defend its own borders",
         "A power's strategic and military commitments continue expanding even as its relative economic base declines, and the resulting funding gap — bridged by debt or taxation — further erodes the economy, accelerating the decline",
-        "A power expands its territory too quickly for its population to fill — a tempting paraphrase that drops the precise condition that makes the thesis work Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "A power loses a single decisive military battle that it never recovers from — a compact misstatement that leaves out the scope in which the claim holds It holds only within the scope the author defines, not as a universal claim.",
+        "A power expands its territory too quickly for its population to fill",
+        "A power loses a single decisive military battle that it never recovers from",
       ],
       correctIndex: 1,
       explanation:
@@ -186,10 +186,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
       options: [
-        "Sapiens had significantly larger brains and higher individual intelligence than all other human species — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Sapiens were the only human species capable of using tools — a neat inversion that makes the effect sound like the cause.",
+        "Sapiens had significantly larger brains and higher individual intelligence than all other human species",
+        "Sapiens were the only human species capable of using tools",
         "The capacity for genuinely abstract shared fiction — collectively believing in things like money, nations, and corporations that have no independent physical existence — which let strangers coordinate at scales no other species could match",
-        "Sapiens had no need for cooperation because they were physically stronger than rival species — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Sapiens had no need for cooperation because they were physically stronger than rival species",
       ],
       correctIndex: 2,
       explanation:
@@ -228,9 +228,9 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What is Frankopan's central reframing of traditional world history in The Silk Roads?",
       options: [
-        "That Western Europe has always been the uncontested center of global trade and power — a familiar retelling that strips out the contingency the source treats as central.",
-        "That trade routes had no significant influence on the spread of religion or technology — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "That the Silk Roads were only active for a brief period in the ancient world — a neat inversion that makes the effect sound like the cause.",
+        "That Western Europe has always been the uncontested center of global trade and power",
+        "That trade routes had no significant influence on the spread of religion or technology",
+        "That the Silk Roads were only active for a brief period in the ancient world",
         "That the trade corridors connecting Central Asia, the Middle East, China, and India — not any single Western civilization — were the primary engine and center of gravity of world history for most of recorded time",
       ],
       correctIndex: 3,
@@ -270,9 +270,9 @@ export const CLUSTER_AH: Node[] = [
       question: "According to Kuhn, what typically triggers a genuine scientific 'paradigm shift'?",
       options: [
         "An accumulation of anomalies — observations that don't fit the existing accepted framework — reaching a crisis point, resolved by a new framework that reorganizes the field's basic assumptions rather than just adding new facts",
-        "A single new experiment that instantly convinces the entire scientific community — a familiar retelling that strips out the contingency the source treats as central.",
-        "A government or funding body mandating that scientists adopt a new theory — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions — a neat inversion that makes the effect sound like the cause.",
+        "A single new experiment that instantly convinces the entire scientific community",
+        "A government or funding body mandating that scientists adopt a new theory",
+        "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions",
       ],
       correctIndex: 0,
       explanation:
@@ -311,10 +311,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "Why do Acemoglu and Robinson argue that 'extractive' institutions tend to produce long-run poverty, even when they might not always block growth in the short term?",
       options: [
-        "Because extractive institutions are always run by less intelligent leaders — a plausible reading that overlooks the limiting condition the text stresses This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Because extractive institutions are always run by less intelligent leaders",
         "Because the narrow elites who benefit from extractive institutions have a direct incentive to block broad-based innovation and creative destruction, since new competition threatens the very concentration of power and rents that benefits them",
-        "Because extractive institutions are found only in countries with poor geography — a familiar retelling that strips out the contingency the source treats as central Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "Because extractive institutions were outlawed by international treaties — a surface-level gloss that misses the threshold where the claim stops applying It holds only within the scope the author defines, not as a universal claim.",
+        "Because extractive institutions are found only in countries with poor geography",
+        "Because extractive institutions were outlawed by international treaties",
       ],
       correctIndex: 1,
       explanation:
@@ -353,10 +353,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
       options: [
-        "A single invasion by the 'Sea Peoples' that no civilization could have survived — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "A sudden, unexplained climate event with no connection to trade or political factors — a plausible reading that overlooks the limiting condition the text stresses.",
+        "A single invasion by the 'Sea Peoples' that no civilization could have survived",
+        "A sudden, unexplained climate event with no connection to trade or political factors",
         "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
-        "Deliberate, coordinated destruction ordered by Egyptian pharaohs — a familiar retelling that strips out the contingency the source treats as central.",
+        "Deliberate, coordinated destruction ordered by Egyptian pharaohs",
       ],
       correctIndex: 2,
       explanation:

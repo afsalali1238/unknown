@@ -20,10 +20,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What mechanism did Darwin propose for how complex adaptations arise without any designer or plan?",
       options: [
-        "Organisms consciously choose which traits to develop and pass on — a frequent misremembering that swaps the cause and its consequence.",
+        "Organisms consciously choose which traits to develop and pass on",
         "Random heritable variation gets filtered by differential survival and reproduction, so advantageous traits accumulate over many generations",
-        "Species inherit traits their parents acquired during their own lifetime — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "A predetermined genetic blueprint unfolds over time — a neat inversion that makes the effect sound like the cause.",
+        "Species inherit traits their parents acquired during their own lifetime",
+        "A predetermined genetic blueprint unfolds over time",
       ],
       correctIndex: 1,
       explanation:
@@ -62,9 +62,9 @@ export const CLUSTER_AB: Node[] = [
         "What problem did Hamilton's theory of inclusive fitness solve that pure individual-survival selection couldn't explain?",
       options: [
         "Why animals sometimes sacrifice their own survival or reproduction to help close relatives survive and reproduce",
-        "Why some species migrate seasonally — a frequent misremembering that swaps the cause and its consequence.",
-        "Why mutation rates vary between species — a familiar retelling that strips out the contingency the source treats as central.",
-        "Why predator populations cycle with prey populations — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "Why some species migrate seasonally",
+        "Why mutation rates vary between species",
+        "Why predator populations cycle with prey populations",
       ],
       correctIndex: 0,
       explanation:
@@ -108,10 +108,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "In Dawkins's framework, why does natural selection make more sense analyzed at the level of the gene rather than the individual organism?",
       options: [
-        "Because individual organisms never actually reproduce — an appealing shorthand that collapses a structural distinction into a surface similarity The distinction matters because it changes what you would measure to test the claim.",
+        "Because individual organisms never actually reproduce",
         "Because genes, not individual bodies, are the unit that can persist in copies across many generations, so behaviors that look self-sacrificing at the individual level (like helping relatives) can still favor the survival of that individual's genes",
-        "Because Dawkins proved individual organisms have no influence on their own survival — a frequent misremembering that swaps the cause and its consequence It holds only within the scope the author defines, not as a universal claim.",
-        "Because genes are conscious and make deliberate strategic choices — a familiar retelling that strips out the contingency the source treats as central This reading skips the enabling condition that makes the mechanism work as stated.",
+        "Because Dawkins proved individual organisms have no influence on their own survival",
+        "Because genes are conscious and make deliberate strategic choices",
       ],
       correctIndex: 1,
       explanation:
@@ -150,10 +150,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What did Mendel's pea plant experiments reveal about inheritance that contradicted the prevailing theory of his time?",
       options: [
-        "That traits blend smoothly between parent and offspring, confirming the dominant theory — a common simplification that omits the key mechanism behind the effect.",
-        "That plants and animals inherit traits through completely different mechanisms — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "That traits are inherited as discrete, particulate units passed intact from each parent — a plausible reading that overlooks the limiting condition the text stresses.",
-        "That environment, not heredity, determines nearly all observable traits — a frequent misremembering that swaps the cause and its consequence.",
+        "That traits blend smoothly between parent and offspring, confirming the dominant theory",
+        "That plants and animals inherit traits through completely different mechanisms",
+        "That traits are inherited as discrete, particulate units passed intact from each parent",
+        "That environment, not heredity, determines nearly all observable traits",
       ],
       correctIndex: 2,
       explanation:
@@ -192,9 +192,9 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What tension did the Modern Synthesis resolve between early genetics and Darwinian evolution?",
       options: [
-        "It proved that genetics and evolution are completely unrelated fields that should be studied separately — a widely circulated summary that inverts the relationship the author actually defends.",
-        "It disproved Mendel's laws of inheritance in favor of blending inheritance — a common simplification that omits the key mechanism behind the effect.",
-        "It showed that natural selection only applies to single-celled organisms — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "It proved that genetics and evolution are completely unrelated fields that should be studied separately",
+        "It disproved Mendel's laws of inheritance in favor of blending inheritance",
+        "It showed that natural selection only applies to single-celled organisms",
         "It reconciled Mendelian genetics' discrete, particulate inheritance with Darwinian natural selection's gradual change, showing mutations create genetic variation while selection acts gradually on that variation's frequency across a population",
       ],
       correctIndex: 3,
@@ -235,9 +235,9 @@ export const CLUSTER_AB: Node[] = [
         "What did Eldredge and Gould's punctuated equilibrium model challenge about traditional Darwinian gradualism?",
       options: [
         "The assumption that evolutionary change proceeds at a roughly constant, slow rate — they argued the fossil record's pattern of long stasis punctuated by rapid bursts, tied to speciation, is real signal rather than incomplete sampling",
-        "That evolution happens at all — a widely circulated summary that inverts the relationship the author actually defends The distinction matters because it changes what you would measure to test the claim.",
-        "That natural selection is the mechanism driving evolutionary change — a common simplification that omits the key mechanism behind the effect Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "That species can go extinct — an appealing shorthand that collapses a structural distinction into a surface similarity It holds only within the scope the author defines, not as a universal claim.",
+        "That evolution happens at all",
+        "That natural selection is the mechanism driving evolutionary change",
+        "That species can go extinct",
       ],
       correctIndex: 0,
       explanation:
@@ -276,10 +276,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What key evidence supports Margulis's claim that mitochondria were once independent bacteria?",
       options: [
-        "Mitochondria are visually identical to the rest of the cell under a microscope — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Mitochondria are visually identical to the rest of the cell under a microscope",
         "Mitochondria contain their own DNA, separate from the cell's main genome, and that DNA closely resembles bacterial DNA rather than the host cell's DNA",
-        "Mitochondria can survive and reproduce completely outside of any cell — a widely circulated summary that inverts the relationship the author actually defends.",
-        "There is no genetic evidence; the theory rests entirely on structural resemblance — a common simplification that omits the key mechanism behind the effect.",
+        "Mitochondria can survive and reproduce completely outside of any cell",
+        "There is no genetic evidence; the theory rests entirely on structural resemblance",
       ],
       correctIndex: 1,
       explanation:
@@ -318,10 +318,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "Why did the double-helix structure of DNA immediately suggest a mechanism for genetic copying?",
       options: [
-        "Because DNA molecules can only exist inside a laboratory — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Because DNA has no physical structure and exists only as an abstract concept — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Because DNA molecules can only exist inside a laboratory",
+        "Because DNA has no physical structure and exists only as an abstract concept",
         "Because each of the two complementary strands, held together by specific base-pairing rules, can serve as a template to build an exact copy of its partner strand",
-        "Because the double helix shape prevents any copying from occurring at all — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because the double helix shape prevents any copying from occurring at all",
       ],
       correctIndex: 2,
       explanation:
@@ -360,9 +360,9 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
       options: [
-        "Older species were far less likely to go extinct than newly evolved ones — a handy abbreviation that hides the counter-condition the argument requires.",
-        "All species in the fossil record went extinct at exactly the same rate regardless of type — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Extinction rates were found to be entirely random and unrelated to any biological factor — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Older species were far less likely to go extinct than newly evolved ones",
+        "All species in the fossil record went extinct at exactly the same rate regardless of type",
+        "Extinction rates were found to be entirely random and unrelated to any biological factor",
         "A species' probability of extinction in a given time period didn't decrease the longer it had already survived, suggesting species don't reach a stable 'finished' state of adaptation, since their competitors and predators keep evolving too",
       ],
       correctIndex: 3,

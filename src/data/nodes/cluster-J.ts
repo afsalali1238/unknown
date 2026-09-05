@@ -18,10 +18,10 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "You want to build a lasting friendship. Inversion suggests asking:",
       options: [
-        "How can I maximize how much fun we have? ",
-        "What's the fastest path to trust? — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "How can I maximize how much fun we have?",
+        "What's the fastest path to trust?",
         "What are ten ways to guarantee this friendship dies?",
-        "Who are our mutual friends? — a frequent misremembering that swaps the cause and its consequence.",
+        "Who are our mutual friends?",
       ],
       correctIndex: 2,
       explanation:
@@ -58,9 +58,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "A CEO cuts prices to gain market share. First-order effect: sales rise. What's the classic missed second-order effect?",
       options: [
-        "The CEO gets a bonus. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "The stock price always rises. — a common simplification that omits the key mechanism behind the effect.",
-        "Nothing meaningful — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "The CEO gets a bonus.",
+        "The stock price always rises.",
+        "Nothing meaningful",
         "Competitors match, margins fall for everyone, and customers now expect the lower price.",
       ],
       correctIndex: 3,
@@ -137,10 +137,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "A coworker leaves you out of a meeting invite. Hanlon's Razor prompts you to first suspect:",
       options: [
-        "They're trying to sabotage you. — a compact misstatement that leaves out the scope in which the claim holds.",
+        "They're trying to sabotage you.",
         "They forgot or didn't realize you needed to be included.",
-        "They dislike you personally. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "They're a bad person. — a common simplification that omits the key mechanism behind the effect.",
+        "They dislike you personally.",
+        "They're a bad person.",
       ],
       correctIndex: 1,
       explanation:
@@ -225,9 +225,9 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What are the four steps of the Feynman Technique, in order?",
       options: [
-        "Read, memorize, recite, forget — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Watch a lecture, take notes, highlight, re-read — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "Guess, check, revise, repeat — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Read, memorize, recite, forget",
+        "Watch a lecture, take notes, highlight, re-read",
+        "Guess, check, revise, repeat",
         "Select a concept and map your knowledge; teach it to a 12-year-old; review and refine; test and archive",
       ],
       correctIndex: 3,
@@ -274,9 +274,9 @@ export const CLUSTER_J: Node[] = [
         "In the 1987 King's Cross fire investigation, what was identified as the actual root cause, as distinct from the proximate cause (a dropped match)?",
       options: [
         "Untrained staff with no knowledge of how to evacuate people or fight the fire",
-        "The wooden escalators alone — a handy abbreviation that hides the counter-condition the argument requires.",
-        "A bomb planted by an unknown attacker — a tempting paraphrase that drops the precise condition that makes the thesis work.",
-        "A faulty electrical system — a compact misstatement that leaves out the scope in which the claim holds.",
+        "The wooden escalators alone",
+        "A bomb planted by an unknown attacker",
+        "A faulty electrical system",
       ],
       correctIndex: 0,
       explanation:
@@ -319,10 +319,10 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What discovery led Edward Lorenz to found chaos theory in the 1960s?",
       options: [
-        "A supercomputer malfunction that predicted an impossible weather pattern — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "A supercomputer malfunction that predicted an impossible weather pattern",
         "Entering a weather-model starting value as 0.506 instead of the full 0.506127 produced a wildly different forecast",
-        "A failed experiment trying to control the weather artificially — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Observing real butterflies affecting local wind patterns — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "A failed experiment trying to control the weather artificially",
+        "Observing real butterflies affecting local wind patterns",
       ],
       correctIndex: 1,
       explanation:
@@ -412,9 +412,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "In Simon Ramo's distinction, what percentage of points are won (not lost) in professional tennis, versus amateur tennis?",
       options: [
-        "50% in both — a neat inversion that makes the effect sound like the cause.",
-        "Points are lost equally often at both levels — a handy abbreviation that hides the counter-condition the argument requires.",
-        "It's the reverse — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "50% in both",
+        "Points are lost equally often at both levels",
+        "It's the reverse",
         "About 80% of points are won in professional tennis; about 80% are lost (via errors) in amateur tennis",
       ],
       correctIndex: 3,
@@ -460,9 +460,9 @@ export const CLUSTER_J: Node[] = [
         "Who coined the phrase 'all models are wrong, but some are useful,' cited as the origin of this piece's title?",
       options: [
         "George Box, in a 1976 paper",
-        "Charlie Munger — a neat inversion that makes the effect sound like the cause.",
-        "Nassim Taleb — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Alfred Korzybski — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "Charlie Munger",
+        "Nassim Taleb",
+        "Alfred Korzybski",
       ],
       correctIndex: 0,
       explanation:
@@ -553,10 +553,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What changes the incentive structure of the Prisoner's Dilemma from favoring defection to making cooperation more likely?",
       options: [
-        "Making the prison sentences longer — a frequent misremembering that swaps the cause and its consequence.",
-        "Allowing the prisoners to communicate just once — a familiar retelling that strips out the contingency the source treats as central.",
+        "Making the prison sentences longer",
+        "Allowing the prisoners to communicate just once",
         "Repeating (iterating) the game an unknown or effectively infinite number of times",
-        "Removing the police from the scenario entirely — a neat inversion that makes the effect sound like the cause.",
+        "Removing the police from the scenario entirely",
       ],
       correctIndex: 2,
       explanation:
@@ -601,9 +601,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What does the 'Orient' stage of the OODA Loop specifically involve, according to Boyd?",
       options: [
-        "Simply gathering more raw data about the situation — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Immediately acting on the first available option — a frequent misremembering that swaps the cause and its consequence.",
-        "Waiting for a superior officer's direct order — a familiar retelling that strips out the contingency the source treats as central.",
+        "Simply gathering more raw data about the situation",
+        "Immediately acting on the first available option",
+        "Waiting for a superior officer's direct order",
         "Stripping away cultural, genetic, and cognitive biases to see the situation as it truly is",
       ],
       correctIndex: 3,
@@ -649,9 +649,9 @@ export const CLUSTER_J: Node[] = [
         "In the mammogram example used in this piece, why can a test that's 75% accurate still produce mostly false positives in absolute numbers?",
       options: [
         "Because the underlying disease rate (the prior/base rate) is very low, so false positives from the much larger healthy population swamp true positives",
-        "Because the test itself is fundamentally broken — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Because doctors deliberately misread the results — a frequent misremembering that swaps the cause and its consequence.",
-        "Because 75% accuracy is actually below chance level — a familiar retelling that strips out the contingency the source treats as central.",
+        "Because the test itself is fundamentally broken",
+        "Because doctors deliberately misread the results",
+        "Because 75% accuracy is actually below chance level",
       ],
       correctIndex: 0,
       explanation:
@@ -695,10 +695,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What distinguishes a 'fat-tailed' distribution (like wealth or market crashes) from a normal bell-curve distribution (like human height)?",
       options: [
-        "Fat-tailed distributions have no meaningful average at all — a common simplification that omits the key mechanism behind the effect.",
+        "Fat-tailed distributions have no meaningful average at all",
         "Fat-tailed distributions have no natural cap on extreme outliers, making rare extreme events far more likely than bell-curve intuition suggests",
-        "Fat-tailed distributions only apply to biological measurements — a plausible reading that overlooks the limiting condition the text stresses.",
-        "There is no real difference between the two — a frequent misremembering that swaps the cause and its consequence.",
+        "Fat-tailed distributions only apply to biological measurements",
+        "There is no real difference between the two",
       ],
       correctIndex: 1,
       explanation:
@@ -743,10 +743,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the classic medical-training version of Occam's Razor mentioned in this piece?",
       options: [
-        "'First, do no harm' — a widely circulated summary that inverts the relationship the author actually defends.",
-        "'The patient is always right' — a common simplification that omits the key mechanism behind the effect.",
+        "'First, do no harm'",
+        "'The patient is always right'",
         "'When you hear hoofbeats, think horses, not zebras'",
-        "'Treat the symptom, not the cause' — a plausible reading that overlooks the limiting condition the text stresses.",
+        "'Treat the symptom, not the cause'",
       ],
       correctIndex: 2,
       explanation:
@@ -791,9 +791,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to this article, what kind of reasoning is Sherlock Holmes actually using in his famous 'deductions,' despite the popular label?",
       options: [
-        "Genuine deductive reasoning, exactly as advertised — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Pure guesswork with no logical structure — a widely circulated summary that inverts the relationship the author actually defends.",
-        "A form of reasoning that doesn't exist in formal logic — a common simplification that omits the key mechanism behind the effect.",
+        "Genuine deductive reasoning, exactly as advertised",
+        "Pure guesswork with no logical structure",
+        "A form of reasoning that doesn't exist in formal logic",
         "Inductive reasoning — probable inference from observed clues, not certain deduction",
       ],
       correctIndex: 3,
@@ -840,9 +840,9 @@ export const CLUSTER_J: Node[] = [
         "What was Abraham Wald's key insight about WWII bomber planes and where to add armor?",
       options: [
         "Reinforce the areas showing little to no damage on returning planes, since hits there likely caused planes to never return at all",
-        "Reinforce wherever returning planes showed the most bullet damage — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Add armor evenly across the entire aircraft — a widely circulated summary that inverts the relationship the author actually defends.",
-        "Focus only on the cockpit, regardless of damage patterns — a common simplification that omits the key mechanism behind the effect.",
+        "Reinforce wherever returning planes showed the most bullet damage",
+        "Add armor evenly across the entire aircraft",
+        "Focus only on the cockpit, regardless of damage patterns",
       ],
       correctIndex: 0,
       explanation:
@@ -887,10 +887,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "Why does this piece argue oceanic whitetip sharks may be more dangerous than their attack statistics suggest?",
       options: [
-        "Because they are larger than great whites — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Because they are larger than great whites",
         "Because their attacks happen in the open ocean, in isolated situations with fewer potential survivors and witnesses to report them",
-        "Because they are faster swimmers — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because scientists have not studied them at all — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because they are faster swimmers",
+        "Because scientists have not studied them at all",
       ],
       correctIndex: 1,
       explanation:
@@ -934,10 +934,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "In the lying-detection study referenced in this piece, how often were participants who lied actually caught, versus how often they expected to be caught?",
       options: [
-        "They were caught about half the time, exactly as they expected — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "They were caught almost every time, far more than expected — a widely circulated summary that inverts the relationship the author actually defends.",
+        "They were caught about half the time, exactly as they expected",
+        "They were caught almost every time, far more than expected",
         "They expected to be caught about half the time but were actually only detected about a quarter of the time — a rate low enough to be chance",
-        "They were never caught at all — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "They were never caught at all",
       ],
       correctIndex: 2,
       explanation:
@@ -982,9 +982,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What does the 'WEIRD' critique (Henrich, Heine, Norenzayan) argue about a large share of psychology research?",
       options: [
-        "That psychology experiments are always too large to be useful — a compact misstatement that leaves out the scope in which the claim holds.",
-        "That anecdotes are always more accurate than statistics — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "That psychology research doesn't use human subjects at all — a widely circulated summary that inverts the relationship the author actually defends.",
+        "That psychology experiments are always too large to be useful",
+        "That anecdotes are always more accurate than statistics",
+        "That psychology research doesn't use human subjects at all",
         "That findings from Western, Educated, Industrialized, Rich, Democratic subjects are generalized to all humans despite being one of the least representative populations available",
       ],
       correctIndex: 3,
@@ -1031,9 +1031,9 @@ export const CLUSTER_J: Node[] = [
         "What thought experiment is credited with leading Einstein toward the special theory of relativity?",
       options: [
         "Imagining what he would observe if he could travel alongside a beam of light",
-        "Schrödinger's cat — a compact misstatement that leaves out the scope in which the claim holds.",
-        "The trolley problem — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Laplace's demon — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Schrödinger's cat",
+        "The trolley problem",
+        "Laplace's demon",
       ],
       correctIndex: 0,
       explanation:
@@ -1078,10 +1078,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What specific event is credited with giving Julia Child her breakthrough understanding of first-principles cooking?",
       options: [
-        "Watching televised cooking shows as a child — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Watching televised cooking shows as a child",
         "Enrolling at the Cordon Bleu cooking school in Paris in 1949, where she broke every dish down into its smallest steps",
-        "Being taught by her mother growing up — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Reading cookbooks translated from French — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Being taught by her mother growing up",
+        "Reading cookbooks translated from French",
       ],
       correctIndex: 1,
       explanation:
@@ -1126,10 +1126,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What historical event does this piece use as an example of reciprocity based on mutual self-interest between two ancient powers?",
       options: [
-        "The signing of the Magna Carta — a neat inversion that makes the effect sound like the cause.",
-        "The Treaty of Westphalia — a handy abbreviation that hides the counter-condition the argument requires.",
+        "The signing of the Magna Carta",
+        "The Treaty of Westphalia",
         "The 1259 BCE 'Eternal Treaty' between Egypt's Ramesses and the Hittite king Hattusili",
-        "The founding of the Silk Road — a compact misstatement that leaves out the scope in which the claim holds.",
+        "The founding of the Silk Road",
       ],
       correctIndex: 2,
       explanation:
@@ -1173,8 +1173,8 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to Marc Andreessen's 2013 comment cited in this piece, what share of profits does the #1 player typically capture in a technology market, versus the #2 player?",
       options: [
-        "50% versus 50%, an even split — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "70% versus 30% — a neat inversion that makes the effect sound like the cause.",
+        "50% versus 50%, an even split",
+        "70% versus 30%",
         "There is no meaningful pattern in technology markets",
         "About 90% for the #1 player and about 10% for the #2 player",
       ],
@@ -1220,9 +1220,9 @@ export const CLUSTER_J: Node[] = [
       question: "What is exaptation, as used in this piece's career-change framework?",
       options: [
         "A trait or skill that evolved or was built for one purpose but gets repurposed for a completely different, unrelated use",
-        "A financial exit strategy for leaving a company — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "A type of severance negotiation — a neat inversion that makes the effect sound like the cause.",
-        "A formal certification process — a handy abbreviation that hides the counter-condition the argument requires.",
+        "A financial exit strategy for leaving a company",
+        "A type of severance negotiation",
+        "A formal certification process",
       ],
       correctIndex: 0,
       explanation:
@@ -1265,10 +1265,10 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What does 'algebraic equivalence,' as used in this parenting piece, help explain?",
       options: [
-        "That every child must receive the exact same amount of physical items to be treated fairly — a frequent misremembering that swaps the cause and its consequence.",
+        "That every child must receive the exact same amount of physical items to be treated fairly",
         "That two different things (like different kinds of attention to different children) can be unequal in form but equal in value, just as different values of x and y can equally satisfy x+y=5",
-        "That parenting requires no math at all — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "That siblings should always be treated identically in every situation — a neat inversion that makes the effect sound like the cause.",
+        "That parenting requires no math at all",
+        "That siblings should always be treated identically in every situation",
       ],
       correctIndex: 1,
       explanation:
@@ -1312,10 +1312,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to this piece, what characterizes the 'short game' as opposed to the 'long game'?",
       options: [
-        "The short game requires more patience than the long game — a plausible reading that overlooks the limiting condition the text stresses.",
-        "The short game and long game produce identical results eventually — a frequent misremembering that swaps the cause and its consequence.",
+        "The short game requires more patience than the long game",
+        "The short game and long game produce identical results eventually",
         "The short game offers visible, immediate benefits but compounds into larger costs over time",
-        "The short game is only relevant to financial decisions — a surface-level gloss that misses the threshold where the claim stops applying.",
+        "The short game is only relevant to financial decisions",
       ],
       correctIndex: 2,
       explanation:
@@ -1359,9 +1359,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the 'grammar-book effect,' as described by David Graeber and cited in this piece?",
       options: [
-        "The tendency for grammar books to become bestsellers — a familiar retelling that strips out the contingency the source treats as central Without that condition, the same evidence would be consistent with the opposite conclusion.",
-        "A method for teaching children to read faster — a surface-level gloss that misses the threshold where the claim stops applying It holds only within the scope the author defines, not as a universal claim.",
-        "The idea that all languages eventually merge into one — a neat inversion that makes the effect sound like the cause This reading skips the enabling condition that makes the mechanism work as stated.",
+        "The tendency for grammar books to become bestsellers",
+        "A method for teaching children to read faster",
+        "The idea that all languages eventually merge into one",
         "Once a description of how people currently speak is written down and taught in schools, people start treating it as a fixed prescription for how they must speak, even as the living language keeps evolving",
       ],
       correctIndex: 3,
@@ -1482,9 +1482,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the 'Levels of Abstraction' heuristic, why is constantly zooming between the big picture and granular detail important when learning a new complex system?",
       options: [
-        "Because granular detail is always more important than the big picture. — a common simplification that omits the key mechanism behind the effect.",
-        "Because it's the fastest way to memorize technical vocabulary. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Because experts only ever think at the detail level. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Because granular detail is always more important than the big picture.",
+        "Because it's the fastest way to memorize technical vocabulary.",
+        "Because experts only ever think at the detail level.",
         "Because staying at only one layer — all overview or all detail — produces an incomplete or distorted understanding.",
       ],
       correctIndex: 3,
@@ -1524,10 +1524,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the framework built from this reading list, who does AI actually threaten most?",
       options: [
-        "People who refuse to use any AI tools. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "People who read too many books. — a common simplification that omits the key mechanism behind the effect.",
+        "People who refuse to use any AI tools.",
+        "People who read too many books.",
         "People who have outsourced their thinking to algorithms without realizing it.",
-        "Only professional researchers and scientists. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Only professional researchers and scientists.",
       ],
       correctIndex: 2,
       explanation:
@@ -1566,10 +1566,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the main risk of collecting long lists of mental models, as this node's framing suggests?",
       options: [
-        "That there are too few mental models to be useful. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "That there are too few mental models to be useful.",
         "That people recognize and collect the names of models without ever applying them to a real decision.",
-        "That mental models are only theoretical and can't be applied practically. — a common simplification that omits the key mechanism behind the effect.",
-        "That using more than one model at a time is always a mistake. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "That mental models are only theoretical and can't be applied practically.",
+        "That using more than one model at a time is always a mistake.",
       ],
       correctIndex: 1,
       explanation:
@@ -1609,9 +1609,9 @@ export const CLUSTER_J: Node[] = [
         "What distinct problem does the Leitner System solve, separate from the Feynman Technique?",
       options: [
         "It schedules review intervals based on how reliably you recall material, concentrating limited study time on what you're actually failing rather than what you already know.",
-        "It tests whether you actually understand a concept's underlying structure. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "It replaces the need to ever review material more than once. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "It is only useful for language learning, not other subjects. — a common simplification that omits the key mechanism behind the effect.",
+        "It tests whether you actually understand a concept's underlying structure.",
+        "It replaces the need to ever review material more than once.",
+        "It is only useful for language learning, not other subjects.",
       ],
       correctIndex: 0,
       explanation:
@@ -1651,9 +1651,9 @@ export const CLUSTER_J: Node[] = [
         "Which quadrant of the Johari Window can only be reduced through other people's feedback, not through self-reflection alone?",
       options: [
         "The Blind quadrant — traits others can see about you that you can't see yourself.",
-        "The Open quadrant. — a compact misstatement that leaves out the scope in which the claim holds.",
-        "The Hidden quadrant. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "The Unknown quadrant. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "The Open quadrant.",
+        "The Hidden quadrant.",
+        "The Unknown quadrant.",
       ],
       correctIndex: 0,
       explanation:
@@ -1692,10 +1692,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the Spurious Correlations project, what is 'data dredging' and why does it produce misleading results?",
       options: [
-        "Fabricating data points that don't exist in the real dataset. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Fabricating data points that don't exist in the real dataset.",
         "Testing enormous numbers of variable pairs against each other until some match up by pure chance, then presenting that chance match as if it were meaningful.",
-        "Rounding numbers to make a chart look smoother. — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Using only data from a single, small country to avoid outliers. — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Rounding numbers to make a chart look smoother.",
+        "Using only data from a single, small country to avoid outliers.",
       ],
       correctIndex: 1,
       explanation:

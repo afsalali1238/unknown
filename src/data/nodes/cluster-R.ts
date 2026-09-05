@@ -19,10 +19,10 @@ export const CLUSTER_R: Node[] = [
     quiz: {
       question: "What is Bostrom's simulation argument actually claiming?",
       options: [
-        "That we are definitely living in a computer simulation — a familiar retelling that strips out the contingency the source treats as central.",
+        "That we are definitely living in a computer simulation",
         "That at least one of three propositions must be true, one of which is that we are almost certainly in a simulation — without claiming to know which one",
-        "That technology will never be advanced enough to simulate consciousness — a neat inversion that makes the effect sound like the cause.",
-        "That video games will eventually become indistinguishable from reality — a handy abbreviation that hides the counter-condition the argument requires.",
+        "That technology will never be advanced enough to simulate consciousness",
+        "That video games will eventually become indistinguishable from reality",
       ],
       correctIndex: 1,
       explanation:
@@ -74,10 +74,10 @@ export const CLUSTER_R: Node[] = [
       question:
         "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
       options: [
-        "It doesn't matter either way for humanity's prospects — a frequent misremembering that swaps the cause and its consequence.",
-        "It only matters for funding decisions in astrobiology research — a familiar retelling that strips out the contingency the source treats as central.",
+        "It doesn't matter either way for humanity's prospects",
+        "It only matters for funding decisions in astrobiology research",
         "If the filter is ahead of us, it implies civilizations like ours tend to face a near-universal barrier to survival that we haven't yet cleared",
-        "The filter has already been definitively located by radio telescope surveys — a neat inversion that makes the effect sound like the cause.",
+        "The filter has already been definitively located by radio telescope surveys",
       ],
       correctIndex: 2,
       explanation:
@@ -128,9 +128,9 @@ export const CLUSTER_R: Node[] = [
     quiz: {
       question: "What is Sapolsky's central argument against free will in Determined?",
       options: [
-        "That people should stop trying to make good decisions since nothing matters — a plausible reading that overlooks the limiting condition the text stresses.",
-        "That free will exists but only for a small percentage of highly disciplined people — a frequent misremembering that swaps the cause and its consequence.",
-        "That free will is a purely religious concept with no scientific relevance — a familiar retelling that strips out the contingency the source treats as central.",
+        "That people should stop trying to make good decisions since nothing matters",
+        "That free will exists but only for a small percentage of highly disciplined people",
+        "That free will is a purely religious concept with no scientific relevance",
         "That every action is the end product of an unbroken causal chain (biology, environment, history) with no gap for an uncaused free choice to intervene",
       ],
       correctIndex: 3,
@@ -183,9 +183,9 @@ export const CLUSTER_R: Node[] = [
       question: "What historical decision does Goff's title 'Galileo's Error' refer to?",
       options: [
         "Galileo's founding split between quantitative properties (the domain of physics) and qualitative experience, which he excluded from science's scope",
-        "Galileo's incorrect claim that the Earth orbits the Sun — a plausible reading that overlooks the limiting condition the text stresses.",
-        "A mathematical error in Galileo's calculation of planetary motion — a frequent misremembering that swaps the cause and its consequence.",
-        "Galileo's rejection of Aristotelian philosophy — a familiar retelling that strips out the contingency the source treats as central.",
+        "Galileo's incorrect claim that the Earth orbits the Sun",
+        "A mathematical error in Galileo's calculation of planetary motion",
+        "Galileo's rejection of Aristotelian philosophy",
       ],
       correctIndex: 0,
       explanation:
@@ -236,10 +236,10 @@ export const CLUSTER_R: Node[] = [
     quiz: {
       question: "What is the core insight of the (weak) anthropic principle?",
       options: [
-        "The universe was deliberately designed to support human life — a common simplification that omits the key mechanism behind the effect.",
+        "The universe was deliberately designed to support human life",
         "We should expect to observe a universe compatible with our own existence, regardless of how statistically rare such a universe is, because we couldn't be observing an incompatible one",
-        "Physical constants are randomly generated and have no pattern — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Only Earth-like planets can support any form of life — a frequent misremembering that swaps the cause and its consequence.",
+        "Physical constants are randomly generated and have no pattern",
+        "Only Earth-like planets can support any form of life",
       ],
       correctIndex: 1,
       explanation:
@@ -391,9 +391,9 @@ export const CLUSTER_R: Node[] = [
       question:
         "According to Dark Forest Theory, why does a civilization instantly annihilate a newly discovered species?",
       options: [
-        "To harvest their planet's natural resources for energy. — a compact misstatement that leaves out the scope in which the claim holds.",
-        "Because of religious or ideological fanaticism. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Because they are bored and have nothing else to do. — a widely circulated summary that inverts the relationship the author actually defends.",
+        "To harvest their planet's natural resources for energy.",
+        "Because of religious or ideological fanaticism.",
+        "Because they are bored and have nothing else to do.",
         "Because the 'chain of suspicion' makes trust impossible, and letting them live risks your own eventual destruction.",
       ],
       correctIndex: 3,

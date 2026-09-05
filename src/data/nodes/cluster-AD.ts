@@ -20,9 +20,9 @@ export const CLUSTER_AD: Node[] = [
       question:
         "According to Hebbian theory, what physically changes in the brain when learning occurs?",
       options: [
-        "New neurons are created every time something is learned — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "The brain's total size increases with each new memory — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Neurons that fire together are chemically destroyed and replaced — a frequent misremembering that swaps the cause and its consequence.",
+        "New neurons are created every time something is learned",
+        "The brain's total size increases with each new memory",
+        "Neurons that fire together are chemically destroyed and replaced",
         "The synaptic connection between two neurons strengthens when one repeatedly helps activate the other",
       ],
       correctIndex: 3,
@@ -66,10 +66,10 @@ export const CLUSTER_AD: Node[] = [
     quiz: {
       question: "What did Raichle's 2001 discovery of the default mode network overturn?",
       options: [
-        "The theory that different brain regions are specialized for different functions — a common simplification that omits the key mechanism behind the effect.",
-        "The theory that memories are stored primarily in the hippocampus — an appealing shorthand that collapses a structural distinction into a surface similarity.",
+        "The theory that different brain regions are specialized for different functions",
+        "The theory that memories are stored primarily in the hippocampus",
         "The assumption that the resting brain is largely inactive — instead, a specific network becomes more active during rest and mind-wandering",
-        "The belief that neurons communicate via electrical signals — a frequent misremembering that swaps the cause and its consequence.",
+        "The belief that neurons communicate via electrical signals",
       ],
       correctIndex: 2,
       explanation:
@@ -156,9 +156,9 @@ export const CLUSTER_AD: Node[] = [
       question:
         "What does neuroplasticity fundamentally challenge about older models of brain development?",
       options: [
-        "That the brain has no capacity to change at all, at any age. — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "That only physical injury can alter brain structure. — a widely circulated summary that inverts the relationship the author actually defends.",
-        "That memory and learning are unrelated to brain structure. — a common simplification that omits the key mechanism behind the effect.",
+        "That the brain has no capacity to change at all, at any age.",
+        "That only physical injury can alter brain structure.",
+        "That memory and learning are unrelated to brain structure.",
         "That the brain can only change during a narrow childhood critical period, with no meaningful rewiring possible in adulthood.",
       ],
       correctIndex: 3,
@@ -279,9 +279,9 @@ export const CLUSTER_AD: Node[] = [
       question: "What is the core interpretation of mirror neuron findings?",
       options: [
         "Understanding others partly reuses your own motor and affective circuitry to simulate their actions and states, rather than relying solely on abstract inference",
-        "Mirror neurons allow perfect mind-reading of another person's exact thoughts with no simulation required This reading skips the enabling condition that makes the mechanism work as stated.",
-        "Humans lack a mirror system and must consciously reason about others without any embodied simulation The distinction matters because it changes what you would measure to test the claim.",
-        "Mirror neurons fire only during actual movement and are silent during observation of others Without that condition, the same evidence would be consistent with the opposite conclusion.",
+        "Mirror neurons allow perfect mind-reading of another person's exact thoughts with no simulation required",
+        "Humans lack a mirror system and must consciously reason about others without any embodied simulation",
+        "Mirror neurons fire only during actual movement and are silent during observation of others",
       ],
       correctIndex: 0,
       explanation:
@@ -291,9 +291,9 @@ export const CLUSTER_AD: Node[] = [
     related: ["AD8", "AD1", "O7", "U7"],
     furtherReading: [
       {
-        label: "Mirror neurons",
-        source: "Nature Reviews Neuroscience",
-        url: "https://www.nature.com/scitable/topicpage/mirror-neurons-15730860/",
+        label: "The Mirror-Neuron System (2004, Annual Review of Neuroscience)",
+        source: "Rizzolatti & Craighero",
+        url: "https://doi.org/10.1146/annurev.neuro.27.070203.144230",
         archive: { status: "unavailable" },
       },
     ],

@@ -20,9 +20,9 @@ export const CLUSTER_G: Node[] = [
       question: "According to Karpathy, what makes up the 'source code' of a Software 2.0 system?",
       options: [
         "The neural network's architecture and the dataset used to train it — since the actual logic is encoded as learned numerical weights, not hand-written instructions",
-        "A traditional programming language file that a human wrote and can read line by line — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "A configuration file specifying business rules — a widely circulated summary that inverts the relationship the author actually defends.",
-        "A compiled binary with no human-inspectable components at all — a common simplification that omits the key mechanism behind the effect.",
+        "A traditional programming language file that a human wrote and can read line by line",
+        "A configuration file specifying business rules",
+        "A compiled binary with no human-inspectable components at all",
       ],
       correctIndex: 0,
       explanation:
@@ -76,10 +76,10 @@ export const CLUSTER_G: Node[] = [
       question:
         "How does word2vec end up capturing semantic relationships between words, if it's only trained to predict nearby words?",
       options: [
-        "It's explicitly given a dictionary of word meanings during training — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "It's explicitly given a dictionary of word meanings during training",
         "The prediction task forces the network to build an internal vector representation where words used in similar contexts land near each other, and consistent relationships emerge as consistent directions in that space",
-        "It memorizes definitions from an online encyclopedia — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "Human annotators manually label the relationships between every pair of words — a widely circulated summary that inverts the relationship the author actually defends.",
+        "It memorizes definitions from an online encyclopedia",
+        "Human annotators manually label the relationships between every pair of words",
       ],
       correctIndex: 1,
       explanation:
@@ -133,10 +133,10 @@ export const CLUSTER_G: Node[] = [
       question:
         "What combination of techniques allowed AlexNet to train a deep network fast enough to be practical in 2012?",
       options: [
-        "A completely new type of computer chip designed specifically for the competition — a handy abbreviation that hides the counter-condition the argument requires.",
-        "Manually hand-labeling every single feature the network should look for — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "A completely new type of computer chip designed specifically for the competition",
+        "Manually hand-labeling every single feature the network should look for",
         "The ReLU activation function (faster training than sigmoid), dropout (reduces overfitting), and splitting the model across two GPUs to handle its 60 million parameters",
-        "Running the entire model on a single CPU over several months — an intuitive gloss that confuses the enabling condition with the outcome.",
+        "Running the entire model on a single CPU over several months",
       ],
       correctIndex: 2,
       explanation:
@@ -187,9 +187,9 @@ export const CLUSTER_G: Node[] = [
     quiz: {
       question: "What problem did ResNet's 'skip connections' specifically solve?",
       options: [
-        "They reduced the total number of parameters needed to store the model — a neat inversion that makes the effect sound like the cause.",
-        "They eliminated the need for labeled training data entirely — a handy abbreviation that hides the counter-condition the argument requires.",
-        "They allowed the network to run without GPUs — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "They reduced the total number of parameters needed to store the model",
+        "They eliminated the need for labeled training data entirely",
+        "They allowed the network to run without GPUs",
         "They let the training signal (gradient) bypass layers when needed, solving the vanishing gradient problem that made very deep networks degrade in accuracy rather than improve",
       ],
       correctIndex: 3,
@@ -300,10 +300,10 @@ export const CLUSTER_G: Node[] = [
     quiz: {
       question: "What is 'in-context learning,' as demonstrated by GPT-3?",
       options: [
-        "Retraining the model's weights every time it sees a new task — a familiar retelling that strips out the contingency the source treats as central.",
+        "Retraining the model's weights every time it sees a new task",
         "Performing a new task correctly just from a description or a few examples shown in the prompt itself, without any weight updates or retraining",
-        "Learning exclusively from a fixed, curated textbook dataset — a neat inversion that makes the effect sound like the cause.",
-        "A method requiring internet access during inference to look up answers — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Learning exclusively from a fixed, curated textbook dataset",
+        "A method requiring internet access during inference to look up answers",
       ],
       correctIndex: 1,
       explanation:
@@ -357,10 +357,10 @@ export const CLUSTER_G: Node[] = [
       question:
         "What specific guidance from the original Scaling Laws paper was later overturned by DeepMind's Chinchilla paper?",
       options: [
-        "The claim that neural networks require labeled data to train at all — a frequent misremembering that swaps the cause and its consequence.",
-        "The claim that GPU hardware would never become a bottleneck for AI progress — a familiar retelling that strips out the contingency the source treats as central.",
+        "The claim that neural networks require labeled data to train at all",
+        "The claim that GPU hardware would never become a bottleneck for AI progress",
         "The recommendation that, for a fixed compute budget, model size should be scaled up much faster than training data — Chinchilla showed the two should scale together",
-        "The idea that language models could ever perform translation tasks — a neat inversion that makes the effect sound like the cause.",
+        "The idea that language models could ever perform translation tasks",
       ],
       correctIndex: 2,
       explanation:
@@ -414,9 +414,9 @@ export const CLUSTER_G: Node[] = [
       question:
         "What did the Chinchilla paper prove was wrong with prior industry practice in training large language models?",
       options: [
-        "Models were being trained on too much data relative to their size — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Neural networks could not be trained using GPUs at all — a frequent misremembering that swaps the cause and its consequence.",
-        "Training data needed to be exclusively in English to be effective — a familiar retelling that strips out the contingency the source treats as central.",
+        "Models were being trained on too much data relative to their size",
+        "Neural networks could not be trained using GPUs at all",
+        "Training data needed to be exclusively in English to be effective",
         "Models were being built too large relative to how much training data they were given — a smaller model trained on proportionally more data outperformed a much larger, undertrained one",
       ],
       correctIndex: 3,
@@ -472,9 +472,9 @@ export const CLUSTER_G: Node[] = [
         "What training approach did DeepSeek-R1 rely on primarily to teach the model to reason, rather than mainly using human-labeled reasoning examples?",
       options: [
         "Reinforcement learning with rule-based rewards (correct answers, consistent language) building on a small amount of stabilizing 'cold-start' data",
-        "Pure memorization of textbook solutions to math problems — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Manual rule-writing by human logicians for every reasoning step — a frequent misremembering that swaps the cause and its consequence.",
-        "Training exclusively on translated versions of OpenAI's own model outputs — a familiar retelling that strips out the contingency the source treats as central.",
+        "Pure memorization of textbook solutions to math problems",
+        "Manual rule-writing by human logicians for every reasoning step",
+        "Training exclusively on translated versions of OpenAI's own model outputs",
       ],
       correctIndex: 0,
       explanation:
@@ -528,10 +528,10 @@ export const CLUSTER_G: Node[] = [
       question:
         "According to Rich Sutton's 'Bitter Lesson,' why do general, compute-heavy methods tend to eventually beat human-engineered domain expertise in AI?",
       options: [
-        "Because human experts are always wrong about their own domains — a compact misstatement that leaves out the scope in which the claim holds.",
+        "Because human experts are always wrong about their own domains",
         "Because hand-engineered knowledge imposes a hard ceiling on performance, while general methods (search and learning) can keep improving indefinitely as computation gets cheaper over time",
-        "Because compute-heavy methods require no data at all — a widely circulated summary that inverts the relationship the author actually defends.",
-        "Because domain experts refuse to collaborate with AI researchers — a common simplification that omits the key mechanism behind the effect.",
+        "Because compute-heavy methods require no data at all",
+        "Because domain experts refuse to collaborate with AI researchers",
       ],
       correctIndex: 1,
       explanation:

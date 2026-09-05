@@ -20,10 +20,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "According to 'How to Win Friends and Influence People,' what is the single most effective way to make someone feel valued?",
       options: [
-        "Give them frequent, vague compliments regardless of context — a widely circulated summary that inverts the relationship the author actually defends.",
+        "Give them frequent, vague compliments regardless of context",
         "Show genuine interest in them and make them feel important by listening and remembering what matters to them",
-        "Offer them a small gift in every interaction to create reciprocity — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "Publicly praise them in front of others even when it isn't warranted — a plausible reading that overlooks the limiting condition the text stresses.",
+        "Offer them a small gift in every interaction to create reciprocity",
+        "Publicly praise them in front of others even when it isn't warranted",
       ],
       correctIndex: 1,
       explanation:
@@ -179,10 +179,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "What did large-scale, independent replications of Dweck's most-cited studies find?",
       options: [
-        "They found an even stronger effect than her original studies — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "They found an even stronger effect than her original studies",
         "Little or no support for growth-mindset interventions meaningfully improving school attainment at scale",
-        "That fixed mindsets are actually superior for achievement — an intuitive gloss that confuses the enabling condition with the outcome.",
-        "The replications were never attempted — a widely circulated summary that inverts the relationship the author actually defends.",
+        "That fixed mindsets are actually superior for achievement",
+        "The replications were never attempted",
       ],
       correctIndex: 1,
       explanation:
@@ -336,10 +336,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "In the framework of Identity-Based Habits, how do your actions relate to your identity?",
       options: [
-        "Actions are irrelevant; only your internal mindset matters. — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Your actions are the predetermined result of your genetic identity. — a neat inversion that makes the effect sound like the cause.",
+        "Actions are irrelevant; only your internal mindset matters.",
+        "Your actions are the predetermined result of your genetic identity.",
         "Every action is a 'vote' for the type of person you wish to become, slowly building evidence of your new identity.",
-        "You must fully believe in your new identity before you take any actions. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "You must fully believe in your new identity before you take any actions.",
       ],
       correctIndex: 2,
       explanation:
@@ -381,9 +381,9 @@ export const CLUSTER_Q: Node[] = [
       question: "What is the psychological mechanism that makes Habit Stacking work?",
       options: [
         "It uses the strong neural pathways of an existing daily routine to trigger a new behavior.",
-        "It leverages the Zeigarnik Effect to create anxiety. — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "It relies on the Panic Monster to enforce deadlines. — a neat inversion that makes the effect sound like the cause.",
-        "It focuses on visualizing the end goal to generate motivation. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "It leverages the Zeigarnik Effect to create anxiety.",
+        "It relies on the Panic Monster to enforce deadlines.",
+        "It focuses on visualizing the end goal to generate motivation.",
       ],
       correctIndex: 0,
       explanation:
@@ -425,10 +425,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "Why does 'cognitive ease' function as a persuasion lever, according to this framework?",
       options: [
-        "Because audiences are too unintelligent to follow complex arguments. — a frequent misremembering that swaps the cause and its consequence.",
+        "Because audiences are too unintelligent to follow complex arguments.",
         "Because a message that is simple and easy to process tends to be judged as more true, independent of its actual logical strength.",
-        "Because cognitive ease only matters in written communication, not speech. — a surface-level gloss that misses the threshold where the claim stops applying.",
-        "Because it replaces the need for any supporting evidence. — a neat inversion that makes the effect sound like the cause.",
+        "Because cognitive ease only matters in written communication, not speech.",
+        "Because it replaces the need for any supporting evidence.",
       ],
       correctIndex: 1,
       explanation:
@@ -472,9 +472,9 @@ export const CLUSTER_Q: Node[] = [
       question: "What is the core critique in Tim Ferriss's 'Self-Help Trap' argument?",
       options: [
         "That compulsive optimization can itself become a way of avoiding actually living, making it a trap rather than a solution.",
-        "That all self-help advice is scientifically unfounded. — a common simplification that omits the key mechanism behind the effect.",
-        "That self-help books should never be read more than once. — an appealing shorthand that collapses a structural distinction into a surface similarity.",
-        "That only professional coaches should give self-improvement advice. — a plausible reading that overlooks the limiting condition the text stresses.",
+        "That all self-help advice is scientifically unfounded.",
+        "That self-help books should never be read more than once.",
+        "That only professional coaches should give self-improvement advice.",
       ],
       correctIndex: 0,
       explanation:
@@ -517,9 +517,9 @@ export const CLUSTER_Q: Node[] = [
       question:
         "What common failure connects most of the dismissive active-listening responses in this framework?",
       options: [
-        "They are all too long and detailed. — a neat inversion that makes the effect sound like the cause.",
-        "They only fail when used with strangers, not friends. — a handy abbreviation that hides the counter-condition the argument requires.",
-        "They are grammatically incorrect. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "They are all too long and detailed.",
+        "They only fail when used with strangers, not friends.",
+        "They are grammatically incorrect.",
         "They assert the listener's own judgment or authority over the speaker's experience instead of leaving control of the conversation with the speaker.",
       ],
       correctIndex: 3,
@@ -564,9 +564,9 @@ export const CLUSTER_Q: Node[] = [
         "What is the central premise behind treating small talk as a learnable skill rather than a fixed trait?",
       options: [
         "That conversational ease breaks down into specific, copyable behaviors (initiating first, using names, asking open questions) that anyone can practice.",
-        "That charismatic people are born, not made, and the skill can't actually be taught. — a neat inversion that makes the effect sound like the cause.",
-        "That small talk should always be avoided in favor of deep conversation. — a handy abbreviation that hides the counter-condition the argument requires.",
-        "That only professional networkers benefit from these techniques. — a tempting paraphrase that drops the precise condition that makes the thesis work.",
+        "That charismatic people are born, not made, and the skill can't actually be taught.",
+        "That small talk should always be avoided in favor of deep conversation.",
+        "That only professional networkers benefit from these techniques.",
       ],
       correctIndex: 0,
       explanation:
@@ -609,10 +609,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "According to Housel's distinction between 'rich' and 'wealthy,' what does true wealth actually look like?",
       options: [
-        "Wealth is measured by the visible assets you own — a familiar retelling that strips out the contingency the source treats as central.",
+        "Wealth is measured by the visible assets you own",
         "Wealth is what you don't see: the income deliberately not converted into visible spending, left to compound instead.",
-        "Wealth is primarily a function of income level, independent of spending habits. — a neat inversion that makes the effect sound like the cause.",
-        "Wealth and being 'rich' are functionally the same thing in Housel's framework. — a handy abbreviation that hides the counter-condition the argument requires.",
+        "Wealth is primarily a function of income level, independent of spending habits.",
+        "Wealth and being 'rich' are functionally the same thing in Housel's framework.",
       ],
       correctIndex: 1,
       explanation:
@@ -662,10 +662,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "What mechanism does Kahneman identify as the source of most systematic cognitive biases?",
       options: [
-        "System 2 deliberately overriding System 1's correct intuitions. — a frequent misremembering that swaps the cause and its consequence.",
-        "A simple lack of intelligence or education in the person making the judgment. — a familiar retelling that strips out the contingency the source treats as central.",
+        "System 2 deliberately overriding System 1's correct intuitions.",
+        "A simple lack of intelligence or education in the person making the judgment.",
         "Substitution — System 1 quietly answers an easier question than the hard one actually being asked, and System 2 accepts it without checking.",
-        "Random noise in memory recall with no identifiable underlying pattern. — a neat inversion that makes the effect sound like the cause.",
+        "Random noise in memory recall with no identifiable underlying pattern.",
       ],
       correctIndex: 2,
       explanation:
@@ -717,9 +717,9 @@ export const CLUSTER_Q: Node[] = [
       question:
         "According to Duhigg's 'Golden Rule of Habit Change,' what is the most reliable way to change an existing habit?",
       options: [
-        "Eliminate the cue that triggers the habit entirely. — a plausible reading that overlooks the limiting condition the text stresses.",
-        "Rely on willpower alone to suppress the routine until the habit fades. —",
-        "Replace the reward with a larger, more motivating one. — a familiar retelling that strips out the contingency the source treats as central.",
+        "Eliminate the cue that triggers the habit entirely.",
+        "Rely on willpower alone to suppress the routine until the habit fades.",
+        "Replace the reward with a larger, more motivating one.",
         "Keep the same cue and the same reward, but consciously substitute a new routine in between.",
       ],
       correctIndex: 3,
