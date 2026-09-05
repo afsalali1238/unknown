@@ -113,7 +113,14 @@ const initial: State = {
 };
 
 export function todayISO() {
-  return new Date().toISOString().slice(0, 10);
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function localMidnightMs(ts: number): number {
+  const d = new Date(ts);
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
 }
 
 function touchStreak(days: string[]): string[] {
@@ -133,8 +140,8 @@ export const useStore = create<State & Actions>()(
       submitQuiz: (id, correct) =>
         set((s) => {
           const prev = s.review[id] ?? { box: 0, due: Date.now() };
-          const box = correct ? Math.min(5, prev.box + 1) : 0;
-          const due = Date.now() + LEITNER_DAYS[box] * DAY_MS;
+          const box = correct ? Math.min(5, prev.box + 1) : Math.max(0, prev.box - 2);
+          const due = localMidnightMs(Date.now()) + LEITNER_DAYS[box] * DAY_MS;
 
           const today = todayISO();
           // Only count progress if they didn't already 'gotIt' this node
@@ -261,11 +268,13 @@ export function currentStreak(days: string[]): number {
   const set = new Set(days);
   let count = 0;
   const d = new Date();
-  if (!set.has(d.toISOString().slice(0, 10))) {
+  const iso = (x: Date) =>
+    `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
+  if (!set.has(iso(d))) {
     d.setDate(d.getDate() - 1);
-    if (!set.has(d.toISOString().slice(0, 10))) return 0;
+    if (!set.has(iso(d))) return 0;
   }
-  while (set.has(d.toISOString().slice(0, 10))) {
+  while (set.has(iso(d))) {
     count++;
     d.setDate(d.getDate() - 1);
   }

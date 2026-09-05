@@ -62,7 +62,14 @@ function YouScreen() {
             </span>
             <MicroLabel>nodes learned today</MicroLabel>
           </div>
-          <div className="h-2 w-full bg-line overflow-hidden mt-2">
+          <div
+            className="h-2 w-full bg-line overflow-hidden mt-2"
+            role="progressbar"
+            aria-valuenow={hydrated ? state.dailyProgress[todayISO()] || 0 : 0}
+            aria-valuemin={0}
+            aria-valuemax={hydrated ? state.dailyGoal : 3}
+            aria-label="Daily goal progress"
+          >
             <div
               className="h-full bg-accent transition-all duration-500 ease-out"
               style={{
@@ -182,7 +189,14 @@ function Reading() {
               of {total} read · {left} left · {pct}%
             </MicroLabel>
           </div>
-          <div className="mt-3 h-1.5 w-full bg-line">
+          <div
+            className="mt-3 h-1.5 w-full bg-line"
+            role="progressbar"
+            aria-valuenow={readCount}
+            aria-valuemin={0}
+            aria-valuemax={total}
+            aria-label="Reading progress"
+          >
             <div className="h-full bg-accent transition-all" style={{ width: `${pct}%` }} />
           </div>
 
@@ -422,10 +436,12 @@ function AudioPreferences() {
 function last14Days(): string[] {
   const out: string[] = [];
   const d = new Date();
+  const fmt = (x: Date) =>
+    `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
   for (let i = 13; i >= 0; i--) {
     const x = new Date(d);
     x.setDate(d.getDate() - i);
-    out.push(x.toISOString().slice(0, 10));
+    out.push(fmt(x));
   }
   return out;
 }
@@ -448,6 +464,7 @@ function Glossary() {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         placeholder="Search terms…"
+        aria-label="Search glossary"
         className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
       />
       <form
@@ -464,12 +481,14 @@ function Glossary() {
           value={term}
           onChange={(e) => setTerm(e.target.value)}
           placeholder="Term"
+          aria-label="Glossary term"
           className="w-full border-b border-line bg-transparent py-2 text-base focus:border-ink focus:outline-none"
         />
         <textarea
           value={def}
           onChange={(e) => setDef(e.target.value)}
           placeholder="Definition"
+          aria-label="Glossary definition"
           className="w-full border-b border-line bg-transparent py-2 text-sm focus:border-ink focus:outline-none"
           rows={2}
         />
@@ -524,6 +543,7 @@ function Scratchpad() {
         onChange={(e) => set(e.target.value)}
         rows={6}
         placeholder="Half-formed thoughts, connections, quotes…"
+        aria-label="Scratchpad"
         className="w-full border border-line bg-paper p-3 font-serif text-base leading-relaxed focus:border-ink focus:outline-none"
       />
     </Section>

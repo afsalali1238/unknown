@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
 import { MicroLabel } from "@/components/MicroLabel";
@@ -69,6 +69,126 @@ function parseFrontmatter(raw: string): ParsedArchive {
     credit: creditLines.join(" "),
     paragraphs,
   };
+}
+
+// Minimal inline markdown: **bold**, *italic*, `code`, [label](url)
+function inlineMarkdown(text: string): ReactNode[] {
+  const nodes: ReactNode[] = [];
+  // Split on links, bold, italic, code — keep delimiters
+  const re = /(\[.+?\]\(.+?\)|\*\*.+?\*\*|\*.+?\*|`[^`]+`)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let key = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    const token = m[0];
+    if (token.startsWith("[")) {
+      const lm = token.match(/\[(.+?)\]\((.+?)\)/);
+      if (lm) {
+        nodes.push(
+          <a
+            key={key++}
+            href={lm[2]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent underline underline-offset-4 hover:text-ink"
+          >
+            {lm[1]}
+          </a>,
+        );
+      } else nodes.push(token);
+    } else if (token.startsWith("**")) {
+      nodes.push(
+        <strong key={key++} className="font-semibold">
+          {token.slice(2, -2)}
+        </strong>,
+      );
+    } else if (token.startsWith("*")) {
+      nodes.push(
+        <em key={key++} className="italic">
+          {token.slice(1, -1)}
+        </em>,
+      );
+    } else if (token.startsWith("`")) {
+      nodes.push(
+        <code key={key++} className="rounded bg-line/30 px-1 py-0.5 font-mono text-sm">
+          {token.slice(1, -1)}
+        </code>,
+      );
+    }
+    last = m.index + token.length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes.length ? nodes : [text];
+}
+
+function MarkdownBlock({ text }: { text: string }) {
+  // Headings
+  if (/^###\s+/.test(text)) {
+    return (
+      <h3 className="font-serif text-xl text-ink mt-8">
+        {inlineMarkdown(text.replace(/^###\s+/, ""))}
+      </h3>
+    );
+  }
+  if (/^##\s+/.test(text)) {
+    return (
+      <h2 className="font-serif text-2xl text-ink mt-8">
+        {inlineMarkdown(text.replace(/^##\s+/, ""))}
+      </h2>
+    );
+  }
+  if (/^#\s+/.test(text)) {
+    return (
+      <h1 className="font-serif text-3xl text-ink mt-8">
+        {inlineMarkdown(text.replace(/^#\s+/, ""))}
+      </h1>
+    );
+  }
+  // Unordered list
+  if (
+    /^[-*]\s/m.test(text) &&
+    text.split("\n").every((l) => /^[-*]\s/.test(l.trim()) || l.trim() === "")
+  ) {
+    const items = text
+      .split("\n")
+      .map((l) => l.replace(/^[-*]\s/, "").trim())
+      .filter(Boolean);
+    return (
+      <ul className="list-disc pl-6 space-y-2 marker:text-ink-soft">
+        {items.map((it, i) => (
+          <li key={i} className="font-serif text-lg leading-relaxed text-ink">
+            {inlineMarkdown(it)}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+  // Ordered list
+  if (/^\d+\.\s/m.test(text)) {
+    const items = text
+      .split("\n")
+      .map((l) => l.replace(/^\d+\.\s/, "").trim())
+      .filter(Boolean);
+    return (
+      <ol className="list-decimal pl-6 space-y-2 marker:text-ink-soft">
+        {items.map((it, i) => (
+          <li key={i} className="font-serif text-lg leading-relaxed text-ink">
+            {inlineMarkdown(it)}
+          </li>
+        ))}
+      </ol>
+    );
+  }
+  // Blockquote inside body (lines starting with >)
+  if (text.startsWith(">")) {
+    return (
+      <blockquote className="border-l-2 border-line pl-4 italic text-ink-soft">
+        {inlineMarkdown(text.replace(/^>\s?/gm, ""))}
+      </blockquote>
+    );
+  }
+  return <p className="font-serif text-lg leading-relaxed text-ink">{inlineMarkdown(text)}</p>;
 }
 
 function ReadScreen() {
@@ -165,9 +285,7 @@ function ReadScreen() {
         {status === "ready" && data && (
           <div className="space-y-5">
             {data.paragraphs.map((p, i) => (
-              <p key={i} className="font-serif text-lg leading-relaxed text-ink">
-                {p}
-              </p>
+              <MarkdownBlock key={i} text={p} />
             ))}
           </div>
         )}

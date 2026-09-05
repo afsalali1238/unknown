@@ -13,7 +13,7 @@ Run a proper accessibility audit before a full public launch. Use automated tool
 
 ## 2. Split Data Bundle (`nodes.ts`)
 
-**Current State:** The entire knowledge graph (currently **387 nodes** as of 2026-09-04, 406 archived sources) is bundled from `src/data/nodes.ts`. Source file is ~1.18 MB raw. Built bundle: client `index` chunk was **1,373 KB raw / 445 KB gzipped** before mitigation — **exceeding the 400 KB gzipped trigger**. A Vite `manualChunks` split now isolates `nodes.ts` into its own `nodes-*.js` chunk (see `vite.config.ts`), which reduces the main entry chunk and makes the split explicit for caching. Full per-cluster lazy-loading (per `docs/NODES-SPLIT-DECISION.md`) is still deferred but the trigger condition is now **MET** — this partial split is a stopgap.
+**Current State:** The entire knowledge graph (currently **451 nodes** as of 2026-09-05, 406 archived sources) is bundled from `src/data/nodes.ts`. Source file is ~1.18 MB raw. Built bundle: client `index` chunk was **1,373 KB raw / 445 KB gzipped** before mitigation — **exceeding the 400 KB gzipped trigger**. A Vite `manualChunks` split now isolates `nodes.ts` into its own `nodes-*.js` chunk (see `vite.config.ts`), which reduces the main entry chunk and makes the split explicit for caching. Full per-cluster lazy-loading (per `docs/NODES-SPLIT-DECISION.md`) is still deferred but the trigger condition is now **MET** — this partial split is a stopgap.
 
 **Deferred Work:** The monolithic `nodes.ts` needs to be split into per-cluster JSON files, enabling lazy-loading of a cluster's nodes only when its section is opened in Explore or a node within it is visited.
 
@@ -21,3 +21,14 @@ Run a proper accessibility audit before a full public launch. Use automated tool
 Implement this chunk splitting once node count reaches **350** OR `src/data/nodes.ts` exceeds **400KB gzipped** in the built bundle (decided 2026-07-16 — see docs/NODES-SPLIT-DECISION.md). **Status 2026-09-04: TRIGGERED** — 387 nodes, ~445 KB gzipped before mitigation; isolated chunk now applied. Next step is per-cluster dynamic `import()` + Service Worker dynamic precache re-architecture.
 
 **Mitigation applied 2026-09-04:** `vite.config.ts` `build.rollupOptions.output.manualChunks.nodes = ["./src/data/nodes.ts"]` to extract the graph into a separate cacheable chunk. Run `npm run build` and verify `dist/client/assets/nodes-*.js` exists and SW precache includes it.
+
+**Status 2026-09-05:** 451 nodes; the isolated client `nodes-*.js` chunk is **1,234 KB raw / ~404 KB gzipped** (the 2026-09-05 quiz-tail cleanup removed ~1,000 templated strings, offsetting most of the +64-node growth). Still above the 400 KB gzipped trigger, so per-cluster lazy-loading remains the next step.
+
+## 3. Quiz Correct-Answer Length Tell
+
+**Current State:** After the 2026-09-05 verification pass stripped ~1,000 templated distractor tails (" — a plausible reading that…"), the correct option is still the _longest_ of the four in roughly 93% of nodes (409/437 at `8b65861`; new nodes added since aim for ±20% length parity but most still have the correct answer longest). Options are shuffled per node (`Quiz.tsx`, `mulberry32`), so position is not a tell, but length is.
+
+**Deferred Work:** Rewrite distractors so the correct answer is the longest option in no more than ~40% of quizzes — either by lengthening the two strongest distractors with substantive (not templated) detail, or by tightening the correct answer. This is editorial work across ~400 nodes and should be done cluster by cluster with a fact check, not by regex.
+
+**Trigger Condition / "Done" Definition:**
+Do this before any leaderboard / streak-competition feature ships, or when a quiz-accuracy analytics pass shows first-attempt accuracy well above the ~60–70% a real recall test should produce. Measure with a one-off script comparing `options[correctIndex].length` against `max(options.length)` across `NODES`; target ≤40% correct-is-longest.

@@ -16,6 +16,11 @@ export const MAIN_TABS = [
     match: (p: string) => p === "/" || p.startsWith("/node"),
   },
   {
+    to: "/review" as const,
+    label: "Review",
+    match: (p: string) => p.startsWith("/review"),
+  },
+  {
     to: "/skim" as const,
     label: "Skim",
     match: (p: string) => p.startsWith("/skim") || p.startsWith("/map"),

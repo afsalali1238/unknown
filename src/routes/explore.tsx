@@ -78,20 +78,20 @@ function TrackRow({ node }: { node: Node }) {
   const queued = useStore((s) => s.readNext.includes(node.id));
   const addReadNext = useStore((s) => s.addReadNext);
   const removeReadNext = useStore((s) => s.removeReadNext);
-  const navigate = useNavigate();
 
   return (
     <div className="flex items-center gap-4 py-3 group">
-      <div className="w-6 shrink-0 flex justify-center">
+      <div className="w-6 shrink-0 flex justify-center" aria-hidden>
         {gotIt ? (
           <Check className="w-4 h-4 text-ink-soft" />
         ) : (
           <div className="w-1.5 h-1.5 rounded-full bg-ink-soft/30" />
         )}
       </div>
-      <div
-        className="flex-1 min-w-0 cursor-pointer"
-        onClick={() => navigate({ to: "/node/$id", params: { id: node.id } })}
+      <Link
+        to="/node/$id"
+        params={{ id: node.id }}
+        className="flex-1 min-w-0 text-left focus:outline-none focus-visible:ring-1 focus-visible:ring-accent"
       >
         <div className="truncate font-serif text-lg text-ink group-hover:underline">
           {node.title}
@@ -99,7 +99,7 @@ function TrackRow({ node }: { node: Node }) {
         <div className="truncate font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
           {node.author} · {node.medium}
         </div>
-      </div>
+      </Link>
       <button
         onClick={() => (queued ? removeReadNext(node.id) : addReadNext(node.id))}
         className={cn(

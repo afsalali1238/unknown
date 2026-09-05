@@ -19,6 +19,10 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id: string) => {
+          if (id.includes("src/data/nodes/cluster-")) {
+            const m = id.match(/cluster-([^.]+)\.ts/);
+            if (m) return `nodes-${m[1]}`;
+          }
           if (id.includes("src/data/nodes.ts")) return "nodes";
           return undefined;
         },

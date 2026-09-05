@@ -6,6 +6,7 @@ import { Quiz } from "@/components/Quiz";
 import { useStore, dueIds, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { FirstTimeHint } from "@/components/FirstTimeHint";
+import { shuffle } from "@/lib/random";
 
 export const Route = createFileRoute("/review")({
   head: () => ({
@@ -35,7 +36,7 @@ function ReviewScreen() {
   const queue = useMemo(() => {
     if (!hydrated) return [] as string[];
     const ids = dueIds(review);
-    return ids.sort(() => Math.random() - 0.5);
+    return shuffle(ids);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hydrated]);
 
@@ -74,11 +75,21 @@ function ReviewScreen() {
 
   return (
     <div className="px-5 pt-8 pb-10">
-      <div className="flex items-baseline justify-between">
-        <MicroLabel>
+      <div
+        className="flex items-baseline justify-between"
+        role="progressbar"
+        aria-valuenow={idx + 1}
+        aria-valuemin={1}
+        aria-valuemax={queue.length}
+        aria-label={`Review ${idx + 1} of ${queue.length}`}
+      >
+        <MicroLabel aria-live="polite" aria-atomic="true">
           Review · {idx + 1} / {queue.length}
         </MicroLabel>
         <MicroLabel>Streak · {streak}d</MicroLabel>
+      </div>
+      <div className="sr-only" aria-live="polite">
+        Card {idx + 1} of {queue.length}: {node.title}
       </div>
 
       {idx === 0 && (
