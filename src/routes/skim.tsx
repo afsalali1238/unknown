@@ -261,7 +261,7 @@ function SkimCard({
       aria-posinset={index + 1}
       aria-setsize={total}
       aria-labelledby={`skim-title-${node.id}`}
-      tabIndex={-1}
+      tabIndex={0}
       onClick={() => navigate({ to: "/node/$id", params: { id: node.id } })}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {

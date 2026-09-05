@@ -142,7 +142,7 @@ function RootComponent() {
   useThemeSync();
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="min-h-screen bg-paper pb-32">
+      <div className="min-h-screen bg-paper pb-36">
         <a
           href="#main-content"
           className="absolute -top-full left-2 z-50 px-4 py-2 bg-ink text-paper font-mono text-[11px] uppercase tracking-[0.18em] focus:top-2 transition-[top]"

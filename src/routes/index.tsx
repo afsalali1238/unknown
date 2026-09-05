@@ -245,7 +245,19 @@ function FeedScreen() {
   const visited = useStore((s) => s.visited);
   const readNext = useStore((s) => s.readNext);
 
-  const [seed] = useState(() => (Date.now() & 0xffffffff) >>> 0 || 1);
+  const [seed] = useState(() => {
+    if (typeof window !== "undefined") {
+      const raw = sessionStorage.getItem("feed-seed");
+      if (raw) {
+        const n = Number(raw);
+        if (Number.isFinite(n) && n !== 0) return n >>> 0;
+      }
+      const gen = (Date.now() & 0xffffffff) >>> 0 || 1;
+      sessionStorage.setItem("feed-seed", String(gen));
+      return gen;
+    }
+    return (Date.now() & 0xffffffff) >>> 0 || 1;
+  });
   const [queueOpen, setQueueOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(FEED_PAGE_SIZE);
   const containerRef = useRef<HTMLDivElement>(null);

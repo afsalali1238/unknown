@@ -437,6 +437,20 @@ function NodeScreen() {
             <span>{hydrated && queued ? "− Remove" : "+ Queue"}</span>
             <span className="hidden sm:inline">Read Next</span>
           </button>
+          <button
+            onClick={async () => {
+              const url = `${window.location.origin}/node/${node.id}`;
+              try {
+                if (navigator.share) await navigator.share({ title: node.title, url });
+                else await navigator.clipboard.writeText(url);
+              } catch {
+                /* user cancelled */
+              }
+            }}
+            className="flex items-center gap-2 border border-line px-4 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-ink hover:border-ink"
+          >
+            Share
+          </button>
         </div>
 
         {nextConnection && (

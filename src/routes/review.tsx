@@ -75,11 +75,21 @@ function ReviewScreen() {
 
   return (
     <div className="px-5 pt-8 pb-10">
-      <div className="flex items-baseline justify-between">
-        <MicroLabel>
+      <div
+        className="flex items-baseline justify-between"
+        role="progressbar"
+        aria-valuenow={idx + 1}
+        aria-valuemin={1}
+        aria-valuemax={queue.length}
+        aria-label={`Review ${idx + 1} of ${queue.length}`}
+      >
+        <MicroLabel aria-live="polite" aria-atomic="true">
           Review · {idx + 1} / {queue.length}
         </MicroLabel>
         <MicroLabel>Streak · {streak}d</MicroLabel>
+      </div>
+      <div className="sr-only" aria-live="polite">
+        Card {idx + 1} of {queue.length}: {node.title}
       </div>
 
       {idx === 0 && (

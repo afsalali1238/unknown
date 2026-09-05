@@ -162,7 +162,7 @@ _The biggest, most abstract bets on how the future unfolds_
 | I26 | The Pelican Test: Why Every AI Benchmark Eventually Dies | Simon Willison | Tech Futurism |
 | I27 | Two Ways to Win the Robot Race: Smarter vs. Cheaper | TrendForce | Tech Futurism |
 
-## J — Mental Models (38)
+## J — Mental Models (34)
 _Reusable lenses for thinking clearly_
 
 | id | title | author | category/subtopic |
@@ -176,13 +176,9 @@ _Reusable lenses for thinking clearly_
 | J7 | Proximate vs Root Causes: Keep Digging to Find the Answer | Farnam Street (Shane Parrish) | Systems Thinking |
 | J8 | The Butterfly Effect: How Tiny Actions Unleash Global Consequences | Farnam Street (Shane Parrish) | Systems Thinking |
 | J9 | Turning Pro: The Difference Between Amateurs and Professionals | Farnam Street (Shane Parrish) | Self-Improvement |
-| J10 | Avoiding Stupidity is Easier than Seeking Brilliance | Farnam Street (Shane Parrish) | Decision-Making |
 | J11 | All Models Are Wrong … But Some Are Useful | Farnam Street (Shane Parrish), after George Box | Mental Models |
 | J12 | Tit For Tat | Farnam Street (Shane Parrish), after Anatol Rapoport | Game Theory |
 | J13 | Prisoner's Dilemma: What Game Are You Playing? | Farnam Street (Shane Parrish), after Robert Axelrod | Game Theory |
-| J14 | The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions | Farnam Street, after Col. John Boyd | Decision-Making |
-| J15 | Predicting the Future with Bayes' Theorem | Farnam Street (Shane Parrish), after Thomas Bayes | Decision-Making |
-| J16 | The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes | Farnam Street (Shane Parrish) | Decision-Making |
 | J17 | How to Use Occam's Razor Without Getting Cut | Farnam Street (Shane Parrish), after William of Ockham | Reasoning |
 | J18 | Deductive vs Inductive Reasoning | Farnam Street (Shane Parrish) | Reasoning |
 | J19 | Survivorship Bias: The Tale of Forgotten Failures | Farnam Street (Shane Parrish) | Reasoning |
@@ -218,11 +214,15 @@ _The quiet force behind almost everything_
 | K5 | The Tail End | Tim Urban | Life & Time |
 | K6 | The Plateau of Latent Potential | James Clear | Habits |
 
-## L — Decision-Making (16)
+## L — Decision-Making (20)
 _Choosing well under uncertainty_
 
 | id | title | author | category/subtopic |
 | --- | --- | --- | --- |
+| J10 | Avoiding Stupidity is Easier than Seeking Brilliance | Farnam Street (Shane Parrish) | Decision-Making |
+| J14 | The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions | Farnam Street, after Col. John Boyd | Decision-Making |
+| J15 | Predicting the Future with Bayes' Theorem | Farnam Street (Shane Parrish), after Thomas Bayes | Decision-Making |
+| J16 | The Value of Probabilistic Thinking: Spies, Crime, and Lightning Strikes | Farnam Street (Shane Parrish) | Decision-Making |
 | L1 | Expected Value | Blaise Pascal | Decisions |
 | L2 | Pre-Mortem | Gary Klein | Decisions |
 | L3 | Base Rates | Daniel Kahneman | Decisions |

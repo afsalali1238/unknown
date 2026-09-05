@@ -233,7 +233,7 @@ export function AudioBar({
   const pct = playing ? ((idx + 1) / total) * 100 : (idx / total) * 100;
 
   return (
-    <div className="fixed bottom-[64px] inset-x-0 z-30 border-t border-line bg-paper/95 backdrop-blur">
+    <div className="fixed bottom-[calc(3.5rem+env(safe-area-inset-bottom))] inset-x-0 z-30 border-t border-line bg-paper/95 backdrop-blur">
       <div className="mx-auto flex max-w-2xl items-center gap-3 px-4 py-3">
         <button
           onClick={toggle}
