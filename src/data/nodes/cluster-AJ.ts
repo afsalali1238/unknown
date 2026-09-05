@@ -1,0 +1,138 @@
+import type { Node } from "../nodes.ts";
+export const CLUSTER_AJ: Node[] = [
+  {
+    id: "AJ1",
+    clusterId: "AJ",
+    title: "Nash Equilibrium",
+    author: "John Nash",
+    year: 1950,
+    medium: "Paper",
+    category: "Game Theory",
+    thesis:
+      "In any strategic game, a stable outcome exists where no player can improve their result by changing strategy alone — everyone is already playing their best response to everyone else.",
+    layer0:
+      "Nash proved it in one page in 1950: every game has at least one point where nobody can do better by switching strategy alone. That point isn't necessarily the best outcome for anyone — just the one nobody can unilaterally escape.",
+    layer1:
+      "A Nash equilibrium is a set of strategies, one per player, where each is the best response to everyone else, so no single player benefits from changing course alone. Nash's 1950 PNAS paper proved such a point always exists in any finite game, which is why it became the backbone of economics and auction design. An equilibrium can be collectively terrible, as in the prisoner's dilemma, while still individually unbeatable.",
+    layer2:
+      "Where are you and someone else stuck in a mutually worse outcome that neither of you can improve by moving alone, and what would it take to change the game itself instead of your move within it?",
+    quiz: {
+      question:
+        "What makes a Nash equilibrium 'stable,' even when the outcome is bad for everyone involved?",
+      options: [
+        "Every player is achieving their absolute best possible outcome — this view emphasizes the same outcome but attributes it",
+        "No single player can improve their own result by changing strategy alone, even if a different combined set of strategies would make everyone better off",
+        "All players have identical payoffs — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "The game has ended and no further moves are possible — this view emphasizes the same outcome but attributes it to a diff",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Stability in game theory means no unilateral improvement is possible — it says nothing about collective optimality, which is exactly why equilibria like the prisoner's dilemma can trap everyone in a worse outcome that no one can escape alone.",
+    },
+    tags: ["Decision-Making", "Incentives & Systems"],
+    related: ["AJ2", "M4", "AI1"],
+    furtherReading: [
+      {
+        label: "Equilibrium Points in N-Person Games (1950, PNAS)",
+        source: "paper",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC1063129/",
+        archive: {
+          status: "full",
+          path: "content/sources/AJ1-0.md",
+          retrieved: "2026-07-17",
+        },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AJ2",
+    clusterId: "AJ",
+    title: "The Prisoner's Dilemma",
+    author: "Merrill Flood and Melvin Dresher",
+    year: 1950,
+    medium: "Model",
+    category: "Game Theory",
+    thesis:
+      "Two rational actors who cannot communicate or trust each other will often choose mutual betrayal even when mutual cooperation would leave both better off.",
+    layer0:
+      "Two RAND researchers stumbled into game theory's most famous parable in 1950, later christened the prisoner's dilemma — showing rational self-interest can trap two people in a worse outcome than cooperation.",
+    layer1:
+      "The setup: two suspects held separately are each offered a lighter sentence for betraying the other, but both get a light sentence if neither confesses. Betraying is rational regardless of what the other does — free if they stay silent, safer if they also betray. So both rationally betray, worse off than if they'd cooperated. Flood and Dresher found the pattern at RAND in 1950; Tucker gave it the prison framing for a psychology audience.",
+    layer2:
+      "Where are you and someone else stuck defecting against each other by default — undercutting, hoarding information, competing instead of cooperating — because neither of you can verify the other will hold up their end?",
+    quiz: {
+      question:
+        "Why does betrayal remain the individually rational choice in the prisoner's dilemma, even though mutual cooperation produces a better combined outcome?",
+      options: [
+        "Because betraying is the best individual response regardless of what the other player does, so both players rationally betray even though mutual cooperation would leave both of them better off",
+        "Because the two suspects can freely communicate and coordinate before deciding — this view emphasizes the same outcome but attributes it to a different u",
+        "Because each player assumes the other will automatically choose to cooperate — this view emphasizes the same outcome but attributes it to a different und",
+        "Because the payoffs are identical no matter what either player chooses — this view emphasizes the same outcome but attributes it to a different underlyin",
+      ],
+      correctIndex: 0,
+      explanation:
+        "The trap is structural: no matter what the other player does, betraying yields a better individual outcome than cooperating, so purely rational self-interest pushes both players toward mutual betrayal — a worse combined outcome than if they'd both cooperated.",
+    },
+    tags: ["Decision-Making", "Incentives & Systems"],
+    related: ["AJ1", "M4", "J13"],
+    furtherReading: [
+      {
+        label: "Prisoner's Dilemma",
+        source: "article",
+        url: "https://plato.stanford.edu/entries/prisoner-dilemma/",
+        archive: {
+          status: "full",
+          path: "content/sources/AJ2-0.md",
+          retrieved: "2026-07-17",
+        },
+      },
+    ],
+    epistemicStatus: "Canonical",
+  },
+  {
+    id: "AJ3",
+    clusterId: "AJ",
+    title: "Game Theory (Bonanno)",
+    author: "Giacomo Bonanno",
+    year: 2015,
+    medium: "Textbook",
+    category: "Game Theory",
+    thesis:
+      "Non-cooperative game theory formalizes strategic interaction — situations where your best move depends on what others do — starting from strategic-form games and building up to the equilibrium concepts that predict how rational agents behave under mutual interdependence.",
+    layer0:
+      "Most decisions that matter aren't made in isolation — they're made against other people who are also deciding. Game theory is the formal language for that situation.",
+    layer1:
+      "Bonanno's textbook builds from strategic-form (normal-form) games — where players choose actions simultaneously and payoffs depend on the combination chosen — toward the equilibrium concepts (like Nash equilibrium) that predict stable outcomes when every player is best-responding to everyone else. The core move is representing a strategic situation formally enough that you can reason about it rigorously instead of just intuiting it.",
+    layer2:
+      "The value of formalizing strategic interaction is that intuition about 'what the other side will do' is often wrong in specific, predictable ways — the same way intuition about probability is wrong in predictable ways. Where in your own decisions are you failing to model the other player's incentives explicitly?",
+    quiz: {
+      question: "What does a 'strategic-form' (normal-form) game formally represent?",
+      options: [
+        "A game where players take turns and can see all prior moves. — this view emphasizes the same outcome but att",
+        "A situation where players choose their actions simultaneously and the payoff to each depends on the full combination of actions chosen.",
+        "A game with only one possible outcome regardless of player choices. — this view emphasizes the same outcome ",
+        "A cooperative negotiation where players share all payoffs equally. — this view emphasizes the same outcome b",
+      ],
+      correctIndex: 1,
+      explanation:
+        "Strategic-form games are the foundational representation in non-cooperative game theory: simultaneous choice, interdependent payoffs, no assumed communication or binding agreements between players.",
+    },
+    related: ["AJ1", "AJ2"],
+    furtherReading: [
+      {
+        label: "Game Theory",
+        source: "Giacomo Bonanno, UC Davis (open textbook)",
+        url: "https://x.com/techwith_ram/status/2033924852961444264",
+        type: "paper",
+        archive: {
+          status: "full",
+          path: "content/sources/AJ3-0.md",
+          retrieved: "2026-07-20",
+        },
+      },
+    ],
+    tags: ["Decision-Making", "Cognitive Biases & Models"],
+    epistemicStatus: "Canonical",
+  },
+];
