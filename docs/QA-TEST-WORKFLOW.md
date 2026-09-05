@@ -24,7 +24,7 @@ Test in this order of environments, because bugs hide in the transitions:
 1. **Fresh install** — clear IndexedDB (DevTools ▸ Application ▸ IndexedDB ▸ delete `keyval-store`) and hard reload. This is the true first-run state.
 2. **Warm state** — after you've visited nodes, passed quizzes, built a streak.
 3. **Offline** — DevTools ▸ Network ▸ Offline, reload. PWA must still work.
-4. **Mobile viewport** — DevTools device toolbar, iPhone SE (small) + iPad. `use-mobile` and `BottomNav` behaviour change here.
+4. **Mobile viewport** — DevTools device toolbar, iPhone SE (small) + iPad. `BottomNav` and the responsive layout change here.
 
 Seed a warm state fast: pass 6+ quizzes across different clusters, bookmark 3 nodes,
 add 2 glossary terms, write in the scratchpad. You'll reuse this for review/streak/export tests.

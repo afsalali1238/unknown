@@ -6,6 +6,7 @@ Reviewed: the merged app, now at `unknown/` (renamed from `idea-weaver/`, which 
 
 - Deleted the empty, retired `big-ideas-app/` folder.
 - Renamed `idea-weaver/` → `unknown/`.
+- _(2026-09-05: the Lovable prompts, `big-ideas-app-spec.md` and `capital-map.bundle` were later deleted as superseded — see `docs/REPO-CLEANUP-2026-09-05.md`.)_
 - Moved the four root planning docs (`PRODUCT-BRIEF.md`, `LOVABLE-PROMPT.md`, `LOVABLE-PROMPT-improvements.md`, `big-ideas-app-spec.md`) and `capital-map.bundle` into `unknown/docs/`, so the whole workspace is now one folder.
 - **Two things need your hand, not mine:**
   1. `capital-map/node_modules/` still has ~178 files the sandbox can't delete — permission errors on the native `.node` binaries suggest something on your machine (a running dev server, VS Code, an antivirus scan) has them open. Close anything touching that folder and delete `capital-map/` manually.

@@ -10,8 +10,10 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
 
 ## Stack
 
-- React 19 + Vite 8, TanStack Router + TanStack Start (SSR), Tailwind CSS v4, Zustand, Radix UI +
-  shadcn/ui (`style: new-york`, `baseColor: slate`, no prefix — see `components.json`).
+- React 19 + Vite 8, TanStack Router + TanStack Start (SSR), Tailwind CSS v4, Zustand,
+  lucide-react icons, `clsx` + `tailwind-merge` (via `src/lib/utils.ts` `cn()`). No component
+  library — the unused shadcn/Radix layer was removed in the 2026-09-05 cleanup; don't reintroduce
+  it wholesale, add a primitive only when a feature needs it.
 - Package manager is **Bun** (`bun.lock` is canonical; ignore `package-lock.json`). `bunfig.toml`
   enforces a 24h supply-chain guard on new package versions — don't add to
   `minimumReleaseAgeExcludes` without asking first. (A 2026-07-15 session briefly installed
@@ -25,9 +27,9 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   `bun run lint` (eslint), `bun run format` (prettier --write .). Tests run via `vitest`
   (`bun run test`).
 
-⚠️ `vite.config.ts` was migrated off `@lovable.dev/vite-tanstack-config` without a verified
-`bun install` in the migration environment — it hasn't been confirmed against a real
-`bun run build`. If a build errors, check `docs/VERCEL-MIGRATION-PROMPT.md` first.
+`vite.config.ts` is a plain TanStack Start + Vite config (Lovable wrapper removed, Vercel preset;
+`api/index.js` + `vercel.json` bridge Vercel's Node handler to `dist/server/server.js`). Don't
+reintroduce any `@lovable.dev/*` package.
 
 ## Where things live
 
@@ -37,11 +39,11 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
 - `src/routes/` — TanStack Router pages: `index` (Map/home), `explore`, `node.$id` (the node
   reader), `review` (spaced-repetition loop), `you` (progress/reading list/glossary/scratchpad),
   `onboarding`, `__root`.
-- `src/components/` — feature components (`LayerReveal`, `NodeCard`, `Quiz`, `RecallReveal`,
-  `RelatedCard`, `AudioBar`, `BottomNav`, `SearchBar`, `ProgressRing`); `src/components/ui/` is
-  the shadcn primitive layer — prefer composing these over hand-rolling new primitives.
+- `src/components/` — feature components (`LayerReveal`, `Quiz`, `RecallReveal`, `RelatedCard`,
+  `AudioBar`, `BottomNav`, `SearchBar`, `LatticeIndex`, `FirstTimeHint`, `InstallAppButton`,
+  `MicroLabel`). Plain Tailwind on native elements — there is no `src/components/ui/` layer.
 - `src/lib/store.ts` — Zustand state. `src/lib/error-capture.ts` / `error-page.ts` — error
-  handling. `src/hooks/` — `useInstallPrompt`, `useOfflineWarmup`, `use-mobile`.
+  handling. `src/hooks/` — `useInstallPrompt`, `useOfflineWarmup`, `useThemeSync`.
 - `src/styles.css` — Tailwind v4 theme tokens. Color system is `paper`/`ink`/`ink-soft`/`line`/
   `accent` (see `@theme` block) — reuse these tokens, don't introduce new raw colors.
 - **Archived sources** live on disk at `public/content/sources/<nodeId>-<index>.md` (127+ files,
@@ -55,7 +57,9 @@ in memory, it doesn't belong._ Use this to push back on scope creep.
   `archive-sources.ts <clusterId|all> [--dry-run]` (snapshot sources to `public/content/sources/`;
   idempotent, retry-capped, misses logged to `archive-failures.log`),
   `next-id.ts <PREFIX> [count]` (deterministic next free id), `audit-content.ts` (content audit:
-  summary|tag|cluster|field|orphans|dupes), `build-nodes-ts.ts` (regenerate derived exports).
+  summary|tag|cluster|field|orphans|dupes). Derived exports (`NODES`, `NODE_BY_ID`,
+  `NODES_BY_CLUSTER`, `CLUSTER_BY_ID`) are computed at import time in `src/data/nodes.ts` from the
+  `cluster-*.ts` files — there is no generator script to run after editing content.
   Adding content goes through the **add-content** skill (`.claude/skills/add-content/`) — it
   proposes node(s), assigns ids, writes the node + quiz inline, archives sources, then runs the
   validate gate. No per-batch inject scripts, no quiz-patch JSON.

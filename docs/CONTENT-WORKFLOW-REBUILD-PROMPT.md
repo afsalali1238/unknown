@@ -17,7 +17,7 @@ Three systems do the same job (`add content to nodes.ts`), none aware of the oth
 - **`scripts/inject-batch1.ts` → `inject-batch5.ts`** — five near-identical scripts, each with node
   content hardcoded as literal JS objects. A new file was written _every time_ a batch of content
   needed adding instead of reusing one tool. Dead weight after each run; nothing marks them retired.
-- **`scripts/archive-sources.ts` + `build-nodes-ts.ts` + `merge-epistemoph.js`** — the offline-archive
+- **`scripts/archive-sources.ts` + `build-nodes-ts.ts` + `merge-epistemoph.js`** _(2026-09-05: only `archive-sources.ts` still exists; the rest were removed in the repo cleanup)_ — the offline-archive
   and cluster-merge pipeline, run manually with no logging of what succeeded/failed beyond stdout.
 
 Specific bugs found while reading the code (fix all of these, not just the ones listed — this is

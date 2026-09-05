@@ -7,6 +7,5 @@ dist/
 bun.lock
 package-lock.json
 src/routeTree.gen.ts
-docs/capital-map.bundle
 *.log
 .DS_Store
