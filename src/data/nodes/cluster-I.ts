@@ -10,7 +10,7 @@ export const CLUSTER_I: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Disruptive innovations are dismissed as toys because they underperform on established metrics while excelling on new ones.",
-    related: ["I24", "I3", "I4", "I5", "I6", "I15", "I16", "I20", "I21", "I22", "I25"],
+    related: ["I3", "I4", "I5", "I6"],
     furtherReading: [
       {
         label: 'Analysis of Dixon\'s "toy" theory vs. disruption',
@@ -32,8 +32,8 @@ export const CLUSTER_I: Node[] = [
       question: "Why do incumbent companies usually ignore disruptive technologies at first?",
       options: [
         "Because the technology initially looks like a low-quality 'toy' that doesn't meet the needs of their most profitable customers",
-        "Because the technology is illegal — this view emphasizes the same outcome but attributes it to a dif",
-        "Because they don't have enough software engineers — this view emphasizes the same outcome but attrib",
+        "Because the technology is illegal — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because they don't have enough software engineers — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -51,7 +51,7 @@ export const CLUSTER_I: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Every company is becoming a software company; software firms will disrupt incumbents across every industry.",
-    related: ["I24", "I3", "I4", "I5", "I6", "I15", "I16", "I20", "I21", "I22", "I25"],
+    related: ["I3", "I4", "I5", "I6"],
     furtherReading: [
       {
         label: "10 years on: software really did eat the world",
@@ -92,7 +92,7 @@ export const CLUSTER_I: Node[] = [
     category: "Sector Report",
     thesis:
       "Mobile is the largest computing platform ever and is subsuming every other technology and industry.",
-    related: ["I24", "I2", "I4", "I6", "I9", "I15", "I16", "I20", "I21", "I22", "I25"],
+    related: ["I2", "I4", "I6", "I9"],
     furtherReading: [
       {
         label: 'Write-up of Evans\' "Mobile Is Eating the World"',
@@ -114,8 +114,8 @@ export const CLUSTER_I: Node[] = [
       question:
         "According to Benedict Evans, what made the smartphone revolution fundamentally larger than the PC revolution?",
       options: [
-        "Smartphones had faster processors than PCs — this view emphasizes the same",
-        "Smartphones were manufactured exclusively in the US — this view emphasizes",
+        "Smartphones had faster processors than PCs — this alternative is popular online but misstates the.",
+        "Smartphones were manufactured exclusively in the US — an intuitive but incorrect explanation that.",
         "Smartphones were sensor-rich devices that reached over 5 billion people and were carried 24/7",
       ],
       correctIndex: 2,
@@ -134,7 +134,7 @@ export const CLUSTER_I: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Venture abandoned hard technology for trivial consumer apps; 'we wanted flying cars, instead we got 140 characters.'",
-    related: ["I14", "I2", "I3"],
+    related: ["I14", "I2", "I3", "I15"],
     furtherReading: [
       {
         label: "Founders Fund & the manifesto (context/reception)",
@@ -156,8 +156,8 @@ export const CLUSTER_I: Node[] = [
       question: "What was the main critique in 'What Happened to the Future?'",
       options: [
         "Innovation had stalled in the physical world because investors were only funding low-risk software and social media apps",
-        "Venture capital was taking too much risk on unproven hardware — this view emphasizes the same ou",
-        "The government was preventing the invention of flying cars — this view emphasizes the same outco",
+        "Venture capital was taking too much risk on unproven hardware — an intuitive but incorrect explanation that conflates correlation with.",
+        "The government was preventing the invention of flying cars — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -175,7 +175,7 @@ export const CLUSTER_I: Node[] = [
     category: "Sector Report",
     thesis:
       "Open-source and cloud infrastructure are reshaping enterprise software economics and buying.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I15"],
     furtherReading: [
       {
         label: "State of the OpenCloud Report",
@@ -196,9 +196,9 @@ export const CLUSTER_I: Node[] = [
     quiz: {
       question: "What is the 'bottom-up' adoption model in OpenCloud software?",
       options: [
-        "Selling directly to the CEO via expensive dinners — this view emphasizes the same outcome but ",
+        "Selling directly to the CEO via expensive dinners — this alternative is popular online but misstates the mechanism the author defends.",
         "Individual developers adopting a free open-source tool, which eventually forces the company to buy the enterprise tier",
-        "Forcing employees to use software built by the government — this view emphasizes the same outc",
+        "Forcing employees to use software built by the government — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 1,
       explanation:
@@ -216,7 +216,7 @@ export const CLUSTER_I: Node[] = [
     category: "Sector Report",
     thesis:
       "Disruptive innovation platforms (AI, robotics, genomics, crypto, energy storage) will compound explosively.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I15"],
     furtherReading: [
       {
         label: "Cathie Wood / ARK, the controversy",
@@ -276,8 +276,8 @@ export const CLUSTER_I: Node[] = [
       question: "What was the 'attention gap' that Mary Meeker frequently highlighted?",
       options: [
         "The discrepancy between the high amount of time users spent on mobile devices and the low amount of advertising dollars spent there",
-        "The difference between adult and teenager internet usage — this view emphasizes the same outcome but att",
-        "The lack of broadband access in rural areas — this view emphasizes the same outcome but attributes it to",
+        "The difference between adult and teenager internet usage — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "The lack of broadband access in rural areas — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -294,7 +294,7 @@ export const CLUSTER_I: Node[] = [
     medium: "Deck",
     category: "Sector Report",
     thesis: "AI adoption and capex are scaling faster than any prior technology wave in history.",
-    related: ["I23", "I2", "I3"],
+    related: ["I23", "I2", "I3", "I16"],
     furtherReading: [
       {
         label: "Analysis of Meeker's 2025 AI Trends report",
@@ -335,7 +335,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "The Information Age will dissolve the nation-state's power and empower mobile, digitally-sovereign individuals.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I16"],
     furtherReading: [
       {
         label: "Critique of the book's \"cognitive elite\" ideology and Thiel's embrace of it",
@@ -357,7 +357,7 @@ export const CLUSTER_I: Node[] = [
       question:
         "According to 'The Sovereign Individual', what technology fundamentally undermines the power of the nation-state?",
       options: [
-        "Nuclear weapons — this view emphasizes the ",
+        "Nuclear weapons — this alternative is popular online but.",
         "Commercial jet travel — this view emphasize",
         "Strong cryptography and decentralized digital networks",
       ],
@@ -377,7 +377,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "True progress is vertical (0 to 1) via monopoly-creating innovation, not horizontal copying (1 to n).",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I16"],
     furtherReading: [
       {
         label: "Summary of Thiel's Zero to One",
@@ -418,7 +418,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "Multipolar traps and coordination failures ('Moloch') drive races to the bottom across civilization.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I20"],
     furtherReading: [
       {
         label: 'Response to Meditations on Moloch: "Moloch Hasn\'t Won"',
@@ -440,9 +440,9 @@ export const CLUSTER_I: Node[] = [
       question: "In the 'Moloch' framing, what does the metaphor point to?",
       options: [
         "A coordination failure where locally rational incentives systematically produce globally terrible outcomes, even though no one wants them",
-        "A single corporation that secretly controls global markets through monopoly pricing — this view emphasizes th",
-        "A new form of artificial intelligence that will inevitably dominate humanity — this view emphasizes the same ",
-        "A historical empire that collapsed because its leaders were unusually cruel — this view emphasizes the same o",
+        "A single corporation that secretly controls global markets through monopoly pricing — an intuitive but incorrect explanation that conflates correlation with.",
+        "A new form of artificial intelligence that will inevitably dominate humanity — this view reverses the causal direction the source material argues for.",
+        "A historical empire that collapsed because its leaders were unusually cruel — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -460,7 +460,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "A machine superintelligence could rapidly become uncontrollable and poses an existential risk to humanity.",
-    related: ["Z5", "I1", "I2"],
+    related: ["Z5", "I1", "I2", "I20"],
     furtherReading: [
       {
         label: "Reception & critique of Superintelligence",
@@ -501,7 +501,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "We should study the causes of scientific and economic progress as a rigorous discipline to accelerate it.",
-    related: ["Z6", "I1", "I2"],
+    related: ["Z6", "I1", "I2", "I20"],
     furtherReading: [
       {
         label: "Cowen's follow-up on Progress Studies",
@@ -542,7 +542,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "Future people matter morally; positively influencing the long-term future is a key moral priority (longtermism).",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
         label: "Review of What We Owe the Future",
@@ -563,7 +563,7 @@ export const CLUSTER_I: Node[] = [
     quiz: {
       question: "What is the central ethical framework proposed in 'What We Owe the Future'?",
       options: [
-        "Utilitarianism — this view emphasizes the same outcome but attributes it to a d",
+        "Utilitarianism — this alternative is popular online but misstates the mechanism the author defends.",
         "Longtermism—the idea that positively influencing the long-term future is our primary moral priority",
         "Effective Altruism focused solely on immediate global poverty — this view empha",
       ],
@@ -583,7 +583,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "Aligning superintelligent AI is unsolved and likely fatal by default; current efforts are inadequate.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
         label: "Point-by-point response to AGI Ruin",
@@ -604,8 +604,8 @@ export const CLUSTER_I: Node[] = [
     quiz: {
       question: "What is the core conclusion of Eliezer Yudkowsky's 'AGI Ruin'?",
       options: [
-        "That AGI will solve climate change and poverty — this view emphasizes the same o",
-        "That AGI is impossible to build — this view emphasizes the same outcome but attr",
+        "That AGI will solve climate change and poverty — this alternative is popular online but misstates the mechanism the.",
+        "That AGI is impossible to build — an intuitive but incorrect explanation that conflates correlation with causation.",
         "That humanity is almost certainly doomed because aligning AGI is structurally harder than building it",
       ],
       correctIndex: 2,
@@ -624,7 +624,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "Transformative AI could make this the most pivotal century in human history, warranting outsized attention.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
         label: "Karnofsky interview on the Most Important Century",
@@ -646,8 +646,8 @@ export const CLUSTER_I: Node[] = [
       question: "Why does Holden Karnofsky argue this is 'The Most Important Century'?",
       options: [
         "Because we are likely to invent Transformative AI, which will lock in the trajectory of humanity's entire future",
-        "Because climate change will destroy the earth by 2100 — this view emphasizes the same out",
-        "Because humans will colonize Mars — this view emphasizes the same outcome but attributes ",
+        "Because climate change will destroy the earth by 2100 — an intuitive but incorrect explanation that conflates correlation with.",
+        "Because humans will colonize Mars — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -665,7 +665,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "Intelligence may emerge from scaling up compute and data. GPT-3 shows the hypothesis holds.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
         label: "Analysis of Gwern's Scaling Hypothesis",
@@ -686,7 +686,7 @@ export const CLUSTER_I: Node[] = [
     quiz: {
       question: "What does the 'Scaling Hypothesis' argue is the path to AGI?",
       options: [
-        "Hand-coding human logic into a database — this view emphasizes the sam",
+        "Hand-coding human logic into a database — this alternative is popular online but misstates the.",
         "Exponentially scaling up simple neural networks with massive amounts of compute and data",
         "Using quantum computers to simulate the human brain perfectly — this v",
       ],
@@ -706,7 +706,7 @@ export const CLUSTER_I: Node[] = [
     category: "AI Essay",
     thesis:
       "AGI by ~2027 and superintelligence shortly after will trigger a trillion-dollar compute buildout and a US-China race.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
         label: "Situational Awareness: a one-year retrospective",
@@ -728,8 +728,8 @@ export const CLUSTER_I: Node[] = [
       question:
         "According to 'Situational Awareness', what happens immediately after AGI is achieved?",
       options: [
-        "The economy crashes and humans go back to farming — this view emphasizes the same outcome but at",
-        "AGI is released as open-source software for everyone to use — this view emphasizes the same outc",
+        "The economy crashes and humans go back to farming — this alternative is popular online but misstates the mechanism the author defends.",
+        "AGI is released as open-source software for everyone to use — an intuitive but incorrect explanation that conflates correlation with.",
         "AGI begins automating AI research, triggering a rapid 'intelligence explosion' and a massive national security arms race",
       ],
       correctIndex: 2,
@@ -748,7 +748,7 @@ export const CLUSTER_I: Node[] = [
     category: "AI Essay",
     thesis:
       "Powerful AI could compress a century of scientific progress into a decade, curing disease and transforming society.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
         label: "Reflections on Machines of Loving Grace",
@@ -770,8 +770,8 @@ export const CLUSTER_I: Node[] = [
       question: "What is the primary tone and focus of Dario Amodei's 'Machines of Loving Grace'?",
       options: [
         "It is an optimistic vision of how safely aligned AGI could radically accelerate biology, medicine, and human flourishing",
-        "It is a pessimistic warning that AI will inevitably destroy us — this view emphasizes the same o",
-        "It is a technical manual for building GPU clusters — this view emphasizes the same outcome but a",
+        "It is a pessimistic warning that AI will inevitably destroy us — an intuitive but incorrect explanation that conflates correlation with.",
+        "It is a technical manual for building GPU clusters — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -789,7 +789,7 @@ export const CLUSTER_I: Node[] = [
     category: "AI Essay",
     thesis:
       "AI will augment human intelligence and improve nearly everything it touches, and fears of civilizational risk are misplaced.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
         label: 'Andreessen interviewed on "Why AI Will Save the World"',
@@ -813,7 +813,7 @@ export const CLUSTER_I: Node[] = [
       options: [
         "He completely agrees with it and calls for a pause on AI research — this view emphasiz",
         "He dismisses it as a moral panic, arguing AI is just an empowering tool that will amplify human intelligence",
-        "He believes only the military should be allowed to use AI — this view emphasizes the s",
+        "He believes only the military should be allowed to use AI — this view reverses the causal direction the source material.",
       ],
       correctIndex: 1,
       explanation:
@@ -831,7 +831,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "Technology and markets are the engines of human flourishing; stagnation and de-growth are the real enemies.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
         label: "Critique of the Techno-Optimist Manifesto",
@@ -852,8 +852,8 @@ export const CLUSTER_I: Node[] = [
     quiz: {
       question: "What philosophy does 'The Techno-Optimist Manifesto' explicitly reject?",
       options: [
-        "The scientific method — this view emphasizes the same outc",
-        "Free market capitalism — this view emphasizes the same out",
+        "The scientific method — this alternative is popular online but misstates the.",
+        "Free market capitalism — an intuitive but incorrect explanation that conflates.",
         "The precautionary principle and the ideology of 'degrowth' and stagnation",
       ],
       correctIndex: 2,
@@ -872,7 +872,7 @@ export const CLUSTER_I: Node[] = [
     category: "AI Essay",
     thesis:
       "AI will drive the cost of goods and labor toward zero, requiring a new social contract to distribute the wealth.",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
         label: "Altman's UBI thesis and its critics",
@@ -894,8 +894,8 @@ export const CLUSTER_I: Node[] = [
       question: "According to Sam Altman, what economic shift must occur as AI automates labor?",
       options: [
         "We must shift from taxing labor to taxing capital and land, redistributing the wealth as a universal dividend",
-        "We must ban AI from being used in physical robotics — this view emphasizes the same out",
-        "We must force everyone to become software engineers — this view emphasizes the same out",
+        "We must ban AI from being used in physical robotics — an intuitive but incorrect explanation that conflates correlation with.",
+        "We must force everyone to become software engineers — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -913,7 +913,7 @@ export const CLUSTER_I: Node[] = [
     category: "Worldview",
     thesis:
       "A much smaller team paired with AI can do more and do it better, so Block cut ~40% of staff to rebuild 'intelligence-native.'",
-    related: ["I1", "I2", "I3"],
+    related: ["I1", "I2", "I3", "I25"],
     furtherReading: [
       {
         label: 'A skeptical take on Dorsey\'s "intelligence-native" narrative',
@@ -935,9 +935,9 @@ export const CLUSTER_I: Node[] = [
       question:
         "What is the primary difference between a software-native company and an 'intelligence-native' company?",
       options: [
-        "Software-native companies use Python; intelligence-native companies use C++ — this view emphasizes the same outcome but attribut",
+        "Software-native companies use Python; intelligence-native companies use C++ — this alternative is popular online but misstates the mechanism the author defends.",
         "Software-native companies rely on hard-coded deterministic logic, while intelligence-native companies use probabilistic neural networks for core decision routing",
-        "Intelligence-native companies do not use computers at all — this view emphasizes the same outcome but attributes it to a differe",
+        "Intelligence-native companies do not use computers at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you.",
       ],
       correctIndex: 1,
       explanation:
@@ -965,10 +965,10 @@ export const CLUSTER_I: Node[] = [
       question:
         "According to Balaji Srinivasan, what distinguishes a 'network state' from a traditional separatist movement or commune?",
       options: [
-        "A network state starts with violence and then seeks legitimacy; a commune starts peacefully — this view emphasizes the same outcome but attributes it to a",
+        "A network state starts with violence and then seeks legitimacy; a commune starts peacefully — this alternative is popular online but misstates the mechanism the author defends.",
         "A network state starts online, builds a trackable moral community, crowds into real territory incrementally, and seeks diplomatic recognition — using the startup playbook rather than revolution",
-        "A network state is purely digital and never acquires physical land — this view emphasizes the same outcome but attributes it to a different underlying mec",
-        "A network state requires a population of at least one million before it can seek recognition — this view emphasizes the same outcome but attributes it to ",
+        "A network state is purely digital and never acquires physical land — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "A network state requires a population of at least one million before it can seek recognition — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test.",
       ],
       correctIndex: 1,
       explanation:
@@ -1016,9 +1016,9 @@ export const CLUSTER_I: Node[] = [
       question:
         "Why is this node marked with a cautious epistemic status rather than treated as a confirmed Naval Ravikant quote?",
       options: [
-        "Because Naval Ravikant has publicly denied saying anything like this. — this view emphasizes the same outcome but attributes it to a different",
-        "Because the claim is mathematically false. — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
-        "Because Naval Ravikant does not have a podcast. — this view emphasizes the same outcome but attributes it to a different underlying mechanism ",
+        "Because Naval Ravikant has publicly denied saying anything like this. — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because the claim is mathematically false. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because Naval Ravikant does not have a podcast. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because the specific podcast episode containing this claim could not be independently located or verified, so it's presented as secondary commentary rather than a primary source.",
       ],
       correctIndex: 3,
@@ -1063,15 +1063,15 @@ export const CLUSTER_I: Node[] = [
         "According to Willison, why did the pelican-riding-a-bicycle test stop correlating well with real model quality after its first year?",
       options: [
         "The test never measured the thing that came to matter most for real usage — reliable agentic tool-calling over long conversations — so as models specialized there, the test's relevance to real capability quietly decayed.",
-        "He is certain that AI labs specifically trained their models on his exact prompt to game the benchmark. — this view emphasizes the same outcome but attributes it to a different",
-        "SVG generation became technically impossible for newer models to perform. — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the",
-        "He stopped running the test after the first year, so there is no more data to compare. — this view emphasizes the same outcome but attributes it to a different underlying mecha",
+        "He is certain that AI labs specifically trained their models on his exact prompt to game the benchmark. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "SVG generation became technically impossible for newer models to perform. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "He stopped running the test after the first year, so there is no more data to compare. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
         "Willison explicitly says he isn't convinced labs are training for the benchmark — the more likely explanation is that the test simply never covered agentic tool use, which is now the dominant axis of real-world model quality, so the two measures drifted apart.",
     },
-    related: ["M1", "G7", "I18"],
+    related: ["M1", "G7", "I18", "I25"],
     furtherReading: [
       {
         label: "Kimi K3, and what we can still learn from the pelican benchmark",
@@ -1117,16 +1117,16 @@ export const CLUSTER_I: Node[] = [
       question:
         "What is the central strategic difference TrendForce identifies between the US and Chinese approaches to humanoid robots?",
       options: [
-        "The US is focused entirely on manufacturing cost reduction while China is focused entirely on novel hardware designs. — this view emphasizes the same ou",
+        "The US is focused entirely on manufacturing cost reduction while China is focused entirely on novel hardware designs. — this alternative is popular online but misstates the mechanism the author defends.",
         "The US is prioritizing AI intelligence and data flywheels as the deciding moat, while China is prioritizing supply-chain scale, cost, and rapid iteration — similar to its earlier EV playbook.",
-        "Both countries are pursuing identical strategies, with the only difference being funding levels. — this view emphasizes the same outcome but attributes ",
-        "China has abandoned humanoid robots entirely in favor of quadruped robots. — this view emphasizes the same outcome but attributes it to a different unde",
+        "Both countries are pursuing identical strategies, with the only difference being funding levels. — this view reverses the causal direction the source material argues for.",
+        "China has abandoned humanoid robots entirely in favor of quadruped robots. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
         "TrendForce explicitly compares China's approach to 'the early development model of electric vehicles' — building supply chain completeness and cost advantage first — while describing US firms as focused on building 'a data flywheel' to win through AI capability rather than hardware specs.",
     },
-    related: ["I17", "I19"],
+    related: ["I17", "I19", "I25"],
     furtherReading: [
       {
         label: "Humanoid Robots Part 1: The US-China Divide and Who Controls the Supply Chain",

@@ -20,10 +20,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "According to Getting to Yes, why does focusing on 'interests' instead of 'positions' open up more possible solutions?",
       options: [
-        "Interests are easier to fake than positions, so negotiators can bluff more effectively — this view emphasizes the same",
-        "Positions are illegal to discuss in most formal negotiations — this view emphasizes the same outcome but attributes it",
+        "Interests are easier to fake than positions, so negotiators can bluff more effectively — this alternative is popular online but misstates the mechanism the author defends.",
+        "Positions are illegal to discuss in most formal negotiations — an intuitive but incorrect explanation that conflates correlation with causation.",
         "A stated position is usually just one solution to an underlying need, and that same need can often be met several other ways once it's made explicit",
-        "Interests always favor the party who reveals them first — this view emphasizes the same outcome but attributes it to a",
+        "Interests always favor the party who reveals them first — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
       ],
       correctIndex: 2,
       explanation:
@@ -113,15 +113,15 @@ export const CLUSTER_AL: Node[] = [
         "Why does getting someone to make a small, voluntary commitment early make them more likely to agree to a bigger related request later?",
       options: [
         "Once someone has acted or stated a position publicly, staying consistent with that self-image becomes a powerful internal pressure, even when the new request is much larger",
-        "It creates a legal obligation to comply with future requests — this view emphasizes the same outcome but attributes it to a different und",
-        "Small commitments are usually forgotten, so people default to agreeing anyway — this view emphasizes the same outcome but attributes it t",
-        "It has no real effect — Cialdini's studies found commitment doesn't influence later behavior — this view emphasizes the same outcome but ",
+        "It creates a legal obligation to comply with future requests — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you.",
+        "Small commitments are usually forgotten, so people default to agreeing anyway — this view reverses the causal direction the source material argues for.",
+        "It has no real effect — Cialdini's studies found commitment doesn't influence later behavior — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
         "Cialdini's commitment-and-consistency principle works because people want to see themselves (and be seen) as consistent — once you've said or done something small, contradicting it later with a refusal creates internal discomfort, which most people resolve by going along with the bigger ask.",
     },
-    related: ["AL4", "AL20", "J21", "U14", "AL16"],
+    related: ["AL4", "AL20", "J21", "U14"],
     furtherReading: [
       {
         label: "Influence: The Psychology of Persuasion",
@@ -157,10 +157,10 @@ export const CLUSTER_AL: Node[] = [
     quiz: {
       question: "What does Cialdini mean by a 'privileged moment' in Pre-Suasion?",
       options: [
-        "A legal loophole that makes a contract unenforceable — this view emphasizes the same outcome but attributes it to ",
+        "A legal loophole that makes a contract unenforceable — this alternative is popular online but misstates the mechanism the author defends.",
         "A brief window right before a request where directing someone's attention to a related concept increases the odds they'll agree to what follows",
-        "The exact instant a negotiation legally becomes binding — this view emphasizes the same outcome but attributes it ",
-        "A moment when persuasion techniques stop working entirely — this view emphasizes the same outcome but attributes i",
+        "The exact instant a negotiation legally becomes binding — this view reverses the causal direction the source material argues for.",
+        "A moment when persuasion techniques stop working entirely — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
       ],
       correctIndex: 1,
       explanation:
@@ -203,10 +203,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Shell argue that knowing your default negotiating style matters, even before learning any specific tactics?",
       options: [
-        "Because only one style — competing — ever produces good outcomes — this view emphasizes the same outcome but attributes it to a different underlying mech",
-        "Negotiating styles are fixed at birth and cannot be adjusted — this view emphasizes the same outcome but attributes it to a different underlying mechanis",
+        "Because only one style — competing — ever produces good outcomes — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Negotiating styles are fixed at birth and cannot be adjusted — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "Most people unconsciously default to the same style in every negotiation regardless of fit, so recognizing that default is a precondition for choosing the style the situation actually requires",
-        "Style doesn't affect outcomes — only information does — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
+        "Style doesn't affect outcomes — only information does — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -249,9 +249,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "According to Jim Camp, why does inviting the other side to say 'no' strengthen a negotiation?",
       options: [
-        "'No' always means the deal is permanently dead — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
-        "It is a legal requirement in formal business negotiations — this view emphasizes the same outcome but attributes it to a different underlying mech",
-        "Saying no is a sign the negotiator has lost control of the conversation — this view emphasizes the same outcome but attributes it to a different u",
+        "'No' always means the deal is permanently dead — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "It is a legal requirement in formal business negotiations — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Saying no is a sign the negotiator has lost control of the conversation — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test.",
         "It removes the pressure of a forced yes, which makes the other party more comfortable being honest and more willing to genuinely engage, rather than agreeing just to escape discomfort",
       ],
       correctIndex: 3,
@@ -295,9 +295,9 @@ export const CLUSTER_AL: Node[] = [
       question: "Why does Cohen argue that most concessions happen near a negotiation's deadline?",
       options: [
         "Time pressure builds asymmetrically as a deadline approaches, and the side under more time pressure typically concedes more to avoid losing the deal entirely",
-        "Deadlines are legally required to trigger a final offer — this view emphasizes the same outcome but attributes it to a differ",
-        "Negotiators get bored and stop paying attention near deadlines — this view emphasizes the same outcome but attributes it to a",
-        "Deadlines have no measurable effect on negotiation outcomes — this view emphasizes the same outcome but attributes it to a di",
+        "Deadlines are legally required to trigger a final offer — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Negotiators get bored and stop paying attention near deadlines — this view reverses the causal direction the source material argues for.",
+        "Deadlines have no measurable effect on negotiation outcomes — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
       ],
       correctIndex: 0,
       explanation:
@@ -340,10 +340,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "According to Crucial Conversations, what typically triggers people to shift into 'silence' or 'violence' during a high-stakes conversation?",
       options: [
-        "A lack of vocabulary to express their opinion — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source",
+        "A lack of vocabulary to express their opinion — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "A feeling that psychological safety has broken down — that mutual purpose or mutual respect is at risk — which distorts communication into withholding or attacking regardless of the topic itself",
-        "Disagreeing with the other person is inherently violent — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
-        "Running out of time to finish the conversation — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the sourc",
+        "Disagreeing with the other person is inherently violent — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Running out of time to finish the conversation — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -386,10 +386,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does the book argue the 'What Happened' conversation is usually unwinnable as a dispute over facts?",
       options: [
-        "Because facts don't matter in interpersonal conflict — this view emphasizes the same outcome but attributes it to a different underlying mechanism ",
-        "Because memory is always completely unreliable — this view emphasizes the same outcome but attributes it to a different underlying mechanism that t",
+        "Because facts don't matter in interpersonal conflict — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because memory is always completely unreliable — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "Because both parties typically experienced genuinely different, information-shaped versions of the same event, so debating whose version is 'true' misses that both can be honestly held",
-        "Because only one person is ever telling the truth in any disagreement — this view emphasizes the same outcome but attributes it to a different unde",
+        "Because only one person is ever telling the truth in any disagreement — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -432,9 +432,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Rosenberg's method separate 'observation' from 'evaluation' as a first step?",
       options: [
-        "Because evaluations are always factually incorrect — this view emphasizes the same outcome but attributes it to a different underlying mechanism tha",
-        "Because the law requires neutral language in formal disputes — this view emphasizes the same outcome but attributes it to a different underlying mec",
-        "Because observations are easier to remember than feelings — this view emphasizes the same outcome but attributes it to a different underlying mechan",
+        "Because evaluations are always factually incorrect — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because the law requires neutral language in formal disputes — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because observations are easier to remember than feelings — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because stating a judgment ('you're inconsiderate') rather than a neutral fact ('you were 20 minutes late') triggers defensiveness and shuts down the actual need underneath the complaint",
       ],
       correctIndex: 3,
@@ -479,9 +479,9 @@ export const CLUSTER_AL: Node[] = [
         "According to Malhotra, what do successful resolutions of 'impossible' negotiations typically have in common?",
       options: [
         "They change the game itself — the process, the players, or the frame of what's being negotiated — rather than just arguing harder for the same position within the existing structure",
-        "One side eventually applies overwhelming pressure until the other concedes — this view emphasizes the same outcome but attributes it to a differ",
-        "A neutral third party always makes the final binding decision — this view emphasizes the same outcome but attributes it to a different underlyin",
-        "Both sides simply wait until the deadline forces a compromise — this view emphasizes the same outcome but attributes it to a different underlyin",
+        "One side eventually applies overwhelming pressure until the other concedes — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "A neutral third party always makes the final binding decision — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Both sides simply wait until the deadline forces a compromise — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -524,10 +524,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "What is the key difference between Lax and Sebenius's '3-D' (setup) and '1-D' (tactics) dimensions of negotiation?",
       options: [
-        "3-D refers to negotiating in person versus 1-D negotiating by phone — this view emphasizes the same outcome but attributes it to a different underlying mechanism th",
+        "3-D refers to negotiating in person versus 1-D negotiating by phone — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "1-D is what happens at the table — moves, framing, persuasion — while 3-D happens before the table, shaping who's involved and what alternatives exist so the eventual table conversation is set up to succeed",
-        "1-D only applies to business deals, 3-D only to personal disputes — this view emphasizes the same outcome but attributes it to a different underlying mechanism that",
-        "There is no meaningful difference; the terms are interchangeable — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
+        "1-D only applies to business deals, 3-D only to personal disputes — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "There is no meaningful difference; the terms are interchangeable — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -570,10 +570,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Grant argue that 'otherish' givers outperform both takers and self-sacrificing givers over time?",
       options: [
-        "Because giving is always immediately rewarded with reciprocal favors — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material ex",
-        "Because takers always fail in the long run regardless of skill — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicit",
+        "Because giving is always immediately rewarded with reciprocal favors — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because takers always fail in the long run regardless of skill — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "Because they combine generosity with protecting their own interests and time, which avoids the burnout and exploitation that sink self-sacrificing givers while still building the reputation and trust that compound into long-term advantage",
-        "Because matchers are statistically the most successful group overall — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material ex",
+        "Because matchers are statistically the most successful group overall — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
       ],
       correctIndex: 2,
       explanation:
@@ -616,9 +616,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does Nalebuff argue the pie — the value created specifically by the deal — should be split equally, even between parties of very different size?",
       options: [
-        "Because larger parties are legally required to give smaller ones an equal share — this view emphasizes the same outcome but attributes it to a different underlying m",
-        "Because equal splits are always easier to calculate than proportional ones — this view emphasizes the same outcome but attributes it to a different underlying mechan",
-        "Because the smaller party in any deal deserves compensation for the size difference — this view emphasizes the same outcome but attributes it to a different underlyi",
+        "Because larger parties are legally required to give smaller ones an equal share — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because equal splits are always easier to calculate than proportional ones — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because the smaller party in any deal deserves compensation for the size difference — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because neither party could have generated that specific incremental value alone, so the surplus created jointly belongs equally to both, regardless of each party's separate size or leverage outside the deal",
       ],
       correctIndex: 3,
@@ -662,9 +662,9 @@ export const CLUSTER_AL: Node[] = [
       question: "What is the 'Yes-No-Yes' structure Ury proposes for a 'Positive No'?",
       options: [
         "Affirming what you value first, then stating a clear no to the specific request, then offering a positive alternative or path forward — protecting both the relationship and your actual interests",
-        "Saying yes twice to soften the eventual no so it's barely noticed — this view emphasizes the same outcome but attributes it to a different underlying mecha",
-        "Asking the other person to say yes twice before you'll consider saying no — this view emphasizes the same outcome but attributes it to a different underlyi",
-        "A negotiation tactic used only in legal contract disputes — this view emphasizes the same outcome but attributes it to a different underlying mechanism tha",
+        "Saying yes twice to soften the eventual no so it's barely noticed — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Asking the other person to say yes twice before you'll consider saying no — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "A negotiation tactic used only in legal contract disputes — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -707,10 +707,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does asking someone for a small favor (the 'Ben Franklin effect') tend to make them like you more, according to this line of research?",
       options: [
-        "Because people enjoy being asked for favors more than giving compliments — this view emphasizes the same outcome but attributes it to a ",
+        "Because people enjoy being asked for favors more than giving compliments — this alternative is popular online but misstates the mechanism the author defends.",
         "Because people resolve the discomfort of having helped someone by unconsciously concluding they must like that person, since helping someone you dislike feels inconsistent",
-        "Because favors create a binding legal obligation between two people — this view emphasizes the same outcome but attributes it to a diffe",
-        "Because it has no measurable effect on liking at all — this view emphasizes the same outcome but attributes it to a different underlying",
+        "Because favors create a binding legal obligation between two people — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you.",
+        "Because it has no measurable effect on liking at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -754,10 +754,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "What does Sun Tzu mean by 'the supreme art of war is to subdue the enemy without fighting'?",
       options: [
-        "That armies should always avoid combat under any circumstances — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the ",
-        "That war is fundamentally unwinnable and should never be attempted — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
+        "That armies should always avoid combat under any circumstances — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "That war is fundamentally unwinnable and should never be attempted — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "That the highest form of strategic victory comes from positioning, intelligence, and shaping conditions so favorably that the opponent is defeated or deterred before any direct confrontation is even necessary",
-        "That negotiation and warfare have no meaningful strategic overlap — this view emphasizes the same outcome but attributes it to a different underlying mechanism that t",
+        "That negotiation and warfare have no meaningful strategic overlap — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -800,9 +800,9 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why does the Heath brothers' SUCCESS framework argue that concrete, sensory language outperforms abstract statistics for persuasion?",
       options: [
-        "Because abstract statistics are usually inaccurate — this view emphasizes the same outcome but attributes it to a different underlying mechanism tha",
-        "Because audiences distrust numbers on principle — this view emphasizes the same outcome but attributes it to a different underlying mechanism that t",
-        "Because concrete language is required by advertising law — this view emphasizes the same outcome but attributes it to a different underlying mechani",
+        "Because abstract statistics are usually inaccurate — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because audiences distrust numbers on principle — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because concrete language is required by advertising law — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because concrete, specific images are easier for the brain to encode, remember, and mentally simulate than abstract claims, which makes them more likely to be recalled and acted on later",
       ],
       correctIndex: 3,
@@ -847,9 +847,9 @@ export const CLUSTER_AL: Node[] = [
         "Why does Heinrichs argue that logos (logical argument) alone rarely persuades an audience?",
       options: [
         "Because a logically sound argument that the audience doesn't trust the speaker on, or doesn't feel emotionally invested in, still fails to move people to act, since decisions are made emotionally and rationalized afterward",
-        "Because logic is always factually incorrect — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly arg",
-        "Because audiences cannot process logical arguments at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material ",
-        "Because logos only applies to written arguments, not spoken ones — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source ma",
+        "Because logic is always factually incorrect — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because audiences cannot process logical arguments at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because logos only applies to written arguments, not spoken ones — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -893,10 +893,10 @@ export const CLUSTER_AL: Node[] = [
       question:
         "Why did citing 'the majority of guests in this room' outperform a generic environmental appeal in the hotel towel-reuse experiments?",
       options: [
-        "Because guests dislike environmental messaging on principle — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the sou",
+        "Because guests dislike environmental messaging on principle — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "Because specific, local social proof (people like me, in this exact situation) is a stronger behavioral cue than an abstract appeal to values, since it signals what similar others are actually doing right now",
-        "Because the towel signs were printed in a larger font — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source ma",
-        "Because guests were legally obligated to comply with posted hotel policies — this view emphasizes the same outcome but attributes it to a different underlying mechani",
+        "Because the towel signs were printed in a larger font — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because guests were legally obligated to comply with posted hotel policies — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:

@@ -20,10 +20,10 @@ export const CLUSTER_AF: Node[] = [
       question:
         "Why does Metcalfe's Law make a platform's early users disproportionately hard to acquire, and later users disproportionately easy?",
       options: [
-        "Early users pay lower prices due to promotional discounts — this view emphasizes the same outcome but attributes it to ",
+        "Early users pay lower prices due to promotional discounts — this alternative is popular online but misstates the mechanism the author defends.",
         "Network value grows with the square of connected users, so a small early network offers little value while a large late network offers enormous value",
-        "Early adopters are naturally more skeptical people — this view emphasizes the same outcome but attributes it to a diffe",
-        "Company marketing budgets are always smaller at launch — this view emphasizes the same outcome but attributes it to a d",
+        "Early adopters are naturally more skeptical people — this view reverses the causal direction the source material argues for. The distinction matters because it changes.",
+        "Company marketing budgets are always smaller at launch — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
       ],
       correctIndex: 1,
       explanation:
@@ -76,9 +76,9 @@ export const CLUSTER_AF: Node[] = [
         "What made Milgram's small-world result surprising, given that participants had no map of the overall social network?",
       options: [
         "That successful chains reached a specific stranger in only a handful of steps, implying social networks are collapsed by a few long-range connections rather than being purely local webs",
-        "That most chains never reached the target at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
-        "That every completed chain used exactly six intermediaries — this view emphasizes the same outcome but attributes it to a different underlying mecha",
-        "That the experiment proved social networks are completely random — this view emphasizes the same outcome but attributes it to a different underlying",
+        "That most chains never reached the target at all — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "That every completed chain used exactly six intermediaries — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "That the experiment proved social networks are completely random — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:

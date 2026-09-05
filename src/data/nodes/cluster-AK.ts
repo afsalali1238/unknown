@@ -19,10 +19,10 @@ export const CLUSTER_AK: Node[] = [
     quiz: {
       question: "What did McLuhan mean by 'the medium is the message'?",
       options: [
-        "Content doesn't matter at all, only the delivery format — this view emphasizes the same outcome but attributes it to a different unde",
-        "Each medium's specific content is what determines its social impact, not its form — this view emphasizes the same outcome but attribu",
+        "Content doesn't matter at all, only the delivery format — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
+        "Each medium's specific content is what determines its social impact, not its form — an intuitive but incorrect explanation that conflates correlation with causation.",
         "A communication technology's form reshapes perception, attention, and society on its own, independent of and often more powerfully than the specific content it carries",
-        "New media always improve upon the media they replace — this view emphasizes the same outcome but attributes it to a different underly",
+        "New media always improve upon the media they replace — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -64,10 +64,10 @@ export const CLUSTER_AK: Node[] = [
       question:
         "What is the final stage of Baudrillard's four stages of the image, which he calls pure simulation?",
       options: [
-        "An image that faithfully and accurately reflects an underlying reality — this view emphasizes the same ou",
+        "An image that faithfully and accurately reflects an underlying reality — this alternative is popular online but misstates the mechanism the author.",
         "A sign that no longer refers to any reality at all, and instead only references other signs, forming a self-contained 'hyperreality'",
-        "An image that deliberately masks the fact that no underlying reality exists — this view emphasizes the sa",
-        "An image that is created to deceive with a known false version of the truth — this view emphasizes the sa",
+        "An image that deliberately masks the fact that no underlying reality exists — this view reverses the causal direction the source material argues for.",
+        "An image that is created to deceive with a known false version of the truth — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:

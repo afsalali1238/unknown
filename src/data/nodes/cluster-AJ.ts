@@ -20,10 +20,10 @@ export const CLUSTER_AJ: Node[] = [
       question:
         "What makes a Nash equilibrium 'stable,' even when the outcome is bad for everyone involved?",
       options: [
-        "Every player is achieving their absolute best possible outcome — this view emphasizes the same outcome but attributes it",
+        "Every player is achieving their absolute best possible outcome — this alternative is popular online but misstates the mechanism the author defends.",
         "No single player can improve their own result by changing strategy alone, even if a different combined set of strategies would make everyone better off",
-        "All players have identical payoffs — this view emphasizes the same outcome but attributes it to a different underlying m",
-        "The game has ended and no further moves are possible — this view emphasizes the same outcome but attributes it to a diff",
+        "All players have identical payoffs — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test.",
+        "The game has ended and no further moves are possible — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
       ],
       correctIndex: 1,
       explanation:
@@ -66,9 +66,9 @@ export const CLUSTER_AJ: Node[] = [
         "Why does betrayal remain the individually rational choice in the prisoner's dilemma, even though mutual cooperation produces a better combined outcome?",
       options: [
         "Because betraying is the best individual response regardless of what the other player does, so both players rationally betray even though mutual cooperation would leave both of them better off",
-        "Because the two suspects can freely communicate and coordinate before deciding — this view emphasizes the same outcome but attributes it to a different u",
-        "Because each player assumes the other will automatically choose to cooperate — this view emphasizes the same outcome but attributes it to a different und",
-        "Because the payoffs are identical no matter what either player chooses — this view emphasizes the same outcome but attributes it to a different underlyin",
+        "Because the two suspects can freely communicate and coordinate before deciding — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
+        "Because each player assumes the other will automatically choose to cooperate — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because the payoffs are identical no matter what either player chooses — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -109,10 +109,10 @@ export const CLUSTER_AJ: Node[] = [
     quiz: {
       question: "What does a 'strategic-form' (normal-form) game formally represent?",
       options: [
-        "A game where players take turns and can see all prior moves. — this view emphasizes the same outcome but att",
+        "A game where players take turns and can see all prior moves. — this alternative is popular online but misstates the mechanism the author defends.",
         "A situation where players choose their actions simultaneously and the payoff to each depends on the full combination of actions chosen.",
-        "A game with only one possible outcome regardless of player choices. — this view emphasizes the same outcome ",
-        "A cooperative negotiation where players share all payoffs equally. — this view emphasizes the same outcome b",
+        "A game with only one possible outcome regardless of player choices. — this view reverses the causal direction the source material argues for.",
+        "A cooperative negotiation where players share all payoffs equally. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:

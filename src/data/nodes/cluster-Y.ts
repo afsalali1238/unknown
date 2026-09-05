@@ -30,7 +30,7 @@ export const CLUSTER_Y: Node[] = [
         "Identity is not bound to specific physical atoms (which are constantly replaced in our bodies). We assign identity based on the continuity of the pattern and function over time.",
     },
     tags: ["Meaning & Self"],
-    related: ["O2", "Y2", "Y3"],
+    related: ["O2", "Y2", "Y3", "Y5"],
     furtherReading: [
       {
         label: "3 Hours of Brain F*ck Paradoxes to Fall Asleep To",
@@ -63,17 +63,17 @@ export const CLUSTER_Y: Node[] = [
       question:
         "Why do macroscopic events (like a breaking egg) demonstrate an Arrow of Time, while microscopic events (like particle collisions) are generally time-symmetric?",
       options: [
-        "Microscopic particles do not experience the force of gravity — this view emphasizes the same ",
+        "Microscopic particles do not experience the force of gravity — this alternative is popular online but misstates the mechanism the.",
         "Macroscopic systems are governed by statistical probability, which heavily favors states of higher entropy (disorder)",
-        "Quantum mechanics overrides thermodynamics on a large scale — this view emphasizes the same o",
-        "The observer effect forces macroscopic objects to decay — this view emphasizes the same outco",
+        "Quantum mechanics overrides thermodynamics on a large scale — this view reverses the causal direction the source material argues for.",
+        "The observer effect forces macroscopic objects to decay — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:
         "The laws of physics work the same forwards and backwards. The only reason time has a direction (an 'arrow') is because the universe started in an unusually low-entropy state and is statistically overwhelming its way toward higher disorder.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["X6", "Y1", "Y3"],
+    related: ["X6", "Y1", "Y3", "Y5"],
     furtherReading: [
       {
         label: "3 Hours of Most Misunderstood Physics Concepts to Fall Asleep To",
@@ -106,17 +106,17 @@ export const CLUSTER_Y: Node[] = [
       question:
         "What fundamentally differentiates the 'Hard Problem' of consciousness from the 'easy problems'?",
       options: [
-        "The hard problem requires quantum computing to model — this view emphasizes the same outcome but attributes it ",
+        "The hard problem requires quantum computing to model — this alternative is popular online but misstates the mechanism the author defends.",
         "The hard problem deals with memory retention, while the easy problem deals with visual acuity — this view empha",
         "The easy problem maps neurological functions, while the hard problem questions why these functions result in subjective experience (qualia)",
-        "The hard problem is purely mathematical and devoid of biology — this view emphasizes the same outcome but attri",
+        "The hard problem is purely mathematical and devoid of biology — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:
         "Science is excellent at explaining the mechanics of the brain (the 'easy' problems). But it has no framework for explaining why those mechanics are accompanied by the subjective, inner experience of actually feeling them (the 'hard problem').",
     },
     tags: ["Meaning & Self"],
-    related: ["O15", "X1", "Y1"],
+    related: ["O15", "X1", "Y1", "Y5"],
     furtherReading: [
       {
         label: "The Human Mind Explained to Fall Asleep To",
@@ -149,9 +149,9 @@ export const CLUSTER_Y: Node[] = [
       question:
         "What psychological benefit is directly associated with increasing one's 'emotional granularity' by learning specific words for highly nuanced feelings?",
       options: [
-        "It improves long-term memory retention — this view emphasizes the same outcome",
-        "It permanently eliminates negative emotional responses — this view emphasizes ",
-        "It slows down the subjective perception of time — this view emphasizes the sam",
+        "It improves long-term memory retention — this alternative is popular online but misstates the mechanism the.",
+        "It permanently eliminates negative emotional responses — an intuitive but incorrect explanation that conflates.",
+        "It slows down the subjective perception of time — this view reverses the causal direction the source material.",
         "It reduces anxiety and enhances emotional regulation by accurately contextualizing internal states",
       ],
       correctIndex: 3,
@@ -193,7 +193,7 @@ export const CLUSTER_Y: Node[] = [
         "What foundational mathematical rule is required to make the Banach-Tarski paradox logically function?",
       options: [
         "The Axiom of Choice applied to uncountably infinite point sets",
-        "The Pythagorean Theorem — this view emphasizes th",
+        "The Pythagorean Theorem — an intuitive but incorrect explanation that.",
         "The Second Law of Thermodynamics — this view emph",
         "Non-Euclidean spatial curvature — this view empha",
       ],
@@ -279,7 +279,7 @@ export const CLUSTER_Y: Node[] = [
       options: [
         "To stream high-definition reality into the brain for processing. —",
         "To generate the hallucinations that form consciousness. — this vie",
-        "To permanently store long-term memories. — this view emphasizes th",
+        "To permanently store long-term memories. — this view reverses the causal direction the source.",
         "To send signals to the brain only when reality differs from the brain's prediction.",
       ],
       correctIndex: 3,

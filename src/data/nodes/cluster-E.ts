@@ -20,10 +20,10 @@ export const CLUSTER_E: Node[] = [
       question:
         "Why doesn't the Black-Scholes formula require knowing an investor's risk tolerance or the stock's expected future return?",
       options: [
-        "Because options are always priced at a fixed government-set rate — this view emphasizes the same outcome but attributes it to a different un",
-        "Because the formula only applies to options that are guaranteed to expire worthless — this view emphasizes the same outcome but attributes i",
+        "Because options are always priced at a fixed government-set rate — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because the formula only applies to options that are guaranteed to expire worthless — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Because it prices the option via a riskless hedge whose return must equal the risk-free rate regardless of investor preferences — only volatility, not expected return, matters",
-        "Because Black and Scholes assumed all investors are risk-neutral by law — this view emphasizes the same outcome but attributes it to a diffe",
+        "Because Black and Scholes assumed all investors are risk-neutral by law — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -75,9 +75,9 @@ export const CLUSTER_E: Node[] = [
       question:
         "What is the practical danger of confusing closely related finance terms, such as liquidity and solvency?",
       options: [
-        "There is no real danger; the terms are interchangeable in practice. — this view emphasizes t",
-        "It only matters for accountants, not investors. — this view emphasizes the same outcome but ",
-        "It affects tax filings but nothing else. — this view emphasizes the same outcome but attribu",
+        "There is no real danger; the terms are interchangeable in practice. — this alternative is popular online but misstates the mechanism.",
+        "It only matters for accountants, not investors. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "It affects tax filings but nothing else. — this view reverses the causal direction the source material argues for.",
         "Conflating two distinct concepts can lead to badly misjudging how serious a company's financial problem actually is.",
       ],
       correctIndex: 3,
@@ -120,10 +120,10 @@ export const CLUSTER_E: Node[] = [
     quiz: {
       question: "What is the primary blind spot of EBITDA as a performance metric?",
       options: [
-        "It excludes revenue entirely from the calculation. — this view emphasizes the same outcome but attributes it to a different underlyin",
+        "It excludes revenue entirely from the calculation. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
         "It is not actual cash flow and excludes capital expenditures, which can make capital-intensive businesses look more efficient than their true cash generation supports.",
-        "It cannot be calculated for private companies. — this view emphasizes the same outcome but attributes it to a different underlying me",
-        "It only applies to companies with no debt. — this view emphasizes the same outcome but attributes it to a different underlying mechan",
+        "It cannot be calculated for private companies. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "It only applies to companies with no debt. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -165,10 +165,10 @@ export const CLUSTER_E: Node[] = [
     quiz: {
       question: "Why can a company be profitable on paper but still fail from a cash problem?",
       options: [
-        "Because profit and cash are always identical figures. — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "Because profit and cash are always identical figures. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
         "Because profit is an accounting measure while cash tracks actual liquid money on hand, and timing gaps (delayed payments, prepayments) mean the two can diverge significantly.",
-        "Because revenue always equals cash by definition. — this view emphasizes the same outcome but attributes it to a different underlying mecha",
-        "Because cash flow is irrelevant to business survival. — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "Because revenue always equals cash by definition. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because cash flow is irrelevant to business survival. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -211,10 +211,10 @@ export const CLUSTER_E: Node[] = [
       question:
         "Why would a pre-revenue startup typically be valued using the Berkus method rather than a DCF?",
       options: [
-        "Because DCF is illegal to use on startups. — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source",
-        "Because the Berkus method always produces a higher valuation. — this view emphasizes the same outcome but attributes it to a different underlying mechan",
+        "Because DCF is illegal to use on startups. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because the Berkus method always produces a higher valuation. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "Because DCF requires projecting future cash flows, which is mostly unfounded assumption-stacking without a revenue history to anchor it, while Berkus scores qualitative risk factors instead.",
-        "Because startups don't have any assets to value. — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the ",
+        "Because startups don't have any assets to value. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:

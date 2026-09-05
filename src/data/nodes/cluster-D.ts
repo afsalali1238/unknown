@@ -9,7 +9,7 @@ export const CLUSTER_D: Node[] = [
     medium: "Op-Ed",
     category: "Macro Memo",
     thesis: "Amid GFC panic, US stocks are cheap; be greedy when others are fearful.",
-    related: ["D14", "D3", "D4", "D10", "D12"],
+    related: ["D3", "D4", "D10", "D12"],
     furtherReading: [
       {
         label: 'How Buffett\'s "Buy American" call aged',
@@ -52,7 +52,7 @@ export const CLUSTER_D: Node[] = [
     category: "Macro Memo",
     thesis:
       "The concentrated success of value investors from a shared intellectual 'village' refutes efficient markets.",
-    related: ["D13", "D7", "D1", "D10", "D12"],
+    related: ["D7", "D1", "D10", "D12"],
     furtherReading: [
       {
         label: 'Columbia\'s retrospective on "Superinvestors"',
@@ -96,7 +96,7 @@ export const CLUSTER_D: Node[] = [
     category: "Macro Memo",
     thesis:
       "Investors must deploy capital into cheap markets precisely when it feels most terrifying to do so.",
-    related: ["D14", "D2", "D4", "D10", "D12"],
+    related: ["D2", "D4", "D10", "D12"],
     furtherReading: [
       {
         label: "Related Klarman essay: The Forgotten Lessons of 2008",
@@ -119,8 +119,8 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "Why did Howard Marks aggressively buy distressed debt in 2008?",
       options: [
-        "Because he knew the Federal Reserve would print money — this view emphasizes the same o",
-        "Because debt instruments are legally risk-free — this view emphasizes the same outcome ",
+        "Because he knew the Federal Reserve would print money — a common misreading that the text explicitly warns against.",
+        "Because debt instruments are legally risk-free — this alternative is popular online but misstates the mechanism the author.",
         "Because the prices were so low they assumed an apocalyptic default rate, providing a massive margin of safety",
       ],
       correctIndex: 2,
@@ -139,7 +139,7 @@ export const CLUSTER_D: Node[] = [
     category: "Macro Memo",
     thesis:
       "US equities are in a full-blown epic bubble that will end badly, comparable to 1929 and 2000.",
-    related: ["D1", "D2", "D3"],
+    related: ["D1", "D2", "D3", "C11"],
     furtherReading: [
       {
         label: "Secondary write-up on Grantham's memo",
@@ -164,8 +164,8 @@ export const CLUSTER_D: Node[] = [
         "According to Grantham, what psychological indicator signals the final stage of a superbubble?",
       options: [
         "A speculative frenzy and extreme overconfidence in low-quality, highly risky assets",
-        "High corporate tax rates — this view emphasizes the same outcome b",
-        "A sudden drop in the price of gold — this view emphasizes the same",
+        "High corporate tax rates — this alternative is popular online but misstates the mechanism the.",
+        "A sudden drop in the price of gold — an intuitive but incorrect explanation that conflates.",
       ],
       correctIndex: 0,
       explanation:
@@ -183,7 +183,7 @@ export const CLUSTER_D: Node[] = [
     category: "Macro Memo",
     thesis:
       "Investors competing to accept ever-worse terms and lower returns are sowing the seeds of the next crisis.",
-    related: ["D1", "D2", "D3"],
+    related: ["D1", "D2", "D3", "C11"],
     furtherReading: [
       {
         label: 'Line-by-line breakdown of Marks\'s "Race to the Bottom" memo',
@@ -206,9 +206,9 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "What is a 'covenant-lite' loan?",
       options: [
-        "A loan issued exclusively to governments — this view emphasizes the same outcome",
+        "A loan issued exclusively to governments — a common misreading that the text explicitly warns against.",
         "A loan that strips away traditional financial protections and monitoring requirements for the lender",
-        "A loan with an interest rate below inflation — this view emphasizes the same out",
+        "A loan with an interest rate below inflation — an intuitive but incorrect explanation that conflates correlation.",
       ],
       correctIndex: 1,
       explanation:
@@ -226,7 +226,7 @@ export const CLUSTER_D: Node[] = [
     category: "Macro Memo",
     thesis:
       "A generational shift from falling to elevated rates ends the 40-year tailwind; credit and value are the new winners.",
-    related: ["D1", "D2", "D3"],
+    related: ["D1", "D2", "D3", "D13"],
     furtherReading: [
       {
         label: 'Breakdown of Marks\' "The Race to the Bottom"',
@@ -249,8 +249,8 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "What was the primary driver of the 'Sea Change' Howard Marks identified in 2022?",
       options: [
-        "The invention of cryptocurrency — this view emphasizes the same outcome but attribu",
-        "The transition from physical to digital retail — this view emphasizes the same outc",
+        "The invention of cryptocurrency — a common misreading that the text explicitly warns against.",
+        "The transition from physical to digital retail — this alternative is popular online but misstates the mechanism the.",
         "The end of a 40-year cycle of declining interest rates, moving to a structurally higher rate environment",
       ],
       correctIndex: 2,
@@ -269,7 +269,7 @@ export const CLUSTER_D: Node[] = [
     category: "Macro Memo",
     thesis:
       "Debt crises follow a repeating, mechanical template of leveraging and deleveraging that can be navigated.",
-    related: ["D1", "D2", "D3"],
+    related: ["D1", "D2", "D3", "D13"],
     furtherReading: [
       {
         label: "Analysis of Dalio's Big Debt Crises template",
@@ -293,8 +293,8 @@ export const CLUSTER_D: Node[] = [
       question: "What is a 'Beautiful Deleveraging' in Dalio's framework?",
       options: [
         "When policymakers perfectly balance deflationary debt restructuring with inflationary money printing to reduce the debt burden without crashing the economy",
-        "When all debt is completely forgiven by the government — this view emphasizes the same outcome but attributes it to a differ",
-        "When a country adopts the gold standard to prevent inflation — this view emphasizes the same outcome but attributes it to a ",
+        "When all debt is completely forgiven by the government — this alternative is popular online but misstates the mechanism the author defends.",
+        "When a country adopts the gold standard to prevent inflation — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
@@ -312,7 +312,7 @@ export const CLUSTER_D: Node[] = [
     category: "Macro Memo",
     thesis:
       "Long-term debt, currency, and empire cycles explain the relative decline of the US and rise of China.",
-    related: ["D1", "D2", "D3"],
+    related: ["D1", "D2", "D3", "D13"],
     furtherReading: [
       {
         label: "Summary of Dalio's Changing World Order",
@@ -336,9 +336,9 @@ export const CLUSTER_D: Node[] = [
       question:
         "According to Dalio's cycle, what is the ultimate financial catalyst for an empire's decline?",
       options: [
-        "A lack of natural resources — this view emphasizes the same outcome ",
+        "A lack of natural resources — a common misreading that the text explicitly warns against.",
         "Massive wealth inequality combined with printing money to monetize unsustainable debts",
-        "An over-reliance on agricultural exports — this view emphasizes the ",
+        "An over-reliance on agricultural exports — an intuitive but incorrect explanation that conflates.",
       ],
       correctIndex: 1,
       explanation:
@@ -378,8 +378,8 @@ export const CLUSTER_D: Node[] = [
       question:
         "What core dynamic makes it difficult for the US to defend the value of the dollar, according to this thesis?",
       options: [
-        "The US produces too much oil domestically — this view emphasizes the same outcome but att",
-        "The Federal Reserve is not allowed to buy foreign currencies — this view emphasizes the s",
+        "The US produces too much oil domestically — a common misreading that the text explicitly warns against.",
+        "The Federal Reserve is not allowed to buy foreign currencies — this alternative is popular online but misstates the mechanism.",
         "The US has so much sovereign debt that raising interest rates to defend the dollar would bankrupt the government",
       ],
       correctIndex: 2,
@@ -421,7 +421,7 @@ export const CLUSTER_D: Node[] = [
         "What specific event catalyzed the shift to 'Bretton Woods III' according to Pozsar?",
       options: [
         "The freezing of Russia's foreign exchange reserves by the West in 2022",
-        "The invention of Bitcoin in 2009 — this view emphasizes ",
+        "The invention of Bitcoin in 2009 — this alternative is popular online but.",
         "The collapse of the Lehman Brothers in 2008 — this view ",
       ],
       correctIndex: 0,
@@ -461,9 +461,9 @@ export const CLUSTER_D: Node[] = [
     quiz: {
       question: "What did Sequoia mean by telling founders they must become 'default alive'?",
       options: [
-        "They must immediately IPO to raise cash — this view emphasizes the same outcome but a",
+        "They must immediately IPO to raise cash — a common misreading that the text explicitly warns against.",
         "They must cut expenses enough to reach profitability without ever needing to raise another round of funding",
-        "They must pivot to healthcare software — this view emphasizes the same outcome but at",
+        "They must pivot to healthcare software — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
@@ -503,7 +503,7 @@ export const CLUSTER_D: Node[] = [
       question: "What fundamental shift in investor behavior did 'Adapting to Endure' highlight?",
       options: [
         "A shift from investing in software to investing in crypto — this vie",
-        "A shift from public markets to private equity — this view emphasizes",
+        "A shift from public markets to private equity — this alternative is popular online but misstates.",
         "A shift from valuing 'growth at all costs' to valuing free cash flow and profitability",
       ],
       correctIndex: 2,
@@ -534,8 +534,8 @@ export const CLUSTER_D: Node[] = [
       options: [
         "Over a few years there's essentially no correlation, but over the long term the correlation approaches 100%.",
         "There is a perfect correlation at every timescale, including day to day. — this view e",
-        "Stock price success always precedes operational success. — this view emphasizes the sa",
-        "The two are entirely unrelated at any timescale. — this view emphasizes the same outco",
+        "Stock price success always precedes operational success. — an intuitive but incorrect explanation that conflates correlation.",
+        "The two are entirely unrelated at any timescale. — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -578,10 +578,10 @@ export const CLUSTER_D: Node[] = [
       question:
         "According to SK hynix's chairman and TSMC's CEO, why can't the AI-driven chip and memory shortage be resolved quickly even with aggressive capital spending?",
       options: [
-        "Because chipmakers are refusing to raise capital expenditure despite strong demand signals. — this view emphasizes the same outcome but attributes it to a different und",
+        "Because chipmakers are refusing to raise capital expenditure despite strong demand signals. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "Because building and ramping a new fab has a fixed lead time of roughly five to seven years regardless of how much capital is deployed, so today's spending increases can't produce supply before the early 2030s.",
-        "Because AI demand for chips is actually expected to decline within the next year. — this view emphasizes the same outcome but attributes it to a different underlying me",
-        "Because export controls make it illegal to build new fabs anywhere outside of Taiwan. — this view emphasizes the same outcome but attributes it to a different underlyin",
+        "Because AI demand for chips is actually expected to decline within the next year. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because export controls make it illegal to build new fabs anywhere outside of Taiwan. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:

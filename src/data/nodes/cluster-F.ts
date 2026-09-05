@@ -19,9 +19,9 @@ export const CLUSTER_F: Node[] = [
     quiz: {
       question: "What was radical about Shannon's approach to defining 'information'?",
       options: [
-        "He defined information based on how emotionally important a message was to the receiver — this view emphasizes the same ",
-        "He argued information could only be transmitted without any noise at all — this view emphasizes the same outcome but att",
-        "He proved that analog signals are always more reliable than digital ones — this view emphasizes the same outcome but att",
+        "He defined information based on how emotionally important a message was to the receiver — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "He argued information could only be transmitted without any noise at all — this view reverses the causal direction the source material argues for.",
+        "He proved that analog signals are always more reliable than digital ones — a common misreading that the text explicitly warns against.",
         "He measured information purely by how surprising/unpredictable it was (its entropy), deliberately ignoring the actual meaning or content of the message",
       ],
       correctIndex: 3,
@@ -77,9 +77,9 @@ export const CLUSTER_F: Node[] = [
         "Why did Berners-Lee's hypertext system deliberately avoid having a central index of all links?",
       options: [
         "A central index would have required someone's permission or registration for every link, creating a bottleneck; without one, the system could scale without a single point of failure, at the cost of links sometimes breaking",
-        "CERN's computers weren't powerful enough to maintain a central index — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the sourc",
-        "Central indexes were against CERN's official research policy — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source materi",
-        "It was a temporary limitation later fixed by search engines — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source materia",
+        "CERN's computers weren't powerful enough to maintain a central index — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Central indexes were against CERN's official research policy — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "It was a temporary limitation later fixed by search engines — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -132,10 +132,10 @@ export const CLUSTER_F: Node[] = [
     quiz: {
       question: "Why is PageRank harder to manipulate than simple keyword-frequency ranking?",
       options: [
-        "Because it requires payment to Google to be indexed at all — this view emphasizes the same outcome but attributes it to a different underlying mec",
+        "Because it requires payment to Google to be indexed at all — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "Because a page's rank depends on being linked to by other already-trusted pages, not just on what words appear on the page itself — which is much harder to fake than stuffing keywords",
-        "Because PageRank only considers pages written in English — this view emphasizes the same outcome but attributes it to a different underlying mecha",
-        "Because it ranks pages randomly to prevent gaming the system — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "Because PageRank only considers pages written in English — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because it ranks pages randomly to prevent gaming the system — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test.",
       ],
       correctIndex: 1,
       explanation:
@@ -189,10 +189,10 @@ export const CLUSTER_F: Node[] = [
       question:
         "How did Microsoft respond to the threat it identified from Netscape in the Internet Tidal Wave memo?",
       options: [
-        "It acquired Netscape outright to eliminate the competitor — this view emphasizes the same outcome but attrib",
-        "It exited the software business entirely to focus on internet infrastructure — this view emphasizes the same",
+        "It acquired Netscape outright to eliminate the competitor — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "It exited the software business entirely to focus on internet infrastructure — this view reverses the causal direction the source material argues for.",
         "It bundled a free web browser (Internet Explorer) into Windows, using its OS monopoly to undercut Netscape's paid browser business model",
-        "It lobbied Congress to ban competing browsers — this view emphasizes the same outcome but attributes it to a",
+        "It lobbied Congress to ban competing browsers — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -246,9 +246,9 @@ export const CLUSTER_F: Node[] = [
       question:
         "According to W. Brian Arthur, why do knowledge-based technology markets tend toward winner-take-all outcomes?",
       options: [
-        "Because governments actively regulate these markets to favor one company — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source mater",
-        "Because consumers are legally required to use the first product that enters a market — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the ",
-        "Because technology products always have higher switching costs than physical goods by definition — this view emphasizes the same outcome but attributes it to a different underlying mechani",
+        "Because governments actively regulate these markets to favor one company — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because consumers are legally required to use the first product that enters a market — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because technology products always have higher switching costs than physical goods by definition — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "Because high upfront costs combined with near-zero reproduction costs, network effects, and switching costs create a feedback loop where an early lead compounds into a further lead, unlike traditional industries with diminishing returns",
       ],
       correctIndex: 3,

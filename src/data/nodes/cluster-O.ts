@@ -19,7 +19,7 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is 'the absurd' in Camus's framework?",
       options: [
-        "The universe being fundamentally meaningless — this view emphasizes the same",
+        "The universe being fundamentally meaningless — this view reverses the causal direction the source material.",
         "A synonym for existentialism, the philosophical school Camus founded — this ",
         "The collision between the human need for meaning and the universe's silent refusal to provide it",
         "The feeling of humor Camus believed was the correct response to death — this",
@@ -74,8 +74,8 @@ export const CLUSTER_O: Node[] = [
       question:
         "What experiment does Metzinger use to show that even bodily 'ownership' is a constructed model rather than a fact?",
       options: [
-        "The Stanford Prison Experiment — this view emphasizes the same",
-        "The Milgram obedience experiment — this view emphasizes the sa",
+        "The Stanford Prison Experiment — this view reverses the causal direction the source.",
+        "The Milgram obedience experiment — a common misreading that the text explicitly warns.",
         "Libet's experiment on the timing of conscious decisions — this",
         "The rubber-hand illusion, where subjects come to feel a fake hand is their own",
       ],
@@ -84,7 +84,7 @@ export const CLUSTER_O: Node[] = [
         "Metzinger argues that the 'self' is not a real thing, but a highly convincing simulation constructed by the brain to help the organism navigate the world.",
     },
     tags: ["Meaning & Self"],
-    related: ["O4", "N3", "Y1"],
+    related: ["O4", "N3", "Y1", "O32"],
     furtherReading: [
       {
         label: "The Ego Tunnel — TEDxRheinMain",
@@ -129,7 +129,7 @@ export const CLUSTER_O: Node[] = [
       options: [
         "Their logic and IQ remained intact, but they lost the ability to make even simple decisions",
         "They lost the ability to speak but retained perfect emotional expression",
-        "They became unable to form new long-term memories — this view emphasizes",
+        "They became unable to form new long-term memories — this alternative is popular online but misstates the.",
         "They experienced a complete loss of physical sensation — this view empha",
       ],
       correctIndex: 0,
@@ -275,9 +275,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What does Hoffman's peer-reviewed 'Fitness-Beats-Truth' theorem show?",
       options: [
-        "That accurate perception of reality always outcompetes fitness-tuned perception — this view emphasizes the ",
-        "That human perception is more accurate than that of any other species — this view emphasizes the same outco",
-        "That consciousness cannot be studied mathematically — this view emphasizes the same outcome but attributes ",
+        "That accurate perception of reality always outcompetes fitness-tuned perception — this view reverses the causal direction the source material argues for.",
+        "That human perception is more accurate than that of any other species — a common misreading that the text explicitly warns against.",
+        "That consciousness cannot be studied mathematically — this alternative is popular online but misstates the mechanism the author defends.",
         "That organisms tuned to perceive fitness-relevant information systematically outcompete organisms tuned to perceive reality accurately",
       ],
       correctIndex: 3,
@@ -328,9 +328,9 @@ export const CLUSTER_O: Node[] = [
       question: "What does Sartre mean by 'existence precedes essence'?",
       options: [
         "A human being exists first, with no predetermined nature, and defines their essence only through the choices they make",
-        "Humans are born with a fixed purpose that they gradually discover — this view emphasizes the s",
-        "Essence and existence are identical concepts in his philosophy — this view emphasizes the same",
-        "Human nature is entirely determined by God's design — this view emphasizes the same outcome bu",
+        "Humans are born with a fixed purpose that they gradually discover — a common misreading that the text explicitly warns against.",
+        "Essence and existence are identical concepts in his philosophy — this alternative is popular online but misstates the mechanism the.",
+        "Human nature is entirely determined by God's design — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
@@ -381,10 +381,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "According to Kierkegaard, what makes despair so dangerous?",
       options: [
-        "It always causes visible sadness that others can identify — this view emphasizes the same outco",
+        "It always causes visible sadness that others can identify — this view reverses the causal direction the source material argues for.",
         "It is a structural failure in the self's relation to itself, and the person carrying it often doesn't know they have it",
-        "It only affects people who have failed at their goals — this view emphasizes the same outcome b",
-        "It is identical to clinical depression — this view emphasizes the same outcome but attributes i",
+        "It only affects people who have failed at their goals — this alternative is popular online but misstates the mechanism the author.",
+        "It is identical to clinical depression — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
@@ -436,10 +436,10 @@ export const CLUSTER_O: Node[] = [
       question:
         "What problem was Beauvoir specifically trying to solve in The Ethics of Ambiguity?",
       options: [
-        "How to prove that free will exists — this view emphasizes the same outcome but attributes it ",
-        "How to reconcile existentialism with Christian theology — this view emphasizes the same outco",
+        "How to prove that free will exists — this view reverses the causal direction the source material argues for.",
+        "How to reconcile existentialism with Christian theology — a common misreading that the text explicitly warns against.",
         "How existentialism, which denies fixed values, can still ground an ethics rather than collapsing into 'anything goes'",
-        "How to define happiness scientifically — this view emphasizes the same outcome but attributes",
+        "How to define happiness scientifically — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 2,
       explanation:
@@ -490,9 +490,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is the core discipline Marcus Aurelius repeatedly practices in Meditations?",
       options: [
-        "Avoiding all difficult emotions through meditation techniques — this view emphasizes the same outcome but",
-        "Withdrawing from public and political life to focus on philosophy — this view emphasizes the same outcome",
-        "Proving the existence of the Stoic gods through logic — this view emphasizes the same outcome but attribu",
+        "Avoiding all difficult emotions through meditation techniques — this view reverses the causal direction the source material argues for.",
+        "Withdrawing from public and political life to focus on philosophy — a common misreading that the text explicitly warns against.",
+        "Proving the existence of the Stoic gods through logic — this alternative is popular online but misstates the mechanism the author defends.",
         "Separating what is in your control (judgments, reactions) from what isn't (external events), and only directing effort at the former",
       ],
       correctIndex: 3,
@@ -500,7 +500,7 @@ export const CLUSTER_O: Node[] = [
         "As the most powerful man in the world, Marcus Aurelius wrote to himself to maintain perspective, relentlessly practicing the Stoic discipline of ignoring external chaos and mastering his internal judgments.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["T5", "O16", "O17", "Q10", "M8"],
+    related: ["T5", "O16", "O17", "Q10"],
     furtherReading: [
       {
         label: "Meditations (full text)",
@@ -546,8 +546,8 @@ export const CLUSTER_O: Node[] = [
       options: [
         "Most of a life's real length is lost to distraction, obligation, and postponement, not to its actual duration",
         "Human lifespans are naturally too brief for meaningful accomplishment — this view empha",
-        "Only wealthy people have the luxury of a long life — this view emphasizes the same outc",
-        "Death should be avoided through healthy living — this view emphasizes the same outcome ",
+        "Only wealthy people have the luxury of a long life — this alternative is popular online but misstates the mechanism the.",
+        "Death should be avoided through healthy living — an intuitive but incorrect explanation that conflates correlation with.",
       ],
       correctIndex: 0,
       explanation:
@@ -598,10 +598,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What does the Tao Te Ching's image of water illustrate?",
       options: [
-        "That physical strength always overcomes obstacles eventually — this view emphasizes the same outcom",
+        "That physical strength always overcomes obstacles eventually — this view reverses the causal direction the source material argues for.",
         "That yielding, low-friction action can be more powerful over time than direct force, because it avoids generating resistance",
-        "That emotions should be suppressed to achieve inner peace — this view emphasizes the same outcome b",
-        "That leaders should remain completely passive and never act — this view emphasizes the same outcome",
+        "That emotions should be suppressed to achieve inner peace — this alternative is popular online but misstates the mechanism the author defends.",
+        "That leaders should remain completely passive and never act — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
@@ -706,9 +706,9 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is Nietzsche most worried about when he declares 'God is dead'?",
       options: [
-        "That people will stop believing in an afterlife — this view emphasizes the same outcome but attribut",
-        "That religious institutions will lose political power — this view emphasizes the same outcome but at",
-        "That science will fail to explain the universe — this view emphasizes the same outcome but attribute",
+        "That people will stop believing in an afterlife — this view reverses the causal direction the source material argues for.",
+        "That religious institutions will lose political power — a common misreading that the text explicitly warns against.",
+        "That science will fail to explain the universe — this alternative is popular online but misstates the mechanism the author defends.",
         "Nihilism — the collapse of meaning and values once their traditional foundation is gone, with nothing yet built to replace it",
       ],
       correctIndex: 3,
@@ -761,9 +761,9 @@ export const CLUSTER_O: Node[] = [
       question: "What is the 'hard problem of consciousness' as defined by Chalmers?",
       options: [
         "Explaining why physical processing is accompanied by subjective experience at all, beyond just explaining the functions themselves",
-        "The difficulty of measuring brain activity accurately — this view emphasizes the same outcome but attrib",
-        "The technical challenge of building conscious AI — this view emphasizes the same outcome but attributes ",
-        "Determining which animals are capable of feeling pain — this view emphasizes the same outcome but attrib",
+        "The difficulty of measuring brain activity accurately — a common misreading that the text explicitly warns against.",
+        "The technical challenge of building conscious AI — this alternative is popular online but misstates the mechanism the author defends.",
+        "Determining which animals are capable of feeling pain — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
@@ -816,7 +816,7 @@ export const CLUSTER_O: Node[] = [
       options: [
         "The intentions behind the action, regardless of outcome — this view emp",
         "Whether it produces the greatest net happiness for the greatest number of people affected",
-        "Whether it follows a fixed set of moral rules — this view emphasizes th",
+        "Whether it follows a fixed set of moral rules — this alternative is popular online but misstates the.",
         "Whether it is legal in the jurisdiction where it occurs — this view emp",
       ],
       correctIndex: 1,
@@ -824,7 +824,7 @@ export const CLUSTER_O: Node[] = [
         "Mill's ethical framework bypasses divine rules and focuses purely on consequences: an action is morally right only if it maximizes the total aggregate well-being and minimizes total suffering.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["T5", "L8", "O10", "Q10", "M8"],
+    related: ["T5", "L8", "O10", "Q10"],
     furtherReading: [
       {
         label: "Utilitarianism (full text)",
@@ -868,17 +868,17 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What does Kant's categorical imperative test for?",
       options: [
-        "Whether an action produces the best overall outcome — this view emphasizes the same outcom",
-        "Whether an action is legal in a given society — this view emphasizes the same outcome but ",
+        "Whether an action produces the best overall outcome — this view reverses the causal direction the source material argues for.",
+        "Whether an action is legal in a given society — a common misreading that the text explicitly warns against.",
         "Whether the underlying principle behind an action could be willed to become a universal law that everyone follows",
-        "Whether an action makes the person performing it happy — this view emphasizes the same out",
+        "Whether an action makes the person performing it happy — an intuitive but incorrect explanation that conflates correlation with.",
       ],
       correctIndex: 2,
       explanation:
         "Kant argued that morality must be based on pure reason, not outcomes. The Categorical Imperative demands that you only act according to rules that you would logically want everyone else in the world to follow.",
     },
     tags: ["Meaning & Self", "Decision-Making"],
-    related: ["T5", "L8", "O10", "Q10", "M8"],
+    related: ["T5", "L8", "O10", "Q10"],
     furtherReading: [
       {
         label: "Groundwork of the Metaphysics of Morals (full text)",
@@ -977,9 +977,9 @@ export const CLUSTER_O: Node[] = [
       question: "What is Locke's central claim about the mind at birth?",
       options: [
         "It is a blank slate with no innate ideas; all knowledge derives from sensory experience and reflection on it",
-        "It contains innate knowledge of God, logic, and morality — this view emphasizes the sa",
-        "It is pre-programmed with mathematical truths — this view emphasizes the same outcome ",
-        "It cannot acquire any reliable knowledge at all — this view emphasizes the same outcom",
+        "It contains innate knowledge of God, logic, and morality — a common misreading that the text explicitly warns against.",
+        "It is pre-programmed with mathematical truths — this alternative is popular online but misstates the mechanism the author.",
+        "It cannot acquire any reliable knowledge at all — an intuitive but incorrect explanation that conflates correlation with.",
       ],
       correctIndex: 0,
       explanation:
@@ -1032,7 +1032,7 @@ export const CLUSTER_O: Node[] = [
       options: [
         "The reliability of sensory experience — this view emphasi",
         "The fact that he is thinking, and therefore exists — the cogito ergo sum",
-        "The existence of God, proven first — this view emphasizes",
+        "The existence of God, proven first — this alternative is popular online but.",
         "Nothing; Descartes concludes certain knowledge is impossible",
       ],
       correctIndex: 1,
@@ -1084,10 +1084,10 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is Hume's central problem with our belief in cause and effect?",
       options: [
-        "Cause and effect don't exist at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source ",
-        "Causation only applies to physical objects, not human behavior — this view emphasizes the same outcome but attributes it to a different underlying",
+        "Cause and effect don't exist at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Causation only applies to physical objects, not human behavior — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "We never directly observe causation itself, only the constant conjunction of two events, and our belief in causal connection can't be justified by pure reason or past experience alone",
-        "Scientists have proven causation is always an illusion — this view emphasizes the same outcome but attributes it to a different underlying mechani",
+        "Scientists have proven causation is always an illusion — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -1139,9 +1139,9 @@ export const CLUSTER_O: Node[] = [
       question:
         "According to Hobbes, why do rational individuals agree to submit to a sovereign authority?",
       options: [
-        "Because the sovereign is chosen by God and deserves obedience — this view emphasizes the same outcome but attribute",
-        "Because a sovereign guarantees equal wealth distribution — this view emphasizes the same outcome but attributes it ",
-        "Because Hobbes believed democracy was the only legitimate form of government — this view emphasizes the same outcom",
+        "Because the sovereign is chosen by God and deserves obedience — this view reverses the causal direction the source material argues for.",
+        "Because a sovereign guarantees equal wealth distribution — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
+        "Because Hobbes believed democracy was the only legitimate form of government — this alternative is popular online but misstates the mechanism the author defends.",
         "Because life without a common power to enforce order collapses into a war of all against all, and any stable authority is better than that chaos",
       ],
       correctIndex: 3,
@@ -1194,9 +1194,9 @@ export const CLUSTER_O: Node[] = [
       question: "What is Rawls's 'veil of ignorance' thought experiment used to determine?",
       options: [
         "What principles of justice rational people would choose for a society if they didn't know what position they'd occupy within it",
-        "The best strategy for winning a negotiation — this view emphasizes the same outcome but attributes it",
-        "Whether democracy is superior to other forms of government — this view emphasizes the same outcome bu",
-        "How to eliminate all forms of inequality immediately — this view emphasizes the same outcome but attr",
+        "The best strategy for winning a negotiation — a common misreading that the text explicitly warns against. The distinction matters because it.",
+        "Whether democracy is superior to other forms of government — this alternative is popular online but misstates the mechanism the author defends.",
+        "How to eliminate all forms of inequality immediately — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
@@ -1245,16 +1245,16 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "How does Panpsychism solve the 'Hard Problem' of consciousness?",
       options: [
-        "By proving that consciousness is merely an illusion generated by software. — this view emphasizes the sam",
+        "By proving that consciousness is merely an illusion generated by software. — this view reverses the causal direction the source material argues for.",
         "By suggesting that consciousness is a fundamental property of matter, meaning it doesn't need to 'magically' emerge from dead atoms.",
         "By showing that only organisms with complex nervous systems can process information. — this view emphasiz",
-        "By relying on quantum mechanics to explain free will. — this view emphasizes the same outcome but attribu",
+        "By relying on quantum mechanics to explain free will. — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
         "If consciousness is already a basic property of the universe (like mass), you no longer have to explain how dead matter magically produces subjective experience.",
     },
-    related: ["O30", "O27", "O25", "O28", "O29", "O32"],
+    related: ["O30", "O27", "O25", "O28"],
     furtherReading: [
       {
         label: "Panpsychism",
@@ -1291,15 +1291,15 @@ export const CLUSTER_O: Node[] = [
         "According to Winnicott, why is a 'perfect' parent actually harmful to a developing child?",
       options: [
         "Because perfection is impossible, so the parent will eventually suffer burnout. — this view emphasize",
-        "Because it makes the child too independent too quickly. — this view emphasizes the same outcome but a",
-        "Because the child will realize the parent is faking their perfection. — this view emphasizes the same",
+        "Because it makes the child too independent too quickly. — a common misreading that the text explicitly warns against.",
+        "Because the child will realize the parent is faking their perfection. — this alternative is popular online but misstates the mechanism the author.",
         "Because the child will never experience the necessary, tolerable frustrations required to develop resilience and self-soothing.",
       ],
       correctIndex: 3,
       explanation:
         "A child must slowly learn that the world does not revolve around them. If a parent instantly satisfies every urge, the child never develops the psychological tools to handle the real world's inevitable delays and rejections.",
     },
-    related: ["O30", "O27", "O24", "O28", "O29", "O32"],
+    related: ["O30", "O27", "O24", "O28"],
     furtherReading: [
       {
         label: "The Good Enough Mother",
@@ -1335,16 +1335,16 @@ export const CLUSTER_O: Node[] = [
       question:
         "How does a 'Classicist' view a long-term relationship differently than a 'Romantic'?",
       options: [
-        "A Classicist believes in finding a perfect soulmate, while a Romantic settles for whoever is closest. — this view emphasizes the ",
+        "A Classicist believes in finding a perfect soulmate, while a Romantic settles for whoever is closest. — this view reverses the causal direction the source material argues for.",
         "A Classicist believes love is a choice built on compromise and realistic expectations, while a Romantic believes it must be based on constant, passionate feeling.",
-        "A Classicist relies entirely on horoscopes to choose a partner. — this view emphasizes the same outcome but attributes it to a di",
-        "A Classicist avoids relationships entirely to focus on their career. — this view emphasizes the same outcome but attributes it to",
+        "A Classicist relies entirely on horoscopes to choose a partner. — this alternative is popular online but misstates the mechanism the author defends.",
+        "A Classicist avoids relationships entirely to focus on their career. — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
         "Romanticism demands perfection and constant passion, leading to inevitable disappointment. Classicism expects flaws and friction, making it far more resilient.",
     },
-    related: ["O30", "O27", "O24", "O28", "O29", "O32"],
+    related: ["O30", "O27", "O24", "O28"],
     furtherReading: [
       {
         label: "Romanticism vs Classicism",
@@ -1379,16 +1379,16 @@ export const CLUSTER_O: Node[] = [
     quiz: {
       question: "What is the metaphorical lesson of Schopenhauer's Porcupine Dilemma?",
       options: [
-        "Humans should remain entirely isolated to avoid getting hurt. — this view emphasizes the same outcome but attr",
-        "We must completely dull our 'quills' (flaws) before we are worthy of love. — this view emphasizes the same out",
-        "The coldness of the universe makes all human relationships ultimately meaningless. — this view emphasizes the ",
+        "Humans should remain entirely isolated to avoid getting hurt. — this view reverses the causal direction the source material argues for.",
+        "We must completely dull our 'quills' (flaws) before we are worthy of love. — a common misreading that the text explicitly warns against.",
+        "The coldness of the universe makes all human relationships ultimately meaningless. — this alternative is popular online but misstates the mechanism the author.",
         "Intimacy is a delicate balance of finding the right psychological distance to share warmth without inflicting too much pain on each other.",
       ],
       correctIndex: 3,
       explanation:
         "You cannot have intimacy without friction. The goal is to calibrate the distance so that the warmth outweighs the inevitable pricks of human flaws.",
     },
-    related: ["O26", "O3", "O24"],
+    related: ["O26", "O3", "O24", "O29"],
     furtherReading: [
       {
         label: "Schopenhauer's Porcupine Dilemma",
@@ -1425,15 +1425,15 @@ export const CLUSTER_O: Node[] = [
         "Why does Rilke advise against frantically searching for the answers to life's biggest dilemmas?",
       options: [
         "Because even if someone gave you the answer, you lack the lived experience required to actually understand and embody it.",
-        "Because the answers to life's questions do not actually exist. — this view emphasizes the same o",
-        "Because asking questions is a sign of philosophical weakness. — this view emphasizes the same ou",
-        "Because the universe is inherently chaotic and randomly assigns fates. — this view emphasizes th",
+        "Because the answers to life's questions do not actually exist. — a common misreading that the text explicitly warns against.",
+        "Because asking questions is a sign of philosophical weakness. — this alternative is popular online but misstates the mechanism the author.",
+        "Because the universe is inherently chaotic and randomly assigns fates. — an intuitive but incorrect explanation that conflates correlation.",
       ],
       correctIndex: 0,
       explanation:
         "Existential truths cannot be memorized like math formulas. They must be earned through the slow accumulation of life experience.",
     },
-    related: ["O4", "N7", "O24"],
+    related: ["O4", "N7", "O24", "O29"],
     furtherReading: [
       {
         label: "Rilke on Living the Questions",
@@ -1477,7 +1477,7 @@ export const CLUSTER_O: Node[] = [
       explanation:
         "Seeing the Earth as a single, fragile, borderless sphere hanging in a dark void instantly dissolves tribal and nationalistic divisions.",
     },
-    related: ["O1", "J1", "O24"],
+    related: ["O1", "J1", "O24", "O32"],
     furtherReading: [
       {
         label: "The Overview Effect",
@@ -1513,16 +1513,16 @@ export const CLUSTER_O: Node[] = [
       question:
         "What operational test does Al-Beik propose for judging whether a technology or system is genuinely 'people-first'?",
       options: [
-        "Whether the system generates the most revenue for its owners. — this view emphasizes the same outcome but attributes i",
-        "Whether the system uses the most advanced AI available. — this view emphasizes the same outcome but attributes it to a",
-        "Whether the system has the fewest number of steps to complete a task. — this view emphasizes the same outcome but attr",
+        "Whether the system generates the most revenue for its owners. — this view reverses the causal direction the source material argues for.",
+        "Whether the system uses the most advanced AI available. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
+        "Whether the system has the fewest number of steps to complete a task. — this alternative is popular online but misstates the mechanism the author defends.",
         "Whether the system is designed for a person who is allowed to change their mind, rather than one whose past behavior is assumed to fix their future.",
       ],
       correctIndex: 3,
       explanation:
         "This is the specific test Al-Beik gives: most recommendation engines, credit systems, and social platforms fail it because they treat past behavior as a fixed predictor rather than allowing for genuine revision.",
     },
-    related: ["O1", "O2"],
+    related: ["O1", "O2", "O29", "O32"],
     furtherReading: [
       {
         label: "The People-First Approach",
@@ -1559,7 +1559,7 @@ export const CLUSTER_O: Node[] = [
       question:
         "What structural feature distinguishes this compilation from a typical inspirational Stoic-quotes list?",
       options: [
-        "It only includes quotes from Marcus Aurelius. — this view emphasizes the s",
+        "It only includes quotes from Marcus Aurelius. — this view reverses the causal direction the source.",
         "It rejects all classical Stoic sources in favor of modern reinterpretations.",
         "It is written entirely in the first person as a diary. — this view emphasi",
         "Each Stoic principle is paired with a specific, concrete action item to apply it immediately.",
@@ -1605,10 +1605,10 @@ export const CLUSTER_O: Node[] = [
       question:
         "In the Empty Boat parable, what specifically causes the man's anger to disappear once he sees the second boat is empty?",
       options: [
-        "He realizes his own boat wasn't actually damaged. — this view emphasizes the same outcome but attributes it to a different und",
+        "He realizes his own boat wasn't actually damaged. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would.",
         "He realizes there is no intentional actor behind the collision — the harm was identical, but the absence of perceived intent removes the target for his anger.",
-        "He decides to no longer care about his boat at all. — this view emphasizes the same outcome but attributes it to a different u",
-        "The empty boat apologizes to him. — this view emphasizes the same outcome but attributes it to a different underlying mechanis",
+        "He decides to no longer care about his boat at all. — this alternative is popular online but misstates the mechanism the author defends.",
+        "The empty boat apologizes to him. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test.",
       ],
       correctIndex: 1,
       explanation:

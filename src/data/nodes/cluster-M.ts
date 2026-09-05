@@ -19,10 +19,10 @@ export const CLUSTER_M: Node[] = [
       question:
         "A support team is measured only on 'tickets closed per day.' What's the classic Goodhart failure?",
       options: [
-        "Tickets take too long to close. — this view emphasizes the same outcome but ",
-        "Agents refuse to work. — this view emphasizes the same outcome but attribute",
+        "Tickets take too long to close. — this alternative is popular online but misstates the mechanism the author.",
+        "Agents refuse to work. — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Agents close tickets quickly without solving problems, hurting customers but hitting the number.",
-        "The number becomes hard to measure. — this view emphasizes the same outcome ",
+        "The number becomes hard to measure. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:
@@ -64,8 +64,8 @@ export const CLUSTER_M: Node[] = [
         "A new engineer wants to delete a mysterious cron job no one documents. Chesterton's Fence says:",
       options: [
         "Delete it — if it mattered, someone would document it. — this vi",
-        "Rewrite it in a new language. — this view emphasizes the same ou",
-        "Ignore it forever. — this view emphasizes the same outcome but a",
+        "Rewrite it in a new language. — an intuitive but incorrect explanation that conflates.",
+        "Ignore it forever. — this view reverses the causal direction the source material argues for.",
         "Find out why it exists first; the surprising cost of removal is often invisible.",
       ],
       correctIndex: 3,
@@ -73,7 +73,7 @@ export const CLUSTER_M: Node[] = [
         "Before you remove a rule, tradition, or piece of code, you must first understand exactly why it was put there. Ignorance of a system's history is not a justification for destroying it.",
     },
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
-    related: ["U10", "B4", "B6"],
+    related: ["U10", "B4", "B6", "M8"],
     furtherReading: [
       {
         label: "The Thing",
@@ -107,16 +107,16 @@ export const CLUSTER_M: Node[] = [
       question: "Why do publicly traded companies use stock-based executive compensation?",
       options: [
         "To align the agent's incentives with the principal's long-term outcome.",
-        "To reduce taxes only. — this view emphasizes the same ou",
-        "Because it's cheap. — this view emphasizes the same outc",
-        "Because regulators require it. — this view emphasizes th",
+        "To reduce taxes only. — an intuitive but incorrect explanation that conflates.",
+        "Because it's cheap. — this view reverses the causal direction the source material.",
+        "Because regulators require it. — a common misreading that the text explicitly.",
       ],
       correctIndex: 0,
       explanation:
         "The principal (owner) and the agent (manager) have misaligned incentives. Agents will naturally optimize for their own career or comfort unless compensated in a way that directly ties their success to the principal's success.",
     },
     tags: ["Incentives & Systems", "Crypto & Trust"],
-    related: ["M7", "W4", "M1"],
+    related: ["M7", "W4", "M1", "M8"],
     furtherReading: [
       {
         label: "Theory of the Firm",
@@ -153,14 +153,14 @@ export const CLUSTER_M: Node[] = [
         "Trash collection immediately drops. — this view emph",
         "People bring in trash from neighboring cities to collect payment.",
         "Streets become permanently clean. — this view emphas",
-        "Nothing changes. — this view emphasizes the same out",
+        "Nothing changes. — a common misreading that the text explicitly warns.",
       ],
       correctIndex: 1,
       explanation:
         "The Cobra Effect occurs when a well-intentioned incentive actually rewards the behavior it was trying to eliminate, causing the problem to actively multiply.",
     },
     tags: ["Incentives & Systems"],
-    related: ["M7", "E1", "M1"],
+    related: ["M7", "E1", "M1", "M8"],
     furtherReading: [
       {
         label: "The Cobra Effect",
@@ -194,7 +194,7 @@ export const CLUSTER_M: Node[] = [
       options: [
         "There is no neutral way to present options; the design of the environment always influences the decision.",
         "Humans will always make rational decisions regardless of the environment. — this vie",
-        "People hate having choices and prefer to be told what to do. — this view emphasizes ",
+        "People hate having choices and prefer to be told what to do. — this view reverses the causal direction the source.",
         "Restricting people's choices is the only way to ensure good behavior. — this view em",
       ],
       correctIndex: 0,
@@ -236,10 +236,10 @@ export const CLUSTER_M: Node[] = [
     quiz: {
       question: "How does 'Sludge' differ from a 'Nudge' in behavioral economics?",
       options: [
-        "A Nudge is used by the government, while Sludge is only used by corporations. — this view emphasizes ",
+        "A Nudge is used by the government, while Sludge is only used by corporations. — this alternative is popular online but misstates the mechanism the.",
         "A Nudge relies on financial incentives, while Sludge relies on emotional manipulation. — this view em",
         "A Nudge removes friction to encourage a beneficial behavior, while Sludge intentionally adds friction to discourage a behavior.",
-        "Sludge is a physical environmental change, while a Nudge is a digital change. — this view emphasizes ",
+        "Sludge is a physical environmental change, while a Nudge is a digital change. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:
@@ -282,9 +282,9 @@ export const CLUSTER_M: Node[] = [
         "In Will Manidis's garden metaphor, what is the central difference between the French (Versailles) and English (Capability Brown) approaches to building a new system?",
       options: [
         "The French approach imposes a pre-planned geometry on the land and flattens what's already there; the English approach studies existing contours first and works with them.",
-        "The French approach is cheaper to maintain long-term than the English approach. — this view emphasizes the same outcome but attributes i",
-        "The English approach requires more gardeners to maintain than the French approach. — this view emphasizes the same outcome but attribute",
-        "There is no meaningful difference — both produce identical outcomes. — this view emphasizes the same outcome but attributes it to a diff",
+        "The French approach is cheaper to maintain long-term than the English approach. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "The English approach requires more gardeners to maintain than the French approach. — this view reverses the causal direction the source material argues for.",
+        "There is no meaningful difference — both produce identical outcomes. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test.",
       ],
       correctIndex: 0,
       explanation:
@@ -327,9 +327,9 @@ export const CLUSTER_M: Node[] = [
       question:
         "What is the central mechanism behind Pankaj's argument that adding new friends can be a net negative?",
       options: [
-        "New friends are statistically more likely to betray you than old ones. — this view emphasizes the same outcome b",
-        "New friendships are illegal to track using personal data systems. — this view emphasizes the same outcome but at",
-        "He argues no one should ever make new friends under any circumstances. — this view emphasizes the same outcome b",
+        "New friends are statistically more likely to betray you than old ones. — this alternative is popular online but misstates the mechanism the author defends.",
+        "New friendships are illegal to track using personal data systems. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "He argues no one should ever make new friends under any circumstances. — this view reverses the causal direction the source material argues for.",
         "Relationship capacity is treated as fixed, so time invested in a new friendship is time necessarily displaced from deepening an existing one.",
       ],
       correctIndex: 3,

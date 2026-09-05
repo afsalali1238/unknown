@@ -20,10 +20,10 @@ export const CLUSTER_AG: Node[] = [
       question:
         "What point was Sullivan actually making with 'form follows function' in his 1896 essay?",
       options: [
-        "Buildings should have no decoration whatsoever — this view emphasizes the same outcome but attributes it to a different un",
-        "Function is less important than visual appeal — this view emphasizes the same outcome but attributes it to a different und",
+        "Buildings should have no decoration whatsoever — this alternative is popular online but misstates the mechanism the author defends.",
+        "Function is less important than visual appeal — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes.",
         "A structure's shape should be determined by its purpose, the way natural forms are shaped by what they need to do, not by inherited decorative convention",
-        "Ornament should be added only after a building's structural design is finished — this view emphasizes the same outcome but",
+        "Ornament should be added only after a building's structural design is finished — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:
@@ -74,10 +74,10 @@ export const CLUSTER_AG: Node[] = [
     quiz: {
       question: "What did Gibson mean by an 'affordance'?",
       options: [
-        "A visible label or instruction that explains how to use an object correctly — this view emphasizes the same outcome but attrib",
+        "A visible label or instruction that explains how to use an object correctly — this alternative is popular online but misstates the mechanism the author defends.",
         "A possibility for action that an object or environment directly offers a specific perceiver, perceived without first analyzing its neutral physical properties",
-        "The market price a customer is willing to afford for a product — this view emphasizes the same outcome but attributes it to a ",
-        "A product feature that has been explicitly documented in a manual — this view emphasizes the same outcome but attributes it to",
+        "The market price a customer is willing to afford for a product — this view reverses the causal direction the source material argues for.",
+        "A product feature that has been explicitly documented in a manual — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
       ],
       correctIndex: 1,
       explanation:

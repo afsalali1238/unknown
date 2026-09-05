@@ -10,7 +10,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Enron's returns didn't cover its cost of capital and its accounting was opaque; the equity was worthless.",
-    related: ["C10", "C3", "C4", "C5", "C6", "C9", "C11"],
+    related: ["C10", "C3", "C4", "C5"],
     furtherReading: [
       {
         label: "What happened next: chronology of Enron's collapse",
@@ -54,7 +54,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Bernard Madoff's impossibly smooth returns are mathematically inconsistent with any real strategy; the fund is either front-running or a Ponzi scheme.",
-    related: ["C10", "C3", "C4", "C6", "C8", "C9", "C11"],
+    related: ["C10", "C3", "C4", "C6"],
     furtherReading: [
       {
         label: 'Interview with the Madoff whistleblower: "No One Would Listen"',
@@ -79,7 +79,7 @@ export const CLUSTER_C: Node[] = [
         "What was the mathematical smoking gun that proved Madoff was a fraud years before he was caught?",
       options: [
         "His firm had too many employees for the assets under management — this vie",
-        "He was using an offshore bank in the Cayman Islands — this view emphasizes",
+        "He was using an offshore bank in the Cayman Islands — a common misreading that the text explicitly warns.",
         "The options volume required for his strategy exceeded the total volume of the entire exchange",
       ],
       correctIndex: 2,
@@ -98,7 +98,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Allied Capital used aggressive accounting to overstate the value of its illiquid investments.",
-    related: ["C10", "C2", "C4", "C5", "C6", "C9", "C11"],
+    related: ["C10", "C2", "C4", "C5"],
     furtherReading: [
       {
         label: "Review of Einhorn's Allied Capital short",
@@ -123,7 +123,7 @@ export const CLUSTER_C: Node[] = [
         "Why was Allied Capital able to hide the poor performance of its portfolio companies for so long?",
       options: [
         "They used Level 3 'mark-to-model' accounting to inflate the value of illiquid private assets",
-        "They bribed the SEC auditors to look the other way — this view emphasizes",
+        "They bribed the SEC auditors to look the other way — a common misreading that the text explicitly warns.",
         "They only invested in government bonds which never defaulted — this view ",
       ],
       correctIndex: 0,
@@ -184,7 +184,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Subprime mortgage-backed securities will collapse; buy CDS protection against the housing bubble.",
-    related: ["C1", "C2", "C3"],
+    related: ["C1", "C2", "C3", "C8"],
     furtherReading: [
       {
         label: "Burry's own account: \"I Saw the Crisis Coming. Why Didn't the Fed?\"",
@@ -227,7 +227,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Sino-Forest is a fraud that overstates its timber assets; the equity is worth a fraction of its price.",
-    related: ["C1", "C2", "C3"],
+    related: ["C1", "C2", "C3", "C8"],
     furtherReading: [
       {
         label: "Profile: the man who felled Sino-Forest",
@@ -251,7 +251,7 @@ export const CLUSTER_C: Node[] = [
       question: "How did Sino-Forest fake its massive timber revenues?",
       options: [
         "By using a web of opaque 'authorized intermediaries' to forge purchase and sale contracts",
-        "By hacking the Canadian stock exchange servers — this view emphasizes t",
+        "By hacking the Canadian stock exchange servers — a common misreading that the text explicitly warns.",
         "By buying satellite imagery of forests they didn't own — this view emph",
       ],
       correctIndex: 0,
@@ -270,7 +270,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Herbalife is a pyramid scheme that will be shut down by regulators; the stock is worth zero.",
-    related: ["C1", "C2", "C3"],
+    related: ["C1", "C2", "C3", "C8"],
     furtherReading: [
       {
         label: "Ackman vs. Herbalife: what happened",
@@ -293,9 +293,9 @@ export const CLUSTER_C: Node[] = [
     quiz: {
       question: "What was the core argument of Bill Ackman's short thesis against Herbalife?",
       options: [
-        "The nutritional shakes contained toxic ingredients — this view emphasizes the ",
+        "The nutritional shakes contained toxic ingredients — this view reverses the causal direction the source material.",
         "The company was a pyramid scheme where revenue came from recruiting distributors, not retail sales",
-        "The CEO was embezzling money to offshore accounts — this view emphasizes the s",
+        "The CEO was embezzling money to offshore accounts — this alternative is popular online but misstates the.",
       ],
       correctIndex: 1,
       explanation:
@@ -313,7 +313,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Valeant used a specialty pharmacy (Philidor) to fabricate sales, echoing Enron-style channel stuffing.",
-    related: ["C1", "C2", "C3"],
+    related: ["C1", "C2", "C3", "C9"],
     furtherReading: [
       {
         label: 'Coverage of Citron\'s Valeant "pharmaceutical Enron" call',
@@ -355,7 +355,7 @@ export const CLUSTER_C: Node[] = [
     medium: "Report",
     category: "Short / Activist",
     thesis: "Luckin Coffee fabricated sales figures; the growth story is a fraud.",
-    related: ["C1", "C2", "C3"],
+    related: ["C1", "C2", "C3", "C11"],
     furtherReading: [
       {
         label: "After the fraud: Luckin's improbable comeback",
@@ -398,7 +398,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "Nikola is an 'intricate fraud' built on false claims about its technology, including a truck rolling downhill in a video.",
-    related: ["C1", "C2", "C3"],
+    related: ["C1", "C2", "C3", "C9"],
     furtherReading: [
       {
         label: "Outcome: Nikola founder sentenced for fraud",
@@ -442,7 +442,7 @@ export const CLUSTER_C: Node[] = [
     category: "Short / Activist",
     thesis:
       "The Adani Group engaged in brazen stock manipulation and accounting fraud over decades.",
-    related: ["C1", "C2", "C3"],
+    related: ["C1", "C2", "C3", "C9"],
     furtherReading: [
       {
         label: "One year later: Adani rebounds from Hindenburg",

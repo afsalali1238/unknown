@@ -21,9 +21,9 @@ export const CLUSTER_AE: Node[] = [
         "Why did Campbell argue the same basic story structure recurs across unrelated cultures' mythologies?",
       options: [
         "The structure mirrors the actual psychological shape of transformation and growth, so cultures independently converge on it",
-        "Colonial trade routes spread one story to every culture — this view emphasizes the same outcome bu",
-        "All myths were plagiarized from a single ancient source text — this view emphasizes the same outco",
-        "It's a coincidence with no underlying explanation — this view emphasizes the same outcome but attr",
+        "Colonial trade routes spread one story to every culture — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "All myths were plagiarized from a single ancient source text — this view reverses the causal direction the source material argues for.",
+        "It's a coincidence with no underlying explanation — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -76,8 +76,8 @@ export const CLUSTER_AE: Node[] = [
         "According to Girard's theory of mimetic desire, where does desire actually originate?",
       options: [
         "Desire arises independently within each individual based on the object's inherent qualities — this view emphasize",
-        "Desire is entirely determined by economic scarcity — this view emphasizes the same outcome but attributes it to a",
-        "Desire is a fixed biological drive unrelated to social context — this view emphasizes the same outcome but attrib",
+        "Desire is entirely determined by economic scarcity — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Desire is a fixed biological drive unrelated to social context — this view reverses the causal direction the source material argues for.",
         "Desire is borrowed from a model or mediator — we want things because someone else wants or has them, not purely for the object's own qualities",
       ],
       correctIndex: 3,
@@ -130,10 +130,10 @@ export const CLUSTER_AE: Node[] = [
       question:
         "According to this framework, why does storytelling tend to be more persuasive than presenting raw data alone?",
       options: [
-        "Because data is always factually incorrect. — this view emphasizes the same outcome but attributes it to a different underl",
-        "Because storytelling requires no supporting evidence at all. — this view emphasizes the same outcome but attributes it to a",
+        "Because data is always factually incorrect. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what.",
+        "Because storytelling requires no supporting evidence at all. — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Because stories create emotional stakes through character and conflict, and people tend to act on emotional stakes more reliably than on abstract numbers.",
-        "Because audiences cannot process numerical information. — this view emphasizes the same outcome but attributes it to a diff",
+        "Because audiences cannot process numerical information. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
       ],
       correctIndex: 2,
       explanation:

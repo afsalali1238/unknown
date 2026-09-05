@@ -22,7 +22,7 @@ export const CLUSTER_P: Node[] = [
         "Wealth is assets that earn while you sleep; money is the transfer mechanism; status is a zero-sum game that doesn't create wealth",
         "Wealth and money are identical, and status is the only reliable way to build either — this view emphasi",
         "Wealth comes only from inheritance; money is printed by governments to control status — this view empha",
-        "Status is the same as wealth; both are measured directly in dollars — this view emphasizes the same out",
+        "Status is the same as wealth; both are measured directly in dollars — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -272,10 +272,10 @@ export const CLUSTER_P: Node[] = [
       question:
         "What game-theoretic distinction does Naval use to explain why long-term games reward honesty?",
       options: [
-        "Zero-sum versus positive-sum games — this view emphasizes the same outcome but attributes it",
+        "Zero-sum versus positive-sum games — a common misreading that the text explicitly warns against. The distinction matters because it.",
         "Single-round interactions reward defection, while repeated, long-horizon interactions reward honesty and reciprocity",
-        "Games of skill versus games of chance — this view emphasizes the same outcome but attributes",
-        "Cooperative versus competitive sports — this view emphasizes the same outcome but attributes",
+        "Games of skill versus games of chance — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Cooperative versus competitive sports — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 1,
       explanation:
@@ -327,7 +327,7 @@ export const CLUSTER_P: Node[] = [
       question: "How does Naval define 'Specific Knowledge' in his Income formula?",
       options: [
         "Any knowledge learned in a formal degree program. — this view empha",
-        "Knowledge of financial markets specifically. — this view emphasizes",
+        "Knowledge of financial markets specifically. — this alternative is popular online but misstates.",
         "Knowledge of how to do something society cannot yet easily train other people to do.",
         "Any skill that can be fully automated by software. — this view emph",
       ],

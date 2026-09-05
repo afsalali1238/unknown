@@ -20,15 +20,15 @@ export const CLUSTER_G: Node[] = [
       question: "According to Karpathy, what makes up the 'source code' of a Software 2.0 system?",
       options: [
         "The neural network's architecture and the dataset used to train it — since the actual logic is encoded as learned numerical weights, not hand-written instructions",
-        "A traditional programming language file that a human wrote and can read line by line — this view emphasizes the same outcome but ",
-        "A configuration file specifying business rules — this view emphasizes the same outcome but attributes it to a different underlyin",
-        "A compiled binary with no human-inspectable components at all — this view emphasizes the same outcome but attributes it to a diff",
+        "A traditional programming language file that a human wrote and can read line by line — a common misreading that the text explicitly warns against.",
+        "A configuration file specifying business rules — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
+        "A compiled binary with no human-inspectable components at all — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
         "Software 2.0 shifts programming from humans writing explicit rules to neural networks learning probabilistic weights from data, fundamentally changing how we 'code' complex logic.",
     },
-    related: ["G10", "G3", "G4", "G5", "G9"],
+    related: ["G10", "G3", "G4", "G5"],
     furtherReading: [
       {
         type: "read",
@@ -76,16 +76,16 @@ export const CLUSTER_G: Node[] = [
       question:
         "How does word2vec end up capturing semantic relationships between words, if it's only trained to predict nearby words?",
       options: [
-        "It's explicitly given a dictionary of word meanings during training — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the s",
+        "It's explicitly given a dictionary of word meanings during training — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "The prediction task forces the network to build an internal vector representation where words used in similar contexts land near each other, and consistent relationships emerge as consistent directions in that space",
-        "It memorizes definitions from an online encyclopedia — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material ",
-        "Human annotators manually label the relationships between every pair of words — this view emphasizes the same outcome but attributes it to a different underlying mechanism ",
+        "It memorizes definitions from an online encyclopedia — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Human annotators manually label the relationships between every pair of words — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
         "Word2vec demonstrated that training a simple neural network to predict surrounding words naturally organizes them into a high-dimensional space where distance directly correlates to semantic meaning.",
     },
-    related: ["G10", "G3", "G4", "G5", "G9"],
+    related: ["G10", "G3", "G4", "G5"],
     furtherReading: [
       {
         type: "read",
@@ -133,16 +133,16 @@ export const CLUSTER_G: Node[] = [
       question:
         "What combination of techniques allowed AlexNet to train a deep network fast enough to be practical in 2012?",
       options: [
-        "A completely new type of computer chip designed specifically for the competition — this view emphasizes the same outcome but attribut",
-        "Manually hand-labeling every single feature the network should look for — this view emphasizes the same outcome but attributes it to ",
+        "A completely new type of computer chip designed specifically for the competition — this view reverses the causal direction the source material argues for.",
+        "Manually hand-labeling every single feature the network should look for — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
         "The ReLU activation function (faster training than sigmoid), dropout (reduces overfitting), and splitting the model across two GPUs to handle its 60 million parameters",
-        "Running the entire model on a single CPU over several months — this view emphasizes the same outcome but attributes it to a different",
+        "Running the entire model on a single CPU over several months — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 2,
       explanation:
         "AlexNet triggered the deep learning revolution by combining algorithmic improvements (ReLU, dropout) with massive parallel processing on GPUs to train a remarkably deep and accurate network.",
     },
-    related: ["G10", "G2", "G4", "G5", "G9"],
+    related: ["G10", "G2", "G4", "G5"],
     furtherReading: [
       {
         type: "read",
@@ -187,16 +187,16 @@ export const CLUSTER_G: Node[] = [
     quiz: {
       question: "What problem did ResNet's 'skip connections' specifically solve?",
       options: [
-        "They reduced the total number of parameters needed to store the model — this view emphasizes the same outcome but attributes it to a differ",
-        "They eliminated the need for labeled training data entirely — this view emphasizes the same outcome but attributes it to a different underl",
-        "They allowed the network to run without GPUs — this view emphasizes the same outcome but attributes it to a different underlying mechanism ",
+        "They reduced the total number of parameters needed to store the model — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you.",
+        "They eliminated the need for labeled training data entirely — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "They allowed the network to run without GPUs — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "They let the training signal (gradient) bypass layers when needed, solving the vanishing gradient problem that made very deep networks degrade in accuracy rather than improve",
       ],
       correctIndex: 3,
       explanation:
         "Skip connections allow gradients to bypass layers during training, solving the vanishing gradient problem and enabling the creation of neural networks hundreds of layers deep.",
     },
-    related: ["G1", "G2", "G3"],
+    related: ["G1", "G2", "G3", "G9"],
     furtherReading: [
       {
         type: "read",
@@ -253,7 +253,7 @@ export const CLUSTER_G: Node[] = [
       explanation:
         "Self-attention computes relevance among all word-pairs at once, not step-by-step, so training parallelizes dramatically on modern GPUs — the key enabler for internet-scale training.",
     },
-    related: ["G1", "G2", "G3"],
+    related: ["G1", "G2", "G3", "G9"],
     furtherReading: [
       {
         type: "read",
@@ -300,16 +300,16 @@ export const CLUSTER_G: Node[] = [
     quiz: {
       question: "What is 'in-context learning,' as demonstrated by GPT-3?",
       options: [
-        "Retraining the model's weights every time it sees a new task — this view emphasizes the same outcome but attribut",
+        "Retraining the model's weights every time it sees a new task — this view reverses the causal direction the source material argues for.",
         "Performing a new task correctly just from a description or a few examples shown in the prompt itself, without any weight updates or retraining",
-        "Learning exclusively from a fixed, curated textbook dataset — this view emphasizes the same outcome but attribute",
-        "A method requiring internet access during inference to look up answers — this view emphasizes the same outcome bu",
+        "Learning exclusively from a fixed, curated textbook dataset — this alternative is popular online but misstates the mechanism the author defends.",
+        "A method requiring internet access during inference to look up answers — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
         "GPT-3 proved that if a language model is scaled massively, it develops the emergent ability to perform new tasks simply by reading instructions in the prompt, without needing to be retrained.",
     },
-    related: ["G8", "G2", "G3"],
+    related: ["G8", "G2", "G3", "G9"],
     furtherReading: [
       {
         type: "read",
@@ -357,10 +357,10 @@ export const CLUSTER_G: Node[] = [
       question:
         "What specific guidance from the original Scaling Laws paper was later overturned by DeepMind's Chinchilla paper?",
       options: [
-        "The claim that neural networks require labeled data to train at all — this view emphasizes the same outcome but attributes it to a ",
-        "The claim that GPU hardware would never become a bottleneck for AI progress — this view emphasizes the same outcome but attributes ",
+        "The claim that neural networks require labeled data to train at all — this view reverses the causal direction the source material argues for.",
+        "The claim that GPU hardware would never become a bottleneck for AI progress — a common misreading that the text explicitly warns against. The distinction matters because it changes what.",
         "The recommendation that, for a fixed compute budget, model size should be scaled up much faster than training data — Chinchilla showed the two should scale together",
-        "The idea that language models could ever perform translation tasks — this view emphasizes the same outcome but attributes it to a d",
+        "The idea that language models could ever perform translation tasks — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 2,
       explanation:
@@ -414,9 +414,9 @@ export const CLUSTER_G: Node[] = [
       question:
         "What did the Chinchilla paper prove was wrong with prior industry practice in training large language models?",
       options: [
-        "Models were being trained on too much data relative to their size — this view emphasizes the same outcome but attributes it to a different underly",
-        "Neural networks could not be trained using GPUs at all — this view emphasizes the same outcome but attributes it to a different underlying mechani",
-        "Training data needed to be exclusively in English to be effective — this view emphasizes the same outcome but attributes it to a different underly",
+        "Models were being trained on too much data relative to their size — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Neural networks could not be trained using GPUs at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Training data needed to be exclusively in English to be effective — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
         "Models were being built too large relative to how much training data they were given — a smaller model trained on proportionally more data outperformed a much larger, undertrained one",
       ],
       correctIndex: 3,
@@ -472,9 +472,9 @@ export const CLUSTER_G: Node[] = [
         "What training approach did DeepSeek-R1 rely on primarily to teach the model to reason, rather than mainly using human-labeled reasoning examples?",
       options: [
         "Reinforcement learning with rule-based rewards (correct answers, consistent language) building on a small amount of stabilizing 'cold-start' data",
-        "Pure memorization of textbook solutions to math problems — this view emphasizes the same outcome but attributes it t",
-        "Manual rule-writing by human logicians for every reasoning step — this view emphasizes the same outcome but attribut",
-        "Training exclusively on translated versions of OpenAI's own model outputs — this view emphasizes the same outcome bu",
+        "Pure memorization of textbook solutions to math problems — a common misreading that the text explicitly warns against. The distinction matters because it changes what.",
+        "Manual rule-writing by human logicians for every reasoning step — this alternative is popular online but misstates the mechanism the author defends.",
+        "Training exclusively on translated versions of OpenAI's own model outputs — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
@@ -528,10 +528,10 @@ export const CLUSTER_G: Node[] = [
       question:
         "According to Rich Sutton's 'Bitter Lesson,' why do general, compute-heavy methods tend to eventually beat human-engineered domain expertise in AI?",
       options: [
-        "Because human experts are always wrong about their own domains — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "Because human experts are always wrong about their own domains — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because hand-engineered knowledge imposes a hard ceiling on performance, while general methods (search and learning) can keep improving indefinitely as computation gets cheaper over time",
-        "Because compute-heavy methods require no data at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism t",
-        "Because domain experts refuse to collaborate with AI researchers — this view emphasizes the same outcome but attributes it to a different underlying",
+        "Because compute-heavy methods require no data at all — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because domain experts refuse to collaborate with AI researchers — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test.",
       ],
       correctIndex: 1,
       explanation:

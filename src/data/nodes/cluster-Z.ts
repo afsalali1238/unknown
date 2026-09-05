@@ -19,10 +19,10 @@ export const CLUSTER_Z: Node[] = [
     quiz: {
       question: "How does the concept of temperature relate to the theory of Emergent Spacetime?",
       options: [
-        "Spacetime physically freezes and shatters at absolute zero — this view emphasizes the same outcome but at",
-        "Gravity only emerges in extremely hot cosmological environments — this view emphasizes the same outcome b",
+        "Spacetime physically freezes and shatters at absolute zero — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Gravity only emerges in extremely hot cosmological environments — this view reverses the causal direction the source material argues for.",
         "Just as temperature is an emergent property of moving atoms, spacetime may be an emergent property of underlying quantum information",
-        "The universe expands solely due to thermal radiation pushing galaxies apart — this view emphasizes the sa",
+        "The universe expands solely due to thermal radiation pushing galaxies apart — this alternative is popular online but misstates the mechanism the author.",
       ],
       correctIndex: 2,
       explanation:
@@ -63,7 +63,7 @@ export const CLUSTER_Z: Node[] = [
       options: [
         "It dynamically changes size depending on the observer's relative speed — t",
         "It can only be measured on a microscopic, sub-atomic scale — this view emp",
-        "It possesses infinite mass and zero volume — this view emphasizes the same",
+        "It possesses infinite mass and zero volume — a common misreading that the text explicitly warns against.",
         "It looks and behaves identically regardless of the energy scale or distance it is observed at",
       ],
       correctIndex: 3,
@@ -105,9 +105,9 @@ export const CLUSTER_Z: Node[] = [
         "How does the baby universe absorption model explain current cosmic expansion without relying on dark energy?",
       options: [
         "By the continuous collision and assimilation of smaller universes, which abruptly adds their volume to ours",
-        "Through the repulsive force of internal dark matter decaying — this view emphasizes t",
-        "Through the slow evaporation of supermassive black holes — this view emphasizes the s",
-        "By the stretching of macroscopic quantum strings — this view emphasizes the same outc",
+        "Through the repulsive force of internal dark matter decaying — this view reverses the causal direction the source material.",
+        "Through the slow evaporation of supermassive black holes — a common misreading that the text explicitly warns against.",
+        "By the stretching of macroscopic quantum strings — this alternative is popular online but misstates the mechanism the.",
       ],
       correctIndex: 0,
       explanation:
@@ -147,10 +147,10 @@ export const CLUSTER_Z: Node[] = [
       question:
         "What makes the atmospheric data of TRAPPIST-1e particularly intriguing to astrobiologists searching for technosignatures?",
       options: [
-        "It emits strong, repeating radio signals in Morse code — this view emphasizes",
+        "It emits strong, repeating radio signals in Morse code — an intuitive but incorrect explanation that conflates.",
         "It displays temporal variations and chemical ratios that defy standard natural geochemical models",
         "The planet has a perfect oxygen atmosphere mathematically identical to Earth ",
-        "It has visible rings made of artificial metal alloys — this view emphasizes t",
+        "It has visible rings made of artificial metal alloys — this alternative is popular online but misstates the.",
       ],
       correctIndex: 1,
       explanation:
@@ -190,10 +190,10 @@ export const CLUSTER_Z: Node[] = [
       question:
         "Why is the transition from AGI to ASI expected to be incredibly rapid, leading to an 'Intelligence Explosion'?",
       options: [
-        "Because humans will rapidly build better silicon hardware — this view emphasizes the same outcome but attributes",
-        "Because narrow AI will naturally merge into ASI without human intervention — this view emphasizes the same outco",
+        "Because humans will rapidly build better silicon hardware — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because narrow AI will naturally merge into ASI without human intervention — this view reverses the causal direction the source material argues for.",
         "Through recursive self-improvement, the AGI will rewrite its own code at electronic speeds, continually accelerating its own cognitive growth",
-        "Because ASI requires less electricity than AGI — this view emphasizes the same outcome but attributes it to a di",
+        "Because ASI requires less electricity than AGI — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -234,9 +234,9 @@ export const CLUSTER_Z: Node[] = [
       question:
         "How does Prime Editing fundamentally improve upon the original CRISPR-Cas9 system?",
       options: [
-        "It cuts both strands of DNA much faster, accelerating cell replication — this view emphasizes the same out",
+        "It cuts both strands of DNA much faster, accelerating cell replication — an intuitive but incorrect explanation that conflates correlation with.",
         "It relies entirely on the cell's natural repair mechanisms without external interference — this view empha",
-        "It uses radioactive isotopes to melt the DNA into a new shape — this view emphasizes the same outcome but ",
+        "It uses radioactive isotopes to melt the DNA into a new shape — a common misreading that the text explicitly warns against.",
         'It only nicks one DNA strand and uses reverse transcriptase to actively "search and replace" code, preventing unpredictable mutations',
       ],
       correctIndex: 3,

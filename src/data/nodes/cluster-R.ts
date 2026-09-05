@@ -19,10 +19,10 @@ export const CLUSTER_R: Node[] = [
     quiz: {
       question: "What is Bostrom's simulation argument actually claiming?",
       options: [
-        "That we are definitely living in a computer simulation — this view emphasizes the same outcome but attributes it to a di",
+        "That we are definitely living in a computer simulation — an intuitive but incorrect explanation that conflates correlation with causation.",
         "That at least one of three propositions must be true, one of which is that we are almost certainly in a simulation — without claiming to know which one",
-        "That technology will never be advanced enough to simulate consciousness — this view emphasizes the same outcome but attr",
-        "That video games will eventually become indistinguishable from reality — this view emphasizes the same outcome but attri",
+        "That technology will never be advanced enough to simulate consciousness — a common misreading that the text explicitly warns against.",
+        "That video games will eventually become indistinguishable from reality — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:
@@ -74,10 +74,10 @@ export const CLUSTER_R: Node[] = [
       question:
         "Why does it matter, according to Hanson, whether the Great Filter is behind us or ahead of us?",
       options: [
-        "It doesn't matter either way for humanity's prospects — this view emphasizes the same outcome but attributes it t",
-        "It only matters for funding decisions in astrobiology research — this view emphasizes the same outcome but attrib",
+        "It doesn't matter either way for humanity's prospects — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "It only matters for funding decisions in astrobiology research — this view reverses the causal direction the source material argues for.",
         "If the filter is ahead of us, it implies civilizations like ours tend to face a near-universal barrier to survival that we haven't yet cleared",
-        "The filter has already been definitively located by radio telescope surveys — this view emphasizes the same outco",
+        "The filter has already been definitively located by radio telescope surveys — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -128,9 +128,9 @@ export const CLUSTER_R: Node[] = [
     quiz: {
       question: "What is Sapolsky's central argument against free will in Determined?",
       options: [
-        "That people should stop trying to make good decisions since nothing matters — this view emphasizes the same outcome but",
-        "That free will exists but only for a small percentage of highly disciplined people — this view emphasizes the same outc",
-        "That free will is a purely religious concept with no scientific relevance — this view emphasizes the same outcome but a",
+        "That people should stop trying to make good decisions since nothing matters — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That free will exists but only for a small percentage of highly disciplined people — this view reverses the causal direction the source material argues for.",
+        "That free will is a purely religious concept with no scientific relevance — a common misreading that the text explicitly warns against.",
         "That every action is the end product of an unbroken causal chain (biology, environment, history) with no gap for an uncaused free choice to intervene",
       ],
       correctIndex: 3,
@@ -183,9 +183,9 @@ export const CLUSTER_R: Node[] = [
       question: "What historical decision does Goff's title 'Galileo's Error' refer to?",
       options: [
         "Galileo's founding split between quantitative properties (the domain of physics) and qualitative experience, which he excluded from science's scope",
-        "Galileo's incorrect claim that the Earth orbits the Sun — this view emphasizes the same outcome but attributes it to ",
-        "A mathematical error in Galileo's calculation of planetary motion — this view emphasizes the same outcome but attribu",
-        "Galileo's rejection of Aristotelian philosophy — this view emphasizes the same outcome but attributes it to a differe",
+        "Galileo's incorrect claim that the Earth orbits the Sun — this view reverses the causal direction the source material argues for.",
+        "A mathematical error in Galileo's calculation of planetary motion — a common misreading that the text explicitly warns against.",
+        "Galileo's rejection of Aristotelian philosophy — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -236,10 +236,10 @@ export const CLUSTER_R: Node[] = [
     quiz: {
       question: "What is the core insight of the (weak) anthropic principle?",
       options: [
-        "The universe was deliberately designed to support human life — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "The universe was deliberately designed to support human life — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test.",
         "We should expect to observe a universe compatible with our own existence, regardless of how statistically rare such a universe is, because we couldn't be observing an incompatible one",
-        "Physical constants are randomly generated and have no pattern — this view emphasizes the same outcome but attributes it to a different underlying ",
-        "Only Earth-like planets can support any form of life — this view emphasizes the same outcome but attributes it to a different underlying mechanism",
+        "Physical constants are randomly generated and have no pattern — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Only Earth-like planets can support any form of life — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -301,7 +301,7 @@ export const CLUSTER_R: Node[] = [
         "Tegmark argues that math doesn't just describe reality; it *is* reality. The physical universe is a mathematical structure, and every possible non-contradictory mathematical structure must therefore physically exist somewhere.",
     },
     tags: ["Meaning & Self", "First-Principles Thinking"],
-    related: ["R5", "R1", "X5", "Z1", "Z3", "Y5"],
+    related: ["R5", "R1", "X5", "Z1"],
     furtherReading: [
       {
         label: "Is the Universe Made of Math? (excerpt)",
@@ -391,9 +391,9 @@ export const CLUSTER_R: Node[] = [
       question:
         "According to Dark Forest Theory, why does a civilization instantly annihilate a newly discovered species?",
       options: [
-        "To harvest their planet's natural resources for energy. — this view emphasizes the same outc",
-        "Because of religious or ideological fanaticism. — this view emphasizes the same outcome but ",
-        "Because they are bored and have nothing else to do. — this view emphasizes the same outcome ",
+        "To harvest their planet's natural resources for energy. — an intuitive but incorrect explanation that conflates correlation with.",
+        "Because of religious or ideological fanaticism. — this view reverses the causal direction the source material argues for.",
+        "Because they are bored and have nothing else to do. — a common misreading that the text explicitly warns against.",
         "Because the 'chain of suspicion' makes trust impossible, and letting them live risks your own eventual destruction.",
       ],
       correctIndex: 3,

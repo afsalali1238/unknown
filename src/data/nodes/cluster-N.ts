@@ -19,10 +19,10 @@ export const CLUSTER_N: Node[] = [
     quiz: {
       question: "Deep work is best trained by:",
       options: [
-        "Reading more books about focus. — this view emphasizes the same outcome",
-        "Waiting for inspiration. — this view emphasizes the same outcome but at",
+        "Reading more books about focus. — an intuitive but incorrect explanation that conflates correlation.",
+        "Waiting for inspiration. — this view reverses the causal direction the source material argues for.",
         "Scheduling protected time and building tolerance for the discomfort of undistracted work.",
-        "Using more productivity apps. — this view emphasizes the same outcome b",
+        "Using more productivity apps. — this alternative is popular online but misstates the mechanism the.",
       ],
       correctIndex: 2,
       explanation:
@@ -62,9 +62,9 @@ export const CLUSTER_N: Node[] = [
     quiz: {
       question: "According to PG, the fastest way to develop taste is to:",
       options: [
-        "Consume the most popular work. — this view emphasizes th",
+        "Consume the most popular work. — an intuitive but incorrect explanation that.",
         "Rely on your instincts without training. — this view emp",
-        "Take a class. — this view emphasizes the same outcome bu",
+        "Take a class. — a common misreading that the text explicitly warns against.",
         "Consume the best work in your field and reverse-engineer why it works.",
       ],
       correctIndex: 3,
@@ -107,9 +107,9 @@ export const CLUSTER_N: Node[] = [
       question: "The bus ticket theory says that great work often depends on:",
       options: [
         "A disinterested obsession — fascination with a topic pursued for its own sake, sustaining you through unrewarded stretches.",
-        "Working harder than others. — this view emphasizes the same outcome but attributes it to a differe",
-        "External rewards and prestige. — this view emphasizes the same outcome but attributes it to a diff",
-        "Careful career planning. — this view emphasizes the same outcome but attributes it to a different ",
+        "Working harder than others. — this view reverses the causal direction the source material argues for. The distinction matters because it.",
+        "External rewards and prestige. — a common misreading that the text explicitly warns against. The distinction matters because it changes what.",
+        "Careful career planning. — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -149,10 +149,10 @@ export const CLUSTER_N: Node[] = [
     quiz: {
       question: "Why does 'strong opinions, weakly held' beat hedging?",
       options: [
-        "Strong opinions are more impressive to others. — this view emphasizes the same outc",
+        "Strong opinions are more impressive to others. — an intuitive but incorrect explanation that conflates correlation with.",
         "Strong opinions make sharp predictions that reality can falsify — vague opinions drift and never update.",
-        "Weakly held means you don't have to change your mind. — this view emphasizes the sa",
-        "It's mostly a rhetorical device. — this view emphasizes the same outcome but attrib",
+        "Weakly held means you don't have to change your mind. — a common misreading that the text explicitly warns against.",
+        "It's mostly a rhetorical device. — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:
@@ -238,8 +238,8 @@ export const CLUSTER_N: Node[] = [
     quiz: {
       question: "According to the Generation Effect, why is highlighting a poor study method?",
       options: [
-        "It focuses too much on visual learning rather than auditory. — this view emphasizes",
-        "It takes up too much time compared to speed-reading. — this view emphasizes the sam",
+        "It focuses too much on visual learning rather than auditory. — an intuitive but incorrect explanation that conflates.",
+        "It takes up too much time compared to speed-reading. — this view reverses the causal direction the source material.",
         "The bright colors distract the brain from forming long-term memories. — this view e",
         "It causes the brain to experience the illusion of competence because recognition is mistaken for recall.",
       ],
@@ -327,10 +327,10 @@ export const CLUSTER_N: Node[] = [
       question:
         "According to the Wheel of Focus framework, why does fixing only one lever (like willpower) usually fail to produce lasting concentration?",
       options: [
-        "Because willpower is a myth and doesn't exist as a psychological resource. — this view emphasizes the same outcom",
-        "Because concentration is purely genetic and can't be trained. — this view emphasizes the same outcome but attribu",
+        "Because willpower is a myth and doesn't exist as a psychological resource. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because concentration is purely genetic and can't be trained. — this view reverses the causal direction the source material argues for.",
         "Because focus is the joint output of mindset, energy, environment, and technique, and neglecting the other three undermines the one you fixed.",
-        "Because productivity apps are inherently distracting. — this view emphasizes the same outcome but attributes it t",
+        "Because productivity apps are inherently distracting. — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -371,9 +371,9 @@ export const CLUSTER_N: Node[] = [
       question:
         "Per Steve Allen's approach, what mistake most often kills a person's enjoyment of a classic novel?",
       options: [
-        "Reading a translation instead of the original language. — this view emphasizes the same outcome but attr",
-        "Choosing a book that's too short to develop real characters. — this view emphasizes the same outcome but",
-        "Reading it too quickly instead of slowly. — this view emphasizes the same outcome but attributes it to a",
+        "Reading a translation instead of the original language. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Choosing a book that's too short to develop real characters. — this view reverses the causal direction the source material argues for.",
+        "Reading it too quickly instead of slowly. — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
         "Approaching it as a school assignment to survive rather than a book to be read on your own terms, and giving up before it opens up.",
       ],
       correctIndex: 3,
@@ -503,10 +503,10 @@ export const CLUSTER_N: Node[] = [
       question:
         "Why did taking a week off fail to fix Rian Doris's burnout, according to his own account?",
       options: [
-        "Because burnout can't be treated with rest under any circumstances. — this view emphasizes the same outcome but attributes it to a dif",
-        "Because he didn't take enough time off. — this view emphasizes the same outcome but attributes it to a different underlying mechanism ",
+        "Because burnout can't be treated with rest under any circumstances. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because he didn't take enough time off. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because his specific triggers were lack of control, unfairness, and insufficient reward — not work overload, which is the only trigger that time off actually addresses.",
-        "Because burnout isn't a real medical phenomenon. — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "Because burnout isn't a real medical phenomenon. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
       ],
       correctIndex: 2,
       explanation:
@@ -549,10 +549,10 @@ export const CLUSTER_N: Node[] = [
       question:
         "Why is passive re-reading generally considered one of the least effective ways to retain information?",
       options: [
-        "Because it takes too long compared to other methods. — this view emphasizes the same outcome but att",
-        "Because reading itself doesn't engage the brain at all. — this view emphasizes the same outcome but ",
+        "Because it takes too long compared to other methods. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because reading itself doesn't engage the brain at all. — this view reverses the causal direction the source material argues for.",
         "Because it creates a false sense of familiarity without requiring the effortful retrieval that actually builds durable memory.",
-        "Because it only works for fiction, not nonfiction. — this view emphasizes the same outcome but attri",
+        "Because it only works for fiction, not nonfiction. — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -595,9 +595,9 @@ export const CLUSTER_N: Node[] = [
       question:
         "What does this excerpt claim distinguishes the roughly 2% of people it calls 'leaders'?",
       options: [
-        "Having a formal leadership title or position. — this view emphasizes the same outcome but a",
-        "Being born with exceptional natural talent. — this view emphasizes the same outcome but att",
-        "Having access to more resources than average. — this view emphasizes the same outcome but a",
+        "Having a formal leadership title or position. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Being born with exceptional natural talent. — this view reverses the causal direction the source material argues for.",
+        "Having access to more resources than average. — a common misreading that the text explicitly warns against.",
         "The ability to work entirely without external supervision or motivation, applying self-generated pressure instead.",
       ],
       correctIndex: 3,

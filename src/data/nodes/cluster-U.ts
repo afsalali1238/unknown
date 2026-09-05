@@ -20,9 +20,9 @@ export const CLUSTER_U: Node[] = [
       question: "According to Nickerson, why is confirmation bias particularly hard to correct?",
       options: [
         "It operates at the search, interpretation, and memory stages of reasoning, filtering evidence before contradicting facts can even register",
-        "It only affects people with low intelligence — this view emphasizes the same outcome but attributes it to a di",
-        "It can be completely eliminated through simple willpower — this view emphasizes the same outcome but attribute",
-        "It only occurs in political and religious beliefs — this view emphasizes the same outcome but attributes it to",
+        "It only affects people with low intelligence — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "It can be completely eliminated through simple willpower — this view reverses the causal direction the source material argues for.",
+        "It only occurs in political and religious beliefs — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
       ],
       correctIndex: 0,
       explanation:
@@ -64,9 +64,9 @@ export const CLUSTER_U: Node[] = [
       question:
         "What did Tversky and Kahneman's wheel-spinning experiment demonstrate about anchoring?",
       options: [
-        "People completely ignore irrelevant information when making estimates — this view emphasizes the same outcome b",
+        "People completely ignore irrelevant information when making estimates — this alternative is popular online but misstates the mechanism the author defends.",
         "An arbitrary, randomly-generated number still biased people's subsequent unrelated numerical estimates, even though they knew it was random",
-        "Anchoring only affects people with poor mathematical training — this view emphasizes the same outcome but attri",
+        "Anchoring only affects people with poor mathematical training — this view reverses the causal direction the source material argues for.",
         "People adjust fully away from irrelevant starting points once they realize they are arbitrary — this view empha",
       ],
       correctIndex: 1,
@@ -108,10 +108,10 @@ export const CLUSTER_U: Node[] = [
     quiz: {
       question: "What does the availability heuristic cause people to do?",
       options: [
-        "Accurately judge frequency based on rigorous statistical analysis — this view emphasizes ",
-        "Ignore all examples and rely purely on abstract reasoning — this view emphasizes the same",
+        "Accurately judge frequency based on rigorous statistical analysis — this alternative is popular online but misstates the.",
+        "Ignore all examples and rely purely on abstract reasoning — an intuitive but incorrect explanation that conflates correlation.",
         "Estimate frequency or likelihood based on how easily examples come to mind, overweighting vivid or recent events",
-        "Underestimate the danger of all rare events equally — this view emphasizes the same outco",
+        "Underestimate the danger of all rare events equally — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:
@@ -153,9 +153,9 @@ export const CLUSTER_U: Node[] = [
       question:
         "What did the theater subscription study in 'The Psychology of Sunk Cost' demonstrate?",
       options: [
-        "People who paid more for tickets enjoyed the plays more — this view emphasizes the same outcome but attributes it to a d",
-        "Discounted tickets always lead to lower attendance — this view emphasizes the same outcome but attributes it to a differ",
-        "Sunk costs have no measurable effect on future behavior — this view emphasizes the same outcome but attributes it to a d",
+        "People who paid more for tickets enjoyed the plays more — this alternative is popular online but misstates the mechanism the author defends.",
+        "Discounted tickets always lead to lower attendance — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Sunk costs have no measurable effect on future behavior — this view reverses the causal direction the source material argues for.",
         "People who paid a higher price for their season subscription attended more plays afterward, even though the price had no bearing on the plays' quality",
       ],
       correctIndex: 3,
@@ -199,9 +199,9 @@ export const CLUSTER_U: Node[] = [
         "According to Kruger and Dunning, why do low performers in a domain tend to overestimate their own competence?",
       options: [
         "Because the same skills needed to perform well are also needed to accurately judge good performance, so incompetence removes the ability to recognize itself",
-        "Because they are more narcissistic than skilled performers on average — this view emphasizes the same outcome but attributes",
-        "Because they receive more positive feedback than skilled performers — this view emphasizes the same outcome but attributes i",
-        "Because testing methods are inherently biased in favor of low performers — this view emphasizes the same outcome but attribu",
+        "Because they are more narcissistic than skilled performers on average — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because they receive more positive feedback than skilled performers — this view reverses the causal direction the source material argues for.",
+        "Because testing methods are inherently biased in favor of low performers — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -286,10 +286,10 @@ export const CLUSTER_U: Node[] = [
     quiz: {
       question: "What did Thorndike's original 1920 study of military officers reveal?",
       options: [
-        "That officers accurately distinguished between soldiers' independent traits — this view emphasizes the same outcome but attributes it to a different",
-        "That physical fitness has no bearing on perceived leadership ability — this view emphasizes the same outcome but attributes it to a different underl",
+        "That officers accurately distinguished between soldiers' independent traits — this alternative is popular online but misstates the mechanism the author defends.",
+        "That physical fitness has no bearing on perceived leadership ability — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
         "That ratings across supposedly independent traits (physique, intelligence, character) correlated too strongly, suggesting one overall impression was bleeding into every specific judgment",
-        "That military training eliminates cognitive bias in evaluation — this view emphasizes the same outcome but attributes it to a different underlying m",
+        "That military training eliminates cognitive bias in evaluation — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -330,9 +330,9 @@ export const CLUSTER_U: Node[] = [
     quiz: {
       question: "What did Fischhoff and Beyth's Nixon study demonstrate about memory?",
       options: [
-        "People accurately recall the probability estimates they made before an outcome was known — this view emphasizes the same out",
-        "Political predictions are inherently more accurate than other types of forecasts — this view emphasizes the same outcome but",
-        "Memory of past predictions has no relationship to knowing the eventual outcome — this view emphasizes the same outcome but a",
+        "People accurately recall the probability estimates they made before an outcome was known — this alternative is popular online but misstates the mechanism the author defends.",
+        "Political predictions are inherently more accurate than other types of forecasts — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Memory of past predictions has no relationship to knowing the eventual outcome — this view reverses the causal direction the source material argues for.",
         "People systematically misremember their own past predictions, recalling higher confidence for outcomes that occurred than they actually reported beforehand",
       ],
       correctIndex: 3,
@@ -375,9 +375,9 @@ export const CLUSTER_U: Node[] = [
       question: "How can you use the Zeigarnik Effect to overcome procrastination?",
       options: [
         "By starting a task for just five minutes and then pausing, creating an open loop that your brain will want to close.",
-        "By finishing all your easy tasks first to build momentum. — this view emphasizes the same ou",
-        "By refusing to write anything down so your brain remembers it. — this view emphasizes the sa",
-        "By creating strict deadlines managed by the Panic Monster. — this view emphasizes the same o",
+        "By finishing all your easy tasks first to build momentum. — an intuitive but incorrect explanation that conflates correlation with.",
+        "By refusing to write anything down so your brain remembers it. — this view reverses the causal direction the source material argues.",
+        "By creating strict deadlines managed by the Panic Monster. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -418,10 +418,10 @@ export const CLUSTER_U: Node[] = [
     quiz: {
       question: "Why is 'Steelmanning' considered superior to attacking a weak argument?",
       options: [
-        "It humiliates the opponent by showing you are smarter than them. — this view emphasizes the",
+        "It humiliates the opponent by showing you are smarter than them. — this alternative is popular online but misstates the mechanism.",
         "It is the only way to genuinely test if your own beliefs can survive contact with the strongest opposing evidence.",
-        "It forces the opponent to concede faster out of exhaustion. — this view emphasizes the same",
-        "It requires less cognitive effort than building a strawman. — this view emphasizes the same",
+        "It forces the opponent to concede faster out of exhaustion. — this view reverses the causal direction the source material argues.",
+        "It requires less cognitive effort than building a strawman. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:
@@ -462,7 +462,7 @@ export const CLUSTER_U: Node[] = [
     quiz: {
       question: "What triggers 'Motivated Stopping' in human psychology?",
       options: [
-        "A lack of available information on the internet. — this view emphasizes",
+        "A lack of available information on the internet. — this alternative is popular online but misstates.",
         "Physical exhaustion from reading too many academic papers. — this view ",
         "Finding the very first piece of evidence that supports a belief you already want to hold.",
         "The realization that the opposing argument has been steelmanned. — this",
@@ -506,10 +506,10 @@ export const CLUSTER_U: Node[] = [
     quiz: {
       question: "Why did Hyperbolic Discounting evolve in human psychology?",
       options: [
-        "Because early humans were incredibly long-term planners. — this view emphasizes the same outcom",
+        "Because early humans were incredibly long-term planners. — this alternative is popular online but misstates the mechanism the author.",
         "Because early humans lived in highly unstable, dangerous environments where delaying gratification usually meant dying.",
-        "As a byproduct of the development of complex language. — this view emphasizes the same outcome ",
-        "To help humans build long-term agricultural settlements. — this view emphasizes the same outcom",
+        "As a byproduct of the development of complex language. — this view reverses the causal direction the source material argues for.",
+        "To help humans build long-term agricultural settlements. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:
@@ -550,7 +550,7 @@ export const CLUSTER_U: Node[] = [
     quiz: {
       question: "What does the Dunning-Kruger effect describe?",
       options: [
-        "The tendency for experts to always underestimate their own skill. — this view emphasizes th",
+        "The tendency for experts to always underestimate their own skill. — this alternative is popular online but misstates the mechanism.",
         "The tendency for group decisions to always outperform individual ones. — this view emphasiz",
         "The tendency for people with low competence at a task to lack the self-awareness to recognize that low competence.",
         "The tendency for confidence to decrease as expertise increases, with no exceptions. — this ",

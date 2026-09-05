@@ -20,9 +20,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to Koe's 'Art of Self-Architecture,' why do most attempts at behavior change fail?",
       options: [
-        "People simply don't try hard enough or lack willpower — this view emphasizes the same outcome ",
-        "Most people set goals that are objectively unrealistic — this view emphasizes the same outcome",
-        "Behavior change requires professional therapy to succeed — this view emphasizes the same outco",
+        "People simply don't try hard enough or lack willpower — this view reverses the causal direction the source material argues for.",
+        "Most people set goals that are objectively unrealistic — a common misreading that the text explicitly warns against.",
+        "Behavior change requires professional therapy to succeed — this alternative is popular online but misstates the mechanism the author.",
         "New habits are stacked on an unchanged underlying identity/self-concept, which pulls behavior back to its old baseline",
       ],
       correctIndex: 3,
@@ -30,7 +30,7 @@ export const CLUSTER_S: Node[] = [
         "Lasting change requires changing your identity, not just your actions. If you see yourself as a 'smoker trying to quit,' you will eventually fail; you must construct the identity of 'a non-smoker.'",
     },
     tags: ["Meaning & Self", "Craft & Deep Work"],
-    related: ["S2", "S6", "S5", "O18", "S11"],
+    related: ["S5", "O18", "S11", "S2"],
     furtherReading: [
       {
         label: "The Art Of Self-Architecture (How To Change Who You Are)",
@@ -109,10 +109,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "In Koe's skill stack, what does he argue most people get wrong about learning 'marketable skills'?",
       options: [
-        "They try to learn too many skills instead of specializing in one — this view emphasizes the same outc",
+        "They try to learn too many skills instead of specializing in one — this view reverses the causal direction the source material argues for.",
         "They jump straight to technical/results-oriented skills without first building a valuable message and a medium to distribute it",
-        "They don't spend enough money on courses and certifications — this view emphasizes the same outcome b",
-        "They focus too much on writing instead of visual skills — this view emphasizes the same outcome but a",
+        "They don't spend enough money on courses and certifications — this alternative is popular online but misstates the mechanism the author defends.",
+        "They focus too much on writing instead of visual skills — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
@@ -154,10 +154,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe argue writing is the highest-leverage skill to learn for the internet economy?",
       options: [
-        "Because writing pays more per hour than any other skill — this view emphasizes the same outcome but attributes it to a different underlying",
-        "Because algorithms only reward text-based content over video — this view emphasizes the same outcome but attributes it to a different under",
+        "Because writing pays more per hour than any other skill — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because algorithms only reward text-based content over video — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "Because nearly every format of online content (tweets, video scripts, ads, newsletters) is, underneath, a written artifact first, so the skill transfers across every platform",
-        "Because writing requires no ongoing practice once learned — this view emphasizes the same outcome but attributes it to a different underlyi",
+        "Because writing requires no ongoing practice once learned — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
       ],
       correctIndex: 2,
       explanation:
@@ -199,9 +199,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to The Art of Focus, what does Koe argue focus failure is usually caused by, more than lack of willpower?",
       options: [
-        "A lack of caffeine or physical energy — this view emphasizes the same outcome ",
-        "Working in an office instead of remotely — this view emphasizes the same outco",
-        "Not using enough productivity software — this view emphasizes the same outcome",
+        "A lack of caffeine or physical energy — this view reverses the causal direction the source material argues for.",
+        "Working in an office instead of remotely — a common misreading that the text explicitly warns against.",
+        "Not using enough productivity software — this alternative is popular online but misstates the mechanism the.",
         "An unclear or unstable sense of identity, leaving attention with no anchor to direct itself toward",
       ],
       correctIndex: 3,
@@ -209,7 +209,7 @@ export const CLUSTER_S: Node[] = [
         "Focus isn't just about blocking distractions; it's about having a crystal-clear vision of who you are and what you want. Without a strong identity, your attention will naturally wander to whatever the environment suggests.",
     },
     tags: ["Craft & Deep Work", "Meaning & Self"],
-    related: ["S1", "S6", "S10", "O18", "S11"],
+    related: ["S1", "S10", "O18", "S11"],
     furtherReading: [
       {
         label: "The Art Of Focus: Official Book Summary By The Author",
@@ -297,9 +297,9 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "Why does Koe say willpower alone usually fails to sustain behavior change?",
       options: [
-        "Because willpower is a myth and doesn't exist — this view emphasizes the same outcome but at",
-        "Because most goals people set are objectively too difficult — this view emphasizes the same ",
-        "Because change requires professional help to be lasting — this view emphasizes the same outc",
+        "Because willpower is a myth and doesn't exist — this view reverses the causal direction the source material argues for.",
+        "Because most goals people set are objectively too difficult — a common misreading that the text explicitly warns against.",
+        "Because change requires professional help to be lasting — this alternative is popular online but misstates the mechanism the author.",
         "Because the mind treats a threat to identity like a physical attack, triggering the same defensive survival response",
       ],
       correctIndex: 3,
@@ -343,9 +343,9 @@ export const CLUSTER_S: Node[] = [
         "According to Koe, why does understanding human nature outperform learning any single 'high-value skill'?",
       options: [
         "Because it's a meta-skill that increases the power of every other skill you learn, since humans control the money and opportunity you need",
-        "Because human nature never changes across cultures — this view emphasizes the same outcome but attributes it t",
-        "Because AI cannot process psychological concepts — this view emphasizes the same outcome but attributes it to ",
-        "Because it requires no practice to master — this view emphasizes the same outcome but attributes it to a diffe",
+        "Because human nature never changes across cultures — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
+        "Because AI cannot process psychological concepts — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because it requires no practice to master — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
@@ -387,9 +387,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "What does Koe identify as the real threat behind 'wage slavery,' more than AI replacing jobs?",
       options: [
-        "Working more than 40 hours a week — this view emphasizes the same outc",
+        "Working more than 40 hours a week — this view reverses the causal direction the source material.",
         "Being financially dependent on one employer with no alternative skills or income sources",
-        "Not having a college degree — this view emphasizes the same outcome bu",
+        "Not having a college degree — this alternative is popular online but misstates the mechanism the.",
         "AI making all human labor economically irrational within the next year",
       ],
       correctIndex: 1,
@@ -431,10 +431,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "How does Koe distinguish an 'essay' from an 'article'?",
       options: [
-        "Essays are shorter and less researched than articles — this view emphasizes the same outcome but attributes it to a diff",
-        "Articles are for beginners, essays are for experts — this view emphasizes the same outcome but attributes it to a differ",
+        "Essays are shorter and less researched than articles — this view reverses the causal direction the source material argues for. The distinction matters because it changes.",
+        "Articles are for beginners, essays are for experts — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
         "Articles package existing knowledge and start with the conclusion; essays are an act of thinking that discovers and can change the author's own beliefs",
-        "There is no real distinction, it's just a stylistic preference — this view emphasizes the same outcome but attributes it",
+        "There is no real distinction, it's just a stylistic preference — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 2,
       explanation:
@@ -476,9 +476,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "According to Koe, what is 'true boredom' actually good for, once the withdrawal period passes?",
       options: [
-        "Nothing — boredom should always be eliminated as fast as possible — this view emphasizes the same outc",
-        "It only helps children, not adults — this view emphasizes the same outcome but attributes it to a diff",
-        "It is primarily useful for improving physical fitness — this view emphasizes the same outcome but attr",
+        "Nothing — boredom should always be eliminated as fast as possible — this view reverses the causal direction the source material argues for.",
+        "It only helps children, not adults — a common misreading that the text explicitly warns against. The distinction matters because it changes what.",
+        "It is primarily useful for improving physical fitness — this alternative is popular online but misstates the mechanism the author defends.",
         "It activates the brain's Default Mode Network, which is associated with insight, self-reflection, and creative connection-making",
       ],
       correctIndex: 3,
@@ -522,9 +522,9 @@ export const CLUSTER_S: Node[] = [
         "What is Koe's core critique of most existing self-development models (religion, business frameworks, fitness culture)?",
       options: [
         "They are siloed to one domain of life, so someone can be highly developed in one quadrant (like business) while badly underdeveloped in others (like relationships or body)",
-        "They are all completely wrong and should be discarded — this view emphasizes the same outcome but attributes it to a different underlyin",
-        "They were all created before the internet existed — this view emphasizes the same outcome but attributes it to a different underlying me",
-        "They require too much reading to understand — this view emphasizes the same outcome but attributes it to a different underlying mechanis",
+        "They are all completely wrong and should be discarded — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "They were all created before the internet existed — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
+        "They require too much reading to understand — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -565,17 +565,17 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "What does Koe mean by distinguishing 'knowing' from 'understanding'?",
       options: [
-        "Knowing is for children, understanding is for adults — this view emphasizes the same outcome but attributes it to",
+        "Knowing is for children, understanding is for adults — this view reverses the causal direction the source material argues for.",
         "Knowing means memorizing facts (horizontal, expertise); understanding means how sophisticated your whole way of thinking is (vertical, wisdom)",
-        "They are functionally the same thing described two ways — this view emphasizes the same outcome but attributes it",
-        "Knowing only applies to science, understanding only applies to art — this view emphasizes the same outcome but at",
+        "They are functionally the same thing described two ways — this alternative is popular online but misstates the mechanism the author defends.",
+        "Knowing only applies to science, understanding only applies to art — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 1,
       explanation:
         "The 'smart but dumb' phenomenon Koe describes — highly credentialed people who still make obviously bad life decisions — happens when someone is horizontally advanced (they know a lot) but vertically stuck (they can't think outside their domain's assumptions).",
     },
     tags: ["First-Principles Thinking", "Decision-Making"],
-    related: ["Q18", "AA8", "S15"],
+    related: ["Q18", "AA8", "S15", "AC2"],
     furtherReading: [
       {
         label: "How To Think Like A Strategic Genius (5D Thinking)",
@@ -609,10 +609,10 @@ export const CLUSTER_S: Node[] = [
     quiz: {
       question: "What is Koe's 'Swap Test' for whether AI can replace a piece of creative work?",
       options: [
-        "Whether the work took more than 10 hours to make — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the sour",
-        "Whether the work uses any AI tools at all in its production — this view emphasizes the same outcome but attributes it to a different underlying mechanism th",
+        "Whether the work took more than 10 hours to make — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Whether the work uses any AI tools at all in its production — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "Whether swapping the creator for someone (or something) else would leave the work just as valuable — if yes, AI can replace it; if the work only works because of who made it, that's the human edge",
-        "Whether the work has already gone viral — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source materi",
+        "Whether the work has already gone viral — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -654,9 +654,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe insist that deliberate rest is part of productive work, not separate from it?",
       options: [
-        "Because rest has no measurable effect on cognitive performance — this view emphasizes the same outcome but attributes it to a different underlying mec",
-        "Because rest is only necessary to avoid burnout, with no upside beyond that — this view emphasizes the same outcome but attributes it to a different u",
-        "Because most successful people work fewer than 10 hours a week total — this view emphasizes the same outcome but attributes it to a different underlyi",
+        "Because rest has no measurable effect on cognitive performance — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because rest is only necessary to avoid burnout, with no upside beyond that — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Because most successful people work fewer than 10 hours a week total — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test.",
         "Because the brain's Default Mode Network, active during genuine unstructured rest, is where much of the real idea-generation and insight happens, which is then executed during focused work",
       ],
       correctIndex: 3,
@@ -700,9 +700,9 @@ export const CLUSTER_S: Node[] = [
         "According to Koe, why do the best podcast guests and speakers sound articulate on the spot?",
       options: [
         "They have a small set of deeply refined 'greatest hits' ideas, already thought through many times, that they deploy rather than generating brand-new insight live",
-        "They are naturally gifted improvisers — this view emphasizes the same outcome but attributes it to a different underlying mechan",
-        "They memorize scripts word-for-word before every conversation — this view emphasizes the same outcome but attributes it to a dif",
-        "They avoid answering the actual question asked — this view emphasizes the same outcome but attributes it to a different underlyi",
+        "They are naturally gifted improvisers — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "They memorize scripts word-for-word before every conversation — this alternative is popular online but misstates the mechanism the author defends.",
+        "They avoid answering the actual question asked — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you.",
       ],
       correctIndex: 0,
       explanation:
@@ -744,10 +744,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "What does Koe mean by saying most resolutions target 'second-order' rather than 'first-order' change?",
       options: [
-        "Second-order changes are illegal and first-order changes are legal — this view emphasizes the same outcome but attributes it to a different under",
+        "Second-order changes are illegal and first-order changes are legal — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Second-order change means changing actions directly; first-order change means changing the underlying identity so the new actions follow naturally and don't require ongoing willpower",
-        "First-order changes only apply to health goals — this view emphasizes the same outcome but attributes it to a different underlying mechanism that",
-        "There is no meaningful difference, it's just wording — this view emphasizes the same outcome but attributes it to a different underlying mechanis",
+        "First-order changes only apply to health goals — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "There is no meaningful difference, it's just wording — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -789,10 +789,10 @@ export const CLUSTER_S: Node[] = [
       question:
         "Why does Koe argue the Development-Based path (brand = your own goals, content = what you learn, product = helping others reach the same goal) suits people with multiple interests better than the Skill-Based path?",
       options: [
-        "Because it requires no marketing skills at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source mat",
-        "Because it guarantees faster income than any other business model — this view emphasizes the same outcome but attributes it to a different underlying mechanism ",
+        "Because it requires no marketing skills at all — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because it guarantees faster income than any other business model — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "Because it doesn't force you to niche down into one marketable skill — you become your own customer avatar, so pursuing several interests together becomes the business rather than a distraction from it",
-        "Because it was invented specifically for the AI era and didn't exist before — this view emphasizes the same outcome but attributes it to a different underlying ",
+        "Because it was invented specifically for the AI era and didn't exist before — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -834,9 +834,9 @@ export const CLUSTER_S: Node[] = [
       question:
         "Per Koe, what does the explosion of AI-accessible knowledge actually prove about most people's stalled progress?",
       options: [
-        "That AI has made human effort obsolete — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the s",
-        "That knowledge itself has become worthless — this view emphasizes the same outcome but attributes it to a different underlying mechanism that t",
-        "That formal education is now completely unnecessary — this view emphasizes the same outcome but attributes it to a different underlying mechani",
+        "That AI has made human effort obsolete — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "That knowledge itself has become worthless — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "That formal education is now completely unnecessary — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "That access to knowledge was never the real bottleneck — most people still do nothing meaningful with nearly unlimited access, which means the missing ingredient was always agency",
       ],
       correctIndex: 3,

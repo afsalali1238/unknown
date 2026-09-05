@@ -30,7 +30,7 @@ export const CLUSTER_AC: Node[] = [
         "Even if the system is in fact consistent, it cannot demonstrate that fact from within its own axioms — you always need a larger system to vouch for a smaller one.",
     },
     tags: ["First-Principles Thinking"],
-    related: ["R6", "AA1", "J2"],
+    related: ["R6", "AA1", "J2", "AC2"],
     furtherReading: [
       {
         label: "Gödel's Incompleteness Theorems",
@@ -65,10 +65,10 @@ export const CLUSTER_AC: Node[] = [
       question:
         "Why can a positive result on an accurate test for a rare disease still mean you probably don't have it?",
       options: [
-        "Because a 99% accurate test becomes completely worthless whenever a disease is rare — this view emphasizes the same outcome ",
+        "Because a 99% accurate test becomes completely worthless whenever a disease is rare — this alternative is popular online but misstates the mechanism the author defends.",
         "Because when a condition is rare enough, false positives from the healthy majority can outnumber true positives from the small number who are actually sick",
-        "Because probability theory doesn't meaningfully apply to individual medical diagnoses — this view emphasizes the same outcom",
-        "Because test accuracy always decreases mechanically as a condition becomes rarer — this view emphasizes the same outcome but",
+        "Because probability theory doesn't meaningfully apply to individual medical diagnoses — this view reverses the causal direction the source material argues for.",
+        "Because test accuracy always decreases mechanically as a condition becomes rarer — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:

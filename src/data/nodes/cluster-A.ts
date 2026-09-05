@@ -10,7 +10,7 @@ export const CLUSTER_A: Node[] = [
     category: "VC Doctrine",
     thesis:
       "Early startups should manually recruit users and do unscalable work; growth comes from effort, not automation.",
-    related: ["A10", "A3", "A4", "A7", "A8", "A14"],
+    related: ["A10", "A3", "A4", "A7"],
     furtherReading: [
       {
         type: "read",
@@ -56,8 +56,8 @@ export const CLUSTER_A: Node[] = [
         "According to Paul Graham, what is the biggest mistake founders make regarding early customer acquisition?",
       options: [
         "Assuming users will naturally discover the product, rather than manually recruiting them one by one",
-        "Spending too much money on television advertising — this view emphasizes the sa",
-        "Hiring salespeople too early — this view emphasizes the same outcome but attrib",
+        "Spending too much money on television advertising — an intuitive but incorrect explanation that conflates.",
+        "Hiring salespeople too early — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 0,
       explanation:
@@ -152,16 +152,16 @@ export const CLUSTER_A: Node[] = [
     quiz: {
       question: "According to Paul Graham, why do the best startup ideas often sound bad at first?",
       options: [
-        "Because founders deliberately disguise good ideas to avoid competition — this view emphasizes",
+        "Because founders deliberately disguise good ideas to avoid competition — this alternative is popular online but misstates the.",
         "Because investors intentionally reject good ideas to keep valuations low — this view emphasiz",
         "Because the market for them doesn't obviously exist yet — they're noticed early, before demand is visible to everyone",
-        "Because bad-sounding ideas get more attention in pitch meetings — this view emphasizes the sa",
+        "Because bad-sounding ideas get more attention in pitch meetings — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:
         "The best ideas are often those that solve a genuine problem but look unappealing or too niche to others; if they looked obviously good, a large company would already be doing them.",
     },
-    related: ["A10", "A6", "A4", "A7", "A8", "A14"],
+    related: ["A10", "A6", "A4", "A7"],
     furtherReading: [
       {
         type: "read",
@@ -218,8 +218,8 @@ export const CLUSTER_A: Node[] = [
       question:
         "What does Kevin Kelly's '1,000 True Fans' model actually depend on to work economically?",
       options: [
-        "Going viral and reaching millions of casual followers — this view emphasizes the same outc",
-        "Securing a distribution deal with a major publisher or label — this view emphasizes the sa",
+        "Going viral and reaching millions of casual followers — this alternative is popular online but misstates the mechanism the author.",
+        "Securing a distribution deal with a major publisher or label — an intuitive but incorrect explanation that conflates correlation.",
         "Charging fans a one-time high price rather than recurring smaller amounts — this view emph",
         "Low-cost direct distribution and payment, so serving a small, deeply loyal audience becomes profitable on its own",
       ],
@@ -227,7 +227,7 @@ export const CLUSTER_A: Node[] = [
       explanation:
         "The internet drastically lowers distribution costs, allowing you to bypass mass-market gatekeepers and directly monetize a small, highly dedicated audience.",
     },
-    related: ["A10", "A6", "A3", "A7", "A8", "A14"],
+    related: ["A10", "A6", "A3", "A7"],
     furtherReading: [
       {
         type: "read",
@@ -287,13 +287,13 @@ export const CLUSTER_A: Node[] = [
         "Because it drives margins toward zero, leaving little capital to reinvest in the long term",
         "Because competition is illegal in most software markets — this view emph",
         "Because competitors always eventually merge into monopolies anyway — thi",
-        "Because customers dislike having too many choices — this view emphasizes",
+        "Because customers dislike having too many choices — a common misreading that the text explicitly warns.",
       ],
       correctIndex: 0,
       explanation:
         "Competition destroys profits. Building a monopoly—by dominating a small, specific market and avoiding head-to-head battles—allows a company to generate the surplus needed for long-term innovation.",
     },
-    related: ["A1", "A2", "A3"],
+    related: ["A1", "A2", "A3", "A8"],
     furtherReading: [
       {
         type: "read",
@@ -348,16 +348,16 @@ export const CLUSTER_A: Node[] = [
       question:
         "What is Bill Gurley's central warning about using TAM (Total Addressable Market) to judge a startup?",
       options: [
-        "TAM figures are always fabricated by founders to look good — this view emphasizes the same outcome but attributes it to a different underlying mechani",
+        "TAM figures are always fabricated by founders to look good — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "A large TAM number alone says little; the market's underlying structure (frequency, consolidation tendency, supply/demand cost) determines whether it can produce a durable, valuable winner",
-        "TAM should be measured in number of users, not dollars — this view emphasizes the same outcome but attributes it to a different underlying mechanism t",
-        "Only regulated markets have accurate TAM estimates — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
+        "TAM should be measured in number of users, not dollars — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Only regulated markets have accurate TAM estimates — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
         "A large TAM is a vanity metric if the market's structure (like low frequency of use or high acquisition costs) prevents the emergence of a highly profitable, dominant platform.",
     },
-    related: ["A1", "J26", "A3"],
+    related: ["A1", "J26", "A3", "A8"],
     furtherReading: [
       {
         type: "read",
@@ -416,16 +416,16 @@ export const CLUSTER_A: Node[] = [
       question:
         "Why is customer churn especially dangerous in a SaaS/subscription business, more than in a one-time-purchase business?",
       options: [
-        "Because churned customers always leave negative reviews — this view emphasizes the same outcome but attributes it to a dif",
-        "Because SaaS companies can't legally re-acquire a churned customer — this view emphasizes the same outcome but attributes ",
+        "Because churned customers always leave negative reviews — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because SaaS companies can't legally re-acquire a churned customer — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Because revenue arrives gradually over time, so if a customer leaves before you've earned back what it cost to acquire them, that cost is never recovered",
-        "Because churn only affects gross margin, not net revenue — this view emphasizes the same outcome but attributes it to a di",
+        "Because churn only affects gross margin, not net revenue — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
       ],
       correctIndex: 2,
       explanation:
         "In a subscription model, acquisition costs are paid upfront while revenue trickles in over time. High churn means customers leave before they even become profitable, fundamentally breaking the business model.",
     },
-    related: ["A1", "A2", "A3"],
+    related: ["A1", "A2", "A3", "A8"],
     furtherReading: [
       {
         type: "read",
@@ -482,16 +482,16 @@ export const CLUSTER_A: Node[] = [
       question:
         "Under what condition does 'blitzscaling' — deliberately sacrificing efficiency for speed — actually make strategic sense?",
       options: [
-        "Only when a company has unlimited funding with no investor oversight — this view emphasizes the same outcome but attributes it to a diffe",
-        "In any market, since speed is always better than efficiency — this view emphasizes the same outcome but attributes it to a different unde",
-        "Only for companies that plan to go public within two years — this view emphasizes the same outcome but attributes it to a different under",
+        "Only when a company has unlimited funding with no investor oversight — this alternative is popular online but misstates the mechanism the author defends.",
+        "In any market, since speed is always better than efficiency — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you.",
+        "Only for companies that plan to go public within two years — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test.",
         "In winner-take-most markets, where being first lets you build a compounding, durable advantage (network effects, data, brand) that's hard for slower competitors to overcome",
       ],
       correctIndex: 3,
       explanation:
         "When a market exhibits strong winner-take-all dynamics (like network effects), the long-term value of capturing the market first heavily outweighs the short-term costs of inefficient, breakneck growth.",
     },
-    related: ["A1", "A2", "A3"],
+    related: ["A1", "A2", "A3", "A14"],
     furtherReading: [
       {
         type: "read",
@@ -549,15 +549,15 @@ export const CLUSTER_A: Node[] = [
         "According to Ben Thompson's Aggregation Theory, why did the internet shift power from suppliers to platforms that don't even own the supply?",
       options: [
         "Because distribution became nearly free online, so the scarce resource shifted to user attention/relationship, which aggregators capture and then dictate terms to suppliers",
-        "Because platforms have better legal teams than suppliers — this view emphasizes the same outcome but attributes it to a different underly",
-        "Because governments began regulating physical distribution channels more heavily — this view emphasizes the same outcome but attributes i",
-        "Because suppliers voluntarily gave up control to reduce their own costs — this view emphasizes the same outcome but attributes it to a di",
+        "Because platforms have better legal teams than suppliers — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you.",
+        "Because governments began regulating physical distribution channels more heavily — this view reverses the causal direction the source material argues for.",
+        "Because suppliers voluntarily gave up control to reduce their own costs — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test.",
       ],
       correctIndex: 0,
       explanation:
         "Aggregators don't own the supply; they own the user relationship. By providing superior discovery and UX at zero marginal cost, they commoditize suppliers who are forced to play by their rules.",
     },
-    related: ["W3", "A1", "A2"],
+    related: ["W3", "A1", "A2", "A14"],
     furtherReading: [
       {
         type: "read",
@@ -615,16 +615,16 @@ export const CLUSTER_A: Node[] = [
     quiz: {
       question: "What does Eugene Wei mean by an 'invisible asymptote' in a growing business?",
       options: [
-        "A ceiling caused by running out of investor funding — this view emphasizes the same outcome but attributes it to a diffe",
+        "A ceiling caused by running out of investor funding — this alternative is popular online but misstates the mechanism the author defends.",
         "A structural, mechanical limit built into how the business currently works, which stays hidden in the growth curve until the business actually hits it",
-        "A legal cap on market share imposed by antitrust regulators — this view emphasizes the same outcome but attributes it to",
-        "The point at which a company's stock price stops rising — this view emphasizes the same outcome but attributes it to a d",
+        "A legal cap on market share imposed by antitrust regulators — this view reverses the causal direction the source material argues for.",
+        "The point at which a company's stock price stops rising — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
       ],
       correctIndex: 1,
       explanation:
         "Growth eventually stalls not because of competition, but because of a hard structural limit in the product itself—an 'invisible asymptote' that caps the addressable audience until the product is fundamentally reimagined.",
     },
-    related: ["A1", "A2", "A3"],
+    related: ["A1", "A2", "A3", "A14"],
     furtherReading: [
       {
         type: "read",
@@ -681,10 +681,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "Why does Jerry Chen argue that a 'system of intelligence' is a stronger moat than older forms of competitive advantage?",
       options: [
-        "Because it requires expensive proprietary hardware only large companies can afford — this view emphasizes the same outcome but attributes it to a different underlyi",
-        "Because governments grant patents automatically to AI-based products — this view emphasizes the same outcome but attributes it to a different underlying mechanism t",
+        "Because it requires expensive proprietary hardware only large companies can afford — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because governments grant patents automatically to AI-based products — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "Because it compounds over time through a data flywheel — usage generates data, data improves the product, a better product attracts more usage — which a copycat with no usage history can't quickly replicate",
-        "Because it eliminates the need for any sales or marketing spend — this view emphasizes the same outcome but attributes it to a different underlying mechanism that t",
+        "Because it eliminates the need for any sales or marketing spend — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -745,9 +745,9 @@ export const CLUSTER_A: Node[] = [
       question:
         "What structural advantage does a 'solo capitalist' typically have over a traditional multi-partner VC firm when competing for a deal?",
       options: [
-        "They can legally invest more total capital per fund — this view emphasizes the same outcome but attributes it to a differ",
-        "They are exempt from securities regulations that apply to larger firms — this view emphasizes the same outcome but attrib",
-        "They only invest in later-stage, lower-risk companies — this view emphasizes the same outcome but attributes it to a diff",
+        "They can legally invest more total capital per fund — this alternative is popular online but misstates the mechanism the author defends.",
+        "They are exempt from securities regulations that apply to larger firms — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "They only invest in later-stage, lower-risk companies — this view reverses the causal direction the source material argues for. The distinction matters because it changes.",
         "They can decide and commit quickly since there's no partner committee to convince, and founders get a direct relationship with the actual decision-maker",
       ],
       correctIndex: 3,
@@ -854,10 +854,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "In Blue Ocean Strategy, what is the purpose of the 'Four Actions Framework' (Eliminate-Reduce-Raise-Create)?",
       options: [
-        "To benchmark a company's product features against the market leader and catch up — this view emphasizes the same outcome but attributes i",
+        "To benchmark a company's product features against the market leader and catch up — this alternative is popular online but misstates the mechanism the author defends.",
         "To reconstruct the industry's value curve by dropping unnecessary costs, lifting key buyer values, and adding entirely new factors — making the competitive frame irrelevant",
-        "To set pricing strategy in a commoditised market — this view emphasizes the same outcome but attributes it to a different underlying mech",
-        "To rank employees by performance and eliminate the bottom tier — this view emphasizes the same outcome but attributes it to a different u",
+        "To set pricing strategy in a commoditised market — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "To rank employees by performance and eliminate the bottom tier — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -908,9 +908,9 @@ export const CLUSTER_A: Node[] = [
         "According to Thiel, why does the 'kitchen sink' approach to distribution (a few salespeople, some ads, a viral feature) usually fail?",
       options: [
         "Because distribution channels follow a power law — one channel dramatically outperforms the rest, and spreading effort thin across several usually means none of them get pursued hard enough to work.",
-        "Because it's illegal to use more than one distribution channel at once. — this view emphasizes the same outcome but attributes it to a different underlying me",
-        "Because customers only trust companies that use a single marketing channel. — this view emphasizes the same outcome but attributes it to a different underlyin",
-        "Because viral features are always counterproductive. — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the so",
+        "Because it's illegal to use more than one distribution channel at once. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because customers only trust companies that use a single marketing channel. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because viral features are always counterproductive. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -953,10 +953,10 @@ export const CLUSTER_A: Node[] = [
       question:
         "According to Andreessen's heuristic in this essay, what suggests an idea's timing might now be right?",
       options: [
-        "The idea has never been attempted by anyone before. — this view emphasizes the same outcome but attributes it to a differe",
-        "The idea requires no new technology whatsoever. — this view emphasizes the same outcome but attributes it to a different u",
+        "The idea has never been attempted by anyone before. — this alternative is popular online but misstates the mechanism the author defends.",
+        "The idea requires no new technology whatsoever. — an intuitive but incorrect explanation that conflates correlation with causation.",
         "The idea was 'hot' 3-4 years ago but the attempt at the time didn't quite work — suggesting infrastructure and market readiness may have since caught up.",
-        "A large company has already built a competing product. — this view emphasizes the same outcome but attributes it to a diff",
+        "A large company has already built a competing product. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
       ],
       correctIndex: 2,
       explanation:

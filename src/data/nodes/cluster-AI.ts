@@ -21,9 +21,9 @@ export const CLUSTER_AI: Node[] = [
         "What was actually novel about Machiavelli's approach in The Prince compared to earlier political philosophy?",
       options: [
         "He described how power is actually held and kept in practice, rather than prescribing an idealized virtuous ruler",
-        "He was the first to argue rulers should be virtuous above all else — this view emphasizes ",
-        "He focused exclusively on religious justifications for rule — this view emphasizes the sam",
-        "He argued that democracy was superior to monarchy — this view emphasizes the same outcome ",
+        "He was the first to argue rulers should be virtuous above all else — an intuitive but incorrect explanation that conflates.",
+        "He focused exclusively on religious justifications for rule — this view reverses the causal direction the source material argues.",
+        "He argued that democracy was superior to monarchy — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -65,9 +65,9 @@ export const CLUSTER_AI: Node[] = [
       question:
         "Why does Stigler's capture theory predict regulation will tend to favor the regulated industry over consumers?",
       options: [
-        "Because regulators are always personally corrupt — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the sour",
-        "Because regulators are legally required to consult industry representatives before writing any rule — this view emphasizes the same outcome but attributes i",
-        "Because consumers are unable to purchase regulated goods at any price — this view emphasizes the same outcome but attributes it to a different underlying me",
+        "Because regulators are always personally corrupt — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because regulators are legally required to consult industry representatives before writing any rule — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because consumers are unable to purchase regulated goods at any price — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because the regulated industry is small and concentrated with strong incentive to lobby, while consumers are numerous and diffuse with weak individual incentive to organize against any single rule",
       ],
       correctIndex: 3,

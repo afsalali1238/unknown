@@ -20,10 +20,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What mechanism did Darwin propose for how complex adaptations arise without any designer or plan?",
       options: [
-        "Organisms consciously choose which traits to develop and pass on — this view emphasizes the same outcome but at",
+        "Organisms consciously choose which traits to develop and pass on — this alternative is popular online but misstates the mechanism the author defends.",
         "Random heritable variation gets filtered by differential survival and reproduction, so advantageous traits accumulate over many generations",
-        "Species inherit traits their parents acquired during their own lifetime — this view emphasizes the same outcome",
-        "A predetermined genetic blueprint unfolds over time — this view emphasizes the same outcome but attributes it t",
+        "Species inherit traits their parents acquired during their own lifetime — this view reverses the causal direction the source material argues for.",
+        "A predetermined genetic blueprint unfolds over time — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
       ],
       correctIndex: 1,
       explanation:
@@ -66,9 +66,9 @@ export const CLUSTER_AB: Node[] = [
         "What problem did Hamilton's theory of inclusive fitness solve that pure individual-survival selection couldn't explain?",
       options: [
         "Why animals sometimes sacrifice their own survival or reproduction to help close relatives survive and reproduce",
-        "Why some species migrate seasonally — this view emphasizes the same outcome but attribute",
-        "Why mutation rates vary between species — this view emphasizes the same outcome but attri",
-        "Why predator populations cycle with prey populations — this view emphasizes the same outc",
+        "Why some species migrate seasonally — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Why mutation rates vary between species — this view reverses the causal direction the source material argues for.",
+        "Why predator populations cycle with prey populations — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -118,10 +118,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "In Dawkins's framework, why does natural selection make more sense analyzed at the level of the gene rather than the individual organism?",
       options: [
-        "Because individual organisms never actually reproduce — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly argues agains",
+        "Because individual organisms never actually reproduce — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
         "Because genes, not individual bodies, are the unit that can persist in copies across many generations, so behaviors that look self-sacrificing at the individual level (like helping relatives) can still favor the survival of that individual's genes",
-        "Because Dawkins proved individual organisms have no influence on their own survival — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source mat",
-        "Because genes are conscious and make deliberate strategic choices — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly a",
+        "Because Dawkins proved individual organisms have no influence on their own survival — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because genes are conscious and make deliberate strategic choices — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
       ],
       correctIndex: 1,
       explanation:
@@ -164,10 +164,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What did Mendel's pea plant experiments reveal about inheritance that contradicted the prevailing theory of his time?",
       options: [
-        "That traits blend smoothly between parent and offspring, confirming the dominant theory — this view emphasizes the same outcome but ",
-        "That plants and animals inherit traits through completely different mechanisms — this view emphasizes the same outcome but attribute",
+        "That traits blend smoothly between parent and offspring, confirming the dominant theory — this alternative is popular online but misstates the mechanism the author defends.",
+        "That plants and animals inherit traits through completely different mechanisms — an intuitive but incorrect explanation that conflates correlation with causation.",
         "That traits are inherited as discrete, particulate units passed intact from each parent — not blended — appearing in predictable statistical ratios across generations",
-        "That environment, not heredity, determines nearly all observable traits — this view emphasizes the same outcome but attributes it to",
+        "That environment, not heredity, determines nearly all observable traits — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
       ],
       correctIndex: 2,
       explanation:
@@ -208,9 +208,9 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What tension did the Modern Synthesis resolve between early genetics and Darwinian evolution?",
       options: [
-        "It proved that genetics and evolution are completely unrelated fields that should be studied separately — this view emphasizes the same outcome but attributes it to a different underlying mecha",
-        "It disproved Mendel's laws of inheritance in favor of blending inheritance — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material",
-        "It showed that natural selection only applies to single-celled organisms — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material e",
+        "It proved that genetics and evolution are completely unrelated fields that should be studied separately — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "It disproved Mendel's laws of inheritance in favor of blending inheritance — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "It showed that natural selection only applies to single-celled organisms — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "It reconciled Mendelian genetics' discrete, particulate inheritance with Darwinian natural selection's gradual change, showing mutations create genetic variation while selection acts gradually on that variation's frequency across a population",
       ],
       correctIndex: 3,
@@ -255,9 +255,9 @@ export const CLUSTER_AB: Node[] = [
         "What did Eldredge and Gould's punctuated equilibrium model challenge about traditional Darwinian gradualism?",
       options: [
         "The assumption that evolutionary change proceeds at a roughly constant, slow rate — they argued the fossil record's pattern of long stasis punctuated by rapid bursts, tied to speciation, is real signal rather than incomplete sampling",
-        "That evolution happens at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly argues against.",
-        "That natural selection is the mechanism driving evolutionary change — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material",
-        "That species can go extinct — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly argues against.",
+        "That evolution happens at all — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "That natural selection is the mechanism driving evolutionary change — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "That species can go extinct — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
       ],
       correctIndex: 0,
       explanation:
@@ -298,10 +298,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What key evidence supports Margulis's claim that mitochondria were once independent bacteria?",
       options: [
-        "Mitochondria are visually identical to the rest of the cell under a microscope — this view emphasizes the same outcome b",
+        "Mitochondria are visually identical to the rest of the cell under a microscope — this alternative is popular online but misstates the mechanism the author defends.",
         "Mitochondria contain their own DNA, separate from the cell's main genome, and that DNA closely resembles bacterial DNA rather than the host cell's DNA",
-        "Mitochondria can survive and reproduce completely outside of any cell — this view emphasizes the same outcome but attrib",
-        "There is no genetic evidence; the theory rests entirely on structural resemblance — this view emphasizes the same outcom",
+        "Mitochondria can survive and reproduce completely outside of any cell — this view reverses the causal direction the source material argues for.",
+        "There is no genetic evidence; the theory rests entirely on structural resemblance — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:
@@ -344,10 +344,10 @@ export const CLUSTER_AB: Node[] = [
       question:
         "Why did the double-helix structure of DNA immediately suggest a mechanism for genetic copying?",
       options: [
-        "Because DNA molecules can only exist inside a laboratory — this view emphasizes the same outcome but attributes it to a differen",
-        "Because DNA has no physical structure and exists only as an abstract concept — this view emphasizes the same outcome but attribu",
+        "Because DNA molecules can only exist inside a laboratory — this alternative is popular online but misstates the mechanism the author defends.",
+        "Because DNA has no physical structure and exists only as an abstract concept — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Because each of the two complementary strands, held together by specific base-pairing rules, can serve as a template to build an exact copy of its partner strand",
-        "Because the double helix shape prevents any copying from occurring at all — this view emphasizes the same outcome but attributes",
+        "Because the double helix shape prevents any copying from occurring at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what.",
       ],
       correctIndex: 2,
       explanation:
@@ -390,9 +390,9 @@ export const CLUSTER_AB: Node[] = [
       question:
         "What surprising pattern in extinction data led Van Valen to propose the Red Queen hypothesis?",
       options: [
-        "Older species were far less likely to go extinct than newly evolved ones — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material",
-        "All species in the fossil record went extinct at exactly the same rate regardless of type — this view emphasizes the same outcome but attributes it to a different underlying mechanism that th",
-        "Extinction rates were found to be entirely random and unrelated to any biological factor — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the",
+        "Older species were far less likely to go extinct than newly evolved ones — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "All species in the fossil record went extinct at exactly the same rate regardless of type — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Extinction rates were found to be entirely random and unrelated to any biological factor — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "A species' probability of extinction in a given time period didn't decrease the longer it had already survived, suggesting species don't reach a stable 'finished' state of adaptation, since their competitors and predators keep evolving too",
       ],
       correctIndex: 3,

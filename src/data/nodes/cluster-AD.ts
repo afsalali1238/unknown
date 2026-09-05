@@ -20,8 +20,8 @@ export const CLUSTER_AD: Node[] = [
       question:
         "According to Hebbian theory, what physically changes in the brain when learning occurs?",
       options: [
-        "New neurons are created every time something is learned — this view emphasizes t",
-        "The brain's total size increases with each new memory — this view emphasizes the",
+        "New neurons are created every time something is learned — this alternative is popular online but misstates the.",
+        "The brain's total size increases with each new memory — an intuitive but incorrect explanation that conflates.",
         "Neurons that fire together are chemically destroyed and replaced — this view emp",
         "The synaptic connection between two neurons strengthens when one repeatedly helps activate the other",
       ],
@@ -74,10 +74,10 @@ export const CLUSTER_AD: Node[] = [
     quiz: {
       question: "What did Raichle's 2001 discovery of the default mode network overturn?",
       options: [
-        "The theory that different brain regions are specialized for different functions — this view emphasizes the sam",
-        "The theory that memories are stored primarily in the hippocampus — this view emphasizes the same outcome but a",
+        "The theory that different brain regions are specialized for different functions — this alternative is popular online but misstates the mechanism the author.",
+        "The theory that memories are stored primarily in the hippocampus — an intuitive but incorrect explanation that conflates correlation with causation.",
         "The assumption that the resting brain is largely inactive — instead, a specific network becomes more active during rest and mind-wandering",
-        "The belief that neurons communicate via electrical signals — this view emphasizes the same outcome but attribu",
+        "The belief that neurons communicate via electrical signals — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:
@@ -176,9 +176,9 @@ export const CLUSTER_AD: Node[] = [
       question:
         "What does neuroplasticity fundamentally challenge about older models of brain development?",
       options: [
-        "That the brain has no capacity to change at all, at any age. — this view emphasizes the same outcom",
-        "That only physical injury can alter brain structure. — this view emphasizes the same outcome but at",
-        "That memory and learning are unrelated to brain structure. — this view emphasizes the same outcome ",
+        "That the brain has no capacity to change at all, at any age. — this alternative is popular online but misstates the mechanism the author.",
+        "That only physical injury can alter brain structure. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That memory and learning are unrelated to brain structure. — this view reverses the causal direction the source material argues for.",
         "That the brain can only change during a narrow childhood critical period, with no meaningful rewiring possible in adulthood.",
       ],
       correctIndex: 3,

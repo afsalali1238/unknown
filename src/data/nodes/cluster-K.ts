@@ -19,16 +19,16 @@ export const CLUSTER_K: Node[] = [
       question: "Why do most people underestimate compounding?",
       options: [
         "The math is genuinely wrong for long horizons. — this view emp",
-        "It only works for money. — this view emphasizes the same outco",
+        "It only works for money. — a common misreading that the text explicitly warns against.",
         "The early years look linear and boring, so people quit before the curve bends.",
-        "Compounding is a myth. — this view emphasizes the same outcome",
+        "Compounding is a myth. — an intuitive but incorrect explanation that conflates.",
       ],
       correctIndex: 2,
       explanation:
         "Compounding is deceptive because the massive gains happen at the very end of the curve. People quit early because they judge linear progress instead of exponential potential.",
     },
     tags: ["Compounding & Patience"],
-    related: ["J29", "D6", "C2", "W6", "K6"],
+    related: ["J29", "W6", "K6", "D6"],
     furtherReading: [
       {
         label: "The Psychology of Money",
@@ -106,9 +106,9 @@ export const CLUSTER_K: Node[] = [
       question: "Which is the best example of path dependence?",
       options: [
         "Choosing a programming language early in a codebase and being unable to reasonably switch a decade later.",
-        "A random daily choice with no lasting effect. — this view emphasizes the same outcom",
-        "Picking what to eat for lunch. — this view emphasizes the same outcome but attribute",
-        "Choosing a movie on a Friday night. — this view emphasizes the same outcome but attr",
+        "A random daily choice with no lasting effect. — a common misreading that the text explicitly warns against.",
+        "Picking what to eat for lunch. — this alternative is popular online but misstates the mechanism the author defends.",
+        "Choosing a movie on a Friday night. — an intuitive but incorrect explanation that conflates correlation with causation.",
       ],
       correctIndex: 0,
       explanation:
@@ -148,17 +148,17 @@ export const CLUSTER_K: Node[] = [
     quiz: {
       question: "Why is optionality often undervalued?",
       options: [
-        "Because options are usually free. — this view emphasizes the same outcome but ",
+        "Because options are usually free. — this view reverses the causal direction the source material argues for.",
         "Because people prefer certainty and pay too little for the right to act later in a volatile world.",
-        "Because options only pay off if exercised. — this view emphasizes the same out",
-        "Because optionality doesn't exist in real life. — this view emphasizes the sam",
+        "Because options only pay off if exercised. — this alternative is popular online but misstates the mechanism the.",
+        "Because optionality doesn't exist in real life. — an intuitive but incorrect explanation that conflates.",
       ],
       correctIndex: 1,
       explanation:
         "Optionality is the right, but not the obligation, to take an action. In an unpredictable world, keeping your options open is incredibly valuable, even if it carries a short-term cost.",
     },
     tags: ["Risk & Asymmetric Bets"],
-    related: ["A3", "D1", "D4", "C1", "W6"],
+    related: ["A3", "D1", "D4", "C1"],
     furtherReading: [
       {
         label: "Antifragile",
@@ -201,7 +201,7 @@ export const CLUSTER_K: Node[] = [
       explanation:
         "Because you live with them constantly for 18 years, the sheer volume of days spent together dwarfs the occasional visits you will have for the rest of their lives. You are in the final 10% of your time together.",
     },
-    related: ["P1", "P2", "K1", "O11", "K6"],
+    related: ["O11", "P1", "K1", "K6"],
     furtherReading: [
       {
         label: "The Tail End",
@@ -237,9 +237,9 @@ export const CLUSTER_K: Node[] = [
       question:
         "Why do most people quit new habits early, according to the Plateau of Latent Potential?",
       options: [
-        "They set goals that are physically impossible to achieve. — this view emphasizes the same outcom",
-        "They run out of willpower because they didn't rely on systems. — this view emphasizes the same o",
-        "They fail to establish an identity-based goal. — this view emphasizes the same outcome but attri",
+        "They set goals that are physically impossible to achieve. — this view reverses the causal direction the source material argues for.",
+        "They run out of willpower because they didn't rely on systems. — a common misreading that the text explicitly warns against.",
+        "They fail to establish an identity-based goal. — this alternative is popular online but misstates the mechanism the author defends.",
         "They expect linear progress and get discouraged in the 'Valley of Disappointment' when the exponential curve starts flat.",
       ],
       correctIndex: 3,

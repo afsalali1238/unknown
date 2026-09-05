@@ -21,15 +21,15 @@ export const CLUSTER_B: Node[] = [
         "What made the Fairchild deal structurally different from a normal stock purchase, and why did that matter?",
       options: [
         "Fairchild Camera and Instrument got an option to buy the entire new company later, rather than just purchasing shares upfront — letting founders keep control while proving the business worked",
-        "The founders were required to repay the investment in cash within one year regardless of performance — this view emphasizes the same outcome but attribu",
-        "The deal was funded entirely by a government small-business grant, not a private company — this view emphasizes the same outcome but attributes it to a ",
-        "Shockley Semiconductor itself provided the funding as a severance package — this view emphasizes the same outcome but attributes it to a different under",
+        "The founders were required to repay the investment in cash within one year regardless of performance — this view reverses the causal direction the source material argues for.",
+        "The deal was funded entirely by a government small-business grant, not a private company — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Shockley Semiconductor itself provided the funding as a severance package — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
       ],
       correctIndex: 0,
       explanation:
         "The Fairchild deal pioneered the use of equity options rather than a standard buyout, incentivizing the founders to build the company while giving the parent company a de-risked path to ownership.",
     },
-    related: ["B2", "B3", "B4", "B5", "B7"],
+    related: ["B2", "B3", "B4", "B5"],
     furtherReading: [
       {
         type: "watch",
@@ -75,10 +75,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "Why did Olsen and Anderson pitch selling circuit modules before pitching interactive computers?",
       options: [
-        "Circuit modules were more profitable long-term than computers would ever be — this view emphasizes the same outcome but attributes it to a d",
+        "Circuit modules were more profitable long-term than computers would ever be — an intuitive but incorrect explanation that conflates correlation with causation.",
         "The computer business had a reputation as an investor money-loser at the time, so a smaller proven product de-risked the pitch and built credibility toward the bigger ambition",
-        "IBM required them to prove circuit expertise before entering the computer market — this view emphasizes the same outcome but attributes it t",
-        "ARD's charter legally prohibited it from funding computer companies directly — this view emphasizes the same outcome but attributes it to a ",
+        "IBM required them to prove circuit expertise before entering the computer market — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
+        "ARD's charter legally prohibited it from funding computer companies directly — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:
@@ -130,10 +130,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "What did Roelof Botha's YouTube investment memo prioritize as evidence the company was worth backing, despite having little revenue?",
       options: [
-        "A signed advertising contract with a major brand — this view emphasizes the same outcome but attributes it to a",
-        "A patent filing for YouTube's video compression technology — this view emphasizes the same outcome but attribut",
+        "A signed advertising contract with a major brand — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "A patent filing for YouTube's video compression technology — this view reverses the causal direction the source material argues for.",
         "The explosive volume and growth rate of user-generated video uploads, as a leading indicator of becoming the default place for online video",
-        "Projected profitability within the first 12 months — this view emphasizes the same outcome but attributes it to",
+        "Projected profitability within the first 12 months — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 2,
       explanation:
@@ -184,9 +184,9 @@ export const CLUSTER_B: Node[] = [
     quiz: {
       question: "What was the core argument of Facebook's 2004 media kit pitch to advertisers?",
       options: [
-        "That Facebook had more total users than any competing site — this view emphasizes the same outcome but attribut",
-        "That Facebook had already signed exclusive contracts with major brands — this view emphasizes the same outcome ",
-        "That the site would soon expand beyond colleges to the general public — this view emphasizes the same outcome b",
+        "That Facebook had more total users than any competing site — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That Facebook had already signed exclusive contracts with major brands — this view reverses the causal direction the source material argues for.",
+        "That the site would soon expand beyond colleges to the general public — a common misreading that the text explicitly warns against.",
         "That dense, repeated engagement from a narrow, targetable audience was more valuable to advertisers than a larger but less engaged audience",
       ],
       correctIndex: 3,
@@ -240,9 +240,9 @@ export const CLUSTER_B: Node[] = [
       question: "How did Kalanick and Camp initially position UberCab in their 2008 pitch deck?",
       options: [
         "As a premium, invite-only black-car service comparable to NetJets, aimed at professionals rather than the general public",
-        "As a direct, mass-market replacement for city taxi services — this view emphasizes the same outc",
-        "As a logistics platform for package delivery that would later add rides — this view emphasizes t",
-        "As a public transit partnership with city governments — this view emphasizes the same outcome bu",
+        "As a direct, mass-market replacement for city taxi services — this view reverses the causal direction the source material argues for.",
+        "As a logistics platform for package delivery that would later add rides — a common misreading that the text explicitly warns against.",
+        "As a public transit partnership with city governments — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -295,10 +295,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "Why did the bootstrapped 'cereal box' story matter to Airbnb's fundraising, beyond being a memorable anecdote?",
       options: [
-        "It generated enough direct revenue to fund the company without needing investors — this view emphasizes the same outcome but attributes it to ",
+        "It generated enough direct revenue to fund the company without needing investors — an intuitive but incorrect explanation that conflates correlation with causation.",
         "It demonstrated the founders' resourcefulness and execution under extreme constraint, which mattered for trust during a financial crisis when the core idea itself looked unproven",
-        "It was a marketing campaign specifically designed to attract Sequoia's attention — this view emphasizes the same outcome but attributes it to ",
-        "It proved there was already strong demand for the room-booking platform itself — this view emphasizes the same outcome but attributes it to a ",
+        "It was a marketing campaign specifically designed to attract Sequoia's attention — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
+        "It proved there was already strong demand for the room-booking platform itself — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:
@@ -350,10 +350,10 @@ export const CLUSTER_B: Node[] = [
       question:
         "Why did Tesla's master plan start with an expensive, low-volume sports car instead of an affordable mass-market car?",
       options: [
-        "Musk wanted to establish a luxury brand identity permanently, with no plan to go cheaper — this view emphasizes the same outco",
-        "Regulations at the time prohibited EV manufacturers from selling low-cost vehicles — this view emphasizes the same outcome but",
+        "Musk wanted to establish a luxury brand identity permanently, with no plan to go cheaper — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Regulations at the time prohibited EV manufacturers from selling low-cost vehicles — this view reverses the causal direction the source material argues for.",
         "The expensive early car funded and proved out the technology, manufacturing capability, and credibility needed to eventually build cheaper, higher-volume cars",
-        "Battery technology only existed in a form suitable for sports cars in 2006 — this view emphasizes the same outcome but attribu",
+        "Battery technology only existed in a form suitable for sports cars in 2006 — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 2,
       explanation:

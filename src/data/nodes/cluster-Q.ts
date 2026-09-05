@@ -20,7 +20,7 @@ export const CLUSTER_Q: Node[] = [
       question:
         "According to 'How to Win Friends and Influence People,' what is the single most effective way to make someone feel valued?",
       options: [
-        "Give them frequent, vague compliments regardless of context — this view emphasizes the",
+        "Give them frequent, vague compliments regardless of context — this alternative is popular online but misstates the mechanism.",
         "Show genuine interest in them and make them feel important by listening and remembering what matters to them",
         "Offer them a small gift in every interaction to create reciprocity — this view emphasi",
         "Publicly praise them in front of others even when it isn't warranted — this view empha",
@@ -181,8 +181,8 @@ export const CLUSTER_Q: Node[] = [
       options: [
         "They found an even stronger effect than her original studies — this view emphasize",
         "Little or no support for growth-mindset interventions meaningfully improving school attainment at scale",
-        "That fixed mindsets are actually superior for achievement — this view emphasizes t",
-        "The replications were never attempted — this view emphasizes the same outcome but ",
+        "That fixed mindsets are actually superior for achievement — this view reverses the causal direction the source.",
+        "The replications were never attempted — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:
@@ -336,8 +336,8 @@ export const CLUSTER_Q: Node[] = [
       question:
         "In the framework of Identity-Based Habits, how do your actions relate to your identity?",
       options: [
-        "Actions are irrelevant; only your internal mindset matters. — this view emphasizes the same",
-        "Your actions are the predetermined result of your genetic identity. — this view emphasizes ",
+        "Actions are irrelevant; only your internal mindset matters. — this alternative is popular online but misstates the mechanism the.",
+        "Your actions are the predetermined result of your genetic identity. — an intuitive but incorrect explanation that conflates.",
         "Every action is a 'vote' for the type of person you wish to become, slowly building evidence of your new identity.",
         "You must fully believe in your new identity before you take any actions. — this view emphas",
       ],
@@ -425,10 +425,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "Why does 'cognitive ease' function as a persuasion lever, according to this framework?",
       options: [
-        "Because audiences are too unintelligent to follow complex arguments. — this view emphasizes the same ou",
+        "Because audiences are too unintelligent to follow complex arguments. — this alternative is popular online but misstates the mechanism the author.",
         "Because a message that is simple and easy to process tends to be judged as more true, independent of its actual logical strength.",
-        "Because cognitive ease only matters in written communication, not speech. — this view emphasizes the sa",
-        "Because it replaces the need for any supporting evidence. — this view emphasizes the same outcome but a",
+        "Because cognitive ease only matters in written communication, not speech. — this view reverses the causal direction the source material argues for.",
+        "Because it replaces the need for any supporting evidence. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 1,
       explanation:
@@ -472,9 +472,9 @@ export const CLUSTER_Q: Node[] = [
       question: "What is the core critique in Tim Ferriss's 'Self-Help Trap' argument?",
       options: [
         "That compulsive optimization can itself become a way of avoiding actually living, making it a trap rather than a solution.",
-        "That all self-help advice is scientifically unfounded. — this view emphasizes the same outcome bu",
-        "That self-help books should never be read more than once. — this view emphasizes the same outcome",
-        "That only professional coaches should give self-improvement advice. — this view emphasizes the sa",
+        "That all self-help advice is scientifically unfounded. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That self-help books should never be read more than once. — this view reverses the causal direction the source material argues for.",
+        "That only professional coaches should give self-improvement advice. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -517,9 +517,9 @@ export const CLUSTER_Q: Node[] = [
       question:
         "What common failure connects most of the dismissive active-listening responses in this framework?",
       options: [
-        "They are all too long and detailed. — this view emphasizes the same outcome but attributes it to a different underlyi",
-        "They only fail when used with strangers, not friends. — this view emphasizes the same outcome but attributes it to a ",
-        "They are grammatically incorrect. — this view emphasizes the same outcome but attributes it to a different underlying",
+        "They are all too long and detailed. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what.",
+        "They only fail when used with strangers, not friends. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "They are grammatically incorrect. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would.",
         "They assert the listener's own judgment or authority over the speaker's experience instead of leaving control of the conversation with the speaker.",
       ],
       correctIndex: 3,
@@ -564,9 +564,9 @@ export const CLUSTER_Q: Node[] = [
         "What is the central premise behind treating small talk as a learnable skill rather than a fixed trait?",
       options: [
         "That conversational ease breaks down into specific, copyable behaviors (initiating first, using names, asking open questions) that anyone can practice.",
-        "That charismatic people are born, not made, and the skill can't actually be taught. — this view emphasizes the same outc",
-        "That small talk should always be avoided in favor of deep conversation. — this view emphasizes the same outcome but attr",
-        "That only professional networkers benefit from these techniques. — this view emphasizes the same outcome but attributes ",
+        "That charismatic people are born, not made, and the skill can't actually be taught. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That small talk should always be avoided in favor of deep conversation. — this view reverses the causal direction the source material argues for.",
+        "That only professional networkers benefit from these techniques. — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
       ],
       correctIndex: 0,
       explanation:
@@ -662,10 +662,10 @@ export const CLUSTER_Q: Node[] = [
       question:
         "What mechanism does Kahneman identify as the source of most systematic cognitive biases?",
       options: [
-        "System 2 deliberately overriding System 1's correct intuitions. — this view emphasizes the same outcome but attr",
-        "A simple lack of intelligence or education in the person making the judgment. — this view emphasizes the same ou",
+        "System 2 deliberately overriding System 1's correct intuitions. — this alternative is popular online but misstates the mechanism the author defends.",
+        "A simple lack of intelligence or education in the person making the judgment. — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Substitution — System 1 quietly answers an easier question than the hard one actually being asked, and System 2 accepts it without checking.",
-        "Random noise in memory recall with no identifiable underlying pattern. — this view emphasizes the same outcome b",
+        "Random noise in memory recall with no identifiable underlying pattern. — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 2,
       explanation:

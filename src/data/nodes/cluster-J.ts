@@ -60,8 +60,8 @@ export const CLUSTER_J: Node[] = [
       question:
         "A CEO cuts prices to gain market share. First-order effect: sales rise. What's the classic missed second-order effect?",
       options: [
-        "The CEO gets a bonus. — this view emphasizes the same outcome but att",
-        "The stock price always rises. — this view emphasizes the same outcome",
+        "The CEO gets a bonus. — an intuitive but incorrect explanation that conflates correlation with.",
+        "The stock price always rises. — this view reverses the causal direction the source material argues.",
         "Nothing meaningful — first-order effects usually persist. — this view",
         "Competitors match, margins fall for everyone, and customers now expect the lower price.",
       ],
@@ -70,7 +70,7 @@ export const CLUSTER_J: Node[] = [
         "First-order thinking solves the immediate problem; second-order thinking anticipates the hidden consequences of the solution, preventing you from causing a bigger disaster down the line.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["Q18", "J15", "AJ3", "J8", "J17", "J30"],
+    related: ["Q18", "J15", "AJ3", "J8"],
     furtherReading: [
       {
         label: "The Most Important Thing",
@@ -113,7 +113,7 @@ export const CLUSTER_J: Node[] = [
         "True expertise isn't about knowing everything; it's about knowing exactly what you don't know. Staying inside your circle of competence is how you avoid catastrophic, unforced errors.",
     },
     tags: ["Decision-Making", "Wealth, Leverage & Judgment"],
-    related: ["J14", "L5", "D1", "B4", "W2"],
+    related: ["L5", "J14", "D1", "B4"],
     furtherReading: [
       {
         label: "Berkshire Hathaway Shareholder Letters",
@@ -150,14 +150,14 @@ export const CLUSTER_J: Node[] = [
         "They're trying to sabotage you. — this view ",
         "They forgot or didn't realize you needed to be included.",
         "They dislike you personally. — this view emp",
-        "They're a bad person. — this view emphasizes",
+        "They're a bad person. — this alternative is popular online but.",
       ],
       correctIndex: 1,
       explanation:
         "Hanlon's Razor is a mental model for emotional regulation. By assuming incompetence or oversight rather than malice, you avoid unnecessary conflict and maintain clearer judgment.",
     },
     tags: ["Cognitive Biases & Models", "Fraud & Skepticism", "Power & Persuasion"],
-    related: ["J21", "U14", "J20", "J8", "J17", "J30"],
+    related: ["J21", "U14", "J20", "J8"],
     furtherReading: [
       {
         label: "Murphy's Law and other reasons things go wrong",
@@ -243,9 +243,9 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What are the four steps of the Feynman Technique, in order?",
       options: [
-        "Read, memorize, recite, forget — this view emphasizes the same outcome but attribu",
-        "Watch a lecture, take notes, highlight, re-read — this view emphasizes the same ou",
-        "Guess, check, revise, repeat — this view emphasizes the same outcome but attribute",
+        "Read, memorize, recite, forget — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Watch a lecture, take notes, highlight, re-read — this view reverses the causal direction the source material argues.",
+        "Guess, check, revise, repeat — a common misreading that the text explicitly warns against.",
         "Select a concept and map your knowledge; teach it to a 12-year-old; review and refine; test and archive",
       ],
       correctIndex: 3,
@@ -253,7 +253,7 @@ export const CLUSTER_J: Node[] = [
         "The core mechanism of the Feynman Technique is simplifying complex ideas to expose your own blind spots, iterating until the explanation is completely free of jargon.",
     },
     tags: ["Cognitive Biases & Models", "Craft & Deep Work"],
-    related: ["U9", "J22", "J23", "J8", "J9", "J30"],
+    related: ["U9", "J22", "J23", "J8"],
     furtherReading: [
       {
         label: "Why Write? (on how writing reveals gaps in understanding)",
@@ -298,9 +298,9 @@ export const CLUSTER_J: Node[] = [
         "In the 1987 King's Cross fire investigation, what was identified as the actual root cause, as distinct from the proximate cause (a dropped match)?",
       options: [
         "Untrained staff with no knowledge of how to evacuate people or fight the fire",
-        "The wooden escalators alone — this view emphasizes the same o",
-        "A bomb planted by an unknown attacker — this view emphasizes ",
-        "A faulty electrical system — this view emphasizes the same ou",
+        "The wooden escalators alone — this view reverses the causal direction the source.",
+        "A bomb planted by an unknown attacker — a common misreading that the text explicitly.",
+        "A faulty electrical system — this alternative is popular online but misstates the.",
       ],
       correctIndex: 0,
       explanation:
@@ -351,15 +351,15 @@ export const CLUSTER_J: Node[] = [
       options: [
         "A supercomputer malfunction that predicted an impossible weather pattern — this view emphas",
         "Entering a weather-model starting value as 0.506 instead of the full 0.506127 produced a wildly different forecast",
-        "A failed experiment trying to control the weather artificially — this view emphasizes the s",
-        "Observing real butterflies affecting local wind patterns — this view emphasizes the same ou",
+        "A failed experiment trying to control the weather artificially — a common misreading that the text explicitly warns against.",
+        "Observing real butterflies affecting local wind patterns — this alternative is popular online but misstates the mechanism the.",
       ],
       correctIndex: 1,
       explanation:
         "Lorenz proved that complex, non-linear systems like the weather are highly sensitive to initial conditions, meaning that long-term prediction is fundamentally impossible no matter how good the model is.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4", "J2"],
+    related: ["D3", "H4", "J2", "J17"],
     furtherReading: [
       {
         label: "Deterministic Nonperiodic Flow (Lorenz's original 1963 paper)",
@@ -452,8 +452,8 @@ export const CLUSTER_J: Node[] = [
       question:
         "In Simon Ramo's distinction, what percentage of points are won (not lost) in professional tennis, versus amateur tennis?",
       options: [
-        "50% in both — this view emphasizes the same outcome but attributes it to a diffe",
-        "Points are lost equally often at both levels — this view emphasizes the same out",
+        "50% in both — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Points are lost equally often at both levels — this view reverses the causal direction the source material argues.",
         "It's the reverse — amateurs win more points than professionals — this view empha",
         "About 80% of points are won in professional tennis; about 80% are lost (via errors) in amateur tennis",
       ],
@@ -515,7 +515,7 @@ export const CLUSTER_J: Node[] = [
         "Because reality is infinitely complex, a model must simplify it to be understandable. The goal isn't perfect accuracy, but extracting a simplified structure that helps you make better decisions.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4", "X2"],
+    related: ["D3", "H4", "X2", "J17"],
     furtherReading: [
       {
         label: "The Map is Not the Territory",
@@ -611,7 +611,7 @@ export const CLUSTER_J: Node[] = [
       question:
         "What changes the incentive structure of the Prisoner's Dilemma from favoring defection to making cooperation more likely?",
       options: [
-        "Making the prison sentences longer — this view emphasizes the sa",
+        "Making the prison sentences longer — an intuitive but incorrect explanation that conflates.",
         "Allowing the prisoners to communicate just once — this view emph",
         "Repeating (iterating) the game an unknown or effectively infinite number of times",
         "Removing the police from the scenario entirely — this view empha",
@@ -666,8 +666,8 @@ export const CLUSTER_J: Node[] = [
         "What does the 'Orient' stage of the OODA Loop specifically involve, according to Boyd?",
       options: [
         "Simply gathering more raw data about the situation — this view emphasize",
-        "Immediately acting on the first available option — this view emphasizes ",
-        "Waiting for a superior officer's direct order — this view emphasizes the",
+        "Immediately acting on the first available option — this view reverses the causal direction the source.",
+        "Waiting for a superior officer's direct order — a common misreading that the text explicitly warns.",
         "Stripping away cultural, genetic, and cognitive biases to see the situation as it truly is",
       ],
       correctIndex: 3,
@@ -719,16 +719,16 @@ export const CLUSTER_J: Node[] = [
         "In the mammogram example used in this piece, why can a test that's 75% accurate still produce mostly false positives in absolute numbers?",
       options: [
         "Because the underlying disease rate (the prior/base rate) is very low, so false positives from the much larger healthy population swamp true positives",
-        "Because the test itself is fundamentally broken — this view emphasizes the same outcome but attributes it to a different",
-        "Because doctors deliberately misread the results — this view emphasizes the same outcome but attributes it to a differen",
-        "Because 75% accuracy is actually below chance level — this view emphasizes the same outcome but attributes it to a diffe",
+        "Because the test itself is fundamentally broken — this view reverses the causal direction the source material argues for. The distinction matters because it changes what.",
+        "Because doctors deliberately misread the results — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would.",
+        "Because 75% accuracy is actually below chance level — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 0,
       explanation:
         "Bayes' Theorem forces us to remember the base rate. Even an accurate test will produce mostly false alarms if it's screening for an extremely rare condition in a massive population.",
     },
     tags: ["Cognitive Biases & Models", "Decision-Making"],
-    related: ["J32", "H4", "J2"],
+    related: ["J32", "H4", "J2", "J17"],
     furtherReading: [
       {
         label: "Bayes and Deadweight: Using Statistics to Eject the Deadweight From Your Life",
@@ -771,17 +771,17 @@ export const CLUSTER_J: Node[] = [
       question:
         "What distinguishes a 'fat-tailed' distribution (like wealth or market crashes) from a normal bell-curve distribution (like human height)?",
       options: [
-        "Fat-tailed distributions have no meaningful average at all — this view emphasizes the same outcome but attributes ",
+        "Fat-tailed distributions have no meaningful average at all — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Fat-tailed distributions have no natural cap on extreme outliers, making rare extreme events far more likely than bell-curve intuition suggests",
-        "Fat-tailed distributions only apply to biological measurements — this view emphasizes the same outcome but attribu",
-        "There is no real difference between the two — this view emphasizes the same outcome but attributes it to a differe",
+        "Fat-tailed distributions only apply to biological measurements — a common misreading that the text explicitly warns against.",
+        "There is no real difference between the two — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:
         "Fat-tailed distributions (like finance or pandemics) behave entirely differently than normal distributions; a single outlier event can account for the vast majority of the total impact.",
     },
     tags: ["Risk & Asymmetric Bets", "Cognitive Biases & Models"],
-    related: ["A3", "C4", "D1"],
+    related: ["A3", "C4", "D1", "J30"],
     furtherReading: [
       {
         label: "The Pygmalion Effect: Proving Them Right (related Farnam Street piece)",
@@ -835,7 +835,7 @@ export const CLUSTER_J: Node[] = [
         "Occam's Razor isn't a rule of nature, but a heuristic for efficiency: always test the most likely, simplest explanation (horses) before assuming a complex, exotic one (zebras).",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["D3", "H4", "J2"],
+    related: ["D3", "H4", "J2", "J30"],
     furtherReading: [
       {
         label: "Hanlon's Razor (the complementary mental model)",
@@ -880,7 +880,7 @@ export const CLUSTER_J: Node[] = [
         "According to this article, what kind of reasoning is Sherlock Holmes actually using in his famous 'deductions,' despite the popular label?",
       options: [
         "Genuine deductive reasoning, exactly as advertised — this view emp",
-        "Pure guesswork with no logical structure — this view emphasizes th",
+        "Pure guesswork with no logical structure — this view reverses the causal direction the source.",
         "A form of reasoning that doesn't exist in formal logic — this view",
         "Inductive reasoning — probable inference from observed clues, not certain deduction",
       ],
@@ -889,7 +889,7 @@ export const CLUSTER_J: Node[] = [
         "Sherlock Holmes rarely uses true deduction (which guarantees a true conclusion). He uses induction (and abduction), observing specific clues to construct the most highly probable hypothesis.",
     },
     tags: ["Cognitive Biases & Models", "First-Principles Thinking"],
-    related: ["U10", "J36", "J2", "L11", "AC2", "J39"],
+    related: ["U10", "J36", "J39", "J2"],
     furtherReading: [
       {
         label: "Peter Cathcart Wason and the theory of falsification (related Farnam Street piece)",
@@ -934,16 +934,16 @@ export const CLUSTER_J: Node[] = [
         "What was Abraham Wald's key insight about WWII bomber planes and where to add armor?",
       options: [
         "Reinforce the areas showing little to no damage on returning planes, since hits there likely caused planes to never return at all",
-        "Reinforce wherever returning planes showed the most bullet damage — this view emphasizes the same outco",
-        "Add armor evenly across the entire aircraft — this view emphasizes the same outcome but attributes it t",
-        "Focus only on the cockpit, regardless of damage patterns — this view emphasizes the same outcome but at",
+        "Reinforce wherever returning planes showed the most bullet damage — this view reverses the causal direction the source material argues for.",
+        "Add armor evenly across the entire aircraft — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
+        "Focus only on the cockpit, regardless of damage patterns — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 0,
       explanation:
         "Wald realized the military was looking only at the 'winners' (the planes that survived). The damage on returning planes showed where a plane could be hit and still survive; the unharmed areas were where the fatal hits occurred.",
     },
     tags: ["Cognitive Biases & Models"],
-    related: ["J20", "H4", "J2"],
+    related: ["J20", "H4", "J2", "J30"],
     furtherReading: [
       {
         label: "What Sharks (and Building Bombers) Teach Us About Survivorship Bias",
@@ -987,10 +987,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "Why does this piece argue oceanic whitetip sharks may be more dangerous than their attack statistics suggest?",
       options: [
-        "Because they are larger than great whites — this view emphasizes the same outcome but attributes it to a",
+        "Because they are larger than great whites — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Because their attacks happen in the open ocean, in isolated situations with fewer potential survivors and witnesses to report them",
-        "Because they are faster swimmers — this view emphasizes the same outcome but attributes it to a differen",
-        "Because scientists have not studied them at all — this view emphasizes the same outcome but attributes i",
+        "Because they are faster swimmers — a common misreading that the text explicitly warns against. The distinction matters because it changes what you.",
+        "Because scientists have not studied them at all — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:
@@ -1040,10 +1040,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "In the lying-detection study referenced in this piece, how often were participants who lied actually caught, versus how often they expected to be caught?",
       options: [
-        "They were caught about half the time, exactly as they expected — this view emphasizes the same outcome but attr",
-        "They were caught almost every time, far more than expected — this view emphasizes the same outcome but attribut",
+        "They were caught about half the time, exactly as they expected — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "They were caught almost every time, far more than expected — this view reverses the causal direction the source material argues for.",
         "They expected to be caught about half the time but were actually only detected about a quarter of the time — a rate low enough to be chance",
-        "They were never caught at all — this view emphasizes the same outcome but attributes it to a different underlyi",
+        "They were never caught at all — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes.",
       ],
       correctIndex: 2,
       explanation:
@@ -1094,9 +1094,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What does the 'WEIRD' critique (Henrich, Heine, Norenzayan) argue about a large share of psychology research?",
       options: [
-        "That psychology experiments are always too large to be useful — this view emphasizes the same outcome but attributes it to a different underl",
-        "That anecdotes are always more accurate than statistics — this view emphasizes the same outcome but attributes it to a different underlying m",
-        "That psychology research doesn't use human subjects at all — this view emphasizes the same outcome but attributes it to a different underlyin",
+        "That psychology experiments are always too large to be useful — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
+        "That anecdotes are always more accurate than statistics — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "That psychology research doesn't use human subjects at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "That findings from Western, Educated, Industrialized, Rich, Democratic subjects are generalized to all humans despite being one of the least representative populations available",
       ],
       correctIndex: 3,
@@ -1149,9 +1149,9 @@ export const CLUSTER_J: Node[] = [
         "What thought experiment is credited with leading Einstein toward the special theory of relativity?",
       options: [
         "Imagining what he would observe if he could travel alongside a beam of light",
-        "Schrödinger's cat — this view emphasizes the same outcome bu",
-        "The trolley problem — this view emphasizes the same outcome ",
-        "Laplace's demon — this view emphasizes the same outcome but ",
+        "Schrödinger's cat — this view reverses the causal direction the source material argues.",
+        "The trolley problem — a common misreading that the text explicitly warns against.",
+        "Laplace's demon — this alternative is popular online but misstates the mechanism the.",
       ],
       correctIndex: 0,
       explanation:
@@ -1202,10 +1202,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What specific event is credited with giving Julia Child her breakthrough understanding of first-principles cooking?",
       options: [
-        "Watching televised cooking shows as a child — this view emphasizes the same outcome but attri",
+        "Watching televised cooking shows as a child — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Enrolling at the Cordon Bleu cooking school in Paris in 1949, where she broke every dish down into its smallest steps",
-        "Being taught by her mother growing up — this view emphasizes the same outcome but attributes ",
-        "Reading cookbooks translated from French — this view emphasizes the same outcome but attribut",
+        "Being taught by her mother growing up — a common misreading that the text explicitly warns against.",
+        "Reading cookbooks translated from French — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:
@@ -1256,10 +1256,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "What historical event does this piece use as an example of reciprocity based on mutual self-interest between two ancient powers?",
       options: [
-        "The signing of the Magna Carta — this view emphasizes the same outco",
-        "The Treaty of Westphalia — this view emphasizes the same outcome but",
+        "The signing of the Magna Carta — an intuitive but incorrect explanation that conflates.",
+        "The Treaty of Westphalia — this view reverses the causal direction the source material argues for.",
         "The 1259 BCE 'Eternal Treaty' between Egypt's Ramesses and the Hittite king Hattusili",
-        "The founding of the Silk Road — this view emphasizes the same outcom",
+        "The founding of the Silk Road — this alternative is popular online but misstates the mechanism.",
       ],
       correctIndex: 2,
       explanation:
@@ -1308,7 +1308,7 @@ export const CLUSTER_J: Node[] = [
         "According to Marc Andreessen's 2013 comment cited in this piece, what share of profits does the #1 player typically capture in a technology market, versus the #2 player?",
       options: [
         "50% versus 50%, an even split — this view empha",
-        "70% versus 30% — this view emphasizes the same ",
+        "70% versus 30% — this view reverses the causal direction the source.",
         "There is no meaningful pattern in technology markets",
         "About 90% for the #1 player and about 10% for the #2 player",
       ],
@@ -1360,9 +1360,9 @@ export const CLUSTER_J: Node[] = [
       question: "What is exaptation, as used in this piece's career-change framework?",
       options: [
         "A trait or skill that evolved or was built for one purpose but gets repurposed for a completely different, unrelated use",
-        "A financial exit strategy for leaving a company — this view emphasizes the same outcome but attr",
-        "A type of severance negotiation — this view emphasizes the same outcome but attributes it to a d",
-        "A formal certification process — this view emphasizes the same outcome but attributes it to a di",
+        "A financial exit strategy for leaving a company — this view reverses the causal direction the source material argues for.",
+        "A type of severance negotiation — a common misreading that the text explicitly warns against. The distinction matters because it changes.",
+        "A formal certification process — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 0,
       explanation:
@@ -1411,10 +1411,10 @@ export const CLUSTER_J: Node[] = [
     quiz: {
       question: "What does 'algebraic equivalence,' as used in this parenting piece, help explain?",
       options: [
-        "That every child must receive the exact same amount of physical items to be treated fairly — this view emphasizes the same outcome but attributes it t",
+        "That every child must receive the exact same amount of physical items to be treated fairly — an intuitive but incorrect explanation that conflates correlation with causation.",
         "That two different things (like different kinds of attention to different children) can be unequal in form but equal in value, just as different values of x and y can equally satisfy x+y=5",
-        "That parenting requires no math at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source m",
-        "That siblings should always be treated identically in every situation — this view emphasizes the same outcome but attributes it to a different underly",
+        "That parenting requires no math at all — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "That siblings should always be treated identically in every situation — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would.",
       ],
       correctIndex: 1,
       explanation:
@@ -1515,9 +1515,9 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the 'grammar-book effect,' as described by David Graeber and cited in this piece?",
       options: [
-        "The tendency for grammar books to become bestsellers — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source ",
-        "A method for teaching children to read faster — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source materia",
-        "The idea that all languages eventually merge into one — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source",
+        "The tendency for grammar books to become bestsellers — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "A method for teaching children to read faster — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "The idea that all languages eventually merge into one — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
         "Once a description of how people currently speak is written down and taught in schools, people start treating it as a fixed prescription for how they must speak, even as the living language keeps evolving",
       ],
       correctIndex: 3,
@@ -1651,8 +1651,8 @@ export const CLUSTER_J: Node[] = [
         "According to the 'Levels of Abstraction' heuristic, why is constantly zooming between the big picture and granular detail important when learning a new complex system?",
       options: [
         "Because granular detail is always more important than the big picture. — this view emphasize",
-        "Because it's the fastest way to memorize technical vocabulary. — this view emphasizes the sa",
-        "Because experts only ever think at the detail level. — this view emphasizes the same outcome",
+        "Because it's the fastest way to memorize technical vocabulary. — this view reverses the causal direction the source material argues.",
+        "Because experts only ever think at the detail level. — a common misreading that the text explicitly warns against.",
         "Because staying at only one layer — all overview or all detail — produces an incomplete or distorted understanding.",
       ],
       correctIndex: 3,
@@ -1696,8 +1696,8 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the framework built from this reading list, who does AI actually threaten most?",
       options: [
-        "People who refuse to use any AI tools. — this view emphasizes",
-        "People who read too many books. — this view emphasizes the sa",
+        "People who refuse to use any AI tools. — an intuitive but incorrect explanation that.",
+        "People who read too many books. — this view reverses the causal direction the source.",
         "People who have outsourced their thinking to algorithms without realizing it.",
         "Only professional researchers and scientists. — this view emp",
       ],
@@ -1742,7 +1742,7 @@ export const CLUSTER_J: Node[] = [
       question:
         "What is the main risk of collecting long lists of mental models, as this node's framing suggests?",
       options: [
-        "That there are too few mental models to be useful. — this view emphasizes the sa",
+        "That there are too few mental models to be useful. — an intuitive but incorrect explanation that conflates.",
         "That people recognize and collect the names of models without ever applying them to a real decision.",
         "That mental models are only theoretical and can't be applied practically. — this",
         "That using more than one model at a time is always a mistake. — this view emphas",
@@ -1789,9 +1789,9 @@ export const CLUSTER_J: Node[] = [
         "What distinct problem does the Leitner System solve, separate from the Feynman Technique?",
       options: [
         "It schedules review intervals based on how reliably you recall material, concentrating limited study time on what you're actually failing rather than what you already know.",
-        "It tests whether you actually understand a concept's underlying structure. — this view emphasizes the same outcome but attributes it to a",
-        "It replaces the need to ever review material more than once. — this view emphasizes the same outcome but attributes it to a different und",
-        "It is only useful for language learning, not other subjects. — this view emphasizes the same outcome but attributes it to a different und",
+        "It tests whether you actually understand a concept's underlying structure. — this view reverses the causal direction the source material argues for.",
+        "It replaces the need to ever review material more than once. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "It is only useful for language learning, not other subjects. — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
       ],
       correctIndex: 0,
       explanation:
@@ -1835,9 +1835,9 @@ export const CLUSTER_J: Node[] = [
         "Which quadrant of the Johari Window can only be reduced through other people's feedback, not through self-reflection alone?",
       options: [
         "The Blind quadrant — traits others can see about you that you can't see yourself.",
-        "The Open quadrant. — this view emphasizes the same outcome but a",
-        "The Hidden quadrant. — this view emphasizes the same outcome but",
-        "The Unknown quadrant. — this view emphasizes the same outcome bu",
+        "The Open quadrant. — this view reverses the causal direction the source material argues for.",
+        "The Hidden quadrant. — a common misreading that the text explicitly warns against.",
+        "The Unknown quadrant. — this alternative is popular online but misstates the mechanism the.",
       ],
       correctIndex: 0,
       explanation:
@@ -1880,10 +1880,10 @@ export const CLUSTER_J: Node[] = [
       question:
         "According to the Spurious Correlations project, what is 'data dredging' and why does it produce misleading results?",
       options: [
-        "Fabricating data points that don't exist in the real dataset. — this view emphasizes the same outcome but attributes it to a ",
+        "Fabricating data points that don't exist in the real dataset. — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Testing enormous numbers of variable pairs against each other until some match up by pure chance, then presenting that chance match as if it were meaningful.",
-        "Rounding numbers to make a chart look smoother. — this view emphasizes the same outcome but attributes it to a different unde",
-        "Using only data from a single, small country to avoid outliers. — this view emphasizes the same outcome but attributes it to ",
+        "Rounding numbers to make a chart look smoother. — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
+        "Using only data from a single, small country to avoid outliers. — this alternative is popular online but misstates the mechanism the author defends.",
       ],
       correctIndex: 1,
       explanation:

@@ -21,9 +21,9 @@ export const CLUSTER_AA: Node[] = [
         "Why does the Second Law give time a direction while most physical laws are time-symmetric?",
       options: [
         "Because isolated systems evolve toward higher-entropy macrostates, which vastly outnumber ordered ones — the arrow of time is an arrow of probability",
-        "Because gravity pulls matter only forward in time and reverses if time is run backward — this view emphasizes the same ",
-        "Because the speed of light steadily decreases as entropy increases, creating a one-way gradient — this view emphasizes ",
-        "Because Newton's laws contain an explicit time-asymmetry that forbids backward evolution — this view emphasizes the sam",
+        "Because gravity pulls matter only forward in time and reverses if time is run backward — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Because the speed of light steadily decreases as entropy increases, creating a one-way gradient — this view reverses the causal direction the source material argues for.",
+        "Because Newton's laws contain an explicit time-asymmetry that forbids backward evolution — a common misreading that the text explicitly warns against.",
       ],
       correctIndex: 0,
       explanation:
@@ -73,9 +73,9 @@ export const CLUSTER_AA: Node[] = [
       question:
         "What was the key insight that let Einstein derive time dilation and length contraction from just two postulates?",
       options: [
-        "That gravity bends light around massive objects — this view emphasizes the same outcome but attributes it to a diffe",
-        "That time moves at the same rate for every observer in the universe — this view emphasizes the same outcome but attr",
-        "That mass and energy are completely unrelated quantities — this view emphasizes the same outcome but attributes it t",
+        "That gravity bends light around massive objects — this alternative is popular online but misstates the mechanism the author defends.",
+        "That time moves at the same rate for every observer in the universe — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That mass and energy are completely unrelated quantities — this view reverses the causal direction the source material argues for.",
         "That the speed of light is constant for all observers regardless of their motion, while the laws of physics stay the same in every inertial frame",
       ],
       correctIndex: 3,
@@ -118,10 +118,10 @@ export const CLUSTER_AA: Node[] = [
       question:
         "What did Hubble's 1929 redshift-distance data show, and why did it matter for cosmology?",
       options: [
-        "That the universe is static and unchanging, confirming the prevailing view of the time — this view emphasizes the same outcome but attributes it to a diff",
-        "That distant galaxies are moving toward us, meaning the universe is contracting — this view emphasizes the same outcome but attributes it to a different u",
+        "That the universe is static and unchanging, confirming the prevailing view of the time — this alternative is popular online but misstates the mechanism the author defends.",
+        "That distant galaxies are moving toward us, meaning the universe is contracting — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would.",
         "That galaxies are receding at speeds proportional to their distance from us, meaning space itself is expanding — which, projected backward, implies the universe began in a compressed, hot state",
-        "That light travels at different speeds depending on the observer's location — this view emphasizes the same outcome but attributes it to a different under",
+        "That light travels at different speeds depending on the observer's location — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -164,9 +164,9 @@ export const CLUSTER_AA: Node[] = [
       question:
         "Why did the discovery of the cosmic microwave background settle the Big Bang vs. Steady State debate?",
       options: [
-        "Because it proved the universe is not expanding after all — this view emphasizes the same outcome but attributes it to a different underlying mechanism ",
-        "Because it was the first direct photograph ever taken of a galaxy — this view emphasizes the same outcome but attributes it to a different underlying me",
-        "Because it disproved Einstein's theory of general relativity — this view emphasizes the same outcome but attributes it to a different underlying mechani",
+        "Because it proved the universe is not expanding after all — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because it was the first direct photograph ever taken of a galaxy — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Because it disproved Einstein's theory of general relativity — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "Because the Big Bang model predicted exactly this kind of uniform relic radiation from the universe's hot early state, while the rival Steady State model had no mechanism to produce it at all",
       ],
       correctIndex: 3,
@@ -210,9 +210,9 @@ export const CLUSTER_AA: Node[] = [
       question: "How does general relativity's explanation of gravity differ from Newton's?",
       options: [
         "Newton described gravity as an invisible pulling force between masses; general relativity describes it as the curvature of spacetime itself, with objects following the straightest path through that curved geometry",
-        "General relativity says gravity doesn't exist at all — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source materia",
-        "General relativity only applies to objects moving faster than light — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the",
-        "The two theories make identical predictions in every situation, with no measurable difference — this view emphasizes the same outcome but attributes it to a different und",
+        "General relativity says gravity doesn't exist at all — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "General relativity only applies to objects moving faster than light — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "The two theories make identical predictions in every situation, with no measurable difference — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -255,10 +255,10 @@ export const CLUSTER_AA: Node[] = [
       question:
         "What was significant about Lemaître's 'primeval atom' proposal relative to Hubble's later observations?",
       options: [
-        "Lemaître copied Hubble's data years after it was published — this view emphasizes the same outcome but attributes it to a different underly",
+        "Lemaître copied Hubble's data years after it was published — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you.",
         "Lemaître theoretically proposed an expanding universe originating from a compact initial state before Hubble's 1929 observations provided the empirical evidence supporting it",
-        "Lemaître's theory was immediately accepted by all physicists including Einstein — this view emphasizes the same outcome but attributes it t",
-        "Lemaître and Hubble worked together on the same research team — this view emphasizes the same outcome but attributes it to a different unde",
+        "Lemaître's theory was immediately accepted by all physicists including Einstein — this view reverses the causal direction the source material argues for.",
+        "Lemaître and Hubble worked together on the same research team — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -302,10 +302,10 @@ export const CLUSTER_AA: Node[] = [
       question:
         "Why is the uncertainty principle considered a fundamental feature of reality rather than a limitation of measurement technology?",
       options: [
-        "Because scientists haven't yet built instruments precise enough to overcome it — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source",
-        "Because it only applies to objects larger than atoms — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly argue",
+        "Because scientists haven't yet built instruments precise enough to overcome it — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Because it only applies to objects larger than atoms — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "Because the uncertainty is a mathematical consequence of how quantum systems are structured — position and momentum genuinely cannot both have precise, definite values at the same time, regardless of how good the measuring instrument is",
-        "Because it was later disproven by more advanced physics — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly ar",
+        "Because it was later disproven by more advanced physics — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
       ],
       correctIndex: 2,
       explanation:
@@ -346,9 +346,9 @@ export const CLUSTER_AA: Node[] = [
     quiz: {
       question: "What did Lorenz's 1963 discovery reveal about deterministic systems?",
       options: [
-        "That deterministic systems are always perfectly predictable if you have enough computing power — this view emphasizes the same outcome but attributes it to a different underlyi",
-        "That weather patterns are fundamentally random rather than governed by physical laws — this view emphasizes the same outcome but attributes it to a different underlying mechani",
-        "That rounding errors in computer simulations are always negligible and can be safely ignored — this view emphasizes the same outcome but attributes it to a different underlying",
+        "That deterministic systems are always perfectly predictable if you have enough computing power — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "That weather patterns are fundamentally random rather than governed by physical laws — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "That rounding errors in computer simulations are always negligible and can be safely ignored — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "That even a fully deterministic system with no randomness can become practically unpredictable over time, because tiny, unmeasurable differences in starting conditions grow exponentially into large differences in outcome",
       ],
       correctIndex: 3,
@@ -392,9 +392,9 @@ export const CLUSTER_AA: Node[] = [
       question: "What does E=mc² mean physically, beyond being a formula?",
       options: [
         "That mass and energy are two forms of the same underlying quantity, related by an enormous conversion factor — meaning even a small amount of mass corresponds to a huge amount of energy",
-        "That energy and mass are unrelated quantities that happen to share a formula — this view emphasizes the same outcome but attributes it to a differen",
-        "That only objects moving faster than light can convert mass into energy — this view emphasizes the same outcome but attributes it to a different und",
-        "That the formula applies only to nuclear reactions and nowhere else in physics — this view emphasizes the same outcome but attributes it to a differ",
+        "That energy and mass are unrelated quantities that happen to share a formula — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "That only objects moving faster than light can convert mass into energy — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test.",
+        "That the formula applies only to nuclear reactions and nowhere else in physics — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:

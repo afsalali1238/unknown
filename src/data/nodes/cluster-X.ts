@@ -193,9 +193,9 @@ export const CLUSTER_X: Node[] = [
         "Why does the subject in the quantum suicide experiment always experience survival under the Many-Worlds Interpretation?",
       options: [
         "The lethal mechanism is programmed to recognize and fail for living biological matter — this view emp",
-        "The observer controls the quantum decay with their mind — this view emphasizes the same outcome but a",
+        "The observer controls the quantum decay with their mind — this alternative is popular online but misstates the mechanism the author defends.",
         "The observer can only subjectively experience the specific timelines where their biological consciousness continues to function",
-        "Alternate timelines merge to prevent the cessation of life — this view emphasizes the same outcome bu",
+        "Alternate timelines merge to prevent the cessation of life — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 2,
       explanation:
@@ -235,9 +235,9 @@ export const CLUSTER_X: Node[] = [
       question:
         "What is the primary implication of the relativity of simultaneity regarding the nature of the future?",
       options: [
-        "The future is highly malleable and changes based on quantum observation — this view emphasizes the same outcome but ",
-        "Time speeds up as objects approach the speed of light — this view emphasizes the same outcome but attributes it to a",
-        "Simultaneous events destroy the fabric of spacetime, creating black holes — this view emphasizes the same outcome bu",
+        "The future is highly malleable and changes based on quantum observation — a common misreading that the text explicitly warns against.",
+        "Time speeds up as objects approach the speed of light — this alternative is popular online but misstates the mechanism the author defends.",
+        "Simultaneous events destroy the fabric of spacetime, creating black holes — an intuitive but incorrect explanation that conflates correlation with causation.",
         'Because different observers have different "nows," the future of one observer is already happening for another, implying the future already exists',
       ],
       correctIndex: 3,

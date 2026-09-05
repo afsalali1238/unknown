@@ -19,10 +19,10 @@ export const CLUSTER_T: Node[] = [
     quiz: {
       question: "According to Perell, what is 'Writing from Abundance'?",
       options: [
-        "Publishing raw, unedited thoughts directly to social media as fast as possible — this view emphasizes the same outcome but a",
+        "Publishing raw, unedited thoughts directly to social media as fast as possible — a common misreading that the text explicitly warns against.",
         "Building a habit of capturing ideas and inspiration before you need them, so writing becomes editing and assembling rather than inventing from a blank page",
-        "Writing exclusively about currently trending news topics — this view emphasizes the same outcome but attributes it to a diff",
-        "Outsourcing the writing process entirely to freelance ghostwriters — this view emphasizes the same outcome but attributes it",
+        "Writing exclusively about currently trending news topics — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Outsourcing the writing process entirely to freelance ghostwriters — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 1,
       explanation:
@@ -64,10 +64,10 @@ export const CLUSTER_T: Node[] = [
       question:
         "According to Bloom's framework (via James Austin), what characterizes 'Luck from Uniqueness'?",
       options: [
-        "Randomly inheriting advantageous circumstances at birth — this view emphasizes the same outcome but attribut",
-        "Hustling and saying yes to as many opportunities as possible to increase collisions — this view emphasizes t",
+        "Randomly inheriting advantageous circumstances at birth — a common misreading that the text explicitly warns against.",
+        "Hustling and saying yes to as many opportunities as possible to increase collisions — this alternative is popular online but misstates the mechanism the.",
         "A distinctive combination of skills, interests, and identity so specific that opportunities seek the person out rather than being chased",
-        "Studying a domain long enough to recognize subtle, faint opportunities others miss — this view emphasizes th",
+        "Studying a domain long enough to recognize subtle, faint opportunities others miss — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 2,
       explanation:
@@ -111,7 +111,7 @@ export const CLUSTER_T: Node[] = [
       options: [
         "Write a comprehensive journal entry only once, at the end of the day — this view emphasi",
         "Plan out every hour of the day in advance before starting any work — this view emphasize",
-        "Avoid writing anything down and rely on memory to track progress — this view emphasizes ",
+        "Avoid writing anything down and rely on memory to track progress — an intuitive but incorrect explanation that conflates.",
         "Write a short, timestamped note at the exact transition point between finishing one task and starting the next",
       ],
       correctIndex: 3,
@@ -154,10 +154,10 @@ export const CLUSTER_T: Node[] = [
       question:
         "What is the primary flaw of traditional, folder-based note-taking according to the networked thought model?",
       options: [
-        "Folders take up too much hard drive space. — this view emphasizes the same outcome but attribu",
+        "Folders take up too much hard drive space. — a common misreading that the text explicitly warns against.",
         "Folders force a single, rigid hierarchy, whereas human thoughts are associative and often belong in multiple contexts.",
-        "Folders cannot be searched as quickly as a database. — this view emphasizes the same outcome b",
-        "Folders are too easy to accidentally delete. — this view emphasizes the same outcome but attri",
+        "Folders cannot be searched as quickly as a database. — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Folders are too easy to accidentally delete. — this view reverses the causal direction the source material argues for.",
       ],
       correctIndex: 1,
       explanation:
@@ -200,9 +200,9 @@ export const CLUSTER_T: Node[] = [
         "What does Bloom mean by 'life will test you with the same challenge until you learn the lesson'?",
       options: [
         "That recurring problems (the same fight in every relationship, the same burnout in every job) tend to persist until the underlying personal pattern causing them is actually addressed.",
-        "That bad luck is randomly distributed and unrelated to personal patterns. — this view emphasizes the same outcome but attributes it to a different",
-        "That life gets easier automatically after age 30. — this view emphasizes the same outcome but attributes it to a different underlying mechanism th",
-        "That every challenge is unique and never repeats. — this view emphasizes the same outcome but attributes it to a different underlying mechanism th",
+        "That bad luck is randomly distributed and unrelated to personal patterns. — this alternative is popular online but misstates the mechanism the author defends.",
+        "That life gets easier automatically after age 30. — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "That every challenge is unique and never repeats. — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:

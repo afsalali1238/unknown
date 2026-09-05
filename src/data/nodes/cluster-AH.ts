@@ -20,9 +20,9 @@ export const CLUSTER_AH: Node[] = [
       question:
         "According to Ibn Khaldun, what causes a dynasty's founding group solidarity (asabiyyah) to erode?",
       options: [
-        "Foreign invasion is the sole cause of decline in every case — this view emphasizes the same outcome but attributes it to a d",
-        "Religious conversion always weakens ruling groups — this view emphasizes the same outcome but attributes it to a different u",
-        "Asabiyyah never actually erodes once established — this view emphasizes the same outcome but attributes it to a different un",
+        "Foreign invasion is the sole cause of decline in every case — this alternative is popular online but misstates the mechanism the author defends.",
+        "Religious conversion always weakens ruling groups — an intuitive but incorrect explanation that conflates correlation with causation.",
+        "Asabiyyah never actually erodes once established — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you.",
         "Urbanization, accumulated wealth, and generational distance from the original shared hardship dilute the cohesion that built the dynasty in the first place",
       ],
       correctIndex: 3,
@@ -64,10 +64,10 @@ export const CLUSTER_AH: Node[] = [
     quiz: {
       question: "What was Gibbon's central argument about why Rome fell?",
       options: [
-        "Rome fell purely because barbarian armies were militarily superior — this view emphasizes the same outcome but attributes it to a different underlying mechanism tha",
-        "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline — this view emphasizes the same outcome but attrib",
+        "Rome fell purely because barbarian armies were militarily superior — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Rome's economic system collapsed due to currency debasement, a factor unrelated to civic or institutional decline — an intuitive but incorrect explanation that conflates correlation with causation.",
         "Rome's collapse was primarily a long internal erosion of civic virtue, military loyalty, and institutional competence, with external invasion delivering the final blow rather than causing the decline itself",
-        "Rome fell because a single decisive battle destroyed its army beyond recovery — this view emphasizes the same outcome but attributes it to a different underlying me",
+        "Rome fell because a single decisive battle destroyed its army beyond recovery — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -110,9 +110,9 @@ export const CLUSTER_AH: Node[] = [
         "According to Diamond, what was the primary driver of which civilizations came to dominate others?",
       options: [
         "Geographic and environmental accidents — available domesticable species, a continent's east-west versus north-south orientation, and resulting disease immunity — that compounded over millennia into large differences in technology and population",
-        "Innate differences in intelligence or ability between different peoples — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material expl",
-        "Random chance events with no identifiable underlying pattern — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly argu",
-        "Religious differences between civilizations — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly argues against.",
+        "Innate differences in intelligence or ability between different peoples — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "Random chance events with no identifiable underlying pattern — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
+        "Religious differences between civilizations — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
       ],
       correctIndex: 0,
       explanation:
@@ -155,10 +155,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What does Kennedy mean by 'imperial overstretch' as a driver of great-power decline?",
       options: [
-        "A power's military becomes too large to physically defend its own borders — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the s",
+        "A power's military becomes too large to physically defend its own borders — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "A power's strategic and military commitments continue expanding even as its relative economic base declines, and the resulting funding gap — bridged by debt or taxation — further erodes the economy, accelerating the decline",
-        "A power expands its territory too quickly for its population to fill — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source",
-        "A power loses a single decisive military battle that it never recovers from — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the",
+        "A power expands its territory too quickly for its population to fill — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "A power loses a single decisive military battle that it never recovers from — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 1,
       explanation:
@@ -202,10 +202,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "According to Harari, what uniquely enabled Homo sapiens to organize in large-scale cooperation with total strangers?",
       options: [
-        "Sapiens had significantly larger brains and higher individual intelligence than all other human species — this view emphasizes the same outcome but attributes it to a different underlying mec",
-        "Sapiens were the only human species capable of using tools — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material explicitly ar",
+        "Sapiens had significantly larger brains and higher individual intelligence than all other human species — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "Sapiens were the only human species capable of using tools — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "The capacity for genuinely abstract shared fiction — collectively believing in things like money, nations, and corporations that have no independent physical existence — which let strangers coordinate at scales no other species could match",
-        "Sapiens had no need for cooperation because they were physically stronger than rival species — this view emphasizes the same outcome but attributes it to a different underlying mechanism that",
+        "Sapiens had no need for cooperation because they were physically stronger than rival species — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 2,
       explanation:
@@ -248,9 +248,9 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What is Frankopan's central reframing of traditional world history in The Silk Roads?",
       options: [
-        "That Western Europe has always been the uncontested center of global trade and power — this view emphasizes the same outcome but attributes it to a different underlying ",
-        "That trade routes had no significant influence on the spread of religion or technology — this view emphasizes the same outcome but attributes it to a different underlyin",
-        "That the Silk Roads were only active for a brief period in the ancient world — this view emphasizes the same outcome but attributes it to a different underlying mechanis",
+        "That Western Europe has always been the uncontested center of global trade and power — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "That trade routes had no significant influence on the spread of religion or technology — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "That the Silk Roads were only active for a brief period in the ancient world — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
         "That the trade corridors connecting Central Asia, the Middle East, China, and India — not any single Western civilization — were the primary engine and center of gravity of world history for most of recorded time",
       ],
       correctIndex: 3,
@@ -294,9 +294,9 @@ export const CLUSTER_AH: Node[] = [
       question: "According to Kuhn, what typically triggers a genuine scientific 'paradigm shift'?",
       options: [
         "An accumulation of anomalies — observations that don't fit the existing accepted framework — reaching a crisis point, resolved by a new framework that reorganizes the field's basic assumptions rather than just adding new facts",
-        "A single new experiment that instantly convinces the entire scientific community — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
-        "A government or funding body mandating that scientists adopt a new theory — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the sou",
-        "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions — this view emphasizes the same outcome but attributes it to a different underlying",
+        "A single new experiment that instantly convinces the entire scientific community — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
+        "A government or funding body mandating that scientists adopt a new theory — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Scientific progress happening in a smooth, continuous, cumulative line with no sharp transitions — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next.",
       ],
       correctIndex: 0,
       explanation:
@@ -339,10 +339,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "Why do Acemoglu and Robinson argue that 'extractive' institutions tend to produce long-run poverty, even when they might not always block growth in the short term?",
       options: [
-        "Because extractive institutions are always run by less intelligent leaders — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source materia",
+        "Because extractive institutions are always run by less intelligent leaders — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
         "Because the narrow elites who benefit from extractive institutions have a direct incentive to block broad-based innovation and creative destruction, since new competition threatens the very concentration of power and rents that benefits them",
-        "Because extractive institutions are found only in countries with poor geography — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source ma",
-        "Because extractive institutions were outlawed by international treaties — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material e",
+        "Because extractive institutions are found only in countries with poor geography — this view reverses the causal direction the source material argues for. The distinction matters because it changes what you would test next.",
+        "Because extractive institutions were outlawed by international treaties — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
       ],
       correctIndex: 1,
       explanation:
@@ -385,10 +385,10 @@ export const CLUSTER_AH: Node[] = [
       question:
         "What is Cline's central explanation for the Late Bronze Age collapse around 1177 B.C.?",
       options: [
-        "A single invasion by the 'Sea Peoples' that no civilization could have survived — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the s",
-        "A sudden, unexplained climate event with no connection to trade or political factors — this view emphasizes the same outcome but attributes it to a different underlying mechanism that ",
+        "A single invasion by the 'Sea Peoples' that no civilization could have survived — this alternative is popular online but misstates the mechanism the author defends. The distinction matters because it changes what you would test next.",
+        "A sudden, unexplained climate event with no connection to trade or political factors — an intuitive but incorrect explanation that conflates correlation with causation. The distinction matters because it changes what you would test next.",
         "A cluster of multiple, roughly simultaneous stresses — drought, earthquakes, internal rebellion, and invasion — that overwhelmed a densely interconnected trade system whose very interdependence made it fragile to compounding shocks",
-        "Deliberate, coordinated destruction ordered by Egyptian pharaohs — this view emphasizes the same outcome but attributes it to a different underlying mechanism that the source material ",
+        "Deliberate, coordinated destruction ordered by Egyptian pharaohs — a common misreading that the text explicitly warns against. The distinction matters because it changes what you would test next. Consider what evidence would falsify each view.",
       ],
       correctIndex: 2,
       explanation:
