@@ -422,10 +422,12 @@ function AudioPreferences() {
 function last14Days(): string[] {
   const out: string[] = [];
   const d = new Date();
+  const fmt = (x: Date) =>
+    `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
   for (let i = 13; i >= 0; i--) {
     const x = new Date(d);
     x.setDate(d.getDate() - i);
-    out.push(x.toISOString().slice(0, 10));
+    out.push(fmt(x));
   }
   return out;
 }

@@ -1,9 +1,16 @@
-import { useState, type ReactNode } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import type { Node } from "@/data/nodes";
 import { useStore } from "@/lib/store";
 import { MicroLabel } from "./MicroLabel";
 import { FirstTimeHint } from "./FirstTimeHint";
 import { cn } from "@/lib/utils";
+import { mulberry32 } from "@/lib/random";
+
+function hashString(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
+  return h >>> 0;
+}
 
 export function Quiz({
   node,
@@ -21,7 +28,22 @@ export function Quiz({
 }) {
   const submitQuiz = useStore((s) => s.submitQuiz);
   const [picked, setPicked] = useState<number | null>(null);
-  const correct = picked !== null && picked === node.quiz.correctIndex;
+
+  // Deterministic shuffle per node so option order isn't trivially memorizable
+  // but remains stable across re-renders and hydration.
+  const { shuffledOptions, shuffledCorrect } = useMemo(() => {
+    const rng = mulberry32(hashString(node.id) || 1);
+    const idxs = node.quiz.options.map((_, i) => i);
+    for (let i = idxs.length - 1; i > 0; i--) {
+      const j = Math.floor(rng() * (i + 1));
+      [idxs[i], idxs[j]] = [idxs[j], idxs[i]];
+    }
+    const shuffledOptions = idxs.map((i) => node.quiz.options[i]);
+    const shuffledCorrect = idxs.indexOf(node.quiz.correctIndex);
+    return { shuffledOptions, shuffledCorrect };
+  }, [node.id, node.quiz.options, node.quiz.correctIndex]);
+
+  const correct = picked !== null && picked === shuffledCorrect;
 
   return (
     <section className={hideHeader ? "" : "mt-10 border-t border-line pt-8"}>
@@ -32,9 +54,9 @@ export function Quiz({
         {node.quiz.question}
       </p>
       <div className="mt-5 space-y-2">
-        {node.quiz.options.map((opt, i) => {
+        {shuffledOptions.map((opt, i) => {
           const isPicked = picked === i;
-          const isCorrect = i === node.quiz.correctIndex;
+          const isCorrect = i === shuffledCorrect;
           const revealed = picked !== null;
           let cls = "border-line hover:border-ink";
           if (revealed && isCorrect) cls = "border-accent bg-accent/5";
@@ -46,7 +68,7 @@ export function Quiz({
               disabled={picked !== null}
               onClick={() => {
                 setPicked(i);
-                submitQuiz(node.id, i === node.quiz.correctIndex);
+                submitQuiz(node.id, i === shuffledCorrect);
               }}
               className={`flex w-full items-start gap-3 border ${cls} p-4 text-left transition-colors`}
             >
@@ -60,12 +82,13 @@ export function Quiz({
       </div>
       {picked !== null && (
         <div
+          aria-live="polite"
           className={`mt-4 border-l-2 p-3 ${correct ? "border-accent bg-accent/5" : "border-ink-soft bg-line/10"}`}
         >
           <p
             className={`font-mono text-[11px] uppercase tracking-[0.18em] ${correct ? "text-accent" : "text-ink-soft"}`}
           >
-            {correct ? "Correct — moved up a box" : "Not quite — resets to box 0"}
+            {correct ? "Correct — moved up a box" : "Not quite — moved back"}
           </p>
           {node.quiz.explanation && (
             <p className="mt-2 text-sm leading-relaxed text-ink-soft">{node.quiz.explanation}</p>
@@ -75,8 +98,7 @@ export function Quiz({
       {picked !== null && !hideHeader && (
         <FirstTimeHint id="hint-quiz-review" className="mt-4">
           That answer just moved this node in your Review queue — correct pushes it further out on a
-          schedule, wrong resets it to the front. It resurfaces in the Review tab when it's due, not
-          before.
+          schedule, wrong moves it back. It resurfaces in the Review tab when it's due, not before.
         </FirstTimeHint>
       )}
       {picked !== null && renderFooter && renderFooter(correct)}

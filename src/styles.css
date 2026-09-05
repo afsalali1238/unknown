@@ -103,6 +103,16 @@
   button {
     min-height: 44px;
   }
+  /* WCAG 2.4.11 Focus Not Obscured: keep focused cards visible above sticky chrome */
+  html {
+    scroll-padding-top: 4.5rem;
+    scroll-padding-bottom: 4.5rem;
+  }
+  #feed-card-anchor,
+  [data-feed-card] {
+    scroll-margin-top: 4.5rem;
+    scroll-margin-bottom: 4.5rem;
+  }
 
   /* One focus treatment, everywhere — an accent ring offset from the paper,
      never the browser default outline. */

@@ -55,7 +55,17 @@ const CLUSTER_TITLE: Record<string, string> = Object.fromEntries(
 const FEED_PAGE_SIZE = 8;
 const FEED_GROW_BY = 8;
 
-function SortableQueueItem({ n, onClose }: { n: Node; onClose: () => void }) {
+function SortableQueueItem({
+  n,
+  idx,
+  total,
+  onClose,
+}: {
+  n: Node;
+  idx: number;
+  total: number;
+  onClose: () => void;
+}) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
     id: n.id,
   });
@@ -67,13 +77,14 @@ function SortableQueueItem({ n, onClose }: { n: Node; onClose: () => void }) {
   };
 
   const removeReadNext = useStore((s) => s.removeReadNext);
+  const reorderReadNext = useStore((s) => s.reorderReadNext);
 
   return (
     <div
       ref={setNodeRef}
       style={style}
       className={cn(
-        "flex items-center gap-2 p-2 border border-line bg-paper hover:border-ink transition-colors relative",
+        "flex items-center gap-1 p-2 border border-line bg-paper hover:border-ink transition-colors relative",
         isDragging && "opacity-50 border-ink shadow-md z-10",
       )}
     >
@@ -95,6 +106,25 @@ function SortableQueueItem({ n, onClose }: { n: Node; onClose: () => void }) {
       >
         <div className="truncate font-serif text-sm text-ink">{n.title}</div>
       </button>
+      {/* WCAG 2.5.7 Dragging Movements alternative: arrow buttons */}
+      <div className="flex shrink-0 items-center gap-0.5">
+        <button
+          aria-label={`Move ${n.title} up`}
+          disabled={idx === 0}
+          onClick={() => reorderReadNext(idx, idx - 1)}
+          className="grid h-7 w-7 place-items-center border border-transparent text-ink-soft hover:border-line hover:text-ink disabled:opacity-30 disabled:cursor-not-allowed"
+        >
+          ↑
+        </button>
+        <button
+          aria-label={`Move ${n.title} down`}
+          disabled={idx === total - 1}
+          onClick={() => reorderReadNext(idx, idx + 1)}
+          className="grid h-7 w-7 place-items-center border border-transparent text-ink-soft hover:border-line hover:text-ink disabled:opacity-30 disabled:cursor-not-allowed"
+        >
+          ↓
+        </button>
+      </div>
       <button
         aria-label="Remove from queue"
         onClick={() => removeReadNext(n.id)}
@@ -145,8 +175,8 @@ function ReadNextList({ nodes, onClose }: { nodes: Node[]; onClose: () => void }
       <div className="px-5 py-3 max-h-[40vh] overflow-y-auto space-y-2">
         <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
           <SortableContext items={nodes.map((n) => n.id)} strategy={verticalListSortingStrategy}>
-            {nodes.map((n) => (
-              <SortableQueueItem key={n.id} n={n} onClose={onClose} />
+            {nodes.map((n, i) => (
+              <SortableQueueItem key={n.id} n={n} idx={i} total={nodes.length} onClose={onClose} />
             ))}
           </SortableContext>
         </DndContext>
@@ -239,7 +269,7 @@ function FeedScreen() {
 
   // Incremental loading via IntersectionObserver (windowing — avoids rendering 387 cards at once)
   useEffect(() => {
-    if (feedResult.needsTopics || feedResult.exhausted) return;
+    if (feedResult.needsTopics) return;
     if (visibleCount >= feedResult.items.length) return;
     const el = sentinelRef.current;
     if (!el) return;

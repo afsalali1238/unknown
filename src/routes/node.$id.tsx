@@ -366,6 +366,13 @@ function NodeScreen() {
 
         <LayerReveal
           label="Why it works"
+          open={showL1}
+          onOpenChange={(v) => {
+            if (v) {
+              setShowL1(true);
+              dismissHint("hint-layers");
+            }
+          }}
           onReveal={() => {
             setShowL1(true);
             dismissHint("hint-layers");
@@ -380,7 +387,12 @@ function NodeScreen() {
         </LayerReveal>
 
         {showL1 && (
-          <LayerReveal label="How to apply it" onReveal={() => setShowL2(true)}>
+          <LayerReveal
+            label="How to apply it"
+            open={showL2}
+            onOpenChange={setShowL2}
+            onReveal={() => setShowL2(true)}
+          >
             <section>
               <MicroLabel>How to apply it</MicroLabel>
               <div className="mt-3">

@@ -269,7 +269,7 @@ function SkimCard({
           navigate({ to: "/node/$id", params: { id: node.id } });
         }
       }}
-      className="relative flex min-h-[calc(100dvh-3.75rem)] snap-start flex-col justify-between px-5 py-8 cursor-pointer outline-none focus-visible:ring-1 focus-visible:ring-accent motion-reduce:snap-none"
+      className="relative flex min-h-[calc(100dvh-3.75rem-4rem-env(safe-area-inset-bottom))] snap-start flex-col justify-between px-5 py-8 cursor-pointer outline-none focus-visible:ring-1 focus-visible:ring-accent motion-reduce:snap-none"
     >
       <button
         aria-label={bookmarked ? `Remove ${node.title} from saved` : `Save ${node.title}`}

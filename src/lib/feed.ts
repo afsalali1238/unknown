@@ -1,16 +1,6 @@
 import { NODES, type Node } from "@/data/nodes";
 import { readNextNodes } from "./store";
-
-function mulberry32(seed: number) {
-  let a = seed >>> 0;
-  return function () {
-    a |= 0;
-    a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
+import { mulberry32 } from "./random";
 
 export type FeedInputs = {
   interests: string[];
@@ -38,10 +28,6 @@ export function buildFeed({
   readNext,
   adjacencyShare = 0.15,
 }: FeedInputs): FeedResult {
-  if (interests.length === 0) {
-    return { items: [], source: [], exhausted: false, needsTopics: true };
-  }
-
   const rand = mulberry32(seed || 1);
   const interestSet = new Set(interests);
 
@@ -66,6 +52,34 @@ export function buildFeed({
     }
   }
 
+  // Cold-start: no interests → pure serendipity (shuffled, visited-first, cluster-spaced)
+  // This keeps the feed useful after "Skip for now" instead of dead-ending on needsTopics.
+  if (interests.length === 0) {
+    const pool = NODES.filter((n) => !includedIds.has(n.id));
+    pool.sort((a, b) => {
+      const av = visited[a.id] ? 1 : 0;
+      const bv = visited[b.id] ? 1 : 0;
+      if (av !== bv) return av - bv;
+      return nodeScores.get(a.id)! - nodeScores.get(b.id)!;
+    });
+    const exhausted = queuedNodes.every((n) => visited[n.id]) && pool.every((n) => visited[n.id]);
+
+    let lastCluster = items.length > 0 ? items[items.length - 1].clusterId : "";
+    while (pool.length > 0) {
+      // Prefer unvisited with different cluster first
+      let idx = pool.findIndex((n) => !visited[n.id] && n.clusterId !== lastCluster);
+      if (idx === -1) idx = pool.findIndex((n) => n.clusterId !== lastCluster);
+      if (idx === -1) idx = pool.findIndex((n) => !visited[n.id]);
+      if (idx === -1) idx = 0;
+      const [pick] = pool.splice(idx, 1);
+      items.push(pick);
+      source.push("topic");
+      includedIds.add(pick.id);
+      lastCluster = pick.clusterId;
+    }
+    return { items, source, exhausted, needsTopics: false };
+  }
+
   // 2. Topic spine (tags intersect interests)
   const spineCandidates = NODES.filter(
     (n) => !includedIds.has(n.id) && n.tags.some((t) => interestSet.has(t)),
@@ -78,10 +92,6 @@ export function buildFeed({
     if (aVisited !== bVisited) return aVisited - bVisited;
     return nodeScores.get(a.id)! - nodeScores.get(b.id)!;
   });
-
-  // Exhausted = user has seen all topic+queue nodes
-  const exhausted =
-    queuedNodes.every((n) => visited[n.id]) && spineCandidates.every((n) => visited[n.id]);
 
   // Find adjacent candidates: NOT in interests, but in related of topic spine or liked nodes.
   const adjacentIds = new Set<string>();
@@ -108,6 +118,12 @@ export function buildFeed({
     return nodeScores.get(a.id)! - nodeScores.get(b.id)!;
   });
 
+  // Exhausted = user has seen all topic+queue+adjacent nodes (if adjacent non-empty)
+  const exhausted =
+    queuedNodes.every((n) => visited[n.id]) &&
+    spineCandidates.every((n) => visited[n.id]) &&
+    adjacentCandidates.every((n) => visited[n.id]);
+
   let nonQueueCount = 0;
   let lastCluster = items.length > 0 ? items[items.length - 1].clusterId : "";
   const adjacentInterval = adjacencyShare > 0 ? Math.round(1 / adjacencyShare) : 0; // e.g. 1/0.15 = 7
@@ -125,7 +141,11 @@ export function buildFeed({
 
     if (activePool.length === 0) break;
 
-    let idx = activePool.findIndex((n) => n.clusterId !== lastCluster);
+    // Cluster de-duplication: prefer unvisited with different cluster first,
+    // then any with different cluster, then any unvisited, then fallback.
+    let idx = activePool.findIndex((n) => !visited[n.id] && n.clusterId !== lastCluster);
+    if (idx === -1) idx = activePool.findIndex((n) => n.clusterId !== lastCluster);
+    if (idx === -1) idx = activePool.findIndex((n) => !visited[n.id]);
     if (idx === -1) idx = 0;
 
     const [pick] = activePool.splice(idx, 1);

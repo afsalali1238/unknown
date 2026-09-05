@@ -6039,7 +6039,7 @@ export const NODES: Node[] = [
       question:
         "What thought experiment is credited with leading Einstein toward the special theory of relativity?",
       options: [
-        "Schr├╢dinger's cat",
+        "Schrödinger's cat",
         "Imagining what he would observe if he could travel alongside a beam of light",
         "The trolley problem",
         "Laplace's demon",
@@ -6865,7 +6865,7 @@ export const NODES: Node[] = [
     layer0:
       "Judgment, in Naval's usage, means the ability to make correct decisions under uncertainty with incomplete information — distinct from raw intelligence or hard work. He argues that historically, what you could accomplish was capped by your own labor, so judgment mattered but within limited bounds; today, leverage (code, media, capital) means one person's judgment, right or wrong, gets applied at a scale that used to require an entire organization to achieve.",
     layer1:
-      "Naval's essay argues that someone whose judgment is correct 85% of the time, rather than 75%, isn't just 'modestly better' — once that judgment is applied through high leverage (a piece of code, a large fund, a media platform reaching millions), that ten-percentage-point edge in accuracy compounds into a dramatically larger share of outcomes, which is why elite investors, founders, and operators can capture returns wildly disproportionate to the actual gap in their skill. (The popular paraphrase 'he who is right most often wins' circulates widely online but isn't a verified direct Naval quote — the argument above is the actual, sourced version from nav.al/judgment. `[Unverified: exact wording]`)",
+      "Naval's essay argues that someone whose judgment is correct 85% of the time, rather than 75%, isn't just 'modestly better' — once that judgment is applied through high leverage (a piece of code, a large fund, a media platform reaching millions), that ten-percentage-point edge in accuracy compounds into a dramatically larger share of outcomes, which is why elite investors, founders, and operators can capture returns wildly disproportionate to the actual gap in their skill. (The popular paraphrase 'he who is right most often wins' circulates widely online but isn't a verified direct Naval quote — the argument above is the actual, sourced version from nav.al/judgment.)",
     layer2:
       "Think of a recent decision where you had leverage — your words, work, or money reaching further than just you. How much did the outcome depend on the quality of your judgment in that one moment, versus how hard you worked afterward?",
     quiz: {
@@ -7210,7 +7210,7 @@ export const NODES: Node[] = [
       },
       {
         label: "The power of believing that you can improve",
-        source: "TED Talk, Carol Dweck (TEDxNorrk├╢ping)",
+        source: "TED Talk, Carol Dweck (TEDxNorrköping)",
         url: "https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve",
         archive: { status: "unavailable" },
       },

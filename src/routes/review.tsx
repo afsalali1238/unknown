@@ -6,6 +6,7 @@ import { Quiz } from "@/components/Quiz";
 import { useStore, dueIds, currentStreak } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { FirstTimeHint } from "@/components/FirstTimeHint";
+import { shuffle } from "@/lib/random";
 
 export const Route = createFileRoute("/review")({
   head: () => ({
@@ -35,7 +36,7 @@ function ReviewScreen() {
   const queue = useMemo(() => {
     if (!hydrated) return [] as string[];
     const ids = dueIds(review);
-    return ids.sort(() => Math.random() - 0.5);
+    return shuffle(ids);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hydrated]);
 

@@ -3,10 +3,12 @@ import { buildFeed } from "./feed";
 
 describe("buildFeed algorithm v2", () => {
   it("returns needsTopics=true when interests are empty", () => {
+    // Cold-start serendipity: interests === [] now returns a shuffled random feed
+    // (needsTopics false, items non-empty) — the NeedsTopics gate lives in the
+    // onboarding flow / index route, not inside feed anymore.
     const res = buildFeed({ interests: [], likedIds: [], visited: {}, seed: 1, readNext: [] });
-    expect(res.needsTopics).toBe(true);
-    expect(res.items).toEqual([]);
-    expect(res.source).toEqual([]);
+    expect(res.needsTopics).toBe(false);
+    expect(res.items.length).toBeGreaterThan(0);
     expect(res.exhausted).toBe(false);
   });
 
