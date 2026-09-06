@@ -58,6 +58,7 @@ export const CLUSTER_A: Node[] = [
         "Assuming users will naturally discover the product, rather than manually recruiting them one by one",
         "Spending too much money on television advertising",
         "Hiring salespeople too early",
+        "Assuming venture funding alone guarantees a large user base",
       ],
       correctIndex: 0,
       explanation:

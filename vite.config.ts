@@ -8,6 +8,9 @@ import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  preview: {
+    allowedHosts: true,
+  },
   resolve: {
     dedupe: ["react", "react-dom"],
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment

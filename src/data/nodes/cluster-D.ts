@@ -35,6 +35,7 @@ export const CLUSTER_D: Node[] = [
         "The stock market bottoms long before the real economy recovers",
         "The government was guaranteed to bail out every failing company",
         "He had inside information on the Federal Reserve's interest rate cuts",
+        "By predicting the exact month each bank would fail",
       ],
       correctIndex: 0,
       explanation:
@@ -79,6 +80,7 @@ export const CLUSTER_D: Node[] = [
         "By proving mathematically that stock prices move in predictable sine waves",
         "By showing that a large group of market-beating investors all used the exact same 'value' philosophy",
         "By demonstrating that high-IQ investors always beat low-IQ investors",
+        "By avoiding all technology companies entirely",
       ],
       correctIndex: 1,
       explanation:
@@ -122,6 +124,7 @@ export const CLUSTER_D: Node[] = [
         "Because he knew the Federal Reserve would print money",
         "Because debt instruments are legally risk-free",
         "Because the prices were so low they assumed an apocalyptic default rate, providing a massive margin of safety",
+        "By timing trades to the exact day the Fed changed rates",
       ],
       correctIndex: 2,
       explanation:
@@ -166,6 +169,7 @@ export const CLUSTER_D: Node[] = [
         "A speculative frenzy and extreme overconfidence in low-quality, highly risky assets",
         "High corporate tax rates",
         "A sudden drop in the price of gold",
+        "By only purchasing bonds issued by the U.S. Treasury",
       ],
       correctIndex: 0,
       explanation:
@@ -209,6 +213,7 @@ export const CLUSTER_D: Node[] = [
         "A loan issued exclusively to governments",
         "A loan that strips away traditional financial protections and monitoring requirements for the lender",
         "A loan with an interest rate below inflation",
+        "By demanding the CEO personally guarantee every investment",
       ],
       correctIndex: 1,
       explanation:
@@ -252,6 +257,7 @@ export const CLUSTER_D: Node[] = [
         "The invention of cryptocurrency",
         "The transition from physical to digital retail",
         "The end of a 40-year cycle of declining interest rates, moving to a structurally higher rate environment",
+        "By selling all holdings whenever a stock fell 10%",
       ],
       correctIndex: 2,
       explanation:
@@ -295,6 +301,7 @@ export const CLUSTER_D: Node[] = [
         "When policymakers perfectly balance deflationary debt restructuring with inflationary money printing to reduce the debt burden without crashing the economy",
         "When all debt is completely forgiven by the government",
         "When a country adopts the gold standard to prevent inflation",
+        "By using only debt financing with no equity partners",
       ],
       correctIndex: 0,
       explanation:
@@ -339,6 +346,7 @@ export const CLUSTER_D: Node[] = [
         "A lack of natural resources",
         "Massive wealth inequality combined with printing money to monetize unsustainable debts",
         "An over-reliance on agricultural exports",
+        "By buying only companies headquartered in the same city",
       ],
       correctIndex: 1,
       explanation:
@@ -379,6 +387,7 @@ export const CLUSTER_D: Node[] = [
         "The US produces too much oil domestically",
         "The Federal Reserve is not allowed to buy foreign currencies",
         "The US has so much sovereign debt that raising interest rates to defend the dollar would bankrupt the government",
+        "By assuming government spending would always decline",
       ],
       correctIndex: 2,
       explanation:
@@ -419,6 +428,7 @@ export const CLUSTER_D: Node[] = [
         "The freezing of Russia's foreign exchange reserves by the West in 2022",
         "The invention of Bitcoin in 2009",
         "The collapse of the Lehman Brothers in 2008",
+        "By insisting on payment only in physical commodities",
       ],
       correctIndex: 0,
       explanation:
@@ -458,6 +468,7 @@ export const CLUSTER_D: Node[] = [
         "They must immediately IPO to raise cash",
         "They must cut expenses enough to reach profitability without ever needing to raise another round of funding",
         "They must pivot to healthcare software",
+        "By refusing to invest during any month with a market decline",
       ],
       correctIndex: 1,
       explanation:
@@ -497,6 +508,7 @@ export const CLUSTER_D: Node[] = [
         "A shift from investing in software to investing in crypto",
         "A shift from public markets to private equity",
         "A shift from valuing 'growth at all costs' to valuing free cash flow and profitability",
+        "By purchasing only companies with no competition whatsoever",
       ],
       correctIndex: 2,
       explanation:

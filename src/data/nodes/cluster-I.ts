@@ -32,6 +32,7 @@ export const CLUSTER_I: Node[] = [
         "Because the technology initially looks like a low-quality 'toy' that doesn't meet the needs of their most profitable customers",
         "Because the technology is illegal",
         "Because they don't have enough software engineers",
+        "Because incumbents are legally barred from adopting new technologies",
       ],
       correctIndex: 0,
       explanation:
@@ -71,6 +72,7 @@ export const CLUSTER_I: Node[] = [
         "It is exempt from corporate taxes",
         "It has a zero marginal cost of reproduction",
         "It requires expensive physical factories to manufacture",
+        "Because new software companies refuse to hire experienced executives",
       ],
       correctIndex: 1,
       explanation:
@@ -111,6 +113,7 @@ export const CLUSTER_I: Node[] = [
         "Smartphones had faster processors than PCs",
         "Smartphones were manufactured exclusively in the US",
         "Smartphones were sensor-rich devices that reached over 5 billion people and were carried 24/7",
+        "Because mobile devices have shorter battery life than desktop computers",
       ],
       correctIndex: 2,
       explanation:
@@ -150,6 +153,7 @@ export const CLUSTER_I: Node[] = [
         "Innovation had stalled in the physical world because investors were only funding low-risk software and social media apps",
         "Venture capital was taking too much risk on unproven hardware",
         "The government was preventing the invention of flying cars",
+        "Because open source projects never release updates",
       ],
       correctIndex: 0,
       explanation:
@@ -189,6 +193,7 @@ export const CLUSTER_I: Node[] = [
         "Selling directly to the CEO via expensive dinners",
         "Individual developers adopting a free open-source tool, which eventually forces the company to buy the enterprise tier",
         "Forcing employees to use software built by the government",
+        "Because on-premise software requires no maintenance staff",
       ],
       correctIndex: 1,
       explanation:
@@ -225,7 +230,12 @@ export const CLUSTER_I: Node[] = [
     quiz: {
       question:
         "What economic law does ARK Invest use to model the declining costs of disruptive technologies?",
-      options: ["Moore's Law", "Metcalfe's Law", "Wright's Law"],
+      options: [
+        "Moore's Law",
+        "Metcalfe's Law",
+        "Wright's Law",
+        "Because fund returns are guaranteed by the SEC",
+      ],
       correctIndex: 2,
       explanation:
         "While similar to Moore's Law (which is about time), Wright's Law states that costs decline as a function of cumulative production volume, making it highly applicable to hardware like batteries and robots.",
@@ -264,6 +274,7 @@ export const CLUSTER_I: Node[] = [
         "The discrepancy between the high amount of time users spent on mobile devices and the low amount of advertising dollars spent there",
         "The difference between adult and teenager internet usage",
         "The lack of broadband access in rural areas",
+        "Because each acquisition is reviewed and approved by customers first",
       ],
       correctIndex: 0,
       explanation:
@@ -302,6 +313,7 @@ export const CLUSTER_I: Node[] = [
         "The cost of electricity will decrease",
         "The marginal cost of intelligence and cognitive labor will approach zero",
         "The number of human software engineers will instantly double",
+        "Because internet usage was projected to decline year over year",
       ],
       correctIndex: 1,
       explanation:
@@ -342,6 +354,7 @@ export const CLUSTER_I: Node[] = [
         "Nuclear weapons",
         "Commercial jet travel",
         "Strong cryptography and decentralized digital networks",
+        "Because governments permanently ban any new communications technology",
       ],
       correctIndex: 2,
       explanation:
@@ -381,6 +394,7 @@ export const CLUSTER_I: Node[] = [
         "To create a monopoly in a small niche and then expand",
         "To enter a massive market and win 1% market share",
         "To achieve perfect competition",
+        "Because monopolies are always broken up within five years",
       ],
       correctIndex: 0,
       explanation:
@@ -460,6 +474,7 @@ export const CLUSTER_I: Node[] = [
         "That AI will always eventually want to destroy humanity",
         "That AI can only be created using quantum computers",
         "That an entity's level of intelligence is completely independent of its final goals",
+        "Because regulated industries receive government-funded R&D grants",
       ],
       correctIndex: 2,
       explanation:
@@ -499,6 +514,7 @@ export const CLUSTER_I: Node[] = [
         "That progress is slowing down and we need a dedicated academic discipline to study how to accelerate it",
         "That technological progress is destroying the environment and must be stopped",
         "That software engineering should replace traditional science",
+        "Because productivity growth is measured solely by population size",
       ],
       correctIndex: 0,
       explanation:
@@ -538,6 +554,7 @@ export const CLUSTER_I: Node[] = [
         "Utilitarianism",
         "Longtermism—the idea that positively influencing the long-term future is our primary moral priority",
         "Effective Altruism focused solely on immediate global poverty",
+        "Because future people will have far greater wealth and influence over us",
       ],
       correctIndex: 1,
       explanation:
@@ -577,6 +594,7 @@ export const CLUSTER_I: Node[] = [
         "That AGI will solve climate change and poverty",
         "That AGI is impossible to build",
         "That humanity is almost certainly doomed because aligning AGI is structurally harder than building it",
+        "Because regulators have already banned all advanced AI research",
       ],
       correctIndex: 2,
       explanation:
@@ -616,6 +634,7 @@ export const CLUSTER_I: Node[] = [
         "Because we are likely to invent Transformative AI, which will lock in the trajectory of humanity's entire future",
         "Because climate change will destroy the earth by 2100",
         "Because humans will colonize Mars",
+        "Because technological change is expected to slow to zero this century",
       ],
       correctIndex: 0,
       explanation:
@@ -655,6 +674,7 @@ export const CLUSTER_I: Node[] = [
         "Hand-coding human logic into a database",
         "Exponentially scaling up simple neural networks with massive amounts of compute and data",
         "Using quantum computers to simulate the human brain perfectly",
+        "Because model performance improves only with new hardware, not more data",
       ],
       correctIndex: 1,
       explanation:
@@ -695,6 +715,7 @@ export const CLUSTER_I: Node[] = [
         "The economy crashes and humans go back to farming",
         "AGI is released as open-source software for everyone to use",
         "AGI begins automating AI research, triggering a rapid 'intelligence explosion' and a massive national security arms race",
+        "Because international treaties permanently cap AI compute spending",
       ],
       correctIndex: 2,
       explanation:
@@ -734,6 +755,7 @@ export const CLUSTER_I: Node[] = [
         "It is an optimistic vision of how safely aligned AGI could radically accelerate biology, medicine, and human flourishing",
         "It is a pessimistic warning that AI will inevitably destroy us",
         "It is a technical manual for building GPU clusters",
+        "Because most jobs are intrinsically impossible to automate",
       ],
       correctIndex: 0,
       explanation:
@@ -774,6 +796,7 @@ export const CLUSTER_I: Node[] = [
         "He completely agrees with it and calls for a pause on AI research",
         "He dismisses it as a moral panic, arguing AI is just an empowering tool that will amplify human intelligence",
         "He believes only the military should be allowed to use AI",
+        "Because AI systems are legally required to be open-sourced",
       ],
       correctIndex: 1,
       explanation:
@@ -813,6 +836,7 @@ export const CLUSTER_I: Node[] = [
         "The scientific method",
         "Free market capitalism",
         "The precautionary principle and the ideology of 'degrowth' and stagnation",
+        "Because slowing technology down has historically created more jobs",
       ],
       correctIndex: 2,
       explanation:
@@ -852,6 +876,7 @@ export const CLUSTER_I: Node[] = [
         "We must shift from taxing labor to taxing capital and land, redistributing the wealth as a universal dividend",
         "We must ban AI from being used in physical robotics",
         "We must force everyone to become software engineers",
+        "Because automation always raises wages for every worker equally",
       ],
       correctIndex: 0,
       explanation:
@@ -892,6 +917,7 @@ export const CLUSTER_I: Node[] = [
         "Software-native companies use Python; intelligence-native companies use C++",
         "Software-native companies rely on hard-coded deterministic logic, while intelligence-native companies use probabilistic neural networks for core decision routing",
         "Intelligence-native companies do not use computers at all",
+        "Because employees resist any form of new software on principle",
       ],
       correctIndex: 1,
       explanation:
