@@ -269,10 +269,10 @@ export const CLUSTER_E: Node[] = [
     related: ["E7", "E1", "D2", "L1"],
     furtherReading: [
       {
-        label: "Capital Asset Prices (1964, Journal of Finance)",
-        source: "William Sharpe",
-        url: "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x",
-        archive: { status: "unavailable" },
+        label: "Capital Asset Pricing Model (Sharpe, 1964)",
+        source: "William Sharpe / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Capital_asset_pricing_model",
+        archive: { status: "full", path: "content/sources/E6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -310,10 +310,10 @@ export const CLUSTER_E: Node[] = [
     related: ["E8", "E6", "C1", "L1"],
     furtherReading: [
       {
-        label: "Efficient Capital Markets: A Review of Theory and Empirical Work (1970)",
-        source: "Eugene Fama, Journal of Finance",
-        url: "https://doi.org/10.1111/j.1540-6261.1970.tb00518.x",
-        archive: { status: "unavailable" },
+        label: "Efficient Capital Markets — EMH (Fama, 1970)",
+        source: "Eugene Fama / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Efficient-market_hypothesis",
+        archive: { status: "full", path: "content/sources/E7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -351,10 +351,10 @@ export const CLUSTER_E: Node[] = [
     related: ["E6", "E7", "L1", "AC5"],
     furtherReading: [
       {
-        label: "A New Interpretation of Information Rate (1956)",
-        source: "J. L. Kelly",
-        url: "https://doi.org/10.1002/j.1538-7305.1956.tb03809.x",
-        archive: { status: "unavailable" },
+        label: "A New Interpretation of Information Rate — the Kelly Criterion (1956)",
+        source: "J. L. Kelly / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Kelly_criterion",
+        archive: { status: "full", path: "content/sources/E8-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",

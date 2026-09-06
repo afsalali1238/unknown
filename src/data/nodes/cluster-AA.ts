@@ -289,12 +289,11 @@ export const CLUSTER_AA: Node[] = [
     related: ["AA5", "R6"],
     furtherReading: [
       {
-        label:
-          "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik (1927, summary and translation)",
-        source: "Zeitschrift für Physik",
-        url: "https://uncertaintyprinciple.wordpress.com/wp-content/uploads/2010/07/hq.pdf",
+        label: "The Uncertainty Principle (Heisenberg, 1927)",
+        source: "Werner Heisenberg / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Uncertainty_principle",
         type: "paper",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/AA7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",

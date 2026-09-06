@@ -275,10 +275,10 @@ export const CLUSTER_F: Node[] = [
     related: ["F7", "F1", "F3", "AF1"],
     furtherReading: [
       {
-        label: "A Protocol for Packet Network Intercommunication (1974)",
-        source: "Cerf & Kahn",
-        url: "https://doi.org/10.1109/TCOM.1974.1092259",
-        archive: { status: "unavailable" },
+        label: "A Protocol for Packet Network Intercommunication — TCP/IP (Cerf & Kahn, 1974)",
+        source: "Vint Cerf & Bob Kahn / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Internet_protocol_suite",
+        archive: { status: "full", path: "content/sources/F6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -316,10 +316,10 @@ export const CLUSTER_F: Node[] = [
     related: ["F8", "F1", "AG7", "AG3"],
     furtherReading: [
       {
-        label: "UNIX Time-Sharing System: Foreword (1978, Bell System Technical Journal)",
-        source: "McIlroy, Pinson & Tague",
-        url: "https://archive.org/details/bstj57-6-1899",
-        archive: { status: "unavailable" },
+        label: "The UNIX Time-Sharing System (Ritchie & Thompson, 1978) overview",
+        source: "Dennis Ritchie & Ken Thompson / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Unix",
+        archive: { status: "full", path: "content/sources/F7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -357,10 +357,10 @@ export const CLUSTER_F: Node[] = [
     related: ["F6", "F5", "AF4", "K1"],
     furtherReading: [
       {
-        label: "Cramming More Components onto Integrated Circuits (1965)",
-        source: "Gordon Moore, Electronics",
-        url: "https://www.computerhistory.org/collections/catalog/102770822",
-        archive: { status: "unavailable" },
+        label: "Cramming More Components onto Integrated Circuits (Moore, 1965) overview",
+        source: "Gordon Moore / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Moore%27s_law",
+        archive: { status: "full", path: "content/sources/F8-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",

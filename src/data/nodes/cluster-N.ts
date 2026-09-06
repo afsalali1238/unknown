@@ -339,13 +339,11 @@ export const CLUSTER_N: Node[] = [
     related: ["N14", "L17", "N6"],
     furtherReading: [
       {
-        label: "Wheel of Focus (original post)",
-        source: "LinkedIn",
+        label: "The Wheel of Focus — weekly planning framework",
+        source: "House overview",
         url: "https://www.linkedin.com/in/surensamarchyan/",
         type: "article",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/N8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Craft & Deep Work", "Decision-Making"],
@@ -384,12 +382,10 @@ export const CLUSTER_N: Node[] = [
     furtherReading: [
       {
         label: "How to Enjoy the Classics",
-        source: "International Paper 'Power of the Printed Word' series",
+        source: "House overview (The Printed Word)",
         url: "https://www.printedword.info/",
         type: "article",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/N9-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Craft & Deep Work"],
@@ -428,12 +424,10 @@ export const CLUSTER_N: Node[] = [
     furtherReading: [
       {
         label: "How to Improve Your Vocabulary",
-        source: "International Paper 'Power of the Printed Word' series",
+        source: "House overview (The Printed Word)",
         url: "https://www.printedword.info/",
         type: "article",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/N9-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Craft & Deep Work"],
@@ -472,12 +466,10 @@ export const CLUSTER_N: Node[] = [
     furtherReading: [
       {
         label: "How to Write Clearly",
-        source: "International Paper 'Power of the Printed Word' series",
+        source: "House overview (The Printed Word)",
         url: "https://www.printedword.info/",
         type: "article",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/N9-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Craft & Deep Work"],

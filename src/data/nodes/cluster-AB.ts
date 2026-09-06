@@ -163,11 +163,11 @@ export const CLUSTER_AB: Node[] = [
     related: ["AB5", "AB8"],
     furtherReading: [
       {
-        label: "Experiments on Plant Hybridization (Versuche über Pflanzen-Hybriden), 1866",
-        source: "Verhandlungen des naturforschenden Vereines in Brünn (English translation)",
-        url: "https://www.esp.org/foundations/genetics/classical/gm-65.pdf",
+        label: "Experiments on Plant Hybridization (Mendel, 1866) overview",
+        source: "Gregor Mendel / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Mendelian_inheritance",
         type: "paper",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/AB4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -247,11 +247,11 @@ export const CLUSTER_AB: Node[] = [
     related: ["AB5", "AB7"],
     furtherReading: [
       {
-        label: "Punctuated Equilibria: An Alternative to Phyletic Gradualism",
-        source: "Models in Paleobiology, 1972",
-        url: "https://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf",
+        label: "Punctuated Equilibria (Eldredge & Gould, 1972)",
+        source: "Eldredge & Gould / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Punctuated_equilibrium",
         type: "paper",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/AB6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",

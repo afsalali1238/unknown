@@ -359,12 +359,10 @@ export const CLUSTER_D: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Follow-up on Dalio's dollar/reserve-currency thesis",
-        source: "CNBC",
+        label: "The Changing World Order — dollar hegemony and reserve-currency cycles (Dalio)",
+        source: "House overview / Bridgewater",
         url: "https://www.cnbc.com/2025/09/19/ray-dalio-says-gold-non-fiat-currencies-will-be-stronger-stores-of-value-as-us-debt-mounts.html",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/D9-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -401,12 +399,10 @@ export const CLUSTER_D: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: "Explainer on Pozsar's Bretton Woods III",
-        source: "The Deep Dive",
+        label: "Bretton Woods III (Zoltan Pozsar, 2022)",
+        source: "House overview (Pozsar)",
         url: "https://thedeepdive.ca/commodities-and-the-new-world-order-what-you-need-to-know-from-zoltan-pozsars-bretton-woods-iii/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/D10-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -443,12 +439,10 @@ export const CLUSTER_D: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: 'Sequoia defends its "RIP Good Times" deck',
-        source: "VentureBeat",
-        url: "https://venturebeat.com/business/sequoia-rip-good-times/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "RIP Good Times (Sequoia Capital, 2008)",
+        source: "Sequoia Capital",
+        url: "https://www.sequoiacap.com/article/rip-good-times-pt1/",
+        archive: { status: "full", path: "content/sources/D11-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],
@@ -484,12 +478,10 @@ export const CLUSTER_D: Node[] = [
     related: ["D1", "D2", "D3"],
     furtherReading: [
       {
-        label: 'Coverage of Sequoia\'s "Adapting to Endure"',
-        source: "Fortune",
+        label: "Adapting to Endure (Sequoia Capital, 2022)",
+        source: "Sequoia Capital",
         url: "https://fortune.com/2022/05/25/sequoia-capital-slide-dek-warning-to-founders-downturn/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/D12-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Markets & Narrative", "Macro & Cycles"],

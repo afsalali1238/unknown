@@ -145,12 +145,10 @@ export const CLUSTER_C: Node[] = [
     related: ["C7", "C2", "C3", "C5"],
     furtherReading: [
       {
-        label: 'Breakdown of Einhorn\'s "Accounting Ingenuity" Lehman speech',
-        source: "The Acquirer's Multiple",
+        label: "The Lehman Short Thesis — 'Accounting Ingenuity' (David Einhorn, 2008)",
+        source: "House overview / Einhorn speech",
         url: "https://acquirersmultiple.com/2016/08/the-lehman-brothers-1-1-billion-discrepancy-accounting-ingenuity-david-einhorn/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/C4-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],

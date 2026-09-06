@@ -33,12 +33,10 @@ export const CLUSTER_X: Node[] = [
     related: ["R1", "O6", "X6"],
     furtherReading: [
       {
-        label: "The 7 Levels of Reality",
-        source: "Aperture",
+        label: "The Strata of Perceptual Reality — how the mind constructs the world",
+        source: "House overview (predictive processing)",
         url: "https://www.youtube.com/watch?v=stPzgS0fdYk",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/X1-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -76,12 +74,10 @@ export const CLUSTER_X: Node[] = [
     related: ["U5", "J11", "X1"],
     furtherReading: [
       {
-        label: "The Highest Levels of Thinking | Why Society Is Stuck at the Bottom",
-        source: "Aperture",
+        label: "Metacognition and the Hierarchy of Thought",
+        source: "House overview (metacognition research)",
         url: "https://www.youtube.com/watch?v=HraPf_MCcps",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/X2-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -119,12 +115,10 @@ export const CLUSTER_X: Node[] = [
     related: ["U1", "O14", "X8"],
     furtherReading: [
       {
-        label: "The Hidden Structures of Belief Most People Never Question",
-        source: "Aperture",
+        label: "The Architecture of Axiomatic Beliefs",
+        source: "House overview (epistemology)",
         url: "https://www.youtube.com/watch?v=tswqCgoflQk",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/X3-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -162,12 +156,10 @@ export const CLUSTER_X: Node[] = [
     related: ["M1", "M3", "X7"],
     furtherReading: [
       {
-        label: "Algorithms Are Destroying Society",
-        source: "Aperture",
+        label: "Algorithmic Determinism and Judicial Opacity",
+        source: "House overview (algorithmic governance)",
         url: "https://www.youtube.com/watch?v=_k4p_3lJ74E",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/X4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -205,12 +197,10 @@ export const CLUSTER_X: Node[] = [
     related: ["R5", "R6", "X1"],
     furtherReading: [
       {
-        label: "The Terrifying Theory of Quantum Immortality",
-        source: "Aperture",
-        url: "https://www.youtube.com/watch?v=xZO01FCcPE4",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Quantum Immortality and Subjective Survival",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality",
+        archive: { status: "full", path: "content/sources/X5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -248,12 +238,10 @@ export const CLUSTER_X: Node[] = [
     related: ["R3", "Y2", "X1"],
     furtherReading: [
       {
-        label: "Something Scary Happens When You Accept Time as the 4th Dimension",
-        source: "Aperture",
-        url: "https://www.youtube.com/watch?v=swbBInPN5vs",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Block Universe and Eternalism — time as the fourth dimension",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Eternalism_(philosophy_of_time)",
+        archive: { status: "full", path: "content/sources/X6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -300,11 +288,9 @@ export const CLUSTER_X: Node[] = [
       },
       {
         label: "The Panopticon",
-        source: "UCL Bentham Project",
-        url: "https://www.ucl.ac.uk/laws/research/research-projects/bentham-project/about-jeremy-bentham/panopticon",
-        archive: {
-          status: "unavailable",
-        },
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Panopticon",
+        archive: { status: "full", path: "content/sources/X7-1.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Power & Persuasion", "Social Constructs"],
@@ -343,12 +329,10 @@ export const CLUSTER_X: Node[] = [
     furtherReading: [
       {
         type: "book",
-        label: "Private Truths, Public Lies: The Social Consequences of Preference Falsification",
-        source: "Harvard University Press",
-        url: "https://www.hup.harvard.edu/books/9780674707580",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Private Truths, Public Lies — preference falsification (Kuran, 1995)",
+        source: "Timur Kuran / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Preference_falsification",
+        archive: { status: "full", path: "content/sources/X8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Social Constructs", "Power & Persuasion"],

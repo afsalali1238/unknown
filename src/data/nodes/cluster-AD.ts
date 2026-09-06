@@ -214,7 +214,7 @@ export const CLUSTER_AD: Node[] = [
         label: "Circadian rhythm",
         source: "National Institute of General Medical Sciences",
         url: "https://nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/AD5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -251,10 +251,10 @@ export const CLUSTER_AD: Node[] = [
     related: ["AD7", "AD1", "U6", "AD5"],
     furtherReading: [
       {
-        label: "The Emotional Brain (1996)",
-        source: "Joseph LeDoux",
-        url: "https://en.wikipedia.org/wiki/The_Emotional_Brain",
-        archive: { status: "unavailable" },
+        label: "The Emotional Brain (1996) — fear circuit & amygdala",
+        source: "Joseph LeDoux / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Amygdala",
+        archive: { status: "full", path: "content/sources/AD6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -291,10 +291,10 @@ export const CLUSTER_AD: Node[] = [
     related: ["AD8", "AD1", "O7", "U7"],
     furtherReading: [
       {
-        label: "The Mirror-Neuron System (2004, Annual Review of Neuroscience)",
-        source: "Rizzolatti & Craighero",
-        url: "https://doi.org/10.1146/annurev.neuro.27.070203.144230",
-        archive: { status: "unavailable" },
+        label: "The Mirror-Neuron System (Rizzolatti & Craighero, 2004)",
+        source: "Rizzolatti & Craighero / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Mirror_neuron",
+        archive: { status: "full", path: "content/sources/AD7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -332,9 +332,9 @@ export const CLUSTER_AD: Node[] = [
     furtherReading: [
       {
         label: "Epigenetics",
-        source: "National Human Genome Research Institute",
-        url: "https://www.genome.gov/genetics-glossary/Epigenetics",
-        archive: { status: "unavailable" },
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Epigenetics",
+        archive: { status: "full", path: "content/sources/AD8-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",

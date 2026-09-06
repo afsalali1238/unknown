@@ -120,10 +120,10 @@ export const CLUSTER_AK: Node[] = [
     related: ["AK4", "AK1", "AK7", "AI2"],
     furtherReading: [
       {
-        label: "Manufacturing Consent (1988)",
-        source: "Noam Chomsky & Edward Herman",
-        url: "https://chomsky.info/consent01/",
-        archive: { status: "unavailable" },
+        label: "Manufacturing Consent (Herman & Chomsky, 1988) — the propaganda model",
+        source: "Herman & Chomsky / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Manufacturing_Consent",
+        archive: { status: "full", path: "content/sources/AK3-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -163,7 +163,7 @@ export const CLUSTER_AK: Node[] = [
         label: "Amusing Ourselves to Death (1985)",
         source: "Neil Postman",
         url: "https://en.wikipedia.org/wiki/Amusing_Ourselves_to_Death",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/AK4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -200,10 +200,10 @@ export const CLUSTER_AK: Node[] = [
     related: ["AK6", "AK4", "AK1", "I9"],
     furtherReading: [
       {
-        label: "The Attention Merchants (2016)",
-        source: "Tim Wu",
-        url: "https://www.penguinrandomhouse.com/books/234876/the-attention-merchants-by-tim-wu/",
-        archive: { status: "unavailable" },
+        label: "The Attention Merchants & the attention economy (Tim Wu, 2016)",
+        source: "Tim Wu / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Attention_economy",
+        archive: { status: "full", path: "content/sources/AK5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -240,10 +240,10 @@ export const CLUSTER_AK: Node[] = [
     related: ["AK7", "AK2", "U12", "I18"],
     furtherReading: [
       {
-        label: "The Filter Bubble (2011)",
-        source: "Eli Pariser",
-        url: "https://www.penguinrandomhouse.com/books/309214/the-filter-bubble-by-eli-pariser/",
-        archive: { status: "unavailable" },
+        label: "The Filter Bubble (Pariser, 2011)",
+        source: "Eli Pariser / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Filter_bubble",
+        archive: { status: "full", path: "content/sources/AK6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -280,10 +280,10 @@ export const CLUSTER_AK: Node[] = [
     related: ["AK8", "AK3", "AK6", "V5"],
     furtherReading: [
       {
-        label: "The Agenda-Setting Function of Mass Media (1972, Public Opinion Quarterly)",
-        source: "McCombs & Shaw",
-        url: "https://doi.org/10.1086/267990",
-        archive: { status: "unavailable" },
+        label: "The Agenda-Setting Function of Mass Media (McCombs & Shaw, 1972)",
+        source: "McCombs & Shaw / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Agenda-setting_theory",
+        archive: { status: "full", path: "content/sources/AK7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -321,10 +321,10 @@ export const CLUSTER_AK: Node[] = [
     related: ["AK4", "AD1", "N8", "AK6"],
     furtherReading: [
       {
-        label: "The Shallows (2010)",
-        source: "Nicholas Carr",
-        url: "https://www.nicholascarr.com/",
-        archive: { status: "unavailable" },
+        label: "The Shallows (2010) — overview",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/The_Shallows_(book)",
+        archive: { status: "full", path: "content/sources/AK8-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",

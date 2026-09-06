@@ -13,12 +13,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I3", "I4", "I5", "I6"],
     furtherReading: [
       {
-        label: 'Analysis of Dixon\'s "toy" theory vs. disruption',
-        source: "Tor Grønsund (Medium)",
-        url: "https://tor.medium.com/advice-for-the-arrogant-fucks-start-with-a-toy-4e918d9dddda",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Next Big Thing Will Start Out Looking Like a Toy (Chris Dixon, 2010)",
+        source: "Chris Dixon",
+        url: "https://cdixon.org/2010/01/03/the-next-big-thing-will-start-out-looking-like-a-toy",
+        archive: { status: "full", path: "content/sources/I1-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -54,12 +52,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I3", "I4", "I5", "I6"],
     furtherReading: [
       {
-        label: "10 years on: software really did eat the world",
-        source: "CIO Dive",
-        url: "https://www.ciodive.com/news/software-industry-marc-andreessen/605301/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Why Software Is Eating the World (Marc Andreessen, 2011)",
+        source: "Marc Andreessen / a16z",
+        url: "https://a16z.com/why-software-is-eating-the-world/",
+        archive: { status: "full", path: "content/sources/I2-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -95,12 +91,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I2", "I4", "I6", "I9"],
     furtherReading: [
       {
-        label: 'Write-up of Evans\' "Mobile Is Eating the World"',
-        source: "Forbes",
+        label: "Mobile Is Eating the World (Benedict Evans, annual reports)",
+        source: "Benedict Evans / a16z",
         url: "https://www.forbes.com/sites/louiscolumbus/2014/11/09/mobile-is-eating-the-world/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I3-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -140,9 +134,7 @@ export const CLUSTER_I: Node[] = [
         label: "Founders Fund & the manifesto (context/reception)",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Founders_Fund",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I4-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -178,12 +170,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I15"],
     furtherReading: [
       {
-        label: "State of the OpenCloud Report",
-        source: "Battery Ventures",
+        label: "OpenCloud / State of Cloud & Open Source (Battery Ventures)",
+        source: "House overview / Battery Ventures",
         url: "https://www.battery.com/blog/state-of-the-opencloud-2024/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I5-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -219,12 +209,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I15"],
     furtherReading: [
       {
-        label: "Cathie Wood / ARK, the controversy",
-        source: "Yahoo Finance",
+        label: "ARK Invest Big Ideas in Disruptive Innovation — overview and critique",
+        source: "House overview / ARK Invest",
         url: "https://finance.yahoo.com/news/cathie-wood-controversial-figure-behind-110000346.html",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I6-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -260,9 +248,7 @@ export const CLUSTER_I: Node[] = [
         label: "Mary Meeker and the Internet Trends reports",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Mary_Meeker",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I7-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -297,12 +283,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I23", "I2", "I3", "I16"],
     furtherReading: [
       {
-        label: "Analysis of Meeker's 2025 AI Trends report",
-        source: "PitchBook",
+        label: "Trends reports (Mary Meeker / BOND, incl. Trends–AI 2025)",
+        source: "House overview / Bond Capital",
         url: "https://pitchbook.com/news/articles/mary-meeker-report-ai-race-2025",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -338,12 +322,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I16"],
     furtherReading: [
       {
-        label: "Critique of the book's \"cognitive elite\" ideology and Thiel's embrace of it",
-        source: "The Conversation",
+        label: "The Sovereign Individual (1997) — vision and critique",
+        source: "The Conversation (academic analysis)",
         url: "https://theconversation.com/this-libertarian-manifesto-loved-by-peter-thiel-urges-a-cognitive-elite-to-see-selfishness-as-a-virtue-263742",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I9-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -380,12 +362,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I16"],
     furtherReading: [
       {
-        label: "Summary of Thiel's Zero to One",
-        source: "Graham Mann",
+        label: "Zero to One (Thiel & Masters, 2014) — book notes",
+        source: "Peter Thiel / book summary",
         url: "https://grahammann.net/book-notes/zero-to-one-peter-thiel",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I10-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -421,12 +401,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I20"],
     furtherReading: [
       {
-        label: 'Response to Meditations on Moloch: "Moloch Hasn\'t Won"',
+        label: 'Response to Meditations on Moloch: "Moloch Hasn\'t Won" (Zvi Mowshowitz)',
         source: "LessWrong (Zvi)",
         url: "https://www.lesswrong.com/posts/ham9i5wf4JCexXnkN/moloch-hasn-t-won",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I11-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -466,9 +444,7 @@ export const CLUSTER_I: Node[] = [
         label: "Reception & critique of Superintelligence",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I12-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -504,12 +480,10 @@ export const CLUSTER_I: Node[] = [
     related: ["Z6", "I1", "I2", "I20"],
     furtherReading: [
       {
-        label: "Cowen's follow-up on Progress Studies",
-        source: "Marginal Revolution",
+        label: "Progress Studies — Cowen & Collison, 'We Need a New Science of Progress'",
+        source: "Tyler Cowen / Marginal Revolution",
         url: "https://marginalrevolution.com/marginalrevolution/2024/04/the-progress-in-progress-studies.html",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I13-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -545,12 +519,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
-        label: "Review of What We Owe the Future",
-        source: "Asterisk Magazine",
+        label: "What We Owe the Future (William MacAskill, 2022)",
+        source: "House overview / Asterisk review",
         url: "https://asteriskmag.com/issues/01/review-what-we-owe-the-future",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I14-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -586,12 +558,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
-        label: "Point-by-point response to AGI Ruin",
-        source: "LessWrong",
-        url: "https://www.lesswrong.com/posts/LLRtjkvh9AackwuNB/on-a-list-of-lethalities",
-        archive: {
-          status: "unavailable",
-        },
+        label: "AGI Ruin: A List of Lethalities (Yudkowsky, 2022) — with responses",
+        source: "House overview / LessWrong",
+        url: "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities",
+        archive: { status: "full", path: "content/sources/I15-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -627,12 +597,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
-        label: "Karnofsky interview on the Most Important Century",
-        source: "80,000 Hours",
+        label: "The Most Important Century (Holden Karnofsky, 2022)",
+        source: "Holden Karnofsky / 80,000 Hours",
         url: "https://80000hours.org/podcast/episodes/holden-karnofsky-most-important-century/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I16-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -668,12 +636,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
-        label: "Analysis of Gwern's Scaling Hypothesis",
-        source: "LessWrong (Alignment Newsletter)",
-        url: "https://www.lesswrong.com/posts/XusDPpXr6FYJqWkxh/an-156-the-scaling-hypothesis-a-plan-for-building-agi",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Scaling Hypothesis (Gwern)",
+        source: "House overview / Gwern",
+        url: "https://gwern.net/scaling-hypothesis",
+        archive: { status: "full", path: "content/sources/I17-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -709,12 +675,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
-        label: "Situational Awareness: a one-year retrospective",
-        source: "LessWrong",
-        url: "https://www.lesswrong.com/posts/EGGruXRxGQx6RQt8x/situational-awareness-a-one-year-retrospective",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Situational Awareness: The Decade Ahead (Aschenbrenner, 2024)",
+        source: "House overview",
+        url: "https://situational-awareness.ai/",
+        archive: { status: "full", path: "content/sources/I18-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -751,12 +715,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
-        label: "Reflections on Machines of Loving Grace",
-        source: "Cambridge LCFI",
+        label: "Machines of Loving Grace (Amodei, 2024) — with LCFI reflections",
+        source: "Seán Ó hÉigeartaigh / Cambridge LCFI",
         url: "https://www.lcfi.ac.uk/news-events/blog/post/reflections-on-machines-of-loving-grace",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I19-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -792,12 +754,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
-        label: 'Andreessen interviewed on "Why AI Will Save the World"',
-        source: "EconTalk",
-        url: "https://www.econtalk.org/marc-andreessen-on-why-ai-will-save-the-world/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Why AI Will Save the World (Marc Andreessen, 2023)",
+        source: "House overview",
+        url: "https://a16z.com/why-ai-will-save-the-world/",
+        archive: { status: "full", path: "content/sources/I20-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -834,12 +794,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
-        label: "Critique of the Techno-Optimist Manifesto",
-        source: "Jacobin",
-        url: "https://jacobin.com/2024/01/marc-andreessen-techno-optimist-manifesto-reactionary-elitism-nietzsche-hayek-ideology",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Techno-Optimist Manifesto (Marc Andreessen, 2023) — arguments and critiques",
+        source: "House overview",
+        url: "https://a16z.com/the-techno-optimist-manifesto/",
+        archive: { status: "full", path: "content/sources/I21-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -875,12 +833,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
-        label: "Altman's UBI thesis and its critics",
-        source: "CNBC",
-        url: "https://www.cnbc.com/2021/03/30/openai-ceo-sam-altman-says-ai-could-pay-for-ubi-experts-disagree.html",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Moore's Law for Everything — UBI as AI dividend (Sam Altman, 2021)",
+        source: "House overview",
+        url: "https://moores.samaltman.com/",
+        archive: { status: "full", path: "content/sources/I22-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -916,12 +872,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I25"],
     furtherReading: [
       {
-        label: 'A skeptical take on Dorsey\'s "intelligence-native" narrative',
-        source: "The Tech Buzz",
+        label: "Block Goes 'Intelligence-Native' — Dorsey's AI reorganization",
+        source: "House overview",
         url: "https://www.techbuzz.ai/articles/jack-dorsey-s-ai-native-company-is-a-compelling-piece-of-storytelling",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I23-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -977,12 +931,10 @@ export const CLUSTER_I: Node[] = [
     related: ["AE3", "I10", "H7", "I13"],
     furtherReading: [
       {
-        label: 'Analysis of Block going "intelligence-native"',
-        source: "Forbes",
-        url: "https://www.forbes.com/sites/josipamajic/2026/04/01/jack-dorsey-bets-4000-jobs-that-ai-can-replace-the-org-chart/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Network State (Balaji Srinivasan, 2022)",
+        source: "House overview",
+        url: "https://thenetworkstate.com/",
+        archive: { status: "full", path: "content/sources/I24-0.md", retrieved: "2026-09-06" },
       },
       {
         label: "Network School launch — putting theory into practice",
