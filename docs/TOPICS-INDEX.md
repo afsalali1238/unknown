@@ -1,6 +1,6 @@
 # Topics Index (auto-generated — do not hand-edit)
 
-Regenerate with `bun run scripts/topics-index.ts`. Last generated: 2026-09-05.
+Regenerate with `bun run scripts/topics-index.ts`. Last generated: 2026-09-06.
 Total clusters: 38. Total nodes: 451.
 
 Internal reference only — not linked from the app, not served from public/.
@@ -291,7 +291,7 @@ _Schools of thought on the self, the absurd, and what it means to be a person_
 | O1 | The Myth of Sisyphus | Albert Camus | Philosophy of Meaning |
 | O2 | The Ego Tunnel | Thomas Metzinger | Philosophy of Mind |
 | O3 | Descartes' Error & How Emotions Are Made | Antonio Damasio & Lisa Feldman Barrett | Neuroscience |
-| O4 | The Selfish Gene | Richard Dawkins | Evolutionary Biology |
+| O4 | The Selfish Gene (and Memes) | Richard Dawkins | Evolutionary Biology |
 | O5 | Man's Search for Meaning | Viktor Frankl | Philosophy of Meaning |
 | O6 | The Case Against Reality | Donald Hoffman | Philosophy of Mind |
 | O7 | Existentialism Is a Humanism | Jean-Paul Sartre | Philosophy of Meaning |

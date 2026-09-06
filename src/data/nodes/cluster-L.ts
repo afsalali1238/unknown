@@ -113,12 +113,10 @@ export const CLUSTER_L: Node[] = [
     related: ["L7", "J32", "AJ3", "J39"],
     furtherReading: [
       {
-        label: "Thinking, Fast and Slow",
-        source: "book",
-        url: "https://us.macmillan.com/books/9780374533557",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Base rates & the base rate fallacy (Kahneman)",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Base_rate_fallacy",
+        archive: { status: "full", path: "content/sources/L3-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -209,12 +207,10 @@ export const CLUSTER_L: Node[] = [
         },
       },
       {
-        label: "Opportunity Cost: The Hidden Cost of Everything",
+        label: "Opportunity Cost",
         source: "Farnam Street",
         url: "https://fs.blog/opportunity-cost/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/L5-1.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -261,12 +257,10 @@ export const CLUSTER_L: Node[] = [
         },
       },
       {
-        label: "Asymmetric Opportunities: How to Benefit from the Upside",
+        label: "Asymmetric Bets",
         source: "Farnam Street",
         url: "https://fs.blog/asymmetric-bets/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/L6-1.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -392,13 +386,11 @@ export const CLUSTER_L: Node[] = [
     related: ["J35", "L3", "L7", "L11"],
     furtherReading: [
       {
-        label: "5 tips to improve your critical thinking",
-        source: "TED-Ed",
+        label: "5 tips to improve your critical thinking (Samantha Agoos)",
+        source: "Samantha Agoos / TED-Ed",
         url: "https://ed.ted.com/lessons/5-tips-to-improve-your-critical-thinking-samantha-agoos",
         type: "video",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/L10-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],
@@ -436,13 +428,11 @@ export const CLUSTER_L: Node[] = [
     related: ["L10", "U1", "L7"],
     furtherReading: [
       {
-        label: "The Demon of Reason (logical fallacies collection)",
-        source: "TED-Ed",
+        label: "The Demon of Reason — common logical fallacies",
+        source: "House overview / TED-Ed",
         url: "https://ed.ted.com/ted_ed_collections/the-demon-of-reason",
         type: "video",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/L11-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Cognitive Biases & Models", "Decision-Making"],

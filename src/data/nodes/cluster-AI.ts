@@ -114,10 +114,10 @@ export const CLUSTER_AI: Node[] = [
     related: ["AI4", "AI1", "AH1", "M4"],
     furtherReading: [
       {
-        label: "Leviathan (1651)",
-        source: "Thomas Hobbes",
-        url: "https://www.gutenberg.org/files/3207/3207-h/3207-h.htm",
-        archive: { status: "unavailable" },
+        label: "Leviathan (1651) — overview",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)",
+        archive: { status: "full", path: "content/sources/AI3-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -155,10 +155,10 @@ export const CLUSTER_AI: Node[] = [
     related: ["AI5", "AI1", "AI2", "C1"],
     furtherReading: [
       {
-        label: "The Dictator's Handbook (2011)",
-        source: "Bueno de Mesquita & Smith",
-        url: "https://www.hachettebookgroup.com/titles/bruce-bueno-de-mesquita/the-dictators-handbook/9781610390453/",
-        archive: { status: "unavailable" },
+        label: "The Dictator's Handbook & selectorate theory (Bueno de Mesquita & Smith, 2011)",
+        source: "Bueno de Mesquita & Smith / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Selectorate_theory",
+        archive: { status: "full", path: "content/sources/AI4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -196,10 +196,11 @@ export const CLUSTER_AI: Node[] = [
     related: ["AI6", "AI3", "AI1", "M5"],
     furtherReading: [
       {
-        label: "The Spirit of the Laws (1748), Book XI",
-        source: "Montesquieu",
-        url: "https://oll.libertyfund.org/titles/montesquieu-complete-works-vol-1-the-spirit-of-laws",
-        archive: { status: "unavailable" },
+        label:
+          "The Spirit of the Laws — separation of powers & checks and balances (Montesquieu, 1748)",
+        source: "Montesquieu / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Separation_of_powers",
+        archive: { status: "full", path: "content/sources/AI5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -239,7 +240,7 @@ export const CLUSTER_AI: Node[] = [
         label: "Political Parties (1911)",
         source: "Robert Michels",
         url: "https://en.wikipedia.org/wiki/Iron_law_of_oligarchy",
-        archive: { status: "unavailable" },
+        archive: { status: "full", path: "content/sources/AI6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -276,10 +277,10 @@ export const CLUSTER_AI: Node[] = [
     related: ["AI8", "AI1", "AK5", "M4"],
     furtherReading: [
       {
-        label: "Bound to Lead: The Changing Nature of American Power (1990)",
-        source: "Joseph Nye",
-        url: "https://www.belfercenter.org/person/joseph-s-nye",
-        archive: { status: "unavailable" },
+        label: "Bound to Lead — Soft Power (Nye, 1990)",
+        source: "Joseph Nye / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Soft_power",
+        archive: { status: "full", path: "content/sources/AI7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -318,9 +319,9 @@ export const CLUSTER_AI: Node[] = [
     furtherReading: [
       {
         label: "The Overton Window",
-        source: "Mackinac Center for Public Policy",
-        url: "https://www.mackinac.org/OvertonWindow",
-        archive: { status: "unavailable" },
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Overton_window",
+        archive: { status: "full", path: "content/sources/AI8-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",

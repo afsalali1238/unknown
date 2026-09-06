@@ -91,9 +91,7 @@ export const CLUSTER_B: Node[] = [
         label: "American Research and Development Corporation",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/American_Research_and_Development_Corporation",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/B2-0.md", retrieved: "2026-09-06" },
       },
       {
         type: "read",
@@ -420,12 +418,10 @@ export const CLUSTER_B: Node[] = [
     furtherReading: [
       {
         type: "read",
-        label: "LinkedIn's Series B Pitch to Greylock: Pitch Advice for Entrepreneurs",
-        source: "reidhoffman.org",
+        label: "LinkedIn's Series B Pitch to Greylock (Reid Hoffman, 2004)",
+        source: "Reid Hoffman",
         url: "https://www.reidhoffman.org/linkedin-pitch-to-greylock/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/B8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Startups & Founders", "Moats & Network Effects"],

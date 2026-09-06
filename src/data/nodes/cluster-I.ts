@@ -13,12 +13,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I3", "I4", "I5", "I6"],
     furtherReading: [
       {
-        label: 'Analysis of Dixon\'s "toy" theory vs. disruption',
-        source: "Tor Grønsund (Medium)",
-        url: "https://tor.medium.com/advice-for-the-arrogant-fucks-start-with-a-toy-4e918d9dddda",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Next Big Thing Will Start Out Looking Like a Toy (Chris Dixon, 2010)",
+        source: "Chris Dixon",
+        url: "https://cdixon.org/2010/01/03/the-next-big-thing-will-start-out-looking-like-a-toy",
+        archive: { status: "full", path: "content/sources/I1-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -34,6 +32,7 @@ export const CLUSTER_I: Node[] = [
         "Because the technology initially looks like a low-quality 'toy' that doesn't meet the needs of their most profitable customers",
         "Because the technology is illegal",
         "Because they don't have enough software engineers",
+        "Because incumbents are legally barred from adopting new technologies",
       ],
       correctIndex: 0,
       explanation:
@@ -54,12 +53,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I3", "I4", "I5", "I6"],
     furtherReading: [
       {
-        label: "10 years on: software really did eat the world",
-        source: "CIO Dive",
-        url: "https://www.ciodive.com/news/software-industry-marc-andreessen/605301/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Why Software Is Eating the World (Marc Andreessen, 2011)",
+        source: "Marc Andreessen / a16z",
+        url: "https://a16z.com/why-software-is-eating-the-world/",
+        archive: { status: "full", path: "content/sources/I2-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -75,6 +72,7 @@ export const CLUSTER_I: Node[] = [
         "It is exempt from corporate taxes",
         "It has a zero marginal cost of reproduction",
         "It requires expensive physical factories to manufacture",
+        "Because new software companies refuse to hire experienced executives",
       ],
       correctIndex: 1,
       explanation:
@@ -95,12 +93,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I2", "I4", "I6", "I9"],
     furtherReading: [
       {
-        label: 'Write-up of Evans\' "Mobile Is Eating the World"',
-        source: "Forbes",
+        label: "Mobile Is Eating the World (Benedict Evans, annual reports)",
+        source: "Benedict Evans / a16z",
         url: "https://www.forbes.com/sites/louiscolumbus/2014/11/09/mobile-is-eating-the-world/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I3-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -117,6 +113,7 @@ export const CLUSTER_I: Node[] = [
         "Smartphones had faster processors than PCs",
         "Smartphones were manufactured exclusively in the US",
         "Smartphones were sensor-rich devices that reached over 5 billion people and were carried 24/7",
+        "Because mobile devices have shorter battery life than desktop computers",
       ],
       correctIndex: 2,
       explanation:
@@ -140,9 +137,7 @@ export const CLUSTER_I: Node[] = [
         label: "Founders Fund & the manifesto (context/reception)",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Founders_Fund",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I4-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -158,6 +153,7 @@ export const CLUSTER_I: Node[] = [
         "Innovation had stalled in the physical world because investors were only funding low-risk software and social media apps",
         "Venture capital was taking too much risk on unproven hardware",
         "The government was preventing the invention of flying cars",
+        "Because open source projects never release updates",
       ],
       correctIndex: 0,
       explanation:
@@ -178,12 +174,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I15"],
     furtherReading: [
       {
-        label: "State of the OpenCloud Report",
-        source: "Battery Ventures",
+        label: "OpenCloud / State of Cloud & Open Source (Battery Ventures)",
+        source: "House overview / Battery Ventures",
         url: "https://www.battery.com/blog/state-of-the-opencloud-2024/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I5-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -199,6 +193,7 @@ export const CLUSTER_I: Node[] = [
         "Selling directly to the CEO via expensive dinners",
         "Individual developers adopting a free open-source tool, which eventually forces the company to buy the enterprise tier",
         "Forcing employees to use software built by the government",
+        "Because on-premise software requires no maintenance staff",
       ],
       correctIndex: 1,
       explanation:
@@ -219,12 +214,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I15"],
     furtherReading: [
       {
-        label: "Cathie Wood / ARK, the controversy",
-        source: "Yahoo Finance",
+        label: "ARK Invest Big Ideas in Disruptive Innovation — overview and critique",
+        source: "House overview / ARK Invest",
         url: "https://finance.yahoo.com/news/cathie-wood-controversial-figure-behind-110000346.html",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I6-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -237,7 +230,12 @@ export const CLUSTER_I: Node[] = [
     quiz: {
       question:
         "What economic law does ARK Invest use to model the declining costs of disruptive technologies?",
-      options: ["Moore's Law", "Metcalfe's Law", "Wright's Law"],
+      options: [
+        "Moore's Law",
+        "Metcalfe's Law",
+        "Wright's Law",
+        "Because fund returns are guaranteed by the SEC",
+      ],
       correctIndex: 2,
       explanation:
         "While similar to Moore's Law (which is about time), Wright's Law states that costs decline as a function of cumulative production volume, making it highly applicable to hardware like batteries and robots.",
@@ -260,9 +258,7 @@ export const CLUSTER_I: Node[] = [
         label: "Mary Meeker and the Internet Trends reports",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Mary_Meeker",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I7-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -278,6 +274,7 @@ export const CLUSTER_I: Node[] = [
         "The discrepancy between the high amount of time users spent on mobile devices and the low amount of advertising dollars spent there",
         "The difference between adult and teenager internet usage",
         "The lack of broadband access in rural areas",
+        "Because each acquisition is reviewed and approved by customers first",
       ],
       correctIndex: 0,
       explanation:
@@ -297,12 +294,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I23", "I2", "I3", "I16"],
     furtherReading: [
       {
-        label: "Analysis of Meeker's 2025 AI Trends report",
-        source: "PitchBook",
+        label: "Trends reports (Mary Meeker / BOND, incl. Trends–AI 2025)",
+        source: "House overview / Bond Capital",
         url: "https://pitchbook.com/news/articles/mary-meeker-report-ai-race-2025",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -318,6 +313,7 @@ export const CLUSTER_I: Node[] = [
         "The cost of electricity will decrease",
         "The marginal cost of intelligence and cognitive labor will approach zero",
         "The number of human software engineers will instantly double",
+        "Because internet usage was projected to decline year over year",
       ],
       correctIndex: 1,
       explanation:
@@ -338,12 +334,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I16"],
     furtherReading: [
       {
-        label: "Critique of the book's \"cognitive elite\" ideology and Thiel's embrace of it",
-        source: "The Conversation",
+        label: "The Sovereign Individual (1997) — vision and critique",
+        source: "The Conversation (academic analysis)",
         url: "https://theconversation.com/this-libertarian-manifesto-loved-by-peter-thiel-urges-a-cognitive-elite-to-see-selfishness-as-a-virtue-263742",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I9-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -360,6 +354,7 @@ export const CLUSTER_I: Node[] = [
         "Nuclear weapons",
         "Commercial jet travel",
         "Strong cryptography and decentralized digital networks",
+        "Because governments permanently ban any new communications technology",
       ],
       correctIndex: 2,
       explanation:
@@ -380,12 +375,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I16"],
     furtherReading: [
       {
-        label: "Summary of Thiel's Zero to One",
-        source: "Graham Mann",
+        label: "Zero to One (Thiel & Masters, 2014) — book notes",
+        source: "Peter Thiel / book summary",
         url: "https://grahammann.net/book-notes/zero-to-one-peter-thiel",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I10-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -401,6 +394,7 @@ export const CLUSTER_I: Node[] = [
         "To create a monopoly in a small niche and then expand",
         "To enter a massive market and win 1% market share",
         "To achieve perfect competition",
+        "Because monopolies are always broken up within five years",
       ],
       correctIndex: 0,
       explanation:
@@ -421,12 +415,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I20"],
     furtherReading: [
       {
-        label: 'Response to Meditations on Moloch: "Moloch Hasn\'t Won"',
+        label: 'Response to Meditations on Moloch: "Moloch Hasn\'t Won" (Zvi Mowshowitz)',
         source: "LessWrong (Zvi)",
         url: "https://www.lesswrong.com/posts/ham9i5wf4JCexXnkN/moloch-hasn-t-won",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I11-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -466,9 +458,7 @@ export const CLUSTER_I: Node[] = [
         label: "Reception & critique of Superintelligence",
         source: "Wikipedia",
         url: "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I12-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -484,6 +474,7 @@ export const CLUSTER_I: Node[] = [
         "That AI will always eventually want to destroy humanity",
         "That AI can only be created using quantum computers",
         "That an entity's level of intelligence is completely independent of its final goals",
+        "Because regulated industries receive government-funded R&D grants",
       ],
       correctIndex: 2,
       explanation:
@@ -504,12 +495,10 @@ export const CLUSTER_I: Node[] = [
     related: ["Z6", "I1", "I2", "I20"],
     furtherReading: [
       {
-        label: "Cowen's follow-up on Progress Studies",
-        source: "Marginal Revolution",
+        label: "Progress Studies — Cowen & Collison, 'We Need a New Science of Progress'",
+        source: "Tyler Cowen / Marginal Revolution",
         url: "https://marginalrevolution.com/marginalrevolution/2024/04/the-progress-in-progress-studies.html",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I13-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -525,6 +514,7 @@ export const CLUSTER_I: Node[] = [
         "That progress is slowing down and we need a dedicated academic discipline to study how to accelerate it",
         "That technological progress is destroying the environment and must be stopped",
         "That software engineering should replace traditional science",
+        "Because productivity growth is measured solely by population size",
       ],
       correctIndex: 0,
       explanation:
@@ -545,12 +535,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
-        label: "Review of What We Owe the Future",
-        source: "Asterisk Magazine",
+        label: "What We Owe the Future (William MacAskill, 2022)",
+        source: "House overview / Asterisk review",
         url: "https://asteriskmag.com/issues/01/review-what-we-owe-the-future",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I14-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -566,6 +554,7 @@ export const CLUSTER_I: Node[] = [
         "Utilitarianism",
         "Longtermism—the idea that positively influencing the long-term future is our primary moral priority",
         "Effective Altruism focused solely on immediate global poverty",
+        "Because future people will have far greater wealth and influence over us",
       ],
       correctIndex: 1,
       explanation:
@@ -586,12 +575,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
-        label: "Point-by-point response to AGI Ruin",
-        source: "LessWrong",
-        url: "https://www.lesswrong.com/posts/LLRtjkvh9AackwuNB/on-a-list-of-lethalities",
-        archive: {
-          status: "unavailable",
-        },
+        label: "AGI Ruin: A List of Lethalities (Yudkowsky, 2022) — with responses",
+        source: "House overview / LessWrong",
+        url: "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities",
+        archive: { status: "full", path: "content/sources/I15-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -607,6 +594,7 @@ export const CLUSTER_I: Node[] = [
         "That AGI will solve climate change and poverty",
         "That AGI is impossible to build",
         "That humanity is almost certainly doomed because aligning AGI is structurally harder than building it",
+        "Because regulators have already banned all advanced AI research",
       ],
       correctIndex: 2,
       explanation:
@@ -627,12 +615,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I21"],
     furtherReading: [
       {
-        label: "Karnofsky interview on the Most Important Century",
-        source: "80,000 Hours",
+        label: "The Most Important Century (Holden Karnofsky, 2022)",
+        source: "Holden Karnofsky / 80,000 Hours",
         url: "https://80000hours.org/podcast/episodes/holden-karnofsky-most-important-century/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I16-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -648,6 +634,7 @@ export const CLUSTER_I: Node[] = [
         "Because we are likely to invent Transformative AI, which will lock in the trajectory of humanity's entire future",
         "Because climate change will destroy the earth by 2100",
         "Because humans will colonize Mars",
+        "Because technological change is expected to slow to zero this century",
       ],
       correctIndex: 0,
       explanation:
@@ -668,12 +655,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
-        label: "Analysis of Gwern's Scaling Hypothesis",
-        source: "LessWrong (Alignment Newsletter)",
-        url: "https://www.lesswrong.com/posts/XusDPpXr6FYJqWkxh/an-156-the-scaling-hypothesis-a-plan-for-building-agi",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Scaling Hypothesis (Gwern)",
+        source: "House overview / Gwern",
+        url: "https://gwern.net/scaling-hypothesis",
+        archive: { status: "full", path: "content/sources/I17-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -689,6 +674,7 @@ export const CLUSTER_I: Node[] = [
         "Hand-coding human logic into a database",
         "Exponentially scaling up simple neural networks with massive amounts of compute and data",
         "Using quantum computers to simulate the human brain perfectly",
+        "Because model performance improves only with new hardware, not more data",
       ],
       correctIndex: 1,
       explanation:
@@ -709,12 +695,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
-        label: "Situational Awareness: a one-year retrospective",
-        source: "LessWrong",
-        url: "https://www.lesswrong.com/posts/EGGruXRxGQx6RQt8x/situational-awareness-a-one-year-retrospective",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Situational Awareness: The Decade Ahead (Aschenbrenner, 2024)",
+        source: "House overview",
+        url: "https://situational-awareness.ai/",
+        archive: { status: "full", path: "content/sources/I18-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -731,6 +715,7 @@ export const CLUSTER_I: Node[] = [
         "The economy crashes and humans go back to farming",
         "AGI is released as open-source software for everyone to use",
         "AGI begins automating AI research, triggering a rapid 'intelligence explosion' and a massive national security arms race",
+        "Because international treaties permanently cap AI compute spending",
       ],
       correctIndex: 2,
       explanation:
@@ -751,12 +736,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I22"],
     furtherReading: [
       {
-        label: "Reflections on Machines of Loving Grace",
-        source: "Cambridge LCFI",
+        label: "Machines of Loving Grace (Amodei, 2024) — with LCFI reflections",
+        source: "Seán Ó hÉigeartaigh / Cambridge LCFI",
         url: "https://www.lcfi.ac.uk/news-events/blog/post/reflections-on-machines-of-loving-grace",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I19-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -772,6 +755,7 @@ export const CLUSTER_I: Node[] = [
         "It is an optimistic vision of how safely aligned AGI could radically accelerate biology, medicine, and human flourishing",
         "It is a pessimistic warning that AI will inevitably destroy us",
         "It is a technical manual for building GPU clusters",
+        "Because most jobs are intrinsically impossible to automate",
       ],
       correctIndex: 0,
       explanation:
@@ -792,12 +776,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
-        label: 'Andreessen interviewed on "Why AI Will Save the World"',
-        source: "EconTalk",
-        url: "https://www.econtalk.org/marc-andreessen-on-why-ai-will-save-the-world/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Why AI Will Save the World (Marc Andreessen, 2023)",
+        source: "House overview",
+        url: "https://a16z.com/why-ai-will-save-the-world/",
+        archive: { status: "full", path: "content/sources/I20-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -814,6 +796,7 @@ export const CLUSTER_I: Node[] = [
         "He completely agrees with it and calls for a pause on AI research",
         "He dismisses it as a moral panic, arguing AI is just an empowering tool that will amplify human intelligence",
         "He believes only the military should be allowed to use AI",
+        "Because AI systems are legally required to be open-sourced",
       ],
       correctIndex: 1,
       explanation:
@@ -834,12 +817,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
-        label: "Critique of the Techno-Optimist Manifesto",
-        source: "Jacobin",
-        url: "https://jacobin.com/2024/01/marc-andreessen-techno-optimist-manifesto-reactionary-elitism-nietzsche-hayek-ideology",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Techno-Optimist Manifesto (Marc Andreessen, 2023) — arguments and critiques",
+        source: "House overview",
+        url: "https://a16z.com/the-techno-optimist-manifesto/",
+        archive: { status: "full", path: "content/sources/I21-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -855,6 +836,7 @@ export const CLUSTER_I: Node[] = [
         "The scientific method",
         "Free market capitalism",
         "The precautionary principle and the ideology of 'degrowth' and stagnation",
+        "Because slowing technology down has historically created more jobs",
       ],
       correctIndex: 2,
       explanation:
@@ -875,12 +857,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I24"],
     furtherReading: [
       {
-        label: "Altman's UBI thesis and its critics",
-        source: "CNBC",
-        url: "https://www.cnbc.com/2021/03/30/openai-ceo-sam-altman-says-ai-could-pay-for-ubi-experts-disagree.html",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Moore's Law for Everything — UBI as AI dividend (Sam Altman, 2021)",
+        source: "House overview",
+        url: "https://moores.samaltman.com/",
+        archive: { status: "full", path: "content/sources/I22-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -896,6 +876,7 @@ export const CLUSTER_I: Node[] = [
         "We must shift from taxing labor to taxing capital and land, redistributing the wealth as a universal dividend",
         "We must ban AI from being used in physical robotics",
         "We must force everyone to become software engineers",
+        "Because automation always raises wages for every worker equally",
       ],
       correctIndex: 0,
       explanation:
@@ -916,12 +897,10 @@ export const CLUSTER_I: Node[] = [
     related: ["I1", "I2", "I3", "I25"],
     furtherReading: [
       {
-        label: 'A skeptical take on Dorsey\'s "intelligence-native" narrative',
-        source: "The Tech Buzz",
+        label: "Block Goes 'Intelligence-Native' — Dorsey's AI reorganization",
+        source: "House overview",
         url: "https://www.techbuzz.ai/articles/jack-dorsey-s-ai-native-company-is-a-compelling-piece-of-storytelling",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/I23-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Tech Adoption & Disruption", "AI & the Future"],
@@ -938,6 +917,7 @@ export const CLUSTER_I: Node[] = [
         "Software-native companies use Python; intelligence-native companies use C++",
         "Software-native companies rely on hard-coded deterministic logic, while intelligence-native companies use probabilistic neural networks for core decision routing",
         "Intelligence-native companies do not use computers at all",
+        "Because employees resist any form of new software on principle",
       ],
       correctIndex: 1,
       explanation:
@@ -977,12 +957,10 @@ export const CLUSTER_I: Node[] = [
     related: ["AE3", "I10", "H7", "I13"],
     furtherReading: [
       {
-        label: 'Analysis of Block going "intelligence-native"',
-        source: "Forbes",
-        url: "https://www.forbes.com/sites/josipamajic/2026/04/01/jack-dorsey-bets-4000-jobs-that-ai-can-replace-the-org-chart/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Network State (Balaji Srinivasan, 2022)",
+        source: "House overview",
+        url: "https://thenetworkstate.com/",
+        archive: { status: "full", path: "content/sources/I24-0.md", retrieved: "2026-09-06" },
       },
       {
         label: "Network School launch — putting theory into practice",

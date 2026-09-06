@@ -156,10 +156,10 @@ export const CLUSTER_AJ: Node[] = [
     related: ["AJ5", "AJ2", "AJ1", "M4"],
     furtherReading: [
       {
-        label: "The Evolution of Cooperation (1984)",
-        source: "Robert Axelrod",
-        url: "https://ee.stanford.edu/~hellman/Breakthrough/book/pdfs/axelrod.pdf",
-        archive: { status: "unavailable" },
+        label: "The Evolution of Cooperation — Tit for Tat (Axelrod's tournaments)",
+        source: "Robert Axelrod / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Tit_for_tat",
+        archive: { status: "full", path: "content/sources/AJ4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -196,10 +196,10 @@ export const CLUSTER_AJ: Node[] = [
     related: ["AJ6", "AJ1", "M5", "A9"],
     furtherReading: [
       {
-        label: "Job Market Signaling (1973, Quarterly Journal of Economics)",
-        source: "Michael Spence",
-        url: "https://doi.org/10.2307/1882010",
-        archive: { status: "unavailable" },
+        label: "Job Market Signaling (Spence, 1973)",
+        source: "Michael Spence / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Signalling_(economics)",
+        archive: { status: "full", path: "content/sources/AJ5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -236,10 +236,10 @@ export const CLUSTER_AJ: Node[] = [
     related: ["AJ7", "AJ1", "AL14", "AI1"],
     furtherReading: [
       {
-        label: "The Strategy of Conflict (1960)",
-        source: "Thomas Schelling",
-        url: "https://www.hup.harvard.edu/books/9780674840317",
-        archive: { status: "unavailable" },
+        label: "The Strategy of Conflict — chicken, brinkmanship, commitment (Schelling, 1960)",
+        source: "Thomas Schelling / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Brinkmanship",
+        archive: { status: "full", path: "content/sources/AJ6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -276,10 +276,10 @@ export const CLUSTER_AJ: Node[] = [
     related: ["AJ8", "AJ1", "M4", "AJ5"],
     furtherReading: [
       {
-        label: "Counterspeculation, Auctions, and Competitive Sealed Tenders (1961)",
-        source: "William Vickrey",
-        url: "https://doi.org/10.2307/2977633",
-        archive: { status: "unavailable" },
+        label: "Counterspeculation, Auctions, and Competitive Sealed Tenders (Vickrey, 1961)",
+        source: "William Vickrey / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Vickrey_auction",
+        archive: { status: "full", path: "content/sources/AJ7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -317,9 +317,9 @@ export const CLUSTER_AJ: Node[] = [
     furtherReading: [
       {
         label: "Theory of Games and Economic Behavior (1944)",
-        source: "von Neumann & Morgenstern",
-        url: "https://press.princeton.edu/books/paperback/9780691130613/theory-of-games-and-economic-behavior",
-        archive: { status: "unavailable" },
+        source: "von Neumann & Morgenstern / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Theory_of_Games_and_Economic_Behavior",
+        archive: { status: "full", path: "content/sources/AJ8-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",

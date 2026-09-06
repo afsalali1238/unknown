@@ -126,10 +126,10 @@ export const CLUSTER_AF: Node[] = [
     related: ["AF4", "AF2", "M1", "S7"],
     furtherReading: [
       {
-        label: "The Strength of Weak Ties (1973, American Journal of Sociology)",
-        source: "Mark Granovetter",
-        url: "https://www.jstor.org/stable/2776392",
-        archive: { status: "unavailable" },
+        label: "The Strength of Weak Ties (1973)",
+        source: "Mark Granovetter / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Interpersonal_ties",
+        archive: { status: "full", path: "content/sources/AF3-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -166,10 +166,11 @@ export const CLUSTER_AF: Node[] = [
     related: ["AF5", "AF1", "I10", "W3"],
     furtherReading: [
       {
-        label: "Emergence of Scaling in Random Networks (1999, Science)",
-        source: "Barabási & Albert",
-        url: "https://www.science.org/doi/10.1126/science.286.5439.509",
-        archive: { status: "unavailable" },
+        label:
+          "Emergence of Scaling in Random Networks — power laws & scale-free networks (Barabási & Albert, 1999)",
+        source: "Barabási & Albert / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Power_law",
+        archive: { status: "full", path: "content/sources/AF4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -206,10 +207,10 @@ export const CLUSTER_AF: Node[] = [
     related: ["AF6", "AF3", "V1", "M2"],
     furtherReading: [
       {
-        label: "Neocortex size as a constraint on group size in primates (1992)",
-        source: "Robin Dunbar, Journal of Human Evolution",
-        url: "https://doi.org/10.1016/0047-2484(92)90081-J",
-        archive: { status: "unavailable" },
+        label: "Neocortex size as a constraint on group size — Dunbar's number",
+        source: "Robin Dunbar / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Dunbar%27s_number",
+        archive: { status: "full", path: "content/sources/AF5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -246,10 +247,10 @@ export const CLUSTER_AF: Node[] = [
     related: ["AF7", "AF1", "AF4", "I10"],
     furtherReading: [
       {
-        label: "The Law of the Pack (2001, Harvard Business Review)",
-        source: "David P. Reed",
-        url: "https://hbr.org/2001/02/the-law-of-the-pack",
-        archive: { status: "unavailable" },
+        label: "The Law of the Pack — Reed's law & group-forming networks (2001)",
+        source: "David P. Reed / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Reed%27s_law",
+        archive: { status: "full", path: "content/sources/AF6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",
@@ -287,10 +288,10 @@ export const CLUSTER_AF: Node[] = [
     related: ["AF8", "AF4", "W4", "A10"],
     furtherReading: [
       {
-        label: "The Matthew Effect in Science (1968, Science)",
-        source: "Robert K. Merton",
-        url: "https://www.science.org/doi/10.1126/science.159.3810.56",
-        archive: { status: "unavailable" },
+        label: "The Matthew Effect in Science (Merton, 1968)",
+        source: "Robert K. Merton / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Matthew_effect",
+        archive: { status: "full", path: "content/sources/AF7-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -328,10 +329,10 @@ export const CLUSTER_AF: Node[] = [
     related: ["AF3", "AF7", "M5", "I13"],
     furtherReading: [
       {
-        label: "Threshold Models of Collective Behavior (1978, American Journal of Sociology)",
-        source: "Mark Granovetter",
-        url: "https://www.jstor.org/stable/2778111",
-        archive: { status: "unavailable" },
+        label: "Threshold Models of Collective Behavior (Granovetter 1978; Schelling 1971)",
+        source: "Granovetter & Schelling / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Threshold_model",
+        archive: { status: "full", path: "content/sources/AF8-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",

@@ -33,12 +33,10 @@ export const CLUSTER_W: Node[] = [
     related: ["W4", "J10", "U6"],
     furtherReading: [
       {
-        label: "The Psychology of Human Misjudgment (transcript)",
-        source: "Farnam Street",
+        label: "The Psychology of Human Misjudgment (Munger)",
+        source: "Charlie Munger / Farnam Street",
         url: "https://fs.blog/great-talks/psychology-human-misjudgment/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/W1-0.md", retrieved: "2026-09-06" },
       },
       {
         label: "Charlie Munger: 'The Psychology of Human Misjudgment,' Harvard 1995",
@@ -96,12 +94,10 @@ export const CLUSTER_W: Node[] = [
         },
       },
       {
-        label: "The Timeless Parable of Mr. Market",
+        label: "Mr. Market (Benjamin Graham)",
         source: "Farnam Street",
         url: "https://fs.blog/mr-market/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/W2-1.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -354,12 +350,10 @@ export const CLUSTER_W: Node[] = [
     related: ["W6", "W2", "J3", "K4"],
     furtherReading: [
       {
-        label: "Chairman's Letter — 1997",
-        source: "Berkshire Hathaway",
+        label: "Chairman's Letter — 1997: Waiting for the Fat Pitch",
+        source: "Warren Buffett / Berkshire Hathaway",
         url: "https://www.berkshirehathaway.com/letters/1997.html",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/W7-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Compounding & Patience", "Decision-Making"],
@@ -397,13 +391,10 @@ export const CLUSTER_W: Node[] = [
     related: ["W3", "E3", "E4", "E5"],
     furtherReading: [
       {
-        label:
-          "Chairman's Letter — 1986 (Appendix: Purchase-Price Accounting Adjustments and the 'Cash Flow' Fallacy)",
-        source: "Berkshire Hathaway",
+        label: "Chairman's Letter — 1986: Owner earnings & the 'cash flow' fallacy",
+        source: "Warren Buffett / Berkshire Hathaway",
         url: "https://www.berkshirehathaway.com/letters/1986.html",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/W8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Wealth, Leverage & Judgment", "Fraud & Skepticism"],

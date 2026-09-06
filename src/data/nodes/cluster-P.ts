@@ -135,21 +135,16 @@ export const CLUSTER_P: Node[] = [
     related: ["L5", "D5", "B2", "O4"],
     furtherReading: [
       {
-        label:
-          "4 Takeaways from Naval Ravikant's Tweetstorm: How to Get Rich (without getting lucky)",
-        source: "Medium",
+        label: "How to Get Rich (without getting lucky) — Naval Ravikant",
+        source: "Naval Ravikant / Farnam Street",
         url: "https://medium.com/@dan.the.man1617/4-takeaways-from-naval-ravikants-tweetstorm-how-to-get-rich-without-getting-lucky-868d62d47e84",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/P3-0.md", retrieved: "2026-09-06" },
       },
       {
-        label: "Naval Ravikant: The Angel Philosopher — its most-downloaded episode",
-        source: "The Knowledge Project with Shane Parrish, #18",
+        label: "Naval Ravikant: The Angel Philosopher (Knowledge Project)",
+        source: "Farnam Street",
         url: "https://fs.blog/knowledge-project-podcast/naval-ravikant/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/P5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Canonical",
@@ -234,12 +229,10 @@ export const CLUSTER_P: Node[] = [
     related: ["H1", "H2", "B3", "O6"],
     furtherReading: [
       {
-        label: "Naval Ravikant's Top 7 Reading Tips",
-        source: "Medium, Mark Joseph Aduana",
+        label: "Naval Ravikant's reading tips — read what you love",
+        source: "Naval Ravikant / Farnam Street",
         url: "https://medium.com/@markaduana/naval-ravikants-top-7-reading-tips-457e5e0d664f",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/P5-0.md", retrieved: "2026-09-06" },
       },
       {
         label: "Read What You Love Until You Love To Read",
@@ -384,11 +377,9 @@ export const CLUSTER_P: Node[] = [
     furtherReading: [
       {
         label: "Escape Competition Through Authenticity",
-        source: "nav.al",
+        source: "nav.al (Naval Ravikant)",
         url: "https://nav.al/competition-authenticity",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/P8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Wealth, Leverage & Judgment", "Meaning & Self"],

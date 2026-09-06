@@ -163,12 +163,10 @@ export const CLUSTER_M: Node[] = [
     related: ["M7", "E1", "M1", "M8"],
     furtherReading: [
       {
-        label: "The Cobra Effect",
-        source: "Freakonomics",
-        url: "https://freakonomics.com/podcast/the-cobra-effect-2/",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Cobra Effect — perverse incentives",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Perverse_incentive",
+        archive: { status: "full", path: "content/sources/M4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Contemporary",

@@ -304,12 +304,10 @@ export const CLUSTER_K: Node[] = [
       },
       {
         type: "book",
-        label: "An Introduction to Ergodicity Economics (Peters & Adamou, 2025)",
-        source: "LML Press",
+        label: "An Introduction to Ergodicity Economics (Peters & Adamou)",
+        source: "Ole Peters / London Mathematical Laboratory",
         url: "https://ergodicityeconomics.com/an-introduction-to-ergodicity-economics/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/K7-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Risk & Asymmetric Bets", "Compounding & Patience"],
@@ -348,11 +346,9 @@ export const CLUSTER_K: Node[] = [
     furtherReading: [
       {
         label: "Pace Layering: How Complex Systems Learn and Keep Learning",
-        source: "Long Now Foundation",
+        source: "Stewart Brand / Long Now Foundation",
         url: "https://longnow.org/ideas/pace-layers/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/K8-0.md", retrieved: "2026-09-06" },
       },
       {
         label: "Pace Layering: How Complex Systems Learn and Keep Learning (2018)",

@@ -39,6 +39,15 @@ function archiveSlug(path: string): string {
   return path.replace(/^content\/sources\//, "").replace(/\.md$/, "");
 }
 
+// Dates are stored as integers: positive = CE, negative = BCE.
+// Render BCE years as "c. 600 BCE", small CE years with "c." as well
+// (most are approximate ancient dates, e.g. Meditations c. 180 CE).
+function formatNodeYear(year: number): string {
+  if (year < 0) return `c. ${Math.abs(year)} BCE`;
+  if (year < 1000) return `c. ${year} CE`;
+  return String(year);
+}
+
 const epistemicStatusExplainer: Record<string, string> = {
   Canonical: "Canonical — the original, primary-source explanation, not a summary of one.",
   Contemporary: "Contemporary — a current, actively-debated framing rather than a settled classic.",
@@ -335,7 +344,7 @@ function NodeScreen() {
             {node.title}
           </h1>
           <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
-            {node.author} · {node.year}
+            {node.author} · {formatNodeYear(node.year)}
           </p>
         </div>
 

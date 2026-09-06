@@ -32,12 +32,10 @@ export const CLUSTER_Z: Node[] = [
     related: ["R6", "X6", "Z2"],
     furtherReading: [
       {
-        label: "Brian Greene — What Was There Before the Big Bang?",
-        source: "Science Time",
+        label: "Emergent Spacetime and the Origins of the Universe",
+        source: "House overview (physics survey)",
         url: "https://www.youtube.com/watch?v=PXixKGcctms",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/Z1-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -74,12 +72,10 @@ export const CLUSTER_Z: Node[] = [
     related: ["Z3", "Z1", "Z4"],
     furtherReading: [
       {
-        label: "Mysterious 'Unparticles' May Be Pushing the Universe Apart",
-        source: "Science Time",
+        label: "Unparticles and Scale Invariance in Cosmology",
+        source: "House overview (unparticle physics)",
         url: "https://www.youtube.com/shorts/tycPtqNX_KE",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/Z2-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -117,12 +113,10 @@ export const CLUSTER_Z: Node[] = [
     related: ["R6", "Z2", "Z1"],
     furtherReading: [
       {
-        label: "Our Universe Is Merging With Baby Universes",
-        source: "Science Time",
+        label: "Cosmological Cannibalism — merging universes and cosmic selection",
+        source: "House overview (cosmology survey)",
         url: "https://www.youtube.com/shorts/teKKUYZC94s",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/Z3-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -160,12 +154,10 @@ export const CLUSTER_Z: Node[] = [
     related: ["R2", "Z1", "Z2"],
     furtherReading: [
       {
-        label: "Webb Checked TRAPPIST-1e Again — and the Signs of Life Got Darker",
-        source: "Science Time",
+        label: "Biosignatures and Technosignatures on Exoplanets",
+        source: "House overview (astronomy survey)",
         url: "https://www.youtube.com/watch?v=H6QTc-ifxbU",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/Z4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -203,13 +195,10 @@ export const CLUSTER_Z: Node[] = [
     related: ["I12", "X4", "Z8"],
     furtherReading: [
       {
-        label:
-          "Artificial Superintelligence, AI in a Box & Machine Consciousness With Nick Bostrom",
-        source: "Science Time",
-        url: "https://www.youtube.com/watch?v=PVhFYCzn66g",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Intelligence Explosion and Superintelligence (Good 1965; Bostrom)",
+        source: "I. J. Good / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Technological_singularity",
+        archive: { status: "full", path: "content/sources/Z5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -247,12 +236,10 @@ export const CLUSTER_Z: Node[] = [
     related: ["I13", "Z1", "Z7"],
     furtherReading: [
       {
-        label: "CRISPR 2.0 Prime Editing to Heal 90% of Genetic Diseases",
-        source: "Science Time",
-        url: "https://www.youtube.com/watch?v=vP6DSIoOcIQ",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Prime Editing — search-and-replace genome editing (Anzalone et al., 2019)",
+        source: "David Liu lab / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Prime_editing",
+        archive: { status: "full", path: "content/sources/Z6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -298,12 +285,10 @@ export const CLUSTER_Z: Node[] = [
         },
       },
       {
-        label: "AlphaFold reveals the structure of the protein universe",
-        source: "Google DeepMind blog, 28 July 2022",
+        label: "AlphaFold reveals the structure of the protein universe (DeepMind, 2022)",
+        source: "Demis Hassabis / Google DeepMind",
         url: "https://deepmind.google/blog/alphafold-reveals-the-structure-of-the-protein-universe/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/Z7-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["AI & the Future", "Health & Body"],
@@ -341,13 +326,10 @@ export const CLUSTER_Z: Node[] = [
     related: ["Z7", "AA9", "R7", "I13"],
     furtherReading: [
       {
-        label:
-          "A shot for the ages: Fusion ignition breakthrough hailed as 'one of the most impressive scientific feats of the 21st century'",
-        source: "Lawrence Livermore National Laboratory, 14 December 2022",
-        url: "https://www.llnl.gov/article/49301/lawrence-livermore-national-laboratory-achieves-fusion-ignition",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Fusion ignition breakthrough at the National Ignition Facility",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Fusion_ignition",
+        archive: { status: "full", path: "content/sources/Z8-0.md", retrieved: "2026-09-06" },
       },
       {
         type: "paper",

@@ -163,7 +163,7 @@ export const CLUSTER_O: Node[] = [
   {
     id: "O4",
     clusterId: "O",
-    title: "The Selfish Gene",
+    title: "The Selfish Gene (and Memes)",
     author: "Richard Dawkins",
     year: 1976,
     medium: "Book",

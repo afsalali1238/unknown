@@ -298,12 +298,10 @@ export const CLUSTER_Q: Node[] = [
     related: ["B6", "P1", "Q4"],
     furtherReading: [
       {
-        label: "MacArthur 'Genius' Angela Duckworth Responds To A New Critique Of Grit",
-        source: "NPR",
-        url: "https://www.npr.org/sections/ed/2016/05/25/479172868/angela-duckworth-responds-to-a-new-critique-of-grit",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Grit: passion and perseverance for long-term goals (Duckworth)",
+        source: "Angela Duckworth / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Grit_(personality_trait)",
+        archive: { status: "full", path: "content/sources/Q6-0.md", retrieved: "2026-09-06" },
       },
       {
         label: "Grit: The power of passion and perseverance",

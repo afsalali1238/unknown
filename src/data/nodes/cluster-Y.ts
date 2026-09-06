@@ -33,12 +33,10 @@ export const CLUSTER_Y: Node[] = [
     related: ["O2", "Y2", "Y3", "Y5"],
     furtherReading: [
       {
-        label: "3 Hours of Brain F*ck Paradoxes to Fall Asleep To",
-        source: "SleepWise",
-        url: "https://www.youtube.com/watch?v=l01DyPfV10Y",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Ship of Theseus — identity over time",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Ship_of_Theseus",
+        archive: { status: "full", path: "content/sources/Y1-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -76,12 +74,10 @@ export const CLUSTER_Y: Node[] = [
     related: ["X6", "Y1", "Y3", "Y5"],
     furtherReading: [
       {
-        label: "3 Hours of Most Misunderstood Physics Concepts to Fall Asleep To",
-        source: "SleepWise",
-        url: "https://www.youtube.com/watch?v=fQDm9AeED9M",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Arrow of Time and entropic irreversibility (Eddington, 1927)",
+        source: "Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Arrow_of_time",
+        archive: { status: "full", path: "content/sources/Y2-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -119,12 +115,10 @@ export const CLUSTER_Y: Node[] = [
     related: ["O15", "X1", "Y8", "Y5"],
     furtherReading: [
       {
-        label: "The Human Mind Explained to Fall Asleep To",
-        source: "SleepWise",
-        url: "https://www.youtube.com/watch?v=ysxP1ZRngcQ",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Hard Problem of Consciousness (Chalmers 1995)",
+        source: "Stanford Encyclopedia of Philosophy",
+        url: "https://plato.stanford.edu/entries/consciousness/",
+        archive: { status: "full", path: "content/sources/Y3-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -162,12 +156,10 @@ export const CLUSTER_Y: Node[] = [
     related: ["O7", "Y1", "Y2"],
     furtherReading: [
       {
-        label: "Every Feeling You Can't Name Explained to Fall Asleep To",
-        source: "SleepWise",
+        label: "Untranslatable Emotions — lexical gaps and the language of feeling",
+        source: "House overview (linguistics)",
         url: "https://www.youtube.com/watch?v=8nvt8zGY7cc",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/Y4-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -205,12 +197,10 @@ export const CLUSTER_Y: Node[] = [
     related: ["R6", "Y2", "Y1"],
     furtherReading: [
       {
-        label: "Every REAL Glitch in the Matrix Revealed to Fall Asleep To",
-        source: "SleepWise",
-        url: "https://www.youtube.com/watch?v=N-nIWs58As8",
-        archive: {
-          status: "unavailable",
-        },
+        label: "The Banach–Tarski Paradox (1924)",
+        source: "Banach & Tarski / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Banach%E2%80%93Tarski_paradox",
+        archive: { status: "full", path: "content/sources/Y5-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -247,12 +237,10 @@ export const CLUSTER_Y: Node[] = [
     related: ["J16", "Y7", "Y1"],
     furtherReading: [
       {
-        label: "The Most Brutal Truths of Life to Fall Asleep To",
-        source: "SleepWise",
+        label: "The Asymmetry of Cosmic Justice — why outcomes ignore desert",
+        source: "House overview (Stoic philosophy / problem of luck)",
         url: "https://www.youtube.com/watch?v=lQLBgPAcRhk",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/Y6-0.md", retrieved: "2026-09-06" },
       },
     ],
     epistemicStatus: "Speculative",
@@ -335,12 +323,10 @@ export const CLUSTER_Y: Node[] = [
     furtherReading: [
       {
         type: "paper",
-        label: "Gorillas in Our Midst: Sustained Inattentional Blindness for Dynamic Events",
-        source: "Perception 28(9), 1059–1074 (1999)",
-        url: "https://journals.sagepub.com/doi/10.1068/p281059",
-        archive: {
-          status: "unavailable",
-        },
+        label: "Gorillas in Our Midst — inattentional blindness",
+        source: "Simons & Chabris / Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Inattentional_blindness",
+        archive: { status: "full", path: "content/sources/Y8-0.md", retrieved: "2026-09-06" },
       },
       {
         type: "watch",

@@ -256,12 +256,10 @@ export const CLUSTER_T: Node[] = [
     related: ["T1", "T7", "AE1", "N2"],
     furtherReading: [
       {
-        label: "Imitate, then Innovate",
+        label: "Imitate, Then Innovate",
         source: "David Perell",
         url: "https://perell.com/essay/imitate-then-innovate/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/T6-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Craft & Deep Work", "Meaning & Self"],
@@ -299,12 +297,10 @@ export const CLUSTER_T: Node[] = [
     related: ["T2", "T5", "T6", "P1"],
     furtherReading: [
       {
-        label: "The 5 Types of Wealth (newsletter launch essay)",
-        source: "Sahil Bloom",
+        label: "The 5 Types of Wealth",
+        source: "Sahil Bloom / The Curiosity Chronicle",
         url: "https://www.sahilbloom.com/newsletter/the-5-types-of-wealth",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/T7-0.md", retrieved: "2026-09-06" },
       },
       {
         type: "book",
@@ -352,11 +348,9 @@ export const CLUSTER_T: Node[] = [
     furtherReading: [
       {
         label: "SMART goals are not so smart: make a PACT instead",
-        source: "Ness Labs",
+        source: "Anne-Laure Le Cunff / Ness Labs",
         url: "https://nesslabs.com/smart-goals-pact",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/T8-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Craft & Deep Work", "Decision-Making"],

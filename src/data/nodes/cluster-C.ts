@@ -37,6 +37,7 @@ export const CLUSTER_C: Node[] = [
         "LIFO inventory accounting",
         "Mark-to-market accounting",
         "Double-declining balance depreciation",
+        "Weighted-average inventory valuation across subsidiaries",
       ],
       correctIndex: 1,
       explanation:
@@ -81,6 +82,7 @@ export const CLUSTER_C: Node[] = [
         "His firm had too many employees for the assets under management",
         "He was using an offshore bank in the Cayman Islands",
         "The options volume required for his strategy exceeded the total volume of the entire exchange",
+        "By only auditing companies with below-average employee turnover",
       ],
       correctIndex: 2,
       explanation:
@@ -125,6 +127,7 @@ export const CLUSTER_C: Node[] = [
         "They used Level 3 'mark-to-model' accounting to inflate the value of illiquid private assets",
         "They bribed the SEC auditors to look the other way",
         "They only invested in government bonds which never defaulted",
+        "By restricting the fund to companies with no analyst coverage",
       ],
       correctIndex: 0,
       explanation:
@@ -145,12 +148,10 @@ export const CLUSTER_C: Node[] = [
     related: ["C7", "C2", "C3", "C5"],
     furtherReading: [
       {
-        label: 'Breakdown of Einhorn\'s "Accounting Ingenuity" Lehman speech',
-        source: "The Acquirer's Multiple",
+        label: "The Lehman Short Thesis — 'Accounting Ingenuity' (David Einhorn, 2008)",
+        source: "House overview / Einhorn speech",
         url: "https://acquirersmultiple.com/2016/08/the-lehman-brothers-1-1-billion-discrepancy-accounting-ingenuity-david-einhorn/",
-        archive: {
-          status: "unavailable",
-        },
+        archive: { status: "full", path: "content/sources/C4-0.md", retrieved: "2026-09-06" },
       },
     ],
     tags: ["Markets & Narrative", "Fraud & Skepticism"],
@@ -163,7 +164,12 @@ export const CLUSTER_C: Node[] = [
     quiz: {
       question:
         "What specific asset class did David Einhorn focus on to prove Lehman Brothers was hiding massive losses?",
-      options: ["Tech stocks", "Commercial real estate and CDOs", "Emerging market currencies"],
+      options: [
+        "Tech stocks",
+        "Commercial real estate and CDOs",
+        "Emerging market currencies",
+        "By assuming all rated securities would be downgraded together on the same day",
+      ],
       correctIndex: 1,
       explanation:
         "Einhorn exposed that Lehman was refusing to write down its massive portfolio of toxic commercial real estate loans and Collateralized Debt Obligations (CDOs) despite the market crashing around them.",
@@ -206,6 +212,7 @@ export const CLUSTER_C: Node[] = [
         "Put options on homebuilder stocks",
         "Shorting real estate investment trusts (REITs)",
         "Credit Default Swaps (CDS) on mortgage-backed securities",
+        "By writing insurance only against predictable, frequently occurring events",
       ],
       correctIndex: 2,
       explanation:
@@ -249,6 +256,7 @@ export const CLUSTER_C: Node[] = [
         "By using a web of opaque 'authorized intermediaries' to forge purchase and sale contracts",
         "By hacking the Canadian stock exchange servers",
         "By buying satellite imagery of forests they didn't own",
+        "By holding cash exclusively in foreign currencies",
       ],
       correctIndex: 0,
       explanation:
@@ -292,6 +300,7 @@ export const CLUSTER_C: Node[] = [
         "The nutritional shakes contained toxic ingredients",
         "The company was a pyramid scheme where revenue came from recruiting distributors, not retail sales",
         "The CEO was embezzling money to offshore accounts",
+        "By requiring all trades be approved by a government regulator first",
       ],
       correctIndex: 1,
       explanation:
@@ -335,6 +344,7 @@ export const CLUSTER_C: Node[] = [
         "It manufactured cheap counterfeit versions of Valeant's drugs",
         "It illegally shipped prescription drugs overseas to avoid FDA regulations",
         "It altered prescriptions to force insurers to pay for Valeant's wildly overpriced branded drugs",
+        "By investing only in companies that had never reported a loss",
       ],
       correctIndex: 2,
       explanation:
@@ -377,6 +387,7 @@ export const CLUSTER_C: Node[] = [
         "By hiring 1,500 people to physically record store traffic and collect receipts",
         "By hacking the company's internal Slack channel",
         "By finding an offshore bank account in the Cayman Islands",
+        "By spreading deposits evenly across every branch of the bank",
       ],
       correctIndex: 0,
       explanation:
@@ -421,6 +432,7 @@ export const CLUSTER_C: Node[] = [
         "They used a hidden diesel engine inside the truck",
         "They towed it to the top of a hill and filmed it rolling down by gravity",
         "The entire video was generated with deepfake AI",
+        "By raising prices on customers immediately after the acquisition",
       ],
       correctIndex: 1,
       explanation:
@@ -464,6 +476,7 @@ export const CLUSTER_C: Node[] = [
         "By bribing the Indian stock exchange officials",
         "By reporting fake infrastructure projects that didn't exist",
         "By using a network of offshore shell companies to secretly buy their own shares",
+        "By valuing properties only at their historical purchase price",
       ],
       correctIndex: 2,
       explanation:
