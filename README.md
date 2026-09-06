@@ -10,7 +10,7 @@ This project is built using a modern React stack:
 - **Routing & Server**: [TanStack Router](https://tanstack.com/router) & [TanStack Start](https://tanstack.com/start)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **State Management**: [Zustand](https://github.com/pmndrs/zustand)
-- **UI Components**: [Radix UI](https://www.radix-ui.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- **UI**: plain Tailwind on native elements + [lucide-react](https://lucide.dev/) icons (no component library)
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ bun run build
 
 ## Structure
 
-- `src/components/`: Reusable UI components (shadcn/ui + custom components like LayerReveal, NodeCard).
+- `src/components/`: Feature components (LayerReveal, Quiz, RecallReveal, RelatedCard, AudioBar, BottomNav, SearchBar, …).
 - `src/routes/`: Tanstack Router page definitions.
-- `src/data/`: Contains `nodes.ts`, the static data layer storing all nodes and edges for the lattice.
+- `src/data/`: `nodes.ts` (aggregator + derived indexes) and `nodes/cluster-*.ts`, the static data layer storing all nodes and edges for the lattice.
 - `scripts/`: Helper scripts for data generation and testing.

@@ -17,7 +17,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          # No `cache: npm` — the repo has no package-lock.json (bun.lock is canonical),
+          # and setup-node fails the job when the npm cache finds no lockfile.
       - name: Install (bun preferred, npm fallback)
         run: |
           if [ -f bun.lock ]; then
