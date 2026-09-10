@@ -1,0 +1,9 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Commonplace — Marginalia mark">
+  <rect width="512" height="512" fill="#faf8f3"/>
+  <g stroke="#1a1a17" stroke-width="76" stroke-linecap="round">
+    <line x1="256" y1="126" x2="256" y2="386"/>
+    <line x1="143" y1="191" x2="369" y2="321"/>
+    <line x1="143" y1="321" x2="369" y2="191"/>
+  </g>
+  <line x1="256" y1="256" x2="369" y2="191" stroke="#b45309" stroke-width="76" stroke-linecap="round"/>
+</svg>

@@ -26,6 +26,8 @@ async function main() {
     "/review",
     "/you",
     "/onboarding",
+    "/privacy",
+    "/terms",
     ...CLUSTERS.map((c) => `/explore?cluster=${encodeURIComponent(c.id)}`),
   ];
   urls.push(...staticPaths);

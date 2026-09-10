@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { InstallAppButton } from "@/components/InstallAppButton";
+import { APP_NAME, APP_TAGLINE, CONTACT_EMAIL } from "@/lib/site";
+import { APP_VERSION } from "@/lib/version";
 import { useStore, currentStreak, todayISO, dueCount } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
 import { NODES, NODE_BY_ID, TAGS } from "@/data/nodes";
@@ -20,6 +22,7 @@ import {
   ArrowRight,
   RotateCcw,
   SunMoon,
+  Info,
 } from "lucide-react";
 
 export const Route = createFileRoute("/you")({
@@ -154,6 +157,7 @@ function YouScreen() {
       <Scratchpad />
       <Offline />
       <Backup />
+      <About />
     </div>
   );
 }
@@ -615,6 +619,44 @@ function Backup() {
       {msg && (
         <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">{msg}</p>
       )}
+    </Section>
+  );
+}
+
+function About() {
+  return (
+    <Section title="About" icon={Info}>
+      <p className="font-serif text-lg text-ink">{APP_NAME}</p>
+      <p className="mt-1 text-sm text-ink-soft">{APP_TAGLINE}.</p>
+      <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-soft">
+        Version {APP_VERSION}
+      </p>
+      <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
+        <Link
+          to="/privacy"
+          className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline"
+        >
+          Privacy
+        </Link>
+        <Link
+          to="/terms"
+          className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline"
+        >
+          Terms
+        </Link>
+        {CONTACT_EMAIL ? (
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft hover:text-ink hover:underline"
+          >
+            Contact
+          </a>
+        ) : (
+          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-soft/60">
+            Contact coming soon
+          </span>
+        )}
+      </div>
     </Section>
   );
 }

@@ -56,7 +56,10 @@ export function useOfflineWarmup() {
       // was exactly how Skim and Explore fell out of the offline precache
       // once already. "/review" isn't a bottom-nav tab but is still a
       // primary destination (linked from You), so it's added on top.
-      const documentUrls: string[] = [...MAIN_TAB_PATHS, "/review"];
+      // Static support routes (privacy/terms must work offline too — a
+      // reviewer or user on a plane can still open them from the You tab).
+      const STATIC_ROUTES = ["/privacy", "/terms"];
+      const documentUrls: string[] = [...MAIN_TAB_PATHS, "/review", ...STATIC_ROUTES];
       if (firstNodeId) documentUrls.push(`/node/${firstNodeId}`);
 
       for (const url of documentUrls) {
@@ -70,6 +73,10 @@ export function useOfflineWarmup() {
       }
       if (cancelled) return;
       await router.preloadRoute({ to: "/review" }).catch(() => {});
+      if (cancelled) return;
+      await router.preloadRoute({ to: "/privacy" }).catch(() => {});
+      if (cancelled) return;
+      await router.preloadRoute({ to: "/terms" }).catch(() => {});
       if (cancelled) return;
       if (firstNodeId) {
         await router.preloadRoute({ to: "/node/$id", params: { id: firstNodeId } }).catch(() => {});
