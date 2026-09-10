@@ -2,12 +2,25 @@
 // Deploys to Vercel via preset.
 /// <reference types="vitest" />
 import { defineConfig } from "vite";
+import { readFileSync } from "node:fs";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
+// Stamped into the client as __APP_VERSION__ (see src/lib/version.ts) so the
+// About screen and error reports can say which release is running.
+const APP_VERSION: string =
+  (
+    JSON.parse(readFileSync(new URL("./package.json", import.meta.url), "utf-8")) as {
+      version?: string;
+    }
+  ).version ?? "0.0.0";
+
 export default defineConfig({
+  define: {
+    __APP_VERSION__: JSON.stringify(APP_VERSION),
+  },
   preview: {
     allowedHosts: true,
   },

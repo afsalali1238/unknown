@@ -8,7 +8,7 @@ import {
   Headphones,
   Download,
 } from "lucide-react";
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { NODES, TAGS } from "@/data/nodes";
@@ -138,6 +138,15 @@ function OnboardingScreen() {
               >
                 Continue →
               </button>
+              <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-ink-soft">
+                <Link to="/privacy" className="hover:text-ink hover:underline">
+                  Privacy
+                </Link>
+                <span aria-hidden="true"> · </span>
+                <Link to="/terms" className="hover:text-ink hover:underline">
+                  Terms
+                </Link>
+              </p>
             </div>
           </>
         ) : (

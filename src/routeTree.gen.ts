@@ -10,11 +10,14 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ContinueRouteImport } from './routes/continue'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as OnboardingRouteImport } from './routes/onboarding'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ReviewRouteImport } from './routes/review'
 import { Route as SkimRouteImport } from './routes/skim'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as YouRouteImport } from './routes/you'
 import { Route as NodeIdRouteImport } from './routes/node.$id'
 import { Route as ReadIdRouteImport } from './routes/read.$id'
@@ -22,6 +25,11 @@ import { Route as ReadIdRouteImport } from './routes/read.$id'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContinueRoute = ContinueRouteImport.update({
+  id: '/continue',
+  path: '/continue',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExploreRoute = ExploreRouteImport.update({
@@ -39,6 +47,11 @@ const OnboardingRoute = OnboardingRouteImport.update({
   path: '/onboarding',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ReviewRoute = ReviewRouteImport.update({
   id: '/review',
   path: '/review',
@@ -47,6 +60,11 @@ const ReviewRoute = ReviewRouteImport.update({
 const SkimRoute = SkimRouteImport.update({
   id: '/skim',
   path: '/skim',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
 const YouRoute = YouRouteImport.update({
@@ -67,22 +85,28 @@ const ReadIdRoute = ReadIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/continue': typeof ContinueRoute
   '/explore': typeof ExploreRoute
   '/map': typeof MapRoute
   '/onboarding': typeof OnboardingRoute
+  '/privacy': typeof PrivacyRoute
   '/review': typeof ReviewRoute
   '/skim': typeof SkimRoute
+  '/terms': typeof TermsRoute
   '/you': typeof YouRoute
   '/node/$id': typeof NodeIdRoute
   '/read/$id': typeof ReadIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/continue': typeof ContinueRoute
   '/explore': typeof ExploreRoute
   '/map': typeof MapRoute
   '/onboarding': typeof OnboardingRoute
+  '/privacy': typeof PrivacyRoute
   '/review': typeof ReviewRoute
   '/skim': typeof SkimRoute
+  '/terms': typeof TermsRoute
   '/you': typeof YouRoute
   '/node/$id': typeof NodeIdRoute
   '/read/$id': typeof ReadIdRoute
@@ -90,11 +114,14 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/continue': typeof ContinueRoute
   '/explore': typeof ExploreRoute
   '/map': typeof MapRoute
   '/onboarding': typeof OnboardingRoute
+  '/privacy': typeof PrivacyRoute
   '/review': typeof ReviewRoute
   '/skim': typeof SkimRoute
+  '/terms': typeof TermsRoute
   '/you': typeof YouRoute
   '/node/$id': typeof NodeIdRoute
   '/read/$id': typeof ReadIdRoute
@@ -103,33 +130,42 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/continue'
     | '/explore'
     | '/map'
     | '/onboarding'
+    | '/privacy'
     | '/review'
     | '/skim'
+    | '/terms'
     | '/you'
     | '/node/$id'
     | '/read/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/continue'
     | '/explore'
     | '/map'
     | '/onboarding'
+    | '/privacy'
     | '/review'
     | '/skim'
+    | '/terms'
     | '/you'
     | '/node/$id'
     | '/read/$id'
   id:
     | '__root__'
     | '/'
+    | '/continue'
     | '/explore'
     | '/map'
     | '/onboarding'
+    | '/privacy'
     | '/review'
     | '/skim'
+    | '/terms'
     | '/you'
     | '/node/$id'
     | '/read/$id'
@@ -137,11 +173,14 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContinueRoute: typeof ContinueRoute
   ExploreRoute: typeof ExploreRoute
   MapRoute: typeof MapRoute
   OnboardingRoute: typeof OnboardingRoute
+  PrivacyRoute: typeof PrivacyRoute
   ReviewRoute: typeof ReviewRoute
   SkimRoute: typeof SkimRoute
+  TermsRoute: typeof TermsRoute
   YouRoute: typeof YouRoute
   NodeIdRoute: typeof NodeIdRoute
   ReadIdRoute: typeof ReadIdRoute
@@ -154,6 +193,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/continue': {
+      id: '/continue'
+      path: '/continue'
+      fullPath: '/continue'
+      preLoaderRoute: typeof ContinueRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/explore': {
@@ -177,6 +223,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OnboardingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/review': {
       id: '/review'
       path: '/review'
@@ -189,6 +242,13 @@ declare module '@tanstack/react-router' {
       path: '/skim'
       fullPath: '/skim'
       preLoaderRoute: typeof SkimRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/you': {
@@ -217,11 +277,14 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContinueRoute: ContinueRoute,
   ExploreRoute: ExploreRoute,
   MapRoute: MapRoute,
   OnboardingRoute: OnboardingRoute,
+  PrivacyRoute: PrivacyRoute,
   ReviewRoute: ReviewRoute,
   SkimRoute: SkimRoute,
+  TermsRoute: TermsRoute,
   YouRoute: YouRoute,
   NodeIdRoute: NodeIdRoute,
   ReadIdRoute: ReadIdRoute,
