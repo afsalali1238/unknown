@@ -14,6 +14,16 @@ const idbStorage: StateStorage = {
   },
 };
 
+// Off the browser (SSR render, vitest) there is nothing to persist to. The
+// previous `undefined as never` made zustand's persist call
+// `undefined.setItem` and throw on the first `set()` outside a window —
+// which is also why store actions had never been unit-tested.
+const noopStorage: StateStorage = {
+  getItem: async () => null,
+  setItem: async () => {},
+  removeItem: async () => {},
+};
+
 export const LEITNER_DAYS = [0, 1, 3, 7, 16, 35];
 const DAY_MS = 86400000;
 
@@ -129,12 +139,29 @@ function touchStreak(days: string[]): string[] {
   return [...days, t].sort();
 }
 
+// Seed a review schedule for a node the user just marked Got-it: box 1, due
+// tomorrow. Onboarding promises spaced repetition for mastered ideas, but
+// without this a Got-it never entered the Review queue. A node already in
+// the queue is left exactly where it is, so re-tapping never resets earned
+// progress.
+function scheduleIfNew(review: Record<string, ReviewEntry>, id: string) {
+  if (review[id]) return review;
+  return {
+    ...review,
+    [id]: { box: 1, due: localMidnightMs(Date.now()) + LEITNER_DAYS[1] * DAY_MS },
+  };
+}
+
 export const useStore = create<State & Actions>()(
   persist(
     (set, get) => ({
       ...initial,
       markGotIt: (id) =>
-        set((s) => ({ gotIt: { ...s.gotIt, [id]: true }, streakDays: touchStreak(s.streakDays) })),
+        set((s) => ({
+          gotIt: { ...s.gotIt, [id]: true },
+          review: scheduleIfNew(s.review, id),
+          streakDays: touchStreak(s.streakDays),
+        })),
       toggleBookmark: (id) =>
         set((s) => ({ bookmarks: { ...s.bookmarks, [id]: !s.bookmarks[id] } })),
       submitQuiz: (id, correct) =>
@@ -227,9 +254,7 @@ export const useStore = create<State & Actions>()(
     {
       name: "unknown:v1",
       version: 2,
-      storage: createJSONStorage(() =>
-        typeof window !== "undefined" ? idbStorage : (undefined as never),
-      ),
+      storage: createJSONStorage(() => (typeof window !== "undefined" ? idbStorage : noopStorage)),
       skipHydration: false,
       // Merges persisted state with defaults so adding new fields never wipes
       // existing user data (streaks, bookmarks, gotIt, etc.).

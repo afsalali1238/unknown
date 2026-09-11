@@ -6,6 +6,8 @@ import {
   stateSchema,
   isQueued,
   readNextNodes,
+  todayISO,
+  useStore,
   type ReviewEntry,
 } from "./store";
 
@@ -71,6 +73,31 @@ describe("store.ts pure functions", () => {
     it("returns 0 for empty review map", () => {
       expect(dueCount({})).toBe(0);
       expect(dueIds({})).toEqual([]);
+    });
+  });
+
+  describe("markGotIt (store action)", () => {
+    it("schedules the node for review in box 1, due tomorrow", () => {
+      useStore.getState().reset();
+      const before = Date.now();
+      useStore.getState().markGotIt("A1");
+      const s = useStore.getState();
+      expect(s.gotIt.A1).toBe(true);
+      expect(s.review.A1?.box).toBe(1);
+      // due = tomorrow at local midnight: strictly after now, within 24h.
+      expect(s.review.A1!.due).toBeGreaterThan(before);
+      expect(s.review.A1!.due).toBeLessThanOrEqual(before + 86400000);
+      expect(s.streakDays).toContain(todayISO());
+    });
+
+    it("never resets a node that is already scheduled", () => {
+      useStore.getState().reset();
+      useStore.getState().submitQuiz("A1", true);
+      useStore.getState().submitQuiz("A1", true);
+      const scheduled = useStore.getState().review.A1;
+      expect(scheduled.box).toBe(2);
+      useStore.getState().markGotIt("A1");
+      expect(useStore.getState().review.A1).toEqual(scheduled);
     });
   });
 
