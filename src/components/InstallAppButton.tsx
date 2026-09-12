@@ -4,7 +4,7 @@ import { MicroLabel } from "./MicroLabel";
 
 const INSTRUCTIONS: Record<InstallPlatform, { title: string; steps: string[] }> = {
   ios: {
-    title: "Add Unknown to your Home Screen",
+    title: "Add Commonplace to your Home Screen",
     steps: [
       "Tap the Share icon in Safari's toolbar.",
       'Scroll down and tap "Add to Home Screen".',
@@ -12,7 +12,7 @@ const INSTRUCTIONS: Record<InstallPlatform, { title: string; steps: string[] }> 
     ],
   },
   android: {
-    title: "Add Unknown to your Home Screen",
+    title: "Add Commonplace to your Home Screen",
     steps: [
       "Tap the menu (⋮) in your browser.",
       'Tap "Add to Home screen" or "Install app".',
@@ -20,14 +20,14 @@ const INSTRUCTIONS: Record<InstallPlatform, { title: string; steps: string[] }> 
     ],
   },
   desktop: {
-    title: "Install Unknown",
+    title: "Install Commonplace",
     steps: [
       "Click the install icon in the address bar (or open the browser menu).",
-      'Select "Install Unknown".',
+      'Select "Install Commonplace".',
     ],
   },
   unknown: {
-    title: "Add Unknown to your Home Screen",
+    title: "Add Commonplace to your Home Screen",
     steps: ["Open your browser's menu.", 'Look for "Add to Home screen" or "Install app".'],
   },
 };

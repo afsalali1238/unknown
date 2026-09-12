@@ -43,8 +43,8 @@ without building the wrapper yet.
 
 | ID | Decision | Blocks |
 |----|----------|--------|
-| D1 | Final app name (replaces "Unknown" everywhere) | P1, P2, P9 |
-| D2 | Production domain (affects manifest `id`, future assetlinks, privacy URL) | P1, P2 |
+| D1 | ~~Final app name~~ **Decided 2026-09-12: "Commonplace"** (docs/BRAND.md) | P1, P2, P9 |
+| D2 | ~~Production domain~~ **Decided 2026-09-12: commonplace.app** (SITE_URL fallback switched; domain still to be registered) | P1, P2 |
 | D3 | Analytics: none vs privacy-friendly (e.g. Plausible/self-hosted) | P6 |
 | D4 | Push spikes: stay local-only vs tiny push backend for review reminders | P5 |
 | D5 | Error reporting vendor: self-hosted vs managed (Sentry etc.) | P6 |

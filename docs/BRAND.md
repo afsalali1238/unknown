@@ -1,7 +1,9 @@
 # Brand Proposal: Name + Logo (P0.1 / P2.1 input)
 
-**Status:** Proposal — owner picks a name, then P0.2 rename sweep executes atomically.
-**Date:** 2026-09-10
+**Status:** ✅ **Adopted 2026-09-12** — owner picked **Commonplace** + **Concept 1
+(Marginalia)**. P0.2 rename sweep and P2.1 icon production executed; `SITE_URL`
+fallback set to `commonplace.app` (D2 — register the domain before public launch).
+The rest of this document is the original proposal, kept for record.
 
 ## 1. Name recommendation: **Commonplace**
 

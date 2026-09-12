@@ -81,7 +81,7 @@ export function AudioBar({
       navigator.mediaSession.metadata = new MediaMetadata({
         title: node.title,
         artist: node.author,
-        album: "Unknown",
+        album: "Commonplace",
         artwork: [{ src: "/icon-512.png", sizes: "512x512", type: "image/png" }],
       });
 

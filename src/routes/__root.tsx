@@ -76,13 +76,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       // differed depending on whether a browser read this tag or the
       // manifest.
       { name: "theme-color", content: "#fcfbf9" },
-      { title: "Unknown — A latticework of powerful ideas" },
+      { title: "Commonplace — A latticework of powerful ideas" },
       {
         name: "description",
         content:
           "An audio-narrated, cross-linked map of the world's most powerful ideas. Learn in layers. Retain with spaced repetition.",
       },
-      { property: "og:title", content: "Unknown — A latticework of powerful ideas" },
+      { property: "og:title", content: "Commonplace — A latticework of powerful ideas" },
       {
         property: "og:description",
         content:

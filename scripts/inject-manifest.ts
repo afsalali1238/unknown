@@ -28,7 +28,7 @@ if (fs.existsSync(dir)) {
     const newManifest = JSON.stringify(manifestList);
 
     // Content-addressed cache version: hash the exact set of precached
-    // files instead of relying on a hand-bumped "unknown-vN" string in
+    // files instead of relying on a hand-bumped "commonplace-vN" string in
     // sw.js. A deploy that doesn't change any cached file keeps the same
     // version (no needless cache churn); any deploy that does gets a new
     // version automatically, so the old caches are guaranteed to be dropped
@@ -38,12 +38,12 @@ if (fs.existsSync(dir)) {
       .update(manifestList.join(","))
       .digest("hex")
       .slice(0, 10);
-    sw = sw.replace(/const VERSION = "[^"]+";/, `const VERSION = "unknown-${hash}";`);
+    sw = sw.replace(/const VERSION = "[^"]+";/, `const VERSION = "commonplace-${hash}";`);
 
     sw = sw.replace(replaceTarget, newManifest);
     fs.writeFileSync(swPath, sw);
     console.log(
-      `Injected ${assetFiles.length} assets and ${sourceFiles.length} archived source files into sw.js precache manifest (version unknown-${hash})`,
+      `Injected ${assetFiles.length} assets and ${sourceFiles.length} archived source files into sw.js precache manifest (version commonplace-${hash})`,
     );
   } else {
     console.error("sw.js not found in dist/client");

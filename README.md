@@ -1,6 +1,6 @@
-# Unknown
+# Commonplace
 
-A latticework of powerful ideas. Unknown is an interactive, audio-narrated, and cross-linked knowledge exploration platform designed to help users learn in layers and retain concepts using spaced repetition.
+A latticework of powerful ideas. Commonplace is an interactive, audio-narrated, and cross-linked knowledge exploration platform designed to help users learn in layers and retain concepts using spaced repetition.
 
 ## Tech Stack
 

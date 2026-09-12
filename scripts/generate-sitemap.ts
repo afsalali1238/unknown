@@ -1,7 +1,7 @@
 /**
  * generate-sitemap.ts — emits public/sitemap.xml for SEO.
  * Run: npx tsx scripts/generate-sitemap.ts  (also invoked by build)
- * Uses the deployed origin from env SITE_URL or falls back to unknown.love placeholder.
+ * Uses the deployed origin from env SITE_URL or falls back to commonplace.app placeholder.
  */
 import fs from "fs";
 import path from "path";
@@ -9,7 +9,7 @@ import path from "path";
 const SITE_URL =
   process.env.SITE_URL?.replace(/\/$/, "") ||
   process.env.VERCEL_URL?.replace(/\/$/, "")?.replace(/^/, "https://") ||
-  "https://unknown.love";
+  "https://commonplace.app";
 
 async function main() {
   const mod = await import(path.join(process.cwd(), "src/data/nodes.ts"));

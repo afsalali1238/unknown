@@ -19,13 +19,13 @@ export const Route = createFileRoute("/node/$id")({
     return { node };
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Not found — Unknown" }] };
+    if (!loaderData) return { meta: [{ title: "Not found — Commonplace" }] };
     const n = loaderData.node;
     return {
       meta: [
-        { title: `${n.title} — Unknown` },
+        { title: `${n.title} — Commonplace` },
         { name: "description", content: n.thesis },
-        { property: "og:title", content: `${n.title} — Unknown` },
+        { property: "og:title", content: `${n.title} — Commonplace` },
         { property: "og:description", content: n.thesis },
       ],
     };

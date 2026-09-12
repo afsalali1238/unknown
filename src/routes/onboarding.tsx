@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { MicroLabel } from "@/components/MicroLabel";
+import { BrandMark } from "@/components/BrandMark";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { NODES, TAGS } from "@/data/nodes";
 import { useStore } from "@/lib/store";
@@ -18,7 +19,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/onboarding")({
   head: () => ({
     meta: [
-      { title: "Welcome — Unknown" },
+      { title: "Welcome — Commonplace" },
       { name: "description", content: "Pick a few things you care about to personalize your map." },
     ],
   }),
@@ -68,18 +69,14 @@ function OnboardingScreen() {
   return (
     <>
       <div className="fixed inset-0 overflow-hidden pointer-events-none flex items-center justify-center opacity-[0.03]">
-        <img
-          src="/logo.svg"
-          alt=""
-          className="w-[120vw] h-[120vw] max-w-none animate-[spin_120s_linear_infinite]"
-        />
+        <BrandMark className="w-[120vw] h-[120vw] max-w-none animate-[spin_120s_linear_infinite]" />
       </div>
       <div className="relative z-10 flex min-h-screen flex-col px-5 pt-12 pb-8">
         {step === 1 ? (
           <>
             <MicroLabel>Welcome</MicroLabel>
             <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink">
-              Let's look into Unknown
+              Let's look into Commonplace
             </h1>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-soft">
               Choose your rabbit holes. Pick at least {MIN_PICKS} to start your descent into the
@@ -233,8 +230,8 @@ function OnboardingScreen() {
                 <div>
                   <h3 className="font-serif text-lg text-ink">Install for offline</h3>
                   <p className="mt-1 text-sm text-ink-soft">
-                    Add Unknown to your home screen — the map, every node, and Review work with no
-                    connection.
+                    Add Commonplace to your home screen — the map, every node, and Review work with
+                    no connection.
                   </p>
                 </div>
               </div>

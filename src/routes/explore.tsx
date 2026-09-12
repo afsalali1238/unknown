@@ -18,7 +18,7 @@ export const Route = createFileRoute("/explore")({
   validateSearch: exploreSearchSchema,
   head: () => ({
     meta: [
-      { title: "Explore — Unknown" },
+      { title: "Explore — Commonplace" },
       {
         name: "description",
         content: "Browse the full latticework of powerful ideas.",
