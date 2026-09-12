@@ -1,7 +1,6 @@
-// Central site/app identity. P0.2 (rename sweep) changes APP_NAME here and in
-// user-visible strings; code imports this instead of hardcoding the name.
-/** Display name. TODO(P0.2): replace with final name once owner confirms (see docs/BRAND.md). */
-export const APP_NAME = "Unknown";
+// Central site/app identity. Code imports this instead of hardcoding the name.
+/** Display name. Decided 2026-09-12 (D1) — see docs/BRAND.md. */
+export const APP_NAME = "Commonplace";
 export const APP_TAGLINE = "A latticework of powerful ideas";
 /**
  * Support contact. Empty = not configured yet; UI falls back to a

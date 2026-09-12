@@ -14,6 +14,7 @@ import {
 import { CLUSTERS, type Node, NODES } from "@/data/nodes";
 import { Quiz } from "@/components/Quiz";
 import { MicroLabel } from "@/components/MicroLabel";
+import { BrandMark } from "@/components/BrandMark";
 import { buildFeed, type FeedSource } from "@/lib/feed";
 import { useStore, dueCount, readNextNodes } from "@/lib/store";
 import { useHydrated } from "@/lib/hydrated";
@@ -38,7 +39,7 @@ import { CSS } from "@dnd-kit/utilities";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Unknown — A latticework of powerful ideas" },
+      { title: "Commonplace — A latticework of powerful ideas" },
       {
         name: "description",
         content: "A feed of the world's most powerful ideas, tuned to what you care about.",
@@ -398,8 +399,8 @@ function FeedScreen() {
     <div className="flex flex-col h-[100dvh]">
       <header className="shrink-0 flex items-center justify-between px-5 py-2.5 relative z-30 bg-paper">
         <div className="flex items-center gap-2">
-          <img src="/logo.svg" alt="" className="h-6 w-6 spiral-spin" />
-          <span className="font-serif text-lg tracking-tight text-ink">Unknown</span>
+          <BrandMark className="h-6 w-6 mark-spin" />
+          <span className="font-serif text-lg tracking-tight text-ink">Commonplace</span>
         </div>
         <div className="flex items-center gap-3">
           {!feedResult.needsTopics && total > 0 && (

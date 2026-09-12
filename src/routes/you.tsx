@@ -28,7 +28,7 @@ import {
 export const Route = createFileRoute("/you")({
   head: () => ({
     meta: [
-      { title: "You — Unknown" },
+      { title: "You — Commonplace" },
       { name: "description", content: "Streak, stats, bookmarks, glossary, and backup." },
     ],
   }),

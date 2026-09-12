@@ -21,6 +21,11 @@ export default defineConfig({
   define: {
     __APP_VERSION__: JSON.stringify(APP_VERSION),
   },
+  server: {
+    // Same posture as `preview` below: sandboxed/proxied preview hosts
+    // (e.g. *.e2b.app) must be able to open the dev server.
+    allowedHosts: true,
+  },
   preview: {
     allowedHosts: true,
   },

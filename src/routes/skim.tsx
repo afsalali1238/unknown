@@ -16,7 +16,7 @@ export const Route = createFileRoute("/skim")({
   validateSearch: skimSearchSchema,
   head: () => ({
     meta: [
-      { title: "Skim — Unknown" },
+      { title: "Skim — Commonplace" },
       {
         name: "description",
         content: "The entire lattice, one thesis at a time.",

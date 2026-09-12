@@ -11,7 +11,7 @@ import { shuffle } from "@/lib/random";
 export const Route = createFileRoute("/review")({
   head: () => ({
     meta: [
-      { title: "Review — Unknown" },
+      { title: "Review — Commonplace" },
       { name: "description", content: "Spaced repetition for the ideas you've learned." },
     ],
   }),

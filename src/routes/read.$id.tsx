@@ -22,7 +22,7 @@ const readSearchSchema = z.object({
 export const Route = createFileRoute("/read/$id")({
   validateSearch: readSearchSchema,
   head: () => ({
-    meta: [{ title: "Archived reading — Unknown" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Archived reading — Commonplace" }, { name: "robots", content: "noindex" }],
   }),
   component: ReadScreen,
 });
